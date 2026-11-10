@@ -1,10 +1,24 @@
 import { createAdapter, createFallbackAdapter, probeOpenCode } from "./index.ts";
-import type { LlmAdapter } from "./types.ts";
+import type { JsonRequest, LlmAdapter, TextRequest } from "./types.ts";
 
 export interface ResolvedLlm {
   llm: LlmAdapter | null;
   model: string;
   provider: string;
+}
+
+/**
+ * Setiap adapter diikat ke modelnya sendiri. Tanpa ini, rantai cadangan
+ * mengirim nama model opencode ke DeepSeek — dan DeepSeek menolaknya
+ * dengan 400 "model tidak didukung", yang dulu tersembunyi di balik fallback.
+ */
+function bindModel(adapter: LlmAdapter, model: string): LlmAdapter {
+  return {
+    name: adapter.name,
+    json: <T>(req: JsonRequest) => adapter.json<T>({ ...req, model }),
+    text: (req: TextRequest) => adapter.text({ ...req, model }),
+    ...(adapter.embed ? { embed: (req: Parameters<NonNullable<LlmAdapter["embed"]>>[0]) => adapter.embed!(req) } : {}),
+  };
 }
 
 /**
@@ -17,13 +31,14 @@ export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
   const forced = env.LLM_PROVIDER as "opencode" | "deepseek" | undefined;
   const opencodeModel = env.OPENCODE_MODEL || "opencode-go/deepseek-v4.1-flash";
   const deepseekModel = env.DEEPSEEK_MODEL || "deepseek-chat";
-  const model = forced === "deepseek" ? deepseekModel : opencodeModel;
 
   const chain: LlmAdapter[] = [];
+  let model = opencodeModel;
+
   if (!forced || forced === "opencode") {
     if (probeOpenCode(env.OPENCODE_BIN)) {
       try {
-        chain.push(createAdapter({ provider: "opencode", model: opencodeModel }, env));
+        chain.push(bindModel(createAdapter({ provider: "opencode", model: opencodeModel }, env), opencodeModel));
       } catch {
         /* lanjut ke cadangan */
       }
@@ -33,7 +48,8 @@ export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
   }
   if ((!forced || forced === "deepseek") && env.DEEPSEEK_API_KEY) {
     try {
-      chain.push(createAdapter({ provider: "deepseek", model: deepseekModel }, env));
+      chain.push(bindModel(createAdapter({ provider: "deepseek", model: deepseekModel }, env), deepseekModel));
+      if (chain.length === 1) model = deepseekModel;
     } catch {
       /* lanjut */
     }
