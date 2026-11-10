@@ -1,0 +1,23 @@
+# config/llm.yaml — salin ke config/llm.yaml lalu sesuaikan.
+# Lihat INFRA.md §11 dan REQUIREMENTS.md §7.4.
+
+capabilities:
+  adjudicate:
+    provider: deepseek          # deepseek | opencode
+    model: deepseek-flash
+  write:
+    provider: deepseek
+    model: deepseek-flash
+  verify:
+    provider: deepseek
+    model: deepseek-v4-pro      # dipakai untuk blok truth & misread
+  embed:
+    provider: local             # deepseek TIDAK punya endpoint embedding
+    model: Xenova/multilingual-e5-small
+
+# Alternatif: seluruh pipeline lewat OpenCode (pilih model apa pun di katalog).
+# capabilities:
+#   adjudicate: { provider: opencode, model: "opencode-go/deepseek-v4.1-flash" }
+#   write:      { provider: opencode, model: "opencode-go/deepseek-v4.1-flash" }
+#   verify:     { provider: opencode, model: "opencode-go/deepseek-v4.1-pro" }
+#   embed:      { provider: local,    model: "Xenova/multilingual-e5-small" }

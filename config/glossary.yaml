@@ -1,0 +1,220 @@
+# Glosarium untuk blok konteks (explain).
+# Setiap entri: q, a, outlet, url.
+# Writer hanya boleh memakai entri yang ada di sini — tidak mengarang latar.
+
+dpr:
+  q: "Apa itu DPR?"
+  a: "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun."
+  outlet: "DPR RI"
+  url: "https://www.dpr.go.id/"
+
+hmp:
+  q: "Apa itu Hak Menyatakan Pendapat?"
+  a: "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna."
+  outlet: "DPR RI"
+  url: "https://www.dpr.go.id/"
+
+pemakzulan:
+  q: "Bagaimana presiden atau wapres bisa diberhentikan?"
+  a: "DPR mengajukan Hak Menyatakan Pendapat, MPR menyidangkan, lalu keputusan diambil dengan kuorum dan suara minimal dua pertiga. Prosesnya panjang dan konstitusional."
+  outlet: "UUD 1945 Pasal 7B"
+  url: "https://www.mpr.go.id/"
+
+gibran:
+  q: "Siapa Gibran Rakabuming Raka?"
+  a: "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo."
+  outlet: "Wapres RI"
+  url: "https://www.wapresri.go.id/"
+
+puan:
+  q: "Siapa Puan Maharani?"
+  a: "Ketua DPR RI periode 2024–2029, politikus PDI-P, dan putri Megawati Soekarnoputri. Sebagai ketua, ia menentukan apakah usulan masuk agenda paripurna."
+  outlet: "DPR RI"
+  url: "https://www.dpr.go.id/"
+
+sphp:
+  q: "Apa itu SPHP?"
+  a: "Stabilisasi Pasokan dan Harga Pangan, program Bulog yang menjual beras dengan harga eceran yang ditetapkan pemerintah untuk menahan lonjakan harga."
+  outlet: "Bulog"
+  url: "https://www.bulog.co.id/"
+
+bulog:
+  q: "Apa peran Bulog?"
+  a: "Badan usaha milik negara yang ditugasi menjaga stok dan stabilisasi harga pangan. Ia menyerap gabah petani dan menyalurkan beras program ke pasar."
+  outlet: "Bulog"
+  url: "https://www.bulog.co.id/"
+
+ojk:
+  q: "Apa itu OJK?"
+  a: "Otoritas Jasa Keuangan, lembaga yang mengatur dan mengawasi sektor keuangan Indonesia, termasuk perbankan, pasar modal, dan pinjaman online."
+  outlet: "OJK"
+  url: "https://www.ojk.go.id/"
+
+investasi_bodong:
+  q: "Apa ciri investasi bodong?"
+  a: "Menjanjikan keuntungan tetap dan tidak wajar, meminta setoran awal, dan merekrut anggota baru. Beberapa memakai nama entitas berizin agar calon korban percaya."
+  outlet: "OJK"
+  url: "https://www.ojk.go.id/"
+
+kpk:
+  q: "Apa itu KPK?"
+  a: "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia."
+  outlet: "KPK"
+  url: "https://www.kpk.go.id/"
+
+mui:
+  q: "Apa itu fatwa MUI?"
+  a: "Ketetapan keagamaan yang dikeluarkan Majelis Ulama Indonesia. Fatwa mengikat secara moral bagi umat Islam, tetapi bukan hukum negara dan tidak otomatis menjadi peraturan."
+  outlet: "MUI"
+  url: "https://mui.or.id/"
+
+penyadapan:
+  q: "Apa dasar hukum penyadapan di Indonesia?"
+  a: "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana."
+  outlet: "UU ITE"
+  url: "https://www.kominfo.go.id/"
+
+bahlil:
+  q: "Siapa Bahlil Lahadalia?"
+  a: "Menteri Energi dan Sumber Daya Mineral sejak 2024 dan Ketua Umum Partai Golkar. Sebelumnya menjabat Menteri Investasi."
+  outlet: "Kementerian ESDM"
+  url: "https://www.esdm.go.id/"
+
+bbm:
+  q: "Apa itu harga eceran tertinggi BBM?"
+  a: "Batas harga jual bahan bakar bersubsidi yang ditetapkan pemerintah. Penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi."
+  outlet: "ESDM"
+  url: "https://www.esdm.go.id/"
+
+spbu:
+  q: "Kenapa perusahaan asing keluar dari bisnis SPBU Indonesia?"
+  a: "Margin bahan bakar ritel tipis dan diatur harga jualnya, sementara biaya investasi jaringan besar. Beberapa pemain memilih menjual saham ke mitra lokal daripada menambah modal."
+  outlet: "ESDM"
+  url: "https://www.esdm.go.id/"
+
+bri:
+  q: "Apa yang dimaksud laba bersih bank?"
+  a: "Selisih pendapatan bunga dan biaya operasional setelah pajak. Angka kuartalan dipakai pasar untuk menilai efisiensi dan kualitas kredit."
+  outlet: "OJK"
+  url: "https://www.ojk.go.id/"
+
+afc:
+  q: "Apa itu Kualifikasi AFC U17?"
+  a: "Turnamen penyisihan zona Asia untuk tim nasional usia di bawah 17 tahun, memperebutkan tiket ke putaran final Piala Asia U17."
+  outlet: "AFC"
+  url: "https://www.the-afc.com/"
+
+kejagung:
+  q: "Apa peran Kejaksaan Agung?"
+  a: "Lembaga yang melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara."
+  outlet: "Kejaksaan Agung"
+  url: "https://www.kejaksaan.go.id/"
+
+nikel:
+  q: "Mengapa nikel jadi sorotan?"
+  a: "Indonesia pemasok nikel terbesar dunia untuk baterai. Izin tambang dan tata kelola royaltinya sering jadi objek sengketa hukum dan politik."
+  outlet: "Kementerian ESDM"
+  url: "https://www.esdm.go.id/"
+
+# --- fallback per kategori, dipakai hanya jika entri spesifik kurang ---
+category_policy:
+  q: "Apa yang dimaksud kebijakan publik?"
+  a: "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit."
+  outlet: "DPR RI"
+  url: "https://www.dpr.go.id/"
+
+category_economy:
+  q: "Mengapa angka ekonomi ini penting?"
+  a: "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk."
+  outlet: "OJK"
+  url: "https://www.ojk.go.id/"
+
+category_health:
+  q: "Bagaimana kebijakan kesehatan berlaku di Indonesia?"
+  a: "Aturan kesehatan bisa berbentuk undang-undang, peraturan menteri, atau ketetapan lembaga seperti MUI dan BPOM. Kekuatan mengikatnya berbeda-beda."
+  outlet: "Kementerian Kesehatan"
+  url: "https://www.kemkes.go.id/"
+
+category_crime:
+  q: "Apa arti status tersangka?"
+  a: "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan."
+  outlet: "Polri"
+  url: "https://www.polri.go.id/"
+
+category_disaster:
+  q: "Siapa yang berwenang soal bencana?"
+  a: "BNPB di tingkat nasional dan BPBD di daerah. Peringatan dini gempa dan cuaca berasal dari BMKG."
+  outlet: "BNPB"
+  url: "https://bnpb.go.id/"
+
+category_sport:
+  q: "Mengapa hasil pertandingan ini penting?"
+  a: "Hasil dan klasemen menentukan undian, tiket, dan pendanaan federasi. Untuk tim nasional, dampaknya sampai ke peringkat dunia."
+  outlet: "AFC"
+  url: "https://www.the-afc.com/"
+
+category_culture:
+  q: "Apa nilai penting agenda budaya ini?"
+  a: "Agenda budaya biasanya terkait pariwisata, pelestarian, dan ekonomi lokal. Dampaknya lebih terasa di daerah penyelenggara."
+  outlet: "Kemendikbud"
+  url: "https://www.kemdikbud.go.id/"
+
+category_safety:
+  q: "Ke mana harus merujuk untuk informasi keselamatan?"
+  a: "Peringatan resmi berasal dari BMKG, BNPB, BPBD, atau kepolisian setempat. Informasi dari grup pesan singkat sebaiknya dicek ke kanal itu."
+  outlet: "BNPB"
+  url: "https://bnpb.go.id/"
+
+ketenagakerjaan:
+  q: "Apa yang diatur UU Ketenagakerjaan?"
+  a: "Mengatur hubungan kerja: kontrak, upah, jam kerja, pesangon, dan perlindungan PHK. Perubahan aturan biasanya mengubah perhitungan pesangon dan status pekerja alih daya."
+  outlet: "Kementerian Ketenagakerjaan"
+  url: "https://kemnaker.go.id/"
+
+krl:
+  q: "Apa itu KRL dan siapa yang mengelolanya?"
+  a: "Kereta rel listrik untuk angkutan perkotaan. Di Jabodetabek dioperasikan KAI Commuter dengan tarif dan jadwal yang diatur pemerintah."
+  outlet: "KAI Commuter"
+  url: "https://www.krl.co.id/"
+
+listyo:
+  q: "Siapa Listyo Sigit Prabowo?"
+  a: "Jenderal polisi yang menjabat Kapolri sejak 2021. Ia mantan ajudan Presiden Joko Widodo dan pernah memimpin Bareskrim."
+  outlet: "Polri"
+  url: "https://www.polri.go.id/"
+
+psi:
+  q: "Apa itu PSI?"
+  a: "Partai Solidaritas Indonesia, partai yang dibentuk pada 2014 dan mengusung agenda sekular serta hak kelompok minoritas. Kursinya di DPR terbatas, sehingga perubahan pengurus mudah terlihat."
+  outlet: "KPU"
+  url: "https://www.kpu.go.id/"
+
+tito:
+  q: "Siapa Tito Karnavian?"
+  a: "Menteri Dalam Negeri sejak 2019 dan mantan Kapolri. Di Kemendagri ia mengurus anggaran daerah, pilkada, dan hubungan pusat-daerah."
+  outlet: "Kemendagri"
+  url: "https://www.kemendagri.go.id/"
+
+megawati:
+  q: "Siapa Megawati Soekarnoputri?"
+  a: "Presiden RI kelima (2001–2004) dan ketua umum PDI-P. Ia putri Presiden pertama Soekarno dan salah satu tokoh paling berpengaruh dalam koalisi pemerintah."
+  outlet: "PDI-P"
+  url: "https://www.pdiperjuangan.id/"
+
+pertamina:
+  q: "Apa peran Pertamina?"
+  a: "Badan usaha milik negara di sektor energi yang mengelola kilang, distribusi BBM, dan jaringan SPBU. Harga BBM bersubsidi ditetapkan pemerintah, bukan perusahaan."
+  outlet: "Pertamina"
+  url: "https://www.pertamina.com/"
+
+cpns:
+  q: "Apa itu CPNS?"
+  a: "Calon Pegawai Negeri Sipil, jalur seleksi nasional untuk menjadi aparatur sipil negara. Formasi dan jadwal diumumkan KemenPAN-RB, pendaftaran lewat SSCASN."
+  outlet: "KemenPAN-RB"
+  url: "https://www.menpan.go.id/"
+
+bnpb:
+  q: "Apa peran BNPB?"
+  a: "Badan Nasional Penanggulangan Bencana, yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah."
+  outlet: "BNPB"
+  url: "https://bnpb.go.id/"

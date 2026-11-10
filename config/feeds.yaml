@@ -1,0 +1,95 @@
+# Sumber berita. `weight` dipakai di RANKING.md §5 (bobot per sumber).
+# `local: true` menandai media DIY untuk kuota lokal.
+
+feeds:
+  - id: antara
+    url: https://www.antaranews.com/rss/terkini.xml
+    outlet: antaranews.com
+    weight: 1.0
+
+  - id: antara_ekonomi
+    url: https://www.antaranews.com/rss/ekonomi
+    outlet: antaranews.com
+    weight: 0.9
+
+  - id: cnn_nasional
+    url: https://www.cnnindonesia.com/nasional/rss
+    outlet: cnnindonesia.com
+    weight: 1.0
+
+  - id: cnn_ekonomi
+    url: https://www.cnnindonesia.com/ekonomi/rss
+    outlet: cnnindonesia.com
+    weight: 0.9
+
+  - id: detik_berita
+    url: https://news.detik.com/berita/rss
+    outlet: detik.com
+    weight: 1.0
+
+  - id: tempo_nasional
+    url: https://rss.tempo.co/nasional
+    outlet: tempo.co
+    weight: 0.9
+
+  - id: tirto
+    url: https://tirto.id/sitemap/r/google-discover
+    outlet: tirto.id
+    weight: 0.9
+
+  - id: cnbc
+    url: https://www.cnbcindonesia.com/news/rss
+    outlet: cnbcindonesia.com
+    weight: 0.8
+
+  - id: turnbackhoax
+    url: https://turnbackhoax.id/feed/
+    outlet: turnbackhoax.id
+    weight: 0.7
+    kind: factcheck
+
+  # --- DIY (Sleman / Jogja) ---
+  - id: detik_jogja
+    url: https://www.detik.com/jogja/berita/rss
+    outlet: detik.com
+    weight: 1.0
+    local: true
+
+  - id: tribun_jogja
+    url: https://jogja.tribunnews.com/rss
+    outlet: tribunnews.com
+    weight: 0.7
+    local: true
+    # Tribun menolak UA non-browser (403). Override per feed.
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+
+  - id: harian_jogja
+    url: https://www.harianjogja.com/rss
+    outlet: harianjogja.com
+    weight: 0.6
+    local: true
+
+  - id: liputan6
+    url: https://feed.liputan6.com/rss/news
+    outlet: liputan6.com
+    weight: 0.9
+
+  - id: kumparan
+    url: https://lapi.kumparan.com/v2.0/rss/
+    outlet: kumparan.com
+    weight: 0.9
+
+  - id: sindonews
+    url: https://www.sindonews.com/feed
+    outlet: sindonews.com
+    weight: 0.8
+
+  - id: okezone
+    url: https://sindikasi.okezone.com/index.php/rss/1/RSS2.0
+    outlet: okezone.com
+    weight: 0.8
+
+  - id: republika
+    url: https://www.republika.co.id/rss
+    outlet: republika.co.id
+    weight: 0.8

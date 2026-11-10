@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — Edisi Pagi v2</title>
+<style>
+  :root{
+    --paper:#FAF7F2; --ink:#17150F; --muted:#6B6459; --faint:#9A9284;
+    --rule:#E3DCD1; --accent:#B3402A; --accent-soft:#F3EAE4;
+    --ok:#2F6B4F; --warn:#9A6A1E; --bad:#A33A31;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-font-smoothing:antialiased}
+  body{
+    margin:0; padding:18px 10px 30px; background:#E7E2DA; font-family:var(--sans);
+    display:grid; grid-template-columns:380px 380px; gap:20px 16px; justify-content:center; align-items:start;
+  }
+  .col{display:flex; flex-direction:column; gap:9px; align-items:center}
+  .cap{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:#8D8578; font-weight:700}
+  .phone{
+    width:380px; height:820px; background:var(--paper); border-radius:44px; overflow:hidden; position:relative;
+    box-shadow:0 1px 2px rgba(0,0,0,.05), 0 18px 40px -14px rgba(0,0,0,.24), 0 0 0 9px #1C1B19;
+  }
+  .screen{height:100%; overflow:hidden; display:flex; flex-direction:column; position:relative}
+  .sb{height:42px; display:flex; align-items:center; justify-content:space-between; padding:0 25px; font-size:12px; font-weight:600; flex:none}
+  .sb .r{letter-spacing:1px; opacity:.85}
+
+  .hd{padding:6px 20px 12px; flex:none}
+  .hd .eyebrow{font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .hd h1{font-family:var(--serif); font-size:25px; line-height:1.08; margin:5px 0 0; letter-spacing:-.01em; font-weight:600}
+  .hd .sub{font-size:11px; color:var(--muted); margin-top:6px}
+  .hd .cov{font-size:9.5px; color:var(--faint); margin-top:3px; letter-spacing:.02em}
+  .tabs{display:flex; gap:7px; margin-top:12px}
+  .tab{font-size:11.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--rule); color:var(--muted)}
+  .tab.on{background:var(--ink); border-color:var(--ink); color:#FBF8F3; font-weight:600}
+
+  .feed{flex:1; overflow:hidden; padding:2px 14px 0}
+  .card{border-radius:20px; overflow:hidden; position:relative; margin-bottom:12px; background:#111}
+  .card img{width:100%; display:block; object-fit:cover}
+  .overlay{position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,.60) 76%, rgba(0,0,0,.87) 100%)}
+  .ctext{position:absolute; left:0; right:0; bottom:0; padding:15px 15px 15px; color:#fff}
+  .kick{font-size:9px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; opacity:.82}
+  .ctext h2{font-family:var(--serif); font-weight:600; margin:6px 0 0; letter-spacing:-.005em}
+  .metaRow{display:flex; align-items:center; gap:7px; margin-top:9px; font-size:10px; opacity:.88}
+  .dot{width:5px; height:5px; border-radius:50%}
+
+  .chip{display:inline-block; font-size:8.5px; letter-spacing:.13em; text-transform:uppercase; font-weight:800;
+        padding:4px 9px; border-radius:999px}
+  .chip.deep{background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.55); color:#fff; backdrop-filter:blur(2px)}
+  .chip.deepDark{background:transparent; border:1px solid var(--accent); color:var(--accent)}
+
+  .bar{flex:none; height:60px; border-top:1px solid var(--rule); display:flex; align-items:center; justify-content:space-around;
+       font-size:9.5px; color:var(--faint); background:rgba(250,247,242,.94)}
+  .bar .it{display:flex; flex-direction:column; align-items:center; gap:3px}
+  .bar .it.on{color:var(--ink); font-weight:600}
+  .bar svg{width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:1.6}
+
+  .nav{padding:4px 18px 10px; display:flex; align-items:center; gap:8px; font-size:11px; color:var(--muted); flex:none}
+  .nav .back{font-size:15px; color:var(--ink)}
+  .detail{flex:1; overflow:hidden; padding:0 19px}
+  .dimg{width:100%; height:178px; object-fit:cover; border-radius:14px}
+  .dkick{font-size:9px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-top:14px}
+  .detail h2{font-family:var(--serif); font-size:23px; line-height:1.15; letter-spacing:-.015em; margin:7px 0 0; font-weight:600}
+  .byline{display:flex; align-items:center; gap:7px; margin-top:10px; font-size:10.5px; color:var(--faint)}
+  .pill{font-size:9px; letter-spacing:.07em; text-transform:uppercase; font-weight:700; padding:4px 8px; border-radius:999px}
+  .pill.part{background:#F4EEE2; color:var(--warn)}
+  .detail p{font-size:13.5px; line-height:1.58; margin:12px 0 0; color:#2A2620}
+  .action{margin-top:15px; background:var(--accent-soft); border-left:3px solid var(--accent); padding:11px 12px; border-radius:0 9px 9px 0}
+  .action .lbl{font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-bottom:4px}
+  .action p{font-size:12px; line-height:1.45; margin:0; color:#3A2A24}
+  .src{margin-top:15px; padding-top:10px; border-top:1px solid var(--rule)}
+  .src .lbl{font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--faint); margin-bottom:6px}
+  .srcRow{display:flex; align-items:baseline; gap:6px; font-size:10.5px; color:var(--muted); padding:2px 0}
+  .srcRow .t{width:4px; height:4px; border-radius:50%; background:var(--ok); flex:none; margin-top:4px}
+  .nextline{margin-top:13px; font-size:10.5px; color:var(--faint)}
+  .conf{margin-top:11px; background:#F7F3EC; border-radius:10px; padding:9px 11px}
+  .confTop{display:flex; align-items:center; gap:9px}
+  .segs{display:flex; gap:2px}
+  .segs i{width:9px; height:6px; border-radius:1.5px; background:#DDD5C7; display:block}
+  .segs i.on{background:var(--ok)}
+  .confLbl{font-size:10.5px; font-weight:700; color:#3A2A24}
+  .confNote{font-size:9.5px; color:var(--muted); margin-top:4px; line-height:1.4}
+  .tl{display:flex; align-items:center; gap:6px; margin-top:7px; font-size:9.5px; color:var(--ok); font-weight:600}
+  .tl .dot2{width:5px; height:5px; border-radius:50%; background:var(--ok); flex:none}
+  .facts{margin-top:13px; border-top:1px solid var(--rule); padding-top:9px}
+  .facts .lbl{font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--faint); margin-bottom:5px}
+  .fact{display:flex; gap:9px; padding:4px 0; border-top:1px solid #EFE9DF}
+  .fact:first-of-type{border-top:none}
+  .fact .k{width:62px; flex:none; font-size:8px; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); font-weight:700; padding-top:2px}
+  .fact .v{font-size:10.5px; line-height:1.3; color:#2A2620; text-transform:none; font-weight:400; letter-spacing:0}
+  .ctxRow{margin-top:14px; border-top:1px solid var(--rule); padding-top:11px}
+  .ctxLine{display:flex; align-items:flex-start; gap:8px}
+  .ctxTitle{font-family:var(--serif); font-size:12.5px; line-height:1.35; color:var(--ink); flex:1}
+  .ctxChev{font-size:16px; color:var(--faint); line-height:1.2}
+  .ctxMeta{font-size:9px; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); margin-top:4px; font-weight:700}
+  .ctxHead{display:flex; align-items:center; gap:9px; margin:2px 0 4px}
+  .chip.ctx{background:var(--ink); color:#FBF8F3}
+  .qa{padding:13px 0; border-top:1px solid var(--rule)}
+  .qa:first-of-type{border-top:none; padding-top:10px}
+  .qa .q{font-family:var(--serif); font-size:16px; font-weight:600; line-height:1.28; letter-spacing:-.005em}
+  .qa .a{font-size:12px; line-height:1.55; color:#3A352C; margin-top:5px}
+
+  .metaCard{border-radius:18px; border:1px solid var(--rule); background:#fff; padding:14px 14px 13px; margin-bottom:10px}
+  .metaCard .lbl{display:inline-block; font-size:8.5px; letter-spacing:.13em; text-transform:uppercase; font-weight:800;
+                 color:#fff; background:var(--accent); padding:4px 10px; border-radius:999px}
+  .metaCard h3{font-family:var(--serif); font-size:17.5px; line-height:1.18; margin:9px 0 0; font-weight:600; letter-spacing:-.01em}
+  .grid{display:flex; gap:8px; margin-top:10px}
+  .cell{flex:1; background:#F7F3EC; border-radius:9px; padding:8px 9px}
+  .cell .k{font-size:8px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .cell .v{font-size:12px; font-weight:650; margin-top:2px}
+  .cell .v small{font-weight:500; color:var(--muted); font-size:9.5px}
+  .note{font-size:10.5px; color:var(--muted); line-height:1.45; margin-top:8px}
+
+  .hoaxItem{border-top:1px solid var(--rule); padding:10px 0 10px}
+  .hoaxItem:first-of-type{border-top:none}
+  .claim{font-size:11.5px; font-weight:600; line-height:1.35; margin-top:6px}
+  .reason{font-size:10px; color:var(--muted); line-height:1.4; margin-top:3px}
+  .v{font-size:8px; letter-spacing:.1em; text-transform:uppercase; font-weight:800; padding:2px 6px; border-radius:999px}
+  .v.salah{background:#F6E6E3; color:var(--bad)}
+  .v.menyesatkan{background:#F7EEDD; color:var(--warn)}
+
+  .changeRow{display:flex; gap:9px; margin-top:9px}
+  .changeRow .when{width:50px; flex:none; font-size:8.5px; color:var(--faint); line-height:1.35; padding-top:1px}
+  .changeRow .q{font-size:11px; line-height:1.38; color:#2A2620}
+  .changeRow .q b{font-weight:650}
+  .changeCard{border:1px solid var(--rule); border-radius:20px; overflow:hidden; background:#fff; margin-bottom:12px}
+  .changeBody{padding:12px 14px 13px}
+  .changeBody .changeRow:first-child{margin-top:0}
+
+  .done{margin-top:12px; padding-top:12px; border-top:1px solid var(--rule); text-align:center}
+  .done .big{font-family:var(--serif); font-size:12.5px; color:var(--muted)}
+  .done .small{font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); margin-top:4px}
+  .xlink{margin-top:12px; display:flex; justify-content:space-between; align-items:center;
+         border:1px solid var(--rule); background:#fff; border-radius:11px; padding:11px 13px;
+         font-size:11.5px; color:var(--ink)}
+  .xlink span:last-child{color:var(--muted)}
+
+  /* deep dive */
+  .deepHead{display:flex; align-items:center; gap:8px; margin-bottom:9px}
+  .deepHead .t{font-size:9px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .deepTitle{font-family:var(--serif); font-size:26px; line-height:1.12; letter-spacing:-.018em; margin:10px 0 0; font-weight:600}
+  .dek{font-family:var(--serif); font-size:14px; line-height:1.45; color:var(--muted); margin-top:8px; font-style:italic}
+  .deepBody p{font-size:13px; line-height:1.62; margin:11px 0 0; color:#2A2620}
+  .stats{display:flex; gap:8px; margin-top:12px}
+  .stat{flex:1; border-top:2px solid var(--ink); padding-top:7px}
+  .stat .n{font-family:var(--serif); font-size:17px; font-weight:650; letter-spacing:-.01em}
+  .stat .l{font-size:8.5px; color:var(--muted); line-height:1.3; margin-top:2px}
+
+  /* lock screen */
+  .lock{height:100%; background:
+      radial-gradient(120% 80% at 70% 10%, #3E4A52 0%, #232A2E 42%, #14181A 100%);
+      color:#fff; padding:0 18px; display:flex; flex-direction:column}
+  .lock .clock{ text-align:center; margin-top:52px}
+  .lock .clock .d{font-size:12px; letter-spacing:.06em; opacity:.72}
+  .lock .clock .t{font-size:74px; line-height:1.02; font-weight:250; letter-spacing:-.03em}
+  .notif{margin-top:56px; background:rgba(250,247,242,.94); color:var(--ink); border-radius:18px; padding:13px 14px;
+         box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
+  .notif .top{display:flex; align-items:center; gap:9px}
+  .appicon{width:26px; height:26px; border-radius:7px; object-fit:cover; display:block}
+  .notif .app{font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--faint)}
+  .notif .when{margin-left:auto; font-size:10px; color:var(--faint)}
+  .notif .h{font-size:13px; font-weight:650; margin-top:8px}
+  .notif .b{font-size:12px; color:var(--muted); line-height:1.42; margin-top:3px}
+  .lock .hint{margin-top:auto; padding:18px 0 26px; text-align:center; font-size:11px; opacity:.55}
+</style>
+</head>
+<body>
+
+<!-- 01 · EDISI NASIONAL -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="eyebrow">Edisi Pagi</div>
+      <h1>Rabu, 11 November</h1>
+      <div class="sub">8 berita · ±5 menit + 1 bacaan panjang</div>
+      <div class="cov">Liputan Selasa, 10 November · 05.00–05.00</div>
+      <div class="tabs"><div class="tab on">Nasional</div><div class="tab">Sleman</div></div>
+    </div>
+    <div class="feed">
+      <div class="card" style="height:236px">
+        <img src="img/dpr.jpg" alt="" style="height:236px">
+        <div class="overlay"></div>
+        <div class="ctext">
+          <div class="kick">Nasional · kemarin 12.36</div>
+          <h2 style="font-size:20px; line-height:1.16">50 anggota DPR teken HMP soal ijazah Gibran</h2>
+          <div class="metaRow"><span class="dot" style="background:#E0B25A"></span>Terkonfirmasi sebagian · 4 sumber</div>
+        </div>
+      </div>
+
+      <div class="card" style="height:104px; margin-bottom:12px">
+        <img src="img/bodong.jpg" alt="" style="height:104px">
+        <div class="overlay"></div>
+        <div class="ctext" style="padding:11px 13px">
+          <div class="kick">Ekonomi</div>
+          <h2 style="font-size:15px; line-height:1.2">OJK hentikan 16 entitas investasi ilegal</h2>
+        </div>
+      </div>
+
+      <div class="card" style="height:132px; background:#1D1B17">
+        <img src="img/beras.jpg" alt="" style="height:132px; opacity:.62">
+        <div class="overlay" style="background:linear-gradient(90deg, rgba(20,18,15,.92) 0%, rgba(20,18,15,.55) 70%, rgba(20,18,15,.3) 100%)"></div>
+        <div class="ctext" style="padding:13px 14px">
+          <span class="chip deep">Mendalam · 7 menit</span>
+          <h2 style="font-size:17px; line-height:1.2; margin-top:8px">Kenapa beras masih mahal tiga minggu setelah janji SPHP</h2>
+        </div>
+      </div>
+
+      <div class="card" style="height:150px">
+        <img src="img/vape.jpg" alt="" style="height:150px">
+        <div class="overlay"></div>
+        <div class="ctext" style="padding:11px 13px">
+          <div class="kick">Nasional</div>
+          <h2 style="font-size:15px; line-height:1.2">MUI haramkan vape, tapi belum ada UU yang melarang</h2>
+        </div>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="it on"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/></svg>Edisi</div>
+      <div class="it"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l4 4"/></svg>Cari</div>
+      <div class="it"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg>Simpan</div>
+      <div class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>Atur</div>
+    </div>
+  </div></div>
+  <div class="cap">01 · Edisi nasional</div>
+</div>
+
+<!-- 02 · KARTU -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:42</span><span class="r">●●● ▮</span></div>
+    <div class="nav"><span class="back">‹</span> Nasional · kartu 1 dari 8</div>
+    <div class="detail">
+      <img class="dimg" src="img/dpr.jpg" alt="" style="height:186px">
+      <div class="dkick" style="margin-top:11px">Nasional · kemarin 12.36</div>
+      <h2>50 anggota DPR teken HMP soal ijazah Gibran</h2>
+      <div class="byline"><span class="pill part">Terkonfirmasi sebagian</span><span>4 sumber</span></div>
+
+      <div class="conf">
+        <div class="confTop">
+          <div class="segs"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+          <div class="confLbl">Kemungkinan besar</div>
+        </div>
+        <div class="confNote">4 media, 3 di antaranya independen · belum ada sumber primer</div>
+      </div>
+
+      <p>Mardani Ali Sera mengonfirmasi 50 anggota DPR menandatangani usulan Hak Menyatakan Pendapat terkait polemik ijazah Wapres Gibran. Angkanya bergerak dari 12 nama menjadi “50-an” dalam sehari.</p>
+      <p>Puan Maharani membenarkan dokumen sudah diterima pimpinan DPR dan berjanji menindaklanjuti setelah paripurna.</p>
+
+      <div class="action">
+        <div class="lbl">Untuk kamu</div>
+        <p>“Gibran sudah dimakzulkan” belum terjadi. HMP masih usulan.</p>
+      </div>
+
+      <div class="ctxRow">
+        <div class="ctxLine">
+          <div class="ctxTitle">Mengapa ijazah Gibran jadi polemik, dan apa itu HMP?</div>
+          <div class="ctxChev">›</div>
+        </div>
+        <div class="ctxMeta">4 pertanyaan · ±2 menit</div>
+      </div>
+    </div>
+  </div></div>
+  <div class="cap">02 · Kartu</div>
+</div>
+
+<!-- 03 · KONTEKS -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:43</span><span class="r">●●● ▮</span></div>
+    <div class="nav"><span class="back">‹</span> Nasional · kartu 1 dari 8</div>
+    <div class="detail">
+      <div class="ctxHead">
+        <span class="chip ctx">Konteks</span>
+        <span class="ctxMeta">4 pertanyaan · ±2 menit</span>
+      </div>
+
+      <div class="qa">
+        <div class="q">Mengapa ijazah Gibran jadi polemik?</div>
+        <div class="a">Dokumen pendidikan Gibran dipersoalkan sejak pencalonannya pada 2024, ketika syarat usia wakil presiden diperdebatkan. Polemik itu mencuat lagi pada 2026 setelah dokumen ijazahnya disorot dalam perkara di MK dan MA. Yang dipersoalkan bukan isi ijazah, melainkan keabsahan dan cara dokumen itu dilampirkan.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Apa itu HMP?</div>
+        <div class="a">Hak Menyatakan Pendapat adalah hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna. Jika diterima, DPR dapat meminta MPR menyidangkan pemberhentian presiden atau wakil presiden.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Siapa Puan Maharani?</div>
+        <div class="a">Ketua DPR RI periode 2024–2029, politikus PDI-P, dan putri Megawati Soekarnoputri. Sebagai ketua, ia menentukan apakah usulan HMP masuk agenda paripurna — karena itu pernyataannya kemarin menentukan arah cerita ini.</div>
+      </div>
+
+      <div class="qa">
+        <div class="q">Bagaimana wapres bisa diberhentikan?</div>
+        <div class="a">Tiga tahap: DPR mengajukan HMP, MPR menyidangkan, lalu keputusan diambil dalam rapat paripurna MPR dengan kuorum dan suara minimal dua pertiga. Prosesnya konstitusional dan panjang — bukan pemungutan suara sehari.</div>
+      </div>
+
+      <div class="src">
+        <div class="lbl">Sumber konteks</div>
+        <div class="srcRow"><span class="t"></span>DPR RI · dpr.go.id</div>
+        <div class="srcRow"><span class="t"></span>UUD 1945, Pasal 20A &amp; 7B</div>
+      </div>
+    </div>
+  </div></div>
+  <div class="cap">03 · Konteks</div>
+</div>
+
+<!-- 03 · MENDALAM -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:49</span><span class="r">●●● ▮</span></div>
+    <div class="nav"><span class="back">‹</span> Mendalam · kartu 3 dari 8</div>
+    <div class="detail">
+      <div class="deepHead">
+        <span class="chip deepDark">Mendalam</span>
+        <span class="t">7 menit · 3 minggu berjalan</span>
+      </div>
+      <h2 class="deepTitle" style="margin-top:2px">Kenapa beras masih mahal tiga minggu setelah janji SPHP</h2>
+      <div class="dek">Pemerintah menyiapkan satu juta ton. Harga di 84 daerah belum bergerak. Masalahnya bukan pasokan.</div>
+
+      <div class="stats">
+        <div class="stat"><div class="n">Rp13.100</div><div class="l">harga SPHP per kg</div></div>
+        <div class="stat"><div class="n">84</div><div class="l">daerah lonjakan harga</div></div>
+        <div class="stat"><div class="n">1 jt ton</div><div class="l">stok SPHP disiapkan</div></div>
+      </div>
+
+      <div class="deepBody">
+        <p>Bulog membuka dialog dengan pelaku usaha perberasan pekan ini. Dirut Ahmad Rizal Ramdhani menyebut pertemuannya masih informal, dan berencana mengumpulkan “para sepuh” sektor ini sebelum mengambil keputusan.</p>
+        <p>Di sisi lain, Komisi IV DPR menyoroti 84 daerah yang harga berasnya melonjak, dan Kompas menyebut El Niño sebagai salah satu penyebab. Harga SPHP sendiri ditetapkan Rp13.100 per kilogram.</p>
+        <p>Yang tidak muncul di berita harian: SPHP adalah operasi pasar, bukan penurunan harga. Selama pasokan swasta menahan stok, harga eceran bisa tetap tinggi meski gudang Bulog penuh.</p>
+      </div>
+
+      <div class="action" style="margin-top:14px">
+        <div class="lbl">Yang belum jelas</div>
+        <p>Kapan SPHP masuk pasar, dan berapa volume riil yang benar-benar disalurkan — bukan yang disiapkan.</p>
+      </div>
+
+      <div class="src">
+        <div class="lbl">Sumber · 7 artikel, 3 minggu</div>
+        <div class="srcRow"><span class="t"></span>CNN Indonesia · 10 Nov</div>
+        <div class="srcRow"><span class="t"></span>Kompas.com · 10 Nov</div>
+        <div class="srcRow"><span class="t"></span>ANTARA · 9 Nov</div>
+        <div class="srcRow"><span class="t"></span>InfoPublik · 9 Nov</div>
+      </div>
+    </div>
+  </div></div>
+  <div class="cap">04 · Mendalam</div>
+</div>
+
+<!-- 04 · META & PENUTUP -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:55</span><span class="r">●●● ▮</span></div>
+    <div class="nav"><span class="back">‹</span> Nasional · kartu 7 dari 8</div>
+    <div class="detail" style="padding-top:4px">
+      <div class="metaCard">
+        <span class="lbl">Yang luput</span>
+        <h3>Rp14,7 miliar untuk influencer, nol liputan</h3>
+        <div class="grid">
+          <div class="cell"><div class="k">Ramai di</div><div class="v">907 <small>upvote</small></div></div>
+          <div class="cell"><div class="k">Diliput</div><div class="v">0 → 1 <small>dari 12 media</small></div></div>
+        </div>
+        <div class="note">Sudut yang absen: siapa yang menandatangani kontrak, dan untuk kampanye apa.</div>
+        <div class="tl"><span class="dot2"></span>Tirto.id · kemarin 16.20 · liputan pertama</div>
+      </div>
+
+      <div class="metaCard">
+        <span class="lbl">Kabar yang beredar</span>
+        <h3>Sepuluh fact-check hari ini, semuanya politik</h3>
+        <div class="hoaxItem">
+          <span class="v salah">Salah</span>
+          <div class="claim">“Rekaman suara Prabowo hasil penyadapan”</div>
+          <div class="reason">Potongan wawancara tvOne 15 Sep 2014, menit 05.14–06.55.</div>
+        </div>
+        <div class="hoaxItem">
+          <span class="v menyesatkan">Menyesatkan</span>
+          <div class="claim">“Anies bertemu Menlu Singapura saat hubungan tegang 2026”</div>
+          <div class="reason">Pertemuan April 2024. Watermark TikTok asli masih menempel.</div>
+        </div>
+        <div class="note">Tiga dari sepuluh adalah rekaman lama yang diberi tanggal baru.</div>
+      </div>
+
+      <div class="done">
+        <div class="big">Selesai. Tidak ada berita lain hari ini.</div>
+        <div class="small">Edisi berikutnya 05.45</div>
+      </div>
+      <div class="xlink"><span>Edisi Sleman</span><span>4 berita →</span></div>
+    </div>
+  </div></div>
+  <div class="cap">05 · Meta & penutup</div>
+</div>
+
+<!-- 05 · EDISI LOKAL -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:44</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="eyebrow">Edisi Pagi</div>
+      <h1>Sleman</h1>
+      <div class="sub">4 berita · ±3 menit</div>
+      <div class="cov">Liputan Selasa, 10 November</div>
+      <div class="tabs"><div class="tab">Nasional</div><div class="tab on">Sleman</div></div>
+    </div>
+    <div class="feed">
+      <div class="changeCard">
+        <div class="card" style="margin:0; border-radius:0; background:#111">
+          <img src="img/pajero.jpg" alt="" style="height:168px">
+          <div class="overlay"></div>
+          <div class="ctext" style="padding:13px 14px">
+            <div class="kick">Berubah · Sleman · Depok</div>
+            <h2 style="font-size:17.5px; line-height:1.18">Dari “bang jago” jadi korban dalam 17 jam</h2>
+          </div>
+        </div>
+        <div class="changeBody">
+          <div class="changeRow">
+            <div class="when">09 Nov<br>19.36</div>
+            <div class="q">“<b>Bang Jago</b> Dihajar Warga”</div>
+          </div>
+          <div class="changeRow">
+            <div class="when">10 Nov<br>12.36</div>
+            <div class="q">“<b>Korban</b> penganiayaan, mahasiswa asal Tebo”</div>
+          </div>
+          <div class="note">Klaim “mabuk” masih keterangan warga, belum hasil pemeriksaan.</div>
+        </div>
+      </div>
+
+      <div class="card" style="height:118px">
+        <img src="img/babarsari.jpg" alt="" style="height:118px">
+        <div class="overlay"></div>
+        <div class="ctext" style="padding:12px 13px">
+          <div class="kick">Sleman · Babarsari</div>
+          <h2 style="font-size:15px; line-height:1.2">Dua pria bersajam serang polisi, satu jadi tersangka</h2>
+        </div>
+      </div>
+
+      <div class="done">
+        <div class="big">Selesai. 4 berita.</div>
+        <div class="small">Edisi berikutnya 05.45</div>
+      </div>
+      <div class="xlink"><span>Edisi Nasional</span><span>8 berita →</span></div>
+    </div>
+    <div class="bar">
+      <div class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/></svg>Edisi</div>
+      <div class="it"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l4 4"/></svg>Cari</div>
+      <div class="it"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg>Simpan</div>
+      <div class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>Atur</div>
+    </div>
+  </div></div>
+  <div class="cap">06 · Edisi Sleman</div>
+</div>
+
+<!-- 06 · NOTIFIKASI -->
+<div class="col">
+  <div class="phone"><div class="screen">
+    <div class="lock">
+      <div class="sb" style="color:#fff; padding:0 6px"><span>5:45</span><span class="r">●●● ▮</span></div>
+      <div class="clock">
+        <div class="d">Rabu, 11 November</div>
+        <div class="t">5:45</div>
+      </div>
+      <div class="notif">
+        <div class="top">
+          <img class="appicon" src="icons/icon-192.png" alt="">
+          <div class="app">Edisi Pagi</div>
+          <div class="when">sekarang</div>
+        </div>
+        <div class="h">Nasional 8 · Sleman 4</div>
+        <div class="b">1 pembaruan sejak terakhir kamu baca — kasus Pajero: polisi menyebut korban, bukan pelaku.</div>
+      </div>
+    </div>
+  </div></div>
+  <div class="cap">07 · Notifikasi</div>
+</div>
+
+</body>
+</html>

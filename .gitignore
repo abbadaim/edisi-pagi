@@ -1,0 +1,14 @@
+node_modules/
+local.db
+local.db-*
+*.cpuprofile
+.env
+.env.*
+!.env.example
+
+# artefak build
+dist/
+
+# state SQLite: WAL tidak perlu di-commit
+data/state/*.db-wal
+data/state/*.db-shm

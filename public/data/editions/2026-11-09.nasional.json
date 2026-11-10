@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-09",
+  "scope": "nasional",
+  "published_at": "2026-11-09T05:00:00+07:00",
+  "coverage": {
+    "from": "2026-11-08T05:00:00+07:00",
+    "to": "2026-11-09T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-09T05:00:00+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 2,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 2,
+  "truncated_reason": "Hanya 2 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_kronologi_heli_bnpb_jatuh_di_s_84be",
+      "angle": "Heli BNPB Jatuh di Sungai Barito saat Ambil Air, Satu Awak Dicari",
+      "kicker": "Nasional",
+      "title": "Heli BNPB Jatuh di Sungai Barito saat Ambil Air, Satu Awak Dicari",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dalam kecelakaan heli BNPB di Sungai Barito, dua dari tiga awak selamat dan satu masih dicari.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-09T05:00:00+07:00"
+      },
+      "body": [
+        "Heli BNPB jatuh di Sungai Barito saat menjalankan misi pemadaman karhutla. Heli itu hilang kendali ketika hendak mengambil air. Tiga awak berada di dalamnya: dua pilot berhasil diselamatkan, satu awak masih dicari.",
+        "Pencarian satu awak yang belum ditemukan masih berlangsung, sementara dua awak lainnya sudah selamat."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran BNPB?",
+          "a": "Badan Nasional Penanggulangan Bencana mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah.",
+          "source": {
+            "outlet": "BNPB",
+            "url": "https://bnpb.go.id/"
+          }
+        },
+        {
+          "q": "Siapa yang berwenang menangani bencana di daerah?",
+          "a": "BNPB di tingkat nasional dan BPBD di daerah, sedangkan peringatan dini gempa dan cuaca berasal dari BMKG.",
+          "source": {
+            "outlet": "BNPB",
+            "url": "https://bnpb.go.id/"
+          }
+        },
+        {
+          "q": "Di mana letak Sungai Barito?",
+          "a": "Sungai Barito berhulu di Pegunungan Muller, Kalimantan Tengah, dan alirannya bertemu muara Sungai Negara di Kalimantan Selatan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Sungai_Barito"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi BNPB untuk perkembangan pencarian awak heli yang belum ditemukan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kronologi-heli-bnpb-jatuh-di-sungai-barito-saat-misi-padamkan-karhutla-idzc",
+          "published_at": "2026-11-08T13:40:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-09T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 9,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-08",
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_cpns_2026_dibuka_november_keme_719f",
+      "angle": "Seleksi CPNS 2026 dibuka November dengan formasi prioritas Polisi Hutan dan guru.",
+      "kicker": "Nasional",
+      "title": "CPNS 2026 Dibuka November, Formasi Prioritas Polisi Hutan dan Guru",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pendaftaran CPNS 2026 dibuka pada November 2026 dengan formasi prioritas antara lain Polisi Hutan dan guru.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-09T05:00:00+07:00"
+      },
+      "body": [
+        "Pemerintah akan membuka pendaftaran CPNS 2026 pada November. Kesepakatan pemerintah bersama DPR RI pada 6 November 2026 menetapkan sejumlah formasi yang menjadi prioritas dalam seleksi tahun ini.",
+        "Formasi prioritas yang disebut antara lain Polisi Hutan dan guru. Rincian formasi dan jadwal resmi diumumkan KemenPAN-RB, sementara pendaftaran dilakukan melalui SSCASN."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu CPNS dan lewat mana pendaftarannya dilakukan?",
+          "a": "CPNS adalah Calon Pegawai Negeri Sipil, jalur seleksi nasional untuk menjadi aparatur sipil negara. Formasi dan jadwal diumumkan KemenPAN-RB, pendaftaran lewat SSCASN.",
+          "source": {
+            "outlet": "KemenPAN-RB",
+            "url": "https://www.menpan.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud pegawai negeri sipil sebagai sebuah profesi?",
+          "a": "Pegawai negeri adalah orang yang dipekerjakan dengan syarat tertentu oleh lembaga pemerintah untuk menduduki jabatan pemerintahan dan memberi pelayanan publik. Jabatan ini ditempuh melalui jenjang karier, bukan melalui pemilihan umum.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pegawai_negeri_sipil"
+          }
+        },
+        {
+          "q": "Mengapa kesepakatan pemerintah dan DPR penting dalam kebijakan publik?",
+          "a": "Kebijakan publik adalah keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau laman resmi KemenPAN-RB dan cek jadwal pendaftaran CPNS 2026 melalui SSCASN sebelum membuka berkas.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/cpns-2026-dibuka-november-kemenpanrb-ungkap-sejumlah-formasinya-idy6",
+          "published_at": "2026-11-08T11:35:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-09T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261108122320-532-1424631/pendaftaran-cpns-2026-dibuka-november-ini-bocoran-formasinya",
+          "published_at": "2026-11-08T13:16:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-09T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 19,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-08",
+      "changes": []
+    }
+  ]
+}

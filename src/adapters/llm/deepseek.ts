@@ -1,0 +1,118 @@
+import type { JsonRequest, LlmAdapter, Pricing, TextRequest, Usage } from "./types.ts";
+
+const BASE_URL = "https://api.deepseek.com";
+
+export interface DeepSeekOptions {
+  apiKey: string;
+  baseUrl?: string;
+  /** Dipakai hanya untuk menghitung cost_usd. Tanpa ini, biaya tidak dicatat. */
+  pricing?: Record<string, Pricing>;
+  maxRetries?: number;
+  fetchImpl?: typeof fetch;
+}
+
+interface ChatResponse {
+  choices?: Array<{ message?: { content?: string } }>;
+  usage?: { prompt_tokens?: number; completion_tokens?: number };
+}
+
+export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
+  if (!opts.apiKey) throw new Error("DEEPSEEK_API_KEY kosong");
+  const baseUrl = opts.baseUrl ?? BASE_URL;
+  const fetchImpl = opts.fetchImpl ?? fetch;
+  const maxRetries = opts.maxRetries ?? 2;
+
+  async function chat(body: Record<string, unknown>): Promise<{ content: string; usage: Usage }> {
+    let lastErr: unknown;
+
+    for (let attempt = 0; attempt <= maxRetries; attempt++) {
+      try {
+        const res = await fetchImpl(`${baseUrl}/chat/completions`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: `Bearer ${opts.apiKey}`,
+          },
+          body: JSON.stringify(body),
+        });
+
+        if (res.status >= 500 || res.status === 429) {
+          throw new Error(`HTTP ${res.status}`);
+        }
+        if (!res.ok) {
+          const text = await res.text().catch(() => "");
+          throw new Error(`DeepSeek ${res.status}: ${text.slice(0, 200)}`);
+        }
+
+        const json = (await res.json()) as ChatResponse;
+        const content = json.choices?.[0]?.message?.content ?? "";
+        const model = String(body.model);
+        const price = opts.pricing?.[model];
+
+        const usage: Usage = {
+          tokens_in: json.usage?.prompt_tokens ?? 0,
+          tokens_out: json.usage?.completion_tokens ?? 0,
+        };
+        if (price) {
+          usage.cost_usd =
+            (usage.tokens_in / 1_000_000) * price.input +
+            (usage.tokens_out / 1_000_000) * price.output;
+        }
+
+        return { content, usage };
+      } catch (e) {
+        lastErr = e;
+        if (attempt === maxRetries) break;
+        await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+      }
+    }
+
+    throw new Error(
+      `DeepSeek gagal setelah ${maxRetries + 1} percobaan: ${
+        lastErr instanceof Error ? lastErr.message : String(lastErr)
+      }`,
+    );
+  }
+
+  return {
+    name: "deepseek",
+
+    async json<T>(req: JsonRequest) {
+      const { content, usage } = await chat({
+        model: req.model,
+        messages: [
+          { role: "system", content: `${req.system}\n\nBalas HANYA dengan JSON valid.` },
+          { role: "user", content: req.user },
+        ],
+        response_format: { type: "json_object" },
+        max_tokens: req.maxTokens ?? 4096,
+        temperature: req.temperature ?? 0.2,
+        stream: false,
+      });
+
+      let data: T;
+      try {
+        data = JSON.parse(content) as T;
+      } catch {
+        throw new Error(`respons bukan JSON valid: ${content.slice(0, 200)}`);
+      }
+      return { data, usage };
+    },
+
+    async text(req: TextRequest) {
+      const { content, usage } = await chat({
+        model: req.model,
+        messages: [
+          { role: "system", content: req.system },
+          { role: "user", content: req.user },
+        ],
+        max_tokens: req.maxTokens ?? 2048,
+        temperature: req.temperature ?? 0.4,
+        stream: false,
+      });
+      return { text: content, usage };
+    },
+
+    // DeepSeek tidak punya endpoint embedding — sengaja tidak diimplementasikan.
+  };
+}

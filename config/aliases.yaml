@@ -1,0 +1,74 @@
+# Gazetter alias. Hanya bagian `active` yang dipakai pipeline (CLUSTERING.md §10).
+# Setiap entri: kanonik -> daftar nama permukaan.
+# Usulan otomatis masuk ke tabel alias_suggestions, bukan ke berkas ini.
+
+active:
+  jokowi:
+    - Joko Widodo
+    - Pakde Jokowi
+    - Presiden Jokowi
+    - Jokowi Widodo
+  prabowo:
+    - Prabowo Subianto
+    - Presiden Prabowo
+    - Pak Prabowo
+  gibran:
+    - Gibran Rakabuming
+    - Gibran Rakabuming Raka
+    - Wapres Gibran
+  puan:
+    - Puan Maharani
+  mardani:
+    - Mardani Ali Sera
+  ahrie:
+    - Ahrie Sonta
+    - Irjen Ahrie
+  listyo:
+    - Listyo Sigit
+    - Listyo Sigit Prabowo
+  bahlil:
+    - Bahlil Lahadalia
+
+  hmp:
+    - Hak Menyatakan Pendapat
+    - Hak Menyatakan Pendapat
+  dpr: ["Dewan Perwakilan Rakyat"]
+  dprd: ["Dewan Perwakilan Rakyat Daerah"]
+  kpk: ["Komisi Pemberantasan Korupsi"]
+  mui: ["Majelis Ulama Indonesia"]
+  ojk: ["Otoritas Jasa Keuangan"]
+  bmkg: ["Badan Meteorologi, Klimatologi, dan Geofisika"]
+  bnpb: ["Badan Nasional Penanggulangan Bencana"]
+  sphp:
+    - Stabilisasi Pasokan dan Harga Pangan
+  mbg:
+    - Makan Bergizi Gratis
+  pilgub:
+    - Pemilihan Gubernur
+    - Pilkada Gubernur
+  pilkada:
+    - Pemilihan Kepala Daerah
+  blt:
+    - Bantuan Langsung Tunai
+  pkh:
+    - Program Keluarga Harapan
+  bpjs:
+    - Badan Penyelenggara Jaminan Sosial
+  ppn: ["Pajak Pertambahan Nilai"]
+  pertamina: []
+  bulog:
+    - Perum Bulog
+  icw:
+    - Indonesia Corruption Watch
+  lpsk:
+    - Lembaga Perlindungan Saksi dan Korban
+  polri: ["Kepolisian Negara Republik Indonesia"]
+  propam:
+    - Divisi Propam
+  turnbackhoax:
+    - TurnBackHoax
+    - Mafindo
+  gejayan:
+    - Jalan Affandi
+    - Mrican
+  babarsari: []

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edisi Pagi</title>
+<meta name="theme-color" content="#17150F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon-180.png">
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header id="top">
+  <div class="eyebrow">Edisi Pagi</div>
+  <h1 id="dateline">Memuat…</h1>
+  <div class="sub" id="subline"></div>
+  <div class="cov" id="covline"></div>
+  <nav id="tabs" class="tabs" hidden></nav>
+</header>
+
+<main id="feed"></main>
+
+<div id="empty" class="empty" hidden>
+  <p>Belum ada edisi.</p>
+  <p class="muted">Jalankan pipeline, lalu muat ulang.</p>
+</div>
+
+<section id="detail" class="detail" hidden>
+  <div class="nav"><button id="back" class="back" aria-label="Kembali">‹</button><span id="navlabel"></span></div>
+  <article id="detailbody"></article>
+</section>
+
+<details id="notif" class="notifBox">
+  <summary>Notifikasi</summary>
+  <div id="notifBody" class="notifBody"></div>
+</details>
+
+<footer id="bottom" class="bar" hidden>
+  <button class="it on" data-scope="nasional"><span>Edisi</span></button>
+  <button class="it" id="toggle-detail" hidden><span>Kartu</span></button>
+</footer>
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>

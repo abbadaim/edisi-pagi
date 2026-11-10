@@ -1,0 +1,848 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://edisipagi.local/schema/edition.schema.json",
+  "title": "Edisi",
+  "description": "Kontrak pipeline -> aplikasi. Lihat SCHEMA.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "edition_id",
+    "scope",
+    "published_at",
+    "coverage",
+    "generated_at",
+    "locale",
+    "place",
+    "reading_time_min",
+    "generated_by",
+    "card_count",
+    "truncated_reason",
+    "cards"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "edition_id": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "scope": {
+      "enum": [
+        "nasional",
+        "lokal",
+        "mingguan"
+      ]
+    },
+    "published_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "generated_at": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to"
+      ],
+      "properties": {
+        "from": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "to": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "locale": {
+      "type": "string"
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kabupaten",
+        "province"
+      ],
+      "properties": {
+        "kabupaten": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        }
+      }
+    },
+    "reading_time_min": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 60
+    },
+    "generated_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adjudicate",
+        "write",
+        "verify",
+        "embed"
+      ],
+      "properties": {
+        "adjudicate": {
+          "$ref": "#/$defs/modelRef"
+        },
+        "write": {
+          "$ref": "#/$defs/modelRef"
+        },
+        "verify": {
+          "$ref": "#/$defs/modelRef"
+        },
+        "embed": {
+          "$ref": "#/$defs/modelRef"
+        }
+      }
+    },
+    "card_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+    "truncated_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cards": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/card"
+      }
+    }
+  },
+  "$defs": {
+    "timestamp": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}[+-]\\d{2}:\\d{2}$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "modelRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "model"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outlet",
+        "url",
+        "tier",
+        "accessed_at"
+      ],
+      "properties": {
+        "outlet": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        },
+        "published_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tier": {
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "accessed_at": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "from",
+        "to",
+        "at",
+        "basis"
+      ],
+      "properties": {
+        "field": {
+          "enum": [
+            "status",
+            "label",
+            "number",
+            "title",
+            "scope"
+          ]
+        },
+        "from": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        },
+        "to": {
+          "type": [
+            "string",
+            "number"
+          ]
+        },
+        "at": {
+          "$ref": "#/$defs/timestamp"
+        },
+        "basis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "outlet",
+            "url"
+          ],
+          "properties": {
+            "outlet": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "pattern": "^https?://"
+            }
+          }
+        }
+      }
+    },
+    "truth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim",
+        "status",
+        "confidence",
+        "band",
+        "basis",
+        "gaps",
+        "assessed_at"
+      ],
+      "properties": {
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "terkonfirmasi",
+            "sebagian",
+            "belum",
+            "dibantah"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "band": {
+          "enum": [
+            "hampir_pasti",
+            "kemungkinan_besar",
+            "belum_pasti",
+            "diragukan",
+            "kemungkinan_tidak"
+          ]
+        },
+        "basis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strongest",
+            "primary",
+            "tier2",
+            "independent_outlets",
+            "contradicting"
+          ],
+          "properties": {
+            "strongest": {
+              "enum": [
+                "primary_confirms",
+                "two_independent_tier2",
+                "one_tier2",
+                "tier3_only",
+                "primary_contradicts"
+              ]
+            },
+            "primary": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "tier2": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "independent_outlets": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "contradicting": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "would_change_if": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assessed_at": {
+          "$ref": "#/$defs/timestamp"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "credit",
+        "alt"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alt": {
+          "type": "string"
+        },
+        "fallback": {
+          "type": "boolean"
+        }
+      }
+    },
+    "card": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "type",
+        "topic_id",
+        "angle",
+        "kicker",
+        "title",
+        "status",
+        "truth",
+        "body",
+        "action",
+        "image",
+        "sources",
+        "revision",
+        "first_seen",
+        "previous_edition",
+        "changes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^c[1-8]$"
+        },
+        "type": {
+          "enum": [
+            "news",
+            "deep_dive",
+            "hoax_roundup",
+            "good_news",
+            "gap",
+            "change",
+            "debate",
+            "misread"
+          ]
+        },
+        "topic_id": {
+          "type": "string",
+          "pattern": "^t_[a-z0-9_]{2,48}$"
+        },
+        "angle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 90
+        },
+        "kicker": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 70
+        },
+        "status": {
+          "enum": [
+            "terkonfirmasi",
+            "sebagian",
+            "belum",
+            "dibantah"
+          ]
+        },
+        "truth": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/truth"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "body": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "maxLength": 480
+          }
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "image": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/image"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "first_seen": {
+          "$ref": "#/$defs/date"
+        },
+        "previous_edition": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/change"
+          }
+        },
+        "place": {
+          "enum": [
+            "nasional",
+            "lokal"
+          ]
+        },
+        "explain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "q",
+              "a",
+              "source"
+            ],
+            "properties": {
+              "q": {
+                "type": "string",
+                "minLength": 8,
+                "maxLength": 90,
+                "pattern": "\\?$"
+              },
+              "a": {
+                "type": "string",
+                "minLength": 40,
+                "maxLength": 420
+              },
+              "source": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "outlet",
+                  "url"
+                ],
+                "properties": {
+                  "outlet": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "url": {
+                    "type": "string",
+                    "pattern": "^https?://"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "news"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "place"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "good_news"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "place"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "deep_dive"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "dek",
+              "stats",
+              "optional",
+              "read_min"
+            ],
+            "properties": {
+              "dek": {
+                "type": "string",
+                "maxLength": 160
+              },
+              "optional": {
+                "const": true
+              },
+              "read_min": {
+                "type": "integer",
+                "minimum": 4,
+                "maximum": 8
+              },
+              "stats": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 3,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "label"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "maxLength": 12
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "hoax_roundup"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "items"
+            ],
+            "properties": {
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "claim",
+                    "verdict",
+                    "reason",
+                    "outlet",
+                    "url"
+                  ],
+                  "properties": {
+                    "claim": {
+                      "type": "string",
+                      "maxLength": 140
+                    },
+                    "verdict": {
+                      "enum": [
+                        "salah",
+                        "parodi",
+                        "menyesatkan",
+                        "konteks_hilang"
+                      ]
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 10
+                    },
+                    "outlet": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https?://"
+                    }
+                  }
+                }
+              },
+              "pattern": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "gap"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "social",
+              "coverage",
+              "gap_rank",
+              "absent_angle",
+              "first_detected",
+              "days_watched",
+              "state",
+              "coverage_timeline"
+            ],
+            "properties": {
+              "gap_rank": {
+                "type": "integer"
+              },
+              "absent_angle": {
+                "type": "string",
+                "minLength": 1
+              },
+              "days_watched": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 14
+              },
+              "state": {
+                "enum": [
+                  "luput",
+                  "mulai_diliput",
+                  "ditutup"
+                ]
+              },
+              "first_detected": {
+                "$ref": "#/$defs/timestamp"
+              },
+              "coverage_timeline": {
+                "type": "array",
+                "maxItems": 5,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "at",
+                    "outlet",
+                    "url"
+                  ],
+                  "properties": {
+                    "at": {
+                      "$ref": "#/$defs/timestamp"
+                    },
+                    "outlet": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https?://"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "change"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "before",
+              "after",
+              "what_changed",
+              "what_unknown"
+            ],
+            "properties": {
+              "what_changed": {
+                "type": "string",
+                "minLength": 1
+              },
+              "what_unknown": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "debate"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "volume",
+              "tone",
+              "quotes",
+              "comparison",
+              "reading"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "misread"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "claim",
+              "reality",
+              "missing",
+              "trigger"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

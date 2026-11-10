@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-10T17:16:45+07:00",
+  "latest": "2026-11-10",
+  "retention": {
+    "years": 2,
+    "oldest": "2026-11-09"
+  },
+  "editions": [
+    {
+      "edition_id": "2026-11-10",
+      "scope": "mingguan",
+      "published_at": "2026-11-10T05:00:00+07:00",
+      "card_count": 5,
+      "reading_time_min": 3,
+      "path": "/data/editions/2026-11-10.mingguan.json"
+    },
+    {
+      "edition_id": "2026-11-10",
+      "scope": "nasional",
+      "published_at": "2026-11-10T05:00:00+07:00",
+      "card_count": 8,
+      "reading_time_min": 4,
+      "path": "/data/editions/2026-11-10.nasional.json"
+    },
+    {
+      "edition_id": "2026-11-09",
+      "scope": "nasional",
+      "published_at": "2026-11-09T05:00:00+07:00",
+      "card_count": 2,
+      "reading_time_min": 2,
+      "path": "/data/editions/2026-11-09.nasional.json"
+    }
+  ]
+}

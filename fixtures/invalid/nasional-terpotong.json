@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-11",
+  "scope": "nasional",
+  "published_at": "2026-11-11T05:45:00+07:00",
+  "coverage": {
+    "from": "2026-11-10T05:00:00+07:00",
+    "to": "2026-11-11T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-11T05:38:12+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 5,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "verify": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    "embed": {
+      "provider": "local",
+      "model": "multilingual-e5-small"
+    }
+  },
+  "card_count": 3,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_gibran_hmp",
+      "angle": "50 anggota DPR menandatangani usulan",
+      "kicker": "Nasional",
+      "title": "50 anggota DPR teken HMP soal ijazah Gibran",
+      "status": "sebagian",
+      "truth": {
+        "claim": "50 anggota DPR telah menandatangani usulan Hak Menyatakan Pendapat",
+        "status": "sebagian",
+        "confidence": 0.75,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [
+          "Belum ada daftar nama resmi yang dipublikasikan DPR"
+        ],
+        "would_change_if": "DPR mempublikasikan daftar penandatangan",
+        "assessed_at": "2026-11-11T05:21:00+07:00"
+      },
+      "body": [
+        "Mardani Ali Sera mengonfirmasi 50 anggota DPR telah menandatangani usulan Hak Menyatakan Pendapat terkait polemik ijazah Wapres Gibran. Angkanya bergerak cepat: dokumen yang beredar awalnya memuat 12 nama, lalu “lebih dari 25”, dan siang itu “50-an”.",
+        "Puan Maharani membenarkan dokumen sudah diterima pimpinan DPR dan berjanji menindaklanjuti setelah paripurna."
+      ],
+      "action": "Kalau ada yang bilang “Gibran sudah dimakzulkan”, itu belum terjadi. HMP masih usulan.",
+      "image": {
+        "url": "/assets/fallback/policy.webp",
+        "credit": null,
+        "alt": "Ilustrasi kebijakan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "detikcom",
+          "url": "https://news.detik.com/berita/d-8746364/sudah-50-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran",
+          "published_at": "2026-11-10T12:34:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:10:00+07:00"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110110329-32-1425304/puluhan-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran",
+          "published_at": "2026-11-10T11:19:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:11:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/soal-isu-gibran-mundur-puan-belum-ada-apa-apa-masih-wapres-idCz",
+          "published_at": "2026-11-10T11:55:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:12:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-10",
+      "changes": [
+        {
+          "field": "number",
+          "from": 25,
+          "to": 50,
+          "at": "2026-11-10T12:34:00+07:00",
+          "basis": {
+            "outlet": "detikcom",
+            "url": "https://news.detik.com/berita/d-8746364/sudah-50-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "k": "apa",
+          "v": "Usulan HMP atas ijazah Wapres"
+        },
+        {
+          "k": "siapa",
+          "v": "50 anggota DPR; Puan Maharani"
+        },
+        {
+          "k": "kapan",
+          "v": "10 Nov 2026, 12.34 WIB"
+        },
+        {
+          "k": "di_mana",
+          "v": "Gedung DPR, Senayan"
+        },
+        {
+          "k": "kenapa",
+          "v": "Desakan lintas fraksi"
+        },
+        {
+          "k": "bagaimana",
+          "v": "Ditandatangani 9 Nov malam"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_beras_sphp",
+      "angle": "Bulog buka dialog, harga belum turun",
+      "kicker": "Ekonomi",
+      "title": "Harga beras belum turun meski 1 juta ton SPHP disiapkan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemerintah menyiapkan 1 juta ton beras SPHP dengan harga Rp13.100 per kg",
+        "status": "sebagian",
+        "confidence": 0.7,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [
+          "Volume yang benar-benar disalurkan belum diumumkan"
+        ],
+        "would_change_if": "Bulog merilis realisasi penyaluran",
+        "assessed_at": "2026-11-11T05:24:00+07:00"
+      },
+      "body": [
+        "Dirut Bulog Ahmad Rizal Ramdhani membuka dialog informal dengan pelaku usaha perberasan dan berencana mengumpulkan “para sepuh” sektor ini.",
+        "Pemerintah menyiapkan satu juta ton beras SPHP. Harga SPHP ditetapkan Rp13.100 per kilogram."
+      ],
+      "action": "Rp13.100 adalah patokan harga SPHP. Kalau ada “bantuan beras” yang minta transfer biaya kirim, itu scam.",
+      "image": {
+        "url": "/assets/fallback/economy.webp",
+        "credit": null,
+        "alt": "Ilustrasi ekonomi",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110115640-92-1425325/harga-beras-masih-mahal-bos-bulog-siapkan-strategi-ini",
+          "published_at": "2026-11-10T12:31:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:15:00+07:00"
+        },
+        {
+          "outlet": "ANTARA",
+          "url": "https://www.antaranews.com/video/5843527/pemerintah-siapkan-1-juta-ton-beras-sphp-stabilkan-harga-pasar",
+          "published_at": "2026-11-10T12:53:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:16:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": [],
+      "facts": [
+        {
+          "k": "apa",
+          "v": "Kesiapan 1 juta ton beras SPHP"
+        },
+        {
+          "k": "siapa",
+          "v": "Bulog; Dirut Ahmad Rizal Ramdhani"
+        },
+        {
+          "k": "kapan",
+          "v": "10 Nov 2026"
+        },
+        {
+          "k": "di_mana",
+          "v": "Jakarta"
+        },
+        {
+          "k": "kenapa",
+          "v": "Harga eceran belum turun"
+        },
+        {
+          "k": "bagaimana",
+          "v": "Dialog dengan pelaku usaha perberasan"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_penyadapan_prabowo",
+      "angle": "Tiga minggu, empat peristiwa",
+      "kicker": "Mendalam",
+      "title": "Siapa yang menyadap siapa",
+      "status": "sebagian",
+      "truth": null,
+      "dek": "Kasus penyadapan presiden bergerak dari gawai ke etika, lalu ke politik. Yang belum ada: siapa yang menyuruh.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "1",
+          "label": "jenderal disidang etik"
+        },
+        {
+          "value": "6",
+          "label": "saksi minta perlindungan"
+        },
+        {
+          "value": "3",
+          "label": "pekan berjalan"
+        }
+      ],
+      "body": [
+        "Divisi Propam Polri menggelar sidang etik terhadap Irjen Ahrie Sonta, mantan Kadivkum Polri. Sejumlah media menyebutnya berstatus tersangka; status resminya belum dikonfirmasi ke sumber primer.",
+        "Dalam tiga hari terakhir kasus ini bercabang tiga arah: Puan Maharani menyinggung dugaan penyadapan ilegal dalam pidato paripurna, Golkar melayangkan somasi kepada Said Didu dan Sri Rajasa, dan LPSK mendalami dugaan ancaman terhadap enam saksi.",
+        "Yang belum muncul di pemberitaan harian: rangkaian ini bergerak dari perangkat ke institusi. Setiap langkah menjawab pertanyaan teknis, tetapi menambah pertanyaan politik."
+      ],
+      "action": "Kalau kamu melihat klip “rekaman Prabowo”, cek dulu tanggalnya — potongan tvOne 2014 masih berputar.",
+      "image": {
+        "url": "/assets/fallback/safety.webp",
+        "credit": null,
+        "alt": "Ilustrasi keamanan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
+          "published_at": "2026-11-10T11:36:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:18:00+07:00"
+        },
+        {
+          "outlet": "detikcom",
+          "url": "https://news.detik.com/berita/d-8746327/lpsk-dalami-dugaan-ancaman-ke-6-saksi-kasus-penyadapan-presiden-prabowo",
+          "published_at": "2026-11-10T12:09:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:19:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
+          "published_at": "2026-11-10T11:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:20:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/bahlil-dikaitkan-kasus-penyadapan-golkar-somasi-said-didu-idCC",
+          "published_at": "2026-11-10T12:12:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:21:00+07:00"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110104104-32-1425293/rapat-paripurna-dpr-puan-singgung-kasus-penyadapan-ilegal-ke-prabowo",
+          "published_at": "2026-11-10T11:04:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:22:00+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-10-21",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}
