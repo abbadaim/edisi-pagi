@@ -120,7 +120,15 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
         stream: false,
       });
 
-      const data = parseJsonLoose(content) as T;
+      let data: T;
+      try {
+        data = parseJsonLoose(content) as T;
+      } catch (e) {
+        const tail = content.trim().slice(-60).replace(/\s+/g, " ");
+        throw new Error(
+          `${(e as Error).message} [finish=${choice?.finish_reason ?? "?"}, akhir="${tail}"]`,
+        );
+      }
       return { data, usage };
     },
 
