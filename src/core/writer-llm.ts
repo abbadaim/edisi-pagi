@@ -247,7 +247,10 @@ export async function writeCardWithLlm(
 ): Promise<Card | null> {
   const candidates =
     deps.candidates ?? (await backgroundCandidates(ctx.topic, deps.glossary, 4, clusterText(ctx.cluster)));
-  if (candidates.length < 2) return null;
+  if (candidates.length < 2) {
+    console.log(`  ! tulis: kandidat konteks hanya ${candidates.length} untuk "${ctx.topic.title.slice(0, 40)}"`);
+    return null;
+  }
 
   const { system, user } = buildWriterPrompt(ctx, candidates);
   const articleTitles = ctx.cluster.articles.map((a) => a.title);
@@ -288,7 +291,10 @@ export async function writeCardWithLlm(
     if (!best || card.body.join(" ").length > best.body.join(" ").length) best = card;
   }
 
-  if (!best) return null;
+  if (!best) {
+    console.log(`  ! tulis: hasil model ditolak untuk "${ctx.topic.title.slice(0, 40)}"`);
+    return null;
+  }
   const card = best;
 
   const truth = computeTruth(
