@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T18:44:34+07:00",
+  "generated_at": "2026-11-10T18:47:19+07:00",
   "latest": "2026-11-10",
   "retention": {
     "years": 2,
@@ -18,7 +18,7 @@
     {
       "edition_id": "2026-11-10",
       "scope": "nasional",
-      "published_at": "2026-11-10T18:43:21+07:00",
+      "published_at": "2026-11-10T18:46:13+07:00",
       "card_count": 7,
       "reading_time_min": 6,
       "path": "data/editions/2026-11-10.nasional.json"
