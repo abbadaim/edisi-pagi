@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T20:07:38+07:00",
+  "generated_at": "2026-11-10T20:10:09+07:00",
   "latest": "2026-11-10",
   "retention": {
     "years": 2,
@@ -10,8 +10,8 @@
     {
       "edition_id": "2026-11-10",
       "scope": "lokal",
-      "published_at": "2026-11-10T05:00:00+07:00",
-      "card_count": 3,
+      "published_at": "2026-11-10T20:08:25+07:00",
+      "card_count": 2,
       "reading_time_min": 3,
       "path": "data/editions/2026-11-10.lokal.json"
     },
@@ -26,9 +26,9 @@
     {
       "edition_id": "2026-11-10",
       "scope": "nasional",
-      "published_at": "2026-11-10T05:00:00+07:00",
-      "card_count": 8,
-      "reading_time_min": 7,
+      "published_at": "2026-11-10T20:08:25+07:00",
+      "card_count": 7,
+      "reading_time_min": 6,
       "path": "data/editions/2026-11-10.nasional.json"
     },
     {

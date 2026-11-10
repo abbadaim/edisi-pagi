@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "lokal",
-  "published_at": "2026-11-10T05:00:00+07:00",
+  "published_at": "2026-11-10T20:08:25+07:00",
   "coverage": {
-    "from": "2026-11-09T05:00:00+07:00",
-    "to": "2026-11-10T05:00:00+07:00"
+    "from": "2026-11-09T20:08:25+07:00",
+    "to": "2026-11-10T20:08:25+07:00"
   },
-  "generated_at": "2026-11-10T05:00:00+07:00",
+  "generated_at": "2026-11-10T20:08:25+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -20,7 +20,7 @@
       "model": "deepseek-chat"
     },
     "write": {
-      "provider": "deepseek",
+      "provider": "deepseek+deterministic",
       "model": "deepseek-chat"
     },
     "verify": {
@@ -32,19 +32,19 @@
       "model": "none"
     }
   },
-  "card_count": 3,
-  "truncated_reason": "Hanya 3 topik lokal yang lolos",
+  "card_count": 2,
+  "truncated_reason": "Hanya 2 topik lokal yang lolos",
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_2_pria_bersajam_serang_polisi_da39",
-      "angle": "Penyerangan polisi oleh dua pria bersajam di Babarsari, Sleman, berujung penangkapan.",
+      "topic_id": "t_2_bang_jago_bersajam_serang_po_ce80",
+      "angle": "Dua Pria Bersajam Serang Polisi di Babarsari Sleman, Satu",
       "kicker": "Sleman",
-      "title": "Dua Pria Bersajam Serang Polisi dan Rusak Toko di Babarsari Sleman",
+      "title": "Dua Pria Bersajam Serang Polisi di Babarsari Sleman, Satu",
       "status": "sebagian",
       "truth": {
-        "claim": "Dua pria bersenjata tajam menyerang polisi di Babarsari, Sleman, dan merusak mobil dinas serta toko kelontong sebelum ditangkap.",
+        "claim": "Polisi menetapkan TMK (27) sebagai tersangka dalam kasus dua pria bersenjata tajam yang menyerang polisi di Jalan Babarsari, Depok, Sleman.",
         "status": "sebagian",
         "confidence": 0.55,
         "band": "belum_pasti",
@@ -57,48 +57,40 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T05:00:00+07:00"
+        "assessed_at": "2026-11-10T20:08:25+07:00"
       },
       "body": [
-        "Dua pria bersenjata tajam menyerang polisi di kawasan Babarsari, Sleman, DIY. Keduanya juga merusak mobil dinas polisi hingga spion pecah, dan sebuah toko kelontong ikut dirusak. Polisi menangkap kedua pria tersebut dan menyita parang yang mereka bawa. Lokasi Babarsari berada di Sleman, sehingga peristiwa ini berdampak langsung pada warga dan aparat di wilayah tersebut.",
-        "Peristiwa ini penting bagi pembaca di Sleman karena melibatkan serangan terhadap petugas kepolisian yang sedang bertugas, sekaligus kerusakan properti warga seperti toko kelontong. Kejadian di ruang publik seperti Babarsari menunjukkan risiko yang bisa muncul ketika seseorang membawa senjata tajam. Penangkapan dan penyitaan parang menjadi langkah awal aparat untuk menghentikan ancaman lebih lanjut.",
-        "Belum jelas apa motif kedua pria tersebut, kronologi lengkap penyerangan, serta apakah ada korban luka dari pihak polisi atau warga. Detail soal pasal yang dikenakan dan proses hukum lanjutan juga belum disebutkan. Pembaca sebaiknya menunggu keterangan resmi kepolisian dan tidak menyimpulkan sendiri penyebab kejadian."
+        "Dua pria bersenjata tajam menyerang personel polisi menggunakan parang di Jalan Babarsari, Caturtunggal, Depok, Sleman. Peristiwa ini terjadi di ruas jalan yang masuk wilayah Padukuhan Tambakbayan, Caturtunggal, Sleman, DIY. Dari dua orang yang terlibat, polisi menetapkan satu tersangka berinisial TMK (27). Penetapan tersangka itu menjadi titik terang awal kasus penyerangan terhadap aparat yang terjadi di jalan umum kawasan Sleman tersebut.",
+        "Kejadian ini penting bagi warga Sleman dan DIY karena berlangsung di jalan yang sehari-hari dilalui publik, bukan di tempat terisolasi. Jalan Babarsari merupakan ruas jalan sekaligus wilayah permukiman di Caturtunggal, Depok, Sleman, sehingga insiden bersenjata tajam di sana menyangkut rasa aman warga sekitar dan pengguna jalan. Penyerangan terhadap polisi juga menunjukkan bahwa situasi yang awalnya mungkin hanya keributan bisa meningkat menjadi ancaman serius ketika senjata tajam dipakai.",
+        "Yang belum jelas adalah kronologi lengkap penyerangan, peran masing-masing dari dua pria tersebut, serta status hukum pihak kedua yang tidak disebut sebagai tersangka. Detail soal pasal yang dikenakan, kondisi personel polisi yang diserang, dan barang bukti juga belum diuraikan dalam informasi yang tersedia. Publik perlu menunggu keterangan resmi kepolisian soal perkembangan penyidikan dan apakah ada tersangka lain dalam kasus ini."
       ],
       "explain": [
         {
-          "q": "Apa yang dimaksud dengan senjata tajam (sajam) dalam pemberitaan ini?",
-          "a": "Sajam adalah singkatan dari senjata tajam, seperti parang, yang dibawa kedua pria dan disita polisi.",
+          "q": "Di mana tepatnya Jalan Babarsari dan mengapa disebut wilayah Sleman?",
+          "a": "Babarsari adalah ruas jalan sekaligus wilayah di Padukuhan Tambakbayan, Caturtunggal, Kecamatan Depok, Kabupaten Sleman, Yogyakarta.",
           "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Babarsari"
           }
         },
         {
-          "q": "Di mana lokasi Babarsari dalam konteks wilayah DIY?",
-          "a": "Babarsari berada di Kabupaten Sleman, Daerah Istimewa Yogyakarta, sehingga peristiwanya masuk wilayah hukum Polres Sleman.",
+          "q": "Apa yang terjadi dalam insiden penyerangan ini?",
+          "a": "Dua pria bersenjata tajam menyerang personel polisi menggunakan parang di Jalan Babarsari, Caturtunggal, Depok, Sleman.",
           "source": {
             "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
-          }
-        },
-        {
-          "q": "Apa yang dimaksud mobil dinas polisi yang dirusak?",
-          "a": "Mobil dinas polisi adalah kendaraan operasional kepolisian yang dipakai petugas, dan dalam peristiwa ini spionnya pecah akibat ulah kedua pria.",
-          "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
+            "url": "https://www.detik.com/jogja/berita/d-8745686/2-bang-jago-bersajam-serang-polisi-berakhir-ditangkap"
           }
         }
       ],
-      "action": "Pantau keterangan resmi Polres Sleman soal motif dan proses hukum kedua pria tersebut.",
+      "action": "Pantau keterangan resmi polisi soal perkembangan kasus dan status hukum pihak kedua yang belum disebut sebagai tersangka.",
       "image": null,
       "sources": [
         {
           "outlet": "detik.com",
-          "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman",
-          "published_at": "2026-11-09T13:39:55+07:00",
+          "url": "https://www.detik.com/jogja/berita/d-8745686/2-bang-jago-bersajam-serang-polisi-berakhir-ditangkap",
+          "published_at": "2026-11-10T07:30:22+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T05:00:00+07:00"
+          "accessed_at": "2026-11-10T20:08:25+07:00"
         }
       ],
       "place": "lokal",
@@ -110,77 +102,13 @@
     {
       "id": "c2",
       "type": "news",
-      "topic_id": "t_marak_teror_hewan_liar_di_gunu_da39",
-      "angle": "Imbauan Dinas Pertanian Gunungkidul menyusul maraknya teror hewan liar ke ternak warga.",
-      "kicker": "Gunungkidul",
-      "title": "Warga Gunungkidul Diminta Ronda Malam Antisipasi Serangan Hewan Liar",
+      "topic_id": "t_pekerja_informal_diy_naik_jadi_da39",
+      "angle": "Kenaikan pekerja informal DIY menuntut penguatan perlindungan kerja",
+      "kicker": "DIY",
+      "title": "Pekerja Informal DIY Naik Jadi 55,14%, Disnakertrans Beri Penjelasan",
       "status": "sebagian",
       "truth": {
-        "claim": "Dinas Pertanian Gunungkidul mengimbau warga menggelar ronda malam dan memperkuat kandang untuk mengantisipasi serangan hewan liar terhadap ternak.",
-        "status": "sebagian",
-        "confidence": 0.55,
-        "band": "belum_pasti",
-        "basis": {
-          "strongest": "one_tier2",
-          "primary": 0,
-          "tier2": 1,
-          "independent_outlets": 1,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T05:00:00+07:00"
-      },
-      "body": [
-        "Dinas Pertanian Gunungkidul mengeluarkan imbauan kepada warga untuk mengantisipasi serangan hewan liar terhadap ternak. Imbauan ini muncul setelah maraknya laporan teror hewan liar di wilayah Gunungkidul, DIY. Warga diminta menggelar ronda malam dan memperkuat kandang ternak mereka sebagai langkah pencegahan. Detail lokasi kejadian, jenis hewan liar yang menyerang, serta jumlah ternak yang terdampak belum dijelaskan dalam informasi yang tersedia.",
-        "Bagi warga Gunungkidul, ternak merupakan aset ekonomi yang penting. Serangan hewan liar tidak hanya mengancam penghasilan keluarga, tetapi juga keselamatan warga yang tinggal di kawasan rawan. Imbauan ini menunjukkan bahwa persoalan tersebut dianggap cukup serius oleh dinas terkait, sehingga masyarakat diminta aktif menjaga lingkungannya sendiri, terutama pada malam hari ketika hewan liar cenderung aktif.",
-        "Belum jelas hewan liar apa yang menjadi penyebab utama, seberapa luas wilayah yang terdampak, dan apakah ada bantuan atau program khusus dari pemerintah daerah selain imbauan ronda malam. Warga yang ingin melaporkan kejadian atau meminta pendampingan sebaiknya menghubungi Dinas Pertanian Gunungkidul. Perlu dipahami bahwa ronda malam bukan solusi tunggal, melainkan bagian dari upaya pencegahan bersama."
-      ],
-      "explain": [
-        {
-          "q": "Apa itu Dinas Pertanian Gunungkidul dan apa tugasnya terkait peternakan?",
-          "a": "Dinas Pertanian Gunungkidul adalah instansi pemerintah daerah yang menangani urusan pertanian dan peternakan, termasuk mengeluarkan imbauan perlindungan ternak warga.",
-          "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam"
-          }
-        },
-        {
-          "q": "Mengapa ronda malam dianjurkan dalam imbauan ini?",
-          "a": "Ronda malam diminta sebagai upaya antisipasi serangan hewan liar terhadap ternak, sebagaimana disebutkan dalam imbauan Dinas Pertanian Gunungkidul.",
-          "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam"
-          }
-        }
-      ],
-      "action": "Hubungi Dinas Pertanian Gunungkidul untuk melaporkan serangan hewan liar dan tanyakan langkah pencegahan yang dianjurkan.",
-      "image": null,
-      "sources": [
-        {
-          "outlet": "detik.com",
-          "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam",
-          "published_at": "2026-11-09T15:25:18+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T05:00:00+07:00"
-        }
-      ],
-      "place": "lokal",
-      "revision": 1,
-      "first_seen": "2026-11-10",
-      "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c3",
-      "type": "news",
-      "topic_id": "t_gas_pol_salip_2_rider_di_lap_a_da39",
-      "angle": "Veda Ega Salip Dua Rider di Lap Akhir, Finis Keempat di Moto3 Qatar",
-      "kicker": "Gunungkidul",
-      "title": "Veda Ega Salip Dua Rider di Lap Akhir, Finis Keempat di Moto3 Qatar",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Veda Ega Pratama finis keempat di Moto3 Qatar setelah start dari posisi ke-14 dan menyalip dua rider di lap akhir.",
+        "claim": "Proporsi pekerja informal di DIY mencapai 55,14% pada Agustus 2026 menurut Disnakertrans DIY.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -193,48 +121,48 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T05:00:00+07:00"
+        "assessed_at": "2026-11-10T20:08:25+07:00"
       },
       "body": [
-        "Pembalap asal Gunungkidul, DI Yogyakarta, Veda Ega Pratama, finis di posisi keempat pada balapan Moto3 Qatar di Sirkuit Lusail. Ia memulai balapan dari posisi ke-14, lalu tampil gemilang sepanjang laga dan menyalip dua rider sekaligus pada lap terakhir untuk mengunci hasil tersebut.",
-        "Hasil ini penting bagi pembaca DIY karena Veda adalah salah satu pembalap muda daerah yang kini bersaing di level dunia. Start dari barisan belakang lalu naik sepuluh posisi menunjukkan konsistensi dan keberaniannya mengambil risiko di tikungan akhir, sesuatu yang jarang ditunjukkan pembalap pemula di kelas Moto3.",
-        "Belum jelas apakah posisi keempat ini merupakan hasil terbaik Veda sepanjang kariernya di Moto3, dan bagaimana dampaknya terhadap klasemen pembalap. Detail soal waktu tempuh, selisih dengan podium, serta kondisi ban pada lap akhir juga belum disebutkan dalam artikel. Langkah berikutnya adalah menunggu balapan seri berikutnya untuk melihat apakah tren positif ini berlanjut."
+        "Proporsi pekerja informal di Daerah Istimewa Yogyakarta (DIY) mencapai 55,14% pada Agustus 2026. Angka ini menjadi perhatian Dinas Tenaga Kerja dan Transmigrasi (Disnakertrans) DIY, yang menilai kenaikan tersebut perlu diikuti dengan penguatan perlindungan kerja bagi pekerja di sektor informal. Data ini menunjukkan bahwa lebih dari separuh pekerja di DIY berada di luar hubungan kerja formal, dengan status yang beragam mulai dari pedagang, pekerja lepas, hingga pekerja rumahan.",
+        "Kenaikan proporsi pekerja informal ini penting bagi warga DIY karena berkaitan langsung dengan jaminan sosial, kepastian pendapatan, dan akses terhadap perlindungan hukum ketenagakerjaan. Pekerja informal umumnya tidak memiliki kontrak kerja tetap, sehingga lebih rentan terhadap fluktuasi ekonomi dan risiko kecelakaan kerja. Disnakertrans menyoroti bahwa pertumbuhan sektor ini perlu diimbangi dengan kebijakan yang memastikan hak-hak dasar pekerja tetap terlindungi, termasuk akses terhadap program jaminan sosial ketenagakerjaan.",
+        "Namun, detail mengenai penyebab pasti kenaikan ini, sebaran pekerja informal menurut sektor, serta langkah konkret yang akan diambil Disnakertrans belum dijelaskan secara rinci dalam artikel. Belum jelas pula apakah ada target penurunan atau program khusus yang akan diluncurkan. Pembaca perlu memahami bahwa angka 55,14% ini merupakan proporsi, bukan jumlah absolut pekerja, sehingga konteksnya adalah pergeseran struktur ketenagakerjaan di DIY."
       ],
       "explain": [
         {
-          "q": "Apa itu Moto3 dan di mana kelas ini berada dalam jenjang balap Grand Prix?",
-          "a": "Moto3 adalah kelas balap motor Grand Prix paling dasar, di bawah Moto2 dan MotoGP, memakai motor 250cc.",
+          "q": "Apa yang dimaksud dengan pekerja informal?",
+          "a": "Pekerja informal adalah mereka yang bekerja tanpa hubungan kerja formal, seperti pedagang kaki lima, pekerja lepas, atau pekerja rumahan, sehingga tidak memiliki kontrak kerja tetap dan perlindungan sosial yang memadai.",
           "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
           }
         },
         {
-          "q": "Siapa Veda Ega Pratama dan dari mana asalnya?",
-          "a": "Veda Ega Pratama adalah pembalap muda asal Gunungkidul, DI Yogyakarta, yang berlaga di kelas Moto3.",
+          "q": "Mengapa Disnakertrans DIY menyoroti kenaikan ini?",
+          "a": "Disnakertrans menilai kenaikan proporsi pekerja informal perlu diikuti penguatan perlindungan kerja agar hak-hak pekerja tetap terjamin.",
           "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
           }
         },
         {
-          "q": "Apa arti Sirkuit Lusail dan mengapa balapan Qatar digelar di sana?",
-          "a": "Lusail adalah sirkuit di Qatar yang menjadi tuan rumah seri pembuka atau bagian awal musim MotoGP dan kelas pendukungnya.",
+          "q": "Apa itu Disnakertrans?",
+          "a": "Disnakertrans adalah Dinas Tenaga Kerja dan Transmigrasi, lembaga pemerintah daerah yang menangani urusan ketenagakerjaan di tingkat provinsi atau kabupaten/kota.",
           "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
           }
         }
       ],
-      "action": "Pantau jadwal balapan Moto3 berikutnya dan catat posisi start Veda Ega Pratama.",
+      "action": "Pantau penjelasan resmi Disnakertrans DIY dan cek apakah ada program perlindungan baru bagi pekerja informal di sekitar Anda.",
       "image": null,
       "sources": [
         {
-          "outlet": "detik.com",
-          "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar",
-          "published_at": "2026-11-09T09:32:16+07:00",
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan",
+          "published_at": "2026-11-10T19:57:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T05:00:00+07:00"
+          "accessed_at": "2026-11-10T20:08:25+07:00"
         }
       ],
       "place": "lokal",
