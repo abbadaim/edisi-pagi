@@ -2,18 +2,18 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T18:46:13+07:00",
+  "published_at": "2026-11-10T18:49:39+07:00",
   "coverage": {
-    "from": "2026-11-09T18:46:13+07:00",
-    "to": "2026-11-10T18:46:13+07:00"
+    "from": "2026-11-09T18:49:39+07:00",
+    "to": "2026-11-10T18:49:39+07:00"
   },
-  "generated_at": "2026-11-10T18:46:13+07:00",
+  "generated_at": "2026-11-10T18:49:39+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 6,
+  "reading_time_min": 7,
   "generated_by": {
     "adjudicate": {
       "provider": "deepseek",
@@ -39,12 +39,12 @@
       "id": "c1",
       "type": "news",
       "topic_id": "t_putusan_ma_soal_ijazah_sma_gib_e098",
-      "angle": "Putusan lengkap MA akhirnya dirilis, membatalkan surat penyetaraan pendidikan SMA Gibran.",
+      "angle": "MA Batalkan Suket Penyetaraan Ijazah SMA Gibran, Ini Pertimbangan",
       "kicker": "Nasional",
-      "title": "MA Batalkan Surat Penyetaraan Ijazah SMA Gibran, Ini Pertimbangannya",
+      "title": "MA Batalkan Suket Penyetaraan Ijazah SMA Gibran, Ini Pertimbangan",
       "status": "sebagian",
       "truth": {
-        "claim": "MA membatalkan Surat Keterangan Penyetaraan Pendidikan SMA Gibran Rakabuming melalui putusan perkara Nomor 742 K/TUN/2026.",
+        "claim": "MA Batalkan Suket Penyetaraan Ijazah SMA Gibran, Ini Pertimbangan",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -57,72 +57,80 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "Mahkamah Agung merilis putusan lengkap perkara Nomor 742 K/TUN/2026 yang membatalkan Surat Keterangan Penyetaraan Pendidikan SMA Gibran Rakabuming Raka. Putusan ini juga memerintahkan Kementerian Pendidikan Dasar dan Menengah mencabut surat keterangan tersebut. Dalam pertimbangannya, MA memuat enam poin yang menjadi dasar pembatalan, dan putusan Mahkamah Konstitusi turut dijadikan pertimbangan.",
-        "Perkara ini bermula dari kasasi yang diajukan Subhan, yang intinya meminta agar surat keterangan penyetaraan pendidikan SMA Gibran dinyatakan tidak sah dan batal demi hukum. Bagi pembaca, putusan ini penting karena menyangkut keabsahan dokumen pendidikan seorang pejabat negara, sekaligus menunjukkan bagaimana pengadilan menilai prosedur administratif yang dipakai untuk menerbitkan surat tersebut.",
-        "Yang belum jelas adalah langkah resmi setelah putusan ini, termasuk bagaimana Kemendikdasmen menindaklanjuti perintah pencabutan. Gibran menyatakan akan mengajukan peninjauan kembali (PK) dan mengaku menghormati aspirasi masyarakat soal polemik ijazah ini. Perlu dicatat, putusan MA ini menyangkut keabsahan surat keterangan penyetaraan, bukan otomatis membatalkan status jabatan yang sedang dijalani."
+        "Mahkamah Agung (MA) membatalkan Surat Keterangan Penyetaraan Pendidikan SMA milik Wakil Presiden Gibran Rakabuming Raka. Putusan lengkap perkara Nomor 742 K/TUN/2026 dirilis dan memuat enam poin pertimbangan. MA juga memerintahkan Kementerian Pendidikan Dasar dan Menengah (Kemendikdasmen) mencabut surat tersebut. Kasasi ini diajukan oleh Subhan, yang menilai surat keterangan penyetaraan itu tidak sah dan batal demi hukum. Dalam pertimbangannya, MA turut merujuk pada putusan Mahkamah Konstitusi (MK) sebagai dasar.",
+        "Pembatalan ini penting karena menyangkut keabsahan dokumen pendidikan seorang pejabat negara. Surat keterangan penyetaraan adalah dasar hukum yang menyatakan seseorang setara dengan lulusan SMA, sehingga putusan MA berpotensi memengaruhi status administrasi Gibran. Publik perlu memahami bahwa ini adalah ranah peradilan administratif, bukan pidana. Putusan MA juga menegaskan bahwa lembaga negara seperti Kemendikdasmen wajib menindaklanjuti putusan pengadilan.",
+        "Namun, detail teknis mengenai enam poin pertimbangan MA belum dijelaskan secara rinci dalam artikel. Langkah berikutnya, Kemendikdasmen harus mencabut surat tersebut sesuai perintah MA. Gibran menyatakan akan mengajukan Peninjauan Kembali (PK) dan menghormati aspirasi masyarakat. Yang sering disalahpahami: putusan ini belum tentu membatalkan ijazah, melainkan surat keterangan penyetaraannya. Proses PK masih terbuka, sehingga status akhir belum final."
       ],
       "explain": [
         {
-          "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024, sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "q": "Apa itu Surat Keterangan Penyetaraan Pendidikan?",
+          "a": "Dokumen resmi yang menyatakan bahwa pendidikan seseorang setara dengan jenjang tertentu, misalnya SMA, sehingga dapat digunakan untuk keperluan administrasi.",
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri, yang dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Mengapa putusan MA ini penting bagi publik?",
+          "a": "Karena menyangkut keabsahan dokumen pendidikan seorang wakil presiden dan menjadi preseden bahwa putusan pengadilan harus dipatuhi oleh kementerian.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
+        },
+        {
+          "q": "Apa langkah hukum selanjutnya yang bisa dilakukan Gibran?",
+          "a": "Gibran dapat mengajukan Peninjauan Kembali (PK) ke MA untuk meninjau ulang putusan yang sudah berkekuatan hukum tetap.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
         }
       ],
-      "action": "Baca putusan lengkap MA dan pahami enam poin pertimbangannya sebelum menarik kesimpulan.",
+      "action": "Pantau terus perkembangan kasus ini dan pahami perbedaan antara putusan MA dan upaya PK yang akan diajukan Gibran.",
       "image": {
-        "url": "assets/95352400f2.webp",
-        "credit": "detik.com",
-        "alt": "MA Batalkan Surat Penyetaraan Ijazah SMA Gibran, Ini Pertimbangannya"
+        "url": "assets/05ba398e47.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "MA Batalkan Suket Penyetaraan Ijazah SMA Gibran, Ini Pertimbangan"
       },
       "sources": [
-        {
-          "outlet": "kumparan.com",
-          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
-          "published_at": "2026-11-10T17:39:24+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
-        },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8746999/ini-putusan-lengkap-ma-batalkan-suket-ijazah-sma-gibran",
           "published_at": "2026-11-10T17:07:27+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
+          "published_at": "2026-11-10T17:39:24+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261110160059-12-1425494/putusan-lengkap-ma-soal-pembatalan-suket-penyetaraan-sma-gibran",
           "published_at": "2026-11-10T16:55:50+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "okezone.com",
           "url": "https://news.okezone.com/read/2026/11/10/337/3253272/gibran-saya-akan-ajukan-pk-usai-ma-nyatakan-suket-ijazah-sma-tidak-sah",
           "published_at": "2026-11-10T18:14:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "sindonews.com",
           "url": "https://nasional.sindonews.com/read/1770557/13/gibran-bakal-ajukan-pk-usai-ma-nyatakan-suket-ijazah-sma-nya-tidak-sah-1794309119",
           "published_at": "2026-11-10T18:22:18+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "place": "nasional",
@@ -135,12 +143,12 @@
       "id": "c2",
       "type": "news",
       "topic_id": "t_bp_lepas_bisnis_spbu_di_indone_98ea",
-      "angle": "BP cabut dari bisnis SPBU RI, AKR caplok 100 persen saham, ESDM buka suara",
+      "angle": "BP lepas seluruh saham SPBU di RI, AKR Corporindo kuasai penuh",
       "kicker": "Nasional",
       "title": "BP lepas seluruh saham SPBU di RI, AKR Corporindo kuasai penuh",
       "status": "sebagian",
       "truth": {
-        "claim": "AKR Corporindo resmi menguasai 100 persen saham PT Aneka Petroindo Raya setelah BP melepas seluruh kepemilikannya.",
+        "claim": "PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, pengelola jaringan SPBU BP di Indonesia.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -153,12 +161,12 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "BP Global Investments Limited resmi melepas seluruh kepemilikan sahamnya di bisnis SPBU di Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, perusahaan pengelola jaringan SPBU BP. Menurut pemberitaan, nilai pelepasan 49,9 persen saham BP di PT Aneka Petindo Raya mencapai US$14,22 juta. Kementerian ESDM melalui Dirjen Migas buka suara soal alasan di balik langkah ini.",
-        "Langkah BP ini penting bagi pembaca karena menyangkut siapa yang mengendalikan jaringan SPBU tempat banyak orang membeli bahan bakar. Ketika pemain asing mundur dan mitra lokal mengambil alih, keputusan soal harga, pasokan, dan investasi jaringan bisa bergeser. Pemerintah menyebut BP ingin lebih fokus di bisnis hulu. Sejumlah pemain asing lain disebut juga menempuh langkah serupa, sehingga peta bisnis ritel bahan bakar di Indonesia berubah.",
-        "Yang belum jelas adalah dampak langsungnya terhadap harga di pompa dan rencana investasi AKR ke depan. BP memastikan merek SPBU tidak berubah usai diakuisisi, tetapi detail soal pasokan, standar layanan, dan jangka waktu transisi belum dijelaskan. Pembaca sebaiknya tidak menyimpulkan bahwa SPBU akan berganti nama atau harga langsung berubah. Perkembangan berikutnya bergantung pada pernyataan resmi AKR dan Kementerian ESDM."
+        "BP Global Investments Limited melepas seluruh kepemilikan sahamnya di bisnis stasiun pengisian bahan bakar umum (SPBU) di Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, perusahaan yang mengelola jaringan SPBU bermerek BP. Salah satu laporan menyebut nilai pelepasan 49,9 persen saham senilai US$14,22 juta, meski rincian transaksi secara keseluruhan belum dijelaskan lengkap dalam pemberitaan.",
+        "Langkah ini penting bagi pembaca karena menyangkut siapa yang mengendalikan jaringan SPBU asing di Tanah Air. Kementerian ESDM menyebut perusahaan seperti BP ingin lebih memusatkan perhatian pada bisnis hulu, sementara bisnis ritel bahan bakar dinilai menuntut investasi besar dengan margin tipis. Bagi konsumen, perubahan pemilik belum tentu mengubah layanan di lapangan, sebab BP memastikan merek SPBU tidak berubah usai diakuisisi AKR.",
+        "Yang belum jelas adalah dampak transaksi ini terhadap harga jual, jumlah gerai, dan rencana investasi AKR ke depan. Pemerintah melalui Dirjen Migas sudah buka suara soal alasan BP dan Shell melepas bisnis SPBU, tetapi rincian kebijakan lanjutan belum dipaparkan. Perlu dicatat, hengkangnya BP dari sisi kepemilikan saham tidak sama dengan berhentinya operasional SPBU, karena merek dan jaringan tetap berjalan di bawah kendali AKR."
       ],
       "explain": [
         {
@@ -171,22 +179,22 @@
         },
         {
           "q": "Siapa BP plc dan mengapa keberadaannya di Indonesia diperhatikan?",
-          "a": "BP plc adalah perusahaan minyak bumi bermarkas di London dan termasuk salah satu dari empat perusahaan minyak terbesar di dunia.",
+          "a": "BP plc adalah perusahaan minyak bumi bermarkas di London dan termasuk empat besar perusahaan minyak dunia, sehingga keputusannya melepas aset ritel di Indonesia menjadi sorotan.",
           "source": {
             "outlet": "Wikipedia",
             "url": "https://id.wikipedia.org/wiki/BP_(perusahaan)"
           }
         },
         {
-          "q": "Mengapa margin bisnis SPBU dianggap tipis?",
-          "a": "Harga jual bahan bakar ritel diatur, sementara biaya investasi jaringan besar, sehingga keuntungan per liter terbatas dan pemain memilih menjual saham ke mitra lokal.",
+          "q": "Mengapa nilai transaksi dan margin usaha perlu dicermati pembaca?",
+          "a": "Perubahan harga, kurs, dan keputusan usaha memengaruhi daya beli serta iklim investasi, dan angka awal sering direvisi setelah data lengkap masuk.",
           "source": {
-            "outlet": "ESDM",
-            "url": "https://www.esdm.go.id/"
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
           }
         }
       ],
-      "action": "Pantau pernyataan resmi AKR dan ESDM soal dampak akuisisi ini ke harga dan layanan SPBU.",
+      "action": "Pantau penjelasan resmi AKR dan ESDM soal dampak akuisisi ini terhadap harga dan jumlah SPBU BP.",
       "image": {
         "url": "assets/f95a8f2cc8.webp",
         "credit": "cnnindonesia.com",
@@ -198,21 +206,21 @@
           "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
           "published_at": "2026-11-10T09:31:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
           "published_at": "2026-11-10T10:48:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110095544-4-783796/shell-bp-cabut-ini-daftar-perusahaan-yang-masih-berbisnis-spbu-di-ri",
           "published_at": "2026-11-10T10:11:10+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "place": "nasional",
@@ -224,13 +232,13 @@
     {
       "id": "c3",
       "type": "deep_dive",
-      "topic_id": "t_dpr_disebut_sepakat_pakai_hak_acb8",
+      "topic_id": "t_polemik_ijazah_gibran_dan_desa_5265",
       "angle": "Rekap 1 hari",
       "kicker": "Mendalam",
-      "title": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
+      "title": "DPR Pakai Hak Menyatakan Pendapat, Gibran Ajukan Mundur",
       "status": "sebagian",
       "truth": {
-        "claim": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
+        "claim": "Sebanyak delapan fraksi DPR disebut bersepakat menggunakan hak menyatakan pendapat soal polemik ijazah Gibran pada 10 November 2026.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -243,40 +251,41 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "Sebanyak delapan fraksi di DPR disebut telah bersepakat bakal menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran Rakabuming.",
-        "Istana Ungkap Pengajuan Pengunduran Diri Wapres Gibran Kepada Presiden Prabowo",
-        "Wapres Gibran Respons Kabar Pengunduran Dirinya, Sebut Akan Berjuang ke PTUN"
+        "Pada 10 November 2026, dua peristiwa bertemu dalam satu hari. Delapan fraksi DPR disebut bersepakat menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran Rakabuming. Di hari yang sama, Gibran mengajukan pengunduran diri sebagai Wakil Presiden kepada Presiden Prabowo. Dua jalur ini mengubah persoalan dari sekadar sengketa dokumen menjadi ujian atas relasi eksekutif-legislatif.",
+        "Hak menyatakan pendapat bukan instrumen rutin. Pasal 20A UUD 1945 memberikannya kepada DPR untuk menanggapi kebijakan pemerintah atau peristiwa luar biasa, dengan syarat usulan ditandatangani mayoritas anggota dan dibahas di paripurna. Dukungan delapan fraksi menandakan ambang itu mendekati nyata. Artinya, DPR tidak lagi hanya bersuara lewat rapat kerja, tetapi bergerak menuju mekanisme konstitusional yang jarang dipakai.",
+        "Langkah Gibran sendiri memperlihatkan pergeseran strategi. Ia menyatakan akan berjuang ke PTUN, merespons isu mundur dengan mengikuti saran Prabowo soal ijazah. Namun Prabowo tidak menolak pengajuan mundur itu, meski Menteri Sekretaris Negara Prasetyo Hadi juga tidak menyebut secara gamblang bahwa pengunduran diri diterima. Ketidakjelasan ini penting: status Gibran sebagai Wapres menjadi variabel yang menentukan apakah hak DPR menyasar kebijakan atau peristiwa luar biasa.",
+        "Yang berubah bukan hanya posisi satu orang, melainkan cara lembaga menangani konflik. Jika DPR melanjutkan hak menyatakan pendapat sementara Gibran menguji ijazahnya di PTUN, dua arena berbeda akan berjalan paralel dengan risiko saling bertabrakan. Keputusan Prabowo menanggapi pengunduran diri itu akan menentukan apakah polemik ini berakhir sebagai sengketa hukum atau naik menjadi krisis kelembagaan."
       ],
       "explain": [
         {
           "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "a": "Wakil Presiden RI sejak 2024; sebelumnya Wali Kota Surakarta dan pengusaha, putra Presiden Joko Widodo.",
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
           }
         },
         {
-          "q": "Apa itu Hak Menyatakan Pendapat?",
-          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "q": "Apa itu hak menyatakan pendapat DPR?",
+          "a": "Hak konstitusional DPR menurut Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa; usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
         },
         {
-          "q": "Bagaimana presiden atau wapres bisa diberhentikan?",
-          "a": "DPR mengajukan Hak Menyatakan Pendapat, MPR menyidangkan, lalu keputusan diambil dengan kuorum dan suara minimal dua pertiga. Prosesnya panjang dan konstitusional.",
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan 2019-2024 dan pensiunan perwira militer.",
           "source": {
-            "outlet": "UUD 1945 Pasal 7B",
-            "url": "https://www.mpr.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
           }
         }
       ],
-      "action": "Ini bacaan panjang. Edisi harian sudah selesai tanpanya.",
+      "action": "Pantau keputusan Prabowo atas pengajuan mundur Gibran dan hitung dukungan fraksi riil untuk hak menyatakan pendapat sebelum paripurna.",
       "image": null,
       "sources": [
         {
@@ -284,42 +293,42 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
           "published_at": "2026-11-10T10:35:11+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
           "published_at": "2026-11-10T10:59:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
           "published_at": "2026-11-10T15:41:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/hampir-50-anggota-dpr-teken-usulan-hmp-pemakzulan-gibran-idDb",
           "published_at": "2026-11-10T15:52:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
-          "outlet": "harianjogja.com",
-          "url": "https://jogjapolitan.harianjogja.com/r-1278373/aliansi-jogja-memanggil-sorot-represi-kriminalitas",
-          "published_at": "2026-11-10T16:10:51+07:00",
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746898/momen-gibran-dampingi-prabowo-beri-gelar-pahlawan-nasional-ke-19-tokoh",
+          "published_at": "2026-11-10T16:26:16+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "revision": 1,
       "first_seen": "2026-11-10",
       "previous_edition": null,
       "changes": [],
-      "dek": "Sebanyak delapan fraksi di DPR disebut telah bersepakat bakal menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran",
+      "dek": "Polemik ijazah Gibran bergerak dari sengketa administrasi ke ranah konstitusional DPR, sehari setelah ia mengajukan mundur dari kursi Wapres.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -328,7 +337,7 @@
           "label": "artikel"
         },
         {
-          "value": "8",
+          "value": "7",
           "label": "media"
         },
         {
@@ -340,13 +349,13 @@
     {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_kasus_nikel_ilegal_sulawesi_te_37a6",
-      "angle": "PT BSJ jadi tersangka korporasi, Kejagung geledah enam lokasi dan sita Rp11,8 miliar",
+      "topic_id": "t_kasus_nikel_ilegal_sultra_dan_37a6",
+      "angle": "Langkah baru dalam kasus nikel ilegal Sultra: korporasi jadi tersangka, enam lokasi digele",
       "kicker": "Nasional",
-      "title": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Kasus Nikel Sultra",
+      "title": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Nikel Ilegal Sultra",
       "status": "sebagian",
       "truth": {
-        "claim": "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya sebagai tersangka korporasi dalam kasus korupsi nikel di Sulawesi Tenggara.",
+        "claim": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Nikel Ilegal Sultra",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -359,12 +368,12 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya (PT BSJ) sebagai tersangka korporasi dalam kasus korupsi tata kelola nikel di Sulawesi Tenggara. Perusahaan itu dikaitkan dengan Arif Kurniawan, yang disebut sebagai bos nikel dalam perkara ini. Penetapan tersangka korporasi ini menjadi salah satu perkembangan terbaru setelah penyidik sebelumnya melakukan penggeledahan di sejumlah lokasi. Kasus yang ditangani mencakup periode 2013 hingga 2025, sehingga rentang waktunya cukup panjang dan melibatkan banyak pihak.",
-        "Langkah Kejagung ini penting karena korupsi di sektor tambang tidak hanya soal satu perusahaan, tetapi menyangkut tata kelola izin dan royalti yang berdampak pada penerimaan negara. Nikel merupakan komoditas strategis Indonesia sebagai pemasok utama dunia untuk bahan baku baterai, sehingga setiap penyimpangan dalam pengelolaannya berpotensi merugikan negara dalam jumlah besar. Penetapan korporasi sebagai tersangka juga memberi sinyal bahwa penyidik tidak berhenti pada individu, melainkan menelusuri aliran manfaat ke badan usaha.",
-        "Yang belum jelas adalah siapa saja pihak lain yang akan ditetapkan sebagai tersangka, termasuk kemungkinan keterlibatan pejabat pemberi izin. Kejagung juga belum merinci konstruksi perkara dan pasal yang disangkakan kepada PT BSJ. Selain itu, penyidik masih mendalami enam lokasi yang digeledah, termasuk kantor perusahaan afiliasi Arif Kurniawan, dengan barang bukti uang tunai Rp11,8 miliar. Publik perlu mengikuti perkembangan resmi agar tidak menyimpulkan lebih jauh dari yang telah diumumkan."
+        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya (PT BSJ) sebagai tersangka korporasi dalam kasus dugaan korupsi tata kelola nikel di Sulawesi Tenggara. Perusahaan itu dikaitkan dengan Arif Kurniawan, yang disebut sebagai bos nikel dalam perkara ini. Penetapan tersangka korporasi ini menjadi salah satu perkembangan terbaru setelah penyidik sebelumnya menangani kasus dengan rentang waktu 2013 hingga 2025.",
+        "Penetapan korporasi sebagai tersangka penting karena menunjukkan penyidik tidak hanya menyasar individu, tetapi juga badan usaha yang diduga menikmati hasil tata kelola tambang yang bermasalah. Kasus ini menjadi sorotan karena nikel adalah komoditas strategis Indonesia sebagai pemasok utama dunia untuk bahan baterai, sehingga tata kelola izin dan royaltinya rawan sengketa hukum. Di sisi lain, Komisi III DPR mendesak Kejagung mengungkap dugaan beking atau pelindung di balik tambang ilegal tersebut.",
+        "Yang belum jelas adalah siapa pihak yang diduga menjadi pelindung dan sejauh mana keterlibatan mereka, karena desakan pengungkapan itu baru disampaikan di DPR. Penyidik juga masih melakukan penggeledahan lanjutan, termasuk di enam lokasi yang disebut terkait perusahaan afiliasi Arif Kurniawan, dengan barang bukti antara lain uang tunai Rp11,8 miliar. Perlu dicatat, penetapan tersangka korporasi belum berarti putusan bersalah; proses hukum masih berjalan dan detail dakwaan belum diuraikan secara lengkap."
       ],
       "explain": [
         {
@@ -376,7 +385,7 @@
           }
         },
         {
-          "q": "Mengapa sektor nikel menjadi sorotan hukum?",
+          "q": "Mengapa kasus nikel di Sulawesi Tenggara penting secara nasional?",
           "a": "Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sehingga izin tambang dan tata kelola royaltinya sering menjadi objek sengketa hukum dan politik.",
           "source": {
             "outlet": "Kementerian ESDM",
@@ -385,18 +394,18 @@
         },
         {
           "q": "Di mana Sulawesi Tenggara berada?",
-          "a": "Sulawesi Tenggara adalah provinsi di bagian tenggara Pulau Sulawesi dengan ibu kota Kendari, ditetapkan sebagai daerah otonom berdasarkan Perpu No. 2 tahun 1964 juncto UU No. 13 Tahun 1964.",
+          "a": "Sulawesi Tenggara adalah provinsi di bagian tenggara Pulau Sulawesi dengan ibu kota Kendari, ditetapkan sebagai daerah otonom berdasarkan UU No. 13 Tahun 1964.",
           "source": {
             "outlet": "Wikipedia",
             "url": "https://id.wikipedia.org/wiki/Sulawesi_Tenggara"
           }
         }
       ],
-      "action": "Pantau pengumuman resmi Kejagung soal penetapan tersangka lain dan konstruksi perkara nikel Sultra.",
+      "action": "Ikuti perkembangan resmi dari Kejagung dan media kredibel soal penetapan tersangka serta hasil penggeledahan.",
       "image": {
         "url": "assets/41bf30413f.webp",
         "credit": "liputan6.com",
-        "alt": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Kasus Nikel Sultra"
+        "alt": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Nikel Ilegal Sultra"
       },
       "sources": [
         {
@@ -404,28 +413,28 @@
           "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
           "published_at": "2026-11-10T16:09:25+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
-          "published_at": "2026-11-10T13:10:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8746453/kejagung-kembali-geledah-6-lokasi-terkait-kasus-nikel-ilegal-di-sultra",
           "published_at": "2026-11-10T13:15:18+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
+          "published_at": "2026-11-10T13:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra",
           "published_at": "2026-11-10T01:25:46+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "place": "nasional",
@@ -438,12 +447,12 @@
       "id": "c5",
       "type": "news",
       "topic_id": "t_sidang_etik_irjen_ahrie_kasus_7c1d",
-      "angle": "Propam periksa Irjen Ahrie Sonta, LPSK dalami ancaman ke saksi",
+      "angle": "Sidang Etik Irjen Ahrie Sonta Digelar di Mabes Polri Kasus Penyadapan",
       "kicker": "Nasional",
-      "title": "Sidang Etik Irjen Ahrie Sonta Digelar di Mabes Polri",
+      "title": "Sidang Etik Irjen Ahrie Sonta Digelar di Mabes Polri Kasus Penyadapan",
       "status": "sebagian",
       "truth": {
-        "claim": "Sidang etik terhadap Irjen Ahrie Sonta digelar Divisi Propam Polri pada Selasa (10/11)",
+        "claim": "Sidang etik terhadap Irjen Ahrie Sonta digelar Divisi Propam Polri pada Selasa, 10 November, terkait kasus penyadapan Presiden Prabowo.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -456,80 +465,80 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "Divisi Propam Polri menggelar sidang Komisi Kode Etik Profesi terhadap Irjen Ahrie Sonta, mantan Kepala Divisi Hukum (Kadivkum) Polri, pada Selasa (10/11). Ahrie berstatus tersangka dalam kasus dugaan penyadapan yang dikaitkan dengan Presiden Prabowo. Sidang etik ini menjadi langkah internal kepolisian untuk menilai pelanggaran kode etik yang dilakukan oleh perwira tinggi tersebut.",
-        "Kasus ini penting karena menyangkut seorang jenderal bintang dua yang sebelumnya memegang posisi strategis di bidang hukum Polri. Penyadapan ilegal bukan hanya soal pelanggaran etik, tetapi juga berpotensi pidana jika dilakukan tanpa dasar hukum yang sah. Publik tentu menanti apakah proses etik ini akan berjalan transparan dan konsisten, mengingat posisi Ahrie yang cukup senior di institusi.",
-        "Yang belum jelas adalah detail pelanggaran etik yang disangkakan serta kemungkinan sanksi yang akan dijatuhkan. Sidang kode etik terhadap para terperiksa disebut akan dilakukan secara bertahap. Sementara itu, LPSK tengah mendalami dugaan ancaman terhadap enam saksi yang diajukan Polri untuk mendapat perlindungan. Perkembangan kedua proses ini akan menentukan arah penyelesaian kasus."
+        "Divisi Propam Polri menggelar sidang Komisi Kode Etik Profesi terhadap Irjen Ahrie Sonta, mantan Kepala Divisi Hukum (Kadivkum) Polri, pada Selasa (10/11). Ahrie berstatus tersangka dalam kasus penyadapan yang menyasar Presiden Prabowo Subianto. Sidang etik ini menjadi tahap lanjutan setelah penyidik menetapkannya sebagai tersangka. Sejumlah media melaporkan sidang digelar di Mabes Polri dan berlangsung secara bertahap untuk para terperiksa.",
+        "Kasus ini penting karena menyangkut dua hal sekaligus: dugaan penyalahgunaan kewenangan oleh perwira tinggi Polri dan penyadapan terhadap presiden yang sedang menjabat. Sidang etik bukan pengadilan pidana, melainkan forum internal untuk menilai pelanggaran kode etik profesi. Hasilnya bisa berupa sanksi administratif hingga pemberhentian tidak dengan hormat, terpisah dari proses pidana yang tetap berjalan. Bagi publik, sidang ini menjadi ujian transparansi Polri menangani kasus yang melibatkan aparatnya sendiri.",
+        "Yang belum jelas adalah rincian dakwaan etik, jadwal sidang untuk terperiksa lain, dan apakah hasil sidang akan diumumkan terbuka. Perlu dicatat, status tersangka belum berarti bersalah; putusan akhir tetap di pengadilan. Di sisi lain, LPSK tengah mendalami dugaan ancaman terhadap enam saksi yang diajukan Polri untuk mendapat perlindungan. Perkembangan perlindungan saksi dan proses pidana perlu diikuti terpisah dari jalannya sidang etik."
       ],
       "explain": [
         {
-          "q": "Apa dasar hukum penyadapan di Indonesia?",
-          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "q": "Apa dasar hukum penyadapan yang sah di Indonesia?",
+          "a": "Penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
           "source": {
             "outlet": "UU ITE",
             "url": "https://www.kominfo.go.id/"
           }
         },
         {
-          "q": "Apa arti status tersangka?",
-          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
+          "q": "Apa arti status tersangka bagi Irjen Ahrie Sonta?",
+          "a": "Status tersangka ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
           "source": {
             "outlet": "Polri",
             "url": "https://www.polri.go.id/"
           }
         },
         {
-          "q": "Apa yang perlu diketahui tentang Kepolisian Negara Republik Indonesia?",
-          "a": "Kepolisian Negara Republik Indonesia adalah lembaga penegak hukum nasional dan kepolisian negara di Indonesia.",
+          "q": "Siapa Prabowo Subianto yang menjadi sasaran penyadapan?",
+          "a": "Prabowo Subianto Djojohadikusumo adalah Presiden Indonesia kedelapan sejak 2024, sebelumnya menjabat Menteri Pertahanan di bawah Presiden Joko Widodo.",
           "source": {
             "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
           }
         }
       ],
-      "action": "Pantau perkembangan sidang etik dan proses perlindungan saksi di LPSK",
+      "action": "Pantau hasil sidang etik dan perkembangan perlindungan enam saksi, jangan berhenti pada berita pembukaannya saja.",
       "image": {
         "url": "assets/1f1d54c8e8.webp",
         "credit": "cnnindonesia.com",
-        "alt": "Sidang Etik Irjen Ahrie Sonta Digelar di Mabes Polri"
+        "alt": "Sidang Etik Irjen Ahrie Sonta Digelar di Mabes Polri Kasus Penyadapan"
       },
       "sources": [
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
-          "published_at": "2026-11-10T11:46:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
-        },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
           "published_at": "2026-11-10T11:36:47+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
+          "published_at": "2026-11-10T11:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8746270/polri-gelar-sidang-etik-irjen-ahrie-sonta-tersangka-penyadapan-prabowo",
           "published_at": "2026-11-10T11:42:40+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332157/tersangka-penyadapan-prabowo-irjen-ahrie-sonta-jalani-sidang-etik",
           "published_at": "2026-11-10T12:10:29+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110125316-4-783874/kapolri-mutasi-2-komjen-polisi-di-tengah-penyidikan-penyadapan-prabowo",
           "published_at": "2026-11-10T12:57:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "place": "nasional",
@@ -541,70 +550,85 @@
     {
       "id": "c6",
       "type": "news",
-      "topic_id": "t_kai_dan_inka_soal_krl_de32",
-      "angle": "KAI Pastikan KRL Buatan INKA Beroperasi Desember 2026",
+      "topic_id": "t_prabowo_anugerahkan_gelar_pahl_b295",
+      "angle": "Upacara di Istana Negara menetapkan 19 tokoh sebagai pahlawan nasional.",
       "kicker": "Nasional",
-      "title": "KAI Pastikan KRL Buatan INKA Beroperasi Desember 2026",
+      "title": "Prabowo Beri Gelar Pahlawan Nasional ke 19 Tokoh, Termasuk Hoegeng",
       "status": "sebagian",
       "truth": {
-        "claim": "KAI memastikan satu rangkaian KRL produksi INKA mulai beroperasi Desember 2026.",
+        "claim": "Presiden Prabowo Subianto menganugerahkan gelar pahlawan nasional kepada 19 tokoh, termasuk Hoegeng dan Ali Sadikin, di Istana Negara pada 10 November 2026.",
         "status": "sebagian",
-        "confidence": 0.62,
-        "band": "belum_pasti",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
         "basis": {
-          "strongest": "one_tier2",
+          "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 1,
-          "independent_outlets": 2,
+          "tier2": 2,
+          "independent_outlets": 3,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:46:13+07:00"
+        "assessed_at": "2026-11-10T18:49:39+07:00"
       },
       "body": [
-        "PT Kereta Api Indonesia (Persero) memastikan satu rangkaian Kereta Rel Listrik (KRL) baru produksi PT Industri Kereta Api (Persero) atau INKA mulai beroperasi pada Desember 2026. Kepastian ini disampaikan langsung oleh Direktur Utama KAI Bobby Rasiyidin. Langkah tersebut menandai upaya KAI beralih ke kereta buatan dalam negeri setelah sebelumnya berencana mengimpor KRL bekas dari Jepang.",
-        "Keputusan ini penting karena menyangkut pasokan armada KRL di Jabodetabek yang selama ini bergantung pada kereta impor, termasuk unit bekas. Bagi penumpang, ketersediaan armada baru menentukan kapasitas angkut dan kenyamanan perjalanan harian. Bagi industri dalam negeri, pesanan ini menjadi ujian apakah INKA mampu memenuhi standar operasi kereta perkotaan yang menuntut keandalan tinggi dan jadwal ketat.",
-        "Yang belum jelas adalah jumlah rangkaian yang akan diproduksi, nilai kontrak, serta jadwal pengiriman bertahap setelah unit pertama. KAI juga menargetkan proses akuisisi INKA agar efektif menjadi anak usaha pada 1 Januari 2027, dengan model bisnis yang disebut meniru kereta di Jepang dan China. Detail skema akuisisi dan dampaknya bagi produksi KRL belum diumumkan secara rinci."
+        "Presiden Prabowo Subianto menganugerahkan gelar pahlawan nasional kepada 19 tokoh dalam upacara di Istana Negara, Jakarta, Selasa (10/11/2026). Sejumlah ahli waris tampak berdatangan menghadiri prosesi tersebut. Di antara penerima gelar adalah mantan Kapolri Jenderal (Purn) Hoegeng Imam Santoso, mantan Gubernur DKI Jakarta Ali Sadikin, dan tokoh pergerakan Ali Sastroamidjojo. Nama R.M. Margono juga disebut dalam daftar penerima. Upacara berlangsung pada sore hari.",
+        "Penganugerahan gelar pahlawan nasional merupakan mekanisme negara untuk mengakui jasa tokoh yang dinilai berkontribusi besar bagi bangsa. Bagi pembaca, penetapan ini penting karena menyangkut bagaimana sejarah resmi dibentuk dan siapa yang diingat sebagai teladan. Hoegeng dikenal sebagai pejabat kepolisian yang bersih pada masanya, sementara Ali Sadikin dikenang lewat kebijakan pembangunan Jakarta. Keduanya kini masuk daftar tokoh yang diakui secara formal oleh negara.",
+        "Namun, rincian lengkap mengenai kriteria penilaian, proses seleksi, dan dasar penetapan 19 nama tersebut belum dijelaskan dalam artikel yang tersedia. Daftar lengkap penerima juga belum dirinci seluruhnya. Hal yang sering disalahpahami adalah bahwa gelar ini bersifat simbolik dan tidak otomatis mengubah status hukum atau hak tertentu bagi ahli waris. Langkah berikutnya, publik menunggu penjelasan resmi mengenai dasar dan dampak penganugerahan ini."
       ],
       "explain": [
         {
-          "q": "Apa itu KRL dan siapa yang mengelolanya?",
-          "a": "Kereta rel listrik untuk angkutan perkotaan. Di Jabodetabek dioperasikan KAI Commuter dengan tarif dan jadwal yang diatur pemerintah.",
+          "q": "Siapa Prabowo Subianto yang menganugerahkan gelar tersebut?",
+          "a": "Prabowo Subianto adalah Presiden Indonesia kedelapan yang menjabat sejak 2024. Sebelumnya ia menjabat Menteri Pertahanan di bawah Presiden Joko Widodo dari 2019 hingga 2024.",
           "source": {
-            "outlet": "KAI Commuter",
-            "url": "https://www.krl.co.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
           }
         },
         {
-          "q": "Mengapa angka ekonomi ini penting?",
-          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "q": "Di mana upacara penganugerahan gelar pahlawan nasional berlangsung?",
+          "a": "Istana Negara adalah kediaman utama presiden Indonesia yang terletak di Jalan Veteran, Jakarta Pusat, dan satu kompleks dengan Istana Merdeka.",
           "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Istana_Negara"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud dengan Hari Pahlawan?",
+          "a": "Hari Pahlawan adalah peringatan hari pahlawan nasional di berbagai negara, sering diselenggarakan pada hari kelahiran pahlawan nasional atau peringatan peristiwa yang mengantarkan mereka menjadi pahlawan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Hari_Pahlawan"
           }
         }
       ],
-      "action": "Cari tahu jadwal dan rute KRL baru buatan INKA lewat kanal resmi KAI Commuter.",
+      "action": "Cek daftar lengkap 19 penerima gelar pahlawan nasional dan latar jasa masing-masing tokoh.",
       "image": {
-        "url": "assets/3b63902cb4.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "KAI Pastikan KRL Buatan INKA Beroperasi Desember 2026"
+        "url": "assets/c3efed0add.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Prabowo Beri Gelar Pahlawan Nasional ke 19 Tokoh, Termasuk Hoegeng"
       },
       "sources": [
         {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261110130213-92-1425365/bos-kai-pastikan-satu-krl-produksi-inka-beroperasi-desember-2026",
-          "published_at": "2026-11-10T14:01:27+07:00",
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110155948-4-783954/prabowo-anugerahkan-19-gelar-pahlawan-nasional-ada-jenderal-hoegeng",
+          "published_at": "2026-11-10T16:04:07+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         },
         {
-          "outlet": "sindonews.com",
-          "url": "https://ekbis.sindonews.com/read/1770543/34/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-china-1794305475",
-          "published_at": "2026-11-10T18:01:12+07:00",
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746624/prabowo-anugerahkan-gelar-pahlawan-ke-sejumlah-tokoh-di-istana-hari-ini",
+          "published_at": "2026-11-10T14:30:43+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:49:39+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332222/sosok-ali-sadikin-gubernur-legendaris-jakarta-kini-jadi-pahlawan-nasional",
+          "published_at": "2026-11-10T16:39:48+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "place": "nasional",
@@ -633,7 +657,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-10T18:46:13+07:00"
+          "accessed_at": "2026-11-10T18:49:39+07:00"
         }
       ],
       "revision": 1,
