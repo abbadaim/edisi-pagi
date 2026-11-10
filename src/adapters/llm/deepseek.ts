@@ -43,7 +43,7 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
   const fetchImpl = opts.fetchImpl ?? fetch;
   const maxRetries = opts.maxRetries ?? 2;
 
-  async function chat(body: Record<string, unknown>): Promise<{ content: string; usage: Usage }> {
+  async function chat(body: Record<string, unknown>): Promise<{ content: string; usage: Usage; finishReason?: string }> {
     let lastErr: unknown;
 
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
@@ -89,7 +89,7 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
             (usage.tokens_out / 1_000_000) * price.output;
         }
 
-        return { content, usage };
+        return { content, usage, finishReason: choice?.finish_reason };
       } catch (e) {
         lastErr = e;
         if (attempt === maxRetries) break;
@@ -108,7 +108,7 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
     name: "deepseek",
 
     async json<T>(req: JsonRequest) {
-      const { content, usage } = await chat({
+      const { content, usage, finishReason } = await chat({
         model: req.model,
         messages: [
           { role: "system", content: `${req.system}\n\nBalas HANYA dengan JSON valid.` },
@@ -126,7 +126,7 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
       } catch (e) {
         const tail = content.trim().slice(-60).replace(/\s+/g, " ");
         throw new Error(
-          `${(e as Error).message} [finish=${choice?.finish_reason ?? "?"}, akhir="${tail}"]`,
+          `${(e as Error).message} [finish=${finishReason ?? "?"}, akhir="${tail}"]`,
         );
       }
       return { data, usage };
