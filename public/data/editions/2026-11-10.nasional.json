@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T18:56:27+07:00",
+  "published_at": "2026-11-10T18:59:02+07:00",
   "coverage": {
-    "from": "2026-11-09T18:56:27+07:00",
-    "to": "2026-11-10T18:56:27+07:00"
+    "from": "2026-11-09T18:59:02+07:00",
+    "to": "2026-11-10T18:59:02+07:00"
   },
-  "generated_at": "2026-11-10T18:56:27+07:00",
+  "generated_at": "2026-11-10T18:59:02+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -39,12 +39,12 @@
       "id": "c1",
       "type": "news",
       "topic_id": "t_polemik_ijazah_dan_pemakzulan_a18e",
-      "angle": "Delapan fraksi DPR bersepakat menempuh hak menyatakan pendapat terkait polemik ijazah Gibr",
+      "angle": "DPR Sepakat Gunakan Hak Menyatakan Pendapat soal Ijazah Gibran",
       "kicker": "Nasional",
       "title": "DPR Sepakat Gunakan Hak Menyatakan Pendapat soal Ijazah Gibran",
       "status": "sebagian",
       "truth": {
-        "claim": "Delapan fraksi DPR disebut sepakat menggunakan hak menyatakan pendapat terkait polemik ijazah Gibran, dan hampir 50 anggota DPR telah meneken usulan tersebut.",
+        "claim": "Delapan fraksi DPR disebut sepakat menggunakan hak menyatakan pendapat terkait polemik ijazah Gibran, sementara hampir 50 anggota DPR telah menandatangani usula",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -57,12 +57,12 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "Sebanyak delapan fraksi di DPR disebut telah bersepakat menggunakan hak menyatakan pendapat (HMP) untuk menindaklanjuti polemik ijazah Gibran Rakabuming Raka. Kesepakatan itu diungkapkan PKB, yang menyatakan komunikasi antarpartai hampir final. Dukungan tertulis juga menguat: hampir 50 anggota DPR dari lintas fraksi telah meneken usulan HMP, dan surat resminya sudah diserahkan ke pimpinan dewan. Usulan ini muncul di tengah sorotan terhadap kredibilitas dokumen pendidikan wakil presiden.",
-        "HMP adalah hak konstitusional DPR yang diatur Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Bagi pembaca, langkah ini penting karena HMP bisa menjadi pintu awal menuju pemakzulan presiden atau wakil presiden, meski prosesnya panjang dan berlapis. Polemik ijazah menyentuh soal integritas pejabat publik, sehingga publik perlu memahami bahwa DPR tidak bisa langsung memberhentikan Gibran hanya dengan HMP; masih ada mekanisme MPR dan syarat suara yang ketat.",
-        "Yang belum jelas adalah apakah kesepakatan delapan fraksi itu sudah final dan kapan HMP dibahas di paripurna. Di sisi lain, Gibran dikabarkan mengajukan pengunduran diri kepada Presiden Prabowo, dan Istana menyatakan Prabowo tidak menolak niat tersebut. Namun detail surat pengunduran diri, alasan resmi, serta kaitannya dengan HMP belum diuraikan. Perlu dicatat, pengunduran diri dan pemakzulan adalah dua jalur berbeda; keduanya belum tentu berjalan bersamaan."
+        "Sebanyak delapan fraksi di DPR disebut telah bersepakat menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Wakil Presiden Gibran Rakabuming Raka. PKB mengungkap komunikasi antarpartai yang hampir mencapai kesepakatan tersebut. Dukungan terhadap usulan ini juga datang dari hampir 50 anggota DPR lintas fraksi yang telah menandatangani surat usulan resmi dan menyerahkannya ke pimpinan dewan. Usulan hak menyatakan pendapat ini sempat mengemuka dalam sidang paripurna DPR, dengan dorongan agar Gibran memilih dimakzulkan atau mundur.",
+        "Hak menyatakan pendapat adalah hak konstitusional DPR yang diatur Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan ini harus ditandatangani mayoritas anggota dan dibahas dalam paripurna. Bagi pembaca, langkah DPR ini penting karena menyangkut posisi wakil presiden dan stabilitas pemerintahan. Polemik ijazah yang semula soal kelayakan dokumen pendidikan kini berkembang menjadi tekanan politik yang lebih luas, terutama setelah Gibran mengajukan pengunduran diri kepada Presiden Prabowo Subianto.",
+        "Yang belum jelas adalah sikap resmi Prabowo atas permohonan mundur Gibran. Menteri Sekretaris Negara Prasetyo Hadi menyebut Prabowo tidak menolak niat Gibran dan memberikan saran, tetapi detail saran tersebut belum diungkap. Proses hak menyatakan pendapat di DPR juga belum tentu berujung pada pemakzulan, karena mekanisme pemberhentian presiden atau wakil presiden melibatkan MPR dengan kuorum dan suara minimal dua pertiga. Perlu dipantau apakah DPR melanjutkan usulan ini atau menunggu keputusan Gibran."
       ],
       "explain": [
         {
@@ -75,7 +75,7 @@
         },
         {
           "q": "Apa itu Hak Menyatakan Pendapat?",
-          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa; usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "a": "Hak konstitusional DPR berdasarkan Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa, dengan syarat dukungan mayoritas anggota dan pembahasan di paripurna.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
@@ -83,14 +83,14 @@
         },
         {
           "q": "Bagaimana presiden atau wapres bisa diberhentikan?",
-          "a": "DPR mengajukan Hak Menyatakan Pendapat, MPR menyidangkan, lalu keputusan diambil dengan kuorum dan suara minimal dua pertiga; prosesnya panjang dan konstitusional.",
+          "a": "DPR mengajukan Hak Menyatakan Pendapat, MPR menyidangkan, lalu keputusan diambil dengan kuorum dan suara minimal dua pertiga melalui proses yang panjang dan konstitusional.",
           "source": {
             "outlet": "UUD 1945 Pasal 7B",
             "url": "https://www.mpr.go.id/"
           }
         }
       ],
-      "action": "Pantau pembahasan HMP di paripurna DPR dan tunggu keterangan resmi Istana soal status pengunduran diri Gibran.",
+      "action": "Pantau perkembangan resmi dari DPR dan Istana untuk memastikan status permohonan mundur Gibran.",
       "image": {
         "url": "assets/05ba398e47.webp",
         "credit": "cnnindonesia.com",
@@ -102,35 +102,35 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
           "published_at": "2026-11-10T10:35:11+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
           "published_at": "2026-11-10T10:59:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/hampir-50-anggota-dpr-teken-usulan-hmp-pemakzulan-gibran-idDb",
           "published_at": "2026-11-10T15:52:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
           "published_at": "2026-11-10T15:41:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "republika.co.id",
           "url": "https://news.republika.co.id/berita/toa92w409/gibran-tak-ingin-polemik-politik-berkepanjangan-sebut-prabowo-sudah-seperti-ayah-sendiri",
           "published_at": "2026-11-10T17:56:56+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "place": "nasional",
@@ -143,14 +143,14 @@
       "id": "c2",
       "type": "news",
       "topic_id": "t_bp_lepas_bisnis_spbu_indonesia_9ec9",
-      "angle": "BP Lepas Seluruh Saham SPBU, AKR Corporindo Kuasai 100 Persen",
+      "angle": "BP Lepas Seluruh Saham SPBU di Indonesia, AKR Kuasai Penuh",
       "kicker": "Nasional",
-      "title": "BP Lepas Seluruh Saham SPBU, AKR Corporindo Kuasai 100 Persen",
+      "title": "BP Lepas Seluruh Saham SPBU di Indonesia, AKR Kuasai Penuh",
       "status": "sebagian",
       "truth": {
-        "claim": "AKR Corporindo menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya setelah BP melepas seluruh kepemilikannya.",
+        "claim": "BP Lepas Seluruh Saham SPBU di Indonesia, AKR Kuasai Penuh",
         "status": "sebagian",
-        "confidence": 0.8,
+        "confidence": 0.83,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
@@ -161,25 +161,25 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "BP Global Investments Limited resmi melepas seluruh kepemilikan sahamnya di bisnis stasiun pengisian bahan bakar umum (SPBU) di Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, perusahaan pengelola jaringan SPBU bermerek BP. Dalam prosesnya, BP melepas 49,9 persen saham senilai US$14,22 juta, sementara sisanya dikuasai AKR. Kementerian ESDM melalui Dirjen Migas buka suara soal langkah ini.",
-        "Langkah BP ini penting bagi pembaca karena menyangkut siapa yang mengendalikan jaringan SPBU tempat banyak orang membeli bahan bakar sehari-hari. Pemerintah menyebut salah satu alasannya adalah keinginan BP fokus di bisnis hulu, bukan ritel. Sektor ritel bahan bakar memang dikenal bermargin tipis dan harga jualnya diatur, sehingga pemain asing kerap menimbang ulang investasinya. AKR sebagai mitra lokal kini memegang kendali penuh.",
-        "Yang belum jelas adalah dampak lanjutan bagi konsumen, termasuk apakah harga, layanan, atau jumlah SPBU akan berubah. BP memastikan merek SPBU tidak berubah usai diakuisisi, namun detail rencana AKR ke depan belum diuraikan. Perlu dipahami bahwa keluarnya BP bukan berarti SPBU-nya tutup; kepemilikan berpindah tangan. Perkembangan berikutnya bergantung pada langkah AKR dan pengawasan pemerintah."
+        "BP Global Investments Limited resmi melepas seluruh kepemilikan sahamnya di bisnis SPBU Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya (APR), perusahaan yang mengelola jaringan SPBU BP. Sebelumnya, BP melepas 49,9 persen saham senilai US$14,22 juta, dan kini seluruhnya dikuasai AKR. Kementerian ESDM membenarkan langkah ini dan menyebut BP ingin fokus pada bisnis hulu.",
+        "Keputusan BP ini penting karena menunjukkan tantangan bisnis ritel bahan bakar di Indonesia. Margin tipis dan harga jual yang diatur membuat perusahaan asing memilih menjual saham ke mitra lokal. Bagi pembaca, ini berarti merek SPBU BP tetap ada, tetapi kepemilikan berubah ke perusahaan nasional. AKR Corporindo sebagai pemain lokal diharapkan bisa mengelola jaringan dengan lebih efisien. Pemerintah juga menyoroti bahwa BP dan Shell memilih fokus di sektor hulu migas yang lebih menguntungkan.",
+        "Yang belum jelas adalah dampak perubahan kepemilikan terhadap harga dan layanan di SPBU BP. Apakah AKR akan mengubah strategi bisnis atau tetap mempertahankan merek BP? Pemerintah melalui Kementerian ESDM menyatakan akan mengawasi agar pasokan bahan bakar tetap lancar. Langkah berikutnya, AKR akan mengintegrasikan operasional APR ke dalam jaringan distribusinya. Namun, detail rencana jangka panjang AKR belum diumumkan secara rinci."
       ],
       "explain": [
         {
           "q": "Apa itu PT Aneka Petroindo Raya?",
-          "a": "Perusahaan pengelola jaringan SPBU bermerek BP di Indonesia yang sahamnya kini dikuasai penuh oleh AKR Corporindo.",
+          "a": "PT Aneka Petroindo Raya adalah perusahaan yang mengelola jaringan SPBU BP di Indonesia. Perusahaan ini sebelumnya dimiliki bersama oleh BP dan mitra lokal.",
           "source": {
             "outlet": "cnnindonesia.com",
             "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham"
           }
         },
         {
-          "q": "Apa yang dimaksud bisnis hulu migas?",
-          "a": "Kegiatan eksplorasi dan produksi minyak serta gas, berbeda dari bisnis hilir seperti ritel bahan bakar di SPBU.",
+          "q": "Mengapa BP memilih fokus di bisnis hulu?",
+          "a": "Bisnis hulu migas (eksplorasi dan produksi) dianggap lebih menguntungkan dibanding ritel bahan bakar yang marginnya tipis dan harga jualnya diatur pemerintah.",
           "source": {
             "outlet": "ESDM",
             "url": "https://www.esdm.go.id/"
@@ -187,18 +187,18 @@
         },
         {
           "q": "Siapa BP plc?",
-          "a": "Perusahaan minyak bumi bermarkas di London dan salah satu dari empat perusahaan minyak terbesar di dunia.",
+          "a": "BP plc adalah perusahaan minyak bumi asal Inggris yang bermarkas di London dan merupakan salah satu dari empat perusahaan minyak terbesar di dunia.",
           "source": {
             "outlet": "Wikipedia",
             "url": "https://id.wikipedia.org/wiki/BP_(perusahaan)"
           }
         }
       ],
-      "action": "Pantau pengumuman resmi AKR dan Kementerian ESDM soal rencana jaringan SPBU ke depan.",
+      "action": "Pantau terus perkembangan bisnis SPBU BP dan dampaknya bagi konsumen.",
       "image": {
         "url": "assets/f95a8f2cc8.webp",
         "credit": "cnnindonesia.com",
-        "alt": "BP Lepas Seluruh Saham SPBU, AKR Corporindo Kuasai 100 Persen"
+        "alt": "BP Lepas Seluruh Saham SPBU di Indonesia, AKR Kuasai Penuh"
       },
       "sources": [
         {
@@ -206,21 +206,21 @@
           "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
           "published_at": "2026-11-10T09:31:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
           "published_at": "2026-11-10T10:48:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110095544-4-783796/shell-bp-cabut-ini-daftar-perusahaan-yang-masih-berbisnis-spbu-di-ri",
           "published_at": "2026-11-10T10:11:10+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "place": "nasional",
@@ -235,10 +235,10 @@
       "topic_id": "t_dpr_disebut_sepakat_pakai_hak_acb8",
       "angle": "Rekap 1 hari",
       "kicker": "Mendalam",
-      "title": "Gibran, Ijazah, dan Hak DPR: Arah Baru Polemik",
+      "title": "DPR Pakai Hak Menyatakan Pendapat, Gibran Ajukan Mundur",
       "status": "sebagian",
       "truth": {
-        "claim": "Delapan fraksi DPR disebut bersepakat menggunakan hak menyatakan pendapat soal polemik ijazah Gibran, sementara Gibran mengajukan permohonan mundur dari posisi ",
+        "claim": "Sebanyak delapan fraksi DPR disebut bersepakat menggunakan hak menyatakan pendapat soal polemik ijazah Gibran.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -251,41 +251,33 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "Polemik ijazah Gibran Rakabuming Raka bergerak dari ranah hukum ke ranah politik dalam satu hari. Delapan fraksi di DPR disebut bersepakat menggunakan hak menyatakan pendapat untuk menindaklanjuti persoalan dokumen pendidikan Wakil Presiden itu. Langkah ini mengubah posisi DPR dari penonton menjadi pemain: hak konstitusional yang diatur Pasal 20A UUD 1945 itu menuntut usulan ditandatangani mayoritas anggota dan dibahas di paripurna, sehingga kesepakatan delapan fraksi menjadi sinyal tekanan politik yang terukur.",
-        "Di saat yang sama, Gibran bergerak ke arah sebaliknya. Ia bertemu Presiden Prabowo Subianto dan menyampaikan permohonan mengundurkan diri dari posisi Wapres. Menteri Sekretaris Negara menyebut Prabowo tidak menolak pengajuan itu, meski tidak dinyatakan secara gamblang bahwa pengunduran diri diterima. Gibran kemudian menyebut Prabowo sudah seperti ayah sendiri dan mengaku menerima banyak saran, termasuk soal langkah menghadapi dinamika dokumen pendidikannya.",
-        "Yang berubah bukan sekadar status Gibran, melainkan peta penyelesaian sengketa. Gibran memilih berjuang lewat PTUN, jalur hukum yang menempatkan legitimasi dokumen sebagai perkara administrasi. DPR memilih hak menyatakan pendapat, jalur politik yang menempatkan kebijakan pemerintah sebagai objek penilaian. Dua jalur ini berjalan paralel dan berpotensi saling mengunci: putusan pengadilan bisa dibayangi tekanan parlemen, sementara agenda DPR bisa kehilangan fokus bila kursi Wapres berganti.",
-        "Karena itu, pentingnya bukan pada satu pernyataan atau satu pertemuan, melainkan pada preseden. Bila hak menyatakan pendapat benar-benar dipakai, DPR menegaskan bahwa polemik dokumen pejabat tinggi layak masuk agenda konstitusional, bukan hanya urusan pribadi. Bila Gibran mundur sebelum proses itu berjalan, presedennya justru sebaliknya: persoalan diselesaikan lewat pengunduran diri, bukan lewat akuntabilitas publik. Arah salah satu dari dua preseden inilah yang akan menentukan bagaimana kasus serupa ditangani di masa depan."
+        "Pada 10 November 2026, polemik dokumen pendidikan Gibran Rakabuming Raka bergerak ke dua jalur sekaligus. Delapan fraksi di DPR disebut telah bersepakat menggunakan hak menyatakan pendapat untuk menindaklanjuti persoalan ijazah Wakil Presiden tersebut. Langkah ini menandai pergeseran dari perdebatan publik ke mekanisme konstitusional di parlemen.",
+        "Di hari yang sama, Gibran bertemu Presiden Prabowo Subianto dan menyampaikan permohonan mengundurkan diri dari posisi Wapres. Menteri Sekretaris Negara menyebut Prabowo tidak menolak pengajuan itu, meski tidak secara gamblang menyatakan menerimanya. Gibran kemudian menyebut Prabowo sudah seperti ayah sendiri dan mengaku menerima banyak saran serta masukan terkait kondisi terkini.",
+        "Yang berubah bukan hanya status Gibran, tetapi juga medan pertarungannya. Gibran menyatakan akan berjuang ke PTUN, sementara DPR menyiapkan hak menyatakan pendapat sebagai respons atas putusan MA dan MK soal polemik ijazah. Dua jalur ini berjalan paralel: satu lewat pengadilan, satu lewat parlemen.",
+        "Ini penting karena hak menyatakan pendapat adalah instrumen konstitusional yang jarang dipakai. Jika benar delapan fraksi bersepakat, tekanan politik terhadap posisi Gibran tidak lagi hanya soal dokumen, tetapi menyangkut legitimasi jabatan. Permohonan mundur dan langkah DPR yang bersamaan membuat arah penyelesaian polemik ini bergantung pada keputusan Prabowo dan proses di parlemen."
       ],
       "explain": [
         {
           "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024, sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
           }
         },
         {
-          "q": "Apa itu hak menyatakan pendapat?",
-          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa; usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "q": "Apa itu Hak Menyatakan Pendapat?",
+          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
-        },
-        {
-          "q": "Siapa Prabowo Subianto?",
-          "a": "Presiden Indonesia kedelapan sejak 2024, sebelumnya Menteri Pertahanan 2019-2024 dan pensiunan perwira militer.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
-          }
         }
       ],
-      "action": "Pantau apakah usulan hak menyatakan pendapat benar-benar diajukan ke paripurna dan bagaimana PTUN merespons gugatan Gibran.",
+      "action": "Pantau keputusan Prabowo atas permohonan mundur Gibran dan pembahasan hak menyatakan pendapat di paripurna DPR.",
       "image": null,
       "sources": [
         {
@@ -293,42 +285,42 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
           "published_at": "2026-11-10T10:35:11+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
           "published_at": "2026-11-10T10:59:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
           "published_at": "2026-11-10T15:41:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/hampir-50-anggota-dpr-teken-usulan-hmp-pemakzulan-gibran-idDb",
           "published_at": "2026-11-10T15:52:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "republika.co.id",
           "url": "https://news.republika.co.id/berita/toa92w409/gibran-tak-ingin-polemik-politik-berkepanjangan-sebut-prabowo-sudah-seperti-ayah-sendiri",
           "published_at": "2026-11-10T17:56:56+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "revision": 1,
       "first_seen": "2026-11-10",
       "previous_edition": null,
       "changes": [],
-      "dek": "Delapan fraksi DPR disebut sepakat memakai hak menyatakan pendapat, sementara Gibran mengajukan mundur dan bersiap ke PTUN.",
+      "dek": "Delapan fraksi DPR bersepakat memakai hak menyatakan pendapat soal ijazah Gibran, bersamaan dengan permohonan mundur Gibran ke Prabowo.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -350,12 +342,12 @@
       "id": "c4",
       "type": "news",
       "topic_id": "t_korupsi_nikel_sultra_dan_tersa_6f71",
-      "angle": "Kejagung Tetapkan PT BSJ Tersangka Korupsi Nikel Sultra",
+      "angle": "Tersangka korporasi pertama di kasus nikel Sultra, desakan mengungkap beking",
       "kicker": "Nasional",
       "title": "Kejagung Tetapkan PT BSJ Tersangka Korupsi Nikel Sultra",
       "status": "sebagian",
       "truth": {
-        "claim": "Kejagung Tetapkan PT BSJ Tersangka Korupsi Nikel Sultra",
+        "claim": "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya sebagai tersangka korporasi dalam kasus korupsi nikel di Sulawesi Tenggara.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -368,24 +360,24 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya sebagai tersangka korporasi dalam kasus korupsi tambang nikel di Sulawesi Tenggara. Perusahaan itu dikelola oleh Arif Kurniawan, yang disebut sebagai bos nikel dalam perkara ini. Penetapan tersangka korporasi ini menjadi langkah hukum baru dalam penanganan kasus yang menyeret nama pengusaha tersebut.",
-        "Langkah ini penting karena korupsi di sektor tambang tidak hanya melibatkan individu, tetapi juga struktur perusahaan yang menaungi kegiatan usaha. Nikel merupakan komoditas strategis Indonesia sebagai pemasok utama dunia untuk bahan baterai, sehingga tata kelola izin dan royaltinya rawan disalahgunakan. Penetapan korporasi sebagai tersangka membuka peluang pertanggungjawaban hukum pada entitas usaha, bukan hanya pada orang per orang.",
-        "Yang belum jelas adalah rincian perbuatan yang disangkakan kepada PT BSJ, besaran kerugian negara, serta apakah akan ada tersangka lain di luar korporasi dan Arif Kurniawan. Anggota DPR dari Komisi III, Rudianto Lallo, mendesak Kejaksaan Agung mengungkap dugaan pelindung atau beking tambang ilegal tersebut. Kejagung juga telah menggeledah enam kantor perusahaan afiliasi dan menyita uang tunai Rp11,8 miliar, namun kaitan temuan itu dengan perkara belum diuraikan secara rinci."
+        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya (PT BSJ) sebagai tersangka korporasi dalam kasus korupsi tambang nikel di Sulawesi Tenggara. Perusahaan itu dikelola oleh Arif Kurniawan, yang namanya muncul di beberapa pemberitaan terkait kasus ini. Penetapan tersangka korporasi ini menjadi langkah hukum baru dalam penanganan perkara yang menyeret bos nikel tersebut.",
+        "Langkah ini penting karena korupsi di sektor tambang jarang menyentuh korporasi sebagai pihak yang bertanggung jawab. Selama ini penindakan sering berhenti pada individu, sementara perusahaan yang menikmati keuntungan luput dari jerat hukum. Nikel sendiri merupakan komoditas strategis Indonesia sebagai pemasok terbesar dunia untuk baterai, sehingga tata kelola izin dan royaltinya rawan disalahgunakan.",
+        "Yang belum jelas adalah apakah penetapan tersangka korporasi ini akan berlanjut ke pengadilan dan siapa saja pihak lain yang akan dijerat. Anggota DPR Rudianto Lallo dari Komisi III mendesak Kejaksaan Agung mengungkap dugaan pelindung tambang ilegal Arif Kurniawan. Kejagung juga telah menggeledah enam kantor perusahaan afiliasi dan menyita uang tunai Rp11,8 miliar, namun detail keterkaitan antarperusahaan itu belum dijelaskan secara rinci."
       ],
       "explain": [
         {
           "q": "Apa peran Kejaksaan Agung dalam perkara korupsi?",
-          "a": "Kejaksaan Agung adalah lembaga negara yang melaksanakan kekuasaan pemerintah di bidang penuntutan, termasuk menyelidiki dan menuntut perkara korupsi yang merugikan keuangan negara.",
+          "a": "Kejaksaan Agung adalah lembaga negara yang melaksanakan kekuasaan pemerintah di bidang penuntutan, dipimpin Jaksa Agung yang bertanggung jawab langsung kepada Presiden, dan berwenang menentukan apakah suatu kasus dilanjutkan ke pengadilan.",
           "source": {
-            "outlet": "Kejaksaan Agung",
-            "url": "https://www.kejaksaan.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kejaksaan_Agung_Republik_Indonesia"
           }
         },
         {
-          "q": "Mengapa sektor nikel menjadi sorotan hukum dan politik?",
+          "q": "Mengapa sektor nikel jadi sorotan hukum?",
           "a": "Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sehingga izin tambang dan tata kelola royaltinya sering menjadi objek sengketa hukum dan politik.",
           "source": {
             "outlet": "Kementerian ESDM",
@@ -394,14 +386,14 @@
         },
         {
           "q": "Apa yang dimaksud tersangka korporasi?",
-          "a": "Dalam perkara ini, status tersangka diberikan kepada entitas perusahaan, bukan hanya kepada individu pengelolanya, sehingga pertanggungjawaban hukum dapat dikenakan pada korporasi.",
+          "a": "Penetapan korporasi sebagai tersangka berarti perusahaan, bukan hanya individunya, dianggap dapat dimintai pertanggungjawaban pidana dalam perkara tersebut.",
           "source": {
-            "outlet": "cnnindonesia.com",
-            "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra"
+            "outlet": "Kejaksaan Agung",
+            "url": "https://www.kejaksaan.go.id/"
           }
         }
       ],
-      "action": "Pantau perkembangan penetapan tersangka korporasi ini dan tunggu keterangan resmi Kejagung soal kerugian negara.",
+      "action": "Pantau perkembangan kasus ini dan desak Kejagung mengumumkan siapa pihak yang diduga melindungi tambang ilegal.",
       "image": {
         "url": "assets/41bf30413f.webp",
         "credit": "liputan6.com",
@@ -413,21 +405,21 @@
           "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
           "published_at": "2026-11-10T16:09:25+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra",
           "published_at": "2026-11-10T01:25:46+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
           "published_at": "2026-11-10T13:10:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "place": "nasional",
@@ -445,7 +437,7 @@
       "title": "Indonesia Incar Keanggotaan Penuh OECD 2028 lewat Reformasi Aturan",
       "status": "sebagian",
       "truth": {
-        "claim": "Pemerintah Indonesia menargetkan menjadi anggota penuh OECD pada 2028 dengan merampungkan tiga regulasi utama, termasuk aturan foreign bribery.",
+        "claim": "Pemerintah Indonesia menargetkan menjadi anggota penuh OECD pada 2028 dan menyiapkan tiga regulasi utama, termasuk aturan foreign bribery.",
         "status": "sebagian",
         "confidence": 0.77,
         "band": "kemungkinan_besar",
@@ -458,40 +450,40 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "Pemerintah Indonesia menargetkan menjadi anggota penuh Organisasi untuk Kerja Sama Ekonomi dan Pembangunan (OECD) pada 2028. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyatakan bahwa untuk mencapai target itu, pemerintah menyiapkan reformasi aturan besar-besaran. Tiga regulasi utama akan dirampungkan, termasuk aturan mengenai penyuapan asing (foreign bribery) dan revisi sejumlah undang-undang. Target ini juga dikaitkan dengan upaya mendorong pertumbuhan ekonomi hingga 8 persen.",
-        "Langkah ini penting karena keanggotaan OECD menuntut standar tata kelola, transparansi, dan integritas bisnis yang lebih tinggi daripada yang berlaku saat ini. Bagi pembaca, proses ini bukan sekadar urusan diplomatik: aturan penyuapan asing dan revisi undang-undang dapat memengaruhi cara perusahaan beroperasi, iklim investasi, serta kredibilitas Indonesia di mata investor global. Reformasi ini juga menjadi ujian apakah komitmen pemerintah pada perbaikan regulasi berjalan konsisten, bukan hanya retorika.",
-        "Yang belum jelas adalah rincian ketiga regulasi tersebut, tenggat penyelesaian tiap aturan, dan bagaimana proses aksesi OECD akan berjalan setelah syarat dipenuhi. Belum ada penjelasan apakah target 2028 bersifat mengikat atau indikatif, serta lembaga mana yang mengawal tiap tahapan. Pembaca perlu memahami bahwa status anggota penuh OECD bukan otomatis diberikan setelah regulasi selesai, melainkan melalui penilaian bertahap oleh organisasi tersebut."
+        "Pemerintah Indonesia menargetkan menjadi anggota penuh Organisasi untuk Kerja Sama Ekonomi dan Pembangunan (OECD) pada 2028. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyatakan bahwa untuk mencapai target itu, pemerintah menyiapkan reformasi aturan besar-besaran dan akan merampungkan tiga regulasi utama, termasuk aturan terkait penyuapan asing (foreign bribery) serta revisi sejumlah undang-undang. Langkah ini disebut sebagai bagian dari upaya memenuhi standar keanggotaan OECD sekaligus mendorong pertumbuhan ekonomi menuju 8%.",
+        "Bagi pembaca, target ini penting karena keanggotaan OECD bukan sekadar status internasional, melainkan menuntut perubahan aturan yang bisa berdampak langsung pada dunia usaha, investasi, dan tata kelola pemerintahan. Standar OECD mencakup transparansi, antikorupsi, dan praktik ekonomi yang bersih, sehingga reformasi yang dijanjikan berpotensi mengubah cara perusahaan asing dan domestik beroperasi di Indonesia. Namun, proses ini juga menuntut konsistensi politik dan penegakan hukum yang tidak ringan.",
+        "Yang belum jelas adalah rincian ketiga regulasi yang dimaksud, tenggat penyelesaiannya, serta bagaimana revisi undang-undang akan dibahas bersama DPR. Belum ada penjelasan resmi soal tahapan penilaian OECD terhadap Indonesia maupun konsekuensi jika target 2028 tidak tercapai. Pembaca perlu memahami bahwa target ini masih berupa komitmen pemerintah, bukan kepastian, sehingga perkembangan pembahasan aturan dan respons OECD perlu terus dipantau."
       ],
       "explain": [
         {
           "q": "Apa itu OECD dan mengapa keanggotaannya penting bagi Indonesia?",
-          "a": "OECD adalah organisasi kerja sama ekonomi dan pembangunan yang menghimpun negara-negara dengan standar tata kelola tertentu; keanggotaan penuh menuntut pemenuhan berbagai standar regulasi dan transparansi.",
+          "a": "OECD adalah organisasi kerja sama ekonomi yang menaungi negara-negara maju; keanggotaan menuntut pemenuhan standar tata kelola, transparansi, dan antikorupsi.",
           "source": {
             "outlet": "cnbcindonesia.com",
             "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
           }
         },
         {
-          "q": "Apa yang dimaksud aturan foreign bribery dalam konteks ini?",
-          "a": "Aturan penyuapan asing merujuk pada regulasi yang melarang atau mengatur praktik penyuapan terhadap pejabat asing, salah satu syarat standar OECD yang harus dipenuhi Indonesia.",
+          "q": "Apa yang dimaksud aturan foreign bribery?",
+          "a": "Aturan ini merujuk pada ketentuan yang melarang penyuapan pejabat asing dalam transaksi bisnis, salah satu standar yang diminta OECD.",
           "source": {
             "outlet": "cnbcindonesia.com",
             "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
           }
         },
         {
-          "q": "Siapa Airlangga Hartarto dalam proses ini?",
-          "a": "Airlangga Hartarto adalah Menteri Koordinator Bidang Perekonomian yang menargetkan Indonesia menjadi anggota OECD pada 2028 dan mengawal penyelesaian tiga regulasi utama.",
+          "q": "Siapa Airlangga Hartarto dalam konteks berita ini?",
+          "a": "Airlangga Hartarto adalah Menteri Koordinator Bidang Perekonomian yang menyampaikan target keanggotaan OECD 2028.",
           "source": {
             "outlet": "cnbcindonesia.com",
             "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
           }
         }
       ],
-      "action": "Pantau perkembangan revisi aturan penyuapan asing dan undang-undang terkait agar tahu dampaknya bagi dunia usaha.",
+      "action": "Pantau pembahasan tiga regulasi OECD di DPR dan cermati dampaknya bagi aturan usaha di Indonesia.",
       "image": {
         "url": "assets/41b5688145.webp",
         "credit": "cnnindonesia.com",
@@ -503,14 +495,14 @@
           "url": "https://www.cnnindonesia.com/ekonomi/20261109213056-532-1425154/incar-status-anggota-penuh-oecd-2028-ri-siap-rampungkan-3-aturan-ini",
           "published_at": "2026-11-10T18:44:37+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran",
           "published_at": "2026-11-10T12:10:43+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "place": "nasional",
@@ -522,78 +514,78 @@
     {
       "id": "c6",
       "type": "news",
-      "topic_id": "t_prabowo_anugerahkan_19_gelar_p_2947",
-      "angle": "Upacara di Istana Negara menetapkan 19 tokoh sebagai pahlawan nasional.",
+      "topic_id": "t_rotasi_kapolri_tarik_komjen_sy_1358",
+      "angle": "Kapolri Suyudi Tarik Dua Jenderal Bintang Tiga dari KSP",
       "kicker": "Nasional",
-      "title": "Prabowo Beri Gelar Pahlawan Nasional ke 19 Tokoh, Termasuk Hoegeng",
+      "title": "Kapolri Suyudi Tarik Dua Jenderal Bintang Tiga dari KSP",
       "status": "sebagian",
       "truth": {
-        "claim": "Presiden Prabowo Subianto menganugerahkan gelar pahlawan nasional kepada 19 tokoh, termasuk Hoegeng dan Ali Sadikin, pada 10 November 2026.",
+        "claim": "Komjen Syahar Diantono dan Komjen Yuda Gustawan ditarik dari penugasan di KSP oleh Kapolri Jenderal Suyudi Ario Seto.",
         "status": "sebagian",
-        "confidence": 0.62,
-        "band": "belum_pasti",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
         "basis": {
-          "strongest": "one_tier2",
+          "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 1,
+          "tier2": 2,
           "independent_outlets": 2,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:56:27+07:00"
+        "assessed_at": "2026-11-10T18:59:02+07:00"
       },
       "body": [
-        "Presiden Prabowo Subianto menganugerahkan gelar pahlawan nasional kepada 19 tokoh dalam upacara di Istana Negara, Jakarta, Selasa (10/11/2026). Di antara penerima gelar tersebut adalah mantan Kapolri Jenderal Hoegeng Iman Santoso, mantan Gubernur Jakarta Ali Sadikin, dan Ali Sastroamidjojo. Upacara ini menjadi momen resmi bagi negara untuk mengakui jasa para tokoh dari berbagai latar belakang.",
-        "Pemberian gelar ini penting karena menjadi pengakuan negara atas kontribusi tokoh-tokoh yang telah berjasa bagi bangsa. Hoegeng dikenal sebagai polisi yang jujur dan berani memberantas korupsi pada masanya. Ali Sadikin dikenal sebagai gubernur yang membangun Jakarta pada periode 1966-1977. Sementara Ali Sastroamidjojo tercatat sebagai tokoh politik dan diplomat. Bagi pembaca, gelar ini bukan sekadar simbol, tetapi juga pengingat akan nilai-nilai yang diperjuangkan para tokoh tersebut.",
-        "Namun, detail mengenai kriteria pemilihan dan proses pengusulan ke-19 tokoh tersebut belum dijelaskan secara rinci dalam artikel. Selain itu, belum ada informasi mengenai tanggapan keluarga atau pihak terkait atas penganugerahan ini. Langkah berikutnya, publik dapat memantau bagaimana pemerintah akan menindaklanjuti penghargaan ini, misalnya melalui pendidikan sejarah atau program yang mengenalkan jasa para pahlawan nasional."
+        "Kapolri Jenderal Suyudi Ario Seto menarik Komjen Syahar Diantono dan Komjen Yuda Gustawan dari penugasan di Kantor Staf Presiden (KSP). Keduanya adalah jenderal bintang tiga yang sebelumnya bertugas di KSP pada masa kepemimpinan Kapolri Jenderal Listyo Sigit Prabowo. Penarikan ini dilaporkan sejumlah media, dan Komjen Syahar kini disebut menjabat sebagai Analis Kebijakan Utama di Lemdiklat Polri.",
+        "Penarikan dua perwira tinggi ini penting karena KSP adalah lembaga yang menopang kerja Presiden, sehingga keberadaan personel Polri di sana menyangkut koordinasi kebijakan di tingkat pusat. Rotasi di tubuh Polri juga menjadi sinyal bagaimana institusi menata ulang penempatan perwira setelah pergantian pimpinan. Bagi pembaca, perubahan ini menentukan siapa yang mengawal isu keamanan dan kebijakan publik di lingkaran istana.",
+        "Belum jelas alasan resmi penarikan tersebut, apakah bagian dari rotasi rutin atau evaluasi penugasan. Detail mengenai posisi baru Komjen Yuda Gustawan juga belum disebutkan secara rinci. Langkah berikutnya yang perlu dicermati adalah surat keputusan resmi Polri dan apakah ada penempatan pengganti di KSP. Publik sebaiknya menunggu keterangan resmi agar tidak menyimpulkan lebih jauh dari informasi yang ada."
       ],
       "explain": [
         {
-          "q": "Siapa itu Hoegeng Iman Santoso?",
-          "a": "Hoegeng adalah Kepala Staf Angkatan Kepolisian Republik Indonesia (Kapolri) dari tahun 1968 hingga 1971. Ia dikenal sebagai pejabat polisi yang paling berani dan jujur, serta gigih memberantas korupsi.",
+          "q": "Siapa Listyo Sigit Prabowo dalam konteks penugasan ini?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo. Ia pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
           "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Hoegeng_Iman_Santoso"
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
           }
         },
         {
-          "q": "Siapa itu Ali Sadikin?",
-          "a": "Ali Sadikin atau Bang Ali adalah Gubernur Jakarta pada tahun 1966 hingga 1977. Ia berperan dalam pembangunan Ibu Kota Republik Indonesia.",
+          "q": "Apa itu KSP dan mengapa penempatan personel di sana relevan?",
+          "a": "KSP adalah Kantor Staf Presiden, lembaga yang menopang kerja Presiden. Keberadaan personel Polri di sana menyangkut koordinasi kebijakan di tingkat pusat, sehingga penarikan mereka menarik perhatian.",
           "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Ali_Sadikin"
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261110100113-20-1425271/kapolri-tarik-komjen-syahar-dan-yuda-gustawan-dari-penugasan-di-ksp"
           }
         },
         {
-          "q": "Apa latar belakang Prabowo Subianto?",
-          "a": "Prabowo Subianto adalah Presiden Indonesia kedelapan sejak 2024. Sebelumnya ia menjabat Menteri Pertahanan (2019-2024) dan merupakan pensiunan perwira militer.",
+          "q": "Apa peran Kapolri dalam struktur Polri?",
+          "a": "Kepala Kepolisian Republik Indonesia atau umumnya disingkat menjadi Kapolri, adalah pejabat yang menjadi pimpinan tertinggi dalam organisasi Kepolisian Republik Indonesia (Polri).",
           "source": {
             "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+            "url": "https://id.wikipedia.org/wiki/Kepala_Kepolisian_Negara_Republik_Indonesia"
           }
         }
       ],
-      "action": "Cari tahu lebih lanjut tentang perjuangan Hoegeng dan Ali Sadikin untuk memahami nilai yang membuat mereka diakui sebagai pahlawan nasional.",
+      "action": "Pantau keterangan resmi Polri soal alasan penarikan dan posisi baru kedua jenderal tersebut.",
       "image": {
-        "url": "assets/c3efed0add.webp",
-        "credit": "cnbcindonesia.com",
-        "alt": "Prabowo Beri Gelar Pahlawan Nasional ke 19 Tokoh, Termasuk Hoegeng"
+        "url": "assets/ca3e84298e.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kapolri Suyudi Tarik Dua Jenderal Bintang Tiga dari KSP"
       },
       "sources": [
         {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110155948-4-783954/prabowo-anugerahkan-19-gelar-pahlawan-nasional-ada-jenderal-hoegeng",
-          "published_at": "2026-11-10T16:04:07+07:00",
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110100113-20-1425271/kapolri-tarik-komjen-syahar-dan-yuda-gustawan-dari-penugasan-di-ksp",
+          "published_at": "2026-11-10T10:26:57+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         },
         {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8332222/sosok-ali-sadikin-gubernur-legendaris-jakarta-kini-jadi-pahlawan-nasional",
-          "published_at": "2026-11-10T16:39:48+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kapolri-rotasi-komjen-syahardiantono-dari-ksp-ke-lemdiklat-polri-idCA",
+          "published_at": "2026-11-10T12:05:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "place": "nasional",
@@ -622,7 +614,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-10T18:56:27+07:00"
+          "accessed_at": "2026-11-10T18:59:02+07:00"
         }
       ],
       "revision": 1,
