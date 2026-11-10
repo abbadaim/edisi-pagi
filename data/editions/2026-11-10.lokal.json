@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "lokal",
-  "published_at": "2026-11-10T20:12:11+07:00",
+  "published_at": "2026-11-10T20:17:11+07:00",
   "coverage": {
-    "from": "2026-11-09T20:12:11+07:00",
-    "to": "2026-11-10T20:12:11+07:00"
+    "from": "2026-11-09T20:17:11+07:00",
+    "to": "2026-11-10T20:17:11+07:00"
   },
-  "generated_at": "2026-11-10T20:12:11+07:00",
+  "generated_at": "2026-11-10T20:17:11+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -39,7 +39,7 @@
       "id": "c1",
       "type": "news",
       "topic_id": "t_hasil_musda_golkar_gunungkidul_da39",
-      "angle": "Penolakan kader terhadap hasil Musda XI Golkar Gunungkidul mempertanyakan legalitas proses",
+      "angle": "Penolakan kader terhadap hasil Musda XI Golkar Gunungkidul",
       "kicker": "Gunungkidul",
       "title": "Kader Golkar Gunungkidul Tolak Hasil Musda XI, Soroti Aturan Partai",
       "status": "sebagian",
@@ -57,17 +57,17 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:12:11+07:00"
+        "assessed_at": "2026-11-10T20:17:11+07:00"
       },
       "body": [
-        "Sejumlah kader Partai Golkar di Gunungkidul, DIY, menolak hasil Musda XI dan menilai pelaksanaan musyawarah daerah itu melanggar aturan AD/ART partai. Penolakan ini muncul dari kalangan kader yang mempersoalkan jalannya proses musda, bukan sekadar hasil akhirnya. Informasi mengenai jumlah kader yang menolak, nama-nama mereka, serta waktu pasti musda belum dirinci dalam pemberitaan.",
-        "Bagi pembaca di Sleman dan DIY, persoalan ini penting karena Musda Golkar Gunungkidul adalah bagian dari rangkaian konsolidasi partai di tingkat kabupaten yang biasanya berujung pada penentuan kepengurusan dan arah dukungan politik di wilayah DIY. Jika prosesnya dipersoalkan, dampaknya bisa merembet ke legitimasi pengurus baru dan kesiapan partai menghadapi agenda elektoral berikutnya. Kader yang menilai ada pelanggaran AD/ART menunjukkan bahwa sengketa internal tidak selalu selesai di ruang musyawarah.",
-        "Yang belum jelas adalah langkah resmi yang akan ditempuh kader penolak, misalnya mengajukan keberatan ke DPD atau DPP Partai Golkar, serta bagaimana tanggapan pengurus daerah atas tuduhan pelanggaran AD/ART tersebut. Detail soal pasal mana yang dilanggar dan siapa yang berwenang menilai juga belum disebut. Pembaca sebaiknya tidak menyimpulkan bahwa hasil musda otomatis batal, karena mekanisme partai biasanya menyediakan jalur penyelesaian sengketa tersendiri."
+        "Sejumlah kader Partai Golkar di Gunungkidul, DIY, menolak hasil Musyawarah Daerah (Musda) XI dan menilai pelaksanaannya melanggar aturan AD/ART partai. Penolakan ini disampaikan langsung oleh kader yang mempersoalkan jalannya musyawarah tingkat kabupaten tersebut, seperti dilaporkan harianjogja.com. Musda XI menjadi momen penentuan kepengurusan Golkar Gunungkidul, sehingga hasilnya langsung menuai reaksi dari sebagian kader di wilayah DIY ini.",
+        "Latar persoalannya menyangkut aturan internal partai. Kader yang menolak menilai pelaksanaan Musda XI tidak sesuai dengan AD/ART Golkar, sehingga hasil yang dihasilkan dianggap tidak sah oleh sebagian pihak. Bagi pembaca di Gunungkidul dan DIY, sengketa semacam ini penting karena menentukan siapa yang akan memimpin Golkar di tingkat kabupaten dan bagaimana partai itu menata diri menjelang agenda politik berikutnya. Konflik internal partai besar di daerah bisa memengaruhi stabilitas politik lokal.",
+        "Yang belum jelas adalah rincian aturan AD/ART mana yang dinilai dilanggar, siapa saja kader yang menolak, serta bagaimana sikap pengurus Golkar di tingkat DIY maupun pusat menanggapi penolakan ini. Belum ada informasi apakah penolakan akan berlanjut ke jalur formal partai atau upaya hukum. Pembaca sebaiknya tidak menyimpulkan hasil Musda sudah batal, karena penolakan kader belum tentu berarti hasil itu dibatalkan secara resmi oleh partai."
       ],
       "explain": [
         {
-          "q": "Apa itu Musda dalam struktur Partai Golkar?",
-          "a": "Musda adalah musyawarah daerah di tingkat kabupaten/kota yang menjadi forum penentuan kepengurusan dan kebijakan partai di wilayah tersebut.",
+          "q": "Apa itu Musda dalam Partai Golkar?",
+          "a": "Musda adalah musyawarah daerah, forum partai di tingkat kabupaten/kota untuk memilih kepengurusan dan menetapkan arah kebijakan daerah.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
@@ -75,22 +75,22 @@
         },
         {
           "q": "Apa yang dimaksud AD/ART partai?",
-          "a": "AD/ART adalah anggaran dasar dan anggaran rumah tangga, yaitu aturan internal yang mengikat seluruh kader dan pengurus dalam menjalankan organisasi partai.",
+          "a": "AD/ART adalah Anggaran Dasar dan Anggaran Rumah Tangga, yaitu aturan internal yang mengikat seluruh kader dan pengurus partai.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
           }
         },
         {
-          "q": "Mengapa kader mempersoalkan pelaksanaan musda, bukan hanya hasilnya?",
-          "a": "Kader menilai proses pelaksanaan Musda XI tidak sesuai aturan AD/ART, sehingga hasilnya dianggap tidak sah oleh sebagian kader.",
+          "q": "Mengapa penolakan kader ini penting bagi Gunungkidul?",
+          "a": "Karena hasil Musda menentukan kepengurusan Golkar Gunungkidul, dan sengketa internal dapat memengaruhi stabilitas politik di tingkat kabupaten.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
           }
         }
       ],
-      "action": "Pantau pernyataan resmi DPD atau DPP Golkar soal sengketa Musda Gunungkidul sebelum menarik kesimpulan.",
+      "action": "Pantau pernyataan resmi pengurus Golkar DIY atau pusat soal penolakan hasil Musda XI Gunungkidul.",
       "image": null,
       "sources": [
         {
@@ -98,7 +98,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai",
           "published_at": "2026-11-10T20:07:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:12:11+07:00"
+          "accessed_at": "2026-11-10T20:17:11+07:00"
         }
       ],
       "place": "lokal",
@@ -116,7 +116,7 @@
       "title": "Leptospirosis di Bantul Capai 158 Kasus, 9 Pasien Meninggal",
       "status": "sebagian",
       "truth": {
-        "claim": "Dinkes Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026 dengan sembilan pasien meninggal.",
+        "claim": "Dinkes Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026, dengan sembilan pasien meninggal.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -129,40 +129,40 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:12:11+07:00"
+        "assessed_at": "2026-11-10T20:17:11+07:00"
       },
       "body": [
-        "Dinas Kesehatan Kabupaten Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026. Dari jumlah itu, sembilan pasien dilaporkan meninggal. Data ini menjadi perhatian warga DIY, khususnya Bantul, karena leptospirosis termasuk penyakit yang muncul dari lingkungan sekitar permukiman dan lahan kerja.",
-        "Leptospirosis perlu dipahami sebagai penyakit yang berkaitan dengan paparan bakteri dari urine hewan, terutama tikus, melalui air atau tanah yang terkontaminasi. Bagi pembaca di Bantul, angka ini penting karena kasus bisa muncul di sekitar rumah, sawah, atau tempat kerja yang bersinggungan dengan genangan dan lumpur. Keterangan Dinkes menyebut pasien yang meninggal memiliki penyakit penyerta, sehingga kondisi awal pasien turut memengaruhi perjalanan penyakit.",
-        "Belum jelas bagaimana sebaran kasus menurut kecamatan, kelompok usia, atau sumber paparan utama di Bantul. Belum ada penjelasan rinci soal langkah pengendalian yang sedang berjalan. Yang sering disalahpahami, leptospirosis tidak selalu tampak khas di awal, sehingga kewaspadaan terhadap demam setelah kontak dengan genangan atau lumpur perlu dibicarakan dengan tenaga kesehatan."
+        "Dinas Kesehatan Kabupaten Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026. Dari jumlah itu, sembilan pasien meninggal dunia. Data ini menjadi perhatian warga DIY, khususnya di Bantul, karena leptospirosis termasuk penyakit yang bisa menular lewat air atau tanah yang tercemar urine hewan, terutama tikus.",
+        "Angka ini penting bagi pembaca di Sleman dan DIY karena leptospirosis sering muncul di musim hujan dan di lingkungan yang dekat dengan genangan air atau sawah. Penyakit ini bisa dicegah jika warga mengenali gejalanya lebih awal dan menjaga kebersihan lingkungan. Keterangan Dinkes Bantul menyebut pasien yang meninggal memiliki penyakit penyerta, sehingga kondisi itu turut memengaruhi keparahan.",
+        "Belum jelas bagaimana sebaran kasus per kecamatan, kelompok usia yang paling banyak terdampak, dan langkah pengendalian yang sedang berjalan. Warga sebaiknya tidak menganggap remeh demam setelah terpapar air atau tanah yang diduga tercemar, dan segera memeriksakan diri ke fasilitas kesehatan terdekat."
       ],
       "explain": [
         {
-          "q": "Apa itu leptospirosis dan bagaimana kaitannya dengan lingkungan sekitar?",
-          "a": "Leptospirosis adalah penyakit yang berkaitan dengan paparan bakteri dari urine hewan, terutama tikus, melalui air atau tanah yang terkontaminasi. Karena itu, genangan dan lumpur di sekitar permukiman atau lahan kerja menjadi titik perhatian.",
+          "q": "Apa itu leptospirosis dan bagaimana penularannya?",
+          "a": "Leptospirosis adalah penyakit yang menular lewat air atau tanah yang tercemar urine hewan, terutama tikus.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         },
         {
-          "q": "Mengapa penyakit penyerta pada pasien yang meninggal disebut dalam data Dinkes Bantul?",
-          "a": "Keterangan Dinkes Bantul menyebut sembilan pasien meninggal dengan penyakit penyerta. Artinya, kondisi kesehatan lain yang sudah ada sebelumnya turut tercatat pada pasien yang meninggal, bukan hanya leptospirosis.",
+          "q": "Mengapa pasien yang meninggal disebut memiliki penyakit penyerta?",
+          "a": "Keterangan Dinkes Bantul menyebut sembilan pasien meninggal dengan penyakit penyerta, yang turut memengaruhi keparahan kondisi.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         },
         {
-          "q": "Apa yang dimaksud dengan Dinkes Bantul dalam data kasus ini?",
-          "a": "Dinkes Bantul adalah Dinas Kesehatan Kabupaten Bantul, lembaga yang mencatat dan melaporkan jumlah kasus leptospirosis di wilayah Bantul hingga 9 November 2026.",
+          "q": "Siapa yang mencatat data kasus ini?",
+          "a": "Dinas Kesehatan Kabupaten Bantul mencatat 158 kasus hingga 9 November 2026.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         }
       ],
-      "action": "Jika demam muncul setelah kontak dengan genangan atau lumpur, segera periksa ke fasilitas kesehatan dan ceritakan riwayat paparannya.",
+      "action": "Kenali gejala leptospirosis dan segera periksa ke fasilitas kesehatan jika demam muncul setelah terpapar air atau tanah yang diduga tercemar.",
       "image": null,
       "sources": [
         {
@@ -170,7 +170,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal",
           "published_at": "2026-11-10T18:47:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:12:11+07:00"
+          "accessed_at": "2026-11-10T20:17:11+07:00"
         }
       ],
       "place": "lokal",
@@ -183,12 +183,12 @@
       "id": "c3",
       "type": "news",
       "topic_id": "t_jalan_wisata_kepek_ngobaran_be_da39",
-      "angle": "Pemkab Gunungkidul masih menunggu sumber dana untuk melanjutkan jalan wisata ini.",
+      "angle": "Pemkab Gunungkidul masih menunggu bantuan IJD dan DAK untuk melanjutkan jalan wisata ini.",
       "kicker": "Gunungkidul",
       "title": "Jalan Wisata Kepek-Ngobaran Gunungkidul Belum Lanjut pada 2026",
       "status": "sebagian",
       "truth": {
-        "claim": "Pemkab Gunungkidul masih mengupayakan bantuan IJD dan DAK untuk melanjutkan pembangunan jalan wisata Kepek-Ngobaran pada 2026.",
+        "claim": "Pembangunan jalan wisata Kepek-Ngobaran di Gunungkidul belum bisa dilanjutkan pada 2026 karena Pemkab masih mengupayakan bantuan IJD dan DAK.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -201,40 +201,40 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:12:11+07:00"
+        "assessed_at": "2026-11-10T20:17:11+07:00"
       },
       "body": [
-        "Pembangunan jalan wisata yang menghubungkan Kepek dengan Ngobaran di Kabupaten Gunungkidul, DIY, belum bisa dilanjutkan pada 2026. Pemerintah Kabupaten Gunungkidul masih mengupayakan bantuan dana, khususnya melalui Inpres Jalan Daerah (IJD) dan Dana Alokasi Khusus (DAK), agar proyek yang menyangkut akses warga dan wisatawan itu bisa berjalan kembali. Informasi ini dilaporkan Harian Jogja, namun rincian anggaran yang dibutuhkan belum disebutkan secara jelas.",
-        "Bagi warga Gunungkidul, jalan ini bukan sekadar jalur alternatif. Kawasan Ngobaran dikenal sebagai tujuan wisata pesisir, sehingga kualitas akses menentukan kenyamanan pengunjung sekaligus perekonomian warga di sekitar. Ketika pembangunan tertunda, perbaikan infrastruktur yang dinanti pun ikut mundur. Pembaca di Sleman dan DIY perlu memahami bahwa proyek daerah seperti ini bergantung pada skema pendanaan pusat, bukan hanya kemampuan APBD kabupaten.",
-        "Yang belum jelas adalah besaran kebutuhan anggaran, jadwal pasti lelang atau lanjutan konstruksi, serta apakah usulan IJD dan DAK tahun ini akan disetujui. Pemerintah kabupaten disebut masih mengupayakan bantuan tersebut, tetapi belum ada keterangan resmi soal target penyelesaian. Perlu dicatat, pernyataan “belum bisa dilanjutkan pada 2026” bukan berarti proyek dihentikan permanen; statusnya masih menunggu kepastian pendanaan."
+        "Pemerintah Kabupaten Gunungkidul memastikan pembangunan jalan wisata Kepek-Ngobaran belum bisa dilanjutkan pada 2026. Proyek yang menghubungkan kawasan wisata di Gunungkidul ini masih tertahan karena pendanaannya belum jelas. Pemkab saat ini masih mengupayakan bantuan melalui Inpres Jalan Daerah (IJD) dan Dana Alokasi Khusus (DAK). Bagi warga Sleman dan DIY yang sering melintas ke pantai selatan, kelanjutan jalan ini menentukan kenyamanan dan waktu tempuh menuju kawasan wisata Ngobaran.",
+        "Jalan Kepek-Ngobaran bukan sekadar akses biasa. Kawasan pantai selatan Gunungkidul menjadi tujuan wisata yang ramai, terutama pada akhir pekan dan libur panjang. Selama ini sebagian ruas jalan menuju Ngobaran dikenal sempit dan belum sepenuhnya nyaman dilalui kendaraan. Perbaikan jalan diharapkan mempermudah arus wisatawan, mempercepat distribusi barang, dan mengangkat ekonomi warga di sekitar jalur. Karena itu, penundaan pada 2026 berarti manfaat tersebut belum bisa dirasakan dalam waktu dekat.",
+        "Yang belum jelas adalah kepastian besaran dan waktu pencairan bantuan IJD maupun DAK yang sedang diupayakan Pemkab Gunungkidul. Belum ada keterangan apakah proyek akan masuk tahap lelang atau tetap menunggu keputusan pusat. Pembaca perlu memahami bahwa pernyataan belum bisa dilanjutkan bukan berarti proyek dibatalkan, melainkan bergantung pada ketersediaan anggaran. Perkembangan berikutnya akan ditentukan oleh hasil pengajuan dana tersebut."
       ],
       "explain": [
         {
-          "q": "Apa itu Inpres Jalan Daerah (IJD) dan bagaimana kaitannya dengan proyek jalan daerah?",
-          "a": "IJD adalah program bantuan pusat untuk pembangunan jalan daerah; artikel menyebut Pemkab masih mengupayakan bantuan ini sebagai sumber dana lanjutan.",
+          "q": "Apa itu bantuan IJD yang disebut sebagai salah satu sumber pendanaan proyek ini?",
+          "a": "IJD adalah Inpres Jalan Daerah, program bantuan pusat untuk pembangunan dan perbaikan jalan daerah yang diajukan pemerintah daerah.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
           }
         },
         {
-          "q": "Apa itu Dana Alokasi Khusus (DAK) yang disebut dalam artikel?",
-          "a": "DAK adalah dana transfer dari pemerintah pusat ke daerah yang dialokasikan untuk kebutuhan tertentu; artikel menyebutnya sebagai salah satu sumber yang diupayakan Pemkab.",
+          "q": "Mengapa jalan Kepek-Ngobaran penting bagi kawasan wisata Gunungkidul?",
+          "a": "Jalan ini menjadi akses menuju kawasan wisata pantai selatan, termasuk Ngobaran, sehingga perbaikannya berpengaruh pada kenyamanan wisatawan dan ekonomi warga sekitar.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
           }
         },
         {
-          "q": "Di mana lokasi Kepek dan Ngobaran dalam konteks Gunungkidul?",
-          "a": "Artikel menyebut jalan wisata Kepek-Ngobaran berada di Gunungkidul, DIY, dan menjadi penghubung kawasan yang dikaitkan dengan tujuan wisata.",
+          "q": "Apa arti pernyataan belum bisa dilanjutkan pada 2026 bagi proyek ini?",
+          "a": "Artinya pembangunan belum berlanjut tahun itu karena pendanaan belum tersedia, sementara Pemkab masih mengupayakan bantuan IJD dan DAK.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
           }
         }
       ],
-      "action": "Pantau pengumuman resmi Pemkab Gunungkidul soal status dana IJD dan DAK untuk jalan Kepek-Ngobaran.",
+      "action": "Pantau pengumuman resmi Pemkab Gunungkidul soal status bantuan IJD dan DAK untuk jalan Kepek-Ngobaran.",
       "image": null,
       "sources": [
         {
@@ -242,7 +242,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026",
           "published_at": "2026-11-10T18:07:20+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:12:11+07:00"
+          "accessed_at": "2026-11-10T20:17:11+07:00"
         }
       ],
       "place": "lokal",
