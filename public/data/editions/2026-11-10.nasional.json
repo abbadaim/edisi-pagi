@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T17:52:59+07:00",
+  "published_at": "2026-11-10T17:58:52+07:00",
   "coverage": {
-    "from": "2026-11-09T17:52:59+07:00",
-    "to": "2026-11-10T17:52:59+07:00"
+    "from": "2026-11-09T17:58:52+07:00",
+    "to": "2026-11-10T17:58:52+07:00"
   },
-  "generated_at": "2026-11-10T17:52:59+07:00",
+  "generated_at": "2026-11-10T17:58:52+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -51,17 +51,17 @@
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 4,
+          "tier2": 3,
           "independent_outlets": 5,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T17:52:59+07:00"
+        "assessed_at": "2026-11-10T17:58:52+07:00"
       },
       "body": [
         "Sebanyak delapan fraksi di DPR disebut telah bersepakat bakal menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran Rakabuming.",
-        "Anggota DPR mulai mengusulkan Hak Menyatakan Pendapat (HMP) terkait Wakil Presiden Gibran Rakabuming Raka. Dukungan terus bertambah."
+        "PKB mengklaim delapan fraksi DPR hampir sepakat untuk Hak Menyatakan Pendapat (HMP) terkait ijazah Gibran."
       ],
       "explain": [
         {
@@ -93,35 +93,35 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
           "published_at": "2026-11-10T10:35:11+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110112930-4-783829/anggota-dpr-mulai-teken-usulan-hak-menyatakan-pendapat-wapres-gibran",
-          "published_at": "2026-11-10T11:33:51+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
+          "published_at": "2026-11-10T10:59:00+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "okezone.com",
           "url": "https://news.okezone.com/read/2026/11/10/337/3253182/terima-usulan-hmp-pemakzulan-gibran-ketua-dpr-kita-akan-tindak-lanjuti",
           "published_at": "2026-11-10T12:30:09+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/usulan-hmp-pemakzulan-gibran-bergulir-di-dpr-puan-buka-suara-idCY",
           "published_at": "2026-11-10T14:22:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8746265/puan-soal-isu-gibran-mundur-jangan-berandai-andai-dan-picu-keresahan",
-          "published_at": "2026-11-10T11:40:06+07:00",
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
+          "published_at": "2026-11-10T15:41:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
       "place": "nasional",
@@ -152,7 +152,7 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T17:52:59+07:00"
+        "assessed_at": "2026-11-10T17:58:52+07:00"
       },
       "body": [
         "Shell dan BP melepas bisnis SPBU di Indonesia, apa kata Kementerian ESDM",
@@ -188,28 +188,28 @@
           "url": "https://www.cnbcindonesia.com/news/20261110084629-4-783754/shell-bp-lepas-bisnis-spbu-di-ri-esdm-akhirnya-buka-suara",
           "published_at": "2026-11-10T09:25:06+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
           "published_at": "2026-11-10T09:31:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "kumparan.com",
           "url": "https://kumparan.com/kumparanbisnis/shell-dan-bp-tinggalkan-bisnis-spbu-alarm-bagi-industri-hilir-migas-ri-28XvDOe0Ysw",
           "published_at": "2026-11-10T16:36:07+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
           "published_at": "2026-11-10T10:48:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
       "place": "nasional",
@@ -220,10 +220,10 @@
     },
     {
       "id": "c3",
-      "type": "news",
-      "topic_id": "t_putusan_lengkap_ma_soal_pembat_e098",
-      "angle": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran",
-      "kicker": "Nasional",
+      "type": "deep_dive",
+      "topic_id": "t_putusan_lengkap_ma_soal_pembat_7588",
+      "angle": "Rekap 1 hari",
+      "kicker": "Mendalam",
       "title": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA",
       "status": "sebagian",
       "truth": {
@@ -234,17 +234,18 @@
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 5,
+          "tier2": 2,
+          "independent_outlets": 4,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T17:52:59+07:00"
+        "assessed_at": "2026-11-10T17:58:52+07:00"
       },
       "body": [
         "MA membatalkan surat keterangan penyetaraan pendidikan Gibran Rakabuming. Putusan ini mempertimbangkan juga putusan MA.",
-        "MA merilis putusan perkara Nomor 742 K/TUN/2026 yang membatalkan Surat Keterangan Penyetaraan Pendidikan SMA Gibran Rakabuming. Simak putusan lengkapnya."
+        "Menteri Koordinator Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan Yusril Ihza Mahendra menyatakan putusan Mahkamah...",
+        "REPUBLIKA.CO.ID, JAKARTA -- Menteri Koordinator Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan (Menko Kumham Imipas), Prof Yusril Ihza Mahendra menyatakan, putusan Mahkamah Agung (MA) terkait surat keterangan (suket) penyetaraan pendidikan..."
       ],
       "explain": [
         {
@@ -264,59 +265,64 @@
           }
         }
       ],
-      "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
-      "image": {
-        "url": "assets/05ba398e47.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA"
-      },
+      "action": "Ini bacaan panjang. Edisi harian sudah selesai tanpanya.",
+      "image": null,
       "sources": [
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261110160059-12-1425494/putusan-lengkap-ma-soal-pembatalan-suket-penyetaraan-sma-gibran",
           "published_at": "2026-11-10T16:55:50+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8746999/ini-putusan-lengkap-ma-batalkan-suket-ijazah-sma-gibran",
-          "published_at": "2026-11-10T17:07:27+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "antaranews.com",
-          "url": "https://www.antaranews.com/berita/5844339/yusril-tegaskan-putusan-ma-soal-penyetaraan-pendidikan-gibran-final",
-          "published_at": "2026-11-10T17:22:16+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "kumparan.com",
-          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
-          "published_at": "2026-11-10T17:39:24+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "republika.co.id",
           "url": "https://news.republika.co.id/berita/toa75n393/putusan-ma-terkuak-tak-ada-bukti-ijazah-gibran",
           "published_at": "2026-11-10T17:15:23+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5844339/yusril-tegaskan-putusan-ma-soal-penyetaraan-pendidikan-gibran-final",
+          "published_at": "2026-11-10T17:22:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T17:58:52+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
+          "published_at": "2026-11-10T17:39:24+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
-      "place": "nasional",
       "revision": 1,
       "first_seen": "2026-11-10",
       "previous_edition": null,
-      "changes": []
+      "changes": [],
+      "dek": "MA membatalkan surat keterangan penyetaraan pendidikan Gibran Rakabuming. Putusan ini mempertimbangkan juga putusan MA.",
+      "optional": true,
+      "read_min": 4,
+      "stats": [
+        {
+          "value": "5",
+          "label": "artikel"
+        },
+        {
+          "value": "4",
+          "label": "media"
+        },
+        {
+          "value": "1 hari",
+          "label": "berjalan"
+        }
+      ]
     },
     {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_komisi_iii_desak_kejagung_ungk_91c7",
+      "topic_id": "t_komisi_iii_desak_kejagung_ungk_c957",
       "angle": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel Sultra",
       "kicker": "Kriminal",
       "title": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel",
@@ -329,13 +335,13 @@
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 4,
+          "tier2": 2,
+          "independent_outlets": 3,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T17:52:59+07:00"
+        "assessed_at": "2026-11-10T17:58:52+07:00"
       },
       "body": [
         "Anggota DPR Rudianto Lallo mendesak Kejaksaan Agung ungkap pelindung tambang ilegal Arif Kurniawan di Sulawesi Tenggara. Penindakan harus tegas dan menyeluruh.",
@@ -371,28 +377,21 @@
           "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra",
           "published_at": "2026-11-10T01:25:46+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
           "published_at": "2026-11-10T16:09:25+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8746453/kejagung-kembali-geledah-6-lokasi-terkait-kasus-nikel-ilegal-di-sultra",
-          "published_at": "2026-11-10T13:15:18+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
           "published_at": "2026-11-10T13:10:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
       "place": "nasional",
@@ -404,7 +403,7 @@
     {
       "id": "c5",
       "type": "news",
-      "topic_id": "t_propam_polri_gelar_sidang_etik_787d",
+      "topic_id": "t_propam_polri_gelar_sidang_etik_a00c",
       "angle": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus Penyadapan",
       "kicker": "Kriminal",
       "title": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus",
@@ -417,17 +416,17 @@
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 5,
+          "tier2": 2,
+          "independent_outlets": 3,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T17:52:59+07:00"
+        "assessed_at": "2026-11-10T17:58:52+07:00"
       },
       "body": [
         "Propam Polri menggelar sidang etik terhadap mantan Kadivkum Polri Irjen Ahrie Sonta, pada Selasa (10/11) hari ini.",
-        "Polri menggelar sidang Komisi Kode Etik Profesi terhadap Kepala Divisi Hukum (Kadivkum) Polri Irjen Ahrie Sonta."
+        "Sidang etik terkait kasus penyadapan presiden kali ini digelar Divisi Propam Polri terhadap Irjen Ahrie Sonta Nasution."
       ],
       "explain": [
         {
@@ -459,35 +458,21 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
           "published_at": "2026-11-10T11:36:47+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "okezone.com",
           "url": "https://news.okezone.com/read/2026/11/10/337/3253172/kasus-penyadapan-ilegal-polri-gelar-sidang-etik-irjen-ahrie-sonta-hari-ini",
           "published_at": "2026-11-10T11:51:29+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8746270/polri-gelar-sidang-etik-irjen-ahrie-sonta-tersangka-penyadapan-prabowo",
-          "published_at": "2026-11-10T11:42:40+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
           "published_at": "2026-11-10T11:46:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
-        },
-        {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8332157/tersangka-penyadapan-prabowo-irjen-ahrie-sonta-jalani-sidang-etik",
-          "published_at": "2026-11-10T12:10:29+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
       "place": "nasional",
@@ -516,7 +501,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-10T17:52:59+07:00"
+          "accessed_at": "2026-11-10T17:58:52+07:00"
         }
       ],
       "revision": 1,
