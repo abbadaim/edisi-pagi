@@ -269,7 +269,9 @@ export async function writeCardWithLlm(
           maxTokens: 2600,
         });
         raw = data;
-      } catch {
+      } catch (e) {
+        const why = e instanceof Error ? e.message.slice(0, 120) : String(e);
+        console.log(`  ! tulis gagal untuk "${ctx.topic.title.slice(0, 40)}": ${why}`);
         raw = null;
       }
     }
