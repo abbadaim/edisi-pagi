@@ -2,25 +2,25 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T20:08:25+07:00",
+  "published_at": "2026-11-10T20:12:11+07:00",
   "coverage": {
-    "from": "2026-11-09T20:08:25+07:00",
-    "to": "2026-11-10T20:08:25+07:00"
+    "from": "2026-11-09T20:12:11+07:00",
+    "to": "2026-11-10T20:12:11+07:00"
   },
-  "generated_at": "2026-11-10T20:08:25+07:00",
+  "generated_at": "2026-11-10T20:12:11+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 6,
+  "reading_time_min": 7,
   "generated_by": {
     "adjudicate": {
       "provider": "deepseek",
       "model": "deepseek-chat"
     },
     "write": {
-      "provider": "deepseek+deterministic",
+      "provider": "deepseek",
       "model": "deepseek-chat"
     },
     "verify": {
@@ -38,200 +38,13 @@
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_bp_lepas_bisnis_spbu_ri_98ea",
-      "angle": "BP Jual Seluruh Saham SPBU di Indonesia ke AKR Corporindo",
+      "topic_id": "t_polemik_ijazah_gibran_dan_hak_d31b",
+      "angle": "Polemik ijazah Gibran memicu hak DPR dan tawaran mundur.",
       "kicker": "Nasional",
-      "title": "BP Jual Seluruh Saham SPBU di Indonesia ke AKR Corporindo",
+      "title": "DPR Teken Hak Menyatakan Pendapat, Gibran Ajukan Mundur dan Uji Ijazah",
       "status": "sebagian",
       "truth": {
-        "claim": "PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, pengelola jaringan SPBU BP di Indonesia.",
-        "status": "sebagian",
-        "confidence": 0.83,
-        "band": "kemungkinan_besar",
-        "basis": {
-          "strongest": "two_independent_tier2",
-          "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 3,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
-      },
-      "body": [
-        "BP Global Investments Limited resmi melepas seluruh kepemilikan sahamnya di bisnis stasiun pengisian bahan bakar umum (SPBU) di Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, perusahaan pengelola jaringan SPBU bermerek BP. Sebelumnya BP melepas 49,9 persen saham senilai US$14,22 juta, dan kini sisa kepemilikan berpindah seluruhnya ke grup AKR.",
-        "Langkah ini penting bagi pembaca karena menyangkut siapa yang mengendalikan jaringan SPBU yang selama ini beroperasi dengan merek asing di Tanah Air. Kementerian ESDM menyebut BP ingin memusatkan perhatian pada bisnis hulu, sementara margin ritel bahan bakar dikenal tipis dan harga jualnya diatur. Bagi konsumen, perubahan pemilik belum tentu berarti perubahan layanan, karena AKR memastikan merek SPBU tidak berubah usai akuisisi.",
-        "Yang belum jelas adalah nilai total transaksi untuk sisa saham, dampaknya terhadap jumlah SPBU dan karyawan, serta rencana jangka panjang AKR atas jaringan tersebut. Pemerintah belum merinci apakah ada syarat khusus dalam peralihan izin usaha. Pembaca sebaiknya tidak menyimpulkan bahwa SPBU BP akan tutup atau berganti nama, karena pernyataan resmi menyebut merek tetap dipertahankan."
-      ],
-      "explain": [
-        {
-          "q": "Apa itu PT Aneka Petroindo Raya?",
-          "a": "Perusahaan yang mengelola jaringan SPBU bermerek BP di Indonesia, dan kini seluruh sahamnya dikuasai AKR Corporindo.",
-          "source": {
-            "outlet": "cnnindonesia.com",
-            "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham"
-          }
-        },
-        {
-          "q": "Siapa BP plc?",
-          "a": "BP plc adalah perusahaan minyak bumi bermarkas di London dan salah satu dari empat perusahaan minyak terbesar di dunia.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/BP_(perusahaan)"
-          }
-        },
-        {
-          "q": "Mengapa perusahaan asing bisa keluar dari bisnis SPBU Indonesia?",
-          "a": "Margin bahan bakar ritel tipis dan harga jualnya diatur, sementara biaya investasi jaringan besar, sehingga sebagian pemain memilih menjual saham ke mitra lokal.",
-          "source": {
-            "outlet": "ESDM",
-            "url": "https://www.esdm.go.id/"
-          }
-        }
-      ],
-      "action": "Pantau pengumuman resmi AKR dan Kementerian ESDM soal nilai transaksi serta nasib jaringan SPBU BP.",
-      "image": {
-        "url": "assets/f95a8f2cc8.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "BP Jual Seluruh Saham SPBU di Indonesia ke AKR Corporindo"
-      },
-      "sources": [
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
-          "published_at": "2026-11-10T10:48:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        },
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
-          "published_at": "2026-11-10T09:31:31+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        },
-        {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110090753-8-783767/video-raksasa-migas-bp-lepas-bisnis-spbu-di-indonesia",
-          "published_at": "2026-11-10T13:15:50+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        }
-      ],
-      "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-10",
-      "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c2",
-      "type": "news",
-      "topic_id": "t_pt_bsj_tersangka_korupsi_nikel_f648",
-      "angle": "Kejagung menetapkan PT BSJ tersangka korporasi dan geledah enam lokasi di Sultra",
-      "kicker": "Nasional",
-      "title": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Kasus Korupsi Nikel",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya sebagai tersangka korporasi dalam kasus korupsi nikel di Sulawesi Tenggara dan menyita Rp11,8 miliar dari pengge",
-        "status": "sebagian",
-        "confidence": 0.83,
-        "band": "kemungkinan_besar",
-        "basis": {
-          "strongest": "two_independent_tier2",
-          "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 4,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
-      },
-      "body": [
-        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya (BSJ) sebagai tersangka korporasi dalam kasus dugaan korupsi tata kelola nikel di Sulawesi Tenggara. Perusahaan itu dikaitkan dengan Arif Kurniawan. Penetapan ini disampaikan Kejagung melalui sejumlah pemberitaan pada hari yang sama. Selain menetapkan tersangka korporasi, penyidik juga menggeledah enam lokasi yang terkait dengan perkara tersebut. Dari penggeledahan itu, penyidik menyita uang tunai sebesar Rp11,8 miliar. Kasus ini mencakup periode 2013 hingga 2025.",
-        "Penetapan tersangka korporasi penting karena korupsi di sektor tambang sering melibatkan perusahaan, bukan hanya individu. Nikel merupakan komoditas strategis: Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sehingga izin tambang dan tata kelola royaltinya rawan sengketa hukum dan politik. Langkah Kejagung menunjukkan bahwa penyidikan tidak berhenti pada orang per orang, tetapi juga menyasar badan hukum yang diduga menikmati hasil korupsi. Bagi pembaca, ini menandakan bahwa kasus nikel di Sultra memasuki babak baru yang bisa berdampak pada iklim investasi dan penerimaan negara.",
-        "Namun, detail mengenai peran spesifik PT BSJ, pasal yang disangkakan, dan apakah Arif Kurniawan juga ditetapkan sebagai tersangka perorangan belum dijelaskan dalam artikel-artikel ini. Begitu pula soal status enam lokasi yang digeledah dan apakah ada tersangka lain. Langkah berikutnya adalah penyidikan lebih lanjut untuk melengkapi berkas perkara. Publik perlu menunggu keterangan resmi Kejagung agar tidak salah memahami bahwa penetapan tersangka korporasi otomatis berarti seluruh pengurus terbukti bersalah."
-      ],
-      "explain": [
-        {
-          "q": "Apa itu tersangka korporasi?",
-          "a": "Dalam hukum pidana Indonesia, korporasi dapat menjadi subjek hukum yang diduga melakukan tindak pidana, sehingga penyidik dapat menetapkannya sebagai tersangka layaknya individu.",
-          "source": {
-            "outlet": "Kejaksaan Agung",
-            "url": "https://www.kejaksaan.go.id/"
-          }
-        },
-        {
-          "q": "Mengapa nikel sering menjadi sorotan hukum?",
-          "a": "Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sehingga izin tambang dan tata kelola royaltinya kerap menjadi objek sengketa hukum dan politik.",
-          "source": {
-            "outlet": "Kementerian ESDM",
-            "url": "https://www.esdm.go.id/"
-          }
-        },
-        {
-          "q": "Apa peran Kejaksaan Agung dalam kasus ini?",
-          "a": "Kejaksaan Agung adalah lembaga negara di bidang penuntutan yang juga berwenang menyelidiki perkara korupsi yang merugikan keuangan negara.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Kejaksaan_Agung_Republik_Indonesia"
-          }
-        }
-      ],
-      "action": "Pantau keterangan resmi Kejagung dan hindari menyimpulkan guilt sebelum proses hukum selesai.",
-      "image": {
-        "url": "assets/ea25b16243.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Kasus Korupsi Nikel"
-      },
-      "sources": [
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261110143719-12-1425431/kejagung-tetapkan-pt-bsj-jadi-tersangka-korporasi-kasus-korupsi-nikel",
-          "published_at": "2026-11-10T14:56:52+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        },
-        {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
-          "published_at": "2026-11-10T16:09:25+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
-          "published_at": "2026-11-10T13:10:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        },
-        {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8746453/kejagung-kembali-geledah-6-lokasi-terkait-kasus-nikel-ilegal-di-sultra",
-          "published_at": "2026-11-10T13:15:18+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
-        }
-      ],
-      "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-10",
-      "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c3",
-      "type": "deep_dive",
-      "topic_id": "t_manuver_dpr_soal_ijazah_gibran_166b",
-      "angle": "Rekap 1 hari",
-      "kicker": "Mendalam",
-      "title": "PKB Ungkap Komunikasi Delapan Partai soal Polemik Ijazah Gibran",
-      "status": "sebagian",
-      "truth": {
-        "claim": "PKB Ungkap Komunikasi Delapan Partai soal Polemik Ijazah Gibran",
+        "claim": "Sebanyak 50 anggota DPR dari enam fraksi menandatangani usulan Hak Menyatakan Pendapat terkait ijazah Gibran, dan Gibran mengajukan mundur yang tidak ditolak Pr",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -244,12 +57,12 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "PKB mengklaim delapan fraksi DPR hampir sepakat untuk Hak Menyatakan Pendapat (HMP) terkait ijazah Gibran.",
-        "Istana Kepresidenan menegaskan tugas pemerintah tetap berjalan meski Wapres Gibran mengajukan permohonan mundur. Prabowo tidak menolak permohonan tersebut.",
-        "Anggota DPR RI Fraksi Partai Golkar Ahmad Doli Kurnia menegaskan niat pengunduran diri Gibran Rakabuming Raka dari jabatannya sebagai Wakil Presiden (Wapres) tidak akan memengaruhi pengajuan usulan Hak Menyatakan Pendapat (HMP) di DPR."
+        "Sebanyak 50 anggota DPR dari enam fraksi dilaporkan telah menandatangani surat usulan Hak Menyatakan Pendapat (HMP) terkait polemik ijazah Wakil Presiden Gibran Rakabuming Raka. Ketua DPR Puan Maharani memastikan pimpinan akan memproses usulan tersebut setelah sidang paripurna. Usulan ini muncul setelah PKB mengklaim delapan fraksi hampir sepakat untuk menggunakan hak tersebut. Di sisi lain, Menteri Sekretaris Negara Prasetyo Hadi mengungkapkan bahwa Gibran telah mengajukan pengunduran diri sebagai Wapres, dan Presiden Prabowo Subianto tidak menolak niat itu setelah pertemuan selama 2,5 jam.",
+        "Hak Menyatakan Pendapat adalah hak konstitusional DPR yang diatur dalam Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan ini harus ditandatangani mayoritas anggota dan dibahas dalam paripurna. Bagi pembaca, polemik ini penting karena menyangkut legitimasi jabatan Wakil Presiden dan berpotensi memicu proses pemakzulan yang panjang. Proses pemberhentian presiden atau wapres melibatkan DPR, MPR, dan membutuhkan kuorum serta suara minimal dua pertiga, sehingga dampaknya bisa luas terhadap stabilitas politik.",
+        "Namun, sejumlah hal belum jelas. Apakah Gibran benar-benar akan mundur atau hanya menyatakan niat? Bagaimana mekanisme uji ijazah di PTUN yang disebut akan diajukan? Apakah HMP akan berlanjut menjadi pemakzulan? DPR masih akan memproses usulan tersebut, sementara Istana membantah bahwa Prabowo menolak niat Gibran. Publik perlu mencermati perkembangan resmi dari DPR dan Istana untuk menghindari spekulasi."
       ],
       "explain": [
         {
@@ -258,14 +71,6 @@
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
-          }
-        },
-        {
-          "q": "Apa itu DPR?",
-          "a": "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
-          "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
           }
         },
         {
@@ -285,7 +90,209 @@
           }
         }
       ],
-      "action": "Ini bacaan panjang. Edisi harian sudah selesai tanpanya.",
+      "action": "Pantau terus perkembangan resmi dari DPR dan Istana terkait usulan HMP dan status Gibran.",
+      "image": {
+        "url": "assets/97ca1311a1.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "DPR Teken Hak Menyatakan Pendapat, Gibran Ajukan Mundur dan Uji Ijazah"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110112930-4-783829/anggota-dpr-mulai-teken-usulan-hak-menyatakan-pendapat-wapres-gibran",
+          "published_at": "2026-11-10T11:33:51+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110115128-32-1425321/dpr-bakal-proses-hak-menyatakan-pendapat-soal-pemakzulan-gibran",
+          "published_at": "2026-11-10T12:09:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746745/istana-tidak-benar-prabowo-menolak-niat-gibran-mundur",
+          "published_at": "2026-11-10T15:22:28+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
+          "published_at": "2026-11-10T10:59:00+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/usulan-hmp-pemakzulan-gibran-bergulir-di-dpr-puan-buka-suara-idCY",
+          "published_at": "2026-11-10T14:22:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_pt_bsj_tersangka_korupsi_nikel_7f3d",
+      "angle": "Perusahaan nikel milik Arif Kurniawan kini berstatus tersangka korporasi.",
+      "kicker": "Nasional",
+      "title": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Korupsi Nikel Sultra",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya sebagai tersangka korporasi dalam kasus korupsi nikel di Sulawesi Tenggara.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T20:12:11+07:00"
+      },
+      "body": [
+        "Kejaksaan Agung menetapkan PT Bumi Sentosa Jaya (PT BSJ) sebagai tersangka korporasi dalam kasus korupsi tata kelola nikel di Sulawesi Tenggara. Perusahaan itu dikaitkan dengan Arif Kurniawan. Penetapan ini dilaporkan sejumlah media pada hari yang sama, menjadikan PT BSJ pihak korporasi yang kini berhadapan dengan penyidik, bukan hanya individu. Kasus ini menyangkut periode 2013–2025 menurut pemberitaan detik.com.",
+        "Langkah Kejagung ini penting karena korupsi tambang jarang berhenti di level perorangan. Dengan menetapkan korporasi sebagai tersangka, penyidik membuka jalan menelusuri aliran manfaat dan pertanggungjawaban perusahaan. Nikel adalah komoditas strategis Indonesia sebagai pemasok utama dunia untuk baterai, sehingga tata kelola izin dan royaltinya rawan sengketa. Bagi pembaca, kasus ini menunjukkan bagaimana dugaan korupsi di sektor tambang bisa menyentuh perusahaan, bukan sekadar pejabat atau pengusaha.",
+        "Yang belum jelas: rincian perbuatan yang diduga dilakukan PT BSJ, pasal yang disangkakan, dan apakah ada tersangka lain menyusul. Kejagung juga disebut menggeledah enam lokasi dan menyita uang tunai Rp11,8 miliar, namun kaitan rinci temuan itu dengan PT BSJ belum diuraikan dalam ringkasan yang tersedia. Perlu dicatat, status tersangka korporasi belum berarti putusan bersalah; proses hukum masih berjalan dan pembelaan perusahaan belum diketahui."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran Kejaksaan Agung dalam perkara ini?",
+          "a": "Kejaksaan Agung adalah lembaga negara di bidang penuntutan yang melakukan penyelidikan dan penuntutan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara.",
+          "source": {
+            "outlet": "Kejaksaan Agung",
+            "url": "https://www.kejaksaan.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa sektor nikel sering jadi sorotan hukum?",
+          "a": "Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sehingga izin tambang dan tata kelola royaltinya sering menjadi objek sengketa hukum dan politik.",
+          "source": {
+            "outlet": "Kementerian ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka korporasi?",
+          "a": "Status itu diberikan kepada perusahaan sebagai entitas hukum dalam penyidikan, sehingga pertanggungjawaban pidana dapat diarahkan ke korporasi, bukan hanya ke individu pengurusnya.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ"
+          }
+        }
+      ],
+      "action": "Pantau perkembangan resmi dari Kejagung dan jangan menyimpulkan bersalah sebelum ada putusan pengadilan.",
+      "image": {
+        "url": "assets/ea25b16243.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kejagung Tetapkan PT BSJ Tersangka Korporasi Korupsi Nikel Sultra"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110143719-12-1425431/kejagung-tetapkan-pt-bsj-jadi-tersangka-korporasi-kasus-korupsi-nikel",
+          "published_at": "2026-11-10T14:56:52+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
+          "published_at": "2026-11-10T16:09:25+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
+          "published_at": "2026-11-10T13:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746453/kejagung-kembali-geledah-6-lokasi-terkait-kasus-nikel-ilegal-di-sultra",
+          "published_at": "2026-11-10T13:15:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_pkb_ungkap_komunikasi_delapan_0eef",
+      "angle": "Rekap 1 hari",
+      "kicker": "Mendalam",
+      "title": "Ijazah Gibran: Dari Polemik ke Usulan Pemakzulan di DPR",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Hampir 50 anggota DPR dari lintas fraksi telah menandatangani usulan Hak Menyatakan Pendapat terkait ijazah Gibran, dan surat usulannya sudah diserahkan ke pimp",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T20:12:11+07:00"
+      },
+      "body": [
+        "Polemik ijazah Wakil Presiden Gibran Rakabuming Raka bergerak cepat dalam satu hari. PKB mengungkap komunikasi delapan fraksi DPR yang disebut hampir sepakat mendorong Hak Menyatakan Pendapat (HMP). Pada hari yang sama, Ketua DPR Puan Maharani memastikan pimpinan dewan memproses usulan tersebut, dan sebanyak 12 anggota Fraksi PKS telah menandatangani usulan itu.",
+        "Dukungan tidak berhenti di satu fraksi. Hampir 50 anggota DPR dari lintas fraksi meneken usulan HMP, dan surat resminya sudah diserahkan ke pimpinan dewan. Ini mengubah polemik dari perdebatan publik soal dokumen menjadi prosedur konstitusional di parlemen. HMP diatur Pasal 20A UUD 1945 dan butuh tanda tangan mayoritas anggota serta pembahasan di paripurna.",
+        "Di sisi eksekutif, sikap Presiden Prabowo Subianto dibaca sebagai tidak menolak pengajuan mundur Gibran, meski tidak disebut gamblang bahwa pengunduran diri itu diterima. Gibran sendiri menyebut Prabowo sudah seperti ayah sendiri dan mengaku menerima banyak saran terkait kondisi setelah putusan MA dan MK. Namun Fraksi Golkar menegaskan niat mundur Gibran tidak memengaruhi usulan HMP.",
+        "Yang berubah bukan sekadar status polemik, melainkan jalurnya: dari sengketa dokumen menjadi uji politik di DPR. Jika HMP terus bergulir, tekanan tidak lagi hanya pada Gibran, tetapi pada koalisi dan pimpinan dewan untuk memutuskan apakah proses ini dilanjutkan atau dihentikan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka?",
+          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu Hak Menyatakan Pendapat?",
+          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu DPR?",
+          "a": "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau apakah usulan HMP mencapai ambang tanda tangan mayoritas dan apakah paripurna DPR menjadwalkan pembahasannya.",
       "image": null,
       "sources": [
         {
@@ -293,42 +300,42 @@
           "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
           "published_at": "2026-11-10T10:59:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110112930-4-783829/anggota-dpr-mulai-teken-usulan-hak-menyatakan-pendapat-wapres-gibran",
           "published_at": "2026-11-10T11:33:51+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
           "url": "https://www.cnnindonesia.com/nasional/20261110115128-32-1425321/dpr-bakal-proses-hak-menyatakan-pendapat-soal-pemakzulan-gibran",
           "published_at": "2026-11-10T12:09:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/usulan-hmp-pemakzulan-gibran-bergulir-di-dpr-puan-buka-suara-idCY",
           "published_at": "2026-11-10T14:22:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8746745/istana-tidak-benar-prabowo-menolak-niat-gibran-mundur",
           "published_at": "2026-11-10T15:22:28+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "revision": 1,
       "first_seen": "2026-11-10",
       "previous_edition": null,
       "changes": [],
-      "dek": "PKB mengklaim delapan fraksi DPR hampir sepakat untuk Hak Menyatakan Pendapat (HMP) terkait ijazah Gibran.",
+      "dek": "Delapan fraksi diklaim hampir sepakat soal Hak Menyatakan Pendapat, sementara puluhan anggota DPR sudah menandatangani usulan.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -349,15 +356,15 @@
     {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_kpk_usut_suap_atr_bpn_8507",
-      "angle": "Sembilan pejabat pertanahan dipanggil untuk diusut soal aliran setoran.",
+      "topic_id": "t_kpk_usut_suap_atr_bpn_43eb",
+      "angle": "KPK Periksa 9 Kepala Kantor Pertanahan soal Dugaan Setoran",
       "kicker": "Nasional",
-      "title": "KPK Periksa Sembilan Kepala Kantor Pertanahan soal Dugaan Setoran",
+      "title": "KPK Periksa 9 Kepala Kantor Pertanahan soal Dugaan Setoran",
       "status": "sebagian",
       "truth": {
-        "claim": "KPK memeriksa sembilan kepala kantor pertanahan di Jawa Timur terkait dugaan setoran dalam kasus ATR/BPN.",
+        "claim": "KPK memeriksa sembilan kepala kantor pertanahan di Jawa Timur terkait dugaan setoran dalam kasus suap ATR/BPN.",
         "status": "sebagian",
-        "confidence": 0.65,
+        "confidence": 0.62,
         "band": "belum_pasti",
         "basis": {
           "strongest": "one_tier2",
@@ -368,25 +375,25 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "Komisi Pemberantasan Korupsi memanggil sembilan kepala kantor pertanahan di Jawa Timur dalam kasus dugaan suap di Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional. Menurut pemberitaan detik.com, kesembilan pejabat itu diperiksa terkait dugaan setoran kepada pejabat di kementerian. Pemeriksaan ini berlangsung di tengah penanganan kasus yang sudah menetapkan delapan tersangka, sebagaimana dilaporkan okezone.com.",
-        "Pemanggilan ini penting karena menyentuh langsung layanan pertanahan yang sehari-hari dipakai masyarakat, mulai dari sertifikat hingga sengketa tanah. Dugaan setoran dari kantor pertanahan daerah ke pejabat pusat, jika terbukti, menunjukkan bagaimana pungutan bisa merembes ke rantai birokrasi. Bagi pembaca, kasus ini menjelaskan mengapa urusan tanah sering terasa mahal dan berbelit, serta mengapa pengawasan terhadap kantor pertanahan daerah menjadi krusial.",
-        "Yang belum jelas adalah rincian peran masing-masing dari sembilan kepala kantor tersebut, beserta bentuk dan besaran setoran yang diduga terjadi. KPK juga belum merinci kapan pemeriksaan berlanjut dan apakah status mereka akan berubah. Perlu diingat, status tersangka bukan berarti bersalah; pembuktian tetap di pengadilan. Di sisi lain, MAKI melaporkan tiga pegawai KPK ke Dewas KPK karena diduga membocorkan dokumen kasus ini, hal yang masih perlu diklarifikasi."
+        "Komisi Pemberantasan Korupsi memanggil sembilan kepala kantor pertanahan di Jawa Timur untuk diperiksa terkait dugaan setoran kepada pejabat Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional. Pemanggilan ini bagian dari penyidikan kasus suap yang sudah menetapkan delapan tersangka. Para kepala kantor itu dicecar soal dugaan setoran yang mengalir ke pejabat di kementerian.",
+        "Pemeriksaan saksi menjadi penting karena KPK perlu membuktikan apakah setoran itu benar terjadi dan siapa saja yang terlibat. Kasus ini menyangkut layanan pertanahan yang sehari-hari bersinggungan dengan masyarakat, sehingga dugaan setoran berpotensi merugikan publik. Delapan tersangka yang sudah ditetapkan menunjukkan penyidikan bergerak ke tahap pembuktian, bukan sekadar penyelidikan awal.",
+        "Belum jelas berapa jumlah setoran yang diduga diberikan dan bagaimana posisi sembilan kepala kantor itu, apakah sebagai saksi atau pihak yang berpotensi terseret. Detail soal materi pemeriksaan juga belum diungkap. Yang perlu dipahami, status tersangka bukan berarti bersalah; pembuktian tetap di pengadilan. Langkah berikutnya menunggu hasil pemeriksaan KPK."
       ],
       "explain": [
         {
-          "q": "Apa itu KPK dan apa kewenangannya?",
-          "a": "KPK adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "q": "Apa itu KPK?",
+          "a": "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
           "source": {
             "outlet": "KPK",
             "url": "https://www.kpk.go.id/"
           }
         },
         {
-          "q": "Apa arti status tersangka dalam hukum pidana?",
-          "a": "Status tersangka ditetapkan penyidik berdasarkan minimal dua alat bukti, dan belum berarti bersalah karena putusan tetap di pengadilan.",
+          "q": "Apa arti status tersangka?",
+          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
           "source": {
             "outlet": "Polri",
             "url": "https://www.polri.go.id/"
@@ -394,18 +401,18 @@
         },
         {
           "q": "Berapa tersangka yang sudah ditetapkan dalam kasus ini?",
-          "a": "Menurut okezone.com, KPK telah menetapkan delapan tersangka dalam kasus ini.",
+          "a": "KPK telah menetapkan delapan tersangka dalam kasus ini.",
           "source": {
             "outlet": "okezone.com",
             "url": "https://news.okezone.com/read/2026/11/10/337/3253207/kasus-atr-bpn-kpk-panggil-9-kepala-kantor-pertanahan"
           }
         }
       ],
-      "action": "Ikuti perkembangan pemeriksaan KPK dan cermati peran tiap pejabat sebelum menyimpulkan.",
+      "action": "Pantau perkembangan kasus ini lewat keterangan resmi KPK, bukan kabar yang belum terverifikasi.",
       "image": {
-        "url": "assets/8d1c0e4032.webp",
+        "url": "assets/dec7c5c473.webp",
         "credit": "okezone.com",
-        "alt": "KPK Periksa Sembilan Kepala Kantor Pertanahan soal Dugaan Setoran"
+        "alt": "KPK Periksa 9 Kepala Kantor Pertanahan soal Dugaan Setoran"
       },
       "sources": [
         {
@@ -413,14 +420,14 @@
           "url": "https://news.okezone.com/read/2026/11/10/337/3253207/kasus-atr-bpn-kpk-panggil-9-kepala-kantor-pertanahan",
           "published_at": "2026-11-10T14:28:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8746642/kpk-periksa-9-kakantah-di-kasus-suap-atr-bpn-usut-dugaan-setoran",
           "published_at": "2026-11-10T14:44:46+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "place": "nasional",
@@ -432,69 +439,78 @@
     {
       "id": "c5",
       "type": "news",
-      "topic_id": "t_kai_dan_produksi_krl_inka_de32",
-      "angle": "Bos KAI pastikan satu KRL INKA beroperasi Desember 2026 dan batal impor KRL bekas",
-      "kicker": "Ekonomi",
-      "title": "KAI dan Produksi KRL INKA",
+      "topic_id": "t_target_ri_gabung_oecd_2028_a30e",
+      "angle": "Indonesia Targetkan Status Anggota Penuh OECD pada 2028",
+      "kicker": "Nasional",
+      "title": "Indonesia Targetkan Status Anggota Penuh OECD pada 2028",
       "status": "sebagian",
       "truth": {
-        "claim": "Bos KAI pastikan satu KRL INKA beroperasi Desember 2026 dan batal impor KRL bekas",
+        "claim": "Pemerintah Indonesia menargetkan menjadi anggota penuh OECD pada 2028 dan menyiapkan tiga regulasi utama, termasuk aturan foreign bribery.",
         "status": "sebagian",
-        "confidence": 0.65,
-        "band": "belum_pasti",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
         "basis": {
-          "strongest": "one_tier2",
+          "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 1,
+          "tier2": 2,
           "independent_outlets": 2,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "KAI memastikan satu rangkaian Kereta Rel Listrik (KRL) baru produksi PT Industri Kereta Api (Persero) atau INKA mulai beroperasi pada Desember 2026.",
-        "Direktur Utama KAI Bobby Rasiyidin mengungkap alasan pihaknya batal mengimpor kereta rel listrik (KRL) bekas dari Jepang."
+        "Pemerintah Republik Indonesia menargetkan bisa menjadi anggota penuh Organisasi untuk Kerja Sama Ekonomi dan Pembangunan (OECD) pada 2028. Untuk mencapai target itu, menurut pemberitaan CNBC Indonesia dan CNN Indonesia, pemerintah menyiapkan reformasi aturan besar-besaran agar memenuhi standar organisasi yang beranggotakan negara-negara maju tersebut. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto disebut menargetkan keanggotaan penuh pada tahun itu, dengan tiga regulasi utama yang akan dirampungkan, termasuk aturan soal penyuapan asing (foreign bribery) dan revisi sejumlah undang-undang.",
+        "Langkah ini penting bagi pembaca karena keanggotaan OECD menuntut perubahan aturan yang menyentuh banyak sisi kehidupan ekonomi, dari tata kelola pemerintahan hingga cara perusahaan berbisnis. Pemerintah juga mengaitkan proses ini dengan target pertumbuhan ekonomi 8%. Artinya, reformasi bukan sekadar formalitas diplomatik, melainkan syarat yang bisa memengaruhi iklim investasi, transparansi, dan standar hukum di Indonesia. Bagi masyarakat, standar OECD kerap berkaitan dengan aturan antikorupsi dan keterbukaan yang pada akhirnya menentukan kualitas layanan publik dan kepastian usaha.",
+        "Yang belum jelas adalah rincian tiga regulasi yang dimaksud, tenggat penyelesaiannya, serta sejauh mana revisi undang-undang akan dibahas bersama DPR. Belum ada penjelasan pula soal biaya dan dampak reformasi terhadap pelaku usaha kecil. Proses keanggotaan OECD sendiri biasanya bertahap dan melalui penilaian komite, sehingga target 2028 masih bergantung pada kesepakatan politik dan kecepatan legislasi. Pembaca sebaiknya menunggu dokumen resmi pemerintah, bukan hanya pernyataan pejabat, untuk menilai keseriusan rencana ini."
       ],
       "explain": [
         {
-          "q": "Apa itu KRL dan siapa yang mengelolanya?",
-          "a": "Kereta rel listrik untuk angkutan perkotaan. Di Jabodetabek dioperasikan KAI Commuter dengan tarif dan jadwal yang diatur pemerintah.",
+          "q": "Apa itu OECD dan mengapa keanggotaannya penting?",
+          "a": "OECD adalah organisasi kerja sama ekonomi dan pembangunan yang beranggotakan negara-negara maju; keanggotaan menuntut pemenuhan standar tata kelola, transparansi, dan kebijakan ekonomi tertentu.",
           "source": {
-            "outlet": "KAI Commuter",
-            "url": "https://www.krl.co.id/"
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
           }
         },
         {
-          "q": "Mengapa angka ekonomi ini penting?",
-          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "q": "Apa yang dimaksud aturan foreign bribery?",
+          "a": "Aturan ini merujuk pada ketentuan yang melarang penyuapan terhadap pejabat asing dalam transaksi bisnis, salah satu standar yang disyaratkan OECD bagi negara anggotanya.",
           "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
+          }
+        },
+        {
+          "q": "Siapa Airlangga Hartarto dalam konteks berita ini?",
+          "a": "Airlangga Hartarto adalah Menteri Koordinator Bidang Perekonomian yang disebut menargetkan Indonesia menjadi anggota OECD pada 2028.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran"
           }
         }
       ],
-      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "action": "Pantau pengumuman resmi pemerintah soal tiga regulasi OECD dan tanyakan ke wakil rakyat Anda bagaimana proses pembahasannya.",
       "image": {
-        "url": "assets/3b63902cb4.webp",
+        "url": "assets/41b5688145.webp",
         "credit": "cnnindonesia.com",
-        "alt": "KAI dan Produksi KRL INKA"
+        "alt": "Indonesia Targetkan Status Anggota Penuh OECD pada 2028"
       },
       "sources": [
         {
           "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261110130213-92-1425365/bos-kai-pastikan-satu-krl-produksi-inka-beroperasi-desember-2026",
-          "published_at": "2026-11-10T14:01:27+07:00",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261109213056-532-1425154/incar-status-anggota-penuh-oecd-2028-ri-siap-rampungkan-3-aturan-ini",
+          "published_at": "2026-11-10T18:44:37+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
-          "outlet": "sindonews.com",
-          "url": "https://ekbis.sindonews.com/read/1770543/34/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-china-1794305475",
-          "published_at": "2026-11-10T18:01:12+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110111023-4-783828/target-gabung-oecd-2028-ri-siapkan-reformasi-aturan-besar-besaran",
+          "published_at": "2026-11-10T12:10:43+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "place": "nasional",
@@ -506,78 +522,85 @@
     {
       "id": "c6",
       "type": "news",
-      "topic_id": "t_kapolri_rotasi_perwira_ksp_1358",
-      "angle": "Rotasi perwira di KSP menandai pergeseran penempatan jenderal bintang tiga",
+      "topic_id": "t_bp_hengkang_dari_bisnis_spbu_98ea",
+      "angle": "BP Jual Seluruh Saham SPBU ke AKR, ESDM Jelaskan Alasannya",
       "kicker": "Nasional",
-      "title": "Kapolri Suyudi Tarik Dua Jenderal Bintang Tiga dari KSP",
+      "title": "BP Jual Seluruh Saham SPBU ke AKR, ESDM Jelaskan Alasannya",
       "status": "sebagian",
       "truth": {
-        "claim": "Kapolri Jenderal Suyudi Ario Seto menarik Komjen Syahar Diantono dan Komjen Yuda Gustawan dari penugasan di KSP.",
+        "claim": "BP Jual Seluruh Saham SPBU ke AKR, ESDM Jelaskan Alasannya",
         "status": "sebagian",
-        "confidence": 0.8,
+        "confidence": 0.83,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 2,
-          "independent_outlets": 2,
+          "tier2": 3,
+          "independent_outlets": 3,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "Kapolri Jenderal Suyudi Ario Seto menarik Komjen Syahar Diantono dan Komjen Yuda Gustawan dari penugasan di Kantor Staf Presiden. Keduanya ditarik kembali ke Mabes Polri. Menurut pemberitaan, Syahar kini menjabat sebagai Analis Kebijakan Utama di Lemdiklat Polri. Detail posisi baru Yuda Gustawan belum dijelaskan dalam artikel yang tersedia.",
-        "Penarikan ini penting karena kedua perwira bintang tiga itu sebelumnya bertugas di KSP pada masa Kapolri Jenderal Listyo Sigit Prabowo. Rotasi di lingkungan perwira tinggi biasanya dibaca sebagai sinyal penataan ulang penempatan personel, bukan sekadar urusan administrasi. Bagi pembaca, perubahan ini menentukan siapa yang mengawal kebijakan kepolisian di lingkaran istana.",
-        "Yang belum jelas adalah alasan resmi penarikan tersebut, apakah terkait evaluasi kinerja, kebutuhan organisasi, atau hal lain. Belum ada keterangan yang dirinci soal posisi baru Yuda Gustawan maupun waktu pelaksanaan rotasi. Perlu dicatat, pemberitaan menyebut Listyo Sigit Prabowo ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal pada November 2026, namun kaitannya dengan rotasi ini belum dijelaskan."
+        "BP Global Investments Limited resmi melepas seluruh kepemilikan sahamnya di bisnis stasiun pengisian bahan bakar umum (SPBU) di Indonesia. PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen saham PT Aneka Petroindo Raya, perusahaan yang mengelola jaringan SPBU bermerek BP. Salah satu transaksi yang dilaporkan mencakup pelepasan 49,9 persen saham senilai US$14,22 juta. Kementerian ESDM pun buka suara soal langkah korporasi asal Inggris itu.",
+        "Keputusan BP ini penting bagi pembaca karena menyangkut siapa yang mengendalikan jaringan SPBU yang selama ini beroperasi dengan merek global. Perubahan pemilik tidak selalu berarti perubahan layanan di pompa bensin, tetapi bisa memengaruhi arah investasi, harga, dan pasokan ke depan. Pemerintah menyebut langkah BP sebagai bagian dari keinginan perusahaan memfokuskan diri pada bisnis hulu, bukan semata soal prospek ritel bahan bakar di dalam negeri.",
+        "Yang belum jelas adalah dampak transaksi ini terhadap jumlah SPBU, harga jual, dan rencana ekspansi AKR ke depan. BP memastikan merek SPBU tidak berubah usai diakuisisi, namun detail soal jadwal integrasi dan strategi jangka panjang belum diungkap. Pembaca perlu membedakan antara perubahan kepemilikan saham dan perubahan merek atau layanan di lapangan, karena keduanya tidak selalu berjalan bersamaan."
       ],
       "explain": [
         {
-          "q": "Siapa Listyo Sigit Prabowo dan apa kaitannya dengan penempatan di KSP?",
-          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo. Ia pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
-          "source": {
-            "outlet": "Polri",
-            "url": "https://www.polri.go.id/"
-          }
-        },
-        {
-          "q": "Apa itu Lemdiklat Polri?",
-          "a": "Lemdiklat Polri adalah lembaga pendidikan dan pelatihan di lingkungan Polri, tempat sejumlah perwira tinggi ditempatkan sebagai analis kebijakan.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Kepala_Kepolisian_Negara_Republik_Indonesia"
-          }
-        },
-        {
-          "q": "Apa konteks penarikan dua perwira dari KSP?",
-          "a": "Kapolri Jenderal Suyudi Ario Seto menarik Komjen Syahar Diantono dan Komjen Yuda Gustawan dari penugasan di kantor staf presiden.",
+          "q": "Apa itu PT Aneka Petroindo Raya?",
+          "a": "Perusahaan yang mengelola jaringan SPBU bermerek BP di Indonesia dan menjadi objek akuisisi AKR Corporindo.",
           "source": {
             "outlet": "cnnindonesia.com",
-            "url": "https://www.cnnindonesia.com/nasional/20261110100113-20-1425271/kapolri-tarik-komjen-syahar-dan-yuda-gustawan-dari-penugasan-di-ksp"
+            "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham"
+          }
+        },
+        {
+          "q": "Mengapa BP disebut ingin fokus di bisnis hulu?",
+          "a": "Kementerian ESDM menyebut langkah BP melepas bisnis SPBU sebagai bagian dari keinginan perusahaan memfokuskan diri pada bisnis hulu.",
+          "source": {
+            "outlet": "ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Siapa BP plc?",
+          "a": "BP plc adalah perusahaan minyak bumi bermarkas di London dan salah satu dari empat besar perusahaan minyak dunia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/BP_(perusahaan)"
           }
         }
       ],
-      "action": "Pantau keterangan resmi Polri soal alasan dan posisi baru kedua perwira tersebut.",
+      "action": "Pantau penjelasan resmi AKR dan ESDM soal dampak akuisisi ini terhadap harga dan layanan SPBU BP.",
       "image": {
-        "url": "assets/ca3e84298e.webp",
+        "url": "assets/f95a8f2cc8.webp",
         "credit": "cnnindonesia.com",
-        "alt": "Kapolri Suyudi Tarik Dua Jenderal Bintang Tiga dari KSP"
+        "alt": "BP Jual Seluruh Saham SPBU ke AKR, ESDM Jelaskan Alasannya"
       },
       "sources": [
         {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261110100113-20-1425271/kapolri-tarik-komjen-syahar-dan-yuda-gustawan-dari-penugasan-di-ksp",
-          "published_at": "2026-11-10T10:26:57+07:00",
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
+          "published_at": "2026-11-10T10:48:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         },
         {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/kapolri-rotasi-komjen-syahardiantono-dari-ksp-ke-lemdiklat-polri-idCA",
-          "published_at": "2026-11-10T12:05:00+07:00",
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
+          "published_at": "2026-11-10T09:31:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110090753-8-783767/video-raksasa-migas-bp-lepas-bisnis-spbu-di-indonesia",
+          "published_at": "2026-11-10T13:15:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "place": "nasional",
@@ -606,7 +629,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "revision": 1,

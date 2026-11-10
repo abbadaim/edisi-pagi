@@ -2,25 +2,25 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "lokal",
-  "published_at": "2026-11-10T20:08:25+07:00",
+  "published_at": "2026-11-10T20:12:11+07:00",
   "coverage": {
-    "from": "2026-11-09T20:08:25+07:00",
-    "to": "2026-11-10T20:08:25+07:00"
+    "from": "2026-11-09T20:12:11+07:00",
+    "to": "2026-11-10T20:12:11+07:00"
   },
-  "generated_at": "2026-11-10T20:08:25+07:00",
+  "generated_at": "2026-11-10T20:12:11+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 3,
+  "reading_time_min": 4,
   "generated_by": {
     "adjudicate": {
       "provider": "deepseek",
       "model": "deepseek-chat"
     },
     "write": {
-      "provider": "deepseek+deterministic",
+      "provider": "deepseek",
       "model": "deepseek-chat"
     },
     "verify": {
@@ -32,19 +32,19 @@
       "model": "none"
     }
   },
-  "card_count": 2,
-  "truncated_reason": "Hanya 2 topik lokal yang lolos",
+  "card_count": 3,
+  "truncated_reason": "Hanya 3 topik lokal yang lolos",
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_2_bang_jago_bersajam_serang_po_ce80",
-      "angle": "Dua Pria Bersajam Serang Polisi di Babarsari Sleman, Satu",
-      "kicker": "Sleman",
-      "title": "Dua Pria Bersajam Serang Polisi di Babarsari Sleman, Satu",
+      "topic_id": "t_hasil_musda_golkar_gunungkidul_da39",
+      "angle": "Penolakan kader terhadap hasil Musda XI Golkar Gunungkidul mempertanyakan legalitas proses",
+      "kicker": "Gunungkidul",
+      "title": "Kader Golkar Gunungkidul Tolak Hasil Musda XI, Soroti Aturan Partai",
       "status": "sebagian",
       "truth": {
-        "claim": "Polisi menetapkan TMK (27) sebagai tersangka dalam kasus dua pria bersenjata tajam yang menyerang polisi di Jalan Babarsari, Depok, Sleman.",
+        "claim": "Sejumlah kader Golkar Gunungkidul menolak hasil Musda XI dan menilai pelaksanaannya melanggar AD/ART partai.",
         "status": "sebagian",
         "confidence": 0.55,
         "band": "belum_pasti",
@@ -57,40 +57,48 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "Dua pria bersenjata tajam menyerang personel polisi menggunakan parang di Jalan Babarsari, Caturtunggal, Depok, Sleman. Peristiwa ini terjadi di ruas jalan yang masuk wilayah Padukuhan Tambakbayan, Caturtunggal, Sleman, DIY. Dari dua orang yang terlibat, polisi menetapkan satu tersangka berinisial TMK (27). Penetapan tersangka itu menjadi titik terang awal kasus penyerangan terhadap aparat yang terjadi di jalan umum kawasan Sleman tersebut.",
-        "Kejadian ini penting bagi warga Sleman dan DIY karena berlangsung di jalan yang sehari-hari dilalui publik, bukan di tempat terisolasi. Jalan Babarsari merupakan ruas jalan sekaligus wilayah permukiman di Caturtunggal, Depok, Sleman, sehingga insiden bersenjata tajam di sana menyangkut rasa aman warga sekitar dan pengguna jalan. Penyerangan terhadap polisi juga menunjukkan bahwa situasi yang awalnya mungkin hanya keributan bisa meningkat menjadi ancaman serius ketika senjata tajam dipakai.",
-        "Yang belum jelas adalah kronologi lengkap penyerangan, peran masing-masing dari dua pria tersebut, serta status hukum pihak kedua yang tidak disebut sebagai tersangka. Detail soal pasal yang dikenakan, kondisi personel polisi yang diserang, dan barang bukti juga belum diuraikan dalam informasi yang tersedia. Publik perlu menunggu keterangan resmi kepolisian soal perkembangan penyidikan dan apakah ada tersangka lain dalam kasus ini."
+        "Sejumlah kader Partai Golkar di Gunungkidul, DIY, menolak hasil Musda XI dan menilai pelaksanaan musyawarah daerah itu melanggar aturan AD/ART partai. Penolakan ini muncul dari kalangan kader yang mempersoalkan jalannya proses musda, bukan sekadar hasil akhirnya. Informasi mengenai jumlah kader yang menolak, nama-nama mereka, serta waktu pasti musda belum dirinci dalam pemberitaan.",
+        "Bagi pembaca di Sleman dan DIY, persoalan ini penting karena Musda Golkar Gunungkidul adalah bagian dari rangkaian konsolidasi partai di tingkat kabupaten yang biasanya berujung pada penentuan kepengurusan dan arah dukungan politik di wilayah DIY. Jika prosesnya dipersoalkan, dampaknya bisa merembet ke legitimasi pengurus baru dan kesiapan partai menghadapi agenda elektoral berikutnya. Kader yang menilai ada pelanggaran AD/ART menunjukkan bahwa sengketa internal tidak selalu selesai di ruang musyawarah.",
+        "Yang belum jelas adalah langkah resmi yang akan ditempuh kader penolak, misalnya mengajukan keberatan ke DPD atau DPP Partai Golkar, serta bagaimana tanggapan pengurus daerah atas tuduhan pelanggaran AD/ART tersebut. Detail soal pasal mana yang dilanggar dan siapa yang berwenang menilai juga belum disebut. Pembaca sebaiknya tidak menyimpulkan bahwa hasil musda otomatis batal, karena mekanisme partai biasanya menyediakan jalur penyelesaian sengketa tersendiri."
       ],
       "explain": [
         {
-          "q": "Di mana tepatnya Jalan Babarsari dan mengapa disebut wilayah Sleman?",
-          "a": "Babarsari adalah ruas jalan sekaligus wilayah di Padukuhan Tambakbayan, Caturtunggal, Kecamatan Depok, Kabupaten Sleman, Yogyakarta.",
+          "q": "Apa itu Musda dalam struktur Partai Golkar?",
+          "a": "Musda adalah musyawarah daerah di tingkat kabupaten/kota yang menjadi forum penentuan kepengurusan dan kebijakan partai di wilayah tersebut.",
           "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Babarsari"
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
           }
         },
         {
-          "q": "Apa yang terjadi dalam insiden penyerangan ini?",
-          "a": "Dua pria bersenjata tajam menyerang personel polisi menggunakan parang di Jalan Babarsari, Caturtunggal, Depok, Sleman.",
+          "q": "Apa yang dimaksud AD/ART partai?",
+          "a": "AD/ART adalah anggaran dasar dan anggaran rumah tangga, yaitu aturan internal yang mengikat seluruh kader dan pengurus dalam menjalankan organisasi partai.",
           "source": {
-            "outlet": "detik.com",
-            "url": "https://www.detik.com/jogja/berita/d-8745686/2-bang-jago-bersajam-serang-polisi-berakhir-ditangkap"
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
+          }
+        },
+        {
+          "q": "Mengapa kader mempersoalkan pelaksanaan musda, bukan hanya hasilnya?",
+          "a": "Kader menilai proses pelaksanaan Musda XI tidak sesuai aturan AD/ART, sehingga hasilnya dianggap tidak sah oleh sebagian kader.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai"
           }
         }
       ],
-      "action": "Pantau keterangan resmi polisi soal perkembangan kasus dan status hukum pihak kedua yang belum disebut sebagai tersangka.",
+      "action": "Pantau pernyataan resmi DPD atau DPP Golkar soal sengketa Musda Gunungkidul sebelum menarik kesimpulan.",
       "image": null,
       "sources": [
         {
-          "outlet": "detik.com",
-          "url": "https://www.detik.com/jogja/berita/d-8745686/2-bang-jago-bersajam-serang-polisi-berakhir-ditangkap",
-          "published_at": "2026-11-10T07:30:22+07:00",
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278361/hasil-musda-golkar-gunungkidul-ditolak-kader-persoalkan-aturan-partai",
+          "published_at": "2026-11-10T20:07:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "place": "lokal",
@@ -102,13 +110,13 @@
     {
       "id": "c2",
       "type": "news",
-      "topic_id": "t_pekerja_informal_diy_naik_jadi_da39",
-      "angle": "Kenaikan pekerja informal DIY menuntut penguatan perlindungan kerja",
-      "kicker": "DIY",
-      "title": "Pekerja Informal DIY Naik Jadi 55,14%, Disnakertrans Beri Penjelasan",
+      "topic_id": "t_158_kasus_leptospirosis_di_ban_da39",
+      "angle": "Dinkes Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026, sembilan di antaran",
+      "kicker": "Bantul",
+      "title": "Leptospirosis di Bantul Capai 158 Kasus, 9 Pasien Meninggal",
       "status": "sebagian",
       "truth": {
-        "claim": "Proporsi pekerja informal di DIY mencapai 55,14% pada Agustus 2026 menurut Disnakertrans DIY.",
+        "claim": "Dinkes Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026 dengan sembilan pasien meninggal.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -121,48 +129,120 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T20:08:25+07:00"
+        "assessed_at": "2026-11-10T20:12:11+07:00"
       },
       "body": [
-        "Proporsi pekerja informal di Daerah Istimewa Yogyakarta (DIY) mencapai 55,14% pada Agustus 2026. Angka ini menjadi perhatian Dinas Tenaga Kerja dan Transmigrasi (Disnakertrans) DIY, yang menilai kenaikan tersebut perlu diikuti dengan penguatan perlindungan kerja bagi pekerja di sektor informal. Data ini menunjukkan bahwa lebih dari separuh pekerja di DIY berada di luar hubungan kerja formal, dengan status yang beragam mulai dari pedagang, pekerja lepas, hingga pekerja rumahan.",
-        "Kenaikan proporsi pekerja informal ini penting bagi warga DIY karena berkaitan langsung dengan jaminan sosial, kepastian pendapatan, dan akses terhadap perlindungan hukum ketenagakerjaan. Pekerja informal umumnya tidak memiliki kontrak kerja tetap, sehingga lebih rentan terhadap fluktuasi ekonomi dan risiko kecelakaan kerja. Disnakertrans menyoroti bahwa pertumbuhan sektor ini perlu diimbangi dengan kebijakan yang memastikan hak-hak dasar pekerja tetap terlindungi, termasuk akses terhadap program jaminan sosial ketenagakerjaan.",
-        "Namun, detail mengenai penyebab pasti kenaikan ini, sebaran pekerja informal menurut sektor, serta langkah konkret yang akan diambil Disnakertrans belum dijelaskan secara rinci dalam artikel. Belum jelas pula apakah ada target penurunan atau program khusus yang akan diluncurkan. Pembaca perlu memahami bahwa angka 55,14% ini merupakan proporsi, bukan jumlah absolut pekerja, sehingga konteksnya adalah pergeseran struktur ketenagakerjaan di DIY."
+        "Dinas Kesehatan Kabupaten Bantul mencatat 158 kasus leptospirosis hingga 9 November 2026. Dari jumlah itu, sembilan pasien dilaporkan meninggal. Data ini menjadi perhatian warga DIY, khususnya Bantul, karena leptospirosis termasuk penyakit yang muncul dari lingkungan sekitar permukiman dan lahan kerja.",
+        "Leptospirosis perlu dipahami sebagai penyakit yang berkaitan dengan paparan bakteri dari urine hewan, terutama tikus, melalui air atau tanah yang terkontaminasi. Bagi pembaca di Bantul, angka ini penting karena kasus bisa muncul di sekitar rumah, sawah, atau tempat kerja yang bersinggungan dengan genangan dan lumpur. Keterangan Dinkes menyebut pasien yang meninggal memiliki penyakit penyerta, sehingga kondisi awal pasien turut memengaruhi perjalanan penyakit.",
+        "Belum jelas bagaimana sebaran kasus menurut kecamatan, kelompok usia, atau sumber paparan utama di Bantul. Belum ada penjelasan rinci soal langkah pengendalian yang sedang berjalan. Yang sering disalahpahami, leptospirosis tidak selalu tampak khas di awal, sehingga kewaspadaan terhadap demam setelah kontak dengan genangan atau lumpur perlu dibicarakan dengan tenaga kesehatan."
       ],
       "explain": [
         {
-          "q": "Apa yang dimaksud dengan pekerja informal?",
-          "a": "Pekerja informal adalah mereka yang bekerja tanpa hubungan kerja formal, seperti pedagang kaki lima, pekerja lepas, atau pekerja rumahan, sehingga tidak memiliki kontrak kerja tetap dan perlindungan sosial yang memadai.",
+          "q": "Apa itu leptospirosis dan bagaimana kaitannya dengan lingkungan sekitar?",
+          "a": "Leptospirosis adalah penyakit yang berkaitan dengan paparan bakteri dari urine hewan, terutama tikus, melalui air atau tanah yang terkontaminasi. Karena itu, genangan dan lumpur di sekitar permukiman atau lahan kerja menjadi titik perhatian.",
           "source": {
             "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
+            "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         },
         {
-          "q": "Mengapa Disnakertrans DIY menyoroti kenaikan ini?",
-          "a": "Disnakertrans menilai kenaikan proporsi pekerja informal perlu diikuti penguatan perlindungan kerja agar hak-hak pekerja tetap terjamin.",
+          "q": "Mengapa penyakit penyerta pada pasien yang meninggal disebut dalam data Dinkes Bantul?",
+          "a": "Keterangan Dinkes Bantul menyebut sembilan pasien meninggal dengan penyakit penyerta. Artinya, kondisi kesehatan lain yang sudah ada sebelumnya turut tercatat pada pasien yang meninggal, bukan hanya leptospirosis.",
           "source": {
             "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
+            "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         },
         {
-          "q": "Apa itu Disnakertrans?",
-          "a": "Disnakertrans adalah Dinas Tenaga Kerja dan Transmigrasi, lembaga pemerintah daerah yang menangani urusan ketenagakerjaan di tingkat provinsi atau kabupaten/kota.",
+          "q": "Apa yang dimaksud dengan Dinkes Bantul dalam data kasus ini?",
+          "a": "Dinkes Bantul adalah Dinas Kesehatan Kabupaten Bantul, lembaga yang mencatat dan melaporkan jumlah kasus leptospirosis di wilayah Bantul hingga 9 November 2026.",
           "source": {
             "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan"
+            "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal"
           }
         }
       ],
-      "action": "Pantau penjelasan resmi Disnakertrans DIY dan cek apakah ada program perlindungan baru bagi pekerja informal di sekitar Anda.",
+      "action": "Jika demam muncul setelah kontak dengan genangan atau lumpur, segera periksa ke fasilitas kesehatan dan ceritakan riwayat paparannya.",
       "image": null,
       "sources": [
         {
           "outlet": "harianjogja.com",
-          "url": "https://jogjapolitan.harianjogja.com/r-1278337/pekerja-informal-diy-naik-jadi-5514-disnakertrans-beri-penjelasan",
-          "published_at": "2026-11-10T19:57:02+07:00",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278344/158-kasus-leptospirosis-di-bantul-9-pasien-meninggal",
+          "published_at": "2026-11-10T18:47:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T20:08:25+07:00"
+          "accessed_at": "2026-11-10T20:12:11+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_jalan_wisata_kepek_ngobaran_be_da39",
+      "angle": "Pemkab Gunungkidul masih menunggu sumber dana untuk melanjutkan jalan wisata ini.",
+      "kicker": "Gunungkidul",
+      "title": "Jalan Wisata Kepek-Ngobaran Gunungkidul Belum Lanjut pada 2026",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemkab Gunungkidul masih mengupayakan bantuan IJD dan DAK untuk melanjutkan pembangunan jalan wisata Kepek-Ngobaran pada 2026.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T20:12:11+07:00"
+      },
+      "body": [
+        "Pembangunan jalan wisata yang menghubungkan Kepek dengan Ngobaran di Kabupaten Gunungkidul, DIY, belum bisa dilanjutkan pada 2026. Pemerintah Kabupaten Gunungkidul masih mengupayakan bantuan dana, khususnya melalui Inpres Jalan Daerah (IJD) dan Dana Alokasi Khusus (DAK), agar proyek yang menyangkut akses warga dan wisatawan itu bisa berjalan kembali. Informasi ini dilaporkan Harian Jogja, namun rincian anggaran yang dibutuhkan belum disebutkan secara jelas.",
+        "Bagi warga Gunungkidul, jalan ini bukan sekadar jalur alternatif. Kawasan Ngobaran dikenal sebagai tujuan wisata pesisir, sehingga kualitas akses menentukan kenyamanan pengunjung sekaligus perekonomian warga di sekitar. Ketika pembangunan tertunda, perbaikan infrastruktur yang dinanti pun ikut mundur. Pembaca di Sleman dan DIY perlu memahami bahwa proyek daerah seperti ini bergantung pada skema pendanaan pusat, bukan hanya kemampuan APBD kabupaten.",
+        "Yang belum jelas adalah besaran kebutuhan anggaran, jadwal pasti lelang atau lanjutan konstruksi, serta apakah usulan IJD dan DAK tahun ini akan disetujui. Pemerintah kabupaten disebut masih mengupayakan bantuan tersebut, tetapi belum ada keterangan resmi soal target penyelesaian. Perlu dicatat, pernyataan “belum bisa dilanjutkan pada 2026” bukan berarti proyek dihentikan permanen; statusnya masih menunggu kepastian pendanaan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Inpres Jalan Daerah (IJD) dan bagaimana kaitannya dengan proyek jalan daerah?",
+          "a": "IJD adalah program bantuan pusat untuk pembangunan jalan daerah; artikel menyebut Pemkab masih mengupayakan bantuan ini sebagai sumber dana lanjutan.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
+          }
+        },
+        {
+          "q": "Apa itu Dana Alokasi Khusus (DAK) yang disebut dalam artikel?",
+          "a": "DAK adalah dana transfer dari pemerintah pusat ke daerah yang dialokasikan untuk kebutuhan tertentu; artikel menyebutnya sebagai salah satu sumber yang diupayakan Pemkab.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
+          }
+        },
+        {
+          "q": "Di mana lokasi Kepek dan Ngobaran dalam konteks Gunungkidul?",
+          "a": "Artikel menyebut jalan wisata Kepek-Ngobaran berada di Gunungkidul, DIY, dan menjadi penghubung kawasan yang dikaitkan dengan tujuan wisata.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi Pemkab Gunungkidul soal status dana IJD dan DAK untuk jalan Kepek-Ngobaran.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278345/jalan-wisata-kepek-ngobaran-belum-bisa-dilanjutkan-pada-2026",
+          "published_at": "2026-11-10T18:07:20+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T20:12:11+07:00"
         }
       ],
       "place": "lokal",
