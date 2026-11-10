@@ -43,7 +43,7 @@ function formatDate(iso) {
 async function boot() {
   let manifest;
   try {
-    const res = await fetch("/manifest.json", { cache: "no-cache" });
+    const res = await fetch("manifest.json", { cache: "no-cache" });
     if (!res.ok) throw new Error(String(res.status));
     manifest = await res.json();
   } catch {
@@ -339,7 +339,7 @@ async function setupNotifications() {
   const box = $("notifBody");
   let cfg = null;
   try {
-    cfg = await (await fetch("/config.json", { cache: "no-cache" })).json();
+    cfg = await (await fetch("config.json", { cache: "no-cache" })).json();
   } catch { /* belum dikonfigurasi */ }
 
   if (!cfg?.vapidPublicKey) {
@@ -398,7 +398,7 @@ function urlBase64ToUint8Array(base64) {
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").then(setupNotifications).catch(() => {});
+    navigator.serviceWorker.register("sw.js").then(setupNotifications).catch(() => {});
   });
 }
 

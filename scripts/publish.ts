@@ -56,7 +56,7 @@ for (const file of readdirSync(editionsDir).filter((f) => f.endsWith(".json")).s
     published_at: raw.published_at,
     card_count: raw.card_count,
     reading_time_min: raw.reading_time_min,
-    path: `/data/editions/${file}`,
+    path: `data/editions/${file}`,
   });
 }
 

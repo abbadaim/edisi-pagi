@@ -1,7 +1,7 @@
-const SHELL = "edisi-shell-v2";
-const DATA = "edisi-data-v2";
+const SHELL = "edisi-shell-v3";
+const DATA = "edisi-data-v3";
 const ASSETS = "edisi-assets-v1";
-const SHELL_FILES = ["/", "/app.js", "/style.css", "/manifest.json", "/icons/icon-192.png"];
+const SHELL_FILES = ["./", "app.js", "style.css", "manifest.json", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(SHELL).then((c) => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
@@ -43,11 +43,11 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
 
-  if (url.pathname === "/manifest.json" || url.pathname.startsWith("/data/")) {
+  if (url.pathname.endsWith("manifest.json") || url.pathname.includes("/data/")) {
     e.respondWith(networkFirst(e.request, DATA));
     return;
   }
-  if (url.pathname.startsWith("/assets/") || url.pathname.startsWith("/icons/")) {
+  if (url.pathname.includes("/assets/") || url.pathname.includes("/icons/")) {
     e.respondWith(cacheFirst(e.request, ASSETS));
   }
 });
@@ -57,8 +57,8 @@ self.addEventListener("push", (e) => {
   e.waitUntil(
     self.registration.showNotification(data.title ?? "Edisi Pagi", {
       body: data.body ?? "Edisi baru siap.",
-      icon: "/icons/icon-192.png",
-      badge: "/icons/icon-192.png",
+      icon: "icons/icon-192.png",
+      badge: "icons/icon-192.png",
       data: { url: data.url ?? "/" },
     }),
   );

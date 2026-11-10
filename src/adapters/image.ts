@@ -55,7 +55,7 @@ export async function storeWebp(
     const file = join(assetsDir, `${hash}.webp`);
     if (!existsSync(file)) writeFileSync(file, out);
 
-    return { url: `/assets/${hash}.webp`, bytes: out.byteLength };
+    return { url: `assets/${hash}.webp`, bytes: out.byteLength };
   } catch {
     return null;
   }
