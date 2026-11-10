@@ -104,7 +104,7 @@ try {
       card = await buildDeepDiveWithLlm(diveCtx, {
         llm,
         model,
-        candidates: await backgroundCandidates(topic, glossary, 4, clusterText(cluster)),
+        candidates: await backgroundCandidates(topic, glossary, 4, clusterText(cluster), cluster.articles),
       });
     }
     if (!card) card = buildDeepDive(diveCtx);

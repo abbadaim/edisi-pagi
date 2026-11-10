@@ -129,7 +129,7 @@ export async function buildDeepDiveWithLlm(
   ctx: DeepDiveContext,
   deps: { llm: LlmAdapter; model: string; candidates: Array<{ key: string; q: string; a: string; outlet: string; url: string }> },
 ): Promise<Card | null> {
-  if (deps.candidates.length < 2) {
+  if (deps.candidates.length < 1) {
     if (process.env.DEBUG_DEEPDIVE) console.log(`  dd: kandidat ${deps.candidates.length} untuk ${ctx.topic.title.slice(0, 40)}`);
     return buildDeepDive(ctx);
   }

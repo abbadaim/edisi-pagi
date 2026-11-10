@@ -205,3 +205,21 @@ test("glosarium dicocokkan lewat frasa pertanyaan, bukan hanya id entitas", asyn
   const qs = items!.map((i) => i.q.toLowerCase()).join(" | ");
   assert.match(qs, /hak menyatakan pendapat/, `tidak menemukan HMP: ${qs}`);
 });
+
+test("kandidat konteks memakai artikel bila glosarium kosong", async () => {
+  const { backgroundCandidates } = await import("../src/core/writer-llm.ts");
+  const glossary = loadGlossary("config/glossary.yaml");
+  const kosong = new Map(
+    [...glossary.entries()].filter(([k]) => k.startsWith("category_")),
+  );
+  const out = await backgroundCandidates(
+    { ...topic, entities: [], title: "Target RI gabung OECD 2028", angle: "" },
+    kosong,
+    4,
+    "",
+    [{ title: "Target RI gabung OECD", lead: "Pemerintah menargetkan keanggotaan OECD pada 2028.", url: "https://tirto.id/x", outlet: "tirto.id" }],
+  );
+  const anchor = out.find((c) => c.key === "a1");
+  assert.ok(anchor, "harus ada kandidat dari artikel");
+  assert.equal(anchor!.url, "https://tirto.id/x");
+});

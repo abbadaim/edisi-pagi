@@ -16,6 +16,27 @@ interface ChatResponse {
   usage?: { prompt_tokens?: number; completion_tokens?: number };
 }
 
+/**
+ * Model kadang menyisipkan newline mentah di dalam string JSON. Itu bukan
+ * JSON valid, tetapi isinya masih bisa dipakai setelah karakter kontrol
+ * diubah menjadi spasi (di luar string, spasi tetap whitespace sah).
+ */
+function parseJsonLoose(content: string): unknown {
+  const fenced = content
+    .trim()
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/, "");
+
+  for (const attempt of [fenced, fenced.replace(/[\u0000-\u001F]/g, " ")]) {
+    try {
+      return JSON.parse(attempt);
+    } catch {
+      /* coba bentuk berikutnya */
+    }
+  }
+  throw new Error(`respons bukan JSON valid: ${fenced.slice(0, 160)}`);
+}
+
 export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
   if (!opts.apiKey) throw new Error("DEEPSEEK_API_KEY kosong");
   const baseUrl = opts.baseUrl ?? BASE_URL;
@@ -99,12 +120,7 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
         stream: false,
       });
 
-      let data: T;
-      try {
-        data = JSON.parse(content) as T;
-      } catch {
-        throw new Error(`respons bukan JSON valid: ${content.slice(0, 200)}`);
-      }
+      const data = parseJsonLoose(content) as T;
       return { data, usage };
     },
 

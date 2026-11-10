@@ -128,6 +128,7 @@ export async function backgroundCandidates(
   glossary: Glossary,
   max = 4,
   text = "",
+  articles: Array<{ title: string; lead: string; url: string; outlet: string }> = [],
 ): Promise<BackgroundCandidate[]> {
   const out: BackgroundCandidate[] = [];
 
@@ -149,6 +150,19 @@ export async function backgroundCandidates(
       a: wiki.extract.slice(0, 400),
       outlet: "Wikipedia",
       url: wiki.url,
+    });
+  }
+
+  // Jaring terakhir: konteks yang dilaporkan artikel itu sendiri. Pertanyaannya
+  // sengaja tanpa "?" supaya tidak bisa disalin mentah sebagai explain.
+  const anchor = articles[0];
+  if (anchor && out.length < max) {
+    out.push({
+      key: "a1",
+      q: "konteks dari artikel",
+      a: (anchor.lead || anchor.title).slice(0, 500),
+      outlet: anchor.outlet,
+      url: anchor.url,
     });
   }
 
@@ -246,8 +260,9 @@ export async function writeCardWithLlm(
   deps: { llm: LlmAdapter; model: string; glossary: Glossary; candidates?: BackgroundCandidate[] },
 ): Promise<Card | null> {
   const candidates =
-    deps.candidates ?? (await backgroundCandidates(ctx.topic, deps.glossary, 4, clusterText(ctx.cluster)));
-  if (candidates.length < 2) {
+    deps.candidates ??
+    (await backgroundCandidates(ctx.topic, deps.glossary, 4, clusterText(ctx.cluster), ctx.cluster.articles));
+  if (candidates.length < 1) {
     console.log(`  ! tulis: kandidat konteks hanya ${candidates.length} untuk "${ctx.topic.title.slice(0, 40)}"`);
     return null;
   }
