@@ -1,6 +1,6 @@
 node_modules/
-local.db
-local.db-*
+/local.db
+/local.db-*
 *.cpuprofile
 .env
 .env.*
@@ -9,6 +9,8 @@ local.db-*
 # artefak build
 dist/
 
-# state SQLite: WAL tidak perlu di-commit
+# State SQLite tidak di-commit: di CI dipulihkan lewat actions/cache.
+# Commit database biner setiap hari membuat riwayat git membengkak.
+data/state/*.db
 data/state/*.db-wal
 data/state/*.db-shm

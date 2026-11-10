@@ -18,6 +18,10 @@ npm run serve            # http://localhost:8080
 
 Database memakai `DATABASE_PATH` bila diset; default `local.db`.
 
+Di CI, state ada di `data/state/local.db` dan dipulihkan lewat `actions/cache`
+(lihat `.github/workflows/daily.yml`). `npm run state:info` mencetak jumlah
+artikel yang terbawa sebelum ingest.
+
 Adjudikasi di-cache per tanggal + hash masukan, jadi menjalankan ulang `build` pada data yang sama menghasilkan topik yang sama. Pakai `--refresh` untuk memaksa panggilan model baru.
 
 ## LLM

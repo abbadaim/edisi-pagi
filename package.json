@@ -9,6 +9,7 @@
   "scripts": {
     "validate": "node scripts/validate.ts",
     "migrate": "node scripts/migrate.ts",
+    "state:info": "node scripts/state-info.ts",
     "ingest": "node scripts/ingest.ts",
     "test": "node --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",

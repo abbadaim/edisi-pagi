@@ -85,7 +85,7 @@ permissions:
 
 **Determinisme adjudikasi.** Hasil adjudikasi disimpan di tabel `adjudications` dengan kunci `(edition_id, hash ringkasan klaster)`. Pada data yang sama, run berikutnya memakai cache — jadi edisi tidak berubah hanya karena pipeline dijalankan ulang. `--refresh` memaksa panggilan model baru.
 
-**Persistensi state.** State SQLite hidup di `data/state/local.db` dan ikut di-commit. Ini bukan pilihan ideal (repo bertambah beberapa MB/bulan), tetapi menghindari ketergantungan pada Turso sebelum adapter-nya ada. Jalankan `VACUUM` sesekali. Ketika Turso dipakai, `DATABASE_PATH` diganti URL libSQL dan commit state bisa dihapus.
+**Persistensi state.** State SQLite hidup di `data/state/local.db` dan **tidak di-commit** (database biner harian membuat riwayat git membengkak). Di CI, folder `data/state` dipulihkan dan disimpan dengan `actions/cache` bergulir: kunci `edisi-state-<run_id>`, restore lewat kecocokan awalan `edisi-state-`. Setiap run memakai snapshot run terakhir, sehingga artikel, registry, adjudikasi, dan langganan push bertahan — prasyarat untuk rekap mingguan dan deep dive 7 hari. `npm run state:info` mencetak jumlah artikel sebelum ingest; kalau angkanya 0 di run kedua, cache tidak terbawa. Di lokal, `DATABASE_PATH` default `local.db` di akar repo. Ketika Turso dipakai, `DATABASE_PATH` diganti URL libSQL dan cache dihapus.
 
 ## 3. Turso
 

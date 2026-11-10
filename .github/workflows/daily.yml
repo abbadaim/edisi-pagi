@@ -31,7 +31,21 @@ jobs:
           node-version: 24
           cache: npm
 
+      # State (artikel, registry, adjudikasi, langganan push) harus bertahan
+      # antar-run; tanpa ini rekap mingguan dan deep dive 7 hari selalu kosong.
+      # Cache bergulir: kunci unik per run, restore memakai kecocokan awalan.
+      - name: Pulihkan state
+        uses: actions/cache@v4
+        with:
+          path: data/state
+          key: edisi-state-${{ github.run_id }}
+          restore-keys: |
+            edisi-state-
+
       - run: npm ci
+
+      - name: Cek state
+        run: npm run state:info
 
       - name: Migrasi state
         run: npm run migrate
