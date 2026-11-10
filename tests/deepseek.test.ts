@@ -48,3 +48,16 @@ test("newline mentah di dalam string JSON tetap terbaca", async () => {
   const out = await adapter.json<{ title: string }>({ model: "deepseek-chat", system: "s", user: "u" });
   assert.equal(out.data.title, "baris satu baris dua");
 });
+
+test("karakter nyasar setelah objek JSON diabaikan", async () => {
+  const adapter = createDeepSeekAdapter({
+    apiKey: "x",
+    maxRetries: 0,
+    fetchImpl: fakeFetch({
+      choices: [{ message: { content: "{\"ok\":true}\"}" }, finish_reason: "stop" }],
+      usage: { prompt_tokens: 1, completion_tokens: 1 },
+    }),
+  });
+  const out = await adapter.json<{ ok: boolean }>({ model: "deepseek-chat", system: "s", user: "u" });
+  assert.equal(out.data.ok, true);
+});
