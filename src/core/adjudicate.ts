@@ -207,7 +207,9 @@ export function fallbackTopics(clusters: ClusterSummary[]): AdjudicatedTopic[] {
     const category = guessCategory(c.titles);
     return {
       cids: [c.cid],
-      title: truncateWords(c.titles[0] ?? c.entities[0] ?? c.cid, 60),
+      // Jangan potong terlalu pendek: label ini juga dipakai writer sebagai
+      // bahan judul kartu saat LLM cadangan yang menulis.
+      title: truncateWords(c.titles[0] ?? c.entities[0] ?? c.cid, 90),
       angle: c.titles[0]?.slice(0, 90) ?? c.cid,
       kind: "ongoing" as TopicKind,
       entities: c.entities,

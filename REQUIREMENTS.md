@@ -405,7 +405,7 @@ Untuk v1, dua penyedia saja:
 | Penyedia | Dipakai untuk | Catatan |
 |---|---|---|
 | `opencode` | Semua kapabilitas | **Penyedia utama.** Pemilihan model lewat id `provider/model` dari katalog OpenCode |
-| `deepseek` | Semua kapabilitas **kecuali** `embed` | **Cadangan.** `https://api.deepseek.com`, format OpenAI, model `deepseek-flash` / `deepseek-v4-pro` |
+| `deepseek` | Semua kapabilitas **kecuali** `embed` | **Cadangan.** `https://api.deepseek.com`, format OpenAI, model `deepseek-chat` / `deepseek-v4-pro` |
 
 **Konfigurasi per kapabilitas, bukan satu model global.**
 

@@ -12,7 +12,7 @@ export interface DeepSeekOptions {
 }
 
 interface ChatResponse {
-  choices?: Array<{ message?: { content?: string } }>;
+  choices?: Array<{ message?: { content?: string }; finish_reason?: string }>;
   usage?: { prompt_tokens?: number; completion_tokens?: number };
 }
 
@@ -45,8 +45,17 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
         }
 
         const json = (await res.json()) as ChatResponse;
-        const content = json.choices?.[0]?.message?.content ?? "";
+        const choice = json.choices?.[0];
+        const content = choice?.message?.content ?? "";
         const model = String(body.model);
+
+        // Model reasoning (mis. deepseek-flash) menghabiskan token di
+        // reasoning_content dan bisa mengembalikan content kosong dengan
+        // finish_reason "length". Itu kegagalan, bukan jawaban sah.
+        if (!content.trim()) {
+          const why = choice?.finish_reason === "length" ? "kehabisan token" : "kosong";
+          throw new Error(`DeepSeek: konten ${why} (${model})`);
+        }
         const price = opts.pricing?.[model];
 
         const usage: Usage = {

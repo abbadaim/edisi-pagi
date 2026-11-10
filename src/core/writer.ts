@@ -104,33 +104,74 @@ function toItem(g: GlossaryEntry): ExplainItem {
 }
 
 /**
+ * Frasa yang dicari di teks berita untuk tiap entri glosarium.
+ * Kunci pendek seperti `hmp` tidak akan pernah cocok sebagai kata, jadi
+ * frasa diambil juga dari pertanyaannya ("Apa itu Hak Menyatakan Pendapat?").
+ */
+function phrasesFor(key: string, g: GlossaryEntry): string[] {
+  const out: string[] = [];
+  if (key.includes("_")) out.push(key.replace(/_/g, " "));
+  else if (key.length >= 4) out.push(key.toLowerCase());
+
+  const q = g.q.toLowerCase().replace(/\?+\s*$/, "");
+  const stripped = q
+    .replace(/^(apa itu|apa yang dimaksud dengan|apa yang dimaksud|siapa|bagaimana|mengapa|kenapa|kapan|di mana)\s+/, "")
+    .trim();
+  if (stripped.length >= 4 && stripped.split(/\s+/).length <= 6) out.push(stripped);
+
+  return [...new Set(out)];
+}
+
+/** Teks klaster (judul + lead) dipakai untuk mencocokkan glosarium. */
+export function clusterText(cluster: { articles: Array<{ title: string; lead: string }> }): string {
+  return cluster.articles
+    .slice(0, 12)
+    .map((a) => `${a.title} ${a.lead}`)
+    .join(" ");
+}
+
+/**
  * Minimal satu entri **spesifik** untuk topik ini. Sisanya boleh diisi
  * penjelas tingkat kategori. Tanpa satu pun entri spesifik, kartu tidak terbit:
  * konteks generik saja tidak cukup untuk disebut konteks.
  */
-export function explainForTopic(topic: AdjudicatedTopic, glossary: Glossary): ExplainItem[] | null {
+export function explainForTopic(
+  topic: AdjudicatedTopic,
+  glossary: Glossary,
+  extraText = "",
+): ExplainItem[] | null {
   const items: ExplainItem[] = [];
   const used = new Set<string>();
-  const text = ` ${`${topic.title} ${topic.angle}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ")} `;
+  const text = ` ${`${topic.title} ${topic.angle} ${extraText}`.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ")} `;
 
-  const add = (key: string) => {
-    if (used.has(key)) return;
+  // Kumpulkan kandidat, urutkan dari yang paling spesifik: entitas hasil
+  // ekstraksi dulu, lalu frasa terpanjang ("hak menyatakan pendapat" >
+  // "dpr").
+  const found: Array<{ key: string; score: number }> = [];
+  for (const id of topic.entities) {
+    const key = id.toLowerCase();
+    if (glossary.has(key) && !key.startsWith("category_")) {
+      found.push({ key, score: 100 + key.length });
+    }
+  }
+  for (const [key, g] of glossary) {
+    if (key.startsWith("category_") || used.has(key)) continue;
+    for (const phrase of phrasesFor(key, g)) {
+      if (new RegExp(`\\b${phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(text)) {
+        found.push({ key, score: phrase.length });
+        break;
+      }
+    }
+  }
+  found.sort((a, b) => b.score - a.score);
+
+  for (const { key } of found) {
+    if (items.length >= 4) break;
+    if (used.has(key)) continue;
     const g = glossary.get(key);
-    if (!g || key.startsWith("category_")) return;
+    if (!g) continue;
     used.add(key);
     items.push(toItem(g));
-  };
-
-  // (a) cocok lewat id entitas
-  for (const id of topic.entities) add(id.toLowerCase());
-
-  // (b) cocok lewat kata di judul/angle — id entitas heuristic sering meleset
-  if (items.length < 2) {
-    for (const key of glossary.keys()) {
-      if (items.length >= 2) break;
-      if (key.length < 4 || key.includes("_")) continue;
-      if (new RegExp(`\\b${key}\\b`, "i").test(text)) add(key);
-    }
   }
 
   if (items.length === 0) return null;
@@ -151,7 +192,7 @@ export function explainForTopic(topic: AdjudicatedTopic, glossary: Glossary): Ex
 export function createDeterministicWriter(glossary: Glossary): CardWriter {
   return {
     write(ctx: WriteContext): Card | null {
-      const explain = explainForTopic(ctx.topic, glossary);
+      const explain = explainForTopic(ctx.topic, glossary, clusterText(ctx.cluster));
       if (!explain) return null;
 
       const sources = sourcesFromCluster(ctx.cluster, ctx.now);

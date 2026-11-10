@@ -18,8 +18,8 @@ const CAPABILITIES: Capability[] = ["adjudicate", "write", "verify", "embed"];
 
 export const DEFAULT_CONFIG: LlmConfig = {
   capabilities: {
-    adjudicate: { provider: "deepseek", model: "deepseek-flash" },
-    write: { provider: "deepseek", model: "deepseek-flash" },
+    adjudicate: { provider: "deepseek", model: "deepseek-chat" },
+    write: { provider: "deepseek", model: "deepseek-chat" },
     verify: { provider: "deepseek", model: "deepseek-v4-pro" },
     embed: { provider: "local", model: "Xenova/multilingual-e5-small" },
   },

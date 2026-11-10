@@ -61,8 +61,8 @@ Aplikasi mulai dari `manifest.json`, lalu mengambil berkas lain sesuai kebutuhan
   "place": { "kabupaten": "Sleman", "province": "DI Yogyakarta" },
   "reading_time_min": 4,
   "generated_by": {
-    "adjudicate": { "provider": "deepseek", "model": "deepseek-flash" },
-    "write":      { "provider": "deepseek", "model": "deepseek-flash" },
+    "adjudicate": { "provider": "deepseek", "model": "deepseek-chat" },
+    "write":      { "provider": "deepseek", "model": "deepseek-chat" },
     "verify":     { "provider": "deepseek", "model": "deepseek-v4-pro" },
     "embed":      { "provider": "local",    "model": "multilingual-e5-small" }
   },
@@ -100,7 +100,7 @@ Aplikasi mulai dari `manifest.json`, lalu mengambil berkas lain sesuai kebutuhan
 | `title` | string | ✅ | Maks 70 karakter, tanpa kapital semua |
 | `status` | enum | ✅ | `terkonfirmasi` \| `sebagian` \| `belum` \| `dibantah` |
 | `truth` | object \| null | ✅ | Blok kebenaran (§2.5). `null` untuk opini, prediksi, dan kartu non-berita |
-| `body` | string[] | ✅ | 1–3 paragraf, tiap paragraf ≤ 480 karakter |
+| `body` | string[] | ✅ | 1–3 paragraf, tiap paragraf ≤ 640 karakter |
 | `explain` | ExplainItem[] | — | 2–4 pertanyaan konteks; wajib untuk `news`/`good_news` (E017, §2.6) |
 | `action` | string | ✅ | Satu kalimat, ≤ 160 karakter, imperatif |
 | `image` | object \| null | ✅ | `{ url, credit, alt, fallback? }`; `url` relatif ke `/assets/`, format `.webp` |

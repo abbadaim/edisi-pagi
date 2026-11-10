@@ -151,3 +151,57 @@ test("writer deterministik tetap jadi cadangan yang valid", () => {
   assert.ok(card);
   assert.equal(card!.type, "news");
 });
+
+test("judul yang terpotong diperpanjang dari judul artikel", () => {
+  const out = normaliseCard(
+    {
+      title: "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal",
+      body: ["Paragraf satu yang cukup panjang untuk lolos validasi isi."],
+      action: "Baca dokumen resminya.",
+      explain: [
+        { q: "Apa itu HMP?", a: "Hak konstitusional DPR untuk menyatakan pendapat atas kebijakan pemerintah.", source_key: "g1" },
+        { q: "Siapa Puan?", a: "Ketua DPR RI periode 2024–2029 yang memimpin paripurna.", source_key: "g2" },
+      ],
+    },
+    candidates,
+    "HMP",
+    [
+      "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
+      "Berita lain yang tidak berhubungan sama sekali",
+    ],
+  );
+  assert.ok(out);
+  assert.equal(out!.title, "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran");
+});
+
+test("judul tanpa perpanjangan tidak berakhir di kata sambung", () => {
+  const out = normaliseCard(
+    {
+      title: "Polemik ijazah Gibran masuk ke ruang rapat DPR soal",
+      body: ["Paragraf satu yang cukup panjang untuk lolos validasi isi."],
+      action: "Baca dokumen resminya.",
+      explain: [
+        { q: "Apa itu HMP?", a: "Hak konstitusional DPR untuk menyatakan pendapat atas kebijakan pemerintah.", source_key: "g1" },
+        { q: "Siapa Puan?", a: "Ketua DPR RI periode 2024–2029 yang memimpin paripurna.", source_key: "g2" },
+      ],
+    },
+    candidates,
+    "HMP",
+    [],
+  );
+  assert.ok(out);
+  assert.ok(!/\bsoal$/i.test(out!.title), `judul masih menggantung: ${out!.title}`);
+});
+
+test("glosarium dicocokkan lewat frasa pertanyaan, bukan hanya id entitas", async () => {
+  const { explainForTopic } = await import("../src/core/writer.ts");
+  const glossary = loadGlossary("config/glossary.yaml");
+  const items = explainForTopic(
+    { ...topic, entities: [], title: "DPR Dorong Hak Menyatakan Pendapat", angle: "" },
+    glossary,
+    "Polemik ijazah Gibran dibahas di parlemen; pemakzulan disebut-sebut.",
+  );
+  assert.ok(items);
+  const qs = items!.map((i) => i.q.toLowerCase()).join(" | ");
+  assert.match(qs, /hak menyatakan pendapat/, `tidak menemukan HMP: ${qs}`);
+});

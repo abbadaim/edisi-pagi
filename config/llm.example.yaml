@@ -4,10 +4,10 @@
 capabilities:
   adjudicate:
     provider: deepseek          # deepseek | opencode
-    model: deepseek-flash
+    model: deepseek-chat
   write:
     provider: deepseek
-    model: deepseek-flash
+    model: deepseek-chat
   verify:
     provider: deepseek
     model: deepseek-v4-pro      # dipakai untuk blok truth & misread

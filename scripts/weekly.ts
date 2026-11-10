@@ -10,7 +10,11 @@ import { clusterArticles, loadArticles, type Cluster } from "../src/core/cluster
 import { fallbackTopics, summarise, type AdjudicatedTopic } from "../src/core/adjudicate.ts";
 import { loadRegistry, resolveTopic } from "../src/core/registry.ts";
 import { buildEdition } from "../src/core/assemble.ts";
-import { explainForTopic, loadGlossary, sourcesFromCluster } from "../src/core/writer.ts";
+import { clusterText, explainForTopic, loadGlossary, sourcesFromCluster } from "../src/core/writer.ts";
+import { buildDeepDive, buildDeepDiveWithLlm } from "../src/core/deepdive.ts";
+import { backgroundCandidates } from "../src/core/writer-llm.ts";
+import { resolveLlm } from "../src/adapters/llm/resolve.ts";
+import { loadEnvFile } from "../src/config/env.ts";
 import { computeTruth } from "../src/core/truth.ts";
 import { validateEdition, formatErrors, allowsThin } from "../src/core/validate.ts";
 import { isoWib, wibDate } from "../src/core/time.ts";
@@ -18,6 +22,7 @@ import { truncateWords } from "../src/core/normalize.ts";
 import type { Card, Edition } from "../src/core/types.ts";
 
 const root = new URL("..", import.meta.url).pathname;
+loadEnvFile(join(root, ".env.local"));
 
 function arg(name: string, fallback?: string): string | undefined {
   const i = process.argv.indexOf(`--${name}`);
@@ -50,6 +55,9 @@ try {
 
   const topics = fallbackTopics(summarise(clusters));
   const glossary = loadGlossary(join(root, "config", "glossary.yaml"));
+  const { llm, model, provider } = resolveLlm(process.env);
+  const writer = llm ? provider : "deterministic";
+  if (!llm) console.log("tidak ada LLM — mingguan memakai writer deterministik");
 
   // Urutkan thread menurut ukuran + keragaman media.
   const ranked = topics
@@ -69,7 +77,7 @@ try {
   for (const { topic, cluster } of ranked) {
     const res = await resolveTopic(db, topic, registry, { counter, now, editionId });
 
-    const explain = explainForTopic(topic, glossary);
+    const explain = explainForTopic(topic, glossary, clusterText(cluster));
     if (!explain) continue;
 
     const sources = sourcesFromCluster(cluster, now, 5);
@@ -88,33 +96,49 @@ try {
       .filter(Boolean)
       .map((x) => x.slice(0, 460));
 
-    cards.push({
-      id: "c1",
-      type: "deep_dive",
-      topic_id: res.topic_id,
-      angle: `Rekap ${spanDays} hari`,
-      kicker: "Rekap pekan",
-      title: truncateWords(topic.title, 68),
-      status: "sebagian",
-      truth: null,
-      body: body.length ? body : [topic.title],
-      explain,
-      action: "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
-      image: null,
-      sources,
-      revision: 1,
-      first_seen: editionId,
-      previous_edition: null,
-      changes: [],
-      dek: truncateWords(cluster.articles[0]?.lead || topic.title, 150),
-      optional: true,
-      read_min: Math.min(8, Math.max(4, Math.ceil(cluster.articles.length / 4))),
-      stats: [
-        { value: String(cluster.articles.length), label: "artikel" },
-        { value: String(cluster.outlets.length), label: "media" },
-        { value: `${spanDays} hari`, label: "berjalan" },
-      ],
-    } as Card);
+    const diveCtx = { now, cluster, topic, topicId: res.topic_id, glossary, local: false, minSources: 2 };
+
+    // Rekap pekan ditulis seperti bacaan mendalam, bukan dua paragraf lead.
+    let card: Card | null = null;
+    if (llm) {
+      card = await buildDeepDiveWithLlm(diveCtx, {
+        llm,
+        model,
+        candidates: await backgroundCandidates(topic, glossary, 4, clusterText(cluster)),
+      });
+    }
+    if (!card) card = buildDeepDive(diveCtx);
+
+    cards.push(
+      card ??
+        ({
+          id: "c1",
+          type: "deep_dive",
+          topic_id: res.topic_id,
+          angle: `Rekap ${spanDays} hari`,
+          kicker: "Rekap pekan",
+          title: truncateWords(topic.title, 68),
+          status: "sebagian",
+          truth: null,
+          body: body.length ? body : [topic.title],
+          explain,
+          action: "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+          image: null,
+          sources,
+          revision: 1,
+          first_seen: editionId,
+          previous_edition: null,
+          changes: [],
+          dek: truncateWords(cluster.articles[0]?.lead || topic.title, 150),
+          optional: true,
+          read_min: Math.min(8, Math.max(4, Math.ceil(cluster.articles.length / 4))),
+          stats: [
+            { value: String(cluster.articles.length), label: "artikel" },
+            { value: String(cluster.outlets.length), label: "media" },
+            { value: `${spanDays} hari`, label: "berjalan" },
+          ],
+        } as Card),
+    );
   }
 
   if (cards.length < 3) {
@@ -136,7 +160,7 @@ try {
         : null,
     generatedBy: {
       adjudicate: { provider: "fallback", model: "none" },
-      write: { provider: "deterministic", model: "glossary" },
+      write: { provider: writer, model: llm ? model : "glossary" },
       verify: { provider: "rules", model: "evidence-class" },
       embed: { provider: "none", model: "none" },
     },

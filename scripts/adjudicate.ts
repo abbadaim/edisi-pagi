@@ -27,7 +27,7 @@ if (!existsSync(dbPath)) {
 const hours = Number(arg("hours") ?? 48);
 const dry = process.argv.includes("--dry");
 const forceFallback = process.argv.includes("--fallback");
-const model = arg("model") || "deepseek-flash";
+const model = arg("model") || "deepseek-chat";
 
 const to = new Date();
 const from = new Date(to.getTime() - hours * 3_600_000);

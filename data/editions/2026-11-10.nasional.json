@@ -2,26 +2,26 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T18:17:32+07:00",
+  "published_at": "2026-11-10T05:00:00+07:00",
   "coverage": {
-    "from": "2026-11-09T18:17:32+07:00",
-    "to": "2026-11-10T18:17:32+07:00"
+    "from": "2026-11-09T05:00:00+07:00",
+    "to": "2026-11-10T05:00:00+07:00"
   },
-  "generated_at": "2026-11-10T18:17:32+07:00",
+  "generated_at": "2026-11-10T05:00:00+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 2,
+  "reading_time_min": 7,
   "generated_by": {
     "adjudicate": {
-      "provider": "fallback",
-      "model": "none"
+      "provider": "deepseek",
+      "model": "deepseek-chat"
     },
     "write": {
-      "provider": "deepseek",
-      "model": "opencode-go/deepseek-v4.1-flash"
+      "provider": "deepseek+deterministic",
+      "model": "deepseek-chat"
     },
     "verify": {
       "provider": "rules",
@@ -32,36 +32,37 @@
       "model": "none"
     }
   },
-  "card_count": 6,
-  "truncated_reason": "Hanya 6 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "card_count": 8,
+  "truncated_reason": null,
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_dpr_disebut_sepakat_pakai_hak_acb8",
-      "angle": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
+      "topic_id": "t_dasco_akui_banyak_anggota_dpr_4cca",
+      "angle": "DPR Dorong Hak Menyatakan Pendapat soal Ijazah Gibran",
       "kicker": "Nasional",
-      "title": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal",
+      "title": "DPR Dorong Hak Menyatakan Pendapat soal Ijazah Gibran",
       "status": "sebagian",
       "truth": {
-        "claim": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
+        "claim": "Anggota DPR Doli Kurnia menyerukan hak menyatakan pendapat untuk menindaklanjuti putusan MA terkait ijazah Gibran, sementara DPR belum menggelar rapim atau rapa",
         "status": "sebagian",
-        "confidence": 0.83,
+        "confidence": 0.8,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 4,
-          "independent_outlets": 5,
+          "tier2": 2,
+          "independent_outlets": 2,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:17:32+07:00"
+        "assessed_at": "2026-11-10T05:00:00+07:00"
       },
       "body": [
-        "Sebanyak delapan fraksi di DPR disebut telah bersepakat bakal menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran Rakabuming.",
-        "PKB mengklaim delapan fraksi DPR hampir sepakat untuk Hak Menyatakan Pendapat (HMP) terkait ijazah Gibran."
+        "Polemik seputar ijazah dan pendidikan Wakil Presiden Gibran Rakabuming Raka mulai masuk ke ranah parlemen. Anggota DPR dari Fraksi Golkar, Doli Kurnia, menyerukan penggunaan hak menyatakan pendapat untuk menindaklanjuti putusan Mahkamah Agung terkait ijazah Gibran. Sementara itu, Ketua Harian PDIP Hasto Kristiyanto menyebut desakan hak menyatakan pendapat sebagai langkah yang paling rasional. Wakil Ketua DPR Sufmi Dasco Ahmad mengakui banyak anggota DPR yang ingin membahas polemik ini, namun hingga kini belum ada rapat pimpinan maupun rapat badan musyawarah yang melibatkan fraksi.",
+        "Pembahasan ini penting karena menyangkut dua hal sekaligus: kredibilitas proses pendidikan pejabat publik dan cara DPR menjalankan fungsi pengawasannya. Hak menyatakan pendapat adalah mekanisme konstitusional yang diatur Pasal 20A UUD 1945, sehingga penggunaannya bukan sekadar wacana politik biasa. Bagi pembaca, perdebatan ini menentukan sejauh mana parlemen akan menelusuri persoalan yang menyangkut rekam jejak seorang wakil presiden, dan apakah desakan itu berujung pada prosedur resmi atau berhenti sebagai aspirasi informal.",
+        "Yang belum jelas adalah kapan pembahasan resmi akan dimulai. Dasco menyebut pembahasan lintas fraksi masih bersifat informal karena DPR belum memasuki masa sidang, dan proses resmi baru akan berjalan setelah masa sidang dimulai. Belum ada kepastian soal jumlah dukungan tanda tangan anggota yang dibutuhkan, bentuk usulan yang akan diajukan, maupun apakah hak menyatakan pendapat benar-benar akan ditempuh. Perlu dicatat, hak ini bukan keputusan satu fraksi, melainkan prosedur kolektif yang harus melewati tahapan paripurna."
       ],
       "explain": [
         {
@@ -73,75 +74,145 @@
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Apa itu hak menyatakan pendapat?",
+          "a": "Hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa fungsi DPR?",
+          "a": "Dewan Perwakilan Rakyat adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
         }
       ],
-      "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
+      "action": "Pantau jadwal masa sidang DPR dan cermati apakah usulan hak menyatakan pendapat benar-benar masuk agenda resmi.",
       "image": {
-        "url": "assets/05ba398e47.webp",
+        "url": "assets/b19b96760f.webp",
         "credit": "cnnindonesia.com",
-        "alt": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal"
+        "alt": "DPR Dorong Hak Menyatakan Pendapat soal Ijazah Gibran"
       },
       "sources": [
         {
           "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
-          "published_at": "2026-11-10T10:35:11+07:00",
+          "url": "https://www.cnnindonesia.com/nasional/20261109213937-32-1425157/doli-golkar-serukan-hak-menyatakan-pendapat-respons-kasus-gibran",
+          "published_at": "2026-11-09T22:33:39+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         },
         {
           "outlet": "tirto.id",
-          "url": "https://tirto.id/hampir-50-anggota-dpr-teken-usulan-hmp-pemakzulan-gibran-idDb",
-          "published_at": "2026-11-10T15:52:00+07:00",
+          "url": "https://tirto.id/dasco-akui-banyak-anggota-dpr-ingin-bahas-polemik-ijazah-gibran-idAu",
+          "published_at": "2026-11-09T14:15:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
-          "published_at": "2026-11-10T10:59:00+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
-          "published_at": "2026-11-10T15:41:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "harianjogja.com",
-          "url": "https://news.harianjogja.com/r-1278379/prasetyo-hadi-ungkap-respons-prabowo-atas-niat-mundur-gibran",
-          "published_at": "2026-11-10T15:57:36+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         }
       ],
       "place": "nasional",
-      "revision": 1,
+      "revision": 41,
       "first_seen": "2026-11-10",
-      "previous_edition": null,
+      "previous_edition": "2026-11-09",
       "changes": []
     },
     {
       "id": "c2",
       "type": "news",
-      "topic_id": "t_bp_lepas_bisnis_spbu_di_indone_a142",
-      "angle": "BP Lepas Bisnis SPBU di Indonesia, AKR Caplok 100 Persen Saham",
-      "kicker": "Ekonomi",
-      "title": "BP Lepas Bisnis SPBU di Indonesia, AKR Caplok 100 Persen",
+      "topic_id": "t_kejagung_dalami_kapolri_dan_bo_9e97",
+      "angle": "Kejagung Telusuri Kaitan Eks Kapolri Listyo Sigit dengan Bos Nikel",
+      "kicker": "Nasional",
+      "title": "Kejagung Telusuri Kaitan Eks Kapolri Listyo Sigit dengan Bos Nikel",
       "status": "sebagian",
       "truth": {
-        "claim": "BP Lepas Bisnis SPBU di Indonesia, AKR Caplok 100 Persen Saham",
+        "claim": "Kejagung menyatakan belum ada indikasi yang mengarah ke Listyo Sigit terkait kasus nikel Arif Kurniawan.",
         "status": "sebagian",
         "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Kejaksaan Agung (Kejagung) tengah mendalami dugaan keterkaitan antara eks Kapolri Listyo Sigit Prabowo dan pengusaha nikel Arif Kurniawan. Jaksa Agung Muda Pidana Khusus (Jampidsus) Kuntadi menyatakan pihaknya masih menelusuri isu tersebut, namun belum menemukan indikasi yang mengarah pada keterlibatan Listyo. Penyelidikan ini berfokus pada kasus dugaan korupsi aktivitas tambang nikel ilegal yang melibatkan Arif Kurniawan. Hingga kini, belum ada detail resmi mengenai bentuk keterkaitan yang dimaksud.",
+        "Isu ini mencuat di tengah sorotan terhadap tata kelola nikel Indonesia, yang merupakan pemasok terbesar dunia untuk baterai. Izin tambang dan royalti sering menjadi objek sengketa hukum dan politik. Nama Listyo Sigit, yang menjabat Kapolri sejak 2021, muncul dalam konteks dugaan perlindungan terhadap aktivitas ilegal. Kejagung menegaskan penyelidikan berjalan sesuai prosedur, tetapi belum ada bukti yang mengaitkan Listyo. Publik menanti kejelasan karena kasus ini menyentuh institusi penegak hukum dan sektor strategis.",
+        "Yang belum jelas adalah apakah penyelidikan akan berlanjut ke ranah pidana bagi Listyo atau hanya sebatas penelusuran informasi. Kejagung belum memberikan tenggat waktu atau rincian alat bukti yang dikumpulkan. Masyarakat perlu memahami bahwa penyelidikan berbeda dengan penyidikan; status hukum seseorang belum berubah tanpa bukti yang cukup. Langkah berikutnya adalah menunggu hasil pendalaman Kejagung dan klarifikasi dari pihak terkait."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran Kejaksaan Agung dalam kasus ini?",
+          "a": "Kejaksaan Agung melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara.",
+          "source": {
+            "outlet": "Kejaksaan Agung",
+            "url": "https://www.kejaksaan.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Listyo Sigit Prabowo?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021. Ia mantan ajudan Presiden Joko Widodo dan pernah memimpin Bareskrim.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa isu nikel sering menjadi sorotan hukum?",
+          "a": "Indonesia pemasok nikel terbesar dunia untuk baterai. Izin tambang dan tata kelola royaltinya sering jadi objek sengketa hukum dan politik.",
+          "source": {
+            "outlet": "Kementerian ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau perkembangan resmi dari Kejagung dan hindari menyimpulkan keterlibatan sebelum ada bukti hukum.",
+      "image": {
+        "url": "assets/cd5dbad741.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kejagung Telusuri Kaitan Eks Kapolri Listyo Sigit dengan Bos Nikel"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kejagung-masih-dalami-isu-listyo-sigit-bekingi-arif-kurniawan-idBj",
+          "published_at": "2026-11-09T17:47:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261109162025-32-1425044/titiek-soeharto-sedih-prabowo-disadap-curiga-sosok-di-balik-listyo",
+          "published_at": "2026-11-09T16:48:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 15,
+      "first_seen": "2026-11-10",
+      "previous_edition": "2026-11-09",
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_listyo_sigit_jadi_tersangka_pe_374d",
+      "angle": "Rekap 6 hari",
+      "kicker": "Mendalam",
+      "title": "Dari Kapolri ke Tersangka: Guncangan di Inti Pengawasan Siber",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polri menetapkan Listyo Sigit Prabowo sebagai tersangka pada 3 November 2026 atas dugaan penyadapan ilegal, penghapusan data elektronik, dan illegal access.",
+        "status": "sebagian",
+        "confidence": 0.83,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
@@ -152,169 +223,83 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:17:32+07:00"
+        "assessed_at": "2026-11-10T05:00:00+07:00"
       },
       "body": [
-        "BP Global Investments Limited melepas bisnis SPBU di Indonesia setelah PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen kepemilikan saham.",
-        "Bisnis SPBU di Indonesia"
+        "Pada 3 November 2026, Polri menetapkan Listyo Sigit Prabowo sebagai tersangka dalam kasus dugaan penyadapan ilegal, penghapusan data elektronik, dan illegal access. Penetapan ini mengubah posisi seorang mantan Kapolri dari pemegang otoritas tertinggi kepolisian menjadi pihak yang diperiksa atas tindak pidana siber. Perubahan status itu bukan sekadar kabar hukum, melainkan pergeseran simbolik: institusi yang seharusnya menjadi penjaga batas penyadapan kini menghadapi tuduhan pelanggaran batas itu sendiri.",
+        "Dua hari kemudian, perhatian bergeser dari sosok ke sistem. Tirto menyoroti celah hukum Polri dalam mengawasi penyadapan oleh aparat, menyebut kasus ini sebagai kotak pandora sistem siber Korps Bhayangkara. Persoalannya bukan hanya apakah satu orang bersalah, tetapi bagaimana kewenangan penyadapan dapat berjalan tanpa pengawasan yang memadai. Dalam kerangka UU ITE, penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan untuk perkara tertentu, sehingga pertanyaan tentang kontrol menjadi krusial.",
+        "Di hari yang sama, nama Listyo muncul dalam persidangan Roy Suryo saat Jokowi hadir sebagai saksi. Jokowi menjawab sejumlah pertanyaan dengan \"lupa\" dan meminta agar proses hukum dihormati. Sikap itu menandai pergeseran lain: isu ini tidak lagi berhenti di ranah kepolisian, tetapi merambat ke ruang sidang dan mempertemukan mantan presiden dengan pertanyaan publik tentang peran lembaga yang pernah ia pimpin.",
+        "Pada 9 November, Titiek Soeharto menyatakan prihatin atas dugaan penyadapan terhadap Presiden Prabowo dan mempertanyakan motif di baliknya. Pernyataan itu memperluas dampak kasus dari soal legalitas menjadi soal kepercayaan politik. Yang berubah dalam enam hari bukan hanya status satu jenderal, melainkan cara publik memandang hubungan antara kekuasaan, kewenangan siber, dan akuntabilitas aparat."
       ],
       "explain": [
         {
-          "q": "Kenapa perusahaan asing keluar dari bisnis SPBU Indonesia?",
-          "a": "Margin bahan bakar ritel tipis dan diatur harga jualnya, sementara biaya investasi jaringan besar. Beberapa pemain memilih menjual saham ke mitra lokal daripada menambah modal.",
+          "q": "Siapa Listyo Sigit Prabowo sebelum kasus ini?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim.",
           "source": {
-            "outlet": "ESDM",
-            "url": "https://www.esdm.go.id/"
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
           }
         },
         {
-          "q": "Mengapa angka ekonomi ini penting?",
-          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "q": "Apa dasar hukum penyadapan di Indonesia?",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
           "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
-          }
-        }
-      ],
-      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
-      "image": {
-        "url": "assets/f95a8f2cc8.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "BP Lepas Bisnis SPBU di Indonesia, AKR Caplok 100 Persen"
-      },
-      "sources": [
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
-          "published_at": "2026-11-10T09:31:31+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
-          "published_at": "2026-11-10T10:48:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110095544-4-783796/shell-bp-cabut-ini-daftar-perusahaan-yang-masih-berbisnis-spbu-di-ri",
-          "published_at": "2026-11-10T10:11:10+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        }
-      ],
-      "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-10",
-      "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c3",
-      "type": "deep_dive",
-      "topic_id": "t_putusan_lengkap_ma_soal_pembat_e9a5",
-      "angle": "Rekap 1 hari",
-      "kicker": "Mendalam",
-      "title": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran",
-        "status": "sebagian",
-        "confidence": 0.83,
-        "band": "kemungkinan_besar",
-        "basis": {
-          "strongest": "two_independent_tier2",
-          "primary": 0,
-          "tier2": 2,
-          "independent_outlets": 5,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T18:17:32+07:00"
-      },
-      "body": [
-        "MA membatalkan surat keterangan penyetaraan pendidikan Gibran Rakabuming. Putusan ini mempertimbangkan juga putusan MA.",
-        "Dalam pertimbangannya, MA memuat enam poin yang menjadi dasar pembatalan surat keterangan penyetaraan pendidikan tersebut. Apa saja? #newsupdate #update #news #text",
-        "Dalam diskusi tersebut, Prabowo turut menyarankan Gibran untuk tetap maju membuktikan keabsahan ijazah melalui lembaga peradilan."
-      ],
-      "explain": [
-        {
-          "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
-          "source": {
-            "outlet": "Wapres RI",
-            "url": "https://www.wapresri.go.id/"
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Siapa Joko Widodo dalam konteks kasus ini?",
+          "a": "Presiden Indonesia ketujuh (2014-2024) yang hadir sebagai saksi dalam sidang Roy Suryo dan dimintai tanggapan soal Listyo.",
           "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Joko_Widodo"
           }
         }
       ],
-      "action": "Ini bacaan panjang. Edisi harian sudah selesai tanpanya.",
+      "action": "Dorong pembentukan mekanisme pengawasan independen atas penyadapan aparat, bukan hanya penyelesaian kasus per kasus.",
       "image": null,
       "sources": [
         {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8737058/listyo-sigit-jadi-tersangka-penyadapan-terhadap-presiden-prabowo",
+          "published_at": "2026-11-03T20:43:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/istana-sebut-aksi-penyadapan-listyo-cs-mengarah-perbuatan-makar-hEA6",
+          "published_at": "2026-11-04T12:51:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        },
+        {
           "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261110160059-12-1425494/putusan-lengkap-ma-soal-pembatalan-suket-penyetaraan-sma-gibran",
-          "published_at": "2026-11-10T16:55:50+07:00",
+          "url": "https://www.cnnindonesia.com/nasional/20261109162025-32-1425044/titiek-soeharto-sedih-prabowo-disadap-curiga-sosok-di-balik-listyo",
+          "published_at": "2026-11-09T16:48:58+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "antaranews.com",
-          "url": "https://www.antaranews.com/berita/5844339/yusril-tegaskan-putusan-ma-soal-penyetaraan-pendidikan-gibran-final",
-          "published_at": "2026-11-10T17:22:16+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "kumparan.com",
-          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
-          "published_at": "2026-11-10T17:39:24+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "republika.co.id",
-          "url": "https://news.republika.co.id/berita/toa8kp484/yusril-tegaskan-putusan-ma-soal-ijazah-sma-wapres-gibran-final",
-          "published_at": "2026-11-10T17:46:01+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "okezone.com",
-          "url": "https://news.okezone.com/read/2026/11/10/337/3253272/gibran-saya-akan-ajukan-pk-usai-ma-nyatakan-suket-ijazah-sma-tidak-sah",
-          "published_at": "2026-11-10T18:14:00+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-03",
       "previous_edition": null,
       "changes": [],
-      "dek": "MA membatalkan surat keterangan penyetaraan pendidikan Gibran Rakabuming. Putusan ini mempertimbangkan juga putusan MA.",
+      "dek": "Penetapan Listyo Sigit sebagai tersangka membuka pertanyaan lebih besar soal siapa yang mengawasi penyadapan aparat.",
       "optional": true,
       "read_min": 4,
       "stats": [
         {
-          "value": "5",
+          "value": "25",
           "label": "artikel"
         },
         {
-          "value": "5",
+          "value": "3",
           "label": "media"
         },
         {
-          "value": "1 hari",
+          "value": "6 hari",
           "label": "berjalan"
         }
       ]
@@ -322,160 +307,227 @@
     {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_komisi_iii_desak_kejagung_ungk_c957",
-      "angle": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel Sultra",
-      "kicker": "Kriminal",
-      "title": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel",
+      "topic_id": "t_laba_bersih_bri_melesat_rp48_1_0a20",
+      "angle": "Laba bersih BRI kuartal III 2026 tumbuh 16,8 persen, ditopang UMKM.",
+      "kicker": "Nasional",
+      "title": "Laba Bersih BRI Naik 16,8 Persen Jadi Rp48,2 Triliun",
       "status": "sebagian",
       "truth": {
-        "claim": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel Sultra",
+        "claim": "BRI membukukan laba bersih Rp48,2 triliun pada kuartal III 2026, tumbuh 16,8 persen dibandingkan kuartal III 2025.",
         "status": "sebagian",
-        "confidence": 0.83,
+        "confidence": 0.77,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
           "tier2": 2,
-          "independent_outlets": 3,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T18:17:32+07:00"
-      },
-      "body": [
-        "Anggota DPR Rudianto Lallo mendesak Kejaksaan Agung ungkap pelindung tambang ilegal Arif Kurniawan di Sulawesi Tenggara. Penindakan harus tegas dan menyeluruh.",
-        "Kejaksaan Agung menetapkan perusahaan nikel milik Arif Kurniawan, PT Bumi Sentosa Jaya, sebagai tersangka korporasi di Sulawesi Tenggara."
-      ],
-      "explain": [
-        {
-          "q": "Apa peran Kejaksaan Agung?",
-          "a": "Lembaga yang melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara.",
-          "source": {
-            "outlet": "Kejaksaan Agung",
-            "url": "https://www.kejaksaan.go.id/"
-          }
-        },
-        {
-          "q": "Mengapa nikel jadi sorotan?",
-          "a": "Indonesia pemasok nikel terbesar dunia untuk baterai. Izin tambang dan tata kelola royaltinya sering jadi objek sengketa hukum dan politik.",
-          "source": {
-            "outlet": "Kementerian ESDM",
-            "url": "https://www.esdm.go.id/"
-          }
-        }
-      ],
-      "action": "Hindari menyebar identitas korban atau tersangka.",
-      "image": {
-        "url": "assets/ea25b16243.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel"
-      },
-      "sources": [
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra",
-          "published_at": "2026-11-10T01:25:46+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
-          "published_at": "2026-11-10T16:09:25+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
-          "published_at": "2026-11-10T13:10:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
-        }
-      ],
-      "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-10",
-      "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c5",
-      "type": "news",
-      "topic_id": "t_yusril_gibran_tak_punya_jalur_efec",
-      "angle": "Yusril: Gibran Tak Punya Jalur Hukum untuk Buktikan Keabsahan Ijazahnya",
-      "kicker": "Kriminal",
-      "title": "Yusril: Gibran Tak Punya Jalur Hukum untuk Buktikan",
-      "status": "belum",
-      "truth": {
-        "claim": "Yusril: Gibran Tak Punya Jalur Hukum untuk Buktikan Keabsahan Ijazahnya",
-        "status": "belum",
-        "confidence": 0.35,
-        "band": "diragukan",
-        "basis": {
-          "strongest": "tier3_only",
-          "primary": 0,
-          "tier2": 0,
           "independent_outlets": 2,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:17:32+07:00"
+        "assessed_at": "2026-11-10T05:00:00+07:00"
       },
       "body": [
-        "Menteri Koordinator Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan Yusril Ihza Mahendra menyebut tidak ada lagi jalur hukum bagi Wakil Presiden (Wapres) Gibran Rakabuming Raka untuk membuktikan keabsahan ijazahnya melalui pengadilan.",
-        "Putusan MK kata Yusril, tidak menyediakan upaya hukum lanjutan. Sementara itu, putusan MA juga telah final karena Gibran bukan pihak dalam perkara sehingga tidak memiliki kedudukan hukum untuk mengajukan peninjauan kembali (PK)."
+        "PT Bank Rakyat Indonesia (Persero) Tbk membukukan laba bersih konsolidasian Rp48,2 triliun pada kuartal III 2026. Angka ini tumbuh 16,8 persen dibandingkan periode yang sama tahun lalu sebesar Rp41,2 triliun. Sejumlah media nasional melaporkan capaian tersebut pada kuartal ketiga tahun ini, dengan menyoroti pertumbuhan laba yang cukup tinggi.",
+        "Laba bersih menjadi salah satu ukuran utama bagi pembaca untuk menilai kinerja sebuah bank. Angka ini mencerminkan selisih pendapatan bunga dan biaya operasional setelah pajak, sehingga pasar memakainya untuk melihat efisiensi dan kualitas kredit. Bagi nasabah dan pelaku usaha, kinerja bank besar seperti BRI juga berkaitan dengan ketersediaan pembiayaan, terutama bagi sektor UMKM yang menjadi fokus perseroan.",
+        "Belum jelas rincian komposisi pendapatan, biaya, maupun kualitas kredit di balik angka laba tersebut. Laporan menyebut pertumbuhan didorong oleh UMKM dan transformasi BRIvolution Reignite, tetapi rincian kontribusinya tidak diuraikan. Pembaca perlu menunggu laporan keuangan lengkap untuk memahami sumber pertumbuhan dan risikonya."
       ],
       "explain": [
         {
-          "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "q": "Apa yang dimaksud laba bersih bank?",
+          "a": "Selisih pendapatan bunga dan biaya operasional setelah pajak. Angka kuartalan dipakai pasar untuk menilai efisiensi dan kualitas kredit.",
           "source": {
-            "outlet": "Wapres RI",
-            "url": "https://www.wapresri.go.id/"
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
           }
         },
         {
-          "q": "Apa arti status tersangka?",
-          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
+          "q": "Mengapa angka ekonomi ini penting bagi pembaca?",
+          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        }
+      ],
+      "action": "Baca laporan keuangan lengkap BRI untuk melihat rincian sumber pertumbuhan laba.",
+      "image": {
+        "url": "assets/19cdc82b9c.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Laba Bersih BRI Naik 16,8 Persen Jadi Rp48,2 Triliun"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/laba-bersih-bri-melesat-rp4815-triliun-di-kuartal-iii-2026-idzW",
+          "published_at": "2026-11-09T10:27:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261109124839-78-1424910/bri-catat-laba-bersih-rp482-t-di-kuartal-iii-2026",
+          "published_at": "2026-11-09T13:20:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 41,
+      "first_seen": "2026-11-10",
+      "previous_edition": "2026-11-09",
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_tito_karnavian_soal_ramai_isu_4cb2",
+      "angle": "Mendagri Tito Karnavian Bantah Isu Dicekal ke Luar Negeri",
+      "kicker": "Nasional",
+      "title": "Mendagri Tito Karnavian Bantah Isu Dicekal ke Luar Negeri",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Tito Karnavian membantah isu pencekalan dirinya ke luar negeri dan menyebutnya hoaks.",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Menteri Dalam Negeri Tito Karnavian membantah kabar bahwa dirinya dicekal ke luar negeri. Dalam pernyataannya, Tito menegaskan isu tersebut tidak benar dan menyebutnya sebagai hoaks. Bantahan ini muncul setelah kabar pencekalan ramai dibicarakan, terutama di media sosial. Ia juga menyinggung banyak berita bohong yang menyeret namanya, termasuk soal pertemuan dengan eks Kapolri Listyo Sigit dan pihak lain.",
+        "Isu pencekalan pejabat negara mudah menyebar karena menyangkut kredibilitas dan hubungan dengan aparat penegak hukum. Bagi pembaca, bantahan ini penting untuk memisahkan informasi yang bisa diverifikasi dari kabar yang beredar tanpa sumber jelas. Tito sendiri bukan nama baru: ia menjabat Mendagri sejak 2019 dan sebelumnya pernah memimpin Polri, sehingga namanya kerap muncul dalam berbagai isu politik.",
+        "Yang belum jelas adalah asal muasal isu pencekalan itu dan apakah ada pihak yang menyebarkannya secara sengaja. Tidak ada penjelasan rinci soal pertemuan yang disebut Tito dalam bantahannya, termasuk siapa saja yang dimaksud. Pembaca sebaiknya menunggu konfirmasi resmi dari institusi berwenang sebelum mempercayai kabar semacam ini."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo yang disebut dalam bantahan Tito?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim.",
           "source": {
             "outlet": "Polri",
             "url": "https://www.polri.go.id/"
           }
+        },
+        {
+          "q": "Apa tugas Tito Karnavian sebagai Mendagri?",
+          "a": "Menteri Dalam Negeri sejak 2019 yang mengurus anggaran daerah, pilkada, dan hubungan pusat-daerah.",
+          "source": {
+            "outlet": "Kemendagri",
+            "url": "https://www.kemendagri.go.id/"
+          }
+        },
+        {
+          "q": "Sejak kapan Tito Karnavian menjabat Mendagri?",
+          "a": "Ia menjabat Menteri Dalam Negeri sejak 23 Oktober 2019 dalam Kabinet Indonesia Maju.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Tito_Karnavian"
+          }
         }
       ],
-      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "action": "Periksa sumber resmi sebelum membagikan kabar pencekalan pejabat di media sosial.",
       "image": {
-        "url": "assets/4a85f6d15c.webp",
-        "credit": "sindonews.com",
-        "alt": "Yusril: Gibran Tak Punya Jalur Hukum untuk Buktikan"
+        "url": "assets/44d7082404.webp",
+        "credit": "liputan6.com",
+        "alt": "Mendagri Tito Karnavian Bantah Isu Dicekal ke Luar Negeri"
       },
       "sources": [
         {
-          "outlet": "sindonews.com",
-          "url": "https://nasional.sindonews.com/read/1770531/13/yusril-gibran-tak-punya-jalur-hukum-untuk-buktikan-keabsahan-ijazahnya-1794305461",
-          "published_at": "2026-11-10T17:31:47+07:00",
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8331905/mendagri-tito-bantah-isu-dicekal-ke-luar-negeri-enggak-ada-hoaks",
+          "published_at": "2026-11-09T23:03:24+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         },
         {
-          "outlet": "okezone.com",
-          "url": "https://news.okezone.com/read/2026/11/10/337/3253262/yusril-gibran-tak-punya-jalur-hukum-lagi-buktikan-keabsahan-ijazahnya",
-          "published_at": "2026-11-10T17:38:45+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/tito-karnavian-soal-ramai-isu-dicekal-ke-luar-negeri-hoaks-idBP",
+          "published_at": "2026-11-09T21:59:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         }
       ],
       "place": "nasional",
-      "revision": 1,
+      "revision": 24,
       "first_seen": "2026-11-10",
-      "previous_edition": null,
+      "previous_edition": "2026-11-09",
       "changes": []
     },
     {
       "id": "c6",
+      "type": "news",
+      "topic_id": "t_jadwal_timnas_u17_vs_filipina_a2c2",
+      "angle": "Timnas U17 Indonesia Jalani Kualifikasi AFC, Laga vs Filipina",
+      "kicker": "Nasional",
+      "title": "Timnas U17 Indonesia Jalani Kualifikasi AFC, Laga vs Filipina",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Timnas Indonesia U17 melawan Filipina di Kualifikasi Piala Asia U17 2027 dengan siaran langsung SCTV dan Indosiar serta streaming di Vidio.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Timnas Indonesia U17 menjalani Kualifikasi Piala Asia U17 2027 dengan laga melawan Filipina. Berdasarkan laporan Tirto.id, pertandingan ini disiarkan langsung oleh SCTV dan Indosiar, serta dapat diakses lewat live streaming di Vidio. Sejumlah laga lain disebut tayang dengan skema live delay. Pelatih David Nascimento membawa 23 pemain pilihan untuk turnamen penyisihan ini.",
+        "Kualifikasi ini penting karena hasil pertandingan menentukan posisi di klasemen grup, yang pada akhirnya memengaruhi peluang lolos ke putaran final Piala Asia U17. Bagi pembaca yang jarang memantau sepak bola usia muda, momen ini adalah kesempatan melihat generasi pemain berikutnya sebelum mereka masuk ke level senior. Daftar pemain dan asal klub mereka juga menjadi gambaran bagaimana pembinaan usia dini berjalan di berbagai klub.",
+        "Yang belum jelas dari informasi yang tersedia adalah rincian hasil matchday pertama, komposisi klasemen terkini, serta lawan-lawan lain di grup yang sama. Jadwal pasti kickoff dan pembagian siaran antara SCTV, Indosiar, Moji TV, dan Sin Po TV juga belum dirinci per pertandingan. Pembaca sebaiknya menunggu konfirmasi resmi soal jam tayang dan skema live delay sebelum menyusun jadwal menonton."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Kualifikasi AFC U17?",
+          "a": "Turnamen penyisihan zona Asia untuk tim nasional usia di bawah 17 tahun, memperebutkan tiket ke putaran final Piala Asia U17.",
+          "source": {
+            "outlet": "AFC",
+            "url": "https://www.the-afc.com/"
+          }
+        },
+        {
+          "q": "Mengapa hasil pertandingan ini penting?",
+          "a": "Hasil dan klasemen menentukan undian, tiket, dan pendanaan federasi. Untuk tim nasional, dampaknya sampai ke peringkat dunia.",
+          "source": {
+            "outlet": "AFC",
+            "url": "https://www.the-afc.com/"
+          }
+        }
+      ],
+      "action": "Cek jadwal resmi dan kanal siaran sebelum pertandingan agar tidak ketinggalan laga Timnas U17 vs Filipina.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/klasemen-kualifikasi-afc-u17-2027-jadwal-timnas-vs-filipina-live-tv-apa-idzR",
+          "published_at": "2026-11-09T12:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 7,
+      "first_seen": "2026-11-10",
+      "previous_edition": "2026-11-09",
+      "changes": []
+    },
+    {
+      "id": "c7",
       "type": "hoax_roundup",
       "topic_id": "t_hoaks_2026_11_10",
       "angle": "3 pemeriksaan fakta hari ini",
@@ -494,7 +546,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-10T18:17:32+07:00"
+          "accessed_at": "2026-11-10T05:00:00+07:00"
         }
       ],
       "revision": 1,
@@ -525,6 +577,76 @@
         }
       ],
       "pattern": null
+    },
+    {
+      "id": "c8",
+      "type": "good_news",
+      "topic_id": "t_megawati_bantah_gelar_profesor_59b6",
+      "angle": "Megawati menegaskan tiga gelar profesor dan 11 doktor honoris causa-nya asli.",
+      "kicker": "Satu hal baik",
+      "title": "Megawati Pamer Gelar Akademik",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Megawati menegaskan tiga gelar profesor dan 11 doktor honoris causa-nya asli.",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Megawati mengatakan dirinya memiliki tiga gelar profesor dan 11 gelar doktor honoris causa.",
+        "Ketua Umum PDI Perjuangan Megawati Soekarnoputri, melontarkan sejumlah kelakar dalam pidato politiknya di Lenteng Agung. Salah satunya terkait gelar akademik."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Megawati Soekarnoputri?",
+          "a": "Presiden RI kelima (2001–2004) dan ketua umum PDI-P. Ia putri Presiden pertama Soekarno dan salah satu tokoh paling berpengaruh dalam koalisi pemerintah.",
+          "source": {
+            "outlet": "PDI-P",
+            "url": "https://www.pdiperjuangan.id/"
+          }
+        },
+        {
+          "q": "Apa nilai penting agenda budaya ini?",
+          "a": "Agenda budaya biasanya terkait pariwisata, pelestarian, dan ekonomi lokal. Dampaknya lebih terasa di daerah penyelenggara.",
+          "source": {
+            "outlet": "Kemendikbud",
+            "url": "https://www.kemdikbud.go.id/"
+          }
+        }
+      ],
+      "action": "Tidak ada yang perlu dilakukan; ini untuk konteks.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/megawati-pamer-punya-3-gelar-profesor-gak-ada-yang-palsu-lho-idBv",
+          "published_at": "2026-11-09T19:30:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8331889/megawati-pamer-3-gelar-profesor-dan-11-doktor-honoris-causa-gak-ada-yang-palsu",
+          "published_at": "2026-11-09T21:53:54+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
     }
   ]
 }

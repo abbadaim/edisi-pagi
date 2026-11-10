@@ -13,7 +13,7 @@ import {
   sourcesFromCluster,
 } from "../src/core/writer.ts";
 import { validateEdition, formatErrors, allowsThin } from "../src/core/validate.ts";
-import { createAdapter, createFallbackAdapter, probeOpenCode } from "../src/adapters/llm/index.ts";
+import { resolveLlm } from "../src/adapters/llm/resolve.ts";
 import type { Card, Edition, Scope } from "../src/core/types.ts";
 import { isoWib } from "../src/core/time.ts";
 import { features, similarity } from "../src/core/simhash.ts";
@@ -70,31 +70,7 @@ try {
   const clusters = clusterArticles(rows);
 
   // Urutan: opencode -> deepseek -> deterministik. LLM_PROVIDER memaksa satu.
-  const forced = process.env.LLM_PROVIDER as "opencode" | "deepseek" | undefined;
-  const opencodeModel = process.env.OPENCODE_MODEL || "opencode-go/deepseek-v4.1-flash";
-  const deepseekModel = process.env.DEEPSEEK_MODEL || "deepseek-flash";
-
-  const chain: Array<ReturnType<typeof createAdapter>> = [];
-  if (!forced || forced === "opencode") {
-    if (probeOpenCode(process.env.OPENCODE_BIN)) {
-      try {
-        chain.push(createAdapter({ provider: "opencode", model: opencodeModel }));
-      } catch { /* lanjut ke cadangan */ }
-    } else if (!forced) {
-      console.log("opencode tidak tersedia, mencoba deepseek");
-    }
-  }
-  if ((!forced || forced === "deepseek") && process.env.DEEPSEEK_API_KEY) {
-    try {
-      chain.push(createAdapter({ provider: "deepseek", model: deepseekModel }));
-    } catch { /* lanjut */ }
-  }
-
-  const llm = chain.length === 0 ? null : chain.length === 1 ? chain[0]! : createFallbackAdapter(chain, (from, to, e) => {
-    console.log(`  ! ${from} gagal (${e instanceof Error ? e.message.slice(0, 60) : e}), pindah ke ${to}`);
-  });
-  const provider = llm?.name ?? "deterministic";
-  const model = forced === "deepseek" ? deepseekModel : opencodeModel;
+  const { llm, model, provider } = resolveLlm(process.env);
 
   if (!llm) console.log("tidak ada LLM tersedia — memakai writer deterministik\n");
 
@@ -144,12 +120,20 @@ try {
   const glossary = loadGlossary(join(root, "config", "glossary.yaml"));
   const writer = createDeterministicWriter(glossary);
 
-  const generatedBy = {
+  // Ditulis setelah kartu dibuat: provider "llm" yang gagal diam-diam lalu
+  // jatuh ke writer deterministik tidak boleh tercatat sebagai LLM.
+  let llmWritten = 0;
+  let deterministicWritten = 0;
+
+  const generatedBy = () => ({
     adjudicate: { provider: adjudication.fallback ? "fallback" : provider, model: adjudication.fallback ? "none" : model },
-    write: { provider: llm ? provider : "deterministic", model: llm ? model : "glossary" },
+    write: {
+      provider: llmWritten > 0 ? (deterministicWritten > 0 ? `${provider}+deterministic` : provider) : "deterministic",
+      model: llmWritten > 0 ? model : "glossary",
+    },
     verify: { provider: "rules", model: "evidence-class" },
     embed: { provider: "none", model: "none" },
-  };
+  });
 
   function firstSeenOf(topicId: string): string {
     const r = db.get<{ first_seen: string }>("SELECT first_seen FROM topics WHERE topic_id = ?", [topicId]);
@@ -183,8 +167,12 @@ try {
         },
         { llm, model, glossary },
       );
-      if (card) return orderSources(card, e.cluster);
+      if (card) {
+        llmWritten++;
+        return orderSources(card, e.cluster);
+      }
     }
+    deterministicWritten++;
     const fallback = writer.write({
       editionId,
       publishedAt,
@@ -423,7 +411,7 @@ try {
       cards.length < 8
         ? `Hanya ${cards.length} kartu yang lolos; sisanya tidak punya konteks atau sumber`
         : null,
-    generatedBy,
+    generatedBy: generatedBy(),
   });
 
   const file = join(outDir, `${editionId}.nasional.json`);
@@ -456,7 +444,7 @@ try {
       cards: localCards,
       truncatedReason:
         localCards.length < 5 ? `Hanya ${localCards.length} topik lokal yang lolos` : null,
-      generatedBy,
+      generatedBy: generatedBy(),
     });
     const localFile = join(outDir, `${editionId}.lokal.json`);
     writeFileSync(localFile, JSON.stringify(localEdition, null, 2));

@@ -384,8 +384,8 @@ export interface LlmAdapter {
 ```yaml
 # config/llm.yaml
 capabilities:
-  adjudicate: { provider: deepseek, model: deepseek-flash }
-  write:      { provider: deepseek, model: deepseek-flash }
+  adjudicate: { provider: deepseek, model: deepseek-chat }
+  write:      { provider: deepseek, model: deepseek-chat }
   verify:     { provider: deepseek, model: deepseek-v4-pro }
   embed:      { provider: local,    model: Xenova/multilingual-e5-small }
 ```
@@ -396,7 +396,7 @@ capabilities:
 | `OPENCODE_BIN` | Path CLI opencode jika tidak ada di PATH (mis. `~/.opencode/bin/opencode`) |
 | `OPENCODE_MODEL` | Override id `provider/model` opencode (default `opencode-go/deepseek-v4.1-flash`) |
 | `DEEPSEEK_API_KEY` | Kunci API DeepSeek; dipakai sebagai cadangan |
-| `DEEPSEEK_MODEL` | Default `deepseek-flash` |
+| `DEEPSEEK_MODEL` | Default `deepseek-chat` |
 
 **Urutan penyedia:** opencode → deepseek → writer deterministik.
 
@@ -407,7 +407,7 @@ capabilities:
 ### 11.3 Adapter `deepseek`
 
 - `https://api.deepseek.com`, format OpenAI-compatible.
-- Model: `deepseek-flash`, `deepseek-v4-pro`. Nama model bisa berubah; daftar di-*pin* di kode dan diverifikasi saat startup.
+- Model: `deepseek-chat`, `deepseek-v4-pro`. Nama model bisa berubah; daftar di-*pin* di kode dan diverifikasi saat startup.
 - JSON output didukung. `response_format: { type: "json_object" }` + validasi skema.
 - **Tidak ada endpoint embedding.** Konfigurasi yang menunjuk `embed` ke `deepseek` ditolak saat startup.
 - Thinking mode: dimatikan untuk `write` (biaya), dibiarkan default untuk `verify`.
@@ -457,7 +457,7 @@ Setiap panggilan menulis ke `run_log`:
 {
   "capability": "adjudicate",
   "provider": "deepseek",
-  "model": "deepseek-flash",
+  "model": "deepseek-chat",
   "tokens_in": 2412,
   "tokens_out": 1180,
   "cost_usd": 0.0042,
@@ -470,7 +470,7 @@ Setiap edisi menyimpan `generated_by` per kapabilitas, sehingga edisi lama bisa 
 
 ### 11.8 Biaya
 
-Pada volume ini (~8–12 ribu token/hari), `deepseek-flash` berada di kisaran **$0,01–0,03/hari**. `deepseek-v4-pro` untuk `verify` menambah sedikit. Embedding lokal nol.
+Pada volume ini (~8–12 ribu token/hari), `deepseek-chat` berada di kisaran **$0,01–0,03/hari**. `deepseek-v4-pro` untuk `verify` menambah sedikit. Embedding lokal nol.
 
 ---
 

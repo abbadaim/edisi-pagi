@@ -155,7 +155,7 @@ function renderFeed() {
       btn.classList.add("plain");
       btn.append(el("div", "kick", card.kicker));
       btn.append(el("h2", null, card.title));
-      if (card.body?.[0]) btn.append(el("p", "reason", card.body[0].slice(0, 160) + "…"));
+      if (card.body?.[0]) btn.append(el("p", "reason", teaser(card.body[0])));
     }
 
     btn.onclick = () => openCard(i);
@@ -166,6 +166,15 @@ function renderFeed() {
   done.append(el("div", "big", `Selesai. ${S.cards.length} kartu.`));
   done.append(el("div", "small", "Tidak ada berita lain hari ini"));
   feed.append(done);
+}
+
+/** Potong di batas kata — teaser yang berhenti di tengah kata terlihat seperti bug. */
+function teaser(text, max = 160) {
+  const s = String(text ?? "").trim();
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).trim()}…`;
 }
 
 function deepCard(card, index) {
@@ -301,6 +310,8 @@ function openCard(index) {
 
   if (card.explain?.length) {
     const d = el("details", "ctx");
+    // Konteks adalah inti produk: tampil terbuka, bukan disembunyikan di balik tap.
+    d.open = true;
     d.append(el("summary", null, `Konteks · ${card.explain.length} pertanyaan`));
     for (const qa of card.explain) {
       const box = el("div", "qa");

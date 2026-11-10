@@ -445,7 +445,7 @@
           "maxItems": 4,
           "items": {
             "type": "string",
-            "maxLength": 480
+            "maxLength": 640
           }
         },
         "action": {

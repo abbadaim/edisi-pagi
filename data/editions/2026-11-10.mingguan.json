@@ -13,15 +13,15 @@
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 3,
+  "reading_time_min": 7,
   "generated_by": {
     "adjudicate": {
       "provider": "fallback",
       "model": "none"
     },
     "write": {
-      "provider": "deterministic",
-      "model": "glossary"
+      "provider": "deepseek",
+      "model": "deepseek-chat"
     },
     "verify": {
       "provider": "rules",
@@ -40,18 +40,35 @@
       "type": "deep_dive",
       "topic_id": "t_listyo_sigit_jadi_tersangka_pe_374d",
       "angle": "Rekap 6 hari",
-      "kicker": "Rekap pekan",
-      "title": "Listyo Sigit Jadi Tersangka Penyadapan terhadap Presiden",
+      "kicker": "Mendalam",
+      "title": "Dari Kapolri ke Tersangka: Guncangan di Inti Kekuasaan",
       "status": "sebagian",
-      "truth": null,
+      "truth": {
+        "claim": "Listyo Sigit Prabowo ditetapkan sebagai tersangka oleh Polri pada 3 November 2026 dalam kasus dugaan penyadapan ilegal terhadap Presiden Prabowo.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
       "body": [
-        "Listyo Sigit Prabowo ditetapkan sebagai tersangka oleh Polri dalam kasus dugaan penyadapan secara ilegal dan penghapusan data elektronik dan illegal access.",
-        "Titiek Soeharto prihatin atas dugaan penyadapan Presiden Prabowo oleh eks Kapolri Listyo Sigit. Ia mempertanyakan motif dan dampak dari tindakan ilegal ini."
+        "Pada 3 November 2026, Polri menetapkan eks Kapolri Listyo Sigit Prabowo sebagai tersangka dalam kasus dugaan penyadapan ilegal dan penghapusan data elektronik terhadap Presiden Prabowo. Penetapan ini menandai perubahan besar: seorang jenderal yang pernah memimpin Korps Bhayangkara sejak 2021 dan menjadi ajudan Presiden Joko Widodo kini berstatus tersangka di institusi yang dulu dipimpinnya. Perubahan ini bukan sekadar kasus pidana, melainkan ujian atas kemampuan Polri mengusut kejahatan di tubuhnya sendiri.",
+        "Dua hari kemudian, perhatian bergeser ke persoalan yang lebih struktural. Tirto.id menyoroti celah hukum pengawasan penyadapan oleh aparat, sementara Jokowi dimintai tanggapan dalam sidang Roy Suryo. Jokowi memilih menghormati proses hukum, tetapi beberapa pertanyaan dijawab dengan \"lupa\". Sikap ini penting karena menunjukkan bahwa akuntabilitas mantan atasan Listyo tidak otomatis terbuka hanya karena status tersangka muncul.",
+        "Pada 9 November, Titiek Soeharto menyatakan keprihatinan atas dugaan penyadapan Presiden Prabowo dan mempertanyakan sosok di balik Listyo. Pernyataan ini memperluas isu dari sekadar pelanggaran hukum menjadi pertanyaan tentang motif dan dampak politik. Dengan dasar hukum penyadapan yang mensyaratkan izin pengadilan dalam perkara tertentu, dugaan penyadapan terhadap presiden menyentuh batas antara kewenangan aparat dan penyalahgunaan kekuasaan.",
+        "Yang berubah dalam enam hari ini bukan hanya status satu orang, melainkan terbukanya kotak pandora sistem siber Polri. Kasus ini menguji apakah pengawasan terhadap penyadapan aparat akan diperkuat atau justru berhenti pada satu tersangka. Bagi publik, pertanyaannya sederhana: jika penyadapan presiden bisa terjadi, siapa yang mengawasi mereka yang mengawasi?"
       ],
       "explain": [
         {
-          "q": "Siapa Listyo Sigit Prabowo?",
-          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021. Ia mantan ajudan Presiden Joko Widodo dan pernah memimpin Bareskrim.",
+          "q": "Siapa Listyo Sigit Prabowo sebelum kasus ini?",
+          "a": "Ia jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim.",
           "source": {
             "outlet": "Polri",
             "url": "https://www.polri.go.id/"
@@ -59,14 +76,30 @@
         },
         {
           "q": "Apa dasar hukum penyadapan di Indonesia?",
-          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
           "source": {
             "outlet": "UU ITE",
             "url": "https://www.kominfo.go.id/"
           }
+        },
+        {
+          "q": "Siapa Presiden Prabowo yang diduga disadap?",
+          "a": "Prabowo Subianto adalah Presiden Indonesia kedelapan sejak 2024, sebelumnya Menteri Pertahanan di bawah Joko Widodo pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa peran Jokowi dalam konteks kasus ini?",
+          "a": "Joko Widodo adalah Presiden Indonesia ketujuh (2014-2024); dalam sidang Roy Suryo ia dimintai tanggapan soal Listyo dan memilih menghormati proses hukum.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Joko_Widodo"
+          }
         }
       ],
-      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "action": "Pantau perkembangan status hukum Listyo Sigit dan dorong pembahasan aturan pengawasan penyadapan aparat.",
       "image": null,
       "sources": [
         {
@@ -92,12 +125,12 @@
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-03",
       "previous_edition": null,
       "changes": [],
-      "dek": "Listyo Sigit Prabowo ditetapkan sebagai tersangka oleh Polri dalam kasus dugaan penyadapan secara ilegal dan penghapusan data elektronik dan illegal",
+      "dek": "Penetapan Listyo Sigit sebagai tersangka penyadapan presiden membuka celah pengawasan aparat yang selama ini tertutup.",
       "optional": true,
-      "read_min": 7,
+      "read_min": 4,
       "stats": [
         {
           "value": "25",
@@ -118,23 +151,32 @@
       "type": "deep_dive",
       "topic_id": "t_dasco_akui_banyak_anggota_dpr_4cca",
       "angle": "Rekap 6 hari",
-      "kicker": "Rekap pekan",
-      "title": "Apakah Hak Menyatakan Pendapat Upaya Lain Memakzulkan",
+      "kicker": "Mendalam",
+      "title": "Hak Menyatakan Pendapat dan Polemik Ijazah Gibran",
       "status": "sebagian",
-      "truth": null,
+      "truth": {
+        "claim": "Hingga 9 November 2026, DPR belum menggelar rapat pimpinan atau rapat badan musyawarah untuk membahas polemik ijazah Gibran.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
       "body": [
-        "Selama belum ada kesepakatan di antara fraksi-fraksi DPR RI, pembahasan hak menyatakan pendapat masih akan menghadapi perdebatan.",
-        "Anggota DPR Doli Kurnia usulkan hak menyatakan pendapat untuk tindak lanjuti putusan MA terkait ijazah Gibran. Proses resmi akan dimulai setelah masa sidang."
+        "Wacana hak menyatakan pendapat atas polemik ijazah Gibran Rakabuming Raka muncul pada awal November 2026. Tirto.id memberitakan bahwa selama belum ada kesepakatan antar-fraksi, pembahasan hak ini masih akan menghadapi perdebatan. Artinya, dorongan itu belum menjadi kesepakatan kolektif lembaga, melainkan masih berupa aspirasi yang diperdebatkan di antara fraksi-fraksi DPR.",
+        "Beberapa hari kemudian, situasinya mulai terang. Pada 9 November 2026, Dasco mengakui banyak anggota DPR ingin membahas polemik ijazah Gibran. Namun ia menyebut DPR belum mengadakan rapat pimpinan maupun rapat badan musyawarah yang melibatkan fraksi. Pembahasan lintas fraksi pun masih bersifat informal karena DPR belum memasuki masa sidang.",
+        "Pada tanggal yang sama, PDIP menyebut hak menyatakan pendapat sebagai langkah paling rasional. Hasto menekankan partainya mendengar berbagai aspirasi terkait desakan tersebut. Dari sisi Golkar, Doli Kurnia menyerukan hak menyatakan pendapat sebagai respons atas putusan MA terkait ijazah Gibran, dengan catatan proses resmi baru dimulai setelah masa sidang.",
+        "Yang berubah dalam enam hari itu bukan status hukum Gibran, melainkan posisi wacana di DPR: dari perdebatan antar-fraksi menjadi dorongan terbuka lintas partai. Ini penting karena hak menyatakan pendapat adalah instrumen konstitusional yang menuntut dukungan mayoritas anggota dan pembahasan paripurna. Selama belum ada rapim atau bamus, desakan itu belum masuk jalur resmi."
       ],
       "explain": [
-        {
-          "q": "Apa itu DPR?",
-          "a": "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
-          "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
-          }
-        },
         {
           "q": "Siapa Gibran Rakabuming Raka?",
           "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
@@ -150,9 +192,17 @@
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
+        },
+        {
+          "q": "Apa itu DPR?",
+          "a": "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
         }
       ],
-      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "action": "DPR perlu segera menjadwalkan rapim atau bamus setelah masa sidang dimulai agar desakan hak menyatakan pendapat atas ijazah Gibran jelas diproses resmi atau dit",
       "image": null,
       "sources": [
         {
@@ -171,10 +221,10 @@
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-04",
       "previous_edition": null,
       "changes": [],
-      "dek": "Selama belum ada kesepakatan di antara fraksi-fraksi DPR RI, pembahasan hak menyatakan pendapat masih akan menghadapi perdebatan.",
+      "dek": "Desakan hak menyatakan pendapat atas ijazah Gibran menguji apakah DPR bergerak dari wacana informal ke prosedur resmi.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -197,13 +247,30 @@
       "type": "deep_dive",
       "topic_id": "t_geruduk_dprd_diy_massa_forum_k_d336",
       "angle": "Rekap 1 hari",
-      "kicker": "Rekap pekan",
-      "title": "Geruduk DPRD DIY, Massa Forum Kebangsaan Yogyakarta Copot",
+      "kicker": "Mendalam",
+      "title": "Ketika Foto Gibran Diturunkan di Ruang Rapat DPRD DIY",
       "status": "sebagian",
-      "truth": null,
+      "truth": {
+        "claim": "Massa Forum Kebangsaan Yogyakarta mencopot foto Wakil Presiden Gibran Rakabuming Raka di Ruang Badan Anggaran Gedung DPRD DIY pada 4 November 2026.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
       "body": [
-        "Massa Forum Kebangsaan Yogyakarta menggeruduk Gedung DPRD DIY, hari ini. Dalam aksinya, kelompok tersebut mencopot dan menurunkan foto Wapres Gibran.",
-        "Massa Forum Kebangsaan Yogyakarta mencopot foto Wakil Presiden Gibran Rakabuming Raka saat audiensi di Ruang Badan Anggaran Kantor DPRD DIY."
+        "Pada 4 November 2026, massa Forum Kebangsaan Yogyakarta menggeruduk Gedung DPRD DIY. Dalam aksi itu, mereka mencopot dan menurunkan foto Wakil Presiden Gibran Rakabuming Raka di Ruang Badan Anggaran, momen yang cepat viral di media sosial. Yang berubah bukan hanya lokasi protes, tetapi sasaran: dari menyampaikan tuntutan menjadi menurunkan atribut jabatan wakil presiden di dalam ruang rapat legislatif.",
+        "Peristiwa itu berlangsung saat audiensi, bukan di luar pagar. Tirto mencatat aksi tersebut dibarengi tuntutan pemakzulan. Keesokan harinya, detik.com melaporkan alasan massa mencopot foto tersebut. Rangkaian pemberitaan dalam satu hari menunjukkan pergeseran dari unjuk rasa biasa menjadi tindakan simbolik yang menyentuh protokol institusi dan memicu perhatian publik.",
+        "Mengapa ini penting? Menurunkan foto pejabat di ruang rapat DPRD bukan sekadar gestur. Ia mempertemukan dua hal: kebebasan menyampaikan pendapat dan batas prosedur ketatanegaraan. Pemakzulan presiden atau wakil presiden bukan urusan aksi jalanan, melainkan proses konstitusional lewat DPR dan MPR dengan kuorum serta ambang suara yang ketat. Aksi simbolik bisa memperluas gaung tuntutan, tetapi tidak menggantikan jalur itu.",
+        "Karena itu, yang perlu dicermati bukan hanya insiden viral, melainkan bagaimana institusi legislatif daerah merespons. Apakah aksi itu dibiarkan sebagai ekspresi politik, atau memicu pengetatan aturan ruang sidang? Dalam satu hari, isu bergerak dari tuntutan pemakzulan ke perdebatan tentang simbol dan prosedur, dan di situlah taruhannya."
       ],
       "explain": [
         {
@@ -215,15 +282,15 @@
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Bagaimana presiden atau wapres bisa diberhentikan?",
+          "a": "DPR mengajukan Hak Menyatakan Pendapat, MPR menyidangkan, lalu keputusan diambil dengan kuorum dan suara minimal dua pertiga. Prosesnya panjang dan konstitusional.",
           "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
+            "outlet": "UUD 1945 Pasal 7B",
+            "url": "https://www.mpr.go.id/"
           }
         }
       ],
-      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "action": "Pantau respons DPRD DIY dan tindak lanjut tuntutan pemakzulan agar aksi simbolik tidak mengaburkan jalur konstitusional.",
       "image": null,
       "sources": [
         {
@@ -242,10 +309,10 @@
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-04",
       "previous_edition": null,
       "changes": [],
-      "dek": "Massa Forum Kebangsaan Yogyakarta menggeruduk Gedung DPRD DIY, hari ini. Dalam aksinya, kelompok tersebut mencopot dan menurunkan foto Wapres Gibran.",
+      "dek": "Aksi mencopot foto Wakil Presiden di ruang Badan Anggaran mengubah protes lokal menjadi ujian atas batas simbol dan prosedur pemakzulan.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -268,13 +335,30 @@
       "type": "deep_dive",
       "topic_id": "t_laba_bersih_bri_melesat_rp48_1_0a20",
       "angle": "Rekap 1 hari",
-      "kicker": "Rekap pekan",
-      "title": "Laba Bersih BRI Melesat Rp48,15 Triliun di Kuartal III 2026",
+      "kicker": "Mendalam",
+      "title": "Laba BRI Rp48,15 Triliun: Sinyal Efisiensi di Tengah Tekanan",
       "status": "sebagian",
-      "truth": null,
+      "truth": {
+        "claim": "Laba bersih konsolidasian BRI pada kuartal III 2026 tercatat Rp48,15 triliun, tumbuh 16,8 persen dibandingkan Rp41,2 triliun pada kuartal III 2025.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
       "body": [
-        "PT Bank Rakyat Indonesia (Persero) Tbk (BBRI) membukukan laba bersih konsolidasian Rp48,15 triliun pada Kuartal III 2026, tumbuh 16,8% yoy.",
-        "BRI mencatat laba bersih Rp48,2 triliun hingga Triwulan III 2026, tumbuh 16,8% YoY, Pertumbuhan didorong oleh UMKM dan transformasi BRIvolution Reignite."
+        "Pada 9 November 2026, tiga pemberitaan serentak mengangkat angka yang sama: laba bersih konsolidasian PT Bank Rakyat Indonesia (Persero) Tbk mencapai Rp48,15 triliun hingga kuartal III 2026. CNN Indonesia membulatkannya menjadi Rp48,2 triliun. Yang berubah bukan sekadar nominal, melainkan arah pertumbuhan: dari Rp41,2 triliun pada periode yang sama 2025, laba melonjak 16,8 persen year on year.",
+        "Angka itu penting karena laba bersih bank adalah selisih pendapatan bunga dan biaya operasional setelah pajak. Pasar memakai angka kuartalan untuk menilai efisiensi dan kualitas kredit, bukan hanya besarnya keuntungan. Pertumbuhan dua digit mengindikasikan pendapatan bunga masih tumbuh lebih cepat daripada beban, meski tanpa rincian rasio efisiensi dan kredit bermasalah, gambaran itu belum lengkap.",
+        "CNN Indonesia menyebut pertumbuhan didorong oleh segmen UMKM dan transformasi yang disebut BRIvolution Reignite. Ini menandai pergeseran penekanan: dari sekadar mengejar volume kredit ke upaya menjaga mesin pertumbuhan tetap hidup di segmen yang lebih rentan terhadap tekanan daya beli dan suku bunga. Namun klaim tersebut baru masuk akal bila kualitas kredit di segmen itu ikut terjaga.",
+        "Karena itu, angka Rp48,15 triliun lebih tepat dibaca sebagai titik awal pemeriksaan, bukan kesimpulan. Yang menentukan apakah lonjakan ini berkelanjutan adalah apakah efisiensi dan kualitas kredit bergerak searah, bukan hanya laba yang naik."
       ],
       "explain": [
         {
@@ -294,7 +378,7 @@
           }
         }
       ],
-      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "action": "Pantau rilis laporan keuangan lengkap BRI untuk melihat rasio efisiensi dan kredit bermasalah di balik laba Rp48,15 triliun.",
       "image": null,
       "sources": [
         {
@@ -313,10 +397,10 @@
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-09",
       "previous_edition": null,
       "changes": [],
-      "dek": "PT Bank Rakyat Indonesia (Persero) Tbk (BBRI) membukukan laba bersih konsolidasian Rp48,15 triliun pada Kuartal III 2026, tumbuh 16,8% yoy.",
+      "dek": "Laba bersih BRI kuartal III 2026 tumbuh 16,8% yoy, tapi pasar akan menguji apakah kualitas kredit ikut membaik.",
       "optional": true,
       "read_min": 4,
       "stats": [
@@ -339,33 +423,58 @@
       "type": "deep_dive",
       "topic_id": "t_cpns_2026_dibuka_november_keme_719f",
       "angle": "Rekap 1 hari",
-      "kicker": "Rekap pekan",
-      "title": "CPNS 2026 Dibuka November, KemenPANRB Ungkap Sejumlah",
+      "kicker": "Mendalam",
+      "title": "CPNS 2026: 150.000 Formasi dan Prioritas yang Berubah",
       "status": "sebagian",
-      "truth": null,
+      "truth": {
+        "claim": "Pemerintah menetapkan 150.000 formasi CPNS 2026 dengan prioritas pada sektor seperti polisi hutan dan guru.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
       "body": [
-        "Berdasarkan kesepakatan pemerintah bersama DPR RI pada 6 November 2026, terdapat beberapa formasi yang menjadi prioritas dalam seleksi CPNS 2026.",
-        "Formasi yang dibuka akan diarahkan untuk mendukung sejumlah sektor, mulai dari program sekolah unggulan Garuda, hingga polisi hutan."
+        "Kesepakatan pemerintah bersama DPR RI pada 6 November 2026 menjadi titik awal perubahan arah seleksi CPNS tahun ini. Dari kesepakatan itu, sejumlah formasi ditetapkan sebagai prioritas, bukan lagi sekadar membuka lowongan dalam jumlah besar. Tirto.id mencatat formasi prioritas itu menjadi dasar penyusunan seleksi yang dijadwalkan dibuka pada November 2026.",
+        "Dua hari berselang, arah kebijakan itu semakin jelas. MenPANRB menyebut seleksi CPNS dibuka November dengan 150.000 formasi. Formasi tersebut diarahkan untuk mendukung sektor tertentu, mulai dari program sekolah unggulan Garuda hingga polisi hutan. CNN Indonesia juga menyoroti fokus pada formasi prioritas seperti Polisi Hutan dan guru.",
+        "Yang berubah bukan hanya angka, tetapi logika di baliknya. Alokasi formasi kini dikaitkan dengan kebutuhan sektor, sehingga hasil seleksi diharapkan mengisi posisi yang memang diprioritaskan pemerintah. Bagi calon pelamar, ini berarti pilihan formasi menjadi penentu, bukan sekadar strategi mengejar jumlah lowongan.",
+        "Perubahan ini penting karena seleksi CPNS adalah jalur nasional menuju aparatur sipil negara, dengan formasi dan jadwal diumumkan KemenPAN-RB serta pendaftaran lewat SSCASN. Arah prioritas yang ditetapkan November 2026 akan menentukan siapa yang direkrut dan sektor mana yang lebih dulu terlayani."
       ],
       "explain": [
         {
-          "q": "Apa itu CPNS?",
-          "a": "Calon Pegawai Negeri Sipil, jalur seleksi nasional untuk menjadi aparatur sipil negara. Formasi dan jadwal diumumkan KemenPAN-RB, pendaftaran lewat SSCASN.",
+          "q": "Apa itu CPNS dan bagaimana jalur pendaftarannya?",
+          "a": "CPNS adalah jalur seleksi nasional untuk menjadi aparatur sipil negara; formasi dan jadwal diumumkan KemenPAN-RB, pendaftaran lewat SSCASN.",
           "source": {
             "outlet": "KemenPAN-RB",
             "url": "https://www.menpan.go.id/"
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Mengapa penetapan formasi prioritas disebut sebagai kebijakan publik?",
+          "a": "Karena formasi ditetapkan melalui kesepakatan pemerintah dan DPR yang mengikat, dan dampaknya terasa setelah aturan turunan terbit.",
           "source": {
             "outlet": "DPR RI",
             "url": "https://www.dpr.go.id/"
           }
+        },
+        {
+          "q": "Apa definisi pegawai negeri sipil sebagai profesi?",
+          "a": "Pegawai negeri adalah orang yang dipekerjakan dengan syarat tertentu oleh lembaga pemerintah untuk menduduki jabatan pemerintahan dan memberikan pelayanan publik, ditempuh melalui jenjang karier.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pegawai_negeri_sipil"
+          }
         }
       ],
-      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "action": "Pantau pengumuman resmi formasi dan jadwal CPNS 2026 di kanal KemenPAN-RB serta SSCASN sebelum menyusun strategi pendaftaran.",
       "image": null,
       "sources": [
         {
@@ -384,10 +493,10 @@
         }
       ],
       "revision": 1,
-      "first_seen": "2026-11-10",
+      "first_seen": "2026-11-08",
       "previous_edition": null,
       "changes": [],
-      "dek": "Berdasarkan kesepakatan pemerintah bersama DPR RI pada 6 November 2026, terdapat beberapa formasi yang menjadi prioritas dalam seleksi CPNS 2026.",
+      "dek": "Seleksi CPNS 2026 bergeser ke formasi prioritas seperti polisi hutan dan guru, bukan sekadar menambah jumlah ASN.",
       "optional": true,
       "read_min": 4,
       "stats": [

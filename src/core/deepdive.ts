@@ -3,7 +3,7 @@ import type { ArticleRow, Cluster } from "./cluster.ts";
 import type { Card, ExplainItem, Source } from "./types.ts";
 import type { AdjudicatedTopic } from "./adjudicate.ts";
 import type { Glossary } from "./writer.ts";
-import { explainForTopic } from "./writer.ts";
+import { clusterText, explainForTopic } from "./writer.ts";
 import { sourcesFromCluster } from "./writer.ts";
 import { computeTruth } from "./truth.ts";
 import { isoWib } from "./time.ts";
@@ -16,6 +16,8 @@ export interface DeepDiveContext {
   topicId: string;
   glossary: Glossary;
   local: boolean;
+  /** Minimal sumber independen. Harian 3, rekap mingguan 2. */
+  minSources?: number;
 }
 
 function daysBetween(cluster: Cluster): number {
@@ -54,7 +56,7 @@ function wordCount(body: string[], explain: ExplainItem[]): number {
  * Dipakai sebagai cadangan bila LLM tidak tersedia atau hasilnya gagal validasi.
  */
 export function buildDeepDive(ctx: DeepDiveContext): Card | null {
-  const explain = explainForTopic(ctx.topic, ctx.glossary);
+  const explain = explainForTopic(ctx.topic, ctx.glossary, clusterText(ctx.cluster));
   if (!explain) return null;
 
   const sources = sourcesFromCluster(ctx.cluster, ctx.now, 5);
@@ -109,6 +111,16 @@ function clip(v: unknown, max: number): string {
   return typeof v === "string" ? v.trim().slice(0, max) : "";
 }
 
+function clipParagraph(v: unknown, max: number): string {
+  const t = typeof v === "string" ? v.trim() : "";
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max);
+  const stop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (stop >= max * 0.6) return cut.slice(0, stop + 1).trim();
+  const space = cut.lastIndexOf(" ");
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).trim()}…`;
+}
+
 /**
  * Versi LLM: menulis thread jadi bacaan panjang. Konteks tetap hanya boleh
  * dipilih dari kandidat (glosarium/Wikipedia), sama seperti kartu harian.
@@ -117,7 +129,10 @@ export async function buildDeepDiveWithLlm(
   ctx: DeepDiveContext,
   deps: { llm: LlmAdapter; model: string; candidates: Array<{ key: string; q: string; a: string; outlet: string; url: string }> },
 ): Promise<Card | null> {
-  if (deps.candidates.length < 2) return buildDeepDive(ctx);
+  if (deps.candidates.length < 2) {
+    if (process.env.DEBUG_DEEPDIVE) console.log(`  dd: kandidat ${deps.candidates.length} untuk ${ctx.topic.title.slice(0, 40)}`);
+    return buildDeepDive(ctx);
+  }
 
   const system = [
     "Kamu editor brief berbahasa Indonesia. Tulis satu bacaan mendalam (long read) dari sebuah thread berita.",
@@ -125,7 +140,7 @@ export async function buildDeepDiveWithLlm(
     "- Fokus pada apa yang BERUBAH dan mengapa ini penting, bukan mengulang satu kejadian.",
     "- title: maksimum 68 karakter.",
     "- dek: satu kalimat, maksimum 150 karakter, menyatakan tesis.",
-    "- body: 3–4 paragraf, tiap paragraf maksimum 460 karakter, urut kronologis.",
+    "- body: 3–4 paragraf, tiap paragraf maksimum 620 karakter, urut kronologis.",
     "- action: satu kalimat, maksimum 160 karakter.",
     "- claim: satu pernyataan yang bisa diperiksa.",
     "- explain: 2–4 pertanyaan latar; WAJIB memakai source_key dari daftar background.",
@@ -158,7 +173,10 @@ export async function buildDeepDiveWithLlm(
       raw = null;
     }
   }
-  if (!raw) return buildDeepDive(ctx);
+  if (!raw) {
+    if (process.env.DEBUG_DEEPDIVE) console.log(`  dd: llm gagal untuk ${ctx.topic.title.slice(0, 40)}`);
+    return buildDeepDive(ctx);
+  }
 
   const byKey = new Map(deps.candidates.map((c) => [c.key, c]));
   const explain: ExplainItem[] = [];
@@ -172,15 +190,30 @@ export async function buildDeepDiveWithLlm(
     if (explain.length >= 4) break;
   }
 
-  const body = (Array.isArray(raw.body) ? raw.body : []).map((p) => clip(p, 460)).filter(Boolean).slice(0, 4);
+  const body = (Array.isArray(raw.body) ? raw.body : [])
+    .map((p) => clipParagraph(p, 620))
+    .filter(Boolean)
+    .slice(0, 4);
   const title = clip(raw.title, 68);
   const dek = clip(raw.dek, 150);
-  const action = clip(raw.action, 160);
+  const action = clip(raw.action, 160) || "Baca sampai akhir; latar lengkapnya jarang masuk potongan berita.";
 
-  if (body.length < 2 || explain.length < 2 || !title || !action) return buildDeepDive(ctx);
+  if (body.length < 2 || explain.length < 2 || !title || !action) {
+    if (process.env.DEBUG_DEEPDIVE) {
+      console.log(
+        `  dd: hasil ditolak (body ${body.length}, explain ${explain.length}, title ${Boolean(title)}, action ${Boolean(action)}) untuk ${ctx.topic.title.slice(0, 40)}`,
+      );
+    }
+    return buildDeepDive(ctx);
+  }
 
   const sources = sourcesFromCluster(ctx.cluster, ctx.now, 5);
-  if (sources.length < 3) return null;
+  if (sources.length < (ctx.minSources ?? 3)) {
+    if (process.env.DEBUG_DEEPDIVE) {
+      console.log(`  dd: sumber ${sources.length} < ${ctx.minSources ?? 3} untuk ${ctx.topic.title.slice(0, 40)}`);
+    }
+    return null;
+  }
 
   // Dek memang boleh memperkenalkan sudut baru; tidak perlu tumpang tindih judul.
 
