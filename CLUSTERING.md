@@ -156,6 +156,32 @@ Bobot dan ambang ini dikalibrasi pada korpus 679 artikel (10 Nov): 14 klaster, 7
 
 ---
 
+### 6.1 Brief lokal (singleton)
+
+Setelah klaster utama terbentuk, artikel dari media DIY yang **tidak masuk
+klaster mana pun** diklaster ulang dengan `includeSingletons: true`,
+`minArticles: 1`, `minOutlets: 1`. Hasilnya disaring lagi: harus punya
+penanda wilayah (Sleman/DIY) dan bukan rubrik junk.
+
+Tanpa langkah ini edisi Sleman tidak pernah terbit: semua berita kecamatan
+adalah singleton, dan klaster utama membuang singleton.
+
+### 6.2 Gabung topik kembar
+
+Adjudikasi kadang memecah satu peristiwa menjadi dua topik. Sebelum registry,
+pasangan topik digabung bila:
+
+| Sinyal | Ambang nasional | Ambang lokal |
+|---|---|---|
+| Kemiripan judul + angle | ≥ 0,40 | ≥ 0,28 |
+| Judul artikel paling mirip | ≥ 0,55 | ≥ 0,45 |
+| Jaccard entitas **dan** kemiripan judul | ≥ 0,50 / ≥ 0,18 | ≥ 0,40 / ≥ 0,14 |
+
+Topik lokal dan nasional tidak pernah digabung. Klaster ikut digabung, jadi
+writer melihat seluruh artikel dari kedua sisi peristiwa.
+
+---
+
 ## 7. Langkah 5 — Adjudikasi LLM (satu panggilan)
 
 ### 7.1 Input

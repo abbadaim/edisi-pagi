@@ -21,8 +21,24 @@ export interface RankOptions {
 
 const DIY = /(detik\.com\/jogja|jogja\.tribunnews\.com|harianjogja\.com|krjogja\.com|radarjogja\.co\.id|jogjaprov\.go\.id|slemankab\.go\.id)/i;
 
+/** Wilayah yang dibaca pembaca Sleman: Sleman dulu, lalu DIY. */
+const LOCAL_PLACE = /\b(sleman|yogyakarta|yogya|jogja|diy|bantul|kulon\s*progo|gunungkidul|gunung\s*kidul)\b/i;
+
 /**
- * Klaster dianggap lokal jika **mayoritas** artikelnya dari media DIY.
+ * Lembaga lokal cukup menyebut wilayahnya sekali ("Polresta Yogyakarta").
+ * Tanpa daftar ini, banyak berita lokal tidak menyebut nama kabupaten di judul.
+ */
+const LOCAL_BODY = /(pemkab\s+sleman|pemkot\s+yogyakarta|pemda\s+diy|dprd\s+(diy|sleman|bantul|kulon\s*progo|gunungkidul|kota\s*yogyakarta|yogyakarta)|polda\s+diy|polresta\s+yogyakarta|polres\s+(sleman|bantul|kulon\s*progo|gunungkidul)|bpbd\s+(diy|sleman|bantul|kulon\s*progo|gunungkidul)|dinkes\s+sleman|ugm|uny|uin\s+sunan\s+kalijaga)/i;
+
+/** Rubrik yang bukan berita: iklan, SEO, jadwal, dan daftar tanpa peristiwa. */
+const LOCAL_JUNK = /\b(advertorial|promo|diskon|komunitas|inspiratif|kebiasaan sepele|resep|jadwal siaran|link streaming|ucapan|berita duka|lowongan|kunci jawaban|prediksi skor|susunan pemain|harga tiket|daftar harga)\b/i;
+
+export function isDiyUrl(url: string): boolean {
+  return DIY.test(url);
+}
+
+/**
+ * Klaster dianggap dari media lokal jika **mayoritas** artikelnya dari media DIY.
  * Satu artikel detik/jogja di dalam klaster nasional tidak boleh membalik
  * seluruh topik menjadi lokal — itu menghilangkan cerita terbesar dari edisi.
  */
@@ -30,6 +46,36 @@ export function isLocalCluster(cluster: Cluster): boolean {
   if (cluster.articles.length === 0) return false;
   const n = cluster.articles.filter((a) => DIY.test(a.url)).length;
   return n / cluster.articles.length >= 0.5;
+}
+
+/** Apakah isinya benar-benar peristiwa Sleman/DIY, bukan berita nasional dari media lokal. */
+export function hasLocalMarker(cluster: Cluster): boolean {
+  const text = cluster.articles.map((a) => `${a.title} ${a.lead}`).join(" ");
+  return LOCAL_PLACE.test(text) || LOCAL_BODY.test(text);
+}
+
+/** Berita lokal yang layak masuk edisi Sleman. */
+export function isLocalStory(cluster: Cluster): boolean {
+  return isLocalCluster(cluster) && hasLocalMarker(cluster) && !LOCAL_JUNK.test(cluster.articles[0]?.title ?? "");
+}
+
+export function isLocalJunk(cluster: Cluster): boolean {
+  return LOCAL_JUNK.test(cluster.articles.map((a) => a.title).join(" "));
+}
+
+const AREAS: Array<[string, RegExp]> = [
+  ["Sleman", /\bsleman\b/i],
+  ["Gunungkidul", /gunungkidul|gunung\s*kidul/i],
+  ["Bantul", /\bbantul\b/i],
+  ["Kulon Progo", /kulon\s*progo/i],
+  ["Yogyakarta", /yogyakarta|yogya|jogja/i],
+];
+
+/** Label wilayah yang benar: berita Gunungkidul bukan berita Sleman. */
+export function localKicker(cluster: { articles: Array<{ title: string; lead: string }> }): string {
+  const text = cluster.articles.map((a) => `${a.title} ${a.lead}`).join(" ");
+  for (const [label, re] of AREAS) if (re.test(text)) return label;
+  return "DIY";
 }
 
 function urlOf(cluster: Cluster): string[] {
@@ -102,8 +148,11 @@ export function hardFilter(
       stats.horseRace++;
       continue;
     }
-    // Klaster dengan 2 artikel dari 2 outlet tetap boleh; 1 artikel tidak.
-    if (e.cluster.articles.length < 2) {
+    // Lokal: brief satu media tetap berguna (peristiwa kecamatan jarang
+    // diliput dua media). Nasional tetap butuh minimal dua artikel
+    // agar tidak menjadi kartu bersumber tunggal.
+    const minArticles = scope === "lokal" ? 1 : 2;
+    if (e.cluster.articles.length < minArticles) {
       stats.orphan++;
       continue;
     }
@@ -112,10 +161,11 @@ export function hardFilter(
       continue;
     }
 
-    const local = isLocalCluster(e.cluster);
-    if (scope === "lokal" && !local) {
-      stats.localOnly++;
-      continue;
+    if (scope === "lokal") {
+      if (!isLocalStory(e.cluster) || isLocalJunk(e.cluster)) {
+        stats.localOnly++;
+        continue;
+      }
     }
 
     kept.push(e);

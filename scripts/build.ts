@@ -5,7 +5,7 @@ import { openSqlite } from "../src/adapters/db/sqlite.ts";
 import { clusterArticles, loadArticles, type Cluster } from "../src/core/cluster.ts";
 import { adjudicate, fallbackTopics, summarise, type AdjudicatedTopic } from "../src/core/adjudicate.ts";
 import { loadRegistry, resolveTopic } from "../src/core/registry.ts";
-import { hardFilter, isLocalCluster, select } from "../src/core/rank.ts";
+import { hardFilter, isDiyUrl, isLocalCluster, isLocalJunk, isLocalStory, select } from "../src/core/rank.ts";
 import { buildEdition, parseHoaxTitles, type HoaxRow } from "../src/core/assemble.ts";
 import {
   createDeterministicWriter,
@@ -22,6 +22,7 @@ import { fetchVerdict } from "../src/adapters/turnback.ts";
 import { writeCardWithLlm, backgroundCandidates } from "../src/core/writer-llm.ts";
 import { buildDeepDive, buildDeepDiveWithLlm } from "../src/core/deepdive.ts";
 import { hashSummaries, loadAdjudication, saveAdjudication } from "../src/core/adjudicate-cache.ts";
+import { mergeDuplicateTopics, type TopicEntry } from "../src/core/merge.ts";
 import { loadEnvFile } from "../src/config/env.ts";
 
 const root = new URL("..", import.meta.url).pathname;
@@ -69,6 +70,20 @@ try {
   const rows = loadArticles(db, queryFrom, queryTo);
   const clusters = clusterArticles(rows);
 
+  // Peristiwa kecamatan sering diliput satu media saja. Artikel lokal yang
+  // tidak masuk klaster utama tetap dipertimbangkan untuk edisi Sleman,
+  // dengan saringan isi: harus benar-benar menyebut Sleman/DIY.
+  const clustered = new Set(clusters.flatMap((c) => c.articles.map((a) => a.id)));
+  const localLeft = rows.filter((r) => !clustered.has(r.id) && isDiyUrl(r.url));
+  const soloLocal = localLeft.length
+    ? clusterArticles(localLeft, {
+        includeSingletons: true,
+        minArticles: 1,
+        minOutlets: 1,
+        maxGapHours: 48,
+      }).filter((c) => isLocalStory(c) && !isLocalJunk(c))
+    : [];
+
   // Urutan: opencode -> deepseek -> deterministik. LLM_PROVIDER memaksa satu.
   const { llm, model, provider } = resolveLlm(process.env);
 
@@ -108,11 +123,30 @@ try {
     revision: number;
   }
 
-  const entries: Entry[] = [];
+  // Topik dari adjudikasi + brief lokal yang tidak ikut adjudikasi.
+  const rawEntries: TopicEntry[] = [];
   for (const topic of adjudication.topics) {
     if (topic.drop) continue;
     const cluster = byCid.get(topic.cids[0]!);
     if (!cluster) continue;
+    rawEntries.push({ topic, cluster });
+  }
+  for (const cluster of soloLocal) {
+    const topic = fallbackTopics(summarise([cluster]))[0];
+    if (!topic) continue;
+    rawEntries.push({ topic: { ...topic, local: true, significance: Math.max(2, topic.significance) }, cluster });
+  }
+
+  // Adjudikasi kadang memecah satu peristiwa menjadi dua topik.
+  const { entries: mergedTopics, merges } = mergeDuplicateTopics(rawEntries);
+  for (const m of merges) {
+    console.log(
+      `  gabung (${m.reason} ${m.score.toFixed(2)}): "${m.dropped.slice(0, 42)}" → "${m.kept.slice(0, 42)}"`,
+    );
+  }
+
+  const entries: Entry[] = [];
+  for (const { topic, cluster } of mergedTopics) {
     const res = await resolveTopic(db, topic, registry, { counter, now, editionId });
     entries.push({ topic, cluster, topicId: res.topic_id, revision: res.revision });
   }
@@ -200,15 +234,30 @@ try {
     return card;
   }
 
-  async function cardsFor(scope: "nasional" | "lokal", limit: number): Promise<Card[]> {
-    const scoped = entries.filter((e) =>
-      scope === "lokal" ? isLocalCluster(e.cluster) : !isLocalCluster(e.cluster),
-    );
+  /** Pilih kandidat per edisi. `exclude` dipakai agar berita lokal tidak dobel di edisi nasional. */
+  function planCards(scope: "nasional" | "lokal", exclude: Set<string> = new Set()) {
+    const scoped = entries.filter((e) => (scope === "lokal" ? isLocalStory(e.cluster) : true));
     const { kept } = hardFilter(scoped, scope, now);
-    const { selected } = select(kept, { scope, now });
+    // Edisi Sleman sengaja menjaga variasi: satu topik per kategori, karena
+    // korpus lokal sering didominasi satu tema (mis. hewan liar sepekan ini).
+    let { selected } = select(kept, { scope, now, maxArticlesPerCategory: scope === "lokal" ? 1 : 2 });
 
+    // Hari tenang: kalau anggaran suasana hati menyisakan satu kartu lokal,
+    // longgarkan batasnya. Edisi Sleman yang tipis lebih berguna daripada tab kosong.
+    if (scope === "lokal" && selected.length < 2 && kept.length >= 2) {
+      selected = select(kept, { scope, now, maxHeavy: 3, maxArticlesPerCategory: 3 }).selected;
+    }
+
+    return selected.filter((r) => !exclude.has(r.topicId));
+  }
+
+  async function renderCards(
+    planned: ReturnType<typeof planCards>,
+    scope: "nasional" | "lokal",
+    limit: number,
+  ): Promise<Card[]> {
     const cards: Card[] = [];
-    for (const r of selected) {
+    for (const r of planned) {
       if (cards.length >= limit) break;
       const entry = entries.find((e) => e.topicId === r.topicId);
       const card = await makeCard(
@@ -357,7 +406,13 @@ try {
     return ids;
   }
 
-  let newsRaw = await cardsFor("nasional", 6);
+  // Edisi Sleman direncanakan lebih dulu: kalau cukup, topiknya tidak
+  // diulang di edisi nasional hari yang sama.
+  const localPlan = planCards("lokal");
+  const localCards = localPlan.length >= 2 ? await renderCards(localPlan, "lokal", 4) : [];
+  const reservedLocal = new Set(localCards.map((c) => c.topic_id));
+
+  let newsRaw = await renderCards(planCards("nasional", reservedLocal), "nasional", 6);
   const news: Card[] = [];
   for (const card of newsRaw) {
     if (card.image || card.type !== "news") {
@@ -417,7 +472,7 @@ try {
   const file = join(outDir, `${editionId}.nasional.json`);
   const check = validateEdition(edition);
   console.log(
-    `nasional · ${clusters.length} klaster · ${entries.length} topik · ${cards.length} kartu`,
+    `nasional · ${clusters.length + soloLocal.length} klaster · ${entries.length} topik · ${cards.length} kartu`,
   );
   const publishable = check.ok || (thinMode && cards.length > 0 && allowsThin(check.errors));
   if (publishable) {
@@ -431,9 +486,7 @@ try {
   }
 
   // --- lokal ---
-  const localNews = await cardsFor("lokal", 4);
-  if (localNews.length >= 2) {
-    const localCards = [...localNews].slice(0, 5);
+  if (localCards.length >= 2) {
     const localEdition: Edition = buildEdition({
       scope: "lokal",
       editionId,
@@ -456,7 +509,7 @@ try {
     // Jangan tinggalkan edisi lokal lama: aplikasi membacanya sebagai edisi hari ini.
     const stale = join(outDir, `${editionId}.lokal.json`);
     if (existsSync(stale)) rmSync(stale);
-    console.log(`lokal    · tidak terbit (${localNews.length} topik lolos, minimum 2)`);
+    console.log(`lokal    · tidak terbit (${localPlan.length} topik lolos, minimum 2)`);
   }
 
   console.log(

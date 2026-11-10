@@ -27,6 +27,12 @@ export interface ClusterOptions {
   maxGapHours?: number;
   /** IDF minimum agar entitas dianggap distintif. */
   minIdf?: number;
+  /**
+   * Sertakan klaster berisi satu artikel. Dipakai hanya untuk berita lokal:
+   * peristiwa kecamatan sering diliput satu media saja, dan tanpa ini edisi
+   * Sleman tidak pernah terbit.
+   */
+  includeSingletons?: boolean;
 }
 
 const DEFAULTS: Required<ClusterOptions> = {
@@ -38,6 +44,7 @@ const DEFAULTS: Required<ClusterOptions> = {
   maxArticles: 25,
   maxGapHours: 72,
   minIdf: 1.5,
+  includeSingletons: false,
 };
 
 export interface Cluster {
@@ -172,7 +179,7 @@ export function clusterArticles(rows: ArticleRow[], opts: ClusterOptions = {}): 
   const clusters: Cluster[] = [];
 
   for (const idxs of groups.values()) {
-    if (idxs.length < 2) continue;
+    if (idxs.length < (o.includeSingletons ? 1 : 2)) continue;
 
     // Batasi ukuran: ambil yang paling dekat dengan pusat (kepadatan rata-rata).
     let members = idxs;

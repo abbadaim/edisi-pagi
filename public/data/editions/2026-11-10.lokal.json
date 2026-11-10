@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-10",
+  "scope": "lokal",
+  "published_at": "2026-11-10T05:00:00+07:00",
+  "coverage": {
+    "from": "2026-11-09T05:00:00+07:00",
+    "to": "2026-11-10T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-10T05:00:00+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 3,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 3,
+  "truncated_reason": "Hanya 3 topik lokal yang lolos",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_2_pria_bersajam_serang_polisi_da39",
+      "angle": "Penyerangan polisi oleh dua pria bersajam di Babarsari, Sleman, berujung penangkapan.",
+      "kicker": "Sleman",
+      "title": "Dua Pria Bersajam Serang Polisi dan Rusak Toko di Babarsari Sleman",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dua pria bersenjata tajam menyerang polisi di Babarsari, Sleman, dan merusak mobil dinas serta toko kelontong sebelum ditangkap.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Dua pria bersenjata tajam menyerang polisi di kawasan Babarsari, Sleman, DIY. Keduanya juga merusak mobil dinas polisi hingga spion pecah, dan sebuah toko kelontong ikut dirusak. Polisi menangkap kedua pria tersebut dan menyita parang yang mereka bawa. Lokasi Babarsari berada di Sleman, sehingga peristiwa ini berdampak langsung pada warga dan aparat di wilayah tersebut.",
+        "Peristiwa ini penting bagi pembaca di Sleman karena melibatkan serangan terhadap petugas kepolisian yang sedang bertugas, sekaligus kerusakan properti warga seperti toko kelontong. Kejadian di ruang publik seperti Babarsari menunjukkan risiko yang bisa muncul ketika seseorang membawa senjata tajam. Penangkapan dan penyitaan parang menjadi langkah awal aparat untuk menghentikan ancaman lebih lanjut.",
+        "Belum jelas apa motif kedua pria tersebut, kronologi lengkap penyerangan, serta apakah ada korban luka dari pihak polisi atau warga. Detail soal pasal yang dikenakan dan proses hukum lanjutan juga belum disebutkan. Pembaca sebaiknya menunggu keterangan resmi kepolisian dan tidak menyimpulkan sendiri penyebab kejadian."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud dengan senjata tajam (sajam) dalam pemberitaan ini?",
+          "a": "Sajam adalah singkatan dari senjata tajam, seperti parang, yang dibawa kedua pria dan disita polisi.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
+          }
+        },
+        {
+          "q": "Di mana lokasi Babarsari dalam konteks wilayah DIY?",
+          "a": "Babarsari berada di Kabupaten Sleman, Daerah Istimewa Yogyakarta, sehingga peristiwanya masuk wilayah hukum Polres Sleman.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud mobil dinas polisi yang dirusak?",
+          "a": "Mobil dinas polisi adalah kendaraan operasional kepolisian yang dipakai petugas, dan dalam peristiwa ini spionnya pecah akibat ulah kedua pria.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Polres Sleman soal motif dan proses hukum kedua pria tersebut.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8744819/2-pria-bersajam-serang-polisi-di-babarsari-sleman",
+          "published_at": "2026-11-09T13:39:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_marak_teror_hewan_liar_di_gunu_da39",
+      "angle": "Imbauan Dinas Pertanian Gunungkidul menyusul maraknya teror hewan liar ke ternak warga.",
+      "kicker": "Gunungkidul",
+      "title": "Warga Gunungkidul Diminta Ronda Malam Antisipasi Serangan Hewan Liar",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dinas Pertanian Gunungkidul mengimbau warga menggelar ronda malam dan memperkuat kandang untuk mengantisipasi serangan hewan liar terhadap ternak.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Dinas Pertanian Gunungkidul mengeluarkan imbauan kepada warga untuk mengantisipasi serangan hewan liar terhadap ternak. Imbauan ini muncul setelah maraknya laporan teror hewan liar di wilayah Gunungkidul, DIY. Warga diminta menggelar ronda malam dan memperkuat kandang ternak mereka sebagai langkah pencegahan. Detail lokasi kejadian, jenis hewan liar yang menyerang, serta jumlah ternak yang terdampak belum dijelaskan dalam informasi yang tersedia.",
+        "Bagi warga Gunungkidul, ternak merupakan aset ekonomi yang penting. Serangan hewan liar tidak hanya mengancam penghasilan keluarga, tetapi juga keselamatan warga yang tinggal di kawasan rawan. Imbauan ini menunjukkan bahwa persoalan tersebut dianggap cukup serius oleh dinas terkait, sehingga masyarakat diminta aktif menjaga lingkungannya sendiri, terutama pada malam hari ketika hewan liar cenderung aktif.",
+        "Belum jelas hewan liar apa yang menjadi penyebab utama, seberapa luas wilayah yang terdampak, dan apakah ada bantuan atau program khusus dari pemerintah daerah selain imbauan ronda malam. Warga yang ingin melaporkan kejadian atau meminta pendampingan sebaiknya menghubungi Dinas Pertanian Gunungkidul. Perlu dipahami bahwa ronda malam bukan solusi tunggal, melainkan bagian dari upaya pencegahan bersama."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Dinas Pertanian Gunungkidul dan apa tugasnya terkait peternakan?",
+          "a": "Dinas Pertanian Gunungkidul adalah instansi pemerintah daerah yang menangani urusan pertanian dan peternakan, termasuk mengeluarkan imbauan perlindungan ternak warga.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam"
+          }
+        },
+        {
+          "q": "Mengapa ronda malam dianjurkan dalam imbauan ini?",
+          "a": "Ronda malam diminta sebagai upaya antisipasi serangan hewan liar terhadap ternak, sebagaimana disebutkan dalam imbauan Dinas Pertanian Gunungkidul.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam"
+          }
+        }
+      ],
+      "action": "Hubungi Dinas Pertanian Gunungkidul untuk melaporkan serangan hewan liar dan tanyakan langkah pencegahan yang dianjurkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8745100/marak-teror-hewan-liar-di-gunungkidul-warga-diimbau-ronda-malam",
+          "published_at": "2026-11-09T15:25:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_gas_pol_salip_2_rider_di_lap_a_da39",
+      "angle": "Veda Ega Salip Dua Rider di Lap Akhir, Finis Keempat di Moto3 Qatar",
+      "kicker": "Gunungkidul",
+      "title": "Veda Ega Salip Dua Rider di Lap Akhir, Finis Keempat di Moto3 Qatar",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Veda Ega Pratama finis keempat di Moto3 Qatar setelah start dari posisi ke-14 dan menyalip dua rider di lap akhir.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T05:00:00+07:00"
+      },
+      "body": [
+        "Pembalap asal Gunungkidul, DI Yogyakarta, Veda Ega Pratama, finis di posisi keempat pada balapan Moto3 Qatar di Sirkuit Lusail. Ia memulai balapan dari posisi ke-14, lalu tampil gemilang sepanjang laga dan menyalip dua rider sekaligus pada lap terakhir untuk mengunci hasil tersebut.",
+        "Hasil ini penting bagi pembaca DIY karena Veda adalah salah satu pembalap muda daerah yang kini bersaing di level dunia. Start dari barisan belakang lalu naik sepuluh posisi menunjukkan konsistensi dan keberaniannya mengambil risiko di tikungan akhir, sesuatu yang jarang ditunjukkan pembalap pemula di kelas Moto3.",
+        "Belum jelas apakah posisi keempat ini merupakan hasil terbaik Veda sepanjang kariernya di Moto3, dan bagaimana dampaknya terhadap klasemen pembalap. Detail soal waktu tempuh, selisih dengan podium, serta kondisi ban pada lap akhir juga belum disebutkan dalam artikel. Langkah berikutnya adalah menunggu balapan seri berikutnya untuk melihat apakah tren positif ini berlanjut."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Moto3 dan di mana kelas ini berada dalam jenjang balap Grand Prix?",
+          "a": "Moto3 adalah kelas balap motor Grand Prix paling dasar, di bawah Moto2 dan MotoGP, memakai motor 250cc.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+          }
+        },
+        {
+          "q": "Siapa Veda Ega Pratama dan dari mana asalnya?",
+          "a": "Veda Ega Pratama adalah pembalap muda asal Gunungkidul, DI Yogyakarta, yang berlaga di kelas Moto3.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+          }
+        },
+        {
+          "q": "Apa arti Sirkuit Lusail dan mengapa balapan Qatar digelar di sana?",
+          "a": "Lusail adalah sirkuit di Qatar yang menjadi tuan rumah seri pembuka atau bagian awal musim MotoGP dan kelas pendukungnya.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar"
+          }
+        }
+      ],
+      "action": "Pantau jadwal balapan Moto3 berikutnya dan catat posisi start Veda Ega Pratama.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8744375/gas-pol-salip-2-rider-di-lap-akhir-veda-ega-finis-ke-4-di-moto3-qatar",
+          "published_at": "2026-11-09T09:32:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T05:00:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}

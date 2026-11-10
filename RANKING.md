@@ -80,6 +80,28 @@ Langkah 3 dan 4 harus mendahului 6. Pada 10 November, topik vape adalah berita p
 | `>72 jam` tanpa `angle` baru | Basi |
 | `kind = "analysis"` dan `outlets = 1` | Opini tunggal |
 
+### 3.1 Edisi lokal (Sleman)
+
+Edisi lokal punya aturan sendiri karena korpusnya berbeda: peristiwa
+kecamatan sering diliput **satu media** dan sering didominasi satu tema.
+
+| Aturan | Nilai |
+|---|---|
+| Sumber | Media DIY (`detik.com/jogja`, `jogja.tribunnews.com`, `harianjogja.com`, `krjogja.com`, …) |
+| Penanda lokal | Judul/lead menyebut Sleman, Yogyakarta/Jogja, DIY, Bantul, Kulon Progo, Gunungkidul, atau lembaga lokal (`Polresta Yogyakarta`, `Dinkes Sleman`, UGM) |
+| Minimal artikel | **1** — brief satu media tetap terbit |
+| Maksimal kartu | 4 |
+| Kategori | **1 kartu per kategori** (variasi), dilonggarkan ke 3 hanya bila hasilnya < 2 kartu |
+| Heavy | Maksimal 1 (kriminal, bencana, keselamatan) |
+| Junk | Advertorial, promo, jadwal siaran, resep, lowongan dibuang |
+| Duplikasi nasional | Topik yang sudah dipakai edisi lokal dikeluarkan dari edisi nasional hari itu |
+
+Kicker tiap kartu memakai wilayah sebenarnya (`Sleman`, `Gunungkidul`,
+`Bantul`, `Kulon Progo`, `Yogyakarta`), bukan "Sleman" untuk semua.
+
+Berita lokal yang tidak menyebut wilayahnya sama sekali (mis. media Jogja
+meliput Gibran) tetap dianggap berita nasional.
+
 ---
 
 ## 4. Skor berita

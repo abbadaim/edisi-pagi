@@ -180,10 +180,13 @@ export function normalise(
 }
 
 const CATEGORY_HINTS: Array<[TopicCategory, RegExp]> = [
-  ["sport", /\b(liga|timnas|pertandingan|klasemen|piala|sepak ?bola|motogp|badminton)\b/i],
+  ["sport", /\b(liga|timnas|pertandingan|klasemen|piala|sepak ?bola|motogp|moto3|motogp|balap|sirkuit|badminton)\b/i],
   ["health", /\b(vape|rokok|kesehatan|rumah sakit|gizi|stunting|vaksin|dokter)\b/i],
   ["disaster", /\b(gempa|banjir|erupsi|kebakaran|longsor|tsunami|karhutla|kabut asap)\b/i],
-  ["crime", /\b(polisi|tersangka|penangkapan|korupsi|kpk|kejagung|sidang|pidana|hukum)\b/i],
+  // Keselamatan dicek sebelum kriminal: kecelakaan juga menyebut polisi, tetapi
+  // bagi pembaca itu peristiwa keselamatan, bukan perkara pidana.
+  ["safety", /\b(kecelakaan|lakalantas|tabrakan|ditabrak|menabrak|terseret|tenggelam|hanyut|terperosok|pohon tumbang|roboh|tewas|meninggal|korban jiwa)\b/i],
+  ["crime", /\b(polisi|tersangka|penangkapan|ditangkap|korupsi|kpk|kejagung|sidang|pidana|hukum|sajam|senjata tajam|mengamuk|amuk|dihajar|hajar|dikeroyok|pengeroyokan|begal|curanmor|perampokan|pembunuhan|aniaya)\b/i],
   ["economy", /\b(harga|saham|ihsg|rupiah|inflasi|investasi|bbm|beras|pajak|ojk|ekonomi|bank)\b/i],
   ["culture", /\b(festival|budaya|seni|film|musik|wisata|sejarah)\b/i],
 ];
@@ -218,7 +221,7 @@ export function fallbackTopics(clusters: ClusterSummary[]): AdjudicatedTopic[] {
       drop: /\b(twibbon|link streaming|jadwal siaran|ucapan|resep)\b/i.test(c.titles.join(" ")),
       category,
       significance: guessSignificance(c.n_articles, c.outlets.length),
-      heavy: category === "crime" || category === "disaster",
+      heavy: category === "crime" || category === "disaster" || category === "safety",
       reason: "fallback: LLM tidak tersedia",
     };
   });

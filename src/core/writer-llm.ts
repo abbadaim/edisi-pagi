@@ -3,6 +3,7 @@ import { fetchWikiSummary } from "../adapters/wiki.ts";
 import type { AdjudicatedTopic } from "./adjudicate.ts";
 import type { Glossary } from "./writer.ts";
 import { clusterText, explainForTopic } from "./writer.ts";
+import { localKicker } from "./rank.ts";
 import type { Card, ExplainItem } from "./types.ts";
 import { computeTruth } from "./truth.ts";
 import { isoWib } from "./time.ts";
@@ -190,7 +191,15 @@ export function buildWriterPrompt(ctx: LlmWriteContext, candidates: BackgroundCa
     "- title, angle, body, dan claim WAJIB membicarakan peristiwa yang sama. Jangan mencampur.",
     "- Setiap explain WAJIB memakai source_key dari daftar background. Jangan mengarang sumber.",
     "- Balas JSON: {\"title\":\"\",\"angle\":\"\",\"body\":[\"\"],\"action\":\"\",\"claim\":\"\",\"explain\":[{\"q\":\"\",\"a\":\"\",\"source_key\":\"g1\"}]}",
-  ].join("\n");
+  ];
+
+  if (ctx.local) {
+    system.push(
+      "- Ini kartu edisi Sleman/DIY. Paragraf pertama WAJIB menyebut kaitan peristiwa dengan Sleman/DIY: tempat, lembaga, atau warga. Jangan menulis seolah ini berita nasional.",
+    );
+  }
+
+  const systemText = system.join("\n");
 
   const user = JSON.stringify(
     {
@@ -210,7 +219,7 @@ export function buildWriterPrompt(ctx: LlmWriteContext, candidates: BackgroundCa
     1,
   );
 
-  return { system, user };
+  return { system: systemText, user };
 }
 
 export function normaliseCard(
@@ -322,7 +331,7 @@ export async function writeCardWithLlm(
     type: "news",
     topic_id: ctx.topicId,
     angle: card.angle,
-    kicker: ctx.local ? "Sleman" : "Nasional",
+    kicker: ctx.local ? localKicker(ctx.cluster) : "Nasional",
     title: card.title,
     status: truth.status,
     truth,

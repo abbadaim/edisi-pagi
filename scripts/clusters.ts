@@ -63,6 +63,7 @@ try {
           maxArticles: 25,
           maxGapHours: 72,
           minIdf: 1.5,
+          includeSingletons: false,
         });
         if (r.j > 0) pairs.push({ s: r.total, j: r.j, c: r.c, a: prepared[i]!.row.title, b: prepared[j]!.row.title });
       }

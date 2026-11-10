@@ -5,6 +5,7 @@ import type { Cluster } from "./cluster.ts";
 import type { Card, ExplainItem, Source } from "./types.ts";
 import { computeTruth } from "./truth.ts";
 import { isoWib } from "./time.ts";
+import { localKicker } from "./rank.ts";
 
 export interface GlossaryEntry {
   q: string;
@@ -217,7 +218,7 @@ export function createDeterministicWriter(glossary: Glossary): CardWriter {
         type: "news",
         topic_id: ctx.topicId,
         angle: ctx.topic.angle.slice(0, 90),
-        kicker: ctx.local ? "Sleman" : (KICKER[ctx.topic.category] ?? "Nasional"),
+        kicker: ctx.local ? localKicker(ctx.cluster) : (KICKER[ctx.topic.category] ?? "Nasional"),
         title: truncateWords(ctx.topic.title, 68),
         status: truth.status,
         truth,

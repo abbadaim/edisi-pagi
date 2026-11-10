@@ -8,6 +8,7 @@ import { sourcesFromCluster } from "./writer.ts";
 import { computeTruth } from "./truth.ts";
 import { isoWib } from "./time.ts";
 import { truncateWords } from "./normalize.ts";
+import { localKicker } from "./rank.ts";
 
 export interface DeepDiveContext {
   now: Date;
@@ -78,7 +79,7 @@ export function buildDeepDive(ctx: DeepDiveContext): Card | null {
     type: "deep_dive",
     topic_id: ctx.topicId,
     angle: `Rekap ${daysBetween(ctx.cluster)} hari`,
-    kicker: ctx.local ? "Sleman" : "Mendalam",
+    kicker: ctx.local ? localKicker(ctx.cluster) : "Mendalam",
     title: ctx.topic.title.slice(0, 68),
     status: truth.status,
     truth,
@@ -227,7 +228,7 @@ export async function buildDeepDiveWithLlm(
     type: "deep_dive",
     topic_id: ctx.topicId,
     angle: `Rekap ${daysBetween(ctx.cluster)} hari`,
-    kicker: ctx.local ? "Sleman" : "Mendalam",
+    kicker: ctx.local ? localKicker(ctx.cluster) : "Mendalam",
     title,
     status: truth.status,
     truth,
