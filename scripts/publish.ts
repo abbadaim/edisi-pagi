@@ -4,6 +4,7 @@
  * Aplikasi hanya membaca `public/`, jadi tidak pernah menyentuh state pipeline.
  */
 import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { isoWib } from "../src/core/time.ts";
 import { validateEdition, allowsThin } from "../src/core/validate.ts";
@@ -90,6 +91,20 @@ const manifest = {
 };
 
 writeFileSync(join(outDir, "manifest.json"), JSON.stringify(manifest, null, 2));
+
+// Cache-busting: GitHub Pages meng-cache app.js selama 10 menit. Tanpa versi
+// berbasis isi, perubahan kode tidak sampai ke pengguna sampai cache kedaluwarsa.
+const digest = (file: string) =>
+  createHash("sha1").update(readFileSync(join(outDir, file))).digest("hex").slice(0, 8);
+
+const indexPath = join(outDir, "index.html");
+const versions = { "app.js": digest("app.js"), "style.css": digest("style.css"), "sw.js": digest("sw.js") };
+
+let html = readFileSync(indexPath, "utf8");
+for (const [file, v] of Object.entries(versions)) {
+  html = html.replace(new RegExp(`${file.replace(".", "\\.")}(\\?v=[a-f0-9]+)?`, "g"), `${file}?v=${v}`);
+}
+writeFileSync(indexPath, html);
 
 console.log(`${entries.length} edisi dipublikasikan${skipped ? `, ${skipped} dilewati` : ""}`);
 for (const e of manifest.editions) console.log(`  ${e.edition_id} ${e.scope.padEnd(8)} ${e.card_count} kartu`);
