@@ -256,7 +256,7 @@ export async function adjudicate(
     };
   } catch (e) {
     // Jangan diam: fallback yang tidak terlihat membuat kualitas turun tanpa jejak.
-    const why = e instanceof Error ? e.message.slice(0, 120) : String(e);
+    const why = e instanceof Error ? e.message.slice(0, 240) : String(e);
     console.log(`  ! adjudikasi gagal (${why}) — memakai topik deterministik`);
     return {
       topics: fallbackTopics(summaries),

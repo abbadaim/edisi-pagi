@@ -288,7 +288,7 @@ export async function writeCardWithLlm(
         });
         raw = data;
       } catch (e) {
-        const why = e instanceof Error ? e.message.slice(0, 120) : String(e);
+        const why = e instanceof Error ? e.message.slice(0, 240) : String(e);
         console.log(`  ! tulis gagal untuk "${ctx.topic.title.slice(0, 40)}": ${why}`);
         raw = null;
       }

@@ -124,10 +124,10 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
       try {
         data = parseJsonLoose(content) as T;
       } catch (e) {
-        const tail = content.trim().slice(-60).replace(/\s+/g, " ");
-        throw new Error(
-          `${(e as Error).message} [finish=${finishReason ?? "?"}, akhir="${tail}"]`,
-        );
+        const tail = content.trim().slice(-80).replace(/\s+/g, " ");
+        // finish=length berarti jawaban terpotong; finish=stop berarti bentuknya
+        // memang tidak sah (mis. kutip ganda tak ter-escape).
+        throw new Error(`JSON gagal (finish=${finishReason ?? "?"}, akhir="${tail}"): ${(e as Error).message}`);
       }
       return { data, usage };
     },
