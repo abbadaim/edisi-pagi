@@ -1,6 +1,6 @@
 import { DatabaseSync } from "node:sqlite";
-import { readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
+import { mkdirSync, readFileSync, readdirSync } from "node:fs";
+import { dirname, join } from "node:path";
 
 export type Param = string | number | null | bigint | Uint8Array;
 
@@ -13,6 +13,10 @@ export interface Db {
 }
 
 export function openSqlite(path: string): Db {
+  // SQLite tidak membuat folder induk; runner CI memulai tanpa data/state/.
+  if (path !== ":memory:" && !path.startsWith("file:")) {
+    mkdirSync(dirname(path), { recursive: true });
+  }
   const db = new DatabaseSync(path);
   db.exec("PRAGMA journal_mode = WAL;");
   db.exec("PRAGMA foreign_keys = ON;");
