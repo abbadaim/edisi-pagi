@@ -402,4 +402,10 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-boot();
+boot().catch((e) => {
+  const msg = e instanceof Error ? e.message : String(e);
+  $("dateline").textContent = "Gagal memuat";
+  $("subline").textContent = msg;
+  $("feed").hidden = true;
+  console.error(e);
+});
