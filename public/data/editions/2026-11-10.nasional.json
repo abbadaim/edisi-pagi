@@ -2,18 +2,18 @@
   "schema_version": 1,
   "edition_id": "2026-11-10",
   "scope": "nasional",
-  "published_at": "2026-11-10T18:38:36+07:00",
+  "published_at": "2026-11-10T18:40:48+07:00",
   "coverage": {
-    "from": "2026-11-09T18:38:36+07:00",
-    "to": "2026-11-10T18:38:36+07:00"
+    "from": "2026-11-09T18:40:48+07:00",
+    "to": "2026-11-10T18:40:48+07:00"
   },
-  "generated_at": "2026-11-10T18:38:36+07:00",
+  "generated_at": "2026-11-10T18:40:48+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 2,
+  "reading_time_min": 3,
   "generated_by": {
     "adjudicate": {
       "provider": "fallback",
@@ -32,13 +32,13 @@
       "model": "none"
     }
   },
-  "card_count": 5,
-  "truncated_reason": "Hanya 5 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "card_count": 6,
+  "truncated_reason": "Hanya 6 kartu yang lolos; sisanya tidak punya konteks atau sumber",
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_dpr_disebut_sepakat_pakai_hak_0d5f",
+      "topic_id": "t_dpr_disebut_sepakat_pakai_hak_acb8",
       "angle": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
       "kicker": "Nasional",
       "title": "DPR Disebut Sepakat Pakai Hak Menyatakan Pendapat soal Gibran",
@@ -57,7 +57,7 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:38:36+07:00"
+        "assessed_at": "2026-11-10T18:40:48+07:00"
       },
       "body": [
         "Sebanyak delapan fraksi di DPR disebut telah bersepakat bakal menggunakan hak menyatakan pendapat untuk menindaklanjuti polemik ijazah Gibran Rakabuming.",
@@ -70,14 +70,6 @@
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
-          }
-        },
-        {
-          "q": "Apa itu DPR?",
-          "a": "Dewan Perwakilan Rakyat, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
-          "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
           }
         },
         {
@@ -95,6 +87,14 @@
             "outlet": "UUD 1945 Pasal 7B",
             "url": "https://www.mpr.go.id/"
           }
+        },
+        {
+          "q": "Siapa Puan Maharani?",
+          "a": "Ketua DPR RI periode 2024–2029, politikus PDI-P, dan putri Megawati Soekarnoputri. Sebagai ketua, ia menentukan apakah usulan masuk agenda paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
         }
       ],
       "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
@@ -109,35 +109,35 @@
           "url": "https://www.cnnindonesia.com/nasional/20261110103006-32-1425284/dpr-disebut-sepakat-pakai-hak-menyatakan-pendapat-soal-gibran",
           "published_at": "2026-11-10T10:35:11+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/hampir-50-anggota-dpr-teken-usulan-hmp-pemakzulan-gibran-idDb",
+          "published_at": "2026-11-10T15:52:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332085/pkb-ungkap-komunikasi-delapan-partai-soal-polemik-ijazah-gibran",
           "published_at": "2026-11-10T10:59:00+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/usulan-hmp-pemakzulan-gibran-bergulir-di-dpr-puan-buka-suara-idCY",
-          "published_at": "2026-11-10T14:22:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
           "published_at": "2026-11-10T15:41:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "harianjogja.com",
           "url": "https://jogjapolitan.harianjogja.com/r-1278373/aliansi-jogja-memanggil-sorot-represi-kriminalitas",
           "published_at": "2026-11-10T16:10:51+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         }
       ],
       "place": "nasional",
@@ -148,6 +148,101 @@
     },
     {
       "id": "c2",
+      "type": "news",
+      "topic_id": "t_putusan_lengkap_ma_soal_pembat_e098",
+      "angle": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran",
+      "kicker": "Nasional",
+      "title": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-10T18:40:48+07:00"
+      },
+      "body": [
+        "MA membatalkan surat keterangan penyetaraan pendidikan Gibran Rakabuming. Putusan ini mempertimbangkan juga putusan MA.",
+        "MA merilis putusan perkara Nomor 742 K/TUN/2026 yang membatalkan Surat Keterangan Penyetaraan Pendidikan SMA Gibran Rakabuming. Simak putusan lengkapnya."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka?",
+          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud kebijakan publik?",
+          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
+      "image": {
+        "url": "assets/05ba398e47.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Putusan Lengkap MA soal Pembatalan Suket Penyetaraan SMA Gibran"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110160059-12-1425494/putusan-lengkap-ma-soal-pembatalan-suket-penyetaraan-sma-gibran",
+          "published_at": "2026-11-10T16:55:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746999/ini-putusan-lengkap-ma-batalkan-suket-ijazah-sma-gibran",
+          "published_at": "2026-11-10T17:07:27+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/ini-isi-pertimbangan-lengkap-ma-batalkan-surat-penyetaraan-ijazah-sma-gibran-28XvgF9bxAy",
+          "published_at": "2026-11-10T17:39:24+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/10/337/3253272/gibran-saya-akan-ajukan-pk-usai-ma-nyatakan-suket-ijazah-sma-tidak-sah",
+          "published_at": "2026-11-10T18:14:00+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1770557/13/gibran-bakal-ajukan-pk-usai-ma-nyatakan-suket-ijazah-sma-nya-tidak-sah-1794309119",
+          "published_at": "2026-11-10T18:22:18+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
       "type": "news",
       "topic_id": "t_bp_lepas_bisnis_spbu_di_indone_a142",
       "angle": "BP Lepas Bisnis SPBU di Indonesia, AKR Caplok 100 Persen Saham",
@@ -168,7 +263,7 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:38:36+07:00"
+        "assessed_at": "2026-11-10T18:40:48+07:00"
       },
       "body": [
         "BP Global Investments Limited melepas bisnis SPBU di Indonesia setelah PT AKR Corporindo Tbk menyelesaikan akuisisi 100 persen kepemilikan saham.",
@@ -204,21 +299,21 @@
           "url": "https://www.cnnindonesia.com/ekonomi/20261110084230-92-1425233/bp-lepas-bisnis-spbu-di-indonesia-akr-caplok-100-persen-saham",
           "published_at": "2026-11-10T09:31:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/bp-hengkang-dari-bisnis-spbu-indonesia-akr-caplok-sisa-saham-idCo",
           "published_at": "2026-11-10T10:48:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261110095544-4-783796/shell-bp-cabut-ini-daftar-perusahaan-yang-masih-berbisnis-spbu-di-ri",
           "published_at": "2026-11-10T10:11:10+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         }
       ],
       "place": "nasional",
@@ -228,103 +323,9 @@
       "changes": []
     },
     {
-      "id": "c3",
-      "type": "deep_dive",
-      "topic_id": "t_kapolri_tarik_komjen_syahar_da_d8e3",
-      "angle": "Rekap 1 hari",
-      "kicker": "Mendalam",
-      "title": "DPR Akan Raker Khusus dengan Polri Bahas Penyadapan Prabowo",
-      "status": "sebagian",
-      "truth": {
-        "claim": "DPR Akan Raker Khusus dengan Polri Bahas Penyadapan Prabowo",
-        "status": "sebagian",
-        "confidence": 0.83,
-        "band": "kemungkinan_besar",
-        "basis": {
-          "strongest": "two_independent_tier2",
-          "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 3,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-10T18:38:36+07:00"
-      },
-      "body": [
-        "Komisi III DPR segera menggelar raker khusus dengan Polri untuk mengusut motif dan aktor intelektual penyadapan ilegal Presiden oleh Listyo Sigit cs.",
-        "Dua jenderal bintang tiga yang sebelumnya di KSP bersama Jenderal Listyo Sigit Prabowo ditarik kembali ke Mabes Polri.",
-        "Komjen Syahar Diantono dicabut dari penugasan di KSP oleh Kapolri Suyudi. Ia kini menjabat sebagai Analis Kebijakan Utama di Lemdiklat Polri."
-      ],
-      "explain": [
-        {
-          "q": "Apa dasar hukum penyadapan di Indonesia?",
-          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
-          "source": {
-            "outlet": "UU ITE",
-            "url": "https://www.kominfo.go.id/"
-          }
-        },
-        {
-          "q": "Siapa Listyo Sigit Prabowo?",
-          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo. Ia pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
-          "source": {
-            "outlet": "Polri",
-            "url": "https://www.polri.go.id/"
-          }
-        }
-      ],
-      "action": "Ini bacaan panjang. Edisi harian sudah selesai tanpanya.",
-      "image": null,
-      "sources": [
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/dpr-akan-raker-khusus-dengan-polri-bahas-penyadapan-prabowo-idAe",
-          "published_at": "2026-11-09T11:35:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
-        },
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261110100113-20-1425271/kapolri-tarik-komjen-syahar-dan-yuda-gustawan-dari-penugasan-di-ksp",
-          "published_at": "2026-11-10T10:26:57+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
-        },
-        {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261110125316-4-783874/kapolri-mutasi-2-komjen-polisi-di-tengah-penyidikan-penyadapan-prabowo",
-          "published_at": "2026-11-10T12:57:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
-        }
-      ],
-      "revision": 1,
-      "first_seen": "2026-11-09",
-      "previous_edition": null,
-      "changes": [],
-      "dek": "Komisi III DPR segera menggelar raker khusus dengan Polri untuk mengusut motif dan aktor intelektual penyadapan ilegal Presiden oleh Listyo Sigit cs.",
-      "optional": true,
-      "read_min": 4,
-      "stats": [
-        {
-          "value": "6",
-          "label": "artikel"
-        },
-        {
-          "value": "3",
-          "label": "media"
-        },
-        {
-          "value": "1 hari",
-          "label": "berjalan"
-        }
-      ]
-    },
-    {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_komisi_iii_desak_kejagung_ungk_c957",
+      "topic_id": "t_komisi_iii_desak_kejagung_ungk_91c7",
       "angle": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel Sultra",
       "kicker": "Kriminal",
       "title": "Komisi III Desak Kejagung Ungkap Dugaan Beking Bos Nikel Sultra",
@@ -337,13 +338,13 @@
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 2,
-          "independent_outlets": 3,
+          "tier2": 3,
+          "independent_outlets": 4,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:38:36+07:00"
+        "assessed_at": "2026-11-10T18:40:48+07:00"
       },
       "body": [
         "Anggota DPR Rudianto Lallo mendesak Kejaksaan Agung ungkap pelindung tambang ilegal Arif Kurniawan di Sulawesi Tenggara. Penindakan harus tegas dan menyeluruh.",
@@ -379,21 +380,28 @@
           "url": "https://www.cnnindonesia.com/nasional/20261109221545-12-1425172/komisi-iii-desak-kejagung-ungkap-dugaan-beking-bos-nikel-sultra",
           "published_at": "2026-11-10T01:25:46+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746453/kejagung-kembali-geledah-6-lokasi-terkait-kasus-nikel-ilegal-di-sultra",
+          "published_at": "2026-11-10T13:15:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "liputan6.com",
           "url": "https://www.liputan6.com/news/read/8332361/kejagung-tetapkan-pt-bsj-tersangka-kasus-korupsi-tambang-nikel",
           "published_at": "2026-11-10T16:09:25+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/kejagung-pt-bsj-milik-arif-kurniawan-jadi-tersangka-korporasi-idCQ",
           "published_at": "2026-11-10T13:10:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         }
       ],
       "place": "nasional",
@@ -405,38 +413,38 @@
     {
       "id": "c5",
       "type": "news",
-      "topic_id": "t_gibran_mohon_ke_prabowo_diberi_410e",
-      "angle": "Gibran Mohon ke Prabowo Diberi Kesempatan Buktikan Keabsahan Ijazahnya di PTUN",
+      "topic_id": "t_propam_polri_gelar_sidang_etik_1188",
+      "angle": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus Penyadapan",
       "kicker": "Kriminal",
-      "title": "Gibran Mohon ke Prabowo Diberi Kesempatan Buktikan Keabsahan",
-      "status": "belum",
+      "title": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus Penyadapan",
+      "status": "sebagian",
       "truth": {
-        "claim": "Gibran Mohon ke Prabowo Diberi Kesempatan Buktikan Keabsahan Ijazahnya di PTUN",
-        "status": "belum",
-        "confidence": 0.38,
-        "band": "diragukan",
+        "claim": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus Penyadapan",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
         "basis": {
-          "strongest": "tier3_only",
+          "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 0,
-          "independent_outlets": 3,
+          "tier2": 4,
+          "independent_outlets": 5,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-10T18:38:36+07:00"
+        "assessed_at": "2026-11-10T18:40:48+07:00"
       },
       "body": [
-        "Wakil Presiden (Wapres) Gibran Rakabuming Raka memohon kepada Presiden Prabowo Subianto agar diberi kesempatan untuk membuktikan keabsahan ijazah yang dimilikinya melalui proses hukum di Pengadilan Tata Usaha Negara (PTUN). Hal tersebut disampaikan saat menemui Presiden Prabowo, Selasa (10/11/2026).",
-        "Menteri Koordinator Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan Yusril Ihza Mahendra menyebut tidak ada lagi jalur hukum bagi Wakil Presiden (Wapres) Gibran Rakabuming Raka untuk membuktikan keabsahan ijazahnya melalui pengadilan."
+        "Propam Polri menggelar sidang etik terhadap mantan Kadivkum Polri Irjen Ahrie Sonta, pada Selasa (10/11) hari ini.",
+        "Polri menggelar sidang Komisi Kode Etik Profesi terhadap Kepala Divisi Hukum (Kadivkum) Polri Irjen Ahrie Sonta."
       ],
       "explain": [
         {
-          "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "q": "Apa dasar hukum penyadapan di Indonesia?",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
           "source": {
-            "outlet": "Wapres RI",
-            "url": "https://www.wapresri.go.id/"
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
           }
         },
         {
@@ -450,31 +458,45 @@
       ],
       "action": "Hindari menyebar identitas korban atau tersangka.",
       "image": {
-        "url": "assets/e5f05d5ddd.webp",
-        "credit": "okezone.com",
-        "alt": "Gibran Mohon ke Prabowo Diberi Kesempatan Buktikan Keabsahan"
+        "url": "assets/1f1d54c8e8.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Propam Polri Gelar Sidang Etik Irjen Ahrie Sonta di Kasus Penyadapan"
       },
       "sources": [
         {
-          "outlet": "okezone.com",
-          "url": "https://news.okezone.com/read/2026/11/10/337/3253223/gibran-mohon-ke-prabowo-diberi-kesempatan-buktikan-keabsahan-ijazahnya-di-ptun",
-          "published_at": "2026-11-10T15:48:01+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
+          "published_at": "2026-11-10T11:36:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
-          "outlet": "republika.co.id",
-          "url": "https://news.republika.co.id/berita/toa8mv409/gibran-mohon-ke-prabowo-ambil-langkah-hukum-pdip-heran-ptun-tak-bisa-anulir-putusan-ma",
-          "published_at": "2026-11-10T17:47:19+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746270/polri-gelar-sidang-etik-irjen-ahrie-sonta-tersangka-penyadapan-prabowo",
+          "published_at": "2026-11-10T11:42:40+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         },
         {
-          "outlet": "sindonews.com",
-          "url": "https://nasional.sindonews.com/read/1770531/13/yusril-gibran-tak-punya-jalur-hukum-untuk-buktikan-keabsahan-ijazahnya-1794305461",
-          "published_at": "2026-11-10T17:31:47+07:00",
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
+          "published_at": "2026-11-10T11:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332157/tersangka-penyadapan-prabowo-irjen-ahrie-sonta-jalani-sidang-etik",
+          "published_at": "2026-11-10T12:10:29+07:00",
           "tier": 3,
-          "accessed_at": "2026-11-10T18:38:36+07:00"
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110125316-4-783874/kapolri-mutasi-2-komjen-polisi-di-tengah-penyidikan-penyadapan-prabowo",
+          "published_at": "2026-11-10T12:57:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
         }
       ],
       "place": "nasional",
@@ -482,6 +504,58 @@
       "first_seen": "2026-11-10",
       "previous_edition": null,
       "changes": []
+    },
+    {
+      "id": "c6",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_10",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Yang beredar, dan yang sudah dibantah",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "3 klaim diperiksa hari ini. Semuanya dari TurnBackHoax."
+      ],
+      "action": "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-10T18:40:48+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Dasco Akan Gantikan Gibran sebagai Wapres",
+          "verdict": "salah",
+          "reason": "Dasco telah membantah isu tersebut dan menyebutnya sebagai upaya pengalihan perhatian dari dugaan kasus penyadapan ilegal.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37414-salah-dasco-akan-gantikan-gibran-sebagai-wapres"
+        },
+        {
+          "claim": "Rekaman Suara Prabowo Hasil Penyadapan",
+          "verdict": "salah",
+          "reason": "Audio tersebut merupakan potongan wawancara Prabowo dalam program Satu Jam Lebih Dekat Bersama Prabowo di tvOne pada Senin (15/9/2014), bukan rekaman hasil penyadapan yang baru bocor ke publik.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37415-salah-rekaman-suara-prabowo-hasil-penyadapan"
+        },
+        {
+          "claim": "Listyo Sigit Ungkap bahwa Sri Mulyani yang Menyetujui Anggaran Menyadap Presiden Prabowo",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan bukti bahwa Listyo Sigit mengungkapkan bahwa Sri Mulyani yang memberikan persetujuan anggaran untuk menyadap Presiden Prabowo.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37417-salah-listyo-sigit-ungkap-bahwa-sri-mulyani-yang-menyetujui-anggaran-menyadap-presiden-prabowo"
+        }
+      ],
+      "pattern": null
     }
   ]
 }
