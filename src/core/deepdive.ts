@@ -167,7 +167,7 @@ export async function buildDeepDiveWithLlm(
   let raw: RawDeepDive | null = null;
   for (let i = 0; i < 2 && !raw; i++) {
     try {
-      const { data } = await deps.llm.json<RawDeepDive>({ model: deps.model, system, user, maxTokens: 2200 });
+      const { data } = await deps.llm.json<RawDeepDive>({ model: deps.model, system, user, maxTokens: 3600 });
       raw = data;
     } catch {
       raw = null;

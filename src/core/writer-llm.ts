@@ -266,7 +266,7 @@ export async function writeCardWithLlm(
           model: deps.model,
           system: attempt === 0 ? system : system + retryNote,
           user,
-          maxTokens: 2600,
+          maxTokens: 3800,
         });
         raw = data;
       } catch (e) {
