@@ -381,22 +381,27 @@ export interface LlmAdapter {
 
 ### 11.2 Konfigurasi
 
+**Yang dipakai pipeline sekarang:** satu penyedia (`LLM_PROVIDER`) dan satu model
+(`OPENCODE_MODEL`) untuk semua peran. Blok `capabilities` per-kapabilitas di
+bawah **belum terpasang** — `src/config/llm.ts` hanya menyediakan tipe dan
+validator, belum dibaca `scripts/build.ts`. Jangan menjadikannya acuan.
+
 ```yaml
-# config/llm.yaml
+# RENCANA, belum aktif — jangan dikira konfigurasi berjalan.
 capabilities:
-  adjudicate: { provider: deepseek, model: deepseek-chat }
-  write:      { provider: deepseek, model: deepseek-chat }
-  verify:     { provider: deepseek, model: deepseek-v4-pro }
+  adjudicate: { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
+  write:      { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
+  verify:     { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
   embed:      { provider: local,    model: Xenova/multilingual-e5-small }
 ```
 
 | Env | Isi |
 |---|---|
-| `LLM_PROVIDER` | Opsional; paksa `opencode` atau `deepseek`. Tanpa ini, urutannya opencode → deepseek |
+| `LLM_PROVIDER` | `opencode` (default) atau `deepseek`. Tanpa ini: opencode → deterministik. DeepSeek **tidak** dipakai otomatis (`DEC-0016`) |
 | `OPENCODE_BIN` | Path CLI opencode jika tidak ada di PATH (mis. `~/.opencode/bin/opencode`) |
-| `OPENCODE_MODEL` | Override id `provider/model` opencode (default `opencode-go/deepseek-v4.1-flash`) |
-| `DEEPSEEK_API_KEY` | Kunci API DeepSeek; dipakai sebagai cadangan |
-| `DEEPSEEK_MODEL` | Default `deepseek-chat` |
+| `OPENCODE_MODEL` | Default `opencode-go/deepseek-v4.1-flash`; satu model untuk semua peran (`DEC-0017`) |
+| `DEEPSEEK_API_KEY` | Hanya dipakai bila `LLM_PROVIDER=deepseek` (`DEC-0016`) |
+| `DEEPSEEK_MODEL` | Default `deepseek-chat`; hanya untuk jalur opt-in itu |
 
 **Urutan penyedia:** opencode → deepseek → writer deterministik.
 

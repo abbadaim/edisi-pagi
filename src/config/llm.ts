@@ -1,3 +1,11 @@
+/**
+ * Tipe dan validator konfigurasi per-kapabilitas.
+ *
+ * BELUM TERPASANG: `scripts/build.ts` belum membaca `config/llm.yaml`. Yang
+ * berjalan sekarang adalah `LLM_PROVIDER` + satu `OPENCODE_MODEL`
+ * (`src/adapters/llm/resolve.ts`), lihat `DEC-0016` dan `DEC-0017`.
+ * Jangan menganggap `DEFAULT_CONFIG` sebagai konfigurasi aktif.
+ */
 import { readFileSync } from "node:fs";
 import { parse as parseYaml } from "yaml";
 
@@ -18,9 +26,9 @@ const CAPABILITIES: Capability[] = ["adjudicate", "write", "verify", "embed"];
 
 export const DEFAULT_CONFIG: LlmConfig = {
   capabilities: {
-    adjudicate: { provider: "deepseek", model: "deepseek-chat" },
-    write: { provider: "deepseek", model: "deepseek-chat" },
-    verify: { provider: "deepseek", model: "deepseek-v4-pro" },
+    adjudicate: { provider: "opencode", model: "opencode-go/deepseek-v4.1-flash" },
+    write: { provider: "opencode", model: "opencode-go/deepseek-v4.1-flash" },
+    verify: { provider: "opencode", model: "opencode-go/deepseek-v4.1-flash" },
     embed: { provider: "local", model: "Xenova/multilingual-e5-small" },
   },
 };

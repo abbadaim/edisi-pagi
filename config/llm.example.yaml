@@ -1,23 +1,21 @@
-# config/llm.yaml — salin ke config/llm.yaml lalu sesuaikan.
-# Lihat INFRA.md §11 dan REQUIREMENTS.md §7.4.
+# config/llm.yaml — CONTOH, BELUM DIPAKAI PIPELINE.
+#
+# `src/config/llm.ts` menyediakan tipe dan validator untuk bentuk ini, tetapi
+# `scripts/build.ts` belum membacanya. Konfigurasi berjalan sekarang hanya
+# LLM_PROVIDER + OPENCODE_MODEL (lihat AGENTS.md §5 dan INFRA.md §11.2).
+#
+# DEC-0016: DeepSeek API langsung tidak dipakai sebagai cadangan. Jalur aktif
+# adalah OpenCode, dengan satu model untuk semua peran (DEC-0017).
 
 capabilities:
-  adjudicate:
-    provider: deepseek          # deepseek | opencode
-    model: deepseek-chat
-  write:
-    provider: deepseek
-    model: deepseek-chat
-  verify:
-    provider: deepseek
-    model: deepseek-v4-pro      # dipakai untuk blok truth & misread
-  embed:
-    provider: local             # deepseek TIDAK punya endpoint embedding
-    model: Xenova/multilingual-e5-small
+  adjudicate: { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
+  write:      { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
+  verify:     { provider: opencode, model: opencode-go/deepseek-v4.1-flash }
+  embed:      { provider: local,    model: Xenova/multilingual-e5-small }
 
-# Alternatif: seluruh pipeline lewat OpenCode (pilih model apa pun di katalog).
+# Jalur DeepSeek langsung: hanya untuk keadaan darurat biaya/operasional dan
+# wajib disertai LLM_PROVIDER=deepseek. Perhatikan biaya per token.
 # capabilities:
-#   adjudicate: { provider: opencode, model: "opencode-go/deepseek-v4.1-flash" }
-#   write:      { provider: opencode, model: "opencode-go/deepseek-v4.1-flash" }
-#   verify:     { provider: opencode, model: "opencode-go/deepseek-v4.1-pro" }
-#   embed:      { provider: local,    model: "Xenova/multilingual-e5-small" }
+#   adjudicate: { provider: deepseek, model: deepseek-chat }
+#   write:      { provider: deepseek, model: deepseek-chat }
+#   verify:     { provider: deepseek, model: deepseek-chat }

@@ -1,7 +1,7 @@
 # 001 — Harness tes UI
 
 ```
-Status: tested (2026-11-11)
+Status: shipped (2026-11-11)
 Kelas: infra
 Dibuat: 2026-11-11
 Diperbarui: 2026-11-11
@@ -124,7 +124,8 @@ Harness ini sendiri adalah tesnya.
    → UI-06 gagal (`page.waitForFunction` timeout 30 detik), tiga uji lain lulus.
    Dipulihkan; hijau lagi.
 7. Suite lokal dijalankan dua kali berturut-turut sebelum `ui.yml` dipasang.
-8. Satu run `ui.yml` nyata di GitHub Actions — menunggu hasil.
+8. Satu run `ui.yml` di GitHub Actions — **hijau, 45 detik** (run `42959300632`),
+   termasuk unduh browser dan cache `ms-playwright`.
 
 ## 6. Risiko dan rollback
 
@@ -195,9 +196,18 @@ maupun fixture). Risikonya terbatas pada mesin lokal dan CI, bukan produksi
   (UI-03, UI-04, UI-06, UI-07), `fixtures/ui/`, `scripts/prepare-ui-fixture.ts`,
   `.github/workflows/ui.yml`, `ROOT` di `serve.ts` (§Revisi v3).
   Hasil: 4 lulus (4,0 detik). Uji negatif UI-06 dijalankan: registrasi SW
-  dirusak → UI-06 gagal (timeout 30 detik). Menunggu `ui.yml` hijau untuk
-  `shipped`.
+  dirusak → UI-06 gagal (timeout 30 detik).
+- `2026-11-11` — `shipped` — `ui.yml` hijau di GitHub (run `42959300632`,
+  45 detik, termasuk unduh browser).
 
-## 8. Pelajaran (diisi setelah `shipped`)
+## 8. Pelajaran
 
-—
+Tiga asersi dari tujuh tidak butuh browser, dan tiga uji negatif membuktikan
+sisanya benar-benar menguji sesuatu. Yang paling berharga bukan Playwright-nya,
+melainkan asersi 404 di luar prefix: tanpa itu suite bisa lulus sambil menguji
+akar domain, dan bug path absolut — alasan harness ini dibuat — tidak pernah
+tereproduksi.
+
+Rencana ini juga membuktikan alurnya sendiri: `plan-draft` yang dibiarkan
+sebentar sebelum implementasi mengubah bentuk rencana secara material
+(§Revisi v2 dan v3).

@@ -99,7 +99,37 @@ sudah dihormati kode lama. Dipulihkan → 4 lulus.
 Rollback: `LLM_PROVIDER=deepseek` dan pulihkan secret. Tidak ada perubahan
 skema, tidak ada migrasi.
 
-## 7. Riwayat
+## 7. Revisi
+
+### v2 — 2026-11-11 — model dipatok ke DeepSeek Flash
+
+**Permintaan.** “In opencode, always use deepseek flash model.”
+
+**Keadaan sebelumnya.** `OPENCODE_MODEL` sudah berisi
+`opencode-go/deepseek-v4.1-flash` di `daily.yml` dan `opencode-smoke.yml`, dan
+itu juga default di `resolve.ts`. Jadi secara praktis sudah benar — tetapi hanya
+sebagai **default yang bisa ditimpa**, tanpa tes yang menjaganya.
+
+**Temuan yang menyertai.**
+
+| Temuan | Bukti |
+|---|---|
+| `src/config/llm.ts` (konfigurasi per-kapabilitas) tidak pernah dibaca | hanya `CapabilityConfig` yang diimpor; `loadLlmConfig`/`validateLlmConfig`/`DEFAULT_CONFIG` tanpa pemanggil |
+| `INFRA.md` §11.2 masih menyebut DeepSeek sebagai cadangan | bertentangan dengan `DEC-0016` |
+| `config/llm.example.yaml` menyarankan `deepseek-v4-pro` untuk `verify` | contoh yang, bila disalin, memakai model lebih mahal |
+
+**Perubahan.** `DEC-0017`; `tests/llm-model.test.ts` mengunci model default dan
+model di kedua workflow, serta memastikan `daily.yml` tidak mengekspor
+`DEEPSEEK_API_KEY`; `INFRA.md` §11.2 dan `config/llm.example.yaml` diselaraskan;
+`src/config/llm.ts` diberi header “belum terpasang”.
+
+**Yang tidak berubah.** Perilaku runtime — konfigurasi per-kapabilitas tetap
+belum dipakai, dan `OPENCODE_MODEL` tetap bisa ditimpa. Yang baru adalah
+peringatan yang terlihat bila model bergeser.
+
+---
+
+## 8. Riwayat
 
 - `2026-11-11` — `plan-draft` — dibuat atas permintaan pemilik proyek: “disable
   deepseek direct api use for now, use opencode exclusively; saldo DeepSeek rendah”.
@@ -107,8 +137,10 @@ skema, tidak ada migrasi.
   yang sama (kelas pipeline: tidak ada mockup).
 - `2026-11-11` — `tested` — 4 uji lulus, uji negatif terbukti gagal pada kode
   lama, `npm test` 199 lulus.
+- `2026-11-11` — `tested` — v2: model dipatok ke `opencode-go/deepseek-v4.1-flash`
+  (`DEC-0017`), tiga uji baru di `tests/llm-model.test.ts`.
 
-## 8. Pelajaran
+## 9. Pelajaran
 
 Biaya adalah kebijakan, bukan efek samping. “Cadangan otomatis” pada penyedia
 berbayar berarti keputusan pengeluaran diambil oleh kegagalan jaringan, bukan

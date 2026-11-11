@@ -121,3 +121,17 @@ dikunci di kode dan di tes, bukan hanya dengan menghapus secret di CI.
 
 Rollback: `LLM_PROVIDER=deepseek` + pulihkan `DEEPSEEK_API_KEY`.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/002-deepseek-opt-in.md`._
+
+## DEC-0017 — OpenCode memakai satu model: DeepSeek Flash
+
+Semua peran (`adjudicate`, `write`, `verify`) memakai
+`opencode-go/deepseek-v4.1-flash` lewat OpenCode. Tidak ada model per-kapabilitas,
+tidak ada model yang lebih mahal untuk satu peran.
+
+Dikunci di dua tempat: default `resolve.ts` dan `OPENCODE_MODEL` di
+`daily.yml`/`opencode-smoke.yml`. `tests/llm-model.test.ts` memastikan keduanya
+sama, sehingga model tidak bisa bergeser diam-diam ke yang lebih mahal.
+
+Sebab: biaya ditanggung pribadi dan satu model menghapus seluruh kelas
+pertanyaan “peran mana memakai model apa”.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/002-deepseek-opt-in.md` §Revisi._
