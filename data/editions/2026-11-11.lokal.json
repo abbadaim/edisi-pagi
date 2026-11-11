@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-11",
   "scope": "lokal",
-  "published_at": "2026-11-11T08:59:00+07:00",
+  "published_at": "2026-11-11T09:08:15+07:00",
   "coverage": {
-    "from": "2026-11-10T08:59:00+07:00",
-    "to": "2026-11-11T08:59:00+07:00"
+    "from": "2026-11-10T09:08:15+07:00",
+    "to": "2026-11-11T09:08:15+07:00"
   },
-  "generated_at": "2026-11-11T08:59:00+07:00",
+  "generated_at": "2026-11-11T09:08:15+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -39,12 +39,12 @@
       "id": "c1",
       "type": "news",
       "topic_id": "t_sultan_hb_x_jawab_tuntutan_ump_f058",
-      "angle": "Sultan HB X duduk lesehan bersama demonstran dan menanggapi tuntutan UMP DIY sesuai KHL",
+      "angle": "Dialog Sultan HB X dengan massa aksi di Yogyakarta soal tuntutan upah sesuai KHL",
       "kicker": "DIY",
-      "title": "Sultan HB X Temui Demonstran, Tanggapi Tuntutan UMP DIY",
+      "title": "Sultan HB X Temui Demonstran, Bicara UMP DIY dan KHL",
       "status": "sebagian",
       "truth": {
-        "claim": "Sultan HB X menemui massa aksi dan menanggapi tuntutan agar UMP DIY disesuaikan dengan KHL, tetapi rincian jawaban soal angka Rp4,6 juta dan langkah lanjutan Pe",
+        "claim": "Sultan HB X menemui massa aksi pada 10 November 2026 dan menyatakan penentuan upah minimum mengikuti regulasi Menteri Tenaga Kerja serta pembahasan Dewan Pengup",
         "status": "sebagian",
         "confidence": 0.8,
         "band": "kemungkinan_besar",
@@ -57,39 +57,42 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T08:59:00+07:00"
+        "assessed_at": "2026-11-11T09:08:15+07:00"
       },
       "body": [
-        "Di Yogyakarta, Sultan HB X menemui langsung massa aksi yang menuntut Upah Minimum Provinsi (UMP) DIY disesuaikan dengan Kebutuhan Hidup Layak (KHL). Dalam pertemuan itu, menurut pemberitaan detik.com, massa aksi menyampaikan tuntutan agar UMP DIY mengikuti angka KHL, dan Sultan HB X memberikan tanggapan atas tuntutan tersebut. Tirto.id melaporkan bahwa Sultan HB X berdialog dan berdiskusi dengan massa aksi dari AJM sambil duduk lesehan, membahas berbagai permasalahan di DIY. Namun, rincian isi jawaban Sultan soal angka KHL Rp4,6 juta belum dijelaskan dalam bahan yang tersedia, sehingga detail itu belum jelas.",
-        "Terkait langkah lanjutan Pemda DIY untuk penetapan UMP, bahan yang ada belum memuat keterangan resmi mengenai tahapan atau jadwal penetapannya, sehingga detail itu belum diumumkan. Yang tergambar dari pemberitaan adalah bahwa persoalan UMP DIY menjadi salah satu topik yang dibahas dalam dialog antara Sultan HB X dan massa aksi, dan respons atas tuntutan tersebut disampaikan dalam pertemuan itu. Perlu dicatat, bahan hanya menyebut massa aksi dari AJM tanpa merinci siapa saja yang terlibat, dan angka KHL Rp4,6 juta disebut sebagai bagian dari tuntutan tanpa penjelasan lebih lanjut soal perhitungannya."
+        "Gubernur DIY Sultan Hamengku Buwono X menemui massa aksi di Yogyakarta pada Selasa (10/11/2026) dan berdialog soal tuntutan upah buruh, termasuk permintaan agar upah minimum di DIY ditetapkan sesuai komponen hidup layak (KHL). Dialog itu berlangsung di tengah rangkaian aksi Hari Pahlawan. Menurut pemberitaan Tirto, Sultan duduk lesehan bersama massa dari AJM untuk membahas berbagai persoalan di DIY. Peristiwa ini menyangkut warga pekerja di Sleman dan DIY yang terdampak kebijakan upah provinsi.",
+        "Dalam dialog itu, perwakilan massa menyampaikan lima tuntutan. Salah satunya, seperti dikutip detik.com, penetapan upah buruh di DIY sesuai KHL, tindak lanjut Mandala Krida, dan penghentian kriminalisasi terhadap masyarakat, ojol, serta mahasiswa. Namun rincian kelima tuntutan itu tidak diuraikan satu per satu dalam bahan yang tersedia, sehingga isi lengkapnya belum jelas.",
+        "Angka yang muncul cukup spesifik. Detik.com mencatat hasil hitungan KHL DIY yang dipublikasikan Kemnaker akhir 2025 sebesar Rp 4.604.982, sementara UMP DIY 2026 sebesar Rp 2.417.495. Sultan menyatakan belum mengetahui keputusan Menteri Tenaga Kerja soal UMR. Ia menjelaskan dasar penentuan upah mengikuti tahun sebelumnya, yaitu pertumbuhan ekonomi daerah, inflasi daerah, dan faktor alfa 0,1 sampai 0,9. Ia juga menyebut Dewan Pengupahan melibatkan buruh dan pengusaha.",
+        "Sultan menegaskan pemerintah provinsi tidak bisa memaksa dalam perundingan upah. Meski begitu, ia menyatakan Pemprov DIY akan berusaha agar kenaikan upah maksimal. Ia mencontohkan tahun lalu faktor alfa yang semula disepakati 0,4 bisa dinaikkan menjadi 0,8 setelah negosiasi dengan pengusaha. Menurutnya, dengan pertumbuhan ekonomi 5% dan inflasi 2–3%, kenaikan upah hanya sekitar 8%.",
+        "Yang belum jelas adalah keputusan akhir UMP DIY dan apakah tuntutan KHL akan dipenuhi. Sultan menyebut keputusan Menteri Tenaga Kerja belum diketahui saat dialog berlangsung. Langkah berikutnya adalah pembahasan di Dewan Pengupahan serta keputusan pemerintah pusat. Sampai bahan ini disusun, belum ada keterangan resmi soal hasil akhir perundingan maupun respons massa aksi terhadap penjelasan Sultan."
       ],
       "explain": [
         {
-          "q": "Apa itu KHL dan bagaimana kaitannya dengan penetapan UMP?",
-          "a": "KHL adalah standar kebutuhan hidup layak yang menjadi salah satu acuan dalam perhitungan upah minimum; bahan tidak merinci metode perhitungannya.",
+          "q": "Apa itu KHL dan bagaimana hubungannya dengan UMP?",
+          "a": "KHL adalah komponen hidup layak yang menjadi acuan penghitungan upah; dalam bahan, KHL DIY disebut Rp 4.604.982, jauh di atas UMP DIY 2026 Rp 2.417.495.",
           "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Unjuk_rasa"
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         },
         {
-          "q": "Apa itu unjuk rasa dan mengapa massa mendatangi pejabat secara langsung?",
-          "a": "Unjuk rasa adalah gerakan protes di hadapan umum untuk menyatakan pendapat atau menekan kebijakan; bahan tidak menjelaskan alasan spesifik massa memilih dialog langsung.",
+          "q": "Apa itu faktor alfa dalam penentuan upah minimum?",
+          "a": "Faktor alfa adalah angka 0,1 sampai 0,9 yang dipakai bersama pertumbuhan ekonomi dan inflasi daerah sebagai dasar kenaikan upah, menurut penjelasan Sultan.",
           "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Unjuk_rasa"
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         },
         {
-          "q": "Siapa AJM yang disebut sebagai massa aksi?",
-          "a": "Bahan hanya menyebut AJM sebagai asal massa aksi tanpa merinci kepanjangan atau afiliasinya.",
+          "q": "Apa peran Dewan Pengupahan?",
+          "a": "Dewan Pengupahan menjadi forum pembahasan upah yang melibatkan buruh dan pengusaha, seperti disebut Sultan dalam dialog.",
           "source": {
             "outlet": "detik.com",
             "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         }
       ],
-      "action": "Pantau pernyataan resmi Pemda DIY soal tahapan penetapan UMP agar tidak bergantung pada satu kutipan.",
+      "action": "Pantau keputusan UMP DIY dan hasil pembahasan Dewan Pengupahan untuk melihat apakah tuntutan KHL direspons.",
       "image": null,
       "sources": [
         {
@@ -97,14 +100,89 @@
           "url": "https://tirto.id/sultan-hb-x-temui-demonstran-jawab-kritik-kondisi-sosial-di-diy-idD8",
           "published_at": "2026-11-10T21:10:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T08:59:00+07:00"
+          "accessed_at": "2026-11-11T09:08:15+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta",
           "published_at": "2026-11-10T19:55:09+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T08:59:00+07:00"
+          "accessed_at": "2026-11-11T09:08:15+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 2,
+      "first_seen": "2026-11-11",
+      "previous_edition": "2026-11-10",
+      "changes": [],
+      "unresolved": [
+        "Apa jawaban Sultan HB X terkait angka KHL Rp4,6 juta?",
+        "Apa langkah lanjutan Pemda DIY untuk penetapan UMP?"
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_investasi_kulonprogo_tembus_rp_da39",
+      "angle": "Realisasi investasi Kulonprogo triwulan III 2026 dan dominasi UMKM",
+      "kicker": "Kulon Progo",
+      "title": "Investasi Kulonprogo Rp121 Miliar, UMKM Masih Dominan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Realisasi investasi Kulonprogo mencapai Rp121 miliar hingga triwulan III 2026, sekitar 70 persen dari target Rp170 miliar, dengan UMKM sebagai sektor dominan.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T09:08:15+07:00"
+      },
+      "body": [
+        "Investasi di Kabupaten Kulonprogo, DIY, telah mencapai Rp121 miliar hingga triwulan III 2026. Kepala Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP) Kulonprogo, Sarji, menyebut angka itu sekitar 70 persen dari target tahunan Rp170 miliar. Menurutnya, sektor UMKM masih menjadi penopang utama, sementara usaha berskala besar atau Non-UMK belum menunjukkan kontribusi maksimal. Data kegiatan usaha menunjukkan 98 persen pelaku usaha di Kulonprogo berasal dari segmen UMK dan hanya sekitar 2 persen Non-UMK.",
+        "Salah satu investasi yang masuk tahun ini berasal dari jasa kesehatan, yakni pembangunan Rumah Sakit Swasta PKU Muhammadiyah untuk wilayah Kulonprogo bagian selatan senilai Rp16,7 miliar. Capaian 2026 masih di bawah 2025 yang mencapai Rp415 miliar atau melampaui target, antara lain ditopang PT Pertamina Patra Niaga di sektor perdagangan avtur Bandara YIA. Sektor pariwisata belum menjadi penyumbang utama. Dengan realisasi Rp121 miliar, masih ada selisih sekitar Rp49 miliar yang perlu dikejar hingga akhir tahun; Sarji optimistis target tercapai, namun rincian strategi dan status pencapaian terbaru belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPMPTSP dan apa tugasnya di tingkat kabupaten?",
+          "a": "DPMPTSP adalah dinas yang menangani penanaman modal serta pelayanan perizinan terpadu satu pintu di daerah; di Kulonprogo dinas ini yang melaporkan realisasi investasi.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278226/investasi-kulonprogo-tembus-rp121-miliar-umkm-masih-dominan"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud UMK dan Non-UMK dalam data investasi ini?",
+          "a": "UMK merujuk pada usaha mikro dan kecil, sedangkan Non-UMK adalah usaha berskala besar; data menyebut 98 persen pelaku usaha di Kulonprogo adalah UMK dan sekitar 2 persen Non-UMK.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278226/investasi-kulonprogo-tembus-rp121-miliar-umkm-masih-dominan"
+          }
+        },
+        {
+          "q": "Mengapa capaian 2025 bisa jauh lebih tinggi dari 2026?",
+          "a": "Menurut DPMPTSP, masuknya korporasi besar seperti PT Pertamina Patra Niaga di sektor avtur Bandara YIA menopang tingginya realisasi 2025, berbeda dengan struktur 2026 yang lebih banyak ditopang UMKM.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278226/investasi-kulonprogo-tembus-rp121-miliar-umkm-masih-dominan"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman realisasi investasi Kulonprogo akhir tahun untuk melihat apakah target Rp170 miliar tercapai.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278226/investasi-kulonprogo-tembus-rp121-miliar-umkm-masih-dominan",
+          "published_at": "2026-11-11T08:07:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T09:08:15+07:00"
         }
       ],
       "place": "lokal",
@@ -114,82 +192,15 @@
       "changes": []
     },
     {
-      "id": "c2",
-      "type": "news",
-      "topic_id": "t_sim_keliling_polda_diy_hari_in_bdb8",
-      "angle": "Jadwal SIM Keliling Polda DIY di Kapanewon Godean dan syarat perpanjangan SIM",
-      "kicker": "Yogyakarta",
-      "title": "SIM Keliling Polda DIY di Godean: Jadwal dan Syaratnya",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Sumber menyebut layanan SIM Keliling Polda DIY di Kantor Kapanewon Godean pukul 08.30–13.00 WIB, namun penanda hari dan tanggalnya belum konsisten: artikel meny",
-        "status": "sebagian",
-        "confidence": 0.55,
-        "band": "belum_pasti",
-        "basis": {
-          "strongest": "one_tier2",
-          "primary": 0,
-          "tier2": 1,
-          "independent_outlets": 1,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-11T08:59:00+07:00"
-      },
-      "body": [
-        "Warga Sleman yang ingin memperpanjang SIM bisa memanfaatkan layanan SIM Keliling Polda DIY di Kantor Kapanewon Godean. Layanan yang diselenggarakan Direktorat Lalu Lintas (Ditlantas) Polda DIY ini menjadi alternatif tanpa harus mendatangi kantor Satpas. Sumber menyebut pelayanan dijadwalkan pukul 08.30–13.00 WIB, namun penanda hari dan tanggalnya belum konsisten: artikel menyebut 'Selasa (10/11/2026)' sekaligus 'hari ini' pada artikel bertanggal 11 November 2026, sementara daftar lokasi bulanan menempatkan Godean pada hari Rabu. Karena itu hari pastinya sebaiknya dikonfirmasi ulang sebelum berangkat. Belum ada pejabat atau narasumber bernama yang dikutip dalam bahan; informasi disampaikan melalui pemberitaan Harian Jogja.",
-        "Pemohon perlu menyiapkan SIM lama yang masih berlaku, e-KTP asli beserta fotokopi, surat keterangan sehat jasmani, hasil tes psikologi, serta pas foto bila diminta petugas. Biaya tambahan diperkirakan sekitar Rp25.000–Rp35.000 untuk pemeriksaan kesehatan dan Rp60.000–Rp110.000 untuk tes psikologi, di luar tarif PNBP yang mengacu pada ketentuan resmi. Layanan keliling umumnya hanya melayani perpanjangan SIM yang masih aktif; bila masa berlaku habis, pemohon harus mengikuti prosedur SIM baru. Karena kuota tiap hari disebut dapat terbatas, datang lebih awal dianjurkan. Yang belum jelas adalah kepastian hari pelayanan di Godean serta rincian tarif PNBP, sehingga langkah berikutnya adalah memastikan jadwal dan ketersediaan layanan sebelum berangkat."
-      ],
-      "explain": [
-        {
-          "q": "Apa itu SIM Keliling dan siapa yang menyelenggarakannya?",
-          "a": "SIM Keliling adalah layanan perpanjangan SIM di luar kantor Satpas; di DIY layanan ini diselenggarakan Ditlantas Polda DIY.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Surat_izin_mengemudi"
-          }
-        },
-        {
-          "q": "Apa fungsi SIM menurut definisi umum?",
-          "a": "SIM adalah dokumen resmi yang mengizinkan seseorang mengoperasikan jenis kendaraan bermotor tertentu di jalan raya.",
-          "source": {
-            "outlet": "Wikipedia",
-            "url": "https://id.wikipedia.org/wiki/Surat_izin_mengemudi"
-          }
-        }
-      ],
-      "action": "Pastikan dulu hari dan jam layanan SIM Keliling di Kapanewon Godean sebelum berangkat membawa berkas.",
-      "image": null,
-      "sources": [
-        {
-          "outlet": "harianjogja.com",
-          "url": "https://jogjapolitan.harianjogja.com/r-1278423/sim-keliling-polda-diy-hari-ini-di-kantor-kapanewon-godean-cek-syaratnya",
-          "published_at": "2026-11-11T06:27:18+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-11T08:59:00+07:00"
-        }
-      ],
-      "place": "lokal",
-      "revision": 3,
-      "first_seen": "2026-11-11",
-      "previous_edition": "2026-11-10",
-      "changes": [],
-      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
-      "unresolved": [
-        "Belum pasti: Pelayanan hari ini dijadwalkan berlangsung di Kantor Kapanewon Godean dengan jam operasional mulai pukul…"
-      ]
-    },
-    {
       "id": "c3",
       "type": "news",
       "topic_id": "t_diduga_mabuk_pengemudi_mobil_t_da39",
-      "angle": "Polresta Sleman menangkap pengemudi yang diduga mabuk setelah tabrak lari dari Demak Ijo",
+      "angle": "Polresta Sleman menangkap pengemudi tabrak lari dari Demak Ijo hingga Turi; diduga mabuk.",
       "kicker": "Sleman",
-      "title": "Pengemudi Diduga Mabuk Ditangkap Usai Tabrak Lari di Sleman",
+      "title": "Pengemudi Tabrak Lari di Sleman Ditangkap, Diduga Mabuk",
       "status": "sebagian",
       "truth": {
-        "claim": "Polresta Sleman menangkap seorang pengemudi yang diduga mabuk setelah terlibat tabrak lari dari Demak Ijo hingga Turi.",
+        "claim": "Polresta Sleman menangkap seorang pengemudi yang diduga terlibat tabrak lari dari Demak Ijo hingga Turi dan diduga mabuk.",
         "status": "sebagian",
         "confidence": 0.55,
         "band": "belum_pasti",
@@ -202,39 +213,39 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T08:59:00+07:00"
+        "assessed_at": "2026-11-11T09:08:15+07:00"
       },
       "body": [
-        "Polresta Sleman mengamankan seorang pengemudi mobil yang diduga terlibat serangkaian insiden tabrak lari di wilayah hukum Polresta Sleman, DIY. Menurut keterangan Ps. Kasi Humas Polresta Sleman, Iptu Argo Anggoro, rangkaian kejadian bermula dari kecelakaan tabrak lari di kawasan Simpang Empat Demak Ijo. Kendaraan itu kemudian melaju ke arah Turi dan kembali ke selatan wilayah Sleman. Pengemudi akhirnya diamankan petugas di kawasan SPBU Dukuh, Sleman, setelah sebelumnya berusaha kabur dari kejaran masyarakat di lokasi kejadian.",
-        "Dalam perjalanan melarikan diri, pengemudi diduga terlibat beberapa insiden kecelakaan dan sejumlah orang menjadi korban. Polisi menduga pengemudi berada di bawah pengaruh minuman keras, meski Argo menegaskan informasi itu masih data awal. Sebelumnya, narasi soal kejadian ini beredar viral di Instagram, menyebut pengemudi tertangkap di Jalan Magelang Km. 11 dekat SPBU Dukuh dan banyak korban di sepanjang Jalan Turi. Namun jumlah korban, jumlah insiden, serta identitas pengemudi belum diumumkan. Polisi masih memeriksa pengemudi dan mendalami rangkaian peristiwa, dengan janji menyampaikan pembaruan bila ada perkembangan."
+        "Polresta Sleman mengamankan seorang pengemudi mobil yang diduga terlibat rangkaian insiden tabrak lari di wilayah Sleman, DIY. Menurut keterangan Iptu Argo Anggoro, Ps. Kasi Humas Polresta Sleman, kejadian bermula di Simpang Empat Demak Ijo, lalu kendaraan melaju ke arah Turi dan kembali ke selatan. Pengemudi sempat dikejar warga sebelum ditangkap petugas di area SPBU Dukuh, Sleman. Polisi menduga pengemudi berada di bawah pengaruh minuman keras.",
+        "Argo membenarkan adanya dugaan peristiwa tersebut dan menyatakan sejumlah orang menjadi korban dalam rangkaian kejadian, namun jumlah korban belum dirinci. Informasi awal sempat beredar viral di Instagram, termasuk narasi penangkapan di Jalan Magelang Km. 11 dekat SPBU Dukuh dan banyak korban di sepanjang Jalan Turi. Polisi menegaskan data itu masih awal dan sedang didalami. Belum jelas berapa korban, kondisi mereka, serta status hukum pengemudi; Argo menyebut update akan disampaikan kemudian."
       ],
       "explain": [
         {
-          "q": "Apa itu Polresta Sleman dan wilayah hukumnya?",
-          "a": "Polresta Sleman adalah kepolisian resor kota yang menangani perkara pidana di wilayah Kabupaten Sleman, DIY, termasuk kawasan Demak Ijo dan Turi yang disebut dalam peristiwa ini.",
+          "q": "Apa itu Ps. Kasi Humas di lingkungan Polresta?",
+          "a": "Ps. Kasi Humas adalah pejabat sementara kepala seksi hubungan masyarakat yang menjadi juru bicara kepolisian resor.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         },
         {
-          "q": "Apa arti 'data awal' dalam keterangan polisi?",
-          "a": "Data awal berarti keterangan yang belum final dan masih bisa berubah setelah pemeriksaan serta pendalaman oleh petugas.",
+          "q": "Di mana Simpang Empat Demak Ijo dan Turi berada dalam wilayah Sleman?",
+          "a": "Keduanya berada di Kabupaten Sleman, DIY, dan disebut sebagai titik awal serta arah pelarian kendaraan.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         },
         {
-          "q": "Mengapa dugaan pengaruh minuman keras perlu diuji?",
-          "a": "Dugaan itu masih berdasarkan penilaian awal di lokasi, sehingga statusnya belum menjadi temuan resmi sampai ada pemeriksaan lebih lanjut.",
+          "q": "Apa langkah hukum berikutnya setelah penangkapan?",
+          "a": "Belum diumumkan; polisi masih memeriksa pengemudi dan mendalami rangkaian peristiwa.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         }
       ],
-      "action": "Pantau keterangan resmi Polresta Sleman untuk memastikan jumlah korban dan status hukum pengemudi.",
+      "action": "Pantau keterangan resmi Polresta Sleman untuk perkembangan jumlah korban dan status pengemudi.",
       "image": null,
       "sources": [
         {
@@ -242,7 +253,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap",
           "published_at": "2026-11-11T07:07:15+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T08:59:00+07:00"
+          "accessed_at": "2026-11-11T09:08:15+07:00"
         }
       ],
       "place": "lokal",
@@ -258,12 +269,12 @@
       "id": "c4",
       "type": "news",
       "topic_id": "t_dukung_pembayaran_nontunai_dis_da39",
-      "angle": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk pembayaran nontunai.",
+      "angle": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata guna mendukung pembayaran",
       "kicker": "Sleman",
-      "title": "WiFi Gratis di 4 TPR Wisata Sleman, Dukung Bayar Nontunai",
+      "title": "WiFi Gratis di 4 TPR Wisata Sleman untuk Pembayaran Nontunai",
       "status": "sebagian",
       "truth": {
-        "claim": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk mendukung pembayaran retribusi nontunai, dengan peninjauan lokasi pada awal November 2026.",
+        "claim": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk mendukung pembayaran retribusi nontunai, meski lokasi dan jadwalnya belum disebutkan.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -276,16 +287,16 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T08:59:00+07:00"
+        "assessed_at": "2026-11-11T09:08:15+07:00"
       },
       "body": [
-        "Dinas Pariwisata (Dispar) Sleman menyiapkan fasilitas WiFi gratis di empat tempat pemungutan retribusi (TPR) wisata. Menurut Kepala Dispar Sleman Edy Winarya, jaringan internet itu disiapkan agar wisatawan lebih mudah memperoleh informasi destinasi dan pembayaran retribusi secara nontunai berjalan lebih lancar. Persiapan dilakukan dengan meninjau sejumlah TPR pada awal November 2026 oleh Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif (Deskraf) untuk memeriksa titik strategis dan kesiapan teknis pemasangan.",
-        "Menurut pemberitaan Harian Jogja, Selasa (10/11/2026), empat lokasi TPR menjadi sasaran tahap pertama peninjauan, tetapi nama keempat lokasi itu tidak tercantum dalam bahan. Dispar Sleman menyebut digitalisasi ini juga untuk meningkatkan transparansi dan efektivitas pengelolaan pariwisata, serta diharapkan membuka peluang bagi pelaku usaha lokal memperkenalkan produk kepada wisatawan. Yang belum jelas: jadwal pasti pemasangan, cakupan akhir, dan apakah biaya operasional WiFi sudah dianggarkan. Langkah berikutnya adalah menuntaskan peninjauan teknis di empat TPR tersebut, dengan rincian lokasi dan waktu aktivasi yang belum diumumkan."
+        "Dinas Pariwisata (Dispar) Sleman menyiapkan fasilitas WiFi gratis di empat tempat pemungutan retribusi (TPR) wisata. Menurut Kepala Dispar Sleman Edy Winarya, jaringan internet itu menjadi bagian dari upaya pemerintah daerah meningkatkan kualitas pelayanan publik sekaligus kenyamanan pengunjung kawasan wisata. Fasilitas ini juga disiapkan untuk menunjang penerapan sistem pembayaran digital, sehingga transaksi retribusi secara nontunai di pintu masuk kawasan wisata diharapkan berjalan lebih lancar.",
+        "Persiapan pemasangan dilakukan melalui peninjauan ke sejumlah TPR pada awal November 2026 oleh Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif (Deskraf) Dispar Sleman, untuk memeriksa titik strategis dan kesiapan teknis. Namun, nama keempat lokasi TPR, jadwal pemasangan, serta target penyelesaian belum disebutkan dalam bahan dan belum diumumkan. Dispar Sleman menyebut penyediaan fasilitas digital dilakukan secara bertahap, dengan harapan akses internet di titik strategis juga membuka peluang bagi pelaku usaha lokal memperkenalkan produk kepada wisatawan."
       ],
       "explain": [
         {
           "q": "Apa itu TPR wisata dan retribusi yang dipungut di sana?",
-          "a": "TPR adalah tempat pemungutan retribusi di pintu masuk kawasan wisata; bahan tidak merinci besar tarif atau jenis retribusinya.",
+          "a": "TPR adalah tempat pemungutan retribusi di pintu masuk kawasan wisata; bahan hanya menyebut fungsinya untuk pembayaran retribusi, tanpa merinci besar tarif.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
@@ -301,14 +312,14 @@
         },
         {
           "q": "Apa peran Bidang Deskraf Dispar Sleman?",
-          "a": "Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif melakukan peninjauan lokasi untuk memeriksa titik strategis dan kesiapan teknis pemasangan.",
+          "a": "Tim ini melakukan peninjauan lokasi TPR untuk memeriksa titik strategis dan kesiapan teknis pemasangan jaringan.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
           }
         }
       ],
-      "action": "Pantau pengumuman resmi Dispar Sleman soal lokasi dan jadwal aktivasi WiFi di empat TPR wisata.",
+      "action": "Pantau pengumuman resmi Dispar Sleman soal lokasi dan jadwal pemasangan WiFi di empat TPR wisata.",
       "image": null,
       "sources": [
         {
@@ -316,14 +327,15 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata",
           "published_at": "2026-11-10T23:47:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T08:59:00+07:00"
+          "accessed_at": "2026-11-11T09:08:15+07:00"
         }
       ],
       "place": "lokal",
       "revision": 1,
       "first_seen": "2026-11-11",
       "previous_edition": null,
-      "changes": []
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
     }
   ]
 }
