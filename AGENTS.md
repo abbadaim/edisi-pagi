@@ -315,5 +315,7 @@ Jangan menguji dengan menjalankan ulang tanggal yang sudah terbit. Pakai
 - `NEWSROOM.md` — desain lima peran, kontrak, hasil POC.
 - `NEWSROOM-IMPLEMENTATION.md` — fase P1–P4, telemetri, prioritas.
 - `SESSION-LEARNINGS.md` — catatan sesi 10–11 November 2026.
+- `.opencode/skills/edisi-pagi/SKILL.md` — skill proyek: alur kerja, aturan
+  yang mengikat, verifikasi, dan tabel debugging.
 - `SCHEMA.md` — kontrak `edition.json`.
 - `INFRA.md` — CI, Turso, Pages, OpenCode.
