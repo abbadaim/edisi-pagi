@@ -4,6 +4,9 @@ const S = {
   scope: null,
   edition: null,
   cards: [],
+  entryIndex: 0,
+  view: "feed",
+  installPrompt: null,
 };
 
 const $ = (id) => document.getElementById(id);
@@ -25,6 +28,17 @@ const BAND = {
 
 const SCOPE_LABEL = { nasional: "Nasional", lokal: "Sleman", mingguan: "Mingguan" };
 
+const ICONS = {
+  edisi:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>',
+  sleman:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>',
+  mingguan:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>',
+  atur:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>',
+};
+
 function el(tag, cls, text) {
   const n = document.createElement(tag);
   if (cls) n.className = cls;
@@ -38,6 +52,40 @@ function formatDate(iso) {
       weekday: "long", day: "numeric", month: "long", timeZone: "Asia/Jakarta",
     });
   } catch { return iso; }
+}
+
+function navItems() {
+  const items = [{ key: "nasional", label: "Edisi", icon: ICONS.edisi }];
+  if (S.byScope.has("lokal")) items.push({ key: "lokal", label: "Sleman", icon: ICONS.sleman });
+  if (S.byScope.has("mingguan")) items.push({ key: "mingguan", label: "Mingguan", icon: ICONS.mingguan });
+  items.push({ key: "atur", label: "Atur", icon: ICONS.atur });
+  return items;
+}
+
+function renderNav() {
+  const bar = $("bottom");
+  bar.hidden = false;
+  bar.textContent = "";
+  for (const item of navItems()) {
+    const b = el("button", "it");
+    b.type = "button";
+    b.dataset.nav = item.key;
+    b.innerHTML = item.icon;
+    b.append(el("span", null, item.label));
+    b.onclick = () => (item.key === "atur" ? openAtur() : openScope(item.key));
+    bar.append(b);
+  }
+  markNav();
+}
+
+function markNav() {
+  const active = S.view === "atur" ? "atur" : S.scope;
+  for (const b of document.querySelectorAll(".bar .it")) {
+    const on = b.dataset.nav === active;
+    b.classList.toggle("on", on);
+    if (on) b.setAttribute("aria-current", "page");
+    else b.removeAttribute("aria-current");
+  }
 }
 
 async function boot() {
@@ -65,54 +113,217 @@ async function boot() {
     S.byScope.set(e.scope, list);
   }
 
-  renderTabs();
+  renderNav();
+  renderInstallChip();
+
+  if (location.hash.startsWith("#/atur")) {
+    openAtur();
+    return;
+  }
+
   const preferred = ["nasional", "lokal", "mingguan"].find((s) => S.byScope.has(s));
   const fromHash = location.hash.split("/")[1];
   const initial = fromHash && S.byScope.has(fromHash) ? fromHash : preferred;
   await openScope(initial);
 }
 
-function renderTabs() {
-  const tabs = $("tabs");
-  tabs.hidden = false;
-  tabs.textContent = "";
-  for (const scope of ["nasional", "lokal", "mingguan"]) {
-    if (!S.byScope.has(scope)) continue;
-    const b = el("button", "tab", SCOPE_LABEL[scope]);
-    b.dataset.scope = scope;
-    b.onclick = () => openScope(scope);
-    tabs.append(b);
-  }
-}
-
-async function openScope(scope) {
+async function openScope(scope, entryIndex = 0) {
   const entries = S.byScope.get(scope);
   if (!entries?.length) return;
   S.scope = scope;
+  S.entryIndex = Math.max(0, Math.min(entryIndex, entries.length - 1));
+  S.view = "feed";
 
-  const entry = entries[0];
-  const res = await fetch(entry.path, { cache: "no-cache" });
-  S.edition = await res.json();
+  const entry = entries[S.entryIndex];
+  try {
+    const res = await fetch(entry.path, { cache: "no-cache" });
+    if (!res.ok) throw new Error(String(res.status));
+    S.edition = await res.json();
+  } catch {
+    $("dateline").textContent = "Gagal memuat edisi";
+    $("subline").textContent = "Coba lagi saat ada koneksi.";
+    return;
+  }
+
   S.cards = S.edition.cards ?? [];
-
-  for (const t of document.querySelectorAll(".tab")) t.classList.toggle("on", t.dataset.scope === scope);
 
   $("dateline").textContent = formatDate(S.edition.published_at);
   $("subline").textContent =
     `${S.edition.card_count} kartu · ±${S.edition.reading_time_min} menit · ${SCOPE_LABEL[scope]}`;
   $("covline").textContent = `Liputan ${formatDate(S.edition.coverage.from)} · 05.00–05.00`;
 
+  renderDates();
   showFeed();
   renderFeed();
+  renderInstallChip();
+}
+
+function renderDates() {
+  const box = $("dates");
+  const entries = S.byScope.get(S.scope) ?? [];
+  box.textContent = "";
+  box.hidden = entries.length < 2;
+  if (entries.length < 2) return;
+
+  entries.forEach((entry, i) => {
+    const b = el("button", "date", shortDate(entry.published_at));
+    b.type = "button";
+    if (i === S.entryIndex) b.classList.add("on");
+    b.onclick = () => openScope(S.scope, i);
+    box.append(b);
+  });
+}
+
+function shortDate(iso) {
+  try {
+    return new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "short", timeZone: "Asia/Jakarta" });
+  } catch { return String(iso).slice(0, 10); }
 }
 
 function showFeed() {
+  $("atur").hidden = true;
+  $("top").hidden = false;
   $("detail").hidden = true;
   $("feed").hidden = false;
   $("bottom").hidden = false;
+  S.view = "feed";
+  const entries = S.byScope.get(S.scope) ?? [];
+  $("dates").hidden = entries.length < 2;
   if (S.scope) location.hash = `#/${S.scope}`;
   window.scrollTo(0, 0);
+  markNav();
 }
+
+function openAtur() {
+  S.view = "atur";
+  $("top").hidden = true;
+  $("feed").hidden = true;
+  $("detail").hidden = true;
+  $("empty").hidden = true;
+  $("atur").hidden = false;
+  $("bottom").hidden = false;
+  $("dates").hidden = true;
+  location.hash = "#/atur";
+  window.scrollTo(0, 0);
+  markNav();
+  renderInstall();
+  renderAbout();
+  setupNotifications();
+}
+
+function renderAbout() {
+  const box = $("aboutBody");
+  if (!box) return;
+  box.textContent = "";
+  box.append(
+    el("p", "pmuted", "Brief harian untuk satu pembaca di Sleman. Tanpa iklan, tanpa feed tak terbatas, tanpa pelacakan."),
+  );
+  const m = S.manifest;
+  if (m) {
+    box.append(
+      el(
+        "p",
+        "pmuted",
+        `Arsip sejak ${m.retention?.oldest ?? "—"} · dibuat ${formatDate(m.generated_at)}`,
+      ),
+    );
+  }
+  const a = el("a", "pmuted", "Kode dan data di GitHub");
+  a.href = "https://github.com/abbadaim/edisi-pagi";
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  box.append(a);
+}
+
+const isStandalone = () =>
+  Boolean(window.matchMedia?.("(display-mode: standalone)").matches) || navigator.standalone === true;
+
+const isIOS = () =>
+  /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+function renderInstallChip() {
+  const chip = $("installChip");
+  if (!chip) return;
+  const show = !isStandalone() && (Boolean(S.installPrompt) || isIOS());
+  chip.hidden = !show;
+  chip.textContent = isIOS() && !S.installPrompt ? "Cara pasang" : "Pasang";
+}
+
+async function promptInstall() {
+  const prompt = S.installPrompt;
+  if (!prompt) {
+    openAtur();
+    return;
+  }
+  prompt.prompt();
+  const { outcome } = await prompt.userChoice;
+  if (outcome === "accepted") S.installPrompt = null;
+  renderInstallChip();
+  renderInstall();
+}
+
+$("installChip").onclick = () => promptInstall();
+
+function renderInstall() {
+  const box = $("installBody");
+  if (!box) return;
+  box.textContent = "";
+
+  if (isStandalone()) {
+    box.append(el("p", "pmuted ok", "Sudah terpasang. Edisi Pagi terbuka dari layar utama."));
+    return;
+  }
+
+  if (S.installPrompt) {
+    const b = el("button", "pbtn", "Pasang ke layar utama");
+    b.onclick = () => promptInstall();
+    box.append(b);
+    box.append(el("p", "pmuted", "Cukup sekali. Setelah itu tidak perlu membuka browser."));
+    return;
+  }
+
+  if (isIOS()) {
+    const steps = el("ol", "steps");
+    steps.append(el("li", null, "Buka halaman ini di Safari."));
+    steps.append(el("li", null, "Ketuk tombol Bagikan — kotak dengan panah ke atas."));
+    steps.append(el("li", null, "Pilih “Tambah ke Layar Utama”."));
+    box.append(steps);
+    return;
+  }
+
+  const ua = navigator.userAgent;
+  const isSafari = /safari/i.test(ua) && !/chrome|chromium|crios|edg|opr|electron/i.test(ua);
+
+  if (isSafari) {
+    box.append(
+      el("p", "pmuted", "Di Safari: menu File → Add to Dock, atau tombol Bagikan → Tambahkan ke Dock."),
+    );
+    return;
+  }
+  if (/android/i.test(ua)) {
+    box.append(
+      el("p", "pmuted", "Di Chrome Android: menu ⋮ → “Instal aplikasi” atau “Tambahkan ke layar utama”."),
+    );
+    return;
+  }
+  box.append(
+    el("p", "pmuted", "Buka menu browser (⋮), lalu pilih “Instal aplikasi” atau “Tambahkan ke layar utama”."),
+  );
+}
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  S.installPrompt = e;
+  renderInstallChip();
+  if (S.view === "atur") renderInstall();
+});
+
+window.addEventListener("appinstalled", () => {
+  S.installPrompt = null;
+  renderInstallChip();
+  renderInstall();
+});
 
 function renderFeed() {
   const feed = $("feed");
@@ -357,8 +568,19 @@ function openCard(index) {
 $("back").onclick = () => showFeed();
 
 window.addEventListener("hashchange", () => {
+  if (location.hash.startsWith("#/atur")) {
+    if (S.view !== "atur") openAtur();
+    return;
+  }
   const parts = location.hash.split("/").filter(Boolean);
-  if (parts.length === 2) openCard(Number(parts[1]));
+  if (parts.length === 2) {
+    openCard(Number(parts[1]));
+    return;
+  }
+  // Kembali dari Atur ke edisi lewat tombol Back browser.
+  if (parts.length === 1 && S.byScope.has(parts[0] ?? "")) {
+    if (S.view === "atur" || S.scope !== parts[0]) openScope(parts[0]);
+  }
 });
 
 async function setupNotifications() {
@@ -424,7 +646,10 @@ function urlBase64ToUint8Array(base64) {
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").then(setupNotifications).catch(() => {});
+    navigator.serviceWorker
+      .register("sw.js")
+      .then(() => setupNotifications())
+      .catch(() => {});
   });
 }
 

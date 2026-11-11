@@ -1,4 +1,5 @@
 {
+  "id": "./",
   "name": "Edisi Pagi",
   "short_name": "Edisi",
   "description": "Brief harian untuk orang yang jarang membuka media sosial.",
@@ -6,9 +7,28 @@
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait",
   "background_color": "#FAF7F2",
   "theme_color": "#17150F",
+  "categories": [
+    "news",
+    "magazines"
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Edisi Sleman",
+      "url": "./#/lokal"
+    },
+    {
+      "name": "Rekap mingguan",
+      "url": "./#/mingguan"
+    }
+  ],
   "icons": [
     {
       "src": "icons/icon-192.png",

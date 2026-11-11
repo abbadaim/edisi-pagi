@@ -4,21 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Edisi Pagi</title>
+<meta name="description" content="Brief harian untuk orang yang jarang membuka media sosial.">
 <meta name="theme-color" content="#17150F">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Edisi">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
 <link rel="icon" href="icons/favicon-32.png" sizes="32x32">
-<link rel="stylesheet" href="style.css?v=c0f67744">
+<link rel="stylesheet" href="style.css?v=827be379">
 </head>
 <body>
 <header id="top">
-  <div class="eyebrow">Edisi Pagi</div>
+  <div class="ebrow">
+    <div class="eyebrow">Edisi Pagi</div>
+    <button id="installChip" class="installChip" type="button" hidden>Pasang</button>
+  </div>
   <h1 id="dateline">Memuat…</h1>
   <div class="sub" id="subline"></div>
   <div class="cov" id="covline"></div>
-  <nav id="tabs" class="tabs" hidden></nav>
+  <nav id="dates" class="dates" aria-label="Arsip edisi" hidden></nav>
 </header>
 
 <main id="feed"></main>
@@ -33,16 +38,31 @@
   <article id="detailbody"></article>
 </section>
 
-<details id="notif" class="notifBox">
-  <summary>Notifikasi</summary>
-  <div id="notifBody" class="notifBody"></div>
-</details>
+<section id="atur" class="page" hidden>
+  <h1 class="ptitle">Atur</h1>
 
-<footer id="bottom" class="bar" hidden>
-  <button class="it on" data-scope="nasional"><span>Edisi</span></button>
-  <button class="it" id="toggle-detail" hidden><span>Kartu</span></button>
-</footer>
+  <div class="panel">
+    <div class="plbl">Pasang</div>
+    <h2>Aplikasi Edisi Pagi</h2>
+    <p class="pmuted">Buka langsung dari layar utama — tanpa tab browser, tanpa alamat.</p>
+    <div id="installBody"></div>
+  </div>
 
-<script src="app.js?v=9cbd07d6" type="module"></script>
+  <div class="panel">
+    <div class="plbl">Notifikasi</div>
+    <h2>Satu notifikasi pagi</h2>
+    <div id="notifBody" class="notifBody"></div>
+  </div>
+
+  <div class="panel">
+    <div class="plbl">Tentang</div>
+    <h2>Edisi Pagi</h2>
+    <div id="aboutBody" class="pmuted"></div>
+  </div>
+</section>
+
+<footer id="bottom" class="bar" hidden></footer>
+
+<script src="app.js?v=2a6e4308" type="module"></script>
 </body>
 </html>

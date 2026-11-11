@@ -54,7 +54,7 @@ let payload = {
   title: "Edisi Pagi",
   body: "Edisi baru siap.",
   updates: 0,
-  url: "/",
+  url: "./",
 };
 
 if (manifest.latest) {
@@ -68,7 +68,7 @@ if (manifest.latest) {
       title: `Edisi ${manifest.latest}`,
       body: `Nasional ${entry.card_count}${lokal ? ` · Sleman ${lokal.card_count}` : ""}${updates ? ` · ${updates} pembaruan` : ""}`,
       updates,
-      url: "/",
+      url: "./",
     };
   }
 }

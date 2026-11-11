@@ -89,6 +89,20 @@ npm run push
 
 Secret yang dibutuhkan: `DEEPSEEK_API_KEY` atau `OPENCODE_BIN`, `VAPID_PRIVATE_KEY`, `PUSH_SUBSCRIPTION`.
 
+## Aplikasi
+
+- **Nav bawah**: Edisi (nasional), Sleman, Mingguan, dan Atur. Tab scope hanya
+  muncul bila edisinya ada.
+- **Arsip**: baris tanggal di bawah judul untuk berpindah edisi lama (2 tahun
+  retensi).
+- **Pasang (PWA)**: tombol *Pasang* di kanan atas muncul saat browser
+  menawarkan instalasi; di iOS berisi langkah "Tambah ke Layar Utama". Detail
+  ada di **Atur → Aplikasi Edisi Pagi**.
+- **Offline**: service worker menyajikan shell terakhir dan edisi yang sudah
+  pernah dibuka (`edisi-shell-v4`, `edisi-data-v4`).
+- **Notifikasi**: aktivasi di **Atur → Notifikasi**; langganan disalin sebagai
+  JSON ke secret `PUSH_SUBSCRIPTION`.
+
 ## Perintah lain
 
 | Perintah | Fungsi |
