@@ -1,12 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T20:21:27+07:00",
-  "latest": "2026-11-10",
+  "generated_at": "2026-11-11T08:08:04+07:00",
+  "latest": "2026-11-11",
   "retention": {
     "years": 2,
     "oldest": "2026-11-09"
   },
   "editions": [
+    {
+      "edition_id": "2026-11-11",
+      "scope": "nasional",
+      "published_at": "2026-11-11T08:00:36+07:00",
+      "card_count": 8,
+      "reading_time_min": 20,
+      "path": "data/editions/2026-11-11.nasional.json"
+    },
     {
       "edition_id": "2026-11-10",
       "scope": "lokal",

@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-11",
+  "scope": "nasional",
+  "published_at": "2026-11-11T08:00:36+07:00",
+  "coverage": {
+    "from": "2026-11-10T08:00:36+07:00",
+    "to": "2026-11-11T08:00:36+07:00"
+  },
+  "generated_at": "2026-11-11T08:00:36+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 20,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "verify": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_gibran_ajukan_pengunduran_diri_483a",
+      "angle": "Pengajuan mundur Wapres Gibran ke Prabowo: alasan resmi, respons Istana, polemik ijazah,",
+      "kicker": "Nasional",
+      "title": "Gibran Ajukan Mundur ke Prabowo: Alasan, Respons, dan Polemik Ijazah",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Gibran mengajukan pengunduran diri kepada Prabowo dalam pertemuan pagi 10 November 2026 dengan alasan dinamika putusan MK dan MA, dan Prabowo tidak menolak niat",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Wakil Presiden Gibran Rakabuming Raka mengajukan pengunduran diri kepada Presiden Prabowo Subianto pada Selasa pagi, 10 November 2026. Kabar ini dikonfirmasi Menteri Sekretaris Negara Prasetyo Hadi dalam konferensi pers di Istana Kepresidenan Jakarta sore harinya. Menurut Prasetyo, Gibran dan Prabowo bertemu pagi itu selama kurang lebih 2,5 jam, dan dalam pertemuan itulah Gibran menyatakan niatnya untuk mundur. Prasetyo tidak menjelaskan lokasi pertemuan Gibran dan Prabowo; yang disebut hanya bahwa konferensi pers berlangsung di Istana Kepresidenan Jakarta. Tidak ada penjelasan resmi soal jam pasti penyerahan surat pengunduran diri, dan isi suratnya belum diungkap ke publik.",
+        "Alasan resmi yang disampaikan Gibran, menurut Prasetyo, adalah menghadapi dinamika yang berkembang terkait putusan di Mahkamah Konstitusi (MK) dan Mahkamah Agung (MA). Prasetyo menyampaikan hal itu kepada wartawan tanpa merinci putusan mana yang dimaksud. Ia juga menyinggung bahwa DPR tengah ramai membicarakan penggunaan Hak Menyatakan Pendapat, dan pemerintah menghormati proses politik itu. Namun, tidak ada keterangan resmi yang menyebut secara eksplisit bahwa polemik ijazah menjadi alasan pengunduran diri. Isi lengkap surat pengunduran diri juga belum diungkap, sehingga detail alasan yang tertulis di dalamnya belum jelas.",
+        "Respons Istana atas pengajuan itu disampaikan dengan satu penekanan: Prabowo tidak menolak niat Gibran. Prasetyo secara khusus meluruskan informasi yang beredar bahwa Presiden menyampaikan penolakan dalam pertemuan tersebut. Ia menyebut informasi itu tidak benar. Menurut Prasetyo, dalam diskusi itu Prabowo justru banyak memberikan saran kepada Gibran. Meski demikian, tidak dijelaskan apakah saran tersebut berarti penerimaan resmi, penundaan, atau permintaan agar Gibran mempertimbangkan ulang. Istana juga menegaskan tugas pemerintah tetap berjalan meski ada pengajuan mundur dari wakil presiden.",
+        "Perbedaan antara 'tidak menolak' dan 'menerima' menjadi penting untuk dicermati. Pernyataan Prasetyo bahwa Prabowo tidak menolak niat mundur Gibran dapat dibaca sebagai sinyal bahwa Istana membuka ruang bagi proses tersebut. Namun, pernyataan itu tidak secara eksplisit menyatakan penerimaan resmi. Tidak ada keterangan tentang kapan keputusan final akan diambil, apakah dalam hitungan hari atau setelah proses lain berjalan. Publik yang jarang membuka media sosial perlu memahami bahwa status pengunduran diri Gibran hingga keterangan itu disampaikan masih berupa niat yang disampaikan dalam pertemuan, bukan keputusan resmi yang sudah final.",
+        "Kaitan polemik ijazah dengan pengunduran diri ini muncul lewat satu permintaan Gibran yang disampaikan dalam pertemuan tersebut. Menurut Prasetyo, Gibran memohon diberi kesempatan untuk membuktikan keabsahan dokumen yang dimilikinya melalui proses di Pengadilan Tata Usaha Negara (PTUN). Namun, tidak dijelaskan dokumen apa yang dimaksud dan bagaimana kaitannya dengan gelar akademik Gibran. Sejumlah pemberitaan menyebut polemik ijazah sebagai bagian dari dinamika politik yang berkembang, tetapi hubungan sebab-akibat antara polemik itu dan keputusan mundur belum diuraikan secara resmi. Permohonan ke PTUN menunjukkan sengketa administrasi ini akan memasuki ranah hukum, meski jadwal sidang atau status penerimaan permohonan belum tersedia dalam bahan.",
+        "Prosedur konstitusional yang berlaku untuk pengunduran diri wakil presiden tidak dijelaskan dalam bahan yang ada. Tidak ada keterangan resmi mengenai mekanisme pengajuan surat pengunduran diri wapres secara sukarela, apakah presiden akan meneruskannya ke DPR dan MPR, atau bagaimana prosesi pergantian berjalan. Begitu pula soal siapa yang akan menggantikan Gibran jika pengunduran diri diterima. Tidak ada nama calon wakil presiden yang disebut dalam bahan. Detail ini belum diumumkan, dan publik masih menantikan pernyataan resmi dari pemerintah mengenai langkah-langkah selanjutnya.",
+        "Di tengah sorotan atas niat mundur itu, Gibran tetap hadir dalam acara penganugerahan gelar Pahlawan Nasional 2026. Menurut detik.com, Presiden Prabowo menganugerahkan gelar Pahlawan Nasional kepada 19 tokoh, dan Gibran hadir usai pagi tadi mengajukan pengunduran diri. Menurut CNN Indonesia, Gibran hadir ke acara tersebut di tengah sorotan niat mundur dari jabatan Wapres. Tidak ada keterangan resmi apakah kehadiran itu bagian dari protokol kenegaraan atau bentuk penegasan bahwa ia masih menjalankan tugas sampai proses pengunduran diri diputuskan. Yang jelas, acara kenegaraan itu tetap berlangsung sesuai jadwal.",
+        "Hingga berita ini diturunkan, belum ada keterangan resmi dari Gibran sendiri mengenai pengajuan mundur ini. Semua informasi mengalir melalui Menteri Sekretaris Negara. Tidak ada wawancara langsung atau pernyataan tertulis dari Gibran yang dirilis ke publik dalam bahan yang tersedia. Ketiadaan suara langsung dari Gibran membuat publik hanya bisa bersandar pada penjelasan Istana, yang juga tidak merinci banyak hal. Tidak ada pernyataan langsung Gibran yang dikutip dalam bahan.",
+        "Dari sisi politik, pengajuan mundur Gibran terjadi di tengah meningkatnya tensi antara eksekutif dan legislatif. Prasetyo menyebut DPR tengah ramai membicarakan penggunaan Hak Menyatakan Pendapat, dan ia menilai itu sebagai proses politik yang harus dihormati. Hak tersebut merupakan mekanisme konstitusional yang dapat berujung pada rekomendasi pemberhentian presiden atau wapres. Namun, Prasetyo tidak mengaitkan secara langsung antara hak tersebut dan pengajuan mundur Gibran. Keterkaitan antara keduanya masih menjadi spekulasi yang belum terkonfirmasi, dan publik perlu berhati-hati agar tidak menyimpulkan hubungan sebab-akibat yang belum terbukti.",
+        "Yang bisa dipastikan adalah bahwa pengajuan pengunduran diri Gibran telah menjadi peristiwa politik signifikan. Istana berupaya menampilkan bahwa pemerintah tetap berjalan dan Prabowo tidak menolak niat tersebut. Namun, tanpa detail prosedur dan alasan yang transparan, publik akan terus bertanya-tanya. Keterbukaan mengenai isi surat, jadwal proses konstitusional, dan status polemik ijazah akan menjadi kunci untuk memahami arah politik Indonesia ke depan. Sampai saat itu tiba, pembaca sebaiknya menunggu pernyataan resmi lanjutan daripada menyimpulkan sendiri hubungan antara ijazah, putusan MK/MA, dan keputusan mundur.",
+        "Perlu dicatat bahwa bahan yang tersedia tidak memuat penjelasan tentang Pasal 7A, 7B, atau 8 UUD 1945, sehingga rincian prosedur konstitusional tidak bisa diuraikan lebih jauh di sini. Bahan juga tidak menyebut apakah DPR dan MPR akan dilibatkan, serta bagaimana prosesi pergantian wapres jika Gibran benar-benar mundur. Semua itu masih menunggu pernyataan resmi dari pemerintah. Yang tercatat dalam bahan hanyalah pernyataan Prasetyo bahwa Prabowo tidak menolak niat Gibran, bahwa Prabowo banyak memberikan saran, dan bahwa Gibran memohon kesempatan membuktikan keabsahan dokumen melalui PTUN.",
+        "Dengan segala ketidakjelasan ini, pembaca yang ingin mengerti—bukan sekadar tahu—perlu membedakan tiga hal: niat mundur yang disampaikan Gibran, sikap Prabowo yang tidak menolak, dan keputusan resmi yang belum diumumkan. Ketiganya berada pada tahap berbeda. Niat sudah disampaikan dalam pertemuan, sikap sudah dikonfirmasi lewat konferensi pers, tetapi keputusan final dan prosedur lanjutannya belum tersedia dalam bahan. Memahami perbedaan ini penting agar tidak keliru menyimpulkan bahwa Gibran sudah resmi berhenti atau bahwa penggantinya sudah ditentukan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka dan apa jabatannya saat ini?",
+          "a": "Gibran adalah Wakil Presiden RI sejak 2024, sebelumnya Wali Kota Surakarta dan pengusaha, serta putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu Hak Menyatakan Pendapat yang disebut dalam konteks pengunduran diri ini?",
+          "a": "Hak Menyatakan Pendapat adalah mekanisme DPR yang dapat berujung pada rekomendasi pemberhentian presiden atau wapres; namun dalam bahan tidak dijelaskan secara rinci.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto dalam konteks berita ini?",
+          "a": "Prabowo Subianto adalah Presiden Indonesia kedelapan sejak 2024, sebelumnya Menteri Pertahanan di era Jokowi, dan pensiunan perwira militer.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi Istana soal status pengunduran diri Gibran dan proses konstitusionalnya; jangan menyimpulkan sebelum ada keputusan resmi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110153650-4-783943/kronologi-wapres-gibran-ajukan-pengunduran-diri-kepada-prabowo",
+          "published_at": "2026-11-10T15:41:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110151920-32-1425458/prabowo-tidak-menolak-niat-gibran-mundur",
+          "published_at": "2026-11-10T15:32:41+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746898/momen-gibran-dampingi-prabowo-beri-gelar-pahlawan-nasional-ke-19-tokoh",
+          "published_at": "2026-11-10T16:26:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "unresolved": [
+        "Belum pasti: Hal tersebut disampaikan Pras ketika menjelaskan pertemuan Prabowo dengan Gibran selama 2,5 jam pagi tadi"
+      ],
+      "dek": "Gibran mengajukan pengunduran diri kepada Prabowo dalam pertemuan pagi 10 November 2026 dengan alasan dinamika putusan MK dan MA, dan Prabowo tidak me",
+      "optional": true,
+      "read_min": 5,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_sidang_etik_irjen_ahrie_sonta_46a3",
+      "angle": "Propam sidangkan etik Irjen Ahrie Sonta hari ini; LPSK telaah permohonan perlindungan",
+      "kicker": "Kriminal",
+      "title": "Sidang Etik Irjen Ahrie Sonta Digelar, Putusan Belum Diumumkan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sidang etik Irjen Ahrie Sonta digelar 10 November 2026 tanpa putusan yang diumumkan, sementara LPSK masih menelaah permohonan perlindungan saksi sejak 6 Novembe",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Divisi Propam Polri menggelar sidang etik terhadap mantan Kadivkum Polri Irjen Ahrie Sonta pada Selasa (10/11) hari ini. Kadiv Humas Polri Irjen Johnny Eddizon Isir menyatakan sidang kode etik profesi Polri terhadap Ahrie Sonta dilakukan buntut kasus penyadapan ilegal terhadap Presiden Prabowo Subianto. Namun ia belum mengungkap susunan Majelis Komisi Kode Etik Profesi (KKEP) Polri yang memimpin sidang. Hingga bahan ini disusun, hasil atau putusan sidang etik tersebut belum diumumkan, dan agenda rinci di luar konfirmasi bahwa sidang digelar juga belum dirinci. Sidang kode etik terhadap para terperiksa disebut akan dilakukan secara bertahap.",
+        "Dalam kasus ini, Bareskrim Polri telah menetapkan empat jenderal aktif sebagai tersangka dugaan penyadapan ilegal terhadap Presiden Prabowo. Mereka adalah eks Kapolri sekaligus Kepala Kantor Staf Presiden Jenderal Listyo Sigit Prabowo, Irjen Ahrie Sonta Nasution, eks Direktur Tindak Pidana Narkoba Bareskrim Polri Irjen Eko Hadi Santoso, dan eks Kadiv TIK Polri Irjen Slamet Uliandi. Para tersangka dijerat Pasal 258 KUHP dan/atau Pasal 332 KUHP Ayat 1 dan 2 dan/atau Pasal 32 Ayat 1 UU ITE. Tiga tersangka selain Slamet telah ditahan di Rutan Mako Brimob Mabes Polri, sementara Slamet belum ditahan karena masih sakit setelah stroke.",
+        "Lembaga Perlindungan Saksi dan Korban (LPSK) menelaah permohonan perlindungan bagi saksi kasus ini. Ketua LPSK Achmadi mengatakan permohonan tersebut masih dalam proses penelaahan sejak 6 November 2026 dan LPSK berkoordinasi dengan penyidik yang menangani perkara. Penelaahan mempertimbangkan pentingnya keterangan saksi, tingkat ancaman yang dihadapi, serta situasi khusus saksi dan/atau korban, mengacu pada Pasal 49 ayat (1) dan Pasal 5 ayat (4) Undang-Undang Nomor 3 Tahun 2026 tentang Perlindungan Saksi dan Korban. LPSK juga membuka kemungkinan penambahan jumlah saksi yang mengajukan permohonan seiring perkembangan proses hukum. Sebanyak 13 saksi telah dimintai keterangan, terdiri dari saksi ahli ITE dan pidana hingga sejumlah anggota kepolisian.",
+        "Status penanganan pidana kasus penyadapan ini masih berjalan di Bareskrim Polri dengan empat tersangka. Menurut temuan awal polisi, selain Prabowo, terdapat korban penyadapan lain dari Listyo dan anak buahnya, seperti para menteri, tokoh politik, pengusaha, media, hingga tokoh masyarakat. Istana melalui Menteri Sekretaris Negara Prasetyo Hadi mengategorikan tindak pidana tersebut sebagai bentuk makar. Menurut detik.com, dugaan penyadapan ilegal terhadap Prabowo terjadi sejak 2025, dan Prabowo kemudian memecat Sigit dari jabatan KSP pada Rabu (4/11).",
+        "Terkait Ahrie Sonta, satu pemberitaan CNN Indonesia menyatakan 'Polri memecat Irjen Ahrie Sonta akibat pelanggaran kode etik terkait penyadapan Presiden Prabowo' dan bahwa 'sidang etik juga menetapkan tersangka lain dalam kasus ini'. Namun, belum ada konfirmasi dari sumber lain mengenai apakah pemecatan tersebut merupakan hasil sidang etik yang digelar hari ini, dan pernyataan bahwa sidang etik menetapkan tersangka lain tidak dapat ditafsirkan sebagai keputusan majelis etik karena penetapan tersangka adalah kewenangan penyidik. Gubernur Bobby Nasution meminta semua pihak menunggu proses hukum. Perlu dicatat, status tersangka belum berarti bersalah karena putusan tetap di pengadilan.",
+        "Hingga bahan ini disusun, rincian bentuk ancaman yang dihadapi para saksi belum diungkap LPSK; lembaga itu hanya menyebut tingkat ancaman dan kerentanan sebagai pertimbangan. Dengan demikian, gambaran yang bisa dipastikan baru sebatas bahwa sidang etik digelar, proses pidana berjalan dengan empat tersangka, dan permohonan perlindungan saksi masih ditelaah."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu sidang etik KKEP di lingkungan Polri?",
+          "a": "Sidang kode etik profesi Polri yang digelar Divisi Propam untuk menilai pelanggaran etik anggota, terpisah dari proses pidana.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka dalam hukum pidana?",
+          "a": "Status yang ditetapkan penyidik berdasarkan minimal dua alat bukti; belum berarti bersalah karena putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan boleh dilakukan menurut hukum?",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu seperti korupsi dan narkotika.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman putusan sidang etik dan perkembangan penelaahan perlindungan saksi oleh LPSK.",
+      "image": {
+        "url": "assets/1f1d54c8e8.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Sidang Etik Irjen Ahrie Sonta Digelar, Putusan Belum Diumumkan"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
+          "published_at": "2026-11-10T11:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
+          "published_at": "2026-11-10T11:36:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332157/tersangka-penyadapan-prabowo-irjen-ahrie-sonta-jalani-sidang-etik",
+          "published_at": "2026-11-10T12:10:29+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8746327/lpsk-dalami-dugaan-ancaman-ke-6-saksi-kasus-penyadapan-presiden-prabowo",
+          "published_at": "2026-11-10T12:09:59+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan: Konflik sumber, bukan fakta salah: Draft menyatakan 'belum ada konfirmasi dari sumber lain mengenai apakah pem. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim tersebut sebagai fakta tanpa"
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_hidayat_nur_wahid_mundur_dari_5cea",
+      "angle": "Pengunduran diri Hidayat Nur Wahid dari Wakil Ketua MPR dan alasan yang disebut PKS",
+      "kicker": "Nasional",
+      "title": "Hidayat Nur Wahid Mundur dari Wakil Ketua MPR, PKS Jelaskan Alasannya",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Hidayat Nur Wahid mengundurkan diri dari jabatan Wakil Ketua MPR dan suratnya diterima dalam rapat pimpinan MPR pada 10 November.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Hidayat Nur Wahid mengundurkan diri dari jabatan Wakil Ketua MPR RI. Surat pengunduran diri politikus PKS itu telah dibahas dan diterima dalam rapat pimpinan MPR pada Selasa, 10 November. Ketua MPR Ahmad Muzani menyatakan bahwa rapat pimpinan hari itu secara resmi menerima surat pengunduran diri Hidayat dari jabatan Wakil Ketua MPR RI. Penerimaan surat itu disampaikan Muzani melalui keterangannya, termasuk lewat laman Instagram, pada hari yang sama.",
+        "Alasan pengunduran diri sempat tidak jelas pada awalnya. Satu laporan menyebut belum diketahui alasan Hidayat mengundurkan diri dari jabatannya. Namun laporan lain menyebut Sekjen PKS Muhammad Kholid mengumumkan bahwa Hidayat mundur dari Wakil Ketua MPR untuk menjabat Ketua BKSAP, dengan fokus pada diplomasi dan dukungan terhadap Palestina. PKS disebut menugaskan Hidayat sebagai Ketua BKSAP DPR RI. Dengan begitu, ada dua keterangan yang beredar pada hari yang sama: yang menyatakan alasan belum diketahui, dan yang menyebut penugasan baru di BKSAP.",
+        "Soal waktu dan pihak yang menerima, pengunduran diri itu disampaikan lewat surat dan diterima Ketua MPR Ahmad Muzani dalam rapat pimpinan MPR pada Selasa, 10 November. Muzani mengatakan langkah selanjutnya akan diproses sesuai mekanisme kelembagaan dan aturan perundang-undangan. Ia juga menyampaikan terima kasih atas dedikasi dan pengabdian Hidayat selama menjalankan tugas sebagai pimpinan MPR.",
+        "Siapa yang akan menggantikan posisi Wakil Ketua MPR dari PKS belum diumumkan dalam bahan yang tersedia. Belum ada nama yang disebut sebagai calon pengganti, dan belum ada keterangan resmi mengenai kapan pergantian itu dilakukan. Yang disebut baru sebatas bahwa prosesnya akan ditindaklanjuti sesuai mekanisme kelembagaan dan ketentuan peraturan perundang-undangan yang berlaku.",
+        "Dampak terhadap agenda dan kepemimpinan MPR juga belum dirinci. Bahan hanya menyebut bahwa pimpinan MPR menerima pengunduran diri itu dan menyerahkan proses lanjutannya ke mekanisme kelembagaan. Tidak ada keterangan tentang agenda MPR yang tertunda atau berubah, maupun soal siapa yang akan mengisi kekosongan kursi pimpinan dari fraksi PKS. Karena itu, dampak konkretnya masih belum jelas dan menunggu keputusan lanjutan.",
+        "Sebagai konteks, Hidayat adalah politikus PKS yang pernah menjabat Ketua MPR periode 2004–2009 dan Wakil Ketua MPR pada periode 2014–2019, 2019–2024, serta 2024–2029. Ia juga tercatat duduk di DPR RI sejak 2004. Dalam pemberitaan, ia disebut sebagai Wakil Ketua Majelis Syuro PKS. Latar jabatan itu membantu membaca mengapa kursi Wakil Ketua MPR dari fraksi PKS kini kosong dan proses pengisiannya menjadi sorotan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu MPR RI dan apa fungsinya dalam ketatanegaraan Indonesia?",
+          "a": "MPR RI adalah lembaga negara yang terdiri dari anggota DPR dan DPD; dalam bahan disebut berperan sebagai pemegang kekuasaan tertinggi khususnya pada era sebelum amendemen UUD 1945.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Majelis_Permusyawaratan_Rakyat_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Hidayat Nur Wahid dan apa rekam jabatannya di MPR?",
+          "a": "Ia politikus Indonesia yang pernah menjabat Ketua MPR 2004–2009 dan Wakil Ketua MPR pada periode 2014–2019, 2019–2024, serta 2024–2029.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Hidayat_Nur_Wahid"
+          }
+        },
+        {
+          "q": "Apa itu BKSAP yang disebut menjadi penugasan baru Hidayat?",
+          "a": "Bahan menyebut BKSAP sebagai badan di DPR RI tempat Hidayat ditugaskan, dengan fokus pada diplomasi dan dukungan terhadap Palestina; rincian tugasnya tidak dijelaskan dalam bahan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261110204027-32-1425622/hidayat-nur-wahid-mundur-dari-kursi-wakil-ketua-mpr-ri"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi MPR soal pengganti Hidayat Nur Wahid dari fraksi PKS.",
+      "image": {
+        "url": "assets/fd02f122c8.webp",
+        "credit": "liputan6.com",
+        "alt": "Hidayat Nur Wahid Mundur dari Wakil Ketua MPR, PKS Jelaskan Alasannya"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332635/hidayat-nur-wahid-mundur-dari-wakil-ketua-mpr",
+          "published_at": "2026-11-10T21:04:22+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/10/337/3253312/breaking-news-hidayat-nur-wahid-mundur-dari-wakil-ketua-mpr",
+          "published_at": "2026-11-10T21:10:24+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110204027-32-1425622/hidayat-nur-wahid-mundur-dari-kursi-wakil-ketua-mpr-ri",
+          "published_at": "2026-11-10T20:42:29+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/hidayat-nur-wahid-mundur-dari-jabatan-wakil-ketua-mpr-ri-idD5",
+          "published_at": "2026-11-10T21:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261110221050-4-784065/hidayat-nur-wahid-mengundurkan-diri-dari-jabatan-wakil-ketua-mpr-ri",
+          "published_at": "2026-11-10T22:30:15+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_dprd_diy_diserang_massa_04fd",
+      "angle": "Peninjauan dini hari setelah kantor DPRD DIY diserang massa dan kericuhan meluas ke",
+      "kicker": "Kriminal",
+      "title": "Kapolri dan Dasco Tinjau DPRD DIY Usai Kericuhan Malioboro",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Kapolri dan Dasco meninjau DPRD DIY dini hari setelah massa menyerang gedung dan kericuhan meluas ke Malioboro; 94 orang diamankan.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Kapolri Jenderal Suyudi Ario Seto bersama Wakil Ketua DPR RI Sufmi Dasco Ahmad meninjau Kantor DPRD DIY di Kota Yogyakarta pada Rabu (11/11) dini hari, setelah kantor itu diserang massa tak dikenal. Keduanya tiba sekitar pukul 01.30 WIB didampingi Kapolda DIY Irjen Langgeng Purnomo. Menurut laporan CNN Indonesia, mereka mengecek sejumlah orang yang diamankan terkait aksi unjuk rasa yang berujung ricuh, termasuk di kawasan Malioboro pada Selasa (10/11) malam. Republika juga menyebut Kapolri dan Dasco melihat peserta aksi yang telah diamankan polisi.",
+        "Penyebab kericuhan: menurut Republika, sekelompok massa tak dikenal datang dari arah utara dan mulai menyerang Gedung DPRD DIY sekitar pukul 20.00 WIB. Sementara kronologi Plt Kabid Humas Polda DIY AKBP Novita Eka Sari menyebut sekitar pukul 20.07 WIB sekitar 100 orang massa berkumpul di depan kantor DPRD DIY dan melakukan penyerangan dengan menembakkan petasan, melempar bom molotov, serta batu ke area dalam gedung. Dua versi waktu ini berbeda dan perlu dibaca sebagai dua keterangan terpisah. Republika menambahkan massa berusaha menjebol pagar hingga sebagian masuk ke area gedung, kaca ATM Center pecah, dan sejumlah benda dibakar di tengah jalan.",
+        "Aparat kemudian mengerahkan empat SSK PHH Brimob dan 60 personel SPP Brimob untuk mendorong massa ke arah utara Malioboro, dengan water cannon dan gas air mata. Sebanyak 858 personel Satgas PAGAR diterjunkan untuk mengamankan dan menangkap pelaku. Polda DIY menyatakan setidaknya 94 orang diamankan karena diduga terlibat aksi anarkis dan perusakan fasilitas umum, dan hingga kini masih diperiksa perannya. Petugas menyita enam botol molotov, 12 petasan, tujuh botol berisi bensin, satu senjata tajam, satu ketapel, serta satu bungkus gotri.",
+        "Soal korban luka, bahan yang tersedia belum memuat angka korban luka maupun nilai kerusakan, sehingga jumlahnya belum diumumkan secara rinci. Yang tercatat hanya kerusakan seperti kaca ATM Center yang pecah dan benda-benda yang dibakar di jalan. Situasi keamanan dilaporkan kembali aman dan kondusif setelah Brimob menggelar patroli skala besar di wilayah Kota Yogyakarta pada pukul 23.30 WIB.",
+        "Dalam peninjauan itu, Kapolri mengatakan kedatangannya untuk mengecek langsung kinerja penanganan anggota di lapangan. Ia menyatakan polisi akan mengungkap pelaku yang sengaja membawa barang berbahaya seperti molotov dan senjata tajam, serta mendalami apakah demonstrasi murni untuk menyampaikan pendapat di muka umum. Suyudi juga menyebut akan menyelidiki kemungkinan keterkaitan kericuhan di Yogyakarta dengan peristiwa serupa di daerah lain. Hingga berita ini ditulis, hasil pemeriksaan terhadap 94 orang yang diamankan belum diumumkan.",
+        "Tuntutan massa belum dirinci dalam bahan yang tersedia. Kapolri hanya menyinggung batas toleransi penyampaian pendapat hingga pukul 18.00 WIB, sementara kericuhan berlanjut hingga dini hari. Respons pemerintah daerah juga belum tercatat dalam bahan; yang tergambar adalah langkah kepolisian melalui Polda DIY, termasuk penerjunan empat SSK PHH Brimob, 60 personel SPP Brimob, dan 858 personel Satgas PAGAR. Detail tuntutan massa dan tanggapan resmi pemda masih menunggu keterangan lebih lanjut."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Kapolri?",
+          "a": "Kapolri adalah pejabat pimpinan tertinggi dalam organisasi Kepolisian Republik Indonesia (Polri).",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepala_Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Sufmi Dasco Ahmad?",
+          "a": "Ia politikus dan pebisnis yang menjabat Wakil Ketua DPR RI periode 2024–2029.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Sufmi_Dasco_Ahmad"
+          }
+        },
+        {
+          "q": "Apa yang dilakukan Kapolri dan Dasco di DPRD DIY?",
+          "a": "Keduanya meninjau kantor DPRD DIY setelah diserang massa tidak dikenal.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261111052707-20-1425659/kapolri-dan-dasco-tinjau-dprd-diy-usai-diserang-massa-tak-dikenal"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi polisi dan pemerintah daerah soal korban, kerusakan, dan tuntutan massa.",
+      "image": {
+        "url": "assets/e7f0a03176.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kapolri dan Dasco Tinjau DPRD DIY Usai Kericuhan Malioboro"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111052707-20-1425659/kapolri-dan-dasco-tinjau-dprd-diy-usai-diserang-massa-tak-dikenal",
+          "published_at": "2026-11-11T05:31:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332727/kapolri-dan-dasco-sambangi-dprd-diy-usai-demo-ricuh",
+          "published_at": "2026-11-11T05:55:36+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/106-orang-diamankan-polisi-saat-kericuhan-massa-di-dprd-diy-28Y9yt5TNLE",
+          "published_at": "2026-11-11T06:58:48+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://rejogja.republika.co.id/berita/tob74r282/demo-di-malioboro-semalam-berujung-ricuh",
+          "published_at": "2026-11-11T06:17:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan: Atribusi 'Menurut laporan CNN Indonesia' menempel pada klaim pengecekan orang yang diamankan, tetapi kalimat i. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim tersebut sebagai fakta tanpa"
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_kai_batal_impor_krl_bekas_de32",
+      "angle": "KAI janjikan TS 8 INKA jalan 1 Desember 2026, tapi skema pengadaan pengganti masih dibahas",
+      "kicker": "Ekonomi",
+      "title": "KRL INKA Delapan Rangkaian: Target 1 Desember dan Batal Impor",
+      "status": "sebagian",
+      "truth": {
+        "claim": "KAI membatalkan impor KRL bekas Jepang dan menargetkan satu rangkaian KRL baru produksi INKA beroperasi Desember 2026, sementara skema pengadaan delapan rangkai",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "PT Kereta Api Indonesia (Persero) memastikan rencana impor KRL bekas dari Jepang dibatalkan. Sebagai gantinya, KAI menargetkan satu rangkaian KRL baru produksi PT Industri Kereta Api (Persero) atau INKA mulai beroperasi pada Desember 2026, sementara rangkaian kedelapan atau TS 8 disebut dalam pernyataan Direktur Utama KAI Bobby Rasyidin. Bobby menyampaikan hal itu dalam konferensi pers di kawasan Gambir, Jakarta Pusat, Selasa (10/11), dikutip dari cnnindonesia.com. Rangkaian yang disebut sebagai trainset 8 atau TS 8 itu kini berada di tahap akhir pengujian sebelum dioperasikan.",
+        "Bobby menyebut tanggal yang ia harapkan secara eksplisit. \"Mudah-mudahan di 1 Desember nanti sudah bisa dioperasikan. Saat ini trainset 8 lagi uji coba, final test-nya, final acceptance-nya,\" ujarnya, dikutip dari cnnindonesia.com. Kalimat itu tetap berupa harapan, bukan kepastian yang sudah tertuang dalam dokumen resmi. Bahan tidak menyebut adanya dokumen semacam itu, sehingga pembaca perlu membedakan antara target yang diucapkan pejabat dan tanggal yang sudah mengikat.",
+        "Pembatalan impor bukan keputusan tanpa alasan. Menurut Bobby, KAI mengecek langsung ke negara asal dan menemukan rata-rata usia kereta yang akan diakuisisi mencapai 28 tahun, atau masuk kategori separuh tua dalam klasifikasi perusahaan. KAI mengategorikan kereta berusia 10 tahun sebagai armada muda, usia 20 tahun sebagai paruh baya, dan di atas 20 tahun sebagai armada separuh tua, dikutip dari cnnindonesia.com. Angka 28 tahun itu menjadi dasar teknis yang disebut KAI, bukan sekadar penilaian umum tentang kereta bekas.",
+        "Ada tiga pertimbangan yang disebut mendasari pembatalan. Pertama, keselamatan penumpang. Kedua, keberlanjutan operasional, karena perawatan kereta separuh tua dinilai rumit akibat banyak komponen kelistrikan berumur pakai pendek. Ketiga, degradasi struktur atau metal fatigue pada material logam, stainless steel, hingga konstruksi bogie yang tingkat kerusakannya sulit diprediksi secara presisi, dikutip dari cnnindonesia.com. Bobby menggambarkan persoalannya dengan pertanyaan retoris soal berapa lama sustainability operasi bisa dipastikan bila mengoperasikan kereta berusia 28 tahun.",
+        "Sebelum memutuskan, KAI menyiapkan tiga skenario untuk menutupi kekurangan armada akibat lonjakan penumpang. Dua opsi lain adalah menggenjot kapasitas produksi kereta baru dari INKA dan mengoptimalkan atau memperpanjang usia pakai rangkaian yang sudah beroperasi. Opsi impor armada bekas akhirnya dicoret setelah tim internal KAI terjun ke Jepang, dikutip dari cnnindonesia.com. Urutan ini penting: pembatalan datang setelah pengecekan lapangan, bukan sebelum ada alternatif lain yang disiapkan.",
+        "Dari sisi pemerintah, Menteri Perhubungan Dudy Purwagandhi menyatakan skema pengadaan masih perlu dibahas. Ia mengaku belum berbicara dengan Bobby Rasyidin soal pembatalan impor dan rencana penggantinya, dan ingin mengetahui lebih dahulu alasan KAI. Menurutnya, keputusan pengadaan harus mempertimbangkan kebutuhan masyarakat, standar keselamatan, serta keberlangsungan industri kereta dalam negeri, dikutip dari cnnindonesia.com. Pernyataan itu menunjukkan pemerintah belum masuk ke pembahasan teknis dengan KAI saat pernyataan diberikan.",
+        "Dudy menyebut ada sekitar 30 rangkaian KRL yang perlu dipenuhi berdasarkan rencana pengadaan sebelumnya. Sebanyak 11 rangkaian berasal dari China, sebagian lain produk dalam negeri, dan delapan rangkaian masih belum diselesaikan. \"Delapan itulah yang paling tidak harus segera dipenuhi sesuai dengan rencana yang sudah disetujui pada saat itu,\" katanya, dikutip dari cnnindonesia.com. Angka 30 dan 11 itu memberi konteks bahwa delapan rangkaian hanyalah bagian dari kebutuhan yang lebih besar, bukan keseluruhan persoalan armada.",
+        "Angka delapan rangkaian itu menjadi titik temu antara pernyataan pemerintah dan target KAI. KAI berencana mengadakan 23 rangkaian kereta baru dalam dua hingga tiga tahun dengan melibatkan INKA serta membuka peluang kerja sama dengan produsen luar negeri. Dari total itu, delapan rangkaian menjadi prioritas yang perlu dipenuhi lebih dahulu, dikutip dari cnnindonesia.com. Perbedaan cakupan antara angka 30 rangkaian dari pemerintah dan 23 rangkaian dari KAI perlu dibaca sebagai dua kerangka perencanaan yang berbeda, bukan angka yang saling menggantikan.",
+        "Kebutuhan tambahan armada terjadi di tengah lonjakan penumpang KRL Jabodetabek yang mencapai sekitar 1,1 juta orang per hari pada semester I 2026. Rata-rata usia kereta yang dioperasikan KAI disebut telah lebih dari 41 tahun, dan 13 rangkaian harus dikonservasi atau dipensiunkan pada 2026, dikutip dari cnnindonesia.com. Angka-angka itu memberi gambaran mengapa penambahan armada dinilai mendesak, sekaligus menjelaskan mengapa pilihan impor sempat muncul sebagai jalan pintas.",
+        "Selain TS 8, KAI menyiapkan rangkaian kesembilan atau TS 9. Bobby menyebut TS 9 telah merampungkan factory acceptance test dan sedang dalam proses penarikan menuju Jakarta. Jika sesuai jadwal, TS 9 diproyeksikan beroperasi awal Januari. Secara paralel, manufaktur TS 10 hingga TS 16 dikebut, dan KAI menyatakan turun tangan mendampingi INKA agar produksi berjalan sesuai standar, dikutip dari cnnindonesia.com. Rincian tanggal operasi TS 9 dan rangkaian berikutnya belum diumumkan secara spesifik dalam bahan.",
+        "Bobby juga memaparkan hitungan armada jangka menengah. Ia menyebut pada Juni-Juli akan ada 16 trainset CLI 225 plus 11 trainset CLI 125, dan menyatakan penambahan itu sudah meng-cover perjalanan di Jabodetabek. Saat ini KAI Commuter mengoperasikan 22 trainset susunan 8 kereta (SF8), 34 trainset SF10, dan 33 trainset SF12 di semua lintas layanan Commuter Line Jabodetabek, termasuk CLI 125 dan CLI 225, dikutip dari cnnindonesia.com. Tahun pasti untuk hitungan Juni-Juli itu tidak disebutkan dalam bahan.",
+        "Tujuh rangkaian pertama produksi INKA sebelumnya sempat mengalami kendala teknis di lapangan. Bobby mengakui hal itu, namun menegaskan KAI dan INKA berhasil mengidentifikasi akar masalah dan menemukan solusinya. Perbaikan mencakup sistem suspensi, coil spring, air spring, hingga peningkatan sistem perbogian. Ia juga menyebut pintu kereta telah dipelajari secara detail dan diuji buka-tutup dengan beban, dikutip dari cnnindonesia.com. Pengakuan ini relevan karena menjadi ujian pertama kredibilitas target operasi TS 8.",
+        "Di sisi korporasi, KAI bersama Danantara tengah merampungkan penyusunan Conditional Share Purchase Agreement (CSPA) untuk konsolidasi INKA. Bobby menyebut CSPA hampir rampung dan menargetkan 1 Januari 2027 INKA dikonsolidasikan di bawah KAI sebagai anak perusahaan, dikutip dari cnnindonesia.com. Target tanggal yang sama juga dilaporkan sindonews.com, yang menyebut KAI menargetkan akuisisi INKA efektif 1 Januari 2027. Dua sumber menyebut tanggal yang konsisten, meski status CSPA masih 'hampir rampung' dan belum final.",
+        "Bobby menjelaskan langkah itu mengadopsi model ekosistem industri perkeretaapian global yang terintegrasi dari hulu ke hilir, mencontohkan Japan Railways dengan J-TREC, China Railways dengan CRRC, serta praktik di Jerman dan Swiss. Ia meyakini status INKA sebagai bagian KAI akan menyelaraskan spesifikasi, desain, dan kebutuhan operasional, sekaligus menjadi solusi atas isu finansial INKA, dikutip dari cnnindonesia.com. Klaim bahwa integrasi akan menyehatkan keuangan INKA masih berupa proyeksi manajemen, bukan hasil yang sudah terukur.",
+        "Soal kondisi keuangan INKA, Bobby mengaku telah memimpin pembenahan selama beberapa bulan setelah beredar informasi bahwa ekuitas INKA negatif dan perusahaan mengalami kerugian. Ia optimistis integrasi akan membawa penyehatan menyeluruh pada struktur pembukuan, arus kas, hingga manajemen rantai pasok INKA, dikutip dari cnnindonesia.com. Rincian angka kerugian dan ekuitas tidak dijelaskan dalam bahan, sehingga besaran persoalannya belum bisa diverifikasi dari informasi yang tersedia.",
+        "Gambaran beban jaringan juga terlihat dari okupansi. KRL Green Line disebut kelebihan muatan hingga 160 persen pada jam sibuk, dan KAI berencana menambah empat gardu listrik agar KRL bisa menarik 12 gerbong, dikutip dari cnnindonesia.com. Detail lokasi dan jadwal penambahan gardu listrik belum dijelaskan dalam bahan. Angka 160 persen itu menunjukkan bahwa persoalan bukan hanya jumlah rangkaian, tetapi juga kapasitas infrastruktur pendukung di lintas tertentu.",
+        "Secara terpisah, KAI juga berencana memensiunkan 86 rangkaian KRL bekas dari Jepang secara bertahap dalam beberapa tahun mendatang, dikutip dari cnnindonesia.com. Rincian tahun dan tahapan pensiun per rangkaian belum diumumkan. Informasi ini memperlihatkan bahwa persoalan armada tidak berhenti pada delapan rangkaian prioritas, tetapi menyangkut peremajaan bertahap dalam skala lebih besar yang akan berjalan paralel dengan kedatangan rangkaian baru.",
+        "Yang belum jelas, dan menjadi langkah berikutnya, adalah skema pengadaan untuk delapan rangkaian pengganti. Dudy menyerahkan keputusan bisnis kepada KAI dengan catatan memperhatikan industri dalam negeri, dan menyebut perlu komunikasi dengan Kementerian Perindustrian serta Kementerian Perdagangan, dikutip dari cnnindonesia.com. Sampai bahan ini disusun, belum ada keputusan resmi soal skema tersebut, dan belum ada keterangan apakah KAI dan pemerintah sudah duduk bersama membahasnya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu KRL dan siapa yang mengoperasikannya di Jabodetabek?",
+          "a": "KRL adalah kereta rel listrik untuk angkutan perkotaan. Di Jabodetabek dioperasikan KAI Commuter dengan tarif dan jadwal yang diatur pemerintah.",
+          "source": {
+            "outlet": "KAI Commuter",
+            "url": "https://www.krl.co.id/"
+          }
+        },
+        {
+          "q": "Apa yang perlu diketahui tentang Batal Impor KRL Bekas?",
+          "a": "Direktur Utama KAI Bobby Rasyidin menargetkan rangkaian kereta kedelapan ( trainset /TS 8) tersebut dapat segera melayani penumpang KRL Jabodetabek pada awal bulan depan. \"Mudah-mudahan di 1 Desember nanti sudah bisa dioperasikan. Saat ini trainset 8 lagi uji coba, final test-nya, final acceptance -nya,\" ujar Bobby dalam konferensi pers di kawasan Gambir, Jakarta Pusat, Selasa (10/11). Bobby mengakui tujuh rangkaian",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261110130213-92-1425365/bos-kai-pastikan-satu-krl-produksi-inka-beroperasi-desember-2026"
+          }
+        }
+      ],
+      "action": "Baca kartu ini sampai akhir untuk memisahkan target 1 Desember yang masih berupa harapan dari skema pengadaan yang belum diputuskan.",
+      "image": {
+        "url": "assets/3b63902cb4.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "KRL INKA Delapan Rangkaian: Target 1 Desember dan Batal Impor"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110130213-92-1425365/bos-kai-pastikan-satu-krl-produksi-inka-beroperasi-desember-2026",
+          "published_at": "2026-11-10T14:01:27+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://ekbis.sindonews.com/read/1770543/34/inka-bakal-jadi-anak-usaha-kai-tiru-model-bisnis-kereta-di-china-1794305475",
+          "published_at": "2026-11-10T18:01:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-10",
+      "previous_edition": "2026-11-10",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan: Konflik sumber, bukan fakta salah: Draft menulis 'Sebanyak 11 rangkaian berasal dari China, sebagian lain prod. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim tersebut sebagai fakta tanpa"
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_bei_perketat_penyaringan_saham_e3ec",
+      "angle": "BEI hapus ambang kapitalisasi Rp5 triliun dan price impact ratio dalam penyaringan HSC.",
+      "kicker": "Ekonomi",
+      "title": "BEI Ubah Metodologi HSC, 383 Saham Berpotensi Keluar dari IHSG",
+      "status": "sebagian",
+      "truth": {
+        "claim": "BEI menghapus ambang kapitalisasi Rp5 triliun dan price impact ratio dalam metodologi HSC, sehingga 383 saham berpotensi dikeluarkan dari IHSG.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Bursa Efek Indonesia (BEI) mengubah metodologi penyaringan Hidden Shareholder Concentration (HSC) dengan memperluas cakupan evaluasi terhadap seluruh saham tercatat di bursa. Direktur Utama BEI Jeffrey Hendrik menjelaskan bahwa batasan nilai kapitalisasi pasar di atas Rp5 triliun yang sebelumnya menjadi syarat utama penapisan resmi dihapus. Selain itu, komponen price impact ratio yang sebelumnya memerlukan indikasi pergerakan harga saham tidak wajar juga dihapus. \"Metodologi HSC yang sebelumnya memperhitungkan threshold dari saham di atas 5 triliun sebagai universe tidak lagi digunakan. Artinya screening dilakukan terhadap seluruh pasar atau seluruh saham yang tercatat di BEI,\" ujar Jeffrey dalam konferensi pers di Gedung BEI, Jakarta Selatan, Selasa (10/11).",
+        "Dengan metode baru ini, kriteria HSC berlaku bagi emiten yang pemegang sahamnya terdiri dari 10 pihak atau kurang dengan total kepemilikan mencapai 92,5 persen atau lebih. Jeffrey menyebut lonjakan jumlah saham HSC merupakan dampak langsung dari perombakan metodologi screening tersebut. Total emiten yang masuk dalam daftar HSC kini melonjak menjadi 383 saham, atau ada penambahan 300 saham baru. Seluruh saham yang masuk daftar HSC akan dikeluarkan dari perhitungan Indeks Harga Saham Gabungan (IHSG). Penambahan 300 saham tersebut setara dengan 6,16 persen dari total kapitalisasi pasar di IHSG.",
+        "BEI menyatakan akan segera mengumumkan daftar resmi 383 saham HSC dalam waktu dekat setelah berkoordinasi dengan para data vendor untuk menghindari kerancuan di pasar. Namun, kapan tepatnya aturan baru ini mulai berlaku secara operasional dan bagaimana tahapan penerapannya belum dijelaskan secara rinci dalam bahan yang tersedia. Jeffrey hanya menyebut pengumuman akan dilakukan segera. Detail mengenai tanggal efektif dan tahapan transisi belum diumumkan.",
+        "Langkah ini diambil untuk memberikan perlindungan sedini mungkin kepada investor, khususnya investor ritel, tanpa perlu menunggu adanya lonjakan pergerakan harga saham. Bagi investor, saham-saham yang masuk daftar HSC tidak lagi diperhitungkan dalam IHSG sehingga dapat memengaruhi komposisi indeks dan strategi investasi. Bagi emiten yang terdampak, status HSC berpotensi mengurangi visibilitas di pasar. Namun, dampak lebih lanjut seperti kewajiban buyback atau sanksi bagi emiten HSC tidak dijelaskan dalam bahan ini.",
+        "BEI juga merombak struktur Komite HSC. Dari rencana awal sembilan orang, jumlah anggota komite kini menjadi tujuh orang. Jeffrey menjelaskan keputusan memangkas anggota komite diambil setelah salah satu calon anggota independen, Yosua, batal bergabung. Untuk mempertahankan dominasi unsur independen, BEI memangkas perwakilan dari Self-Regulatory Organization (SRO). Komposisi akhirnya empat anggota independen dan tiga perwakilan SRO. Tiga perwakilan SRO diisi oleh Direktur Utama BEI, Direktur Utama KSEI Samsul Hidayat, dan Direktur Utama KPEI Antonius Herman Azwar. Empat anggota independen diisi oleh Ketua Umum KNKG Mardiasmo, perwakilan pelaku pasar Alex Widi, Guru Besar UGM Eduardus Tandelilin, serta investor asing Chapman Taylor."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Hidden Shareholder Concentration (HSC)?",
+          "a": "HSC adalah daftar saham dengan konsentrasi kepemilikan saham oleh sejumlah kecil pihak, yang digunakan BEI untuk menyaring saham dengan potensi pergerakan harga tidak wajar.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261110193054-92-1425597/bei-perketat-penyaringan-saham-hsc-383-emiten-bakal-dicoret-dari-ihsg"
+          }
+        },
+        {
+          "q": "Apa yang perlu diketahui tentang BEI Perketat Penyaringan Saham HSC?",
+          "a": "Dengan begitu, total emiten yang masuk dalam daftar HSC kini melonjak menjadi 383 saham. Seluruh saham yang masuk daftar HSC ini akan dikeluarkan dari perhitungan Indeks Harga Saham Gabungan (IHSG). Direktur Utama BEI Jeffrey Hendrik menyampaikan penambahan 300 saham dalam daftar saham HSC tersebut setara dengan 6,16 persen dari total kapitalisasi pasar di IHSG. \"Kami akan segera mengumumkan daftar saham HSC yang",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261110193054-92-1425597/bei-perketat-penyaringan-saham-hsc-383-emiten-bakal-dicoret-dari-ihsg"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi BEI soal daftar 383 saham HSC dan cek apakah saham Anda termasuk di dalamnya.",
+      "image": {
+        "url": "assets/4d0eac53b6.webp",
+        "credit": "sindonews.com",
+        "alt": "BEI Ubah Metodologi HSC, 383 Saham Berpotensi Keluar dari IHSG"
+      },
+      "sources": [
+        {
+          "outlet": "sindonews.com",
+          "url": "https://ekbis.sindonews.com/read/1770653/178/bei-ubah-metodologi-hsc-sebanyak-383-saham-masuk-daftar-1794319864",
+          "published_at": "2026-11-10T21:31:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110193054-92-1425597/bei-perketat-penyaringan-saham-hsc-383-emiten-bakal-dicoret-dari-ihsg",
+          "published_at": "2026-11-10T19:51:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_11",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Seputar Wapres dan Penyadapan Tak Terbukti",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pemeriksaan hari ini mencakup tiga klaim yang beredar di media sosial. Pertama, klaim bahwa Dasco akan menggantikan Gibran sebagai Wakil Presiden. Kedua, klaim bahwa rekaman suara Prabowo merupakan hasil penyadapan. Ketiga, klaim bahwa Listyo Sigit mengungkap Sri Mulyani sebagai pihak yang menyetujui anggaran untuk menyadap Presiden Prabowo. Ketiganya dinyatakan salah oleh TurnBackHoax.",
+        "Pada klaim pertama, Dasco sendiri telah membantah isu tersebut dan menyebutnya sebagai upaya pengalihan perhatian dari dugaan kasus penyadapan ilegal. Untuk klaim kedua, audio yang beredar ternyata potongan wawancara Prabowo dalam program Satu Jam Lebih Dekat Bersama Prabowo di tvOne pada Senin (15/9/2014), bukan rekaman penyadapan baru. Sementara pada klaim ketiga, tidak ditemukan bukti bahwa Listyo Sigit mengungkapkan bahwa Sri Mulyani memberikan persetujuan anggaran untuk menyadap Presiden Prabowo.",
+        "Pembaca sebaiknya memeriksa sumber asli dan konteks sebelum menyebarkan ulang klaim semacam ini, terutama yang menyangkut pejabat negara dan tuduhan penyadapan."
+      ],
+      "action": "Periksa sumber asli dan konteks sebelum membagikan klaim seputar pejabat negara dan penyadapan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Dasco Akan Gantikan Gibran sebagai Wapres",
+          "verdict": "salah",
+          "reason": "Dasco telah membantah isu tersebut dan menyebutnya sebagai upaya pengalihan perhatian dari dugaan kasus penyadapan ilegal.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37414-salah-dasco-akan-gantikan-gibran-sebagai-wapres"
+        },
+        {
+          "claim": "Rekaman Suara Prabowo Hasil Penyadapan",
+          "verdict": "salah",
+          "reason": "Audio tersebut merupakan potongan wawancara Prabowo dalam program Satu Jam Lebih Dekat Bersama Prabowo di tvOne pada Senin (15/9/2014), bukan rekaman hasil penyadapan yang baru bocor ke publik.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37415-salah-rekaman-suara-prabowo-hasil-penyadapan"
+        },
+        {
+          "claim": "Listyo Sigit Ungkap bahwa Sri Mulyani yang Menyetujui Anggaran Menyadap Presiden Prabowo",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan bukti bahwa Listyo Sigit mengungkapkan bahwa Sri Mulyani yang memberikan persetujuan anggaran untuk menyadap Presiden Prabowo.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37417-salah-listyo-sigit-ungkap-bahwa-sri-mulyani-yang-menyetujui-anggaran-menyadap-presiden-prabowo"
+        }
+      ],
+      "pattern": "Rekaman lama diberi tanggal baru dan tuduhan tanpa bukti disebarkan sebagai informasi terkini."
+    },
+    {
+      "id": "c8",
+      "type": "good_news",
+      "topic_id": "t_am_sangadji_pahlawan_nasional_8f6c",
+      "angle": "Kisah AM Sangadji, tokoh Sarekat Islam asal Maluku yang dianugerahi gelar Pahlawan",
+      "kicker": "Satu hal baik",
+      "title": "AM Sangadji, Pahlawan Nasional dari Maluku yang Berjuang Lewat Pena",
+      "status": "sebagian",
+      "truth": {
+        "claim": "AM Sangadji dianugerahi gelar Pahlawan Nasional oleh Presiden Prabowo Subianto pada 10 November 2026 sebagai satu dari 19 tokoh penerima.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:00:36+07:00"
+      },
+      "body": [
+        "Abdoel Moethalib Sangadji, atau yang lebih dikenal sebagai AM Sangadji, resmi menerima gelar Pahlawan Nasional dari Presiden Prabowo Subianto. Penetapan itu berlangsung di Istana Negara, Jakarta, pada 10 November 2026, bertepatan dengan peringatan Hari Pahlawan. Sangadji menjadi satu dari 19 tokoh yang menerima gelar kehormatan tersebut pada tahun ini. Gubernur Maluku Hendrik Lewerissa menyampaikan rasa syukur dan terima kasihnya atas penganugerahan itu, yang disebutnya sebagai hadiah bagi seluruh rakyat Maluku.",
+        "AM Sangadji lahir di Desa Rohomoni, Pulau Haruku, Maluku Tengah, pada 3 Juni 1889. Ia berasal dari keluarga berkecukupan: ayahnya, Abdul Wahab, adalah raja negeri Rohomoni, sementara ibunya, Sitti Pattisahusiwa, merupakan putri dari keturunan raja Siri Sori Islam. Latar belakang itu memberinya akses pendidikan kolonial Belanda, mulai dari Hollandsch-Inlandsche School (HIS), Meer Uitgebreid Lager Onderwijs (MULO), hingga Algemeene Middelbare School (AMS).",
+        "Nama Sangadji dikenal melalui aktivitasnya di Sarekat Islam, tempat ia bekerja bersama tokoh pergerakan seperti H.O.S. Tjokroaminoto dan Haji Agus Salim. Di Partai Sarekat Islam Indonesia (PSII), ia menjalankan tugas konsolidasi organisasi dengan berkeliling ke Jawa, Kalimantan, Sulawesi, Sumatera, hingga Maluku untuk memperluas jaringan dan menyebarkan gagasan kemerdekaan. Ia juga aktif menulis di surat kabar pergerakan seperti Oetoesan Hindia, Sinar Hindia, Fadjar Asia, dan Suara Borneo, serta dikenal sebagai orator.",
+        "Keterlibatannya dalam Kongres Pemuda II pada 1928 yang melahirkan Sumpah Pemuda menunjukkan peran tokoh dari Maluku dalam gerakan kebangsaan. Setelah Proklamasi Kemerdekaan, ia turut menyebarkan berita kemerdekaan di Kalimantan dan kemudian memimpin Laskar Hizbullah yang berpusat di Yogyakarta. Sangadji meninggal di Yogyakarta pada 20 April 1949 setelah ditembak di kediamannya.",
+        "Meski penetapan telah diumumkan, sejumlah detail teknis belum jelas, termasuk dasar pertimbangan penetapan dan susunan acara penganugerahan. Kedua pemberitaan sama-sama menyebut 19 tokoh penerima gelar tahun ini tanpa merinci nama lainnya. Langkah berikutnya adalah menunggu keterangan resmi pemerintah mengenai rincian penetapan dan daftar lengkap penerima, yang hingga kini belum diumumkan secara terbuka."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud dengan gelar Pahlawan Nasional?",
+          "a": "Gelar yang diberikan pemerintahan nasional sebagai pengakuan tertinggi atas tindakan pengorbanan diri bagi negara serta prestasi besar bagi bangsa.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pahlawan_(gelar)"
+          }
+        },
+        {
+          "q": "Di mana letak Maluku dan mengapa disebut Bumi Raja-Raja?",
+          "a": "Maluku adalah provinsi di Indonesia dengan ibu kota Ambon, meliputi bagian selatan Kepulauan Maluku; sebutan Bumi Raja-Raja merujuk pada tradisi kerajaan-kerajaan lokal di wilayah itu.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Maluku"
+          }
+        },
+        {
+          "q": "Siapa AM Sangadji dalam konteks sejarah pergerakan nasional?",
+          "a": "Ia adalah tokoh pergerakan nasional asal Maluku yang menerima gelar Pahlawan Nasional.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261110122348-20-1425341/am-sangadji-tokoh-pergerakan-nasional-dari-maluku"
+          }
+        }
+      ],
+      "action": "Baca profil singkat AM Sangadji dan renungkan peran tokoh daerah dalam sejarah kebangsaan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5844795/am-sangadji-resmi-ditetapkan-sebagai-pahlawan-nasional-dari-maluku",
+          "published_at": "2026-11-10T19:54:57+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261110122348-20-1425341/am-sangadji-tokoh-pergerakan-nasional-dari-maluku",
+          "published_at": "2026-11-10T17:45:36+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:00:36+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-10",
+      "previous_edition": "2026-11-10",
+      "changes": []
+    }
+  ]
+}
