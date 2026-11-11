@@ -427,7 +427,13 @@ try {
 
   function planCards(scope: "nasional" | "lokal", exclude: Set<string> = new Set()) {
     const scoped = entries.filter((e) => (scope === "lokal" ? isLocalStory(e.cluster) : true));
-    const { kept } = hardFilter(scoped, scope, now);
+    const { kept, stats } = hardFilter(scoped, scope, now);
+    if (scope === "lokal") {
+      console.log(
+        `  lokal: ${scoped.length} kandidat lokal · ${kept.length} lolos filter` +
+          ` (basi ${stats.stale}, orphan ${stats.orphan}, bukan-lokal ${stats.localOnly})`,
+      );
+    }
     const opts = { scope, now, maxArticlesPerCategory: scope === "lokal" ? 1 : 2 };
     // Edisi Sleman sengaja menjaga variasi: satu topik per kategori, karena
     // korpus lokal sering didominasi satu tema (mis. hewan liar sepekan ini).
@@ -798,7 +804,9 @@ try {
     // Jangan tinggalkan edisi lokal lama: aplikasi membacanya sebagai edisi hari ini.
     const stale = join(outDir, `${editionId}.lokal.json`);
     if (existsSync(stale)) rmSync(stale);
-    console.log(`lokal    · tidak terbit (${localPlan.length} topik lolos, minimum 2)`);
+    console.log(
+      `lokal    · tidak terbit (${localPlan.length} topik, ${uniqueLocal.length} kartu unik; minimum 2)`,
+    );
   }
 
   console.log(
