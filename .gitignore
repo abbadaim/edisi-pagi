@@ -17,3 +17,10 @@ data/state/*.db-shm
 
 # Artefak POC newsroom (NEWSROOM.md) — tidak di-commit.
 data/work/
+
+# Fixture suite UI — hasil scripts/prepare-ui-fixture.ts
+fixtures/ui/public/
+
+# Artefak Playwright
+playwright-report/
+test-results/

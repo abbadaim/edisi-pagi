@@ -93,6 +93,11 @@ ingest → cluster → adjudicate → planner → rank/select
 
 1. Change one policy at a time; add one test that locks it.
 2. Run unit tests and typecheck.
+   ```bash
+   npm test            # termasuk tests/ui-static.test.ts (path, ?v=, subpath, push payload)
+   npm run typecheck
+   npm run test:ui     # browser: nav, render, offline, chip misread (workflow ui.yml)
+   ```
 3. For pipeline changes, do a cheap build first:
    ```bash
    LLM_PROVIDER=deepseek npm run build -- --newsroom-limit 2 --thin --date <new-date>

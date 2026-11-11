@@ -191,7 +191,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `latest_by_scope` menyembunyikan tab mingguan di hari non-Minggu. Itu keputusan produk.
 - `npm run serve` default melayani di akar, sedangkan produksi di `/edisi-pagi/`. Pakai `BASE_PATH=/edisi-pagi npm run serve` untuk mereproduksi produksi; tanpa itu bug path absolut tidak muncul di lokal (`DEC-0015`).
 - `public/index.html` ditulis ulang di tempat oleh `publish.ts` (`?v=<sha1>`); berkas di repo adalah hasil publish, bukan sumber terpisah.
-- Asersi UI tanpa browser ada di `tests/ui-static.test.ts` dan ikut `npm test`; asersi browser (Playwright) belum ada (`DEC-0014`).
+- Asersi UI tanpa browser ada di `tests/ui-static.test.ts` dan ikut `npm test`; asersi browser ada di `tests-ui/shell.spec.ts` dan dijalankan `npm run test:ui` (`DEC-0014`).
+- `npm run test:ui` memakai `fixtures/ui/public/` (hasil `npm run prepare:ui`, di-.gitignore) dan server yang sama (`ROOT`) di `BASE_PATH=/edisi-pagi`. Tidak menyentuh edisi terbit, tidak memakai jaringan. Workflow: `ui.yml`, terpisah dari `daily.yml` (`DEC-0013`).
 
 ### State CI
 

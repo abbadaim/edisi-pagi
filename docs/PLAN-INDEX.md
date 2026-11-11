@@ -12,11 +12,13 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 
 | # | Rencana | Kelas | Status | Diperbarui |
 |---|---|---|---|---|
-| 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `implementing` — commit 1 selesai, Playwright belum | 2026-11-11 |
+| 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `tested` — menunggu `ui.yml` hijau | 2026-11-11 |
 
-`001` commit 1 sudah masuk: `scripts/serve.ts` (`BASE_PATH`, `PORT=0`) dan
-`tests/ui-static.test.ts` (UI-01, UI-02, SRV-01, SRV-02, PUSH-01). `npm test`
-= 195 lulus. Commit 2 (Playwright + `ui.yml`) belum dikerjakan.
+`001` sudah lengkap di kode: lapisan tanpa browser (`tests/ui-static.test.ts`)
+dan lapisan browser (`tests-ui/shell.spec.ts`, `npm run test:ui`). `npm test`
+= 195 lulus; suite browser = 4 lulus, dua kali berturut-turut. Negatif UI-01,
+PUSH-01, dan UI-06 terbukti gagal saat perilakunya dirusak. `ui.yml` belum
+pernah jalan di GitHub.
 
 ---
 

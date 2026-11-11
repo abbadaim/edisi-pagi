@@ -1,7 +1,7 @@
 # 001 — Harness tes UI
 
 ```
-Status: mockup-approved (2026-11-11)
+Status: tested (2026-11-11)
 Kelas: infra
 Dibuat: 2026-11-11
 Diperbarui: 2026-11-11
@@ -44,7 +44,6 @@ server uji bisa melayani subpath.
 
 Dipecah menjadi dua commit setelah revisi v2 (§Revisi). Commit 1 tidak menambah
 dependensi apa pun.
-
 **Commit 1 — lapisan tanpa browser (`tests/`, ikut `npm test`):**
 
 1. `scripts/serve.ts` — dukungan `BASE_PATH` (default `/`). Saat
@@ -117,12 +116,15 @@ Harness ini sendiri adalah tesnya.
    membuktikan aset terlayani di akar — jadi asersi 404 di SRV-01 tidak mungkin
    lulus tanpa penolakan prefix yang benar.
 
-**Commit 2 — belum dijalankan:**
+**Commit 2 — sudah dijalankan (2026-11-11):**
 
-5. `npm run test:ui` lulus pada `public/` yang sekarang.
-6. **Uji negatif UI-06:** matikan/copot pendaftaran SW → UI-06 gagal.
-7. Suite lokal hijau dua kali berturut-turut sebelum `ui.yml` dipasang.
-8. Satu run `ui.yml` nyata di GitHub Actions hijau, termasuk unduh browser.
+5. `npm run test:ui` — 4 lulus (4,0 detik) atas `fixtures/ui/public/` di
+   `/edisi-pagi/`: UI-03, UI-04, UI-06, UI-07.
+6. **Uji negatif UI-06:** registrasi di `app.js` diubah menjadi `sw-tidak-ada.js`
+   → UI-06 gagal (`page.waitForFunction` timeout 30 detik), tiga uji lain lulus.
+   Dipulihkan; hijau lagi.
+7. Suite lokal dijalankan dua kali berturut-turut sebelum `ui.yml` dipasang.
+8. Satu run `ui.yml` nyata di GitHub Actions — menunggu hasil.
 
 ## 6. Risiko dan rollback
 
@@ -161,6 +163,22 @@ keputusan, ambisi “tes UI otomatis”.
 commit 1: commit 1 menguji *penyajian* dan *kontrak aset*, bukan render. Render
 baru diuji di commit 2.
 
+### v3 — 2026-11-11 — `ROOT` pada `serve.ts`
+
+**Sebab.** Suite browser perlu melayani `fixtures/ui/public/`, sedangkan
+`serve.ts` mengunci `public/`. Membuat server kedua khusus tes berarti suite
+menguji server yang berbeda dari `npm run serve` — persis kelas penyimpangan
+yang ingin dicegah.
+
+**Perubahan.** `ROOT` (relatif ke akar repo, default `public`) ditambahkan ke
+`serve.ts`. Satu server untuk pengembangan dan tes. Perilaku default tidak
+berubah. Tercatat di `DEC-0015`.
+
+**Konsekuensi.** `ROOT` adalah pintu yang bisa menyajikan direktori mana pun di
+dalam repo, termasuk `data/` dan `.env.local` tidak (bukan di bawah `public/`
+maupun fixture). Risikonya terbatas pada mesin lokal dan CI, bukan produksi
+(GitHub Pages tidak menjalankan `serve.ts`).
+
 ---
 
 ## Riwayat
@@ -173,6 +191,12 @@ baru diuji di commit 2.
   `tests/ui-static.test.ts` (UI-01, UI-02, SRV-01, SRV-02, PUSH-01). 195 uji
   lulus, typecheck bersih, 3 uji negatif terbukti gagal saat perilakunya dirusak.
 - `2026-11-11` — **belum `shipped`** — commit 2 (Playwright) belum dikerjakan.
+- `2026-11-11` — `tested` — commit 2: `playwright.config.ts`, `tests-ui/shell.spec.ts`
+  (UI-03, UI-04, UI-06, UI-07), `fixtures/ui/`, `scripts/prepare-ui-fixture.ts`,
+  `.github/workflows/ui.yml`, `ROOT` di `serve.ts` (§Revisi v3).
+  Hasil: 4 lulus (4,0 detik). Uji negatif UI-06 dijalankan: registrasi SW
+  dirusak → UI-06 gagal (timeout 30 detik). Menunggu `ui.yml` hijau untuk
+  `shipped`.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

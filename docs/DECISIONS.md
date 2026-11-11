@@ -100,8 +100,10 @@ _Tanggal: 2026-11-11. Menajamkan `DEC-0013`. Rencana: `docs/plans/001-ui-test-ha
 `npm run serve` mendukung `BASE_PATH` (default `/`). Dengan
 `BASE_PATH=/edisi-pagi`, server melayani `public/` di bawah prefix itu dan
 mengembalikan 404 di luar prefix, sehingga bug path absolut bisa direproduksi
-lokal. `PORT=0` didukung agar tes memakai port acak.
+lokal. `PORT=0` didukung agar tes memakai port acak, dan `ROOT` (default
+`public`, relatif akar repo) agar suite UI memakai server yang sama dengan
+`npm run serve` alih-alih server kedua yang bisa menyimpang.
 
 Sebab: produksi dilayani dari `/edisi-pagi/` sedangkan server lokal melayani di
 akar — perbedaan itulah yang membuat bug path lolos ke produksi.
-_Tanggal: 2026-11-11._
+_Tanggal: 2026-11-11. `ROOT` ditambahkan pada §Revisi v3 rencana 001._

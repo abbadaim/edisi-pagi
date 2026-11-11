@@ -1,0 +1,596 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-11",
+  "scope": "nasional",
+  "published_at": "2026-11-11T05:45:00+07:00",
+  "coverage": {
+    "from": "2026-11-10T05:00:00+07:00",
+    "to": "2026-11-11T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-11T05:38:12+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 5,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "verify": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    "embed": {
+      "provider": "local",
+      "model": "multilingual-e5-small"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_gibran_hmp",
+      "angle": "50 anggota DPR menandatangani usulan",
+      "kicker": "Nasional",
+      "title": "50 anggota DPR teken HMP soal ijazah Gibran",
+      "status": "sebagian",
+      "truth": {
+        "claim": "50 anggota DPR telah menandatangani usulan Hak Menyatakan Pendapat",
+        "status": "sebagian",
+        "confidence": 0.75,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [
+          "Belum ada daftar nama resmi yang dipublikasikan DPR"
+        ],
+        "would_change_if": "DPR mempublikasikan daftar penandatangan",
+        "assessed_at": "2026-11-11T05:21:00+07:00"
+      },
+      "body": [
+        "Mardani Ali Sera mengonfirmasi 50 anggota DPR telah menandatangani usulan Hak Menyatakan Pendapat terkait polemik ijazah Wapres Gibran. Angkanya bergerak cepat: dokumen yang beredar awalnya memuat 12 nama, lalu “lebih dari 25”, dan siang itu “50-an”.",
+        "Puan Maharani membenarkan dokumen sudah diterima pimpinan DPR dan berjanji menindaklanjuti setelah paripurna."
+      ],
+      "action": "Kalau ada yang bilang “Gibran sudah dimakzulkan”, itu belum terjadi. HMP masih usulan.",
+      "image": {
+        "url": "/assets/fallback/policy.webp",
+        "credit": null,
+        "alt": "Ilustrasi kebijakan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "detikcom",
+          "url": "https://news.detik.com/berita/d-8746364/sudah-50-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran",
+          "published_at": "2026-11-10T12:34:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:10:00+07:00"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110110329-32-1425304/puluhan-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran",
+          "published_at": "2026-11-10T11:19:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:11:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/soal-isu-gibran-mundur-puan-belum-ada-apa-apa-masih-wapres-idCz",
+          "published_at": "2026-11-10T11:55:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:12:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-10",
+      "changes": [
+        {
+          "field": "number",
+          "from": 25,
+          "to": 50,
+          "at": "2026-11-10T12:34:00+07:00",
+          "basis": {
+            "outlet": "detikcom",
+            "url": "https://news.detik.com/berita/d-8746364/sudah-50-anggota-dpr-teken-hak-menyatakan-pendapat-wapres-gibran"
+          }
+        }
+      ],
+      "explain": [
+        {
+          "q": "Mengapa ijazah Gibran jadi polemik?",
+          "a": "Dokumen pendidikan Gibran dipersoalkan sejak pencalonannya pada 2024, ketika syarat usia wakil presiden diperdebatkan. Polemik mencuat lagi pada 2026 setelah dokumennya disorot dalam perkara di MK dan MA.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu HMP?",
+          "a": "Hak Menyatakan Pendapat adalah hak konstitusional DPR (Pasal 20A UUD 1945) untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa. Usulan harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Puan Maharani?",
+          "a": "Ketua DPR RI periode 2024–2029, politikus PDI-P, dan putri Megawati Soekarnoputri. Sebagai ketua, ia menentukan apakah usulan HMP masuk agenda paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Bagaimana wapres bisa diberhentikan?",
+          "a": "DPR mengajukan HMP, MPR menyidangkan, lalu keputusan diambil dalam rapat paripurna MPR dengan kuorum dan suara minimal dua pertiga. Prosesnya konstitusional dan panjang.",
+          "source": {
+            "outlet": "UUD 1945 Pasal 7B",
+            "url": "https://www.mpr.go.id/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_beras_sphp",
+      "angle": "Bulog buka dialog, harga belum turun",
+      "kicker": "Ekonomi",
+      "title": "Harga beras belum turun meski 1 juta ton SPHP disiapkan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemerintah menyiapkan 1 juta ton beras SPHP dengan harga Rp13.100 per kg",
+        "status": "sebagian",
+        "confidence": 0.7,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [
+          "Volume yang benar-benar disalurkan belum diumumkan"
+        ],
+        "would_change_if": "Bulog merilis realisasi penyaluran",
+        "assessed_at": "2026-11-11T05:24:00+07:00"
+      },
+      "body": [
+        "Dirut Bulog Ahmad Rizal Ramdhani membuka dialog informal dengan pelaku usaha perberasan dan berencana mengumpulkan “para sepuh” sektor ini.",
+        "Pemerintah menyiapkan satu juta ton beras SPHP. Harga SPHP ditetapkan Rp13.100 per kilogram."
+      ],
+      "action": "Rp13.100 adalah patokan harga SPHP. Kalau ada “bantuan beras” yang minta transfer biaya kirim, itu scam.",
+      "image": {
+        "url": "/assets/fallback/economy.webp",
+        "credit": null,
+        "alt": "Ilustrasi ekonomi",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110115640-92-1425325/harga-beras-masih-mahal-bos-bulog-siapkan-strategi-ini",
+          "published_at": "2026-11-10T12:31:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:15:00+07:00"
+        },
+        {
+          "outlet": "ANTARA",
+          "url": "https://www.antaranews.com/video/5843527/pemerintah-siapkan-1-juta-ton-beras-sphp-stabilkan-harga-pasar",
+          "published_at": "2026-11-10T12:53:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:16:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": [],
+      "explain": [
+        {
+          "q": "Apa itu SPHP?",
+          "a": "Stabilisasi Pasokan dan Harga Pangan adalah program Bulog yang menjual beras dengan harga eceran yang ditetapkan pemerintah. Harga SPHP saat ini Rp13.100 per kilogram.",
+          "source": {
+            "outlet": "Bulog",
+            "url": "https://www.bulog.co.id/"
+          }
+        },
+        {
+          "q": "Mengapa harga beras masih tinggi?",
+          "a": "Pasokan gabah menurun akibat kemarau panjang, sementara permintaan tetap. Operasi pasar menahan harga di tingkat konsumen, tetapi tidak menambah stok yang dipegang pedagang.",
+          "source": {
+            "outlet": "Kompas.com",
+            "url": "https://www.kompas.com/"
+          }
+        },
+        {
+          "q": "Apa peran Bulog?",
+          "a": "Badan usaha milik negara yang ditugasi menjaga stok dan stabilisasi harga pangan. Ia menyerap gabah petani dan menyalurkan beras SPHP ke pasar.",
+          "source": {
+            "outlet": "Bulog",
+            "url": "https://www.bulog.co.id/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_penyadapan_prabowo",
+      "angle": "Tiga minggu, empat peristiwa",
+      "kicker": "Mendalam",
+      "title": "Siapa yang menyadap siapa",
+      "status": "sebagian",
+      "truth": null,
+      "dek": "Kasus penyadapan presiden bergerak dari gawai ke etika, lalu ke politik. Yang belum ada: siapa yang menyuruh.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "1",
+          "label": "jenderal disidang etik"
+        },
+        {
+          "value": "6",
+          "label": "saksi minta perlindungan"
+        },
+        {
+          "value": "3",
+          "label": "pekan berjalan"
+        }
+      ],
+      "body": [
+        "Divisi Propam Polri menggelar sidang etik terhadap Irjen Ahrie Sonta, mantan Kadivkum Polri. Sejumlah media menyebutnya berstatus tersangka; status resminya belum dikonfirmasi ke sumber primer.",
+        "Dalam tiga hari terakhir kasus ini bercabang tiga arah: Puan Maharani menyinggung dugaan penyadapan ilegal dalam pidato paripurna, Golkar melayangkan somasi kepada Said Didu dan Sri Rajasa, dan LPSK mendalami dugaan ancaman terhadap enam saksi.",
+        "Yang belum muncul di pemberitaan harian: rangkaian ini bergerak dari perangkat ke institusi. Setiap langkah menjawab pertanyaan teknis, tetapi menambah pertanyaan politik."
+      ],
+      "action": "Kalau kamu melihat klip “rekaman Prabowo”, cek dulu tanggalnya — potongan tvOne 2014 masih berputar.",
+      "image": {
+        "url": "/assets/fallback/safety.webp",
+        "credit": null,
+        "alt": "Ilustrasi keamanan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110113304-12-1425315/propam-polri-gelar-sidang-etik-irjen-ahrie-sonta-di-kasus-penyadapan",
+          "published_at": "2026-11-10T11:36:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:18:00+07:00"
+        },
+        {
+          "outlet": "detikcom",
+          "url": "https://news.detik.com/berita/d-8746327/lpsk-dalami-dugaan-ancaman-ke-6-saksi-kasus-penyadapan-presiden-prabowo",
+          "published_at": "2026-11-10T12:09:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:19:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/irjen-ahrie-sonta-jalani-sidang-etik-di-mabes-polri-hari-ini-idCy",
+          "published_at": "2026-11-10T11:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:20:00+07:00"
+        },
+        {
+          "outlet": "Tirto",
+          "url": "https://tirto.id/bahlil-dikaitkan-kasus-penyadapan-golkar-somasi-said-didu-idCC",
+          "published_at": "2026-11-10T12:12:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:21:00+07:00"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110104104-32-1425293/rapat-paripurna-dpr-puan-singgung-kasus-penyadapan-ilegal-ke-prabowo",
+          "published_at": "2026-11-10T11:04:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:22:00+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-10-21",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_investasi_bodong",
+      "angle": "16 entitas dihentikan",
+      "kicker": "Ekonomi",
+      "title": "OJK hentikan 16 entitas investasi ilegal",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Satgas PASTI menghentikan kegiatan 16 entitas keuangan ilegal",
+        "status": "terkonfirmasi",
+        "confidence": 0.93,
+        "band": "hampir_pasti",
+        "basis": {
+          "strongest": "primary_confirms",
+          "primary": 1,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T05:26:00+07:00"
+      },
+      "body": [
+        "Satgas PASTI menghentikan kegiatan 16 entitas yang diduga melakukan aktivitas keuangan ilegal. Sepuluh di antaranya memakai skema penyewaan komputasi, pengerjaan tugas, dan member get member.",
+        "Beberapa memakai kecerdasan artifisial untuk meyakinkan korban."
+      ],
+      "action": "“Tugas online + deposit + rekrut teman” adalah tiga tanda yang selalu muncul bersamaan.",
+      "image": {
+        "url": "/assets/fallback/economy.webp",
+        "credit": null,
+        "alt": "Ilustrasi ekonomi",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "Satgas PASTI (OJK)",
+          "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/default.aspx",
+          "published_at": "2026-11-10T00:00:00+07:00",
+          "tier": 1,
+          "accessed_at": "2026-11-11T05:25:00+07:00"
+        },
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261110113709-78-1425317/satgas-pasti-ojk-blokir-16-entitas-investasi-bodong-ini-daftarnya",
+          "published_at": "2026-11-10T12:17:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:25:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": [],
+      "explain": [
+        {
+          "q": "Apa itu Satgas PASTI?",
+          "a": "Satuan tugas bentukan OJK yang memberantas aktivitas keuangan ilegal, termasuk investasi bodong dan pinjaman online tidak berizin.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Apa ciri investasi bodong?",
+          "a": "Menjanjikan keuntungan tetap dan tidak wajar, meminta setoran awal, dan merekrut anggota baru. Beberapa memakai nama entitas berizin untuk meyakinkan korban.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang harus dilakukan jika sudah menyetor?",
+          "a": "Laporkan ke OJK dan polisi, simpan bukti transfer, dan jangan menambah setoran untuk “membuka” dana yang tertahan.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_10",
+      "angle": "Sepuluh fact-check, semuanya politik",
+      "kicker": "Kabar beredar",
+      "title": "Rekaman lama, tanggal baru",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Tiga dari sepuluh fact-check hari ini adalah rekaman lama yang diberi tanggal baru."
+      ],
+      "action": "Balas dengan tautan TurnBackHoax-nya; jangan debat isinya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:30:00+07:00"
+        }
+      ],
+      "items": [
+        {
+          "claim": "Rekaman suara Prabowo hasil penyadapan",
+          "verdict": "salah",
+          "reason": "Potongan wawancara tvOne 15 September 2014, menit 05.14–06.55. AFP sudah membantah versi serupa pada 2024.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37415-salah-rekaman-suara-prabowo-hasil-penyadapan"
+        },
+        {
+          "claim": "Anies bertemu Menlu Singapura saat hubungan tegang 2026",
+          "verdict": "menyesatkan",
+          "reason": "Pertemuan itu April 2024; watermark TikTok @aniesbaswedan masih menempel di unggahan ulang.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37421-video-anies-baswedan-bertemu-menlu-dan-dubes-singapura-saat-hubungan-indonesia-singapura-tegang-pada-2026"
+        }
+      ],
+      "pattern": "Tiga dari sepuluh fact-check hari ini adalah rekaman lama yang diberi tanggal baru.",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c6",
+      "type": "good_news",
+      "topic_id": "t_hari_pahlawan",
+      "angle": "Ziarah nasional di Kalibata",
+      "kicker": "Satu hal baik",
+      "title": "Hari Pahlawan, dan yang berjalan tanpa sorotan",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Ziarah nasional dan renungan suci digelar di Taman Makam Pahlawan Kalibata pagi ini.",
+        "Di Aceh, 506 dapur perebusan garam dibangun untuk petani pesisir pascabencana, menaikkan kapasitas hingga 120 kg per proses."
+      ],
+      "action": "Tidak ada yang perlu dilakukan. Ini hanya supaya harimu tidak hanya berisi hal buruk.",
+      "image": {
+        "url": "/assets/fallback/culture.webp",
+        "credit": null,
+        "alt": "Ilustrasi budaya",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "CNN Indonesia",
+          "url": "https://www.cnnindonesia.com/nasional/20261110121149-22-1425329/foto-hormat-abadi-di-pusara-para-pahlawan",
+          "published_at": "2026-11-10T12:38:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:32:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-10",
+      "previous_edition": null,
+      "changes": [],
+      "explain": [
+        {
+          "q": "Apa itu Hari Pahlawan?",
+          "a": "Diperingati setiap 10 November untuk mengenang pertempuran Surabaya 1945, yang menjadi simbol perlawanan setelah proklamasi kemerdekaan.",
+          "source": {
+            "outlet": "Kemensos",
+            "url": "https://kemensos.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa tanggalnya 10 November?",
+          "a": "Merujuk pada ultimatum Sekutu kepada pejuang Surabaya dan pertempuran besar yang berlangsung setelahnya pada 1945.",
+          "source": {
+            "outlet": "Kemensos",
+            "url": "https://kemensos.go.id/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "misread",
+      "topic_id": "t_misread_kebijakan_sim_dan_poin_1980",
+      "angle": "“wacana” tidak ada di judul",
+      "kicker": "Salah dipahami",
+      "title": "Yang hilang dari judul: “wacana”",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Judul yang beredar: “SIM Seumur Hidup Belum Berlaku, Korlantas Siapkan Sistem Poin”. Judul itu tidak memuat kata “wacana” yang muncul di isi artikel.",
+        "Isi artikelnya menyebut: “Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.”. Artinya, baru dibicarakan, belum diputuskan.",
+        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
+      ],
+      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278441/sim-seumur-hidup-belum-berlaku-korlantas-siapkan-sistem-poin",
+          "published_at": "2026-11-11T09:27:26+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T09:55:40+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "claim": "SIM Seumur Hidup Belum Berlaku, Korlantas Siapkan Sistem Poin",
+      "reality": "Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.",
+      "missing": [
+        "baru dibicarakan, belum diputuskan"
+      ],
+      "trigger": "headline_body_gap"
+    },
+    {
+      "id": "c8",
+      "type": "change",
+      "topic_id": "t_pajero_gejayan",
+      "angle": "Polisi menyebut pengemudi sebagai korban",
+      "kicker": "Sleman",
+      "title": "Dari “bang jago” jadi korban dalam 17 jam",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Polisi menyebut pengemudi Pajero sebagai korban dugaan penganiayaan, bukan pelaku."
+      ],
+      "action": "Kalau video ini masuk grup keluarga, sebutkan konteksnya.",
+      "image": {
+        "url": "/assets/fallback/safety.webp",
+        "credit": null,
+        "alt": "Ilustrasi keamanan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa",
+          "published_at": "2026-11-10T10:13:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:36:00+07:00"
+        }
+      ],
+      "before": {
+        "at": "2026-11-09T19:36:00+07:00",
+        "label": "Bang Jago",
+        "quote": "Geber Pajero di Perkampungan Gejayan Sleman, Bang Jago Dihajar Warga",
+        "source": {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8745799/apes-pemuda-dihajar-massa-gegara-geber-pajero-di-gejayan"
+        }
+      },
+      "after": {
+        "at": "2026-11-10T12:36:00+07:00",
+        "label": "Korban",
+        "quote": "Korban diketahui berinisial GIJ (21), warga Kabupaten Tebo, Jambi, pekerjaan sebagai mahasiswa",
+        "source": {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa"
+        }
+      },
+      "what_changed": "Label pelaku menjadi korban; identitas berubah dari “bang jago” menjadi mahasiswa",
+      "what_unknown": "Klaim “mabuk” masih keterangan warga, belum hasil pemeriksaan",
+      "revision": 2,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-10",
+      "changes": [
+        {
+          "field": "label",
+          "from": "Bang Jago",
+          "to": "Korban",
+          "at": "2026-11-10T12:36:00+07:00",
+          "basis": {
+            "outlet": "detikJogja",
+            "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,12 @@ import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { extname, join, normalize } from "node:path";
 
-const root = join(new URL("..", import.meta.url).pathname, "public");
+const projectRoot = new URL("..", import.meta.url).pathname;
+/**
+ * `ROOT` hanya untuk tes: melayani direktori lain (fixture) dengan server yang
+ * sama, supaya suite UI tidak memakai server berbeda dari `npm run serve`.
+ */
+const root = join(projectRoot, process.env.ROOT ?? "public");
 const port = Number(process.env.PORT ?? 8080);
 
 /**
