@@ -451,7 +451,10 @@ Gagal di sini jauh lebih baik daripada gagal pukul 05.45 setelah 12 feed ditarik
 
 ### 11.7 Pencatatan
 
-Setiap panggilan menulis ke `run_log`:
+Setiap panggilan menulis ke `llm_calls` (per panggilan) dan agregatnya ke
+`run_log`. Tabel `llm_calls` menyimpan `role` (plan/write/edit/repair/desk/hoax),
+`topic_id`, `attempt`, token, biaya, dan latensi; `run_log.llm_calls` menyimpan
+jumlah panggilan per run.
 
 ```jsonc
 {

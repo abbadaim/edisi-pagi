@@ -102,6 +102,10 @@ export interface CardBase {
   truth: Truth | null;
   body: string[];
   explain?: ExplainItem[];
+  /** Pertanyaan yang belum terjawab bahan; tampil sebagai kotak transparansi. */
+  unresolved?: string[];
+  /** Peringatan kuat untuk klaim yang sumbernya bertentangan; tampil di atas body. */
+  disclaimer?: string;
   action: string;
   image: ImageRef | null;
   sources: Source[];

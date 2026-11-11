@@ -37,6 +37,39 @@ OPENCODE_MODEL=opencode-go/deepseek-v4.1-flash
 
 Tanpa keduanya, pipeline tetap berjalan dengan penulis deterministik (judul dan isi dari artikel, konteks dari glosarium).
 
+## Newsroom (POC)
+
+`NEWSROOM.md` merancang lima peran: planner, riset, writer, editor, dan desk.
+`NEWSROOM-IMPLEMENTATION.md` berisi rencana produksi dan fase rollout.
+
+POC menulis artefak ke `data/work/poc-newsroom/<tanggal>/` dan membandingkan
+hasilnya dengan edisi yang sudah terbit. Pipeline produksi **memakai jalur
+newsroom secara default**:
+
+```bash
+npm run build -- --date 2026-11-10
+
+# rollback ke jalur lama
+npm run build -- --no-newsroom --date 2026-11-10
+# atau NEWSROOM_WRITE=0
+```
+
+Desk review berjalan dalam mode shadow (advisory). Matikan dengan
+`NEWSROOM_DESK=off`. `--newsroom-limit 2` hanya untuk uji integrasi.
+
+```bash
+LLM_PROVIDER=deepseek npm run poc:newsroom -- --date 2026-11-10 --limit 3
+# --no-fetch        : jangan ambil teks penuh (uji offline)
+# --max-fetch 4     : jumlah halaman per topik
+# --revisions 1     : putaran revisi writer per kartu
+# --plan-only       : hanya planner; tampilkan catatan editor yang terbuka
+```
+
+Baca `data/work/poc-newsroom/<tanggal>/report.md` untuk perbandingan metrik,
+draft, temuan editor, dan vonis desk. Temuan yang tidak bisa ditutup bahan
+disimpan di `data/work/poc-newsroom/ledger.json` dan dibaca planner pada hari
+berikutnya (NEWSROOM.md §4.6).
+
 ## Notifikasi
 
 ```bash
@@ -60,8 +93,9 @@ Secret yang dibutuhkan: `DEEPSEEK_API_KEY` atau `OPENCODE_BIN`, `VAPID_PRIVATE_K
 
 | Perintah | Fungsi |
 |---|---|
-| `npm test` | 92 uji |
+| `npm test` | 177 uji |
 | `npm run validate -- <file>` | validasi edisi |
 | `npm run clusters` | lihat klaster harian |
 | `npm run adjudicate -- --fallback` | klaster → topik tanpa LLM |
 | `npm run backfill:gdelt -- --date YYYY-MM-DD` | arsip GDELT (sering kena rate limit) |
+| `npm run poc:newsroom -- --date YYYY-MM-DD --limit 3` | POC lima peran (planner → riset → writer → editor → desk) |

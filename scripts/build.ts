@@ -24,6 +24,18 @@ import { buildDeepDive, buildDeepDiveWithLlm } from "../src/core/deepdive.ts";
 import { hashSummaries, loadAdjudication, saveAdjudication } from "../src/core/adjudicate-cache.ts";
 import { mergeDuplicateTopics, type TopicEntry } from "../src/core/merge.ts";
 import { loadEnvFile } from "../src/config/env.ts";
+import { candidatesFrom, depthFor, planEdition, type PlanCandidate } from "../src/core/newsroom/plan.ts";
+import { writeNewsroomCard } from "../src/core/newsroom/card.ts";
+import { loadLedger, persistLedger } from "../src/core/newsroom/store.ts";
+import { ageNotes, emptyLedger, markAnswered, mergeLedger, openNotes, plannerNotes } from "../src/core/newsroom/notes.ts";
+import { reviewEdition, type DeskCard } from "../src/core/newsroom/desk.ts";
+import type { Assignment } from "../src/core/newsroom/contracts.ts";
+import { dedupeCards } from "../src/core/newsroom/dedupe.ts";
+import { budgetFollowUps } from "../src/core/newsroom/selection.ts";
+import { LlmTelemetry } from "../src/core/telemetry.ts";
+import { createDbFetchCache } from "../src/core/newsroom/cache.ts";
+import { loadPrimarySources } from "../src/core/newsroom/primary.ts";
+import { writeHoaxRoundup } from "../src/core/newsroom/hoax.ts";
 
 const root = new URL("..", import.meta.url).pathname;
 loadEnvFile(join(root, ".env.local"));
@@ -40,6 +52,13 @@ function arg(name: string, fallback?: string): string | undefined {
 const WIB = 7 * 3_600_000;
 
 /** `--date 2026-11-07` membangun edisi untuk hari baca itu (backfill). */
+// Default produksi: newsroom. Rollback: --no-newsroom atau NEWSROOM_WRITE=0.
+const newsroom =
+  !process.argv.includes("--no-newsroom") &&
+  process.env.NEWSROOM_WRITE !== "0" &&
+  process.env.NEWSROOM_WRITE !== "off";
+/** Batasi jumlah kartu saat uji integrasi; 0 = tanpa batas. */
+const newsroomLimit = Number(arg("newsroom-limit") ?? 0);
 const dateArg = arg("date");
 const readingDay = dateArg || new Date(Date.now() + WIB).toISOString().slice(0, 10);
 
@@ -85,7 +104,12 @@ try {
     : [];
 
   // Urutan: opencode -> deepseek -> deterministik. LLM_PROVIDER memaksa satu.
-  const { llm, model, provider } = resolveLlm(process.env);
+  const resolvedLlm = resolveLlm(process.env);
+  const telemetry = new LlmTelemetry(db, editionId);
+  const fetchCache = createDbFetchCache(db);
+  const primaryConfigs = loadPrimarySources(join(root, "config", "primary-sources.yaml"));
+  const llm = resolvedLlm.llm ? telemetry.wrap(resolvedLlm.llm) : null;
+  const { model, provider } = resolvedLlm;
 
   if (!llm) console.log("tidak ada LLM tersedia — memakai writer deterministik\n");
 
@@ -97,6 +121,7 @@ try {
   const fromCache = Boolean(adjudication);
 
   if (!adjudication && llm) {
+    telemetry.set({ role: "adjudicate" });
     adjudication = await adjudicate(clusters, { llm, model, date: editionId, place: "Sleman" });
     if (!adjudication.fallback) saveAdjudication(db, editionId, inputHash, adjudication, now);
   }
@@ -121,6 +146,7 @@ try {
     cluster: (typeof clusters)[number];
     topicId: string;
     revision: number;
+    assignment: Assignment;
   }
 
   // Topik dari adjudikasi + brief lokal yang tidak ikut adjudikasi.
@@ -145,10 +171,108 @@ try {
     );
   }
 
+  // Planner newsroom (satu panggilan) menentukan depth/answers/tindak lanjut.
+  // Pemilihan kartu tetap dilakukan aturan di `planCards`.
+  let ledger = emptyLedger(now);
+  let notesReady = false;
+  if (newsroom && llm) {
+    try {
+      ledger = ageNotes(loadLedger(db, now), now);
+      notesReady = true;
+    } catch {
+      console.log("  ! tabel editor_notes belum ada — jalankan `npm run migrate`; catatan tidak disimpan");
+    }
+  }
+
+  const history = registry.map((r) => ({
+    topic_id: r.topic_id,
+    canonical_title: r.canonical_title,
+    first_seen: r.first_seen,
+    revision: r.revision,
+  }));
+  const planCandidates = candidatesFrom(
+    adjudication.topics.filter((t) => !t.drop),
+    byCid,
+    history,
+  ).slice(0, 30);
+
+  let planned: Assignment[] = [];
+  if (newsroom && llm && planCandidates.length > 0) {
+    telemetry.set({ role: "plan" });
+    const { plan, usedLlm } = await planEdition(
+      {
+        editionId,
+        place: "Sleman",
+        slots: { nasional: 6, lokal: 4 },
+        candidates: planCandidates,
+        openThreads: [],
+        openNotes: plannerNotes(ledger, now),
+        constraints: { maxHeavy: 2, maxMeta: 2 },
+      },
+      { llm, model },
+    );
+    planned = plan.assignments;
+    console.log(`  planner newsroom: ${plan.assignments.length} tugas${usedLlm ? "" : " (fallback)"}`);
+  }
+
+  function fallbackAssignment(topic: AdjudicatedTopic, cluster: (typeof clusters)[number]): Assignment {
+    const candidate: PlanCandidate = {
+      topic,
+      cid: topic.cids[0] ?? "c00",
+      articles: cluster.articles.length,
+      outlets: cluster.outlets,
+      entities: cluster.entities,
+      first_seen: null,
+      last_title: null,
+      history_topic_id: null,
+    };
+    return {
+      cids: topic.cids,
+      title: topic.title,
+      angle: topic.angle,
+      category: topic.category,
+      significance: topic.significance,
+      heavy: topic.heavy,
+      depth: depthFor(candidate),
+      why_now: "",
+      answers: [
+        "Apa yang terjadi dan siapa yang terlibat?",
+        "Angka, tanggal, atau nama spesifik apa yang tersedia?",
+        "Apa yang belum jelas dan langkah berikutnya?",
+      ],
+      note_ids: [],
+      drop: false,
+      reason: "fallback: tanpa planner",
+    };
+  }
+
+  function assignmentFor(topic: AdjudicatedTopic, cluster: (typeof clusters)[number]): Assignment {
+    const base = planned.find((a) => !a.drop && a.cids.some((cid) => topic.cids.includes(cid)));
+    if (!base) return fallbackAssignment(topic, cluster);
+
+    // Hanya catatan `open` yang boleh ditautkan; pertanyaannya masuk ke answers
+    // agar writer benar-benar menjawab. Batas 2/edisi diterapkan saat render,
+    // bukan saat semua entry dibuat (entry yang tidak terpilih tidak boleh
+    // menghabiskan kuota).
+    const linked = base.note_ids
+      .map((id) => ledger.notes.find((n) => n.id === id && n.status === "open"))
+      .filter((n): n is NonNullable<typeof n> => Boolean(n))
+      .slice(0, 2);
+
+    const answers = [...new Set([...base.answers, ...linked.map((n) => n.question)])].slice(0, 6);
+    return { ...base, note_ids: linked.map((n) => n.id), answers };
+  }
+
   const entries: Entry[] = [];
   for (const { topic, cluster } of mergedTopics) {
     const res = await resolveTopic(db, topic, registry, { counter, now, editionId });
-    entries.push({ topic, cluster, topicId: res.topic_id, revision: res.revision });
+    entries.push({
+      topic,
+      cluster,
+      topicId: res.topic_id,
+      revision: res.revision,
+      assignment: assignmentFor(topic, cluster),
+    });
   }
 
   const glossary = loadGlossary(join(root, "config", "glossary.yaml"));
@@ -165,7 +289,10 @@ try {
       provider: llmWritten > 0 ? (deterministicWritten > 0 ? `${provider}+deterministic` : provider) : "deterministic",
       model: llmWritten > 0 ? model : "glossary",
     },
-    verify: { provider: "rules", model: "evidence-class" },
+    verify:
+      newsroom && llm
+        ? { provider, model }
+        : { provider: "rules", model: "evidence-class" },
     embed: { provider: "none", model: "none" },
   });
 
@@ -182,10 +309,67 @@ try {
   }
 
   async function makeCard(
-    e: { topic: AdjudicatedTopic; cluster: Cluster; topicId: string; revision: number },
+    e: {
+      topic: AdjudicatedTopic;
+      cluster: Cluster;
+      topicId: string;
+      revision: number;
+      assignment: Assignment;
+    },
     local: boolean,
+    asDeep = false,
   ): Promise<Card | null> {
+    if (newsroom && llm) {
+      const res = await writeNewsroomCard(
+        {
+          editionId,
+          now,
+          topic: e.topic,
+          topicId: e.topicId,
+          cluster: e.cluster,
+          assignment: e.assignment,
+          local,
+          revision: e.revision,
+          firstSeen: firstSeenOf(e.topicId),
+          previousEdition: prevEdition(e.revision),
+          prior: [],
+          openNotes: openNotes(ledger, now).filter((n) => n.topic_id === e.topicId),
+          noteIds: e.assignment.note_ids,
+          asDeep,
+          fromIso: queryFrom,
+          toIso: queryTo,
+        },
+        { llm, model, glossary, db, telemetry, cache: fetchCache, primaryConfigs },
+      );
+
+      if (res.notes.length > 0) {
+        ledger = mergeLedger(ledger, res.notes, now).ledger;
+      }
+      if (res.edit?.notes_resolved.length) {
+        ledger = markAnswered(
+          ledger,
+          res.edit.notes_resolved,
+          { edition_id: editionId, card_title: res.card?.title ?? e.topic.title },
+          now,
+        );
+      }
+      if (notesReady) persistLedger(db, ledger, now);
+
+      if (res.card) {
+        llmWritten++;
+        return orderSources(res.card, e.cluster);
+      }
+      // Fakta terbukti salah → jangan tulis ulang. Kegagalan bentuk (mis.
+      // konteks kurang) → biarkan jalur lama mencoba.
+      if (res.blocked) {
+        console.log(`  ✗ newsroom: kartu digugurkan (${e.topic.title.slice(0, 48)})`);
+        return null;
+      }
+      console.log(`  ! newsroom tidak menghasilkan kartu sah — fallback writer lama`);
+    }
+
     if (llm) {
+      telemetry.set({ role: "fallback", topicId: e.topicId });
       const card = await writeCardWithLlm(
         {
           editionId,
@@ -235,12 +419,19 @@ try {
   }
 
   /** Pilih kandidat per edisi. `exclude` dipakai agar berita lokal tidak dobel di edisi nasional. */
+  /** Tindak lanjut = tugas planner yang menautkan catatan editor. */
+  function isFollowTopic(topic: AdjudicatedTopic): boolean {
+    const entry = entries.find((e) => e.topic.cids.some((cid) => topic.cids.includes(cid)));
+    return (entry?.assignment.note_ids.length ?? 0) > 0;
+  }
+
   function planCards(scope: "nasional" | "lokal", exclude: Set<string> = new Set()) {
     const scoped = entries.filter((e) => (scope === "lokal" ? isLocalStory(e.cluster) : true));
     const { kept } = hardFilter(scoped, scope, now);
+    const opts = { scope, now, maxArticlesPerCategory: scope === "lokal" ? 1 : 2 };
     // Edisi Sleman sengaja menjaga variasi: satu topik per kategori, karena
     // korpus lokal sering didominasi satu tema (mis. hewan liar sepekan ini).
-    let { selected } = select(kept, { scope, now, maxArticlesPerCategory: scope === "lokal" ? 1 : 2 });
+    let { selected } = select(kept, opts);
 
     // Hari tenang: kalau anggaran suasana hati menyisakan satu kartu lokal,
     // longgarkan batasnya. Edisi Sleman yang tipis lebih berguna daripada tab kosong.
@@ -248,7 +439,28 @@ try {
       selected = select(kept, { scope, now, maxHeavy: 3, maxArticlesPerCategory: 3 }).selected;
     }
 
-    return selected.filter((r) => !exclude.has(r.topicId));
+    const available = selected.filter((r) => !exclude.has(r.topicId));
+    const availableItems = available.map((r) => ({ ...r, followUp: isFollowTopic(r.topic) }));
+
+    // Isi kekurangan berita baru dari pool yang kalah kuota.
+    const freshPool = select(
+      kept.filter((k) => !isFollowTopic(k.topic)),
+      opts,
+    ).selected
+      .filter((r) => !exclude.has(r.topicId))
+      .map((r) => ({ ...r, followUp: false }));
+
+    const budgeted = budgetFollowUps(availableItems, freshPool, {
+      maxFollow: scope === "lokal" ? 1 : 2,
+      minFresh: scope === "lokal" ? 1 : 3,
+      target: scope === "lokal" ? 4 : 6,
+    });
+
+    const follows = budgeted.filter((r) => r.followUp).length;
+    const fresh = budgeted.length - follows;
+    if (follows > 0) console.log(`  ${scope}: ${fresh} berita baru + ${follows} tindak lanjut`);
+
+    return budgeted.map(({ followUp: _followUp, ...r }) => r);
   }
 
   async function renderCards(
@@ -257,17 +469,30 @@ try {
     limit: number,
   ): Promise<Card[]> {
     const cards: Card[] = [];
+    let deepUsed = false;
+    const usedNoteIds = new Set<string>();
+    const cap = newsroomLimit > 0 ? Math.min(limit, newsroomLimit) : limit;
     for (const r of planned) {
-      if (cards.length >= limit) break;
+      if (cards.length >= cap) break;
       const entry = entries.find((e) => e.topicId === r.topicId);
+      const asDeep = newsroom && scope === "nasional" && !deepUsed && entry?.assignment.depth === "deep";
+      if (asDeep) deepUsed = true;
+
+      const baseAssignment = entry?.assignment ?? fallbackAssignment(r.topic, r.cluster);
+      // Satu catatan hanya boleh ditutup oleh satu kartu. Batas kartu
+      // tindak lanjut sudah diterapkan di planCards.
+      const allowedNotes = baseAssignment.note_ids.filter((id) => !usedNoteIds.has(id));
+      for (const id of allowedNotes) usedNoteIds.add(id);
       const card = await makeCard(
         {
           topic: r.topic,
           cluster: r.cluster,
           topicId: r.topicId,
           revision: entry?.revision ?? 1,
+          assignment: { ...baseAssignment, note_ids: allowedNotes },
         },
         scope === "lokal" || r.local,
+        asDeep,
       );
       if (card) cards.push(card);
     }
@@ -291,6 +516,16 @@ try {
       if (verdict) item.reason = verdict.slice(0, 240);
     }
 
+    if (llm) {
+      telemetry.set({ role: "hoax" });
+      const written = await writeHoaxRoundup(
+        { editionId, now, items, sourceUrl: "https://turnbackhoax.id/" },
+        { llm, model },
+      );
+      if (written) return written;
+      console.log("  ! penulis hoaks gagal — memakai kartu deterministik");
+    }
+
     return {
       id: "c99",
       type: "hoax_roundup",
@@ -300,7 +535,10 @@ try {
       title: "Yang beredar, dan yang sudah dibantah",
       status: "dibantah",
       truth: null,
-      body: [`${items.length} klaim diperiksa hari ini. Semuanya dari TurnBackHoax.`],
+      body: [
+        `${items.length} klaim diperiksa hari ini. Semuanya dari TurnBackHoax.`,
+        "Rincian klaim, putusan, dan alasannya ada di daftar di bawah.",
+      ],
       action: "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
       image: null,
       sources: [
@@ -321,7 +559,7 @@ try {
     } as Card;
   }
 
-  function goodNewsCard(usedTopics: Set<string>): Card | null {
+  async function goodNewsCard(usedTopics: Set<string>): Promise<Card | null> {
     const scoped = entries.filter((e) => !isLocalCluster(e.cluster));
     const { kept } = hardFilter(scoped, "nasional", now);
     const { selected } = select(kept, { scope: "nasional", now });
@@ -330,6 +568,25 @@ try {
       if (r.topic.heavy) continue;
       // Laba bank bukan "hal baik". Hanya budaya dan kesehatan.
       if (!["culture", "health"].includes(r.topic.category)) continue;
+
+      if (newsroom && llm) {
+        const entry = entries.find((e) => e.topicId === r.topicId);
+        const base = entry?.assignment ?? fallbackAssignment(r.topic, r.cluster);
+        const card = await makeCard(
+          {
+            topic: r.topic,
+            cluster: r.cluster,
+            topicId: r.topicId,
+            revision: entry?.revision ?? 1,
+            assignment: { ...base, depth: "standard", note_ids: [] },
+          },
+          false,
+          false,
+        );
+        if (!card || card.type !== "news") continue;
+        return { ...card, type: "good_news", kicker: "Satu hal baik" } as Card;
+      }
+
       const card = writer.write({
         editionId,
         publishedAt,
@@ -439,7 +696,8 @@ try {
   let usedTopics = new Set(news.map((c) => c.topic_id));
 
   // Deep dive mengambil satu slot berita bila ada thread 7 hari yang layak.
-  const deep = await dailyDeepDive(usedTopics);
+  // Mode newsroom sudah menandai satu assignment deep sebagai deep_dive.
+  const deep = newsroom ? null : await dailyDeepDive(usedTopics);
   if (deep) news.splice(5);
   usedTopics = new Set(news.map((c) => c.topic_id));
 
@@ -447,13 +705,43 @@ try {
   const thinMode = process.argv.includes("--thin") || process.env.ALLOW_THIN === "1";
   const isToday = editionId === new Date(Date.now() + WIB).toISOString().slice(0, 10);
   const hoax = isToday ? await hoaxCard() : null;
-  const good = goodNewsCard(usedTopics);
+  const good = await goodNewsCard(usedTopics);
 
   const withDeep = deep
     ? [...news.slice(0, 2), deep, ...news.slice(2)]
     : news;
   const cards = [...withDeep, ...(hoax ? [hoax] : []), ...(good ? [good] : [])].slice(0, 8);
+  const uniqueCards = dedupeCards(cards, 0.6);
 
+  if (newsroom) {
+    console.log("  kartu:", uniqueCards.map((c) => `${c.type}:${c.sources.length}`).join(" "));
+  }
+
+  // Desk review bersifat shadow: vonisnya dicatat, tidak menahan terbit.
+  if (newsroom && llm && process.env.NEWSROOM_DESK !== "off") {
+    const deskCards: DeskCard[] = cards
+      .filter((c) => c.type !== "hoax_roundup")
+      .map((c, i) => ({
+        card_id: `k${i + 1}`,
+        title: c.title,
+        angle: c.angle,
+        category: c.kicker,
+        depth: c.type === "deep_dive" ? "deep" : "standard",
+        body_chars: c.body.join(" ").length,
+        cited_paragraphs: c.body.length,
+        paragraphs: c.body.length,
+        sources: c.sources.length,
+        editor_verdict: "approve" as const,
+        depth_check: c.type === "deep_dive" ? ("deep" as const) : ("standard" as const),
+        blocking: 0,
+      }));
+    telemetry.set({ role: "desk" });
+    const desk = await reviewEdition(deskCards, { llm, model });
+    console.log(
+      `  desk shadow: ${desk.desk.publish ? "layak" : "tidak layak"} · ${desk.desk.advisory.length} advisory`,
+    );
+    for (const a of desk.desk.advisory.slice(0, 4)) console.log(`    ~ ${a}`);
+  }
   const edition = buildEdition({
     scope: "nasional",
     editionId,
@@ -461,10 +749,10 @@ try {
     coverage: { from: coverageFrom, to: coverageTo },
     generatedAt: publishedAt,
     place: { kabupaten: "Sleman", province: "DI Yogyakarta" },
-    cards,
+    cards: uniqueCards,
     truncatedReason:
-      cards.length < 8
-        ? `Hanya ${cards.length} kartu yang lolos; sisanya tidak punya konteks atau sumber`
+      uniqueCards.length < 8
+        ? `Hanya ${uniqueCards.length} kartu yang lolos; sisanya tidak punya konteks atau sumber`
         : null,
     generatedBy: generatedBy(),
   });
@@ -472,9 +760,9 @@ try {
   const file = join(outDir, `${editionId}.nasional.json`);
   const check = validateEdition(edition);
   console.log(
-    `nasional · ${clusters.length + soloLocal.length} klaster · ${entries.length} topik · ${cards.length} kartu`,
+    `nasional · ${clusters.length + soloLocal.length} klaster · ${entries.length} topik · ${uniqueCards.length} kartu`,
   );
-  const publishable = check.ok || (thinMode && cards.length > 0 && allowsThin(check.errors));
+  const publishable = check.ok || (thinMode && uniqueCards.length > 0 && allowsThin(check.errors));
   if (publishable) {
     writeFileSync(file, JSON.stringify(edition, null, 2));
     console.log(`  ${check.ok ? "✓ valid" : "△ tipis (uji)"} · ${file}`);
@@ -486,7 +774,8 @@ try {
   }
 
   // --- lokal ---
-  if (localCards.length >= 2) {
+  const uniqueLocal = dedupeCards(localCards, 0.5);
+  if (uniqueLocal.length >= 2) {
     const localEdition: Edition = buildEdition({
       scope: "lokal",
       editionId,
@@ -494,15 +783,15 @@ try {
       coverage: { from: coverageFrom, to: coverageTo },
       generatedAt: publishedAt,
       place: { kabupaten: "Sleman", province: "DI Yogyakarta" },
-      cards: localCards,
+      cards: uniqueLocal,
       truncatedReason:
-        localCards.length < 5 ? `Hanya ${localCards.length} topik lokal yang lolos` : null,
+        uniqueLocal.length < 5 ? `Hanya ${uniqueLocal.length} topik lokal yang lolos` : null,
       generatedBy: generatedBy(),
     });
     const localFile = join(outDir, `${editionId}.lokal.json`);
     writeFileSync(localFile, JSON.stringify(localEdition, null, 2));
     const lc = validateEdition(localEdition);
-    console.log(`lokal    · ${localCards.length} kartu · ${lc.ok ? "✓ valid" : "✗ tidak valid"}`);
+    console.log(`lokal    · ${uniqueLocal.length} kartu · ${lc.ok ? "✓ valid" : "✗ tidak valid"}`);
     if (!lc.ok) console.log(formatErrors(lc.errors));
     console.log(`  ${localFile}`);
   } else {
@@ -515,6 +804,28 @@ try {
   console.log(
     `\nadjudikasi: ${fromCache ? "cache" : adjudication.fallback ? "fallback" : "llm"} · input ${inputHash} · token ${adjudication.usage.tokens_in}/${adjudication.usage.tokens_out}`,
   );
+
+  const llmStats = telemetry.summary();
+  console.log(
+    `llm: ${llmStats.calls} panggilan · ${llmStats.tokensIn}/${llmStats.tokensOut} token · $${llmStats.costUsd.toFixed(4)} · max ${llmStats.maxLatencyMs} ms`,
+  );
+  try {
+    db.run(
+      `INSERT INTO run_log
+         (run_id, date, llm_calls, llm_fallback, cost_usd, created_at)
+       VALUES (?, ?, ?, ?, ?, ?)`,
+      [
+        `${editionId}-build-${Date.now()}`,
+        editionId,
+        llmStats.calls,
+        0,
+        llmStats.costUsd || null,
+        isoWib(new Date())!,
+      ],
+    );
+  } catch {
+    /* run_log lama mungkin tidak punya kolom; telemetri per panggilan tetap tersimpan */
+  }
 } finally {
   db.close();
 }

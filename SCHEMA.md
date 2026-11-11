@@ -100,8 +100,10 @@ Aplikasi mulai dari `manifest.json`, lalu mengambil berkas lain sesuai kebutuhan
 | `title` | string | ✅ | Maks 70 karakter, tanpa kapital semua |
 | `status` | enum | ✅ | `terkonfirmasi` \| `sebagian` \| `belum` \| `dibantah` |
 | `truth` | object \| null | ✅ | Blok kebenaran (§2.5). `null` untuk opini, prediksi, dan kartu non-berita |
-| `body` | string[] | ✅ | 1–3 paragraf, tiap paragraf ≤ 640 karakter |
+| `body` | string[] | ✅ | 1–24 paragraf, tiap paragraf ≤ 1.000 karakter. Target kata: `news` 300–600; `deep_dive` 1.200–2.500; `brief` 150–250. |
 | `explain` | ExplainItem[] | — | 2–4 pertanyaan konteks; wajib untuk `news`/`good_news` (E017, §2.6) |
+| `unresolved` | string[] | — | 0–3 pertanyaan yang belum dijawab bahan; tampil sebagai kotak "Yang belum terjawab". Diturunkan dari catatan editor (`NEWSROOM.md` §4.6), bukan dari edisi lain. |
+| `disclaimer` | string | — | Peringatan kuat (20–320 karakter) untuk klaim yang sumbernya bertentangan tetapi tetap terbit. Ditampilkan di atas body, bukan disembunyikan di catatan kaki. |
 | `action` | string | ✅ | Satu kalimat, ≤ 160 karakter, imperatif |
 | `image` | object \| null | ✅ | `{ url, credit, alt, fallback? }`; `url` relatif ke `/assets/`, format `.webp` |
 | `sources` | Source[] | ✅ | ≥ 1 |
@@ -412,7 +414,7 @@ Satu per edisi nasional. Berasal dari thread berumur 7–30 hari, bukan dari sik
 |---|---|
 | `dek` | 1 kalimat, ≤ 160 karakter, menyatakan tesis |
 | `optional` | Selalu `true`. Tidak dihitung dalam `reading_time_min` edisi |
-| `read_min` | 4–8 menit |
+| `read_min` | 4–15 menit (1.200–2.500 kata, 200 kata/menit) |
 | `stats` | 2–3 item; `value` maks 12 karakter |
 | `body` | 2–4 paragraf (lebih panjang dari `news`) |
 | `sources` | ≥ 3 (harian) / ≥ 2 (mingguan), mencakup rentang waktu ≥ 7 hari |

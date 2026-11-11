@@ -282,6 +282,12 @@ function openCard(index) {
     }
   }
 
+  if (card.disclaimer) {
+    const d = el("div", "disclaimer");
+    d.append(el("div", "lbl", "Catatan penting"), el("p", null, card.disclaimer));
+    body.append(d);
+  }
+
   for (const p of card.body ?? []) body.append(el("p", "body", p));
 
   if (card.type === "change" && card.before && card.after) {
@@ -295,6 +301,15 @@ function openCard(index) {
     const a = el("div", "action");
     a.append(el("div", "lbl", "Untuk kamu"), el("p", null, card.action));
     body.append(a);
+  }
+
+  if (card.unresolved?.length) {
+    const box = el("div", "unresolved");
+    box.append(el("div", "lbl", "Yang belum terjawab"));
+    const ul = el("ul");
+    for (const q of card.unresolved) ul.append(el("li", null, q));
+    box.append(ul);
+    body.append(box);
   }
 
   if (card.type === "hoax_roundup" && card.items?.length) {

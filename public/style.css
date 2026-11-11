@@ -128,3 +128,14 @@ details.ctx summary::-webkit-details-marker{display:none}
 .empty{padding:60px 20px; text-align:center; color:var(--muted)}
 .muted{color:var(--faint); font-size:13px}
 @media (min-width:720px){ body{border-left:1px solid var(--rule); border-right:1px solid var(--rule)} }
+
+/* Kotak transparansi: pertanyaan yang belum dijawab bahan (SCHEMA.md §2.2). */
+.unresolved{margin:16px 0 0; padding:12px 14px; background:#F6F1E8; border-left:3px solid var(--accent)}
+.unresolved .lbl{font:10px/1 ui-sans-serif,system-ui; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:6px}
+.unresolved ul{margin:0; padding-left:16px; font-size:13.5px; line-height:1.5; color:#3d3930}
+.unresolved li{margin:3px 0}
+
+/* Disclaimer kuat: klaim yang sumbernya bertentangan (SCHEMA.md §2.2). */
+.disclaimer{margin:16px 0 4px; padding:14px 16px; background:#FBEEEA; border:2px solid var(--accent); border-radius:3px}
+.disclaimer .lbl{font:10px/1 ui-sans-serif,system-ui; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:6px}
+.disclaimer p{margin:0; font-size:14px; line-height:1.55; color:#3d1c14}

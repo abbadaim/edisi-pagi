@@ -442,10 +442,10 @@
         "body": {
           "type": "array",
           "minItems": 1,
-          "maxItems": 4,
+          "maxItems": 24,
           "items": {
             "type": "string",
-            "maxLength": 640
+            "maxLength": 1000
           }
         },
         "action": {
@@ -541,6 +541,20 @@
               }
             }
           }
+        },
+        "unresolved": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        },
+        "disclaimer": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 320
         }
       },
       "allOf": [
@@ -607,7 +621,7 @@
               "read_min": {
                 "type": "integer",
                 "minimum": 4,
-                "maximum": 8
+                "maximum": 15
               },
               "stats": {
                 "type": "array",

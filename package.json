@@ -21,7 +21,8 @@
     "publish": "node scripts/publish.ts",
     "serve": "node scripts/serve.ts",
     "push": "node scripts/push.ts",
-    "gen:vapid": "node scripts/gen-vapid.ts"
+    "gen:vapid": "node scripts/gen-vapid.ts",
+    "poc:newsroom": "node scripts/poc-newsroom.ts"
   },
   "dependencies": {
     "ajv": "^8.17.1",

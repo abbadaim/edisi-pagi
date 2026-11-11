@@ -1,0 +1,61 @@
+# Sumber primer (P4a). Bukan crawl bebas: hanya domain di daftar ini.
+# `listing` adalah halaman rilis/berita resmi yang boleh diambil untuk
+# menemukan dokumen yang relevan dengan topik.
+sources:
+  - id: kpk
+    entities: [kpk, komisi_pemberantasan_korupsi]
+    domains: [kpk.go.id]
+    listing: https://kpk.go.id/id/berita
+
+  - id: ojk
+    entities: [ojk, otoritas_jasa_keuangan]
+    domains: [ojk.go.id]
+    listing: https://ojk.go.id/id/berita-dan-kegiatan/siaran-pers/default.aspx
+
+  - id: bps
+    entities: [bps, badan_pusat_statistik, inflasi, kemiskinan, pengangguran, pertumbuhan_ekonomi]
+    domains: [bps.go.id]
+    listing: https://www.bps.go.id/id/pressrelease
+    # Opsional: isi BPS_API_KEY untuk mengambil daftar Berita Resmi Statistik.
+    api: https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/0000/key/{key}
+
+  - id: bps_diy
+    entities: [diy, jogja, yogyakarta, sleman]
+    domains: [yogyakarta.bps.go.id, slemankab.bps.go.id, bps.go.id]
+    listing: https://yogyakarta.bps.go.id/id/pressrelease
+    api: https://webapi.bps.go.id/v1/api/list/model/pressrelease/domain/3400/key/{key}
+
+  - id: mahkamah_agung
+    entities: [mahkamah_agung, ma]
+    domains: [mahkamahagung.go.id]
+    listing: https://www.mahkamahagung.go.id/id/berita
+
+  - id: dpr
+    entities: [dpr, dewan_perwakilan_rakyat]
+    domains: [dpr.go.id]
+    listing: https://www.dpr.go.id/berita
+
+  - id: polri
+    entities: [polri, kepolisian_negara_republik_indonesia]
+    domains: [polri.go.id]
+    listing: https://polri.go.id/berita
+
+  - id: kemenkeu
+    entities: [kemenkeu, kementerian_keuangan]
+    domains: [kemenkeu.go.id]
+    listing: https://www.kemenkeu.go.id/berita
+
+  - id: esdm
+    entities: [esdm, kementerian_energi_dan_sumber_daya_mineral]
+    domains: [esdm.go.id]
+    listing: https://www.esdm.go.id/id/berita
+
+  - id: sleman
+    entities: [sleman, kabupaten_sleman, pemkab_sleman]
+    domains: [slemankab.go.id]
+    listing: https://slemankab.go.id/berita
+
+  - id: diy
+    entities: [diy, di_yogyakarta, jogja, yogyakarta]
+    domains: [jogjaprov.go.id]
+    listing: https://jogjaprov.go.id/berita
