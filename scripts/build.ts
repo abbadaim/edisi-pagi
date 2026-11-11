@@ -707,6 +707,7 @@ try {
       db,
       editionId,
       publishedAt,
+      scope: "lokal",
       cards: localCards,
       previous: previousCards("lokal"),
     });
@@ -716,7 +717,7 @@ try {
     console.log(
       `  meta lokal: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
         ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
-        ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · celah ${meta.stats.gaps}`,
+        ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · fetch ${meta.stats.text_fetched} · celah ${meta.stats.gaps}`,
     );
   }
   const reservedLocal = new Set(localCards.map((c) => c.topic_id));
@@ -767,6 +768,7 @@ try {
     db,
     editionId,
     publishedAt,
+    scope: "nasional",
     cards: withDeep,
     previous: previousCards("nasional"),
   });
@@ -782,7 +784,7 @@ try {
   console.log(
     `  meta: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
       ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
-      ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · celah ${meta.stats.gaps}`,
+      ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · fetch ${meta.stats.text_fetched} · celah ${meta.stats.gaps}`,
   );
   const uniqueCards = dedupeCards(cards, 0.6);
 

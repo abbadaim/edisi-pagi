@@ -15,12 +15,15 @@ import type { Db } from "../../adapters/db/sqlite.ts";
 import type { AdjudicatedTopic } from "../adjudicate.ts";
 import type { Cluster } from "../cluster.ts";
 import type { FetchCache } from "./cache.ts";
+import { extractArticleText } from "./material.ts";
 
 export interface PrimarySourceConfig {
   id: string;
   entities: string[];
   domains: string[];
   listing?: string;
+  /** Sitemap resmi; hanya diisi untuk sumber yang sitemap-nya terbukti XML. */
+  sitemap?: string;
   /** Endpoint BPS WebAPI; butuh BPS_API_KEY. `{key}` diganti otomatis. */
   api?: string;
 }
@@ -116,12 +119,105 @@ function tokens(s: string): Set<string> {
   );
 }
 
+export interface SitemapUrl {
+  url: string;
+  lastmod: string | null;
+}
+
+/** Parse `urlset` maupun `sitemapindex` (satu tingkat). */
+export function parseSitemap(xml: string): { urls: SitemapUrl[]; sitemaps: string[] } {
+  const urls = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/gi)]
+    .map((m) => {
+      const block = m[1] ?? "";
+      const loc = (block.match(/<loc>\s*([^<]+?)\s*<\/loc>/i)?.[1] ?? "").trim();
+      const lastmod = (block.match(/<lastmod>\s*([^<]+?)\s*<\/lastmod>/i)?.[1] ?? "").trim() || null;
+      return { url: loc, lastmod };
+    })
+    .filter((u) => /^https?:\/\//i.test(u.url));
+
+  const sitemaps = [...xml.matchAll(/<sitemap>([\s\S]*?)<\/sitemap>/gi)]
+    .map((m) => (m[1] ?? "").match(/<loc>\s*([^<]+?)\s*<\/loc>/i)?.[1]?.trim() ?? "")
+    .filter((u) => /^https?:\/\//i.test(u));
+
+  return { urls, sitemaps };
+}
+
+/** URL sitemap yang relevan dengan topik, domain diizinkan, terbaru dulu. */
+export function rankSitemapUrls(
+  urls: SitemapUrl[],
+  topic: AdjudicatedTopic,
+  domains: string[],
+  max = 2,
+): SitemapUrl[] {
+  const scored: Array<{ item: SitemapUrl; score: number }> = [];
+  for (const item of urls) {
+    const host = hostOf(item.url);
+    if (!domains.some((d) => host === d || host.endsWith(`.${d}`))) continue;
+    let slug = "";
+    try {
+      slug = decodeURIComponent(new URL(item.url).pathname)
+        .replace(/\.[a-z]{2,5}$/i, "")
+        .replace(/[-_/]+/g, " ");
+    } catch {
+      continue;
+    }
+    const score = relevance(slug, topic);
+    if (score === 0) continue;
+    scored.push({ item, score });
+  }
+
+  return scored
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return (b.item.lastmod ?? "").localeCompare(a.item.lastmod ?? "");
+    })
+    .slice(0, max)
+    .map((x) => x.item);
+}
+
 function relevance(anchor: string, topic: AdjudicatedTopic): number {
   const target = tokens(`${topic.title} ${topic.angle} ${topic.entities.join(" ")}`);
   const text = tokens(anchor);
   let hit = 0;
   for (const t of text) if (target.has(t)) hit++;
   return hit;
+}
+
+const BULAN: Record<string, string> = {
+  januari: "01", februari: "02", maret: "03", april: "04", mei: "05", juni: "06",
+  juli: "07", agustus: "08", september: "09", oktober: "10", november: "11", desember: "12",
+};
+
+/** Tanggal terbit dari meta/JSON-LD atau teks "2 Maret 2021". */
+export function extractPublishedAt(html: string): string | null {
+  const meta =
+    html.match(/article:published_time["'][^>]*content=["']([^"']+)/i)?.[1] ??
+    html.match(/content=["']([^"']+)["'][^>]*property=["']article:published_time/i)?.[1] ??
+    html.match(/"datePublished"\s*:\s*"([^"]+)"/i)?.[1] ??
+    null;
+  if (meta) {
+    const t = Date.parse(meta);
+    if (Number.isFinite(t)) return new Date(t).toISOString();
+  }
+
+  const m = html.match(/\b(\d{1,2})\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\s+(20\d{2})\b/i);
+  if (!m) return null;
+  const day = String(Number(m[1])).padStart(2, "0");
+  const month = BULAN[m[2]!.toLowerCase()];
+  if (!month) return null;
+  return `${m[3]}-${month}-${day}T00:00:00+07:00`;
+}
+
+function decodeHtmlText(raw: string): string {
+  if (!raw) return "";
+  // `get()` mengembalikan HTML; tes dapat mengembalikan prosa biasa.
+  return raw.includes("<") ? extractArticleText(raw) : raw;
+}
+
+function inWindow(published: string | null, fromIso: string, toIso: string): boolean {
+  if (!published) return false;
+  const t = Date.parse(published);
+  return Number.isFinite(t) && t >= Date.parse(fromIso) && t <= Date.parse(toIso);
 }
 
 export interface PrimarySearchInput {
@@ -235,6 +331,38 @@ export async function findPrimarySources(input: PrimarySearchInput): Promise<Pri
     }
   }
 
+  // Sumber dengan sitemap resmi (DEC-0020). Satu sitemap per topik.
+  let sitemapFetches = 0;
+  for (const cfg of matched) {
+    if (out.length >= max || sitemapFetches >= 1 || !cfg.sitemap) continue;
+    sitemapFetches++;
+    const page = await get(cfg.sitemap);
+    if (!page.ok) continue;
+
+    let parsed = parseSitemap(page.text);
+    if (parsed.urls.length === 0 && parsed.sitemaps.length > 0) {
+      const child = await get(parsed.sitemaps[0]!);
+      if (child.ok) parsed = parseSitemap(child.text);
+    }
+
+    for (const pick of rankSitemapUrls(parsed.urls, input.topic, cfg.domains, 2)) {
+      if (out.length >= max) break;
+      const article = await get(pick.url);
+      const raw = article.ok ? article.text : "";
+      const published = raw ? extractPublishedAt(raw) : null;
+
+      // Sitemap sering memuat arsip lama (KPK: artikel 2018/2021 dengan
+      // lastmod palsu). Hanya terima artikel yang tanggalnya di jendela.
+      if (!inWindow(published, input.fromIso, input.toIso)) continue;
+
+      let text = decodeHtmlText(raw);
+      if (!text && input.cache) text = (await input.cache.get(pick.url)) ?? "";
+      if (text && input.cache) await input.cache.set(pick.url, text);
+      if (!text) continue;
+      add(pick.url, hostOf(pick.url), text, published);
+    }
+  }
+
   let listingFetches = 0;
   for (const cfg of matched) {
     if (out.length >= max || listingFetches >= maxListing || !cfg.listing) break;
@@ -251,11 +379,13 @@ export async function findPrimarySources(input: PrimarySearchInput): Promise<Pri
     for (const a of anchors) {
       if (out.length >= max) break;
       const article = await get(a.url);
-      let text = article.ok ? article.text : "";
+      const raw = article.ok ? article.text : "";
+      const published = raw ? extractPublishedAt(raw) : null;
+      let text = decodeHtmlText(raw);
       if (!text && input.cache) text = (await input.cache.get(a.url)) ?? "";
-      if (article.ok && input.cache) await input.cache.set(a.url, text);
+      if (text && input.cache) await input.cache.set(a.url, text);
       if (!text) text = a.text;
-      add(a.url, new URL(a.url).hostname.replace(/^www\./, ""), text, null);
+      add(a.url, new URL(a.url).hostname.replace(/^www\./, ""), text, published);
     }
   }
 

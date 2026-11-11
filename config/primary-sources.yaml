@@ -6,6 +6,8 @@ sources:
     entities: [kpk, komisi_pemberantasan_korupsi]
     domains: [kpk.go.id]
     listing: https://kpk.go.id/id/berita
+    # Terverifikasi 2026-11-11: 200, urlset + lastmod.
+    sitemap: https://kpk.go.id/sitemap.xml
 
   - id: ojk
     entities: [ojk, otoritas_jasa_keuangan]

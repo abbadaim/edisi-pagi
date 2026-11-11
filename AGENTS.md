@@ -19,7 +19,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change` (status) + `misread` (judul–isi), deterministik |
-| Tests | `npm test` — 218 uji; `npm run test:ui` — 4 uji browser |
+| Tests | `npm test` — 230 uji; `npm run test:ui` — 4 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.

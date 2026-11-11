@@ -191,6 +191,7 @@ test("buildMetaCards menghasilkan kartu change yang lolos validasi", async () =>
     db,
     editionId: "2026-11-11",
     publishedAt: "2026-11-11T05:00:00+07:00",
+    scope: "nasional",
     cards: [curr],
     previous: [{ card: prev, at: "2026-11-10T05:00:00+07:00" }],
   });

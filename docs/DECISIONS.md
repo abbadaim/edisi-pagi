@@ -166,3 +166,30 @@ mingguan hilang sepanjang pekan. Dikunci di `src/core/manifest.ts` dan
 `tests/manifest.test.ts`.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/004-weekly-newsroom-parity.md`
 (tindak lanjut publikasi edisi uji)._
+
+## DEC-0020 — Sitemap sumber primer hanya dari sumber yang terbukti hidup
+
+Jalur sitemap hanya diaktifkan untuk sumber yang sitemap-nya benar-benar
+merespons XML (KPK dan ESDM, diuji 2026-11-11). Satu fetch sitemap per topik,
+maksimum dua artikel, dan hanya URL yang domainnya ada di config.
+
+Sitemap hanya boleh dipakai bila tanggal terbit artikel dapat diverifikasi
+(meta atau teks Indonesia) dan berada di jendela topik. `lastmod` sitemap
+tidak dipercaya: sitemap KPK memberi tanggal yang sama untuk artikel 2018–2021.
+ESDM tidak diaktifkan karena sitemap-nya berisi profil/PDF lama, bukan berita.
+
+Sebab: halaman listing banyak yang JS-rendered/403, sedangkan sitemap resmi
+menyediakan URL yang dapat diambil tanpa crawl bebas. Tanpa gerbang tanggal,
+sitemap justru memasukkan sumber primer lama ke topik baru.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/005-primary-sitemap.md`._
+
+## DEC-0021 — Meta lokal boleh mengambil teks penuh, dibatasi tiga fetch
+
+`buildMetaCards` hanya untuk scope lokal boleh mengambil teks penuh artikel
+yang belum ada di cache: maksimal tiga fetch per edisi, satu per kartu, timeout
+12 detik. Scope nasional tidak pernah fetch tambahan.
+
+Sebab: `misread` lokal hampir tidak pernah muncul karena brief lokal sering
+tidak melewati riset newsroom. Batas ketat menjaga build tetap cepat dan tidak
+berubah menjadi crawler.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/006-local-meta-text.md`._

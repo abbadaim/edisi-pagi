@@ -14,6 +14,7 @@ import type { Card, Change, ChangeBasis, Source, Status } from "../types.ts";
 import { truncateWords } from "../normalize.ts";
 import { tokenize } from "../simhash.ts";
 import { createDbFetchCache } from "./cache.ts";
+import { fetchArticleText } from "./material.ts";
 
 export interface DatedCard {
   card: Card;
@@ -25,8 +26,13 @@ export interface MetaInput {
   db: Db;
   editionId: string;
   publishedAt: string;
+  scope: "nasional" | "lokal";
   cards: Card[];
   previous: DatedCard[];
+  /** Untuk uji tanpa jaringan. Default `fetchArticleText` (domain diizinkan). */
+  fetchArticle?: (url: string) => Promise<{ text: string; ok: boolean }>;
+  /** Batas fetch teks untuk meta lokal (DEC-0021). Default 3; nasional 0. */
+  maxFetches?: number;
 }
 
 export interface MetaOutput {
@@ -38,6 +44,7 @@ export interface MetaOutput {
     continuity: number;
     text_tried: number;
     text_have: number;
+    text_fetched: number;
     gaps: number;
   };
 }
@@ -301,6 +308,10 @@ export function buildMisreadCard(
 async function articleFor(
   db: Db,
   src: Source,
+  opts: {
+    fetchMissing?: boolean;
+    fetchArticle?: (url: string) => Promise<{ text: string; ok: boolean }>;
+  } = {},
 ): Promise<{ title: string; url: string; outlet: string; published_at: string | null; tier: 1 | 2 | 3; text: string } | null> {
   const row = db.get<{
     title_display: string;
@@ -310,8 +321,19 @@ async function articleFor(
   }>("SELECT title_display, lead, outlet, published_at FROM articles WHERE url = ?", [src.url]);
   if (!row) return null;
 
+  const cache = createDbFetchCache(db);
+  let cached = await cache.get(src.url);
+
+  // Lokal boleh mengambil teks penuh yang belum di-cache (DEC-0021).
+  if ((!cached || cached.trim().length < 500) && opts.fetchMissing && opts.fetchArticle) {
+    const got = await opts.fetchArticle(src.url);
+    if (got.ok && got.text.trim().length >= 500) {
+      cached = got.text;
+      await cache.set(src.url, got.text);
+    }
+  }
+
   // Hanya teks halaman penuh yang layak untuk deteksi judul–isi.
-  const cached = await createDbFetchCache(db).get(src.url);
   if (!cached || cached.trim().length < 500) return null;
 
   return {
@@ -327,7 +349,7 @@ async function articleFor(
 }
 
 export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
-  const { db, cards, previous, publishedAt } = input;
+  const { db, cards, previous, publishedAt, scope } = input;
 
   const previousByTopic = new Map<string, DatedCard>();
   for (const entry of [...previous].sort((a, b) => Date.parse(b.at) - Date.parse(a.at))) {
@@ -372,14 +394,40 @@ export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
 
   let textTried = 0;
   let textHave = 0;
+  let textFetched = 0;
   let gaps = 0;
+  let fetchBudget =
+    scope === "lokal" && process.env.META_LOCAL_FETCH !== "0"
+      ? Math.max(0, input.maxFetches ?? 3)
+      : 0;
+
   for (const card of ordered) {
     if (meta.some((c) => c.type === "misread")) break;
+
+    // 1) Coba teks yang sudah ada di cache.
+    let article: Awaited<ReturnType<typeof articleFor>> = null;
     for (const src of card.sources.slice(0, 5)) {
       textTried++;
-      const article = await articleFor(db, src);
-      if (!article) continue;
-      textHave++;
+      article = await articleFor(db, src);
+      if (article) {
+        textHave++;
+        break;
+      }
+    }
+
+    // 2) Lokal: fetch satu sumber pertama bila belum ada teks (DEC-0021).
+    if (!article && fetchBudget > 0 && card.sources[0]) {
+      fetchBudget--;
+      textFetched++;
+      article = await articleFor(db, card.sources[0], {
+        fetchMissing: true,
+        fetchArticle: input.fetchArticle ?? fetchArticleText,
+      });
+      if (article) textHave++;
+    }
+    if (!article) continue;
+
+    {
       const gap = findQualifierGap(article.title, article.text);
       if (!gap) continue;
       gaps++;
@@ -404,7 +452,14 @@ export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
   return {
     cards: meta.filter((c) => !used.has(c.topic_id)),
     changes,
-    stats: { cards: cards.length, continuity, text_tried: textTried, text_have: textHave, gaps },
+    stats: {
+      cards: cards.length,
+      continuity,
+      text_tried: textTried,
+      text_have: textHave,
+      text_fetched: textFetched,
+      gaps,
+    },
   };
 }
 
