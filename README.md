@@ -87,7 +87,10 @@ npm run push
 
 `.github/workflows/daily.yml` berjalan 22:45 UTC (05:45 WIB), membangun edisi harian, edisi mingguan pada hari Minggu, lalu commit `data/` dan `public/` kembali ke repo.
 
-Secret yang dibutuhkan: `DEEPSEEK_API_KEY`, `VAPID_PRIVATE_KEY`, `PUSH_SUBSCRIPTION`. `OPENCODE_BIN` hanya untuk lokal; di CI opencode tidak terpasang dan pipeline memakai DeepSeek.
+Secret yang dibutuhkan: `DEEPSEEK_API_KEY`, `VAPID_PRIVATE_KEY`, `PUSH_SUBSCRIPTION`.
+`OPENCODE_AUTH_JSON` opsional: bila diisi, CI memasang OpenCode CLI dan
+mengimpor kredensial (`opencode auth export`); tanpa itu CI memakai DeepSeek.
+`OPENCODE_BIN` hanya untuk lokal.
 
 ## Aplikasi
 
@@ -109,7 +112,7 @@ Secret yang dibutuhkan: `DEEPSEEK_API_KEY`, `VAPID_PRIVATE_KEY`, `PUSH_SUBSCRIPT
 
 | Perintah | Fungsi |
 |---|---|
-| `npm test` | 177 uji |
+| `npm test` | 189 uji |
 | `npm run validate -- <file>` | validasi edisi |
 | `npm run clusters` | lihat klaster harian |
 | `npm run adjudicate -- --fallback` | klaster → topik tanpa LLM |

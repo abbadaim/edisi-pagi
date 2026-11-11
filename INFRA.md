@@ -423,6 +423,13 @@ Dua mode, dipilih saat build:
 
 Model dipilih lewat id `provider/model` (mis. `opencode-go/deepseek-v4.1-flash`). Adapter memverifikasi model ada di katalog saat startup, bukan saat 05.45.
 
+**CI.** Workflow memasang CLI dengan `curl -fsSL https://opencode.ai/install | bash`
+dan mengimpor kredensial dari secret `OPENCODE_AUTH_JSON`
+(`opencode auth export` → `opencode auth import`). Bila secret kosong, instalasi
+dilewati dan pipeline memakai DeepSeek. Bila instalasi/impor gagal,
+`OPENCODE_BIN` dipaksa ke path tidak ada agar probe gagal dan build tidak
+menunggu timeout OpenCode.
+
 ### 11.5 Kapabilitas `embed`
 
 Karena DeepSeek tidak punya embedding, tiga pilihan:

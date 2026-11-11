@@ -46,16 +46,25 @@ jobs:
       - run: npm ci
 
       - name: Install OpenCode CLI
+        if: env.OPENCODE_AUTH_JSON != ''
         run: |
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
           "$HOME/.opencode/bin/opencode" --version
 
       - name: Import OpenCode credentials
+        id: opencode_auth
         if: env.OPENCODE_AUTH_JSON != ''
+        continue-on-error: true
         run: |
           printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import
           "$HOME/.opencode/bin/opencode" --standalone auth list
+
+      # Bila OpenCode gagal dipasang/diimpor, paksa probe gagal agar build
+      # memakai DeepSeek, bukan menunggu timeout opencode.
+      - name: Disable OpenCode if setup failed
+        if: env.OPENCODE_AUTH_JSON != '' && steps.opencode_auth.outcome != 'success'
+        run: echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
 
       - name: Cek state
         run: npm run state:info

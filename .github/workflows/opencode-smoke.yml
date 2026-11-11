@@ -1,0 +1,38 @@
+name: opencode-smoke
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENCODE_AUTH_JSON: ${{ secrets.OPENCODE_AUTH_JSON }}
+      OPENCODE_MODEL: opencode-go/deepseek-v4.1-flash
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install OpenCode CLI
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
+          "$HOME/.opencode/bin/opencode" --version
+
+      - name: Import credentials
+        run: |
+          test -n "$OPENCODE_AUTH_JSON"
+          printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import
+          "$HOME/.opencode/bin/opencode" --standalone auth list
+
+      - name: Call a model
+        run: |
+          "$HOME/.opencode/bin/opencode" run \
+            --model "$OPENCODE_MODEL" \
+            --format json \
+            --auto \
+            --archived \
+            'Balas hanya JSON {"ok":true}' \
+            | tee /tmp/opencode-smoke.json
+          grep -q 'ok' /tmp/opencode-smoke.json
