@@ -39,9 +39,11 @@ try {
   const clusters = clusterArticles(rows);
 
   let result;
-  if (forceFallback || !process.env.DEEPSEEK_API_KEY) {
+  // DEC-0016: DeepSeek API langsung hanya bila diminta eksplisit.
+  const allowDeepSeek = process.env.LLM_PROVIDER === "deepseek" && Boolean(process.env.DEEPSEEK_API_KEY);
+  if (forceFallback || !allowDeepSeek) {
     if (!forceFallback) {
-      console.log("DEEPSEEK_API_KEY tidak ada — memakai mode deterministik.\n");
+      console.log("DeepSeek hanya dipakai bila LLM_PROVIDER=deepseek (DEC-0016) — mode deterministik.\n");
     }
     result = {
       topics: fallbackTopics(summarise(clusters)),

@@ -26,16 +26,23 @@ Adjudikasi di-cache per tanggal + hash masukan, jadi menjalankan ulang `build` p
 
 ## LLM
 
-Urutan penyedia: **opencode → deepseek → deterministik**.
+Urutan penyedia: **opencode → deterministik**. DeepSeek API langsung **tidak**
+dipakai sebagai cadangan (`DEC-0016`): kunci itu berbayar per token.
 
 ```bash
 # .env.local (gitignored)
-DEEPSEEK_API_KEY=sk-...
 OPENCODE_BIN=/Users/aim/.opencode/bin/opencode
 OPENCODE_MODEL=opencode-go/deepseek-v4.1-flash
+
+# hanya bila memang ingin memakai DeepSeek API langsung
+# LLM_PROVIDER=deepseek
+# DEEPSEEK_API_KEY=sk-...
 ```
 
-Tanpa keduanya, pipeline tetap berjalan dengan penulis deterministik (judul dan isi dari artikel, konteks dari glosarium).
+`OPENCODE_MODEL=opencode-go/...` tetap memakai model DeepSeek, tetapi lewat
+langganan OpenCode — bukan kunci API langsung. Tanpa OpenCode, pipeline tetap
+berjalan dengan penulis deterministik (judul dan isi dari artikel, konteks dari
+glosarium).
 
 ## Newsroom (POC)
 

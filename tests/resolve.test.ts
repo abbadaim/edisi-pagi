@@ -2,8 +2,12 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { resolveLlm } from "../src/adapters/llm/resolve.ts";
 
-test("tanpa opencode, model yang dipakai adalah model DeepSeek", () => {
+// DEC-0016: DeepSeek hanya aktif bila diminta eksplisit. Tes di bawah menjaga
+// pengikatan model ke penyedia yang benar-benar dipakai (bug lama: nama model
+// opencode terkirim ke DeepSeek dan ditolak 400).
+test("DeepSeek yang diminta eksplisit memakai model DeepSeek", () => {
   const r = resolveLlm({
+    LLM_PROVIDER: "deepseek",
     OPENCODE_BIN: "/tidak/ada/opencode",
     DEEPSEEK_API_KEY: "x",
   } as NodeJS.ProcessEnv);
@@ -14,6 +18,7 @@ test("tanpa opencode, model yang dipakai adalah model DeepSeek", () => {
 
 test("DEEPSEEK_MODEL menimpa default", () => {
   const r = resolveLlm({
+    LLM_PROVIDER: "deepseek",
     OPENCODE_BIN: "/tidak/ada/opencode",
     DEEPSEEK_API_KEY: "x",
     DEEPSEEK_MODEL: "deepseek-flash",

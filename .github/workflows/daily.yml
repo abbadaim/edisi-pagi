@@ -18,7 +18,10 @@ jobs:
       contents: write
     env:
       DATABASE_PATH: data/state/local.db
-      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      # DEC-0016: DeepSeek API langsung tidak dipakai (biaya per token di saldo
+      # pribadi). OpenCode satu-satunya penyedia; tanpa itu penulis deterministik.
+      # Jangan tambahkan kembali DEEPSEEK_API_KEY tanpa mengubah DEC-0016.
+      LLM_PROVIDER: opencode
       OPENCODE_AUTH_JSON: ${{ secrets.OPENCODE_AUTH_JSON }}
       OPENCODE_MODEL: opencode-go/deepseek-v4.1-flash
       VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}

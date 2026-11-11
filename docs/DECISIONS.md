@@ -107,3 +107,17 @@ lokal. `PORT=0` didukung agar tes memakai port acak, dan `ROOT` (default
 Sebab: produksi dilayani dari `/edisi-pagi/` sedangkan server lokal melayani di
 akar — perbedaan itulah yang membuat bug path lolos ke produksi.
 _Tanggal: 2026-11-11. `ROOT` ditambahkan pada §Revisi v3 rencana 001._
+
+## DEC-0016 — Penyedia LLM berbayar hanya aktif lewat permintaan eksplisit
+
+Urutan penyedia: **opencode → deterministik**. DeepSeek API langsung (kunci
+`DEEPSEEK_API_KEY`) hanya dipakai bila `LLM_PROVIDER=deepseek`. Tidak pernah
+sebagai cadangan otomatis.
+
+Sebab: saldo DeepSeek ditanggung pribadi. Dengan `!forced` pada syarat lama,
+setiap kegagalan OpenCode memindahkan biaya ke saldo itu tanpa ada yang
+memutuskan. Karena agen/skrip lain bisa menjalankan pipeline, invarian ini
+dikunci di kode dan di tes, bukan hanya dengan menghapus secret di CI.
+
+Rollback: `LLM_PROVIDER=deepseek` + pulihkan `DEEPSEEK_API_KEY`.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/002-deepseek-opt-in.md`._

@@ -13,6 +13,7 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | # | Rencana | Kelas | Status | Diperbarui |
 |---|---|---|---|---|
 | 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `tested` — menunggu `ui.yml` hijau | 2026-11-11 |
+| 002 | [DeepSeek opt-in](plans/002-deepseek-opt-in.md) | pipeline | `tested` | 2026-11-11 |
 
 `001` sudah lengkap di kode: lapisan tanpa browser (`tests/ui-static.test.ts`)
 dan lapisan browser (`tests-ui/shell.spec.ts`, `npm run test:ui`). `npm test`

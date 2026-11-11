@@ -62,10 +62,13 @@ ingest → cluster → adjudicate → planner → rank/select
 
 - **Published editions are immutable.** Never rebuild a date that already
   exists. Test with `--newsroom-limit 2 --thin` on a new date, or use the POC.
-- **CI uses OpenCode v2 → DeepSeek fallback.** Install with
-  `https://opencode.ai/v2/install` (v2.2.7). v1 has no `auth import`.
+- **OpenCode is the only LLM provider.** DeepSeek's direct API is opt-in only
+  (`LLM_PROVIDER=deepseek`) because it costs the owner real money per token
+  (`DEC-0016`). Install with `https://opencode.ai/v2/install` (v2.2.7); v1 has
+  no `auth import`.
   Never let OpenCode setup block a deploy: on failure, set
-  `OPENCODE_BIN=/nonexistent` and continue.
+  `OPENCODE_BIN=/nonexistent` and let the deterministic writer run — do not
+  "fix" it by enabling DeepSeek.
 - **`change` uses status only.** Number comparison without units produced a
   false “2026 → 28”. Do not re-enable numbers until extraction understands
   units and context.

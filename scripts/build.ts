@@ -104,7 +104,8 @@ try {
       }).filter((c) => isLocalStory(c) && !isLocalJunk(c))
     : [];
 
-  // Urutan: opencode -> deepseek -> deterministik. LLM_PROVIDER memaksa satu.
+  // Urutan: opencode -> deterministik. DeepSeek hanya bila LLM_PROVIDER=deepseek
+  // (DEC-0016: API berbayar tidak boleh jadi cadangan otomatis).
   const resolvedLlm = resolveLlm(process.env);
   const telemetry = new LlmTelemetry(db, editionId);
   const fetchCache = createDbFetchCache(db);

@@ -15,10 +15,10 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Jalur produksi | **Newsroom default** (`scripts/build.ts`) |
 | Rollback | `--no-newsroom` atau `NEWSROOM_WRITE=0` |
 | CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 45 menit |
-| Provider CI | OpenCode v2.2.7 → DeepSeek fallback (smoke lulus) |
+| Provider CI | **OpenCode saja** (`LLM_PROVIDER=opencode`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change` (status) + `misread` (judul–isi), deterministik |
-| Tests | `npm test` — 190 uji |
+| Tests | `npm test` — 199 uji; `npm run test:ui` — 4 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -217,7 +217,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - Impor di CI: `opencode --standalone auth import`.
 - `--standalone` wajib untuk auth agar tidak bentrok dengan service desktop.
 - `opencode.ai/v2/install` memasang ke `$HOME/.opencode/bin`.
-- Jika install/auth gagal, workflow set `OPENCODE_BIN=/nonexistent` agar DeepSeek dipakai, bukan menunggu timeout.
+- Jika install/auth gagal, workflow set `OPENCODE_BIN=/nonexistent` agar pipeline memakai penulis deterministik, bukan menunggu timeout. **Bukan** agar DeepSeek dipakai (`DEC-0016`).
 - `OPENCODE_AUTH_JSON` adalah kredensial pribadi; rotasi bila perlu.
 
 ### CI dan commit

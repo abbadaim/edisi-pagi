@@ -22,10 +22,12 @@ function bindModel(adapter: LlmAdapter, model: string): LlmAdapter {
 }
 
 /**
- * Rantai penyedia: opencode -> deepseek -> deterministik.
- * `LLM_PROVIDER` memaksa satu penyedia (berguna saat menguji cadangan).
- * Dipakai oleh `build` (harian) dan `weekly` supaya keduanya menulis
- * dengan kualitas yang sama.
+ * Rantai penyedia: opencode -> deterministik.
+ *
+ * `LLM_PROVIDER=opencode` memaksa OpenCode. `LLM_PROVIDER=deepseek` memakai
+ * DeepSeek API langsung. Tanpa `LLM_PROVIDER`, DeepSeek **tidak** dipakai:
+ * API itu berbayar per token dan tidak boleh menjadi cadangan otomatis
+ * (`DEC-0016`).
  */
 export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
   const forced = env.LLM_PROVIDER as "opencode" | "deepseek" | undefined;
@@ -40,18 +42,24 @@ export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
       try {
         chain.push(bindModel(createAdapter({ provider: "opencode", model: opencodeModel }, env), opencodeModel));
       } catch {
-        /* lanjut ke cadangan */
+        /* lanjut ke deterministik */
       }
-    } else if (!forced) {
-      console.log("opencode tidak tersedia, mencoba deepseek");
+    } else {
+      console.log("opencode tidak tersedia — memakai penulis deterministik (DeepSeek nonaktif, DEC-0016)");
     }
   }
-  if ((!forced || forced === "deepseek") && env.DEEPSEEK_API_KEY) {
-    try {
-      chain.push(bindModel(createAdapter({ provider: "deepseek", model: deepseekModel }, env), deepseekModel));
-      if (chain.length === 1) model = deepseekModel;
-    } catch {
-      /* lanjut */
+
+  // DeepSeek hanya lewat permintaan eksplisit, tidak pernah sebagai cadangan.
+  if (forced === "deepseek") {
+    if (env.DEEPSEEK_API_KEY) {
+      try {
+        chain.push(bindModel(createAdapter({ provider: "deepseek", model: deepseekModel }, env), deepseekModel));
+        if (chain.length === 1) model = deepseekModel;
+      } catch {
+        /* lanjut ke deterministik */
+      }
+    } else {
+      console.log("LLM_PROVIDER=deepseek tetapi DEEPSEEK_API_KEY tidak ada — memakai penulis deterministik");
     }
   }
 
