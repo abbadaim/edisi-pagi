@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-11",
+  "scope": "lokal",
+  "published_at": "2026-11-11T08:59:00+07:00",
+  "coverage": {
+    "from": "2026-11-10T08:59:00+07:00",
+    "to": "2026-11-11T08:59:00+07:00"
+  },
+  "generated_at": "2026-11-11T08:59:00+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 5,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "verify": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 4,
+  "truncated_reason": "Hanya 4 topik lokal yang lolos",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_sultan_hb_x_jawab_tuntutan_ump_f058",
+      "angle": "Sultan HB X duduk lesehan bersama demonstran dan menanggapi tuntutan UMP DIY sesuai KHL",
+      "kicker": "DIY",
+      "title": "Sultan HB X Temui Demonstran, Tanggapi Tuntutan UMP DIY",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sultan HB X menemui massa aksi dan menanggapi tuntutan agar UMP DIY disesuaikan dengan KHL, tetapi rincian jawaban soal angka Rp4,6 juta dan langkah lanjutan Pe",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:59:00+07:00"
+      },
+      "body": [
+        "Di Yogyakarta, Sultan HB X menemui langsung massa aksi yang menuntut Upah Minimum Provinsi (UMP) DIY disesuaikan dengan Kebutuhan Hidup Layak (KHL). Dalam pertemuan itu, menurut pemberitaan detik.com, massa aksi menyampaikan tuntutan agar UMP DIY mengikuti angka KHL, dan Sultan HB X memberikan tanggapan atas tuntutan tersebut. Tirto.id melaporkan bahwa Sultan HB X berdialog dan berdiskusi dengan massa aksi dari AJM sambil duduk lesehan, membahas berbagai permasalahan di DIY. Namun, rincian isi jawaban Sultan soal angka KHL Rp4,6 juta belum dijelaskan dalam bahan yang tersedia, sehingga detail itu belum jelas.",
+        "Terkait langkah lanjutan Pemda DIY untuk penetapan UMP, bahan yang ada belum memuat keterangan resmi mengenai tahapan atau jadwal penetapannya, sehingga detail itu belum diumumkan. Yang tergambar dari pemberitaan adalah bahwa persoalan UMP DIY menjadi salah satu topik yang dibahas dalam dialog antara Sultan HB X dan massa aksi, dan respons atas tuntutan tersebut disampaikan dalam pertemuan itu. Perlu dicatat, bahan hanya menyebut massa aksi dari AJM tanpa merinci siapa saja yang terlibat, dan angka KHL Rp4,6 juta disebut sebagai bagian dari tuntutan tanpa penjelasan lebih lanjut soal perhitungannya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu KHL dan bagaimana kaitannya dengan penetapan UMP?",
+          "a": "KHL adalah standar kebutuhan hidup layak yang menjadi salah satu acuan dalam perhitungan upah minimum; bahan tidak merinci metode perhitungannya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Unjuk_rasa"
+          }
+        },
+        {
+          "q": "Apa itu unjuk rasa dan mengapa massa mendatangi pejabat secara langsung?",
+          "a": "Unjuk rasa adalah gerakan protes di hadapan umum untuk menyatakan pendapat atau menekan kebijakan; bahan tidak menjelaskan alasan spesifik massa memilih dialog langsung.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Unjuk_rasa"
+          }
+        },
+        {
+          "q": "Siapa AJM yang disebut sebagai massa aksi?",
+          "a": "Bahan hanya menyebut AJM sebagai asal massa aksi tanpa merinci kepanjangan atau afiliasinya.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi Pemda DIY soal tahapan penetapan UMP agar tidak bergantung pada satu kutipan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/sultan-hb-x-temui-demonstran-jawab-kritik-kondisi-sosial-di-diy-idD8",
+          "published_at": "2026-11-10T21:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:59:00+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta",
+          "published_at": "2026-11-10T19:55:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:59:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_sim_keliling_polda_diy_hari_in_bdb8",
+      "angle": "Jadwal SIM Keliling Polda DIY di Kapanewon Godean dan syarat perpanjangan SIM",
+      "kicker": "Yogyakarta",
+      "title": "SIM Keliling Polda DIY di Godean: Jadwal dan Syaratnya",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sumber menyebut layanan SIM Keliling Polda DIY di Kantor Kapanewon Godean pukul 08.30–13.00 WIB, namun penanda hari dan tanggalnya belum konsisten: artikel meny",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:59:00+07:00"
+      },
+      "body": [
+        "Warga Sleman yang ingin memperpanjang SIM bisa memanfaatkan layanan SIM Keliling Polda DIY di Kantor Kapanewon Godean. Layanan yang diselenggarakan Direktorat Lalu Lintas (Ditlantas) Polda DIY ini menjadi alternatif tanpa harus mendatangi kantor Satpas. Sumber menyebut pelayanan dijadwalkan pukul 08.30–13.00 WIB, namun penanda hari dan tanggalnya belum konsisten: artikel menyebut 'Selasa (10/11/2026)' sekaligus 'hari ini' pada artikel bertanggal 11 November 2026, sementara daftar lokasi bulanan menempatkan Godean pada hari Rabu. Karena itu hari pastinya sebaiknya dikonfirmasi ulang sebelum berangkat. Belum ada pejabat atau narasumber bernama yang dikutip dalam bahan; informasi disampaikan melalui pemberitaan Harian Jogja.",
+        "Pemohon perlu menyiapkan SIM lama yang masih berlaku, e-KTP asli beserta fotokopi, surat keterangan sehat jasmani, hasil tes psikologi, serta pas foto bila diminta petugas. Biaya tambahan diperkirakan sekitar Rp25.000–Rp35.000 untuk pemeriksaan kesehatan dan Rp60.000–Rp110.000 untuk tes psikologi, di luar tarif PNBP yang mengacu pada ketentuan resmi. Layanan keliling umumnya hanya melayani perpanjangan SIM yang masih aktif; bila masa berlaku habis, pemohon harus mengikuti prosedur SIM baru. Karena kuota tiap hari disebut dapat terbatas, datang lebih awal dianjurkan. Yang belum jelas adalah kepastian hari pelayanan di Godean serta rincian tarif PNBP, sehingga langkah berikutnya adalah memastikan jadwal dan ketersediaan layanan sebelum berangkat."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu SIM Keliling dan siapa yang menyelenggarakannya?",
+          "a": "SIM Keliling adalah layanan perpanjangan SIM di luar kantor Satpas; di DIY layanan ini diselenggarakan Ditlantas Polda DIY.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Surat_izin_mengemudi"
+          }
+        },
+        {
+          "q": "Apa fungsi SIM menurut definisi umum?",
+          "a": "SIM adalah dokumen resmi yang mengizinkan seseorang mengoperasikan jenis kendaraan bermotor tertentu di jalan raya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Surat_izin_mengemudi"
+          }
+        }
+      ],
+      "action": "Pastikan dulu hari dan jam layanan SIM Keliling di Kapanewon Godean sebelum berangkat membawa berkas.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278423/sim-keliling-polda-diy-hari-ini-di-kantor-kapanewon-godean-cek-syaratnya",
+          "published_at": "2026-11-11T06:27:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:59:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 3,
+      "first_seen": "2026-11-11",
+      "previous_edition": "2026-11-10",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "unresolved": [
+        "Belum pasti: Pelayanan hari ini dijadwalkan berlangsung di Kantor Kapanewon Godean dengan jam operasional mulai pukul…"
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_diduga_mabuk_pengemudi_mobil_t_da39",
+      "angle": "Polresta Sleman menangkap pengemudi yang diduga mabuk setelah tabrak lari dari Demak Ijo",
+      "kicker": "Sleman",
+      "title": "Pengemudi Diduga Mabuk Ditangkap Usai Tabrak Lari di Sleman",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polresta Sleman menangkap seorang pengemudi yang diduga mabuk setelah terlibat tabrak lari dari Demak Ijo hingga Turi.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:59:00+07:00"
+      },
+      "body": [
+        "Polresta Sleman mengamankan seorang pengemudi mobil yang diduga terlibat serangkaian insiden tabrak lari di wilayah hukum Polresta Sleman, DIY. Menurut keterangan Ps. Kasi Humas Polresta Sleman, Iptu Argo Anggoro, rangkaian kejadian bermula dari kecelakaan tabrak lari di kawasan Simpang Empat Demak Ijo. Kendaraan itu kemudian melaju ke arah Turi dan kembali ke selatan wilayah Sleman. Pengemudi akhirnya diamankan petugas di kawasan SPBU Dukuh, Sleman, setelah sebelumnya berusaha kabur dari kejaran masyarakat di lokasi kejadian.",
+        "Dalam perjalanan melarikan diri, pengemudi diduga terlibat beberapa insiden kecelakaan dan sejumlah orang menjadi korban. Polisi menduga pengemudi berada di bawah pengaruh minuman keras, meski Argo menegaskan informasi itu masih data awal. Sebelumnya, narasi soal kejadian ini beredar viral di Instagram, menyebut pengemudi tertangkap di Jalan Magelang Km. 11 dekat SPBU Dukuh dan banyak korban di sepanjang Jalan Turi. Namun jumlah korban, jumlah insiden, serta identitas pengemudi belum diumumkan. Polisi masih memeriksa pengemudi dan mendalami rangkaian peristiwa, dengan janji menyampaikan pembaruan bila ada perkembangan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Polresta Sleman dan wilayah hukumnya?",
+          "a": "Polresta Sleman adalah kepolisian resor kota yang menangani perkara pidana di wilayah Kabupaten Sleman, DIY, termasuk kawasan Demak Ijo dan Turi yang disebut dalam peristiwa ini.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
+          }
+        },
+        {
+          "q": "Apa arti 'data awal' dalam keterangan polisi?",
+          "a": "Data awal berarti keterangan yang belum final dan masih bisa berubah setelah pemeriksaan serta pendalaman oleh petugas.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
+          }
+        },
+        {
+          "q": "Mengapa dugaan pengaruh minuman keras perlu diuji?",
+          "a": "Dugaan itu masih berdasarkan penilaian awal di lokasi, sehingga statusnya belum menjadi temuan resmi sampai ada pemeriksaan lebih lanjut.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Polresta Sleman untuk memastikan jumlah korban dan status hukum pengemudi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap",
+          "published_at": "2026-11-11T07:07:15+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:59:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "unresolved": [
+        "Kapan dan bagaimana Gibran menyerahkan surat pengunduran diri ke Prabowo?"
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_dukung_pembayaran_nontunai_dis_da39",
+      "angle": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk pembayaran nontunai.",
+      "kicker": "Sleman",
+      "title": "WiFi Gratis di 4 TPR Wisata Sleman, Dukung Bayar Nontunai",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk mendukung pembayaran retribusi nontunai, dengan peninjauan lokasi pada awal November 2026.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T08:59:00+07:00"
+      },
+      "body": [
+        "Dinas Pariwisata (Dispar) Sleman menyiapkan fasilitas WiFi gratis di empat tempat pemungutan retribusi (TPR) wisata. Menurut Kepala Dispar Sleman Edy Winarya, jaringan internet itu disiapkan agar wisatawan lebih mudah memperoleh informasi destinasi dan pembayaran retribusi secara nontunai berjalan lebih lancar. Persiapan dilakukan dengan meninjau sejumlah TPR pada awal November 2026 oleh Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif (Deskraf) untuk memeriksa titik strategis dan kesiapan teknis pemasangan.",
+        "Menurut pemberitaan Harian Jogja, Selasa (10/11/2026), empat lokasi TPR menjadi sasaran tahap pertama peninjauan, tetapi nama keempat lokasi itu tidak tercantum dalam bahan. Dispar Sleman menyebut digitalisasi ini juga untuk meningkatkan transparansi dan efektivitas pengelolaan pariwisata, serta diharapkan membuka peluang bagi pelaku usaha lokal memperkenalkan produk kepada wisatawan. Yang belum jelas: jadwal pasti pemasangan, cakupan akhir, dan apakah biaya operasional WiFi sudah dianggarkan. Langkah berikutnya adalah menuntaskan peninjauan teknis di empat TPR tersebut, dengan rincian lokasi dan waktu aktivasi yang belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu TPR wisata dan retribusi yang dipungut di sana?",
+          "a": "TPR adalah tempat pemungutan retribusi di pintu masuk kawasan wisata; bahan tidak merinci besar tarif atau jenis retribusinya.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
+          }
+        },
+        {
+          "q": "Siapa Edy Winarya dalam pemberitaan ini?",
+          "a": "Ia disebut sebagai Kepala Dispar Sleman yang menyampaikan alasan penyediaan WiFi gratis.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
+          }
+        },
+        {
+          "q": "Apa peran Bidang Deskraf Dispar Sleman?",
+          "a": "Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif melakukan peninjauan lokasi untuk memeriksa titik strategis dan kesiapan teknis pemasangan.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi Dispar Sleman soal lokasi dan jadwal aktivasi WiFi di empat TPR wisata.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata",
+          "published_at": "2026-11-10T23:47:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T08:59:00+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}
