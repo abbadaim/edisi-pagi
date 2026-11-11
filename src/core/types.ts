@@ -158,6 +158,7 @@ export interface GapCard extends CardBase {
   social: {
     reddit_score: number | null;
     reddit_comments: number | null;
+    detik_comments: number | null;
     trend_interest: number | null;
     tiktok_delta: number | null;
   };

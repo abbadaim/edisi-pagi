@@ -525,6 +525,51 @@ function openCard(index) {
     body.append(box);
   }
 
+  if (card.type === "gap") {
+    const box = el("div", "socialBox");
+    box.append(el("div", "lbl", "Sinyal sosial"));
+    if (card.social?.reddit_score != null || card.social?.reddit_comments != null) {
+      box.append(el("div", "socialRow", `Reddit: ${card.social.reddit_score ?? 0} skor · ${card.social.reddit_comments ?? 0} komentar`));
+    }
+    if (card.social?.detik_comments != null) {
+      box.append(el("div", "socialRow", `Detik: ${card.social.detik_comments} komentar`));
+    }
+    if (card.social?.trend_interest != null) {
+      box.append(el("div", "socialRow", `Google Trends: ${card.social.trend_interest}+ pencarian`));
+    }
+    box.append(
+      el("div", "socialNote",
+        `Liputan ${card.coverage?.article_count ?? 0} artikel · ${card.coverage?.outlets?.length ?? 0} media · selisih peringkat ${card.gap_rank}`),
+    );
+    if (card.absent_angle) box.append(el("p", "socialAngle", card.absent_angle));
+    if (card.coverage_timeline?.length) {
+      const tl = el("div", "timeline");
+      tl.append(el("div", "lbl", "Jejak liputan"));
+      for (const t of card.coverage_timeline) {
+        tl.append(el("div", "timelineRow", `${t.outlet} · ${String(t.at).slice(0, 10)}`));
+      }
+      box.append(tl);
+    }
+    body.append(box);
+  }
+
+  if (card.type === "debate") {
+    const box = el("div", "socialBox");
+    box.append(el("div", "lbl", "Yang diperdebatkan"));
+    box.append(el("div", "socialRow", `${card.volume?.platform ?? "publik"}: ${card.volume?.count ?? 0} komentar`));
+    box.append(el("div", "socialRow", `Nada: ${card.tone}`));
+    if (card.comparison) {
+      box.append(el("div", "socialNote", `${card.comparison.platform}: ${card.comparison.count} (${card.comparison.note})`));
+    }
+    for (const q of card.quotes ?? []) {
+      const quote = el("blockquote", "quote", `“${q.text}”`);
+      quote.append(el("div", "quoteBy", `${q.author} · ${q.platform}`));
+      box.append(quote);
+    }
+    if (card.reading) box.append(el("p", "socialAngle", card.reading));
+    body.append(box);
+  }
+
   for (const p of card.body ?? []) body.append(el("p", "body", p));
 
   if (card.action) {

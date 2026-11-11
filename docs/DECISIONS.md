@@ -193,3 +193,19 @@ Sebab: `misread` lokal hampir tidak pernah muncul karena brief lokal sering
 tidak melewati riset newsroom. Batas ketat menjaga build tetap cepat dan tidak
 berubah menjadi crawler.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/006-local-meta-text.md`._
+
+## DEC-0022 — Sinyal sosial v1 untuk gap/debate
+
+Amplifikasi v1 = Reddit (Arctic Shift) + Google Trends RSS + total komentar
+Detik (`sneak-peek`). TikTok `null` karena endpoint hanya memberi angka
+kumulatif. Gap hanya arah positif (`gap_rank ≥ 5`); debate hanya bila
+komentar Detik ≥15 atau skor post Reddit ≥200, dengan minimal dua kutipan.
+
+Data disimpan per `(edition_id, topic_id)` di `social_cache`. Hasil kosong
+tidak di-cache agar rate limit sementara bisa dicoba lagi. Maksimum dua kartu
+meta per edisi; prioritas change > debate > gap > misread.
+
+Sebab: lapisan “Yang Luput” dan “Yang Diperdebatkan” membutuhkan sinyal di
+luar media, tetapi tidak boleh mengarang angka atau memblokir terbit saat
+sumber sosial gagal.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/007-gap-debate-cards.md`._

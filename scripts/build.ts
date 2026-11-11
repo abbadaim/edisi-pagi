@@ -32,6 +32,15 @@ import { reviewEdition, type DeskCard } from "../src/core/newsroom/desk.ts";
 import type { Assignment } from "../src/core/newsroom/contracts.ts";
 import { dedupeCards } from "../src/core/newsroom/dedupe.ts";
 import { applyChanges, buildMetaCards, type DatedCard } from "../src/core/newsroom/meta.ts";
+import { collectSocial } from "../src/core/newsroom/social.ts";
+import {
+  buildDebateCard,
+  buildGapCard,
+  computeDebate,
+  computeGap,
+  selectMetaCards,
+  type SocialEntry,
+} from "../src/core/newsroom/meta-social.ts";
 import { budgetFollowUps } from "../src/core/newsroom/selection.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
 import { createDbFetchCache } from "../src/core/newsroom/cache.ts";
@@ -772,17 +781,64 @@ try {
     cards: withDeep,
     previous: previousCards("nasional"),
   });
+  // Sinyal amplifikasi untuk gap/debate (rencana 007). Cache per edisi/topik.
+  const socialCards: Card[] = [];
+  if (process.env.SOCIAL_SIGNALS !== "off") {
+    const eligible = entries.filter(
+      (e) => !isLocalStory(e.cluster) && !e.topic.drop && e.cluster.outlets.length >= 2,
+    );
+    // Gap butuh kandidat dari kedua ujung: yang paling diliput dan yang paling
+    // sedikit diliput tetapi signifikan. Kalau hanya top-8 liputan, gap positif
+    // hampir mustahil.
+    const topCovered = [...eligible]
+      .sort(
+        (a, b) =>
+          b.cluster.articles.length * Math.min(b.cluster.outlets.length, 5) -
+          a.cluster.articles.length * Math.min(a.cluster.outlets.length, 5),
+      )
+      .slice(0, 4);
+    const underCovered = eligible
+      .filter((e) => !topCovered.includes(e) && e.cluster.articles.length <= 3)
+      .sort(
+        (a, b) =>
+          b.topic.significance - a.topic.significance ||
+          a.cluster.articles.length - b.cluster.articles.length,
+      )
+      .slice(0, 4);
+    const candidates = [...topCovered, ...underCovered];
+
+    if (candidates.length > 0) {
+      const signals = await collectSocial(
+        candidates.map((e) => ({ topic: e.topic, cluster: e.cluster, topicId: e.topicId })),
+        { db, editionId, now },
+      );
+      const socialEntries: SocialEntry[] = candidates
+        .map((e) => ({ ...e, signals: signals.get(e.topicId)! }))
+        .filter((e) => Boolean(e.signals));
+
+      const gap = computeGap(socialEntries);
+      if (gap) socialCards.push(buildGapCard(gap, { editionId, now }));
+      const debate = computeDebate(socialEntries);
+      if (debate) socialCards.push(buildDebateCard(debate, { editionId, now }));
+
+      console.log(
+        `  sosial: ${socialCards.map((c) => c.type).join(", ") || "tidak ada"} · ${candidates.length} kandidat`,
+      );
+    }
+  }
+
+  const allMeta = selectMetaCards([...meta.cards, ...socialCards]);
   const enriched = applyChanges(withDeep, meta.changes);
   // Dua kartu meta memakan satu slot berita; hoax tetap dipertahankan.
-  const maxNews = meta.cards.length >= 2 ? 5 : 6;
+  const maxNews = allMeta.length >= 2 ? 5 : 6;
   const cards = [
     ...enriched.slice(0, maxNews),
-    ...meta.cards,
+    ...allMeta,
     ...(hoax ? [hoax] : []),
     ...(good ? [good] : []),
   ].slice(0, 8);
   console.log(
-    `  meta: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
+    `  meta: ${allMeta.map((c) => c.type).join(", ") || "tidak ada"}` +
       ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
       ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · fetch ${meta.stats.text_fetched} · celah ${meta.stats.gaps}`,
   );
