@@ -14,7 +14,10 @@ bekerja. Untuk aturan operasional, lihat `AGENTS.md`; untuk desain, lihat
   `--no-newsroom`.
 - Edisi `2026-11-11` terbit: **8 kartu nasional**, 20 menit baca; lokal sempat
   tidak terbit, lalu run berikutnya menghasilkan 5 kartu lokal.
-- **189 tes** lulus; typecheck bersih.
+- **190 tes** lulus; typecheck bersih.
+- UI shell: nav bawah, halaman Atur (pasang/notifikasi/tentang), arsip tanggal,
+  dan offline shell.
+- Kartu meta `change`/`misread` deterministik, memakai bahan newsroom.
 - Telemetri per panggilan (`llm_calls`), cache teks artikel
   (`article_text`), ledger catatan (`editor_notes`), dan sumber primer (P4a)
   sudah ada.
@@ -154,13 +157,113 @@ latensi tetap tersimpan.
 5. **Pricing LLM**: isi tabel harga agar `cost_usd` bermakna.
 6. **Evaluasi kualitas**: golden set dan penilaian manusia, bukan hanya metrik
    panjang.
+7. **`gap` dan `debate`**: belum ada; butuh amplifikasi (Reddit/komentar
+   Detik/Trends/TikTok). Jangan memalsukan dari jumlah artikel.
+8. **Paritas mingguan**: `weekly.ts` masih memakai penulis lama, bukan newsroom.
+9. **Meta lokal**: `misread` lokal jarang muncul karena teks penuh hanya
+   tersedia untuk artikel yang di-fetch newsroom.
+10. **Pengiriman push**: UI + sender ada; belum diuji di perangkat nyata.
 
 ---
 
-## 8. Cara memulai sesi berikutnya
+## 8. UI shell, PWA, dan arsip
+
+Yang dibangun:
+
+- Nav bawah nyata: **Edisi / Sleman / Mingguan / Atur**. Scope hanya muncul
+  bila edisinya ada untuk tanggal terbaru.
+- Halaman **Atur**: pasang aplikasi, notifikasi, dan info arsip.
+- Chip tanggal untuk membuka edisi lama (`openScope(scope, index)`).
+- Service worker v4: fallback navigasi, `config.json`, fallback aset berversi.
+- Install: `beforeinstallprompt` + instruksi iOS/Safari/Chrome Android.
+
+Pelajaran mahal:
+
+| Masalah | Sebab / perbaikan |
+|---|---|
+| Bar bawah hanya “Edisi” | Tujuan mockup (Cari/Simpan/Atur) tidak pernah dibangun; jangan pasang tombol mati |
+| App berhenti di “Memuat…” | Path absolut (`/style.css`) rusak di project page; semua path harus relatif |
+| Deploy terlihat tidak berubah | Pages cache `app.js` 10 menit; publish menulis `?v=<sha1>` |
+| Offline memuat HTML tanpa aset | SW harus fallback ke `app.js`/`style.css` tanpa query |
+| Tombol pasang tidak muncul | Electron/in-app browser tidak punya `beforeinstallprompt`; fallback instruksi wajib |
+| Push membuka halaman salah | Payload `url: "/"` membuka akar domain; pakai `./` dan resolve ke scope |
+| Tab Mingguan hilang | `latest_by_scope` hanya menampilkan edisi bertanggal terbaru |
+
+## 9. Kartu meta (`change` & `misread`)
+
+Aturan yang dikunci:
+
+- `change` hanya memakai **status** klaim vs edisi sebelumnya dengan
+  `topic_id` sama. Angka tidak dipakai: perbandingan naif menghasilkan
+  “2026 → 28” (tahun vs jumlah rangkaian).
+- `misread` memakai teks penuh `article_text` (≥500 char), bukan lead RSS.
+  Kalimat harus berbagi kata subjek dengan judul; halaman artikel memuat
+  tautan berita lain, dan deteksi pertama sempat mengutip “Wacana SIM seumur
+  hidup” untuk artikel kontrak influencer.
+- Judul yang sudah memuat sinonim kualifikasi (`belum`, `wacana`, `rencana`,
+  `diduga`, …) tidak layak dianggap misread.
+- `missing` berisi fakta (“masih berupa usulan, bukan keputusan”), bukan nama
+  kualifikasi (SCHEMA §3.7).
+- Dedupe **tidak boleh** menyentuh kartu meta: judulnya mirip karena membahas
+  kartu berita yang sama.
+- Desk tidak menilai kartu meta dengan standar berita.
+- Dua kartu meta memakai satu slot berita; hoax tetap dipertahankan.
+- Timestamp sumber harus dari kartu (`+07:00`), bukan `articles.published_at`
+  mentah (`Z`) yang ditolak skema.
+
+Debug yang berguna: log `meta: ... · lanjut x/y · teks a/b · celah c`.
+`lanjut 0` berarti tidak ada `topic_id` yang berkesinambungan; `teks 0` berarti
+cache teks penuh tidak tersedia.
+
+## 10. State CI dan konkurensi
+
+- `.gitignore` pola `local.db` cocok di **kedalaman mana pun**. Itu diam-diam
+  mengabaikan `data/state/local.db`, sehingga setiap run CI mulai kosong:
+  rekap mingguan/deep dive tidak punya riwayat, langganan push hilang.
+- Perbaikan: `/local.db` hanya di akar, `data/state/*.db` diabaikan sengaja,
+  lalu `actions/cache` bergulir (`edisi-state-<run_id>`, restore prefix).
+  `npm run state:info` membuktikan state terbawa (856 artikel di run kedua).
+- Commit bot bukan syarat deploy. Push manusia saat run berjalan menggagalkan
+  langkah commit dan melewati deploy. Kini commit retry +
+  `continue-on-error`, deploy tetap jalan.
+- `continue-on-error: true` tidak selalu menyelamatkan job (terjadi pada
+  langkah auth OpenCode). Untuk langkah opsional, tangani kegagalan di dalam
+  skrip dan `exit 0`.
+- Installer OpenCode v1 (`/install`, 1.19.5) tidak punya `auth import`; v2
+  (`/v2/install`, 2.2.7) punya. Smoke workflow membuktikan auth + model call.
+
+## 11. Skill verifikasi
 
 ```bash
-git pull --rebase origin main
+# edisi live
+curl -s https://abbadaim.github.io/edisi-pagi/manifest.json | python3 -m json.tool
+curl -s https://abbadaim.github.io/edisi-pagi/data/editions/2026-11-11.nasional.json \
+  | python3 -c 'import json,sys; e=json.load(sys.stdin); [print(c["type"], c["title"][:55]) for c in e["cards"]]'
+
+# validasi + tes
+npm run validate -- data/editions/2026-11-11.nasional.json
+npm test && npm run typecheck
+
+# smoke OpenCode (tanpa menyentuh edisi)
+gh workflow run opencode-smoke.yml --repo abbadaim/edisi-pagi
+```
+
+Checklist browser:
+
+1. `latest_by_scope` di manifest.
+2. Nav: Edisi/Sleman/Mingguan (bila ada)/Atur.
+3. `#/atur`: panel Pasang, Notifikasi, Tentang.
+4. `misread`: chip “Kata yang hilang dari judul”; `change`: timeline.
+5. Offline: matikan server lokal, reload; shell + edisi terakhir tetap tampil.
+6. Saat menguji `app.js` baru: hapus cache dan unregister SW dulu.
+
+Jangan menjalankan ulang tanggal yang sudah terbit. Uji dengan
+`--newsroom-limit 2 --thin` pada tanggal baru atau POC.
+
+## 12. Cara memulai sesi berikutnya
+
+```bash
+git pull --rebase --autostash origin main
 npm ci
 npm run migrate
 npm test

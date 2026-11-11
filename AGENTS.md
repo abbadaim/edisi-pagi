@@ -15,9 +15,10 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Jalur produksi | **Newsroom default** (`scripts/build.ts`) |
 | Rollback | `--no-newsroom` atau `NEWSROOM_WRITE=0` |
 | CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 45 menit |
-| Provider CI | OpenCode v2 → DeepSeek fallback |
-| Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 5 kartu |
-| Tests | `npm test` — 189 uji |
+| Provider CI | OpenCode v2.2.7 → DeepSeek fallback (smoke lulus) |
+| Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
+| Kartu meta | `change` (status) + `misread` (judul–isi), deterministik |
+| Tests | `npm test` — 190 uji |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -51,6 +52,7 @@ ingest → cluster → adjudicate → planner → rank/select
 | `src/core/newsroom/selection.ts` | Kuota tindak lanjut |
 | `src/core/newsroom/dedupe.ts` | Dedupe kartu akhir |
 | `src/core/newsroom/hoax.ts` | Penulis kartu hoaks |
+| `src/core/newsroom/meta.ts` | Kartu `change`/`misread` deterministik |
 | `src/core/telemetry.ts` | `llm_calls` per panggilan |
 | `scripts/build.ts` | Orkestrasi harian |
 | `scripts/publish.ts` | `public/` + manifest |
@@ -155,6 +157,17 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - nasional ambang 0,6; lokal 0,5
 - pilih kartu dengan sumber/isi/gambar lebih kuat
 - hoax tidak digabung dengan news
+- **kartu meta tidak pernah didedupe** — judulnya mirip karena membahas kartu berita yang sama
+
+### 4.7 Kartu meta
+
+- `change`: hanya bila **status** klaim berbeda dari edisi sebelumnya dengan `topic_id` sama. Angka **tidak** dipakai (pernah menghasilkan “2026 → 28”).
+- `misread`: kualifikasi prosedural di teks penuh (`article_text`, ≥500 char) yang tidak ada di judul. Kalimat wajib berbagi kata subjek dengan judul; judul yang sudah memuat sinonim kualifikasi (`belum`, `wacana`, `rencana`, …) tidak layak.
+- `missing` berisi **fakta** (mis. “masih berupa usulan, bukan keputusan”), bukan nama kualifikasi.
+- Maksimum 1 `change` + 1 `misread`; dua kartu memakai satu slot berita dan `hoax_roundup` selalu dipertahankan (maks 8).
+- `changes[]` hasil `change` juga ditempel ke kartu berita agar hitungan pembaruan push benar.
+- Desk tidak menilai kartu meta dengan standar berita.
+- `gap`/`debate` belum dibuat: butuh amplifikasi (Reddit/komentar/Trends/TikTok).
 
 ---
 
@@ -167,6 +180,30 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
   - `enum`, `namespace`
 - Tulis field class eksplisit.
 - Tes memakai `node --test`, tanpa jaringan.
+
+### UI shell, PWA, dan Pages
+
+- Situs dilayani dari `/edisi-pagi/`: **semua path harus relatif**. Path absolut (`/style.css`) membuat app berhenti di “Memuat…”.
+- Pages meng-cache `app.js` 10 menit. `publish.ts` menulis `?v=<sha1>` untuk `app.js`/`style.css`; tanpa itu deploy terlihat tidak berubah.
+- Service worker v4: navigasi memakai shell cache, data network-first, aset berversi cache-first, plus fallback ke nama tanpa query. Uji offline dengan mematikan server, bukan hanya DevTools.
+- `beforeinstallprompt` tidak ada di Electron/browser in-app; fallback instruksi wajib. Tombol asli muncul di Chrome Android; iOS hanya instruksi “Tambah ke Layar Utama”.
+- Push payload memakai URL relatif scope (`./`); `/` membuka akar domain yang salah.
+- `latest_by_scope` menyembunyikan tab mingguan di hari non-Minggu. Itu keputusan produk.
+
+### State CI
+
+- `.gitignore` pola `local.db` cocok di **kedalaman mana pun** dan diam-diam mengabaikan `data/state/local.db`. Akibatnya setiap run CI mulai kosong: tanpa riwayat 7 hari, tanpa langganan push.
+- Perbaikan: `/local.db` hanya di akar, `data/state/*.db` diabaikan sengaja, lalu `actions/cache` bergulir (`edisi-state-<run_id>`, restore prefix `edisi-state-`).
+- `npm run state:info` mencetak jumlah artikel sebelum ingest; angka 0 di run kedua = cache tidak terbawa.
+- Commit bot bukan syarat deploy. Push manusia saat run berjalan pernah menggagalkan langkah commit dan melewati deploy. Langkah commit kini retry + `continue-on-error`, dan deploy tetap jalan.
+- `continue-on-error: true` **tidak selalu** menyelamatkan job (terlihat pada langkah auth OpenCode). Untuk langkah opsional, tangani kegagalan di dalam skrip (`if ! cmd; then ... exit 0; fi`).
+
+### Sumber Sleman / lokal
+
+- `fallbackTopics(summarise([cluster]))` selalu memberi `cid: "c01"`. Dulu `isFollowTopic` mencocokkannya dengan entri nasional `c01`, mengira semua brief lokal adalah follow-up, lalu kuota membuang seluruh edisi Sleman. Solusi: cid unik `solo_<cluster-key>` + cocokkan identitas objek lebih dulu.
+- Brief lokal boleh 1 sumber; nasional minimal 2.
+- Klaster lokal butuh mayoritas media DIY **dan** penanda wilayah; berita nasional dari media Jogja tetap nasional.
+- Kicker memakai wilayah sebenarnya (`Sleman`, `Gunungkidul`, `Bantul`, `Kulon Progo`, `Yogyakarta`).
 
 ### OpenCode di CI
 
@@ -211,7 +248,15 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 | Gejala | Periksa |
 |---|---|
 | CI jatuh ke DeepSeek | `OPENCODE_BIN` kosong; versi CLI; `OPENCODE_AUTH_JSON`; log `opencode tidak tersedia` |
-| Edisi lokal tidak terbit | log `lokal · ... kartu unik`; dedupe; minimal 2 |
+| Edisi lokal tidak terbit | log `lokal: N kandidat · M lolos`; cid `c01` vs `solo_`; dedupe; minimal 2 |
+| Kartu meta tidak muncul | log `meta: ... · lanjut x/y · teks a/b · celah c`; `topic_id` berlanjut?; judul sudah berkualifikasi? |
+| Kartu meta hilang dari edisi | dedupe (harus dilewati untuk meta); slot 8 kartu; hoax diprioritaskan |
+| Tab scope hilang | `latest_by_scope`; edisi scope itu tidak ada di tanggal terbaru |
+| App berhenti di “Memuat…” | path absolut; `app.js` 404; cache SW lama |
+| Offline kosong | SW v4; `edisi-shell-v4`; fallback aset tanpa query |
+| Push membuka halaman salah | URL payload harus `./`, bukan `/` |
+| CI state kosong tiap run | cache `edisi-state-`; `.gitignore` `data/state/*.db`; `state:info` |
+| Deploy tidak jalan padahal build sukses | langkah commit/push; `continue-on-error`; cek step yang gagal |
 | Tab lokal basi | `manifest.latest_by_scope`; publish baru |
 | Catatan terpotong | internal vs publik; `clipText`; schema 120/320 |
 | Semua kartu gugur | `E-FACT` terbukti salah; `D-TYPO`/`D-TRUNC`; lihat edit JSON |
@@ -235,7 +280,37 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 
 ---
 
-## 8. Dokumen terkait
+## 8. Skill verifikasi
+
+```bash
+# manifest + edisi live
+curl -s https://abbadaim.github.io/edisi-pagi/manifest.json | python3 -m json.tool
+curl -s https://abbadaim.github.io/edisi-pagi/data/editions/2026-11-11.nasional.json \
+  | python3 -c 'import json,sys; e=json.load(sys.stdin); [print(c["type"], c["title"][:60]) for c in e["cards"]]'
+
+# validasi lokal
+npm run validate -- data/editions/2026-11-11.nasional.json
+
+# smoke OpenCode CI (tanpa menyentuh edisi)
+gh workflow run opencode-smoke.yml --repo abbadaim/edisi-pagi
+gh run list --workflow opencode-smoke.yml --limit 1
+```
+
+Di browser:
+
+1. Buka manifest, cek `latest_by_scope`.
+2. Cek nav: `.bar .it` = Edisi/Sleman/Mingguan (bila ada)/Atur.
+3. Buka `#/atur`: panel Pasang, Notifikasi, Tentang.
+4. Untuk `misread`: detail harus menampilkan chip “Kata yang hilang dari judul”; `change` menampilkan timeline sebelum/sesudah.
+5. Uji offline: hentikan server lokal, reload; shell dan edisi terakhir harus tetap tampil.
+6. Saat menguji `app.js` baru, hapus cache + unregister SW lebih dulu.
+
+Jangan menguji dengan menjalankan ulang tanggal yang sudah terbit. Pakai
+`--newsroom-limit 2 --thin` pada tanggal baru atau POC.
+
+---
+
+## 9. Dokumen terkait
 
 - `NEWSROOM.md` — desain lima peran, kontrak, hasil POC.
 - `NEWSROOM-IMPLEMENTATION.md` — fase P1–P4, telemetri, prioritas.
