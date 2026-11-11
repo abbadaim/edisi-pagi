@@ -270,13 +270,36 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 1. **Verifikasi sumber daya nyata** sebelum menulis kode: feed, URL, endpoint, versi CLI. Jangan menebak.
 2. **Pisahkan internal dan publik.** Teks penuh untuk planner/editor; field publik pendek dan utuh kalimatnya.
 3. **Uji unit dulu, lalu build terbatas** (`--newsroom-limit 2 --thin`) sebelum build penuh.
-4. **Satu perubahan kebijakan = satu tes** yang mengunci perilakunya.
+4. **Satu perubahan kebijakan = satu tes** yang mengunci perilakunya, dengan `DEC-xxxx` di komentar tes (`docs/DECISIONS.md`).
 5. **Jangan menambah loop tanpa batas.** Maksimum 2 revisi + 1 repair fakta; setelah itu sempitkan atau gugurkan.
 6. **Jangan biarkan LLM menjadi gerbang newsworthiness.** Planner memilih; aturan memutuskan terbit.
 7. **Catat kegagalan dengan alasan.** `blocked`, `fallback`, `defensive` harus terlihat di log.
 8. **Hati-hati konkurensi repo.** Bot dan agen lain bisa push; rebase, jangan force.
 9. **Rollback harus selalu tersedia.** `--no-newsroom`, `NEWSROOM_DESK=off`, `OPENCODE_BIN=/nonexistent`.
 10. **Baca angka, bukan kesan.** Token, latensi, fallback, disclaimer, kartu unik.
+11. **Rencana sebelum kode.** Perubahan apa pun punya rencana di `docs/plans/` yang terdaftar di `docs/PLAN-INDEX.md`. Kelas UI butuh mockup disetujui manusia; kelas pipeline/infra butuh kontrak.
+12. **Selesai berarti terverifikasi.** Langkah terakhir bukan “push”, tapi cek `latest_by_scope` dan URL edisi di Pages.
+
+### Alur perubahan
+
+Alur enam langkah, mesin keadaan, dan gerbangnya: `docs/WORKFLOW.md` (`DEC-0011`).
+Ringkas:
+
+| Kelas | Sebelum kode | Tes |
+|---|---|---|
+| UI | mockup HTML bertoken sama + persetujuan manusia | unit + `npm run test:ui` |
+| pipeline | kontrak: potongan `edition.json` / baris log sebelum–sesudah | unit |
+| infra | kontrak: perintah + keluaran yang diharapkan | tes + satu run CI |
+| docs | — | `typecheck` bila menyentuh kode |
+
+- **Tidak ada implementasi sebelum `mockup-approved`.** Hanya manusia yang boleh
+  menyetujui status; agen mengusulkan dan menjalankan.
+- Rencana **append-only**: ubah arah = tambah §Revisi, jangan hapus riwayat.
+- Insiden produksi memakai jalur darurat: perbaiki → tes → push → rencana
+  retroaktif dalam 24 jam.
+- Mockup memakai token `public/style.css`; setelah disetujui tidak diedit
+  (`DEC-0012`). Tes UI berjalan di workflow sendiri, bukan `daily.yml`
+  (`DEC-0013`).
 
 ---
 
@@ -312,9 +335,19 @@ Jangan menguji dengan menjalankan ulang tanggal yang sudah terbit. Pakai
 
 ## 9. Dokumen terkait
 
+**Alur kerja:**
+
+- `docs/WORKFLOW.md` — alur enam langkah, kelas perubahan, mesin keadaan, jalur darurat.
+- `docs/PLAN-INDEX.md` — daftar rencana berjalan; satu-satunya pintu masuk.
+- `docs/DECISIONS.md` — keputusan bernomor `DEC-0001…`, dirujuk tes.
+- `docs/learnings/YYYY-MM.md` — apa yang terjadi, dengan bukti dan angka.
+- `docs/plans/001-ui-test-harness.md` — harness tes UI (status `plan-draft`).
+
+**Desain:**
+
 - `NEWSROOM.md` — desain lima peran, kontrak, hasil POC.
 - `NEWSROOM-IMPLEMENTATION.md` — fase P1–P4, telemetri, prioritas.
-- `SESSION-LEARNINGS.md` — catatan sesi 10–11 November 2026.
+- `SESSION-LEARNINGS.md` — catatan sesi 10–11 November 2026 (arsip).
 - `.opencode/skills/edisi-pagi/SKILL.md` — skill proyek: alur kerja, aturan
   yang mengikat, verifikasi, dan tabel debugging.
 - `SCHEMA.md` — kontrak `edition.json`.

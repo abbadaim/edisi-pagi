@@ -12,6 +12,10 @@ phone, no feed, no ads, push only once a day.
 ## Before touching code
 
 1. Read `AGENTS.md` first, then `SESSION-LEARNINGS.md` for recent pitfalls.
+2. Check `docs/PLAN-INDEX.md` before starting anything. If the change is not a
+   plan yet, write one from `docs/plans/_TEMPLATE.md` and stop at
+   `plan-draft`. Never implement before a human marks `mockup-approved`
+   (`docs/WORKFLOW.md`).
 2. Check the actual state, not the docs:
    ```bash
    git pull --rebase --autostash origin main
