@@ -18,14 +18,10 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 005 | [Sitemap sumber primer](plans/005-primary-sitemap.md) | pipeline | `tested` | 2026-11-11 |
 | 006 | [Teks penuh meta lokal](plans/006-local-meta-text.md) | pipeline | `tested` | 2026-11-11 |
 | 007 | [Kartu gap & debate](plans/007-gap-debate-cards.md) | pipeline | `tested` | 2026-11-11 |
-| 008 | [Arsip edisi & gestur kembali](plans/008-arsip-dan-gestur-kembali.md) | UI | `tested` | 2026-11-11 |
 
 `002` selesai di kode dan tes: 4 uji baru di `tests/llm-resolve.test.ts`.
 Menunggu tidak ada; menunggu hanya konfirmasi run `daily.yml` berikutnya bahwa
 edisi tetap terbit dengan OpenCode saja.
-
-`008` sudah `tested`: rencana dan mockup disetujui 2026-11-11, kode dan tes
-lulus. Menunggu deploy `daily.yml`/`deploy-site` dan verifikasi URL live.
 
 ---
 
@@ -34,6 +30,7 @@ lulus. Menunggu deploy `daily.yml`/`deploy-site` dan verifikasi URL live.
 | # | Rencana | Kelas | Status | Selesai |
 |---|---|---|---|---|
 | 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `shipped` | 2026-11-11 |
+| 008 | [Arsip edisi & gestur kembali](plans/008-arsip-dan-gestur-kembali.md) | UI | `shipped` | 2026-11-11 |
 
 ---
 

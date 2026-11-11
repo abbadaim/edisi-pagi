@@ -1,7 +1,7 @@
 # 008 — Arsip edisi dan gestur kembali
 
 ```
-Status: tested
+Status: shipped (2026-11-11)
 Kelas: UI
 Dibuat: 2026-11-11
 Diperbarui: 2026-11-11
@@ -236,9 +236,31 @@ navigasi history, bukan event khusus aplikasi.
   `public/style.css`, fixture UI, dan tes.
 - `2026-11-11` — `tested` — `npm test` 244 lulus, `npm run typecheck` bersih,
   `npm run test:ui` 10 lulus (dijalankan dua kali). Belum di-deploy.
+- `2026-11-11` — `shipped` — commit `d57b732`; `ui.yml` 10 tes lulus; deploy
+  `deploy-site` run `42982170096`; live: `#/arsip` 4 tanggal/7 edisi, detail
+  `#/nasional/2026-11-11/0` menyembunyikan header, back mengembalikan feed dan
+  `scrollY` 500.
 
 ---
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 
-—
+1. **Bug gesture bukan bug gesture.** Yang salah adalah keadaan: `S.view` tidak
+   pernah menjadi `"detail"`, jadi handler `hashchange` menganggap layar masih
+   feed. Satu field yang tidak diperbarui membuat hash berubah tanpa render.
+2. **`location.hash =` adalah push, bukan replace.** Boot menambah entri
+   history; di PWA terpasang, back pertama menutup aplikasi. `replaceState`
+   untuk normalisasi, `pushState` hanya untuk aksi pengguna.
+3. **Scroll restoration browser bertabrakan dengan SPA.** `scrollTo(0,600)`
+   sempat menghasilkan 383/334 karena Chromium memulihkan posisi entri history
+   setelah `popstate`. `history.scrollRestoration = "manual"` menyelesaikannya;
+   tanpa pengukuran, gejalanya terlihat seperti “restore kadang gagal”.
+4. **`[hidden]` bisa kalah oleh CSS komponen.** `.dates{display:flex}` membuat
+   strip kosong setinggi 2 px tetap dirender. Penjaga `[hidden]{display:none
+   !important}` mengunci perbaikan.
+5. **Tes yang mengunci angka gulir rapuh.** Gambar fixture gagal dimuat →
+   kartu `plain` menyusut → scroll anchoring menggeser `scrollY`. Tes akhirnya
+   mengunci hal yang dilihat pembaca: kartu yang sama masih di viewport.
+6. **Fixture butuh dua tanggal.** Dengan satu tanggal, jalur arsip tidak bisa
+   dibedakan dari tab biasa. Edisi sintetis `2026-10-31` (bukan tanggal terbit)
+   menjadi pembeda.
