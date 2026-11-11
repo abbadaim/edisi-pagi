@@ -282,7 +282,8 @@ export function buildMisreadCard(
     changes: [],
     claim,
     reality: gap.sentence,
-    missing: gap.missing,
+    // `missing` berisi fakta yang hilang, bukan nama kualifikasi (SCHEMA §3.7).
+    missing: [gap.meaning],
     trigger: "headline_body_gap",
   } as Card;
 }

@@ -164,7 +164,9 @@ test("kartu misread memuat klaim, realitas, dan kata yang hilang", () => {
   assert.equal(out.type, "misread");
   assert.match(out.topic_id, /^t_misread_/);
   assert.equal((out as { claim: string }).claim, "DPR Setujui Anggaran Pendidikan 2027");
-  assert.deepEqual((out as { missing: string[] }).missing, ["usulan"]);
+  assert.deepEqual((out as { missing: string[] }).missing, [
+    "masih berupa usulan, bukan keputusan",
+  ]);
   assert.equal((out as { trigger: string }).trigger, "headline_body_gap");
   assert.equal(out.sources.length, 1);
 });
