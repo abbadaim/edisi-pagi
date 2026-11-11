@@ -50,7 +50,7 @@ jobs:
       - name: Install OpenCode CLI
         if: env.OPENCODE_AUTH_JSON != ''
         run: |
-          if ! curl -fsSL https://opencode.ai/install | bash; then
+          if ! curl -fsSL https://opencode.ai/v2/install | bash; then
             echo "::warning::OpenCode gagal dipasang; build memakai DeepSeek"
             echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
             exit 0
