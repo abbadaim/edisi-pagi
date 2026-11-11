@@ -142,3 +142,5 @@ masih utuh.
   tanggalnya lebih baru dari edisi harian, `latest_by_scope` diperbaiki agar
   tab harian tidak hilang (`DEC-0019`, `tests/manifest.test.ts`). Ini bukan
   edisi Minggu produksi; produksi pertama tetap `2026-11-15`.
+- `2026-11-11` — **218 uji** — 6 uji `tests/manifest.test.ts` mengunci
+  `DEC-0019`; total 218.
