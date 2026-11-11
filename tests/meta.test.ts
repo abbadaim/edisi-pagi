@@ -260,3 +260,18 @@ test("kalimat dari berita lain di halaman tidak dipakai sebagai temuan", () => {
   assert.match(gap!.sentence, /Kontrak influencer/);
   assert.deepEqual(gap!.missing, ["wacana"]);
 });
+
+
+test("judul yang sudah menyatakan 'belum berlaku' bukan misread", () => {
+  const title = "SIM Seumur Hidup Belum Berlaku, Korlantas Siapkan Sistem Poin";
+  const text = [
+    "Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.",
+    "Korlantas menyiapkan sistem poin untuk menindak pelanggar lalu lintas.",
+    "Aturan baru itu masih dalam pembahasan dan belum ditetapkan.",
+    "Pembahasan melibatkan sejumlah kementerian dan kepolisian.",
+    "Sosialisasi direncanakan setelah aturan resmi diterbitkan.",
+    "Masyarakat diminta menunggu pengumuman resmi berikutnya.",
+  ].join(" ");
+
+  assert.equal(findQualifierGap(title, text), null);
+});

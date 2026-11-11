@@ -195,6 +195,14 @@ const QUALIFIERS: Array<{ re: RegExp; word: string; meaning: string }> = [
   { re: /\btidak serta-merta\b/i, word: "tidak serta-merta", meaning: "tidak otomatis berlaku" },
 ];
 
+/**
+ * Judul yang sudah memuat kualifikasi (sinonim apa pun) tidak layak dianggap
+ * misread. "SIM Seumur Hidup Belum Berlaku" sudah jujur meski tidak memakai
+ * kata "wacana".
+ */
+const TITLE_QUALIFIER =
+  /\b(belum|usulan|wacana|draf|rancangan|rencana|akan|diduga|dugaan|masih|tahap|kajian|tidak mengikat)\b/i;
+
 /** Cari kalimat isi yang memuat kualifikasi yang tidak ada di judul. */
 /** Buang kutip dan spasi di tepi kalimat agar tidak menjadi “...".", */
 function cleanSentence(raw: string): string {
@@ -211,7 +219,7 @@ export function findQualifierGap(
   text: string,
 ): { missing: string[]; sentence: string; meaning: string } | null {
   if (text.trim().length < 500) return null;
-  if (QUALIFIERS.some((q) => q.re.test(title))) return null;
+  if (TITLE_QUALIFIER.test(title)) return null;
 
   const sentences = text
     .split(/(?<=[.!?])\s+/)
