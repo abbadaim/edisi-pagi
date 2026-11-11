@@ -109,8 +109,13 @@ memakai penulis deterministik, bukan DeepSeek.
 
 - **Nav bawah**: Edisi (nasional), Sleman, Mingguan, dan Atur. Tab scope hanya
   muncul bila edisinya ada.
-- **Arsip**: baris tanggal di bawah judul untuk berpindah edisi lama (2 tahun
-  retensi).
+- **Arsip**: item keempat di nav bawah membuka daftar semua edisi yang pernah
+  terbit (retensi 2 tahun), satu blok per tanggal dengan baris Nasional/Sleman/
+  Mingguan. Daftar dirender 30 tanggal sekaligus, dengan tombol **Muat 30
+  tanggal lagi**. Saat offline, edisi yang belum pernah dibuka ditandai “Belum
+  tersimpan offline”.
+- **Detail**: header tanggal feed disembunyikan; bar atas menyebut posisi
+  (`Nasional · 11 Nov · kartu 2 dari 8`).
 - **Pasang (PWA)**: tombol *Pasang* di kanan atas muncul saat browser
   menawarkan instalasi; di iOS berisi langkah "Tambah ke Layar Utama". Detail
   ada di **Atur → Aplikasi Edisi Pagi**.
@@ -125,7 +130,7 @@ memakai penulis deterministik, bukan DeepSeek.
 
 | Perintah | Fungsi |
 |---|---|
-| `npm test` | 189 uji |
+| `npm test` | 244 uji |
 | `npm run validate -- <file>` | validasi edisi |
 | `npm run clusters` | lihat klaster harian |
 | `npm run adjudicate -- --fallback` | klaster → topik tanpa LLM |

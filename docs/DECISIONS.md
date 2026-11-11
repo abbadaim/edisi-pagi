@@ -209,3 +209,24 @@ Sebab: lapisan “Yang Luput” dan “Yang Diperdebatkan” membutuhkan sinyal 
 luar media, tetapi tidak boleh mengarang angka atau memblokir terbit saat
 sumber sosial gagal.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/007-gap-debate-cards.md`._
+
+## DEC-0023 — Rute arsip memakai identitas edisi; kembali adalah urusan history
+
+Aplikasi punya satu rute eksplisit per keadaan: `#/arsip`, `#/<scope>`,
+`#/<scope>/<edition_id>`, `#/<scope>/<edition_id>/<kartu>`. Hash lama
+`#/<scope>/<n>` tetap diterima sebagai indeks kartu pada edisi terbaru.
+Normalisasi URL memakai `history.replaceState`, dan boot tidak menambah entri
+history. `history.scrollRestoration = "manual"` agar posisi gulir dikelola
+aplikasi, bukan ditimpa browser setelah `popstate`.
+
+Arsip membaca seluruh `manifest.editions`; `latest_by_scope` (`DEC-0019`) tetap
+menentukan tab yang tampil dan edisi yang dibuka pertama. Daftar arsip dirender
+30 tanggal per batch. Di layar detail, header feed (`#top`) disembunyikan dan
+tanggal dipindah ke label bar detail.
+
+Sebab: tanpa keadaan rute, gesture back tidak mengubah layar (hash berubah,
+detail tetap tampil), boot menambah entri history sehingga back pertama
+menutup PWA, dan strip tanggal lama tidak pernah terisi karena `byScope` hanya
+memuat edisi terbaru. Dikunci di `tests-ui/shell.spec.ts` UI-10…UI-15 dan
+`tests/ui-static.test.ts` UI-05/UI-08.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/008-arsip-dan-gestur-kembali.md`._

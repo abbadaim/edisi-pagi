@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-10-31",
+  "scope": "lokal",
+  "published_at": "2026-10-31T05:45:00+07:00",
+  "coverage": {
+    "from": "2026-10-30T05:00:00+07:00",
+    "to": "2026-10-31T05:00:00+07:00"
+  },
+  "generated_at": "2026-10-31T05:38:12+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 2,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "write": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "verify": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    "embed": {
+      "provider": "local",
+      "model": "multilingual-e5-small"
+    }
+  },
+  "card_count": 2,
+  "truncated_reason": "Hanya 2 topik lokal yang lolos ambang hari ini",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "change",
+      "topic_id": "t_pajero_gejayan",
+      "angle": "Polisi menyebut pengemudi sebagai korban",
+      "kicker": "Sleman",
+      "title": "Dari “bang jago” jadi korban dalam 17 jam",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Polisi menyebut pengemudi Pajero sebagai korban dugaan penganiayaan, bukan pelaku."
+      ],
+      "action": "Kalau video ini masuk grup keluarga, sebutkan konteksnya.",
+      "image": {
+        "url": "/assets/fallback/safety.webp",
+        "credit": null,
+        "alt": "Ilustrasi keamanan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa",
+          "published_at": "2026-11-10T10:13:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:36:00+07:00"
+        }
+      ],
+      "before": {
+        "at": "2026-11-09T19:36:00+07:00",
+        "label": "Bang Jago",
+        "quote": "Geber Pajero di Perkampungan Gejayan Sleman, Bang Jago Dihajar Warga",
+        "source": {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8745799/apes-pemuda-dihajar-massa-gegara-geber-pajero-di-gejayan"
+        }
+      },
+      "after": {
+        "at": "2026-11-10T12:36:00+07:00",
+        "label": "Korban",
+        "quote": "Korban diketahui berinisial GIJ (21), warga Kabupaten Tebo, Jambi, pekerjaan sebagai mahasiswa",
+        "source": {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa"
+        }
+      },
+      "what_changed": "Label pelaku menjadi korban; identitas berubah dari “bang jago” menjadi mahasiswa",
+      "what_unknown": "Klaim “mabuk” masih keterangan warga, belum hasil pemeriksaan",
+      "revision": 2,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-10",
+      "changes": [
+        {
+          "field": "label",
+          "from": "Bang Jago",
+          "to": "Korban",
+          "at": "2026-11-10T12:36:00+07:00",
+          "basis": {
+            "outlet": "detikJogja",
+            "url": "https://www.detik.com/jogja/berita/d-8746102/detik-detik-mahasiswa-geber-pajero-di-gejayan-berujung-dihajar-massa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_babarsari_sajam",
+      "angle": "Satu tersangka, satu masih didalami",
+      "kicker": "Sleman",
+      "title": "Dua pria bersajam serang polisi, satu jadi tersangka",
+      "status": "sebagian",
+      "truth": {
+        "claim": "TMK ditetapkan tersangka dengan Pasal 307 UU 1/2023",
+        "status": "terkonfirmasi",
+        "confidence": 0.9,
+        "band": "hampir_pasti",
+        "basis": {
+          "strongest": "primary_confirms",
+          "primary": 1,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-11T05:37:00+07:00"
+      },
+      "body": [
+        "Polresta Sleman menetapkan TMK (27) sebagai tersangka. Ia disangkakan Pasal 307 UU No. 1 Tahun 2023 tentang penguasaan senjata penikam tanpa hak.",
+        "Dari dua orang yang terlibat pengejaran, baru satu yang memenuhi unsur pidana."
+      ],
+      "action": "Klip “polisi mundur” beredar tanpa konteks: petugas menarik diri sambil menunggu dukungan.",
+      "image": {
+        "url": "/assets/fallback/safety.webp",
+        "credit": null,
+        "alt": "Ilustrasi keamanan",
+        "fallback": true
+      },
+      "sources": [
+        {
+          "outlet": "Polresta Sleman",
+          "url": "https://www.detik.com/jogja/berita/d-8746479/duduk-perkara-bang-jago-ngamuk-serang-polisi-di-babarsari-sleman",
+          "published_at": "2026-11-10T13:10:00+07:00",
+          "tier": 1,
+          "accessed_at": "2026-11-11T05:37:30+07:00"
+        },
+        {
+          "outlet": "detikJogja",
+          "url": "https://www.detik.com/jogja/berita/d-8746479/duduk-perkara-bang-jago-ngamuk-serang-polisi-di-babarsari-sleman",
+          "published_at": "2026-11-10T13:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-11T05:37:40+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 2,
+      "first_seen": "2026-11-09",
+      "previous_edition": "2026-11-10",
+      "changes": [
+        {
+          "field": "status",
+          "from": "belum",
+          "to": "sebagian",
+          "at": "2026-11-10T13:10:00+07:00",
+          "basis": {
+            "outlet": "detikJogja",
+            "url": "https://www.detik.com/jogja/berita/d-8746479/duduk-perkara-bang-jago-ngamuk-serang-polisi-di-babarsari-sleman"
+          }
+        }
+      ],
+      "explain": [
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa baru satu orang jadi tersangka?",
+          "a": "Penyidik menilai baru satu orang memenuhi unsur kepemilikan senjata tajam; yang lain masih didalami.",
+          "source": {
+            "outlet": "detikJogja",
+            "url": "https://www.detik.com/jogja/"
+          }
+        }
+      ]
+    }
+  ]
+}

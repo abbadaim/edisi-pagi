@@ -39,6 +39,24 @@ test("UI-02: app.js dan style.css dimuat dengan ?v=", () => {
   assert.match(html, /src="app\.js\?v=[a-f0-9]+"/, "app.js tanpa ?v=");
 });
 
+// UI-05 — rencana 008
+// Arsip adalah layar sendiri (`#arsip`), bukan baris tanggal di bawah judul.
+// Kalau `#dates` kembali, dua jalur arsip akan hidup berdampingan.
+test("UI-05: index.html memuat layar arsip dan tidak lagi memakai #dates", () => {
+  const html = indexHtml();
+  assert.match(html, /id="arsip"/, "layar arsip tidak ada di index.html");
+  assert.match(html, /id="arsipBody"/, "wadah daftar arsip tidak ada");
+  assert.doesNotMatch(html, /id="dates"/, "strip tanggal lama masih ada; arsip menggantikannya");
+});
+
+// UI-08 — rencana 008
+// `.dates{display:flex}` dulu mengalahkan atribut `hidden`, jadi strip kosong
+// tetap tampil sebagai garis 2 px. Penjaga ini mengunci perbaikannya.
+test("UI-08: style.css punya penjaga [hidden] yang menang atas display", () => {
+  const css = readFileSync(join(root, "public", "style.css"), "utf8");
+  assert.match(css, /\[hidden\]\s*\{\s*display\s*:\s*none\s*!important\s*\}/, "[hidden] bisa kalah oleh display:flex");
+});
+
 interface Served {
   /** URL akar sesuai BASE_PATH, selalu berakhiran "/". */
   url: string;

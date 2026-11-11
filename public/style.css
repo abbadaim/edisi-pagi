@@ -11,6 +11,10 @@ body{max-width:680px; margin:0 auto; padding:0 0 84px; min-height:100vh}
 button{font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer}
 img{display:block}
 
+/* `hidden` harus menang atas aturan display:flex milik komponen (DEC-0023).
+   Tanpa ini strip arsip lama tetap tampil sebagai garis kosong 2 px. */
+[hidden]{display:none !important}
+
 #top{padding:18px 18px 8px}
 .eyebrow{font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700}
 h1{font-family:var(--serif); font-size:30px; line-height:1.05; margin:6px 0 0; letter-spacing:-.02em; font-weight:600}
@@ -149,12 +153,30 @@ details.ctx summary::-webkit-details-marker{display:none}
 .quote{margin:9px 0 0; padding-left:10px; border-left:2px solid var(--accent-soft); font-size:12.5px; line-height:1.5; color:#2A2620}
 .quoteBy{font-size:10px; color:var(--faint); margin-top:3px}
 
-/* Arsip: pilih tanggal edisi */
-.dates{display:flex; gap:7px; overflow-x:auto; margin-top:11px; padding-bottom:2px; scrollbar-width:none}
-.dates::-webkit-scrollbar{display:none}
-.date{white-space:nowrap; border:1px solid var(--rule); background:none; color:var(--muted);
-      font-size:11px; padding:5px 11px; border-radius:999px; font-weight:500}
-.date.on{background:var(--ink); border-color:var(--ink); color:#FBF8F3; font-weight:600}
+/* Arsip: satu blok per tanggal, baris scope di dalamnya (rencana 008). */
+.psub{font-size:12px; color:var(--muted); margin-top:5px}
+.arsipMonth{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--faint);
+            margin:16px 0 6px; padding-bottom:5px; border-bottom:1px solid var(--rule)}
+.arsipDay{margin-bottom:10px}
+.arsipDayDate{font-family:var(--serif); font-size:16px; font-weight:600; letter-spacing:-.01em; padding:9px 2px 1px}
+.arsipItem{width:100%; display:flex; align-items:center; gap:8px; text-align:left;
+           border:1px solid var(--rule); background:#fff; border-radius:11px;
+           padding:9px 11px; margin-top:6px}
+.arsipItem .scope{font-size:12.5px; font-weight:650; color:var(--ink); flex:none; min-width:64px}
+.arsipItem .meta{font-size:10.5px; color:var(--muted); flex:1}
+.arsipItem .chev{font-size:14px; color:var(--faint); line-height:1}
+.arsipItem[aria-current="true"]{border-color:var(--ink); background:#FCFAF6}
+.arsipItem.off{background:#F7F3EC; border-style:dashed; color:var(--faint)}
+.arsipItem.off .scope{color:var(--muted)}
+.arsipItem.off .meta{color:var(--faint)}
+.arsipChip{font-size:7.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:800;
+           padding:3px 6px; border-radius:999px; flex:none}
+.arsipChip.new{background:#E7F0EA; color:var(--ok)}
+.arsipChip.week{background:#F4EEE2; color:var(--warn)}
+.arsipChip.open{background:var(--ink); color:#FBF8F3}
+.arsipMore{width:100%; margin:14px 0 0; padding:10px; border:1px solid var(--rule); border-radius:999px;
+           background:#fff; font-size:11.5px; font-weight:600; color:var(--ink); text-align:center}
+.arsipFoot{font-size:10px; color:var(--faint); text-align:center; margin:10px 0 0; line-height:1.5}
 
 /* Atur: pasang, notifikasi, tentang */
 .page{padding:16px 18px 8px}

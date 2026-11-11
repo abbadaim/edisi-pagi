@@ -1,11 +1,22 @@
 const S = {
   manifest: null,
+  /** Seluruh edisi dari manifest, terbaru lebih dulu. */
+  all: [],
+  /** Edisi terbaru per scope — yang dipakai tab bawah (`DEC-0019`). */
   byScope: new Map(),
+  /** Edition JSON yang sudah dimuat, dengan kunci `entry.path`. */
+  loaded: new Map(),
   scope: null,
+  editionId: null,
   edition: null,
   cards: [],
-  entryIndex: 0,
-  view: "feed",
+  editionPath: null,
+  /** Posisi gulir feed, supaya kembali dari detail tidak melompat ke atas. */
+  feedScroll: 0,
+  feedKey: null,
+  /** Arsip dirender bertahap: retensi 2 tahun bisa berarti ±700 tanggal. */
+  archiveLimit: 30,
+  route: { name: "feed", scope: null, editionId: null, card: null },
   installPrompt: null,
 };
 
@@ -27,6 +38,7 @@ const BAND = {
 };
 
 const SCOPE_LABEL = { nasional: "Nasional", lokal: "Sleman", mingguan: "Mingguan" };
+const SCOPE_ORDER = ["nasional", "lokal", "mingguan"];
 
 const ICONS = {
   edisi:
@@ -35,6 +47,8 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>',
   mingguan:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>',
+  arsip:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>',
   atur:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>',
 };
@@ -46,18 +60,110 @@ function el(tag, cls, text) {
   return n;
 }
 
-function formatDate(iso) {
+function formatDate(iso, withYear = false) {
   try {
     return new Date(iso).toLocaleDateString("id-ID", {
-      weekday: "long", day: "numeric", month: "long", timeZone: "Asia/Jakarta",
+      weekday: "long", day: "numeric", month: "long",
+      ...(withYear ? { year: "numeric" } : {}),
+      timeZone: "Asia/Jakarta",
     });
   } catch { return iso; }
 }
+
+function shortDate(iso) {
+  try {
+    return new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "short", timeZone: "Asia/Jakarta" });
+  } catch { return String(iso).slice(0, 10); }
+}
+
+function monthLabel(iso) {
+  try {
+    return new Date(iso).toLocaleDateString("id-ID", { month: "long", year: "numeric", timeZone: "Asia/Jakarta" });
+  } catch { return String(iso).slice(0, 7); }
+}
+
+// ── Rute ─────────────────────────────────────────────────────────────────────
+// Satu keadaan = satu hash (rencana 008). Bentuk:
+//   #/arsip · #/<scope> · #/<scope>/<edition_id> · #/<scope>/<edition_id>/<kartu>
+// Hash lama `#/<scope>/<n>` tetap diterima sebagai indeks kartu edisi terbaru.
+
+function hashFor(route) {
+  if (route.name === "atur") return "#/atur";
+  if (route.name === "arsip") return "#/arsip";
+  if (!route.scope) return "";
+  if (route.name === "detail") return `#/${route.scope}/${route.editionId}/${route.card}`;
+  if (route.editionId) return `#/${route.scope}/${route.editionId}`;
+  return `#/${route.scope}`;
+}
+
+function parseRoute(hash) {
+  const parts = String(hash ?? "").replace(/^#\/?/, "").split("/").filter(Boolean);
+  const blank = { name: "feed", scope: null, editionId: null, card: null };
+  if (parts.length === 0) return blank;
+  if (parts[0] === "atur") return { ...blank, name: "atur" };
+  if (parts[0] === "arsip") return { ...blank, name: "arsip" };
+
+  const scope = parts[0];
+  const isDate = /^\d{4}-\d{2}-\d{2}$/.test(parts[1] ?? "");
+  const editionId = isDate ? parts[1] : null;
+  const cardRaw = isDate ? parts[2] : parts[1];
+  const card = cardRaw != null && /^\d+$/.test(cardRaw) ? Number(cardRaw) : null;
+  return { name: card == null ? "feed" : "detail", scope, editionId, card };
+}
+
+const routeKey = (route) => `${route.name}|${route.scope ?? ""}|${route.editionId ?? ""}|${route.card ?? ""}`;
+
+function navigate(route, { replace = false } = {}) {
+  const next = { ...route };
+  if (next.name === "feed" || next.name === "detail") {
+    // Naikkan scope default ke edisi terbaru scope itu bila belum disebut.
+    if (!next.scope) next.scope = initialScope();
+  }
+  if (routeKey(next) === routeKey(S.route)) return;
+
+  // Simpan posisi baca sebelum layar feed ditinggalkan.
+  if (S.route.name === "feed" && next.name === "detail") {
+    S.feedScroll = window.scrollY;
+    S.feedKey = `${S.scope}|${S.editionId}`;
+  }
+
+  const depth = history.state?.depth ?? 0;
+  const state = { app: true, depth: replace ? depth : depth + 1 };
+  const url = hashFor(next);
+
+  // pushState/replaceState tidak memicu hashchange, jadi tidak ada render ganda.
+  if (replace) history.replaceState(state, "", url || location.pathname + location.search);
+  else history.pushState(state, "", url);
+
+  S.route = next;
+  renderRoute().catch(showFatal);
+}
+
+function syncFromLocation() {
+  const route = parseRoute(location.hash);
+  if (routeKey(route) === routeKey(S.route)) return;
+  S.route = route;
+  renderRoute().catch(showFatal);
+}
+
+function initialScope() {
+  return ["nasional", "lokal", "mingguan"].find((s) => S.byScope.has(s)) ?? null;
+}
+
+function hasArchive() {
+  return S.all.some((e) => {
+    const newest = S.byScope.get(e.scope)?.[0];
+    return !newest || newest.path !== e.path;
+  });
+}
+
+// ── Navigasi bawah ───────────────────────────────────────────────────────────
 
 function navItems() {
   const items = [{ key: "nasional", label: "Edisi", icon: ICONS.edisi }];
   if (S.byScope.has("lokal")) items.push({ key: "lokal", label: "Sleman", icon: ICONS.sleman });
   if (S.byScope.has("mingguan")) items.push({ key: "mingguan", label: "Mingguan", icon: ICONS.mingguan });
+  if (hasArchive()) items.push({ key: "arsip", label: "Arsip", icon: ICONS.arsip });
   items.push({ key: "atur", label: "Atur", icon: ICONS.atur });
   return items;
 }
@@ -72,14 +178,19 @@ function renderNav() {
     b.dataset.nav = item.key;
     b.innerHTML = item.icon;
     b.append(el("span", null, item.label));
-    b.onclick = () => (item.key === "atur" ? openAtur() : openScope(item.key));
+    b.onclick = () => {
+      if (item.key === "atur") navigate({ name: "atur" });
+      else if (item.key === "arsip") navigate({ name: "arsip" });
+      else navigate({ name: "feed", scope: item.key, editionId: null });
+    };
     bar.append(b);
   }
   markNav();
 }
 
 function markNav() {
-  const active = S.view === "atur" ? "atur" : S.scope;
+  const active =
+    S.route.name === "atur" ? "atur" : S.route.name === "arsip" ? "arsip" : S.scope;
   for (const b of document.querySelectorAll(".bar .it")) {
     const on = b.dataset.nav === active;
     b.classList.toggle("on", on);
@@ -88,7 +199,14 @@ function markNav() {
   }
 }
 
+// ── Boot & render ────────────────────────────────────────────────────────────
+
 async function boot() {
+  // Posisi gulir dikelola aplikasi (lihat showFeed). Restorasi otomatis browser
+  // menimpa hasil itu setelah popstate dan membuat back dari detail mendarat di
+  // tempat yang salah.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
   let manifest;
   try {
     const res = await fetch("manifest.json", { cache: "no-cache" });
@@ -107,6 +225,12 @@ async function boot() {
     return;
   }
 
+  S.all = [...manifest.editions].sort((a, b) =>
+    a.edition_id === b.edition_id
+      ? SCOPE_ORDER.indexOf(a.scope) - SCOPE_ORDER.indexOf(b.scope)
+      : b.edition_id.localeCompare(a.edition_id),
+  );
+
   const currentByScope = manifest.latest_by_scope;
   for (const e of manifest.editions) {
     // Jangan tampilkan edisi lokal/mingguan lama sebagai edisi hari ini.
@@ -121,94 +245,161 @@ async function boot() {
   renderNav();
   renderInstallChip();
 
-  if (location.hash.startsWith("#/atur")) {
+  const initial = parseRoute(location.hash);
+  if ((initial.name === "feed" || initial.name === "detail") && !resolveEntry(initial)) {
+    initial.name = "feed";
+    initial.editionId = null;
+    initial.card = null;
+    initial.scope = initialScope();
+  }
+  S.route = initial;
+
+  // Boot tidak boleh menambah entri history: back pertama dari feed tidak
+  // seharusnya menutup aplikasi (rencana 008, UI-13).
+  const url = hashFor(initial);
+  history.replaceState({ app: true, depth: 0 }, "", url || location.pathname + location.search);
+
+  await renderRoute();
+}
+
+function resolveEntry(route) {
+  const scope = route.scope;
+  if (!scope) return null;
+  if (route.editionId) {
+    return S.all.find((e) => e.scope === scope && e.edition_id === route.editionId) ?? null;
+  }
+  return S.byScope.get(scope)?.[0] ?? null;
+}
+
+async function renderRoute() {
+  const route = S.route;
+
+  if (route.name === "feed" || route.name === "detail") {
+    // Hash kosong / scope tak dikenal: buka edisi terbaru dan rapikan URL tanpa
+    // menambah entri history.
+    if (!route.scope) {
+      route.scope = initialScope();
+      if (route.scope) {
+        history.replaceState({ ...(history.state ?? {}), app: true }, "", hashFor(route));
+      }
+    }
+  }
+
+  if (route.name === "atur") {
     openAtur();
     return;
   }
-
-  const preferred = ["nasional", "lokal", "mingguan"].find((s) => S.byScope.has(s));
-  const fromHash = location.hash.split("/")[1];
-  const initial = fromHash && S.byScope.has(fromHash) ? fromHash : preferred;
-  await openScope(initial);
-}
-
-async function openScope(scope, entryIndex = 0) {
-  const entries = S.byScope.get(scope);
-  if (!entries?.length) return;
-  S.scope = scope;
-  S.entryIndex = Math.max(0, Math.min(entryIndex, entries.length - 1));
-  S.view = "feed";
-
-  const entry = entries[S.entryIndex];
-  try {
-    const res = await fetch(entry.path, { cache: "no-cache" });
-    if (!res.ok) throw new Error(String(res.status));
-    S.edition = await res.json();
-  } catch {
-    $("dateline").textContent = "Gagal memuat edisi";
-    $("subline").textContent = "Coba lagi saat ada koneksi.";
+  if (route.name === "arsip") {
+    renderArchiveView();
     return;
   }
 
-  S.cards = S.edition.cards ?? [];
+  const entry = resolveEntry(route);
+  if (!entry) {
+    showEmptyState("Edisi tidak ditemukan", "Pilih tanggal lain dari arsip.");
+    return;
+  }
 
-  $("dateline").textContent = formatDate(S.edition.published_at);
-  $("subline").textContent =
-    `${S.edition.card_count} kartu · ±${S.edition.reading_time_min} menit · ${SCOPE_LABEL[scope]}`;
-  $("covline").textContent = `Liputan ${formatDate(S.edition.coverage.from)} · 05.00–05.00`;
+  const ok = await showEdition(entry);
+  if (!ok) return;
 
-  renderDates();
-  showFeed();
-  renderFeed();
-  renderInstallChip();
+  if (route.name === "detail") openCard(Number(route.card ?? 0), { fromRoute: true });
+  else showFeed();
 }
 
-function renderDates() {
-  const box = $("dates");
-  const entries = S.byScope.get(S.scope) ?? [];
-  box.textContent = "";
-  box.hidden = entries.length < 2;
-  if (entries.length < 2) return;
+/** Ambil edition.json sekali per sesi: kembali dari detail tidak memuat ulang. */
+async function showEdition(entry) {
+  S.scope = entry.scope;
+  S.editionId = entry.edition_id;
 
-  entries.forEach((entry, i) => {
-    const b = el("button", "date", shortDate(entry.published_at));
-    b.type = "button";
-    if (i === S.entryIndex) b.classList.add("on");
-    b.onclick = () => openScope(S.scope, i);
-    box.append(b);
-  });
-}
+  const cached = S.loaded.get(entry.path);
+  if (cached) {
+    applyEdition(cached, entry);
+    return true;
+  }
 
-function shortDate(iso) {
   try {
-    return new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "short", timeZone: "Asia/Jakarta" });
-  } catch { return String(iso).slice(0, 10); }
+    const res = await fetch(entry.path, { cache: "no-cache" });
+    if (!res.ok) throw new Error(String(res.status));
+    const edition = await res.json();
+    S.loaded.set(entry.path, edition);
+    applyEdition(edition, entry);
+    return true;
+  } catch {
+    showLoadError(entry);
+    return false;
+  }
+}
+
+function applyEdition(edition, entry) {
+  S.edition = edition;
+  S.cards = edition.cards ?? [];
+  S.editionPath = entry.path;
+
+  $("dateline").textContent = formatDate(edition.published_at);
+  $("subline").textContent =
+    `${edition.card_count} kartu · ±${edition.reading_time_min} menit · ${SCOPE_LABEL[entry.scope]}`;
+  $("covline").textContent = edition.coverage?.from
+    ? `Liputan ${formatDate(edition.coverage.from)} · 05.00–05.00`
+    : "";
+}
+
+function showEmptyState(title, detail) {
+  $("top").hidden = true;
+  $("feed").hidden = true;
+  $("detail").hidden = true;
+  $("atur").hidden = true;
+  $("arsip").hidden = true;
+  $("empty").hidden = false;
+  $("bottom").hidden = false;
+  const box = $("empty");
+  box.textContent = "";
+  box.append(el("p", null, title));
+  box.append(el("p", "muted", detail));
+}
+
+function showLoadError(entry) {
+  showEmptyState(
+    "Gagal memuat edisi",
+    navigator.onLine === false || !S.loaded.has(entry.path)
+      ? "Edisi ini belum tersimpan offline. Buka lagi saat ada koneksi."
+      : "Coba lagi saat ada koneksi.",
+  );
+}
+
+function showFatal(e) {
+  const msg = e instanceof Error ? e.message : String(e);
+  $("dateline").textContent = "Gagal memuat";
+  $("subline").textContent = msg;
+  $("feed").hidden = true;
+  console.error(e);
 }
 
 function showFeed() {
-  $("atur").hidden = true;
   $("top").hidden = false;
+  $("atur").hidden = true;
+  $("arsip").hidden = true;
   $("detail").hidden = true;
+  $("empty").hidden = true;
   $("feed").hidden = false;
   $("bottom").hidden = false;
-  S.view = "feed";
-  const entries = S.byScope.get(S.scope) ?? [];
-  $("dates").hidden = entries.length < 2;
-  if (S.scope) location.hash = `#/${S.scope}`;
-  window.scrollTo(0, 0);
+
+  renderFeed();
+
+  // Kembali dari detail: posisi gulir lama dipulihkan, bukan ke atas.
+  const key = `${S.scope}|${S.editionId}`;
+  window.scrollTo(0, S.feedKey === key ? S.feedScroll : 0);
   markNav();
 }
 
 function openAtur() {
-  S.view = "atur";
   $("top").hidden = true;
   $("feed").hidden = true;
   $("detail").hidden = true;
   $("empty").hidden = true;
+  $("arsip").hidden = true;
   $("atur").hidden = false;
   $("bottom").hidden = false;
-  $("dates").hidden = true;
-  location.hash = "#/atur";
   window.scrollTo(0, 0);
   markNav();
   renderInstall();
@@ -258,7 +449,7 @@ function renderInstallChip() {
 async function promptInstall() {
   const prompt = S.installPrompt;
   if (!prompt) {
-    openAtur();
+    navigate({ name: "atur" });
     return;
   }
   prompt.prompt();
@@ -321,7 +512,7 @@ window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   S.installPrompt = e;
   renderInstallChip();
-  if (S.view === "atur") renderInstall();
+  if (S.route.name === "atur") renderInstall();
 });
 
 window.addEventListener("appinstalled", () => {
@@ -329,6 +520,125 @@ window.addEventListener("appinstalled", () => {
   renderInstallChip();
   renderInstall();
 });
+
+// ── Arsip ────────────────────────────────────────────────────────────────────
+
+function archiveGroups() {
+  const groups = new Map();
+  for (const e of S.all) {
+    const list = groups.get(e.edition_id) ?? [];
+    list.push(e);
+    groups.set(e.edition_id, list);
+  }
+  return [...groups.entries()]
+    .sort((a, b) => b[0].localeCompare(a[0]))
+    .map(([date, entries]) => ({
+      date,
+      entries: [...entries].sort(
+        (a, b) => SCOPE_ORDER.indexOf(a.scope) - SCOPE_ORDER.indexOf(b.scope),
+      ),
+    }));
+}
+
+function isOfflineOnly(entry) {
+  return navigator.onLine === false && !S.loaded.has(entry.path);
+}
+
+function renderArchiveView() {
+  $("top").hidden = true;
+  $("feed").hidden = true;
+  $("detail").hidden = true;
+  $("atur").hidden = true;
+  $("empty").hidden = true;
+  $("arsip").hidden = false;
+  $("bottom").hidden = false;
+  window.scrollTo(0, 0);
+  markNav();
+  renderArchive();
+}
+
+function renderArchive() {
+  const body = $("arsipBody");
+  if (!body) return;
+  body.textContent = "";
+
+  const groups = archiveGroups();
+  const oldest = S.manifest?.retention?.oldest ?? S.all.at(-1)?.edition_id ?? "—";
+  $("arsipSub").textContent = `${S.all.length} edisi · sejak ${formatDate(`${oldest}T05:00:00+07:00`, true)}`;
+
+  const latest = S.manifest?.latest_by_scope ?? {};
+  let month = null;
+
+  for (const group of groups.slice(0, S.archiveLimit)) {
+    const first = group.entries[0];
+    const label = monthLabel(first.published_at);
+    if (label !== month) {
+      month = label;
+      body.append(el("div", "arsipMonth", label));
+    }
+
+    const day = el("div", "arsipDay");
+    day.append(el("div", "arsipDayDate", formatDate(first.published_at, true)));
+
+    for (const entry of group.entries) {
+      const offline = isOfflineOnly(entry);
+      const b = el("button", "arsipItem");
+      b.type = "button";
+      b.dataset.scope = entry.scope;
+      b.dataset.edition = entry.edition_id;
+      if (offline) {
+        b.disabled = true;
+        b.classList.add("off");
+      }
+
+      b.append(el("span", "scope", SCOPE_LABEL[entry.scope] ?? entry.scope));
+
+      const unit = entry.scope === "mingguan" ? "rekap" : "kartu";
+      b.append(el("span", "meta", offline
+        ? "Belum tersimpan offline"
+        : `${entry.card_count} ${unit} · ${entry.reading_time_min} menit`));
+
+      if (!offline && latest[entry.scope] === entry.edition_id) {
+        b.append(el("span", "arsipChip new", "Terbaru"));
+      }
+      if (!offline && entry.scope === "mingguan") {
+        b.append(el("span", "arsipChip week", "Pekan"));
+      }
+      if (!offline && entry.scope === S.scope && entry.edition_id === S.editionId) {
+        b.append(el("span", "arsipChip open", "Dibuka"));
+        b.setAttribute("aria-current", "true");
+      }
+      if (!offline) b.append(el("span", "chev", "›"));
+
+      if (!offline) {
+        b.onclick = () =>
+          navigate({ name: "feed", scope: entry.scope, editionId: entry.edition_id });
+      }
+      day.append(b);
+    }
+    body.append(day);
+  }
+
+  if (groups.length > S.archiveLimit) {
+    const more = el("button", "arsipMore", "Muat 30 tanggal lagi");
+    more.type = "button";
+    more.onclick = () => {
+      const keep = window.scrollY;
+      S.archiveLimit += 30;
+      renderArchive();
+      window.scrollTo(0, keep);
+    };
+    body.append(more);
+  } else {
+    body.append(el("div", "arsipFoot", `${groups.length} tanggal · retensi 2 tahun`));
+  }
+
+  if (navigator.onLine === false) {
+    body.append(el("div", "arsipFoot", "Offline: hanya edisi yang pernah dibuka bisa dibaca."));
+  }
+}
+
+// ── Feed ─────────────────────────────────────────────────────────────────────
 
 function renderFeed() {
   const feed = $("feed");
@@ -436,21 +746,35 @@ function hoaxCard(card, index) {
   return box;
 }
 
-function openCard(index) {
-  const card = S.cards[index];
+// ── Detail ───────────────────────────────────────────────────────────────────
+
+function openCard(index, opts = {}) {
+  if (!S.cards.length) return;
+  const i = Math.max(0, Math.min(Number(index) || 0, S.cards.length - 1));
+  const card = S.cards[i];
   if (!card) return;
 
   // Kartu yang sudah tampil utuh di feed tidak punya halaman sendiri.
   if (card.type === "hoax_roundup") {
-    showFeed();
-    document.getElementById(`kartu-${index}`)?.scrollIntoView({ block: "center" });
+    document.getElementById(`kartu-${i}`)?.scrollIntoView({ block: "center" });
     return;
   }
 
+  if (!opts.fromRoute) {
+    navigate({ name: "detail", scope: S.scope, editionId: S.editionId, card: i });
+    return;
+  }
+
+  // Header feed (tanggal besar, jumlah kartu, liputan) tidak relevan di sini:
+  // menyisakan bar dengan posisi edisi supaya jelas pembaca sedang di mana.
+  $("top").hidden = true;
   $("feed").hidden = true;
+  $("atur").hidden = true;
+  $("arsip").hidden = true;
   $("detail").hidden = false;
   $("bottom").hidden = false;
-  $("navlabel").textContent = `${SCOPE_LABEL[S.scope]} · kartu ${index + 1} dari ${S.cards.length}`;
+  $("navlabel").textContent =
+    `${SCOPE_LABEL[S.scope]} · ${shortDate(S.edition.published_at)} · kartu ${i + 1} dari ${S.cards.length}`;
 
   const body = $("detailbody");
   body.textContent = "";
@@ -593,7 +917,7 @@ function openCard(index) {
       it.append(el("span", `v ${item.verdict}`, item.verdict.replace("_", " ")));
       it.append(el("div", "claim", `“${item.claim}”`));
       const reason = item.reason ? item.reason.charAt(0).toUpperCase() + item.reason.slice(1) : "";
-    it.append(el("div", "reason", reason));
+      it.append(el("div", "reason", reason));
       body.append(it);
     }
   }
@@ -625,27 +949,21 @@ function openCard(index) {
     body.append(src);
   }
 
-  location.hash = `#/${S.scope}/${index}`;
   window.scrollTo(0, 0);
+  markNav();
 }
 
-$("back").onclick = () => showFeed();
+// ── Kembali ──────────────────────────────────────────────────────────────────
+// Tombol dan gestur memakai jalur yang sama: history. Kalau tidak ada entri
+// aplikasi sebelumnya (tautan langsung ke detail), kembali ke feed di tempat.
 
-window.addEventListener("hashchange", () => {
-  if (location.hash.startsWith("#/atur")) {
-    if (S.view !== "atur") openAtur();
-    return;
-  }
-  const parts = location.hash.split("/").filter(Boolean);
-  if (parts.length === 2) {
-    openCard(Number(parts[1]));
-    return;
-  }
-  // Kembali dari Atur ke edisi lewat tombol Back browser.
-  if (parts.length === 1 && S.byScope.has(parts[0] ?? "")) {
-    if (S.view === "atur" || S.scope !== parts[0]) openScope(parts[0]);
-  }
-});
+$("back").onclick = () => {
+  if ((history.state?.depth ?? 0) > 0) history.back();
+  else navigate({ name: "feed", scope: S.scope, editionId: S.editionId }, { replace: true });
+};
+
+window.addEventListener("hashchange", syncFromLocation);
+window.addEventListener("popstate", syncFromLocation);
 
 async function setupNotifications() {
   const box = $("notifBody");
@@ -718,9 +1036,5 @@ if ("serviceWorker" in navigator) {
 }
 
 boot().catch((e) => {
-  const msg = e instanceof Error ? e.message : String(e);
-  $("dateline").textContent = "Gagal memuat";
-  $("subline").textContent = msg;
-  $("feed").hidden = true;
-  console.error(e);
+  showFatal(e);
 });

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — Arsip edisi &amp; gestur kembali (v1)</title>
+<style>
+  /* Token sama dengan public/style.css (DEC-0012). Jangan ganti palet. */
+  :root{
+    --paper:#FAF7F2; --ink:#17150F; --muted:#6B6459; --faint:#9A9284;
+    --rule:#E3DCD1; --accent:#B3402A; --accent-soft:#F3EAE4;
+    --ok:#2F6B4F; --warn:#9A6A1E; --bad:#A33A31;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-font-smoothing:antialiased}
+  body{
+    margin:0; padding:18px 10px 34px; background:#E7E2DA; font-family:var(--sans);
+    display:grid; grid-template-columns:380px 380px; gap:22px 16px; justify-content:center; align-items:start;
+  }
+  .col{display:flex; flex-direction:column; gap:9px; align-items:center}
+  .cap{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:#8D8578; font-weight:700; text-align:center;
+       width:380px; padding:0 14px; line-height:1.5}
+  .phone{
+    width:380px; height:820px; background:var(--paper); border-radius:44px; overflow:hidden; position:relative;
+    box-shadow:0 1px 2px rgba(0,0,0,.05), 0 18px 40px -14px rgba(0,0,0,.24), 0 0 0 9px #1C1B19;
+  }
+  .screen{height:100%; overflow:hidden; display:flex; flex-direction:column; position:relative}
+  .sb{height:42px; display:flex; align-items:center; justify-content:space-between; padding:0 25px; font-size:12px; font-weight:600; flex:none}
+  .sb .r{letter-spacing:1px; opacity:.85}
+
+  .hd{padding:6px 20px 12px; flex:none}
+  .ebrow{display:flex; align-items:center; justify-content:space-between; gap:10px}
+  .eyebrow{font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .installChip{border:1px solid var(--ink); font-size:9px; letter-spacing:.06em; text-transform:uppercase;
+               font-weight:700; padding:4px 9px; border-radius:999px}
+  .hd h1{font-family:var(--serif); font-size:27px; line-height:1.06; margin:6px 0 0; letter-spacing:-.02em; font-weight:600}
+  .hd .sub{font-size:11px; color:var(--muted); margin-top:6px}
+  .hd .cov{font-size:9.5px; color:var(--faint); margin-top:3px}
+
+  .feed{flex:1; overflow:hidden; padding:2px 14px 0}
+  .card{border-radius:20px; overflow:hidden; position:relative; margin-bottom:12px; background:#111; min-height:190px;
+        display:flex; flex-direction:column; justify-content:flex-end}
+  .card img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.9}
+  .overlay{position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(0,0,0,.06) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,.60) 76%, rgba(0,0,0,.87) 100%)}
+  .ctext{position:relative; padding:15px 15px 15px; color:#fff}
+  .kick{font-size:9px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; opacity:.82}
+  .ctext h2{font-family:var(--serif); font-weight:600; margin:6px 0 0; font-size:19px; line-height:1.16; letter-spacing:-.005em}
+  .metaRow{display:flex; align-items:center; gap:7px; margin-top:8px; font-size:10px; opacity:.88}
+  .dot{width:5px; height:5px; border-radius:50%; display:inline-block}
+  .done{margin:10px 0 0; padding-top:12px; border-top:1px solid var(--rule); text-align:center}
+  .done .big{font-family:var(--serif); font-size:12.5px; color:var(--muted)}
+  .done .small{font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); margin-top:4px}
+
+  .bar{flex:none; height:60px; border-top:1px solid var(--rule); display:flex; align-items:center; justify-content:space-around;
+       font-size:9px; color:var(--faint); background:rgba(250,247,242,.96)}
+  .bar .it{display:flex; flex-direction:column; align-items:center; gap:3px; font-weight:500}
+  .bar .it.on{color:var(--ink); font-weight:700}
+  .bar svg{width:19px; height:19px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round}
+
+  /* ── Arsip ─────────────────────────────────────────────────────────── */
+  .page{flex:1; overflow:hidden; padding:2px 20px 0}
+  .ptitle{font-family:var(--serif); font-size:27px; letter-spacing:-.02em; margin:2px 0 0; font-weight:600}
+  .psub{font-size:11px; color:var(--muted); margin-top:5px}
+
+  .arsipMonth{font-size:9px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--faint);
+              margin:16px 0 6px; padding-bottom:5px; border-bottom:1px solid var(--rule)}
+  .arsipDay{margin-bottom:10px}
+  .arsipDayDate{font-family:var(--serif); font-size:15px; font-weight:600; letter-spacing:-.01em; padding:9px 12px 2px}
+  .arsipItem{width:100%; display:flex; align-items:center; gap:8px; text-align:left;
+             border:1px solid var(--rule); background:#fff; border-radius:11px;
+             padding:9px 11px; margin-top:6px}
+  .arsipItem .scope{font-size:12.5px; font-weight:650; color:var(--ink); flex:none; min-width:66px}
+  .arsipItem .meta{font-size:10.5px; color:var(--muted); flex:1}
+  .arsipItem .chev{font-size:14px; color:var(--faint); line-height:1}
+  .arsipItem[aria-current="true"]{border-color:var(--ink); background:#FCFAF6}
+  .arsipItem.off{background:#F7F3EC; border-style:dashed; color:var(--faint)}
+  .arsipItem.off .scope{color:var(--muted)}
+  .arsipItem.off .meta{color:var(--faint)}
+  .arsipChip{font-size:7.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:800;
+             padding:3px 6px; border-radius:999px; flex:none}
+  .arsipChip.new{background:#E7F0EA; color:var(--ok)}
+  .arsipChip.week{background:#F4EEE2; color:var(--warn)}
+  .arsipChip.open{background:var(--ink); color:#FBF8F3}
+  .arsipMore{width:100%; margin:14px 0 0; padding:10px; border:1px solid var(--rule); border-radius:999px;
+             background:#fff; font-size:11.5px; font-weight:600; color:var(--ink); text-align:center}
+  .arsipFoot{font-size:10px; color:var(--faint); text-align:center; margin:10px 0 0; line-height:1.5}
+
+  /* ── Detail ────────────────────────────────────────────────────────── */
+  .nav{padding:4px 18px 10px; display:flex; align-items:center; gap:9px; font-size:11px; color:var(--muted); flex:none}
+  .nav .back{font-size:16px; color:var(--ink)}
+  .detail{flex:1; overflow:hidden; padding:0 19px}
+  .dkick{font-size:9px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-top:6px}
+  .detail h2{font-family:var(--serif); font-size:23px; line-height:1.15; letter-spacing:-.015em; margin:7px 0 0; font-weight:600}
+  .byline{display:flex; align-items:center; gap:7px; margin-top:10px; font-size:10.5px; color:var(--faint)}
+  .pill{font-size:9px; letter-spacing:.07em; text-transform:uppercase; font-weight:700; padding:4px 8px; border-radius:999px}
+  .pill.part{background:#F4EEE2; color:var(--warn)}
+  .detail p{font-size:13.5px; line-height:1.58; margin:12px 0 0; color:#2A2620}
+  .action{margin-top:14px; background:var(--accent-soft); border-left:3px solid var(--accent); padding:11px 12px; border-radius:0 9px 9px 0}
+  .action .lbl{font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-bottom:4px}
+  .action p{font-size:12px; line-height:1.45; margin:0; color:#3A2A24}
+
+  /* Catatan implementasi di luar mockup */
+  .notes{grid-column:1 / -1; max-width:800px; justify-self:center; background:#F5F1EA; border:1px solid #D9D2C6;
+         border-radius:14px; padding:16px 20px; font-size:12.5px; line-height:1.6; color:#3A352C}
+  .notes h2{font-family:var(--serif); font-size:17px; margin:0 0 8px}
+  .notes code{font-size:11.5px; background:#EDE7DD; padding:1px 5px; border-radius:4px}
+  .notes table{border-collapse:collapse; width:100%; margin-top:8px; font-size:11.5px}
+  .notes th,.notes td{text-align:left; padding:5px 8px; border-top:1px solid #D9D2C6}
+  .notes th{width:34%; font-weight:700; color:#57503F}
+</style>
+</head>
+<body>
+
+<!-- A · FEED, NAV LIMA ITEM -->
+<div class="col">
+  <div class="cap">A · Feed — nav lima item</div>
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="ebrow">
+        <div class="eyebrow">Edisi Pagi</div>
+        <div class="installChip">Pasang</div>
+      </div>
+      <h1>Rabu, 11 November 2026</h1>
+      <div class="sub">8 kartu · ±5 menit · Nasional</div>
+      <div class="cov">Liputan Selasa, 10 November 2026 · 05.00–05.00</div>
+    </div>
+    <div class="feed">
+      <div class="card" style="height:236px">
+        <img src="../../mockup/img/dpr.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="ctext">
+          <div class="kick">Nasional · kemarin 12.36</div>
+          <h2>50 anggota DPR teken HMP soal ijazah Gibran</h2>
+          <div class="metaRow"><span class="dot" style="background:#E0B25A"></span>Terkonfirmasi sebagian · 4 sumber</div>
+        </div>
+      </div>
+      <div class="card" style="height:150px">
+        <img src="../../mockup/img/beras.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="ctext">
+          <div class="kick">Sleman · kemarin 08.14</div>
+          <h2 style="font-size:17px">Harga beras medium di Sleman naik Rp700</h2>
+        </div>
+      </div>
+      <div class="done">
+        <div class="big">Selesai. 8 kartu.</div>
+        <div class="small">Tidak ada berita lain hari ini</div>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="it on">
+        <svg viewBox="0 0 24 24"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>
+        <span>Edisi</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Sleman</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        <span>Mingguan</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>
+        <span>Arsip</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+        <span>Atur</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- B · ARSIP -->
+<div class="col">
+  <div class="cap">B · Arsip — satu blok per tanggal</div>
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="ebrow">
+        <div class="eyebrow">Edisi Pagi</div>
+        <div class="installChip">Pasang</div>
+      </div>
+      <h1 class="ptitle">Arsip</h1>
+      <div class="psub">214 edisi · sejak 9 November 2024</div>
+    </div>
+    <div class="page">
+      <div class="arsipMonth">November 2026</div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Rabu, 11 November 2026</div>
+        <button class="arsipItem" aria-current="true">
+          <span class="scope">Nasional</span>
+          <span class="meta">8 kartu · 5 menit</span>
+          <span class="arsipChip new">Terbaru</span>
+          <span class="arsipChip open">Dibuka</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Sleman</span>
+          <span class="meta">2 kartu · 2 menit</span>
+          <span class="arsipChip new">Terbaru</span>
+          <span class="chev">›</span>
+        </button>
+      </div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Selasa, 10 November 2026</div>
+        <button class="arsipItem">
+          <span class="scope">Nasional</span>
+          <span class="meta">8 kartu · 6 menit</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Sleman</span>
+          <span class="meta">3 kartu · 2 menit</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Mingguan</span>
+          <span class="meta">1 rekap · 9 menit</span>
+          <span class="arsipChip week">Pekan</span>
+          <span class="chev">›</span>
+        </button>
+      </div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Senin, 9 November 2026</div>
+        <button class="arsipItem">
+          <span class="scope">Nasional</span>
+          <span class="meta">7 kartu · 5 menit</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Sleman</span>
+          <span class="meta">2 kartu · 2 menit</span>
+          <span class="chev">›</span>
+        </button>
+      </div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Minggu, 8 November 2026</div>
+        <button class="arsipItem">
+          <span class="scope">Nasional</span>
+          <span class="meta">6 kartu · 4 menit</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Mingguan</span>
+          <span class="meta">1 rekap · 8 menit</span>
+          <span class="arsipChip week">Pekan</span>
+          <span class="chev">›</span>
+        </button>
+      </div>
+
+      <button class="arsipMore">Muat 30 tanggal lagi</button>
+      <div class="arsipFoot">Retensi 2 tahun · edisi lama tidak pernah diubah</div>
+    </div>
+    <div class="bar">
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>
+        <span>Edisi</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Sleman</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        <span>Mingguan</span>
+      </div>
+      <div class="it on">
+        <svg viewBox="0 0 24 24"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>
+        <span>Arsip</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+        <span>Atur</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- C · ARSIP OFFLINE -->
+<div class="col">
+  <div class="cap">C · Arsip — offline, edisi belum tersimpan</div>
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="ebrow">
+        <div class="eyebrow">Edisi Pagi</div>
+        <div class="installChip">Pasang</div>
+      </div>
+      <h1 class="ptitle">Arsip</h1>
+      <div class="psub">214 edisi · sejak 9 November 2024</div>
+    </div>
+    <div class="page">
+      <div class="arsipMonth">November 2026</div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Rabu, 11 November 2026</div>
+        <button class="arsipItem" aria-current="true">
+          <span class="scope">Nasional</span>
+          <span class="meta">8 kartu · 5 menit</span>
+          <span class="arsipChip new">Terbaru</span>
+          <span class="arsipChip open">Dibuka</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem">
+          <span class="scope">Sleman</span>
+          <span class="meta">2 kartu · 2 menit</span>
+          <span class="arsipChip new">Terbaru</span>
+          <span class="chev">›</span>
+        </button>
+      </div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Selasa, 10 November 2026</div>
+        <button class="arsipItem">
+          <span class="scope">Nasional</span>
+          <span class="meta">8 kartu · 6 menit</span>
+          <span class="arsipChip week">Tersimpan</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="arsipItem off">
+          <span class="scope">Sleman</span>
+          <span class="meta">Belum tersimpan offline</span>
+        </button>
+      </div>
+
+      <div class="arsipDay">
+        <div class="arsipDayDate">Senin, 9 November 2026</div>
+        <button class="arsipItem off">
+          <span class="scope">Nasional</span>
+          <span class="meta">Belum tersimpan offline</span>
+        </button>
+        <button class="arsipItem off">
+          <span class="scope">Sleman</span>
+          <span class="meta">Belum tersimpan offline</span>
+        </button>
+      </div>
+
+      <div class="arsipFoot">Offline: hanya edisi yang pernah dibuka bisa dibaca.</div>
+    </div>
+    <div class="bar">
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>
+        <span>Edisi</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Sleman</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        <span>Mingguan</span>
+      </div>
+      <div class="it on">
+        <svg viewBox="0 0 24 24"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>
+        <span>Arsip</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+        <span>Atur</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- D · TANPA ARSIP -->
+<div class="col">
+  <div class="cap">D · Hanya edisi terbaru — tab Arsip disembunyikan</div>
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="hd">
+      <div class="ebrow">
+        <div class="eyebrow">Edisi Pagi</div>
+        <div class="installChip">Pasang</div>
+      </div>
+      <h1>Rabu, 11 November 2026</h1>
+      <div class="sub">8 kartu · ±5 menit · Nasional</div>
+      <div class="cov">Liputan Selasa, 10 November 2026 · 05.00–05.00</div>
+    </div>
+    <div class="feed">
+      <div class="card" style="height:210px">
+        <img src="../../mockup/img/vape.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="ctext">
+          <div class="kick">Nasional · kemarin 16.02</div>
+          <h2 style="font-size:18px">Aturan vape baru berlaku Januari</h2>
+          <div class="metaRow"><span class="dot" style="background:#E0B25A"></span>Terkonfirmasi sebagian · 3 sumber</div>
+        </div>
+      </div>
+      <div class="done">
+        <div class="big">Selesai. 8 kartu.</div>
+        <div class="small">Tidak ada berita lain hari ini</div>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="it on">
+        <svg viewBox="0 0 24 24"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>
+        <span>Edisi</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Sleman</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        <span>Mingguan</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+        <span>Atur</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- E · DETAIL -->
+<div class="col">
+  <div class="cap">E · Detail — header feed disembunyikan, kembali ke posisi gulir</div>
+  <div class="phone"><div class="screen">
+    <div class="sb"><span>9:41</span><span class="r">●●● ▮</span></div>
+    <div class="nav"><span class="back">‹</span><span>Nasional · 11 Nov · kartu 3 dari 8</span></div>
+    <div class="detail">
+      <div class="dkick">Nasional · kemarin 12.36</div>
+      <h2>50 anggota DPR teken HMP soal ijazah Gibran</h2>
+      <div class="byline"><span class="pill part">Terkonfirmasi sebagian</span><span>4 sumber</span></div>
+      <p>Surat pernyataan itu beredar Selasa siang. Tiga fraksi menyebut isinya soal ijazah, bukan soal pencalonan.</p>
+      <p>Kompas dan Tempo mengutip dua penanda tangan yang berbeda; keduanya menyebut hal yang sama, jadi klaim ini bersandar pada dua media independen.</p>
+      <div class="action">
+        <div class="lbl">Untuk kamu</div>
+        <p>Belum ada keputusan resmi. Yang beredar baru surat, bukan putusan.</p>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="it on">
+        <svg viewBox="0 0 24 24"><path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2h-1"/><path d="M7 9h7M7 12h7M7 15h5"/></svg>
+        <span>Edisi</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <span>Sleman</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v14H4z"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        <span>Mingguan</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>
+        <span>Arsip</span>
+      </div>
+      <div class="it">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+        <span>Atur</span>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<!-- CATATAN -->
+<div class="notes">
+  <h2>Catatan untuk persetujuan</h2>
+  <p>Mockup v1 rencana <code>008-arsip-dan-gestur-kembali.md</code>. Token, ukuran
+  huruf, dan bentuk kartu mengikuti <code>public/style.css</code>; tidak ada warna
+  baru. Angka edisi (214, 2 tahun) adalah contoh, bukan data nyata.</p>
+  <table>
+    <tr><th>Layar</th><td>Keadaan yang dicakup</td></tr>
+    <tr><th>A</th><td>Nav lima item: Edisi / Sleman / Mingguan / Arsip / Atur. Item yang tidak punya edisi tidak dirender.</td></tr>
+    <tr><th>B</th><td>Arsip: satu blok per tanggal, baris scope di dalamnya (Nasional, Sleman, Mingguan). Label bulan, penanda <code>Terbaru</code> (edisi terbaru per scope), <code>Pekan</code> untuk rekap mingguan, <code>Dibuka</code> untuk yang sedang dibaca. Render awal 30 tanggal + “Muat 30 tanggal lagi”.</td></tr>
+    <tr><th>C</th><td>Offline: baris tetap tampil dari <code>manifest.json</code> yang ter-cache; edisi yang belum pernah dibuka bertanda “Belum tersimpan offline” dan tidak bisa diketuk.</td></tr>
+    <tr><th>D</th><td>Bila hanya ada edisi terbaru, item Arsip tidak dirender — tidak ada tombol tanpa isi.</td></tr>
+    <tr><th>E</th><td>Detail: header tanggal besar, <code>subline</code>, dan <code>covline</code> disembunyikan; yang tersisa hanya bar dengan panah kembali dan label <code>Nasional · 11 Nov · kartu 3 dari 8</code>. Gestur back kembali ke feed tanpa memuat ulang dan tanpa kehilangan posisi gulir.</td></tr>
+  </table>
+  <p>Rute: <code>#/arsip</code>, <code>#/&lt;scope&gt;</code>,
+  <code>#/&lt;scope&gt;/&lt;edition_id&gt;</code>,
+  <code>#/&lt;scope&gt;/&lt;edition_id&gt;/&lt;kartu&gt;</code>. Strip tanggal lama
+  (<code>#dates</code>) dihapus.</p>
+</div>
+
+</body>
+</html>

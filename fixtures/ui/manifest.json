@@ -9,7 +9,7 @@
   },
   "retention": {
     "years": 2,
-    "oldest": "2026-11-11"
+    "oldest": "2026-10-31"
   },
   "editions": [
     {
@@ -27,6 +27,22 @@
       "card_count": 2,
       "reading_time_min": 2,
       "path": "data/editions/2026-11-11.lokal.json"
+    },
+    {
+      "edition_id": "2026-10-31",
+      "scope": "nasional",
+      "published_at": "2026-10-31T05:45:00+07:00",
+      "card_count": 8,
+      "reading_time_min": 5,
+      "path": "data/editions/2026-10-31.nasional.json"
+    },
+    {
+      "edition_id": "2026-10-31",
+      "scope": "lokal",
+      "published_at": "2026-10-31T05:45:00+07:00",
+      "card_count": 2,
+      "reading_time_min": 2,
+      "path": "data/editions/2026-10-31.lokal.json"
     }
   ]
 }

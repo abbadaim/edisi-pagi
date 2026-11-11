@@ -19,7 +19,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tests | `npm test` — 242 uji; `npm run test:ui` — 4 uji browser |
+| Tests | `npm test` — 244 uji; `npm run test:ui` — 10 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -193,6 +193,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `beforeinstallprompt` tidak ada di Electron/browser in-app; fallback instruksi wajib. Tombol asli muncul di Chrome Android; iOS hanya instruksi “Tambah ke Layar Utama”.
 - Push payload memakai URL relatif scope (`./`); `/` membuka akar domain yang salah.
 - `latest_by_scope` menyembunyikan tab mingguan di hari non-Minggu. Itu keputusan produk.
+- Rute punya keadaan eksplisit (`#/arsip`, `#/<scope>/<edition_id>/<kartu>`); kembali dari detail adalah navigasi history, bukan tulis hash. Jangan kembalikan `#dates` atau scroll restore otomatis browser (`DEC-0023`).
+- `history.scrollRestoration = "manual"` di `public/app.js`; tanpa itu posisi gulir feed ditimpa browser setelah `popstate`.
 - `npm run serve` default melayani di akar, sedangkan produksi di `/edisi-pagi/`. Pakai `BASE_PATH=/edisi-pagi npm run serve` untuk mereproduksi produksi; tanpa itu bug path absolut tidak muncul di lokal (`DEC-0015`).
 - `public/index.html` ditulis ulang di tempat oleh `publish.ts` (`?v=<sha1>`); berkas di repo adalah hasil publish, bukan sumber terpisah.
 - Asersi UI tanpa browser ada di `tests/ui-static.test.ts` dan ikut `npm test`; asersi browser ada di `tests-ui/shell.spec.ts` dan dijalankan `npm run test:ui` (`DEC-0014`).
