@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-11",
   "scope": "lokal",
-  "published_at": "2026-11-11T09:44:42+07:00",
+  "published_at": "2026-11-11T09:55:40+07:00",
   "coverage": {
-    "from": "2026-11-10T09:44:42+07:00",
-    "to": "2026-11-11T09:44:42+07:00"
+    "from": "2026-11-10T09:55:40+07:00",
+    "to": "2026-11-11T09:55:40+07:00"
   },
-  "generated_at": "2026-11-11T09:44:42+07:00",
+  "generated_at": "2026-11-11T09:55:40+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -32,19 +32,19 @@
       "model": "none"
     }
   },
-  "card_count": 5,
-  "truncated_reason": null,
+  "card_count": 4,
+  "truncated_reason": "Hanya 4 topik lokal yang lolos",
   "cards": [
     {
       "id": "c1",
       "type": "news",
       "topic_id": "t_sultan_hb_x_jawab_tuntutan_ump_f058",
-      "angle": "Sultan HB X berdialog dengan demonstran soal tuntutan UMP DIY sesuai KHL Rp4,6 juta",
+      "angle": "Sultan HB X menemui massa aksi di DIY dan menanggapi tuntutan upah sesuai KHL.",
       "kicker": "DIY",
-      "title": "Sultan HB X Temui Demonstran, Jawab Tuntutan UMP DIY",
+      "title": "Sultan HB X Temui Demonstran, Tanggapi Tuntutan Upah Sesuai KHL DIY",
       "status": "sebagian",
       "truth": {
-        "claim": "Sultan HB X menyatakan penentuan UMP DIY mengikuti regulasi Menteri Tenaga Kerja dan pembahasan Dewan Pengupahan, sementara massa menuntut upah sesuai KHL Rp4.6",
+        "claim": "Sultan HB X menemui massa aksi dari AJM di DIY pada 10 November 2026 dan menanggapi tuntutan upah sesuai KHL Rp4,6 juta dengan menyatakan akan mengikuti regulas",
         "status": "sebagian",
         "confidence": 0.8,
         "band": "kemungkinan_besar",
@@ -57,43 +57,43 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T09:44:42+07:00"
+        "assessed_at": "2026-11-11T09:55:40+07:00"
       },
       "body": [
-        "Gubernur DIY Sultan Hamengku Buwono X menemui massa aksi di Yogyakarta pada Selasa (10/11/2026) dan menanggapi tuntutan mereka soal upah minimum provinsi. Dialog itu berlangsung di tengah aksi yang menyuarakan lima tuntutan, termasuk penetapan upah buruh DIY sesuai komponen hidup layak (KHL). Meski peristiwanya berlangsung di Yogyakarta, gaungnya terasa bagi warga Sleman yang banyak bergantung pada upah buruh dan sektor informal di kawasan DIY.",
-        "Dalam catatan detikJogja, hasil hitungan KHL DIY yang dipublikasikan Kementerian Ketenagakerjaan akhir 2025 adalah Rp4.604.982, jauh di atas UMP DIY 2026 yang sebesar Rp2.417.495. Selisih itu menjadi dasar tuntutan massa. Perwakilan massa aksi menyampaikan lima tuntutan, antara lain penetapan upah sesuai KHL, tindak lanjut Mandala Krida, dan penghentian kriminalisasi terhadap masyarakat, ojol, serta mahasiswa.",
-        "Sultan menyatakan pihaknya akan mengikuti regulasi Menteri Tenaga Kerja dalam menentukan upah minimum. Ia mengaku belum mengetahui keputusan menteri untuk tahun ini. Menurut Sultan, dasar kenaikan atau penurunan upah mengikuti hitungan pertumbuhan ekonomi daerah, inflasi daerah, dan faktor alfa yang berkisar 0,1 sampai 0,9. Penentuan upah juga melalui pembahasan Dewan Pengupahan yang melibatkan buruh dan pengusaha.",
-        "Sultan menegaskan pemerintah provinsi tidak bisa sewenang-wenang menetapkan upah. \"Kami tidak bisa memaksa,\" ujarnya, seraya menyebut prosesnya melalui perundingan dan kesepakatan. Meski begitu, ia menyatakan Pemprov DIY akan berusaha agar kenaikan upah bisa maksimal. Ia mencontohkan tahun lalu faktor alfa yang semula disepakati 0,4 bisa dinaikkan menjadi 0,8 setelah negosiasi dengan pengusaha.",
-        "Selain berdialog, Sultan disebut duduk lesehan bersama massa aksi dari AJM untuk membahas berbagai permasalahan di DIY. Namun detail kesepakatan atau tindak lanjut konkret dari pertemuan itu belum jelas. Keputusan Menteri Tenaga Kerja soal UMP DIY juga belum diumumkan, sehingga angka final yang akan berlaku masih menunggu.",
-        "Yang tersisa kini adalah pertanyaan soal arah negosiasi di Dewan Pengupahan dan seberapa jauh faktor alfa bisa didorong mendekati KHL. Bagi buruh di Sleman dan DIY, selisih antara KHL dan UMP tetap menjadi ukuran yang mereka pantau, sementara pemerintah berpegang pada regulasi dan kesepakatan tripartit."
+        "Gubernur DIY Sultan Hamengku Buwono X menemui massa aksi di Yogyakarta pada Selasa (10/11/2026). Menurut pemberitaan tirto.id, ia berdialog dan berdiskusi sambil duduk lesehan dengan massa aksi dari AJM terkait berbagai permasalahan di DIY. Karena kebijakan upah minimum provinsi berlaku menyeluruh, tanggapan Sultan ini menyangkut warga pekerja di Sleman dan kabupaten/kota lain di DIY, bukan hanya mereka yang turun ke jalan.",
+        "Dalam pertemuan itu, perwakilan massa menyampaikan lima tuntutan. Salah satunya agar upah buruh di DIY ditetapkan sesuai komponen hidup layak (KHL). Tuntutan lain yang disebut adalah segera menindaklanjuti Mandala Krida serta menghentikan seluruh kriminalisasi terhadap masyarakat, ojol, dan mahasiswa. Namun rincian siapa saja yang tergabung dalam AJM dan berapa jumlah massa yang hadir belum dijelaskan dalam bahan.",
+        "Angka yang menjadi sorotan adalah KHL DIY. Menurut catatan detikJogja yang dikutip dalam pemberitaan, hasil hitungan KHL DIY yang dipublikasikan Kemnaker akhir tahun 2025 adalah Rp4.604.982, jauh dari UMP DIY 2026 yang disebut Rp2.417.495. Selisih inilah yang membuat tuntutan penyesuaian upah mencuat dalam aksi tersebut.",
+        "Sultan menyatakan pihaknya akan mengikuti regulasi Menteri Tenaga Kerja untuk menentukan upah minimum. Ia mengaku belum mengetahui keputusan Menteri Tenaga Kerja soal UMR. Menurut Sultan, dasar kenaikan atau penurunan upah yang mengikuti tahun sebelumnya adalah pertumbuhan ekonomi daerah, inflasi daerah, dan faktor alfa yang berkisar 0,1 sampai 0,9. Ia juga menyebut penentuan upah melalui pembahasan Dewan Pengupahan yang melibatkan buruh dan pengusaha, dan pemerintah tidak bisa memaksa.",
+        "Meski begitu, Sultan menyatakan Pemprov DIY akan berusaha agar kenaikan upah bisa maksimal. Ia mencontohkan upah Pemprov DIY tahun lalu yang membuat faktor alfa naik menjadi 0,8 dari kesepakatan 0,4 setelah negosiasi dengan pengusaha. Menurut Sultan, dengan pertumbuhan ekonomi 5% dan inflasi 2 atau 3%, kenaikan upah hanya sekitar 8%.",
+        "Yang belum jelas adalah keputusan resmi UMP DIY 2026 dan apakah tuntutan KHL akan diakomodasi. Sultan hanya menyampaikan akan mengikuti regulasi dan pembahasan Dewan Pengupahan, tanpa menyebut angka atau tenggat pasti. Langkah berikutnya menunggu keputusan Menteri Tenaga Kerja serta hasil pembahasan dewan pengupahan, dan detail jadwalnya belum diumumkan."
       ],
       "explain": [
         {
           "q": "Apa itu KHL dan bagaimana hubungannya dengan UMP?",
-          "a": "KHL adalah komponen hidup layak yang menjadi acuan kebutuhan buruh; dalam bahan, KHL DIY Rp4.604.982 dibandingkan dengan UMP DIY 2026 Rp2.417.495.",
+          "a": "KHL adalah komponen hidup layak yang menjadi acuan tuntutan upah; dalam bahan disebut KHL DIY Rp4.604.982, sementara UMP DIY 2026 disebut Rp2.417.495.",
           "source": {
             "outlet": "detik.com",
             "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         },
         {
-          "q": "Apa itu faktor alfa dalam penentuan upah minimum?",
-          "a": "Faktor alfa adalah variabel tambahan dalam hitungan kenaikan upah yang menurut Sultan berkisar 0,1 sampai 0,9.",
+          "q": "Apa itu faktor alfa dalam perhitungan upah?",
+          "a": "Faktor alfa adalah variabel 0,1 sampai 0,9 yang disebut Sultan sebagai bagian dari dasar penentuan kenaikan upah bersama pertumbuhan ekonomi dan inflasi daerah.",
           "source": {
             "outlet": "detik.com",
             "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         },
         {
-          "q": "Siapa yang duduk di Dewan Pengupahan?",
-          "a": "Menurut Sultan, pembahasan upah melibatkan buruh dan pengusaha dalam Dewan Pengupahan.",
+          "q": "Siapa yang membahas penetapan upah minimum?",
+          "a": "Menurut Sultan, penentuan upah melalui pembahasan Dewan Pengupahan yang melibatkan buruh dan pengusaha, serta mengikuti regulasi Menteri Tenaga Kerja.",
           "source": {
             "outlet": "detik.com",
             "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta"
           }
         }
       ],
-      "action": "Pantau pengumuman keputusan Menteri Tenaga Kerja soal UMP DIY dan hasil pembahasan Dewan Pengupahan.",
+      "action": "Pantau keputusan Menteri Tenaga Kerja dan hasil Dewan Pengupahan soal UMP DIY 2026.",
       "image": null,
       "sources": [
         {
@@ -101,18 +101,18 @@
           "url": "https://tirto.id/sultan-hb-x-temui-demonstran-jawab-kritik-kondisi-sosial-di-diy-idD8",
           "published_at": "2026-11-10T21:10:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
+          "accessed_at": "2026-11-11T09:55:40+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://www.detik.com/jogja/berita/d-8747248/jawaban-sultan-hb-x-soal-massa-minta-ump-diy-sesuai-khl-rp-4-6-juta",
           "published_at": "2026-11-10T19:55:09+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
+          "accessed_at": "2026-11-11T09:55:40+07:00"
         }
       ],
       "place": "lokal",
-      "revision": 3,
+      "revision": 4,
       "first_seen": "2026-11-11",
       "previous_edition": "2026-11-10",
       "changes": [],
@@ -125,12 +125,12 @@
       "id": "c2",
       "type": "news",
       "topic_id": "t_polda_diy_amankan_106_orang_us_da39",
-      "angle": "Polda DIY mengamankan puluhan orang usai kericuhan Malioboro; massa sempat menyebar ke",
+      "angle": "Angka yang diamankan masih berubah; kericuhan merembet sampai depan UGM di Sleman",
       "kicker": "Yogyakarta",
-      "title": "Kericuhan Malioboro: Polda DIY Amankan 106 hingga 154 Orang",
+      "title": "Polda DIY Amankan 106 hingga 154 Orang Usai Ricuh Malioboro",
       "status": "sebagian",
       "truth": {
-        "claim": "Polda DIY mengamankan puluhan orang usai kericuhan di Malioboro, dengan angka yang berbeda antar laporan: 94 orang pada rilis awal, 154 orang pada laporan lebih",
+        "claim": "Polda DIY mengamankan orang usai kericuhan Malioboro, dengan angka yang dilaporkan berkisar 106 hingga 154 orang.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -143,31 +143,39 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T09:44:42+07:00"
+        "assessed_at": "2026-11-11T09:55:40+07:00"
       },
       "body": [
-        "Kericuhan setelah aksi unjuk rasa di kawasan Malioboro, Kota Yogyakarta, berujung pada pengamanan puluhan orang oleh Polda DIY. Plt. Kabidhumas Polda DIY AKBP Novita Eka Sari menyebut pengamanan dilakukan bersama jajaran TNI dan Pemda DIY. Massa sempat tersebar ke sejumlah titik, termasuk kawasan Gelanggang Inovasi dan Kreativitas (GIK) Universitas Gadjah Mada di Kecamatan Depok, Sleman, dan baru membubarkan diri sekitar pukul 04.00 WIB. Kericuhan terjadi pada Rabu (11/11/2026), sementara aksi unjuk rasa sebelumnya berlangsung Selasa (10/11/2026) malam.",
-        "Novita menjelaskan aksi penyampaian pendapat berlangsung tertib hingga pukul 19.00 WIB, lalu sekitar pukul 20.07 WIB sekitar 100 orang berkumpul di depan Gedung DPRD DIY dan diduga menyerang area gedung dengan petasan, molotov, dan batu. Polisi menyita enam botol molotov, 12 petasan, tujuh botol bensin, satu senjata tajam, satu ketapel, dan satu bungkus gotri. Angka yang diamankan tidak seragam: rilis awal menyebut 94 orang, lalu berkembang menjadi 154 orang menurut laporan yang lebih baru, sementara laporan lain menyebut sekitar 106 orang. Semua yang diamankan masih diperiksa dan belum berstatus tersangka; peran masing-masing serta kemungkinan pihak lain masih didalami, dan penyebab pasti kericuhan belum dijelaskan. Perkembangan lanjutan akan disampaikan melalui Humas Polda DIY."
+        "Polda DIY mengamankan orang-orang yang diduga terlibat kericuhan setelah aksi unjuk rasa di kawasan Malioboro, Kota Yogyakarta. Plt. Kabidhumas Polda DIY AKBP Novita Eka Sari menyebut pengamanan dilakukan bersama TNI dan Pemda DIY. Peristiwa ini juga menyentuh Sleman: menurut pantauan, massa tersebar hingga kawasan Gelanggang Inovasi dan Kreativitas (UGM) di Kecamatan Depok, dan polisi menyebut penindakan di bundaran depan UGM dilakukan tanpa memasuki area kampus. Soal hari, bahan tidak seragam: satu menyebut ricuh pada Rabu, bahan lain menyebut aksi unjuk rasa Selasa (10/11/2026) malam, sehingga penanda hari sebaiknya dibaca sebagai rentang, bukan satu tanggal tunggal.",
+        "Angka yang diamankan pun belum seragam. Satu laporan menyebut sekitar 106 orang, laporan lain menyebut 154 orang yang bertambah dari data awal 94 orang menurut keterangan Polda DIY. Barang bukti yang disita: enam botol molotov, 12 petasan, tujuh botol bensin, satu senjata tajam, satu ketapel, dan satu bungkus gotri. Kericuhan disebut mulai sekitar pukul 20.07 WIB di depan Gedung DPRD DIY, lalu sekitar pukul 20.30 WIB polisi mendorong massa ke utara Malioboro dengan empat SSK PHH Brimob, 60 personel SPP Brimob, dan Satgas PAGAR berkekuatan 858 personel. Yang belum jelas: peran masing-masing orang yang diamankan. Mereka masih diperiksa dan ditampung di Posko Satgas lantai 2 Gedung DPRD DIY, sementara kemungkinan keterlibatan pihak lain masih didalami; lanjutan informasi dijanjikan lewat Humas Polda DIY."
       ],
       "explain": [
         {
-          "q": "Apa yang perlu diketahui tentang Polda DIY Amankan 106 Orang Usai Kericuhan di Malioboro?",
-          "a": "Polda DIY mengamankan sekitar 106 orang setelah kericuhan di Malioboro. Polisi menyita molotov, petasan, bensin, dan sejumlah barang bukti lain. /Instagram. Harianjogja.com, JOGJA Sebanyak sekitar 106 orang diamankan Polda Daerah Istimewa Yogyakarta (DIY) setelah aksi unjuk rasa di kawasan Malioboro, Kota Yogyakarta, berujung ricuh pada Rabu. Polisi juga menyita sejumlah barang bukti, mulai dari enam botol molotov…",
+          "q": "Apa itu Satgas PAGAR yang dikerahkan Polda DIY?",
+          "a": "Satgas Penguatan Patroli Siaga Reserse, satuan tugas yang melakukan penangkapan terhadap orang yang diduga anarkis di bawah kendali Dirreskrimum.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278428/polda-diy-amankan-106-orang-usai-kericuhan-di-malioboro"
           }
         },
         {
-          "q": "Mengapa peristiwa ini penting bagi Sleman atau DIY?",
-          "a": "Polda DIY Amankan 106 Orang Usai Kericuhan di Malioboro. Polda DIY mengamankan sekitar 106 orang setelah kericuhan di Malioboro. Polisi menyita molotov, petasan, bensin, dan sejumlah barang bukti lain. /Instagram. Harianjogja.com, JOGJA Sebanyak sekitar 106 orang diamankan Polda Daerah Istimewa Yogyakarta (DIY) setelah aksi unjuk rasa di kawasan Malioboro, Kota Yogyakarta, berujung ricuh pada Rabu. Polisi juga…",
+          "q": "Apa itu SSK PHH Brimob?",
+          "a": "Satuan setingkat kompi Penindakan Huru-Hara Brimob yang diterjunkan mendorong massa.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278428/polda-diy-amankan-106-orang-usai-kericuhan-di-malioboro"
+          }
+        },
+        {
+          "q": "Di mana Posko Satgas tempat orang yang diamankan ditampung?",
+          "a": "Di lantai 2 Gedung DPRD DIY, menurut keterangan Polda DIY.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278428/polda-diy-amankan-106-orang-usai-kericuhan-di-malioboro"
           }
         }
       ],
-      "action": "Pantau rilis resmi Humas Polda DIY untuk memastikan jumlah terbaru dan status hukum orang yang diamankan.",
+      "action": "Pantau rilis resmi Humas Polda DIY untuk angka final dan status pemeriksaan orang yang diamankan.",
       "image": null,
       "sources": [
         {
@@ -175,7 +183,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278428/polda-diy-amankan-106-orang-usai-kericuhan-di-malioboro",
           "published_at": "2026-11-11T07:37:26+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
+          "accessed_at": "2026-11-11T09:55:40+07:00"
         }
       ],
       "place": "lokal",
@@ -183,22 +191,18 @@
       "first_seen": "2026-11-11",
       "previous_edition": null,
       "changes": [],
-      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
-      "unresolved": [
-        "Belum pasti: Polda DIY mengamankan sekitar 106 orang setelah kericuhan di Malioboro.",
-        "Belum pasti: Jumlah tersebut kemudian bertambah menjadi 154 orang berdasarkan perkembangan hingga Rabu pagi."
-      ]
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
     },
     {
       "id": "c3",
       "type": "news",
       "topic_id": "t_diduga_mabuk_pengemudi_mobil_t_da39",
-      "angle": "Polresta Sleman menangkap pengemudi tabrak lari dari Demak Ijo hingga Turi; jumlah korban",
+      "angle": "Polresta Sleman menangkap pengemudi tabrak lari di SPBU Dukuh, Sleman; diduga mabuk.",
       "kicker": "Sleman",
       "title": "Pengemudi Tabrak Lari di Sleman Ditangkap, Diduga Mabuk",
       "status": "sebagian",
       "truth": {
-        "claim": "Polresta Sleman menangkap seorang pengemudi yang diduga terlibat tabrak lari dari Demak Ijo hingga Turi dan diduga mabuk.",
+        "claim": "Polresta Sleman menangkap seorang pengemudi mobil yang diduga terlibat tabrak lari dari Demak Ijo hingga Turi dan diduga mabuk.",
         "status": "sebagian",
         "confidence": 0.55,
         "band": "belum_pasti",
@@ -211,39 +215,39 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T09:44:42+07:00"
+        "assessed_at": "2026-11-11T09:55:40+07:00"
       },
       "body": [
-        "Polresta Sleman mengamankan seorang pengemudi mobil yang diduga terlibat rangkaian insiden tabrak lari di wilayah Sleman, DIY. Menurut keterangan tertulis Ps. Kasi Humas Polresta Sleman, Iptu Argo Anggoro, kejadian bermula di Simpang Empat Demak Ijo, lalu kendaraan melaju ke arah Turi dan kembali ke selatan. Pengemudi akhirnya diamankan petugas di kawasan SPBU Dukuh, Sleman, setelah sempat dikejar warga. Polisi menduga pengemudi berada di bawah pengaruh minuman keras.",
-        "Dalam perjalanan melarikan diri itu, menurut Argo, diduga terjadi beberapa insiden yang mengakibatkan sejumlah korban. Namun jumlah korban, identitas pengemudi, jenis kendaraan, serta kronologi tiap insiden belum diumumkan secara rinci. Polisi menyatakan informasi yang disampaikan masih data awal dan sedang didalami. Sebelumnya narasi soal penangkapan di Jalan Magelang Km. 11 dekat SPBU Dukuh dan banyaknya korban di sepanjang Jalan Turi beredar viral di Instagram; polisi belum memastikan kesesuaian narasi itu. Langkah berikutnya menunggu hasil pemeriksaan dan pembaruan dari kepolisian."
+        "Polresta Sleman mengamankan seorang pengemudi mobil yang diduga terlibat rangkaian insiden tabrak lari di wilayah Sleman, DIY. Menurut keterangan Iptu Argo Anggoro, Ps. Kasi Humas Polresta Sleman, kejadian bermula di Simpang Empat Demak Ijo, lalu kendaraan melaju ke arah Turi dan kembali ke selatan. Pengemudi yang diduga mabuk sempat kabur dari kejaran warga sebelum ditangkap petugas di area SPBU Dukuh, Sleman.",
+        "Dalam perjalanan melarikan diri, pengemudi diduga terlibat beberapa insiden kecelakaan dan sejumlah orang menjadi korban. Polisi menduga pengemudi berada di bawah pengaruh minuman keras. Sebelumnya, informasi soal tabrak lari ini viral di Instagram, dengan narasi menyebut penangkapan di Jalan Magelang Km. 11 dekat SPBU Dukuh dan banyak korban di sepanjang Jalan Turi. Namun jumlah korban, jumlah insiden, serta identitas pengemudi belum dirinci. Polisi menyebut data ini masih awal dan masih mendalami rangkaian peristiwa; pembaruan akan disampaikan kemudian."
       ],
       "explain": [
         {
-          "q": "Apa itu tabrak lari dan bagaimana polisi biasanya menanganinya?",
-          "a": "Tabrak lari adalah kecelakaan lalu lintas yang pelakunya melarikan diri; penanganan biasanya diawali olah tempat kejadian dan pemeriksaan saksi.",
+          "q": "Apa itu Polresta Sleman dan wilayah hukumnya?",
+          "a": "Polresta Sleman adalah kepolisian resor kota yang menangani wilayah Kabupaten Sleman, DIY, termasuk kawasan Demak Ijo dan Turi yang disebut dalam peristiwa ini.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         },
         {
-          "q": "Siapa Polresta Sleman dan apa perannya dalam kasus ini?",
-          "a": "Polresta Sleman adalah kepolisian resor yang menangani wilayah Sleman dan mengamankan pengemudi dalam kasus ini.",
+          "q": "Apa yang dimaksud tabrak lari?",
+          "a": "Tabrak lari adalah peristiwa kecelakaan lalu lintas yang pengemudinya meninggalkan lokasi tanpa memberi pertolongan atau melapor, seperti digambarkan dalam rangkaian insiden ini.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         },
         {
-          "q": "Apa yang dimaksud 'diduga mabuk' dalam keterangan polisi?",
-          "a": "Itu dugaan awal kepolisian berdasarkan keterangan, bukan hasil pemeriksaan resmi yang sudah dipastikan.",
+          "q": "Mengapa dugaan pengaruh minuman keras perlu diperiksa?",
+          "a": "Dugaan itu masih keterangan awal polisi; pemeriksaan terhadap pengemudi masih berlangsung untuk memastikan rangkaian peristiwa.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap"
           }
         }
       ],
-      "action": "Pantau pembaruan resmi Polresta Sleman soal jumlah korban dan hasil pemeriksaan pengemudi.",
+      "action": "Pantau keterangan resmi Polresta Sleman untuk perkembangan jumlah korban dan status pengemudi.",
       "image": null,
       "sources": [
         {
@@ -251,7 +255,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278419/diduga-mabuk-pengemudi-mobil-tabrak-lari-di-sleman-ditangkap",
           "published_at": "2026-11-11T07:07:15+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
+          "accessed_at": "2026-11-11T09:55:40+07:00"
         }
       ],
       "place": "lokal",
@@ -267,12 +271,12 @@
       "id": "c4",
       "type": "news",
       "topic_id": "t_dukung_pembayaran_nontunai_dis_da39",
-      "angle": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk pembayaran nontunai dan",
+      "angle": "Dispar Sleman menyiapkan WiFi gratis di empat TPR untuk mendukung pembayaran retribusi",
       "kicker": "Sleman",
-      "title": "WiFi Gratis di 4 TPR Wisata Sleman, Dukung Bayar Nontunai",
+      "title": "WiFi Gratis Disiapkan di 4 TPR Wisata Sleman, Nontunai Menanti",
       "status": "sebagian",
       "truth": {
-        "claim": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata untuk mendukung pembayaran retribusi nontunai dan akses informasi destinasi.",
+        "claim": "Dispar Sleman menyiapkan WiFi gratis di empat TPR wisata pada tahap pertama, dengan daftar nama lokasi tidak terbaca utuh dan jadwal pemasangan belum diumumkan.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -285,31 +289,39 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-11T09:44:42+07:00"
+        "assessed_at": "2026-11-11T09:55:40+07:00"
       },
       "body": [
-        "Dinas Pariwisata (Dispar) Sleman menyiapkan fasilitas WiFi gratis di empat tempat pemungutan retribusi (TPR) wisata. Kepala Dispar Sleman, Edy Winarya, menyebut penyediaan jaringan internet ini sebagai bagian dari upaya pemerintah daerah meningkatkan kualitas pelayanan publik sekaligus kenyamanan pengunjung kawasan wisata. Persiapan pemasangan dilakukan dengan meninjau sejumlah lokasi TPR pada awal November 2026 oleh Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif (Deskraf) Dispar Sleman, untuk memeriksa titik strategis dan memastikan kesiapan teknis.",
-        "Menurut Edy, WiFi di kawasan TPR berperan penting dalam pelayanan wisata berbasis teknologi, termasuk memudahkan wisatawan mencari informasi destinasi dan memperlancar pembayaran retribusi secara nontunai. Digitalisasi ini disebut juga sebagai upaya meningkatkan transparansi dan efektivitas pengelolaan pariwisata daerah, serta diharapkan membuka peluang bagi pelaku usaha lokal memperkenalkan produk kepada wisatawan. Namun, bahan belum menyebutkan nama keempat lokasi TPR tersebut, jadwal pasti pemasangan, maupun target penyelesaian tahap pertama, sehingga detail itu belum jelas dan masih menunggu pengumuman lebih lanjut."
+        "Dinas Pariwisata (Dispar) Sleman menyiapkan fasilitas WiFi gratis di empat tempat pemungutan retribusi (TPR) wisata di wilayah Sleman. Kepala Dispar Sleman Edy Winarya menyebut penyediaan jaringan internet ini sebagai bagian dari upaya pemerintah daerah meningkatkan kualitas pelayanan publik sekaligus kenyamanan pengunjung kawasan wisata. Persiapan pemasangan dilakukan lewat peninjauan sejumlah TPR pada awal November 2026 oleh Tim Bidang Pengembangan Destinasi dan Ekonomi Kreatif (Deskraf) Dispar Sleman, untuk memeriksa titik strategis dan memastikan kesiapan teknis jaringan. Keterangan Edy itu dikutip Harian Jogja pada Selasa (10/11/2026).",
+        "Sumber menyebut empat lokasi TPR menjadi sasaran peninjauan tahap pertama, tetapi daftar nama keempatnya tidak terbaca utuh dalam bahan yang tersedia. Jadwal pasti pemasangan, target penyelesaian, kapasitas jaringan, penyedia layanan, dan anggaran juga belum diumumkan. Yang tersedia baru keterangan bahwa WiFi disiapkan agar wisatawan lebih mudah mencari informasi destinasi dan agar transaksi retribusi nontunai berjalan lebih lancar; mekanisme dan sistem pembayaran nontunai yang akan dipakai belum dirinci. Digitalisasi ini disebut sebagai bagian dari upaya meningkatkan transparansi dan efektivitas pengelolaan pariwisata daerah, dan Dispar Sleman berharap akses internet di titik strategis membuka peluang bagi pelaku usaha lokal."
       ],
       "explain": [
         {
-          "q": "Apa itu TPR dalam pengelolaan retribusi wisata daerah?",
-          "a": "TPR adalah tempat pemungutan retribusi, titik pintu masuk kawasan wisata tempat pengunjung membayar retribusi.",
+          "q": "Apa itu TPR wisata dan retribusi yang dipungut di dalamnya?",
+          "a": "TPR adalah tempat pemungutan retribusi di pintu masuk kawasan wisata; bahan hanya menyebut fungsinya untuk pembayaran retribusi, tanpa merinci besar tarif.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
           }
         },
         {
-          "q": "Apa yang dimaksud pembayaran retribusi nontunai?",
-          "a": "Pembayaran retribusi wisata menggunakan sistem digital, bukan uang tunai, yang membutuhkan jaringan internet memadai.",
+          "q": "Siapa Edy Winarya dalam pemberitaan ini?",
+          "a": "Ia disebut sebagai Kepala Dispar Sleman yang menyampaikan alasan penyediaan WiFi gratis di TPR.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
+          }
+        },
+        {
+          "q": "Apa tugas Bidang Deskraf Dispar Sleman dalam persiapan ini?",
+          "a": "Tim Deskraf melakukan peninjauan lokasi pada awal November 2026 untuk memeriksa titik strategis dan kesiapan teknis pemasangan jaringan.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata"
           }
         }
       ],
-      "action": "Pantau pengumuman Dispar Sleman soal lokasi dan jadwal pemasangan WiFi di empat TPR tersebut.",
+      "action": "Pantau pengumuman resmi Dispar Sleman soal nama empat TPR dan jadwal pemasangan WiFi.",
       "image": null,
       "sources": [
         {
@@ -317,7 +329,7 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278327/dukung-pembayaran-nontunai-dispar-sleman-siapkan-wifi-gratis-di-4-tpr-wisata",
           "published_at": "2026-11-10T23:47:02+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
+          "accessed_at": "2026-11-11T09:55:40+07:00"
         }
       ],
       "place": "lokal",
@@ -325,42 +337,6 @@
       "first_seen": "2026-11-11",
       "previous_edition": null,
       "changes": []
-    },
-    {
-      "id": "c5",
-      "type": "misread",
-      "topic_id": "t_misread_polda_diy_amankan_106_orang_us_da39",
-      "angle": "“wacana” tidak ada di judul",
-      "kicker": "Salah dipahami",
-      "title": "Yang hilang dari judul: “wacana”",
-      "status": "sebagian",
-      "truth": null,
-      "body": [
-        "Judul yang beredar: “Polda DIY Amankan 106 Orang Usai Kericuhan di Malioboro”. Judul itu tidak memuat kata “wacana” yang muncul di isi artikel.",
-        "Isi artikelnya menyebut: “Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.”. Artinya, baru dibicarakan, belum diputuskan.",
-        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
-      ],
-      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
-      "image": null,
-      "sources": [
-        {
-          "outlet": "harianjogja.com",
-          "url": "https://jogjapolitan.harianjogja.com/r-1278428/polda-diy-amankan-106-orang-usai-kericuhan-di-malioboro",
-          "published_at": "2026-11-11T07:37:26+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-11T09:44:42+07:00"
-        }
-      ],
-      "revision": 1,
-      "first_seen": "2026-11-11",
-      "previous_edition": null,
-      "changes": [],
-      "claim": "Polda DIY Amankan 106 Orang Usai Kericuhan di Malioboro",
-      "reality": "Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.",
-      "missing": [
-        "baru dibicarakan, belum diputuskan"
-      ],
-      "trigger": "headline_body_gap"
     }
   ]
 }
