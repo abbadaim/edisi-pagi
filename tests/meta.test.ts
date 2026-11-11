@@ -240,3 +240,23 @@ test("dedupe tidak membuang kartu meta yang membahas kartu berita yang sama", as
   assert.equal(out.length, 2);
   assert.ok(out.some((c) => c.type === "change"));
 });
+
+test("kalimat dari berita lain di halaman tidak dipakai sebagai temuan", () => {
+  const title = "RANS Ungkap Rincian Kontrak Influencer Rp14,69 Miliar";
+  const text = [
+    "Wacana SIM seumur hidup belum menjadi kebijakan, ini penjelasannya.",
+    "Kontrak influencer itu masih berstatus wacana di kementerian.",
+    "Pihak kementerian belum memberikan tanggapan resmi atas rincian kontrak tersebut.",
+    "RANS menyebut nilai kontrak sesuai dengan dokumen yang beredar di publik.",
+    "Sejumlah pengamat meminta proses pengadaan dibuka kepada publik.",
+    "Dokumen yang beredar memuat lampiran anggaran dan jadwal pelaksanaan kegiatan.",
+    "Pemerintah daerah mencatat belanja komunikasi publik dalam pos anggaran tersendiri.",
+    "Audit internal akan menelusuri alur persetujuan sebelum kontrak ditandatangani.",
+    "Hasil audit dijadwalkan diumumkan pada akhir bulan depan.",
+  ].join(" ");
+
+  const gap = findQualifierGap(title, text);
+  assert.ok(gap);
+  assert.match(gap!.sentence, /Kontrak influencer/);
+  assert.deepEqual(gap!.missing, ["wacana"]);
+});

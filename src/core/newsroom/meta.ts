@@ -12,6 +12,7 @@
 import type { Db } from "../../adapters/db/sqlite.ts";
 import type { Card, Change, ChangeBasis, Source, Status } from "../types.ts";
 import { truncateWords } from "../normalize.ts";
+import { tokenize } from "../simhash.ts";
 import { createDbFetchCache } from "./cache.ts";
 
 export interface DatedCard {
@@ -217,18 +218,26 @@ export function findQualifierGap(
     .map(cleanSentence)
     .filter((s) => s.length >= 40 && s.length <= 260);
 
+  // Halaman artikel sering memuat tautan/berita lain ("Wacana SIM seumur
+  // hidup..."). Kalimat hanya dipakai bila berbagi kata dengan judul.
+  const titleTokens = new Set(tokenize(title).filter((w) => w.length >= 4));
+  const sharesSubject = (sentence: string) =>
+    tokenize(sentence).some((w) => w.length >= 4 && titleTokens.has(w));
+
   for (const q of QUALIFIERS) {
-    const sentence = sentences.find((s) => q.re.test(s));
-    if (!sentence) continue;
-    // Hanya kualifikasi di kalimat yang dikutip.
-    const found = [...new Set(
-      QUALIFIERS.filter((x) => x.re.test(sentence)).map((x) => x.word),
-    )].slice(0, 3);
-    return {
-      missing: found,
-      sentence: sentence.slice(0, 240),
-      meaning: q.meaning,
-    };
+    for (const sentence of sentences) {
+      if (!q.re.test(sentence)) continue;
+      if (!sharesSubject(sentence)) continue;
+      // Hanya kualifikasi di kalimat yang dikutip.
+      const found = [...new Set(
+        QUALIFIERS.filter((x) => x.re.test(sentence)).map((x) => x.word),
+      )].slice(0, 3);
+      return {
+        missing: found,
+        sentence: sentence.slice(0, 240),
+        meaning: q.meaning,
+      };
+    }
   }
   return null;
 }
