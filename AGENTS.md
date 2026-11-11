@@ -151,7 +151,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 
 - `unresolved`: 0–3 pertanyaan yang belum dijawab bahan.
 - `disclaimer`: peringatan kuat untuk konflik sumber; tampil di atas body.
-- `manifest.latest_by_scope`: null menyembunyikan tab lokal/mingguan yang sudah basi.
+- `manifest.latest_by_scope`: harian hanya tanggal terbaru; mingguan terbaru selama ≤7 hari (`DEC-0019`). Null menyembunyikan tab yang basi.
 
 ### 4.6 Dedupe
 
@@ -230,6 +230,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - **Jangan menjalankan ulang tanggal edisi yang sudah terbit**; edisi immutable. Untuk uji, pakai `--newsroom-limit` + `--thin` pada tanggal yang belum ada, atau POC.
 - `data/work/`, `local.db`, `.env.local` diabaikan. Jangan commit.
 - Migrasi 004–006 harus jalan sebelum build di CI; workflow sudah melakukannya.
+- Deploy data-only: workflow `deploy-site` menjalankan `npm run publish` +
+  Pages tanpa build. Pakai ini agar tanggal terbit tidak dibangun ulang.
 
 ### Sumber primer
 
@@ -244,7 +246,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 
 ### Publisher
 
-- `manifest.latest_by_scope` dihitung dari `latest`; lokal kemarin tidak ditampilkan.
+- `manifest.latest_by_scope`: harian = tanggal harian terbaru; mingguan = rekap terbaru ≤7 hari (`DEC-0019`). Lokal kemarin tidak ditampilkan.
 - `publish.ts` menyalin semua edisi; app memfilter tab.
 - Harga LLM belum dikonfigurasi; `cost_usd` sering 0. Token/latensi tetap tercatat.
 

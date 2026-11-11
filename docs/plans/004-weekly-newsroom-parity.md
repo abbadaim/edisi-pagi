@@ -136,3 +136,9 @@ masih utuh.
   `--date 2026-11-12 --days 7 --limit 3 --thin`: **3 thread, 3 newsroom /
   0 legacy**, valid, body 9.514–9.678 karakter, 2–4 sumber. Artefak uji
   dihapus; edisi terbit tidak disentuh. Produksi pertama: Minggu 2026-11-15.
+
+- `2026-11-11` — **publikasi edisi uji atas permintaan pemilik** — artefak
+  `2026-11-12.mingguan.json` tidak dihapus, melainkan diterbitkan. Karena
+  tanggalnya lebih baru dari edisi harian, `latest_by_scope` diperbaiki agar
+  tab harian tidak hilang (`DEC-0019`, `tests/manifest.test.ts`). Ini bukan
+  edisi Minggu produksi; produksi pertama tetap `2026-11-15`.

@@ -94,6 +94,10 @@ npm run push
 
 `.github/workflows/daily.yml` berjalan 22:45 UTC (05:45 WIB), membangun edisi harian, edisi mingguan pada hari Minggu, lalu commit `data/` dan `public/` kembali ke repo.
 
+Untuk menerbitkan ulang situs **tanpa membangun edisi** (mis. hanya `data/`
+atau `public/` berubah), jalankan workflow `deploy-site`. Ini tidak menyentuh
+tanggal yang sudah terbit.
+
 Secret yang dibutuhkan: `OPENCODE_AUTH_JSON`, `VAPID_PRIVATE_KEY`,
 `PUSH_SUBSCRIPTION`. CI memasang OpenCode CLI v2 dan mengimpor kredensial
 (`opencode auth export`). `DEEPSEEK_API_KEY` hanya dipakai bila sengaja

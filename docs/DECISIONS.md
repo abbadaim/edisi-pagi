@@ -150,3 +150,19 @@ Sebab: id model yang salah gagal di setiap kartu dan hanya terlihat sebagai
 `! tulis gagal` berulang. `INFRA.md` §11.5 sudah mengklaim verifikasi ini ada
 sebelum kodenya ditulis.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/003-model-catalog-check.md`._
+
+## DEC-0019 — Tab harian dan mingguan dihitung per irama terbit
+
+`manifest.latest` adalah tanggal edisi **harian** terbaru. `latest_by_scope`:
+
+- `nasional`/`lokal`: hanya edisi bertanggal `latest`; edisi lokal kemarin
+  tidak tampil sebagai edisi hari ini.
+- `mingguan`: edisi mingguan terbaru selama masih dalam 7 hari dari `latest`;
+  lebih tua → `null`.
+
+Sebab: satu `latest` global membuat mingguan bertanggal lebih baru
+menghilangkan tab harian, dan aturan “hanya tanggal terbaru” membuat tab
+mingguan hilang sepanjang pekan. Dikunci di `src/core/manifest.ts` dan
+`tests/manifest.test.ts`.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/004-weekly-newsroom-parity.md`
+(tindak lanjut publikasi edisi uji)._

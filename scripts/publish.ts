@@ -8,6 +8,7 @@ import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { isoWib } from "../src/core/time.ts";
 import { validateEdition, allowsThin } from "../src/core/validate.ts";
+import { selectLatest } from "../src/core/manifest.ts";
 
 const root = new URL("..", import.meta.url).pathname;
 const dataDir = join(root, "data");
@@ -74,22 +75,9 @@ if (existsSync(iconsSrc)) {
 const iconSvg = join(root, "mockup", "icon.svg");
 if (existsSync(iconSvg)) copyFileSync(iconSvg, join(outIcons, "icon.svg"));
 
-const latest = entries
-  .map((e) => e.edition_id)
-  .sort()
-  .at(-1);
+// Tab harian dan mingguan punya irama terbit berbeda (DEC-0019).
+const { latest, latestByScope } = selectLatest(entries);
 const oldest = entries.map((e) => e.edition_id).sort()[0];
-
-// Hanya edisi yang tanggalnya sama dengan `latest` yang dianggap "hari ini".
-// Edisi lokal kemarin tidak boleh tampil sebagai edisi lokal hari ini.
-const latestByScope: Record<string, string | null> = {
-  nasional: null,
-  lokal: null,
-  mingguan: null,
-};
-for (const e of entries) {
-  if (e.edition_id === latest) latestByScope[e.scope] = latest;
-}
 
 const manifest = {
   schema_version: 1,
