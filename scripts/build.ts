@@ -715,7 +715,7 @@ try {
     console.log(
       `  meta lokal: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
         ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
-        ` · teks ${meta.stats.text_have}/${meta.stats.text_tried}`,
+        ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · celah ${meta.stats.gaps}`,
     );
   }
   const reservedLocal = new Set(localCards.map((c) => c.topic_id));
@@ -781,7 +781,7 @@ try {
   console.log(
     `  meta: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
       ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
-      ` · teks ${meta.stats.text_have}/${meta.stats.text_tried}`,
+      ` · teks ${meta.stats.text_have}/${meta.stats.text_tried} · celah ${meta.stats.gaps}`,
   );
   const uniqueCards = dedupeCards(cards, 0.6);
 

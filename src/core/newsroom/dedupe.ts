@@ -12,10 +12,15 @@ function score(card: Card): number {
   return card.sources.length * 10_000 + card.body.join(" ").length + (card.image ? 500 : 0);
 }
 
+const META_TYPES = new Set(["change", "misread", "gap", "debate"]);
+
 export function dedupeCards(cards: Card[], threshold = 0.6): Card[] {
   const out: Card[] = [];
   for (const card of cards) {
     const idx = out.findIndex((x) => {
+      // Kartu meta sengaja membahas kartu berita yang sama; judulnya mirip
+      // karena itu, bukan karena duplikat.
+      if (META_TYPES.has(card.type) || META_TYPES.has(x.type)) return false;
       if (x.type === "hoax_roundup" || card.type === "hoax_roundup") {
         return x.type === card.type && similarity(features(x.title), features(card.title)) >= threshold;
       }

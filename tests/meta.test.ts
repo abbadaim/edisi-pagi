@@ -69,15 +69,13 @@ test("status yang berubah terdeteksi", () => {
   assert.equal(diff!.to, "sebagian");
 });
 
-test("angka yang berubah terdeteksi saat status sama", () => {
-  const prev = card({ truth: truth("sebagian", "9 tersangka ditetapkan") });
-  const curr = card({ truth: truth("sebagian", "11 tersangka ditetapkan") });
+test("angka saja tidak dianggap perubahan", () => {
+  // "2026" (tahun) vs "28" (jumlah) pernah menghasilkan kartu perubahan palsu.
+  const prev = card({ truth: truth("sebagian", "KRL beroperasi Desember 2026") });
+  const curr = card({ truth: truth("sebagian", "28 rangkaian KRL beroperasi") });
 
   const diff = diffCards(prev, curr, "2026-11-10T05:00:00+07:00", "2026-11-11T05:00:00+07:00");
-  assert.ok(diff);
-  assert.equal(diff!.field, "number");
-  assert.equal(diff!.from, "9");
-  assert.equal(diff!.to, "11");
+  assert.equal(diff, null);
 });
 
 test("tidak ada perubahan bila status dan angka sama", () => {
@@ -223,4 +221,22 @@ test("buildMetaCards menghasilkan kartu change yang lolos validasi", async () =>
   // Satu kartu sengaja tipis; yang diuji adalah struktur kartu meta.
   const structural = check.errors.filter((e) => e.code !== "E001");
   assert.deepEqual(structural, [], JSON.stringify(structural));
+});
+
+
+test("dedupe tidak membuang kartu meta yang membahas kartu berita yang sama", async () => {
+  const { dedupeCards } = await import("../src/core/newsroom/dedupe.ts");
+  const curr = card({ title: "KAI Batalkan Impor KRL Bekas, Andalkan Kereta INKA", sources: [
+    { outlet: "a", url: "https://a.test/1", published_at: null, tier: 2, accessed_at: "2026-11-11T05:00:00+07:00" },
+    { outlet: "b", url: "https://b.test/1", published_at: null, tier: 2, accessed_at: "2026-11-11T05:00:00+07:00" },
+  ] });
+  const change = {
+    ...card({ title: "Status berubah: KAI Batalkan Impor KRL Bekas, Andalkan Kereta" }),
+    type: "change" as const,
+    truth: null,
+  };
+
+  const out = dedupeCards([curr, change as Card], 0.6);
+  assert.equal(out.length, 2);
+  assert.ok(out.some((c) => c.type === "change"));
 });

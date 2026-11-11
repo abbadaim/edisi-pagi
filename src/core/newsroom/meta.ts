@@ -75,14 +75,12 @@ function quoteOf(card: Card): string {
   return (card.truth?.claim ?? card.title).trim().slice(0, 160);
 }
 
-function numbersIn(text: string): string[] {
-  return (text.match(/\d+(?:[.,]\d+)?/g) ?? []).slice(0, 4);
-}
-
 /**
- * Bandingkan satu topik dengan versi sebelumnya. Hanya status dan angka yang
- * dipakai: dua sinyal ini objektif. Perubahan judul saja terlalu berisik
- * karena writer menulis ulang judul setiap hari.
+ * Bandingkan satu topik dengan versi sebelumnya.
+ *
+ * Hanya status yang dipakai. Perbandingan angka tanpa satuan/kontks pernah
+ * menghasilkan "2026 → 28" (tahun vs jumlah rangkaian), jadi angka belum
+ * dipakai sampai ada ekstraksi yang memahami satuan.
  */
 export function diffCards(
   prev: Card,
@@ -98,18 +96,6 @@ export function diffCards(
       field: "status",
       from: prev.truth.status,
       to: curr.truth.status,
-      at: currAt,
-      basis: bestSource(curr),
-    };
-  }
-
-  const before = numbersIn(prev.truth.claim);
-  const after = numbersIn(curr.truth.claim);
-  if (before.length > 0 && after.length > 0 && before.join(",") !== after.join(",")) {
-    return {
-      field: "number",
-      from: before.join(", "),
-      to: after.join(", "),
       at: currAt,
       basis: bestSource(curr),
     };
