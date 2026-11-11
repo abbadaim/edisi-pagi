@@ -1,7 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T08:19:14+07:00",
+  "generated_at": "2026-11-11T08:58:38+07:00",
   "latest": "2026-11-11",
+  "latest_by_scope": {
+    "nasional": "2026-11-11",
+    "lokal": null,
+    "mingguan": null
+  },
   "retention": {
     "years": 2,
     "oldest": "2026-11-09"

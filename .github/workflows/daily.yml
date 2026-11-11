@@ -72,17 +72,30 @@ jobs:
         if: ${{ env.PUSH_SUBSCRIPTIONS != '' }}
         run: npm run push
 
+      # Commit adalah cadangan, bukan syarat deploy. Kalau ada push manusia
+      # saat run berjalan, jangan sampai artefak situs ikut batal.
       - name: Simpan hasil
+        continue-on-error: true
         run: |
           git config user.name "edisi-pagi-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A data public
           if git diff --cached --quiet; then
             echo "tidak ada perubahan"
-          else
-            git commit -m "edisi $(TZ=Asia/Jakarta date +%F)"
-            git push
+            exit 0
           fi
+          git commit -m "edisi $(TZ=Asia/Jakarta date +%F)"
+          for i in 1 2 3; do
+            if git pull --rebase --autostash && git push; then
+              echo "hasil tersimpan"
+              exit 0
+            fi
+            echo "push gagal, coba lagi ($i/3)"
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "gagal menyimpan hasil; artefak situs tetap dideploy"
+          exit 0
 
       - name: Unggah artefak situs
         uses: actions/upload-pages-artifact@v3

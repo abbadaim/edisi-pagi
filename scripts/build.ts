@@ -31,6 +31,7 @@ import { ageNotes, emptyLedger, markAnswered, mergeLedger, openNotes, plannerNot
 import { reviewEdition, type DeskCard } from "../src/core/newsroom/desk.ts";
 import type { Assignment } from "../src/core/newsroom/contracts.ts";
 import { dedupeCards } from "../src/core/newsroom/dedupe.ts";
+import { applyChanges, buildMetaCards, type DatedCard } from "../src/core/newsroom/meta.ts";
 import { budgetFollowUps } from "../src/core/newsroom/selection.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
 import { createDbFetchCache } from "../src/core/newsroom/cache.ts";
@@ -666,6 +667,22 @@ try {
     return null;
   }
 
+  /** Kartu dari edisi sebelumnya untuk deteksi perubahan status/angka. */
+  function previousCards(scope: Scope): DatedCard[] {
+    const out: DatedCard[] = [];
+    try {
+      for (const file of readdirSync(outDir)) {
+        if (!file.endsWith(`.${scope}.json`)) continue;
+        const ed = JSON.parse(readFileSync(join(outDir, file), "utf8"));
+        if (ed.edition_id >= editionId) continue;
+        for (const card of ed.cards ?? []) out.push({ card, at: ed.published_at });
+      }
+    } catch {
+      /* folder kosong */
+    }
+    return out;
+  }
+
   /** Hindari thread yang sama jadi deep dive dua kali dalam 14 hari. */
   function previousDeepDives(): Set<string> {
     const ids = new Set<string>();
@@ -683,7 +700,22 @@ try {
   // Edisi Sleman direncanakan lebih dulu: kalau cukup, topiknya tidak
   // diulang di edisi nasional hari yang sama.
   const localPlan = planCards("lokal");
-  const localCards = localPlan.length >= 2 ? await renderCards(localPlan, "lokal", 4) : [];
+  let localCards = localPlan.length >= 2 ? await renderCards(localPlan, "lokal", 4) : [];
+  if (localCards.length >= 2) {
+    const meta = await buildMetaCards({
+      db,
+      editionId,
+      publishedAt,
+      cards: localCards,
+      previous: previousCards("lokal"),
+    });
+    const enriched = applyChanges(localCards, meta.changes);
+    const maxNews = meta.cards.length >= 2 ? 3 : 4;
+    localCards = [...enriched.slice(0, maxNews), ...meta.cards].slice(0, 5);
+    if (meta.cards.length) {
+      console.log(`  lokal: ${meta.cards.map((c) => c.type).join(", ")}`);
+    }
+  }
   const reservedLocal = new Set(localCards.map((c) => c.topic_id));
 
   let newsRaw = await renderCards(planCards("nasional", reservedLocal), "nasional", 6);
@@ -727,7 +759,26 @@ try {
   const withDeep = deep
     ? [...news.slice(0, 2), deep, ...news.slice(2)]
     : news;
-  const cards = [...withDeep, ...(hoax ? [hoax] : []), ...(good ? [good] : [])].slice(0, 8);
+
+  const meta = await buildMetaCards({
+    db,
+    editionId,
+    publishedAt,
+    cards: withDeep,
+    previous: previousCards("nasional"),
+  });
+  const enriched = applyChanges(withDeep, meta.changes);
+  // Dua kartu meta memakan satu slot berita; hoax tetap dipertahankan.
+  const maxNews = meta.cards.length >= 2 ? 5 : 6;
+  const cards = [
+    ...enriched.slice(0, maxNews),
+    ...meta.cards,
+    ...(hoax ? [hoax] : []),
+    ...(good ? [good] : []),
+  ].slice(0, 8);
+  if (meta.cards.length) {
+    console.log(`  meta: ${meta.cards.map((c) => c.type).join(", ")}`);
+  }
   const uniqueCards = dedupeCards(cards, 0.6);
 
   if (newsroom) {
@@ -737,7 +788,7 @@ try {
   // Desk review bersifat shadow: vonisnya dicatat, tidak menahan terbit.
   if (newsroom && llm && process.env.NEWSROOM_DESK !== "off") {
     const deskCards: DeskCard[] = cards
-      .filter((c) => c.type !== "hoax_roundup")
+      .filter((c) => !["hoax_roundup", "change", "misread", "gap", "debate"].includes(c.type))
       .map((c, i) => ({
         card_id: `k${i + 1}`,
         title: c.title,

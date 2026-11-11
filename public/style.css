@@ -124,6 +124,20 @@ details.ctx summary::-webkit-details-marker{display:none}
              letter-spacing:.06em; text-transform:uppercase; font-weight:700;
              padding:5px 10px; border-radius:999px}
 
+/* Kartu meta: perubahan dan kesalahpahaman */
+.card.meta{border-left:3px solid var(--accent)}
+.card.meta .kick{color:var(--accent)}
+.delta{margin:14px 0 4px; border:1px solid var(--rule); border-radius:12px; overflow:hidden}
+.deltaRow{padding:11px 13px}
+.deltaRow + .deltaRow{border-top:1px solid var(--rule); background:#FCFAF6}
+.deltaLbl{font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700}
+.deltaVal{font-size:13.5px; font-weight:700; color:var(--ink); margin-top:3px}
+.deltaQuote{margin:6px 0 0; padding-left:9px; border-left:2px solid var(--rule); font-size:12.5px; line-height:1.5; color:var(--muted)}
+.deltaSrc{font-size:10px; color:var(--faint); margin-top:5px}
+.missing{margin:13px 0 2px; display:flex; align-items:center; flex-wrap:wrap; gap:6px}
+.missing .lbl{width:100%; font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700}
+.chip{font-size:11px; border:1px solid var(--rule); border-radius:999px; padding:3px 9px; color:var(--muted); background:#fff}
+
 /* Arsip: pilih tanggal edisi */
 .dates{display:flex; gap:7px; overflow-x:auto; margin-top:11px; padding-bottom:2px; scrollbar-width:none}
 .dates::-webkit-scrollbar{display:none}

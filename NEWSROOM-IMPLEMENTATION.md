@@ -201,6 +201,29 @@ Aturannya:
 - [x] Bandingkan dengan edisi lama (uji terbatas 2 kartu)
 - [ ] Putuskan P2/P3
 
+### P5 — kartu meta (selesai)
+
+Menyesuaikan kartu meta lama dengan alur newsroom: ditulis deterministik dari
+bahan yang sudah tersimpan, tanpa panggilan model tambahan.
+
+| Kartu | Sinyal | Batas |
+|---|---|---|
+| `change` | status atau angka klaim berbeda dari edisi sebelumnya dengan `topic_id` yang sama | 1/edisi |
+| `misread` | kualifikasi prosedural (`usulan`, `wacana`, `draf`, `tahap penyelidikan`, `tidak mengikat`, …) ada di isi artikel tetapi tidak di judulnya | 1/edisi |
+| `gap` | butuh amplifikasi media sosial (Reddit/komentar/Trends/TikTok) | belum |
+| `debate` | butuh volume komentar | belum |
+
+- `src/core/newsroom/meta.ts`; `diffCards()` hanya memakai status dan angka
+  karena judul ditulis ulang setiap hari.
+- Perubahan ditempel juga ke `changes[]` kartu berita, sehingga penghitung
+  pembaruan di payload push bekerja.
+- Dua kartu meta memakan satu slot berita; `hoax_roundup` tetap dipertahankan
+  (maksimum 8 kartu).
+- Deteksi `misread` memakai teks penuh dari cache fetch (`article_text`),
+  minimal 500 karakter — bukan lead RSS.
+- Kartu meta tidak dinilai desk dengan standar berita (tidak punya depth atau
+  sitasi per paragraf).
+
 ### P4a — sumber primer (selesai)
 
 - `config/primary-sources.yaml`: peta entitas → domain resmi + halaman listing.

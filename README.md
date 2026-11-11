@@ -102,6 +102,8 @@ Secret yang dibutuhkan: `DEEPSEEK_API_KEY`, `VAPID_PRIVATE_KEY`, `PUSH_SUBSCRIPT
   pernah dibuka (`edisi-shell-v4`, `edisi-data-v4`).
 - **Notifikasi**: aktivasi di **Atur → Notifikasi**; langganan disalin sebagai
   JSON ke secret `PUSH_SUBSCRIPTION`.
+- **Kartu meta**: "Yang berubah" (status/angka dibanding edisi sebelumnya) dan
+  "Salah dipahami" (kualifikasi yang hilang dari judul artikel sumber).
 
 ## Perintah lain
 

@@ -369,6 +369,7 @@ function renderFeed() {
       btn.append(ctext);
     } else {
       btn.classList.add("plain");
+      if (["change", "misread", "gap", "debate"].includes(card.type)) btn.classList.add("meta");
       btn.append(el("div", "kick", card.kicker));
       btn.append(el("h2", null, card.title));
       if (card.body?.[0]) btn.append(el("p", "reason", teaser(card.body[0])));
@@ -504,14 +505,27 @@ function openCard(index) {
     body.append(d);
   }
 
-  for (const p of card.body ?? []) body.append(el("p", "body", p));
-
   if (card.type === "change" && card.before && card.after) {
-    const rows = el("div", "qa");
-    rows.append(el("div", "q", `${card.before.at.slice(11, 16)} → ${card.after.at.slice(11, 16)}`));
-    rows.append(el("div", "a", `"${card.before.quote}" → "${card.after.quote}"`));
-    body.append(rows);
+    const box = el("div", "delta");
+    for (const [label, item] of [["Sebelum", card.before], ["Sesudah", card.after]]) {
+      const row = el("div", "deltaRow");
+      row.append(el("div", "deltaLbl", `${label} · ${shortDate(item.at)}`));
+      row.append(el("div", "deltaVal", item.label));
+      row.append(el("blockquote", "deltaQuote", `“${item.quote}”`));
+      row.append(el("div", "deltaSrc", item.source.outlet));
+      box.append(row);
+    }
+    body.append(box);
   }
+
+  if (card.type === "misread" && card.missing?.length) {
+    const box = el("div", "missing");
+    box.append(el("div", "lbl", "Kata yang hilang dari judul"));
+    for (const m of card.missing) box.append(el("span", "chip", m));
+    body.append(box);
+  }
+
+  for (const p of card.body ?? []) body.append(el("p", "body", p));
 
   if (card.action) {
     const a = el("div", "action");
