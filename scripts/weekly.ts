@@ -14,6 +14,11 @@ import { clusterText, explainForTopic, loadGlossary, sourcesFromCluster } from "
 import { buildDeepDive, buildDeepDiveWithLlm } from "../src/core/deepdive.ts";
 import { backgroundCandidates } from "../src/core/writer-llm.ts";
 import { resolveLlm } from "../src/adapters/llm/resolve.ts";
+import { writeNewsroomCard } from "../src/core/newsroom/card.ts";
+import { weeklyAssignment, weeklyise } from "../src/core/weekly-newsroom.ts";
+import { LlmTelemetry } from "../src/core/telemetry.ts";
+import { createDbFetchCache } from "../src/core/newsroom/cache.ts";
+import { loadPrimarySources } from "../src/core/newsroom/primary.ts";
 import { loadEnvFile } from "../src/config/env.ts";
 import { computeTruth } from "../src/core/truth.ts";
 import { validateEdition, formatErrors, allowsThin } from "../src/core/validate.ts";
@@ -59,6 +64,15 @@ try {
   const writer = llm ? provider : "deterministic";
   if (!llm) console.log("tidak ada LLM — mingguan memakai writer deterministik");
 
+  // Paritas newsroom (004). Rollback: WEEKLY_WRITER=legacy atau --legacy.
+  const legacyWeekly =
+    process.env.WEEKLY_WRITER === "legacy" || process.argv.includes("--legacy");
+  const limitArg = Number(arg("limit") ?? 5);
+  const limit = Number.isFinite(limitArg) ? Math.max(1, Math.min(5, Math.trunc(limitArg))) : 5;
+  const telemetry = new LlmTelemetry(db, editionId);
+  const fetchCache = createDbFetchCache(db);
+  const primaryConfigs = loadPrimarySources(join(root, "config", "primary-sources.yaml"));
+
   // Urutkan thread menurut ukuran + keragaman media.
   const ranked = topics
     .map((t, i) => ({ topic: t, cluster: clusters[i]! }))
@@ -68,54 +82,90 @@ try {
         b.cluster.articles.length * Math.min(b.cluster.outlets.length, 5) -
         a.cluster.articles.length * Math.min(a.cluster.outlets.length, 5),
     )
-    .slice(0, 5);
+    .slice(0, limit);
 
   const counter = { n: 0 };
   const registry = loadRegistry(db, new Date(now.getTime() - 30 * 86_400_000).toISOString());
 
   const cards: Card[] = [];
+  let newsroomCards = 0;
+  let legacyCards = 0;
+
   for (const { topic, cluster } of ranked) {
     const res = await resolveTopic(db, topic, registry, { counter, now, editionId });
-
-    const explain = explainForTopic(topic, glossary, clusterText(cluster));
-    if (!explain) continue;
-
-    const sources = sourcesFromCluster(cluster, now, 5);
-    if (sources.length < 2) continue;
-
-    const dates = cluster.articles
-      .map((a) => (a.publishedAt ? new Date(a.publishedAt).getTime() : 0))
-      .filter((n) => n > 0);
-    const spanDays =
-      dates.length > 1 ? Math.max(1, Math.round((Math.max(...dates) - Math.min(...dates)) / 86_400_000)) : 1;
-
-    const body = [
-      cluster.articles[0]?.lead || cluster.articles[0]?.title || "",
-      cluster.articles[cluster.articles.length - 1]?.lead || "",
-    ]
-      .filter(Boolean)
-      .map((x) => x.slice(0, 460));
-
-    const diveCtx = { now, cluster, topic, topicId: res.topic_id, glossary, local: false, minSources: 2 };
-
-    // Rekap pekan ditulis seperti bacaan mendalam, bukan dua paragraf lead.
     let card: Card | null = null;
-    if (llm) {
-      card = await buildDeepDiveWithLlm(diveCtx, {
-        llm,
-        model,
-        candidates: await backgroundCandidates(topic, glossary, 4, clusterText(cluster), cluster.articles),
-      });
-    }
-    if (!card) card = buildDeepDive(diveCtx);
 
-    cards.push(
-      card ??
+    if (!legacyWeekly && llm) {
+      const written = await writeNewsroomCard(
+        {
+          editionId,
+          now,
+          topic,
+          topicId: res.topic_id,
+          cluster,
+          assignment: weeklyAssignment(topic),
+          local: false,
+          revision: 1,
+          firstSeen: editionId,
+          previousEdition: null,
+          prior: [],
+          openNotes: [],
+          noteIds: [],
+          asDeep: true,
+          minDeepSources: 2,
+          fromIso: from.toISOString(),
+          toIso: now.toISOString(),
+        },
+        { llm, model, glossary, db, telemetry, cache: fetchCache, primaryConfigs },
+      );
+
+      if (written.card) {
+        card = weeklyise(written.card, cluster);
+        if (card) newsroomCards++;
+        else console.log(`  mingguan: "${topic.title.slice(0, 40)}" jadi ${written.card.type}, fallback`);
+      }
+    }
+
+    if (!card) {
+      const explain = explainForTopic(topic, glossary, clusterText(cluster));
+      if (!explain) continue;
+
+      const sources = sourcesFromCluster(cluster, now, 5);
+      if (sources.length < 2) continue;
+
+      const dates = cluster.articles
+        .map((a) => (a.publishedAt ? new Date(a.publishedAt).getTime() : 0))
+        .filter((n) => n > 0);
+      const span =
+        dates.length > 1
+          ? Math.max(1, Math.round((Math.max(...dates) - Math.min(...dates)) / 86_400_000))
+          : 1;
+
+      const body = [
+        cluster.articles[0]?.lead || cluster.articles[0]?.title || "",
+        cluster.articles[cluster.articles.length - 1]?.lead || "",
+      ]
+        .filter(Boolean)
+        .map((x) => x.slice(0, 460));
+
+      const diveCtx = { now, cluster, topic, topicId: res.topic_id, glossary, local: false, minSources: 2 };
+
+      if (llm) {
+        card = await buildDeepDiveWithLlm(diveCtx, {
+          llm,
+          model,
+          candidates: await backgroundCandidates(topic, glossary, 4, clusterText(cluster), cluster.articles),
+        });
+      }
+      if (!card) card = buildDeepDive(diveCtx);
+
+      card =
+        card ??
         ({
           id: "c1",
           type: "deep_dive",
           topic_id: res.topic_id,
-          angle: `Rekap ${spanDays} hari`,
+          angle: `Rekap ${span} hari`,
           kicker: "Rekap pekan",
           title: truncateWords(topic.title, 68),
           status: "sebagian",
@@ -135,10 +185,16 @@ try {
           stats: [
             { value: String(cluster.articles.length), label: "artikel" },
             { value: String(cluster.outlets.length), label: "media" },
-            { value: `${spanDays} hari`, label: "berjalan" },
+            { value: `${span} hari`, label: "berjalan" },
           ],
-        } as Card),
-    );
+        } as Card);
+
+      const legacy = weeklyise(card, cluster);
+      if (legacy) card = legacy;
+      legacyCards++;
+    }
+
+    cards.push(card);
   }
 
   if (cards.length < 3) {
@@ -160,7 +216,10 @@ try {
         : null,
     generatedBy: {
       adjudicate: { provider: "fallback", model: "none" },
-      write: { provider: writer, model: llm ? model : "glossary" },
+      write: {
+        provider: newsroomCards > 0 && legacyCards > 0 ? `${writer}+legacy` : writer,
+        model: llm ? model : "glossary",
+      },
       verify: { provider: "rules", model: "evidence-class" },
       embed: { provider: "none", model: "none" },
     },
@@ -168,7 +227,9 @@ try {
 
   const file = join(outDir, `${editionId}.mingguan.json`);
   const check = validateEdition(edition);
-  console.log(`mingguan · ${rows.length} artikel · ${cards.length} thread`);
+  console.log(
+    `mingguan · ${rows.length} artikel · ${cards.length} thread · ${newsroomCards} newsroom / ${legacyCards} legacy`,
+  );
   const thinMode = process.argv.includes("--thin") || process.env.ALLOW_THIN === "1";
   const publishable = check.ok || (thinMode && cards.length > 0 && allowsThin(check.errors));
   if (publishable) {

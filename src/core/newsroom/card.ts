@@ -46,6 +46,8 @@ export interface WriteNewsroomCardInput {
   /** Catatan yang ditautkan planner; bila ada, hanya ini yang boleh ditutup editor. */
   noteIds?: string[];
   asDeep: boolean;
+  /** Sumber minimum agar kartu boleh menjadi deep_dive. Harian 3, mingguan 2. */
+  minDeepSources?: number;
   fromIso: string;
   toIso: string;
   maxFetch?: number;
@@ -194,7 +196,7 @@ function toCard(
   };
 
   // Jangan buat deep_dive yang tidak memenuhi syarat sumber (validator E015).
-  if (!input.asDeep || sources.length < 3) return base as Card;
+  if (!input.asDeep || sources.length < (input.minDeepSources ?? 3)) return base as Card;
 
   const words = wordCount(draft.body);
   return {

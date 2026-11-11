@@ -13,12 +13,13 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Hal | Status |
 |---|---|
 | Jalur produksi | **Newsroom default** (`scripts/build.ts`) |
+| Jalur mingguan | **Newsroom** (`scripts/weekly.ts`, 004); rollback `WEEKLY_WRITER=legacy` |
 | Rollback | `--no-newsroom` atau `NEWSROOM_WRITE=0` |
 | CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 45 menit |
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change` (status) + `misread` (judul–isi), deterministik |
-| Tests | `npm test` — 206 uji; `npm run test:ui` — 4 uji browser |
+| Tests | `npm test` — 212 uji; `npm run test:ui` — 4 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -53,6 +54,7 @@ ingest → cluster → adjudicate → planner → rank/select
 | `src/core/newsroom/dedupe.ts` | Dedupe kartu akhir |
 | `src/core/newsroom/hoax.ts` | Penulis kartu hoaks |
 | `src/core/newsroom/meta.ts` | Kartu `change`/`misread` deterministik |
+| `src/core/weekly-newsroom.ts` | Assignment + bentuk kartu rekap mingguan |
 | `src/core/telemetry.ts` | `llm_calls` per panggilan |
 | `scripts/build.ts` | Orkestrasi harian |
 | `scripts/publish.ts` | `public/` + manifest |

@@ -442,3 +442,33 @@ test("ledger dapat disimpan dan dibaca kembali dari SQLite", () => {
   assert.equal(again.notes[0]!.resolved_by?.quote, "Rp2,3 miliar");
   db.close();
 });
+
+test("minDeepSources=2 mengizinkan deep_dive dengan dua sumber", async () => {
+  (globalThis as { __n?: number }).__n = 0;
+  const res = await writeNewsroomCard(
+    {
+      editionId: "2026-11-10",
+      now: new Date("2026-11-10T20:00:00+07:00"),
+      topic,
+      topicId: "t_kpk_pertanahan",
+      cluster: cluster as never,
+      assignment: { ...assignment, depth: "deep" },
+      local: false,
+      revision: 1,
+      firstSeen: "2026-11-10",
+      previousEdition: null,
+      prior: [],
+      openNotes: [],
+      asDeep: true,
+      minDeepSources: 2,
+      fromIso: "2026-11-09T20:00:00+07:00",
+      toIso: "2026-11-10T20:00:00+07:00",
+      fetchImpl: async () => ({ text: "", ok: false }),
+    },
+    { llm, model: "test", glossary },
+  );
+  assert.ok(res.card);
+  assert.equal(res.card!.type, "deep_dive", "mingguan mengizinkan 2 sumber");
+  assert.equal(res.card!.optional, true);
+  assert.ok((res.card as { read_min: number }).read_min >= 4);
+});
