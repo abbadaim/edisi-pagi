@@ -82,4 +82,26 @@ _Tanggal: 2026-11-11._
 
 Harness UI berjalan di workflow sendiri. Tes browser yang rapuh tidak boleh
 menggagalkan penerbitan edisi pagi.
-_Tanggal: 2026-11-11. Status rencana: `plan-draft` (`docs/plans/001-ui-test-harness.md`)._
+_Tanggal: 2026-11-11. Status rencana: `implementing` (`docs/plans/001-ui-test-harness.md`)._
+
+## DEC-0014 — Asersi UI dipisah: tanpa browser di `tests/`, browser di `tests-ui/`
+
+Asersi yang hanya butuh membaca file atau `fetch` ke server lokal tinggal di
+`tests/` dan ikut `npm test`, sehingga regresi tertangkap sebelum commit.
+Hanya asersi yang benar-benar butuh DOM, JavaScript, atau service worker yang
+masuk `tests-ui/` dan workflow terpisah.
+
+Sebab: menempatkan pemeriksaan path di `tests-ui/` berarti regresi baru
+tertangkap setelah push, padahal path absolut adalah bug termahal di proyek ini.
+_Tanggal: 2026-11-11. Menajamkan `DEC-0013`. Rencana: `docs/plans/001-ui-test-harness.md` §Revisi v2._
+
+## DEC-0015 — `serve.ts` melayani subpath produksi lewat `BASE_PATH`
+
+`npm run serve` mendukung `BASE_PATH` (default `/`). Dengan
+`BASE_PATH=/edisi-pagi`, server melayani `public/` di bawah prefix itu dan
+mengembalikan 404 di luar prefix, sehingga bug path absolut bisa direproduksi
+lokal. `PORT=0` didukung agar tes memakai port acak.
+
+Sebab: produksi dilayani dari `/edisi-pagi/` sedangkan server lokal melayani di
+akar — perbedaan itulah yang membuat bug path lolos ke produksi.
+_Tanggal: 2026-11-11._

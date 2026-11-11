@@ -104,7 +104,8 @@ ingest → cluster → adjudicate → planner → rank/select
 5. Publish and inspect locally:
    ```bash
    npm run publish
-   npm run serve   # :8080
+   npm run serve                            # akar domain
+   BASE_PATH=/edisi-pagi npm run serve      # meniru produksi; pakai ini untuk bug path
    ```
 6. Commit, `git pull --rebase --autostash`, push. Check `origin/main`
    afterwards; the bot and other agents may push concurrently.

@@ -12,9 +12,11 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 
 | # | Rencana | Kelas | Status | Diperbarui |
 |---|---|---|---|---|
-| 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `plan-draft` | 2026-11-11 |
+| 001 | [Harness tes UI](plans/001-ui-test-harness.md) | infra | `implementing` — commit 1 selesai, Playwright belum | 2026-11-11 |
 
-_Tidak ada rencana `implementing` saat ini._
+`001` commit 1 sudah masuk: `scripts/serve.ts` (`BASE_PATH`, `PORT=0`) dan
+`tests/ui-static.test.ts` (UI-01, UI-02, SRV-01, SRV-02, PUSH-01). `npm test`
+= 195 lulus. Commit 2 (Playwright + `ui.yml`) belum dikerjakan.
 
 ---
 

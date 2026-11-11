@@ -1,11 +1,11 @@
 # 001 — Harness tes UI
 
 ```
-Status: plan-draft
+Status: mockup-approved (2026-11-11)
 Kelas: infra
 Dibuat: 2026-11-11
 Diperbarui: 2026-11-11
-Mockup: — (kelas infra; artefak = kontrak §4)
+Mockup: — (kelas infra; artefak = kontrak §4, disetujui sebagai v2)
 ```
 
 ---
@@ -42,62 +42,87 @@ server uji bisa melayani subpath.
 
 ## 3. Rencana
 
-1. `scripts/serve.ts` — tambah dukungan `BASE_PATH` (default `/`). Saat
+Dipecah menjadi dua commit setelah revisi v2 (§Revisi). Commit 1 tidak menambah
+dependensi apa pun.
+
+**Commit 1 — lapisan tanpa browser (`tests/`, ikut `npm test`):**
+
+1. `scripts/serve.ts` — dukungan `BASE_PATH` (default `/`). Saat
    `BASE_PATH=/edisi-pagi`, server melayani `public/` di bawah prefix itu dan
-   mengembalikan 404 untuk path di luar prefix. Perilaku default tidak berubah.
-   Ini satu-satunya perubahan kode produksi dalam rencana ini.
-2. `fixtures/ui/` — direktori fixture: `manifest.json`, `data/editions/*.json`
-   (salin dari `fixtures/valid/`), `config.json`. Dibaca apa adanya; tidak ada
-   build, tidak ada LLM, tidak ada jaringan.
-3. `scripts/prepare-ui-fixture.ts` — menyusun `fixtures/ui/public/` dari
-   `public/` + fixture data. Menulis ulang setiap kali; direktori di-.gitignore.
-4. `tests-ui/shell.spec.ts` — asersi di §4.
-5. `package.json` — `devDependency: @playwright/test`, script
-   `test:ui` dan `test:ui:install`.
-6. `.github/workflows/ui.yml` — `push` ke `main` pada `public/**`, `tests-ui/**`,
-   `scripts/serve.ts`; ditambah `workflow_dispatch`. Tidak dipanggil dari
-   `daily.yml`.
-7. `AGENTS.md` §8 — daftar manual menjadi *tambahan* untuk hal yang tidak bisa
+   mengembalikan 404 di luar prefix. Satu-satunya perubahan kode produksi.
+   `PORT=0` didukung agar tes tidak berebut port.
+2. `tests/ui-static.test.ts` — UI-01, UI-02, SRV-01, SRV-02, PUSH-01 (§4).
+3. `AGENTS.md` §8 — daftar manual menjadi *tambahan* untuk hal yang tidak bisa
    diotomatiskan (mis. `beforeinstallprompt` di Chrome Android), bukan
    pengganti.
+
+**Commit 2 — lapisan browser (`tests-ui/`, workflow sendiri):**
+
+4. `fixtures/ui/` — `manifest.json`, `data/editions/*.json` (salin dari
+   `fixtures/valid/`), `config.json`. Dibaca apa adanya; tanpa build, tanpa LLM.
+5. `scripts/prepare-ui-fixture.ts` — menyusun `fixtures/ui/public/` dari
+   `public/` + fixture data; di-.gitignore.
+6. `tests-ui/shell.spec.ts` — UI-03, UI-04, UI-06, UI-07 (§4).
+7. `package.json` — `devDependency: @playwright/test`, script `test:ui`,
+   `test:ui:install`.
+8. `.github/workflows/ui.yml` — `push` ke `main` pada `public/**`,
+   `tests-ui/**`, `scripts/serve.ts`, ditambah `workflow_dispatch`. Tidak
+   dipanggil dari `daily.yml`.
+
+Commit 2 baru dimulai setelah commit 1 hijau dan setelah suite lokal hijau dua
+kali berturut-turut.
 
 Rencana ini **tidak** mengubah `SCHEMA.md`, `REQUIREMENTS.md`, atau keluaran
 edisi.
 
 ## 4. Kontrak
 
-```bash
-npm run test:ui
+```
+Lapisan murah (commit 1):  npm test
+Lapisan browser (commit 2): npm run test:ui
 ```
 
-Keluaran yang diharapkan: Playwright melaporkan `N passed`, exit 0, tanpa akses
-jaringan keluar. Server uji berjalan di `http://localhost:8099/edisi-pagi/`.
+Keduanya tanpa jaringan keluar. Server lapisan browser berjalan di
+`http://127.0.0.1:<port>/edisi-pagi/` dengan port acak (`PORT=0`).
 
-Asersi wajib:
+Asersi wajib. Kolom **Lapisan** menentukan di mana asersi tinggal (`DEC-0014`):
 
-| # | Asersi | Kenapa |
-|---|---|---|
-| 1 | `index.html` merespons `text/html`, bukan `index.html` yang dipakai sebagai fallback untuk `app.js` | server jatuh ke `index.html` dengan status 200; status saja tidak cukup — assert `content-type` |
-| 2 | Tidak ada atribut `href`/`src` di `index.html` yang diawali `/` | bug “Memuat…” |
-| 3 | Nav bawah memuat `Edisi`; tombol `Atur` membuka `#/atur` dengan panel Pasang, Notifikasi, Tentang | `AGENTS.md` §8.3 |
-| 4 | Edisi fixture ter-render: minimal satu `.card` terlihat, judul tidak kosong | pembuktian jalur data |
-| 5 | `app.js` dan `style.css` dimuat dengan query `?v=` | cache 10 menit Pages |
-| 6 | SW mendaftar; setelah `offline: true` + reload, shell tetap tampil dan edisi terakhir masih ter-render | SW v4 |
-| 7 | Kartu `misread` menampilkan chip “Kata yang hilang dari judul” | `AGENTS.md` §8.4 |
+| # | Asersi | Lapisan | Kenapa |
+|---|---|---|---|
+| UI-01 | Tidak ada atribut `href`/`src` di `index.html` yang diawali `/` | `tests/` | bug “Memuat…”; hanya muncul di subpath produksi |
+| UI-02 | `app.js` dan `style.css` dimuat dengan `?v=<sha1>` | `tests/` | cache 10 menit Pages |
+| SRV-01 | Dengan `BASE_PATH=/edisi-pagi`: `/edisi-pagi/` → `text/html` berisi `id="feed"`, `style.css` → `text/css`, `app.js` → javascript; `/style.css` di luar prefix → **404** | `tests/` | tanpa 404 itu, suite bisa lulus sambil menguji akar domain |
+| SRV-02 | Tanpa `BASE_PATH`, server tetap melayani di akar | `tests/` | jaga perilaku `npm run serve` |
+| PUSH-01 | Payload `push.ts --dry` memakai `url: "./"`, bukan `/` | `tests/` | push membuka halaman salah |
+| UI-03 | Nav bawah memuat `Edisi`; `Atur` membuka `#/atur` dengan panel Pasang, Notifikasi, Tentang | `tests-ui/` | `AGENTS.md` §8.3 |
+| UI-04 | Edisi fixture ter-render: minimal satu `.card` terlihat, judul tidak kosong | `tests-ui/` | pembuktian jalur data |
+| UI-06 | SW mendaftar; setelah `offline: true` + reload, shell tetap tampil dan edisi terakhir ter-render | `tests-ui/` | SW v4 |
+| UI-07 | Kartu `misread` menampilkan chip “Kata yang hilang dari judul” | `tests-ui/` | `AGENTS.md` §8.4 |
 
-Asersi 6 dan 7 hanya berjalan bila fixture memuat kartu bertipe itu; fixture
+UI-06 dan UI-07 hanya berjalan bila fixture memuat kartu bertipe itu; fixture
 wajib menyertakan minimal satu `misread` dan satu `change`.
 
 ## 5. Tes
 
-Harness ini sendiri adalah tesnya. Yang harus dibuktikan sebelum `shipped`:
+Harness ini sendiri adalah tesnya.
 
-1. `npm run test:ui` lulus pada `public/` yang sekarang.
-2. **Uji negatif:** ubah satu `src="./app.js?v=..."` menjadi `src="/app.js"` di
-   salinan fixture → asersi 2 gagal. Kembalikan; lulus lagi.
-3. **Uji negatif:** matikan SW → asersi 6 gagal.
-4. `npm test` dan `npm run typecheck` tetap lulus (190 uji tidak berubah).
-5. Satu run `ui.yml` nyata di GitHub Actions hijau, termasuk unduh browser.
+**Commit 1 — sudah dijalankan (2026-11-11):**
+
+1. `npm test` — 195 lulus, 0 gagal (190 uji lama + 5 baru). `npm run typecheck` bersih.
+2. **Uji negatif UI-01/02:** `src="app.js?v=…"` diubah menjadi `src="/app.js?v=…"`
+   → UI-01 dan UI-02 gagal. Dipulihkan; hijau lagi.
+3. **Uji negatif PUSH-01:** `url: "./"` diubah menjadi `url: "/"` di
+   `scripts/push.ts` → PUSH-01 gagal. Dipulihkan; hijau lagi.
+4. **Uji negatif SRV-01** (implisit): dengan `BASE_PATH` kosong, `SRV-02`
+   membuktikan aset terlayani di akar — jadi asersi 404 di SRV-01 tidak mungkin
+   lulus tanpa penolakan prefix yang benar.
+
+**Commit 2 — belum dijalankan:**
+
+5. `npm run test:ui` lulus pada `public/` yang sekarang.
+6. **Uji negatif UI-06:** matikan/copot pendaftaran SW → UI-06 gagal.
+7. Suite lokal hijau dua kali berturut-turut sebelum `ui.yml` dipasang.
+8. Satu run `ui.yml` nyata di GitHub Actions hijau, termasuk unduh browser.
 
 ## 6. Risiko dan rollback
 
@@ -112,9 +137,42 @@ Harness ini sendiri adalah tesnya. Yang harus dibuktikan sebelum `shipped`:
 Rollback: hapus `ui.yml` dan `tests-ui/`. `serve.ts` dengan `BASE_PATH` default
 tetap kompatibel.
 
-## 7. Riwayat
+## 7. Revisi
+
+### v2 — 2026-11-11 — asersi dipisah per lapisan
+
+**Sebab.** Saat memeriksa `public/index.html` sebelum implementasi, tiga dari
+tujuh asersi ternyata tidak butuh browser sama sekali: UI-01 dan UI-02 cukup
+membaca file, SRV-01 cukup `fetch` ke server lokal. Menempatkannya di
+`tests-ui/` berarti regresi path hanya tertangkap di `ui.yml` — yaitu **setelah
+push**, di workflow terpisah. Itu terlambat untuk bug yang paling mahal di
+proyek ini.
+
+**Perubahan.** `DEC-0014`: asersi tanpa browser pindah ke `tests/` sehingga ikut
+`npm test` di setiap commit. Asersi browser tetap di `tests-ui/`. Satu asersi
+baru (PUSH-01) ditambahkan karena `scripts/push.ts` mengunci `url: "./"` di dua
+tempat tanpa tes apa pun, dan itu bug yang sudah pernah terjadi.
+
+**Yang berubah:** §3 (dipecah dua commit), §4 (kolom Lapisan, penomoran
+UI-/SRV-/PUSH-), §5 (bukti commit 1). **Yang tidak berubah:** §1 masalah, §2
+keputusan, ambisi “tes UI otomatis”.
+
+**Catatan jujur.** Nama rencana “harness tes UI” kini sedikit menyesatkan untuk
+commit 1: commit 1 menguji *penyajian* dan *kontrak aset*, bukan render. Render
+baru diuji di commit 2.
+
+---
+
+## Riwayat
 
 - `2026-11-11` — `plan-draft` — dibuat dari temuan bahwa tidak ada tes UI.
+- `2026-11-11` — `plan-approved` — disetujui manusia.
+- `2026-11-11` — `mockup-approved` — kontrak §4 v2 disetujui (kelas infra: tidak
+  ada file mockup). Revisi: asersi dipisah per lapisan (§7 v2).
+- `2026-11-11` — `implementing` — commit 1: `scripts/serve.ts` `BASE_PATH` +
+  `tests/ui-static.test.ts` (UI-01, UI-02, SRV-01, SRV-02, PUSH-01). 195 uji
+  lulus, typecheck bersih, 3 uji negatif terbukti gagal saat perilakunya dirusak.
+- `2026-11-11` — **belum `shipped`** — commit 2 (Playwright) belum dikerjakan.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

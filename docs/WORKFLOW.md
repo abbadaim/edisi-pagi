@@ -74,6 +74,11 @@ Aturan:
 5. Rencana `shipped` tetap tinggal sebagai catatan; ia menjadi konteks untuk
    rencana berikutnya.
 
+**Kelas `pipeline`, `infra`, dan `docs` tidak punya file mockup.** Untuk ketiga
+kelas itu, `mockup-approved` berarti **kontrak** di §4 rencana disetujui —
+potongan `edition.json`, baris log, atau perintah + keluaran yang diharapkan.
+Nama statusnya tetap sama agar mesin keadaan hanya punya satu bentuk.
+
 ---
 
 ## 4. Mockup
