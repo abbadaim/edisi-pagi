@@ -32,6 +32,13 @@ export interface MetaOutput {
   cards: Card[];
   /** Perubahan per topic_id, untuk ditempel ke kartu berita yang sama. */
   changes: Map<string, Change[]>;
+  stats: {
+    cards: number;
+    continuity: number;
+    text_tried: number;
+    text_have: number;
+    gaps: number;
+  };
 }
 
 const STATUS_ID: Record<Status, string> = {
@@ -328,10 +335,12 @@ export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
 
   // ---- change: satu kartu, perubahan status/angka paling kuat ----
   let bestChange: { prev: DatedCard; curr: Card; change: Change; weight: number } | null = null;
+  let continuity = 0;
   for (const curr of cards) {
     if (curr.type !== "news" && curr.type !== "deep_dive" && curr.type !== "good_news") continue;
     const prev = previousByTopic.get(curr.topic_id);
     if (!prev) continue;
+    continuity++;
     const change = diffCards(prev.card, curr, prev.at, publishedAt);
     if (!change) continue;
     const weight =
@@ -358,13 +367,19 @@ export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
     .filter((c) => c.type === "news")
     .sort((a, b) => b.sources.length - a.sources.length);
 
+  let textTried = 0;
+  let textHave = 0;
+  let gaps = 0;
   for (const card of ordered) {
     if (meta.some((c) => c.type === "misread")) break;
-    for (const src of card.sources.slice(0, 3)) {
+    for (const src of card.sources.slice(0, 5)) {
+      textTried++;
       const article = await articleFor(db, src);
       if (!article) continue;
+      textHave++;
       const gap = findQualifierGap(article.title, article.text);
       if (!gap) continue;
+      gaps++;
       meta.push(
         buildMisreadCard(
           card,
@@ -383,7 +398,11 @@ export async function buildMetaCards(input: MetaInput): Promise<MetaOutput> {
   }
 
   const used = new Set(cards.map((c) => c.topic_id));
-  return { cards: meta.filter((c) => !used.has(c.topic_id)), changes };
+  return {
+    cards: meta.filter((c) => !used.has(c.topic_id)),
+    changes,
+    stats: { cards: cards.length, continuity, text_tried: textTried, text_have: textHave, gaps },
+  };
 }
 
 export function applyChanges(cards: Card[], changes: Map<string, Change[]>): Card[] {

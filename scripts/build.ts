@@ -712,9 +712,11 @@ try {
     const enriched = applyChanges(localCards, meta.changes);
     const maxNews = meta.cards.length >= 2 ? 3 : 4;
     localCards = [...enriched.slice(0, maxNews), ...meta.cards].slice(0, 5);
-    if (meta.cards.length) {
-      console.log(`  lokal: ${meta.cards.map((c) => c.type).join(", ")}`);
-    }
+    console.log(
+      `  meta lokal: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
+        ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
+        ` · teks ${meta.stats.text_have}/${meta.stats.text_tried}`,
+    );
   }
   const reservedLocal = new Set(localCards.map((c) => c.topic_id));
 
@@ -776,9 +778,11 @@ try {
     ...(hoax ? [hoax] : []),
     ...(good ? [good] : []),
   ].slice(0, 8);
-  if (meta.cards.length) {
-    console.log(`  meta: ${meta.cards.map((c) => c.type).join(", ")}`);
-  }
+  console.log(
+    `  meta: ${meta.cards.map((c) => c.type).join(", ") || "tidak ada"}` +
+      ` · lanjut ${meta.stats.continuity}/${meta.stats.cards}` +
+      ` · teks ${meta.stats.text_have}/${meta.stats.text_tried}`,
+  );
   const uniqueCards = dedupeCards(cards, 0.6);
 
   if (newsroom) {
