@@ -69,6 +69,33 @@ export function probeOpenCode(explicit?: string): boolean {
   }
 }
 
+/**
+ * Katalog model dari `opencode models` — satu id `provider/model` per baris.
+ *
+ * Mengembalikan `null` bila katalog tidak terbaca (binari hilang, server mati,
+ * waktu habis). Pemanggil memutuskan: katalog tak terbaca bukan alasan untuk
+ * menghentikan penerbitan, tetapi model yang tidak ada di katalog adalah alasan
+ * untuk tidak memakai OpenCode sama sekali.
+ */
+export function listModels(
+  explicit?: string,
+  env: NodeJS.ProcessEnv = process.env,
+  timeoutMs = 20_000,
+): string[] | null {
+  const bin = resolveBinary(explicit);
+  try {
+    const r = spawnSync(bin, ["models"], { timeout: timeoutMs, encoding: "utf8", env });
+    if (r.status !== 0 || typeof r.stdout !== "string") return null;
+    const models = r.stdout
+      .split("\n")
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0);
+    return models.length > 0 ? models : null;
+  } catch {
+    return null;
+  }
+}
+
 export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
   const bin = resolveBinary(opts.bin);
   const timeoutMs = opts.timeoutMs ?? 180_000;

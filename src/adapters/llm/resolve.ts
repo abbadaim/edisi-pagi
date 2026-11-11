@@ -1,4 +1,4 @@
-import { createAdapter, createFallbackAdapter, probeOpenCode } from "./index.ts";
+import { createAdapter, createFallbackAdapter, probeOpenCode, listModels } from "./index.ts";
 import type { JsonRequest, LlmAdapter, TextRequest } from "./types.ts";
 
 export interface ResolvedLlm {
@@ -39,10 +39,24 @@ export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
 
   if (!forced || forced === "opencode") {
     if (probeOpenCode(env.OPENCODE_BIN)) {
-      try {
-        chain.push(bindModel(createAdapter({ provider: "opencode", model: opencodeModel }, env), opencodeModel));
-      } catch {
-        /* lanjut ke deterministik */
+      // Verifikasi katalog sebelum satu panggilan pun: model yang salah akan
+      // gagal di setiap kartu, menghabiskan waktu dan panggilan.
+      const catalog = listModels(env.OPENCODE_BIN, env);
+      let usable = true;
+      if (catalog === null) {
+        console.log(`katalog opencode tidak terbaca — model ${opencodeModel} tidak diverifikasi`);
+      } else if (!catalog.includes(opencodeModel)) {
+        console.log(
+          `model ${opencodeModel} tidak ada di katalog opencode — memakai penulis deterministik (DEC-0018)`,
+        );
+        usable = false;
+      }
+      if (usable) {
+        try {
+          chain.push(bindModel(createAdapter({ provider: "opencode", model: opencodeModel }, env), opencodeModel));
+        } catch {
+          /* lanjut ke deterministik */
+        }
       }
     } else {
       console.log("opencode tidak tersedia — memakai penulis deterministik (DeepSeek nonaktif, DEC-0016)");

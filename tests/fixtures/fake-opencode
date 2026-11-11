@@ -1,0 +1,23 @@
+#!/bin/sh
+# Stub `opencode` untuk tes. Tidak memanggil jaringan, tidak memakai kredensial.
+#
+#   FAKE_MODELS="a/b\nc/d"  -> keluaran `models`
+#   FAKE_MODELS_FAIL=1      -> `models` gagal (exit 1)
+#
+# `--version` selalu sukses supaya probeOpenCode() menganggap binari tersedia.
+if [ "$1" = "--version" ]; then
+  echo "opencode v0.0.0-stub"
+  exit 0
+fi
+
+if [ "$1" = "models" ]; then
+  if [ -n "$FAKE_MODELS_FAIL" ]; then
+    echo "stub: katalog tidak tersedia" >&2
+    exit 1
+  fi
+  printf '%s\n' "${FAKE_MODELS:-opencode-go/deepseek-v4.1-flash}"
+  exit 0
+fi
+
+echo "stub: argumen tidak dikenal: $*" >&2
+exit 2

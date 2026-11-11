@@ -1,11 +1,11 @@
 import type { LlmAdapter } from "./types.ts";
 import { createDeepSeekAdapter } from "./deepseek.ts";
-import { createOpenCodeAdapter, probeOpenCode } from "./opencode.ts";
+import { createOpenCodeAdapter, probeOpenCode, listModels } from "./opencode.ts";
 import { createFallbackAdapter } from "./fallback.ts";
 import type { CapabilityConfig } from "../../config/llm.ts";
 
 export type { LlmAdapter, Usage, JsonRequest, TextRequest, EmbedRequest } from "./types.ts";
-export { createFallbackAdapter, probeOpenCode };
+export { createFallbackAdapter, probeOpenCode, listModels };
 
 /**
  * Factory adapter. M1 hanya mengimplementasikan `deepseek`.

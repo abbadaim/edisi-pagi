@@ -135,3 +135,18 @@ sama, sehingga model tidak bisa bergeser diam-diam ke yang lebih mahal.
 Sebab: biaya ditanggung pribadi dan satu model menghapus seluruh kelas
 pertanyaan “peran mana memakai model apa”.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/002-deepseek-opt-in.md` §Revisi._
+
+## DEC-0018 — Model OpenCode diverifikasi terhadap katalog sebelum dipakai
+
+`resolveLlm` menjalankan `opencode models` sekali dan memastikan
+`OPENCODE_MODEL` ada di katalog sebelum panggilan pertama.
+
+- Model tidak ada di katalog → OpenCode **tidak dipakai**; penulis deterministik
+  dengan log yang menyebut id model.
+- Katalog tidak terbaca → **lanjut** dengan peringatan; kegagalan sementara tidak
+  boleh memblokir penerbitan.
+
+Sebab: id model yang salah gagal di setiap kartu dan hanya terlihat sebagai
+`! tulis gagal` berulang. `INFRA.md` §11.5 sudah mengklaim verifikasi ini ada
+sebelum kodenya ditulis.
+_Tanggal: 2026-11-11. Rencana: `docs/plans/003-model-catalog-check.md`._

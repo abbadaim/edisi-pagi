@@ -403,16 +403,18 @@ capabilities:
 | `DEEPSEEK_API_KEY` | Hanya dipakai bila `LLM_PROVIDER=deepseek` (`DEC-0016`) |
 | `DEEPSEEK_MODEL` | Default `deepseek-chat`; hanya untuk jalur opt-in itu |
 
-**Urutan penyedia:** opencode → deepseek → writer deterministik.
+**Urutan penyedia:** opencode → writer deterministik. DeepSeek hanya lewat
+`LLM_PROVIDER=deepseek` (`DEC-0016`) dan tidak pernah menjadi cadangan otomatis.
 
 - `probeOpenCode()` menjalankan `opencode --version` sekali di awal; kalau gagal, opencode dilewati tanpa memakan satu panggilan model.
-- Jika opencode terpasang tetapi gagal di tengah jalan (timeout, sesi error), `createFallbackAdapter` memindahkan panggilan itu ke deepseek dan mencatat `! opencode gagal … pindah ke deepseek` di log.
-- Jika keduanya gagal, kartu ditulis deterministik. Edisi tetap terbit.
+- `listModels()` menjalankan `opencode models` sekali, lalu **memverifikasi model ada di katalog** sebelum satu panggilan pun (`DEC-0018`). Model yang tidak ada → penulis deterministik dengan log jelas, bukan kegagalan berulang di setiap kartu.
+- Jika katalog tidak terbaca (server mati, waktu habis), penerbitan **tidak** diblokir: model dipakai dengan peringatan di log.
+- Jika opencode terpasang tetapi gagal di tengah jalan (timeout, sesi error), tidak ada penyedia cadangan berbayar: panggilan itu gagal, dicatat, dan kartu ditulis deterministik. Edisi tetap terbit.
 
 ### 11.3 Adapter `deepseek`
 
 - `https://api.deepseek.com`, format OpenAI-compatible.
-- Model: `deepseek-chat`, `deepseek-v4-pro`. Nama model bisa berubah; daftar di-*pin* di kode dan diverifikasi saat startup.
+- Model: `deepseek-chat`, `deepseek-v4-pro`. Nama model bisa berubah; **tidak ada verifikasi katalog** untuk jalur ini — kesalahan id model muncul sebagai error API pada panggilan pertama (jalur ini hanya aktif lewat `LLM_PROVIDER=deepseek`, `DEC-0016`).
 - JSON output didukung. `response_format: { type: "json_object" }` + validasi skema.
 - **Tidak ada endpoint embedding.** Konfigurasi yang menunjuk `embed` ke `deepseek` ditolak saat startup.
 - Thinking mode: dimatikan untuk `write` (biaya), dibiarkan default untuk `verify`.
@@ -426,7 +428,7 @@ Dua mode, dipilih saat build:
 | CLI | `opencode run --model <provider/model> --format json` | Sederhana; 5–10 panggilan/hari masih wajar (~2–5 detik per proses) |
 | Server | `opencode serve` + SDK | Jika panggilan > 30/hari, atau butuh streaming |
 
-Model dipilih lewat id `provider/model` (mis. `opencode-go/deepseek-v4.1-flash`). Adapter memverifikasi model ada di katalog saat startup, bukan saat 05.45.
+Model dipilih lewat id `provider/model` (mis. `opencode-go/deepseek-v4.1-flash`). Adapter memverifikasi model ada di katalog saat startup lewat `opencode models`, bukan menunggu kegagalan di tengah run (lihat §11.2 dan `DEC-0018`).
 
 **CI.** Workflow memasang CLI dengan `curl -fsSL https://opencode.ai/install | bash`
 dan mengimpor kredensial dari secret `OPENCODE_AUTH_JSON`

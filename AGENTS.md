@@ -18,7 +18,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change` (status) + `misread` (judul–isi), deterministik |
-| Tests | `npm test` — 202 uji; `npm run test:ui` — 4 uji browser |
+| Tests | `npm test` — 206 uji; `npm run test:ui` — 4 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -219,6 +219,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `opencode.ai/v2/install` memasang ke `$HOME/.opencode/bin`.
 - Jika install/auth gagal, workflow set `OPENCODE_BIN=/nonexistent` agar pipeline memakai penulis deterministik, bukan menunggu timeout. **Bukan** agar DeepSeek dipakai (`DEC-0016`).
 - `OPENCODE_AUTH_JSON` adalah kredensial pribadi; rotasi bila perlu.
+- Model diverifikasi ke katalog (`opencode models`) sebelum panggilan pertama (`DEC-0018`). Model tidak ada → deterministik; katalog tak terbaca → lanjut dengan peringatan. Jangan hapus cek ini tanpa mengganti `DEC-0018`.
 
 ### CI dan commit
 
