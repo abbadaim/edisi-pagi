@@ -45,26 +45,29 @@ jobs:
 
       - run: npm ci
 
+      # OpenCode di CI bersifat opsional. Jangan pernah menggagalkan deploy
+      # karena installer/versi CLI berbeda; DeepSeek selalu jadi cadangan.
       - name: Install OpenCode CLI
         if: env.OPENCODE_AUTH_JSON != ''
         run: |
-          curl -fsSL https://opencode.ai/install | bash
+          if ! curl -fsSL https://opencode.ai/install | bash; then
+            echo "::warning::OpenCode gagal dipasang; build memakai DeepSeek"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+            exit 0
+          fi
           echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
-          "$HOME/.opencode/bin/opencode" --version
+          "$HOME/.opencode/bin/opencode" --version || true
 
       - name: Import OpenCode credentials
-        id: opencode_auth
         if: env.OPENCODE_AUTH_JSON != ''
-        continue-on-error: true
         run: |
-          printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import
-          "$HOME/.opencode/bin/opencode" --standalone auth list
-
-      # Bila OpenCode gagal dipasang/diimpor, paksa probe gagal agar build
-      # memakai DeepSeek, bukan menunggu timeout opencode.
-      - name: Disable OpenCode if setup failed
-        if: env.OPENCODE_AUTH_JSON != '' && steps.opencode_auth.outcome != 'success'
-        run: echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+          if printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import; then
+            "$HOME/.opencode/bin/opencode" --standalone auth list || true
+            echo "OpenCode siap"
+          else
+            echo "::warning::auth import gagal (versi CLI?); build memakai DeepSeek"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+          fi
 
       - name: Cek state
         run: npm run state:info
