@@ -107,7 +107,12 @@ async function boot() {
     return;
   }
 
+  const currentByScope = manifest.latest_by_scope;
   for (const e of manifest.editions) {
+    // Jangan tampilkan edisi lokal/mingguan lama sebagai edisi hari ini.
+    if (currentByScope && Object.prototype.hasOwnProperty.call(currentByScope, e.scope)) {
+      if (currentByScope[e.scope] !== e.edition_id) continue;
+    }
     const list = S.byScope.get(e.scope) ?? [];
     list.push(e);
     S.byScope.set(e.scope, list);

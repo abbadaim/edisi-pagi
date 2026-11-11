@@ -82,7 +82,8 @@ function clipText(s: string, max: number): string {
   if (t.length <= max) return t;
   const cut = t.slice(0, max);
   const space = cut.lastIndexOf(" ");
-  return (space > max * 0.6 ? cut.slice(0, space) : cut).trim();
+  // Tandai pemendekan agar pembaca tahu ini bukan kalimat yang berhenti.
+  return `${(space > max * 0.6 ? cut.slice(0, space) : cut).trim()}…`;
 }
 
 function wordCount(body: string[]): number {
@@ -99,25 +100,19 @@ function refs(notes: EditorNote[]): OpenNoteRef[] {
 }
 
 function disclaimerFrom(edit: EditResult): string | null {
-  const uncertain = edit.findings.filter(
+  const uncertain = edit.findings.some(
     (f) =>
       ["E-FACT", "E-SRC", "E-ATTR", "E-CAUS"].includes(f.code) &&
       /(bertentangan|belum konsisten|berbeda|tidak ditemukan|tidak ada di bahan|tidak didukung|versi|sedangkan|padahal|masih menjabat|eksplisit menyebut)/i.test(f.issue),
   );
-  if (uncertain.length === 0) return null;
+  if (!uncertain) return null;
 
-  const items = uncertain.slice(0, 2).map((f) =>
-    f.issue
-      .replace(/^Terbit dengan (disclaimer|catatan)[^:]*:\s*/i, "")
-      .replace(/\b[swg]\d+\b/gi, "bahan")
-      .slice(0, 110),
-  );
-
-  return clipText(
-    `Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan: ${items.join("; ")}. ` +
-      "Artikel tetap terbit untuk konteks, bukan sebagai rujukan. " +
-      "Jangan mengutip klaim tersebut sebagai fakta tanpa memeriksa sumber primer.",
-    320,
+  // Jangan menempelkan potongan issue editor ke disclaimer: potongan itu
+  // berhenti di tengah kalimat. Detail spesifik ada di `unresolved`.
+  return (
+    "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. " +
+    "Artikel tetap terbit untuk konteks, bukan sebagai rujukan. " +
+    "Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
   );
 }
 
@@ -243,6 +238,12 @@ export async function writeNewsroomCard(
         max: 2,
       })
     : [];
+
+  if (primary.length > 0) {
+    console.log(`  primer: ${primary.length} (${primary.map((p) => p.outlet).join(", ")})`);
+  } else if (process.env.DEBUG_PRIMARY) {
+    console.log(`  primer: 0 (${input.topic.entities.slice(0, 4).join(", ") || "tanpa entitas"})`);
+  }
 
   const pack = await buildMaterialPack(topic, input.cluster, input.topicId, deps.glossary, {
     maxFetch: input.maxFetch ?? 4,

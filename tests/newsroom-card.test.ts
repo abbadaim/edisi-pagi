@@ -205,6 +205,65 @@ test("deep_dive hanya dipakai bila sumber cukup", async () => {
   assert.equal(res.card!.type, "news", "2 sumber belum cukup untuk deep_dive");
 });
 
+test("disclaimer selalu kalimat utuh, bukan potongan issue editor", async () => {
+  let n = 0;
+  const seq: LlmAdapter = {
+    name: "deepseek",
+    async json<T>() {
+      n++;
+      const data =
+        n === 1
+          ? draft
+          : {
+              ...edit,
+              findings: [
+                {
+                  code: "E-SRC",
+                  severity: "advisory",
+                  paragraph: 1,
+                  quote: "Kutipan sumber",
+                  issue:
+                    "Konflik sumber, bukan fakta salah: Draft menyatakan angka yang berbeda dari sumber resmi dan perlu diperiksa lebih lanjut. ".repeat(8),
+                  fix: "Periksa sumber primer.",
+                },
+              ],
+            };
+      return { data: data as T, usage: { tokens_in: 10, tokens_out: 5 } };
+    },
+    async text() {
+      return { text: "", usage: { tokens_in: 0, tokens_out: 0 } };
+    },
+  };
+
+  const res = await writeNewsroomCard(
+    {
+      editionId: "2026-11-10",
+      now: new Date("2026-11-10T20:00:00+07:00"),
+      topic,
+      topicId: "t_kpk_pertanahan",
+      cluster: cluster as never,
+      assignment,
+      local: false,
+      revision: 1,
+      firstSeen: "2026-11-10",
+      previousEdition: null,
+      prior: [],
+      openNotes: [],
+      asDeep: false,
+      fromIso: "2026-11-09T20:00:00+07:00",
+      toIso: "2026-11-10T20:00:00+07:00",
+      fetchImpl: async () => ({ text: "", ok: false }),
+    },
+    { llm: seq, model: "test", glossary },
+  );
+
+  assert.ok(res.card);
+  assert.ok(res.card!.disclaimer);
+  assert.match(res.card!.disclaimer!, /sumber primer\.$/);
+  assert.ok(!res.card!.disclaimer!.includes("Draft menyatakan"));
+  assert.ok(res.card!.disclaimer!.length <= 320);
+});
+
 test("sumber kartu hanya bahan yang benar-benar disitasi", async () => {
   let n = 0;
   const seq: LlmAdapter = {

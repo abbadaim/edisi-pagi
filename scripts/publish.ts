@@ -80,10 +80,22 @@ const latest = entries
   .at(-1);
 const oldest = entries.map((e) => e.edition_id).sort()[0];
 
+// Hanya edisi yang tanggalnya sama dengan `latest` yang dianggap "hari ini".
+// Edisi lokal kemarin tidak boleh tampil sebagai edisi lokal hari ini.
+const latestByScope: Record<string, string | null> = {
+  nasional: null,
+  lokal: null,
+  mingguan: null,
+};
+for (const e of entries) {
+  if (e.edition_id === latest) latestByScope[e.scope] = latest;
+}
+
 const manifest = {
   schema_version: 1,
   generated_at: isoWib(new Date()),
   latest: latest ?? null,
+  latest_by_scope: latestByScope,
   retention: { years: 2, oldest: oldest ?? null },
   editions: entries.sort((a, b) =>
     a.edition_id === b.edition_id ? a.scope.localeCompare(b.scope) : b.edition_id.localeCompare(a.edition_id),

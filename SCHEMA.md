@@ -463,6 +463,7 @@ Satu-satunya berkas yang dibaca saat aplikasi dibuka.
   "schema_version": 1,
   "generated_at": "2026-11-10T06:00:00+07:00",
   "latest": "2026-11-10",
+  "latest_by_scope": { "nasional": "2026-11-10", "lokal": "2026-11-10", "mingguan": null },
   "retention": { "years": 2, "oldest": "2024-11-10" },
   "editions": [
     { "edition_id": "2026-11-10", "scope": "nasional", "published_at": "…", "card_count": 8, "reading_time_min": 4 },
@@ -470,6 +471,11 @@ Satu-satunya berkas yang dibaca saat aplikasi dibuka.
   ]
 }
 ```
+
+`latest_by_scope` menentukan edisi yang ditampilkan per tab. Nilai `null`
+menyembunyikan tab lama (mis. edisi lokal tidak terbit hari ini) agar edisi
+kemarin tidak tampil sebagai edisi hari ini. Field ini opsional; renderer lama
+tetap memakai `latest` bila tidak ada.
 
 Batas: 800 entri (2 tahun + margin). Ukuran ± 70 KB.
 

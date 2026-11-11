@@ -160,7 +160,14 @@ try {
   for (const cluster of soloLocal) {
     const topic = fallbackTopics(summarise([cluster]))[0];
     if (!topic) continue;
-    rawEntries.push({ topic: { ...topic, local: true, significance: Math.max(2, topic.significance) }, cluster });
+    // `summarise([cluster])` selalu memberi cid "c01". Kalau dipakai apa adanya,
+    // `isFollowTopic` mencocokkannya dengan entri nasional c01 dan mengira brief
+    // lokal ini tindak lanjut — akibatnya seluruh edisi Sleman dibuang kuota.
+    const cid = `solo_${cluster.key.replace(/[^a-z0-9]/gi, "").slice(0, 12)}`;
+    rawEntries.push({
+      topic: { ...topic, cids: [cid], local: true, significance: Math.max(2, topic.significance) },
+      cluster,
+    });
   }
 
   // Adjudikasi kadang memecah satu peristiwa menjadi dua topik.
@@ -421,7 +428,11 @@ try {
   /** Pilih kandidat per edisi. `exclude` dipakai agar berita lokal tidak dobel di edisi nasional. */
   /** Tindak lanjut = tugas planner yang menautkan catatan editor. */
   function isFollowTopic(topic: AdjudicatedTopic): boolean {
-    const entry = entries.find((e) => e.topic.cids.some((cid) => topic.cids.includes(cid)));
+    // Identitas objek lebih aman daripada cid: brief lokal singleton dibuat
+    // terpisah dan bisa berbagi cid dengan entri nasional.
+    const entry =
+      entries.find((e) => e.topic === topic) ??
+      entries.find((e) => e.topic.cids.some((cid) => topic.cids.includes(cid)));
     return (entry?.assignment.note_ids.length ?? 0) > 0;
   }
 
