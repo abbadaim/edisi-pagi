@@ -252,7 +252,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 
 | Gejala | Periksa |
 |---|---|
-| CI jatuh ke DeepSeek | `OPENCODE_BIN` kosong; versi CLI; `OPENCODE_AUTH_JSON`; log `opencode tidak tersedia` |
+| CI memakai penulis deterministik | `OPENCODE_BIN` kosong; versi CLI; `OPENCODE_AUTH_JSON`; model tidak ada di katalog (`DEC-0018`); log `opencode tidak tersedia` |
 | Edisi lokal tidak terbit | log `lokal: N kandidat · M lolos`; cid `c01` vs `solo_`; dedupe; minimal 2 |
 | Kartu meta tidak muncul | log `meta: ... · lanjut x/y · teks a/b · celah c`; `topic_id` berlanjut?; judul sudah berkualifikasi? |
 | Kartu meta hilang dari edisi | dedupe (harus dilewati untuk meta); slot 8 kartu; hoax diprioritaskan |

@@ -83,6 +83,10 @@ Angka POC yang paling penting:
 
 ## 4. OpenCode di CI — pelajaran
 
+> Catatan sejarah: bagian ini mencatat perilaku **sebelum** `DEC-0016/0017/0018`.
+> Sejak itu DeepSeek API langsung bukan cadangan otomatis; kegagalan OpenCode
+> berakhir di penulis deterministik.
+
 `https://opencode.ai/install` mengarah ke **v1.19.5**. CLI v1 memakai
 `opencode import`, bukan `opencode auth import`. Karena itu CI gagal di langkah
 auth dan pipeline jatuh ke DeepSeek.

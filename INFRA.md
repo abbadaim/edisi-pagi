@@ -430,12 +430,13 @@ Dua mode, dipilih saat build:
 
 Model dipilih lewat id `provider/model` (mis. `opencode-go/deepseek-v4.1-flash`). Adapter memverifikasi model ada di katalog saat startup lewat `opencode models`, bukan menunggu kegagalan di tengah run (lihat §11.2 dan `DEC-0018`).
 
-**CI.** Workflow memasang CLI dengan `curl -fsSL https://opencode.ai/install | bash`
-dan mengimpor kredensial dari secret `OPENCODE_AUTH_JSON`
-(`opencode auth export` → `opencode auth import`). Bila secret kosong, instalasi
-dilewati dan pipeline memakai DeepSeek. Bila instalasi/impor gagal,
+**CI.** Workflow memasang CLI v2 dengan
+`curl -fsSL https://opencode.ai/v2/install | bash` dan mengimpor kredensial
+dari secret `OPENCODE_AUTH_JSON` (`opencode auth export` →
+`opencode auth import`). Bila secret kosong, instalasi dilewati dan pipeline
+memakai penulis deterministik (`DEC-0016`). Bila instalasi/impor gagal,
 `OPENCODE_BIN` dipaksa ke path tidak ada agar probe gagal dan build tidak
-menunggu timeout OpenCode.
+menunggu timeout OpenCode — bukan agar DeepSeek dipakai.
 
 ### 11.5 Kapabilitas `embed`
 
