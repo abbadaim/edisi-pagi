@@ -19,7 +19,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tests | `npm test` — 244 uji; `npm run test:ui` — 10 uji browser |
+| Tests | `npm test` — 248 uji; `npm run test:ui` — 10 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -234,6 +234,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - **Jangan menjalankan ulang tanggal edisi yang sudah terbit**; edisi immutable. Untuk uji, pakai `--newsroom-limit` + `--thin` pada tanggal yang belum ada, atau POC.
 - `data/work/`, `local.db`, `.env.local` diabaikan. Jangan commit.
 - Migrasi 004–006 harus jalan sebelum build di CI; workflow sudah melakukannya.
+- Trigger terjadwal GitHub bisa dibuang tanpa notifikasi dan tanpa mengubah status workflow (terjadi 2026-11-12). Setelah deploy, verifikasi bahwa run/edisi hari ini ada (§8).
+- `scripts/build.ts` **tidak** punya penjaga: menjalankannya untuk tanggal yang sudah terbit akan menimpa edisi itu. Jalankan hanya untuk tanggal yang belum ada.
 - Deploy data-only: workflow `deploy-site` menjalankan `npm run publish` +
   Pages tanpa build. Pakai ini agar tanggal terbit tidak dibangun ulang.
 
@@ -253,6 +255,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `manifest.latest_by_scope`: harian = tanggal harian terbaru; mingguan = rekap terbaru ≤7 hari (`DEC-0019`). Lokal kemarin tidak ditampilkan.
 - `publish.ts` menyalin semua edisi; app memfilter tab.
 - Harga LLM belum dikonfigurasi; `cost_usd` sering 0. Token/latensi tetap tercatat.
+- `cached_tokens` = bagian `tokens_in` yang kena prompt cache (migrasi 008, `DEC-0024`). Baris `llm:` mencetak hit rate; jangan menebak dari bentuk prompt — 2026-11-11 terukur 25,8%, bukan ~8%.
+- System prompt tidak boleh memuat data per-kartu (mis. `answers`). Satu baris berbeda = seluruh prefix setelahnya meleset dari cache.
 
 ---
 
@@ -261,7 +265,9 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 | Gejala | Periksa |
 |---|---|
 | CI memakai penulis deterministik | `OPENCODE_BIN` kosong; versi CLI; `OPENCODE_AUTH_JSON`; model tidak ada di katalog (`DEC-0018`); log `opencode tidak tersedia` |
+| Edisi hari ini tidak terbit, **tidak ada run** | `gh workflow list --all` (aktif?); cron masih ada di `main`?; `gh run list --workflow daily.yml`; trigger GitHub bisa dibuang tanpa notifikasi (§8) |
 | Edisi lokal tidak terbit | log `lokal: N kandidat · M lolos`; cid `c01` vs `solo_`; dedupe; minimal 2 |
+| Hit rate cache rendah | `cached_tokens` di `llm_calls`; apakah system prompt memuat data per-kartu?; apakah urutan `bahan` deterministik? |
 | Kartu meta tidak muncul | log `meta: ... · lanjut x/y · teks a/b · celah c`; `topic_id` berlanjut?; judul sudah berkualifikasi? |
 | Kartu meta hilang dari edisi | dedupe (harus dilewati untuk meta); slot 8 kartu; hoax diprioritaskan |
 | Tab scope hilang | `latest_by_scope`; edisi scope itu tidak ada di tanggal terbaru |
@@ -331,6 +337,24 @@ npm run validate -- data/editions/2026-11-11.nasional.json
 gh workflow run opencode-smoke.yml --repo abbadaim/edisi-pagi
 gh run list --workflow opencode-smoke.yml --limit 1
 ```
+
+### Jadwal masih hidup? (setelah deploy / publish)
+
+`active` bukan bukti. GitHub bisa membuang trigger terjadwal sementara workflow
+tetap `active` — terjadi 2026-11-12 dan edisi hari itu tidak pernah ada.
+
+```bash
+gh workflow list --all | grep -E "^edisi-harian"                 # harus active
+git show origin/main:.github/workflows/daily.yml | grep -A2 "schedule:"   # cron masih ada?
+TZ=Asia/Jakarta date +%F                                          # tanggal edisi hari ini
+gh run list --workflow daily.yml --limit 3                        # run hari ini ada?
+curl -s https://abbadaim.github.io/edisi-pagi/manifest.json \
+  | python3 -c 'import json,sys; m=json.load(sys.stdin); print(m["latest"], m["latest_by_scope"])'
+```
+
+Kalau tidak ada run **dan** `latest_by_scope.nasional` bukan hari ini:
+`gh workflow run daily.yml --ref main`. Hanya untuk tanggal yang belum terbit —
+`scripts/build.ts` **tidak** punya penjaga dan akan menimpa edisi terbit.
 
 Di browser:
 

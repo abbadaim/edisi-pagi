@@ -1,6 +1,8 @@
 export interface Usage {
   tokens_in: number;
   tokens_out: number;
+  /** Bagian dari tokens_in yang kena prompt cache (lebih murah). */
+  cached_tokens?: number;
   cost_usd?: number;
 }
 

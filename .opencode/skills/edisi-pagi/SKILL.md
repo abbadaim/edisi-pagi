@@ -134,6 +134,33 @@ npm test && npm run typecheck
 gh workflow run opencode-smoke.yml --repo abbadaim/edisi-pagi
 ```
 
+### After deploy — is the cron alive?
+
+Run this after any deploy, publish, or workflow edit. `active` alone is **not**
+proof: GitHub can drop a scheduled trigger while the workflow still says
+`active` (happened on 2026-11-12; the edition simply did not exist that day).
+
+```bash
+# 1. workflow must be active, not disabled_manually
+gh workflow list --all | grep -E "^edisi-harian"
+
+# 2. the cron must still exist on main (editing the file can drop it)
+git show origin/main:.github/workflows/daily.yml | grep -A2 "schedule:"
+
+# 3. a run for today must exist — this is the real proof
+TZ=Asia/Jakarta date +%F
+gh run list --workflow daily.yml --limit 3
+
+# 4. today's edition must actually be live
+curl -s https://abbadaim.github.io/edisi-pagi/manifest.json \
+  | python3 -c 'import json,sys; m=json.load(sys.stdin); print(m["latest"], m["latest_by_scope"])'
+```
+
+If `latest_by_scope.nasional` is not today's WIB date **and** there is no run,
+the trigger was dropped: `gh workflow run daily.yml --ref main`. Do this only
+when the edition for that date does not exist yet — `scripts/build.ts` has no
+guard and will overwrite a published edition (`docs/plans/009-schedule-verification.md`).
+
 Browser checklist:
 
 1. `latest_by_scope` in the manifest matches what the tabs show.

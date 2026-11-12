@@ -13,7 +13,13 @@ export interface DeepSeekOptions {
 
 interface ChatResponse {
   choices?: Array<{ message?: { content?: string }; finish_reason?: string }>;
-  usage?: { prompt_tokens?: number; completion_tokens?: number };
+  usage?: {
+    prompt_tokens?: number;
+    completion_tokens?: number;
+    /** Token awal permintaan yang kena cache (harga lebih murah). */
+    prompt_cache_hit_tokens?: number;
+    prompt_cache_miss_tokens?: number;
+  };
 }
 
 /**
@@ -115,6 +121,9 @@ export function createDeepSeekAdapter(opts: DeepSeekOptions): LlmAdapter {
         const usage: Usage = {
           tokens_in: json.usage?.prompt_tokens ?? 0,
           tokens_out: json.usage?.completion_tokens ?? 0,
+          // Bagian dari tokens_in yang kena cache. Tanpa ini, hit rate hanya
+          // terlihat di dasbor vendor (DEC-0024).
+          cached_tokens: json.usage?.prompt_cache_hit_tokens ?? 0,
         };
         if (price) {
           usage.cost_usd =

@@ -8,7 +8,7 @@ import type { LlmAdapter } from "../src/adapters/llm/types.ts";
 const fake: LlmAdapter = {
   name: "deepseek",
   async json<T>() {
-    return { data: { ok: true } as T, usage: { tokens_in: 10, tokens_out: 5, cost_usd: 0.001 } };
+    return { data: { ok: true } as T, usage: { tokens_in: 10, tokens_out: 5, cached_tokens: 6, cost_usd: 0.001 } };
   },
   async text() {
     return { text: "halo", usage: { tokens_in: 3, tokens_out: 2 } };
@@ -18,6 +18,7 @@ const fake: LlmAdapter = {
 test("telemetri mencatat role, topik, token, dan latensi", async () => {
   const db = openSqlite(":memory:");
   db.exec(readFileSync(new URL("../migrations/005_llm_calls.sql", import.meta.url), "utf8"));
+  db.exec(readFileSync(new URL("../migrations/008_llm_cache_tokens.sql", import.meta.url), "utf8"));
   const t = new LlmTelemetry(db, "2026-11-10");
   const wrapped = t.wrap(fake);
 
@@ -26,19 +27,25 @@ test("telemetri mencatat role, topik, token, dan latensi", async () => {
   t.set({ role: "edit", topicId: "t_kpk", attempt: 2 });
   await wrapped.text({ model: "test", system: "s", user: "u" });
 
-  const rows = db.all<{ role: string; topic_id: string; tokens_in: number; tokens_out: number }>(
-    "SELECT role, topic_id, tokens_in, tokens_out FROM llm_calls ORDER BY id",
-  );
+  const rows = db.all<{
+    role: string;
+    topic_id: string;
+    tokens_in: number;
+    tokens_out: number;
+    cached_tokens: number;
+  }>("SELECT role, topic_id, tokens_in, tokens_out, cached_tokens FROM llm_calls ORDER BY id");
   assert.equal(rows.length, 2);
   assert.equal(rows[0]!.role, "write");
   assert.equal(rows[1]!.role, "edit");
   assert.equal(rows[0]!.tokens_in, 10);
   assert.equal(rows[1]!.tokens_out, 2);
+  assert.equal(rows[0]!.cached_tokens, 6, "token cache DeepSeek harus tercatat (DEC-0024)");
 
   const s = t.summary();
   assert.equal(s.calls, 2);
   assert.equal(s.tokensIn, 13);
   assert.equal(s.tokensOut, 7);
+  assert.equal(s.cachedTokens, 6);
   db.close();
 });
 

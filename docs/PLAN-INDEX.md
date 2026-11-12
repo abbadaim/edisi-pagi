@@ -14,6 +14,8 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 |---|---|---|---|---|
 | 002 | [DeepSeek opt-in](plans/002-deepseek-opt-in.md) | pipeline | `tested` | 2026-11-11 |
 | 003 | [Verifikasi katalog model](plans/003-model-catalog-check.md) | infra | `tested` | 2026-11-11 |
+| 009 | [Verifikasi jadwal setelah deploy](plans/009-schedule-verification.md) | docs | `shipped` | 2026-11-12 |
+| 011 | [Cache prompt terukur](plans/011-prompt-cache.md) | pipeline | `tested` | 2026-11-12 |
 | 004 | [Paritas newsroom mingguan](plans/004-weekly-newsroom-parity.md) | pipeline | `tested` | 2026-11-11 |
 | 005 | [Sitemap sumber primer](plans/005-primary-sitemap.md) | pipeline | `tested` | 2026-11-11 |
 | 006 | [Teks penuh meta lokal](plans/006-local-meta-text.md) | pipeline | `tested` | 2026-11-11 |

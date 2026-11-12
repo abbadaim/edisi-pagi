@@ -123,7 +123,10 @@ export function buildWriterPrompt(
     "- action: satu kalimat imperatif, maksimum 160 karakter.",
     "- claim: satu pernyataan yang bisa diperiksa dari isi kartu.",
     "- explain: 2–4 pertanyaan latar (istilah, orang, prosedur), bukan mengulang body. WAJIB memakai source_key dari bahan jenis background.",
-    `- Jawab SEMUA pertanyaan ini di dalam body: ${ctx.assignment.answers.map((a, i) => `(${i}) ${a}`).join("; ")}`,
+    // Pertanyaan wajib TIDAK di sini: ia per-kartu, dan di sistem ia memotong
+    // prefix bersama sehingga cache DeepSeek meleset (DEC-0024). Sudah dikirim
+    // di `user.pertanyaan_wajib`.
+    "- Jawab SEMUA pertanyaan pada field pertanyaan_wajib di dalam body.",
     "- Bila sebuah pertanyaan tidak bisa dijawab dari bahan, tulis SATU kalimat bahwa detail itu belum tersedia atau belum diumumkan. Itu dihitung menjawab; jangan mengarang.",
     "- Bila bahan hanya menyebut nama tanpa jabatan/lembaga, tulis 'dikutip dari <nama media>' atau jangan sebut namanya. Jangan menempelkan jabatan yang tidak ada di bahan.",
     "- Bila antar bahan ada angka atau tanggal yang berbeda, sebutkan perbedaannya; jangan memilih satu versi diam-diam.",

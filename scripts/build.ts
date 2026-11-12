@@ -939,8 +939,10 @@ try {
   );
 
   const llmStats = telemetry.summary();
+  // DEC-0024: hit rate harus terbaca dari log, bukan dari dasbor vendor.
+  const hitRate = llmStats.tokensIn > 0 ? Math.round((llmStats.cachedTokens / llmStats.tokensIn) * 100) : 0;
   console.log(
-    `llm: ${llmStats.calls} panggilan · ${llmStats.tokensIn}/${llmStats.tokensOut} token · $${llmStats.costUsd.toFixed(4)} · max ${llmStats.maxLatencyMs} ms`,
+    `llm: ${llmStats.calls} panggilan · ${llmStats.tokensIn}/${llmStats.tokensOut} token · cache ${llmStats.cachedTokens} (${hitRate}%) · $${llmStats.costUsd.toFixed(4)} · max ${llmStats.maxLatencyMs} ms`,
   );
   try {
     db.run(

@@ -230,3 +230,19 @@ menutup PWA, dan strip tanggal lama tidak pernah terisi karena `byScope` hanya
 memuat edisi terbaru. Dikunci di `tests-ui/shell.spec.ts` UI-10…UI-15 dan
 `tests/ui-static.test.ts` UI-05/UI-08.
 _Tanggal: 2026-11-11. Rencana: `docs/plans/008-arsip-dan-gestur-kembali.md`._
+
+## DEC-0024 — Prompt cache diukur oleh pipeline, bukan dasbor vendor
+
+`usage.cached_tokens` (dari `prompt_cache_hit_tokens` DeepSeek, atau
+`tokens.cache.read` OpenCode) disimpan di `llm_calls.cached_tokens` dan
+dicetak di baris `llm:` sebagai hit rate.
+
+System prompt tidak boleh memuat data per-kartu: ia memotong prefix bersama dan
+membuat cache meleset. Data per-kartu masuk `user`.
+
+Sebab: hit rate 2026-11-11 baru diketahui dari dasbor (25,8%), bukan dari
+pipeline; dan `write.ts` menyisipkan `answers` per-kartu ke system prompt.
+_Tanggal: 2026-11-12. Rencana: `docs/plans/011-prompt-cache.md`._
+
+Catatan biaya: cache hanya ±17% dari tagihan; keluaran ±58%. Jangan mengklaim
+penghematan besar dari cache saja.

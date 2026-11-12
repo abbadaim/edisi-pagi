@@ -18,7 +18,7 @@ interface Event {
   part?: {
     type?: string;
     text?: string;
-    tokens?: { input?: number; output?: number };
+    tokens?: { input?: number; output?: number; cache?: { read?: number; write?: number } };
     cost?: number;
   };
 }
@@ -36,6 +36,7 @@ function parseEvents(stdout: string): { text: string; usage: Usage } {
   let text = "";
   let tokensIn = 0;
   let tokensOut = 0;
+  let cached = 0;
   let cost = 0;
 
   for (const line of stdout.split("\n")) {
@@ -51,11 +52,17 @@ function parseEvents(stdout: string): { text: string; usage: Usage } {
     if (ev.type === "step_finish") {
       tokensIn += ev.part?.tokens?.input ?? 0;
       tokensOut += ev.part?.tokens?.output ?? 0;
+      // OpenCode v2 melaporkan cache sebagai tokens.cache.read. Tidak semua
+      // provider mengisinya; 0 berarti tidak dilaporkan (DEC-0024).
+      cached += ev.part?.tokens?.cache?.read ?? 0;
       cost += ev.part?.cost ?? 0;
     }
   }
 
-  return { text, usage: { tokens_in: tokensIn, tokens_out: tokensOut, cost_usd: cost } };
+  return {
+    text,
+    usage: { tokens_in: tokensIn, tokens_out: tokensOut, cached_tokens: cached, cost_usd: cost },
+  };
 }
 
 /** Cek cepat apakah CLI bisa dijalankan. Dipakai untuk memilih penyedia utama. */

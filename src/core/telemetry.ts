@@ -30,6 +30,8 @@ export interface LlmSummary {
   calls: number;
   tokensIn: number;
   tokensOut: number;
+  /** Bagian tokensIn yang kena prompt cache (DEC-0024). */
+  cachedTokens: number;
   costUsd: number;
   maxLatencyMs: number;
 }
@@ -81,7 +83,7 @@ export class LlmTelemetry {
   private record(
     provider: string,
     model: string,
-    usage: { tokens_in: number; tokens_out: number; cost_usd?: number },
+    usage: { tokens_in: number; tokens_out: number; cached_tokens?: number; cost_usd?: number },
     latencyMs: number,
   ): void {
     if (!this.enabled) return;
@@ -89,8 +91,8 @@ export class LlmTelemetry {
       this.db.run(
         `INSERT INTO llm_calls
            (edition_id, topic_id, role, attempt, provider, model,
-            tokens_in, tokens_out, cost_usd, latency_ms, created_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+            tokens_in, tokens_out, cached_tokens, cost_usd, latency_ms, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [
           this.editionId,
           this.ctx.topicId ?? null,
@@ -100,6 +102,7 @@ export class LlmTelemetry {
           model,
           usage.tokens_in,
           usage.tokens_out,
+          usage.cached_tokens ?? 0,
           usage.cost_usd ?? null,
           latencyMs,
           isoWib(new Date())!,
@@ -118,12 +121,14 @@ export class LlmTelemetry {
         calls: number;
         tin: number | null;
         tout: number | null;
+        cached: number | null;
         cost: number | null;
         max_latency: number | null;
       }>(
         `SELECT COUNT(*) AS calls,
                 COALESCE(SUM(tokens_in), 0) AS tin,
                 COALESCE(SUM(tokens_out), 0) AS tout,
+                COALESCE(SUM(cached_tokens), 0) AS cached,
                 COALESCE(SUM(cost_usd), 0) AS cost,
                 COALESCE(MAX(latency_ms), 0) AS max_latency
            FROM llm_calls WHERE edition_id = ?`,
@@ -133,11 +138,12 @@ export class LlmTelemetry {
         calls: Number(r?.calls ?? 0),
         tokensIn: Number(r?.tin ?? 0),
         tokensOut: Number(r?.tout ?? 0),
+        cachedTokens: Number(r?.cached ?? 0),
         costUsd: Number(r?.cost ?? 0),
         maxLatencyMs: Number(r?.max_latency ?? 0),
       };
     } catch {
-      return { calls: 0, tokensIn: 0, tokensOut: 0, costUsd: 0, maxLatencyMs: 0 };
+      return { calls: 0, tokensIn: 0, tokensOut: 0, cachedTokens: 0, costUsd: 0, maxLatencyMs: 0 };
     }
   }
 }
