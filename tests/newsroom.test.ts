@@ -595,3 +595,63 @@ test("planEdition jatuh ke rencana deterministik bila model gagal", async () => 
   assert.equal(plan.assignments.length, 1);
   assert.equal(plan.assignments[0]!.cids[0], "c01");
 });
+
+// DEC-0026: kegagalan bentuk JSON diulang sekali; timeout tidak.
+test("editor mengulang sekali saat JSON tidak sah lalu memakai hasil kedua", async () => {
+  let calls = 0;
+  const flaky: LlmAdapter = {
+    name: "opencode",
+    async json<T>() {
+      calls++;
+      if (calls === 1) {
+        throw new SyntaxError("Expected ',' or '}' after array element in JSON at position 769");
+      }
+      return {
+        data: {
+          verdict: "approve",
+          findings: [],
+          answers_covered: [0, 1, 2],
+          answers_missing: [],
+          depth_check: "standard",
+          category_check: null,
+          notes_resolved: [],
+        } as T,
+        usage: { tokens_in: 100, tokens_out: 20 },
+      };
+    },
+    async text() {
+      return { text: "", usage: { tokens_in: 0, tokens_out: 0 } };
+    },
+  };
+
+  const { edit } = await editDraft(goodDraft, pack, assignment, { llm: flaky, model: "test" });
+  assert.equal(calls, 2, "kegagalan bentuk harus diulang tepat sekali");
+  assert.equal(edit.verdict, "approve", "hasil ulangan yang dipakai");
+});
+
+test("editor tidak mengulang saat panggilan timeout", async () => {
+  let calls = 0;
+  const slow: LlmAdapter = {
+    name: "opencode",
+    async json<T>() {
+      calls++;
+      throw new Error("opencode timeout 240000ms");
+    },
+    async text() {
+      return { text: "", usage: { tokens_in: 0, tokens_out: 0 } };
+    },
+  };
+
+  const { edit } = await editDraft(goodDraft, pack, assignment, { llm: slow, model: "test" });
+  assert.equal(calls, 1, "timeout tidak boleh diulang");
+  assert.ok(edit.findings.length >= 0);
+});
+
+test("isJsonShapeError membedakan bentuk, timeout, dan HTTP", async () => {
+  const { isJsonShapeError } = await import("../src/core/newsroom/edit.ts");
+  assert.equal(isJsonShapeError(new SyntaxError("Unexpected token } in JSON at position 3")), true);
+  assert.equal(isJsonShapeError(new Error("JSON gagal (finish=stop)")), true);
+  assert.equal(isJsonShapeError(new Error("opencode timeout 240000ms")), false);
+  assert.equal(isJsonShapeError(new Error("DeepSeek HTTP 503: unavailable")), false);
+  assert.equal(isJsonShapeError(new Error("HTTP 429")), false);
+});

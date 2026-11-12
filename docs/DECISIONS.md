@@ -265,3 +265,14 @@ Batas job `daily.yml` 45 → 75 menit sebagai margin.
 Sebab: OpenCode ±46,6 s/panggilan; 153 panggilan berurutan ≈ 119 menit, di luar
 batas job. Konkurensi 3 terukur 3,3× pada uji lokal.
 _Tanggal: 2026-11-12. Rencana: `docs/plans/012-opencode-feasible.md`._
+
+## DEC-0026 — Ulang sekali hanya untuk kegagalan bentuk JSON
+
+`editDraft` mengulang panggilan editor **tepat sekali** bila kegagalannya adalah
+bentuk JSON (parse), dengan penanda di akhir system prompt. Timeout dan HTTP
+429/5xx tidak diulang di lapisan ini.
+
+Sebab: build 2026-11-12 kehilangan penilaian editor pada satu kartu karena JSON
+cacat, padahal kegagalan bentuk bisa diperbaiki dengan satu ulangan. Sebaliknya,
+mengulang timeout hanya menggandakan waktu tunggu (`DEC-0025`).
+_Tanggal: 2026-11-12. Rencana: `docs/plans/013-editor-json-retry.md`._

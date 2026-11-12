@@ -370,6 +370,18 @@ function normaliseResolved(raw: unknown, draft: Draft, openNotes: OpenNoteRef[])
   return out;
 }
 
+/**
+ * Kegagalan bentuk JSON bisa diperbaiki dengan satu ulangan; timeout dan
+ * gangguan HTTP tidak. Membedakannya mencegah kita mengulang panggilan yang
+ * hanya akan menghabiskan waktu (DEC-0026).
+ */
+export function isJsonShapeError(e: unknown): boolean {
+  const why = e instanceof Error ? e.message : String(e);
+  if (/timeout/i.test(why)) return false;
+  if (/\bHTTP\s*(429|5\d\d)\b/.test(why)) return false;
+  return /JSON|Expected|Unexpected|Unterminated|position|posisi/i.test(why);
+}
+
 export async function editDraft(
   draft: Draft,
   pack: MaterialPack,
@@ -391,14 +403,30 @@ export async function editDraft(
   let tout = 0;
   let raw: unknown = null;
 
-  try {
-    const res = await deps.llm.json<unknown>({
+  const callEditor = (retry: boolean) =>
+    deps.llm.json<unknown>({
       model: deps.model,
-      system,
+      // Penanda retry ditambahkan di AKHIR system: prefix bersama panggilan
+      // pertama tetap utuh (DEC-0024).
+      system: retry
+        ? `${system}\nCATATAN: jawaban sebelumnya bukan JSON sah. Balas HANYA satu objek JSON valid, tanpa teks lain.`
+        : system,
       user,
       maxTokens: 4000,
       temperature: 0.1,
     });
+
+  try {
+    let res: Awaited<ReturnType<typeof callEditor>>;
+    try {
+      res = await callEditor(false);
+    } catch (e) {
+      // Hanya kegagalan BENTUK yang layak diulang (DEC-0026).
+      if (!isJsonShapeError(e)) throw e;
+      const why = e instanceof Error ? e.message.slice(0, 120) : String(e);
+      console.log(`  ! editor: JSON tidak sah (${why}) — ulang sekali`);
+      res = await callEditor(true);
+    }
     raw = res.data;
     tin = res.usage.tokens_in;
     tout = res.usage.tokens_out;
