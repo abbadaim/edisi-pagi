@@ -15,11 +15,11 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Jalur produksi | **Newsroom default** (`scripts/build.ts`) |
 | Jalur mingguan | **Newsroom** (`scripts/weekly.ts`, 004); rollback `WEEKLY_WRITER=legacy` |
 | Rollback | `--no-newsroom` atau `NEWSROOM_WRITE=0` |
-| CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 45 menit |
+| CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 75 menit |
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-11` nasional 8 kartu + lokal 4 kartu |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tests | `npm test` — 248 uji; `npm run test:ui` — 10 uji browser |
+| Tests | `npm test` — 255 uji; `npm run test:ui` — 10 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -257,6 +257,10 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - Harga LLM belum dikonfigurasi; `cost_usd` sering 0. Token/latensi tetap tercatat.
 - `cached_tokens` = bagian `tokens_in` yang kena prompt cache (migrasi 008, `DEC-0024`). Baris `llm:` mencetak hit rate; jangan menebak dari bentuk prompt — 2026-11-11 terukur 25,8%, bukan ~8%.
 - System prompt tidak boleh memuat data per-kartu (mis. `answers`). Satu baris berbeda = seluruh prefix setelahnya meleset dari cache.
+- Kartu dibangun paralel (`CARD_CONCURRENCY`, default 3; `1` = berurutan) — `DEC-0025`. `deep` dan catatan dipra-tentukan sebelum fan-out.
+- `telemetry.set()` terikat per jalur async (`AsyncLocalStorage`). Jangan mengubahnya jadi field bersama: dua kartu paralel akan saling menimpa label di `llm_calls`.
+- Timeout panggilan OpenCode 240 s (`OPENCODE_TIMEOUT_MS`) dan **tidak** diulang saat timeout. Mengulang timeout hanya menggandakan waktu tunggu.
+- `WRITER_MAX_TOKENS` (brief 1200 / standard 2400 / deep 5600) harus muat di timeout pada ~25 token/detik. Menaikkan batas tanpa menaikkan timeout akan mengembalikan kegagalan “panggilan mustahil selesai”.
 
 ---
 
@@ -279,7 +283,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 | Tab lokal basi | `manifest.latest_by_scope`; publish baru |
 | Catatan terpotong | internal vs publik; `clipText`; schema 120/320 |
 | Semua kartu gugur | `E-FACT` terbukti salah; `D-TYPO`/`D-TRUNC`; lihat edit JSON |
-| Build lambat | `llm_calls` role/latency; jumlah kartu; OpenCode spawn |
+| Build lambat | `llm_calls` role/latency; `CARD_CONCURRENCY` (default 3); OpenCode ±46 s/panggilan; keluaran panjang = lambat |
 | Edisi tidak valid | `npm run validate -- <file>` |
 
 ---

@@ -105,7 +105,10 @@ export function listModels(
 
 export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
   const bin = resolveBinary(opts.bin);
-  const timeoutMs = opts.timeoutMs ?? 180_000;
+  // 180 s terlalu ketat untuk keluaran besar: panggilan writer bisa 80–110 s
+  // pada beban normal. 240 s memberi margin tanpa menahan satu kartu terlalu
+  // lama (DEC-0025).
+  const timeoutMs = opts.timeoutMs ?? Number(process.env.OPENCODE_TIMEOUT_MS ?? 240_000);
 
   async function run(model: string, system: string, user: string): Promise<{ text: string; usage: Usage }> {
     const prompt = `${system}\n\n---\n\n${user}`;

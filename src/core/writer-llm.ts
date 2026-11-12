@@ -300,6 +300,9 @@ export async function writeCardWithLlm(
         const why = e instanceof Error ? e.message.slice(0, 240) : String(e);
         console.log(`  ! tulis gagal untuk "${ctx.topic.title.slice(0, 40)}": ${why}`);
         raw = null;
+        // Timeout berarti model lambat, bukan bentuk jawaban salah. Mengulang
+        // hanya menggandakan waktu tunggu (DEC-0025).
+        if (why.includes("timeout")) break;
       }
     }
     if (!raw) break;

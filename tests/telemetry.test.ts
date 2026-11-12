@@ -57,3 +57,46 @@ test("telemetri tidak melempar bila tabel belum ada", async () => {
   assert.equal(t.summary().calls, 0);
   db.close();
 });
+
+test("konteks telemetri tidak tertukar saat dua kartu paralel", async () => {
+  const db = openSqlite(":memory:");
+  db.exec(readFileSync(new URL("../migrations/005_llm_calls.sql", import.meta.url), "utf8"));
+  db.exec(readFileSync(new URL("../migrations/008_llm_cache_tokens.sql", import.meta.url), "utf8"));
+
+  const slow: LlmAdapter = {
+    name: "opencode",
+    async json<T>() {
+      await new Promise((r) => setTimeout(r, 25));
+      return { data: {} as T, usage: { tokens_in: 1, tokens_out: 1 } };
+    },
+    async text() {
+      return { text: "", usage: { tokens_in: 1, tokens_out: 1 } };
+    },
+  };
+
+  const t = new LlmTelemetry(db, "2026-11-12");
+  const wrapped = t.wrap(slow);
+
+  // Tanpa AsyncLocalStorage, `set()` kartu B menimpa konteks kartu A sebelum
+  // panggilan A selesai — dan baris A tercatat atas nama B (DEC-0025).
+  await Promise.all([
+    t.run({ role: "write", topicId: "topik_A" }, async () => {
+      t.set({ role: "write", topicId: "topik_A", attempt: 1 });
+      await wrapped.json({ model: "m", system: "s", user: "a" });
+    }),
+    t.run({ role: "edit", topicId: "topik_B" }, async () => {
+      await new Promise((r) => setTimeout(r, 5));
+      t.set({ role: "edit", topicId: "topik_B", attempt: 1 });
+      await wrapped.json({ model: "m", system: "s", user: "b" });
+    }),
+  ]);
+
+  const rows = db.all<{ role: string; topic_id: string }>(
+    "SELECT role, topic_id FROM llm_calls ORDER BY id",
+  );
+  assert.equal(rows.length, 2);
+  const byTopic = new Map(rows.map((r) => [r.topic_id, r.role]));
+  assert.equal(byTopic.get("topik_A"), "write");
+  assert.equal(byTopic.get("topik_B"), "edit");
+  db.close();
+});

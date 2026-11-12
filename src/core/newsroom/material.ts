@@ -15,6 +15,7 @@ import { isoWib } from "../time.ts";
 import type { MaterialItem, MaterialPack } from "./contracts.ts";
 import type { FetchCache } from "./cache.ts";
 import type { PrimaryCandidate } from "./primary.ts";
+import { pool } from "../pool.ts";
 
 const UA = "EdisiPagi/0.1 (+personal news aggregator; POC)";
 
@@ -131,24 +132,6 @@ export async function fetchArticleText(
   } catch {
     return { text: "", ok: false };
   }
-}
-
-async function pool<T, R>(
-  items: T[],
-  limit: number,
-  fn: (item: T) => Promise<R>,
-): Promise<R[]> {
-  const out: R[] = [];
-  let cursor = 0;
-  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
-    for (;;) {
-      const i = cursor++;
-      if (i >= items.length) return;
-      out[i] = await fn(items[i]!);
-    }
-  });
-  await Promise.all(workers);
-  return out;
 }
 
 export interface ResearchOptions {

@@ -246,3 +246,22 @@ _Tanggal: 2026-11-12. Rencana: `docs/plans/011-prompt-cache.md`._
 
 Catatan biaya: cache hanya ±17% dari tagihan; keluaran ±58%. Jangan mengklaim
 penghematan besar dari cache saja.
+
+## DEC-0025 — Kartu dibangun paralel; telemetri terikat per jalur async
+
+Kartu dibangun dengan `pool(…, CARD_CONCURRENCY, …)`, default **3**
+(`CARD_CONCURRENCY=1` memulihkan perilaku berurutan). `deep` dan catatan
+dipra-tentukan sebelum fan-out; urutan hasil dipertahankan sehingga ID kartu
+tetap deterministik.
+
+Konteks telemetri memakai `AsyncLocalStorage`: `telemetry.set()` hanya mengubah
+konteks jalur async miliknya. Tanpa itu, dua kartu paralel saling menimpa dan
+`llm_calls` mencatat panggilan kartu A atas nama kartu B.
+
+Timeout panggilan OpenCode 180 s → 240 s (`OPENCODE_TIMEOUT_MS`), dan panggilan
+yang timeout **tidak diulang** — mengulang hanya menggandakan waktu tunggu.
+Batas job `daily.yml` 45 → 75 menit sebagai margin.
+
+Sebab: OpenCode ±46,6 s/panggilan; 153 panggilan berurutan ≈ 119 menit, di luar
+batas job. Konkurensi 3 terukur 3,3× pada uji lokal.
+_Tanggal: 2026-11-12. Rencana: `docs/plans/012-opencode-feasible.md`._

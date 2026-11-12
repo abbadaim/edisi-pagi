@@ -113,3 +113,19 @@ test("pertanyaan wajib tetap sampai ke model lewat user", () => {
   assert.ok(user.includes("pertanyaan_wajib"), "user harus memuat field pertanyaan_wajib");
   assert.ok(user.includes("Apa yang terjadi di Sleman?"), "isi pertanyaan harus tetap terkirim");
 });
+
+// DEC-0025: batas keluaran harus muat di anggaran waktu panggilan.
+test("batas token penulis muat di timeout OpenCode", async () => {
+  const { WRITER_MAX_TOKENS } = await import("../src/core/newsroom/write.ts");
+  // 28 token/detik terukur; pakai 25 untuk margin.
+  const TOK_PER_SEC = 25;
+  const TIMEOUT_SEC = Number(process.env.OPENCODE_TIMEOUT_MS ?? 240_000) / 1000;
+
+  for (const [depth, cap] of Object.entries(WRITER_MAX_TOKENS)) {
+    const worst = cap / TOK_PER_SEC;
+    assert.ok(
+      worst < TIMEOUT_SEC,
+      `${depth}: ${cap} token ≈ ${Math.round(worst)} s, melebihi timeout ${TIMEOUT_SEC} s`,
+    );
+  }
+});

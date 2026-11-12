@@ -12,6 +12,21 @@ import { truncateWords } from "../normalize.ts";
 import type { Assignment, Citation, Depth, Draft, Finding, MaterialPack } from "./contracts.ts";
 import { isDepth } from "./contracts.ts";
 
+/**
+ * Batas keluaran per kedalaman. Diturunkan dari target kata (AGENTS.md §4.2)
+ * dengan margin ~1,6×: model kadang menulis lebih panjang dari target, tetapi
+ * batas ini tidak boleh melebihi anggaran waktu.
+ *
+ * Pada ~28 token/detik (terukur 2026-11-12: 3.104 token / 110,9 s), batas
+ * `deep` 5.600 token = ±200 s — muat di timeout 240 s (DEC-0025). Batas lama
+ * 8.000 token = ±285 s: panggilan yang mustahil selesai tepat waktu.
+ */
+export const WRITER_MAX_TOKENS = {
+  brief: 1200,
+  standard: 2400,
+  deep: 5600,
+} as const;
+
 export interface WriteContext {
   assignment: Assignment;
   pack: MaterialPack;
@@ -279,7 +294,7 @@ export async function writeDraft(
       model: deps.model,
       system,
       user,
-      maxTokens: d === "deep" ? 8000 : d === "standard" ? 4200 : 2600,
+      maxTokens: WRITER_MAX_TOKENS[d],
       temperature: 0.4,
     });
 
@@ -357,7 +372,7 @@ export async function repairFactDraft(
       model: deps.model,
       system,
       user,
-      maxTokens: ctx.assignment.depth === "deep" ? 8000 : ctx.assignment.depth === "standard" ? 4200 : 2600,
+      maxTokens: WRITER_MAX_TOKENS[ctx.assignment.depth],
       temperature: 0.2,
     });
     return { draft: normaliseDraft(data, ctx), tokens_in: usage.tokens_in, tokens_out: usage.tokens_out, raw: data };

@@ -14,6 +14,7 @@ import {
 } from "../src/core/writer.ts";
 import { validateEdition, formatErrors, allowsThin } from "../src/core/validate.ts";
 import { resolveLlm } from "../src/adapters/llm/resolve.ts";
+import { pool } from "../src/core/pool.ts";
 import type { Card, Edition, Scope } from "../src/core/types.ts";
 import { isoWib } from "../src/core/time.ts";
 import { features, similarity } from "../src/core/simhash.ts";
@@ -69,6 +70,8 @@ const newsroom =
   process.env.NEWSROOM_WRITE !== "off";
 /** Batasi jumlah kartu saat uji integrasi; 0 = tanpa batas. */
 const newsroomLimit = Number(arg("newsroom-limit") ?? 0);
+/** Kartu dibangun paralel (DEC-0025). 1 = perilaku lama yang berurutan. */
+const cardConcurrency = Math.max(1, Number(process.env.CARD_CONCURRENCY ?? 3));
 const dateArg = arg("date");
 const readingDay = dateArg || new Date(Date.now() + WIB).toISOString().slice(0, 10);
 
@@ -496,12 +499,16 @@ try {
     scope: "nasional" | "lokal",
     limit: number,
   ): Promise<Card[]> {
-    const cards: Card[] = [];
+    const cap = newsroomLimit > 0 ? Math.min(limit, newsroomLimit) : limit;
+
+    // Pra-tentukan `deep` dan catatan SEBELUM fan-out: keduanya state bersama,
+    // dan dua kartu paralel tidak boleh mengambil sumber daya yang sama.
     let deepUsed = false;
     const usedNoteIds = new Set<string>();
-    const cap = newsroomLimit > 0 ? Math.min(limit, newsroomLimit) : limit;
+    const prepared: Array<{ e: Parameters<typeof makeCard>[0]; local: boolean; asDeep: boolean }> = [];
+
     for (const r of planned) {
-      if (cards.length >= cap) break;
+      if (prepared.length >= cap) break;
       const entry = entries.find((e) => e.topicId === r.topicId);
       const asDeep = newsroom && scope === "nasional" && !deepUsed && entry?.assignment.depth === "deep";
       if (asDeep) deepUsed = true;
@@ -511,20 +518,26 @@ try {
       // tindak lanjut sudah diterapkan di planCards.
       const allowedNotes = baseAssignment.note_ids.filter((id) => !usedNoteIds.has(id));
       for (const id of allowedNotes) usedNoteIds.add(id);
-      const card = await makeCard(
-        {
+
+      prepared.push({
+        e: {
           topic: r.topic,
           cluster: r.cluster,
           topicId: r.topicId,
           revision: entry?.revision ?? 1,
           assignment: { ...baseAssignment, note_ids: allowedNotes },
         },
-        scope === "lokal" || r.local,
+        local: scope === "lokal" || r.local,
         asDeep,
-      );
-      if (card) cards.push(card);
+      });
     }
-    return cards;
+
+    // Urutan hasil dipertahankan `pool`, jadi ID kartu tetap deterministik.
+    // Konteks telemetri dibatasi per kartu (DEC-0025).
+    const built = await pool(prepared, cardConcurrency, (p) =>
+      telemetry.run({ role: "write", topicId: p.e.topicId }, () => makeCard(p.e, p.local, p.asDeep)),
+    );
+    return built.filter((c): c is Card => c !== null);
   }
 
   async function hoaxCard(): Promise<Card | null> {

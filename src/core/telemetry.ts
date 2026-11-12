@@ -6,6 +6,7 @@
  * "kartu mana yang mahal/lambat" tanpa menebak.
  */
 
+import { AsyncLocalStorage } from "node:async_hooks";
 import type { Db } from "../adapters/db/sqlite.ts";
 import type { JsonRequest, LlmAdapter, TextRequest } from "../adapters/llm/types.ts";
 import { isoWib } from "./time.ts";
@@ -39,7 +40,12 @@ export interface LlmSummary {
 export class LlmTelemetry {
   private readonly db: Db;
   private readonly editionId: string;
-  private ctx: TelemetryContext = { role: "write" };
+  /**
+   * Konteks per jalur async (DEC-0025). Dengan kartu yang dibangun paralel,
+   * satu field bersama akan mencatat panggilan kartu A atas nama kartu B.
+   */
+  private readonly als = new AsyncLocalStorage<TelemetryContext>();
+  private fallbackCtx: TelemetryContext = { role: "write" };
   private enabled = true;
 
   constructor(db: Db, editionId: string) {
@@ -48,7 +54,18 @@ export class LlmTelemetry {
   }
 
   set(ctx: TelemetryContext): void {
-    this.ctx = ctx;
+    const scoped = this.als.getStore();
+    if (scoped) Object.assign(scoped, ctx);
+    else this.fallbackCtx = ctx;
+  }
+
+  /** Jalankan `fn` dengan konteks telemetri sendiri; aman untuk paralel. */
+  run<T>(ctx: TelemetryContext, fn: () => Promise<T>): Promise<T> {
+    return this.als.run({ ...ctx }, fn);
+  }
+
+  private current(): TelemetryContext {
+    return this.als.getStore() ?? this.fallbackCtx;
   }
 
   wrap(adapter: LlmAdapter): LlmAdapter {
@@ -87,6 +104,7 @@ export class LlmTelemetry {
     latencyMs: number,
   ): void {
     if (!this.enabled) return;
+    const ctx = this.current();
     try {
       this.db.run(
         `INSERT INTO llm_calls
@@ -95,9 +113,9 @@ export class LlmTelemetry {
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [
           this.editionId,
-          this.ctx.topicId ?? null,
-          this.ctx.role,
-          this.ctx.attempt ?? 1,
+          ctx.topicId ?? null,
+          ctx.role,
+          ctx.attempt ?? 1,
           provider,
           model,
           usage.tokens_in,
