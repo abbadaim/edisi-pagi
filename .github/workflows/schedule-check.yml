@@ -1,0 +1,56 @@
+name: schedule-check
+
+# GitHub bisa membuang trigger terjadwal tanpa mengubah status workflow.
+# 2026-11-12: jadwal 05:45 WIB tidak berjalan sama sekali dan tidak ada yang
+# tahu sampai pemilik proyek melihat aplikasinya masih menampilkan edisi
+# kemarin. Workflow ini memeriksa hasilnya, bukan niatnya (DEC-0028).
+on:
+  schedule:
+    # 00:15 UTC = 07:15 WIB. Dua jam setelah jadwal utama; build normal
+    # selesai ±15 menit, jadi jam ini tidak akan bertabrakan.
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Periksa edisi hari ini
+        id: check
+        run: |
+          if node scripts/check-schedule.ts; then
+            echo "missing=false" >> "$GITHUB_OUTPUT"
+          else
+            code=$?
+            if [ "$code" = "10" ]; then
+              echo "missing=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "::warning::Pemeriksaan jadwal tidak bisa dijalankan (exit $code); tidak menjalankan build."
+            fi
+          fi
+
+      - name: Jalankan edisi tertunda
+        if: steps.check.outputs.missing == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Jangan dobel kalau masih ada run yang berjalan.
+          running=$(gh run list --workflow daily.yml --status in_progress --limit 1 --json databaseId --jq 'length')
+          if [ "$running" != "0" ]; then
+            echo "sudah ada run edisi-harian yang berjalan; tidak menjalankan lagi"
+            exit 0
+          fi
+          echo "::warning::Edisi hari ini belum terbit — menjalankan daily.yml"
+          gh workflow run daily.yml --ref main

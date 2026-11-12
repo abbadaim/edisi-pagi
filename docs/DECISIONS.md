@@ -276,3 +276,25 @@ Sebab: build 2026-11-12 kehilangan penilaian editor pada satu kartu karena JSON
 cacat, padahal kegagalan bentuk bisa diperbaiki dengan satu ulangan. Sebaliknya,
 mengulang timeout hanya menggandakan waktu tunggu (`DEC-0025`).
 _Tanggal: 2026-11-12. Rencana: `docs/plans/013-editor-json-retry.md`._
+
+## DEC-0027 — Feed diulang sekali hanya untuk gangguan sesaat
+
+`ingest` mengulang feed satu kali bila gagal karena timeout, gangguan jaringan,
+atau HTTP 5xx. HTTP 4xx tidak diulang.
+
+Sebab: build 2026-11-12 kehilangan feed `tempo_nasional` karena timeout 15 s
+milik kita sendiri; build tetap terbit sehingga tidak ada yang memperbaikinya,
+dan cakupan menyempit tanpa jejak di edisi.
+_Tanggal: 2026-11-12. Rencana: `docs/plans/014-feed-retry.md`._
+
+## DEC-0028 — Jadwal diperiksa dari hasilnya, bukan status workflow
+
+`schedule-check.yml` berjalan 07:15 WIB dan membandingkan `latest_by_scope.nasional`
+di manifest live dengan tanggal WIB hari ini. Bila belum terbit, `daily.yml`
+dijalankan sekali (kecuali ada run yang masih berjalan). Status workflow tidak
+dipakai sebagai bukti: pada 2026-11-12 workflow berstatus `active` sementara
+trigger-nya tidak pernah dibuat.
+
+Sebab: pemeriksaan manual (`docs/plans/009-schedule-verification.md`) hanya
+berlaku bila ada orang yang ingat.
+_Tanggal: 2026-11-12. Rencana: `docs/plans/015-schedule-check-auto.md`._

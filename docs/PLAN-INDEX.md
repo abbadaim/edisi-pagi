@@ -18,6 +18,8 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 011 | [Cache prompt terukur](plans/011-prompt-cache.md) | pipeline | `tested` | 2026-11-12 |
 | 012 | [OpenCode layak untuk build harian](plans/012-opencode-feasible.md) | pipeline | `shipped` | 2026-11-12 |
 | 013 | [Ulang sekali saat JSON editor cacat](plans/013-editor-json-retry.md) | pipeline | `tested` | 2026-11-12 |
+| 014 | [Ulang sekali saat feed gagal](plans/014-feed-retry.md) | pipeline | `tested` | 2026-11-12 |
+| 015 | [Pemeriksaan jadwal otomatis](plans/015-schedule-check-auto.md) | infra | `tested` | 2026-11-12 |
 | 004 | [Paritas newsroom mingguan](plans/004-weekly-newsroom-parity.md) | pipeline | `tested` | 2026-11-11 |
 | 005 | [Sitemap sumber primer](plans/005-primary-sitemap.md) | pipeline | `tested` | 2026-11-11 |
 | 006 | [Teks penuh meta lokal](plans/006-local-meta-text.md) | pipeline | `tested` | 2026-11-11 |

@@ -19,7 +19,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-12` nasional 8 kartu (build 14 m 16 s, OpenCode, kartu paralel) |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tests | `npm test` — 258 uji; `npm run test:ui` — 10 uji browser |
+| Tests | `npm test` — 266 uji; `npm run test:ui` — 10 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -234,7 +234,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - **Jangan menjalankan ulang tanggal edisi yang sudah terbit**; edisi immutable. Untuk uji, pakai `--newsroom-limit` + `--thin` pada tanggal yang belum ada, atau POC.
 - `data/work/`, `local.db`, `.env.local` diabaikan. Jangan commit.
 - Migrasi 004–006 harus jalan sebelum build di CI; workflow sudah melakukannya.
-- Trigger terjadwal GitHub bisa dibuang tanpa notifikasi dan tanpa mengubah status workflow (terjadi 2026-11-12). Setelah deploy, verifikasi bahwa run/edisi hari ini ada (§8).
+- Trigger terjadwal GitHub bisa dibuang tanpa notifikasi dan tanpa mengubah status workflow (terjadi 2026-11-12). `schedule-check.yml` memeriksa manifest 07:15 WIB dan menjalankan `daily.yml` bila edisi hari ini belum ada (`DEC-0028`). Verifikasi manual (§8) tetap berguna, tetapi bukan lagi satu-satunya penjaga.
 - `scripts/build.ts` **tidak** punya penjaga: menjalankannya untuk tanggal yang sudah terbit akan menimpa edisi itu. Jalankan hanya untuk tanggal yang belum ada.
 - Deploy data-only: workflow `deploy-site` menjalankan `npm run publish` +
   Pages tanpa build. Pakai ini agar tanggal terbit tidak dibangun ulang.
@@ -261,6 +261,7 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `telemetry.set()` terikat per jalur async (`AsyncLocalStorage`). Jangan mengubahnya jadi field bersama: dua kartu paralel akan saling menimpa label di `llm_calls`.
 - Timeout panggilan OpenCode 240 s (`OPENCODE_TIMEOUT_MS`) dan **tidak** diulang saat timeout. Mengulang timeout hanya menggandakan waktu tunggu.
 - Kegagalan bentuk JSON di editor diulang **sekali**; timeout dan 429/5xx tidak (`DEC-0026`). Jangan menambah ulangan untuk timeout.
+- Feed diulang **sekali** hanya untuk timeout/jaringan/5xx; 4xx tidak (`DEC-0027`). Kegagalan yang diulang muncul sebagai `× … (2 percobaan)`.
 - `WRITER_MAX_TOKENS` (brief 1200 / standard 2400 / deep 5600) harus muat di timeout pada ~25 token/detik. Menaikkan batas tanpa menaikkan timeout akan mengembalikan kegagalan “panggilan mustahil selesai”.
 
 ---
