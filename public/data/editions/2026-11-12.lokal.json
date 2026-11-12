@@ -2,18 +2,18 @@
   "schema_version": 1,
   "edition_id": "2026-11-12",
   "scope": "lokal",
-  "published_at": "2026-11-12T09:39:26+07:00",
+  "published_at": "2026-11-12T10:24:50+07:00",
   "coverage": {
-    "from": "2026-11-11T09:39:26+07:00",
-    "to": "2026-11-12T09:39:26+07:00"
+    "from": "2026-11-11T10:24:50+07:00",
+    "to": "2026-11-12T10:24:50+07:00"
   },
-  "generated_at": "2026-11-12T09:39:26+07:00",
+  "generated_at": "2026-11-12T10:24:50+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 3,
+  "reading_time_min": 9,
   "generated_by": {
     "adjudicate": {
       "provider": "opencode",
@@ -38,13 +38,111 @@
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_jadwal_sim_keliling_sleman_har_da39",
-      "angle": "Layanan perpanjangan SIM di Sleman hari ini, syaratnya, dan beda informasi lokasi.",
-      "kicker": "Sleman",
-      "title": "Perpanjang SIM di Sleman 12 November: MPP Pagi, Keliling Malam",
+      "topic_id": "t_ugm_telusuri_dampak_demo_ricuh_538d",
+      "angle": "154 diamankan; 8 mahasiswa UGM ditangkap, 7 dipulangkan; Polda bantah masuk kampus",
+      "kicker": "Yogyakarta",
+      "title": "UGM telusuri dampak demo Jogja, Polda DIY bantah masuk kampus",
       "status": "sebagian",
       "truth": {
-        "claim": "Satlantas Polresta Sleman membuka layanan perpanjangan SIM A dan SIM C di MPP Sleman pada Kamis, 12 November 2026 pukul 08.00-11.00 WIB.",
+        "claim": "Polda DIY menyebut 154 orang diamankan dan membantah aparat masuk kampus, sementara UGM menyatakan delapan mahasiswanya ditangkap dan tujuh di antaranya telah d",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T10:24:50+07:00"
+      },
+      "body": [
+        "Universitas Gadjah Mada, kampus negeri yang berada di Kabupaten Sleman, Daerah Istimewa Yogyakarta, menjadi salah satu pihak yang paling langsung terdampak kericuhan setelah aksi penyampaian aspirasi di Kota Yogyakarta pada 10 November 2026. Keesokan harinya, Rabu (11/11), rektor dan sejumlah pimpinan fakultas angkat bicara, sementara Polda DIY merilis jumlah orang yang diamankan. Pada Kamis (12/11) pagi muncul keterangan bahwa sebagian mahasiswa yang sempat diamankan sudah dipulangkan. Bagi warga Sleman dan DIY yang jarang membuka media sosial, peristiwa ini menyentuh dua hal sekaligus: bagaimana aparat menangani aksi massa, dan bagaimana sebuah kampus menempatkan diri ketika mahasiswanya terkena tindakan aparat.",
+        "Menurut Plt Kabid Humas Polda DIY AKBP Novita Eka Sari, total 154 orang diamankan hingga Rabu pagi. \"Total sampai pagi ini ada 154 orang,\" kata Novita kepada wartawan. Penindakan, menurut keterangannya, dilakukan di sejumlah titik: Kantor DPRD DIY, kawasan Malioboro, Tugu Pal Putih, hingga Bundaran UGM. Rincian status hukum ke-154 orang itu belum diumumkan. Tidak ada keterangan tentang berapa yang masih diperiksa, berapa yang ditetapkan sebagai tersangka, dan berapa yang sudah dilepas. Yang dinyatakan adalah bahwa jumlah massa yang diamankan di lokasi bundaran depan UGM akan disampaikan kemudian.",
+        "Novita membantah narasi yang beredar di media sosial bahwa aparat memburu massa hingga masuk lingkungan kampus UGM. \"Tidak masuk kampus, jumlah yang diamankan di lokasi bundaran depan UGM menyusul,\" ujarnya. Pernyataan itu diulang dalam keterangan berikutnya: penindakan berawal dari gedung DPRD, sekitaran Malioboro, Tugu, lalu sampai bundaran depan UGM, dan ia menegaskan aparat tidak masuk kampus. Dalam kronologi yang dilaporkan media, kendaraan taktis dan truk water cannon memang disebut mengikuti di belakang pasukan Brimob saat menghalau massa, tetapi tidak ada keterangan bahwa kendaraan itu masuk ke area kampus.",
+        "Menurut kepolisian, aksi yang berlangsung sejak siang berjalan tertib hingga pukul 19.00 WIB. Sekitar pukul 20.07 WIB, sekelompok massa menyerang area Kantor DPRD DIY dengan petasan, bom molotov, dan batu. Polisi kemudian mengerahkan personel Brimob dan satuan lainnya untuk membubarkan massa serta melakukan penindakan. Pantauan jurnalis menggambarkan massa berusaha merobohkan pagar gedung DPRD, sebagian merangsek masuk, memecahkan kaca ATM Center, dan membakar beberapa benda di tengah jalan. Brimob bertameng muncul dari Jalan Perwakilan, water cannon sesekali ditembakkan, dan sekitar pukul 20.40 WIB massa dipukul mundur hingga pos Teteg Malioboro sebelum gas air mata ditembakkan.",
+        "Setelah penindakan, situasi dilaporkan kembali aman dan kondusif menyusul patroli skala besar pada malam hari. Jurnalis yang meliput menggambarkan warga memadati Malioboro dan menyaksikan aparat menghalau massa yang terus mundur hingga melewati perlintasan kereta api. Pada jalur terpisah, massa mahasiswa yang menggelar aksi di kawasan 0 kilometer Kota Yogyakarta dan sebelumnya berunjuk rasa di kantor Gubernur disebut membubarkan diri secara bertahap sekitar pukul 19.00 WIB. Pemberitaan menyebut penyerang kantor DPRD sebagai massa tak dikenal yang muncul dari arah utara, sehingga aksi mahasiswa pada sore hari dan penyerangan pada malam hari dilaporkan sebagai dua rangkaian yang berbeda.",
+        "Dalam penindakan itu polisi menyita sejumlah barang bukti: enam bom molotov, 12 petasan, tujuh botol berisi bensin, senjata tajam, ketapel, dan gotri. Kapolri Jenderal Suyudi Ario Seto bersama Wakil Ketua DPR RI Sufmi Dasco Ahmad meninjau penanganan kericuhan di Kantor DPRD DIY pada Rabu dini hari. Suyudi menyatakan kepolisian akan mendalami dugaan keterlibatan pihak yang sengaja membawa barang berbahaya dan melakukan perusakan, serta menyelidiki kemungkinan keterkaitan kericuhan di Yogyakarta dengan peristiwa serupa di daerah lain. Sampai keterangan itu, belum ada nama atau kelompok yang disebut sebagai pihak yang didalami keterlibatannya.",
+        "Di sisi kampus, Rektor UGM Prof Ova Emilia menyatakan universitas terus memantau dan berkoordinasi untuk menjaga keamanan lingkungan kampus. Ia mengaku sudah menyampaikan pesan kepada para dosen, tenaga kependidikan, dan mahasiswa. UGM, menurutnya, sedang mendata mahasiswa yang mengikuti aksi maupun yang terdampak, menelusuri keberadaan mereka, dan memverifikasi kondisi mereka. Universitas juga meminta sivitas menyampaikan informasi soal mahasiswa yang belum dapat dihubungi melalui fakultas atau alamat surel yang disediakan kampus, dan mengimbau agar tidak mudah menyebarkan informasi yang belum terverifikasi.",
+        "Angka yang lebih spesifik muncul dari pimpinan UGM. Wakil Rektor Bidang Pendidikan dan Pengajaran Prof Wening Udasmoro mengatakan ada delapan mahasiswa UGM yang turut ditangkap, enam dari Fisipol, satu Filsafat, dan satu Kehutanan. \"Ya, ada delapan ya,\" katanya dalam jumpa pers di UGM, Rabu (11/11). Ia juga menyebut tim kampus tengah menyisir rumah sakit untuk mencari mahasiswa UGM yang dirawat, dan bahwa ada alumni UGM yang juga berada di rumah sakit. Menurut Wening, alumni termasuk warga UGM, tetapi identitas maupun jumlah pasti mereka yang dirawat belum dapat dipastikan saat itu.",
+        "Pada Kamis (12/11) pagi, Rektor Ova Emilia menyatakan tujuh mahasiswa yang diamankan Polda DIY telah dipulangkan. Keterangan itu berbeda dari angka delapan mahasiswa yang disebut sehari sebelumnya. Tidak ada keterangan yang menjelaskan apakah selisih satu orang berarti mahasiswa tersebut masih ditahan, sudah pulang lebih dulu, atau ada kekeliruan hitung, dan status hukum delapan orang itu juga belum dirinci. Perbedaan hari juga muncul di pemberitaan: satu laporan menulis peristiwa terjadi \"Rabu (10/11)\", laporan lain \"Selasa (10/11)\", dan keduanya merujuk tanggal 10 November 2026.",
+        "Dekan Fisipol UGM Prof Gabriel Lele mengatakan tim fakultas sudah mendatangi Mapolda DIY, tetapi belum bisa bertemu mahasiswanya. Informasi terakhir yang diterima: beberapa mahasiswa sempat mengirim pesan bahwa mereka ditangkap, dengan titik penangkapan berbeda, ada yang di DPR dan ada yang di depan bundaran. Gabriel menduga ada kasus salah tangkap pada dua orang yang kebetulan melintas membawa motor di dekat lokasi aksi lalu berusaha kembali ke kampus, tempat Fisipol menyiapkan ruang aman, dan justru ditangkap saat situasi diasumsikan sudah tenang. Ia menyebut informasi soal keberadaan mahasiswa masih simpang siur dan berharap angka penangkapan tidak bertambah.",
+        "Gabriel juga menyampaikan bahwa menurut pengecekan kepada petugas keamanan kampus, tidak ada aparat yang masuk ke area kampus setelah kericuhan. Namun ia menyayangkan penindakan di Bundaran UGM yang disebutnya sebagai pintu masuk kampus. \"Bagi kami ada pengerahan aparat dalam jumlah besar berada di titik masuk strategis UGM itu sudah bentuk intimidasi,\" tegasnya. Pernyataan itu bukan bantahan atas versi polisi soal masuk tidaknya aparat ke dalam kampus, melainkan penilaian kampus atas lokasi pengerahan aparat di sekitarnya.",
+        "UGM menyatakan akan mengupayakan pendampingan hukum, berkoordinasi dengan pihak berwenang, dan mengupayakan agar mahasiswa dapat segera dibebaskan apabila tidak terdapat dasar hukum untuk penahanan lebih lanjut. Untuk mahasiswa yang luka atau membutuhkan perawatan medis, kampus menyatakan akan menyediakan pendampingan dan menanggung biaya pengobatan serta perawatan yang diperlukan. Ova juga menegaskan penolakan terhadap segala bentuk kekerasan, baik dalam penyampaian aspirasi maupun dalam proses pengamanan aksi, dan meminta tindakan aparat mengedepankan legalitas, proporsionalitas, serta penghormatan terhadap hak asasi manusia.",
+        "Soal Ombudsman, tidak ada keterangan bahwa lembaga itu sudah menerima laporan, turun memeriksa, atau membuka penyelidikan atas peristiwa ini. Dalam pernyataan rektor maupun Polda DIY yang dikutip media, Ombudsman tidak disebut sama sekali. Yang tersedia hanya penjelasan umum bahwa ombudsman adalah pejabat atau badan yang bertugas menyelidiki berbagai keluhan masyarakat, dan bahwa lembaga semacam itu juga dapat ditemukan di pemerintahan, perusahaan, universitas, maupun media. Karena itu, apakah Ombudsman dilibatkan secara resmi, siapa yang melaporkan, dan apa lingkup pemeriksaannya belum dapat dipastikan dan masih menunggu keterangan resmi.",
+        "Daftar tuntutan mahasiswa dalam aksi itu juga belum terperinci. Yang tercatat, pada siang hari demo yang digelar massa Aliansi Jogja Memanggil berlangsung kondusif, dan Gubernur DIY Sri Sultan Hamengku Buwono X menemui langsung massa serta berbincang sambil duduk lesehan. Kericuhan baru terjadi pada malam hari, setelah massa dari arah utara menyerang kantor DPRD DIY. Hingga Kamis (12/11), isi tuntutan, siapa yang mewakili massa, dan bagaimana tanggapan resmi atas tuntutan tersebut belum diumumkan, termasuk oleh DPRD DIY yang gedungnya menjadi sasaran penyerangan.",
+        "Dengan begitu, beberapa hal masih terbuka untuk dipantau. Pertama, status hukum 154 orang yang diamankan dan rincian berapa di antaranya mahasiswa. Kedua, hasil pendataan dan penelusuran UGM, termasuk jumlah pasti mahasiswa yang ditangkap, yang dirawat, dan yang sudah kembali. Ketiga, apakah benar tidak ada aparat yang masuk ke area kampus, karena versi kepolisian dan hasil pengecekan kampus baru disampaikan secara terpisah. Keempat, hasil penyelidikan polisi atas dugaan keterlibatan pihak yang membawa barang berbahaya. Kelima, keterlibatan Ombudsman dan isi tuntutan pengunjuk rasa, yang keduanya belum memiliki keterangan resmi dalam bahan yang tersedia."
+      ],
+      "explain": [
+        {
+          "q": "Di mana UGM berada dan sejak kapan berdiri?",
+          "a": "UGM adalah perguruan tinggi negeri di Kabupaten Sleman, DIY, yang didirikan secara resmi pada 19 Desember 1949; pada QS 2026 ia peringkat ke-2 di Indonesia dan ke-224 dunia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Universitas_Gadjah_Mada"
+          }
+        },
+        {
+          "q": "Apa itu ombudsman?",
+          "a": "Pejabat atau badan yang bertugas menyelidiki berbagai keluhan masyarakat; istilahnya berasal dari bahasa Norse Kuno umbudsmann yang berarti perwakilan, dan lembaga serupa bisa ada di pemerintahan, perusahaan, universitas, maupun media.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Ombudsman"
+          }
+        },
+        {
+          "q": "Apa yang dipantau UGM terkait aksi 10 November 2026?",
+          "a": "UGM memantau keamanan kampus, dan Rektor Ova Emilia menegaskan perlunya pendampingan bagi mahasiswa terdampak serta penghormatan terhadap HAM.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261111112127-20-1425784/ugm-pastikan-keamanan-lingkungan-kampus-usai-aksi-demo-10-november"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Polda DIY dan UGM soal status hukum mahasiswa yang diamankan, dan jangan sebarkan informasi yang belum terverifikasi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8748020/ugm-telusuri-data-mahasiswa-terdampak-aksi-berujung-ricuh-di-jogja",
+          "published_at": "2026-11-11T12:30:24+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T10:24:50+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111112127-20-1425784/ugm-pastikan-keamanan-lingkungan-kampus-usai-aksi-demo-10-november",
+          "published_at": "2026-11-11T11:44:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T10:24:50+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/7-mahasiswa-ugm-yang-diamankan-saat-ricuh-yogya-dipulangkan-1-lainnya-dirawat-di-rs-28YbRjlD96a",
+          "published_at": "2026-11-12T09:38:57+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T10:24:50+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_jadwal_sim_keliling_sleman_har_da39",
+      "angle": "Panduan perpanjangan SIM di Sleman hari ini, dari MPP sampai SIM Keliling malam.",
+      "kicker": "Sleman",
+      "title": "SIM Keliling Sleman Kamis Ini: Layanan MPP Buka 08.00-11.00",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Layanan perpanjangan SIM A dan SIM C di MPP Kabupaten Sleman pada 12 November 2026 dibuka pukul 08.00-11.00 WIB.",
         "status": "sebagian",
         "confidence": 0.52,
         "band": "diragukan",
@@ -57,39 +155,39 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-12T09:39:26+07:00"
+        "assessed_at": "2026-11-12T10:24:50+07:00"
       },
       "body": [
-        "Warga Sleman yang ingin memperpanjang SIM A atau SIM C pada Kamis, 12 November 2026, bisa datang ke Mal Pelayanan Publik (MPP) Sleman. Satlantas Polresta Sleman membuka layanan itu pukul 08.00-11.00 WIB. Selain MPP, polisi menyediakan bus SIM Keliling malam di Lobby Sleman City Hall setiap Sabtu pukul 19.00-21.00 WIB, program SIM Masuk Desa (SIMMADE) di sejumlah titik, dan layanan Satpas Polresta Sleman yang juga melayani pembuatan SIM baru. Jadwal Satpas: Senin-Jumat pukul 08.00-11.00 WIB dan Sabtu pukul 08.00-10.00 WIB. Menurut pemberitaan Harian Jogja, jadwal MPP berlaku pada sejumlah hari di November 2026, termasuk 12 November.",
-        "Sebelum berangkat, pemohon perlu menyiapkan e-KTP, SIM lama beserta fotokopi tiga rangkap, surat keterangan sehat, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS. Namun ada perbedaan informasi soal lokasi layanan hari ini. Artikel Harian Jogja menyebut Kamis 12 November dilayani di MPP Sleman, sedangkan ringkasan latar menyebut layanan SIM Keliling di halaman parkir Indogrosir, lokasi yang di artikel utama justru dijadwalkan Selasa, 10 November. Belum jelas layanan mana yang beroperasi pagi ini dan berapa kuota pemohon. Langkah aman: cek kanal resmi Satlantas Polresta Sleman sebelum berangkat dan pastikan masa berlaku SIM belum lewat."
+        "Warga Sleman yang ingin memperpanjang SIM A atau SIM C pada Kamis (12/11/2026) bisa datang ke Mal Pelayanan Publik (MPP) Kabupaten Sleman. Satlantas Polresta Sleman membuka layanan itu pukul 08.00-11.00 WIB, sama seperti jadwal MPP pada sejumlah hari lain di November 2026. Selain MPP, polisi menyediakan SIM Keliling malam di Lobby Sleman City Hall setiap Sabtu pukul 19.00-21.00 WIB, program SIM Masuk Desa (SIMMADE) di sejumlah titik, serta layanan di Satpas Polresta Sleman. Pemohon diminta membawa e-KTP, SIM lama, surat keterangan sehat, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS. Khusus Satpas, syaratnya mencakup fotokopi SIM lama tiga rangkap, dengan jam layanan Senin-Jumat pukul 08.00-11.00 WIB dan Sabtu pukul 08.00-10.00 WIB.",
+        "Untuk hari ini, belum ada keterangan resmi soal titik layanan lain di luar MPP. Satu bahan menyebut jadwal SIM Keliling Sleman 12 November 2026 berlokasi di halaman parkir Indogrosir, sedangkan bahan lain menempatkan Indogrosir pada Selasa (10/11/2026) melalui SIMMADE dan menyebut Kamis (12/11/2026) sebagai jadwal MPP. Perbedaan lokasi itu sebaiknya dicek ulang sebelum berangkat. Bahan juga tidak memuat informasi biaya perpanjangan, kuota pemohon, atau layanan tambahan berbayar. Warga disarankan memeriksa masa berlaku SIM dan memastikan dokumen lengkap agar tidak perlu datang dua kali, mengingat layanan pagi hanya berlangsung tiga jam."
       ],
       "explain": [
         {
-          "q": "Apa itu SIMMADE dan siapa yang dilayani?",
-          "a": "SIMMADE adalah program SIM Masuk Desa, layanan jemput bola perpanjangan SIM yang beroperasi di sejumlah lokasi Kabupaten Sleman pada pagi hari.",
+          "q": "Di mana bahan latar menempatkan layanan SIM Sleman pada 12 November 2026?",
+          "a": "Bahan latar menyebut halaman parkir Indogrosir, sementara artikel lain menempatkan MPP pada tanggal itu dan Indogrosir pada 10 November lewat SIMMADE.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
           }
         },
         {
-          "q": "Apa beda layanan di Satpas dan layanan keliling?",
-          "a": "Layanan keliling dan SIMMADE hanya melayani perpanjangan SIM A dan SIM C, sedangkan Satpas juga melayani penerbitan SIM baru.",
+          "q": "Apa saja syarat yang perlu dibawa pemohon perpanjangan SIM?",
+          "a": "e-KTP, SIM lama, surat keterangan sehat dari dokter, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS, seperti disebut pada bahan latar soal persyaratan.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
           }
         },
         {
-          "q": "Dokumen apa yang harus dibawa pemohon?",
-          "a": "e-KTP, SIM lama, surat keterangan sehat, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS.",
+          "q": "Apa itu SIMMADE?",
+          "a": "Program SIM Masuk Desa yang membawa layanan perpanjangan SIM ke sejumlah lokasi di Kabupaten Sleman pada pagi hari, pukul 08.00-11.00 WIB.",
           "source": {
             "outlet": "harianjogja.com",
             "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
           }
         }
       ],
-      "action": "Siapkan e-KTP, SIM lama, surat sehat, tes psikologi, dan bukti JKN aktif, lalu cek kanal resmi Satlantas Sleman sebelum berangkat.",
+      "action": "Cek lokasi dan jam layanan SIM di Sleman sebelum berangkat, lalu siapkan e-KTP, SIM lama, dan surat keterangan sehat.",
       "image": null,
       "sources": [
         {
@@ -97,87 +195,14 @@
           "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya",
           "published_at": "2026-11-12T06:47:05+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-12T09:39:26+07:00"
+          "accessed_at": "2026-11-12T10:24:50+07:00"
         }
       ],
       "place": "lokal",
       "revision": 1,
       "first_seen": "2026-11-11",
       "previous_edition": null,
-      "changes": [],
-      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
-    },
-    {
-      "id": "c2",
-      "type": "news",
-      "topic_id": "t_polda_diy_beberkan_alasan_pene_da39",
-      "angle": "Alasan polisi menetapkan dua tersangka pembawa molotov dalam demo 10 November di Jogja",
-      "kicker": "Yogyakarta",
-      "title": "Polda DIY Sebut Dua Tersangka Demo 10 November Bawa Molotov",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Polda DIY menetapkan dua tersangka pembawa molotov dari demo 10 November 2026, sementara 136 orang masih menjalani pemeriksaan.",
-        "status": "sebagian",
-        "confidence": 0.52,
-        "band": "diragukan",
-        "basis": {
-          "strongest": "one_tier2",
-          "primary": 0,
-          "tier2": 1,
-          "independent_outlets": 1,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-12T09:39:26+07:00"
-      },
-      "body": [
-        "Polda DIY menetapkan dua orang sebagai tersangka dalam penanganan aksi demonstrasi di Jogja pada 10 November 2026, dengan salah satu lokasi dugaan pelemparan bom molotov berada di Bundaran UGM yang masuk kawasan Sleman. Kapolda DIY Irjen Pol Langgeng Purnomo menyebut polisi telah mengamankan 157 orang setelah aksi tersebut. Sebanyak 21 di antaranya anak di bawah umur dan seluruhnya sudah dipulangkan, sedangkan 136 orang lainnya masih menjalani pemeriksaan untuk melihat apakah ada dugaan tindak pidana berdasarkan alat bukti yang ditemukan. Langgeng menegaskan status hukum mereka harus diputuskan sebelum satu kali 24 jam: yang tidak cukup bukti dipulangkan, yang cukup bukti dilanjutkan ke penyidikan.",
-        "Kedua tersangka diduga membawa sekaligus sempat menggunakan bom molotov, masing-masing di kawasan Bundaran UGM dan Jetis. Irwasda Polda DIY Kombes Pol I Gusti Ngurah Rai Mahaputra membenarkan penetapan itu dan menyebut kedua tersangka bukan mahasiswa serta tidak saling mengenal. Polisi mengamankan molotov dan ketapel sebagai barang bukti, dan penetapan tersangka disebut berdasar barang bukti serta bukti pendukung seperti rekaman CCTV atau dokumentasi yang beredar. Penyidik masih menelusuri kemungkinan keterlibatan jaringan tertentu. Pasal yang akan disangkakan terkait membawa barang berbahaya yang tidak dipakai untuk kepentingan demonstrasi, tetapi rincian pasalnya belum disebut. Penanganan perkara melibatkan pengawasan Inspektorat Polda DIY serta Komnas HAM, Ombudsman, dan Kompolnas."
-      ],
-      "explain": [
-        {
-          "q": "Apa itu Irwasda Polda DIY?",
-          "a": "Irwasda adalah Inspektur Pengawasan Daerah, pejabat pengawas internal di lingkungan kepolisian daerah; dalam bahan, jabatan ini disandang Kombes Pol I Gusti Ngurah Rai Mahaputra.",
-          "source": {
-            "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
-          }
-        },
-        {
-          "q": "Apa yang dimaksud gelar perkara?",
-          "a": "Gelar perkara adalah rapat penyidik untuk menilai kecukupan alat bukti sebelum menetapkan status hukum; bahan menyebut penetapan dua tersangka lahir dari gelar perkara yang dilakukan bertahap.",
-          "source": {
-            "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
-          }
-        },
-        {
-          "q": "Mengapa pengawas eksternal dilibatkan?",
-          "a": "Bahan hanya menyebut Komnas HAM, Ombudsman, dan Kompolnas terlibat sebagai pengawas eksternal; alasan rinci penunjukannya belum dijelaskan.",
-          "source": {
-            "outlet": "harianjogja.com",
-            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
-          }
-        }
-      ],
-      "action": "Pantau perkembangan pemeriksaan 136 orang yang masih diamankan dan tunggu pengumuman pasal yang disangkakan kepada dua tersangka.",
-      "image": null,
-      "sources": [
-        {
-          "outlet": "harianjogja.com",
-          "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november",
-          "published_at": "2026-11-12T08:37:28+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-12T09:39:26+07:00"
-        }
-      ],
-      "place": "lokal",
-      "revision": 1,
-      "first_seen": "2026-11-12",
-      "previous_edition": null,
-      "changes": [],
-      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+      "changes": []
     }
   ]
 }
