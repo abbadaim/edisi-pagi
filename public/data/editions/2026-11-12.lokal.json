@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-12",
+  "scope": "lokal",
+  "published_at": "2026-11-12T09:39:26+07:00",
+  "coverage": {
+    "from": "2026-11-11T09:39:26+07:00",
+    "to": "2026-11-12T09:39:26+07:00"
+  },
+  "generated_at": "2026-11-12T09:39:26+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 3,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 2,
+  "truncated_reason": "Hanya 2 topik lokal yang lolos",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_jadwal_sim_keliling_sleman_har_da39",
+      "angle": "Layanan perpanjangan SIM di Sleman hari ini, syaratnya, dan beda informasi lokasi.",
+      "kicker": "Sleman",
+      "title": "Perpanjang SIM di Sleman 12 November: MPP Pagi, Keliling Malam",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Satlantas Polresta Sleman membuka layanan perpanjangan SIM A dan SIM C di MPP Sleman pada Kamis, 12 November 2026 pukul 08.00-11.00 WIB.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Warga Sleman yang ingin memperpanjang SIM A atau SIM C pada Kamis, 12 November 2026, bisa datang ke Mal Pelayanan Publik (MPP) Sleman. Satlantas Polresta Sleman membuka layanan itu pukul 08.00-11.00 WIB. Selain MPP, polisi menyediakan bus SIM Keliling malam di Lobby Sleman City Hall setiap Sabtu pukul 19.00-21.00 WIB, program SIM Masuk Desa (SIMMADE) di sejumlah titik, dan layanan Satpas Polresta Sleman yang juga melayani pembuatan SIM baru. Jadwal Satpas: Senin-Jumat pukul 08.00-11.00 WIB dan Sabtu pukul 08.00-10.00 WIB. Menurut pemberitaan Harian Jogja, jadwal MPP berlaku pada sejumlah hari di November 2026, termasuk 12 November.",
+        "Sebelum berangkat, pemohon perlu menyiapkan e-KTP, SIM lama beserta fotokopi tiga rangkap, surat keterangan sehat, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS. Namun ada perbedaan informasi soal lokasi layanan hari ini. Artikel Harian Jogja menyebut Kamis 12 November dilayani di MPP Sleman, sedangkan ringkasan latar menyebut layanan SIM Keliling di halaman parkir Indogrosir, lokasi yang di artikel utama justru dijadwalkan Selasa, 10 November. Belum jelas layanan mana yang beroperasi pagi ini dan berapa kuota pemohon. Langkah aman: cek kanal resmi Satlantas Polresta Sleman sebelum berangkat dan pastikan masa berlaku SIM belum lewat."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu SIMMADE dan siapa yang dilayani?",
+          "a": "SIMMADE adalah program SIM Masuk Desa, layanan jemput bola perpanjangan SIM yang beroperasi di sejumlah lokasi Kabupaten Sleman pada pagi hari.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
+          }
+        },
+        {
+          "q": "Apa beda layanan di Satpas dan layanan keliling?",
+          "a": "Layanan keliling dan SIMMADE hanya melayani perpanjangan SIM A dan SIM C, sedangkan Satpas juga melayani penerbitan SIM baru.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
+          }
+        },
+        {
+          "q": "Dokumen apa yang harus dibawa pemohon?",
+          "a": "e-KTP, SIM lama, surat keterangan sehat, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya"
+          }
+        }
+      ],
+      "action": "Siapkan e-KTP, SIM lama, surat sehat, tes psikologi, dan bukti JKN aktif, lalu cek kanal resmi Satlantas Sleman sebelum berangkat.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278557/jadwal-sim-keliling-sleman-hari-ini-kamis-12-november-di-mpp-cek-syaratnya",
+          "published_at": "2026-11-12T06:47:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-11",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_polda_diy_beberkan_alasan_pene_da39",
+      "angle": "Alasan polisi menetapkan dua tersangka pembawa molotov dalam demo 10 November di Jogja",
+      "kicker": "Yogyakarta",
+      "title": "Polda DIY Sebut Dua Tersangka Demo 10 November Bawa Molotov",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polda DIY menetapkan dua tersangka pembawa molotov dari demo 10 November 2026, sementara 136 orang masih menjalani pemeriksaan.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Polda DIY menetapkan dua orang sebagai tersangka dalam penanganan aksi demonstrasi di Jogja pada 10 November 2026, dengan salah satu lokasi dugaan pelemparan bom molotov berada di Bundaran UGM yang masuk kawasan Sleman. Kapolda DIY Irjen Pol Langgeng Purnomo menyebut polisi telah mengamankan 157 orang setelah aksi tersebut. Sebanyak 21 di antaranya anak di bawah umur dan seluruhnya sudah dipulangkan, sedangkan 136 orang lainnya masih menjalani pemeriksaan untuk melihat apakah ada dugaan tindak pidana berdasarkan alat bukti yang ditemukan. Langgeng menegaskan status hukum mereka harus diputuskan sebelum satu kali 24 jam: yang tidak cukup bukti dipulangkan, yang cukup bukti dilanjutkan ke penyidikan.",
+        "Kedua tersangka diduga membawa sekaligus sempat menggunakan bom molotov, masing-masing di kawasan Bundaran UGM dan Jetis. Irwasda Polda DIY Kombes Pol I Gusti Ngurah Rai Mahaputra membenarkan penetapan itu dan menyebut kedua tersangka bukan mahasiswa serta tidak saling mengenal. Polisi mengamankan molotov dan ketapel sebagai barang bukti, dan penetapan tersangka disebut berdasar barang bukti serta bukti pendukung seperti rekaman CCTV atau dokumentasi yang beredar. Penyidik masih menelusuri kemungkinan keterlibatan jaringan tertentu. Pasal yang akan disangkakan terkait membawa barang berbahaya yang tidak dipakai untuk kepentingan demonstrasi, tetapi rincian pasalnya belum disebut. Penanganan perkara melibatkan pengawasan Inspektorat Polda DIY serta Komnas HAM, Ombudsman, dan Kompolnas."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Irwasda Polda DIY?",
+          "a": "Irwasda adalah Inspektur Pengawasan Daerah, pejabat pengawas internal di lingkungan kepolisian daerah; dalam bahan, jabatan ini disandang Kombes Pol I Gusti Ngurah Rai Mahaputra.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud gelar perkara?",
+          "a": "Gelar perkara adalah rapat penyidik untuk menilai kecukupan alat bukti sebelum menetapkan status hukum; bahan menyebut penetapan dua tersangka lahir dari gelar perkara yang dilakukan bertahap.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
+          }
+        },
+        {
+          "q": "Mengapa pengawas eksternal dilibatkan?",
+          "a": "Bahan hanya menyebut Komnas HAM, Ombudsman, dan Kompolnas terlibat sebagai pengawas eksternal; alasan rinci penunjukannya belum dijelaskan.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november"
+          }
+        }
+      ],
+      "action": "Pantau perkembangan pemeriksaan 136 orang yang masih diamankan dan tunggu pengumuman pasal yang disangkakan kepada dua tersangka.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278542/polda-diy-beberkan-alasan-penetapan-2-tersangka-peserta-demo-10-november",
+          "published_at": "2026-11-12T08:37:28+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    }
+  ]
+}

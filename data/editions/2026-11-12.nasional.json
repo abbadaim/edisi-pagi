@@ -1,0 +1,691 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-12",
+  "scope": "nasional",
+  "published_at": "2026-11-12T09:39:26+07:00",
+  "coverage": {
+    "from": "2026-11-11T09:39:26+07:00",
+    "to": "2026-11-12T09:39:26+07:00"
+  },
+  "generated_at": "2026-11-12T09:39:26+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 24,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_dpr_bahas_hak_menyatakan_penda_cd1f",
+      "angle": "NasDem meneken lebih dulu; delapan fraksi serahkan sikap ke pimpinan DPR",
+      "kicker": "Nasional",
+      "title": "Delapan Fraksi Serahkan Sikap, Usulan HMP Gibran ke Pimpinan DPR",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sebanyak 120 anggota DPR dari delapan fraksi menyerahkan sikap agar DPR memakai hak menyatakan pendapat terkait Wapres Gibran.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Sebanyak 120 anggota DPR dari delapan fraksi menyerahkan sikap bersama agar DPR menggunakan hak menyatakan pendapat terkait Wakil Presiden Gibran Rakabuming. Pimpinan DPR disebut resmi menerima usulan itu dalam rapat pengusulan yang dihadiri perwakilan seluruh delapan fraksi. Dengan langkah ini, wacana yang beberapa hari sebelumnya masih berupa tanda tangan longgar antaranggota berubah menjadi dokumen yang masuk ke meja pimpinan dewan. Angka 120 anggota dan delapan fraksi muncul dalam dua laporan berbeda pada hari yang sama, sementara seorang anggota menyebut angka lebih kecil ketika proses penandatanganan masih berjalan. Bagi pembaca yang jarang mengikuti berita parlemen, perpindahan dari “usulan” ke “diterima pimpinan” penting dicatat: itu baru pintu masuk, bukan keputusan akhir.",
+        "Fraksi NasDem menjadi yang paling awal terang-terangan. Wakil Ketua Komisi XII DPR periode 2024–2029, Sugeng Suparwoto, mengatakan dokumen hak menyatakan pendapat dari fraksinya telah diserahkan kepada pimpinan DPR. Ia menyebut usulan itu diteken mayoritas anggota Fraksi NasDem di DPR setelah berdiskusi dengan ketua dan wakil ketua umum partai. Sugeng berharap pimpinan DPR memprosesnya dalam rapat paripurna pada Kamis, 12 November. “Mudah-mudahan, kalau enggak salah besok akan ada paripurna,” ujarnya, dikutip dari CNN Indonesia. Kalimat itu menunjukkan jadwal paripurna belum sepenuhnya pasti; ia sendiri memakai kata “kalau enggak salah”.",
+        "Alasan NasDem, menurut Sugeng, bukan semata soal administrasi ijazah. Ia menyebut usulan itu sebagai tindak lanjut putusan Mahkamah Agung terkait Gibran, dan menilai persoalan hukum serta tata negara ini sudah jelas sehingga tidak perlu berlarut. Dari situ ia menyerukan agar Gibran mundur dari jabatan wakil presiden “dengan elegan, dengan baik, demi masyarakat”. Ia juga memakai frasa “jangan bangsa ini disandra” untuk menggambarkan dampak bila persoalan itu terus dibiarkan. Perlu dicatat, dorongan mundur itu adalah sikap politik NasDem, bukan keputusan resmi DPR. Hak menyatakan pendapat tetap jalur yang mereka tempuh secara formal, sementara imbauan mundur berjalan sebagai tekanan politik di ruang publik.",
+        "Angka jumlah penandatangan bergerak cepat dalam satu hari, dan bahan-bahan tidak sepenuhnya sepakat. Anggota DPR dari Fraksi PKS, Mardani Ali Sera, mengatakan pada Rabu siang bahwa tanda tangan “makin banyak” dan mengklaim sudah lebih dari 50 anggota dari seluruh fraksi, atau dua kali lipat batas minimal 25 anggota. Beberapa jam kemudian, laporan lain menyebut 120 anggota dari delapan fraksi resmi menyerahkan sikap bersama. Perbedaan itu dapat dibaca sebagai perkembangan sepanjang hari, bukan tentu pertentangan, tetapi laporan yang ada tidak menjelaskan kapan tepatnya angka melonjak dari 50-an ke 120. Yang jelas, keduanya jauh di atas syarat minimal 25 anggota yang disebut dalam aturan.",
+        "Pertanyaan “fraksi mana saja” hanya bisa dijawab sebagian dari bahan yang tersedia. Tiga fraksi disebut namanya: NasDem, PKS, dan PDIP. Fraksi PDIP disebut menggelar rapat pleno dan seluruh pesertanya sepakat menggunakan hak menyatakan pendapat terkait pemakzulan Gibran. Adapun lima fraksi lain hanya disebut sebagai bagian dari “delapan fraksi” tanpa dirinci namanya, sehingga sikap masing-masing tidak dapat dipastikan dari bahan ini. Delapan disebut sebagai jumlah seluruh fraksi di DPR, dan rapat pengusulan disebut dihadiri perwakilan dari seluruh delapan fraksi. Artinya, secara formal semua fraksi terwakili, meski belum tentu semuanya mendukung dengan kadar yang sama.",
+        "Dasar hukumnya cukup panjang dan sering dikutip keliru. Hak menyatakan pendapat diatur dalam Pasal 20A ayat (2) UUD 1945 dan dipertegas Pasal 79 ayat (1) serta ayat (4) Undang-Undang Nomor 17 Tahun 2014 tentang MD3 yang telah diubah dengan Undang-Undang Nomor 13 Tahun 2019. Pasal 79 ayat (4) menyebut DPR dapat memakai hak itu atas tiga hal, salah satunya dugaan pelanggaran hukum oleh presiden dan/atau wakil presiden: pengkhianatan terhadap negara, korupsi, penyuapan, tindak pidana berat lainnya, perbuatan tercela, atau tidak lagi memenuhi syarat sebagai presiden atau wakil presiden. Dalam perkara ini, kata “perbuatan tercela” dan “tidak lagi memenuhi syarat” menjadi dua kunci yang paling sering disinggung. Bahan tidak memuat pasal mana yang persisnya akan dipakai sebagai dasar tuduhan.",
+        "Apa yang akan diselidiki? Bahan menyebut fokusnya adalah polemik ijazah Gibran, khususnya keabsahan ijazah SMA-nya saat mendaftar pada Pilpres 2024. Inisiasi hak menyatakan pendapat disebut sebagai tindak lanjut putusan Mahkamah Agung dan Mahkamah Konstitusi terkait hal itu, meski bahan tidak merinci isi kedua putusan tersebut. Pakar hukum tata negara Bivitri Susanti, yang dikutip dalam pemberitaan, menilai DPR sudah memiliki alasan untuk memulai proses pemakzulan, yakni adanya perbuatan tercela. Bahan tidak menjelaskan secara rinci bagaimana bentuk penyelidikan yang dimaksud; yang tergambar adalah penilaian politik konstitusional atas dugaan pelanggaran berat oleh wakil presiden.",
+        "Syarat formalnya dua lapis. Pertama, hak ini bisa diproses setelah diusulkan minimal 25 anggota DPR. Kedua, agar menjadi sikap resmi, usulan itu harus disetujui dalam rapat paripurna yang dihadiri minimal dua pertiga dari jumlah anggota DPR. Bahan tidak menyebut adanya syarat jumlah fraksi minimum; yang dihitung adalah jumlah anggota, bukan jumlah partai. Karena itu, pertanyaan “berapa fraksi yang dibutuhkan” tidak bisa dijawab dengan angka pasti dari bahan ini—yang tersedia hanya ambang 25 anggota dan kuorum dua pertiga di paripurna. Dengan 120 anggota yang diklaim menandatangani, ambang pertama sudah terlampaui jauh, tetapi kuorum paripurna tetap harus dipenuhi pada saat pengambilan keputusan.",
+        "Setelah sikap fraksi dibacakan dan dokumen diterima pimpinan, langkah berikutnya bukan langsung pemakzulan. Menurut Sugeng, pimpinan DPR akan menindaklanjuti aspirasi hak menyatakan pendapat, antara lain lewat rapat paripurna. Jika disepakati, keputusan DPR yang berisi pemberhentian presiden atau wakil presiden dibawa ke Mahkamah Konstitusi. MK kemudian dapat meminta MPR menggelar sidang istimewa pemberhentian. Bambang Pacul, yang dikutip dari CNN Indonesia, menyebut MPR sebagai “kamar terakhir” setelah proses berjalan bertahap. Ia mengatakan hasilnya bisa berupa pemakzulan jika terbukti ada pelanggaran berat, atau status quo jika tidak terbukti. Dengan kata lain, masih ada beberapa pintu yang harus dilewati sebelum ada akibat hukum.",
+        "Bivitri Susanti, masih dalam pemberitaan yang sama, merujuk Pasal 7 UUD 1945 sebagai dasar mekanisme pemakzulan, sedangkan Pasal 7B mengatur alurnya. Menurut penjelasan itu, DPR mengajukan usul kepada MPR dengan lebih dulu meminta MK memeriksa, mengadili, dan memutus pendapat DPR. Setelah ada putusan MK, DPR baru dapat menggelar paripurna untuk meneruskan usul pemberhentian kepada MPR. MPR lalu memberi keputusan setelah memberi kesempatan kepada pihak yang bersangkutan menyampaikan penjelasan dalam rapat paripurna. Alur ini menjelaskan mengapa hak menyatakan pendapat sering disebut pintu, bukan vonis: setiap tahap punya syarat dan pemutusnya sendiri.",
+        "Di sisi lain, Gibran belum menunjukkan tanda mundur. Dalam pernyataan terakhirnya, ia menyebut akan bertahan dan siap menunjukkan ijazahnya di PTUN lewat peninjauan kembali yang akan diajukan. Ia mengaku mendapat saran dari Presiden Prabowo agar tetap “fight” di PTUN dengan menghadirkan seluruh dokumen dari SD sampai S-1, sekaligus berkoordinasi dengan Dikdasmen untuk mengajukan PK di MA. DPR disebut memastikan hak menyatakan pendapat tetap berjalan meski ada langkah hukum itu. Dua jalur ini—politik di parlemen dan hukum di pengadilan—berjalan bersamaan, dan bahan tidak menjelaskan bagaimana keduanya akan saling memengaruhi.",
+        "Beberapa hal masih terbuka. Bahan tidak memastikan paripurna benar-benar digelar Kamis, 12 November; Sugeng sendiri memakai kata “mudah-mudahan”. Bahan juga tidak menyebut sikap resmi lima fraksi yang namanya tidak dirinci, tidak memuat isi putusan MA dan MK yang menjadi dasar, serta tidak menjelaskan apakah akan ada fraksi yang menolak. Yang bisa dipastikan, pimpinan DPR telah menerima usulan dan proses politiknya sedang berjalan. Bagi pembaca, titik pantau berikutnya adalah hasil paripurna dan apakah usulan itu benar dibawa ke MK—bukan sekadar jumlah tanda tangan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu hak menyatakan pendapat DPR?",
+          "a": "Hak konstitusional DPR menurut Pasal 20A UUD 1945 untuk menyatakan pendapat atas kebijakan pemerintah atau peristiwa luar biasa; usulannya harus ditandatangani mayoritas anggota dan dibahas di paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Gibran Rakabuming dalam pemerintahan?",
+          "a": "Wakil Presiden RI sejak 2024; sebelumnya Wali Kota Surakarta dan pengusaha, serta putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran DPR sebagai lembaga?",
+          "a": "Lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah, dengan anggota hasil pemilu yang menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau hasil rapat paripurna DPR dan cek apakah usulan hak menyatakan pendapat benar dibahas Kamis ini.",
+      "image": {
+        "url": "assets/a2c493de41.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Delapan Fraksi Serahkan Sikap, Usulan HMP Gibran ke Pimpinan DPR"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/fraksi-pdip-sepakat-ajukan-hmp-pemakzulan-gibran-idFu",
+          "published_at": "2026-11-11T14:16:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111125254-32-1425836/nasdem-teken-hak-menyatakan-pendapat-soal-gibran",
+          "published_at": "2026-11-11T13:07:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_dpr_panggil_kapolri_soal_sadap_de03",
+      "angle": "Komisi III DPR memanggil Kapolri membahas dalang dan motif dugaan penyadapan presiden.",
+      "kicker": "Nasional",
+      "title": "Komisi III Panggil Kapolri, Minta Dalang Penyadapan Prabowo Dibuka",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Komisi III DPR menggelar rapat kerja dengan Kapolri pada 12 November 2026 untuk membahas dugaan penyadapan ilegal terhadap Presiden Prabowo.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Komisi III DPR menggelar rapat kerja bersama Kapolri Jenderal Suyudi Ario Seto pada Kamis, 12 November 2026. Suyudi tiba di ruang rapat sekitar pukul 08.20 WIB hanya didampingi ajudannya. Sejumlah jenderal polisi sudah menunggu lebih dulu, antara lain Inspektur Pengawasan Umum Komjen Asep Edi Suheri, Kepala Badan Reserse Kriminal Irjen Asep Safrudin, dan Direktur Tindak Pidana Umum Bareskrim Brigjen Susatyo Purnomo. Rapat dipimpin Ketua Komisi III Habiburokhman bersama Wakil Ketua Rano Alfath, Dede Indra Permana, dan Ahmad Sahroni, serta Ketua MKD Nazarudin Dek Gam.",
+        "Agenda rapat adalah kasus dugaan penyadapan ilegal terhadap Presiden RI Prabowo Subianto. Habiburokhman menyatakan rapat itu akan membahas perkara tersebut, termasuk membongkar dalang dan motif penyadapan ilegal. Ia menyebut Komisi III akan mengawal penanganan perkara sampai terungkap sejelas-jelasnya dan menegaskan siapa pun yang terlibat harus dimintai pertanggungjawaban hukum. Habiburokhman adalah politikus Partai Gerindra, partai yang disebut dipimpin Prabowo sebagai ketua umum sekaligus ketua dewan pembina.",
+        "Soal sasaran, pemberitaan menyebut Presiden RI hingga lingkaran Istana menjadi target penyadapan ilegal. Kepala Badan Pengendalian Pembangunan dan Investigasi Khusus (BAPPISUS) Aries Marsudiyanto menilai penyadapan terhadap kepala negara bukan kejahatan biasa. Dalam wawancara dengan media lain, ia menyebut tujuannya pasti makar dan penggulingan pemerintahan, serta menggambarkannya sebagai pengkhianatan kepada negara, presiden, dan institusi. Ia meminta penyelidikan tidak berhenti pada empat orang yang telah ditetapkan sebagai tersangka.",
+        "Dalam rapat itu Kapolri membeberkan dugaan modus operandi. Menurut Suyudi, perintah penyadapan datang secara lisan dari Jenderal LSP, antara lain melalui pesan WhatsApp kepada Kepala Bagian Monitoring, tanpa surat perintah penyidikan. Nomor target kemudian dimasukkan ke sistem LIMS tanpa verifikasi dan filterisasi keterkaitan dengan perkara, lalu disadap dan dituangkan ke dalam transkrip, dengan pelaporan berjenjang sampai ke Jenderal LSP. Ia menyebut ada lima modus, tetapi uraian yang disampaikan mencakup empat modus. Bareskrim telah menetapkan empat jenderal aktif sebagai tersangka: Listyo Sigit Prabowo, Ahrie Sonta Nasution, Eko Hadi Santoso, dan Slamet Uliandi. Mereka dijerat Pasal 258 KUHP, Pasal 332 KUHP, dan Pasal 32 UU ITE.",
+        "Dasar hukum yang dipakai DPR untuk memanggil Kapolri belum jelas. Bahan yang tersedia tidak menyebutkan pasal, surat, maupun mekanisme spesifik yang menjadi landasan pemanggilan; yang tergambar hanya kedudukan DPR sebagai lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Belum diketahui pula apakah rapat akan menghasilkan rekomendasi resmi, memanggil pihak lain, atau berhenti sebagai pendalaman. Perkembangan setelah rapat, termasuk kemungkinan langkah lanjutan terhadap empat tersangka, juga belum tersedia dalam bahan ini."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa fungsi pengawasannya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan sah menurut aturan yang dirujuk?",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau kelanjutan rapat dan tunggu apakah Polri mengungkap dalang serta motif penyadapan, bukan hanya empat tersangka.",
+      "image": {
+        "url": "assets/a5e3085f30.webp",
+        "credit": "sindonews.com",
+        "alt": "Komisi III Panggil Kapolri, Minta Dalang Penyadapan Prabowo Dibuka"
+      },
+      "sources": [
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1771157/13/hari-ini-komisi-iii-dpr-rapat-bareng-kapolri-minta-buka-bukaan-soal-penyadapan-ilegal-listyo-sigit-cs-1794445917",
+          "published_at": "2026-11-12T08:33:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8333646/kapolri-beberkan-peran-4-jenderal-tersangka-penyadapan-prabowo",
+          "published_at": "2026-11-12T09:33:43+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tod9tp377/ini-cara-jenderal-listyo-perintahkan-penyadapan-ilegal-ke-target-menurut-kapolri",
+          "published_at": "2026-11-12T09:05:49+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112083803-12-1426170/kapolri-ikut-rapat-di-dpr-bahas-kasus-listyo-dkk-sadap-prabowo",
+          "published_at": "2026-11-12T08:49:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/11/337/3253459/listyo-sigit-cs-sadap-prabowo-kepala-bappisus-upaya-gulingkan-pemerintah-yang-sah",
+          "published_at": "2026-11-11T16:25:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_kpk_periksa_hercules_soal_rp80_3b8d",
+      "angle": "Hercules diperiksa sebagai saksi kasus ATR/BPN dan uang Rp800 juta yang disita KPK",
+      "kicker": "Kriminal",
+      "title": "Hercules Diperiksa KPK sebagai Saksi soal Uang Rp800 Juta",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Hercules diperiksa KPK sebagai saksi selama lima jam pada 11 November, dan KPK menyita Rp800 juta yang ia serahkan.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Komisi Pemberantasan Korupsi memeriksa Ketua Umum GRIB Jaya, Hercules Rozario Marshal, pada Rabu, 11 November. Ia tiba di Gedung Merah Putih sekitar pukul 10.22 WIB dan menjalani pemeriksaan selama lima jam. Juru Bicara KPK Budi Prasetyo menyebut pemeriksaan itu untuk saksi berinisial HCL yang berstatus pihak swasta. Sejumlah pemberitaan menegaskan Hercules hadir sebagai saksi, bukan tersangka, dalam perkara yang sedang disidik. Status saksi berarti ia dimintai keterangan, bukan diproses sebagai tersangka. Pemeriksaan ini menjadi sorotan; uang yang dimaksud diduga terkait perkara di lingkungan kementerian.",
+        "Perkara yang menyeret namanya adalah dugaan suap terkait pengurusan Hak Guna Bangunan PT Summarecon Agung Tbk dan penerimaan lain di Kementerian ATR/BPN. KPK telah menetapkan delapan orang tersangka. Mereka adalah Kepala Kantor Pertanahan Kabupaten Bogor I Sontang Coin Manurung; politikus Partai Golkar Fahd El Fouz alias Fahd A Rafiq; mantan Bupati Kebumen Arif Sugiyanto; Presiden Direktur PT Summarecon Agung Tbk Adrianto Pitojo Adhi; Direktur Jenderal Pengendalian dan Penertiban Tanah dan Ruang Kementerian ATR/BPN Lampri; serta Muhammad Fakhry, Erwin, dan Rizal Pahlevi. Hercules tidak termasuk dalam daftar tersangka yang diumumkan itu, sehingga keterangannya diminta dalam kapasitas saksi.",
+        "Dalam perkara ini, KPK menyebut Hercules sebelumnya secara kooperatif menyerahkan uang Rp800 juta yang diduga terkait perkara, dan uang itu sudah disita penyidik. Juru bicara KPK menyampaikan hal itu tanpa merinci bentuk uangnya, sehingga apakah berupa tunai, transfer, atau bentuk lain belum jelas dari bahan yang ada. Siapa pejabat yang disebut menerima setoran itu juga belum diumumkan, dan tidak ada bantahan dari pejabat tersebut yang dikutip dalam pemberitaan. Hercules sendiri mengatakan kedatangannya untuk menjelaskan asal usul uang yang ia kembalikan melalui tim kuasa hukum GRIB Jaya, sekaligus memberi keterangan soal tanah Summarecon dan pejabat yang ditangkap.",
+        "Usai pemeriksaan, KPK belum mengumumkan langkah hukum berikutnya terhadap Hercules. Penyidik hanya menyatakan keterangan saksi dibutuhkan untuk membantu mengungkap perkara secara utuh dan terang-benderang. KPK juga menyebut pemeriksaan dugaan kebocoran informasi berjalan beriringan dengan penanganan perkara HGB Summarecon, sehingga kedua hal itu tampak ditangani bersama, meski rincian kaitannya belum dijelaskan. Perlu dicatat, dua media menulis ejaan namanya berbeda, Rozario dan Rosario. Karena statusnya masih saksi, ia belum tentu bersalah sampai ada putusan pengadilan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu KPK dan apa kewenangannya?",
+          "a": "KPK adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka dalam perkara pidana?",
+          "a": "Tersangka adalah seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah karena putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Bagaimana pemeriksaan ini dikaitkan dengan perkara HGB Summarecon?",
+          "a": "KPK menyatakan pemeriksaan dugaan kebocoran informasi berjalan beriringan dengan penanganan perkara HGB Summarecon.",
+          "source": {
+            "outlet": "liputan6.com",
+            "url": "https://www.liputan6.com/news/read/8332811/tiga-pegawai-diduga-bocorkan-kasus-atrbpn-kpk-buka-suara"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi KPK soal status dan langkah lanjutan kasus ini.",
+      "image": {
+        "url": "assets/6737fbc379.webp",
+        "credit": "okezone.com",
+        "alt": "Hercules Diperiksa KPK sebagai Saksi soal Uang Rp800 Juta"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/diperiksa-kpk-hercules-jelaskan-duit-rp800-juta-kasus-atrbpn-idFp",
+          "published_at": "2026-11-11T13:50:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/11/337/3253503/diperiksa-kpk-terkait-kasus-atr-bpn-hercules-dicecar-14-pertanyaan",
+          "published_at": "2026-11-11T19:28:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111105403-12-1425768/kpk-periksa-hercules-terkait-korupsi-di-kementerian-atr-bpn",
+          "published_at": "2026-11-11T11:01:40+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332811/tiga-pegawai-diduga-bocorkan-kasus-atrbpn-kpk-buka-suara",
+          "published_at": "2026-11-11T09:43:13+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5848183/hukum-kemarin-ketua-umum-grib-diperiksa-hingga-tindak-tegas-calo",
+          "published_at": "2026-11-12T08:24:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_plts_100_gwp_dan_upaya_pln_d74f",
+      "angle": "PLN memaparkan peran baterai di balik PLTS 100 GWp untuk BBM, data center, kompor induksi",
+      "kicker": "Ekonomi",
+      "title": "PLTS 100 GWp: cara PLN menyimpan listrik surya agar mengalir 24 jam",
+      "status": "sebagian",
+      "truth": {
+        "claim": "PLN menyatakan kombinasi PLTS 100 GWp dan baterai ditujukan agar listrik surya dapat disalurkan selama 24 jam.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Di Paviliun Indonesia pada COP31 di Antalya, Turki, Selasa (10/11/2026), Direktur Teknologi, Engineering, dan Keberlanjutan PT PLN (Persero) Edwin Nugraha Putra memaparkan bagaimana perusahaan setrum negara itu menyiapkan diri menjalankan program prioritas Presiden Prabowo Subianto: pembangkit listrik tenaga surya berkapasitas total 100 Giga Watt peak. Pemaparan itu bukan peluncuran program. Peletakan batu pertama sudah dilakukan Presiden di Kabupaten Jembrana, Bali, pada 25 Agustus 2026. Yang disampaikan Edwin adalah sisi teknis: bagaimana listrik dari panel surya, yang produksinya optimal saat matahari bersinar, bisa tetap mengalir ke pelanggan sepanjang hari. Paparan itu kemudian diberitakan beberapa kali pada Rabu, 11 November 2026, dengan sudut yang berbeda-beda.",
+        "Pemaparan berlangsung dalam sesi CEO Talks. Edwin hadir dengan jabatan Direktur Teknologi, Engineering, dan Keberlanjutan PLN. Program yang ia bicarakan adalah program prioritas Presiden Prabowo Subianto. Dalam pemberitaan yang sama disebut bahwa Menteri Energi dan Sumber Daya Mineral Bahlil Lahadalia menyiapkan penyesuaian aturan untuk mempercepat tender proyek PLTS 100 GWp. Jadi ada tiga lapis yang terlibat: istana yang menetapkan program, kementerian yang mengurus aturan dan pengadaan, serta PLN yang menyiapkan sisi teknis dan pengoperasian sistem kelistrikan. Bahan tidak menyebut nama perusahaan swasta peserta tender mana pun, dan tidak menyebut instansi lain di luar ketiga pihak itu.",
+        "Inti persoalan yang dijawab Edwin adalah sifat pembangkit surya yang tidak bisa diandalkan sepanjang hari. Produksi listriknya optimal ketika matahari bersinar, lalu turun pada malam hari. Karena itu PLN menyatakan akan memasangkan PLTS 100 GWp dengan Battery Energy Storage System, sistem penyimpanan energi baterai. Menurut Edwin, daya yang dihasilkan pada siang hari disimpan di baterai, lalu disalurkan ke sistem kelistrikan selama 24 jam. Ia menegaskan pengoperasian baterai tidak hanya pada siang hari, tetapi sepanjang hari. Dalam kutipannya, kombinasi ini disebut dapat mengurangi ketergantungan pada bahan bakar, menurunkan biaya listrik, dan memperkuat sistem kelistrikan. Perlu dicatat, semua itu adalah pernyataan PLN dalam sebuah forum, bukan hasil pengujian independen yang dipaparkan dalam bahan.",
+        "Untuk memahami istilahnya, pembangkit listrik tenaga surya adalah pembangkit yang mengubah energi surya menjadi energi listrik. Menurut penjelasan dasar, konversi bisa dilakukan langsung dengan fotovoltaik atau tidak langsung dengan pemusatan energi surya. Fotovoltaik mengubah energi surya menjadi listrik memakai efek fotolistrik. Bahan tidak menjelaskan jenis panel, efisiensi, maupun teknologi pemusatan yang akan dipakai dalam proyek 100 GWp. Bahan juga tidak menguraikan arti teknis satuan GWp yang dipakai. Yang bisa dibaca dari bahan hanyalah bahwa proyek ini berskala besar dan sejak awal dirancang bergantung pada penyimpanan energi, bukan hanya pada panel surya.",
+        "Skala program itu terlihat ketika dibandingkan dengan sistem kelistrikan Jawa yang dalam pemaparan Edwin disebut berkapasitas sekitar 35 GW. Angka itu dipakai Edwin untuk menjelaskan tantangan memasukkan energi yang bersifat intermiten ke dalam sistem. Bahan tidak menjelaskan berapa kapasitas sistem di luar Jawa, sehingga perbandingan serupa untuk wilayah lain belum bisa dibuat. Yang bisa dibaca dari angka itu: kapasitas 100 GWp yang direncanakan jauh lebih besar daripada kapasitas sistem Jawa yang disebut 35 GW. Karena itu kebutuhan penyimpanan menjadi bagian dari rancangan awal, bukan tambahan yang diputuskan belakangan.",
+        "Sasaran lain yang disebut adalah menghapus pemakaian bahan bakar minyak pada pembangkit listrik tenaga diesel. Edwin menyebut ada sekitar 741 pulau di Indonesia yang masih memakai BBM untuk pembangkit. Dengan baterai, ia menyatakan kebutuhan minyak untuk pembangkit itu bisa menjadi nol dalam tiga tahun ke depan. Bahan tidak merinci pulau mana saja, berapa kapasitas PLTD di masing-masing pulau, atau bagaimana urutan penggantiannya. Bahan juga tidak menyebut apakah penggantian itu dilakukan dengan PLTS di pulau yang sama atau melalui jaringan antarpulau. Angka 741 pulau dan target tiga tahun muncul berulang di beberapa pemberitaan pada hari yang sama.",
+        "Ada satu perbedaan yang perlu dicatat. Dua pemberitaan menyebut kebutuhan minyak yang hendak dinolkan sebesar 4 juta kilowatt, sementara dua pemberitaan lain menyebut 4 juta kilo liter. Kilowatt adalah satuan daya, sedangkan kilo liter adalah satuan volume, sehingga keduanya tidak bisa dipertukarkan. Bahan tidak menjelaskan mana penyebutan yang dimaksud PLN, dan tidak ada penjelasan resmi soal konversi antara keduanya. Pembaca sebaiknya memperlakukan angka 4 juta itu sebagai besaran yang satuannya masih perlu dipastikan, bukan sebagai angka final. Perbedaan ini juga muncul pada bahan lain yang membahas topik sama di hari itu.",
+        "Untuk pusat data, Edwin memberi contoh perhitungan yang cukup spesifik. Kebutuhan listrik pusat data sebesar 2 GW, menurut dia, membutuhkan 17 GW pembangkit fotovoltaik ditambah 50 GW baterai. Angka itu menunjukkan bahwa kapasitas baterai yang dibutuhkan bisa jauh lebih besar daripada kapasitas pembangkitnya. Bahan tidak menyebut lokasi pusat data yang dimaksud, siapa investor yang akan membangunnya, atau apakah 17 GW dan 50 GW tersebut sudah termasuk dalam total 100 GWp yang dicanangkan. Angka itu muncul sebagai contoh perhitungan, bukan sebagai daftar proyek yang sudah disetujui. Hubungan antara angka-angka itu belum dijelaskan dalam bahan.",
+        "Contoh lain yang dipaparkan adalah pengalihan kompor. Edwin menyebut skenario mengganti 50% kompor di Indonesia dengan kompor induksi. Menurut perhitungan yang ia sampaikan, langkah itu bisa menekan konsumsi LPG nasional hingga 8,4 juta ton. Untuk menopangnya, PLN mengalokasikan 18,8 GW PLTS yang dikombinasikan dengan baterai 17,2 GW. Bahan tidak menjelaskan dasar perhitungan 8,4 juta ton, apakah penggantian kompor menjadi kewenangan PLN atau kementerian lain, dan bagaimana biaya kompor listrik bagi rumah tangga. Bahan juga tidak menyebut tenggat penggantian 50% kompor itu. Detail tersebut belum tersedia dalam bahan.",
+        "Edwin beberapa kali menyebut penurunan harga baterai sebagai alasan program ini dianggap mungkin dijalankan. Dalam kutipannya, ketersediaan BESS dan harga BESS yang terus menurun membuat seluruh energi dari 100 GW tenaga surya bisa masuk ke penyimpanan dan dioperasikan sepanjang hari. Ia juga menyatakan PLN akan memakai teknologi baterai di seluruh proyek PLTS 100 GWp. Bahan tidak memuat angka harga baterai, biaya penyimpanan per kilowatt jam, atau perbandingan dengan biaya pembangkit diesel. Karena itu pernyataan tentang penurunan harga belum bisa diverifikasi dari bahan yang tersedia, dan sebaiknya dibaca sebagai alasan yang dikemukakan PLN.",
+        "Soal biaya, satu bahan menyebut PLN memperkirakan kebutuhan total investasi proyek PLTS 100 GW mencapai Rp 963,23 triliun. Bahan itu hanya terdiri atas satu kalimat, tanpa rincian komponen. Tidak dijelaskan berapa porsi untuk panel surya, berapa untuk baterai, berapa untuk jaringan transmisi, dan dari mana sumber dananya. Tidak ada pula keterangan apakah angka itu mencakup seluruh 100 GWp atau hanya tahap tertentu, atau apakah angka itu sudah termasuk biaya penggantian pembangkit diesel di 741 pulau. Angka Rp 963,23 triliun karena itu lebih tepat dibaca sebagai perkiraan awal yang belum dirinci.",
+        "Dari sisi pengadaan, Menteri ESDM Bahlil Lahadalia dalam acara MKI Electricity Connect 2026 di ICE BSD, Kabupaten Tangerang, Selasa (22/9/2026), menyatakan pemerintah sedang menyesuaikan aturan agar tender proyek bisa lebih cepat. Ia menyebut perusahaan yang dinilai kompetitif dan punya kemampuan teknologi baik bisa dipertimbangkan agar tendernya tidak terlalu lama. Ia juga menyatakan pemerintah akan memangkas birokrasi yang dinilai menghambat, dan bahwa pengadaan akan dipercepat bila proyek memenuhi aspek keekonomian. Untuk tahap awal, menurut Bahlil, pemerintah sudah meluncurkan sekitar 5,5 GW pada tahun ini, dan sekitar 25 sampai 30 GW ditargetkan mulai masuk proses tender. Rincian jadwal per proyek tidak disebutkan, begitu pula daftar pesertanya.",
+        "Presiden Prabowo Subianto, dalam peresmian di Jembrana, Bali, 25 Agustus 2026, menyatakan proyek ini diarahkan agar Indonesia tidak lagi mengimpor minyak mentah maupun LPG. Ia menyebut target itu harus dicapai dalam waktu singkat, dan memberikan tantangan kepada Menteri ESDM untuk mempercepat realisasi. Kutipan panjang dalam bahan terpotong pada bagian akhir, sehingga isi lengkap pernyataan itu belum diketahui dari bahan. Yang jelas, target yang dipasang bersifat politik dan ambisius, sementara rincian teknis serta pembiayaan berada di tingkat kementerian dan PLN. Bahan tidak memuat tanggapan pihak yang meragukan target tersebut.",
+        "Beberapa hal masih belum jelas. Satu bahan menyebut ada daerah di Indonesia yang bisa mengoperasikan PLTS penuh 24 jam, tetapi tidak menyebut daerah mana, kapasitasnya, atau apakah itu proyek yang sudah berjalan. Bahan lain hanya menyebut bahwa Indonesia bisa menekan pemakaian BBM 4 juta KL lewat proyek ini, tanpa rincian. Tidak ada keterangan mengenai lokasi 100 GWp, harga jual listrik, skema perjanjian jual beli listrik, dan dampaknya terhadap tarif pelanggan. Bahan juga tidak menyebut apakah program ini memerlukan perubahan undang-undang atau cukup lewat aturan kementerian. Semua itu belum diumumkan dalam bahan yang tersedia.",
+        "Langkah berikutnya yang bisa dipantau adalah proses tender dan penerbitan aturan yang menurut Bahlil sedang disiapkan. Bahan tidak memuat tanggal pasti kapan aturan itu terbit atau kapan tender dibuka. Karena target yang disebut adalah tiga tahun sejak peluncuran pada Agustus 2026, tenggat yang tersirat ada di sekitar 2029, tetapi bahan tidak menyatakannya secara eksplisit. Bahan juga tidak menyebut mekanisme pengawasan atas target 741 pulau dan target nol BBM. Pembaca yang ingin mengikuti isu ini sebaiknya menunggu pengumuman resmi dari Kementerian ESDM atau PLN, bukan hanya mengandalkan kutipan dari satu acara."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu pembangkit listrik tenaga surya dan bagaimana ia menghasilkan listrik?",
+          "a": "Pembangkit listrik tenaga surya mengubah energi surya menjadi energi listrik, secara langsung lewat fotovoltaik yang memakai efek fotolistrik, atau tidak langsung lewat pemusatan energi surya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pembangkit_listrik_tenaga_surya"
+          }
+        },
+        {
+          "q": "Siapa yang dimaksud 'pemerintah' dalam program prioritas ini?",
+          "a": "Pemerintah Indonesia adalah penyelenggara pemerintahan berdasarkan UUD 1945, berbentuk negara kesatuan dengan pemerintahan republik dan sistem presidensial; dalam bahan, pelaksana program mencakup presiden, kementerian ESDM, dan PLN.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pemerintah_Indonesia"
+          }
+        },
+        {
+          "q": "Apa inti pemaparan PLN di forum tersebut?",
+          "a": "PLN membeberkan upaya mewujudkan program PLTS 100 GWp, termasuk pemakaian baterai agar listrik surya dapat dipakai sepanjang hari.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261111140245-4-784275/ri-luncurkan-proyek-100-gwp-plts-begini-upaya-pln-mewujudkannya"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman tender PLTS 100 GWp dari Kementerian ESDM dan cek rincian investasi Rp 963,23 triliun di keterbukaan informasi PLN.",
+      "image": {
+        "url": "assets/3206e2e444.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "PLTS 100 GWp: cara PLN menyimpan listrik surya agar mengalir 24 jam"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261111140245-4-784275/ri-luncurkan-proyek-100-gwp-plts-begini-upaya-pln-mewujudkannya",
+          "published_at": "2026-11-11T16:02:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_panda_bonds_ri_dan_misi_apec_b4be",
+      "angle": "Penerbitan tahap kedua di pasar China dan prioritas Indonesia di KTT APEC 2026",
+      "kicker": "Ekonomi",
+      "title": "Panda Bonds Rp27,22 Triliun Terbit, RI Bawa Misi Ekonomi ke APEC",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemerintah menerbitkan panda bonds tahap kedua senilai 10 miliar yuan (sekitar Rp27,22 triliun) dalam tiga seri tenor 3, 5, dan 7 tahun, sekaligus membawa prior",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Pemerintah Indonesia menerbitkan panda bonds tahap kedua senilai 10 miliar yuan, atau sekitar Rp27,22 triliun, di pasar domestik China. Surat utang itu dibagi tiga seri: tenor tiga tahun Rp15,51 triliun dengan kupon 1,96 persen, tenor lima tahun Rp10,07 triliun dengan kupon 2,15 persen, dan tenor tujuh tahun Rp1,63 triliun dengan kupon 2,50 persen. Penjumlahan rincian ketiga seri menghasilkan sekitar Rp27,21 triliun, selisih kecil yang tampak berasal dari pembulatan kurs. Harga ditetapkan pada 10 November 2026 dan penyelesaian transaksi dijadwalkan 17 November 2026, dengan jatuh tempo 17 November 2029, 2031, dan 2033. Penerbitan ini memperoleh peringkat AAA dengan prospek stabil dari China Lianhe Credit Rating Co Ltd.",
+        "Direktur Jenderal Pengelolaan Pembiayaan dan Risiko Kementerian Keuangan Suminto mengatakan penerbitan itu mendapat respons kuat dari investor domestik China. Nilai pesanan atau orderbook mencapai sekitar 17,26 miliar yuan atau Rp46,98 triliun, setara 1,726 kali total obligasi yang ditawarkan. Menurut Suminto, tingginya permintaan memungkinkan pemerintah menetapkan harga dengan biaya pendanaan yang kompetitif dengan memanfaatkan momentum positif pasar obligasi domestik China. Ia juga menyebut transaksi itu mencerminkan kepercayaan investor terhadap fundamental ekonomi Indonesia dan kebijakan fiskal pemerintah. Perbandingan biaya pendanaan itu dengan instrumen utang lain belum dirinci dalam keterangan resmi.",
+        "Menurut Suminto, hasil penerbitan akan dipakai memenuhi kebutuhan pembiayaan APBN 2026 dan menjadi bagian dari strategi mendiversifikasi sumber pembiayaan APBN serta memperluas akses ke pasar keuangan internasional. Langkah itu diarahkan untuk mengurangi ketergantungan pada satu pasar keuangan. Namun, besaran kontribusi panda bonds terhadap total pembiayaan APBN, termasuk pengaruhnya pada defisit atau rasio utang, belum dijelaskan. Sebelumnya, penerbitan ini sempat ditunda dari rencana awal Juli 2026 karena sejumlah bank dan manajer investasi besar di China meminta waktu tambahan untuk mengajukan proposal ke komite investasi mereka. Waktu itu mantan Menteri Keuangan Purbaya Yudhi Sadewa menyebut jadwal digeser ke akhir Juli 2026, sementara realisasinya baru tercatat pada penetapan harga 10 November 2026.",
+        "Di jalur lain, pemerintah membawa misi khusus ke KTT APEC 2026 di China yang berlangsung 17-18 November 2026. Direktur Jenderal Asia-Pasifik dan Afrika Santo Darmosumarto memerinci prioritas Indonesia: ketahanan nasional dan kawasan yang mencakup pangan, energi, dan kemanusiaan; penguatan perdagangan multilateral dengan WTO sebagai pusat; konektivitas kawasan lewat infrastruktur dan rantai pasok; perdagangan inklusif dengan partisipasi UMKM; serta transformasi digital dan pemanfaatan AI yang aman dan bertanggung jawab. Menteri Koordinator Perekonomian Airlangga Hartarto menyebut AI akan menjadi bahasan hangat dan pemerintah menjadwalkan pertemuan bilateral dengan China di sela KTT. Dalam pertemuan itu, salah satu hal yang dibahas adalah upaya Indonesia menjadi wakil sekretaris jenderal World Artificial Intelligence Cooperation Organization. Santo menegaskan Indonesia ingin APEC menjadi jembatan diplomasi ekonomi, bukan medan pertunjukan rivalitas negara adidaya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu panda bonds?",
+          "a": "Surat utang berdenominasi yuan yang diterbitkan di pasar domestik China; pemerintah Indonesia menerbitkannya senilai 10 miliar yuan atau setara Rp27,22 triliun.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261111150738-532-1425924/ri-kembali-rilis-panda-bonds-rp272-t-di-china-pesanan-nyaris-rp47-t"
+          }
+        },
+        {
+          "q": "Negara mana yang menjadi pasar penerbitan surat utang ini?",
+          "a": "Tiongkok (Republik Rakyat Tiongkok), negara di Asia Timur yang beribu kota di Beijing.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Tiongkok"
+          }
+        },
+        {
+          "q": "Siapa yang dimaksud pemerintah Indonesia dalam keterangan ini?",
+          "a": "Pemerintah yang mengatur sistem pemerintahan Indonesia berdasarkan UUD 1945, berbentuk republik dengan sistem pemerintahan presidensial.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pemerintah_Indonesia"
+          }
+        }
+      ],
+      "action": "Cek rincian seri, kupon, dan jadwal jatuh tempo panda bonds sebelum menilai dampaknya pada APBN.",
+      "image": {
+        "url": "assets/1a3abc24ad.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Panda Bonds Rp27,22 Triliun Terbit, RI Bawa Misi Ekonomi ke APEC"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261111150738-532-1425924/ri-kembali-rilis-panda-bonds-rp272-t-di-china-pesanan-nyaris-rp47-t",
+          "published_at": "2026-11-11T15:19:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261111173241-4-784375/ri-bawa-misi-besar-ke-apec-china-singgung-rivalitas-negara-adidaya",
+          "published_at": "2026-11-11T17:42:42+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_jaringan_perekrut_tentara_baya_fb98",
+      "angle": "Dua pola perekrutan, kriteria mantan TNI/Polri, dan 'kontrak mati' di balik 23 korban",
+      "kicker": "Kriminal",
+      "title": "Polisi Bongkar Modus Perekrutan WNI Jadi Tentara Bayaran Rusia",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polisi menetapkan delapan tersangka dan mencatat 23 WNI sebagai korban dalam kasus TPPO bermodus perekrutan tentara bayaran Rusia.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-12T09:39:26+07:00"
+      },
+      "body": [
+        "Kepolisian mengungkap dugaan tindak pidana perdagangan orang dengan modus merekrut warga negara Indonesia untuk dikirim menjadi tentara bayaran di Rusia. Kapolres Metro Jakarta Barat Kombes Pol Nasriadi mengatakan penyidikan dilakukan tim gabungan Polres Metro Jakarta Barat, Polda Metro Jaya, dan Bareskrim Polri, berawal dari laporan yang masuk ke pihaknya. Dari kasus ini polisi menyebut delapan tersangka. Rinciannya, menurut Nasriadi, enam orang lebih dulu ditetapkan sebagai tersangka, terdiri dari dua warga asing dan empat warga Indonesia, lalu Satuan Reserse PPA-PPO menyusul mengamankan dua orang lagi di Pemalang. Dua tersangka warga asing itu disebut berasal dari Rusia dan Ukraina. Polisi juga mencatat 23 WNI sebagai korban, dan satu di antaranya dikabarkan meninggal dunia berdasarkan informasi dari pihak keluarga.",
+        "Menurut polisi, perekrutan berjalan dalam dua pola. Pola pertama berawal dari ajakan di media sosial. Nasriadi menuturkan, kasus ini mencuat setelah beredar video seorang mantan prajurit TNI dari Inspektorat Korps Marinir, Satria Arta Kumbara, yang mengaku menjadi tentara Rusia pada Mei 2025. Dari unggahan semacam itu, orang tertarik, lalu diberi kontak yang menghubungkan mereka dengan pihak di Rusia. Setelah tiba di sana, tawaran uang datang bukan hanya untuk mereka, tetapi juga untuk keluarga yang ditinggal di Indonesia. Pola inilah yang kemudian melahirkan gelombang perekrutan berikutnya, dengan orang yang sudah berangkat sebagai perantara.",
+        "Pola kedua memakai agen atau perekrut yang berada di Indonesia. Sasaran utamanya bukan keluarga inti, melainkan teman, pacar, sahabat sekolah, dan kerabat dekat. Nasriadi menyebut di antara para tersangka ada yang berpacaran dengan tentara Rusia atau dengan orang yang sudah berangkat ke sana, dan ada pula yang merupakan teman korban. Satu orang yang berhasil merekrut orang lain dijanjikan sejumlah uang. Menurut polisi, inilah yang membuat jaringan menyebar dari mulut ke mulut di lingkaran terdekat, bukan lewat pengumuman resmi atau lowongan terbuka. Pola ini disebut masih berjalan hingga saat kasus diungkap.",
+        "Kriteria yang dicari juga spesifik: laki-laki berbadan sehat, dengan prioritas mantan anggota TNI atau Polri serta orang yang punya pengalaman militer. Bagi yang tidak punya latar militer, menurut Nasriadi, pelatihan diberikan selama enam bulan di salah satu wilayah perbatasan Rusia dan Ukraina, bukan di wilayah Rusia sendiri. Materinya antara lain latihan menembak dan latihan membunuh. Mereka yang berangkat ditempatkan di barisan terdepan. Nasriadi menyebut kontrak yang dijalani bersifat kontrak mati: meski terluka kena ranjau atau tembakan, mereka tidak boleh pulang ke Indonesia dan harus bertempur sampai perang usai.",
+        "Sejumlah hal masih belum jelas. Angka tersangka disebut berbeda dalam keterangan yang sama: delapan orang, tetapi rincian yang dipaparkan adalah enam tersangka ditambah dua orang yang baru diamankan di Pemalang, sehingga status dua orang terakhir belum diuraikan. Identitas lengkap para tersangka dan peran masing-masing juga belum diumumkan, begitu pula detail korban yang dikabarkan meninggal, karena informasi itu baru berasal dari pihak keluarga. Polisi menyatakan penyidikan masih berjalan. Sebagai catatan, menurut hasil koordinasi melalui Kedutaan Besar Rusia, pihak Rusia menyatakan tidak membenarkan proses rekrutmen tentara dari luar warga negaranya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Kepolisian Negara Republik Indonesia?",
+          "a": "Lembaga penegak hukum nasional dan kepolisian negara di Indonesia, sehingga penyidikan perkara ini berada di ranah kepolisian.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Di mana letak Rusia dalam kasus ini?",
+          "a": "Federasi Rusia adalah negara federasi bersistem semi-presidensial di Eropa Timur dan Asia Utara atau Eurasia bagian utara; negara ini berbatasan darat dengan Ukraina.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Rusia"
+          }
+        },
+        {
+          "q": "Siapa yang menjadi sasaran perekrut?",
+          "a": "Laki-laki berbadan sehat, dengan mantan anggota TNI atau Polri maupun orang yang memiliki pengalaman militer lebih diutamakan.",
+          "source": {
+            "outlet": "liputan6.com",
+            "url": "https://www.liputan6.com/news/read/8333350/polisi-bongkar-jaringan-perekrut-wni-jadi-tentara-bayaran-rusia"
+          }
+        }
+      ],
+      "action": "Pantau perkembangan penyidikan dan jangan merespons tawaran kerja ke luar negeri lewat kontak media sosial tanpa verifikasi.",
+      "image": {
+        "url": "assets/c4a72bf359.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Polisi Bongkar Modus Perekrutan WNI Jadi Tentara Bayaran Rusia"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112052112-12-1426118/polisi-bongkar-modus-perekrutan-wni-jadi-tentara-bayaran-rusia",
+          "published_at": "2026-11-12T06:45:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8333350/polisi-bongkar-jaringan-perekrut-wni-jadi-tentara-bayaran-rusia",
+          "published_at": "2026-11-11T17:59:18+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/11/337/3253515/polisi-ungkap-pola-perekrutan-wni-jadi-tentara-bayaran-rusia-waspada-modusnya",
+          "published_at": "2026-11-11T23:05:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "misread",
+      "topic_id": "t_misread_dpr_bahas_hak_menyatakan_penda_cd1f",
+      "angle": "“usulan” tidak ada di judul",
+      "kicker": "Salah dipahami",
+      "title": "Yang hilang dari judul: “usulan”",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Judul yang beredar: “NasDem Teken Hak Menyatakan Pendapat soal Gibran”. Judul itu tidak memuat kata “usulan” yang muncul di isi artikel.",
+        "Isi artikelnya menyebut: “Ia mengatakan usulan HMP terkait ijazah Gibran tersebut diteken oleh mayoritas anggota Fraksi NasDem di DPR.”. Artinya, masih berupa usulan, bukan keputusan.",
+        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
+      ],
+      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111125254-32-1425836/nasdem-teken-hak-menyatakan-pendapat-soal-gibran",
+          "published_at": "2026-11-11T13:07:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "claim": "NasDem Teken Hak Menyatakan Pendapat soal Gibran",
+      "reality": "Ia mengatakan usulan HMP terkait ijazah Gibran tersebut diteken oleh mayoritas anggota Fraksi NasDem di DPR.",
+      "missing": [
+        "masih berupa usulan, bukan keputusan"
+      ],
+      "trigger": "headline_body_gap"
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_12",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Kabar Salah Hari Ini: dari Wapres hingga Penyadapan",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 12 November 2026, tiga klaim yang beredar diperiksa dan seluruhnya dinyatakan salah. Klaim pertama menyebut Dasco akan menggantikan Gibran sebagai Wakil Presiden. Klaim kedua menyebut sebuah rekaman suara Prabowo merupakan hasil penyadapan. Klaim ketiga menyebut Listyo Sigit mengungkap bahwa Sri Mulyani yang menyetujui anggaran untuk menyadap Presiden Prabowo. Ketiganya diperiksa TurnBackHoax dan tidak satu pun terbukti benar.",
+        "Pola yang terlihat tidak seragam. Untuk rekaman suara, bahan yang dipakai ternyata potongan wawancara Prabowo dalam program Satu Jam Lebih Dekat Bersama Prabowo di tvOne pada Senin (15/9/2014), yaitu materi lama yang disajikan sebagai bocoran baru. Dua klaim lain bekerja dengan cara berbeda: menyebut nama pejabat dalam peristiwa yang tidak didukung bukti. Dasco telah membantah isu penggantian Gibran dan menyebutnya sebagai upaya pengalihan perhatian dari dugaan kasus penyadapan ilegal, sedangkan untuk klaim tentang Listyo Sigit dan Sri Mulyani tidak ditemukan bukti bahwa pernyataan tersebut ada.",
+        "Sebaiknya berhenti sebentar sebelum meneruskan pesan semacam ini. Periksa tanggal dan sumber asli rekaman, dan jangan menjadikan potongan audio sebagai dasar menyimpulkan peristiwa besar. Ketiga klaim di atas sudah dinyatakan salah; meneruskannya hanya menambah kebingungan."
+      ],
+      "action": "Periksa sumber asli dan tanggal rekaman sebelum meneruskan pesan; jangan sebarkan klaim yang sudah dinyatakan salah.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-12T09:39:26+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-12",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Dasco Akan Gantikan Gibran sebagai Wapres",
+          "verdict": "salah",
+          "reason": "Dasco telah membantah isu tersebut dan menyebutnya sebagai upaya pengalihan perhatian dari dugaan kasus penyadapan ilegal.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37414-salah-dasco-akan-gantikan-gibran-sebagai-wapres"
+        },
+        {
+          "claim": "Rekaman Suara Prabowo Hasil Penyadapan",
+          "verdict": "salah",
+          "reason": "Audio tersebut merupakan potongan wawancara Prabowo dalam program Satu Jam Lebih Dekat Bersama Prabowo di tvOne pada Senin (15/9/2014), bukan rekaman hasil penyadapan yang baru bocor ke publik.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37415-salah-rekaman-suara-prabowo-hasil-penyadapan"
+        },
+        {
+          "claim": "Listyo Sigit Ungkap bahwa Sri Mulyani yang Menyetujui Anggaran Menyadap Presiden Prabowo",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan bukti bahwa Listyo Sigit mengungkapkan bahwa Sri Mulyani yang memberikan persetujuan anggaran untuk menyadap Presiden Prabowo.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37417-salah-listyo-sigit-ungkap-bahwa-sri-mulyani-yang-menyetujui-anggaran-menyadap-presiden-prabowo"
+        }
+      ],
+      "pattern": "Rekaman lama dari 2014 dipotong dan disajikan sebagai bocoran baru, sementara klaim lain menyusun cerita dari pernyataan pejabat yang tidak ditemukan buktinya."
+    }
+  ]
+}
