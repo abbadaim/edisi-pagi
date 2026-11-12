@@ -13,6 +13,20 @@ import {
   type SimHash,
 } from "./simhash.ts";
 
+/**
+ * Timeout, gangguan jaringan, dan 5xx layak diulang. 4xx tidak: itu kesalahan
+ * kita (URL/izin), bukan gangguan sesaat (`DEC-0027`).
+ */
+export function isRetryableFeedError(message: string): boolean {
+  if (/\bHTTP\s*4\d\d\b/.test(message)) return false;
+  return /timeout|aborted|ETIMEDOUT|ECONNRESET|ENOTFOUND|EAI_AGAIN|fetch failed|socket hang up|HTTP\s*5\d\d/i.test(
+    message,
+  );
+}
+
+const FEED_ATTEMPTS = 2;
+const FEED_RETRY_DELAY_MS = 500;
+
 export interface IngestOptions {
   feeds: FeedConfig[];
   aliases: Aliases;
@@ -72,8 +86,26 @@ export async function ingest(opts: IngestOptions): Promise<IngestStats> {
 
   await Promise.all(
     opts.feeds.map(async (feed) => {
+      const timeoutMs = opts.fetchTimeoutMs ?? 15_000;
+      let xml: string | null = null;
+      let lastError = "";
+      let attempts = 0;
+
+      for (let attempt = 1; attempt <= FEED_ATTEMPTS; attempt++) {
+        attempts = attempt;
+        try {
+          xml = await fetchFeed(feed.url, timeoutMs, feed.userAgent);
+          break;
+        } catch (e) {
+          lastError = e instanceof Error ? e.message : String(e);
+          // Hanya gangguan sesaat yang diulang; 4xx akan gagal sama saja.
+          if (attempt === FEED_ATTEMPTS || !isRetryableFeedError(lastError)) break;
+          await new Promise((r) => setTimeout(r, FEED_RETRY_DELAY_MS));
+        }
+      }
+
       try {
-        const xml = await fetchFeed(feed.url, opts.fetchTimeoutMs ?? 15_000, feed.userAgent);
+        if (xml === null) throw new Error(lastError);
         const parsed = parseFeed(xml);
         const items = opts.limitPerFeed ? parsed.items.slice(0, opts.limitPerFeed) : parsed.items;
         for (const it of items) {
@@ -82,11 +114,12 @@ export async function ingest(opts: IngestOptions): Promise<IngestStats> {
         }
         perFeed.push({ id: feed.id, outlet: feed.outlet, fetched: items.length, error: null });
       } catch (e) {
+        const why = e instanceof Error ? e.message : String(e);
         perFeed.push({
           id: feed.id,
           outlet: feed.outlet,
           fetched: 0,
-          error: e instanceof Error ? e.message : String(e),
+          error: attempts > 1 ? `${why} (${attempts} percobaan)` : why,
         });
       }
     }),
