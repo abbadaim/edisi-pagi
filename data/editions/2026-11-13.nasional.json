@@ -2,49 +2,49 @@
   "schema_version": 1,
   "edition_id": "2026-11-13",
   "scope": "nasional",
-  "published_at": "2026-11-13T09:57:30+07:00",
+  "published_at": "2026-11-13T14:53:04+07:00",
   "coverage": {
-    "from": "2026-11-12T09:57:30+07:00",
-    "to": "2026-11-13T09:57:30+07:00"
+    "from": "2026-11-12T14:53:04+07:00",
+    "to": "2026-11-13T14:53:04+07:00"
   },
-  "generated_at": "2026-11-13T09:57:30+07:00",
+  "generated_at": "2026-11-13T14:53:04+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 3,
+  "reading_time_min": 34,
   "generated_by": {
     "adjudicate": {
-      "provider": "fallback",
-      "model": "none"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "write": {
-      "provider": "deterministic",
-      "model": "glossary"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "verify": {
-      "provider": "rules",
-      "model": "evidence-class"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "embed": {
       "provider": "none",
       "model": "none"
     }
   },
-  "card_count": 7,
-  "truncated_reason": "Hanya 7 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "card_count": 8,
+  "truncated_reason": null,
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_momen_prabowo_jabat_tangan_gib_acb8",
-      "angle": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+      "topic_id": "t_gibran_ajukan_pengunduran_diri_483a",
+      "angle": "Gibran Serahkan Surat Mundur Wapres Langsung ke Prabowo",
       "kicker": "Nasional",
-      "title": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+      "title": "Gibran Serahkan Surat Mundur Wapres Langsung ke Prabowo",
       "status": "sebagian",
       "truth": {
-        "claim": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+        "claim": "Gibran menyerahkan sendiri surat pengunduran diri sebagai Wapres kepada Prabowo di Istana Merdeka pada Kamis (12/11), dan Prabowo menyatakan menerimanya.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -57,157 +57,193 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-13T09:57:30+07:00"
+        "assessed_at": "2026-11-13T14:53:04+07:00"
       },
       "body": [
-        "Gibran menyerahkan surat pengunduran diri sebagai wapres kepada Prabowo di Istana. Dalam pertemuan ini, Prabowo menjabat tangan mantan wapresnya.",
-        "Presiden Prabowo memanggil menteri dan pimpinan MPR untuk membahas pengunduran diri Gibran sebagai wakil presiden. Diskusi fokus pada mekanisme konstitusi."
+        "Gibran Rakabuming Raka menyerahkan sendiri surat pengunduran dirinya sebagai Wakil Presiden RI kepada Presiden Prabowo Subianto di Istana Merdeka, Jakarta, Kamis (12/11). Prabowo menyatakan resmi menerima pengunduran diri itu setelah Gibran menjabat sekitar dua tahun. Sebelum menyerahkan surat, keduanya bertemu; Gibran mencium tangan Prabowo dan dibalas pelukan hangat. Selepas itu, Gibran disebut akan menemui pimpinan MPR di Senayan.",
+        "Bagi pembaca, peristiwa ini bukan sekadar seremoni. Prabowo menyebut dirinya banyak dibantu Gibran selama ini, memuji sikap kesatria karena surat mundur diantar sendiri, lalu mendoakan Gibran dan keluarganya. Ia juga menegaskan Gibran menempuh pendidikan lewat proses yang teratur dan mundur demi kepentingan negara dan bangsa. Karena itu, yang perlu diikuti adalah pernyataan resmi para pejabat, bukan hanya cuplikan momen haru di Istana.",
+        "Yang belum jelas: alasan lengkap Gibran mundur tidak dirinci dalam bahan yang ada, begitu pula siapa yang akan menjalankan tugas wapres setelah ini. Waktu pertemuan Gibran dengan pimpinan MPR juga belum disebutkan. Bahan yang ada juga belum menjelaskan apakah masih ada tahapan resmi lain setelah surat diterima, sehingga pembaca sebaiknya menunggu keterangan berikutnya dan tidak menyimpulkan prosesnya sudah tuntas."
       ],
       "explain": [
         {
           "q": "Siapa Gibran Rakabuming Raka?",
-          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "a": "Wakil Presiden RI sejak 2024 yang sebelumnya menjabat Wali Kota Surakarta dan berlatarbelakang pengusaha. Ia adalah putra Presiden Joko Widodo, dan posisi itulah yang kini ia lepas.",
           "source": {
             "outlet": "Wapres RI",
             "url": "https://www.wapresri.go.id/"
           }
         },
         {
-          "q": "Apa yang dimaksud kebijakan publik?",
-          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "q": "Siapa Prabowo Subianto, pihak yang menerima surat itu?",
+          "a": "Presiden Indonesia kedelapan yang menjabat sejak 2024. Sebelumnya ia Menteri Pertahanan di era Joko Widodo, dan presiden ketiga RI yang berlatar milititer setelah Soeharto dan Susilo Bambang Yudhoyono.",
           "source": {
-            "outlet": "DPR RI",
-            "url": "https://www.dpr.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa yang diberitakan media tentang pertemuan ini hari itu?",
+          "a": "Prabowo menerima Gibran di Istana Merdeka menjelang pengunduran diri wapres, dan Gibran disebut akan menemui pimpinan MPR di Senayan setelahnya.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261112143454-7-784682/momen-gibran-temui-prabowo-sebelum-serahkan-surat-resign"
           }
         }
       ],
-      "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
+      "action": "Pantau keterangan resmi MPR dan Istana soal tahapan setelah surat diterima, jangan berhenti pada cuplikan video salam tangan.",
       "image": {
-        "url": "assets/ee4199ab88.webp",
-        "credit": "cnnindonesia.com",
-        "alt": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri"
+        "url": "assets/5df0b46ef7.webp",
+        "credit": "liputan6.com",
+        "alt": "Gibran Serahkan Surat Mundur Wapres Langsung ke Prabowo"
       },
       "sources": [
         {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261112144251-32-1426413/momen-prabowo-jabat-tangan-gibran-saat-serahkan-surat-undur-diri",
-          "published_at": "2026-11-12T14:52:42+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8333986/prabowo-puji-sikap-ksatria-gibran-serahkan-langsung-surat-pengunduran-diri",
+          "published_at": "2026-11-12T15:33:51+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "cnbcindonesia.com",
           "url": "https://www.cnbcindonesia.com/news/20261112143454-7-784682/momen-gibran-temui-prabowo-sebelum-serahkan-surat-resign",
           "published_at": "2026-11-12T14:58:40+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
-          "outlet": "liputan6.com",
-          "url": "https://www.liputan6.com/news/read/8333986/prabowo-puji-sikap-ksatria-gibran-serahkan-langsung-surat-pengunduran-diri",
-          "published_at": "2026-11-12T15:33:51+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112152419-20-1426449/prabowo-merasa-terbantu-gibran-pantau-proyek-pemerintah",
+          "published_at": "2026-11-12T15:30:07+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8750262/kata-kata-gibran-saat-peluk-prabowo-saya-minta-maaf-ya-pak",
           "published_at": "2026-11-12T16:48:07+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/prabowo-gibran-sudah-tempuh-pendidikan-lewat-proses-teratur-idJB",
           "published_at": "2026-11-12T15:46:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-13",
-      "previous_edition": null,
+      "revision": 8,
+      "first_seen": "2026-11-11",
+      "previous_edition": "2026-11-12",
       "changes": []
     },
     {
       "id": "c2",
       "type": "news",
-      "topic_id": "t_bri_salurkan_rp1_250_triliun_k_dcbe",
-      "angle": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250 Triliun Kredit demi Majukan U",
-      "kicker": "Ekonomi",
-      "title": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250",
+      "topic_id": "t_8_saksi_kasus_penyadapan_prabo_a617",
+      "angle": "Empat jenderal jadi tersangka; peran end user, jalur atensi, dan wacana makar.",
+      "kicker": "Kriminal",
+      "title": "Kapolri Beberkan Peran Listyo Sigit dalam Dugaan Penyadapan",
       "status": "sebagian",
       "truth": {
-        "claim": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250 Triliun Kredit demi Majukan U",
+        "claim": "Kapolri Suyudi Ario Seto menyebut empat orang berstatus tersangka dalam dugaan penyadapan ilegal, termasuk mantan Kapolri Listyo Sigit Prabowo.",
         "status": "sebagian",
-        "confidence": 0.8,
+        "confidence": 0.83,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 2,
-          "independent_outlets": 3,
+          "tier2": 4,
+          "independent_outlets": 4,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-13T09:57:30+07:00"
+        "assessed_at": "2026-11-13T14:53:04+07:00"
       },
       "body": [
-        "PT Bank Rakyat Indonesia (Persero) Tbk atau BRI konsisten menempatkan segmen UMKM sebagai fokus utama penyaluran...",
-        "BRI fokus pada pembiayaan UMKM, mencapai Rp1.250 triliun hingga September 2026. Dukungan ini bertujuan mendorong pertumbuhan ekonomi kerakyatan dan inklusif."
+        "Kepala Kepolisian Negara Republik Indonesia Jenderal Polisi Suyudi Ario Seto memaparkan dugaan penyadapan ilegal yang menyasar Presiden Prabowo Subianto dan sejumlah pihak lain dalam rapat kerja bersama Komisi III DPR di Kompleks Parlemen, Jakarta, Kamis (12/11/2026). Dalam paparan itu ia menyebut empat orang telah ditetapkan sebagai tersangka, yaitu mantan Kapolri Jenderal Listyo Sigit Prabowo, Irjen Slamet Uliandi, Irjen Eko Hadi Santoso, dan Irjen Ahrie Sonta Nasution. Rapat tersebut menjadi pertemuan pertama Suyudi dengan Komisi III sejak ia diangkat sebagai Kapolri, dan sebagian anggota dewan memintanya membuka temuan selengkap mungkin. Seluruh uraian peran yang dibacakan penyidik, menurut Suyudi, masih berupa dugaan yang harus dibuktikan melalui proses hukum dengan tetap menjunjung asas praduga tak bersalah.",
+        "Dalam materi penyidikan yang dipaparkan Suyudi, Listyo Sigit Prabowo yang menjabat Kapolri pada periode kejadian diduga memberikan perintah dan menentukan target penyadapan secara lisan atau melalui WhatsApp kepada Kepala Bagian Monitoring Ahrie Sonta. Ia juga disebut menjadi penerima hasil akhir atau end user penyadapan, dan peran itu dalam materi penyidikan dikaitkan dengan dugaan menggerakkan orang lain untuk melakukan tindak pidana. Laman latar yang tersedia menyebut Listyo menjabat Kapolri sejak 2021, pernah memimpin Bareskrim, dan pernah menjadi ajudan Presiden Joko Widodo, sebelum pada November 2026 ditetapkan sebagai tersangka. Perlu ditegaskan, seluruh peran itu masih berupa dugaan penyidik dan belum diuji di pengadilan.",
+        "Tiga tersangka lain diuraikan dengan pembagian kerja yang berbeda. Slamet Uliandi, Kadiv TIK Polri pada 2021 sampai Oktober 2026, diduga berperan sebagai dewan penasihat Monitoring Center Polri yang memberi persetujuan pelaksanaan penyadapan sekaligus meneruskan laporan harian dan laporan analisis dari Kepala Bagian Monitoring kepada Listyo. Eko Hadi Santoso, Plt Kepala Bagian Monitoring pada 5 Desember 2024 hingga 7 Oktober 2025, diduga menerima perintah penyadapan terhadap target tertentu dari Slamet yang disebut berasal dari Listyo, lalu memberi persetujuan lewat WhatsApp tanpa surat permohonan penyidik. Adapun Ahrie Sonta, yang menjabat posisi itu pada 7 Oktober 2025 sampai 1 Oktober 2026, diduga menerima perintah langsung dari Listyo dan meneruskannya kepada operator untuk melakukan penyadapan tanpa permohonan penyidik, kemudian melaporkan hasilnya kepada Listyo.",
+        "Satu nama lain muncul dalam paparan tanpa dijelaskan identitas lengkapnya, yakni sosok berinisial TK. Menurut uraian peran tersangka Ahrie Sonta, ia juga memerintahkan TK untuk melakukan surveillance. Bahan yang tersedia tidak menyebutkan nama lengkap, pangkat, maupun jabatan TK, sehingga penyebutan pangkat tertentu untuk inisial itu tidak dapat diverifikasi dari bahan ini. Penyidik pun belum memerinci apakah TK berstatus saksi, tersangka, atau pihak lain yang ikut diperiksa, dan tidak menjelaskan bentuk surveillance yang dimaksud maupun targetnya. Dalam uraian Suyudi, perintah kepada TK disebut berdampingan dengan laporan hasil penyadapan kepada Listyo, tetapi bahan tidak memerinci urutan atau kaitan keduanya. Karena itu, pembaca sebaiknya memperlakukan inisial ini sebagai nama yang belum lengkap, bukan sebagai orang yang sudah terbukti terlibat.",
+        "Paparan Kapolri juga merinci lima tahap dugaan modus operandi: perintah penyadapan, provisioning, pelaksanaan penyadapan, pelaporan kepada end user, dan penghapusan data. Menurut Suyudi, perintah diduga berasal dari Listyo melalui Slamet lalu diteruskan kepada Eko Hadi dan Ahrie, disampaikan secara lisan atau melalui grup WhatsApp tanpa surat permohonan penyidik maupun laporan polisi. Perintah itu ditindaklanjuti Tim Technical Supporting Unit yang memasukkan nomor telepon target ke sistem Lawful Interception Management System tanpa verifikasi dan filterisasi. Pelaksanaan penyadapan berlangsung melalui sistem PenLink PLX, ketika petugas mendengarkan dan mengekspor rekaman untuk dituangkan dalam transkripsi, lalu hasilnya dilaporkan berjenjang sampai ke Listyo.",
+        "Suyudi menggambarkan proses provisioning berjalan lewat dua jalur: jalur resmi dan jalur internal yang disebut jalur atensi. Jalur resmi mengacu pada Peraturan Kapolri Nomor 5 Tahun 2010 dan SOP Bareskrim tahun 2009, diawali surat permohonan penyidik yang dilengkapi laporan polisi, resume, analisis, dan tangkapan percakapan, lalu diverifikasi dan disetujui berjenjang hingga pelaksana provisioning. Jalur atensi, menurutnya, diduga berjalan tanpa surat permohonan, surat perintah penyidikan, maupun penetapan pengadilan, dengan target yang disampaikan secara lisan atau lewat WhatsApp. Ia menyebut kedua jalur memakai sarana teknis yang sama sehingga aktivitas lewat jalur atensi diduga bisa tersamarkan di antara penyadapan resmi.",
+        "Laman latar mengenai dasar hukum penyadapan menyebut penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana. Perbedaan antara jalur resmi dan jalur atensi inilah yang menjadi inti paparan Kapolri: bukan soal ada atau tidaknya alat sadap, melainkan soal ada atau tidaknya surat permohonan penyidik dan persetujuan sesuai prosedur. Penyidik menduga sejumlah nomor telepon disadap tanpa keterkaitan dengan prosedur penegakan hukum. Sampai saat ini belum ada keterangan resmi yang menyebut siapa saja pemilik nomor yang menjadi target selain Presiden Prabowo.",
+        "Kronologi yang dibeberkan Suyudi menyebut peristiwa dugaan terjadi pada kurun 2025 sampai 2026. Pada Oktober 2026, Ahrie Sonta diduga memerintahkan pembubaran grup WhatsApp yang dipakai menyampaikan perintah penyadapan, sekaligus penghapusan data hasil penyadapan pada sistem LIMS dan PenLink PLX. Perintah pembubaran grup dan penghapusan data itu, kata Suyudi, menimbulkan kecurigaan pelapor, sehingga pada 30 Oktober 2026 peristiwa tersebut dilaporkan ke Sentra Pelayanan Kepolisian Terpadu Bareskrim Polri. Kasus ditangani Direktorat Tindak Pidana Siber Bareskrim dengan identitas pelapor dirahasiakan, dan peristiwa yang dilaporkan diduga terjadi di wilayah Jakarta Selatan.",
+        "Soal status hukum, penyidik menetapkan empat tersangka dengan inisial LSP, SU, EH, dan AS. Dugaan tindak pidananya adalah penyadapan dan/atau akses ilegal dan/atau penghapusan data elektronik. Masa penahanan yang dicantumkan berbeda-beda: Listyo sampai 23 November 2026, Eko Hadi sampai 22 November 2026, dan Ahrie Sonta sampai 21 November 2026. Slamet Uliandi memiliki jalur berbeda: ia ditetapkan sebagai tersangka pada 5 November 2026 dan baru menjalani penahanan rumah pada 11 November 2026. Perbedaan tanggal itu berasal dari pemaparan penyidik dan belum dijelaskan lebih lanjut apakah berkaitan dengan kondisi kesehatan atau pertimbangan lain.",
+        "Di luar dugaan penyadapan, Polri juga menerbitkan laporan polisi baru terhadap dugaan tindak pidana turut serta dan/atau secara bersama-sama dan/atau pemufakatan jahat untuk melakukan tindak pidana makar. Sejumlah anggota Komisi III mendorong arah itu. Ketua Komisi III Habiburokhman menyebut ada dugaan rangkaian perbuatan lain, seperti surveilans ilegal, pembunuhan karakter, pengkondisian opini di media sosial, dan penggalangan massa aksi. Anggota lain meminta Kapolri tidak ragu menerapkan pasal makar, sementara Suyudi menegaskan bukti dugaan makar masih didalami. Perlu dicatat, dorongan para legislator itu belum berarti pasal makar sudah dijatuhkan kepada keempat tersangka.",
+        "Komisi Pemberantasan Korupsi ikut bersuara karena disebut menjadi salah satu lembaga yang menjadi korban penyadapan. KPK menyatakan menghormati proses hukum yang berjalan dan mendukung Polri dalam penegakan hukum kasus penyadapan ilegal itu. Pernyataan tersebut tidak memerinci nomor atau pejabat KPK mana yang diduga disadap, dan tidak pula menjelaskan apakah KPK akan membuka penyelidikan sendiri atau hanya mengikuti hasil penyidikan Polri. Dukungan itu muncul pada 12 hingga 13 November 2026, setelah rapat kerja di DPR membuka rincian dugaan peran keempat tersangka. Posisi KPK sebagai pihak yang disebut dirugikan sekaligus lembaga penegak hukum membuat pernyataannya terbatas pada penghormatan atas proses hukum, tanpa penilaian atas pembuktian perkara.",
+        "Satu langkah lain yang mencuat pada hari berikutnya adalah penarikan Komjen Pol Syahardiantono dari Kantor Staf Presiden. Kapolri memutasi perwira yang disebut sebaya Listyo Sigit di Akademi Kepolisian 1991 itu menjadi Analis Lemdiklat Polri. Bahan yang tersedia tidak menjelaskan alasan penarikan tersebut dan tidak menghubungkannya secara resmi dengan kasus penyadapan. Tidak ada keterangan apakah Syahardiantono diperiksa, dipanggil sebagai saksi, atau sama sekali tidak terkait perkara. Karena itu, keterkaitan antara mutasi itu dan penyidikan belum bisa disimpulkan, meskipun waktunya berdekatan dengan pengungkapan kasus di DPR. Mutasi jabatan di lingkungan Polri memang kewenangan Kapolri dan tidak otomatis menandakan keterlibatan dalam suatu perkara.",
+        "Beberapa detail yang diminta publik justru belum ada dalam bahan yang tersedia. Jumlah saksi yang mengajukan perlindungan ke Lembaga Perlindungan Saksi dan Korban belum disebutkan, termasuk status permohonan mereka. Daftar barang bukti yang disita polisi juga belum diumumkan secara rinci; bahan hanya menyebut data pada sistem LIMS dan PenLink PLX serta dokumen elektronik sebagai objek dugaan penghapusan, bukan daftar barang yang dibawa penyidik. Tanggapan resmi Istana atas perluasan kasus ini juga belum tercantum, sehingga yang bisa dilaporkan baru paparan Kapolri di DPR, pernyataan sejumlah legislator, dan sikap KPK. Ketiadaan rincian itu penting dicatat agar pembaca tidak mengisi sendiri bagian yang masih kosong.",
+        "Dengan demikian, yang bisa dipegang pembaca saat ini adalah tiga hal. Pertama, empat orang berstatus tersangka dan belum ada putusan pengadilan. Kedua, inti dugaan adalah perintah penyadapan yang diduga berjalan lewat jalur atensi tanpa surat permohonan penyidik, ditambah dugaan penghapusan data pada Oktober 2026. Ketiga, arah penyidikan bisa meluas ke dugaan makar, tetapi polisi menyatakan pembuktiannya masih berjalan. Perkembangan berikutnya paling mungkin muncul dari pemeriksaan saksi, pengumuman barang bukti, dan kelanjutan penyelidikan makar. Sampai ketiganya terlihat, klaim bahwa kasus ini sudah tuntas atau bahwa pasal makar pasti diterapkan belum punya dasar dalam bahan. Yang tersedia hanyalah paparan penyidik di hadapan DPR, dan itu tetap harus dibaca sebagai tuduhan yang belum diuji."
       ],
       "explain": [
         {
-          "q": "Apa yang dimaksud laba bersih bank?",
-          "a": "Selisih pendapatan bunga dan biaya operasional setelah pajak. Angka kuartalan dipakai pasar untuk menilai efisiensi dan kualitas kredit.",
+          "q": "Siapa Listyo Sigit Prabowo dalam kasus ini?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan pernah menjadi ajudan Presiden Joko Widodo; ia juga pernah memimpin Bareskrim dan pada November 2026 ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
           "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
           }
         },
         {
-          "q": "Mengapa angka ekonomi ini penting?",
-          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "q": "Kapan penyadapan oleh aparat penegak hukum dianggap sah?",
+          "a": "Menurut laman latar soal UU ITE, penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
           "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto yang disebut menjadi target?",
+          "a": "Politikus dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024, sebelumnya Menteri Pertahanan pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
           }
         }
       ],
-      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "action": "Pantau dokumen resmi Polri soal penetapan tersangka dan penyelidikan makar sebelum menyimpulkan siapa yang bersalah.",
       "image": {
-        "url": "assets/bbbd5f631c.webp",
-        "credit": "antaranews.com",
-        "alt": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250"
+        "url": "assets/74e640ab24.webp",
+        "credit": "detik.com",
+        "alt": "Kapolri Beberkan Peran Listyo Sigit dalam Dugaan Penyadapan"
       },
       "sources": [
         {
-          "outlet": "antaranews.com",
-          "url": "https://www.antaranews.com/berita/5848407/dari-usaha-rakyat-untuk-ekonomi-negeri-bri-salurkan-rp1250-triliun-kredit-demi-majukan-umkm",
-          "published_at": "2026-11-12T10:06:22+07:00",
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750553/dukungan-dari-senayan-agar-polri-usut-dugaan-listyo-sigit-dkk-makar",
+          "published_at": "2026-11-12T20:12:31+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112163629-4-784734/kapolri-suyudi-beberkan-kronologi-dan-modus-listyo-cs-sadap-prabowo",
+          "published_at": "2026-11-12T17:40:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261112123923-625-1426309/bri-salurkan-rp1250-triliun-kredit-dukung-kemajuan-umkm",
-          "published_at": "2026-11-12T12:53:25+07:00",
+          "url": "https://www.cnnindonesia.com/nasional/20261112145850-12-1426428/pernyataan-lengkap-kapolri-soal-listyo-end-user-di-kasus-penyadapan",
+          "published_at": "2026-11-12T15:54:48+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
-          "outlet": "kumparan.com",
-          "url": "https://kumparan.com/kumparanbisnis/jaga-keberlanjutan-ekonomi-kerakyatan-npl-bri-terus-membaik-seiring-penguatan-pengelolaan-risiko-28YzOgct75o",
-          "published_at": "2026-11-13T09:28:41+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/12/1/3253751/mutasi-polri-reserse-bintang-3-rekan-angkatan-listyo-sigit-digeser-dari-ring-1-istana",
+          "published_at": "2026-11-13T05:15:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "place": "nasional",
       "revision": 2,
-      "first_seen": "2026-11-12",
+      "first_seen": "2026-11-13",
       "previous_edition": "2026-11-12",
       "changes": []
     },
@@ -215,12 +251,12 @@
       "id": "c3",
       "type": "news",
       "topic_id": "t_bos_pertamina_komitmen_cegah_g_aa49",
-      "angle": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+      "angle": "Pertamina minta maaf atas gangguan distribusi dan menyiapkan antisipasi akhir tahun.",
       "kicker": "Ekonomi",
-      "title": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+      "title": "Pertamina Minta Maaf soal Gangguan Pasokan BBM Jelang Akhir Tahun",
       "status": "sebagian",
       "truth": {
-        "claim": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+        "claim": "Pertamina menyampaikan permohonan maaf atas gangguan distribusi BBM dalam rapat dengan Komisi VI DPR pada 12 November 2026 dan menyiapkan langkah antisipasi akh",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -233,77 +269,80 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-13T09:57:30+07:00"
+        "assessed_at": "2026-11-13T14:53:04+07:00"
       },
       "body": [
-        "Pertamina komitmen cegah gangguan distribusi BBM",
-        "Simon mengatakan Pertamina menghadapi tantangan kompleks dalam menjaga ketersediaan dan distribusi energi."
+        "Direktur Utama PT Pertamina (Persero) Simon Aloysius Mantiri menyampaikan permohonan maaf atas gangguan distribusi bahan bakar minyak yang sempat membuat masyarakat tidak nyaman. Permintaan maaf itu disampaikan dalam Rapat Dengar Pendapat dengan Komisi VI DPR RI pada Kamis, 12 November 2026. Simon mengakui Pertamina memikul tanggung jawab besar untuk memastikan kebutuhan energi masyarakat tetap terpenuhi, dan menegaskan fokus perusahaan adalah menjaga kelancaran penyaluran sekaligus mencegah gangguan serupa terulang kembali.",
+        "Soal penyebab, bahan yang tersedia tidak merinci apa yang sebenarnya memicu gangguan pasokan. Direktur Utama PT Pertamina Patra Niaga Mars Ega Legowo Putra menyinggung dinamika geopolitik yang membuat produksi Pertalite naik 9,2% dibanding rata-rata Januari-Juni 2026, tetapi tidak menjelaskan hubungannya dengan gangguan distribusi. Wilayah yang terdampak dan berapa lama gangguannya berlangsung juga belum disebutkan; bahan hanya menyebut adanya wilayah terdampak tanpa merinci nama daerah maupun durasinya. Bentuk kompensasi bagi konsumen pun belum diumumkan. Simon menyebut tantangan geografis kepulauan membuat energi harus disalurkan lewat jalur darat, laut, dan udara dengan cuaca yang berbeda-beda.",
+        "Selama penanganan, Pertamina mengoperasikan terminal BBM dan SPBU selama 24 jam, memobilisasi tambahan armada mobil tangki beserta awaknya, menyiapkan SPBU modular di sejumlah lokasi, dan mengoptimalkan Pertamina Delivery Services. Jajaran pejabat terkait diterjunkan langsung ke lapangan, dengan koordinasi bersama pemerintah daerah, TNI, Polri, serta pengusaha pengelola SPBU. Di sisi infrastruktur, Pertamina Patra Niaga membangun dermaga baru di kawasan Terminal Manggis, Bali, sebagai upaya mencegah gangguan distribusi terulang.",
+        "Untuk akhir tahun, Pertamina memperkuat perencanaan kebutuhan, kesiapan stok, dan infrastruktur penyimpanan, ditambah fleksibilitas armada mobil tangki serta pengaturan jalur distribusi alternatif. Mars Ega menyebut produksi solar naik 15,3%, terjadi pergeseran permintaan sekitar 13%, dan cadangan pasokan ditingkatkan sejak Oktober agar stok bertahan hingga Desember 2026. Pertamina merekonfigurasi nozzle Pertalite di SPBU untuk menambah jalur antrean, menambah 369 unit mobil tangki atau sekitar 9,2% kapasitas armada, memperbesar armada kapal domestik dari 230 menjadi 235 unit, mengoperasikan 44 kapal untuk pengangkutan internasional, dan menyiapkan skema floating storage untuk gasoline.",
+        "Mengenai kecukupan stok nasional, bahan tidak memuat angka total stok maupun proyeksi kebutuhan. Yang disebut adalah Pertamina masih mengandalkan impor untuk memenuhi sebagian kebutuhan Pertalite, sementara cadangan pasokan ditingkatkan sejak Oktober; rincian volumenya belum jelas. Di sisi pengawasan, Wakil Ketua Komisi VI DPR Andre Rosiade meminta Pertamina memperketat pengawasan BBM subsidi agar tidak terjadi penyalahgunaan. Pemerintah juga mendorong penggunaan yuan China lewat skema pembayaran yang diharapkan dimanfaatkan Pertamina untuk mengurangi risiko fluktuasi rupiah."
       ],
       "explain": [
         {
-          "q": "Apa peran Pertamina?",
-          "a": "Badan usaha milik negara di sektor energi yang mengelola kilang, distribusi BBM, dan jaringan SPBU. Harga BBM bersubsidi ditetapkan pemerintah, bukan perusahaan.",
+          "q": "Apa itu Pertamina dan apa perannya dalam distribusi BBM?",
+          "a": "Badan usaha milik negara di sektor energi yang mengelola kilang, distribusi BBM, dan jaringan SPBU; harga BBM bersubsidi ditetapkan pemerintah, bukan perusahaan.",
           "source": {
             "outlet": "Pertamina",
             "url": "https://www.pertamina.com/"
           }
         },
         {
-          "q": "Apa itu harga eceran tertinggi BBM?",
-          "a": "Batas harga jual bahan bakar bersubsidi yang ditetapkan pemerintah. Penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi.",
+          "q": "Mengapa harga BBM bersubsidi di SPBU tidak boleh melebihi batas tertentu?",
+          "a": "Pemerintah menetapkan batas harga jual bahan bakar bersubsidi; penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi.",
           "source": {
             "outlet": "ESDM",
             "url": "https://www.esdm.go.id/"
           }
         }
       ],
-      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "action": "Cek harga BBM bersubsidi di SPBU dan pastikan tidak membayar di atas batas yang ditetapkan pemerintah.",
       "image": {
         "url": "assets/120d2d7156.webp",
         "credit": "cnbcindonesia.com",
-        "alt": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM"
+        "alt": "Pertamina Minta Maaf soal Gangguan Pasokan BBM Jelang Akhir Tahun"
       },
       "sources": [
-        {
-          "outlet": "cnbcindonesia.com",
-          "url": "https://www.cnbcindonesia.com/news/20261112142217-4-784675/bos-pertamina-komitmen-cegah-gangguan-distribusi-bbm",
-          "published_at": "2026-11-12T15:10:04+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
-        },
         {
           "outlet": "tirto.id",
           "url": "https://tirto.id/pertamina-minta-maaf-atas-gangguan-pasokan-dan-distribusi-bbm-idJP",
           "published_at": "2026-11-12T16:45:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112142217-4-784675/bos-pertamina-komitmen-cegah-gangguan-distribusi-bbm",
+          "published_at": "2026-11-12T15:10:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "detik.com",
           "url": "https://news.detik.com/berita/d-8750529/andre-rosiade-minta-pertamina-perketat-pengawasan-distribusi-bbm-subsidi",
           "published_at": "2026-11-12T20:04:10+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "place": "nasional",
-      "revision": 1,
+      "revision": 2,
       "first_seen": "2026-11-13",
-      "previous_edition": null,
+      "previous_edition": "2026-11-12",
       "changes": []
     },
     {
       "id": "c4",
       "type": "news",
-      "topic_id": "t_kpk_ungkap_banyak_proyek_bnpb_cfbe",
-      "angle": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+      "topic_id": "t_bnn_polri_ungkap_jaringan_nark_cf26",
+      "angle": "Penangkapan DPO Malaysia-Madura di Bangkalan dan sitaan 5.233 ekstasi",
       "kicker": "Kriminal",
-      "title": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+      "title": "DPO Malaysia-Madura Ditangkap di Bangkalan, 5.233 Ekstasi Disita",
       "status": "sebagian",
       "truth": {
-        "claim": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+        "claim": "Polisi menyita 5.233 butir ekstasi dan sepucuk pistol revolver saat menangkap DPO Muzamil alias Semil di Bangkalan.",
         "status": "sebagian",
-        "confidence": 0.8,
+        "confidence": 0.77,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
@@ -314,131 +353,180 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-13T09:57:30+07:00"
+        "assessed_at": "2026-11-13T14:53:04+07:00"
       },
       "body": [
-        "KPK menyebut proyek BNPB yang menggunakan DSP atau dana siap pakai dilakukan karena bisa dengan metode penunjukan langsung.",
-        "Komisi Pemberantasan Korupsi (KPK) menyebut TNI sudah memeriksa prajurit aktif yang diduga terlibat kasus dugaan..."
+        "Tim gabungan menangkap seorang buronan yang disebut berstatus DPO dalam perkara narkoba jaringan Malaysia-Madura. Penangkapan berlangsung di wilayah Kabupaten Bangkalan, menurut pemberitaan detik.com. Dalam operasi itu petugas juga menyita barang bukti berupa sepucuk senjata api jenis pistol revolver dan 5.233 butir ekstasi. Penangkapan dan penyitaan disebut terjadi dalam satu rangkaian operasi gabungan, tetapi susunan tim yang terlibat belum dirinci, termasuk apakah ada institusi lain selain kepolisian. Bahan juga tidak menyebut jumlah personel yang dikerahkan, waktu penangkapan, atau apakah ada perlawanan dari tersangka saat diamankan. Tidak ada keterangan pula soal lokasi penemuan barang bukti, apakah di rumah, kendaraan, atau tempat lain.",
+        "Nama buronan itu ditulis berbeda di antara pemberitaan. Satu bahan menyebutnya Muzammil, bahan lain menulis Muzamil alias Semil. Perbedaan ejaan ini belum dijelaskan sumber mana pun, sehingga pembaca sebaiknya menyimpan kedua versi sampai ada keterangan resmi. Yang sama dari kedua penulisan adalah statusnya sebagai buronan atau daftar pencarian orang dalam kasus peredaran narkoba yang dikaitkan dengan jaringan Malaysia-Madura. Bahan juga belum menyebut kewarganegaraan, usia, atau asal daerah tersangka secara rinci. Karena itu, identitas lengkapnya masih perlu dikonfirmasi ke kepolisian, bukan disusun dari potongan pemberitaan.",
+        "Angka yang paling menonjol adalah 5.233 butir ekstasi yang disita. Jumlah itu disebut berdampingan dengan sepucuk pistol revolver, sehingga perkara ini mencakup dugaan peredaran narkotika sekaligus kepemilikan senjata api. Bahan tidak menyebut berapa berat total ekstasi, berapa nilai barang tersebut di pasaran, atau di mana barang itu disimpan ketika ditemukan. Lokasi penangkapan disebut di Kabupaten Bangkalan, sementara keterkaitan dengan Malaysia dan Madura baru muncul sebagai label jaringan, bukan hasil pengungkapan yang dirinci satu per satu. Tidak ada keterangan apakah ekstasi itu diproduksi di luar negeri atau dirakit di dalam negeri, dan tidak ada penjelasan soal asal senjata api tersebut.",
+        "Setelah ditangkap, Muzammil disebut dibawa ke Polda Jawa Timur untuk menjalani pemeriksaan dan proses hukum lebih lanjut. Bahan yang sama menyatakan kasus ini masih dalam pengembangan petugas. Artinya, informasi soal tersangka lain, pemasok, maupun tujuan distribusi belum final. Pembaca yang mengikuti perkara ini perlu membedakan antara status buronan yang sudah tertangkap dan jaringan yang belum tentu terbongkar seluruhnya. Bahan tidak menyebut pasal yang disangkakan, ancaman hukuman, atau apakah tersangka langsung ditahan. Semua rincian itu biasanya muncul belakangan, dan sampai saat ini belum tersedia dalam bahan yang dihimpun, sehingga judul berita sebaiknya tidak dibaca sebagai vonis.",
+        "Yang belum jelas justru bagian pentingnya. Bahan tidak menyebutkan kapan penangkapan dilakukan, bagaimana petugas menemukan keberadaan tersangka, atau apakah ada orang lain yang ditangkap bersamaan. Peran Muzammil dalam jaringan juga belum dirinci: apakah ia kurir, pengedar, atau pihak yang lebih atas, tidak dijelaskan. Bahan hanya menyebutnya sebagai target DPO peredaran sabu jaringan Malaysia-Madura, tanpa menguraikan posisinya. Rincian soal dakwaan, penahanan, dan jadwal pemeriksaan juga belum tersedia. Pembaca sebaiknya menahan kesimpulan bahwa penangkapan ini berarti seluruh jaringan sudah dibongkar, karena satu penangkapan belum tentu menyentuh pemasok maupun pembeli.",
+        "Soal lembaga yang terlibat, satu bahan menyebut operasi gabungan tanpa merinci institusinya. Bahan lain menyebut Bareskrim Polri, Polda Bali, dan BNN, tetapi konteksnya adalah pengungkapan peredaran narkoba di Lapas Kerobokan, bukan penangkapan di Bangkalan. Karena itu, klaim bahwa BNN dan Polri bersama-sama menangkap Muzammil belum bisa dipastikan dari bahan yang ada. Yang tercatat hanya bahwa penangkapan dilakukan tim gabungan dan berkasnya berlanjut ke Polda Jawa Timur. Perbedaan konteks ini penting agar dua peristiwa yang kebetulan muncul pada hari yang sama tidak dianggap satu operasi. Bahan juga tidak menyebut siapa yang menjadi penanggung jawab operasi di Bangkalan.",
+        "Peristiwa kedua yang muncul di bahan berlangsung di Lapas Kerobokan, Bali. Penggerebekan dilakukan pada Jumat, 30 Oktober 2026, pukul 02.00 WIB dini hari, menurut pemberitaan detik.com. Penindakan melibatkan belasan personel gabungan yang menggeledah kamar sel. Sebelum penggeledahan, sejumlah alat komunikasi milik penjaga lapas disita oleh tim gabungan. Penggeledahan tersebut berlangsung hampir 12 jam. Bahan menyebutnya sebagai razia di dalam lapas, bukan penangkapan di luar tembok lembaga pemasyarakatan, sehingga gambaran peristiwanya berbeda dari penangkapan di Bangkalan. Bahan tidak menyebut jumlah kamar yang digeledah atau berapa banyak petugas lapas yang bertugas saat razia.",
+        "Hasil razia itu adalah 11 gram sabu, lima butir ekstasi, dan alat hisap sabu atau bong milik warga binaan. Sebanyak 36 warga binaan diamankan dan langsung menjalani tes urine; 24 orang dinyatakan positif narkoba. Namun satu paragraf dalam bahan yang sama menyebut bahwa dari 26 napi tersebut, lima di antaranya kedapatan memiliki sabu dan ekstasi. Angka 36 dan 26 berbeda, dan bahan tidak menjelaskan apakah keduanya merujuk pada kelompok yang sama atau pada tahap pemeriksaan yang berbeda. Perbedaan ini sebaiknya disebut apa adanya, bukan dipilih salah satu agar cerita terlihat rapi. Bahan juga tidak merinci siapa yang melakukan tes urine dan apakah hasilnya bisa diuji ulang.",
+        "Lima warga binaan yang kedapatan memiliki sabu dan ekstasi kemudian dibawa ke Mapolda Bali untuk pemeriksaan lebih lanjut. Kapolda Bali Irjen Pol Pasma Royce menyatakan razia ini bagian dari pemberantasan narkoba dari dalam lapas dan merujuk arahan Kapolri Jenderal Suyudi Ario Seto. Pernyataan itu dikutip pada Jumat, 13 November 2026. Bahan tidak memuat tanggapan dari pihak lapas, keluarga warga binaan, atau kuasa hukum, sehingga informasi masih berasal dari satu sisi. Tidak ada keterangan apakah kelima orang itu tersangka baru atau pengguna, dan status hukum mereka belum dijelaskan. Bahan juga tidak menyebut apakah mereka masih berstatus warga binaan saat diperiksa.",
+        "Mengapa lapas menjadi titik rawan tidak dijelaskan dalam bahan. Satu petunjuk prosedural adalah penyitaan alat komunikasi milik penjaga sebelum penggeledahan; langkah itu dapat dibaca sebagai upaya mencegah informasi bocor sebelum razia, meski bahan tidak menyebut alasannya secara eksplisit. Bahan juga tidak menyebut apakah ada petugas lapas yang diperiksa atau dikenai sanksi. Tanpa keterangan itu, hubungan antara penyitaan ponsel dan temuan narkoba tetap merupakan kemungkinan, bukan sebab yang sudah terbukti. Menulisnya sebagai sebab pasti akan melampaui apa yang benar-benar tercatat. Pembaca perlu membedakan antara prosedur penggeledahan yang lazim dan dugaan keterlibatan petugas.",
+        "Dua perkara ini sebaiknya tidak dicampur. Penangkapan di Bangkalan berkaitan dengan jaringan Malaysia-Madura dan sitaan 5.233 butir ekstasi. Razia di Lapas Kerobokan berkaitan dengan temuan 11 gram sabu dan lima butir ekstasi di dalam sel. Bahan tidak menyebut adanya hubungan antara keduanya, baik dari sisi pelaku maupun jalur distribusi. Menyatukan keduanya dalam satu narasi akan melebihkan apa yang diketahui dan berisiko menyesatkan pembaca yang ingin memahami perkara. Yang menghubungkan keduanya hanya tema besar narkoba dan hari pemberitaan yang berdekatan, bukan bukti keterkaitan. Bahan juga tidak menyebut apakah barang bukti di kedua lokasi memiliki ciri atau kemasan yang sama.",
+        "Untuk memahami istilahnya, ekstasi termasuk zat yang dalam bahan latar disebut psikoaktif atau psikotropika, yaitu zat kimia yang dapat mengubah fungsi otak dan sistem saraf serta memengaruhi persepsi, suasana hati, kesadaran, kognisi, atau perilaku. Bahan latar menyebut zat semacam ini bisa dipakai untuk tujuan medis, rekreasi, atau tujuan lain, dan pada konteks hukum penggunaannya dibatasi. Penjelasan itu membantu memahami mengapa penyitaan ribuan butir dianggap besar, tetapi bahan tidak memberi angka ambang atau perbandingan untuk menilai besarnya kasus secara nasional. Bahan juga tidak menyebut kadar zat aktif dalam butir yang disita, sehingga dampak kesehatannya tidak bisa dihitung dari pemberitaan ini.",
+        "Konteks kelembagaannya, Kepolisian Negara Republik Indonesia disebut sebagai lembaga penegak hukum nasional dan kepolisian negara. Dalam perkara ini, kepolisian daerah menjadi ujung proses setelah penangkapan, yaitu tempat tersangka diperiksa. Bahan latar tidak menjelaskan pembagian kewenangan antara Polda, Bareskrim, dan BNN, sehingga siapa memimpin penyidikan di masing-masing perkara belum bisa dipastikan. Pembaca perlu berhati-hati menyimpulkan bahwa satu institusi menangani seluruh rangkaian peristiwa. Bahan juga tidak menyebut koordinasi lintas lembaga selain frasa operasi gabungan dan tim gabungan, dan tidak ada keterangan soal siapa yang lebih dulu menyelidiki masing-masing kasus.",
+        "Yang masih terbuka setelah kedua peristiwa adalah jumlah tersangka, kemungkinan penangkapan lanjutan, serta nasib barang bukti. Untuk kasus Bangkalan, pengembangan petugas disebut masih berjalan. Untuk kasus Kerobokan, lima orang sudah dibawa ke Mapolda Bali, tetapi proses hukum berikutnya belum dirinci. Bahan juga tidak menyebut apakah penyelidikan mengarah ke jaringan yang sama atau ke pemasok yang berbeda, dan tidak ada keterangan soal keberadaan buronan lain. Pertanyaan soal siapa yang memasok barang ke lapas dan bagaimana barang itu masuk juga belum terjawab. Bahan tidak memuat pernyataan dari BNN maupun Bareskrim soal kasus Bangkalan, sehingga porsi keterlibatan mereka belum bisa ditimbang.",
+        "Langkah berikutnya yang masuk akal dipantau adalah keterangan resmi kepolisian. Bahan hanya menyebut pemeriksaan di Polda Jawa Timur dan Mapolda Bali, tanpa jadwal atau hasil. Sampai keterangan itu keluar, frasa yang paling aman adalah disebut dan menurut pemberitaan, bukan terbongkar seluruhnya. Pembaca yang jarang membuka media sosial bisa menandai dua hal: besarnya sitaan ekstasi di Bangkalan, dan temuan narkoba di dalam lapas Bali yang melibatkan puluhan warga binaan. Keduanya layak diikuti, tetapi belum cukup untuk menggambarkan peta jaringan narkoba secara menyeluruh. Perkembangan berikutnya yang perlu dicari adalah nama tersangka resmi, pasal yang dipakai, dan apakah ada penangkapan tambahan."
       ],
       "explain": [
         {
-          "q": "Apa peran BNPB?",
-          "a": "Badan Nasional Penanggulangan Bencana, yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah.",
+          "q": "Apa itu psikotropika dan mengapa ekstasi dibahas dalam kategori ini?",
+          "a": "Bahan latar menyebut psikotropika sebagai zat kimia yang dapat mengubah fungsi otak dan sistem saraf, serta memengaruhi persepsi, suasana hati, kesadaran, kognisi, atau perilaku. Zat semacam itu bisa dipakai untuk tujuan medis, rekreasi, atau tujuan lain, dan penggunaannya dibatasi hukum.",
           "source": {
-            "outlet": "BNPB",
-            "url": "https://bnpb.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Obat_psikoaktif"
           }
         },
         {
-          "q": "Apa itu KPK?",
-          "a": "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "q": "Apa peran Polri dan kepolisian daerah dalam perkara seperti ini?",
+          "a": "Bahan latar menyebut Kepolisian Negara Republik Indonesia sebagai lembaga penegak hukum nasional dan kepolisian negara. Polda menjadi tempat tersangka diperiksa, tetapi rincian pembagian kewenangan dengan Bareskrim atau BNN tidak dijelaskan dalam bahan.",
           "source": {
-            "outlet": "KPK",
-            "url": "https://www.kpk.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Apa langkah setelah tersangka dibawa ke Polda Jawa Timur?",
+          "a": "Bahan menyebut tersangka menjalani pemeriksaan dan proses hukum lebih lanjut, serta kasus masih dalam pengembangan petugas. Jadwal pemeriksaan, pasal yang disangkakan, dan status penahanan belum disebutkan.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8750483/bnn-polri-ungkap-jaringan-narkoba-internasional-amankan-dpo-muzammil"
           }
         }
       ],
-      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "action": "Pantau keterangan resmi Polda Jawa Timur soal pengembangan kasus dan peran tersangka sebelum menyimpulkan jaringan terbongkar.",
       "image": {
-        "url": "assets/31816b970d.webp",
-        "credit": "antaranews.com",
-        "alt": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung"
+        "url": "assets/74c57935c9.webp",
+        "credit": "detik.com",
+        "alt": "DPO Malaysia-Madura Ditangkap di Bangkalan, 5.233 Ekstasi Disita"
       },
       "sources": [
         {
           "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8750614/kpk-ungkap-banyak-proyek-bnpb-pakai-dsp-karena-bisa-tunjuk-langsung",
-          "published_at": "2026-11-12T21:13:23+07:00",
+          "url": "https://news.detik.com/berita/d-8750483/bnn-polri-ungkap-jaringan-narkoba-internasional-amankan-dpo-muzammil",
+          "published_at": "2026-11-12T19:15:28+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
-          "outlet": "antaranews.com",
-          "url": "https://www.antaranews.com/berita/5850863/kpk-tni-sudah-periksa-prajurit-aktif-diduga-terlibat-kasus-bnpb",
-          "published_at": "2026-11-13T09:33:57+07:00",
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/digerebek-12-jam-24-napi-lapas-kerobokan-bali-positif-narkoba-idKP",
+          "published_at": "2026-11-13T09:37:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "place": "nasional",
-      "revision": 1,
+      "revision": 2,
       "first_seen": "2026-11-13",
-      "previous_edition": null,
+      "previous_edition": "2026-11-12",
       "changes": []
     },
     {
       "id": "c5",
       "type": "news",
-      "topic_id": "t_polri_ungkap_sosok_tk_di_kasus_d24b",
-      "angle": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini Diperiksa Propam",
-      "kicker": "Kriminal",
-      "title": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini",
+      "topic_id": "t_jensen_huang_mundur_dari_ceo_n_f114",
+      "angle": "Saham Nvidia anjlok setelah rapat dewan dan kabar pengunduran diri Jensen Huang.",
+      "kicker": "Ekonomi",
+      "title": "Jensen Huang Disebut Mundur dari CEO Nvidia, Saham Anjlok",
       "status": "sebagian",
       "truth": {
-        "claim": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini Diperiksa Propam",
+        "claim": "Jensen Huang disebut mengundurkan diri sebagai CEO Nvidia setelah dugaan hubungan asmara dengan orang yang diduga mata-mata China mencuat, dan saham Nvidia turu",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
         "basis": {
           "strongest": "two_independent_tier2",
           "primary": 0,
-          "tier2": 3,
-          "independent_outlets": 3,
+          "tier2": 4,
+          "independent_outlets": 4,
           "contradicting": 0
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-13T09:57:30+07:00"
+        "assessed_at": "2026-11-13T14:53:04+07:00"
       },
       "body": [
-        "Polri mengungkap sosok berinisial TK diperiksa Propam terkait dugaan penyadapan ilegal terhadap Presiden. TK berpangkat Brigjen.",
-        "Kadiv Humas Polri Irjen Johnny Eddizon Isir memastikan sosok TK merupakan anggota Polri aktif dengan pangkat Brigjen."
+        "Jensen Huang disebut mengundurkan diri dari jabatan CEO Nvidia, hanya sehari setelah dewan direksi perusahaan itu dilaporkan menggelar rapat untuk membahas kemungkinan memberhentikannya. CNBC Indonesia memberitakan Huang mundur dari posisinya sebagai CEO sekaligus Presiden NVIDIA, sedangkan Republika Online menyebut pengunduran diri itu berlangsung mendadak dan langsung menarik perhatian dari Silicon Valley hingga Capitol Hill. Dalam bahan yang tersedia, belum ada kutipan pernyataan resmi dari Nvidia maupun dari Huang sendiri, sehingga rangkaian peristiwanya masih terbaca sebagai laporan sejumlah media, bukan pengumuman yang disampaikan lewat jalur resmi perusahaan.",
+        "Kronologinya justru menjadi bagian yang paling kabur. CNN Indonesia mengutip Reuters yang menyebut dewan direksi Nvidia rapat pada Rabu (11/11) malam waktu setempat untuk membahas kemungkinan pemberhentian Huang, dan seorang sumber mengatakan pembahasan itu muncul setelah perusahaan terkena dampak tuduhan soal hubungan asmara Huang dengan seseorang yang diduga mata-mata China. Republika Online menambahkan bahwa CEO sementara Nvidia, Colette Kress, menggelar rapat darurat dengan tim eksekutif untuk membahas masa depan perusahaan. Yang tidak dijelaskan bahan: bagaimana rapat dewan itu berujung pada pengunduran diri, kapan tepatnya Huang menyerahkan jabatannya, dan apakah dewan sudah menerima atau belum menerima surat pengunduran diri tersebut.",
+        "Tuduhan yang mendasari seluruh persoalan ini bermula dari laporan sejumlah media. CNN Indonesia mengutip sumber yang mengetahui persoalan menyebut pembahasan dewan muncul setelah mencuatnya dugaan Huang menjalin hubungan asmara dengan seseorang yang diduga mata-mata China, sementara The New York Times dilaporkan menyebut Huang menjalin hubungan dengan seorang eksekutif perusahaan yang berada di bawah kepemimpinannya. Republika Online menulis bahwa perilaku yang dituduhkan tidak hanya dinilai melanggar batas profesional, tetapi juga membuat Nvidia disorot politisi Amerika Serikat yang khawatir terhadap risiko keamanan nasional; para legislator di Washington disebut menuntut Huang memberikan jawaban. Bahan tidak memuat bukti atau dokumen apa pun di balik tuduhan tersebut.",
+        "Di pasar saham, reaksinya tercatat dalam beberapa angka yang tidak sepenuhnya sama. CNN Indonesia menulis saham Nvidia anjlok lebih dari 8 persen dalam perdagangan Kamis (12/11) di tengah skandal yang menyeret nama CEO-nya. Tirto.id melaporkan saham yang sama sempat terjun lebih dari 10 persen pada perdagangan pra-pasar dan anjlok hingga 14 persen saat pembukaan perdagangan Kamis. Perbedaan angka itu bisa berasal dari titik pengukuran yang berbeda, yakni pra-pasar, pembukaan, dan penutupan, tetapi bahan tidak menjelaskan angka mana yang menjadi acuan akhir hari itu, sehingga pembaca sebaiknya tidak memakai satu angka saja sebagai gambaran utuh.",
+        "Kerugian yang lebih besar diukur dari nilai pasar. Republika Online, mengutip BBC, menyebut Nvidia telah kehilangan nilai pasar sebesar 550 miliar dolar Amerika Serikat hanya dalam waktu lima hari seiring skandal tersebut; teks yang sama juga mencantumkan angka 415 miliar tanpa menyebutkan mata uangnya secara jelas, sehingga penyetaraan itu belum bisa dipastikan dari bahan. Angka tersebut masuk akal bila dikaitkan dengan posisi Nvidia sebagai salah satu perusahaan paling bernilai di dunia berkat lonjakan sektor kecerdasan buatan, seperti disebut dalam laporan yang sama. Namun bahan tidak memuat rincian perhitungan, periode lima hari yang dimaksud, maupun konfirmasi dari perusahaan.",
+        "Posisi puncak perusahaan untuk sementara disebut dipegang Colette Kress. Republika Online menyebutnya sebagai CEO sementara Nvidia yang menggelar rapat darurat bersama tim eksekutif, tetapi bahan tidak menjelaskan sejak kapan ia menjabat, apakah penunjukannya sudah melalui persetujuan dewan, berapa lama masa transisinya, dan apa hasil rapat darurat tersebut. Bahan juga tidak memuat pernyataan Kress maupun keterangan resmi perusahaan mengenai pembagian tugas selama masa transisi. Karena itu, sebutan sementara pada jabatan itu perlu dibaca apa adanya: sebagai penanda bahwa kursi CEO belum diisi secara permanen, bukan sebagai tanda bahwa proses pergantian sudah tuntas.",
+        "Soal pengganti permanen, bahan hanya memberi petunjuk kasar. CNBC Indonesia menyebut ada dua kandidat kuat sebagai pengganti Huang, tetapi tidak menyebutkan siapa nama keduanya, latar belakang, maupun jadwal penunjukannya. Dari sisi pelaku pasar, Jake Dollarhide, CEO Longbow Asset Management di Tulsa, Oklahoma, menilai dewan direksi kemungkinan tidak akan memberhentikan Huang sebelum menemukan sosok pengganti kelas atas yang sudah dikenal di sektor teknologi. Pernyataannya direkam sebelum kabar pengunduran diri mencuat, sehingga belum bisa dipakai untuk menilai kandidat yang kini dibicarakan. Nama-nama calon pengganti, dengan demikian, masih menjadi bagian yang paling belum jelas.",
+        "Efeknya merembet ke pasar yang lebih luas, meski arahnya tidak seragam. CNN Indonesia mencatat penurunan saham Nvidia turut membebani kontrak berjangka indeks S&P 500, yang melemah 0,4 persen dalam perdagangan setelah jam bursa. Di sisi lain, bursa Amerika Serikat sendiri baru saja ditutup menguat pada Rabu (11/11): indeks S&P 500 naik 1,3 persen dan hampir memulihkan seluruh kerugian sejak pemilihan paruh waktu. Analis Westpac, seperti dikutip laporan yang sama, menyebut optimisme baru terhadap kecerdasan buatan sebagai salah satu pendorong penguatan itu. Dua arah ini menunjukkan bahwa guncangan di satu emiten besar tidak otomatis menentukan arah seluruh pasar pada hari yang sama.",
+        "Di Asia, pergerakan bursa pada Kamis (12/11) cenderung lebih tenang. CNN Indonesia melaporkan indeks Kospi Korea Selatan naik 0,2 persen, saham Taiwan menguat 0,5 persen, dan Nikkei 225 Jepang bertambah 0,5 persen, setelah sempat berfluktuasi pada awal perdagangan. Indeks MSCI yang mengukur saham Asia-Pasifik di luar Jepang justru turun 0,1 persen, tertekan pelemahan saham di Hong Kong. Bahan tidak memerinci saham mana di Hong Kong yang menekan indeks itu, dan tidak menjelaskan seberapa besar pengaruh langsung kabar Nvidia terhadap pergerakan tersebut; karena itu, keterkaitan keduanya belum bisa dipastikan dari laporan yang ada.",
+        "Di pasar valuta, indeks dolar Amerika Serikat yang mengukur kekuatan greenback terhadap enam mata uang utama berada di level 102,87 pada perdagangan Asia, posisi tertinggi sejak 9 April 2025, setelah dolar menguat 0,6 persen pada perdagangan sebelumnya. CNN Indonesia mengaitkan penguatan itu dengan pelaku pasar yang memperhitungkan kembali kemungkinan kenaikan suku bunga The Fed bulan depan. Berdasarkan perangkat FedWatch milik CME Group, pelaku pasar memperkirakan peluang 87,3 persen untuk kenaikan 25 basis poin dalam pertemuan dua hari pada 9 Desember, dan peluang 12,7 persen untuk kenaikan 50 basis poin. Bahan tidak menyebutkan keterkaitan langsung antara skandal Nvidia dan ekspektasi suku bunga ini.",
+        "Pasar aset kripto ikut bergerak pada sesi yang sama. Harga Bitcoin turun 0,9 persen menjadi 73.617,58 dolar Amerika Serikat, sedangkan Ethereum melemah 0,9 persen ke posisi 2.049,44 dolar Amerika Serikat, demikian catatan CNN Indonesia. Laporan itu tidak menjelaskan apakah pelemahan tersebut terkait langsung dengan kabar dari Nvidia atau lebih dipengaruhi ekspektasi suku bunga dan pergerakan dolar. Karena tidak ada penjelasan sebab-akibat di bahan, hubungan antara ketiganya sebaiknya diperlakukan sebagai kemungkinan yang masih terbuka, bukan sebagai kesimpulan.",
+        "Di antara sekian angka, penilaian paling lugas datang dari pelaku pasar. Jake Dollarhide menyebut situasi Nvidia terlihat buruk dari segala sisi, tetapi ia juga menekankan bahwa chip Nvidia merupakan pusat dari kisah perkembangan kecerdasan buatan, sehingga keputusan soal CEO akan diperhitungkan matang. Republika Online menggambarkan peristiwa ini sebagai kejatuhan yang mengejutkan, sementara CNBC Indonesia menyebut Huang terseret sejumlah skandal yang menjadi sorotan publik. Perlu dicatat, dua laporan terakhir memakai bahasa yang lebih tegas daripada laporan berbasis Reuters pada malam sebelumnya, yang masih membahas kemungkinan pemberhentian; perbedaan nada pemberitaan itu sendiri menunjukkan bahwa informasi masih berkembang.",
+        "Yang belum jelas justru bagian-bagian paling mendasar. Bahan tidak memuat pernyataan resmi Nvidia, tidak memuat dokumen pengunduran diri, dan tidak menyebutkan apakah Huang masih memegang saham atau jabatan lain di perusahaan. Bahan juga tidak menjelaskan status hukum tuduhan soal dugaan mata-mata, apakah sudah ada penyelidikan resmi, dan siapa pihak yang menuduh. Selain itu, laporan-laporan yang ada belum konsisten soal urutan: satu laporan menyebut dewan membahas kemungkinan pemberhentian pada Rabu malam, laporan lain yang terbit Jumat (13/11) menyebut Huang sudah mundur. Selisih waktu dan penyebabnya belum dijelaskan oleh sumber mana pun dalam bahan ini.",
+        "Langkah berikutnya yang layak dipantau ada tiga. Pertama, keterangan resmi Nvidia, termasuk pengumuman kepada regulator pasar Amerika Serikat, karena hanya jalur itu yang bisa memastikan status Huang dan penunjukan pejabat sementara. Kedua, nama dua kandidat pengganti yang disebut CNBC Indonesia, beserta rekam jejaknya di sektor teknologi. Ketiga, sikap para legislator di Washington, yang menurut Republika Online menuntut jawaban soal dugaan keterlibatan mata-mata. Sampai ketiganya jelas, harga saham Nvidia kemungkinan masih bergerak mengikuti kabar, dan pembaca sebaiknya membedakan antara laporan media, pernyataan pejabat perusahaan, dan keputusan resmi dewan direksi.",
+        "Bagi pembaca yang jarang mengikuti media sosial, konteksnya perlu diletakkan dengan hati-hati. Nvidia adalah perusahaan teknologi Amerika Serikat yang berkantor pusat di Santa Clara, California, dan mengembangkan unit pemrosesan grafis, sistem pada sebuah chip, serta antarmuka pemrograman aplikasi untuk ilmu data, komputasi kinerja tinggi, dan perangkat keras kecerdasan buatan. Posisi itu menjelaskan mengapa persoalan kepemimpinan di dalamnya bergema ke pasar global. Namun bahan yang tersedia berhenti pada laporan media: tidak ada wawancara dengan Huang, tidak ada konferensi pers, dan tidak ada keterangan resmi perusahaan. Sebagian besar angka di atas juga berasal dari satu hari perdagangan, sehingga belum menunjukkan arah jangka panjang."
       ],
       "explain": [
         {
-          "q": "Apa dasar hukum penyadapan di Indonesia?",
-          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "q": "Apa itu Nvidia dan di mana kantor pusatnya?",
+          "a": "Nvidia Corporation adalah perusahaan teknologi multinasional asal Amerika Serikat yang berkantor pusat di Santa Clara, California.",
           "source": {
-            "outlet": "UU ITE",
-            "url": "https://www.kominfo.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/NVIDIA"
           }
         },
         {
-          "q": "Siapa Tito Karnavian?",
-          "a": "Menteri Dalam Negeri sejak 2019 dan mantan Kapolri. Di Kemendagri ia mengurus anggaran daerah, pilkada, dan hubungan pusat-daerah.",
+          "q": "Teknologi apa saja yang dikembangkan Nvidia selain cip untuk kecerdasan buatan?",
+          "a": "Menurut profil perusahaannya, Nvidia mengembangkan unit pemrosesan grafis (GPU), sistem pada sebuah chip (SoC), dan antarmuka pemrograman aplikasi (API) untuk ilmu data, komputasi kinerja tinggi, perangkat keras AI, serta aplikasi seluler dan otomotif; tahun pendiriannya tidak tercantum lengkap dalam bahan.",
           "source": {
-            "outlet": "Kemendagri",
-            "url": "https://www.kemendagri.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/NVIDIA"
+          }
+        },
+        {
+          "q": "Seberapa dalam koreksi saham Nvidia pada Kamis (12/11) menurut catatan awal?",
+          "a": "Catatan pasar menyebut saham Nvidia anjlok lebih dari 8 persen dalam perdagangan Kamis (12/11) di tengah skandal perselingkuhan yang menyeret nama CEO-nya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261112185019-92-1426551/saham-nvidia-anjlok-8-persen-nasib-ceo-jensen-huang-di-ujung-tanduk"
           }
         }
       ],
-      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "action": "Pantau keterangan resmi Nvidia dan nama pengganti Huang sebelum menyimpulkan arah sahamnya.",
       "image": {
-        "url": "assets/d6c6eb670c.webp",
-        "credit": "detik.com",
-        "alt": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini"
+        "url": "assets/6e06a7c856.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Jensen Huang Disebut Mundur dari CEO Nvidia, Saham Anjlok"
       },
       "sources": [
         {
-          "outlet": "detik.com",
-          "url": "https://news.detik.com/berita/d-8750744/polri-ungkap-sosok-tk-di-kasus-penyadapan-berpangkat-brigjen-kini-diperiksa-propam",
-          "published_at": "2026-11-12T23:59:49+07:00",
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261113083235-8-784865/video-jensen-huang-resmi-mundur-dari-ceo-nvidia",
+          "published_at": "2026-11-13T10:50:22+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
-        },
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261113072736-12-1426658/polri-sebut-sosok-tk-di-kasus-penyadapan-ilegal-berpangkat-brigjen",
-          "published_at": "2026-11-13T07:32:12+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "tirto.id",
-          "url": "https://tirto.id/polri-ungkap-sosok-tk-di-kasus-penyadapan-sebut-polisi-aktif-idKH",
-          "published_at": "2026-11-13T08:19:00+07:00",
+          "url": "https://tirto.id/ceo-nvidia-jensen-huang-mundur-saham-perusahaan-jatuh-idK2",
+          "published_at": "2026-11-13T11:12:00+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261112185019-92-1426551/saham-nvidia-anjlok-8-persen-nasib-ceo-jensen-huang-di-ujung-tanduk",
+          "published_at": "2026-11-12T19:13:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tof1t3377/diduga-selingkuh-dengan-matamata-china-jensen-huang-mundur-dari-ceo-nvida-rapat-darurat-digelar",
+          "published_at": "2026-11-13T08:07:51+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "place": "nasional",
@@ -449,34 +537,164 @@
     },
     {
       "id": "c6",
+      "type": "news",
+      "topic_id": "t_polri_sebut_ijazah_jokowi_suda_742b",
+      "angle": "Polri sebut uji Puslabfor atas ijazah Jokowi sah dan tak perlu diulang",
+      "kicker": "Nasional",
+      "title": "Polri Sebut Uji Forensik Ijazah Jokowi Sah, Menolak Uji Ulang",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polri menyatakan ijazah Joko Widodo telah diuji forensik oleh Puslabfor dan menilai tidak perlu pengujian ulang.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 6,
+          "independent_outlets": 6,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T14:53:04+07:00"
+      },
+      "body": [
+        "Polri menyatakan ijazah Presiden ke-7 RI Joko Widodo sudah menjalani uji forensik di Pusat Laboratorium Forensik (Puslabfor) dan menilai tidak ada alasan untuk menguji ulang dokumen itu. Pernyataan ini disampaikan Kepala Biro Penerangan Masyarakat Divhumas Polri Brigjen Pol Trunoyudo Wisnu Andiko melalui keterangan yang diterima wartawan di Jakarta, Jumat, 13 November 2026. Sejumlah media mengutip keterangan yang sama pada hari itu, dari kantor berita Antara sampai Tirto dan Okezone. Inti pesannya serupa: pengujian sudah dilakukan, hasilnya sudah tercatat, dan Polri tidak melihat perlunya pengujian forensik baru.",
+        "Menurut Trunoyudo, uji dilakukan di Puslabfor Polri lalu dituangkan dalam berita acara pro justitia oleh penyidik Polda Metro Jaya. Ia menyebut proses itu berjalan secara prosedural, profesional, dan proporsional. Kalimat tersebut dikutip antara lain oleh Antara, Republika, dan Okezone. Yang ditekankan bukan hanya hasil, tetapi juga jalur administrasinya: ada laboratorium yang menguji, ada penyidik yang menuangkan hasilnya ke dalam berita acara, dan ada berkas yang kemudian dipakai dalam proses hukum. Polri belum memerinci isi berita acara itu, termasuk tanggal penandatanganan dan siapa saja yang menandatanganinya.",
+        "Dalam keterangan yang sama, Trunoyudo mengatakan hasil pengujian forensik atas ijazah tersebut dapat digunakan untuk memberikan kepastian hukum dan demi keadilan. Ia juga menyebut hasil uji itu menjadi bagian dari kelengkapan berkas perkara penyidikan yang sudah dilimpahkan kepada jaksa penuntut umum (JPU). Dua hal ini menunjukkan posisi Polri: bagi institusi itu, uji forensik bukan wacana yang masih terbuka, melainkan bagian dari pekerjaan penyidikan yang sudah berjalan. Namun bahan yang tersedia tidak menyebut perkara apa yang dimaksud, siapa yang ditetapkan sebagai tersangka, dan pasal apa yang dipakai.",
+        "Pernyataan Polri muncul setelah tim penasihat hukum Roy Suryo menyerahkan surat permohonan pengujian ulang dokumen fisik ijazah Jokowi kepada majelis hakim Pengadilan Negeri Jakarta Timur. Kuasa hukum Roy Suryo, Refly Harun, menyebut pihaknya meminta ijazah asli diuji secara forensik dan dibandingkan setidaknya dengan tiga ijazah lain yang terbit pada November 1985. Permintaan itu ditujukan ke pengadilan, bukan ke kepolisian. Sampai keterangan ini disampaikan, belum ada kutipan media dalam bahan yang menyebut sikap majelis hakim atas permohonan tersebut.",
+        "Bahan menyebut pengujian forensik atas ijazah universitas Jokowi pernah dilakukan pada Mei 2025 oleh Bareskrim Polri bersama Puslabfor Polri. Ijazah asli diuji secara laboratoris dengan sampel pembanding berupa ijazah dari tiga rekan Jokowi semasa menempuh perkuliahan di Fakultas Kehutanan Universitas Gadjah Mada. Jadi yang dibandingkan bukan hanya satu dokumen, melainkan dokumen yang terbit pada periode yang sama dari lingkungan yang sama. Bahan menyebut ketiga ijazah itu sebagai sampel pembanding, tanpa menjelaskan mengapa ketiganya yang dipilih.",
+        "Pengujian pada Mei 2025 itu, menurut bahan, meliputi bahan kertas, pengaman kertas, teknik cetak, tinta tulisan tangan, cap stempel, serta tanda tangan dekan dan rektor pada saat itu. Hasilnya disebutkan bahwa ijazah Jokowi yang menjadi bukti identik dengan ijazah pembanding. Rincian metode ini penting bagi pembaca yang jarang mengikuti berita: uji forensik dokumen tidak berhenti pada pertanyaan asli atau palsu, tetapi memeriksa unsur fisik satu per satu. Bahan tidak menyebut siapa yang menandatangani laporan uji Mei 2025 dan apakah laporan itu sama dengan berita acara yang kini dibicarakan.",
+        "CNN Indonesia menuliskan hal yang lebih tegas: Polri memastikan ijazah Jokowi telah diuji Puslabfor, hasilnya autentik, dan tidak perlu diuji ulang seperti yang diminta kubu Roy Suryo ke pengadilan. Kata autentik itu muncul dalam pemberitaan, sementara keterangan resmi yang dikutip media lain berbicara tentang pengujian yang prosedural dan hasil yang dapat dipakai untuk kepastian hukum. Perbedaan pilihan kata ini perlu dicatat, meski intinya sama: Polri menolak gagasan pengujian ulang. Bahan tidak memuat penjelasan teknis dari Polri tentang arti autentik dalam konteks ini.",
+        "Angka dan tanggal yang bisa dipegang dari bahan ini antara lain: November 1985 sebagai bulan terbit ijazah yang diminta dijadikan pembanding, Mei 2025 sebagai waktu uji forensik yang sudah dilakukan, tiga ijazah rekan sebagai sampel pembanding, dan Jumat, 13 November 2026 sebagai waktu keterangan Polri disampaikan. Satu bahan dari detik.com bertanggal 12 November 2026 pukul 23.34 WIB, sedangkan Antara, Tirto, Republika, CNN Indonesia, dan Okezone memberitakannya pada 13 November 2026. Selisih waktu ini wajar dalam pemberitaan, tetapi perlu disebut agar pembaca tahu pernyataan yang sama beredar dalam dua hari berbeda.",
+        "Ada satu hal yang belum jelas dari bahan: hubungan antara uji Mei 2025 dan berita acara yang disebut sekarang. Bahan menyebut uji forensik dilakukan Bareskrim Polri bersama Puslabfor, sedangkan berita acara pro justitia disebut dituangkan oleh penyidik Polda Metro Jaya. Bahan tidak menjelaskan apakah keduanya merujuk pada pengujian yang sama, apakah ada pengujian tambahan, atau bagaimana berkas dari dua satuan kerja itu bertemu. Pembaca sebaiknya tidak menyimpulkan sendiri; sampai ada keterangan resmi, titik ini masih terbuka dan layak ditanyakan.",
+        "Yang juga belum jelas adalah status permohonan uji ulang di Pengadilan Negeri Jakarta Timur. Bahan hanya menyebut surat permohonan sudah diserahkan kepada majelis hakim, tanpa menyebut kapan permohonan itu masuk, apakah sudah disidangkan, dan bagaimana putusannya. Tidak ada keterangan dari pihak pengadilan yang dikutip dalam bahan. Dengan begitu, kalimat bahwa Polri menolak uji ulang lebih tepat dibaca sebagai sikap kepolisian, bukan sebagai keputusan pengadilan yang mengikat kedua pihak.",
+        "Konteks perkaranya juga tidak dijelaskan. Bahan menyebut hasil uji forensik menjadi kelengkapan berkas perkara penyidikan yang telah dilimpahkan kepada JPU, tetapi tidak menyebut perkara apa, siapa yang ditetapkan sebagai tersangka, atau pasal yang disangkakan. Roy Suryo disebut sebagai pihak yang tim kuasa hukumnya meminta uji ulang, tanpa penjelasan posisinya dalam perkara. Pembaca yang ingin memahami mengapa ijazah menjadi sengketa hukum tidak akan menemukan jawabannya di bahan ini, dan sebaiknya menunggu dokumen resmi sebelum menarik kesimpulan.",
+        "Bahan juga tidak memuat isi berita acara pro justitia yang disebut Polri. Tidak ada keterangan tentang tanggal, nomor berita acara, laboratorium mana yang menandatangani, atau ringkasan temuan. Rincian metode yang tersedia dalam bahan berasal dari pengujian Mei 2025, bukan dari keterangan terbaru pada 13 November 2026. Bisa jadi keduanya merujuk pada dokumen yang sama, tetapi bahan tidak menyatakannya. Untuk topik yang menyangkut keaslian dokumen resmi, ketiadaan rincian ini membuat klaim bahwa ijazah sudah diuji sulit diperiksa sendiri oleh pembaca.",
+        "Perbedaan penekanan antarmedan juga terlihat. Detik.com menulis hasil pengujian telah selesai dan prosesnya dilakukan secara transparan dan sesuai hukum. Antara, Republika, dan Okezone menekankan frasa prosedural, profesional, dan proporsional serta berita acara pro justitia. Tirto menyebut uji forensik Puslabfor sudah prosedural dan sah secara hukum. CNN Indonesia memakai kata autentik. Semua merujuk pada pernyataan yang sama, tetapi pilihan kata transparan, sah, dan autentik datang dari pemberitaan, bukan dari satu kutipan panjang yang identik di seluruh media.",
+        "Dari bahan, terlihat dua jalur berjalan bersamaan: permintaan pengujian ulang yang diajukan ke pengadilan dan pernyataan kepolisian bahwa pengujian ulang tidak diperlukan. Bahan tidak menjelaskan keterkaitan resmi antara keduanya, termasuk apakah kepolisian menyampaikan keterangan itu sebagai tanggapan langsung atas surat permohonan tersebut. Pembaca perlu membedakan keduanya agar tidak membaca pernyataan Polri sebagai putusan hakim. Sampai ada dokumen pengadilan, keduanya tetap dua proses yang berjalan di forum berbeda.",
+        "Langkah berikutnya yang bisa ditunggu: sikap majelis hakim atas permohonan pengujian ulang, penjelasan resmi mengenai isi berita acara pro justitia, dan perkembangan berkas di kejaksaan setelah dilimpahkan kepada JPU. Bahan tidak memuat jadwal untuk ketiganya. Polri sendiri sudah menyatakan tidak perlu ada pengujian forensik baru. Sampai ada keterangan lain, posisi resmi kepolisian tetap seperti yang disampaikan Trunoyudo pada Jumat itu, dan belum ada tanda bahwa lembaga tersebut akan mengubah sikapnya dalam waktu dekat.",
+        "Bagi pembaca yang jarang membuka media sosial, inti peristiwanya sederhana: ada pihak yang meminta uji ulang ijazah di pengadilan, dan ada kepolisian yang menyatakan uji forensik sudah dilakukan serta tidak perlu diulang. Yang belum selesai justru bagian yang paling sering terlewat di percakapan daring, yaitu bagaimana pengadilan menanggapi permintaan itu dan apa isi dokumen uji yang disebut. Dua hal itu belum ada jawabannya dalam bahan ini. Selebihnya, angka dan nama yang beredar sebaiknya diperiksa ke dokumen resmi, bukan ke potongan pesan yang diteruskan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Joko Widodo dalam bahan latar ini?",
+          "a": "Politisi dan pengusaha yang menjabat Presiden Indonesia ketujuh pada 2014 sampai 2024, sebelumnya anggota PDI-P.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Joko_Widodo"
+          }
+        },
+        {
+          "q": "Apa itu Polri?",
+          "a": "Kepolisian Negara Republik Indonesia, lembaga penegak hukum nasional dan kepolisian negara.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau putusan pengadilan atas permohonan uji ulang dan minta penjelasan resmi isi berita acara forensik.",
+      "image": {
+        "url": "assets/7ccd6991fe.webp",
+        "credit": "antaranews.com",
+        "alt": "Polri Sebut Uji Forensik Ijazah Jokowi Sah, Menolak Uji Ulang"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/tolak-kubu-roy-suryo-polri-tegaskan-uji-ijazah-jokowi-sah-idKG",
+          "published_at": "2026-11-13T08:13:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5850719/polri-sebut-ijazah-jokowi-telah-diuji-forensik-secara-prosedural",
+          "published_at": "2026-11-13T07:29:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750737/polri-sebut-ijazah-jokowi-sudah-diuji-puslabfor-tak-perlu-uji-lagi",
+          "published_at": "2026-11-12T23:34:22+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/13/337/3253855/sudah-diuji-labfor-polri-tegaskan-ijazah-jokowi-tak-perlu-dicek-ulang",
+          "published_at": "2026-11-13T14:47:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tof38u377/tolak-permintaan-refly-harun-polri-ijazah-jokowi-tak-perlu-diuji-ulang",
+          "published_at": "2026-11-13T08:38:54+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113080616-12-1426666/sanggah-roy-suryo-polri-tegaskan-ijazah-jokowi-tak-perlu-diuji-ulang",
+          "published_at": "2026-11-13T08:54:20+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-12",
+      "changes": []
+    },
+    {
+      "id": "c7",
       "type": "debate",
-      "topic_id": "t_debate_t_suket_gibran_dicabut_denny_ind_c5fb",
+      "topic_id": "t_debate_t_gibran_ajukan_pengunduran_diri_483a",
       "angle": "Publik vokal, media sepi",
       "kicker": "Yang diperdebatkan",
-      "title": "Yang diperdebatkan: Suket Gibran Dicabut, Denny Indrayana Setop",
+      "title": "Yang diperdebatkan: Gibran Mundur dari Kursi Wapres",
       "status": "belum",
       "truth": null,
       "body": [
-        "Ada 38 komentar di detik.com untuk topik ini. Nada bacaan: mayoritas mendukung.",
-        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “2 kesalahan MA, menelan bulat2 keputusan MK padahal keputusan MK itu keputusan yg ngambang” “Sebenarnya sudah jelas GIBRAN itu delarnya S1 yaitu cuma tamat SD jadi S-NYA cuma satu, se” “Dia terhalang ijasah SMA doang tapi kinerjanya bagus”.",
+        "Ada 106 komentar di detik.com untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Bukan main adabnya, keren” “itu namanya adab sopan santun. masak harus bilang \"bapak sudah saya bantu jadi presiden ta” “Ganti mentri bola bali hasilnya yo podo wae, alias Sami mawon bahasa Indonesia nya sama sa”.",
         "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
       ],
       "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
       "image": null,
       "sources": [
         {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261112131507-12-1426342/suket-gibran-dicabut-denny-indrayana-setop-gugatan-mercy-di-ptun",
-          "published_at": "2026-11-12T13:22:46+07:00",
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112143454-7-784682/momen-gibran-temui-prabowo-sebelum-serahkan-surat-resign",
+          "published_at": "2026-11-12T14:58:40+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         },
         {
           "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261112144215-12-1426408/denny-indrayana-soal-gibran-ingin-buktikan-ijazah-di-ptun-too-late",
-          "published_at": "2026-11-12T15:03:27+07:00",
+          "url": "https://www.cnnindonesia.com/nasional/20261112152419-20-1426449/prabowo-merasa-terbantu-gibran-pantau-proyek-pemerintah",
+          "published_at": "2026-11-12T15:30:07+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xv2108/pencomotan_gibran/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xv0i8d/alasan_gibran_mundur_jadi_walpres/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "revision": 1,
@@ -485,46 +703,51 @@
       "changes": [],
       "volume": {
         "platform": "detik.com",
-        "count": 38
+        "count": 106
       },
-      "tone": "Mayoritas mendukung",
+      "tone": "Terbelah",
       "quotes": [
         {
-          "author": "Simbah Kakung",
+          "author": "Suaidi Haryanto",
           "platform": "detik.com",
-          "text": "2 kesalahan MA, menelan bulat2 keputusan MK padahal keputusan MK itu keputusan yg ngambang...yg kedua memutuskan mencabut suket. Harusnya memerintahkan kemendikdasmen untuk mencabu",
-          "score": 1
+          "text": "Bukan main adabnya, keren",
+          "score": 8
         },
         {
-          "author": "Kopites",
+          "author": "Sodik",
           "platform": "detik.com",
-          "text": "Sebenarnya sudah jelas GIBRAN itu delarnya S1 yaitu cuma tamat SD jadi S-NYA cuma satu, seandainya dia tamat SMP maka gelarnya S2",
-          "score": 1
+          "text": "itu namanya adab sopan santun. masak harus bilang \"bapak sudah saya bantu jadi presiden tapi bapak gak bantu saya. kalo gak karena saya bapak gak jadi presiden. bapak hutang banyak",
+          "score": 2
         },
         {
-          "author": "Alif Nurdiyansyah",
+          "author": "Termulia Hidupnya",
           "platform": "detik.com",
-          "text": "Dia terhalang ijasah SMA doang tapi kinerjanya bagus",
+          "text": "Ganti mentri bola bali hasilnya yo podo wae, alias Sami mawon bahasa Indonesia nya sama saja kalau kerjanya cuma omon omon, dapat laporan abs, kalau laporan real malah dipecat. Wkw",
           "score": 0
         }
       ],
-      "comparison": null,
-      "reading": "Publik vokal di detik.com (38); tidak ada sinyal pembanding."
+      "comparison": {
+        "platform": "reddit",
+        "count": 26,
+        "note": "juga aktif"
+      },
+      "reading": "Publik vokal di detik.com (106); reddit: 26 (juga aktif)."
     },
     {
-      "id": "c7",
+      "id": "c8",
       "type": "hoax_roundup",
       "topic_id": "t_hoaks_2026_11_13",
       "angle": "3 pemeriksaan fakta hari ini",
       "kicker": "Kabar beredar",
-      "title": "Yang beredar, dan yang sudah dibantah",
+      "title": "Tiga Kabar Beredar: Karhutla, Yenny Wahid, dan Menara Eiffel",
       "status": "dibantah",
       "truth": null,
       "body": [
-        "3 klaim diperiksa hari ini. Semuanya dari TurnBackHoax.",
-        "Rincian klaim, putusan, dan alasannya ada di daftar di bawah."
+        "Sepanjang Jumat (13/11), TurnBackHoax memeriksa tiga klaim yang beredar di media sosial, dan ketiganya dinyatakan salah. Klaim pertama menyebut Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla; tidak ada informasi valid yang menyebutkan hal itu. Klaim kedua menyebut Yenny Wahid mengakui bergabung dengan PSI. Klaim ketiga berupa video yang diklaim memperlihatkan Menara Eiffel terbakar saat demonstrasi di Paris.",
+        "Dua dari tiga klaim berbentuk video, dan keduanya memperlihatkan pola yang mirip: gambar bergerak yang dilepas dari konteks aslinya. Video Yenny Wahid ternyata merupakan wawancara dalam program Rosi Kompas TV yang tayang pada Jumat (21/8/2023), sehingga rekaman lama diberi tanggal dan cerita baru. Sementara video Menara Eiffel, menurut pemeriksaan, memiliki probabilitas 97 hingga 99,2 persen merupakan hasil buatan AI. Klaim soal karhutla tidak berbentuk video, tetapi sama-sama tidak didukung informasi yang valid.",
+        "Sebaiknya pembaca memeriksa tanggal dan sumber asli sebelum meneruskan konten semacam ini. Menonton video sampai habis, mencari unggahan pertamanya, dan memastikan ada pemberitaan dari media kredibel adalah langkah sederhana yang bisa menahan penyebarannya."
       ],
-      "action": "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
+      "action": "Periksa tanggal dan sumber asli video sebelum meneruskannya ke orang lain.",
       "image": null,
       "sources": [
         {
@@ -532,7 +755,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-13T09:57:30+07:00"
+          "accessed_at": "2026-11-13T14:53:04+07:00"
         }
       ],
       "revision": 1,
@@ -541,28 +764,28 @@
       "changes": [],
       "items": [
         {
-          "claim": "Video “Kapolri Nyatakan Keterlibatan Pihak Asing Terkait Penyadapan Presiden Prabowo”",
+          "claim": "Prabowo Bakal Mengirim Perokok untuk Menghisap Asap Karhutla",
           "verdict": "salah",
-          "reason": "Video asli merupakan momen Jenderal Suyudi menyampaikan adanya keterlibatan asing dalam kasus karhutla di Indonesia, bukan penyadapan terhadap presiden.",
+          "reason": "Tidak ada informasi valid yang menyebutkan Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla.",
           "outlet": "TurnBackHoax",
-          "url": "https://turnbackhoax.id/articles/37445-salah-video-kapolri-nyatakan-keterlibatan-pihak-asing-terkait-penyadapan-presiden-prabowo"
+          "url": "https://turnbackhoax.id/articles/37452-salah-prabowo-bakal-mengirim-perokok-untuk-menghisap-asap-karhutla"
         },
         {
-          "claim": "Jokowi Ngamuk Tidak Terima Gibran Didiskualifikasi MK",
+          "claim": "Yenny Wahid Akui Bergabung PSI",
           "verdict": "salah",
-          "reason": "Tidak ditemukan informasi valid yang menyebutkan Jokowi ngamuk tidak terima Gibran didiskualifikasi oleh Mahkamah Konstitusi (MK).",
+          "reason": "Video yang beredar merupakan wawancara Yenny Wahid dalam program Rosi Kompas TV yang tayang pada Jumat (21/8/2023).",
           "outlet": "TurnBackHoax",
-          "url": "https://turnbackhoax.id/articles/37449-salah-jokowi-ngamuk-tidak-terima-gibran-didiskualifikasi-mk"
+          "url": "https://turnbackhoax.id/articles/37453-salah-yenny-wahid-akui-bergabung-psi"
         },
         {
-          "claim": "Dokumentasi Kanye West Mampir ke Solo Bertemu Jokowi Sebelum Pulang ke Amerika",
+          "claim": "Video Menara Eiffel Terbakar Saat Demonstrasi di Paris",
           "verdict": "salah",
-          "reason": "Tidak ditemukan sumber pemberitaan valid yang membenarkan Kanye West datang ke Solo menemui Jokowi.",
+          "reason": "Sebesar 97 hingga 99,2 persen video tersebut memiliki probabilitas merupakan hasil buatan AI.",
           "outlet": "TurnBackHoax",
-          "url": "https://turnbackhoax.id/articles/37450-salah-dokumentasi-kanye-west-mampir-ke-solo-bertemu-jokowi-sebelum-pulang-ke-amerika"
+          "url": "https://turnbackhoax.id/articles/37454-salah-video-menara-eiffel-terbakar-saat-demonstrasi-di-paris"
         }
       ],
-      "pattern": null
+      "pattern": "Rekaman lama diberi konteks dan tanggal baru, sementara video buatan AI disajikan sebagai peristiwa nyata."
     }
   ]
 }

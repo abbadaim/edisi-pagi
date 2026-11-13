@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-13",
+  "scope": "lokal",
+  "published_at": "2026-11-13T14:53:04+07:00",
+  "coverage": {
+    "from": "2026-11-12T14:53:04+07:00",
+    "to": "2026-11-13T14:53:04+07:00"
+  },
+  "generated_at": "2026-11-13T14:53:04+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 3,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 2,
+  "truncated_reason": "Hanya 2 topik lokal yang lolos",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_risto_vidakovic_akui_psim_jogj_da39",
+      "angle": "Pelatih PSIM menyebut lawan sepadan sulit ditemukan karena Divisi 2 libur",
+      "kicker": "Yogyakarta",
+      "title": "PSIM Jogja Disebut Kesulitan Cari Lawan Uji Coba di Jeda Kompetisi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Risto Vidakovic menyebut PSIM Jogja belum menemukan lawan uji coba karena Divisi 2 sedang libur.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T14:53:04+07:00"
+      },
+      "body": [
+        "PSIM Jogja, klub Super League yang berbasis di DIY, belum mendapatkan lawan untuk uji coba di tengah jeda kompetisi 2026/2027. Pelatih Risto Vidakovic mengaku tim pelatih sudah menjajaki sejumlah kemungkinan, tetapi pilihan lawan terbatas karena kompetisi di level bawah sedang libur dan Liga Nusantara sebagai kasta ketiga baru mulai bergulir. \"Kami sudah mencoba, tetapi kami tidak bisa menemukan lawan karena Divisi 2 sedang libur dan semua orang sedang berlibur,\" kata Risto, dikutip dari Harian Jogja. Sebelumnya manajer tim Iksan Mahar menyampaikan rencana satu pertandingan uji coba melawan klub lokal asal DIY untuk mematangkan taktik sebelum sisa putaran pertama Super League dan I.League Cup pada akhir November.",
+        "Bagi Risto, uji coba bukan sekadar agenda mengisi waktu kosong; PSIM membutuhkan lawan yang kualitasnya cukup untuk menguji permainan dan memberi perlawanan berarti. Jika dalam beberapa hari ke depan tidak ada lawan yang sesuai, tim akan meningkatkan intensitas latihan. \"Jika kami tidak menemukan siapa pun, kami akan berlatih, melakukan latihan intensitas tinggi,\" ujarnya. Para pemain mendapat istirahat tiga hari setelah kalah 1-2 dari Dewa United pada 6 November 2026, lalu kembali berlatih Selasa, 10 November 2026. PSIM dijadwalkan tandang ke markas Persik Kediri pada 21 November 2026, dengan waktu persiapan untuk membenahi transisi antarlini. Nama lawan uji coba, tanggal, dan lokasinya belum diumumkan, sehingga belum jelas apakah agenda itu benar-benar terlaksana."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud Liga Nusantara dalam bahan ini?",
+          "a": "Disebut sebagai kompetisi kasta ketiga yang baru mulai bergulir, sementara Divisi 2 di level bawah sedang libur sehingga pilihan lawan menyusut.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://sport.harianjogja.com/r-1278721/risto-vidakovic-akui-psim-jogja-kesulitan-cari-lawan-uji-coba"
+          }
+        },
+        {
+          "q": "Siapa Iksan Mahar?",
+          "a": "Ia disebut sebagai manajer tim PSIM yang sebelumnya menyampaikan rencana uji coba melawan klub lokal asal DIY.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://sport.harianjogja.com/r-1278721/risto-vidakovic-akui-psim-jogja-kesulitan-cari-lawan-uji-coba"
+          }
+        },
+        {
+          "q": "Mengapa PSIM tidak mau bermain melawan tim sembarang?",
+          "a": "Risto menilai uji coba harus menguji permainan dan memberi perlawanan bagus, bukan sekadar mengisi waktu kosong.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://sport.harianjogja.com/r-1278721/risto-vidakovic-akui-psim-jogja-kesulitan-cari-lawan-uji-coba"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman lawan uji coba PSIM Jogja sebelum laga ke Persik Kediri.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://sport.harianjogja.com/r-1278721/risto-vidakovic-akui-psim-jogja-kesulitan-cari-lawan-uji-coba",
+          "published_at": "2026-11-13T12:07:22+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_jalur_dekso_samigaluh_sudah_bi_da39",
+      "angle": "Polisi sebut jalur sudah terbuka, tetapi minta pengendara waspada longsor susulan.",
+      "kicker": "Kulon Progo",
+      "title": "Jalur Dekso-Samigaluh di Kulon Progo Kembali Bisa Dilewati",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Jalur Dekso-Samigaluh di Kulon Progo dilaporkan sudah bisa dilewati setelah sempat ditutup akibat longsor, dan pengendara diminta mewaspadai longsor susulan.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T14:53:04+07:00"
+      },
+      "body": [
+        "Jalan Dekso-Samigaluh di Kulon Progo, DIY, kembali bisa dilewati kendaraan setelah sempat tertutup longsor akibat hujan deras pada Kamis (12/11). Menurut keterangan yang disampaikan Jumat (13/11), jalur itu sudah terbuka sejak sore sebelumnya. Selama penutupan, arus lalu lintas dialihkan ke jalur Tiban-Boro-Banjarsari dan Jalan Pagutan Purwoharjo. Informasi itu disampaikan Kasi Humas Polres Kulon Progo, Iptu Sarjoko, kepada detikJogja melalui pesan singkat. Ia menyatakan jalur sudah bisa dilewati, tetapi belum merinci berapa lama pembersihan material berlangsung atau seberapa besar material yang menutup jalan. Hingga keterangan itu diberikan, belum ada laporan soal korban maupun kerusakan di ruas tersebut.",
+        "Sarjoko mengimbau pengendara tetap berhati-hati, terutama saat hujan turun, karena longsor susulan masih mungkin terjadi. Ia meminta pengguna jalan mewaspadai jalan licin, menghindari berhenti atau berteduh di bawah tebing dan lereng rawan longsor, serta mematuhi rambu dan arahan petugas di lapangan. Pengendara juga diminta memastikan kendaraannya siap sebelum berangkat. Yang belum jelas adalah jadwal pemeriksaan ulang kondisi tebing di sekitar ruas jalan itu dan apakah ada pembatasan untuk kendaraan tertentu. Langkah berikutnya, warga yang hendak melintas sebaiknya memantau informasi cuaca dan arahan petugas, mengingat potensi hujan masih berlanjut."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Jalan Dekso-Samigaluh?",
+          "a": "Ruas jalan di wilayah Kulon Progo, DIY, yang disebut dalam pemberitaan; bahan tidak memerinci panjang, kelas jalan, atau status kewenangannya.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8750934/jalur-dekso-samigaluh-sudah-bisa-dilewati-usai-diterjang-longsor"
+          }
+        },
+        {
+          "q": "Siapa Iptu Sarjoko?",
+          "a": "Kasi Humas Polres Kulon Progo yang memberikan keterangan kepada detikJogja lewat pesan singkat pada Jumat (13/11).",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8750934/jalur-dekso-samigaluh-sudah-bisa-dilewati-usai-diterjang-longsor"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud longsor susulan?",
+          "a": "Longsor lanjutan yang berpotensi terjadi setelah hujan; bahan menyebutnya sebagai alasan imbauan agar pengendara tidak berhenti di bawah tebing.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8750934/jalur-dekso-samigaluh-sudah-bisa-dilewati-usai-diterjang-longsor"
+          }
+        }
+      ],
+      "action": "Tunda perjalanan lewat jalur itu bila hujan deras masih turun, dan jangan berhenti di bawah tebing.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8750934/jalur-dekso-samigaluh-sudah-bisa-dilewati-usai-diterjang-longsor",
+          "published_at": "2026-11-13T09:10:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T14:53:04+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}
