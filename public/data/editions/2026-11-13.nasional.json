@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-13",
+  "scope": "nasional",
+  "published_at": "2026-11-13T09:57:30+07:00",
+  "coverage": {
+    "from": "2026-11-12T09:57:30+07:00",
+    "to": "2026-11-13T09:57:30+07:00"
+  },
+  "generated_at": "2026-11-13T09:57:30+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 3,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "fallback",
+      "model": "none"
+    },
+    "write": {
+      "provider": "deterministic",
+      "model": "glossary"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 7,
+  "truncated_reason": "Hanya 7 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_momen_prabowo_jabat_tangan_gib_acb8",
+      "angle": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+      "kicker": "Nasional",
+      "title": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T09:57:30+07:00"
+      },
+      "body": [
+        "Gibran menyerahkan surat pengunduran diri sebagai wapres kepada Prabowo di Istana. Dalam pertemuan ini, Prabowo menjabat tangan mantan wapresnya.",
+        "Presiden Prabowo memanggil menteri dan pimpinan MPR untuk membahas pengunduran diri Gibran sebagai wakil presiden. Diskusi fokus pada mekanisme konstitusi."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka?",
+          "a": "Wakil Presiden RI sejak 2024. Sebelumnya Wali Kota Surakarta dan pengusaha; ia putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud kebijakan publik?",
+          "a": "Keputusan pemerintah atau DPR yang mengikat warga, dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Cek dokumen atau rilis resminya sebelum menyebarkan.",
+      "image": {
+        "url": "assets/ee4199ab88.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Momen Prabowo Jabat Tangan Gibran saat Serahkan Surat Undur Diri"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112144251-32-1426413/momen-prabowo-jabat-tangan-gibran-saat-serahkan-surat-undur-diri",
+          "published_at": "2026-11-12T14:52:42+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112143454-7-784682/momen-gibran-temui-prabowo-sebelum-serahkan-surat-resign",
+          "published_at": "2026-11-12T14:58:40+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8333986/prabowo-puji-sikap-ksatria-gibran-serahkan-langsung-surat-pengunduran-diri",
+          "published_at": "2026-11-12T15:33:51+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750262/kata-kata-gibran-saat-peluk-prabowo-saya-minta-maaf-ya-pak",
+          "published_at": "2026-11-12T16:48:07+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/prabowo-gibran-sudah-tempuh-pendidikan-lewat-proses-teratur-idJB",
+          "published_at": "2026-11-12T15:46:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_bri_salurkan_rp1_250_triliun_k_dcbe",
+      "angle": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250 Triliun Kredit demi Majukan U",
+      "kicker": "Ekonomi",
+      "title": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250 Triliun Kredit demi Majukan U",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T09:57:30+07:00"
+      },
+      "body": [
+        "PT Bank Rakyat Indonesia (Persero) Tbk atau BRI konsisten menempatkan segmen UMKM sebagai fokus utama penyaluran...",
+        "BRI fokus pada pembiayaan UMKM, mencapai Rp1.250 triliun hingga September 2026. Dukungan ini bertujuan mendorong pertumbuhan ekonomi kerakyatan dan inklusif."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud laba bersih bank?",
+          "a": "Selisih pendapatan bunga dan biaya operasional setelah pajak. Angka kuartalan dipakai pasar untuk menilai efisiensi dan kualitas kredit.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa angka ekonomi ini penting?",
+          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        }
+      ],
+      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "image": {
+        "url": "assets/bbbd5f631c.webp",
+        "credit": "antaranews.com",
+        "alt": "Dari Usaha Rakyat untuk Ekonomi Negeri, BRI Salurkan Rp1.250"
+      },
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5848407/dari-usaha-rakyat-untuk-ekonomi-negeri-bri-salurkan-rp1250-triliun-kredit-demi-majukan-umkm",
+          "published_at": "2026-11-12T10:06:22+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261112123923-625-1426309/bri-salurkan-rp1250-triliun-kredit-dukung-kemajuan-umkm",
+          "published_at": "2026-11-12T12:53:25+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/jaga-keberlanjutan-ekonomi-kerakyatan-npl-bri-terus-membaik-seiring-penguatan-pengelolaan-risiko-28YzOgct75o",
+          "published_at": "2026-11-13T09:28:41+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-12",
+      "previous_edition": "2026-11-12",
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_bos_pertamina_komitmen_cegah_g_aa49",
+      "angle": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+      "kicker": "Ekonomi",
+      "title": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T09:57:30+07:00"
+      },
+      "body": [
+        "Pertamina komitmen cegah gangguan distribusi BBM",
+        "Simon mengatakan Pertamina menghadapi tantangan kompleks dalam menjaga ketersediaan dan distribusi energi."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran Pertamina?",
+          "a": "Badan usaha milik negara di sektor energi yang mengelola kilang, distribusi BBM, dan jaringan SPBU. Harga BBM bersubsidi ditetapkan pemerintah, bukan perusahaan.",
+          "source": {
+            "outlet": "Pertamina",
+            "url": "https://www.pertamina.com/"
+          }
+        },
+        {
+          "q": "Apa itu harga eceran tertinggi BBM?",
+          "a": "Batas harga jual bahan bakar bersubsidi yang ditetapkan pemerintah. Penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi.",
+          "source": {
+            "outlet": "ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        }
+      ],
+      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "image": {
+        "url": "assets/120d2d7156.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Bos Pertamina Komitmen Cegah Gangguan Distribusi BBM"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112142217-4-784675/bos-pertamina-komitmen-cegah-gangguan-distribusi-bbm",
+          "published_at": "2026-11-12T15:10:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/pertamina-minta-maaf-atas-gangguan-pasokan-dan-distribusi-bbm-idJP",
+          "published_at": "2026-11-12T16:45:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750529/andre-rosiade-minta-pertamina-perketat-pengawasan-distribusi-bbm-subsidi",
+          "published_at": "2026-11-12T20:04:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_kpk_ungkap_banyak_proyek_bnpb_cfbe",
+      "angle": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+      "kicker": "Kriminal",
+      "title": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+      "status": "sebagian",
+      "truth": {
+        "claim": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T09:57:30+07:00"
+      },
+      "body": [
+        "KPK menyebut proyek BNPB yang menggunakan DSP atau dana siap pakai dilakukan karena bisa dengan metode penunjukan langsung.",
+        "Komisi Pemberantasan Korupsi (KPK) menyebut TNI sudah memeriksa prajurit aktif yang diduga terlibat kasus dugaan..."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran BNPB?",
+          "a": "Badan Nasional Penanggulangan Bencana, yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah.",
+          "source": {
+            "outlet": "BNPB",
+            "url": "https://bnpb.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu KPK?",
+          "a": "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        }
+      ],
+      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "image": {
+        "url": "assets/31816b970d.webp",
+        "credit": "antaranews.com",
+        "alt": "KPK Ungkap Banyak Proyek BNPB Pakai DSP karena Bisa Tunjuk Langsung"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750614/kpk-ungkap-banyak-proyek-bnpb-pakai-dsp-karena-bisa-tunjuk-langsung",
+          "published_at": "2026-11-12T21:13:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5850863/kpk-tni-sudah-periksa-prajurit-aktif-diduga-terlibat-kasus-bnpb",
+          "published_at": "2026-11-13T09:33:57+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_polri_ungkap_sosok_tk_di_kasus_d24b",
+      "angle": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini Diperiksa Propam",
+      "kicker": "Kriminal",
+      "title": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini Diperiksa Propam",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-13T09:57:30+07:00"
+      },
+      "body": [
+        "Polri mengungkap sosok berinisial TK diperiksa Propam terkait dugaan penyadapan ilegal terhadap Presiden. TK berpangkat Brigjen.",
+        "Kadiv Humas Polri Irjen Johnny Eddizon Isir memastikan sosok TK merupakan anggota Polri aktif dengan pangkat Brigjen."
+      ],
+      "explain": [
+        {
+          "q": "Apa dasar hukum penyadapan di Indonesia?",
+          "a": "Penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Tito Karnavian?",
+          "a": "Menteri Dalam Negeri sejak 2019 dan mantan Kapolri. Di Kemendagri ia mengurus anggaran daerah, pilkada, dan hubungan pusat-daerah.",
+          "source": {
+            "outlet": "Kemendagri",
+            "url": "https://www.kemendagri.go.id/"
+          }
+        }
+      ],
+      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "image": {
+        "url": "assets/d6c6eb670c.webp",
+        "credit": "detik.com",
+        "alt": "Polri Ungkap Sosok TK di Kasus Penyadapan Berpangkat Brigjen, Kini"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8750744/polri-ungkap-sosok-tk-di-kasus-penyadapan-berpangkat-brigjen-kini-diperiksa-propam",
+          "published_at": "2026-11-12T23:59:49+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113072736-12-1426658/polri-sebut-sosok-tk-di-kasus-penyadapan-ilegal-berpangkat-brigjen",
+          "published_at": "2026-11-13T07:32:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/polri-ungkap-sosok-tk-di-kasus-penyadapan-sebut-polisi-aktif-idKH",
+          "published_at": "2026-11-13T08:19:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c6",
+      "type": "debate",
+      "topic_id": "t_debate_t_suket_gibran_dicabut_denny_ind_c5fb",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Suket Gibran Dicabut, Denny Indrayana Setop",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 38 komentar di detik.com untuk topik ini. Nada bacaan: mayoritas mendukung.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “2 kesalahan MA, menelan bulat2 keputusan MK padahal keputusan MK itu keputusan yg ngambang” “Sebenarnya sudah jelas GIBRAN itu delarnya S1 yaitu cuma tamat SD jadi S-NYA cuma satu, se” “Dia terhalang ijasah SMA doang tapi kinerjanya bagus”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112131507-12-1426342/suket-gibran-dicabut-denny-indrayana-setop-gugatan-mercy-di-ptun",
+          "published_at": "2026-11-12T13:22:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261112144215-12-1426408/denny-indrayana-soal-gibran-ingin-buktikan-ijazah-di-ptun-too-late",
+          "published_at": "2026-11-12T15:03:27+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 38
+      },
+      "tone": "Mayoritas mendukung",
+      "quotes": [
+        {
+          "author": "Simbah Kakung",
+          "platform": "detik.com",
+          "text": "2 kesalahan MA, menelan bulat2 keputusan MK padahal keputusan MK itu keputusan yg ngambang...yg kedua memutuskan mencabut suket. Harusnya memerintahkan kemendikdasmen untuk mencabu",
+          "score": 1
+        },
+        {
+          "author": "Kopites",
+          "platform": "detik.com",
+          "text": "Sebenarnya sudah jelas GIBRAN itu delarnya S1 yaitu cuma tamat SD jadi S-NYA cuma satu, seandainya dia tamat SMP maka gelarnya S2",
+          "score": 1
+        },
+        {
+          "author": "Alif Nurdiyansyah",
+          "platform": "detik.com",
+          "text": "Dia terhalang ijasah SMA doang tapi kinerjanya bagus",
+          "score": 0
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di detik.com (38); tidak ada sinyal pembanding."
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_13",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Yang beredar, dan yang sudah dibantah",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "3 klaim diperiksa hari ini. Semuanya dari TurnBackHoax.",
+        "Rincian klaim, putusan, dan alasannya ada di daftar di bawah."
+      ],
+      "action": "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-13T09:57:30+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-13",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Video “Kapolri Nyatakan Keterlibatan Pihak Asing Terkait Penyadapan Presiden Prabowo”",
+          "verdict": "salah",
+          "reason": "Video asli merupakan momen Jenderal Suyudi menyampaikan adanya keterlibatan asing dalam kasus karhutla di Indonesia, bukan penyadapan terhadap presiden.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37445-salah-video-kapolri-nyatakan-keterlibatan-pihak-asing-terkait-penyadapan-presiden-prabowo"
+        },
+        {
+          "claim": "Jokowi Ngamuk Tidak Terima Gibran Didiskualifikasi MK",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan informasi valid yang menyebutkan Jokowi ngamuk tidak terima Gibran didiskualifikasi oleh Mahkamah Konstitusi (MK).",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37449-salah-jokowi-ngamuk-tidak-terima-gibran-didiskualifikasi-mk"
+        },
+        {
+          "claim": "Dokumentasi Kanye West Mampir ke Solo Bertemu Jokowi Sebelum Pulang ke Amerika",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan sumber pemberitaan valid yang membenarkan Kanye West datang ke Solo menemui Jokowi.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37450-salah-dokumentasi-kanye-west-mampir-ke-solo-bertemu-jokowi-sebelum-pulang-ke-amerika"
+        }
+      ],
+      "pattern": null
+    }
+  ]
+}
