@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-14",
+  "scope": "lokal",
+  "published_at": "2026-11-14T09:42:49+07:00",
+  "coverage": {
+    "from": "2026-11-13T09:42:49+07:00",
+    "to": "2026-11-14T09:42:49+07:00"
+  },
+  "generated_at": "2026-11-14T09:42:49+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 4,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 3,
+  "truncated_reason": "Hanya 3 topik lokal yang lolos",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_jadwal_sim_keliling_jogja_sabt_da39",
+      "angle": "Jadwal SIM Keliling malam 14 November 2026 di Sleman, Kota Jogja, dan Gunungkidul",
+      "kicker": "Sleman",
+      "title": "Layanan SIM Keliling Malam di Sleman dan Jogja Sabtu",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Layanan SIM Keliling malam di Lobby Sleman City Hall dijadwalkan Sabtu 14 November 2026 pukul 19.00–21.00 WIB.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Warga Sleman yang ingin memperpanjang SIM A atau SIM C bisa memakai layanan SIM Keliling malam di Lobby Sleman City Hall pada Sabtu, 14 November 2026, pukul 19.00–21.00 WIB, menurut jadwal yang dipublikasikan Harian Jogja. Satlantas Polresta Sleman juga membuka Satpas pada Senin–Jumat pukul 08.00–11.00 WIB dan Sabtu pukul 08.00–10.00 WIB, serta program SIMMADE yang menyambangi sejumlah lokasi. Bagi warga DIY di luar Sleman, jadwal malam serupa tersedia: layanan di Alun-Alun Kidul Kota Jogja disebut berlangsung pukul 19.00–21.00 WIB, sedangkan di Gunungkidul ada Saturday Night Service di Taman Parkir Pasar Argosari Wonosari mulai pukul 19.00 WIB. Perlu dicatat, satu pemberitaan menulis layanan Alun-Alun Kidul untuk Sabtu 13/11/2026 sekaligus Sabtu 14/11/2026, padahal 13 November 2026 jatuh pada hari Jumat; perbedaan tanggal itu belum dijelaskan.",
+        "Pemohon diminta menyiapkan e-KTP, SIM lama beserta fotokopi, surat keterangan sehat jasmani, hasil tes psikologi, dan bukti kepesertaan aktif JKN/BPJS. Biaya perpanjangan mengacu pada PNBP dalam PP Nomor 76 Tahun 2020 dan belum termasuk pemeriksaan kesehatan yang diperkirakan sekitar Rp35.000 serta tes psikologi yang tarifnya berbeda antarpenyedia. Menurut pemberitaan soal Gunungkidul, SIM yang masa berlakunya sudah habis tidak dapat diproses lewat perpanjangan dan harus diurus sebagai SIM baru. Yang belum jelas: apakah layanan di Sleman mensyaratkan fotokopi KTP tiga rangkap seperti disebut untuk Gunungkidul, dan apakah jumlah pemohon tiap lokasi dibatasi. Pemohon disarankan memastikan jadwal ke Satlantas Polresta Sleman sebelum berangkat."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud SIM Keliling malam?",
+          "a": "Layanan perpanjangan SIM yang digelar pada malam hari, dalam hal ini Sabtu pukul 19.00–21.00 WIB, agar warga yang sibuk pada pagi atau siang tetap bisa dilayani.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278810/jadwal-sim-keliling-jogja-sabtu-14-november-2026-di-alkid-malam-hari"
+          }
+        },
+        {
+          "q": "Siapa yang menyelenggarakan layanan ini?",
+          "a": "Satlantas Polresta Sleman untuk lokasi Sleman City Hall; jadwalnya disampaikan melalui pemberitaan dan kanal resmi kepolisian.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278810/jadwal-sim-keliling-jogja-sabtu-14-november-2026-di-alkid-malam-hari"
+          }
+        },
+        {
+          "q": "Mengapa pemohon perlu memeriksa masa berlaku SIM lebih dulu?",
+          "a": "Karena SIM yang sudah kedaluwarsa tidak bisa diperpanjang dan harus diurus melalui prosedur penerbitan SIM baru.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278810/jadwal-sim-keliling-jogja-sabtu-14-november-2026-di-alkid-malam-hari"
+          }
+        }
+      ],
+      "action": "Siapkan e-KTP, SIM lama, dan surat sehat sebelum berangkat, lalu konfirmasi jadwal ke Satlantas Polresta Sleman.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278810/jadwal-sim-keliling-jogja-sabtu-14-november-2026-di-alkid-malam-hari",
+          "published_at": "2026-11-14T06:17:38+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_harga_gas_tinggi_hambat_transi_da39",
+      "angle": "ISEI Yogyakarta: tarif gas berlapis bikin warga Jateng-DIY bertahan di LPG",
+      "kicker": "Yogyakarta",
+      "title": "Harga Gas Tinggi Disebut Hambat Transisi Energi di Sleman dan DIY",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Workshop ISEI Cabang Yogyakarta di Sleman menyebut harga gas tinggi dan tarif berlapis sebagai penghambat transisi energi di Jateng dan DIY.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Tingginya harga gas disebut menjadi salah satu penghambat percepatan transisi energi di Jawa Tengah dan DIY dalam Workshop \"Transisi Energi untuk Pertumbuhan Ekonomi Berkelanjutan\" yang digelar ISEI Cabang Yogyakarta di Platinum Hotel & Convention Center, Sleman, Kamis (12/11/2026), secara hybrid. Menurut ISEI, ketergantungan warga Jateng dan DIY pada LPG masih tinggi, sementara pemanfaatan gas bumi dan energi terbarukan belum berkembang optimal. Persoalannya berlapis: skema penetapan tarif gas bertumpuk, infrastruktur terbatas, pasokan dari sumur gas di Jawa menurun, serta jaringan pipa yang sudah ada belum dimanfaatkan maksimal. Rendahnya permintaan konversi juga membuat penyerapan gas tidak pasti, sehingga minat badan usaha dan investor mengembangkan infrastruktur gas ikut rendah.",
+        "Ketua ISEI Cabang Yogyakarta Didi Achjari menilai transformasi ke gas melalui LNG dan CNG perlu disiapkan bertahap, bukan dengan menghentikan LPG secara mendadak. Forum juga menyoroti penurunan pasokan Gas Kepodang dan utilisasi pipa transmisi KJG sebagai faktor yang dapat memperlambat transisi energi sekaligus pertumbuhan ekonomi. Karena kewenangan pemerintah daerah masih terbatas, peserta mendorong kebijakan nasional melalui RUED serta dukungan Danantara dan BUMN energi. Yang belum jelas: rincian lengkap delapan poin hasil pembahasan belum tersedia utuh dalam bahan ini, termasuk tenggat dan besaran anggaran; langkah berikutnya baru sebatas usulan dukungan pasokan gas."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud transisi energi dalam forum ini?",
+          "a": "Peralihan bertahap dari ketergantungan LPG dan bahan bakar lain ke gas bumi melalui LNG/CNG serta energi terbarukan, sebagaimana dibahas ISEI Yogyakarta.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278759/harga-gas-tinggi-hambat-transisi-energi-di-jateng-dan-diy-jadi-sorotan-forum-isei"
+          }
+        },
+        {
+          "q": "Siapa ISEI Cabang Yogyakarta yang menyoroti isu ini?",
+          "a": "ISEI adalah Ikatan Sarjana Ekonomi Indonesia; cabang Yogyakarta menyoroti harga gas tinggi dan tarif berlapis yang menghambat transisi energi di Jawa Tengah dan DIY.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278759/harga-gas-tinggi-hambat-transisi-energi-di-jateng-dan-diy-jadi-sorotan-forum-isei"
+          }
+        },
+        {
+          "q": "Apa itu RUED yang disebut dalam usulan forum?",
+          "a": "Bahan menyebut RUED sebagai jalur kebijakan untuk mempercepat transisi energi berbasis daerah; rincian isinya tidak dijelaskan dalam bahan ini.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://jogjapolitan.harianjogja.com/r-1278759/harga-gas-tinggi-hambat-transisi-energi-di-jateng-dan-diy-jadi-sorotan-forum-isei"
+          }
+        }
+      ],
+      "action": "Pantau keputusan lanjutan soal tarif gas dan pasokan dari forum ISEI ini, termasuk apakah usulan RUED masuk kebijakan daerah.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://jogjapolitan.harianjogja.com/r-1278759/harga-gas-tinggi-hambat-transisi-energi-di-jateng-dan-diy-jadi-sorotan-forum-isei",
+          "published_at": "2026-11-14T07:57:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_propam_polda_diy_periksa_11_po_da39",
+      "angle": "Bidpropam Polda DIY periksa 11 polisi, Kompolnas dampingi; rincian aksi belum jelas",
+      "kicker": "DIY",
+      "title": "11 Polisi Polda DIY Diperiksa Propam soal Dugaan Pelanggaran Etik",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bidpropam Polda DIY memeriksa 11 anggota polisi terkait dugaan pelanggaran etik saat pengamanan aksi, dengan asistensi dari Kompolnas.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Kepolisian Daerah DI Yogyakarta, yang wilayah hukumnya mencakup Sleman, sedang menyorot internalnya sendiri. Bidang Profesi dan Pengamanan (Bidpropam) Polda DIY memeriksa 11 anggota polisi terkait dugaan pelanggaran etik saat pengamanan sebuah aksi, demikian diberitakan detik.com pada 13 November 2026. Pemeriksaan itu melibatkan Komisi Kepolisian Nasional (Kompolnas) yang memberi asistensi dalam proses pemeriksaan dan analisis bukti. Namun bahan yang tersedia tidak menyebut aksi mana yang dimaksud, kapan dan di mana aksi itu berlangsung, berapa massa yang terlibat, maupun peristiwa konkret yang membuat pengamanan berujung pada dugaan pelanggaran etik.",
+        "Yang juga belum jelas adalah bentuk pelanggaran etik yang disangkakan. Bahan tidak menjelaskan apakah 11 orang itu diperiksa sebagai saksi, terperiksa, atau terlapor, dan tidak menyebut pangkat, satuan, maupun peran masing-masing dalam pengamanan. Tidak ada pula keterangan soal dugaan pemukulan, penyalahgunaan wewenang, atau pelanggaran prosedur lain. Karena itu langkah berikutnya adalah menunggu hasil pemeriksaan Bidpropam Polda DIY serta rekomendasi yang mungkin muncul dari asistensi Kompolnas. Sampai hasilnya diumumkan, angka 11 anggota tetap menunjukkan jumlah yang diperiksa, bukan jumlah yang sudah terbukti melanggar. Bahan juga tidak memuat pernyataan resmi yang bisa dikutip langsung dari Polda DIY maupun Kompolnas."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Bidpropam?",
+          "a": "Bidang Profesi dan Pengamanan, unit di lingkungan kepolisian yang menangani pengawasan serta penegakan disiplin dan etika anggota; dalam kasus ini berada di tingkat Polda DIY.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8752062/propam-polda-diy-periksa-11-polisi-usut-dugaan-pelanggaran-etik-saat-ricuh-demo"
+          }
+        },
+        {
+          "q": "Apa peran Kompolnas dalam pemeriksaan ini?",
+          "a": "Menurut bahan, Kompolnas memberikan asistensi pada proses pemeriksaan dan analisis bukti.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8752062/propam-polda-diy-periksa-11-polisi-usut-dugaan-pelanggaran-etik-saat-ricuh-demo"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud pelanggaran etik di sini?",
+          "a": "Pelanggaran terhadap kode etik profesi kepolisian; bahan tidak merinci bentuk pelanggarannya.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://www.detik.com/jogja/berita/d-8752062/propam-polda-diy-periksa-11-polisi-usut-dugaan-pelanggaran-etik-saat-ricuh-demo"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman hasil pemeriksaan Bidpropam Polda DIY dan jangan samakan jumlah yang diperiksa dengan jumlah yang terbukti melanggar.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8752062/propam-polda-diy-periksa-11-polisi-usut-dugaan-pelanggaran-etik-saat-ricuh-demo",
+          "published_at": "2026-11-13T19:07:08+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}

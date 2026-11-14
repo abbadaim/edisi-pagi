@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-14",
+  "scope": "nasional",
+  "published_at": "2026-11-14T09:42:49+07:00",
+  "coverage": {
+    "from": "2026-11-13T09:42:49+07:00",
+    "to": "2026-11-14T09:42:49+07:00"
+  },
+  "generated_at": "2026-11-14T09:42:49+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 29,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_penghargaan_dan_jaminan_untuk_d98c",
+      "angle": "Penghargaan di Istana Bogor, janji santunan dan beasiswa yang rinciannya belum diumumkan",
+      "kicker": "Bencana",
+      "title": "Bintang Jasa bagi Relawan Karhutla dan Janji Beasiswa Anak",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Presiden Prabowo menganugerahkan Bintang Jasa Pratama kepada 15 relawan dan petugas karhutla yang gugur serta Bintang Jasa Nararya kepada 8 tenaga kesehatan yan",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Penganugerahan bintang jasa bagi relawan dan petugas penanganan kebakaran hutan dan lahan berlangsung di Istana Kepresidenan Bogor pada Jumat, 13 November 2026. Acara itu dipimpin Presiden Prabowo Subianto dan dihadiri keluarga para penerima, yang datang untuk menerima tanda kehormatan sekaligus santunan. Dasar pemberiannya adalah Keputusan Presiden Nomor 94 TK Tahun 2026 tentang Penganugerahan Tanda Kehormatan Bintang Jasa, yang ditetapkan pada hari yang sama. Detik.com, CNN Indonesia, dan Tirto.id memberitakan peristiwa ini sebagai penghormatan negara atas pengorbanan mereka yang bertugas di garis depan pemadaman karhutla dan penanganan bencana.",
+        "Jumlah penerima disajikan dalam dua bentuk yang tidak sepenuhnya sama. CNN Indonesia dalam pemberitaan 13 November 2026 menyebut 15 relawan dan petugas yang gugur dalam penanganan karhutla serta delapan tenaga kesehatan yang terluka saat bertugas di daerah bencana, sehingga totalnya 23 orang. Artikel CNN Indonesia lain pada tanggal yang sama meringkasnya menjadi 23 relawan dan petugas yang gugur serta cedera, sehingga korban meninggal dan korban luka dilebur dalam satu angka. Tirto.id dan Detik.com memakai rincian 15 orang dan 8 orang. Sampai berita ini disusun, belum ada keterangan resmi yang menjelaskan mengapa ringkasan 23 orang ditempatkan dalam satu kelompok, sementara rincian aslinya memisahkan korban meninggal dan korban cedera.",
+        "Pembagian tingkat tanda kehormatan mengikuti status penerima. Lima belas relawan dan petugas yang meninggal menerima Bintang Jasa Pratama, sedangkan delapan tenaga kesehatan yang cedera menerima Bintang Jasa Nararya. Rincian itu disebutkan CNN Indonesia dan diringkas Tirto.id. Belum ada penjelasan resmi mengenai kriteria yang membedakan kedua tingkat tersebut, apakah mengikuti beratnya risiko, jenis tugas, atau kedudukan penerima. Yang tercatat, kelompok pertama menerima penghargaan setelah kehilangan nyawa, sementara kelompok kedua masih hidup dan menerima penghargaan atas cedera saat bertugas. Istilah anumerta muncul pada beberapa nama di daftar, penanda bahwa tanda kehormatan diberikan setelah yang bersangkutan wafat.",
+        "Acara dibuka dengan mengheningkan cipta. \"Marilah kita menundukkan kepala kita sejenak mengheningkan cipta untuk mengenang dan menghormati para relawan dan para petugas penanggulangan kebakaran hutan yang telah gugur yang telah memberi segala-galanya demi keselamatan bangsa dan rakyat Indonesia,\" kata Prabowo, dikutip Detik.com. Ia lalu meminta hadirin mengenang tenaga kesehatan yang mengalami musibah saat bekerja. Detik.com mencatat keluarga penerima hadir langsung di ruangan. Rangkaian itu dapat dibaca sebagai penempatan peristiwa ini sebagai duka bersama, bukan semata urusan seremonial pemberian tanda jasa. Namun, pemberitaan yang tersedia tidak memuat susunan acara lengkap, sehingga urutan sesi setelah mengheningkan cipta tidak dapat dipastikan.",
+        "Dalam sambutannya, Prabowo menyampaikan belasungkawa kepada keluarga para relawan dan petugas yang meninggal dunia. Ia menyatakan negara tidak akan membiarkan keluarga yang ditinggalkan berjalan sendiri. \"Saya ingin menyampaikan bahwa kalian tidak akan menghadapi masa depan sendiri. Negara akan mendampingimu. Kita akan memberi tentunya santunan sehingga saudara bisa hidup dengan aman dan nyaman,\" ujarnya seperti dikutip CNN Indonesia. Kalimat itu disampaikan di hadapan keluarga penerima di Istana Bogor. Janji pendampingan tersebut tidak disertai angka, tenggat, atau mekanisme pencairan dalam artikel yang tersedia, sehingga besaran santunan per keluarga belum bisa dihitung pembaca.",
+        "Selain santunan, pemerintah menjanjikan beasiswa penuh bagi anak para relawan dan petugas yang gugur. \"Dan untuk semua anakmu, pemerintah menjamin pendidikannya dengan memberi beasiswa penuh sampai tingkat tertinggi, melihat anak-anakmu ingin dan mampu mencapai,\" kata Prabowo. Okezone dan CNBC Indonesia pada 13 November 2026 meringkas janji serupa, yaitu santunan dan beasiswa penuh sebagai bentuk pendampingan negara. Frasa soal anak yang ingin dan mampu mencapai itu dapat dibaca sebagai penanda bahwa beasiswa tidak otomatis berlaku untuk semua anak, melainkan mengikuti kondisi dan pilihan studi masing-masing. Kedua media itu tidak memerinci besaran dana, lama masa studi yang ditanggung, maupun lembaga penyalur beasiswa.",
+        "Prabowo juga menyebut telah menginstruksikan sejumlah menteri untuk memastikan anak-anak para petugas yang gugur dapat mengakses sekolah-sekolah terbaik milik pemerintah, termasuk SMA Taruna Nusantara dan SMA Garuda. Instruksi itu disebut dalam pemberitaan CNN Indonesia, tetapi mekanisme seleksinya belum dijelaskan: apakah berlaku untuk semua anak, apakah ada syarat akademik, dan kapan mulai dijalankan. Kepada keluarga, ia menyampaikan bahwa penghargaan ini \"jelas tidak bisa mengganti kehilangan\", tetapi setidaknya mereka tidak sendirian. Pernyataan itu menempatkan santunan dan beasiswa sebagai pelengkap, bukan pengganti, atas nyawa yang hilang saat bertugas. Nama menteri yang menerima instruksi tidak dirinci dalam artikel yang tersedia.",
+        "Daftar yang dimuat CNN Indonesia mencakup 15 nama relawan dan petugas. Latar mereka beragam: personel Manggala Agni, Masyarakat Peduli Api, masyarakat mitra polhut, relawan pemadam kebakaran daerah, staf perusahaan mitra di kawasan konservasi, serta prajurit TNI. Wilayah tugasnya tersebar di Taman Nasional Bromo Tengger Semeru, Kalimantan Tengah, Kalimantan Selatan, Sulawesi Selatan, dan Nusa Tenggara Timur. Tanggal kematian yang tercatat membentang dari 27 Agustus hingga 8 November 2026, dengan sebab yang berbeda-beda. Tiga nama tercatat gugur dalam kecelakaan pada 4 November 2026: Letkol Cpn (Anumerta) Dudi Firmansyah dan Kapten Cpn (Anumerta) Nurhafiz Akbar yang disebut tewas dalam kecelakaan helikopter, serta Sertu (Anumerta) Heri Prasetyo yang disebut gugur dalam kecelakaan tanpa keterangan jenisnya. Satu nama lain, Yayan Suyansuri, tercatat gugur pada 8 November 2026, tanggal terakhir dalam daftar.",
+        "Sebagian nama terkonsentrasi di kawasan Taman Nasional Bromo Tengger Semeru. Sukaris, operator layanan operasional Kementerian Kehutanan yang menjaga kawasan konservasi di taman nasional itu, meninggal akibat terbakar pada 15 Oktober 2026. Wisnu Yuda Pratama dan Hendra Rony Wagiyata tercatat pada tanggal yang sama, keduanya karena terbakar, dan Hendra tercatat sebagai Manggala Agni Pemula di balai besar taman nasional tersebut. Sefriel Ardiansyah, staf PT Mitra Indo Permai di kawasan yang sama, tercatat gugur terbakar pada 15 Oktober 2026. Munawi, warga mitra polhut, wafat akibat terbakar pada 19 Oktober, sedangkan Suraji, petugas keamanan PT Mitra Indo Permai, meninggal akibat luka bakar berat pada 23 Oktober. Di luar Jawa, Padayya, Manggala Agni Pemula Sulawesi Selatan, gugur akibat tertimpa pohon tumbang saat memadamkan karhutla di Toraja Utara pada 28 Oktober.",
+        "Di Kalimantan, beberapa nama lain tercatat dengan tanggal yang lebih awal. Ahmadin, relawan pemadam kebakaran Provinsi Kalimantan Tengah, wafat pada 30 Agustus 2026, dan Aries Sutio Lutfhil Hadi dari Masyarakat Peduli Api Kabupaten Kotawaringin Barat juga wafat pada 30 Agustus 2026. Akhmad Rizani, relawan pemadam kebakaran Kalimantan Tengah, meninggal pada 27 Agustus 2026. Nurdin, relawan Barisan Pemadam Kebakaran Barito Kuala, Kalimantan Selatan, gugur pada 21 Oktober 2026. Dengan begitu, tanggal dan sebab kematian tercatat untuk seluruh 15 nama, meski sebabnya bervariasi: terbakar, tertimpa pohon tumbang, dan kecelakaan. Yang tidak dijelaskan sumber adalah rincian jenis kecelakaan bagi sebagian nama.",
+        "Delapan tenaga kesehatan penerima Bintang Jasa Nararya juga berasal dari berbagai daerah. Daftar CNN Indonesia menyebut rumah sakit dan puskesmas di Kabupaten Manggarai, Nagakeo, dan Manggarai Timur di Nusa Tenggara Timur; RSUD Muda Sedia di Aceh Tamiang; serta RS Islam PKU Muhammadiyah Palangka Raya di Kalimantan Tengah. Profesinya mencakup dokter spesialis kebidanan dan kandungan, dokter spesialis anak, dokter umum, perawat, bidan, dan tenaga kesehatan desa. Menurut pemberitaan yang sama, mereka terluka saat bertugas di wilayah terdampak bencana, terutama Aceh, Sumatera Utara, Sumatera Barat, dan Nusa Tenggara Timur. Namun daftar nama memuat tenaga kesehatan di Palangka Raya, Kalimantan Tengah, yang tidak termasuk empat provinsi itu. Satu nama dicantumkan dengan unit Kementerian Kesehatan, bukan rumah sakit daerah.",
+        "Detik.com mencatat kehadiran Menko PMK Sugiono, Menko Infrastruktur dan Pembangunan Kewilayahan Agus Harimurti Yudhoyono, Menko Hilirisasi dan Transisi Energi Bahlil Lahadalia, Menteri Kesehatan Budi Gunadi Sadikin, Menteri Sosial Saifullah Yusuf, Menteri Kehutanan Raja Juli Antoni, Panglima TNI Jenderal Agus Subiyanto, dan Menteri Sekretaris Negara Prasetyo Hadi. Hadir pula petinggi partai: Ketua Harian Partai Gerindra Sufmi Dasco Ahmad, Ketua Umum Partai Golkar Bahlil Lahadalia, Ketua Umum PAN Zulkifli Hasan, Ketua Umum PKB Muhaimin Iskandar, Presiden PKS Al Muzzammil Yusuf, dan Ketua Fraksi Partai NasDem Viktor Laiskodat. Bahlil tercatat hadir dalam dua kapasitas sekaligus. Komposisi itu dapat dibaca sebagai penanda bahwa pemerintah menempatkan urusan ini sebagai persoalan lintas kementerian, tetapi pemberitaan tidak menjelaskan apakah ada pembahasan lain di sela acara.",
+        "Beberapa hal masih belum jelas dan belum diumumkan. Besaran santunan per keluarga, sumber anggaran, dan waktu pencairan tidak disebut dalam artikel yang tersedia. Rincian beasiswa juga belum ada: apakah mencakup seluruh anak atau dengan syarat tertentu, biaya apa saja yang ditanggung, dan kapan pendaftaran dibuka. Belum ada keterangan apakah delapan tenaga kesehatan yang cedera juga memperoleh jaminan pendidikan bagi anak, karena janji beasiswa dalam pemberitaan lebih banyak dikaitkan dengan anak petugas yang gugur. Perbedaan penyajian angka 23 orang pada 13 November 2026 dengan rincian 15 orang ditambah 8 orang juga belum dijelaskan sumber resmi. Selain itu, tidak ada keterangan mengenai menteri mana yang diminta menjalankan instruksi soal sekolah.",
+        "Status kedua janji itu perlu dibedakan dari penganugerahan itu sendiri. Bintang jasa punya dasar tertulis berupa Keppres Nomor 94 TK Tahun 2026, sedangkan santunan dan beasiswa baru disampaikan sebagai komitmen dalam acara dan belum diuraikan sebagai prosedur yang bisa dijalankan keluarga. Langkah berikutnya yang tercatat dalam pemberitaan adalah pelaksanaan instruksi presiden kepada sejumlah menteri agar anak para petugas yang gugur dapat mengakses sekolah negeri terbaik, tanpa tenggat yang disebutkan. Sampai keterangan resmi dari Istana atau kementerian terkait terbit, rincian manfaat, syarat, dan jadwalnya masih terbuka."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto yang memimpin acara di Istana Bogor itu?",
+          "a": "Prabowo Subianto Djojohadikusumo adalah politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya ia menjabat Menteri Pertahanan pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa itu Menko PMK, jabatan yang disebut hadir dalam acara ini?",
+          "a": "Menko PMK adalah kepala yang memimpin Kementerian Koordinator Bidang Pembangunan Manusia dan Kebudayaan, kementerian koordinator yang mengoordinasikan kebijakan pembangunan manusia dan kebudayaan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Daftar_Menteri_Koordinator_Bidang_Pembangunan_Manusia_dan_Kebudayaan_Indonesia"
+          }
+        },
+        {
+          "q": "Apa inti peristiwa yang diberitakan sebelum masuk ke rincian angka?",
+          "a": "Presiden Prabowo menganugerahkan bintang jasa kepada 15 relawan dan 8 tenaga kesehatan atas peran mereka dalam penanganan kebakaran hutan.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8751910/prabowo-anugerahkan-bintang-jasa-ke-relawan-dan-nakes-tangani-karhutla"
+          }
+        }
+      ],
+      "action": "Periksa teks Keppres Nomor 94 TK Tahun 2026 dan keterangan kementerian untuk memastikan besaran santunan serta syarat beasiswa.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/13/337/3253918/prabowo-jamin-santunan-dan-beasiswa-penuh-bagi-anak-relawan-karhutla-yang-gugur",
+          "published_at": "2026-11-13T18:26:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8751910/prabowo-anugerahkan-bintang-jasa-ke-relawan-dan-nakes-tangani-karhutla",
+          "published_at": "2026-11-13T17:16:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/prabowo-beri-bintang-jasa-pada-relawan-gugur-tangani-karhutla-idMh",
+          "published_at": "2026-11-13T18:15:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261113174242-4-785145/prabowo-kasih-beasiswa-buat-anak-relawan-karhutla-yang-meninggal",
+          "published_at": "2026-11-13T19:15:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113172218-20-1426974/prabowo-beri-bintang-jasa-untuk-23-relawan-petugas-gugur-dan-cedera",
+          "published_at": "2026-11-13T17:30:37+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Tanda kehormatan diberikan kepada 15 relawan yang gugur dan 8 tenaga kesehatan yang cedera, disertai janji santunan dan beasiswa penuh.",
+      "optional": true,
+      "read_min": 8,
+      "stats": [
+        {
+          "value": "2",
+          "label": "halaman"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_tersangka_kasus_ijazah_jokowi_47d9",
+      "angle": "Rekan seperjuangan Roy Suryo di kasus ijazah Jokowi meninggal; sisa proses hukum berjalan.",
+      "kicker": "Kriminal",
+      "title": "Rizal Fadillah, Tersangka Kasus Ijazah Jokowi, Meninggal Dunia",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Muhammad Rizal Fadillah, satu dari delapan tersangka kasus tudingan ijazah palsu Jokowi, meninggal pada Jumat, 13 November 2026, setelah dirawat di ruang ICU.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 6,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Kabar itu tidak datang dari pernyataan kepolisian, melainkan dari kanal YouTube Roy Suryo pada Jumat, 13 November 2026. Dalam video yang dikutip sejumlah media, Roy menyebut seorang sahabat sekaligus rekan seperjuangannya telah wafat. “Beliau adalah Ustaz Rizal Fadillah,” kata Roy, seperti dikutip CNNIndonesia.com dan detik.com. Sindonews dan Okezone juga memberitakan hal serupa pada hari itu hingga keesokan paginya. Artinya, satu dari delapan orang yang pernah ditetapkan sebagai tersangka dalam perkara dugaan pencemaran nama baik terkait tudingan ijazah palsu Joko Widodo meninggal dunia sebelum perkaranya sampai ke persidangan.",
+        "Roy merinci peristiwa Jumat itu. Menurut penuturannya, Rizal sempat dilarikan ke Rumah Sakit Muhammadiyah selepas salat Jumat, lalu menjalani perawatan intensif di ruang ICU. “Dan tidak lama kemudian, menjelang sore, beliau sudah dipanggil oleh Yang Mahakuasa,” ujar Roy. Okezone menulis hal senada: sebelum mengembuskan napas terakhir, almarhum sempat dibawa ke rumah sakit dan dirawat di ruang ICU. Meski begitu, tidak satu pun bahan menyebutkan diagnosis, penyebab, atau riwayat penyakit yang membuatnya dirawat. Tidak ada pula keterangan rumah sakit, keluarga, atau kepolisian yang dikutip. Penyebab kematian, usia, dan tempat wafat secara resmi belum disebutkan dalam bahan yang tersedia.",
+        "Dalam struktur perkara, Rizal bukan nama baru. CNNIndonesia.com dan Okezone menyebutnya sebagai salah satu tersangka dalam kasus dugaan pencemaran nama baik dan fitnah terkait tudingan ijazah palsu Presiden ke-7 RI Joko Widodo. Tirto menyebutnya aktivis yang ikut dilaporkan Jokowi dalam perkara itu, sementara Sindonews menyebutnya rekan seperjuangan Roy Suryo dan dokter Tifa. Sejumlah media memakai nama lengkap Muhammad Rizal Fadillah, sebagian lain menulis Rizal Fadillah saja. Sebutan “Ustaz” muncul dalam kutipan Roy. Yang tidak dijelaskan bahan adalah peran teknis Rizal dalam perkara, misalnya isi laporan atau perbuatan yang dituduhkan kepadanya.",
+        "Polda Metro Jaya menetapkan delapan orang sebagai tersangka dalam kasus dugaan pencemaran nama baik dan fitnah itu, dan membaginya ke dalam dua klaster. Klaster pertama terdiri dari lima orang: Eggi Sudjana, Kurnia Tri Royani, Damai Hari Lubis, Rustam Effendi, dan Muhammad Rizal Fadillah. Klaster kedua terdiri dari Roy Suryo, Tifauzia Tyassuma yang dikenal sebagai dokter Tifa, dan Rismon Hasiholan Sianipar. Rizal berada di klaster pertama. Pembagian ini penting karena penanganan tiap orang berbeda, dan sebagian nama di klaster pertama sudah keluar dari jerat penyidikan lewat jalur restorative justice.",
+        "Ada beberapa perbedaan kecil antar-bahan yang perlu diketahui pembaca. CNNIndonesia.com pada 13 November menulis nama “Riza Fadillah”, sedangkan edisi 14 November menulis “Muhammad Rizal Fadillah”. Detik mengutip Roy dengan ejaan “Rizal Fadilah” pada satu bagian, sementara Sindonews dan Okezone konsisten memakai “Rizal Fadillah”. Dalam daftar tersangka, CNNIndonesia.com menulis “Kurnia Tri Royani”, tetapi kutipan Roy menyebut “Kurnia Triwayani”. Perbedaan ini tampak seperti salah ketik, bukan perbedaan orang, namun tetap perlu dicatat karena menyangkut identitas dalam perkara hukum. Bahan tidak memuat klarifikasi resmi soal ejaan yang benar.",
+        "Sejak penetapan tersangka, perkara ini bergerak tidak seragam. Dari klaster pertama, Eggi Sudjana dan Damai Hari Lubis mengajukan restorative justice. Permohonan itu diterima, penyidikan terhadap keduanya dihentikan, dan Surat Perintah Penghentian Penyidikan atau SP3 diterbitkan. Dari klaster kedua, Rismon Hasiholan Sianipar menempuh jalur yang sama dan mendapat hasil serupa. Bahan tidak menjelaskan pertimbangan penyidik menerima permohonan itu, juga tidak memerinci syarat yang dipenuhi ketiga orang tersebut. Yang tersisa adalah pertanyaan yang belum dijawab bahan: apakah Rizal pernah mengajukan restorative justice seperti rekan-rekannya.",
+        "Sementara itu, dua tersangka lain justru masuk ke ruang sidang. Roy Suryo dan dokter Tifa tengah menjalani proses persidangan terkait kasus tudingan ijazah palsu Jokowi di Pengadilan Negeri Jakarta Timur. Jokowi diketahui telah dihadirkan untuk memberikan keterangan sebagai saksi dalam sidang tersebut. Bahan tidak menyebut pasal yang didakwakan, jadwal sidang berikutnya, maupun agenda pemeriksaan saksi lain. Yang bisa dipastikan, jalur persidangan berjalan paralel dengan kabar duka di klaster pertama. Dua nama lain di klaster pertama, Kurnia Tri Royani dan Rustam Effendi, tidak disebut status perkaranya dalam bahan.",
+        "Kematian seorang tersangka biasanya memunculkan pertanyaan hukum, dan di sinilah bahan paling tipis. Tidak ada pernyataan kepolisian, kejaksaan, atau pengadilan yang dikutip mengenai akibat hukum wafatnya Rizal. Bahan juga tidak menyebut apakah penyidikan terhadapnya dihentikan, apakah ada SP3, atau apakah namanya tetap tercatat sebagai tersangka dalam berkas perkara. Semua media yang dikutip berhenti pada kabar duka dan riwayat penanganan perkara. Pembaca yang ingin tahu kelanjutannya harus menunggu keterangan resmi, karena detail itu belum tersedia saat berita-berita ini ditulis.",
+        "Kabar wafatnya Rizal tidak hanya beredar lewat kanal YouTube pribadi Roy Suryo. Liputan6 memberitakan bahwa kabar itu disampaikan oleh pihak Dewan Pimpinan Pusat Front Persaudaraan Islam. Bahan tidak memerinci siapa pejabat organisasi yang menyampaikan, bagaimana bentuk pernyataannya, atau apakah ada keterangan tertulis. Dua kanal informasi ini, video Roy dan pernyataan organisasi, muncul di hari yang sama dengan pemberitaan media. Hingga bahan disusun, tidak ada rilis resmi dari rumah sakit yang merawat Rizal maupun dari Polda Metro Jaya sebagai penyidik yang menetapkan status tersangka kepadanya.",
+        "Untuk memahami mengapa nama Rizal muncul di berita, pembaca perlu kembali ke pokok perkara. Tudingan yang beredar menyangkut dugaan ijazah palsu Joko Widodo, presiden ketujuh yang menjabat 2014 sampai 2024. Sejumlah orang, termasuk Rizal, disebut ikut mengungkit persoalan itu sejak awal. Roy dalam kutipannya menyebut Rizal bersama dokter Tifa, Rustam, dan Kurnia Triwayani sebagai pihak yang membongkar soal tersebut, lalu berlanjut ke persoalan surat keterangan anak. Polda Metro Jaya kemudian menetapkan delapan orang sebagai tersangka atas dugaan pencemaran nama baik dan fitnah. Bahan tidak memuat putusan pengadilan yang menyatakan tudingan itu benar atau salah.",
+        "Jika dihitung dari daftar awal, delapan tersangka itu kini tersebar ke beberapa jalur. Tiga orang mendapat SP3 lewat restorative justice: Eggi Sudjana, Damai Hari Lubis, dan Rismon Hasiholan Sianipar. Dua orang menjalani persidangan: Roy Suryo dan dokter Tifa. Satu orang meninggal: Rizal Fadillah. Sisanya, Kurnia Tri Royani dan Rustam Effendi, tidak disebut statusnya dalam bahan. Perhitungan ini disusun dari daftar tersangka dan keterangan penanganan yang dikutip CNNIndonesia.com, bukan dari salinan dokumen resmi kepolisian. Angka pastinya bisa berubah bila penyidik merilis perkembangan baru.",
+        "Beberapa hal praktis bisa ditunggu pembaca. Pertama, keterangan resmi mengenai penyebab dan waktu wafat Rizal, termasuk dari rumah sakit yang merawatnya. Kedua, pernyataan Polda Metro Jaya soal status penyidikan yang menyangkut namanya, apakah dihentikan atau tidak. Ketiga, jadwal lanjutan sidang Roy Suryo dan dokter Tifa di Pengadilan Negeri Jakarta Timur, termasuk kemungkinan agenda saksi berikutnya. Bahan yang tersedia belum memuat ketiganya. Selama itu belum ada, kabar duka dari kanal YouTube dan pernyataan organisasi tetap menjadi sumber utama yang dikutip media.",
+        "Yang jelas, peristiwa ini menutup satu bab dari perkara yang berjalan sejak tudingan ijazah palsu mencuat. Rizal meninggal pada Jumat, 13 November 2026, setelah salat Jumat dan perawatan intensif di ruang ICU, sebagaimana dituturkan Roy dan diberitakan sejumlah media. Rekan-rekannya yang masih berjuang, dalam kalimat Roy, diminta meneruskan perjuangan itu. Namun dari sisi hukum, bahan-bahan yang ada belum menjawab apa yang terjadi pada status tersangka yang melekat pada nama Rizal. Itu bagian yang masih menunggu penjelasan, bukan bagian yang bisa disimpulkan sendiri oleh pembaca."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Joko Widodo dalam perkara ini?",
+          "a": "Presiden Indonesia ketujuh yang menjabat 2014 sampai 2024, dan presiden pertama yang bukan berasal dari elite politik atau militer. Tudingan ijazah palsu yang beredar menyangkut dirinya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Joko_Widodo"
+          }
+        },
+        {
+          "q": "Siapa Roy Suryo, sumber kabar duka ini?",
+          "a": "Komentator telematika dan politikus yang pernah menjabat Menteri Pemuda dan Olahraga pada Kabinet Indonesia Bersatu II serta duduk sebagai anggota DPR RI dari Partai Demokrat. Ia satu klaster tersangka dengan dokter Tifa.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Roy_Suryo"
+          }
+        },
+        {
+          "q": "Bagaimana Rizal Fadillah digambarkan dalam bahan latar?",
+          "a": "Sebagai ustaz dan tersangka kasus tudingan ijazah palsu Jokowi; Roy Suryo menyampaikan duka dan harapan agar perjuangan Rizal diteruskan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261113182246-12-1426994/tersangka-kasus-ijazah-jokowi-rizal-fadillah-meninggal-dunia"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi kepolisian dan rumah sakit sebelum menyimpulkan penyebab kematian Rizal Fadillah.",
+      "image": {
+        "url": "assets/cede3202ba.webp",
+        "credit": "liputan6.com",
+        "alt": "Rizal Fadillah, Tersangka Kasus Ijazah Jokowi, Meninggal Dunia"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8335038/rizal-fadillah-tersangka-kasus-ijazah-jokowi-meninggal-dunia",
+          "published_at": "2026-11-14T00:43:21+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113182246-12-1426994/tersangka-kasus-ijazah-jokowi-rizal-fadillah-meninggal-dunia",
+          "published_at": "2026-11-13T18:32:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8752313/rizal-fadillah-tersangka-kasus-ijazah-palsu-jokowi-meninggal",
+          "published_at": "2026-11-13T23:36:51+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1771939/15/rizal-fadillah-rekan-seperjuangan-roy-suryo-di-kasus-ijazah-jokowi-meninggal-dunia-1794586295",
+          "published_at": "2026-11-13T23:35:40+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/14/337/3253971/sempat-masuk-icu-rizal-fadillah-tersangka-kasus-ijazah-jokowi-meninggal",
+          "published_at": "2026-11-14T08:40:15+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/aktivis-tpua-rizal-fadillah-meninggal-dunia-di-bandung-idMj",
+          "published_at": "2026-11-13T18:40:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_komnas_ham_usut_kekerasan_aksi_830e",
+      "angle": "Penyelidikan Komnas HAM di UGM, dan mahasiswa yang masih ditahan Polda DIY",
+      "kicker": "Nasional",
+      "title": "Komnas HAM selidiki dugaan kekerasan aksi UGM, satu mahasiswa ditahan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Komnas HAM telah meminta keterangan pimpinan UGM dan mempelajari rekaman CCTV, tetapi menyatakan temuan resminya belum ada.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Komisi Nasional Hak Asasi Manusia turun tangan menyelidiki dugaan penggunaan kekuatan berlebih aparat dalam aksi penyampaian pendapat di Yogyakarta pada 10 November 2026. Jumat, 13 November, Ketua Komnas HAM Anis Hidayah mendatangi Universitas Gadjah Mada untuk meminta keterangan dari jajaran pimpinan kampus. Penyelidikan itu baru berjalan beberapa hari, dan di tengah prosesnya satu mahasiswa Fakultas Hukum UGM masih berada di Polda DIY. Dua hal inilah yang membuat perkara ini perlu diikuti sampai tuntas: dugaan kekerasan yang belum selesai diperiksa, dan status hukum seorang mahasiswa yang belum jelas ujungnya. Komnas HAM sendiri menyebut penelusurannya masih berada pada tahap awal, sehingga kesimpulan apa pun belum bisa ditarik dari pertemuan sehari itu.",
+        "Menurut keterangan Komnas HAM, pemantauan lapangan sudah dimulai sejak 11 November 2026 dengan mengacu pada mandat Pasal 89 ayat (3) Undang-Undang Nomor 39 Tahun 1999 tentang Hak Asasi Manusia. Selain turun ke lapangan, lembaga ini mengumpulkan informasi dari pelbagai sumber, termasuk media elektronik dan media sosial. Dari situ mereka menyusun gambaran awal: aksi pada siang hari berlangsung damai, lalu situasi berubah pada malam hingga dini hari. Anis menyebut ada indikasi aparat masuk ke kampus, gas air mata yang masuk ke area kampus, serta mahasiswa yang ditangkap dan mengalami luka. Semua itu, menurutnya, masih berupa informasi awal yang perlu diuji, bukan temuan resmi. Dalam pemberitaan lain, Komnas HAM digambarkan masih menelusuri dan belum masuk ke tahap menyimpulkan.",
+        "Data awal yang paling konkret adalah angka penangkapan dan penahanan. Anis Hidayah menyebut ada 154 peserta aksi yang ditangkap dan ditahan, dan 12 di antaranya adalah anak-anak. Ia menyebut adanya dugaan kuat tindakan represif aparat keamanan serta penggunaan kekuatan berlebih yang berujung pada penangkapan tersebut. Angka itu datang dari keterangan Komnas HAM sendiri, bukan dari rekapitulasi resmi kepolisian yang dipublikasikan dalam bahan yang tersedia. Karena itu, angka 154 dan 12 anak sebaiknya dibaca sebagai data awal yang masih bisa berubah ketika penelusuran bergulir. Bahan juga tidak memuat rincian berapa di antara mereka yang kemudian dilepas, berapa yang ditetapkan sebagai tersangka, dan atas pasal apa penahanan dilakukan.",
+        "Di UGM, Komnas HAM bertemu jajaran pimpinan kampus untuk meminta keterangan. Anis menyebut pertemuan itu memberi gambaran yang sangat komprehensif, baik secara kronologis maupun lewat data pendukung yang nantinya akan dipakai untuk menganalisis dugaan pelanggaran hak asasi manusia. Namun ia menegaskan temuan belum ada. Yang diterima Komnas HAM baru kronologi peristiwa, keterangan soal mahasiswa yang menjadi korban, baik yang luka-luka maupun yang ditangkap, serta dugaan aparat masuk ke kampus dan penggunaan gas air mata. Dengan kata lain, pertemuan sehari itu menghasilkan bahan pemeriksaan, bukan kesimpulan. Komnas HAM menyebut langkah lanjutan masih akan dijalankan, termasuk menggali keterangan dari pihak di luar kampus.",
+        "Dari pertemuan itu, salah satu bukti yang dipelajari adalah rekaman kamera pengawas milik UGM. Di sini muncul perbedaan yang perlu dicatat. Pemberitaan Kumparan menyebut rekaman yang diputar mencakup pukul 10.00 WIB hingga dini hari, sedangkan Detikcom mengutip Anis menyebut rekaman dari pukul 22.00 WIB sampai dini hari. Bahan yang tersedia tidak menjelaskan mana rentang yang tepat atau mengapa dua catatan itu berbeda, apakah karena salah kutip atau karena ada dua pemutaran berbeda. Yang jelas, dari rekaman tersebut Komnas HAM menyatakan bisa melihat bagaimana gas air mata masuk ke area kampus, dan hal itu menjadi salah satu dasar dugaan awal penggunaan kekuatan berlebih oleh aparat.",
+        "Soal korban, Komnas HAM menjenguk sejumlah orang yang sedang dirawat. Di RS Sardjito mereka menemui sekitar lima hingga enam korban yang masih dalam masa pemulihan; salah satunya harus menjalani operasi karena terkena selongsong gas air mata. Setelah itu Komnas HAM dijadwalkan melanjutkan kunjungan ke RS Panti Rapih untuk memantau kondisi satu mahasiswa UGM lain yang masih dirawat. Bahan tidak menyebut jumlah total mahasiswa yang menjadi korban luka, tidak merinci luka yang dialami tiap orang, dan tidak menyebut tingkat keparahannya di luar dua keterangan itu. Pertanyaan berapa mahasiswa yang menjadi korban, karena itu, belum bisa dijawab dengan angka pasti berdasarkan bahan yang ada; yang tersedia baru potret di dua rumah sakit.",
+        "Status hukum mahasiswa yang masih ditahan baru bisa dijelaskan sejauh keterangan pihak kampus. Wakil Rektor Bidang Kemahasiswaan Arie Sujito mengatakan UGM memberikan pendampingan hukum yang ketat terhadap satu mahasiswa Fakultas Hukum angkatan 2025 yang hingga saat itu masih berada di Polda. Pendampingan dilakukan oleh tim dari Fakultas Hukum dan Pusat Konsultasi dan Bantuan Hukum yang ikut berada di Polda. Menurut Arie, hukum harus dihormati, tetapi mahasiswa juga harus dilindungi karena kampus punya tanggung jawab. Bahan tidak menyebut status mahasiswa tersebut, apakah ia saksi, tersangka, atau pihak yang diperiksa, juga tidak menyebut pasal yang dikenakan maupun lama penahanan. Detail itu belum diumumkan ke publik.",
+        "Selain di kampus dan rumah sakit, Komnas HAM melakukan olah tempat kejadian perkara di beberapa titik, yaitu Bundaran UGM, DPRD DIY, dan Titik Nol Kilometer Kota Yogyakarta. Sebelum mendatangi UGM, mereka lebih dulu bertemu Polda DIY untuk meminta keterangan. Urutan itu menunjukkan penelusuran tidak hanya bertumpu pada versi kampus, meski bahan yang tersedia belum memuat isi keterangan yang diberikan kepolisian. Dari sisi metode, Komnas HAM juga menyatakan akan menggali informasi dari kelompok masyarakat sipil dan lembaga bantuan hukum soal dugaan mobilisasi massa atau premanisme yang disebut memicu kerusuhan pada malam hingga dini hari. Dugaan itu belum diuji, dan bahan belum menjelaskan siapa yang dimaksud maupun apa buktinya.",
+        "Rekomendasi sudah disebut sebagai tujuan akhir, tetapi isinya belum dibuka. Anis mengatakan Komnas HAM akan menyampaikan sejumlah fakta dan analisis pelanggaran hak asasi manusia, lalu rekomendasi kepada para pihak, terutama aparat kepolisian dan aparat lain. Pada keterangan lain, ia menyebut seluruh temuan akan dianalisis menjadi rekomendasi strategis yang ditujukan kepada pihak kepolisian dan instansi terkait lainnya. Bahan tidak memuat butir rekomendasi, bentuknya, maupun tenggat penyampaiannya, dan juga tidak menyebut rekomendasi khusus untuk pihak kampus. Jadi pertanyaan soal apa isi rekomendasi kepada kepolisian dan kampus belum bisa dijawab sekarang; yang tersedia baru janji bahwa rekomendasi itu akan diberikan setelah analisis selesai.",
+        "Kapan hasil penyelidikan diumumkan juga belum ada tanggalnya. Ketika ditanya, Anis hanya mengatakan hasilnya nanti akan disampaikan dan meminta waktu lebih dulu. Ia menyebut sejauh ini yang masuk jadwal baru pertemuan dengan pihak UGM. Pemberitaan CNN Indonesia menambahkan bahwa penelusuran masih berada pada tahap awal, sementara Tirto mencatat Komnas HAM memeriksa rekaman CCTV UGM untuk mengusut dugaan pelanggaran hak asasi manusia. Tidak ada keterangan tentang tenggat, tentang apakah akan ada laporan publik, atau tentang apakah hasilnya lebih dulu disampaikan kepada kepolisian dan kampus. Pembaca yang menunggu kesimpulan perlu bersabar, sebab prosesnya masih berada di tahap pengumpulan bahan dan keterangan.",
+        "UGM menyambut kedatangan Komnas HAM. Rektor Ova Emilia menyatakan kampus bersikap kooperatif dan menyerahkan seluruh data dan bukti yang dibutuhkan, termasuk video dan rekaman CCTV. Ia menilai kehadiran Komnas HAM membantu karena kampus memerlukan data dan informasi yang objektif. Menurutnya, hal itu penting supaya tidak terjadi kekumuhan informasi atau simpang siur yang akhirnya tidak konstruktif. Ova juga menegaskan bahwa penyampaian aspirasi dan kritik oleh mahasiswa merupakan bagian dari misi universitas yang harus dilindungi. Kampus, menurut keterangannya, berencana membentuk Tim Pencari Fakta agar duduk perkara menjadi terang, tetapi ia belum menerangkan kapan tim itu dibentuk atau mulai bertugas.",
+        "Tanggapan Polda DIY atas penyelidikan ini belum tersedia dalam bahan. Yang tercatat hanya bahwa Komnas HAM lebih dulu bertemu Polda DIY untuk meminta keterangan sebelum mendatangi UGM, dan bahwa rekomendasi nantinya akan diarahkan terutama kepada aparat kepolisian. Tidak ada pernyataan pejabat kepolisian yang dikutip, tidak ada penjelasan versi polisi soal jumlah orang yang ditangkap, soal gas air mata yang masuk area kampus, maupun soal status mahasiswa yang masih ditahan. Karena itu, pertanyaan tentang sikap Polda DIY mesti dijawab apa adanya: hingga bahan ini disusun, belum ada tanggapan resmi yang dipublikasikan. Membaca kasus ini secara utuh berarti menunggu versi itu, bukan hanya bekerja dengan satu sisi keterangan.",
+        "Komnas HAM meletakkan kasus ini dalam kerangka hak konstitusional. Lembaga itu merujuk Pasal 28E ayat (2) dan ayat (3) UUD 1945, Pasal 25 UU Nomor 39 Tahun 1999 tentang Hak Asasi Manusia, dan UU Nomor 9 Tahun 1998 tentang Kemerdekaan Menyampaikan Pendapat di Muka Umum. Anis menegaskan bahwa hak berpendapat, berekspresi, dan berkumpul dijamin konstitusi dan merupakan hak setiap warga negara. Menurutnya, aparat tidak bisa membatasi hak itu tanpa dasar hukum yang jelas. Pembatasan, katanya, hanya diperkenankan berdasarkan hukum yang jelas, tujuan yang sah, dan proporsional terhadap tujuan yang ingin dicapai. Rumusan itu penting karena yang dipersoalkan bukan hanya tindakan di lapangan, tetapi juga apakah pembatasannya sah dan sepadan.",
+        "Sejumlah hal masih terbuka dan sebaiknya tidak diisi dengan dugaan. Bahan belum memuat jumlah pasti mahasiswa yang terluka, belum merinci luka tiap korban, belum menyebut status hukum mahasiswa yang ditahan, dan belum memuat butir rekomendasi maupun jadwal pengumuman hasil. Dugaan mobilisasi massa atau premanisme yang akan digali dari kelompok masyarakat sipil dan lembaga bantuan hukum juga belum dijelaskan. Satu hal yang sudah pasti, penyelidikan ini melibatkan dua pihak dengan posisi berbeda: Komnas HAM yang memeriksa dugaan pelanggaran hak asasi manusia, dan kepolisian yang menjadi pihak yang diperiksa. Karena itu hasil yang kredibel biasanya butuh bukti yang bisa diperiksa bersama. Yang bisa dilakukan pembaca sekarang adalah mengikuti perkembangan resminya, bukan menyimpulkan lebih dulu."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu UGM dan mengapa kampus ini menjadi lokasi pemeriksaan?",
+          "a": "Universitas Gadjah Mada adalah perguruan tinggi negeri di Kabupaten Sleman, Daerah Istimewa Yogyakarta, yang didirikan resmi pada 19 Desember 1949 dan termasuk perguruan tinggi tertua serta terbesar di Indonesia. Pada Peringkat Universitas Dunia QS 2026, UGM berada di peringkat ke-2 di Indonesia dan ke-224 di dunia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Universitas_Gadjah_Mada"
+          }
+        },
+        {
+          "q": "Peristiwa apa yang menjadi titik awal penelusuran ini?",
+          "a": "Aksi penyampaian pendapat dan berkumpul di Yogyakarta pada 10 November 2026 yang direspons aparat kepolisian. Komnas HAM menyebut dugaan kekerasan dan penggunaan kekuatan berlebih dalam respons itu akan ditelusuri lebih lanjut.",
+          "source": {
+            "outlet": "republika.co.id",
+            "url": "https://news.republika.co.id/berita/tof6u6377/ricuh-yogya-sampai-kampus-ugm-komnas-ham-ada-indikasi-kuat-pelanggaran-polisi"
+          }
+        }
+      ],
+      "action": "Ikuti pengumuman resmi Komnas HAM dan UGM, dan jangan menyimpulkan hasil penyelidikan sebelum temuannya disampaikan.",
+      "image": {
+        "url": "assets/d03bcb5452.webp",
+        "credit": "detik.com",
+        "alt": "Komnas HAM selidiki dugaan kekerasan aksi UGM, satu mahasiswa ditahan"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8751718/komnas-ham-datangi-ugm-usut-kasus-kekerasan-mahasiswa-saat-aksi",
+          "published_at": "2026-11-13T15:37:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/komnas-ham-datangi-ugm-usut-dugaan-kekerasan-aparat-di-ricuh-10-november-28Z4LSzQ3v0",
+          "published_at": "2026-11-13T13:57:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/komnas-ham-periksa-cctv-ugm-terkait-dugaan-pelanggaran-saat-demo-idMD",
+          "published_at": "2026-11-13T20:32:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113090506-12-1426680/komnas-ham-minta-rekaman-cctv-ugm-terkait-demo-10-november",
+          "published_at": "2026-11-13T22:24:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tof6u6377/ricuh-yogya-sampai-kampus-ugm-komnas-ham-ada-indikasi-kuat-pelanggaran-polisi",
+          "published_at": "2026-11-13T09:56:30+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_indonesia_pulangkan_kerangka_p_21af",
+      "angle": "Repatriasi kerangka prajurit AS era Perang Dunia II digelar di Lanud Halim, Jakarta.",
+      "kicker": "Budaya",
+      "title": "Indonesia Pulangkan Kerangka Prajurit AS dari Morotai",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Upacara repatriasi kerangka prajurit AS era Perang Dunia II digelar di Lanud Halim Perdanakusuma pada 13 November 2026 dan dihadiri Menteri Pertahanan Sjafrie S",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Upacara repatriasi kerangka prajurit Amerika Serikat era Perang Dunia II digelar di Lanud Halim Perdanakusuma, Jakarta, pada Jumat, 13 November 2026. Upacara dimulai pukul 10.00 WIB. Pemerintah Indonesia menyerahkan kerangka jenazah tentara AS yang sebelumnya dinyatakan hilang. Acara ini menjadi penanda bahwa proses pemulangan yang berlangsung lintas negara akhirnya sampai pada tahap serah terima di tanah Indonesia. Bahan pemberitaan yang tersedia memusatkan perhatian pada jalannya upacara, bukan pada riwayat lengkap prajurit yang bersangkutan.",
+        "Rangkaian upacara dimulai dengan penghormatan militer kepada jenazah, lalu dilanjutkan dengan peletakan peti jenazah. Lagu kebangsaan Indonesia Raya dan Amerika Serikat diperdengarkan. Setelah itu, peti jenazah diusung menuju pesawat. Dalam foto yang disiarkan, prajurit AS tampak membawa peti berisi kerangka jenazah. Urutan acara itu menunjukkan bahwa peristiwa ini dirancang sebagai penghormatan terakhir sebelum kerangka dibawa meninggalkan Indonesia, meski bahan tidak memerinci siapa saja yang bertugas dalam prosesi tersebut.",
+        "Sumber berbeda menyebut lokasi dengan tingkat kerincian yang tidak sama. Detik.com menyebut upacara berlangsung di Lanud Halim Perdanakusuma. Liputan6.com menyebut penyerahan dilakukan di Hanggar Skadron 17, Lanud Halim Perdanakusuma. Keduanya merujuk pada pangkalan udara yang sama, tetapi hanya satu sumber yang menyebut hanggar secara spesifik. Perbedaan itu tampak sebagai soal detail peliputan, bukan pertentangan fakta. Bahan tidak menjelaskan mengapa hanggar tertentu dipilih sebagai tempat upacara.",
+        "Menteri Pertahanan Sjafrie Sjamsoeddin dan Panglima TNI Jenderal Agus Subiyanto terlihat mengikuti upacara tersebut. Keduanya disebut hadir dalam pemberitaan Detik.com. Bahan tidak memuat daftar lengkap pejabat lain yang hadir, termasuk apakah ada perwakilan pemerintah AS atau Kedutaan Besar AS yang turut serta. Karena itu, komposisi tamu undangan belum bisa dipastikan dari bahan yang tersedia. Yang jelas, kehadiran menteri pertahanan dan panglima TNI menandai bobot acara bagi hubungan bilateral.",
+        "Irjen Kemhan, Letjen Rui Duarte, mengatakan kegiatan ini merupakan bagian dari kerja sama bilateral Indonesia dan Amerika Serikat. Menurutnya, kerja sama itu antara lain bertujuan mencari korban yang masih belum ditemukan. Ia menyebut saat ini masih ada sekitar 2.500 korban jenazah yang masih tertimbun atau belum ditemukan dan masih diselidiki. Pernyataan itu dikutip Detik.com tanpa rincian apakah angka tersebut khusus untuk Morotai atau mencakup wilayah lain. Bahan juga tidak menjelaskan dasar penghitungan angka tersebut.",
+        "Angka sekitar 2.500 dalam kutipan itu perlu dibaca sebagai konteks pencarian, bukan jumlah kerangka yang dipulangkan hari itu. Bahan tidak menyebut berapa kerangka yang berada di dalam peti yang diupacarakan. Bahan juga tidak menyebut identitas prajurit, satuan, pangkat, atau tahun kematiannya. Pembaca perlu membedakan antara skala pencarian yang disebut pejabat dan jumlah jenazah yang benar-benar diserahkan dalam upacara. Tanpa pemisahan itu, angka besar mudah disalahpahami sebagai jumlah korban dalam satu peristiwa.",
+        "Upacara ini disebut sebagai tindak lanjut Memorandum Saling Pengertian yang diperbarui pada 13 April 2026 antara Indonesia dan Amerika Serikat. Kedua negara sepakat memperkuat kolaborasi dalam penelitian, pemulihan, identifikasi, serta repatriasi kerangka personel Departemen Perang AS. Cakupan itu menjelaskan bahwa kerja sama tidak berhenti pada serah terima, tetapi mencakup proses mencari dan mengenali jasad lebih dahulu. Bahan tidak menyebut lembaga mana yang menangani masing-masing tahap, termasuk keterlibatan tim forensik atau arkeolog.",
+        "Kerangka prajurit tersebut ditemukan di Pulau Morotai. Tirto.id menyebut prajurit itu dinyatakan hilang lebih dari 80 tahun. CNN Indonesia menyebut kerangka jenazah tentara AS itu tertimbun di Morotai selama 80 tahun. Bahan tidak memuat kapan penemuan terjadi, siapa yang menemukan, atau bagaimana proses penggalian dilakukan. Yang tersedia hanya rentang waktu panjang antara hilangnya prajurit dan upacara pemulangan. Bahan juga tidak menjelaskan apakah lokasi penemuan berada di permukaan tanah atau di kedalaman tertentu.",
+        "Penyebutan objek yang dipulangkan juga berbeda antarsumber. Detik.com memakai frasa kerangka jenazah, Tirto.id memakai sisa jenazah, dan CNN Indonesia memakai kerangka jenazah tentara AS. Perbedaan ini tampak sebagai pilihan kata, bukan pertentangan fakta. Bahan tidak memberikan penjelasan resmi mengenai kondisi jasad atau tingkat kelengkapan kerangka yang ditemukan, sehingga istilah yang paling tepat belum bisa ditentukan. Pembaca sebaiknya tidak menarik kesimpulan tentang kondisi jenazah hanya dari pilihan kata dalam judul berita.",
+        "Beberapa hal penting belum jelas. Bahan tidak menyebut jumlah kerangka yang dipulangkan, nama prajurit, asal daerah di AS, atau tujuan akhir penerbangan. Bahan juga tidak merinci apakah proses identifikasi sudah tuntas atau masih berlanjut. Ketiadaan detail itu bukan berarti informasi disembunyikan; pemberitaan yang tersedia memang baru mencakup jalannya upacara dan latar kerja sama. Untuk pertanyaan seperti identitas dan jumlah, jawabannya belum tersedia dalam bahan dan kemungkinan baru diumumkan kemudian oleh pihak berwenang.",
+        "Semua bahan yang relevan menempatkan peristiwa pada 13 November 2026, dengan Detik.com menyebut upacara dimulai pukul 10.00 WIB. Tidak ada perbedaan tanggal antarsumber yang bisa dibaca sebagai konflik informasi. Kumpulan bahan ini juga memuat artikel tentang ketegangan Iran dan AS serta perundingan Ukraina, tetapi keduanya membahas peristiwa yang berbeda dan tidak dipakai untuk menguraikan upacara repatriasi. Memisahkan bahan yang relevan penting agar laporan tentang kerangka prajurit tidak tercampur dengan isu geopolitik lain.",
+        "Bahan juga memperlihatkan bagaimana pemberitaan berkembang dalam satu hari. Detik.com menurunkan laporan pada 13 November 2026 pukul 11.30 WIB. Tirto.id menyusul pukul 13.31, CNN Indonesia pukul 15.30, lalu Liputan6 pukul 16.21. Meski waktu publikasi berbeda, inti peristiwanya tetap sama, yakni upacara di Halim pada Jumat pagi. Perbedaan jam terbit itu lebih mencerminkan perkembangan peliputan daripada perubahan fakta. Tidak ada sumber yang kemudian menarik kembali informasi tentang lokasi atau waktu upacara.",
+        "Bahan tidak menjelaskan secara rinci latar sejarah Perang Dunia II di Morotai, termasuk mengapa prajurit AS berada di sana. Yang bisa dipastikan dari bahan hanyalah bahwa prajurit itu dinyatakan hilang lebih dari 80 tahun lalu dan kerangkanya baru ditemukan kemudian. Pembaca yang ingin memahami konteks sejarahnya perlu merujuk sumber lain di luar bahan ini. Bahan juga tidak menyebut apakah ada warga lokal Morotai yang terlibat dalam penemuan atau proses pemulihan kerangka tersebut.",
+        "Proses repatriasi dalam bahan digambarkan sebagai rangkaian kerja sama, bukan kegiatan tunggal. Unsur yang disebut meliputi penelitian, pemulihan, identifikasi, dan repatriasi. Upacara di Halim berada di ujung rangkaian itu, ketika kerangka secara resmi diserahkan dan diusung ke pesawat. Bahan tidak memerinci berapa lama tiap tahap berlangsung atau siapa yang membiayai proses tersebut. Karena itu, gambaran tentang durasi dan pembagian kerja antarlembaga masih sangat terbatas.",
+        "Bahan menyebut Memorandum Saling Pengertian diperbarui pada 13 April 2026, tetapi tidak menyebut kapan perjanjian pertama ditandatangani atau apa yang berubah dari versi sebelumnya. Kata diperbarui menunjukkan sudah ada kerangka kerja lebih dahulu, namun isi perubahannya tidak diuraikan. Pembaca tidak bisa menyimpulkan bahwa kerja sama baru dimulai pada 2026. Bahan hanya memastikan bahwa versi yang berlaku saat upacara adalah hasil pembaruan April 2026, dan bahwa cakupannya mencakup penelitian hingga repatriasi.",
+        "Bagi pembaca, peristiwa ini menunjukkan bahwa urusan kematian prajurit dapat bertahan jauh melampaui masa perang. Pemerintah Indonesia memposisikan diri sebagai pihak yang membantu proses pemulangan, sementara AS menjadi pihak yang menerima kembali kerangka warganya. Bahan tidak memuat pernyataan keluarga prajurit atau tanggapan resmi pemerintah AS di luar konteks kerja sama bilateral. Bahan juga tidak menyebut apakah keluarga korban mengikuti upacara secara langsung atau hanya mengikuti dari jauh.",
+        "Langkah berikutnya yang disebut bahan adalah pengusungan peti menuju pesawat setelah upacara. Setelah itu, bahan tidak menjelaskan kapan kerangka tiba di AS atau upacara lanjutan apa yang akan digelar di sana. Bahan juga tidak menyebut apakah akan ada upacara serupa untuk korban lain yang masih belum ditemukan. Informasi lanjutan masih menunggu publikasi resmi. Pembaca perlu menandai bahwa upacara pada 13 November bukan titik akhir dari seluruh proses pencarian yang disebut pejabat Kemhan.",
+        "Dengan demikian, yang bisa dipastikan adalah gelaran upacara, lokasi, waktu, pejabat yang hadir, asal kerangka di Morotai, dan payung kerja sama April 2026. Yang belum bisa dipastikan adalah jumlah, identitas, dan nasib korban lain yang disebut masih sekitar 2.500 orang. Menyebut hal yang belum jelas sebagai belum jelas adalah bagian dari memahami berita ini secara utuh. Bahan yang tersedia cukup untuk menjelaskan peristiwanya, tetapi belum cukup untuk menjawab semua pertanyaan tentang siapa dan berapa."
+      ],
+      "explain": [
+        {
+          "q": "Apa tugas menteri pertahanan dalam sebuah kabinet?",
+          "a": "Menteri pertahanan adalah posisi dalam kabinet yang mengatur angkatan bersenjata suatu negara berdaulat. Istilah ini menggantikan sebutan menteri peperangan yang lazim pada akhir abad ke-18, seiring pergeseran fokus dari perang ke pertahanan setelah Perang Dunia II.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Menteri_pertahanan"
+          }
+        },
+        {
+          "q": "Negara seperti apa Amerika Serikat itu?",
+          "a": "Amerika Serikat adalah republik konstitusional federal yang terdiri dari lima puluh negara bagian dan satu distrik federal. Negara ini terletak di Amerika Utara dan diapit Samudra Pasifik serta Atlantik.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud upacara repatriasi dalam pemberitaan ini?",
+          "a": "Pemberitaan menyebut acara di Halim sebagai upacara repatriasi kerangka jenazah prajurit AS, yaitu rangkaian serah terima sebelum kerangka dibawa pulang. Bahan tidak memuat definisi resmi istilah tersebut.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8751153/ri-gelar-upacara-repatriasi-kerangka-prajurit-as-era-pd-ii-menhan-hadir"
+          }
+        }
+      ],
+      "action": "Telusuri kembali detail upacara dan kerja sama Indonesia-AS ini, lalu tandai informasi yang masih menunggu konfirmasi resmi.",
+      "image": {
+        "url": "assets/d0565c0b45.webp",
+        "credit": "liputan6.com",
+        "alt": "Indonesia Pulangkan Kerangka Prajurit AS dari Morotai"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8334790/indonesia-pulangkan-jenazah-tentara-as-korban-perang-dunia-ii",
+          "published_at": "2026-11-13T16:21:00+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8751153/ri-gelar-upacara-repatriasi-kerangka-prajurit-as-era-pd-ii-menhan-hadir",
+          "published_at": "2026-11-13T11:30:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/foto/5851483/misi-kemanusiaan-kerangka-prajurit-as-korban-perang-dunia-ii-dipulangkan-ke-keluarga",
+          "published_at": "2026-11-13T14:51:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/indonesia-bantu-as-pulangkan-jenazah-tentara-perang-dunia-ii-idLo",
+          "published_at": "2026-11-13T13:31:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113152533-20-1426886/indonesia-repatriasi-jenazah-tentara-amerika-korban-perang-dunia-ii",
+          "published_at": "2026-11-13T15:30:56+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_menlu_hadiri_ktt_asean_di_mani_7fdf",
+      "angle": "Menlu Arrmanatha Nasir tiba di Manila untuk KTT ASEAN ke-49, 15-17 November 2026.",
+      "kicker": "Nasional",
+      "title": "Menlu Arrmanatha Nasir Tiba di Manila Jelang KTT ASEAN ke-49",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Menlu RI Arrmanatha Nasir tiba di Manila pada 13 November 2026 untuk rangkaian KTT ASEAN ke-49 yang dijadwalkan 15-17 November 2026.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Menteri Luar Negeri RI Arrmanatha Nasir tiba di Manila, Filipina, pada Jumat pagi, 13 November 2026. Kedatangan Menlu yang akrab disapa Tata itu disambut perwakilan Filipina, dan momen tersebut ia unggah sendiri lewat akun Instagram pribadinya. Kedatangan ini menjadi pembuka rangkaian KTT ASEAN ke-49 yang digelar di Filipina. Satu laporan menyebut KTT berlangsung 15-17 November 2026, sementara rangkaian pertemuan tingkat menteri sudah dimulai lebih dulu. Artinya, kehadiran Menlu di Manila bukan untuk satu sesi tunggal, melainkan untuk beberapa hari agenda diplomasi yang berlapis.",
+        "Tema yang diusung adalah navigating our future together. Satu laporan menyebut KTT berlangsung 15-17 November 2026, sedangkan laporan lain menyebut rangkaiannya sudah berjalan sejak Jumat, 13 November, ketika para menteri luar negeri berkumpul. Perbedaan itu tidak harus dibaca sebagai pertentangan: pertemuan tingkat menteri lazim mendahului sesi kepala negara dan pemerintahan. Yang belum dipastikan, apakah seluruh agenda puncak tetap pada 15-17 November atau ada sesi tambahan di luar rentang itu, karena bahan tidak memuat jadwal per sesi secara rinci.",
+        "Agenda pertama yang disebut adalah pertemuan menteri luar negeri se-ASEAN di Conrad Manila. Dua laporan menyebut pertemuan itu digelar besok, yaitu Sabtu, 14 November, dihitung dari laporan yang terbit Jumat. Sebelum itu, pada Jumat malam, ada jamuan makan malam selamat datang untuk para menteri luar negeri ASEAN di Museum Nasional Filipina, dan Menlu Tata dijadwalkan hadir. Dengan urutan ini, hari pertama Menlu di Manila lebih banyak diisi penerimaan, lalu pembahasan substansi di tingkat menteri, sebelum puncak KTT.",
+        "Di sisi substansi, Menlu disebut menghadiri pertemuan bilateral dan trilateral dengan negara anggota ASEAN. Ia juga menyatakan bahwa penguatan kerja sama bilateral di bidang-bidang prioritas menjadi pembahasan utama. Namun bahan tidak menyebutkan negara mana yang menjadi lawan bicara dalam pertemuan bilateral maupun trilateral itu, dan bidang prioritas apa saja yang dimaksud. Pembaca yang ingin tahu apakah ada kesepakatan konkret dari pertemuan tersebut belum bisa mendapat jawabannya dari bahan yang tersedia saat ini.",
+        "Salah satu isu yang akan dibahas adalah aspirasi Timor Leste untuk menjadi Ketua ASEAN pada 2029. Perlu dicatat, bahan menyebut aspirasi itu sebagai hal yang akan dibahas, bukan keputusan yang sudah diambil. Bahan juga menyebut Timor Leste digambarkan sebagai anggota resmi ASEAN melalui ratifikasi Protokol Cebu yang telah disepakati dalam KTT sebelumnya. Tanggal ratifikasi dan status hukum terkini tidak dijelaskan. Jadi, antara keanggotaan penuh dan keinginan memimpin ASEAN pada 2029, masih ada ruang yang belum diterangkan bahan.",
+        "ASEAN juga akan meluncurkan logo baru dengan tambahan satu batang padi. Dirjen Kerja Sama ASEAN Kementerian Luar Negeri, Ina Hagniningtyas, menjelaskan bahwa penambahan itu menggambarkan Timor Leste sebagai anggota resmi ASEAN melalui ratifikasi Protokol Cebu. Penjelasan itu disampaikan dalam jumpa pers di Kemlu, Jakarta Pusat, Rabu, 4 November. Belum jelas kapan peluncuran logo dilakukan dalam rangkaian KTT, apakah pada sesi pembukaan atau di akhir, karena bahan tidak memerinci waktunya.",
+        "KTT dijadwalkan dihadiri kepala negara dan pemerintahan anggota ASEAN, Sekretaris Jenderal ASEAN, serta sejumlah pemimpin negara mitra. Menurut Ina, pemimpin yang sudah mengindikasikan kehadiran antara lain dari Republik Rakyat Tiongkok, Australia, Republik Korea, dan Sekretaris Jenderal Perserikatan Bangsa-Bangsa. Presiden RI Prabowo Subianto juga direncanakan hadir. Kata direncanakan penting di sini: bahan tidak memuat konfirmasi resmi bahwa Presiden benar-benar berangkat ke Manila, sehingga statusnya masih rencana, bukan kepastian.",
+        "Soal jadwal Presiden, satu laporan menyebut Prabowo dijadwalkan menghadiri Tanwir Muhammadiyah di Palu, KTT ASEAN di Manila, dan KTT APEC di Shenzhen pada November 2026. Laporan itu tidak menyebut tanggal untuk masing-masing kegiatan, sehingga tidak bisa dipastikan bagaimana urutan perjalanannya atau apakah ada agenda yang beririsan. Bahan juga tidak menyebut siapa yang akan mendampingi Presiden di Manila. Informasi ini masih perlu ditunggu dari pengumuman resmi istana atau Kementerian Luar Negeri.",
+        "Di lapangan, pengamanan ketat diberlakukan di Conrad Manila. Petugas kepolisian setempat memeriksa kendaraan hingga melakukan pemeriksaan berlapis terhadap orang-orang yang masuk ke area acara. Pemeriksaan serupa dilakukan di Pusat Media Internasional KTT ASEAN ke-49 di World Trade Center Metro Manila, Pasay City, yang dipakai tim media dari berbagai negara. Pengaturan lalu lintas di sekitar lokasi juga diberlakukan, dan sejumlah ruas jalan terpasang bendera negara-negara ASEAN. Detail ini memberi gambaran bahwa acara berlangsung dengan protokol keamanan tingkat tinggi.",
+        "Ada satu titik yang perlu dibaca hati-hati. Laporan yang terbit 14 November menyebut Menlu menghadiri KTT ASEAN ke-49 di Manila, padahal jadwal KTT menurut laporan lain adalah 15-17 November. Kemungkinan, yang dimaksud adalah rangkaian pertemuan di sekitarnya, bukan sesi puncak. Bahan tidak memberi penjelasan tambahan soal itu. Karena itu, pembaca sebaiknya tidak menyimpulkan bahwa sidang kepala negara sudah dimulai pada 14 November. Perbedaan penekanan seperti ini wajar muncul ketika peliputan dilakukan dari lokasi yang berbeda.",
+        "Untuk konteks, ASEAN adalah organisasi geopolitik dan ekonomi kawasan Asia Tenggara yang didirikan di Bangkok, Thailand, pada 8 Agustus 1967 berdasarkan Deklarasi ASEAN. Pendirinya lima negara: Indonesia, Malaysia, Filipina, Singapura, dan Thailand. Tujuannya antara lain meningkatkan pertumbuhan ekonomi dan kemajuan sosial. Dalam kerangka itu, KTT ke-49 bukan pertemuan pertama, melainkan lanjutan dari rangkaian panjang yang mempertemukan negara-negara kawasan beserta mitranya. Bahan tidak memuat daftar lengkap anggota ASEAN saat ini.",
+        "Filipina, tuan rumah kali ini, adalah negara kepulauan berbentuk republik konstitusional dengan sistem presidensial. Negara ini memiliki sekitar 7.641 pulau dengan luas daratan sekitar 300.000 kilometer persegi, terbagi dalam tiga kelompok pulau: Luzon, Visayas, dan Mindanao. Populasinya lebih dari 110 juta penduduk. Manila, tempat rangkaian acara berlangsung, berada di negara itu. Bahan tidak menjelaskan lebih jauh soal peran Filipina sebagai penyelenggara atau prioritasnya di KTT kali ini.",
+        "Yang belum jelas dan menjadi langkah berikutnya: hasil pertemuan menteri luar negeri, keputusan soal aspirasi Timor Leste sebagai Ketua ASEAN 2029, waktu peluncuran logo baru, daftar negara dalam pertemuan bilateral dan trilateral Menlu, serta kepastian kehadiran Presiden Prabowo. Bahan juga belum memuat pernyataan resmi soal hasil KTT, karena rangkaiannya baru dimulai. Pembaca perlu menunggu pengumuman dari Kementerian Luar Negeri atau keterangan resmi ASEAN setelah sesi-sesi berjalan, termasuk soal apakah ada dokumen yang ditandatangani di Manila."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu ASEAN dan kapan organisasi ini berdiri?",
+          "a": "ASEAN adalah organisasi geopolitik dan ekonomi Asia Tenggara yang didirikan di Bangkok, Thailand, pada 8 Agustus 1967 berdasarkan Deklarasi ASEAN oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perhimpunan_Bangsa-Bangsa_Asia_Tenggara"
+          }
+        },
+        {
+          "q": "Seperti apa Filipina, negara yang menjadi tuan rumah KTT kali ini?",
+          "a": "Filipina adalah negara kepulauan berbentuk republik konstitusional dengan sistem presidensial, memiliki sekitar 7.641 pulau dan luas daratan sekitar 300.000 kilometer persegi, terbagi dalam kelompok Luzon, Visayas, dan Mindanao, dengan populasi lebih dari 110 juta penduduk.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Filipina"
+          }
+        },
+        {
+          "q": "Bagaimana kedatangan Menlu di Manila disambut?",
+          "a": "Kedatangan Menlu disambut perwakilan Filipina, dan momen itu diunggah melalui akun Instagram pribadinya.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8751354/tiba-di-manila-menlu-tata-akan-hadiri-ktt-asean-ke-49-filipina"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi Kemlu soal hasil pertemuan menlu ASEAN dan kepastian kehadiran Presiden Prabowo di Manila.",
+      "image": {
+        "url": "assets/9516b9d21f.webp",
+        "credit": "detik.com",
+        "alt": "Menlu Arrmanatha Nasir Tiba di Manila Jelang KTT ASEAN ke-49"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/tiba-di-manila-menlu-arrmanatha-nasir-siap-hadiri-ktt-asean-idLK",
+          "published_at": "2026-11-13T15:03:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8751354/tiba-di-manila-menlu-tata-akan-hadiri-ktt-asean-ke-49-filipina",
+          "published_at": "2026-11-13T13:23:28+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1278831/prabowo-hadiri-tanwir-muhammadiyah-sebelum-ke-ktt-asean",
+          "published_at": "2026-11-14T08:47:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_faa_setop_seluruh_penerbangan_6c19",
+      "angle": "Gangguan telekomunikasi memaksa FAA menghentikan semua penerbangan di AS.",
+      "kicker": "DIY",
+      "title": "FAA Setop Seluruh Penerbangan AS karena Gangguan Komunikasi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "FAA menghentikan sementara seluruh penerbangan di Amerika Serikat pada 13 November 2026 akibat gangguan telekomunikasi, dan hingga berita disusun belum ada jadw",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-14T09:42:49+07:00"
+      },
+      "body": [
+        "Otoritas Penerbangan Federal Amerika Serikat (FAA) menghentikan sementara seluruh penerbangan di wilayah Amerika Serikat pada Jumat, 13 November 2026, seperti diberitakan Harian Jogja. Bagi warga DIY yang sedang menyiapkan perjalanan ke Amerika, untuk sekolah, pekerjaan, atau mengunjungi keluarga, kabar ini perlu dicermati: penghentian berlaku menyeluruh, bukan hanya di satu bandara. FAA menyebut langkah itu diambil karena kondisi luar biasa dan alasan keselamatan. Menteri Transportasi AS Sean Duffy mengatakan gangguan komunikasi berdampak pada seluruh pusat pengendalian lalu lintas udara di sepanjang rute penerbangan. Menteri Keamanan Dalam Negeri AS Markwayne Mullin menyatakan penghentian dipicu gangguan telekomunikasi di lingkungan FAA, namun memastikan insiden itu tidak berkaitan dengan ancaman keamanan negara maupun gangguan Microsoft pekan ini. Sumber penegak hukum yang dikutip CNN menyebut laporan awal menunjukkan gangguan tersebut bukan serangan siber.",
+        "Seberapa lama penghentian berlaku masih belum jelas. FAA memberlakukannya hingga batas waktu yang belum ditentukan, dan sampai berita ini disusun belum ada perkiraan kapan penerbangan kembali normal. Dampaknya sudah terasa di lapangan. Layanan pelacakan penerbangan Flightradar24 mencatat tidak ada pesawat yang lepas landas dari Bandara Internasional Chicago O'Hare selama lebih dari dua jam. Bandara Internasional John F. Kennedy di New York dan Bandara Nasional Ronald Reagan Washington juga tidak mencatat keberangkatan sejak pukul 15.35 waktu setempat. Tirto memberitakan setidaknya 600 penerbangan dialihkan ke bandara lain. Jumlah penumpang yang terdampak belum disebutkan, dan bahan yang tersedia juga belum memuat keterangan apakah penerbangan dari dan ke Indonesia ikut terganggu."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu FAA dan mengapa perintahnya berlaku nasional?",
+          "a": "FAA adalah otoritas penerbangan Amerika Serikat; dalam bahan, lembaga inilah yang memerintahkan penghentian seluruh penerbangan di negara itu.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://news.harianjogja.com/r-1278823/faa-hentikan-seluruh-penerbangan-as-ini-penyebabnya"
+          }
+        },
+        {
+          "q": "Seberapa luas cakupan wilayah yang terkena penghentian ini?",
+          "a": "Amerika Serikat adalah negara republik konstitusional federal dengan lima puluh negara bagian dan satu distrik federal, sehingga penghentian berskala nasional menjangkau banyak bandara besar sekaligus.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Apa arti gangguan komunikasi bagi pengendalian lalu lintas udara?",
+          "a": "Bahan hanya menyebut gangguan telekomunikasi memengaruhi sistem pengendalian lalu lintas udara; rincian teknis penyebabnya belum dijelaskan.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://news.harianjogja.com/r-1278823/faa-hentikan-seluruh-penerbangan-as-ini-penyebabnya"
+          }
+        }
+      ],
+      "action": "Cek ulang status penerbangan dan hubungi maskapai sebelum berangkat bila punya rencana ke AS.",
+      "image": {
+        "url": "assets/598c95b40e.webp",
+        "credit": "harianjogja.com",
+        "alt": "FAA Setop Seluruh Penerbangan AS karena Gangguan Komunikasi"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/as-hentikan-seluruh-penerbangan-karena-gangguan-komunikasi-idM1",
+          "published_at": "2026-11-14T08:25:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1278823/faa-hentikan-seluruh-penerbangan-as-ini-penyebabnya",
+          "published_at": "2026-11-14T07:27:20+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_manuver_parpol_isi_kursi_wapre_8b52",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Manuver parpol isi kursi wapres kosong",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 995 komentar di detik.com untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “PDIP partai pejuang.... bukan partai anak kemarin sore .... tidak seperti PSI yang sudah r” “Intinya, jejak wapres dan wali kota di CV-nya cacat karena dianggap ilegal. Ilegal itu cur” “Yg bagus KDM dan Amran Sulaeman”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8751011/pimpinan-mpr-targetkan-pemilihan-wapres-pengganti-gibran-tuntas-4-desember",
+          "published_at": "2026-11-13T10:18:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261113103508-32-1426732/prabowo-bakal-kumpulkan-parpol-koalisi-tentukan-pengganti-gibran",
+          "published_at": "2026-11-13T10:39:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 995
+      },
+      "tone": "Terbelah",
+      "quotes": [
+        {
+          "author": "Sworoz",
+          "platform": "detik.com",
+          "text": "PDIP partai pejuang.... bukan partai anak kemarin sore .... tidak seperti PSI yang sudah runtuh dan hancur lebur sebelum berjuang",
+          "score": 7
+        },
+        {
+          "author": "Princes Kuniku",
+          "platform": "detik.com",
+          "text": "Intinya, jejak wapres dan wali kota di CV-nya cacat karena dianggap ilegal. Ilegal itu curang, meski belum jadi kasus kriminal karena belum diselidiki. Ia cuma selamat karena prose",
+          "score": 2
+        },
+        {
+          "author": "Musdalifa Assagaf",
+          "platform": "detik.com",
+          "text": "Yg bagus KDM dan Amran Sulaeman",
+          "score": 0
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di detik.com (995); tidak ada sinyal pembanding."
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_14",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah Diperiksa: Karhutla, Yenny Wahid, Eiffel",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 14 November 2026, tiga klaim yang beredar diperiksa dan seluruhnya berlabel salah. Klaim pertama menyebut Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla; tidak ada informasi valid yang menyebutkannya. Klaim kedua menyebut Yenny Wahid mengakui bergabung dengan PSI. Klaim ketiga berupa video Menara Eiffel terbakar saat demonstrasi di Paris.",
+        "Dua dari tiga klaim memperlihatkan cara yang sama: bahan lama atau bahan buatan disajikan sebagai peristiwa baru. Video Yenny Wahid ternyata wawancara dalam program Rosi Kompas TV yang tayang pada Jumat, 21 Agustus 2023, sehingga rekaman lama itu diberi konteks baru. Video Menara Eiffel, menurut pemeriksaan, berprobabilitas 97 hingga 99,2 persen merupakan hasil buatan AI. Untuk klaim karhutla, tidak ada dukungan informasi valid sama sekali.",
+        "Sebaiknya pembaca memeriksa tanggal dan sumber asli sebelum meneruskan unggahan, terutama video yang menyertakan tokoh publik atau peristiwa besar. Menelusuri versi awal rekaman dan membaca hasil pemeriksaan fakta membantu memastikan apakah suatu peristiwa benar terjadi hari ini atau hanya potongan lama yang diputar ulang."
+      ],
+      "action": "Periksa tanggal dan sumber asli unggahan sebelum meneruskannya ke orang lain.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-14T09:42:49+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-14",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Prabowo Bakal Mengirim Perokok untuk Menghisap Asap Karhutla",
+          "verdict": "salah",
+          "reason": "Tidak ada informasi valid yang menyebutkan Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37452-salah-prabowo-bakal-mengirim-perokok-untuk-menghisap-asap-karhutla"
+        },
+        {
+          "claim": "Yenny Wahid Akui Bergabung PSI",
+          "verdict": "salah",
+          "reason": "Video yang beredar merupakan wawancara Yenny Wahid dalam program Rosi Kompas TV yang tayang pada Jumat (21/8/2023).",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37453-salah-yenny-wahid-akui-bergabung-psi"
+        },
+        {
+          "claim": "Video Menara Eiffel Terbakar Saat Demonstrasi di Paris",
+          "verdict": "salah",
+          "reason": "Sebesar 97 hingga 99,2 persen video tersebut memiliki probabilitas merupakan hasil buatan AI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37454-salah-video-menara-eiffel-terbakar-saat-demonstrasi-di-paris"
+        }
+      ],
+      "pattern": "Rekaman lama diberi konteks baru dan video buatan AI disajikan seolah peristiwa terkini."
+    }
+  ]
+}
