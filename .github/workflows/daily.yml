@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: edisi-harian
+  group: edisi-pipeline
   cancel-in-progress: false
 
 jobs:

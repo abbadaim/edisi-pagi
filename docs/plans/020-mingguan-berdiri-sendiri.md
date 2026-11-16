@@ -45,11 +45,15 @@ tidak ada dua penulis untuk berkas yang sama. Yang tidak berubah: bentuk
    168 jam → `npm run weekly -- --thin` → publish → health → alert → commit →
    deploy.
 2. `.github/workflows/daily.yml` — hapus langkah “Bangun edisi mingguan”.
+   Kedua workflow memakai `concurrency: group: edisi-pipeline` supaya tidak
+   menulis state/cache dan `public/` bersamaan.
 3. `src/core/health.ts` — aturan khusus scope `mingguan`: ambang 3 thread
    (bukan 4) dan adjudikasi `fallback` tidak dihitung sebagai degradasi, karena
    `scripts/weekly.ts` memang selalu memakai adjudikasi deterministik.
 4. `scripts/health.ts` — tambah `--min-cards`.
-5. `AGENTS.md` — catat workflow baru dan bahwa rekap tidak lagi di `daily.yml`.
+5. `src/core/overwrite-guard.ts` + `scripts/weekly.ts` — rekap yang sudah
+   terbit tidak ditimpa tanpa `--force`.
+6. `AGENTS.md` — catat workflow baru dan bahwa rekap tidak lagi di `daily.yml`.
 
 ## 4. Kontrak
 
@@ -75,6 +79,9 @@ Aturan:
   `mingguan · N artikel · M thread — tidak terbit (minimum 3)`, dan berkas
   lama untuk tanggal itu dihapus bila ada.
 - `daily.yml` tidak lagi memuat kata `weekly`.
+- Menjalankan ulang tanggal yang sudah punya `<tanggal>.mingguan.json` hanya
+  boleh dengan `--force`; tanpa itu skrip keluar 0 dengan pesan
+  `sudah ada: … — dilewati`.
 
 ## 5. Tes
 
@@ -88,7 +95,7 @@ Aturan:
 
 | Risiko | Mitigasi |
 |---|---|
-| Dua workflow menulis `public/` bersamaan | `concurrency: edisi-mingguan` terpisah; publish hanya menyalin |
+| Dua workflow menulis state/`public/` bersamaan | `concurrency: edisi-pipeline` dibagi; yang kedua menunggu |
 | Cache state ditimpa | kunci `edisi-state-<run_id>` dengan restore prefix yang sama seperti harian |
 | Rekap memakai state basi | ingest 168 jam sebelum build |
 | Cron mingguan dibuang GitHub | dispatch manual; `schedule-check` tetap menjaga harian |
@@ -101,6 +108,9 @@ Tidak ada perubahan skema.
 
 - `2026-11-16` — `tested` — workflow `weekly.yml` dibuat, langkah mingguan
   dihapus dari `daily.yml`, health dapat aturan scope mingguan. 290 uji lulus.
+- `2026-11-16` — `tested` — penjaga tambahan: `concurrency` dibagi
+  (`edisi-pipeline`), cron mingguan digeser ke 03.00 WIB, dan rekap terbit tidak
+  ditimpa tanpa `--force` (uji nyata: `2026-11-10.mingguan.json` dilewati).
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

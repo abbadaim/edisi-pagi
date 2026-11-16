@@ -1,15 +1,16 @@
 name: mingguan
 
 # Rekap mingguan berdiri sendiri: tidak membangun edisi harian.
-# Dijalankan Minggu 05.00 WIB (Sabtu 22.00 UTC) dan bisa dipicu manual untuk
+# Dijalankan Minggu 03.00 WIB (Sabtu 20.00 UTC) dan bisa dipicu manual untuk
 # tanggal yang belum punya <tanggal>.mingguan.json.
 on:
   schedule:
-    - cron: "0 22 * * 6"
+    # 20:00 UTC Sabtu = 03:00 WIB Minggu, ~2,5 jam sebelum edisi harian.
+    - cron: "0 20 * * 6"
   workflow_dispatch:
 
 concurrency:
-  group: edisi-mingguan
+  group: edisi-pipeline
   cancel-in-progress: false
 
 jobs:

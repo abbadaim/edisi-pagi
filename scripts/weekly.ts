@@ -24,6 +24,7 @@ import { computeTruth } from "../src/core/truth.ts";
 import { validateEdition, formatErrors, allowsThin } from "../src/core/validate.ts";
 import { isoWib, wibDate } from "../src/core/time.ts";
 import { truncateWords } from "../src/core/normalize.ts";
+import { canWriteEdition, guardMessage } from "../src/core/overwrite-guard.ts";
 import type { Card, Edition } from "../src/core/types.ts";
 
 const root = new URL("..", import.meta.url).pathname;
@@ -52,6 +53,13 @@ if (!existsSync(dbPath)) {
 
 const outDir = join(root, "data", "editions");
 mkdirSync(outDir, { recursive: true });
+
+// Rencana 020: rekap yang sudah terbit tidak ditimpa tanpa --force.
+const weeklyFile = join(outDir, `${editionId}.mingguan.json`);
+if (!canWriteEdition({ exists: existsSync(weeklyFile), force: process.argv.includes("--force") })) {
+  console.log(`mingguan · ${guardMessage(weeklyFile)}`);
+  process.exit(0);
+}
 
 const db = openSqlite(dbPath);
 try {
@@ -225,7 +233,7 @@ try {
     },
   });
 
-  const file = join(outDir, `${editionId}.mingguan.json`);
+  const file = weeklyFile;
   const check = validateEdition(edition);
   console.log(
     `mingguan · ${rows.length} artikel · ${cards.length} thread · ${newsroomCards} newsroom / ${legacyCards} legacy`,

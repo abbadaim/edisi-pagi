@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { localEditionEnabled } from "../src/core/edition-scope.ts";
 import { SCOPE_BUDGET, budgetFollowUps } from "../src/core/newsroom/selection.ts";
 import { selectLatest } from "../src/core/manifest.ts";
+import { canWriteEdition } from "../src/core/overwrite-guard.ts";
 
 test("edisi lokal mati secara default (rencana 019)", () => {
   assert.equal(localEditionEnabled({}), false);
@@ -37,4 +38,10 @@ test("nol berita baru tetap berarti nol tindak lanjut walau kuota naik", () => {
   const follows = [1, 2, 3].map((n) => ({ topicId: `f${n}`, followUp: true }));
   const out = budgetFollowUps(follows, [], SCOPE_BUDGET.nasional);
   assert.equal(out.filter((x) => x.followUp).length, 0);
+});
+
+test("rekap mingguan yang sudah terbit tidak ditimpa tanpa --force", () => {
+  assert.equal(canWriteEdition({ exists: false }), true);
+  assert.equal(canWriteEdition({ exists: true }), false);
+  assert.equal(canWriteEdition({ exists: true, force: true }), true);
 });
