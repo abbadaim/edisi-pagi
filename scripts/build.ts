@@ -43,7 +43,7 @@ import {
   type SocialEntry,
 } from "../src/core/newsroom/meta-social.ts";
 import { SCOPE_BUDGET, budgetFollowUps } from "../src/core/newsroom/selection.ts";
-import { buildHistory } from "../src/core/history.ts";
+import { buildHistory, linkHistory } from "../src/core/history.ts";
 import { withStatusChanges, type PreviousCard } from "../src/core/newsroom/continuity.ts";
 import { localEditionEnabled } from "../src/core/edition-scope.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
@@ -879,7 +879,7 @@ try {
       card.topic_id,
       editionId,
     ]);
-    const history = buildHistory(rows);
+    const history = linkHistory(buildHistory(rows), card.title);
     return history.length > 1 ? { ...card, history } : card;
   });
   const followUps = withHistory.filter((c) => (c.history?.length ?? 0) > 1).length;

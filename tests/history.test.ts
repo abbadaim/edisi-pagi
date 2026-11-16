@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildHistory, previousTitle } from "../src/core/history.ts";
+import { buildHistory, linkHistory, previousTitle } from "../src/core/history.ts";
 import { withStatusChanges, updateCount } from "../src/core/newsroom/continuity.ts";
 import type { Card } from "../src/core/types.ts";
 
@@ -90,4 +90,24 @@ test("status sama atau tanpa sumber tidak menghasilkan perubahan", () => {
 
 test("jumlah pembaruan dihitung dari edisi unik", () => {
   assert.equal(updateCount([{ date: "2026-11-15" }, { date: "2026-11-15" }, { date: "2026-11-16" }]), 2);
+});
+
+test("riwayat yang judulnya tidak nyambung tidak dipertahankan", () => {
+  // Kasus nyata 2026-11-16: topik ASEAN menyatukan dua cerita berbeda.
+  const rows = [
+    { edition_id: "2026-11-15", title: "Wamen Investasi Akui Vietnam Lawan Tangguh RI di ASEAN" },
+    { edition_id: "2026-11-16", title: "Indonesia Teken MoU ASEAN Power Grid di KTT Manila, Apa Isinya?" },
+  ];
+  const linked = linkHistory(buildHistory(rows), rows[1]!.title);
+  assert.equal(linked.length, 1, "entri lama tidak boleh tampil sebagai lanjutan cerita lain");
+});
+
+test("cerita yang benar-benar berlanjut tetap tersambung", () => {
+  const rows = [
+    { edition_id: "2026-11-14", title: "DPR Bahas Polemik Ijazah Gibran" },
+    { edition_id: "2026-11-16", title: "50 anggota DPR teken HMP soal ijazah Gibran" },
+  ];
+  const linked = linkHistory(buildHistory(rows), rows[1]!.title);
+  assert.equal(linked.length, 2);
+  assert.equal(linked[0]!.date, "2026-11-14");
 });
