@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-16",
+  "scope": "nasional",
+  "published_at": "2026-11-16T09:25:08+07:00",
+  "coverage": {
+    "from": "2026-11-15T09:25:08+07:00",
+    "to": "2026-11-16T09:25:08+07:00"
+  },
+  "generated_at": "2026-11-16T09:25:08+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 1,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "fallback",
+      "model": "none"
+    },
+    "write": {
+      "provider": "deterministic",
+      "model": "glossary"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 1,
+  "truncated_reason": "Hanya 1 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_16",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Yang beredar, dan yang sudah dibantah",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "3 klaim diperiksa hari ini. Semuanya dari TurnBackHoax.",
+        "Rincian klaim, putusan, dan alasannya ada di daftar di bawah."
+      ],
+      "action": "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-16T09:25:08+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Prabowo Bakal Mengirim Perokok untuk Menghisap Asap Karhutla",
+          "verdict": "salah",
+          "reason": "Beredar video [ arsip ] dari akun TikTok “@suhechannel81” pada Sabtu (17/10/2026) yang menampilkan Presiden Prabowo sedang berpidato dengan klaim perokok akan ke tempat kebakaran untuk menghisap asap kebakaran hutan dan lahan (karhutla). Berikut narasi lengkapnya: Saudara-saudara sekalian, asap",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37452-salah-prabowo-bakal-mengirim-perokok-untuk-menghisap-asap-karhutla"
+        },
+        {
+          "claim": "Yenny Wahid Akui Bergabung PSI",
+          "verdict": "salah",
+          "reason": "Akun Facebook “Jiban Jin Bendel” pada Jumat (23/10/2026) membagikan video [ arsip ] disertai narasi: “Putri Almarhum Gusdur Yeni Wahid Gabung PSI “ Hingga Jumat (6/11/2026) unggahan tersebut telah menuai 2.000-an tanda suka,menuai hampir 300 komentar dan dibagikan ulang sebanyak 65 kali.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37453-salah-yenny-wahid-akui-bergabung-psi"
+        },
+        {
+          "claim": "Video Menara Eiffel Terbakar Saat Demonstrasi di Paris",
+          "verdict": "salah",
+          "reason": "Akun Facebook “suhaimiarza” pada Kamis (22/10/2026) membagikan video [ arsip ] yang menampilkan menara Eiffel terbakar, pada kolom takarir pengunggah menambahkan narasi: “Prancis masih membara #Prancis #dunia #Marcon #viral #fyp “ Hingga Jumat (6/11/2026) unggahan tersebut telah menuai 1.500-an",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37454-salah-video-menara-eiffel-terbakar-saat-demonstrasi-di-paris"
+        }
+      ],
+      "pattern": null
+    }
+  ]
+}
