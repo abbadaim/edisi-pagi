@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-16",
+  "scope": "mingguan",
+  "published_at": "2026-11-16T05:00:00+07:00",
+  "coverage": {
+    "from": "2026-11-09T05:00:00+07:00",
+    "to": "2026-11-16T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-16T05:00:00+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 36,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "fallback",
+      "model": "none"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 5,
+  "truncated_reason": "Korpus terbatas: 5 thread dengan >=2 media",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_momen_prabowo_jabat_tangan_gib_acb8",
+      "angle": "Rekap 5 hari",
+      "kicker": "Rekap pekan",
+      "title": "Pertemuan Gibran dan Prabowo, Lalu Tahapan Pergantian Wapres",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Prabowo mengonfirmasi pengunduran diri Gibran pada 12 November, dan penggantinya dipilih MPR dari dua nama yang diusulkan presiden.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T05:00:00+07:00"
+      },
+      "body": [
+        "Selama sepekan terakhir, rangkaian peristiwa di sekitar Gibran Rakabuming Raka bergerak cepat, dari sebuah pertemuan di Istana sampai penyerahan surat pengunduran diri sebagai wakil presiden. Laporan media tidak seragam soal durasi pertemuan itu: satu pemberitaan menyebut dua jam, pemberitaan lain menyebut kurang lebih 2,5 jam, sehingga angka pastinya belum dapat dipastikan. Yang disebut berulang dalam beberapa laporan adalah isi pembicaraannya, yakni Gibran menyampaikan niat mengundurkan diri kepada Presiden Prabowo Subianto, dan pada 12 November presiden mengonfirmasi pengunduran diri tersebut.",
+        "Pertemuan itu berlangsung pada Selasa, 10 November. Menurut keterangan Menteri Sekretaris Negara Prasetyo Hadi dalam konferensi pers di Istana, di antara pembicaraan yang berlangsung Gibran menyatakan niatan untuk mengundurkan diri. Alasan yang dikutip adalah menghadapi dinamika yang berkembang terkait putusan Mahkamah Konstitusi dan Mahkamah Agung. Bahan yang tersedia tidak merinci putusan mana yang dimaksud, apa isinya, dan bagaimana kaitannya dengan keputusan Gibran, sehingga bagian ini masih menunggu penjelasan resmi. Bahan juga tidak memuat dokumen atau pernyataan tertulis yang menyertai keterangan tersebut.",
+        "Bila disusun menurut tanggal, urutannya begini: 10 November pertemuan dan penyampaian niat mundur, 10 November malam keterangan bahwa belum semua pihak mendapat konfirmasi, 11 November penjelasan mekanisme penggantian, lalu 12 November konfirmasi presiden, penyerahan surat, dan rapat konsultasi dengan MPR serta DPR. Perubahan paling mencolok ada pada status informasinya, dari niat yang diberitakan menjadi pengunduran diri yang dikonfirmasi presiden sendiri. Bahan tidak menjelaskan apa yang terjadi di antara tanggal-tanggal itu, termasuk apakah ada pembicaraan lain sebelum surat diserahkan.",
+        "Pada malam yang sama, informasi belum menyebar merata. Yusril, dikutip dari tirto.id, mengaku belum mendapatkan konfirmasi perihal pertemuan antara Presiden Prabowo Subianto dan Gibran. Keterangan itu menunjukkan bahwa pada 10 November belum semua pejabat memegang keterangan resmi tentang apa yang dibicarakan di Istana. Bahan yang ada tidak menjelaskan apakah konfirmasi itu kemudian diberikan, dan tidak memuat penjelasan dari pihak Istana soal mengapa informasi tersebut belum sampai ke semua pejabat.",
+        "Perubahan berikutnya terjadi pada 12 November. Presiden Prabowo Subianto menggelar rapat dengan MPR dan DPR untuk membahas pengunduran diri Gibran sebagai wakil presiden. Sejumlah menteri dan pimpinan DPR-MPR dipanggil ke Istana menyusul pengunduran diri tersebut, dan Yusril menyebut pertemuan itu sebagai rapat konsultasi. Rapat itu digelar pada hari yang sama dengan konfirmasi presiden, menurut pemberitaan 12 November. Bahan yang tersedia belum memuat hasil, kesimpulan, atau daftar peserta lengkap rapat tersebut, sehingga yang bisa dipastikan baru bahwa konsultasi itu berlangsung.",
+        "Pada hari yang sama, Prabowo mengonfirmasi bahwa Gibran mengundurkan diri sebagai wakil presiden, dan Gibran menyerahkan surat pengunduran diri langsung. Prabowo juga menyatakan merasa banyak dibantu oleh Gibran selama ini. Bahan tidak memuat isi surat, waktu mulai berlakunya pengunduran diri, maupun keterangan resmi mengenai apakah surat itu sudah dicatat secara administratif oleh pihak yang berwenang. Dengan begitu, status formal pengunduran diri masih lebih longgar daripada pemberitaannya.",
+        "Mahfud MD, dalam podcast Terus Terang yang dikutip Rabu (11/11), menjelaskan dasar penggantian wakil presiden dengan merujuk Pasal 8 Ayat (2) UUD 1945. Menurutnya, jika presiden yang berhenti, wakil presiden yang naik; tetapi jika wakil presiden yang berhenti, presiden memilih dua orang yang kemudian dipilih salah satu oleh MPR. Ia menegaskan kewenangan menentukan dua nama itu sepenuhnya ada di tangan presiden, dan meminta semua pihak tidak mencampuri atau mendesakkan nama tertentu sebagai pengganti Gibran.",
+        "Mahfud menambahkan bahwa presiden tetap dapat mendengarkan masukan dari berbagai pihak, termasuk pimpinan partai koalisi dan organisasi masyarakat. Namun ia menyebut keputusan akhir tetap menjadi kewenangan Prabowo, dan secara etis prosedur yang biasa dijalankan adalah memanggil pimpinan partai lebih dulu agar pembicaraan berjalan mulus. Ia juga menilai pembicaraan mengenai sosok pengganti sebaiknya tidak dilakukan terlalu dini, dan meminta semua pihak menunggu proses pengunduran diri selesai lebih dulu. Menurutnya, mekanisme penggantian sudah tersedia dan presiden yang akan memilih dua nama.",
+        "Sejauh bahan yang ada, belum ada nama yang diajukan presiden kepada pimpinan MPR. Pimpinan partai koalisi disebut sebagai pihak yang biasa dimintai masukan sebelum presiden menentukan dua calon, dan organisasi masyarakat juga dapat didengar. Namun bahan tidak menyebut partai mana yang sudah bertemu Prabowo, apa usulan mereka, dan apakah usulan itu diterima. Sampai bahan ini disusun, belum ada keterangan resmi mengenai siapa saja yang sudah dimintai pendapat oleh presiden. Dengan demikian, klaim bahwa suatu partai telah mengusulkan nama tertentu belum bisa diverifikasi dari bahan ini.",
+        "Tahapan formalnya dirangkum dalam pemberitaan: setelah Gibran mundur, kursi wakil presiden kosong, dan selambat-lambatnya dalam 60 hari MPR menyelenggarakan sidang paripurna untuk memilih wakil presiden baru. Presiden mengusulkan dua calon wakil presiden beserta kelengkapan persyaratan kepada pimpinan MPR paling lambat 14 hari sebelum sidang paripurna digelar. Dua calon itu wajib menyampaikan pernyataan kesiapan pencalonan dalam sidang paripurna sebelum pemilihan dilakukan. Dengan urutan itu, pemilihan tidak berlangsung sebelum kedua calon menyatakan kesiapannya di depan sidang.",
+        "Aturan yang sama mengatur hal-hal teknis setelah pemilihan. Calon yang memperoleh suara terbanyak ditetapkan sebagai wakil presiden, dan bila suara sama banyak pemilihan diulang satu kali. Jika hasil pemilihan ulang tetap sama, presiden memilih salah satu di antara kedua calon, lalu MPR melantik wakil presiden terpilih. Rujukan yang dipakai adalah Pasal 8 ayat 2 UUD 1945 serta Pasal 46 dan Pasal 47 Undang-Undang MD3, seperti dikutip pemberitaan pada 12 November.",
+        "Pemberitaan juga membedakan dua jalur, yakni berhenti sendiri dan diberhentikan melalui pemakzulan. Tahapan yang dirinci di atas berlaku untuk jalur mundur, sementara jalur pemakzulan disebut memiliki tahapan berbeda tanpa diperinci dalam bahan. Mahfud menyebut perlunya menunggu proses pengunduran diri atau pemakzulan selesai lebih dulu sebelum membicarakan pengganti. Bahan tidak menjelaskan mengapa kedua istilah itu muncul bersamaan, sehingga pembaca perlu berhati-hati menyimpulkan status akhir Gibran. Dengan begitu, kedua jalur tidak bisa disamakan tanpa keterangan resmi.",
+        "Yang berubah selama sepekan bukan hanya status Gibran, tetapi juga letak pembicaraannya: dari pertemuan di Istana ke prosedur yang diatur konstitusi dan undang-undang. Perpindahan itu menyangkut kekosongan jabatan wakil presiden, bukan sekadar pergantian pejabat. Konsekuensinya, ada tenggat yang tertulis dalam aturan, mulai dari 60 hari untuk sidang paripurna sampai 14 hari sebelum sidang bagi presiden untuk mengajukan dua nama. Bahan tidak menyebut kapan penghitungan hari dimulai, sehingga belum jelas kapan tenggat itu berakhir.",
+        "Dampak paling langsung terlihat pada posisi wakil presiden yang kosong sampai pengganti dilantik. MPR dan DPR masuk ke dalam proses lewat sidang paripurna dan konsultasi di Istana, sementara sejumlah menteri dan pimpinan partai terlibat dalam pembahasan awal. Bagi warga, keputusan lembaga-lembaga itu mengikat, meski dampaknya biasanya baru terasa setelah aturan turunan terbit. Bahan yang tersedia tidak memuat rincian program atau kebijakan yang tertunda akibat kekosongan tersebut, dan tidak menyebut apakah ada pelimpahan tugas wakil presiden selama kursi kosong.",
+        "Beberapa hal masih terbuka. Nama dua calon pengganti belum diumumkan, jadwal sidang paripurna MPR belum disebut, dan isi surat pengunduran diri tidak dipublikasikan dalam bahan. Alasan yang dikutip, yakni dinamika terkait putusan MK dan MA, juga belum dijelaskan lebih rinci, sementara durasi pertemuan dilaporkan berbeda antara dua jam dan 2,5 jam. Bahan juga belum memuat hasil rapat konsultasi 12 November maupun tanggapan resmi MPR atas surat tersebut.",
+        "Mahfud meminta agar desakan nama tidak mendahului proses. Menurutnya, semua pihak perlu menunggu proses pengunduran diri atau pemakzulan Gibran selesai lebih dulu; ia menyebut mekanisme penggantinya sudah ada dan presiden yang akan memilih dua nama. Ia juga mengingatkan bahwa presiden dapat berembuk dengan partai, tetapi penentuan akhirnya tetap berada di tangan presiden, sehingga nama-nama yang beredar belum bisa dibaca sebagai keputusan.",
+        "Langkah berikutnya yang perlu dipantau adalah pengumuman dua nama calon oleh presiden. Setelah itu, kelengkapan persyaratan disampaikan kepada pimpinan MPR, sidang paripurna dijadwalkan dalam tenggat 60 hari, dan pemilihan dilakukan oleh MPR. Bila presiden belum mengumumkan dua nama, tenggat 14 hari sebelum sidang menjadi penanda waktu yang perlu diperhatikan. Bila terjadi kesamaan suara, aturannya menyediakan satu putaran ulang sebelum presiden memilih. Titik akhirnya adalah pelantikan wakil presiden terpilih, yang belum memiliki tanggal dalam bahan yang tersedia.",
+        "Secara keseluruhan, yang sudah jelas dari sepekan ini adalah niat dan surat pengunduran diri Gibran serta garis besar tahapan penggantinya. Yang belum jelas adalah nama calon, jadwal sidang, rincian alasan yang disebut dalam pertemuan 10 November, dan hasil konsultasi di Istana. Sampai semua itu diumumkan secara resmi, pembaca sebaiknya memperlakukan nama-nama yang beredar sebagai usulan yang belum diputuskan, bukan sebagai kepastian."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka sebelum menjabat wakil presiden?",
+          "a": "Ia menjabat wakil presiden sejak 2024; sebelumnya Wali Kota Surakarta dan pengusaha, serta putra Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa latar Prabowo Subianto sebelum menjadi presiden?",
+          "a": "Ia politikus, pengusaha, dan pensiunan perwira militer yang menjabat presiden sejak 2024, setelah sebelumnya menjadi Menteri Pertahanan pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud keputusan yang mengikat warga?",
+          "a": "Keputusan pemerintah atau DPR yang berlaku bagi warga, mulai dari undang-undang sampai peraturan menteri; dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8332325/di-balik-pertemuan-25-jam-gibran-dengan-prabowo",
+          "published_at": "2026-11-10T15:52:38+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/yusril-siap-bantu-mekanisme-pengunduran-diri-wapres-gibran-idD2",
+          "published_at": "2026-11-10T20:31:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111130241-32-1425838/mahfud-prabowo-bisa-pilih-2-calon-pengganti-wapres-jika-gibran-mundur",
+          "published_at": "2026-11-11T13:19:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8748996/dari-surat-pengunduran-diri-hingga-pelantikan-ini-tahapan-pergantian-wapres",
+          "published_at": "2026-11-12T07:58:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261112141428-4-784666/prabowo-rapat-bareng-mpr-dpr-di-istana-bahas-wapres-gibran-mundur",
+          "published_at": "2026-11-12T14:21:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Pengunduran diri Gibran membuka tahapan konstitusional yang panjang, dan nama penggantinya belum diputuskan.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        },
+        {
+          "value": "5 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "deep_dive",
+      "topic_id": "t_klasemen_kualifikasi_afc_u17_j_b459",
+      "angle": "Rekap 6 hari",
+      "kicker": "Rekap pekan",
+      "title": "Uji Coba Timnas U20 di Turki Disebut Tanpa Tanggal dan Kota",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bahan hanya menyebut uji coba melawan Yordania dan Amerika Serikat di Turki pada November 2026 sebagai persiapan Piala Asia U20 2027, tanpa tanggal, kota, atau ",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T05:00:00+07:00"
+      },
+      "body": [
+        "Kabar yang bisa dipegang dari pemberitaan sepekan ini sebenarnya pendek. Tim nasional U20 Indonesia disebut akan menjalani uji coba melawan Yordania dan Amerika Serikat di Turki pada November 2026, sebagai bagian dari persiapan menuju Piala Asia U20 2027. Keterangan itu berasal dari laporan tirto.id bertanggal 9 November 2026, dan kalimat yang sama juga muncul sebagai bahan latar tanpa tanggal. Di luar empat hal itu, yakni dua calon lawan, lokasi di Turki, bulan pelaksanaan, dan ajang yang dituju, bahan tidak memuat rincian lain. Tidak ada tanggal pertandingan, nama kota, stadion, jam kick-off, jumlah laga untuk masing-masing lawan, nama pelatih, daftar pemain, maupun keterangan apakah agenda ini sudah diumumkan secara resmi oleh pihak yang berwenang.",
+        "Pertanyaan pertama pekan ini karena itu jawabannya sederhana: hampir tidak ada yang berubah. Agenda uji coba sudah disebut sejak 9 November, dan sampai pemberitaan 15-16 November yang terhimpun dalam pantauan ini, tidak ada laporan lanjutan soal tim U20. Butir-butir olahraga yang muncul belakangan justru membahas klub, bukan tim nasional: penampilan Western Australia yang kalah 3-4 dari Persebaya, dan penilaian pelatih Persebaya, Bernardo Tavares, yang lebih memilih mengevaluasi pemain ketimbang hasil laga uji coba. Artinya, kabar Timnas U20 berhenti pada satu kalimat agenda dan belum berkembang menjadi jadwal yang bisa dipakai pembaca untuk menyiapkan diri, memesan tiket, atau mengatur waktu menonton.",
+        "Perlu dicatat juga bahwa brief ini tidak melanjutkan pembahasan sebelumnya, karena belum ada catatan edisi terdahulu soal uji coba ini. Pekan ini praktis menjadi titik nol: yang muncul adalah pengumuman awal berupa agenda, bukan perkembangan dari rencana yang sudah dibahas panjang. Bagi pembaca, itu berarti tidak ada riwayat yang perlu dibandingkan, tidak ada janji lama yang bisa diukur, dan tidak ada hasil pertandingan sebelumnya yang bisa dipakai sebagai pembanding. Semua penilaian di brief ini bertumpu pada satu laporan, dan itu sekaligus menjelaskan mengapa bagian yang belum jelas terasa jauh lebih besar daripada bagian yang sudah jelas.",
+        "Perubahan kecil itu tetap penting karena menyangkut cara membaca sebuah rencana. Uji coba melawan dua negara berbeda bukan pertandingan biasa bagi tim usia muda, dan laporan menyebutnya sebagai jalan menuju Piala Asia U20 2027. Namun bahan tidak menjelaskan alasan pemilihan Yordania dan Amerika Serikat, tidak menyebut apakah tiap lawan dihadapi satu kali atau lebih, dan tidak memberi tahu apakah pertandingan sudah dimainkan, sedang berlangsung, atau baru akan digelar. Tanpa rincian itu, pembaca hanya bisa memegang kerangka besarnya: dua lawan, tempat di Turki, bulan pelaksanaan, dan satu ajang yang dituju. Kerangka itu berguna, tetapi belum cukup untuk disebut jadwal.",
+        "Ajang yang dituju pun hanya disebut namanya. Bahan menyebut Piala Asia U20 2027 sebagai tujuan, tetapi tidak menyebut negara tuan rumah, jumlah peserta, format penyisihan, maupun jalur kualifikasi yang harus dilalui tim U20 Indonesia. Karena itu, pembaca belum bisa menilai seberapa menentukan dua laga di Turki bagi peluang tampil di ajang tersebut. Yang bisa dikatakan hanya bahwa laporan menempatkan uji coba itu dalam rangkaian persiapan, tanpa menjelaskan bagaimana persiapan itu diukur, kapan dimulai, dan siapa yang menyusun programnya.",
+        "Yang paling terdampak adalah para pemain yang masuk lingkup tim U20. Bagi mereka, agenda ini menentukan ritme persiapan, kesempatan menunjukkan kemampuan di level internasional, dan pembagian waktu dengan klub masing-masing. Namun bahan tidak menyebut satu nama pun, tidak menyebut pelatih, dan tidak menyebut pengurus tim. Pembaca yang mencari nama pemain atau pelatih untuk dipantau tidak akan menemukannya di sini, karena memang belum ada dalam pemberitaan yang terkumpul. Dampak bagi suporter juga terbatas pada satu hal: mereka tahu ada rencana uji coba, tetapi belum bisa merencanakan apa pun, termasuk menonton langsung atau menandai tanggal, karena tanggalnya belum tersedia.",
+        "Daftar yang belum jelas justru lebih panjang daripada yang sudah jelas. Bahan tidak menyebut tanggal pasti pertandingan, kota penyelenggaraan di Turki, nama stadion, kapasitas penonton, apakah laga terbuka untuk umum, dan siapa penyiar resminya. Bahan juga tidak menyebut apakah pertandingan berstatus laga resmi dengan ketersediaan pemain penuh, atau sekadar latihan tertutup. Yang paling praktis dicari pembaca, yaitu jam kick-off, sama sekali tidak ada. Semua kekosongan ini bukan kesalahan penyusunan brief, melainkan cerminan isi pemberitaan: satu kalimat agenda tidak mungkin menjawab pertanyaan teknis semacam itu, dan menambal kekosongan dengan tebakan akan merugikan pembaca.",
+        "Pemeriksaan sumber menunjukkan satu hal yang perlu diingat. Keterangan tentang uji coba ini muncul dua kali dalam bahan, sekali sebagai artikel bertanggal dan sekali sebagai bahan latar tanpa tanggal, tetapi keduanya berasal dari media yang sama dan memakai kalimat yang identik. Dua entri itu bukan dua konfirmasi independen. Sebaliknya, tidak ada angka atau tanggal yang saling bertentangan: keduanya menyebut November 2026, keduanya menyebut Turki, keduanya menyebut dua lawan yang sama. Jadi yang perlu dicatat bukan perbedaan versi, melainkan ketiadaan versi kedua dari sumber lain yang bisa dipakai untuk memeriksa, sekaligus ketiadaan rincian yang bisa dipakai untuk menghitung mundur menuju hari pertandingan.",
+        "Langkah berikutnya yang perlu dipantau adalah pengumuman resmi. Yang pertama dicari: jadwal lengkap dengan tanggal dan kota, lalu daftar pemain yang dipanggil, lalu hasil pertandingan bila laga sudah berlangsung. Bila dalam beberapa hari tidak ada laporan lanjutan, pembaca sebaiknya memperlakukan agenda ini sebagai rencana yang belum terkunci, bukan jadwal pasti. Perlu juga diwaspadai kemungkinan perubahan jadwal, karena uji coba di luar negeri lazim disesuaikan dengan kalender pertandingan dan kondisi tim, meski bahan tidak menyebut adanya perubahan semacam itu. Yang bisa dipastikan hanya satu: sampai brief ini disusun, tidak ada tanggal yang bisa dipegang.",
+        "Mengapa kabar ini tipis? Salah satu kemungkinan adalah perhatian pemberitaan pekan itu tersedot ke isu lain. Dalam pantauan yang sama muncul laporan tentang peringatan Kementerian Luar Negeri Iran kepada Amerika Serikat soal eskalasi perang dan Selat Hormuz, laporan tentang rencana pertemuan pemimpin Amerika Serikat, China, dan Rusia di sela KTT APEC di Shenzhen pada 18-19 November, serta pemungutan suara DPR Amerika Serikat soal pemakzulan Menteri Pertahanan Pete Hegseth yang berakhir 211 berbanding 204. Ada pula pernyataan Prabowo soal kebakaran hutan dan lahan di KTT ASEAN. Itu kemungkinan, bukan sebab yang terbukti: bahan tidak menjelaskan mengapa liputan sepak bola U20 berhenti di satu kalimat, dan brief ini tidak akan mengarang penjelasannya.",
+        "Bagi pembaca yang jarang membuka media sosial, ada gunanya membedakan tiga tahap: disebut, direncanakan, dan dipastikan. Laporan 9 November berada di tahap pertama, yaitu agenda disebut tanpa rincian operasional. Tahap kedua akan terlihat bila muncul keterangan yang lebih spesifik soal tanggal dan jumlah laga. Tahap ketiga baru terjadi jika ada pengumuman resmi disertai jadwal dan daftar pemain. Tanpa dua tahap terakhir, menyebarkan jadwal yang beredar di luar brief ini hanya menambah kebisingan, karena pembaca lain akan mengira tanggal yang belum ada sebagai kepastian. Prinsipnya sederhana: sebut apa yang disebut sumber, dan sebut juga apa yang tidak disebut sumber.",
+        "Ada satu akibat praktis dari ketiadaan rincian: kepala pembaca harus menyimpan pertanyaan, bukan kesimpulan. Pertanyaan yang wajar diajukan antara lain apakah uji coba ini bagian dari kalender tetap tim usia muda, siapa yang menanggung biaya perjalanan ke Turki, dan apakah laga diadakan pada jendela pertandingan internasional. Bahan tidak menjawab satu pun dari pertanyaan itu, dan jawabannya tidak bisa disimpulkan dari nama dua lawan. Menuliskan bahwa semuanya belum jelas memang terasa kurang memuaskan dibandingkan menyusun jadwal sendiri, tetapi hanya cara itu yang menjaga brief ini tetap bisa dipercaya ketika keterangan resmi akhirnya terbit.",
+        "Setelah sepekan, Timnas U20 Indonesia masih berdiri di titik yang sama: disebut akan menghadapi Yordania dan Amerika Serikat di Turki pada November 2026 sebagai persiapan Piala Asia U20 2027, tanpa tanggal, kota, stadion, atau daftar pemain. Perubahan yang paling nyata justru pada penilaian: agenda ini belum layak diperlakukan sebagai jadwal, dan belum ada laporan kedua yang menguatkannya. Yang bisa dilakukan pembaca adalah menunggu keterangan resmi, memeriksa apakah laporan lanjutan muncul, dan mengingat bahwa jarak menuju Piala Asia U20 2027 masih panjang. Bila jadwal resmi terbit, brief berikutnya akan punya bahan yang jauh lebih padat daripada satu kalimat seperti sekarang."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud dengan AS dalam rencana uji coba ini?",
+          "a": "AS adalah Amerika Serikat, negara republik konstitusional federal yang terdiri dari lima puluh negara bagian dan satu distrik federal, dengan pusat pemerintahan di Washington, D.C. Bahan tidak menjelaskan apa pun tentang tim U20 negara itu.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Apa kaitan uji coba ini dengan Piala Asia U20 2027?",
+          "a": "Bahan menyebut uji coba di Turki pada November 2026 sebagai bagian dari persiapan menuju Piala Asia U20 2027, tetapi tidak menjelaskan tuan rumah, format, atau jalur kualifikasi ajang tersebut.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/jadwal-timnas-u20-uji-coba-vs-yordania-as-november-2026-idAf"
+          }
+        },
+        {
+          "q": "Sejak kapan agenda ini disebut dan oleh media apa?",
+          "a": "Laporan tirto.id bertanggal 9 November 2026 menyebut rencana itu; kalimat yang sama dipakai ulang sebagai bahan latar tanpa tanggal, sehingga tidak ada konfirmasi kedua dari sumber lain.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/jadwal-timnas-u20-uji-coba-vs-yordania-as-november-2026-idAf"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/jadwal-timnas-u20-uji-coba-vs-yordania-as-november-2026-idAf",
+          "published_at": "2026-11-09T13:55:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://international.sindonews.com/read/1770533/43/iran-bersumpah-turunkan-neraka-jika-as-tingkatkan-eskalasi-perang-1794305508",
+          "published_at": "2026-11-10T18:01:37+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5844875/china-berkomunikasi-dengan-rusia-dan-as-bahas-rencana-ktt-trilateral",
+          "published_at": "2026-11-10T20:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8335807/prabowo-bicara-penanganan-karhutla-di-ktt-asean",
+          "published_at": "2026-11-15T23:00:02+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Satu kalimat agenda soal uji coba di Turki beredar sejak 9 November, tetapi pekan ini tidak menambah tanggal, kota, atau daftar pemain.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "7",
+          "label": "media"
+        },
+        {
+          "value": "6 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_ugm_bentuk_tim_pencari_fakta_u_2196",
+      "angle": "Rekap 3 hari",
+      "kicker": "Rekap pekan",
+      "title": "Polisi Sebut 154 Orang Diamankan, Ricuh Aksi Jogja Sampai Bundaran UGM",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polisi menyebut 154 orang diamankan dan delapan mahasiswa UGM ditahan, sementara UGM menyiapkan pendampingan hukum.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T05:00:00+07:00"
+      },
+      "body": [
+        "Kepolisian Daerah Istimewa Yogyakarta menyebut 154 orang diamankan dalam rangkaian kericuhan yang bergerak dari gedung DPRD DIY, kawasan Malioboro, Tugu Pal Putih, hingga bundaran di depan Universitas Gadjah Mada. Plt Kepala Bidang Hubungan Masyarakat Polda DIY AKBP Novita Eka Sari mengatakan massa yang ricuh di bundaran UGM sebelumnya didorong petugas dari DPRD DIY ke arah utara. Ia menegaskan penindakan tidak masuk ke dalam kampus, sekaligus membantah narasi yang beredar di media sosial bahwa aparat memburu massa sampai ke lingkungan universitas. Letak berhentinya penindakan itu bukan perkara teknis semata: bila kericuhan berhenti di jalan di depan kampus, peristiwanya berada di ruang publik; bila aparat masuk ke area akademik, persoalannya menyentuh batas otonomi lembaga pendidikan. Karena itu versi kepolisian ini perlu diuji, bukan langsung dijadikan kesimpulan akhir.",
+        "Menurut keterangan kepolisian, aksi yang berlangsung sejak siang awalnya berjalan tertib hingga sekitar pukul 19.00 WIB. Situasi berubah sekitar pukul 20.07 WIB ketika sekelompok massa menyerang area Kantor DPRD DIY dengan petasan, bom molotov, dan batu. Polisi kemudian mengerahkan personel Brimob dan satuan lain untuk membubarkan massa serta melakukan penindakan. Situasi dilaporkan kembali aman dan kondusif setelah patroli skala besar pada malam hari. Urutan waktu itu penting dicatat karena menunjukkan kericuhan bukan satu peristiwa tunggal, melainkan rangkaian yang berpindah lokasi dari kantor dewan ke koridor Malioboro, Tugu, lalu bundaran kampus. Bahan tidak menyebut siapa yang memulai bentrokan pertama, berapa lama penindakan berlangsung di setiap titik, dan apakah masih ada upaya dialog sebelum petasan serta molotov dilempar.",
+        "Dalam proses penindakan, polisi menyita sejumlah barang bukti: enam bom molotov, 12 petasan, tujuh botol berisi bensin, senjata tajam, ketapel, dan gotri. Daftar itu menjadi salah satu alasan kepolisian membedakan peserta aksi yang menyampaikan aspirasi dari pihak yang disebut sengaja membawa perlengkapan berbahaya, atau dalam istilah kepolisian, perusuh dan pelaku anarkis. Namun bahan yang tersedia belum memerinci di titik mana masing-masing barang bukti ditemukan, siapa pemiliknya, dan apakah semuanya terkait kericuhan di bundaran UGM atau hanya di kantor DPRD. Tanpa perincian itu, daftar barang bukti belum bisa dipakai untuk mengukur berapa banyak orang yang benar-benar terlibat kekerasan dibandingkan mereka yang hanya berada di lokasi.",
+        "Kapolri Jenderal Polisi Suyudi Ario Seto bersama Wakil Ketua DPR RI Sufmi Dasco Ahmad meninjau Kantor DPRD DIY di kawasan Malioboro pada Rabu dini hari, didampingi Kapolda DIY Irjen Langgeng Purnomo. Suyudi mengatakan kedatangannya untuk memantau langsung anggota yang bertugas di lapangan dan berjanji mengungkap pelaku yang secara sengaja membawa barang berbahaya seperti molotov dan senjata tajam. Ia juga menyatakan kepolisian akan menganalisis apakah demonstrasi murni untuk menyampaikan aspirasi atau ada motif lain. Dalam keterangannya, ia menyoroti batas waktu: toleransi Polri sampai pukul 18.00, sedangkan penindakan terjadi sekitar pukul 1 malam. Sorotan itu secara tidak langsung membuka pertanyaan soal dasar hukum pembubaran, yang belum dijelaskan dalam bahan.",
+        "Di sisi lain, Universitas Gadjah Mada menyatakan terus memantau dan berkoordinasi untuk menjaga keamanan lingkungan kampus. Rektor UGM Prof Ova Emilia mengatakan pihaknya telah menyampaikan pesan kepada dosen, tenaga kependidikan, dan mahasiswa terkait kondisi kampus dan langkah yang sedang dilakukan universitas. Sivitas diminta dapat menjalankan aktivitas dengan tetap memperhatikan perkembangan situasi dan arahan keselamatan dari universitas. Pernyataan itu menunjukkan kampus memilih jalur koordinasi internal dan pemantauan, bukan instruksi pengosongan atau pelarangan aktivitas. Bahan tidak menyebut apakah kegiatan belajar dihentikan, apakah ada penjagaan tambahan di gerbang, dan bagaimana arahan itu disampaikan ke mahasiswa yang sedang berada di luar kampus.",
+        "UGM sedang melakukan pendataan mahasiswa yang mengikuti aksi maupun yang terdampak peristiwa tersebut. Universitas juga mengupayakan pendampingan bagi mahasiswa yang dilaporkan diamankan aparat serta berkoordinasi dengan pihak terkait untuk memastikan kondisi dan keberadaan mereka. Ova mengajak sivitas yang memiliki informasi relevan menyampaikannya melalui saluran yang disediakan kampus, dan menyatakan setiap informasi akan dikoordinasi serta diverifikasi. Imbauan lain: tetap tenang dan tidak mudah menyebarkan informasi yang belum terverifikasi, serta mengikuti arahan resmi universitas, fakultas, dan unit keamanan kampus. Saluran itu penting karena pada jam-jam pertama setelah penangkapan, informasi tentang siapa yang berada di mana biasanya berpindah lewat pesan pribadi dan media sosial, bukan lewat pengumuman resmi.",
+        "Rektor menegaskan penolakan segala bentuk tindakan kekerasan terhadap sivitas, baik dalam penyampaian aspirasi maupun dalam proses pengamanan aksi. Menurutnya hak sivitas untuk menyampaikan pendapat secara damai harus dihormati dan dilindungi, sementara tindakan pengamanan aparat harus mengedepankan legalitas, proporsionalitas, dan penghormatan terhadap hak asasi manusia. UGM juga menyatakan akan memastikan pemenuhan hak mahasiswa yang ditangkap atau diamankan, termasuk pendampingan hukum dan koordinasi dengan pihak berwenang agar mereka dapat segera dibebaskan bila tidak ada dasar hukum penahanan lanjutan. Bagi mahasiswa yang luka, UGM menyatakan menanggung biaya pengobatan serta perawatan. Pernyataan itu menempatkan kampus sebagai penjamin, bukan pihak yang menyerahkan mahasiswanya sepenuhnya ke proses hukum.",
+        "Sejauh yang tercatat dalam pemberitaan, delapan mahasiswa UGM yang turut dalam aksi demonstrasi Hari Pahlawan di kawasan Malioboro disebut ditahan di Mapolda DIY. Angka itu belum tentu sama dengan jumlah mahasiswa yang diamankan, karena universitas masih melakukan pendataan dan penelusuran, sehingga jumlahnya bisa berubah bila ada laporan baru. Bahan juga tidak menyebut identitas, jurusan, atau status hukum kedelapan mahasiswa tersebut. Karena itu hubungan antara angka delapan mahasiswa dan total 154 orang yang diamankan belum bisa dipastikan dari bahan yang tersedia. Yang bisa dikatakan: ada dua penghitungan yang berjalan paralel, satu dari kepolisian dan satu dari universitas, dan keduanya belum dipertemukan.",
+        "Polda DIY menyatakan akan membentuk tim pencari fakta untuk menyelidiki dugaan salah tangkap dalam penanganan aksi tersebut. Rencana itu muncul sebagai tanggapan atas penahanan delapan mahasiswa UGM. Bahan belum memerinci siapa yang akan duduk dalam tim, kapan tim dibentuk, dan apakah hasilnya akan diumumkan ke publik. Bagi pembaca, janji tim pencari fakta menjadi penanda bahwa versi kepolisian belum final: masih ada ruang bagi koreksi bila terbukti ada penangkapan yang keliru. Namun tanpa susunan, mandat, dan tenggat yang jelas, janji itu belum bisa diukur. Tim yang dibentuk tanpa kewenangan memeriksa rekaman atau memanggil saksi kemungkinan hanya akan mengulang keterangan yang sudah ada.",
+        "Kapolda DIY juga membantah narasi viral tentang polisi yang merangsek ke UGM. Ia menegaskan tindakan represif tidak dilakukan dan dialog dengan massa diutamakan. Pembantahan ini sejalan dengan keterangan Plt Kabid Humas Polda DIY yang menyatakan penindakan berhenti di bundaran depan kampus dan tidak masuk lingkungan universitas. Meski begitu, dua pembantahan dari lingkungan kepolisian yang sama bukan verifikasi independen. Bahan yang tersedia belum memuat bukti lokasi penangkapan per orang, rekaman, atau keterangan saksi di luar kepolisian yang bisa menguji klaim tersebut. Karena itu, pembaca sebaiknya memperlakukan kedua versi sebagai klaim yang masih menunggu pembuktian, bukan sebagai fakta yang sudah selesai.",
+        "Soal jumlah, keterangan kepolisian memakai rumusan yang hati-hati. Novita menyebut total sampai pagi itu ada 154 orang, sementara jumlah yang diamankan di lokasi bundaran depan UGM disebut menyusul. Artinya rincian per lokasi belum diumumkan pada keterangan pertama, dan angka 154 adalah akumulasi dari beberapa titik, bukan angka khusus kampus. Bahan juga tidak menyebut berapa di antaranya mahasiswa, berapa yang kemudian dilepas, dan berapa yang masih ditahan. Perincian itu belum tersedia. Tanpa rincian, angka 154 lebih tepat dibaca sebagai batas atas sementara daripada gambaran utuh tentang siapa yang ditahan dan atas dasar apa.",
+        "Ada perbedaan penyebutan tanggal yang perlu dicatat. Sebagian pemberitaan menyebut aksi berlangsung Selasa 10 November 2026, sementara keterangan kepolisian dan laporan lain menggambarkan kericuhan pada Rabu 11 November 2026 dini hari. Kericuhan sendiri dilaporkan berlangsung dari malam sampai pagi, sehingga dua penyebutan itu kemungkinan merujuk pada rangkaian yang sama: aksi siang dan malam pada 10 November, lalu penindakan serta peninjauan pada dini hari 11 November. Satu laporan bahkan menulis Rabu 10 November, sehingga tanggal dan nama hari tidak konsisten. Perbedaan ini tidak dijelaskan dalam bahan, dan sebaiknya tidak disederhanakan menjadi satu tanggal seolah semua laporan sepakat.",
+        "Perubahan yang paling penting selama sepekan bukan hanya angka penangkapan, tetapi pergeseran dari aksi ke pertanggungjawaban. Dalam hitungan hari, isu bergerak dari kericuhan di kantor dewan menjadi pertanyaan tentang penanganan aparat: seberapa jauh penindakan berlangsung, apakah ada mahasiswa yang salah ditangkap, dan bagaimana kampus melindungi sivitasnya. Bagi pembaca yang jarang membuka media sosial, inti persoalannya ada pada batas antara pengamanan dan hak menyampaikan pendapat, bukan pada video-video viral yang kebenarannya belum terverifikasi. Pergeseran itu juga menjelaskan mengapa pernyataan rektor tentang legalitas dan proporsionalitas menjadi relevan, bukan sekadar basa-basi kelembagaan.",
+        "Yang paling langsung terdampak adalah mahasiswa dan sivitas UGM yang mengikuti atau berada di sekitar aksi, termasuk mereka yang harus menjalani pemeriksaan di kepolisian dan keluarganya yang menunggu informasi. Universitas sebagai lembaga juga menanggung beban pendataan, pendampingan hukum, dan biaya perawatan bagi yang luka. Aparat kepolisian berada di posisi kedua: mereka harus mempertanggungjawabkan tindakan di lapangan sekaligus menyelidiki pihak yang disebut membawa barang berbahaya. Warga di sekitar Malioboro dan DPRD DIY juga merasakan dampak langsung berupa kerusuhan malam itu, meski bahan tidak memerinci jumlah korban atau kerusakan. Ketiga kelompok itu punya kepentingan berbeda, dan penyelesaian yang memuaskan satu pihak belum tentu memuaskan pihak lain.",
+        "Beberapa hal masih terbuka. Bahan belum menjelaskan apakah seluruh 154 orang masih ditahan, apakah delapan mahasiswa termasuk di dalamnya, dan apa status hukum mereka. Motif di balik kericuhan juga baru sebatas akan dianalisis, termasuk kemungkinan keterkaitan dengan peristiwa serupa di daerah lain yang disebut polisi akan diselidiki. Susunan dan tenggat tim pencari fakta belum diumumkan. Begitu pula hasil pendataan UGM tentang jumlah mahasiswa yang ikut aksi, yang diamankan, atau yang terluka, belum dipublikasikan. Daftar pertanyaan itu sebaiknya diingat ketika muncul klaim baru: tanpa jawaban atasnya, perdebatan cenderung berputar pada potongan video dan saling tuduh.",
+        "Langkah berikutnya yang perlu dipantau: pembentukan dan komposisi tim pencari fakta, hasil verifikasi UGM atas kondisi mahasiswanya, serta penjelasan kepolisian soal rincian penangkapan per lokasi. Perlu juga diikuti apakah analisis soal barang berbahaya berkembang menjadi penetapan tersangka, dan apakah ada pembaruan soal dugaan keterkaitan dengan daerah lain. Sampai semua itu terungkap, kesimpulan yang bisa dipegang hanya yang tercatat resmi: 154 orang diamankan, penindakan disebut berhenti di bundaran depan kampus, dan delapan mahasiswa UGM dilaporkan ditahan. Selebihnya masih berupa klaim yang perlu diperiksa, dan pembaca sebaiknya menahan diri dari kesimpulan yang lebih jauh."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Universitas Gadjah Mada dan di mana lokasinya?",
+          "a": "UGM adalah perguruan tinggi negeri di Kabupaten Sleman, Daerah Istimewa Yogyakarta, yang didirikan resmi pada 19 Desember 1949 dan disebut sebagai salah satu perguruan tinggi tertua serta terbesar di Indonesia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Universitas_Gadjah_Mada"
+          }
+        },
+        {
+          "q": "Siapa AKBP Novita Eka Sari dalam peristiwa ini?",
+          "a": "Ia adalah Plt Kepala Bidang Hubungan Masyarakat Polda DIY yang menyampaikan bahwa massa ricuh di bundaran UGM sebelumnya didorong petugas dari DPRD DIY ke utara, dan bahwa penindakan tidak masuk kampus.",
+          "source": {
+            "outlet": "kumparan.com",
+            "url": "https://kumparan.com/kumparannews/ricuh-merembet-ke-bundaran-ugm-154-orang-diamankan-28YBm2kMpZh"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud bundaran depan UGM dalam rangkaian kericuhan ini?",
+          "a": "Bundaran itu adalah titik di jalan di depan kampus yang menurut keterangan kepolisian menjadi lokasi terakhir penindakan, setelah massa bergerak dari gedung DPRD DIY melewati Malioboro dan Tugu Yogyakarta.",
+          "source": {
+            "outlet": "kumparan.com",
+            "url": "https://kumparan.com/kumparannews/ricuh-merembet-ke-bundaran-ugm-154-orang-diamankan-28YBm2kMpZh"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/ricuh-merembet-ke-bundaran-ugm-154-orang-diamankan-28YBm2kMpZh",
+          "published_at": "2026-11-11T08:34:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111112127-20-1425784/ugm-pastikan-keamanan-lingkungan-kampus-usai-aksi-demo-10-november",
+          "published_at": "2026-11-11T11:44:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/polda-diy-tangkap-154-orang-usai-demo-ricuh-di-malioboro-ugm-idEZ",
+          "published_at": "2026-11-11T12:21:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8748020/ugm-telusuri-data-mahasiswa-terdampak-aksi-berujung-ricuh-di-jogja",
+          "published_at": "2026-11-11T12:30:24+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Kericuhan di Yogyakarta berujung pada 154 orang diamankan dan delapan mahasiswa UGM ditahan, sementara polisi menjanjikan tim pencari fakta.",
+      "optional": true,
+      "read_min": 9,
+      "stats": [
+        {
+          "value": "23",
+          "label": "artikel"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        },
+        {
+          "value": "3 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "deep_dive",
+      "topic_id": "t_ajudan_sebut_pernah_pegang_ija_8c24",
+      "angle": "Rekap 4 hari",
+      "kicker": "Rekap pekan",
+      "title": "Uji Ulang Ijazah Jokowi: Permintaan Kubu Roy Suryo, Bukan Kapolri",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bahan menyebut permintaan pengujian ulang ijazah Jokowi diajukan kubu Roy Suryo ke majelis hakim, sementara Polri menyatakan pengujian forensik sudah selesai da",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T05:00:00+07:00"
+      },
+      "body": [
+        "Selama sepekan terakhir, jagat maya diramaikan klaim bahwa Kapolri memerintahkan uji forensik ulang atas ijazah Joko Widodo. Bahan yang dihimpun untuk kartu ini tidak mendukung klaim tersebut. Dorongan pengujian ulang, menurut pemberitaan, bukan datang dari Kapolri, melainkan dari kubu Roy Suryo dalam perkara dugaan pencemaran nama baik terkait ijazah Jokowi yang disidangkan di Pengadilan Negeri Jakarta Timur. Dengan kata lain, yang beredar adalah pernyataan yang tertukar pelakunya: permintaan dari pihak terdakwa dibaca seolah instruksi dari pucuk pimpinan Polri. Kekeliruan seperti ini mudah menyebar karena kalimatnya singkat, terdengar tegas, dan tidak menyebut siapa yang sebenarnya meminta.",
+        "Permintaan itu masuk lewat jalur resmi di persidangan. Pihak terdakwa, Roy Suryo, bersurat kepada majelis hakim untuk meminta pemeriksaan ulang ijazah Presiden ke-7 RI tersebut. Tim hukumnya juga menyampaikan permintaan pengujian ulang secara lisan dalam persidangan, dan surat itu disebut ditembuskan ke sejumlah pejabat tinggi negara. Dua hal ini perlu dibedakan dengan rapi: satu adalah permohonan pihak berperkara kepada hakim, yang lain adalah perintah atasan kepada penyidik. Bahan yang tersedia hanya menunjukkan yang pertama, sedangkan yang kedua tidak pernah disebut dalam satu pun pemberitaan yang dihimpun.",
+        "Jawaban Polri datang belakangan dan arahnya berlawanan dengan klaim yang beredar. Polri menyatakan hasil pengujian forensik ijazah Joko Widodo telah selesai dan tidak perlu diuji ulang. Proses itu, menurut pernyataan Polri, dilakukan secara transparan dan sesuai hukum. Satu pemberitaan lain menyebut ijazah tersebut telah diuji forensik secara prosedural, meski kalimatnya terpotong pada bagian yang menerangkan lembaga pelaksananya. Jadi posisi resmi yang bisa dipastikan dari bahan: Polri menilai pengujian ulang tidak diperlukan, bukan memerintahkan pengujian ulang seperti yang diklaim.",
+        "Perbedaan pelaku ini bukan soal sepele. Dalam pemberitaan, istilah uji forensik ulang menempel pada permohonan kubu Roy Suryo, bukan pada kebijakan Kapolri. Ketika sebuah permintaan pihak berperkara dibaca sebagai perintah pejabat, pembaca kehilangan konteks bahwa ini bagian dari pertarungan pembuktian di pengadilan. Dampaknya, isu bergeser dari persoalan hukum ke persoalan kepercayaan terhadap institusi. Padahal, bahan tidak memuat pernyataan Kapolri tentang pengujian ulang sama sekali, sehingga kalimat yang menyebut nama Kapolri tidak punya sandaran dalam pemberitaan yang ada.",
+        "Di ruang sidang, keterangan datang dari ajudan Jokowi, AKBP Syarif Muhammad Fitriansyah. Ia bersaksi dalam perkara dengan terdakwa Roy Suryo dan mengaku pernah melihat serta memegang ijazah Jokowi. Dalam pemeriksaan, ia mengatakan dokumen fisik itu dilihatnya sebelum Jokowi membuat laporan polisi di Polda Metro Jaya. Waktunya disebut pada pertengahan April 2025. Kuasa hukum kemudian menanyakan apakah dokumen yang dilihat pada 16 April 2025 itu sama dengan ijazah fisik yang dijadikan barang bukti oleh jaksa. Pertanyaan itu menunjukkan sengketa utamanya ada pada identifikasi dokumen, bukan pada perintah siapa pun.",
+        "Bagian yang paling mudah disalahpahami ada pada pertukaran soal ijazah analog. Kuasa hukum Roy Suryo bertanya apakah saksi pernah melihat langsung dokumen fisik ijazah milik Jokowi, dan ia sendiri menegaskan sedang tidak menyatakan dokumen itu asli atau palsu. Syarif menjawab bahwa ia melihat ijazah fisik sebelum Jokowi memperlihatkannya kepada wartawan. Ia menyebut urutannya: dokumen diperlihatkan kepadanya lebih dulu, baru kepada wartawan. Potongan ini berbicara soal urutan perlihatkan dokumen, bukan soal keaslian. Membacanya sebagai pengakuan bahwa ijazah itu palsu atau asli berarti menambahkan kesimpulan yang tidak ada di dalamnya.",
+        "Keterangan lain menyorot latar sikap Jokowi. Syarif meyakini Jokowi sudah berkali-kali menahan emosi hingga akhirnya mempolisikan Roy Suryo terkait tudingan ijazah palsu. Keyakinan seorang saksi tentu bukan putusan, dan bahan tidak memuat rincian berapa kali atau dalam peristiwa apa penahanan emosi itu terjadi. Yang bisa dibaca dari sini adalah bahwa laporan polisi ditempatkan sebagai langkah setelah tudingan berulang, bukan reaksi pertama. Namun urutan peristiwanya sendiri belum dijelaskan secara rinci, sehingga pembaca sebaiknya tidak menyimpulkan kronologi yang lebih detail daripada yang tertulis.",
+        "Perkara ini berjalan sebagai perkara pidana, dan pasal yang dipakai memperlihatkan bingkainya. Roy Suryo didakwa melakukan pencemaran nama baik dan pelanggaran terkait informasi elektronik dalam kasus tudingan ijazah palsu. Dakwaan utama memakai Pasal 433 ayat (1) juncto Pasal 441 ayat (1) Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana. Dakwaan subsidair memakai Pasal 35 juncto Pasal 51 ayat (1) Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, dengan penyesuaian melalui Undang-Undang Nomor 1 Tahun 2026. Jaksa juga mendakwa Pasal 32 juncto Pasal 48 ayat (1) pada undang-undang yang sama. Dari susunan pasal itu, yang disorot adalah ucapan dan penyebaran informasi, sementara ijazah menjadi salah satu alat pembuktian.",
+        "Ada beberapa hal yang belum jelas dan sebaiknya tidak diisi dengan dugaan. Pemberitaan menyebut keterangan saksi disampaikan dalam sidang pada Kamis (5/11), sedangkan laporan tentangnya baru terbit pada 11 November 2026. Bahan tidak menjelaskan jeda itu, termasuk apakah ada agenda sidang lain di antaranya. Keterangan soal lembaga yang melakukan uji forensik juga terpotong pada salah satu sumber, sehingga nama unit pelaksananya belum bisa dipastikan dari bahan ini. Selain itu, tidak ada bahan yang menyebut kapan tepatnya surat permohonan kubu Roy Suryo diajukan atau bagaimana tanggapan majelis hakim atas surat tersebut.",
+        "Yang paling terdampak adalah pembaca yang jarang membuka media sosial. Bagi mereka, satu unggahan berisi klaim tentang Kapolri bisa menjadi satu-satunya versi yang terbaca, sementara koreksi dan pernyataan resmi Polri tersebar di beberapa kanal berbeda. Jokowi, Presiden ke-7 yang menjabat 2014 sampai 2024 dan dikenal sebagai presiden pertama yang bukan berasal dari elite politik atau militer, tetap menjadi nama yang diperbincangkan meski sudah tidak memegang jabatan. Roy Suryo, komentator telematika yang pernah menjabat Menteri Pemuda dan Olahraga, adalah pihak yang berperkara. Keduanya punya kepentingan berbeda: satu soal nama baik, satu soal pembuktian di pengadilan.",
+        "Apa yang berubah selama sepekan? Yang berubah adalah bentuk perkaranya di ruang publik, bukan status hukum ijazah. Pada 10 November, pemberitaan menegaskan bahwa dorongan uji forensik ulang berasal dari kubu Roy Suryo, bukan dari Kapolri. Pada 11 November, keterangan ajudan dan surat permohonan ke majelis hakim menjadi sorotan. Pada 12 sampai 13 November, Polri menyatakan pengujian forensik sudah selesai dan tidak perlu diulang. Jadi perubahan paling nyata adalah perpindahan dari klaim yang salah alamat ke pernyataan resmi yang lebih jelas, meski belum semua rincian proses pengujiannya dibuka.",
+        "Mengapa perubahan itu penting? Karena atribusi menentukan cara kita menilai sebuah tuntutan. Bila permintaan uji ulang dibaca sebagai perintah Kapolri, seolah ada keraguan resmi atas dokumen yang sudah diuji. Bila dibaca sebagai permohonan pihak terdakwa, ia menjadi bagian biasa dari upaya pembelaan di pengadilan. Bahan tidak memuat pernyataan Kapolri, sehingga kesimpulan bahwa Kapolri memerintahkan pengujian ulang tidak punya dasar di sini. Ini juga menyangkut kepercayaan pada proses: pengujian forensik oleh Polri dan permohonan di persidangan adalah dua jalur berbeda yang tidak semestinya dicampur.",
+        "Langkah berikutnya yang perlu dipantau ada tiga. Pertama, bagaimana majelis hakim menanggapi surat permohonan pemeriksaan ulang ijazah, karena bahan belum memuat jawabannya. Kedua, apakah Polri merinci lembaga dan metode pengujian forensik yang sudah dilakukan, sebab satu sumber terpotong pada bagian itu. Ketiga, agenda sidang berikutnya dan apakah saksi lain diajukan. Tanpa ketiganya, perdebatan akan terus berputar pada klaim yang beredar di media sosial, bukan pada fakta yang diuji di pengadilan. Pemantauan ini juga menutup celah agar isu tidak kembali dibelokkan menjadi soal perintah pejabat.",
+        "Cara paling aman membaca isu ini adalah menanyakan siapa pelakunya. Dalam bahan, pelaku permintaan adalah kubu Roy Suryo lewat surat ke majelis hakim dan permintaan di persidangan, sedangkan yang menilai pengujian ulang tidak perlu adalah Polri. Tidak ada perintah Kapolri dalam rangkaian itu. Selama koreksi semacam ini tidak ikut tersebar, klaim yang salah alamat akan terus terasa benar bagi pembaca yang jarang memeriksa sumber. Karena itu, menyebut pihak yang tepat bukan soal teknis, melainkan bagian dari memahami perkaranya secara utuh dan menimbang pernyataan mana yang layak dipercaya."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Roy Suryo dalam perkara ini?",
+          "a": "Menurut bahan latar, Roy Suryo adalah komentator telematika dan politikus yang pernah menjabat Menteri Pemuda dan Olahraga pada Kabinet Indonesia Bersatu II, dan pernah duduk sebagai anggota DPR RI dari Partai Demokrat; dalam perkara ini ia berstatus terdakwa.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Roy_Suryo"
+          }
+        },
+        {
+          "q": "Siapa Joko Widodo yang ijazahnya dipersoalkan?",
+          "a": "Menurut bahan latar, Jokowi adalah politikus dan pengusaha yang menjabat Presiden Indonesia ketujuh pada 2014 sampai 2024, presiden pertama yang bukan berasal dari elite politik atau militer, dan sebelumnya anggota PDI-P.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Joko_Widodo"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud permintaan uji forensik ulang di sini?",
+          "a": "Bahan latar menyebut dorongan uji forensik ulang berasal dari kubu Roy Suryo dalam kasus dugaan pencemaran nama baik terkait ijazah Jokowi di PN Jaktim, bukan dari Kapolri.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/keliru-kapolri-perintahkan-uji-forensik-ulang-ijazah-jokowi-idCL"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/keliru-kapolri-perintahkan-uji-forensik-ulang-ijazah-jokowi-idCL",
+          "published_at": "2026-11-10T17:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111155026-12-1425947/ajudan-mengaku-pernah-diperlihatkan-ijazah-fisik-oleh-jokowi",
+          "published_at": "2026-11-11T16:11:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8748793/kubu-roy-suryo-bersurat-ke-hakim-minta-ijazah-jokowi-diperiksa-dan-diuji-ulang",
+          "published_at": "2026-11-11T18:50:58+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5850719/polri-sebut-ijazah-jokowi-telah-diuji-forensik-secara-prosedural",
+          "published_at": "2026-11-13T07:29:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Polri menyebut uji forensik ijazah Jokowi sudah selesai; permintaan uji ulang datang dari kubu Roy Suryo, bukan perintah Kapolri.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "20",
+          "label": "artikel"
+        },
+        {
+          "value": "8",
+          "label": "media"
+        },
+        {
+          "value": "4 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "deep_dive",
+      "topic_id": "t_mensos_ungkap_rencana_prabowo_8ccc",
+      "angle": "Rekap 1 hari",
+      "kicker": "Rekap pekan",
+      "title": "Target 500 Sekolah Rakyat: Sejuta Siswa, Rincian Masih Kosong",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Mensos Saifullah Yusuf menyebut target lebih dari 500 gedung permanen Sekolah Rakyat untuk lebih dari satu juta siswa dalam tiga sampai empat tahun.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 5,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T05:00:00+07:00"
+      },
+      "body": [
+        "Menteri Sosial Saifullah Yusuf, yang akrab disapa Gus Ipul, membeberkan arah kebijakan Sekolah Rakyat untuk beberapa tahun ke depan. Menurutnya, Presiden Prabowo Subianto menargetkan sedikitnya satu gedung permanen Sekolah Rakyat di setiap kabupaten/kota se-Indonesia. Dengan asumsi itu, ia menyebut akan ada lebih dari 500 gedung permanen yang menampung lebih dari satu juta siswa dalam tiga sampai empat tahun. Pernyataan itu disampaikan saat ia mengunjungi Sekolah Rakyat Terintegrasi 1 Nagan Raya di Kabupaten Nagan Raya, Aceh, Selasa 10 November, lalu dikutip sejumlah media pada Rabu 11 November. Angka itu disampaikan sebagai kutipan atas arahan presiden, bukan sebagai pengumuman resmi soal lokasi dan pembiayaan.",
+        "Yang berubah pekan ini bukan lagi sekadar wacana pembukaan Sekolah Rakyat, melainkan penyebutan angka target yang jauh lebih konkret oleh menteri. Sebelumnya program ini dibicarakan sebagai upaya memberi akses pendidikan bagi keluarga miskin; kini muncul patokan jumlah gedung, rentang waktu, dan perkiraan jumlah siswa. Pada hari yang sama, Presiden Prabowo bertolak ke Aceh untuk meresmikan Masjid Giok Baitul A'la dan gedung baru Sekolah Rakyat di Nagan Raya, sekaligus menyaksikan pembentangan bendera Merah Putih sepanjang 24 kilometer. Peresmian masjid dan pembentangan bendera adalah agenda terpisah dari target pendidikan, sehingga keduanya belum bisa dibaca sebagai tanda bahwa pembangunan 500 gedung sudah dimulai.",
+        "Ada satu perbedaan kecil yang perlu dicatat. Sebagian media menulis rentang “tiga sampai empat tahun”, sebagian lain menyebut “empat tahun” atau “tiga hingga empat tahun ke depan”. Selisih ini tampak sepele, tetapi menentukan kapan target 500 gedung dianggap terlambat atau tepat waktu. Bahan yang ada tidak memuat dasar perhitungan resmi, dokumen perencanaan, atau tanggal mulai yang disepakati, sehingga batas akhir target itu belum bisa dipastikan dari keterangan yang beredar. Pembaca sebaiknya memegang rentang yang disebut langsung oleh menteri, sambil menunggu angka resmi yang lebih tegas.",
+        "Inti gagasan yang dipaparkan Gus Ipul adalah pemerataan: setiap kabupaten/kota memiliki satu gedung permanen, bukan menumpuk fasilitas di kota besar. Namun bahan tidak menyebut berapa daerah yang sudah memiliki gedung permanen, berapa yang masih menumpang fasilitas lain, dan bagaimana urutan daerah yang dibangun lebih dulu. Bahan juga tidak menjelaskan apakah gedung yang sudah berdiri, seperti di Nagan Raya, sudah dihitung sebagai bagian dari 500 unit itu. Tanpa data tersebut, angka 500 lebih mudah dibaca sebagai patokan politik daripada sebagai rencana teknis yang siap dijalankan.",
+        "Sasaran program dijelaskan cukup rinci. Sekolah Rakyat ditujukan bagi anak-anak dari keluarga prasejahtera, terutama mereka yang tidak sekolah, putus sekolah, atau berpotensi putus sekolah karena keterbatasan ekonomi. Program ini digambarkan sebagai jalur pendidikan gratis bagi anak dari keluarga miskin dan miskin ekstrem. Dengan rumusan itu, kelompok yang paling diuntungkan adalah anak yang biasanya tersingkir lebih awal dari sistem pendidikan, bukan siswa berprestasi yang secara ekonomi sudah mapan. Bahan tidak menyebut bagaimana status ekonomi calon siswa diverifikasi, apakah lewat data terpadu, surat keterangan, atau penelusuran langsung ke rumah.",
+        "Model pendidikannya berasrama. Siswa tinggal di asrama dan mendapat pendampingan selama 24 jam, mulai dari kegiatan belajar di kelas sampai aktivitas sehari-hari. Di kelas mereka dibimbing guru, sedangkan di asrama mereka didampingi wali asrama dan wali asuh yang diposisikan sebagai orang tua kedua. Pendampingan yang berlangsung penuh waktu menuntut kesiapan tenaga pengasuh, bukan hanya guru mata pelajaran. Bahan tidak menjelaskan rasio guru terhadap siswa, pola pengawasan asrama, atau syarat seleksi wali asuh, sehingga mutu pendampingan belum bisa dinilai dari keterangan yang ada.",
+        "Pendidikan di Sekolah Rakyat digambarkan tidak berhenti pada kemampuan akademik. Ada penekanan pada pembentukan karakter, akhlak, dan keterampilan. Siswa didorong menyelesaikan pendidikan hingga jenjang SMA, lalu melanjutkan ke perguruan tinggi melalui berbagai jalur beasiswa atau masuk dunia kerja sebagai tenaga terampil, termasuk di luar negeri. Rancangan itu menempatkan program ini sebagai jalur panjang, bukan sekadar penampungan sementara anak yang berhenti sekolah. Bahan tidak menyebut apakah jalur beasiswa itu bagian khusus dari program atau jalur umum yang memang terbuka bagi semua siswa.",
+        "Yang membedakan program ini dari sekolah biasa adalah janji pendampingan bagi keluarga. Menurut Gus Ipul, orang tua siswa akan dibantu lewat program pemberdayaan, dan rumah mereka dibantu agar lebih layak huni. Harapannya, setelah anak lulus, keluarga menjadi lebih mandiri. Namun bahan tidak menyebut instansi mana yang menjalankan pemberdayaan itu, berapa keluarga yang disentuh, atau bagaimana bantuannya disalurkan. Bahan juga tidak menjelaskan bagaimana program itu diselaraskan dengan bantuan sosial lain yang sudah berjalan, sehingga bagian ini masih berupa arah kebijakan.",
+        "Dalam kunjungan itu Gus Ipul berdialog dengan orang tua dan siswa. Salah satunya Alia, ibu dari M. Ridwan dan M. Radit, yang masing-masing duduk di kelas VI dan kelas IV sekolah dasar. Alia bercerita suaminya bekerja serabutan, antara lain sebagai buruh kebun sawit, dengan penghasilan tidak menentu; suaminya lulusan SD, sedangkan Alia menyelesaikan pendidikan hingga SMP. Gus Ipul memberi motivasi agar keduanya tetap mendukung pendidikan anak, dengan harapan anak-anak itu bisa sampai ke perguruan tinggi. Bahan menyebut mereka sebagai orang tua dan siswa yang ditemui, tanpa menjelaskan sejak kapan anak-anak itu belajar di sana.",
+        "Pernyataan itu diletakkan dalam kerangka pengentasan kemiskinan. Gus Ipul mengutip pesan Prabowo bahwa Sekolah Rakyat menjadi salah satu cara memutus rantai kemiskinan antargenerasi: latar belakang ekonomi orang tua tidak boleh membatasi kesempatan anak. Dalam kutipan yang sama, ia menegaskan anak pemulung tidak harus menjadi pemulung, dan anak tukang becak tidak harus mewarisi pekerjaan itu. Satu media bahkan menyebut program ini sebagai “senjata utama” menghapus kemiskinan lewat akses pendidikan berkualitas. Klaim sebesar itu dapat dibaca sebagai harapan yang masih bergantung pada mutu pelaksanaan, sebab pendidikan memang jalur mobilitas sosial tetapi hasilnya tidak ditentukan oleh jumlah gedung semata.",
+        "Yang belum jelas justru bagian yang paling sering ditanyakan pembaca. Bahan tidak memuat anggaran pembangunan 500 gedung, sumber dana, daftar daerah penerima, mekanisme seleksi siswa, jumlah guru dan wali asrama yang dibutuhkan, maupun jadwal tahap pertama. Tidak ada pula penjelasan apakah angka 500 dihitung dari seluruh kabupaten/kota atau hanya daerah tertentu, dan siapa yang membangun: kementerian, pemerintah daerah, atau pihak lain. Semua rincian itu belum diumumkan dalam keterangan yang dikutip media, sehingga target ini masih berupa arah, bukan rencana yang bisa diperiksa.",
+        "Kelompok yang paling terdampak bila program berjalan adalah keluarga prasejahtera dengan anak usia sekolah, khususnya yang sudah putus sekolah atau terancam putus sekolah. Pemerintah daerah juga ikut menanggung beban karena harus menyediakan lahan, gedung, dan koordinasi. Guru, wali asrama, dan wali asuh menjadi pihak yang memikul pendampingan 24 jam. Orang tua dapat diperkirakan ikut menyesuaikan diri karena anak tinggal di asrama, meski bahan tidak menjelaskan bagaimana pola kunjungan keluarga. Bila target tidak terealisasi, yang paling merasakan akibatnya tetap anak-anak yang sudah menunggu kesempatan itu.",
+        "Skala yang disebut cukup besar: lebih dari 500 gedung dan lebih dari satu juta siswa. Bahan tidak merinci bagaimana angka itu dihitung, berapa siswa per gedung, atau apakah kapasitas tersebut berlaku untuk satu angkatan atau seluruh jenjang. Bila satu daerah memperoleh satu gedung, jumlah siswa yang tertampung akan bergantung pada kapasitas bangunan masing-masing, dan bahan tidak menyebut angka itu. Tanpa rincian tersebut, pembaca sulit menilai apakah satu juta siswa berarti daya tampung penuh atau proyeksi bertahap. Satu juta siswa juga hanya bermakna bila gedung benar-benar berdiri dan beroperasi, bukan sekadar diresmikan.",
+        "Langkah berikutnya yang layak dipantau: apakah target ini masuk ke dokumen perencanaan resmi, bagaimana peresmian gedung Sekolah Rakyat di Nagan Raya berjalan, dan apakah pemerintah mulai menyebut daerah penerima berikutnya. Yang juga penting diperhatikan adalah apakah pemberdayaan orang tua benar-benar berjalan bersamaan dengan pembangunan gedung. Bahan belum menyebut apakah target ini punya tenggat tahun anggaran tertentu atau menempel pada periode pemerintahan. Sampai rincian itu muncul, pernyataan Mensos sebaiknya dibaca sebagai janji arah kebijakan yang masih menunggu pembuktian di lapangan.",
+        "Bagi pembaca yang jarang mengikuti berita pendidikan, inti pekan ini sederhana: pemerintah menyebut angka target yang jauh lebih besar daripada kapasitas Sekolah Rakyat saat ini, dan menyampaikannya dari sebuah sekolah di Aceh yang baru diresmikan. Namun bahan yang tersedia belum memberi jawaban soal biaya, lokasi, dan jadwal. Tiga pertanyaan itu bisa dijadikan alat uji: berapa anggarannya, di mana gedungnya dibangun, dan kapan tahap pertama selesai. Yang membuat kabar ini layak diikuti bukan besar angkanya, melainkan rincian yang menyusul nanti: dari situ bisa dinilai apakah janji itu berubah menjadi gedung dan kelas."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Sekolah Rakyat?",
+          "a": "Program pendidikan yang diinisiasi pemerintah untuk memberi akses pendidikan gratis bagi anak dari keluarga miskin dan miskin ekstrem, antara lain untuk menekan angka putus sekolah dan meningkatkan mutu pendidikan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Sekolah_Rakyat"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus dan pensiunan perwira militer yang menjabat Presiden Indonesia sejak 2024; sebelumnya Menteri Pertahanan pada 2019–2024. Target Sekolah Rakyat disampaikan sebagai arahannya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa isi target yang disebut?",
+          "a": "Sekitar 500 Sekolah Rakyat dalam tiga sampai empat tahun ke depan, untuk memberi akses pendidikan berkualitas bagi anak prasejahtera dan memutus rantai kemiskinan.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8747574/mensos-ungkap-rencana-prabowo-bangun-500-sekolah-rakyat-untuk-1-juta-siswa"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8747574/mensos-ungkap-rencana-prabowo-bangun-500-sekolah-rakyat-untuk-1-juta-siswa",
+          "published_at": "2026-11-11T08:21:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/pemerintah-targetkan-500-sekolah-rakyat-tampung-1-juta-siswa-idEK",
+          "published_at": "2026-11-11T09:38:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261111093840-4-784131/prabowo-terbang-ke-aceh-resmikan-masjid-sekolah-rakyat-nagan-raya",
+          "published_at": "2026-11-11T09:43:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/gus-ipul-sebut-presiden-prabowo-targetkan-500-sekolah-rakyat-untuk-1-juta-siswa-28YD5pW4UJg",
+          "published_at": "2026-11-11T09:50:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261111094252-20-1425731/prabowo-ke-aceh-resmikan-masjid-dan-sekolah-rakyat",
+          "published_at": "2026-11-11T09:51:56+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Mensos menyebut target 500 gedung Sekolah Rakyat untuk sejuta siswa, tetapi bahan yang ada belum memuat anggaran, lokasi, maupun jadwal pastinya.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "15",
+          "label": "artikel"
+        },
+        {
+          "value": "6",
+          "label": "media"
+        },
+        {
+          "value": "1 hari",
+          "label": "berjalan"
+        }
+      ]
+    }
+  ]
+}
