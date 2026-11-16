@@ -113,16 +113,22 @@ export interface AlertMeta {
   repo?: string;
   runUrl?: string;
   jobStatus?: string;
+  /** Uji kirim: subjek ditandai jelas supaya tidak dikira kegagalan nyata. */
+  test?: boolean;
 }
 
 /** Surel polos. Tanpa HTML supaya tidak ada yang terpotong di klien mana pun. */
 export function composeAlert(report: HealthReport, meta: AlertMeta = {}): { subject: string; body: string } {
   const bad = !report.ok;
-  const subject = bad
-    ? `[Edisi Pagi] build turun mutu: ${report.date} ${report.scope}`
-    : `[Edisi Pagi] build sehat: ${report.date} ${report.scope}`;
+  const subject = meta.test
+    ? "[Edisi Pagi] uji kirim peringatan"
+    : bad
+      ? `[Edisi Pagi] build turun mutu: ${report.date} ${report.scope}`
+      : `[Edisi Pagi] build sehat: ${report.date} ${report.scope}`;
 
   const lines = [
+    meta.test ? "Ini uji kirim. Tidak ada build yang gagal." : "",
+    meta.test ? "" : "",
     report.summary,
     "",
     `Kartu        : ${report.cards}`,

@@ -1,0 +1,33 @@
+name: alert-test
+
+# Uji kirim surel peringatan tanpa menunggu build gagal.
+# Butuh secret: ALERT_SMTP_URL, ALERT_SMTP_USER, ALERT_SMTP_PASS,
+# ALERT_FROM, ALERT_TO (lihat docs/plans/018-build-health-alert.md §4).
+on:
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Kirim surel uji
+        env:
+          JOB_STATUS: success
+          ALERT_SMTP_URL: ${{ secrets.ALERT_SMTP_URL }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASS: ${{ secrets.ALERT_SMTP_PASS }}
+          ALERT_FROM: ${{ secrets.ALERT_FROM }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: |
+          if [ -z "$ALERT_SMTP_URL" ] || [ -z "$ALERT_TO" ]; then
+            echo "::error::secret belum lengkap: ALERT_SMTP_URL/SMTP_USER/SMTP_PASS/FROM/TO"
+            exit 1
+          fi
+          node scripts/alert.ts --test

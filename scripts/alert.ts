@@ -21,9 +21,22 @@ function arg(name: string, fallback?: string): string | undefined {
 }
 
 const dryRun = process.argv.includes("--dry-run");
+const isTest = process.argv.includes("--test");
 const inputPath = arg("input");
 
 let raw = process.env.HEALTH_JSON ?? "";
+if (isTest && !raw) {
+  // Laporan contoh untuk menguji jalur surel saja.
+  raw = JSON.stringify({
+    ok: false,
+    date: new Date().toISOString().slice(0, 10),
+    scope: "nasional",
+    cards: 0,
+    providers: { adjudicate: "opencode", write: "opencode", verify: "rules" },
+    reasons: ["no-edition"],
+    summary: "uji kirim surel — bukan kegagalan build",
+  });
+}
 if (!raw && inputPath && existsSync(inputPath)) raw = readFileSync(inputPath, "utf8");
 if (!raw) {
   console.log("health: tidak ada data kesehatan — peringatan dilewati");
@@ -45,10 +58,11 @@ const meta = {
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
       : undefined,
   jobStatus: process.env.JOB_STATUS,
+  test: isTest,
 };
 
 const jobFailed = process.env.JOB_STATUS === "failure";
-if (report.ok && !jobFailed) {
+if (report.ok && !jobFailed && !isTest) {
   console.log(`sehat — tidak ada peringatan: ${report.summary}`);
   process.exit(0);
 }

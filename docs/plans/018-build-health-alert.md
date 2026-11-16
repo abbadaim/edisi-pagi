@@ -83,6 +83,10 @@ Ketentuan:
 - Isi surel memuat ringkasan, penyedia per peran, alasan, tautan run, dan
   pengingat “jangan menerbitkan ulang tanggal yang sudah terbit”.
 
+Untuk menguji jalur surel tanpa menunggu build gagal:
+`gh workflow run alert-test.yml --ref main` (workflow `alert-test.yml`,
+`node scripts/alert.ts --test`). Subjeknya diberi tanda “uji kirim”.
+
 Secret yang perlu diisi di repo: `ALERT_SMTP_URL` (mis.
 `smtps://smtp.gmail.com:465`), `ALERT_SMTP_USER`, `ALERT_SMTP_PASS`,
 `ALERT_FROM`, `ALERT_TO`. Untuk selain Gmail, cukup ganti URL/port.
