@@ -2,49 +2,554 @@
   "schema_version": 1,
   "edition_id": "2026-11-16",
   "scope": "nasional",
-  "published_at": "2026-11-16T14:22:27+07:00",
+  "published_at": "2026-11-16T14:29:18+07:00",
   "coverage": {
-    "from": "2026-11-15T14:22:27+07:00",
-    "to": "2026-11-16T14:22:27+07:00"
+    "from": "2026-11-15T14:29:18+07:00",
+    "to": "2026-11-16T14:29:18+07:00"
   },
-  "generated_at": "2026-11-16T14:22:27+07:00",
+  "generated_at": "2026-11-16T14:29:18+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
     "province": "DI Yogyakarta"
   },
-  "reading_time_min": 1,
+  "reading_time_min": 14,
   "generated_by": {
     "adjudicate": {
-      "provider": "fallback",
-      "model": "none"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "write": {
-      "provider": "deterministic",
-      "model": "glossary"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "verify": {
-      "provider": "rules",
-      "model": "evidence-class"
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
     },
     "embed": {
       "provider": "none",
       "model": "none"
     }
   },
-  "card_count": 3,
-  "truncated_reason": "Hanya 3 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "card_count": 8,
+  "truncated_reason": null,
   "cards": [
     {
       "id": "c1",
       "type": "news",
-      "topic_id": "t_penyidik_datangi_firli_bahuri_dd46",
-      "angle": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal Pemeriksaan",
-      "kicker": "Kriminal",
-      "title": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal",
+      "topic_id": "t_bertemu_menlu_brunei_malaysia_13d1",
+      "angle": "Indonesia teken MoU ASEAN Power Grid; Prabowo minta persatuan kawasan diperkuat",
+      "kicker": "Nasional",
+      "title": "Indonesia Teken MoU ASEAN Power Grid di KTT Manila, Apa Isinya?",
       "status": "sebagian",
       "truth": {
-        "claim": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal Pemeriksaan",
+        "claim": "Indonesia menandatangani Enhanced MoU ASEAN Power Grid di sela KTT ke-49 ASEAN di Manila, diwakili Menteri ESDM Bahlil Lahadalia.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:29:18+07:00"
+      },
+      "body": [
+        "Konferensi Tingkat Tinggi (KTT) ke-49 ASEAN berlangsung di Philippine International Convention Center, Pasay, Manila, Filipina, pada 15–17 November 2026. Di sela rangkaian itu, Indonesia meneken Enhanced Memorandum of Understanding (MoU) on ASEAN Power Grid. Penandatanganan dilakukan Menteri Koordinator Bidang Hilirisasi dan Energi yang juga Menteri Energi dan Sumber Daya Mineral, Bahlil Lahadalia, mewakili Indonesia sambil mendampingi Presiden Prabowo Subianto. Presiden sendiri menyampaikan intervensi pada sesi pleno KTT.",
+        "MoU itu bukan perjanjian jual beli listrik, melainkan kerangka kerja sama. ASEAN Power Grid adalah salah satu program utama kerja sama energi ASEAN di bawah ASEAN Plan of Action for Energy Cooperation 2026–2030. Lewat jaringan ini, sistem ketenagalistrikan antarnegara anggota akan saling terhubung, sehingga pasokan listrik kawasan dinilai menjadi lebih andal dan efisien. Bahlil menyatakan Indonesia mendukung penuh terwujudnya jaringan tersebut, dengan catatan kerja sama harus berdiri di atas prinsip saling menguntungkan dan tetap menghormati regulasi serta kepentingan nasional setiap negara.",
+        "Jalan menuju penandatanganan itu cukup panjang. Indonesia sudah menegaskan komitmen terhadap ASEAN Power Grid pada Pertemuan Menteri Energi ASEAN ke-44 di Manila pada Oktober 2026. Setelah itu, pemerintah menata regulasi domestik lebih dulu. Bahlil menyebut langkah tersebut agar Indonesia bergabung dalam kondisi benar-benar siap. Namun sejumlah detail belum diumumkan: daftar negara yang ikut menandatangani tidak dirinci, dan kapan MoU mulai berlaku juga belum disebut. Yang diketahui, setelah MoU berlaku, kerja sama dijalankan melalui sejumlah task force di bawah ASEAN Power Grid Consultative Committee.",
+        "Dalam pleno, Prabowo menekankan dua hal: ketahanan dan persatuan. Ia mengingatkan bahwa tahun depan ASEAN memasuki usia 60 tahun, menjadi rumah bagi sekitar 700 juta penduduk dengan ekonomi gabungan yang melampaui 4 triliun dolar AS. Menurutnya, tantangan di depan menuntut kawasan menjadi jauh lebih kuat, lebih cakap, lebih bersatu, dan lebih tangguh. Ia menyebut tekanan ekonomi, ketegangan geopolitik, hingga persaingan sumber daya sebagai tantangan yang dihadapi, dan menilai kemampuan menghadapinya harus dimulai dari kekuatan masing-masing negara dalam memenuhi kebutuhan serta menjaga kesejahteraan rakyatnya.",
+        "Persatuan itu, kata Prabowo, harus diterjemahkan menjadi pengaruh yang lebih besar. Jika salah satu anggota ASEAN menjadi kandidat pada suatu posisi di Perserikatan Bangsa-Bangsa atau organisasi afiliasinya, seluruh anggota diminta mendukung kandidat tersebut. Ia menilai langkah itu memperlihatkan ASEAN sebagai kekuatan kawasan yang kohesif. Prabowo juga mengingatkan pilihan para pendiri ASEAN hampir enam dekade lalu, yang memilih kerja sama daripada perpecahan. ASEAN sendiri didirikan di Bangkok pada 8 Agustus 1967 oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand.",
+        "Hasil lain masih berupa pembahasan atau usulan. Prabowo membahas potensi ASEAN Digital Economy Framework Agreement, tetapi proyeksi nilai ekonomi digitalnya tidak terbaca utuh dalam bahan yang tersedia sehingga angkanya belum jelas. Perdana Menteri Singapura Lawrence Wong mengusulkan perluasan satgas kebakaran hutan menjadi platform ASEAN. Prabowo menegaskan komitmen Indonesia mencegah kebakaran hutan dan lahan, dengan 17 konsesi perusahaan dicabut dan 11 perusahaan didakwa. Sementara Presiden Filipina meminta pendekatan yang lebih realistis dan adaptif, tanpa dirinci konflik yang dimaksud. Tidak ada keterangan tentang negara anggota yang menolak atau memberi catatan resmi atas hasil KTT."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu ASEAN dan kapan organisasi ini berdiri?",
+          "a": "ASEAN adalah organisasi geopolitik dan ekonomi negara Asia Tenggara, didirikan di Bangkok, Thailand, pada 8 Agustus 1967 oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perhimpunan_Bangsa-Bangsa_Asia_Tenggara"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan ke-26 pada 2019–2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa inti pesan Prabowo soal ketahanan kawasan?",
+          "a": "Ia menilai negara-negara ASEAN perlu memperkuat ketahanan dan persatuan menghadapi tekanan ekonomi, ketegangan geopolitik, hingga persaingan sumber daya.",
+          "source": {
+            "outlet": "okezone.com",
+            "url": "https://news.okezone.com/read/2026/11/15/337/3254182/ktt-asean-ke-49-filipina-prabowo-tantangan-ke-depan-menuntut-kita-jadi-lebih-tangguh"
+          }
+        }
+      ],
+      "action": "Pantau rilis resmi Sekretariat ASEAN soal daftar negara penandatangan dan tanggal berlaku MoU Power Grid.",
+      "image": {
+        "url": "assets/08629d3375.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Indonesia Teken MoU ASEAN Power Grid di KTT Manila, Apa Isinya?"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261115180146-90-1427420/jelang-ktt-asean-ke-49-ri-siap-teken-enhanced-mou-asean-power-grid",
+          "published_at": "2026-11-15T18:05:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ktt-ke-49-asean-dorong-pendekatan-realistis-untuk-krisis-myanmar-idPy",
+          "published_at": "2026-11-15T18:15:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/15/337/3254182/ktt-asean-ke-49-filipina-prabowo-tantangan-ke-depan-menuntut-kita-jadi-lebih-tangguh",
+          "published_at": "2026-11-15T17:01:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261115194122-4-785381/ktt-asean-bahas-asap-karhutla-ri-malaysia-singapura-beri-usul-ini",
+          "published_at": "2026-11-15T22:00:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 5,
+      "first_seen": "2026-11-15",
+      "previous_edition": "2026-11-15",
+      "changes": [],
+      "history": [
+        {
+          "date": "2026-11-15",
+          "title": "Wamen Investasi Akui Vietnam Lawan Tangguh RI di ASEAN"
+        },
+        {
+          "date": "2026-11-16",
+          "title": "KTT ASEAN ke-49 di Filipina"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "deep_dive",
+      "topic_id": "t_ketegangan_as_dan_iran_memanas_4a0b",
+      "angle": "Eskalasi langsung: klaim IRGC vs bantahan Bahrain, tiga kapal induk AS",
+      "kicker": "Nasional",
+      "title": "Iran Kembali Serang Pangkalan AS di Bahrain, Kapal Induk Ketiga Tiba",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IRGC mengklaim enam drone menghantam radar AS di pangkalan Al-Rifaa, Bahrain, pada 15 November 2026, sementara Bahrain menyatakan semua drone dicegat.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:29:18+07:00"
+      },
+      "body": [
+        "Iran melancarkan serangan pesawat nirawak terhadap fasilitas militer Amerika Serikat di Bahrain pada Minggu, 15 November 2026. Korps Garda Revolusi Islam Iran (IRGC) mengumumkan enam drone dikerahkan untuk menghantam radar pertahanan udara AS di pangkalan helikopter Al-Rifaa. Otoritas Bahrain menyatakan seluruh drone berhasil dicegat sistem pertahanan udara sebelum mencapai sasaran. Serangan ini merupakan yang kedua dalam tiga hari terakhir, setelah aksi serupa pada Jumat, 13 November. Ledakan terdengar di sejumlah wilayah Bahrain, sirene peringatan berbunyi, dan pemerintah setempat meminta warga segera mencari tempat perlindungan. Serangan itu memperkecil peluang tercapainya kesepakatan damai antara Washington dan Teheran, di tengah konflik yang belum menunjukkan tanda-tanda mereda sejak pecah pada Februari lalu.",
+        "Dua versi beredar soal hasil serangan Minggu itu. IRGC menyebut operasinya sebagai respons terhadap “tindakan permusuhan AS” dan mengklaim radar pertahanan udara menjadi sasaran. Pemerintah Bahrain, sebagaimana dikutip CNBC Indonesia dari The Guardian, menegaskan seluruh drone dicegat dan tidak ada yang mencapai sasaran. Sampai berita disusun, belum ada penjelasan resmi yang mempertemukan kedua klaim tersebut. Perbedaannya penting: bila klaim IRGC benar, ada peralatan pertahanan AS yang rusak; bila versi Bahrain benar, serangan itu berhenti di udara dan dampaknya berbeda sama sekali. Bagi pembaca, perbedaan ini menentukan cara membaca berita lanjutan: berhasil dicegatnya drone adalah versi resmi Bahrain, sedangkan klaim kerusakan radar adalah versi IRGC.",
+        "Jumlah korban jiwa maupun kerusakan akibat serangan Minggu belum dirinci pihak mana pun. Bahan yang tersedia hanya mencatat sirene berbunyi dan warga diminta berlindung. Untuk serangan Jumat, 13 November, Komando Pusat AS (CENTCOM) menyatakan dua drone berhasil ditembak jatuh tanpa menimbulkan korban maupun kerusakan. Tidak ada angka korban dari pihak Iran dalam bahan ini, dan tidak ada pernyataan resmi AS yang merinci dampak serangan terbaru. Karena itu, klaim tentang besarnya kerusakan masih harus diperlakukan sebagai klaim yang belum terverifikasi, bukan angka yang bisa dikutip. Perbandingan dengan serangan Jumat juga menunjukkan pola yang belum jelas: saat itu disebut dua drone, kini enam.",
+        "Bahrain bukan lokasi acak. Negara kecil di Teluk itu menampung sejumlah fasilitas militer Washington, termasuk pangkalan yang menjadi pusat operasi Armada Kelima Angkatan Laut AS dan Komando Pusat Angkatan Laut AS. CNBC Indonesia menyebut fasilitas tersebut berperan strategis dalam mendukung operasi militer Amerika di kawasan. Iran sebelumnya berulang kali menargetkan Bahrain hingga September, sebelum serangan sempat mereda selama beberapa waktu. Pilihan sasaran dapat dibaca sebagai upaya menekan simpul komando, bukan sekadar menyerang lambang kehadiran AS di kawasan. Bahan tidak menjelaskan apakah pangkalan Al-Rifaa berada dalam kompleks yang sama dengan markas Armada Kelima; yang disebut hanya bahwa Bahrain menampung keduanya.",
+        "Serangan Iran datang setelah serangkaian operasi militer AS di dalam wilayah Iran. CNBC Indonesia mencatat militer AS melancarkan serangan terhadap sejumlah target, termasuk Pulau Qeshm yang berada di kawasan Selat Hormuz. Presiden Donald Trump menyebut operasi itu sebagai serangan berskala kecil, dan mengatakan Arab Saudi serta sejumlah negara Teluk memperingatkan Washington agar tidak melancarkan operasi besar-besaran. Bahan tidak merinci target lain, jumlah serangan, atau korban di pihak Iran. Tanpa rincian itu, sulit menilai apakah serangan drone ke Bahrain merupakan pembalasan setara atau baru sebagian dari rangkaian. Bahan juga tidak menyebut tanggal pasti operasi-operasi AS itu, hanya bahwa semuanya berlangsung dalam beberapa pekan terakhir.",
+        "Tekanan militer AS bertambah dengan kehadiran kapal induk ketiga. Sindonews melaporkan USS Theodore Roosevelt bergabung dengan USS George H.W. Bush dan USS George Washington yang sudah beroperasi di Timur Tengah. Dengan begitu, ada tiga kapal induk AS di kawasan pada saat yang sama. Bahan tidak menyebut perairan spesifik tempat ketiga kapal itu berlayar, jaraknya dari Bahrain, atau berapa lama penambahan tersebut direncanakan. Yang bisa dipastikan hanya angka dan nama kapal sesuai laporan itu; rincian operasional lain belum diumumkan dalam bahan. Penambahan itu berlangsung saat Trump menyebut operasi AS berskala kecil, sehingga dapat dibaca sebagai persiapan opsi yang lebih besar bila eskalasi berlanjut.",
+        "Pemberitaan lain menyoroti kapasitas militer Iran. Sindonews menulis Iran masih memiliki sekitar 2.500 rudal sehingga, bila perang berkobar lagi, Teheran dapat menyerang pangkalan militer AS dan sekutu-sekutunya di Timur Tengah. Angka itu muncul dalam satu kalimat tanpa penjelasan sumber, tanpa rincian jenis, jangkauan, atau tingkat kesiapan. Karena itu, angka tersebut lebih tepat dibaca sebagai gambaran yang beredar di media ketimbang inventaris resmi yang terverifikasi. Bahan tidak memuat pernyataan pemerintah Iran atau Pentagon yang mengonfirmasi jumlah tersebut. Bila angka itu akurat, jangkauan Iran mencakup pangkalan di beberapa negara Teluk, tetapi bahan tidak memuat peta sasaran maupun pernyataan resmi soal itu.",
+        "Di dalam negeri AS, perang ini sudah masuk perhitungan politik. Trump pada pekan lalu menyatakan pemerintahannya tidak lagi berupaya mencapai kesepakatan dengan Iran. Ia menginstruksikan Wakil Presiden JD Vance mengalihkan perhatian pada dugaan korupsi dan penipuan di sejumlah kota serta negara bagian yang dipimpin Partai Demokrat. Sebelumnya Vance sempat meminta pertemuan langsung dengan para perunding Iran. Vance juga mengaitkan kekalahan Partai Republik pada pemilu sela Kongres dengan dampak perang melawan Iran. Bahan tidak menjelaskan apakah pengalihan tugas itu mengubah posisi negosiasi AS, dan tidak memuat pernyataan langsung Vance soal Iran setelah pengalihan tersebut.",
+        "Pertanyaan soal klaim Trump mengenai kemampuan senjata Iran tidak dapat dijawab dari bahan ini. Tidak ada kutipan Trump yang menyebut kapasitas rudal, drone, atau program nuklir Iran; yang tercatat hanya penilaiannya bahwa operasi AS berskala kecil. Bantahan Teheran datang dari juru bicara Kementerian Luar Negeri Iran, Esmaeil Baghaei. Ia menegaskan Iran akan terus merespons setiap tindakan agresi militer AS maupun negara lain. Ketika ditanya apakah serangan terbaru menandakan perubahan strategi setelah perundingan buntu, Baghaei menyatakan Teheran “tidak menunggu siapa pun” dan akan memprioritaskan keamanan nasional. Bahan tidak memuat tanggapan langsung Washington atas pernyataan Baghaei itu.",
+        "Dampak terhadap pengiriman minyak dan harga energi belum terjawab oleh bahan. Tidak ada data harga minyak, tarif pengiriman, atau volume lalu lintas tanker dalam berita yang tersedia. Yang tercatat hanya dua hal: Washington mempertahankan blokade laut terhadap Iran, dan operasi militer AS menyasar sejumlah target termasuk Pulau Qeshm di kawasan Selat Hormuz. Selat itu jalur pelayaran penting, tetapi bahan tidak memberi angka gangguan apa pun. Satu berita dalam kumpulan bahan membahas fasilitas minyak di Danau Maracaibo, Venezuela, dan tidak berkaitan dengan eskalasi Iran–AS ini. Karena itu, klaim bahwa eskalasi ini mengganggu pasokan minyak belum bisa diuji dengan bahan yang ada.",
+        "Seruan diplomatik yang muncul sejauh ini lebih banyak berbentuk kecaman ketimbang ajakan gencatan senjata. Kementerian Luar Negeri Bahrain mengecam serangan sebagai “agresi keji” dan pelanggaran terang-terangan terhadap hukum internasional. Pemerintah Bahrain juga menolak alasan Teheran, menyatakan wilayahnya tidak boleh dijadikan arena penyelesaian perselisihan, dan menganggap Iran bertanggung jawab penuh atas konsekuensinya. Yordania, Mesir, Arab Saudi, dan Qatar menyatakan solidaritas kepada Bahrain. Bahan tidak mencatat seruan resmi agar kedua pihak menghentikan permusuhan; yang ada pembicaraan AS–China untuk mencegah insiden militer menjadi krisis, menurut Republika, tanpa penjelasan kaitannya dengan Iran. Bahan juga tidak menyebut apakah Bahrain mengajukan keluhan resmi ke Dewan Keamanan PBB.",
+        "Konflik ini bukan peristiwa tunggal. CNBC Indonesia mencatat pertempuran pecah pada Februari lalu melalui serangan gabungan AS dan Israel terhadap Iran, dan hingga kini belum menunjukkan tanda-tanda mereda. Serangan drone ke Bahrain berlangsung hingga September, sempat berhenti, lalu berlanjut Jumat pekan ini. Di jalur diplomasi, perundingan dengan Washington disebut menemui jalan buntu. Kombinasi blokade laut, serangan timbal balik, dan pernyataan bahwa AS tidak lagi mengejar kesepakatan membuat ruang negosiasi menyempit, meski bahan tidak menjelaskan pihak mana yang paling menolak berunding. Bahan tidak merinci bentuk blokade laut itu, misalnya apakah mencakup pemeriksaan kapal atau penutupan pelabuhan tertentu.",
+        "Di Bahrain, dampaknya terasa pada kehidupan sehari-hari. Hayat Ibrahim, warga berusia 65 tahun, mengatakan kepada AFP bahwa yang terjadi persis seperti yang ia khawatirkan: serangan Iran kembali dimulai, dengan segala kekhawatiran dan ketidakpastian yang menyertainya. Pemerintah setempat mengeluarkan peringatan agar warga segera mencari tempat perlindungan saat sirene berbunyi. Bahan tidak menyebut berapa lama peringatan berlangsung, apakah sekolah atau kantor diliburkan, atau bagaimana aktivitas di sekitar pangkalan Al-Rifaa setelah serangan. Kesaksian itu menjadi satu-satunya suara langsung dari warga Bahrain dalam bahan ini, dan tidak dijelaskan apakah ada warga negara asing, termasuk pekerja migran, yang terdampak.",
+        "Perlu dicatat bagaimana informasi ini sampai ke publik. CNBC Indonesia mengutip The Guardian untuk pengumuman IRGC, dan mengutip AFP untuk kesaksian warga. Rincian teknis seperti jenis drone dan sistem radar yang disasar tidak dijelaskan. Pemberitaan Sindonews soal kapal induk dan jumlah rudal disajikan sangat singkat, tanpa atribusi resmi. Pembaca sebaiknya membedakan tiga lapis informasi: pernyataan pihak yang bertikai, laporan media yang mengutip pihak lain, dan data yang bisa diverifikasi independen. Bahan ini sebagian besar berisi lapis pertama dan kedua, sehingga kesimpulan apa pun masih bersifat sementara. Bahan tidak menyebut apakah redaksi menghubungi otoritas AS atau Bahrain untuk konfirmasi tambahan.",
+        "Beberapa hal masih terbuka. Bahan tidak merinci lokasi persis kerusakan, jumlah korban, maupun penilaian resmi AS atas serangan Minggu. Perairan tempat tiga kapal induk beroperasi tidak disebut spesifik, begitu pula apakah penambahan USS Theodore Roosevelt mengubah aturan pengerahan. Dampak ke pasar energi belum tercatat, dan belum ada pernyataan yang mempertemukan klaim IRGC dengan bantahan Bahrain. Sampai rincian itu muncul, gambaran paling aman adalah: serangan drone berulang ke fasilitas AS di Bahrain, penambahan kapal induk, dan perundingan yang tetap buntu. Bahan juga tidak menyebut jadwal pembicaraan lanjutan antara AS dan Iran maupun kemungkinan mediasi negara lain."
+      ],
+      "explain": [
+        {
+          "q": "Apa nama resmi dan posisi geografis Iran?",
+          "a": "Republik Islam Iran, negara di Asia Barat yang juga dikenal sebagai Persia; penduduk lokal memakai istilah Iran sejak zaman kuno, sementara dunia Barat menyebut Persia hingga 1935.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Iran"
+          }
+        },
+        {
+          "q": "Wilayah seperti apa yang disebut Timur Tengah?",
+          "a": "Wilayah yang secara politis dan budaya bagian dari Asia, berpusat di daratan antara Laut Mediterania dan Teluk Persia, memanjang dari Anatolia, Jazirah Arab, dan Semenanjung Sinai.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Timur_Tengah"
+          }
+        },
+        {
+          "q": "Bagaimana bentuk negara Amerika Serikat?",
+          "a": "Republik konstitusional federal berisi lima puluh negara bagian dan satu distrik federal, terletak di Amerika Utara dan diapit Samudra Pasifik serta Atlantik.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi CENTCOM dan Kementerian Luar Negeri Bahrain untuk memastikan ada atau tidaknya korban dan kerusakan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116053548-4-785411/perang-batal-kelar-iran-gempur-pangkalan-as-timur-tengah-panas-lagi",
+          "published_at": "2026-11-16T05:38:33+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://international.sindonews.com/read/1772493/42/trump-klaim-telah-hancurkan-senjata-iran-intelijen-as-teheran-masih-punya-2500-rudal-1794787868",
+          "published_at": "2026-11-16T07:02:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tol0pn451/as-dan-china-diamdiam-negosiasikan-pakta-pencegahan-krisis-militer",
+          "published_at": "2026-11-16T13:29:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Serangan drone Iran ke fasilitas AS di Bahrain untuk kedua kali dalam tiga hari, berbarengan dengan kedatangan kapal induk ketiga AS.",
+      "optional": true,
+      "read_min": 8,
+      "stats": [
+        {
+          "value": "1",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_nagita_slavina_ikut_jadi_korba_5302",
+      "angle": "Bareskrim menambah lima nama korban penyadapan, dari Raffi Ahmad sampai Najwa Shihab",
+      "kicker": "Kriminal",
+      "title": "Bareskrim Sebut Raffi Ahmad hingga Najwa Shihab Korban Sadap",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bareskrim menyebut lima nama tambahan sebagai pihak yang diduga disadap, sementara jumlah total korban belum diumumkan.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:29:18+07:00"
+      },
+      "body": [
+        "Direktur Tindak Pidana Siber Bareskrim Polri Brigjen Suhermanto membenarkan pada Senin, 16 November, bahwa sejumlah nama ikut masuk daftar pihak yang diduga disadap. Ia menyebut \"artis RA dan istrinya NS alias G, jurnalis NS dan ADG\" saat ditemui wartawan. Media yang melaporkan keterangan itu menjabarkan inisial tersebut sebagai Raffi Ahmad, Nagita Slavina, Najwa Shihab, dan Alfito Deannova Ginting. Selain empat nama itu, Suhermanto juga menyebut pegiat media sosial Denny Siregar sebagai pihak yang turut disadap. Dengan begitu, ada lima nama baru yang dikonfirmasi penyidik hari ini, di luar kelompok sasaran yang sebelumnya diumumkan Kapolri.",
+        "Jumlah total korban penyadapan belum diumumkan secara resmi. Penyidik menyampaikan nama secara lisan dan sebagian masih memakai inisial; hitungan resmi baru bisa dipastikan bila ada daftar lengkap. Sebelumnya, dalam rapat kerja dengan Komisi III DPR pada 12 November, Kapolri Jenderal Suyudi Ario Seto mengungkap sasaran penyadapan per kelompok, bukan per orang: Presiden RI, lingkar Istana, kementerian dan lembaga, pejabat pemerintah, anggota DPR dan partai politik, tokoh politik, gubernur dan kapolda, KPK, kejaksaan, internal Polri, ormas, aktivis, serta mahasiswa. Penyebutan Listyo juga berbeda antar pemberitaan: sebagian media menulis \"mantan Kapolri\", sebagian lain hanya menyebut pangkat jenderal tanpa keterangan tersebut.",
+        "Dasar pemasukan nama-nama itu belum diuraikan. Suhermanto hanya membenarkan informasi tersebut saat ditanya wartawan, tanpa memerinci alat bukti atau peran tiap orang. Kapolri Suyudi memberi kerangka umum: daftar itu disusun berdasarkan hasil penyidikan. Ia juga menegaskan daftar sasaran merupakan bagian dari materi penyidikan dan tidak dapat dimaknai sebagai keterlibatan pihak-pihak tersebut dalam suatu tindak pidana. Artinya, masuknya nama ke daftar belum menunjukkan perbuatan apa pun oleh yang bersangkutan. Alasan khusus mengapa tiap nama masuk daftar, termasuk apakah ada kaitan dengan pemberitaan atau aktivitas di media sosial, belum dijelaskan penyidik.",
+        "Status Listyo dalam perkara ini adalah tersangka. Polri menetapkan empat orang tersangka dalam kasus dugaan penyadapan terhadap Presiden Prabowo Subianto: Jenderal Listyo Sigit Prabowo, Irjen Ahrie Sonta Nasution, Irjen Eko Hadi Santoso, dan Irjen Slamet Uliandi. Latar belakang resmi menyebut Listyo menjabat Kapolri sejak 2021, pernah menjadi ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim; ia ditetapkan sebagai tersangka pada November 2026. Penyadapan sendiri hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan untuk perkara tertentu, seperti korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana. Bahan belum memuat pasal yang disangkakan kepada keempat tersangka.",
+        "Dua hal masih terbuka. Pertama, alat dan cara penyadapan yang diduga dipakai belum diumumkan; keterangan pejabat hanya menyebut kelompok sasaran, bukan perangkat atau jalur komunikasi yang disadap. Kedua, langkah penyidik setelah daftar diperbarui belum disampaikan. Bahan menyebut daftar sasaran sebagai bagian materi penyidikan, tetapi tidak menjelaskan apakah akan ada pemeriksaan saksi, penyitaan, atau penambahan tersangka. Keterangan yang ada juga belum menjawab apakah lima nama baru akan dipanggil sebagai saksi. Sampai keterangan resmi berikutnya, yang bisa dipegang adalah pengakuan penyidik soal nama dan status tersangka yang sudah ditetapkan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo dan apa latar belakangnya di kepolisian?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan oleh aparat penegak hukum sah?",
+          "a": "Hanya bila dilakukan penegak hukum dengan izin pengadilan dalam perkara tertentu seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Najwa Shihab?",
+          "a": "Jurnalis Indonesia keturunan Arab dan Bugis, putri Quraish Shihab, dan menikah dengan Ibrahim Sjarief Assegaf sejak 1997.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Najwa_Shihab"
+          }
+        },
+        {
+          "q": "Siapa Raffi Ahmad?",
+          "a": "Pembawa acara televisi, pemeran, penyanyi, pengusaha, dan produser; dikenal lewat grup vokal Bukan Bintang Biasa dan acara musik Dahsyat di RCTI.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Raffi_Ahmad"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Bareskrim soal dasar penyadapan tiap nama, dan jangan menyimpulkan korban sadap terlibat perkara.",
+      "image": {
+        "url": "assets/efbfd4c2c6.webp",
+        "credit": "detik.com",
+        "alt": "Bareskrim Sebut Raffi Ahmad hingga Najwa Shihab Korban Sadap"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754494/najwa-shihab-hingga-raffi-ahmad-juga-jadi-korban-sadap-listyo-sigit-dkk",
+          "published_at": "2026-11-16T07:11:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116105624-4-785503/bareskrim-update-korban-penyadapan-listyo-cs-raffi-ahmad-hingga-najwa",
+          "published_at": "2026-11-16T10:58:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1772635/13/raffi-ahmad-hingga-najwa-shihab-ikut-disadap-listyo-sigit-1794809501",
+          "published_at": "2026-11-16T13:36:22+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116071848-12-1427487/najwa-shihab-hingga-raffi-ahmad-jadi-korban-penyadapan-listyo-cs",
+          "published_at": "2026-11-16T07:52:52+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-16",
+      "previous_edition": "2026-11-15",
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_dpr_mulai_bahas_ruu_penyadapan_b033",
+      "angle": "Komisi III rapat dengan Kabaintelkam, membuka pembahasan aturan penyadapan.",
+      "kicker": "Nasional",
+      "title": "Komisi III DPR mulai bahas lagi RUU Penyadapan, tanpa target waktu",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Rapat Komisi III DPR bersama Kabaintelkam Polri pada 16 November 2026 membuka kembali pembahasan RUU Penyadapan, dan belum ada butir kesepakatan yang diumumkan ",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:29:18+07:00"
+      },
+      "body": [
+        "Komisi III DPR kembali membuka pembahasan Rancangan Undang-Undang Penyadapan lewat rapat dengar pendapat bersama Kepala Badan Intelijen dan Keamanan Polri, Komjen Dedy Kusuma Bakti, di kompleks parlemen, Senin (16/11/2026). Ketua Komisi III, Habiburokhman, membuka rapat dengan menyoroti penyadapan ilegal yang belakangan kembali menjadi perhatian publik. Dari pemberitaan yang ada, belum ada butir kesepakatan yang diumumkan dari rapat itu; bahan yang tersedia baru memuat pembukaan rapat dan alasan mengapa pengaturan penyadapan perlu dibahas.",
+        "Menurut Habiburokhman, kewenangan menyadap sebenarnya sudah ada di sejumlah undang-undang. Persoalannya, aturan itu tidak merinci cara menyadap dan prosedurnya masih beragam, termasuk soal izin pengadilan yang hanya berlaku pada sebagian kewenangan. Untuk itu ia menilai perlu undang-undang yang mengatur penyadapan secara rinci agar kasus penyadapan ilegal tidak terulang. Bahan tidak menyebutkan pasal mana yang akan mengatur syarat dan izin penyadapan dalam RUU ini, sehingga detail itu belum bisa dijelaskan.",
+        "Rapat ini juga bersinggungan dengan kasus dugaan penyadapan ilegal yang menyeret nama Kapolri Listyo Sigit Prabowo. Sejumlah pemberitaan menyebut namanya terseret dalam kasus tersebut, sementara bahan latar menyatakan ia ditetapkan sebagai tersangka pada November 2026; rumusan keduanya berbeda dan tidak dirinci lebih jauh dalam bahan ini. Habiburokhman menyebut persoalan itu sebagai bagian dari dinamika sistem penyadapan yang dijalankan institusi, dan menegaskan kewenangan menyadap diberikan secara terbatas untuk penegakan hukum serta pencegahan kejahatan.",
+        "Soal siapa yang berwenang mengawasi dan memberi izin, bahan hanya menyebut bahwa sebagian aturan mensyaratkan izin pengadilan. Bahan latar menyebut penyadapan sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, dan penyadapan tanpa dasar hukum dapat dipidana. Namun tidak ada keterangan dalam bahan ini tentang lembaga mana yang akan diberi kewenangan mengawasi penyadapan di RUU tersebut, maupun soal sikap Polri dan DPR terhadap pengawasan eksternal. Kabaintelkam hadir dalam rapat, tetapi isi pandangannya tidak dimuat dalam bahan yang tersedia.",
+        "Target waktu pembahasan dan pengesahan juga belum jelas. Habiburokhman menyebut pembahasan RUU Penyadapan dilanjutkan setelah Rancangan Kitab Undang-Undang Hukum Acara Pidana selesai, tetapi tidak ada keterangan soal tenggat atau jadwal pengesahan. Dengan begitu, yang bisa dipastikan hari ini adalah dibukanya kembali pembahasan, bukan keputusan atas isi aturan. Pembaca perlu menunggu rapat berikutnya untuk melihat apakah muncul usulan soal izin, pengawasan, dan batas waktu pembahasan."
+      ],
+      "explain": [
+        {
+          "q": "Bagaimana aturan penyadapan yang berlaku saat ini?",
+          "a": "Menurut bahan latar, penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Listyo Sigit Prabowo?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo; bahan latar menyebut ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal pada November 2026.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran DPR dalam pembentukan undang-undang?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah, dengan anggota yang dipilih lewat pemilu untuk masa jabatan lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau rapat Komisi III berikutnya untuk melihat usulan soal izin, lembaga pengawas, dan jadwal pembahasan RUU Penyadapan.",
+      "image": {
+        "url": "assets/3cd517b35b.webp",
+        "credit": "sindonews.com",
+        "alt": "Komisi III DPR mulai bahas lagi RUU Penyadapan, tanpa target waktu"
+      },
+      "sources": [
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1772663/13/cegah-kasus-listyo-sigit-terulang-komisi-iii-dpr-mulai-bahas-ruu-penyadapan-1794813083",
+          "published_at": "2026-11-16T14:19:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754762/komisi-iii-dpr-rapat-bareng-kabaintelkam-polri-bahas-ruu-penyadapan",
+          "published_at": "2026-11-16T11:04:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/16/337/3254274/komisi-iii-dpr-bahas-ruu-penyadapan-tak-ingin-kasus-listyo-sigit-terulang",
+          "published_at": "2026-11-16T11:23:31+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_pengguna_qris_capai_70_juta_bi_4de9",
+      "angle": "BI sebut QRIS capai 70 juta pengguna; OJK catat 700 ribu laporan scam di IASC",
+      "kicker": "Ekonomi",
+      "title": "QRIS 70 Juta Pengguna, OJK Catat 700 Ribu Laporan Penipuan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Hingga kuartal III 2026 QRIS dipakai lebih dari 70 juta pengguna, dan OJK menerima lebih dari 700.000 laporan penipuan digital melalui IASC.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:29:18+07:00"
+      },
+      "body": [
+        "Bank Indonesia mencatat QRIS sudah dipakai lebih dari 70 juta pengguna hingga kuartal III 2026, ditopang 49 juta merchant dengan volume transaksi kumulatif melampaui 20 miliar. Angka itu disampaikan Deputi Gubernur BI Filianingsih Hendarta dalam acara Gerakan Bersama Perlindungan Konsumen di Jakarta, Senin (16/11). Di forum yang sama, Otoritas Jasa Keuangan membeberkan sisi lain: laporan penipuan digital yang masuk ke Indonesia Anti-Scam Centre sudah melewati 700.000 aduan. Dua angka itu muncul berdampingan, dan BI menilai perluasan akses pembayaran digital harus diiringi perlindungan yang efektif agar inklusi tidak menambah kerentanan konsumen.",
+        "Lonjakan laporan disebut tajam. Ketika IASC pertama dibentuk sekitar dua tahun lalu, aduan yang tercatat baru 18.000. Anggota Dewan Komisioner OJK Dicky Kartikoyono menilai pertambahan sebesar itu menunjukkan penanganan pengaduan tidak lagi bisa dikerjakan satu institusi sendirian. Alasannya, satu transaksi digital kini melibatkan banyak pihak: bank, penyedia jasa sistem pembayaran, payment gateway, merchant, platform digital, hingga perusahaan telekomunikasi. \"Dulu satu masalah mungkin cukup ditangani oleh BCA, Mandiri, atau BNI,\" katanya. Sementara konsumen, menurut dia, hanya merasakan satu dampak langsung ketika bermasalah, yaitu kehilangan dana.",
+        "Namun rincian soal modus dan uang yang hilang belum jelas. Keterangan BI maupun OJK tidak menyebutkan modus penipuan mana yang paling banyak dilaporkan, juga tidak menyebut nilai kerugian atau jumlah dana yang berhasil dikembalikan. Yang disampaikan hanya bahwa modus penipuan beragam dan terus berkembang, sehingga kemampuan mengantisipasi dan merespons risiko juga harus dinaikkan. Filianingsih menyatakan rasio serangan siber sepanjang 2026 sekitar 0,001 persen dari total volume transaksi digital. Persentasenya kecil, tetapi menurut dia tidak boleh diabaikan karena kepercayaan publik dibangun bertahun-tahun dan bisa runtuh hanya akibat satu insiden.",
+        "Di sisi pencegahan, BI menekankan tiga hal: edukasi konsumen, pengembangan sistem peringatan dini, dan langkah pencegahan oleh penyelenggara sistem pembayaran. Filianingsih juga menyoroti hasil Survei Nasional Perlindungan Konsumen: Indeks Keberdayaan Konsumen Sistem Pembayaran 2026 mencapai 77,03 persen, naik 12,36 poin dari 64,67 persen pada 2023. Meski membaik, capaian itu masih masuk kategori kritis. \"Belum mencapai kategori berdaya,\" ujarnya, seraya menyebut konsumen masih perlu meningkatkan perilaku transaksi aman dan kesadaran memperjuangkan haknya. Studi BI terhadap 1.133 pelaku usaha kecil juga menunjukkan persepsi risiko menurunkan minat memakai pembayaran digital.",
+        "OJK menempuh jalur lain lewat penguatan mekanisme sengketa. Pada Senin, OJK dan BI menandatangani Petunjuk Pelaksanaan bersama tentang tata cara kerja sama dan koordinasi penyelesaian sengketa, yang diperluas mencakup penyelenggara di bidang sistem pembayaran. Alurnya: konsumen lebih dulu mengadu ke penyelenggara jasa keuangan melalui mekanisme penyelesaian pengaduan internal atau internal dispute resolution. Bila tidak tercapai kesepakatan, perkara diarahkan ke Lembaga Alternatif Penyelesaian Sengketa Sektor Keuangan sebelum dibawa ke pengadilan. Penyelenggara jasa keuangan wajib mengikuti proses itu, yang melibatkan mediator, arbiter, dan adjudikator independen bersertifikasi.",
+        "Bagaimana bila dana sudah terlanjur terkirim? Bahan yang tersedia belum memuat prosedur khusus untuk itu, termasuk soal peluang pengembalian dana, batas waktu pelaporan, atau kanal darurat yang bisa dihubungi. Yang bisa dipegang dari keterangan OJK adalah urutan pengaduannya: minta penyelesaian ke penyelenggara jasa keuangan lebih dulu, lalu lanjut ke LAPS-SK bila gagal sepakat. Dicky menyebut penguatan mekanisme ini justru untuk menghindari konsumen berpindah-pindah pintu, mengadu ke BI, OJK, dan penyelenggara sekaligus. Untuk besaran uang yang bisa dipulihkan, OJK belum merincikannya dalam forum tersebut."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Bank Indonesia dan mengapa lembaga ini mengurus QRIS?",
+          "a": "Bank Indonesia adalah bank sentral Republik Indonesia sesuai Pasal 23D UUD 1945 dan UU Nomor 23 Tahun 1999 tentang Bank Indonesia; sebelumnya bernama De Javasche Bank N.V.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Bank_Indonesia"
+          }
+        },
+        {
+          "q": "Apa tugas Otoritas Jasa Keuangan?",
+          "a": "OJK adalah lembaga yang mengatur dan mengawasi sektor keuangan Indonesia, termasuk perbankan, pasar modal, dan pinjaman online.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        }
+      ],
+      "action": "Sebelum memindai kode QR, periksa nama merchant dan nominalnya, lalu simpan bukti transaksi bila kemudian terjadi masalah.",
+      "image": {
+        "url": "assets/dfa23b13be.webp",
+        "credit": "kumparan.com",
+        "alt": "QRIS 70 Juta Pengguna, OJK Catat 700 Ribu Laporan Penipuan"
+      },
+      "sources": [
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/penipuan-digital-tembus-700-ribu-laporan-bi-soroti-risiko-hilangnya-kepercayaan-konsumen-28aFLdI327F",
+          "published_at": "2026-11-16T13:30:44+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://ekonomi.republika.co.id/berita/tokynm423/pengguna-qris-capai-70-juta-bi-ingatkan-risiko-penipuan-digital",
+          "published_at": "2026-11-16T13:01:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261116125452-78-1427619/ojk-bi-siapkan-jalur-penyelesaian-sengketa-keuangan-di-luar-pengadilan",
+          "published_at": "2026-11-16T13:55:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-16",
+      "previous_edition": "2026-11-15",
+      "changes": []
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_pasar_senen_jadi_simpul_transp_6cc4",
+      "angle": "Pramono setujui rute Transjabodetabek dan integrasi MRT di Pasar Senen pada 2030.",
+      "kicker": "Ekonomi",
+      "title": "Pramono Sebut Pasar Senen Bakal Jadi Hub Transportasi Baru",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pramono Anung menyatakan menyetujui masuknya Transjabodetabek ke Pasar Senen dan menargetkan MRT lintas timur-barat beroperasi pada 2030.",
         "status": "sebagian",
         "confidence": 0.83,
         "band": "kemungkinan_besar",
@@ -57,160 +562,155 @@
         },
         "gaps": [],
         "would_change_if": null,
-        "assessed_at": "2026-11-16T14:22:27+07:00"
+        "assessed_at": "2026-11-16T14:29:18+07:00"
       },
       "body": [
-        "Polda Metro Jaya masih menunggu kepastian jadwal pemeriksaan lanjutan terhadap mantan Ketua Komisi Pemberantasan Korupsi (KPK), Komjen Pol (Purn) Firli Bahuri (FB). Kepastian tersebut diperlukan setelah penyidik Direktorat Reserse Kriminal Umum (Ditreskrimum) mendatangi Firli beberapa waktu lalu.",
-        "Polda Metro Jaya masih menunggu konfirmasi pihak eks Ketua KPK Firli Bahuri terkait jadwal pemeriksaan lanjutannya sebagai tersangka pemerasan terhadap SYL."
+        "Gubernur DKI Jakarta Pramono Anung menyampaikan rencana menjadikan kawasan Pasar Senen sebagai simpul integrasi antarmoda. Ia berbicara saat menghadiri groundbreaking atau peletakan batu pertama revitalisasi Pasar Senen Blok VI di Jakarta Pusat, Senin, 16 November 2026. Menurutnya, kawasan itu punya potensi menampung berbagai moda transportasi yang bisa masuk ke sana. Ia menyebut Pasar Senen Blok VI akan menjadi hub baru di Jakarta bila pembangunannya selesai, dan berharap aktivitas orang menuju Senen ikut menguat.",
+        "Untuk angkutan antarkota, Pramono mengatakan menyetujui masuknya Transjabodetabek. Ia menyebut asal rute yang akan diatur kemudian, antara lain Bogor, Bekasi, Tangerang, Tangerang Selatan, dan Depok. Menurutnya, konektivitas dari wilayah penyangga ke Jakarta perlu diperkuat. Saat ini, menurut laporan lain, Pasar Senen baru terhubung dengan KRL dan Transjakarta; layanan tambahan belum beroperasi dan rinciannya belum diumumkan.",
+        "Untuk kereta, Pramono menyebut jalur yang melintasi kawasan ini adalah MRT lintas timur-barat, dengan segmen Kwitang–Kebon Sirih. Ia menargetkan segmen itu bisa beroperasi pada 2030. Soal penetapan lokasi, dua laporan memberi penekanan waktu yang berbeda: satu menyebut penetapan lokasi akan segera ditandatangani, laporan lain menyebut pekerjaan itu baru dimulai tahun depan. Keduanya belum memuat tanggal pasti, dan urutan waktunya belum jelas.",
+        "Pramono juga membayangkan kawasan ini berkembang sebagai kawasan berorientasi transit atau transit oriented development (TOD). Ia mencontohkan Blok M yang disebutnya jadi lebih hidup setelah dihubungkan dengan Transjabodetabek, dan berharap pola serupa terjadi di Senen. Ia menambahkan akan meminta Pembangunan Jaya, yang disebut menguasai beberapa blok di kawasan itu, menyelesaikan pembangunan. Namun pembagian peran antara pemerintah daerah dan pengembang tidak dijelaskan dalam bahan.",
+        "Yang belum jelas antara lain rute dan titik naik-turun Transjabodetabek, jadwal, tarif, serta pihak yang mengoperasikannya. Begitu pula cara penumpang berpindah antara KRL, Transjakarta, MRT, dan bus terminal di kawasan itu. Langkah berikutnya menurut Pramono adalah mengatur rute setelah revitalisasi Blok VI selesai, sementara penetapan lokasi MRT disebut sebagai tahap yang masih ditunggu. Sampai berita ini ditulis, belum ada pengumuman resmi soal tenggat seluruh integrasi tersebut."
       ],
       "explain": [
         {
-          "q": "Apa itu KPK?",
-          "a": "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "q": "Siapa Pramono Anung?",
+          "a": "Gubernur DKI Jakarta ke-18 yang menjabat sejak 20 Februari 2025, politikus PDI-P yang sebelumnya menjadi Sekretaris Kabinet 2015–2024.",
           "source": {
-            "outlet": "KPK",
-            "url": "https://www.kpk.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pramono_Anung"
           }
         },
         {
-          "q": "Apa arti status tersangka?",
-          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
+          "q": "Seberapa tua kawasan Pasar Senen dalam sejarah Jakarta?",
+          "a": "Pasar Senen disebut pasar tertua di Jakarta, dibuka 30 Agustus 1733 di kawasan yang dahulu bernama Weltevreden, dan awalnya berdagang setiap hari Senin.",
           "source": {
-            "outlet": "Polri",
-            "url": "https://www.polri.go.id/"
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pasar_Senen"
+          }
+        },
+        {
+          "q": "Apa inti rencana yang sedang dibahas?",
+          "a": "Gubernur DKI Jakarta Pramono Anung merencanakan Pasar Senen sebagai hub transportasi baru dengan mengintegrasikan Transjabodetabek untuk konektivitas yang lebih baik.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8754829/pasar-senen-bakal-jadi-hub-baru-pramono-setujui-rute-transj-dari-bodetabek"
           }
         }
       ],
-      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "action": "Pantau pengumuman resmi soal rute Transjabodetabek dan jadwal MRT Pasar Senen sebelum mengubah rencana perjalanan Anda.",
       "image": {
-        "url": "assets/f60af9f897.webp",
-        "credit": "okezone.com",
-        "alt": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal"
+        "url": "assets/b95c4afe89.webp",
+        "credit": "detik.com",
+        "alt": "Pramono Sebut Pasar Senen Bakal Jadi Hub Transportasi Baru"
       },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754829/pasar-senen-bakal-jadi-hub-baru-pramono-setujui-rute-transj-dari-bodetabek",
+          "published_at": "2026-11-16T11:57:57+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336190/pasar-senen-bakal-jadi-simpul-transportasi-terpadu-mrt-hadir-2030",
+          "published_at": "2026-11-16T14:14:27+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116131247-20-1427644/pramono-ingin-pasar-senen-jadi-tod-integrasikan-transjabodetabek-mrt",
+          "published_at": "2026-11-16T14:23:30+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_bursa_cawapres_pengganti_gibra_8c10",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Bursa Cawapres Pengganti Gibran",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 928 komentar di detik.com untuk topik ini. Nada bacaan: mayoritas mendukung.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Muzani orang gerindra, Dasco orang gerindra, Sugiono orang gerindra, orangnya sendiri” “Mampu rangkul kekuatan politik .. lucu lucu . Harusnya yang mampu memperbaiki kesejahteraa” “Kenapa partai koalisi dukung kader Gerindra jadi wapres? Biasanya berebutan calonin kadern”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
       "sources": [
         {
           "outlet": "okezone.com",
-          "url": "https://news.okezone.com/read/2026/11/16/337/3254249/penyidik-datangi-firli-bahuri-di-gor-polisi-masih-tunggu-jadwal-pemeriksaan",
-          "published_at": "2026-11-16T09:27:28+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
+          "url": "https://news.okezone.com/read/2026/11/15/337/3254207/giliran-gerindra-sulbar-sodorkan-nama-dasco-jadi-wapres-pengganti-gibran-ini-alasannya",
+          "published_at": "2026-11-15T19:26:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:29:18+07:00"
         },
         {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/nasional/20261116091931-12-1427517/polisi-masih-tunggu-konfirmasi-firli-bahuri-untuk-pemeriksaan-lanjutan",
-          "published_at": "2026-11-16T09:35:12+07:00",
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261115213316-4-785396/posisi-7-partai-pendukung-prabowo-terkait-cawapres-pengganti-gibran",
+          "published_at": "2026-11-16T06:15:20+07:00",
           "tier": 2,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
-        },
-        {
-          "outlet": "tirto.id",
-          "url": "https://tirto.id/dua-kali-dipanggil-polda-firli-bahuri-masih-mangkir-pemeriksaan-idQo",
-          "published_at": "2026-11-16T12:26:00+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
+          "accessed_at": "2026-11-16T14:29:18+07:00"
         }
       ],
-      "place": "nasional",
       "revision": 1,
       "first_seen": "2026-11-16",
       "previous_edition": null,
-      "changes": []
-    },
-    {
-      "id": "c2",
-      "type": "news",
-      "topic_id": "t_pengguna_qris_capai_70_juta_bi_4de9",
-      "angle": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
-      "kicker": "Ekonomi",
-      "title": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
-      "status": "sebagian",
-      "truth": {
-        "claim": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
-        "status": "sebagian",
-        "confidence": 0.65,
-        "band": "belum_pasti",
-        "basis": {
-          "strongest": "one_tier2",
-          "primary": 0,
-          "tier2": 1,
-          "independent_outlets": 3,
-          "contradicting": 0
-        },
-        "gaps": [],
-        "would_change_if": null,
-        "assessed_at": "2026-11-16T14:22:27+07:00"
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 928
       },
-      "body": [
-        "JAKARTA — Bank Indonesia (BI) mencatat volume transaksi Quick Response Code Indonesian Standard (QRIS) telah menembus lebih dari 20 miliar transaksi. Seiring dengan perkembangan positif implementasi QRIS dan semakin...",
-        "Otoritas Jasa Keuangan mencatat aduan penipuan digital menembus 700 ribu laporan, sementara Bank Indonesia mengingatkan risiko runtuhnya kepercayaan konsumen.#bisnisupdate #update #bisnis #text"
-      ],
-      "explain": [
+      "tone": "Mayoritas mendukung",
+      "quotes": [
         {
-          "q": "Apa itu OJK?",
-          "a": "Otoritas Jasa Keuangan, lembaga yang mengatur dan mengawasi sektor keuangan Indonesia, termasuk perbankan, pasar modal, dan pinjaman online.",
-          "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
-          }
+          "author": "Husni",
+          "platform": "detik.com",
+          "text": "Muzani orang gerindra, Dasco orang gerindra, Sugiono orang gerindra, orangnya sendiri",
+          "score": 2
         },
         {
-          "q": "Mengapa angka ekonomi ini penting?",
-          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
-          "source": {
-            "outlet": "OJK",
-            "url": "https://www.ojk.go.id/"
-          }
+          "author": "Syahbas",
+          "platform": "detik.com",
+          "text": "Mampu rangkul kekuatan politik .. lucu lucu . Harusnya yang mampu memperbaiki kesejahteraan rakyat . Mudah mudahan Pa Prabowo waras . Gak tergoda dgn rayuan manusia ABS ..",
+          "score": 1
+        },
+        {
+          "author": "Marone",
+          "platform": "detik.com",
+          "text": "Kenapa partai koalisi dukung kader Gerindra jadi wapres? Biasanya berebutan calonin kadernya. Jadi bertanya2 saja",
+          "score": 0
         }
       ],
-      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
-      "image": {
-        "url": "assets/2184a358eb.webp",
-        "credit": "republika.co.id",
-        "alt": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital"
-      },
-      "sources": [
-        {
-          "outlet": "republika.co.id",
-          "url": "https://ekonomi.republika.co.id/berita/tokynm423/pengguna-qris-capai-70-juta-bi-ingatkan-risiko-penipuan-digital",
-          "published_at": "2026-11-16T13:01:00+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
-        },
-        {
-          "outlet": "kumparan.com",
-          "url": "https://kumparan.com/kumparanbisnis/penipuan-digital-tembus-700-ribu-laporan-bi-soroti-risiko-hilangnya-kepercayaan-konsumen-28aFLdI327F",
-          "published_at": "2026-11-16T13:30:44+07:00",
-          "tier": 3,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
-        },
-        {
-          "outlet": "cnnindonesia.com",
-          "url": "https://www.cnnindonesia.com/ekonomi/20261116125452-78-1427619/ojk-bi-siapkan-jalur-penyelesaian-sengketa-keuangan-di-luar-pengadilan",
-          "published_at": "2026-11-16T13:55:23+07:00",
-          "tier": 2,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
-        }
-      ],
-      "place": "nasional",
-      "revision": 1,
-      "first_seen": "2026-11-16",
-      "previous_edition": null,
-      "changes": []
+      "comparison": null,
+      "reading": "Publik vokal di detik.com (928); tidak ada sinyal pembanding."
     },
     {
-      "id": "c3",
+      "id": "c8",
       "type": "hoax_roundup",
       "topic_id": "t_hoaks_2026_11_16",
       "angle": "3 pemeriksaan fakta hari ini",
       "kicker": "Kabar beredar",
-      "title": "Yang beredar, dan yang sudah dibantah",
+      "title": "Tiga Klaim Video Viral Dinyatakan Salah oleh TurnBackHoax",
       "status": "dibantah",
       "truth": null,
       "body": [
-        "3 klaim diperiksa hari ini. Semuanya dari TurnBackHoax.",
-        "Rincian klaim, putusan, dan alasannya ada di daftar di bawah."
+        "Pada 16 November 2026, TurnBackHoax memeriksa tiga klaim yang beredar di media sosial dan menyatakan ketiganya salah. Klaim pertama menyebut Presiden Prabowo akan mengirim perokok untuk menghisap asap kebakaran hutan dan lahan, berasal dari video di akun TikTok “@suhechannel81” yang diunggah Sabtu (17/10/2026). Klaim kedua menyebut Yenny Wahid mengaku bergabung dengan PSI, dibagikan akun Facebook “Jiban Jin Bendel” pada Jumat (23/10/2026) dan hingga Jumat (6/11/2026) menuai 2.000-an tanda suka, hampir 300 komentar, serta dibagikan ulang 65 kali. Klaim ketiga menampilkan Menara Eiffel terbakar saat demonstrasi di Paris, diunggah akun Facebook “suhaimiarza” pada Kamis (22/10/2026) dan hingga Jumat (6/11/2026) mendapat 1.500-an tanda suka.",
+        "Ketiganya berbentuk video yang disebar lewat akun media sosial, satu di TikTok dan dua di Facebook, dengan narasi tambahan dari pengunggah. Pada unggahan soal Menara Eiffel, takarir pengunggah memuat narasi “Prancis masih membara”. Ketiga klaim itu dinyatakan salah oleh TurnBackHoax, dan masing-masing memiliki tautan arsip unggahan aslinya.",
+        "Sebaiknya pembaca membuka hasil pemeriksaan lengkap lewat tautan TurnBackHoax sebelum menyebarkan ulang, dan tidak memakai jumlah tanda suka atau komentar sebagai ukuran kebenaran sebuah klaim."
       ],
-      "action": "Balas dengan tautan pemeriksaannya; jangan debat isinya.",
+      "action": "Baca hasil pemeriksaan lengkap di tautan TurnBackHoax sebelum menyebarkan ulang ketiga klaim ini.",
       "image": null,
       "sources": [
         {
@@ -218,7 +718,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-16T14:22:27+07:00"
+          "accessed_at": "2026-11-16T14:29:18+07:00"
         }
       ],
       "revision": 1,
@@ -248,7 +748,7 @@
           "url": "https://turnbackhoax.id/articles/37454-salah-video-menara-eiffel-terbakar-saat-demonstrasi-di-paris"
         }
       ],
-      "pattern": null
+      "pattern": "Tiga klaim beredar sebagai video di TikTok dan Facebook dengan narasi tambahan dari pengunggah, dan semuanya dinyatakan salah."
     }
   ]
 }
