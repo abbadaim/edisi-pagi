@@ -57,7 +57,10 @@ const REASON_TEXT: Record<HealthReason, string> = {
 };
 
 export function assessEdition(input: AssessInput): HealthReport {
-  const minCards = input.minCards ?? 4;
+  // Rekap mingguan selalu memakai adjudikasi fallback dan minimal 3 thread
+  // (`scripts/weekly.ts`), jadi ambangnya berbeda dari edisi harian.
+  const weekly = input.scope === "mingguan";
+  const minCards = input.minCards ?? (weekly ? 3 : 4);
   const edition = input.edition;
   const reasons: HealthReason[] = [];
 
@@ -83,7 +86,7 @@ export function assessEdition(input: AssessInput): HealthReport {
 
   if (edition.edition_id !== input.date) reasons.push("edition-not-yesterday");
   if (providers.write !== "opencode") reasons.push("deterministic-writer");
-  if (providers.adjudicate !== "opencode") reasons.push("deterministic-adjudicate");
+  if (!weekly && providers.adjudicate !== "opencode") reasons.push("deterministic-adjudicate");
   if (edition.cards.length < minCards) reasons.push("few-cards");
 
   if (input.manifest) {

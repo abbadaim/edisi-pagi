@@ -34,6 +34,8 @@ const editionsDir = arg("editions", "data/editions")!;
 const manifestPath = arg("manifest", "public/manifest.json")!;
 const date = arg("date", isoWib(new Date())!.slice(0, 10))!;
 const scope = arg("scope", "nasional")!;
+const minCardsArg = arg("min-cards");
+const minCards = minCardsArg ? Number(minCardsArg) : undefined;
 
 const edition = readJson<Record<string, unknown>>(join(editionsDir, `${date}.${scope}.json`));
 const manifest = readJson<ManifestLike>(manifestPath);
@@ -43,6 +45,7 @@ const report = assessEdition({
   scope,
   edition: edition ? (edition as unknown as EditionLike) : null,
   manifest,
+  minCards,
 });
 
 console.log(report.summary);

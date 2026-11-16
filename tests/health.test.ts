@@ -82,3 +82,34 @@ test("surel peringatan memuat alasan dan larangan bangun ulang", () => {
   assert.match(mail.body, /Jangan menerbitkan ulang tanggal yang sudah terbit/);
   assert.match(mail.body, /example\.test/);
 });
+
+test("rekap mingguan memakai ambang sendiri: 3 thread, adjudikasi fallback", () => {
+  const e = edition({
+    edition_id: "2026-11-16",
+    scope: "mingguan",
+    cards: [{ type: "deep_dive" }, { type: "deep_dive" }, { type: "deep_dive" }],
+    generated_by: {
+      adjudicate: { provider: "fallback" },
+      write: { provider: "opencode" },
+      verify: { provider: "rules" },
+    },
+  });
+  const r = assessEdition({
+    date: "2026-11-16",
+    scope: "mingguan",
+    edition: e,
+    manifest: { latest: "2026-11-16", latest_by_scope: { nasional: "2026-11-16", mingguan: "2026-11-16" } },
+  });
+  assert.equal(r.ok, true, `alasan: ${r.reasons.join(", ")}`);
+});
+
+test("rekap mingguan tanpa OpenCode tetap ditandai", () => {
+  const e = edition({
+    edition_id: "2026-11-16",
+    scope: "mingguan",
+    cards: [{ type: "deep_dive" }, { type: "deep_dive" }, { type: "deep_dive" }],
+    generated_by: { adjudicate: { provider: "fallback" }, write: { provider: "deterministic" } },
+  });
+  const r = assessEdition({ date: "2026-11-16", scope: "mingguan", edition: e, manifest: null });
+  assert.ok(r.reasons.includes("deterministic-writer"));
+});

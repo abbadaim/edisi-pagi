@@ -88,14 +88,8 @@ jobs:
       - name: Bangun edisi harian
         run: npm run build -- --thin
 
-      - name: Bangun edisi mingguan (Minggu)
-        run: |
-          if [ "$(TZ=Asia/Jakarta date +%u)" = "7" ]; then
-            npm run weekly -- --thin
-          else
-            echo "bukan Minggu, mingguan dilewati"
-          fi
-
+      # Rekap mingguan punya workflow sendiri (`weekly.yml`) supaya tidak
+      # bergantung pada build harian dan tidak menimpa edisi harian.
       - name: Publikasikan
         run: npm run publish
 

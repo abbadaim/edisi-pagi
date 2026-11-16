@@ -1,0 +1,146 @@
+name: mingguan
+
+# Rekap mingguan berdiri sendiri: tidak membangun edisi harian.
+# Dijalankan Minggu 05.00 WIB (Sabtu 22.00 UTC) dan bisa dipicu manual untuk
+# tanggal yang belum punya <tanggal>.mingguan.json.
+on:
+  schedule:
+    - cron: "0 22 * * 6"
+  workflow_dispatch:
+
+concurrency:
+  group: edisi-mingguan
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      DATABASE_PATH: data/state/local.db
+      LLM_PROVIDER: opencode
+      OPENCODE_AUTH_JSON: ${{ secrets.OPENCODE_AUTH_JSON }}
+      OPENCODE_MODEL: opencode-go/deepseek-v4.1-flash
+      VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+      PUSH_SUBSCRIPTIONS: ${{ secrets.PUSH_SUBSCRIPTION }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Pulihkan state
+        uses: actions/cache@v4
+        with:
+          path: data/state
+          key: edisi-state-${{ github.run_id }}
+          restore-keys: |
+            edisi-state-
+
+      - run: npm ci
+
+      # Versi dipatok, sama dengan daily.yml. Lihat DEC-0029: semua panggilan
+      # OpenCode memakai --standalone supaya profilnya sama dengan auth import.
+      - name: Install OpenCode CLI
+        if: env.OPENCODE_AUTH_JSON != ''
+        run: |
+          if ! curl -fsSL https://opencode.ai/v2/install | bash -s -- --version 2.2.7; then
+            echo "::warning::OpenCode gagal dipasang; mingguan memakai penulis deterministik"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
+          "$HOME/.opencode/bin/opencode" --version || true
+
+      - name: Import OpenCode credentials
+        if: env.OPENCODE_AUTH_JSON != ''
+        run: |
+          if printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import; then
+            "$HOME/.opencode/bin/opencode" --standalone auth list || true
+            echo "OpenCode siap"
+          else
+            echo "::warning::auth import gagal; mingguan memakai penulis deterministik"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+          fi
+
+      - name: Cek state
+        run: npm run state:info
+
+      - name: Migrasi state
+        run: npm run migrate
+
+      # State mingguan butuh artikel 7 hari; ingest menjaga cache tetap hangat
+      # walau tidak ada run harian pada hari itu.
+      - name: Ambil berita
+        run: npm run ingest -- --since-hours 168
+
+      # Hanya menulis <tanggal>.mingguan.json; edisi harian tidak disentuh.
+      - name: Bangun rekap mingguan
+        run: npm run weekly -- --thin
+
+      - name: Publikasikan
+        run: npm run publish
+
+      - name: Cek kesehatan rekap
+        id: health
+        if: always()
+        run: node scripts/health.ts --scope mingguan --out /tmp/health.json
+
+      - name: Kirim peringatan surel
+        if: always()
+        continue-on-error: true
+        env:
+          JOB_STATUS: ${{ job.status }}
+          ALERT_SMTP_URL: ${{ secrets.ALERT_SMTP_URL }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASS: ${{ secrets.ALERT_SMTP_PASS }}
+          ALERT_FROM: ${{ secrets.ALERT_FROM }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: node scripts/alert.ts --input /tmp/health.json
+
+      - name: Simpan hasil
+        continue-on-error: true
+        run: |
+          git config user.name "edisi-pagi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A data public
+          if git diff --cached --quiet; then
+            echo "tidak ada perubahan"
+            exit 0
+          fi
+          git commit -m "mingguan $(TZ=Asia/Jakarta date +%F)"
+          for i in 1 2 3; do
+            if git pull --rebase --autostash && git push; then
+              echo "hasil tersimpan"
+              exit 0
+            fi
+            echo "push gagal, coba lagi ($i/3)"
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "gagal menyimpan hasil; artefak situs tetap dideploy"
+          exit 0
+
+      - name: Unggah artefak situs
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy ke GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

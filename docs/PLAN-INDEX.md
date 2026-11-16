@@ -28,6 +28,7 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 017 | [Registry pemilik media](plans/017-registry-pemilik.md) | pipeline | `plan-draft` | 2026-11-16 |
 | 018 | [Deteksi build turun mutu + surel](plans/018-build-health-alert.md) | infra | `tested` | 2026-11-16 |
 | 019 | [Lokal off, fokus tindak lanjut](plans/019-lokal-off-followup.md) | pipeline + UI | `tested` | 2026-11-16 |
+| 020 | [Rekap mingguan berdiri sendiri](plans/020-mingguan-berdiri-sendiri.md) | infra | `tested` | 2026-11-16 |
 
 `002` selesai di kode dan tes: 4 uji baru di `tests/llm-resolve.test.ts`.
 Menunggu tidak ada; menunggu hanya konfirmasi run `daily.yml` berikutnya bahwa

@@ -15,7 +15,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Jalur produksi | **Newsroom default** (`scripts/build.ts`) |
 | Jalur mingguan | **Newsroom** (`scripts/weekly.ts`, 004); rollback `WEEKLY_WRITER=legacy` |
 | Rollback | `--no-newsroom` atau `NEWSROOM_WRITE=0` |
-| CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 75 menit |
+| CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 75 menit; rekap mingguan di `weekly.yml` (Minggu 05.00 WIB) |
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-12` nasional 8 kartu (build 14 m 16 s, OpenCode, kartu paralel) |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
@@ -236,6 +236,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 
 ### CI dan commit
 
+- Rekap mingguan punya workflow sendiri (`weekly.yml`, rencana 020). `daily.yml`
+  tidak lagi membangun mingguan; jangan mengembalikannya ke sana.
 - Workflow bot meng-commit `data/` dan `public/` setiap run. **Selalu `git pull --rebase origin main` sebelum push.**
 - Bisa ada proses lain/agen yang push bersamaan. Periksa `git log origin/main` setelah push.
 - **Jangan menjalankan ulang tanggal edisi yang sudah terbit**; edisi immutable. Untuk uji, pakai `--newsroom-limit` + `--thin` pada tanggal yang belum ada, atau POC.
