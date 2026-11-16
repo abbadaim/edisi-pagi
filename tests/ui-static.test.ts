@@ -192,3 +192,11 @@ test("UI-04: gaya lanjutan memakai token, bukan warna baru", () => {
   assert.match(css, /\.follow\{[^}]*var\(--rule\)/, "blok lanjutan tanpa token --rule");
   assert.match(css, /\.pill\.followPill\{[^}]*var\(--accent\)/, "chip lanjutan tanpa --accent");
 });
+
+// UI-05 — rencana 016
+test("UI-05: app.js merender strip perspektif bila kartu punya frames", () => {
+  const js = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(js, /function framesBlock/, "strip perspektif hilang");
+  assert.match(js, /Siapa menyorot apa/, "label strip hilang");
+  assert.match(js, /framesList/, "daftar media tidak dirender");
+});

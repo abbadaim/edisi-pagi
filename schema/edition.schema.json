@@ -470,6 +470,45 @@
             "$ref": "#/$defs/source"
           }
         },
+        "frames": {
+          "type": "array",
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "outlet",
+              "title",
+              "url",
+              "at"
+            ],
+            "properties": {
+              "outlet": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https?://"
+              },
+              "at": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/timestamp"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
         "history": {
           "type": "array",
           "maxItems": 8,

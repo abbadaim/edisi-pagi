@@ -1,7 +1,7 @@
 # 016 — Edisi perspektif (POC)
 
 ```
-Status: mockup-v2
+Status: tested
 Kelas: UI
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-16
@@ -132,6 +132,21 @@ langkah 3–5:
 Rollback: tidak ada yang perlu dibatalkan. Mockup adalah file statis di
 `docs/mockups/`, tidak dirujuk `publish.ts` dan tidak masuk `public/`.
 
+## 6b. Implementasi (2026-11-16)
+
+Bagian yang dikirim lebih dulu sebagai pelengkap, tanpa mengubah bentuk kartu:
+
+- `src/core/frames.ts` — `buildFrames()` mengambil judul dari tabel `articles`
+  (judul RSS, 0 token); `headlineFromUrl()` hanya cadangan bila URL tidak ada.
+- `scripts/build.ts` — menempelkan `frames` ke kartu; log
+  `perspektif: N kartu punya judul per media`.
+- `public/app.js` + `style.css` — strip tiga baris “Siapa menyorot apa” di bawah
+  badan, “Lihat semua N media” membuka sisanya.
+- `schema/edition.schema.json` — field opsional `frames`, maks 6.
+
+Belum: pengelompokan per pemilik (rencana 017), kutipan isi artikel, dan panel
+“Luput”. Tanpa registry, satu baris = satu media.
+
 ## 7. Riwayat
 
 - `2026-11-16` — `mockup-v1` — mockup dibuat dari edisi 2026-11-13; 0 panggilan
@@ -143,6 +158,9 @@ Rollback: tidak ada yang perlu dibatalkan. Mockup adalah file statis di
   bawah kartu + layar detail. Panel keragaman judul: hanya dua kartu yang
   benar-benar berbeda (penyadapan 0,09; DPO 0,06 — dua media saja), empat
   lainnya 0,17–0,35 dan cenderung menulis hal yang sama.
+- `2026-11-16` — `tested` — strip perspektif dikirim: `frames` dari tabel
+  `articles`, UI tiga baris + “Lihat semua”, 5 uji baru. Belum tampil di edisi
+  2026-11-16 karena build hari itu sudah selesai; masuk pada run 17 Nov.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

@@ -24,7 +24,7 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 005 | [Sitemap sumber primer](plans/005-primary-sitemap.md) | pipeline | `tested` | 2026-11-11 |
 | 006 | [Teks penuh meta lokal](plans/006-local-meta-text.md) | pipeline | `tested` | 2026-11-11 |
 | 007 | [Kartu gap & debate](plans/007-gap-debate-cards.md) | pipeline | `tested` | 2026-11-11 |
-| 016 | [Edisi perspektif (POC)](plans/016-perspektif.md) | UI | `mockup-v2` | 2026-11-16 |
+| 016 | [Edisi perspektif (POC)](plans/016-perspektif.md) | UI | `tested` | 2026-11-16 |
 | 017 | [Registry pemilik media](plans/017-registry-pemilik.md) | pipeline | `plan-draft` | 2026-11-16 |
 | 018 | [Deteksi build turun mutu + surel](plans/018-build-health-alert.md) | infra | `tested` | 2026-11-16 |
 | 019 | [Lokal off, fokus tindak lanjut](plans/019-lokal-off-followup.md) | pipeline + UI | `tested` | 2026-11-16 |

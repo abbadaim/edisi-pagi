@@ -121,6 +121,50 @@ function followBlock(card) {
   return box;
 }
 
+/**
+ * Strip “Siapa menyorot apa” (rencana 016): judul asli tiap media, tiga baris
+ * pertama, sisanya lewat “Lihat semua”. Tanpa model — judul sudah ada di kartu.
+ */
+function framesBlock(card) {
+  const items = Array.isArray(card.frames) ? card.frames : [];
+  if (items.length < 2) return null;
+
+  const box = el("section", "frames");
+  const head = el("div", "framesHead");
+  head.append(el("div", "framesLbl", "Siapa menyorot apa"));
+  head.append(el("div", "framesCount", `${Math.min(3, items.length)} dari ${items.length} media`));
+  box.append(head);
+
+  const list = el("div", "framesList");
+  const render = (limit) => {
+    list.textContent = "";
+    for (const f of items.slice(0, limit)) {
+      const row = el("a", "frameRow");
+      row.href = f.url;
+      row.target = "_blank";
+      row.rel = "noopener";
+      row.append(el("div", "frameMeta", f.at ? `${f.outlet} · ${shortDate(f.at)}` : f.outlet));
+      row.append(el("div", "frameTitle", f.title));
+      list.append(row);
+    }
+  };
+  render(3);
+  box.append(list);
+
+  if (items.length > 3) {
+    const btn = el("button", "framesBtn", `Lihat semua ${items.length} media`);
+    btn.type = "button";
+    let open = false;
+    btn.addEventListener("click", () => {
+      open = !open;
+      render(open ? items.length : 3);
+      btn.textContent = open ? "Ringkas" : `Lihat semua ${items.length} media`;
+    });
+    box.append(btn);
+  }
+  return box;
+}
+
 function shortDate(iso) {
   try {
     return new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "short", timeZone: "Asia/Jakarta" });
@@ -960,6 +1004,9 @@ function openCard(index, opts = {}) {
   if (follow) body.append(follow);
 
   for (const p of card.body ?? []) body.append(el("p", "body", p));
+
+  const frames = framesBlock(card);
+  if (frames) body.append(frames);
 
   if (card.action) {
     const a = el("div", "action");

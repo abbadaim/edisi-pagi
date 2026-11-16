@@ -91,6 +91,13 @@ export interface ExplainItem {
   source: ExplainSource;
 }
 
+export interface FrameItem {
+  outlet: string;
+  title: string;
+  url: string;
+  at: string | null;
+}
+
 export interface HistoryEntry {
   /** Tanggal edisi (`YYYY-MM-DD`). */
   date: string;
@@ -122,6 +129,8 @@ export interface CardBase {
   changes: Change[];
   /** Jejak topik lintas edisi untuk linimasa tindak lanjut (rencana 019). */
   history?: HistoryEntry[];
+  /** Judul asli per media — strip “Siapa menyorot apa” (rencana 016). */
+  frames?: FrameItem[];
 }
 
 export interface NewsCard extends CardBase {

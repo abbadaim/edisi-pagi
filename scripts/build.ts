@@ -44,6 +44,7 @@ import {
 } from "../src/core/newsroom/meta-social.ts";
 import { SCOPE_BUDGET, budgetFollowUps } from "../src/core/newsroom/selection.ts";
 import { buildHistory, linkHistory } from "../src/core/history.ts";
+import { buildFrames, hasFrames } from "../src/core/frames.ts";
 import { withStatusChanges, type PreviousCard } from "../src/core/newsroom/continuity.ts";
 import { localEditionEnabled } from "../src/core/edition-scope.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
@@ -885,6 +886,21 @@ try {
   const followUps = withHistory.filter((c) => (c.history?.length ?? 0) > 1).length;
   if (followUps > 0) console.log(`  lanjutan: ${followUps} kartu punya riwayat lintas edisi`);
 
+  // Strip “Siapa menyorot apa”: judul asli per media, tanpa model.
+  const withFrames = withHistory.map((card) => {
+    const urls = card.sources.map((s) => s.url);
+    if (urls.length < 2) return card;
+    const rows = db.all<{ url: string; title_display: string }>(
+      `SELECT url, title_display FROM articles WHERE url IN (${urls.map(() => "?").join(",")})`,
+      urls,
+    );
+    const titles = new Map(rows.map((r) => [r.url, r.title_display]));
+    const frames = buildFrames(card.sources, titles);
+    return hasFrames(frames) ? { ...card, frames } : card;
+  });
+  const framed = withFrames.filter((c) => c.frames?.length).length;
+  if (framed > 0) console.log(`  perspektif: ${framed} kartu punya judul per media`);
+
   if (newsroom) {
     console.log("  kartu:", uniqueCards.map((c) => `${c.type}:${c.sources.length}`).join(" "));
   }
@@ -921,7 +937,7 @@ try {
     coverage: { from: coverageFrom, to: coverageTo },
     generatedAt: publishedAt,
     place: { kabupaten: "Sleman", province: "DI Yogyakarta" },
-    cards: withHistory,
+    cards: withFrames,
     truncatedReason:
       uniqueCards.length < 8
         ? `Hanya ${uniqueCards.length} kartu yang lolos; sisanya tidak punya konteks atau sumber`
