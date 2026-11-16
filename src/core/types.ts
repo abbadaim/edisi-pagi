@@ -91,6 +91,13 @@ export interface ExplainItem {
   source: ExplainSource;
 }
 
+export interface HistoryEntry {
+  /** Tanggal edisi (`YYYY-MM-DD`). */
+  date: string;
+  /** Judul kartu di edisi itu; badan per hari tidak disimpan. */
+  title: string;
+}
+
 export interface CardBase {
   id: string;
   type: CardType;
@@ -113,6 +120,8 @@ export interface CardBase {
   first_seen: DateOnly;
   previous_edition: DateOnly | null;
   changes: Change[];
+  /** Jejak topik lintas edisi untuk linimasa tindak lanjut (rencana 019). */
+  history?: HistoryEntry[];
 }
 
 export interface NewsCard extends CardBase {

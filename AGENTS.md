@@ -143,7 +143,7 @@ Jangan menambah retry otomatis hanya karena panjang kurang. `D-LEN` advisory.
 
 | | Nasional | Lokal |
 |---|---:|---:|
-| Maks kartu follow-up | 2 | 1 |
+| Maks kartu follow-up | 3 | — (edisi lokal dihentikan) |
 | Minimum berita baru | 3 | 1 |
 | Target kandidat | 6 | 4 |
 
@@ -209,6 +209,11 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `continue-on-error: true` **tidak selalu** menyelamatkan job (terlihat pada langkah auth OpenCode). Untuk langkah opsional, tangani kegagalan di dalam skrip (`if ! cmd; then ... exit 0; fi`).
 
 ### Sumber Sleman / lokal
+
+- **Edisi lokal dihentikan** (rencana 019, 2026-11-16): 10–14 November hanya
+  lima hari yang terbit, sisanya tidak lolos ambang dua kartu. `LOCAL_EDITION=1`
+  mengembalikan perilaku lama; `latest_by_scope.lokal` selalu `null` dan tab
+  Sleman hilang. Berita Sleman tetap bisa masuk edisi nasional.
 
 - `fallbackTopics(summarise([cluster]))` selalu memberi `cid: "c01"`. Dulu `isFollowTopic` mencocokkannya dengan entri nasional `c01`, mengira semua brief lokal adalah follow-up, lalu kuota membuang seluruh edisi Sleman. Solusi: cid unik `solo_<cluster-key>` + cocokkan identitas objek lebih dulu.
 - Brief lokal boleh 1 sumber; nasional minimal 2.

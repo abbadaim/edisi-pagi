@@ -209,3 +209,29 @@ details.ctx summary::-webkit-details-marker{display:none}
 .disclaimer{margin:16px 0 4px; padding:14px 16px; background:#FBEEEA; border:2px solid var(--accent); border-radius:3px}
 .disclaimer .lbl{font:10px/1 ui-sans-serif,system-ui; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:6px}
 .disclaimer p{margin:0; font-size:14px; line-height:1.55; color:#3d1c14}
+
+/* Tindak lanjut: chip + blok “Sejak kemarin” + linimasa (rencana 019). */
+.pill.followPill{background:var(--accent-soft); color:var(--accent)}
+.follow{margin-top:14px; padding:11px 12px; border:1px solid var(--rule); border-radius:12px; background:#FCFAF6}
+.followHead{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
+.followLbl{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:var(--ink)}
+.followRange{font-size:9.5px; color:var(--faint); font-variant-numeric:tabular-nums}
+.followChanges{margin-top:7px; display:flex; flex-direction:column; gap:4px}
+.followChange{display:flex; align-items:center; gap:6px; font-size:11px; color:var(--muted); flex-wrap:wrap}
+.followField{font-size:9px; letter-spacing:.08em; text-transform:uppercase; font-weight:800; color:var(--faint)}
+.followFrom{color:var(--faint); text-decoration:line-through}
+.followArrow{color:var(--faint)}
+.followTo{font-weight:700; color:var(--ink)}
+.followNote{margin:7px 0 0; font-size:11px; line-height:1.5; color:var(--muted)}
+.followBtn{margin-top:8px; border:0; background:transparent; padding:0; font-family:var(--sans); font-size:9.5px;
+           font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); cursor:pointer}
+.followTl{list-style:none; margin:9px 0 0; padding:0 0 0 14px; position:relative}
+.followTl::before{content:""; position:absolute; left:3px; top:6px; bottom:6px; width:1px; background:var(--rule)}
+.followTl li{position:relative; padding:4px 0; font-size:11px; line-height:1.45; color:var(--muted)}
+.followTl li::before{content:""; position:absolute; left:-14px; top:8px; width:7px; height:7px; border-radius:50%;
+                     background:var(--paper); border:1.5px solid var(--faint)}
+.followTl li.now{color:var(--ink)}
+.followTl li.now::before{border-color:var(--accent); background:var(--accent)}
+.followDate{display:block; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--faint); font-weight:700}
+.followTitle{font-family:var(--serif); font-size:12px; line-height:1.35}
+.kick .followPill{margin-left:6px; padding:2px 6px; font-size:8px; letter-spacing:.05em; vertical-align:1px}

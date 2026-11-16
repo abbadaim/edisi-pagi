@@ -470,6 +470,28 @@
             "$ref": "#/$defs/source"
           }
         },
+        "history": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "date",
+              "title"
+            ],
+            "properties": {
+              "date": {
+                "$ref": "#/$defs/date"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 140
+              }
+            }
+          }
+        },
         "revision": {
           "type": "integer",
           "minimum": 1

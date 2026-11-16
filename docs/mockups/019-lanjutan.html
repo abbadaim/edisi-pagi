@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — Kartu lanjutan dengan linimasa</title>
+<style>
+  :root{
+    --paper:#FAF7F2; --ink:#17150F; --muted:#6B6459; --faint:#9A9284;
+    --rule:#E3DCD1; --accent:#B3402A; --accent-soft:#F3EAE4;
+    --ok:#2F6B4F; --warn:#9A6A1E; --bad:#A33A31;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-font-smoothing:antialiased}
+  body{margin:0; padding:26px 20px 60px; background:#E7E2DA; font-family:var(--sans); color:var(--ink)}
+  .top{max-width:860px; margin:0 auto 16px; display:flex; gap:22px; justify-content:space-between; align-items:flex-start; flex-wrap:wrap}
+  .eyebrow{font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:#8D8578; font-weight:700}
+  .top h1{font-family:var(--serif); font-size:30px; line-height:1.05; letter-spacing:-.02em; margin:7px 0 6px; font-weight:600}
+  .top p{margin:0; max-width:600px; font-size:12.5px; line-height:1.6; color:var(--muted)}
+  .badges{display:flex; flex-direction:column; gap:6px; align-items:flex-end}
+  .badge{font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--ink); border-radius:999px; padding:5px 11px; background:var(--paper)}
+  .badge.soft{border-color:var(--rule); color:var(--muted); background:transparent}
+
+  .bar{max-width:860px; margin:0 auto 18px; display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+  .orderfix{display:inline-flex; align-items:center; gap:6px; font-size:10.5px; font-weight:700; letter-spacing:.04em;
+            text-transform:uppercase; color:var(--muted); border:1px solid var(--rule); border-radius:999px; padding:6px 11px; background:var(--paper)}
+  .orderfix .dot{width:6px; height:6px; border-radius:50%; background:var(--accent)}
+  .hint{font-size:9.5px; color:#8D8578}
+
+  .stage{display:grid; grid-template-columns:380px 380px; gap:26px 22px; justify-content:center; align-items:start}
+  .col{display:flex; flex-direction:column; gap:9px; align-items:center}
+  .cap{font-size:9.5px; letter-spacing:.13em; text-transform:uppercase; color:#8D8578; font-weight:700; text-align:center; width:380px; line-height:1.5}
+  .phone{width:380px; height:820px; background:var(--paper); border-radius:44px; overflow:hidden; position:relative;
+         box-shadow:0 1px 2px rgba(0,0,0,.05), 0 18px 40px -14px rgba(0,0,0,.24), 0 0 0 9px #1C1B19}
+  .screen{height:100%; display:flex; flex-direction:column}
+  .sb{height:40px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; font-size:12px; font-weight:600; flex:none}
+  .sb .r{letter-spacing:1px; opacity:.85}
+  .scroll{flex:1; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin}
+  .scroll::-webkit-scrollbar{width:5px}
+  .scroll::-webkit-scrollbar-thumb{background:var(--rule); border-radius:9px}
+
+  .hd{padding:2px 20px 10px; border-bottom:1px solid var(--rule)}
+  .kicker{font-size:9.5px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; color:var(--accent); display:flex; gap:7px; align-items:center}
+  .kicker .sep{color:var(--faint)}
+  .hd h2{font-family:var(--serif); font-size:23px; line-height:1.1; margin:6px 0 8px; letter-spacing:-.02em; font-weight:600}
+  .meta{display:flex; gap:7px; flex-wrap:wrap; align-items:center; font-size:10px; color:var(--faint)}
+  .pill{border:1px solid var(--rule); border-radius:999px; padding:2px 7px; font-size:9.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--muted)}
+  .pill.ok{border-color:var(--ok); color:var(--ok)}
+  .pill.acc{border-color:var(--accent); color:var(--accent); background:var(--accent-soft)}
+  .pill.warn{border-color:var(--warn); color:var(--warn)}
+
+  /* "sejak kemarin" ringkas di kartu */
+  .since{margin:12px 20px 0; border-top:1px solid var(--ink); padding-top:9px}
+  .since .sh{display:flex; align-items:baseline; justify-content:space-between; gap:8px; margin-bottom:6px}
+  .since .sh b{font-size:9.5px; letter-spacing:.13em; text-transform:uppercase; font-weight:800}
+  .since .sh span{font-size:9.5px; color:var(--faint)}
+  .mini{position:relative; padding-left:16px}
+  .mini::before{content:""; position:absolute; left:3.5px; top:6px; bottom:6px; width:1px; background:var(--rule)}
+  .mrow{position:relative; padding:5px 0}
+  .mrow::before{content:""; position:absolute; left:-15.5px; top:10px; width:7px; height:7px; border-radius:50%;
+                background:var(--paper); border:1.5px solid var(--faint)}
+  .mrow.hot::before{border-color:var(--accent); background:var(--accent)}
+  .mrow .t{font-size:12px; line-height:1.35; font-weight:600; font-family:var(--serif)}
+  .mrow .s{font-size:9.5px; color:var(--faint); margin-top:1px}
+  .ghost{margin:14px 20px; padding:12px; border:1px dashed var(--rule); border-radius:8px; background:#F5F1EA;
+         font-size:10.5px; line-height:1.5; color:var(--muted); text-align:center}
+  .lastup{margin:0 20px 14px; padding:10px 12px; border-left:2px solid var(--accent); background:var(--accent-soft);
+          border-radius:0 6px 6px 0; font-size:10.5px; line-height:1.5; color:var(--muted)}
+  .spot{margin:0 20px 14px}
+  .spot .t{font-size:9px; letter-spacing:.1em; text-transform:uppercase; font-weight:800; color:var(--ok); margin-bottom:4px}
+  .spot .q{font-size:10px; line-height:1.45; color:var(--muted); margin:0 0 4px}
+  .spot .a{font-family:var(--serif); font-size:12.5px; line-height:1.45; color:var(--ink); margin:0 0 7px; padding-left:8px; border-left:2px solid var(--ok)}
+  .linkmore2{border:0; background:transparent; padding:0; font-family:var(--sans); font-size:9px; font-weight:800;
+             letter-spacing:.06em; text-transform:uppercase; color:var(--accent); cursor:pointer}
+  .lastup b{display:block; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:3px}
+  .linkmore{margin:9px 20px 18px; width:calc(100% - 40px); border:1px solid var(--ink); background:transparent; border-radius:999px;
+            padding:8px; font-family:var(--sans); font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; cursor:pointer}
+  .linkmore:hover{background:var(--ink); color:var(--paper)}
+
+  /* linimasa penuh */
+  .tbar{position:sticky; top:0; z-index:2; background:var(--paper); border-bottom:1px solid var(--rule); padding:8px 20px 7px}
+  .tbar .row{display:flex; gap:6px; align-items:center; flex-wrap:wrap}
+  .tbar .f{border:1px solid var(--rule); background:transparent; font-family:var(--sans); font-size:9.5px; font-weight:700;
+           letter-spacing:.04em; text-transform:uppercase; color:var(--muted); border-radius:999px; padding:4px 8px; cursor:pointer}
+  .tbar .f.on{background:var(--ink); border-color:var(--ink); color:var(--paper)}
+  .tbar .f .n{opacity:.55; margin-left:4px}
+
+  .tl{padding:10px 20px 26px; position:relative; list-style:none; margin:0}
+  .tl::before{content:""; position:absolute; left:70px; top:16px; bottom:32px; width:1px; background:var(--rule)}
+  .tl li{position:relative; padding:0 0 18px 0; display:grid; grid-template-columns:56px 1fr; gap:14px}
+  .tl .when{font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--faint); font-weight:700;
+            text-align:right; padding-top:4px; line-height:1.35}
+  .tl .when b{display:block; font-size:13px; letter-spacing:-.01em; color:var(--ink); font-weight:700}
+  .tl .body{position:relative; padding-left:16px}
+  .tl .body::before{content:""; position:absolute; left:-4px; top:7px; width:9px; height:9px; border-radius:50%;
+                    background:var(--paper); border:2px solid var(--faint)}
+  .tl li.update .body::before{border-color:var(--ink)}
+  .tl li.answered .body::before{border-color:var(--ok); background:var(--ok)}
+  .tl li.open .body::before{border-color:var(--warn)}
+  .tl li.open .body::before{background:var(--warn)}
+  .tl .tag{font-size:8.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:800; color:var(--faint)}
+  .tl li.update .tag{color:var(--ink)}
+  .tl li.answered .tag{color:var(--ok)}
+  .tl li.open .tag{color:var(--warn)}
+  .tl h3{font-family:var(--serif); font-size:14px; line-height:1.3; margin:3px 0 3px; font-weight:600}
+  .tl .d{font-size:10.5px; line-height:1.5; color:var(--muted); margin:0}
+  .tl .qt{font-family:var(--serif); font-size:12.5px; line-height:1.4; margin:6px 0 0; color:var(--ink)}
+  .tl .exp{margin-top:7px; border-top:1px dotted var(--rule); padding-top:7px; display:none}
+  .tl li.on .exp{display:block}
+  .tl .exp p{margin:0 0 6px; font-size:10px; line-height:1.5; color:var(--muted)}
+  .tl .exp p b{color:var(--ink); font-weight:700}
+  .tl .exp .q{font-size:10px; color:var(--muted); margin:0 0 3px}
+  .tl .exp .a{font-size:10.5px; color:var(--ink); margin:0 0 8px; padding-left:8px; border-left:2px solid var(--rule)}
+  .tl button.tap{border:0; background:transparent; padding:0; font-family:var(--sans); font-size:9px; font-weight:700;
+                 letter-spacing:.06em; text-transform:uppercase; color:var(--accent); cursor:pointer; margin-top:5px}
+  .tl .empty{font-size:10px; color:var(--faint); padding:6px 0}
+
+  .panel{max-width:860px; margin:32px auto 0; background:var(--paper); border-radius:14px; padding:20px 22px;
+         box-shadow:0 1px 2px rgba(0,0,0,.04), 0 12px 30px -18px rgba(0,0,0,.2)}
+  .panel h2{font-family:var(--serif); font-size:19px; margin:0 0 4px; letter-spacing:-.015em; font-weight:600}
+  .panel .sub{font-size:11.5px; color:var(--muted); margin:0 0 12px; line-height:1.6; max-width:720px}
+  ul.tight{margin:8px 0 0; padding-left:16px; font-size:11.5px; line-height:1.65; color:var(--muted)}
+  ul.tight li{margin-bottom:5px}
+  code{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:10.5px; background:#F0EBE2; padding:1px 4px; border-radius:3px}
+  table{width:100%; border-collapse:collapse; font-size:11.5px}
+  th{text-align:left; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); font-weight:800;
+     padding:0 8px 7px 0; border-bottom:1px solid var(--rule)}
+  td{padding:7px 8px 7px 0; border-bottom:1px solid var(--rule); vertical-align:top}
+  td.num{text-align:right; font-variant-numeric:tabular-nums}
+  .foot{max-width:860px; margin:20px auto 0; font-size:10.5px; color:#8D8578; line-height:1.65}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div>
+    <div class="eyebrow">Mockup · 019 · linimasa tindak lanjut · data nyata</div>
+    <h1>Kartu lanjutan dengan linimasa</h1>
+    <p>Kartu yang melanjutkan cerita kemarin mendapat penanda dan blok “Sejak kemarin”. Ketuk untuk
+       membuka linimasa lengkap: apa yang berubah, pertanyaan apa yang terjawab, apa yang masih terbuka.</p>
+  </div>
+  <div class="badges">
+    <div class="badge" id="badgeRev">—</div>
+    <div class="badge soft">mockup-v1 · belum disetujui</div>
+    <div class="badge soft">0 panggilan LLM</div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="orderfix"><span class="dot"></span>Urutan tetap: terbaru dulu</div>
+  <div class="hint">klik simpul untuk membuka kutipan · filter di layar kanan</div>
+</div>
+
+<main class="stage">
+  <div class="col">
+    <div class="cap">Kartu di feed — penanda + ringkasan</div>
+    <div class="phone"><div class="screen">
+      <div class="sb"><span>06.00</span><span class="r">▮▮▮ ⌁ ▰</span></div>
+      <div class="scroll" id="left"></div>
+    </div></div>
+  </div>
+  <div class="col">
+    <div class="cap">Linimasa lengkap — semua pembaruan</div>
+    <div class="phone"><div class="screen">
+      <div class="sb"><span>06.00</span><span class="r">▮▮▮ ⌁ ▰</span></div>
+      <div class="scroll" id="right"></div>
+    </div></div>
+  </div>
+</main>
+
+<section class="panel">
+  <h2>Kenapa bentuk ini</h2>
+  <p class="sub">Pola linimasa dipakai Guardian untuk cerita berjalan: garis tipis, tanggal di kiri, satu
+     peristiwa per simpul, label kecil di atas judul. Yang diambil hanya polanya; warna dan huruf tetap
+     token <code>public/style.css</code> (<code>DEC-0012</code>).</p>
+  <ul class="tight">
+    <li><b>Tanggal lebih dulu</b>, rata dengan penanda. Membaca urutan jadi jelas tanpa panah.</li>
+    <li><b>Satu simpul satu peristiwa.</b> “Judul berubah”, “6 pertanyaan terjawab”, “masih terbuka”
+        tidak dilebur menjadi satu paragraf.</li>
+    <li><b>Terbuka di atas</b> saat urutan terbaru dulu: yang belum selesai adalah yang paling perlu dibaca.</li>
+    <li><b>Kutipan menempel pada simpul</b>, jadi setiap jawaban bisa dicek ke kalimat di kartu.</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Data yang dipakai</h2>
+  <p class="sub">Bukan karangan: dua tabel yang sudah ada di pipeline.</p>
+  <table>
+    <thead><tr><th>Sumber</th><th>Isi</th><th class="num">Jumlah</th></tr></thead>
+    <tbody>
+      <tr><td><code>revisions</code></td><td>Judul kartu per edisi untuk topik yang sama</td><td class="num" id="cRev">—</td></tr>
+      <tr><td><code>editor_notes</code></td><td>Pertanyaan terjawab, dengan kutipan dan edisi asal</td><td class="num" id="cAns">—</td></tr>
+      <tr><td><code>editor_notes</code></td><td>Pertanyaan yang masih terbuka</td><td class="num" id="cOpen">—</td></tr>
+    </tbody>
+  </table>
+  <p class="sub" style="margin:12px 0 0">
+    Topik contoh: <code id="topic">—</code>. Badan kartu tidak ditampilkan di mockup ini karena
+    <code>revisions</code> hanya menyimpan judul; di produksi badan kartu diambil dari edisi.
+  </p>
+</section>
+
+<div class="foot">
+  Sumber: <code>local.db</code> (tabel <code>revisions</code> dan <code>editor_notes</code>) untuk topik
+  contoh; tidak ada panggilan model dan tidak ada pengambilan halaman. Angka “terbuka” dihitung dari
+  catatan berstatus <code>open</code>, bukan perkiraan.
+</div>
+
+<script>
+const S = {"topic_id": "t_dasco_akui_banyak_anggota_dpr_4cca", "today": "2026-11-11", "title": "Polemik ijazah dan posisi Gibran", "prev_title": "DPR Bahas Polemik Ijazah Gibran", "first": "2026-11-10", "revisions": 130, "spotlight": {"edition": "2026-11-11", "q": "Apa dasar hukum yang dipakai pemohon dalam gugatan", "a": "Dasar hukum yang digunakan pemohon dalam gugatan ini adalah keabsahan surat keterangan penyetaraan pendidikan yang menjadi syarat pencalonan Gibran sebagai calon wakil presiden pada Pilpres 2024."}, "counts": {"updates": 2, "answered": 17, "open": 19}, "nodes": [{"kind": "open", "date": "2026-11-11", "chip": "Masih terbuka", "title": "19 pertanyaan belum terjawab", "detail": "Catatan editor terakhir terlihat 2026-11-10; belum tertutup bahan mana pun.", "items": ["Salah satunya adalah Doli, yang dikutip dari cnnindonesia.com dan disebut sebagai Wakil Ketua Umum Partai Golkar.", "Dasar yang diajukan Doli adalah adanya putusan MA yang menurutnya telah memberikan fakta hukum yang jelas, sehingga DPR tidak pe", "Ia menyebut hak menyatakan pendapat sebagai hak yang relevan, merujuk pula pada putusan MK saat itu."]}, {"kind": "answered", "date": "2026-11-11", "chip": "Terjawab", "title": "1 pertanyaan terjawab", "detail": "Dijawab oleh badan kartu edisi ini, dengan kutipan yang bisa dicek.", "items": [{"q": "Apa dasar hukum yang dipakai pemohon dalam gugatan", "a": "Dasar hukum yang digunakan pemohon dalam gugatan ini adalah keabsahan surat keterangan penyetaraan pendidikan yang menjadi syarat pencalonan Gibran sebagai calon wakil presiden pada Pilpres 2024."}]}, {"kind": "update", "date": "2026-11-11", "chip": "Berubah", "title": "Judul dan bingkai berubah", "detail": "Sebelumnya: “DPR Bahas Polemik Ijazah Gibran”. Jenis: ongoing → breaking.", "quote_title": "Polemik ijazah dan posisi Gibran"}, {"kind": "answered", "date": "2026-11-10", "chip": "Terjawab", "title": "16 pertanyaan terjawab", "detail": "Dijawab oleh badan kartu edisi ini, dengan kutipan yang bisa dicek.", "items": [{"q": "Anggota DPR yang secara terbuka mendorong hak itu adalah Doli, yang dikutip dari cnnindonesia.com dan disebut sebagai Wakil Ketu", "a": "Anggota DPR yang paling eksplisit menyuarakan hal ini adalah Doli, yang dikutip dari CNN Indonesia. Ia adalah Wakil Ketua Umum Partai Golkar."}, {"q": "Sementara Sekjen PDIP Hasto Kristiyanto menekankan partainya selalu mendengar aspirasi soal desakan hak tersebut.", "a": "Sementara itu, Sekjen PDIP Hasto Kristiyanto juga menyampaikan usulan serupa, dengan menekankan bahwa PDIP selalu mendengar berbagai aspirasi terkait desakan hak menyatakan pendapat lewat DPR."}, {"q": "Anggota DPR yang paling eksplisit menyuarakan hal ini adalah Doli, yang dikutip dari CNN Indonesia. Ia adalah Wakil Ketua Umum P", "a": "Salah satu yang paling lantang adalah Doli, yang dikutip dari cnnindonesia.com."}]}, {"kind": "update", "date": "2026-11-10", "chip": "Awal", "title": "Masuk edisi", "detail": "Pertama masuk edisi ini.", "quote_title": "DPR Bahas Polemik Ijazah Gibran"}]};
+
+const state = { filter: "all", open: new Set() };
+
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function dayLabel(iso){
+  const d = new Date(iso + "T00:00:00+07:00");
+  return d.toLocaleDateString("id-ID", { day: "numeric", month: "short" });
+}
+function dayShort(iso){
+  const d = new Date(iso + "T00:00:00+07:00");
+  return d.toLocaleDateString("id-ID", { weekday: "short" });
+}
+
+// Terbaru dulu; simpul "masih terbuka" disematkan di paling atas.
+function nodes(){
+  const list = S.nodes.filter(n => state.filter === "all" || n.kind === state.filter);
+  const open = list.filter(n => n.kind === "open");
+  return [...open, ...list.filter(n => n.kind !== "open")];
+}
+
+function renderLeft(){
+  const c = S.counts;
+  const since = [
+    { t: `${c.answered} pertanyaan terjawab`, s: "kutipan ada di linimasa", hot: true },
+    { t: `${c.open} pertanyaan masih terbuka`, s: "belum dijawab bahan mana pun" },
+    { t: `${c.updates} kali judul berubah`, s: `sejak ${dayLabel(S.first)}` },
+  ];
+
+  document.getElementById("left").innerHTML = `
+    <div class="hd">
+      <div class="kicker">Nasional <span class="sep">·</span> Lanjutan</div>
+      <h2>${esc(S.title)}</h2>
+      <div class="meta">
+        <span class="pill acc">Lanjutan · ${c.updates} pembaruan</span>
+        <span class="pill ok">${c.answered} terjawab</span>
+        <span>terakhir ${dayLabel(S.today)}</span>
+      </div>
+    </div>
+    <div class="since">
+      <div class="sh"><b>Sejak kemarin</b><span>${dayLabel(S.first)} → ${dayLabel(S.today)}</span></div>
+      <div class="mini">
+        ${since.map(x => `<div class="mrow ${x.hot ? "hot" : ""}">
+            <div class="t">${esc(x.t)}</div><div class="s">${esc(x.s)}</div></div>`).join("")}
+      </div>
+    </div>
+    <div class="ghost">Badan kartu tetap seperti edisi biasa.<br>Di mockup ini dikosongkan supaya fokus ke riwayat.</div>
+    <div class="lastup"><b>Pembaruan terakhir ${dayLabel(S.today)}</b>Judul dan bingkai berubah: “${esc(S.prev_title)}”.</div>
+    ${S.spotlight ? `<div class="spot">
+      <div class="t">Terjawab ${dayLabel(S.spotlight.edition)}</div>
+      <p class="q">${esc(S.spotlight.q)}</p>
+      <p class="a">“${esc(S.spotlight.a)}”</p>
+      <button class="linkmore2" id="openTl2">Lihat semua jawaban →</button>
+    </div>` : ""}
+    <button class="linkmore" id="openTl">Lihat linimasa lengkap →</button>`;
+}
+
+function renderRight(){
+  const list = nodes();
+  const groups = [];
+  for (const n of list){
+    const g = groups[groups.length - 1];
+    if (g && g.date === n.date) g.items.push(n);
+    else groups.push({ date: n.date, items: [n] });
+  }
+
+  document.getElementById("right").innerHTML = `
+    <div class="hd">
+      <div class="kicker">Linimasa <span class="sep">·</span> ${esc(S.today)}</div>
+      <h2>${esc(S.title)}</h2>
+      <div class="meta"><span>${S.nodes.length} peristiwa · ${S.counts.answered} terjawab · ${S.counts.open} terbuka</span></div>
+    </div>
+    <div class="tbar"><div class="row">
+      ${[["all","Semua"],["update","Berubah"],["answered","Terjawab"],["open","Terbuka"]].map(([k,l]) => {
+        const n = k === "all" ? S.nodes.length : S.nodes.filter(x => x.kind === k).length;
+        return `<button class="f ${state.filter === k ? "on" : ""}" data-filter="${k}">${l}<span class="n">${n}</span></button>`;
+      }).join("")}
+    </div></div>
+    <ol class="tl">
+      ${groups.map(g => g.items.map((n, idx) => `
+        <li class="${n.kind} ${state.open.has(n.date + n.title) ? "on" : ""}">
+          <div class="when">${idx === 0 ? `<b>${dayLabel(g.date)}</b>${dayShort(g.date)}` : ""}</div>
+          <div class="body">
+            <div class="tag">${esc(n.chip)}</div>
+            <h3>${esc(n.title)}</h3>
+            <p class="d">${esc(n.detail)}</p>
+            ${n.quote_title ? `<p class="qt">“${esc(n.quote_title)}”</p>` : ""}
+            ${n.kind === "answered" || n.kind === "open" ? `
+              <button class="tap" data-tap="${esc(n.date + n.title)}">${state.open.has(n.date + n.title) ? "Tutup" : "Lihat rincian"}</button>
+              <div class="exp">
+                ${(n.items || []).map(it => typeof it === "string"
+                  ? `<p class="q">• ${esc(it)}</p>`
+                  : `<p class="q">${esc(it.q)}</p><p class="a">“${esc(it.a)}”</p>`).join("")}
+                ${n.kind === "open" ? `<p>Daftar lengkap ada di catatan editor; kartu hanya menampilkan tiga contoh.</p>` : ""}
+              </div>` : ""}
+          </div>
+        </li>`).join("")).join("")}
+      ${list.length === 0 ? `<li><div class="when"></div><div class="body"><p class="empty">Tidak ada peristiwa untuk filter ini.</p></div></li>` : ""}
+    </ol>`;
+}
+
+document.getElementById("right").addEventListener("click", e => {
+  const f = e.target.closest("button[data-filter]");
+  if (f){ state.filter = f.dataset.filter; renderRight(); return; }
+  const t = e.target.closest("button[data-tap]");
+  if (!t) return;
+  const key = t.dataset.tap;
+  state.open.has(key) ? state.open.delete(key) : state.open.add(key);
+  renderRight();
+});
+
+document.getElementById("left").addEventListener("click", e => {
+  if (!e.target.closest("#openTl") && !e.target.closest("#openTl2")) return;
+  document.getElementById("right").scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+document.getElementById("badgeRev").textContent = S.counts.updates + " edisi · " + S.counts.answered + " terjawab";
+document.getElementById("cRev").textContent = S.counts.updates;
+document.getElementById("cAns").textContent = S.counts.answered;
+document.getElementById("cOpen").textContent = S.counts.open;
+document.getElementById("topic").textContent = S.topic_id;
+
+renderLeft();
+renderRight();
+</script>
+</body>
+</html>

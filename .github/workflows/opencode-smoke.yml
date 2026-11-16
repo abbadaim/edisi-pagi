@@ -16,7 +16,9 @@ jobs:
 
       - name: Install OpenCode CLI
         run: |
-          curl -fsSL https://opencode.ai/v2/install | bash
+          # Sama dengan daily.yml: versi dipatok supaya katalog model tidak
+          # berubah diam-diam di tengah jalan (DEC-0018).
+          curl -fsSL https://opencode.ai/v2/install | bash -s -- --version 2.2.7
           echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
           "$HOME/.opencode/bin/opencode" --version
 

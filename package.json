@@ -21,6 +21,8 @@
     "publish": "node scripts/publish.ts",
     "serve": "node scripts/serve.ts",
     "push": "node scripts/push.ts",
+    "health": "node scripts/health.ts",
+    "alert": "node scripts/alert.ts",
     "gen:vapid": "node scripts/gen-vapid.ts",
     "poc:newsroom": "node scripts/poc-newsroom.ts",
     "prepare:ui": "node scripts/prepare-ui-fixture.ts",

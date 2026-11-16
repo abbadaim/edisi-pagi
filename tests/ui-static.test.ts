@@ -175,3 +175,20 @@ test("PUSH-01: payload notifikasi memakai URL relatif scope", async () => {
   assert.ok(url!.startsWith("./"), `payload.url harus relatif scope ("./"), dapat "${url}"`);
   assert.notEqual(url, "/");
 });
+
+// UI-03 — rencana 019
+// Chip “Lanjutan” dan blok “Sejak kemarin” harus ada di app.js; tanpa itu data
+// `history` yang dibangun pipeline tidak pernah terlihat pembaca.
+test("UI-03: app.js merender penanda lanjutan dan linimasa", () => {
+  const js = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(js, /Lanjutan · \$\{histLen - 1\} pembaruan/, "chip lanjutan hilang");
+  assert.match(js, /function followBlock/, "blok lanjutan hilang");
+  assert.match(js, /Sejak kemarin/, "label blok hilang");
+  assert.match(js, /followTl/, "linimasa tidak dirender");
+});
+
+test("UI-04: gaya lanjutan memakai token, bukan warna baru", () => {
+  const css = readFileSync(join(root, "public", "style.css"), "utf8");
+  assert.match(css, /\.follow\{[^}]*var\(--rule\)/, "blok lanjutan tanpa token --rule");
+  assert.match(css, /\.pill\.followPill\{[^}]*var\(--accent\)/, "chip lanjutan tanpa --accent");
+});

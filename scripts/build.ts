@@ -42,7 +42,10 @@ import {
   selectMetaCards,
   type SocialEntry,
 } from "../src/core/newsroom/meta-social.ts";
-import { budgetFollowUps } from "../src/core/newsroom/selection.ts";
+import { SCOPE_BUDGET, budgetFollowUps } from "../src/core/newsroom/selection.ts";
+import { buildHistory } from "../src/core/history.ts";
+import { withStatusChanges, type PreviousCard } from "../src/core/newsroom/continuity.ts";
+import { localEditionEnabled } from "../src/core/edition-scope.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
 import { createDbFetchCache } from "../src/core/newsroom/cache.ts";
 import { loadPrimarySources } from "../src/core/newsroom/primary.ts";
@@ -481,11 +484,7 @@ try {
       .filter((r) => !exclude.has(r.topicId))
       .map((r) => ({ ...r, followUp: false }));
 
-    const budgeted = budgetFollowUps(availableItems, freshPool, {
-      maxFollow: scope === "lokal" ? 1 : 2,
-      minFresh: scope === "lokal" ? 1 : 3,
-      target: scope === "lokal" ? 4 : 6,
-    });
+    const budgeted = budgetFollowUps(availableItems, freshPool, SCOPE_BUDGET[scope]);
 
     const follows = budgeted.filter((r) => r.followUp).length;
     const fresh = budgeted.length - follows;
@@ -722,7 +721,9 @@ try {
 
   // Edisi Sleman direncanakan lebih dulu: kalau cukup, topiknya tidak
   // diulang di edisi nasional hari yang sama.
-  const localPlan = planCards("lokal");
+  const localEnabled = localEditionEnabled();
+  const localPlan = localEnabled ? planCards("lokal") : [];
+  if (!localEnabled) console.log("  lokal: dilewati (LOCAL_EDITION=0)");
   let localCards = localPlan.length >= 2 ? await renderCards(localPlan, "lokal", 4) : [];
   if (localCards.length >= 2) {
     const meta = await buildMetaCards({
@@ -857,6 +858,33 @@ try {
   );
   const uniqueCards = dedupeCards(cards, 0.6);
 
+  // Kesinambungan (rencana 019): perubahan status vs edisi sebelumnya, lalu
+  // riwayat topik dari tabel `revisions` untuk linimasa tindak lanjut.
+  const prevNational: PreviousCard[] = previousCards("nasional").map((d) => ({
+    card: d.card,
+    at: d.at,
+  }));
+  const withChanges = withStatusChanges(uniqueCards, prevNational, publishedAt);
+
+  const HISTORY_SQL = `SELECT edition_id,
+            json_extract(claim_json, '$.title') AS title,
+            MAX(revision) AS revision
+       FROM revisions
+      WHERE topic_id = ? AND edition_id <= ?
+      GROUP BY edition_id
+      ORDER BY edition_id DESC
+      LIMIT 8`;
+  const withHistory = withChanges.map((card) => {
+    const rows = db.all<{ edition_id: string; title: string; revision: number }>(HISTORY_SQL, [
+      card.topic_id,
+      editionId,
+    ]);
+    const history = buildHistory(rows);
+    return history.length > 1 ? { ...card, history } : card;
+  });
+  const followUps = withHistory.filter((c) => (c.history?.length ?? 0) > 1).length;
+  if (followUps > 0) console.log(`  lanjutan: ${followUps} kartu punya riwayat lintas edisi`);
+
   if (newsroom) {
     console.log("  kartu:", uniqueCards.map((c) => `${c.type}:${c.sources.length}`).join(" "));
   }
@@ -893,7 +921,7 @@ try {
     coverage: { from: coverageFrom, to: coverageTo },
     generatedAt: publishedAt,
     place: { kabupaten: "Sleman", province: "DI Yogyakarta" },
-    cards: uniqueCards,
+    cards: withHistory,
     truncatedReason:
       uniqueCards.length < 8
         ? `Hanya ${uniqueCards.length} kartu yang lolos; sisanya tidak punya konteks atau sumber`
@@ -943,7 +971,9 @@ try {
     const stale = join(outDir, `${editionId}.lokal.json`);
     if (existsSync(stale)) rmSync(stale);
     console.log(
-      `lokal    · tidak terbit (${localPlan.length} topik, ${uniqueLocal.length} kartu unik; minimum 2)`,
+      localEnabled
+        ? `lokal    · tidak terbit (${localPlan.length} topik, ${uniqueLocal.length} kartu unik; minimum 2)`
+        : `lokal    · tidak terbit (LOCAL_EDITION=0)`,
     );
   }
 

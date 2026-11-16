@@ -17,6 +17,16 @@ export interface BudgetOptions {
   target: number;
 }
 
+/**
+ * Anggaran tindak lanjut per scope. Edisi lokal dihentikan (rencana 019), jadi
+ * slot yang dulu dipakai lokal berpindah ke nasional: maksimum 3 tindak lanjut.
+ * Aturan lama tetap: tindak lanjut tidak boleh melebihi berita baru.
+ */
+export const SCOPE_BUDGET: Record<"nasional" | "lokal", BudgetOptions> = {
+  nasional: { maxFollow: 3, minFresh: 3, target: 6 },
+  lokal: { maxFollow: 1, minFresh: 1, target: 4 },
+};
+
 export function budgetFollowUps<T extends BudgetItem>(
   selected: T[],
   freshPool: T[],

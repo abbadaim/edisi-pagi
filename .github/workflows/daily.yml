@@ -50,11 +50,15 @@ jobs:
 
       # OpenCode di CI bersifat opsional. Jangan pernah menggagalkan deploy
       # karena installer/versi CLI berbeda; DeepSeek selalu jadi cadangan.
+      # Versi dipatok. 2026-11-15/16 memasang v2.3.0 dan katalog `opencode
+      # models` tidak lagi memuat opencode-go/deepseek-v4.1-flash, sehingga
+      # DEC-0018 mematikan OpenCode dan penulis deterministik yang jalan.
+      # Edisi 2026-11-16 hanya berisi satu kartu hoaks karena ini.
       - name: Install OpenCode CLI
         if: env.OPENCODE_AUTH_JSON != ''
         run: |
-          if ! curl -fsSL https://opencode.ai/v2/install | bash; then
-            echo "::warning::OpenCode gagal dipasang; build memakai DeepSeek"
+          if ! curl -fsSL https://opencode.ai/v2/install | bash -s -- --version 2.2.7; then
+            echo "::warning::OpenCode gagal dipasang; build memakai penulis deterministik"
             echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
             exit 0
           fi
@@ -68,7 +72,7 @@ jobs:
             "$HOME/.opencode/bin/opencode" --standalone auth list || true
             echo "OpenCode siap"
           else
-            echo "::warning::auth import gagal (versi CLI?); build memakai DeepSeek"
+            echo "::warning::auth import gagal (versi CLI?); build memakai penulis deterministik"
             echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
           fi
 
@@ -94,6 +98,25 @@ jobs:
 
       - name: Publikasikan
         run: npm run publish
+
+      # Build bisa "sukses" tetapi turun mutu (penulis deterministik, satu kartu).
+      # Langkah ini menilai hasilnya, bukan status job.
+      - name: Cek kesehatan build
+        id: health
+        if: always()
+        run: node scripts/health.ts --out /tmp/health.json
+
+      - name: Kirim peringatan surel
+        if: always()
+        continue-on-error: true
+        env:
+          JOB_STATUS: ${{ job.status }}
+          ALERT_SMTP_URL: ${{ secrets.ALERT_SMTP_URL }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASS: ${{ secrets.ALERT_SMTP_PASS }}
+          ALERT_FROM: ${{ secrets.ALERT_FROM }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: node scripts/alert.ts --input /tmp/health.json
 
       - name: Kirim notifikasi
         if: ${{ env.PUSH_SUBSCRIPTIONS != '' }}

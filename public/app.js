@@ -70,6 +70,57 @@ function formatDate(iso, withYear = false) {
   } catch { return iso; }
 }
 
+/**
+ * Blok “Sejak kemarin” + linimasa (rencana 019).
+ * Muncul hanya bila topik punya riwayat lintas edisi; bukan untuk semua kartu.
+ */
+function followBlock(card) {
+  const hist = Array.isArray(card.history) ? card.history : [];
+  if (hist.length < 2) return null;
+
+  const box = el("section", "follow");
+  const head = el("div", "followHead");
+  head.append(el("div", "followLbl", "Sejak kemarin"));
+  head.append(el("div", "followRange", `${shortDate(hist[0].date)} → ${shortDate(hist[hist.length - 1].date)}`));
+  box.append(head);
+
+  const changes = (card.changes ?? []).filter((c) => c.field === "status");
+  if (changes.length) {
+    const list = el("div", "followChanges");
+    for (const ch of changes) {
+      const row = el("div", "followChange");
+      row.append(el("span", "followField", "Status"));
+      row.append(el("span", "followFrom", String(ch.from ?? "—")));
+      row.append(el("span", "followArrow", "→"));
+      row.append(el("span", "followTo", String(ch.to)));
+      list.append(row);
+    }
+    box.append(list);
+  } else {
+    box.append(el("p", "followNote", "Tidak ada perubahan status klaim sejak edisi sebelumnya."));
+  }
+
+  const tl = el("ol", "followTl");
+  const last = hist[hist.length - 1];
+  for (const h of hist) {
+    const li = el("li", h === last ? "now" : "");
+    const t = el("time", "followDate", shortDate(h.date));
+    t.dateTime = h.date;
+    li.append(t, el("span", "followTitle", h.title));
+    tl.append(li);
+  }
+  tl.hidden = true;
+
+  const btn = el("button", "followBtn", "Lihat linimasa");
+  btn.type = "button";
+  btn.addEventListener("click", () => {
+    tl.hidden = !tl.hidden;
+    btn.textContent = tl.hidden ? "Lihat linimasa" : "Sembunyikan linimasa";
+  });
+  box.append(btn, tl);
+  return box;
+}
+
 function shortDate(iso) {
   try {
     return new Date(iso).toLocaleDateString("id-ID", { day: "numeric", month: "short", timeZone: "Asia/Jakarta" });
@@ -640,6 +691,15 @@ function renderArchive() {
 
 // ── Feed ─────────────────────────────────────────────────────────────────────
 
+/** Baris kicker + penanda lanjutan; dipakai kartu feed bergambar maupun polos. */
+function kickLine(card) {
+  const wrap = el("div", "kick", card.kicker);
+  if ((card.history?.length ?? 0) > 1) {
+    wrap.append(el("span", "pill followPill", `Lanjutan · ${card.history.length - 1}`));
+  }
+  return wrap;
+}
+
 function renderFeed() {
   const feed = $("feed");
   feed.textContent = "";
@@ -667,7 +727,7 @@ function renderFeed() {
       img.onerror = () => { img.remove(); btn.classList.add("plain"); };
       btn.append(img, el("div", "overlay"));
       const ctext = el("div", "ctext");
-      ctext.append(el("div", "kick", card.kicker));
+      ctext.append(kickLine(card));
       ctext.append(el("h2", null, card.title));
       if (card.truth) {
         const m = el("div", "meta");
@@ -680,7 +740,7 @@ function renderFeed() {
     } else {
       btn.classList.add("plain");
       if (["change", "misread", "gap", "debate"].includes(card.type)) btn.classList.add("meta");
-      btn.append(el("div", "kick", card.kicker));
+      btn.append(kickLine(card));
       btn.append(el("h2", null, card.title));
       if (card.body?.[0]) btn.append(el("p", "reason", teaser(card.body[0])));
     }
@@ -792,6 +852,8 @@ function openCard(index, opts = {}) {
   const byline = el("div", "byline");
   const pill = el("span", `pill ${card.status}`, STATUS[card.status] ?? card.status);
   byline.append(pill, el("span", null, `${card.sources.length} sumber`));
+  const histLen = Array.isArray(card.history) ? card.history.length : 0;
+  if (histLen > 1) byline.append(el("span", "pill followPill", `Lanjutan · ${histLen - 1} pembaruan`));
   body.append(byline);
 
   if (card.truth) {
@@ -893,6 +955,9 @@ function openCard(index, opts = {}) {
     if (card.reading) box.append(el("p", "socialAngle", card.reading));
     body.append(box);
   }
+
+  const follow = followBlock(card);
+  if (follow) body.append(follow);
 
   for (const p of card.body ?? []) body.append(el("p", "body", p));
 

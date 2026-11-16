@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup — Registry pemilik media (017)</title>
+<style>
+  :root{
+    --paper:#FAF7F2; --ink:#17150F; --muted:#6B6459; --faint:#9A9284;
+    --rule:#E3DCD1; --accent:#B3402A; --accent-soft:#F3EAE4;
+    --ok:#2F6B4F; --warn:#9A6A1E; --bad:#A33A31;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-font-smoothing:antialiased}
+  body{margin:0; padding:30px 20px 70px; background:#E7E2DA; font-family:var(--sans); color:var(--ink)}
+  .wrap{max-width:980px; margin:0 auto}
+
+  header{display:flex; gap:22px; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; margin-bottom:18px}
+  .eyebrow{font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:#8D8578; font-weight:700}
+  h1{font-family:var(--serif); font-size:30px; line-height:1.05; letter-spacing:-.02em; margin:7px 0 6px; font-weight:600}
+  header p{margin:0; max-width:600px; font-size:12.5px; line-height:1.6; color:var(--muted)}
+  .badges{display:flex; flex-direction:column; gap:6px; align-items:flex-end}
+  .badge{font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--ink);
+         border-radius:999px; padding:5px 11px; background:var(--paper)}
+  .badge.soft{border-color:var(--rule); color:var(--muted); background:transparent}
+  .badge.warn{border-color:var(--warn); color:var(--warn)}
+
+  .panel{background:var(--paper); border-radius:14px; padding:20px 22px; margin-bottom:20px;
+         box-shadow:0 1px 2px rgba(0,0,0,.04), 0 12px 30px -18px rgba(0,0,0,.2)}
+  .panel h2{font-family:var(--serif); font-size:19px; margin:0 0 3px; letter-spacing:-.015em; font-weight:600}
+  .panel .sub{font-size:11.5px; color:var(--muted); margin:0 0 14px; line-height:1.6; max-width:760px}
+
+  table{width:100%; border-collapse:collapse; font-size:11.5px}
+  th{text-align:left; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); font-weight:800;
+     padding:0 8px 7px 0; border-bottom:1px solid var(--rule); white-space:nowrap}
+  td{padding:8px 8px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  td.mono{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:10.5px; white-space:nowrap}
+  .dim{color:var(--faint)}
+  .small{font-size:10px; color:var(--faint); line-height:1.45}
+
+  tr.pending{background:#FCF9F4}
+  tr.pending .who{color:var(--warn)}
+  tr.verified .who{color:var(--ok)}
+  .who{font-weight:700}
+  .tick{width:26px}
+
+  .btn{font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; border:1px solid var(--rule);
+       background:transparent; color:var(--muted); border-radius:999px; padding:6px 11px; cursor:pointer; font-family:var(--sans)}
+  .btn.on{background:var(--ink); border-color:var(--ink); color:var(--paper)}
+  .btn.acc{border-color:var(--accent); color:var(--accent); background:var(--accent-soft)}
+  .row-between{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:12px}
+  .count{font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums}
+
+  .switch{display:inline-flex; border:1px solid var(--rule); border-radius:999px; padding:2px; gap:2px}
+  .switch button{border:0; background:transparent; font-family:var(--sans); font-size:10.5px; font-weight:700;
+                 letter-spacing:.04em; text-transform:uppercase; color:var(--muted); padding:5px 11px; border-radius:999px; cursor:pointer}
+  .switch button.on{background:var(--ink); color:var(--paper)}
+
+  .flag{color:var(--accent); font-weight:800}
+  .okc{color:var(--ok); font-weight:800}
+  .note{font-size:11px; line-height:1.6; color:var(--muted); background:#F5F1EA; border-radius:8px; padding:10px 12px; margin-top:14px; border:1px solid var(--rule)}
+  .note b{color:var(--ink)}
+  code{font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:10.5px; background:#F0EBE2; padding:1px 4px; border-radius:3px}
+  ul.tight{margin:8px 0 0; padding-left:16px; font-size:11.5px; line-height:1.65; color:var(--muted)}
+  .foot{font-size:10.5px; color:#8D8578; line-height:1.65; margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <div class="eyebrow">Mockup · POC 017 · data nyata 2026-11-13</div>
+    <h1>Registry pemilik media</h1>
+    <p>Satu tabel kecil menggantikan asumsi bahwa setiap domain adalah sumber independen.
+       Panel kedua menunjukkan apa yang benar-benar berubah pada enam kartu terbit minggu ini.</p>
+  </div>
+  <div class="badges">
+    <div class="badge warn" id="verBadge">0/0 terverifikasi</div>
+    <div class="badge soft">draft · belum disetujui</div>
+    <div class="badge soft">0 panggilan LLM</div>
+  </div>
+</header>
+
+<section class="panel">
+  <h2>1 — Registry</h2>
+  <p class="sub">Nama pemilik di bawah ini <b>belum diverifikasi satu per satu</b>. Klik baris untuk menandai
+     terverifikasi (hanya di halaman ini; tidak tersimpan). Rencana produksi: label publik hanya muncul bila
+     <code>diverifikasi_pada</code> terisi.</p>
+  <div class="row-between">
+    <div class="count" id="regCount"></div>
+    <div class="switch">
+      <button class="on" data-mode="all">Semua outlet</button>
+      <button data-mode="pending">Belum terverifikasi</button>
+    </div>
+  </div>
+  <table id="regTable">
+    <thead><tr>
+      <th class="tick"></th><th>Outlet</th><th>Pemilik</th><th>Afiliasi</th><th>Catatan verifikasi</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  <div class="note" id="regNote"></div>
+</section>
+
+<section class="panel">
+  <h2>2 — Siapa yang benar-benar independen</h2>
+  <p class="sub">Hitung ulang enam kartu berita 2026-11-13. Kolom kiri cara hari ini (per domain); kolom
+     kanan cara usulan (per pemilik). <code>confidence</code> memakai formula <code>src/core/truth.ts</code>,
+     dengan penyesuaian yang sama; hanya suku kemandirian yang berubah.</p>
+  <div class="row-between">
+    <div class="count">6 kartu · 24 sumber · 6 pemilik berbeda</div>
+    <div class="switch" id="modeSwitch">
+      <button class="on" data-mode="owner">Per pemilik (usulan)</button>
+      <button data-mode="domain">Per domain (hari ini)</button>
+    </div>
+  </div>
+  <table id="reTable">
+    <thead><tr>
+      <th>Kartu</th><th class="num">Sumber</th><th class="num">Domain</th><th class="num">Pemilik</th>
+      <th class="num">independent</th><th class="num">confidence</th><th>Catatan</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  <div class="note" id="reNote"></div>
+</section>
+
+<section class="panel">
+  <h2>3 — Yang berubah, dan yang tidak</h2>
+  <ul class="tight">
+    <li><b>Berubah:</b> label “N media independen” menjadi jumlah pemilik. 5 kartu kehilangan
+        minimal satu “sumber independen”. 2 kartu (0.83 → 0.80) <code>confidence</code> turun 0,03; tidak ada yang
+        turun di bawah 0,75.</li>
+    <li><b>Tidak berubah:</b> keyakinan bahwa klaimnya benar. Enam kartu sudah punya minimal dua pemilik
+        berbeda; dasar <code>two_independent_tier2</code> tetap sah menurut pemilik.</li>
+    <li><b>Masalah yang tetap ada:</b> konsentrasi. Kartu penyadapan bersandar pada 4 sumber, 3 di antaranya
+        CT Corp. Menambah outlet jauh lebih berpengaruh daripada memperbaiki hitungan.</li>
+    <li><b>Tidak dikerjakan mockup ini:</b> afiliasi politik, “kubu”, atau label kiri–kanan. Semua itu
+        penilaian, bukan fakta kepemilikan, dan tidak bisa diuji otomatis.</li>
+  </ul>
+  <div class="note">
+    Kontrak pipeline (bentuk <code>config/outlets.yaml</code>, potongan log, dan tes) ada di
+    <code>docs/plans/017-registry-pemilik.md</code> §4. Mockup ini hanya alat keputusan.
+  </div>
+</section>
+
+<div class="foot">
+  Sumber: <code>config/feeds.yaml</code> dan <code>data/editions/2026-11-13.nasional.json</code>.
+  Tidak ada panggilan model dan tidak ada pengambilan halaman. Nama pemilik adalah draft yang perlu
+  dicek manusia; jangan dipakai sebagai label publik sebelum terverifikasi.
+</div>
+
+</div>
+
+<script>
+const REG = [{"outlet": "antaranews.com", "owner": "LKN Antara", "affiliation": "BUMN", "note": "Kantor berita negara", "feeds": ["antara", "antara_ekonomi"], "registered": true}, {"outlet": "cnbcindonesia.com", "owner": "CT Corp", "affiliation": "Trans Media", "note": "Lisensi CNBC; pemilik sama dengan detik dan CNN Indonesia", "feeds": ["cnbc"], "registered": true}, {"outlet": "cnnindonesia.com", "owner": "CT Corp", "affiliation": "Trans Media", "note": "Lisensi CNN; pemilik sama dengan detik dan CNBC Indonesia", "feeds": ["cnn_nasional", "cnn_ekonomi"], "registered": true}, {"outlet": "detik.com", "owner": "CT Corp", "affiliation": "Trans Media", "note": "Korporasi media; pemilik sama dengan CNN Indonesia dan CNBC Indonesia", "feeds": ["detik_berita", "detik_jogja"], "registered": true}, {"outlet": "harianjogja.com", "owner": "Bisnis Indonesia", "affiliation": "Bisnis Indonesia", "note": "Grup Bisnis Indonesia, edisi DIY", "feeds": ["harian_jogja"], "registered": true}, {"outlet": "kumparan.com", "owner": "Kumparan", "affiliation": "independen", "note": "Startup media; perlu konfirmasi pendanaan", "feeds": ["kumparan"], "registered": true}, {"outlet": "liputan6.com", "owner": "Emtek", "affiliation": "Elang Mahkota Teknologi", "note": "Grup SCTV/Indosiar", "feeds": ["liputan6"], "registered": true}, {"outlet": "okezone.com", "owner": "MNC", "affiliation": "Global Mediacom", "note": "Grup MNC; pemilik sama dengan Sindonews", "feeds": ["okezone"], "registered": true}, {"outlet": "republika.co.id", "owner": "Mahaka", "affiliation": "Mahaka Media", "note": "Perlu konfirmasi struktur pemegang saham terbaru", "feeds": ["republika"], "registered": true}, {"outlet": "sindonews.com", "owner": "MNC", "affiliation": "Global Mediacom", "note": "Grup MNC; pemilik sama dengan Okezone", "feeds": ["sindonews"], "registered": true}, {"outlet": "tempo.co", "owner": "Tempo Media Group", "affiliation": "independen", "note": "Grup Tempo; perlu konfirmasi pemegang saham", "feeds": ["tempo_nasional"], "registered": true}, {"outlet": "tirto.id", "owner": "Tirto", "affiliation": "independen", "note": "Bukan bagian grup media besar; perlu konfirmasi pendanaan", "feeds": ["tirto"], "registered": true}, {"outlet": "tribunnews.com", "owner": "Kompas Gramedia", "affiliation": "Kompas Gramedia", "note": "Jaringan daerah Kompas Gramedia", "feeds": ["tribun_jogja"], "registered": true}, {"outlet": "turnbackhoax.id", "owner": "MAFINDO", "affiliation": "lembaga pemeriksa fakta", "note": "Bukan media berita", "feeds": ["turnbackhoax"], "registered": true}];
+const ROWS = [{"title": "Gibran Serahkan Surat Mundur Wapres Langsung ke Prabowo", "type": "news", "sources": 5, "domains": 5, "owners": 3, "owner_list": ["CT Corp", "Emtek", "Tirto"], "independent_before": 5, "confidence_before": 0.83, "confidence_after": 0.83, "basis": "two_independent_tier2", "tier2_owners": 2, "top_owner": "CT Corp", "top_n": 3}, {"title": "Kapolri Beberkan Peran Listyo Sigit dalam Dugaan Penyadapan", "type": "news", "sources": 4, "domains": 4, "owners": 2, "owner_list": ["CT Corp", "MNC"], "independent_before": 4, "confidence_before": 0.83, "confidence_after": 0.8, "basis": "two_independent_tier2", "tier2_owners": 2, "top_owner": "CT Corp", "top_n": 3}, {"title": "Pertamina Minta Maaf soal Gangguan Pasokan BBM Jelang Akhir Tahun", "type": "news", "sources": 3, "domains": 3, "owners": 2, "owner_list": ["CT Corp", "Tirto"], "independent_before": 3, "confidence_before": 0.83, "confidence_after": 0.8, "basis": "two_independent_tier2", "tier2_owners": 2, "top_owner": "CT Corp", "top_n": 2}, {"title": "DPO Malaysia-Madura Ditangkap di Bangkalan, 5.233 Ekstasi Disita", "type": "news", "sources": 2, "domains": 2, "owners": 2, "owner_list": ["CT Corp", "Tirto"], "independent_before": 2, "confidence_before": 0.77, "confidence_after": 0.77, "basis": "two_independent_tier2", "tier2_owners": 2, "top_owner": "CT Corp", "top_n": 1}, {"title": "Jensen Huang Disebut Mundur dari CEO Nvidia, Saham Anjlok", "type": "news", "sources": 4, "domains": 4, "owners": 3, "owner_list": ["CT Corp", "Mahaka", "Tirto"], "independent_before": 4, "confidence_before": 0.83, "confidence_after": 0.83, "basis": "two_independent_tier2", "tier2_owners": 3, "top_owner": "CT Corp", "top_n": 2}, {"title": "Polri Sebut Uji Forensik Ijazah Jokowi Sah, Menolak Uji Ulang", "type": "news", "sources": 6, "domains": 6, "owners": 5, "owner_list": ["CT Corp", "LKN Antara", "MNC", "Mahaka", "Tirto"], "independent_before": 6, "confidence_before": 0.83, "confidence_after": 0.83, "basis": "two_independent_tier2", "tier2_owners": 5, "top_owner": "CT Corp", "top_n": 2}];
+
+const state = { verified: new Set(), filter: "all", mode: "owner" };
+
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function renderReg(){
+  const list = REG.filter(r => state.filter === "all" || !state.verified.has(r.outlet));
+  document.querySelector("#regTable tbody").innerHTML = list.map(r => {
+    const on = state.verified.has(r.outlet);
+    return `<tr class="${on ? "verified" : "pending"}" data-outlet="${esc(r.outlet)}" style="cursor:pointer">
+      <td class="tick">${on ? "✓" : "○"}</td>
+      <td class="mono">${esc(r.outlet)}</td>
+      <td class="who">${esc(r.owner)}</td>
+      <td class="dim">${esc(r.affiliation)}</td>
+      <td class="small">${esc(r.note)}</td>
+    </tr>`;
+  }).join("");
+
+  const total = REG.length, n = state.verified.size;
+  document.getElementById("verBadge").textContent = n + "/" + total + " terverifikasi";
+  document.getElementById("regCount").textContent =
+    n + " dari " + total + " outlet ditandai terverifikasi · " +
+    new Set(REG.filter(r => state.verified.has(r.outlet)).map(r => r.owner)).size + " pemilik terkunci";
+  document.getElementById("regNote").innerHTML =
+    n === 0
+      ? "Belum ada yang terverifikasi: pada rencana produksi, <b>tidak ada label pemilik yang tampil</b> dan hitungan kembali per domain."
+      : `${n} outlet terverifikasi. Bila aturan “label hanya untuk yang terverifikasi” dipakai, ` +
+        `${REG.length - n} outlet lain tetap tampil tanpa label pemilik.`;
+}
+
+function renderRe(){
+  const ownerMode = state.mode === "owner";
+  document.querySelector("#reTable tbody").innerHTML = ROWS.map(r => {
+    const indep = ownerMode ? r.owners : r.domains;
+    const conf = ownerMode ? r.confidence_after : r.confidence_before;
+    const delta = r.confidence_after - r.confidence_before;
+    const confCell = ownerMode && delta !== 0
+      ? `<span class="flag">${conf.toFixed(2)}</span> <span class="small">(${r.confidence_before.toFixed(2)})</span>`
+      : conf.toFixed(2);
+    const note = ownerMode
+      ? `${esc(r.top_owner)} ${r.top_n}/${r.sources} sumber` + (r.owners === r.domains ? " · pemilik = domain" : "")
+      : `${r.domains} domain dihitung independen`;
+    return `<tr>
+      <td>${esc(r.title)}</td>
+      <td class="num">${r.sources}</td>
+      <td class="num">${ownerMode ? `<span class="dim">${r.domains}</span>` : `<span class="flag">${r.domains}</span>`}</td>
+      <td class="num">${ownerMode ? `<span class="flag">${r.owners}</span>` : `<span class="dim">${r.owners}</span>`}</td>
+      <td class="num">${ownerMode ? `${r.independent_before} → <span class="flag">${indep}</span>` : indep}</td>
+      <td class="num">${confCell}</td>
+      <td class="small">${note}</td>
+    </tr>`;
+  }).join("");
+
+  const dropped = ROWS.filter(r => r.owners < r.domains).length;
+  document.getElementById("reNote").innerHTML = ownerMode
+    ? `<b>${dropped} dari ${ROWS.length} kartu</b> kehilangan minimal satu “sumber independen”. ` +
+      `Dua kartu turun 0,03 pada <code>confidence</code>; sisanya tetap karena masih ≥3 pemilik. ` +
+      `Tidak ada kartu yang turun di bawah ambang <code>kemungkinan_besar</code> (0,75).`
+    : `Cara hari ini: setiap domain dihitung satu sumber. Tiga media CT Corp (detik, CNN, CNBC) menjadi tiga.`;
+}
+
+document.querySelector("#regTable").addEventListener("click", e => {
+  const tr = e.target.closest("tr[data-outlet]");
+  if (!tr) return;
+  const outlet = tr.dataset.outlet;
+  state.verified.has(outlet) ? state.verified.delete(outlet) : state.verified.add(outlet);
+  renderReg();
+});
+
+document.querySelectorAll(".switch").forEach(sw => {
+  sw.addEventListener("click", e => {
+    const b = e.target.closest("button[data-mode]");
+    if (!b) return;
+    sw.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    if (sw.id === "modeSwitch"){ state.mode = b.dataset.mode; renderRe(); }
+    else { state.filter = b.dataset.mode; renderReg(); }
+  });
+});
+
+renderReg();
+renderRe();
+</script>
+</body>
+</html>
