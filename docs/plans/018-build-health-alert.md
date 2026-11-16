@@ -119,6 +119,11 @@ perubahan pada data atau edisi terbit.
 - `2026-11-16` — `tested` — deteksi kesehatan, peringatan surel, pin v2.2.7;
   6 uji baru. Menunggu satu run `daily.yml` untuk membuktikan surel benar-benar
   terkirim.
+- `2026-11-16` — `tested` — run `43823312712`: health check bekerja
+  (`ALASAN: deterministic-writer, deterministic-adjudicate, few-cards`), tetapi
+  pin 2.2.7 **tidak** menyembuhkan katalog. Sebabnya profil: auth diimpor
+  `--standalone`, sedangkan `models`/`run` tanpa flag. Perbaikan dipindah ke
+  `DEC-0029` (samakan profil), bukan versi.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

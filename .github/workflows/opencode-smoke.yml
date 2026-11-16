@@ -30,7 +30,7 @@ jobs:
 
       - name: Call a model
         run: |
-          "$HOME/.opencode/bin/opencode" run \
+          "$HOME/.opencode/bin/opencode" --standalone run \
             --model "$OPENCODE_MODEL" \
             --format json \
             --auto \

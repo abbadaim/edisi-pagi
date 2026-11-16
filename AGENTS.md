@@ -225,7 +225,9 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - **Jangan** pakai `https://opencode.ai/install` — itu v1.19.5.
 - Pakai `https://opencode.ai/v2/install` — v2.2.7.
 - Ekspor kredensial lokal: `opencode auth export` → secret `OPENCODE_AUTH_JSON`.
-- Impor di CI: `opencode --standalone auth import`.
+- Impor di CI: `opencode --standalone auth import`. **Semua** panggilan lain
+  (`models`, `run`) juga memakai `--standalone`; profil berbeda = katalog tanpa
+  model provider (`DEC-0029`).
 - `--standalone` wajib untuk auth agar tidak bentrok dengan service desktop.
 - `opencode.ai/v2/install` memasang ke `$HOME/.opencode/bin`.
 - Jika install/auth gagal, workflow set `OPENCODE_BIN=/nonexistent` agar pipeline memakai penulis deterministik, bukan menunggu timeout. **Bukan** agar DeepSeek dipakai (`DEC-0016`).

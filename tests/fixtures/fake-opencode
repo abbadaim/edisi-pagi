@@ -5,6 +5,12 @@
 #   FAKE_MODELS_FAIL=1      -> `models` gagal (exit 1)
 #
 # `--version` selalu sukses supaya probeOpenCode() menganggap binari tersedia.
+# `models` dan `run` dipanggil dengan --standalone (profil yang sama dengan
+# auth import). Stub harus menerima bentuk itu.
+if [ "$1" = "--standalone" ]; then
+  shift
+fi
+
 if [ "$1" = "--version" ]; then
   echo "opencode v0.0.0-stub"
   exit 0

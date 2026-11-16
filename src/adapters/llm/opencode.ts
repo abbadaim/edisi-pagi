@@ -91,7 +91,10 @@ export function listModels(
 ): string[] | null {
   const bin = resolveBinary(explicit);
   try {
-    const r = spawnSync(bin, ["models"], { timeout: timeoutMs, encoding: "utf8", env });
+    // `--standalone` wajib: kredensial CI diimpor ke profil standalone
+    // (`opencode --standalone auth import`). Tanpa flag ini katalog dibaca dari
+    // profil lain dan hanya berisi model gratis — persis kegagalan 15–16 Nov.
+    const r = spawnSync(bin, ["--standalone", "models"], { timeout: timeoutMs, encoding: "utf8", env });
     if (r.status !== 0 || typeof r.stdout !== "string") return null;
     const models = r.stdout
       .split("\n")
@@ -114,6 +117,8 @@ export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
     const prompt = `${system}\n\n---\n\n${user}`;
 
     const args = [
+      // Profil yang sama dengan auth import (lihat listModels).
+      "--standalone",
       "run",
       "--model",
       model,

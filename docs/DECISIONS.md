@@ -298,3 +298,17 @@ trigger-nya tidak pernah dibuat.
 Sebab: pemeriksaan manual (`docs/plans/009-schedule-verification.md`) hanya
 berlaku bila ada orang yang ingat.
 _Tanggal: 2026-11-12. Rencana: `docs/plans/015-schedule-check-auto.md`._
+
+## DEC-0029 — OpenCode dipanggil dengan profil yang sama dengan auth import
+
+Kredensial CI diimpor dengan `opencode --standalone auth import`. Karena itu
+`opencode models` dan `opencode run` **juga** memakai `--standalone`. Tanpa itu
+keduanya membaca profil lain yang hanya berisi model gratis, katalog tidak
+memuat `opencode-go/deepseek-v4.1-flash`, dan `DEC-0018` menurunkan seluruh
+edisi ke penulis deterministik.
+
+Terbukti pada 2026-11-16: mematok CLI ke v2.2.7 **tidak** memperbaiki apa pun
+(auth `stored`, katalog tetap tanpa model provider). Yang memperbaiki adalah
+menyamakan profil. Biaya `--standalone` ±1–2 detik per panggilan; panggilan
+writer sudah 40–60 detik, jadi tidak berarti.
+_Tanggal: 2026-11-16._
