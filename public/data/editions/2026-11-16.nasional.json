@@ -2,12 +2,12 @@
   "schema_version": 1,
   "edition_id": "2026-11-16",
   "scope": "nasional",
-  "published_at": "2026-11-16T09:25:08+07:00",
+  "published_at": "2026-11-16T14:22:27+07:00",
   "coverage": {
-    "from": "2026-11-15T09:25:08+07:00",
-    "to": "2026-11-16T09:25:08+07:00"
+    "from": "2026-11-15T14:22:27+07:00",
+    "to": "2026-11-16T14:22:27+07:00"
   },
-  "generated_at": "2026-11-16T09:25:08+07:00",
+  "generated_at": "2026-11-16T14:22:27+07:00",
   "locale": "id-ID",
   "place": {
     "kabupaten": "Sleman",
@@ -32,11 +32,173 @@
       "model": "none"
     }
   },
-  "card_count": 1,
-  "truncated_reason": "Hanya 1 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "card_count": 3,
+  "truncated_reason": "Hanya 3 kartu yang lolos; sisanya tidak punya konteks atau sumber",
   "cards": [
     {
       "id": "c1",
+      "type": "news",
+      "topic_id": "t_penyidik_datangi_firli_bahuri_dd46",
+      "angle": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal Pemeriksaan",
+      "kicker": "Kriminal",
+      "title": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal Pemeriksaan",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:22:27+07:00"
+      },
+      "body": [
+        "Polda Metro Jaya masih menunggu kepastian jadwal pemeriksaan lanjutan terhadap mantan Ketua Komisi Pemberantasan Korupsi (KPK), Komjen Pol (Purn) Firli Bahuri (FB). Kepastian tersebut diperlukan setelah penyidik Direktorat Reserse Kriminal Umum (Ditreskrimum) mendatangi Firli beberapa waktu lalu.",
+        "Polda Metro Jaya masih menunggu konfirmasi pihak eks Ketua KPK Firli Bahuri terkait jadwal pemeriksaan lanjutannya sebagai tersangka pemerasan terhadap SYL."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu KPK?",
+          "a": "Komisi Pemberantasan Korupsi, lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Seseorang yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        }
+      ],
+      "action": "Hindari menyebar identitas korban atau tersangka.",
+      "image": {
+        "url": "assets/f60af9f897.webp",
+        "credit": "okezone.com",
+        "alt": "Penyidik Datangi Firli Bahuri di GOR, Polisi Masih Tunggu Jadwal"
+      },
+      "sources": [
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/16/337/3254249/penyidik-datangi-firli-bahuri-di-gor-polisi-masih-tunggu-jadwal-pemeriksaan",
+          "published_at": "2026-11-16T09:27:28+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116091931-12-1427517/polisi-masih-tunggu-konfirmasi-firli-bahuri-untuk-pemeriksaan-lanjutan",
+          "published_at": "2026-11-16T09:35:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/dua-kali-dipanggil-polda-firli-bahuri-masih-mangkir-pemeriksaan-idQo",
+          "published_at": "2026-11-16T12:26:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_pengguna_qris_capai_70_juta_bi_4de9",
+      "angle": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
+      "kicker": "Ekonomi",
+      "title": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-16T14:22:27+07:00"
+      },
+      "body": [
+        "JAKARTA — Bank Indonesia (BI) mencatat volume transaksi Quick Response Code Indonesian Standard (QRIS) telah menembus lebih dari 20 miliar transaksi. Seiring dengan perkembangan positif implementasi QRIS dan semakin...",
+        "Otoritas Jasa Keuangan mencatat aduan penipuan digital menembus 700 ribu laporan, sementara Bank Indonesia mengingatkan risiko runtuhnya kepercayaan konsumen.#bisnisupdate #update #bisnis #text"
+      ],
+      "explain": [
+        {
+          "q": "Apa itu OJK?",
+          "a": "Otoritas Jasa Keuangan, lembaga yang mengatur dan mengawasi sektor keuangan Indonesia, termasuk perbankan, pasar modal, dan pinjaman online.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa angka ekonomi ini penting?",
+          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha. Angka awal sering direvisi setelah data lengkap masuk.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        }
+      ],
+      "action": "Angka ini bisa berubah; cek rilis resmi sebelum mengambil keputusan.",
+      "image": {
+        "url": "assets/2184a358eb.webp",
+        "credit": "republika.co.id",
+        "alt": "Pengguna QRIS Capai 70 Juta, BI Ingatkan Risiko Penipuan Digital"
+      },
+      "sources": [
+        {
+          "outlet": "republika.co.id",
+          "url": "https://ekonomi.republika.co.id/berita/tokynm423/pengguna-qris-capai-70-juta-bi-ingatkan-risiko-penipuan-digital",
+          "published_at": "2026-11-16T13:01:00+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/penipuan-digital-tembus-700-ribu-laporan-bi-soroti-risiko-hilangnya-kepercayaan-konsumen-28aFLdI327F",
+          "published_at": "2026-11-16T13:30:44+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261116125452-78-1427619/ojk-bi-siapkan-jalur-penyelesaian-sengketa-keuangan-di-luar-pengadilan",
+          "published_at": "2026-11-16T13:55:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-16T14:22:27+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-16",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
       "type": "hoax_roundup",
       "topic_id": "t_hoaks_2026_11_16",
       "angle": "3 pemeriksaan fakta hari ini",
@@ -56,7 +218,7 @@
           "url": "https://turnbackhoax.id/",
           "published_at": null,
           "tier": 2,
-          "accessed_at": "2026-11-16T09:25:08+07:00"
+          "accessed_at": "2026-11-16T14:22:27+07:00"
         }
       ],
       "revision": 1,
