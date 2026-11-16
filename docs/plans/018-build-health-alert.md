@@ -123,6 +123,9 @@ perubahan pada data atau edisi terbit.
 - `2026-11-16` — `tested` — deteksi kesehatan, peringatan surel, pin v2.2.7;
   6 uji baru. Menunggu satu run `daily.yml` untuk membuktikan surel benar-benar
   terkirim.
+- `2026-11-16` — `tested` — jalur surel terbukti: `alert-test.yml` sukses dan
+  surel “uji kirim peringatan” diterima di kotak masuk. Secret Gmail
+  (`ALERT_SMTP_URL/USER/PASS/FROM/TO`) terpasang 2026-11-16.
 - `2026-11-16` — `tested` — run `43823312712`: health check bekerja
   (`ALASAN: deterministic-writer, deterministic-adjudicate, few-cards`), tetapi
   pin 2.2.7 **tidak** menyembuhkan katalog. Sebabnya profil: auth diimpor
