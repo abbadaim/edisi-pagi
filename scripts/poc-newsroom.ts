@@ -17,7 +17,8 @@ import { adjudicate, summarise, type AdjudicatedTopic } from "../src/core/adjudi
 import { hashSummaries, loadAdjudication, saveAdjudication } from "../src/core/adjudicate-cache.ts";
 import { loadRegistry, slugify } from "../src/core/registry.ts";
 import { loadGlossary } from "../src/core/writer.ts";
-import { computeTruth } from "../src/core/truth.ts";
+import { computeTruthRegistered } from "../src/core/truth.ts";
+import { ownerOfOutlet } from "../src/core/outlets.ts";
 import { isoWib } from "../src/core/time.ts";
 import { features, similarity } from "../src/core/simhash.ts";
 import { resolveLlm } from "../src/adapters/llm/resolve.ts";
@@ -298,7 +299,7 @@ function toCard(
   asDeep = false,
 ): Card {
   const sources = sourcesFromPack(pack, at);
-  const truth = computeTruth(
+  const truth = computeTruthRegistered(
     { claim: draft.claim, sources, numeric: /\d/.test(draft.title) },
     at,
   );

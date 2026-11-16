@@ -5,7 +5,8 @@ import type { Glossary } from "./writer.ts";
 import { clusterText, explainForTopic } from "./writer.ts";
 import { localKicker } from "./rank.ts";
 import type { Card, ExplainItem } from "./types.ts";
-import { computeTruth } from "./truth.ts";
+import { computeTruthRegistered } from "./truth.ts";
+import { ownerOfOutlet } from "./outlets.ts";
 import { isoWib } from "./time.ts";
 import { features, similarity } from "./simhash.ts";
 
@@ -324,7 +325,7 @@ export async function writeCardWithLlm(
   }
   const card = best;
 
-  const truth = computeTruth(
+  const truth = computeTruthRegistered(
     { claim: card.claim, sources: ctx.sources, numeric: /\d/.test(card.title) },
     ctx.now,
   );

@@ -1,0 +1,90 @@
+# Registry pemilik media (rencana 017).
+#
+# `diverifikasi_pada` kosong = belum dicek manusia, dan label pemilik TIDAK
+# ditampilkan untuk entri itu. Diisi 2026-11-16 setelah daftar dikonfirmasi
+# pemilik proyek; `catatan` menyebut dasar yang perlu ditambahkan saat dicek
+# ulang (laporan tahunan / halaman redaksi).
+outlets:
+  - outlet: detik.com
+    pemilik: CT Corp
+    afiliasi: Trans Media
+    catatan: Pemilik sama dengan cnnindonesia.com dan cnbcindonesia.com
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: cnnindonesia.com
+    pemilik: CT Corp
+    afiliasi: Trans Media
+    catatan: Lisensi CNN; pemilik sama dengan detik.com dan cnbcindonesia.com
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: cnbcindonesia.com
+    pemilik: CT Corp
+    afiliasi: Trans Media
+    catatan: Lisensi CNBC; pemilik sama dengan detik.com dan cnnindonesia.com
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: liputan6.com
+    pemilik: Emtek
+    afiliasi: Elang Mahkota Teknologi
+    catatan: Grup SCTV/Indosiar
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: okezone.com
+    pemilik: MNC
+    afiliasi: Global Mediacom
+    catatan: Pemilik sama dengan sindonews.com
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: sindonews.com
+    pemilik: MNC
+    afiliasi: Global Mediacom
+    catatan: Pemilik sama dengan okezone.com
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: republika.co.id
+    pemilik: Mahaka
+    afiliasi: Mahaka Media
+    catatan: Struktur pemegang saham perlu dicek ulang saat tinjauan bulanan
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: antaranews.com
+    pemilik: LKN Antara
+    afiliasi: BUMN
+    catatan: Kantor berita negara
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: tirto.id
+    pemilik: Tirto
+    afiliasi: independen
+    catatan: Bukan bagian grup media besar; pendanaan perlu dicek ulang
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: tempo.co
+    pemilik: Tempo Media Group
+    afiliasi: independen
+    catatan: Grup Tempo
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: kumparan.com
+    pemilik: Kumparan
+    afiliasi: independen
+    catatan: Startup media; pendanaan perlu dicek ulang
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: tribunnews.com
+    pemilik: Kompas Gramedia
+    afiliasi: Kompas Gramedia
+    catatan: Jaringan daerah Kompas Gramedia
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: harianjogja.com
+    pemilik: Bisnis Indonesia
+    afiliasi: Bisnis Indonesia
+    catatan: Grup Bisnis Indonesia, edisi DIY
+    diverifikasi_pada: 2026-11-16
+
+  - outlet: turnbackhoax.id
+    pemilik: MAFINDO
+    afiliasi: lembaga pemeriksa fakta
+    catatan: Bukan media berita
+    diverifikasi_pada: 2026-11-16

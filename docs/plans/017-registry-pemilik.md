@@ -1,7 +1,7 @@
 # 017 — Registry pemilik media
 
 ```
-Status: plan-draft
+Status: tested
 Kelas: pipeline
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-16
@@ -129,8 +129,29 @@ Rollback: hapus `config/outlets.yaml` atau set `OUTLET_REGISTRY=off`. Tidak ada
 migrasi basis data; edisi terbit tidak diubah (`edition.json` hanya bertambah
 field opsional pada build berikutnya).
 
+## 6b. Implementasi (2026-11-16)
+
+- `config/outlets.yaml` — 14 outlet, `diverifikasi_pada: 2026-11-16` setelah
+  daftar dikonfirmasi pemilik proyek. Setiap entri punya `catatan` yang menyebut
+  apa yang perlu dicek ulang saat tinjauan bulanan.
+- `src/core/outlets.ts` — `parseRegistry()`/`loadRegistry()`/`ownerOfOutlet()`;
+  entri tanpa `diverifikasi_pada` **tidak** dipakai untuk label. Registry hilang
+  atau rusak = registry kosong, penerbitan jalan seperti sebelumnya.
+- `src/core/truth.ts` — `computeTruthRegistered()` menghitung kemandirian per
+  pemilik (`independent_outlets` + `independent_owners`). `computeTruth()` tetap
+  murni untuk tes.
+- `src/core/frames.ts` — satu baris per pemilik dengan `media` counter; tanpa
+  registry kembali ke satu baris per media.
+- `public/app.js` — label `CT Corp · 3 media · 11 Nov`, ringkasan
+  `3 dari 3 pemilik · 5 media`.
+
+Bukti: tiga domain CT Corp kini 1 suara (uji `tests/truth-owners.test.ts`);
+strip di fixture menampilkan 3 baris untuk 5 media.
+
 ## 7. Riwayat
 
+- `2026-11-16` — `tested` — registry + hitungan per pemilik + strip per pemilik
+  dikirim; 305 uji lulus.
 - `2026-11-16` — `plan-draft` — rencana + mockup alat keputusan
   (`docs/mockups/017-registry.html`); angka 0,83 → 0,80 diukur dari edisi
   2026-11-13.

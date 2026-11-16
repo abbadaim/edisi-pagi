@@ -1,5 +1,7 @@
 import type { ConfidenceBand, Source, Status, Truth } from "./types.ts";
 import { isoWib } from "./time.ts";
+import { ownerOfOutlet } from "./outlets.ts";
+import type { OwnerLookup } from "./outlets.ts";
 
 export interface TruthInput {
   claim: string;
@@ -46,7 +48,23 @@ function statusOf(strongest: Strongest): Status {
  * Keyakinan dihitung dari kelas bukti, bukan dari penilaian model
  * (SCHEMA.md §2.5). Angka hanya untuk pengurutan; tampilan memakai `band`.
  */
-export function computeTruth(input: TruthInput, now = new Date()): Truth {
+export interface TruthOptions {
+  /**
+   * Pemilik media (rencana 017). Bila ada, kemandirian dihitung per pemilik,
+   * bukan per domain: detik + CNN + CNBC = satu suara, bukan tiga.
+   */
+  ownerOf?: OwnerLookup;
+}
+
+/**
+ * Varian yang selalu memakai registry pemilik (rencana 017). Dipakai pipeline;
+ * `computeTruth()` tetap murni untuk tes dan pemanggil yang ingin memilih.
+ */
+export function computeTruthRegistered(input: TruthInput, now = new Date()): Truth {
+  return computeTruth(input, now, { ownerOf: ownerOfOutlet });
+}
+
+export function computeTruth(input: TruthInput, now = new Date(), opts: TruthOptions = {}): Truth {
   const primary = input.sources.filter((s) => s.tier === 1).length;
   const tier2 = input.sources.filter((s) => s.tier === 2).length;
   const tier3 = input.sources.filter((s) => s.tier === 3).length;
@@ -63,7 +81,24 @@ export function computeTruth(input: TruthInput, now = new Date()): Truth {
   );
   // Satu grup media (mis. kompas.com + nasional.kompas.com) dihitung satu.
   const groups = new Set([...domains].map((d) => d.split(".").slice(-2).join(".")));
-  const independent = groups.size;
+
+  // Pemilik menggantikan domain bila registry terverifikasi.
+  const units = new Set<string>();
+  const owners = new Set<string>();
+  for (const s of input.sources) {
+    const owner = opts.ownerOf ? opts.ownerOf(s.outlet) : null;
+    if (owner) {
+      units.add(`owner:${owner}`);
+      owners.add(owner);
+    } else {
+      try {
+        units.add(`domain:${new URL(s.url).hostname.replace(/^www\./, "").split(".").slice(-2).join(".")}`);
+      } catch {
+        units.add(`outlet:${s.outlet}`);
+      }
+    }
+  }
+  const independent = opts.ownerOf ? units.size : groups.size;
 
   let strongest: Strongest;
   if (contradicting > 0) strongest = "primary_contradicts";
@@ -93,6 +128,7 @@ export function computeTruth(input: TruthInput, now = new Date()): Truth {
       primary,
       tier2,
       independent_outlets: independent,
+      ...(opts.ownerOf ? { independent_owners: owners.size } : {}),
       contradicting,
     },
     gaps: [],

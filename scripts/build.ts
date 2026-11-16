@@ -45,6 +45,7 @@ import {
 import { SCOPE_BUDGET, budgetFollowUps } from "../src/core/newsroom/selection.ts";
 import { buildHistory, linkHistory } from "../src/core/history.ts";
 import { buildFrames, hasFrames } from "../src/core/frames.ts";
+import { ownerOfOutlet } from "../src/core/outlets.ts";
 import { withStatusChanges, type PreviousCard } from "../src/core/newsroom/continuity.ts";
 import { localEditionEnabled } from "../src/core/edition-scope.ts";
 import { LlmTelemetry } from "../src/core/telemetry.ts";
@@ -895,7 +896,7 @@ try {
       urls,
     );
     const titles = new Map(rows.map((r) => [r.url, r.title_display]));
-    const frames = buildFrames(card.sources, titles);
+    const frames = buildFrames(card.sources, titles, { ownerOf: ownerOfOutlet });
     return hasFrames(frames) ? { ...card, frames } : card;
   });
   const framed = withFrames.filter((c) => c.frames?.length).length;

@@ -312,3 +312,13 @@ Terbukti pada 2026-11-16: mematok CLI ke v2.2.7 **tidak** memperbaiki apa pun
 menyamakan profil. Biaya `--standalone` ±1–2 detik per panggilan; panggilan
 writer sudah 40–60 detik, jadi tidak berarti.
 _Tanggal: 2026-11-16._
+
+## DEC-0030 — Kemandirian sumber dihitung per pemilik
+
+`computeTruthRegistered()` memakai `config/outlets.yaml`. Tiga domain milik satu
+grup media adalah satu suara, bukan tiga. Entri tanpa `diverifikasi_pada` tidak
+dipakai, sehingga label pemilik tidak pernah tampil tanpa dicek manusia.
+
+Dampak pada 2026-11-13: `independent_outlets` kartu Gibran 5 → 3, penyadapan
+4 → 2, `confidence` dua kartu 0,83 → 0,80; tidak ada yang turun band.
+_Tanggal: 2026-11-16. Rencana: `docs/plans/017-registry-pemilik.md`._

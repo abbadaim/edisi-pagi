@@ -130,9 +130,16 @@ function framesBlock(card) {
   if (items.length < 2) return null;
 
   const box = el("section", "frames");
+  const totalMedia = items.reduce((n, f) => n + (f.media ?? 1), 0);
+  const grouped = items.some((f) => f.owner);
   const head = el("div", "framesHead");
   head.append(el("div", "framesLbl", "Siapa menyorot apa"));
-  head.append(el("div", "framesCount", `${Math.min(3, items.length)} dari ${items.length} media`));
+  head.append(
+    el("div", "framesCount",
+      grouped
+        ? `${Math.min(3, items.length)} dari ${items.length} pemilik · ${totalMedia} media`
+        : `${Math.min(3, items.length)} dari ${items.length} media`),
+  );
   box.append(head);
 
   const list = el("div", "framesList");
@@ -143,7 +150,10 @@ function framesBlock(card) {
       row.href = f.url;
       row.target = "_blank";
       row.rel = "noopener";
-      row.append(el("div", "frameMeta", f.at ? `${f.outlet} · ${shortDate(f.at)}` : f.outlet));
+      const label = f.owner
+        ? `${f.owner}${(f.media ?? 1) > 1 ? ` · ${f.media} media` : ""}${f.at ? ` · ${shortDate(f.at)}` : ""}`
+        : f.at ? `${f.outlet} · ${shortDate(f.at)}` : f.outlet;
+      row.append(el("div", "frameMeta", label));
       row.append(el("div", "frameTitle", f.title));
       list.append(row);
     }

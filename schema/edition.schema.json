@@ -310,6 +310,10 @@
               "type": "integer",
               "minimum": 0
             },
+            "independent_owners": {
+              "type": "integer",
+              "minimum": 0
+            },
             "independent_outlets": {
               "type": "integer",
               "minimum": 0

@@ -3,7 +3,8 @@ import { parse as parseYaml } from "yaml";
 import type { AdjudicatedTopic } from "./adjudicate.ts";
 import type { Cluster } from "./cluster.ts";
 import type { Card, ExplainItem, Source } from "./types.ts";
-import { computeTruth } from "./truth.ts";
+import { computeTruthRegistered } from "./truth.ts";
+import { ownerOfOutlet } from "./outlets.ts";
 import { isoWib } from "./time.ts";
 import { localKicker } from "./rank.ts";
 
@@ -204,7 +205,7 @@ export function createDeterministicWriter(glossary: Glossary): CardWriter {
         .map((a) => (a.lead || a.title).slice(0, 460))
         .filter(Boolean);
 
-      const truth = computeTruth(
+      const truth = computeTruthRegistered(
         {
           claim: ctx.topic.angle,
           sources,

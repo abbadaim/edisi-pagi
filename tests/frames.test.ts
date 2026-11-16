@@ -21,9 +21,10 @@ test("satu baris per media, urut terbaru, dipotong limit", () => {
     src("b.com", "https://b.com/1", "2026-11-16T10:00:00+07:00"),
     src("a.com", "https://a.com/2", "2026-11-16T11:00:00+07:00"),
   ];
-  const out = buildFrames(s, new Map(), 1);
+  const out = buildFrames(s, new Map(), { limit: 1 });
   assert.equal(out.length, 1);
-  assert.equal(out[0]!.outlet, "b.com", "yang terbaru dulu");
+  // Satu baris per media; yang dipakai adalah artikel terbaru media itu.
+  assert.equal(out[0]!.outlet, "a.com", "a.com punya artikel 16 Nov 11:00");
 });
 
 test("strip butuh minimal dua media", () => {
@@ -36,4 +37,37 @@ test("strip butuh minimal dua media", () => {
 
 test("slug: buang ekor id dan rapikan huruf", () => {
   assert.equal(headlineFromUrl("https://tirto.id/gibran-mundur-proses-teratur-idJB"), "Gibran mundur proses teratur");
+});
+
+test("tiga media satu pemilik menjadi satu baris dengan hitungan media", () => {
+  const owners = new Map([
+    ["detik.com", "CT Corp"],
+    ["cnnindonesia.com", "CT Corp"],
+    ["cnbcindonesia.com", "CT Corp"],
+    ["tirto.id", "Tirto"],
+  ]);
+  const out = buildFrames(
+    [
+      src("detik.com", "https://detik.com/a", "2026-11-16T10:00:00+07:00"),
+      src("cnnindonesia.com", "https://cnnindonesia.com/b", "2026-11-16T11:00:00+07:00"),
+      src("cnbcindonesia.com", "https://cnbcindonesia.com/c", "2026-11-16T09:00:00+07:00"),
+      src("tirto.id", "https://tirto.id/d", "2026-11-16T08:00:00+07:00"),
+    ],
+    new Map(),
+    { ownerOf: (o) => owners.get(o) ?? null },
+  );
+  assert.equal(out.length, 2, "dua pemilik, bukan empat media");
+  const ct = out.find((f) => f.owner === "CT Corp")!;
+  assert.equal(ct.media, 3);
+  assert.equal(ct.outlet, "cnnindonesia.com", "judul terbaru jadi wakil");
+});
+
+test("tanpa registry, perilaku lama: satu baris per media", () => {
+  const out = buildFrames(
+    [src("detik.com", "https://detik.com/a"), src("cnnindonesia.com", "https://cnnindonesia.com/b")],
+    new Map(),
+  );
+  assert.equal(out.length, 2);
+  assert.equal(out[0]!.owner, null);
+  assert.equal(out[0]!.media, 1);
 });

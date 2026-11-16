@@ -5,7 +5,8 @@ import type { AdjudicatedTopic } from "./adjudicate.ts";
 import type { Glossary } from "./writer.ts";
 import { clusterText, explainForTopic } from "./writer.ts";
 import { sourcesFromCluster } from "./writer.ts";
-import { computeTruth } from "./truth.ts";
+import { computeTruthRegistered } from "./truth.ts";
+import { ownerOfOutlet } from "./outlets.ts";
 import { isoWib } from "./time.ts";
 import { truncateWords } from "./normalize.ts";
 import { localKicker } from "./rank.ts";
@@ -69,7 +70,7 @@ export function buildDeepDive(ctx: DeepDiveContext): Card | null {
 
   const readMin = Math.min(8, Math.max(4, Math.ceil(wordCount(body, explain) / 200)));
 
-  const truth = computeTruth(
+  const truth = computeTruthRegistered(
     { claim: ctx.topic.angle, sources, numeric: /\d/.test(ctx.topic.title) },
     ctx.now,
   );
@@ -218,7 +219,7 @@ export async function buildDeepDiveWithLlm(
 
   // Dek memang boleh memperkenalkan sudut baru; tidak perlu tumpang tindih judul.
 
-  const truth = computeTruth(
+  const truth = computeTruthRegistered(
     { claim: clip(raw.claim, 160) || dek, sources, numeric: /\d/.test(title) },
     ctx.now,
   );

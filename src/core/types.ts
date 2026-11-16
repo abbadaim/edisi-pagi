@@ -65,6 +65,8 @@ export interface Truth {
     primary: number;
     tier2: number;
     independent_outlets: number;
+    /** Jumlah pemilik berbeda; ada bila registry terverifikasi dipakai. */
+    independent_owners?: number;
     contradicting: number;
   };
   gaps: string[];

@@ -9,7 +9,7 @@ import type { AdjudicatedTopic, TopicCategory } from "../adjudicate.ts";
 import type { Cluster } from "../cluster.ts";
 import type { Glossary } from "../writer.ts";
 import { localKicker } from "../rank.ts";
-import { computeTruth } from "../truth.ts";
+import { computeTruthRegistered } from "../truth.ts";
 import { isoWib } from "../time.ts";
 import type { Card } from "../types.ts";
 import type { LlmTelemetry } from "../telemetry.ts";
@@ -159,7 +159,7 @@ function toCard(
   }
   if (explain.length < 2) return null;
 
-  const truth = computeTruth(
+  const truth = computeTruthRegistered(
     { claim: draft.claim, sources, numeric: /\d/.test(draft.title) },
     input.now,
   );

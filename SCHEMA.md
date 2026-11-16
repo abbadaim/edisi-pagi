@@ -111,7 +111,7 @@ Aplikasi mulai dari `manifest.json`, lalu mengambil berkas lain sesuai kebutuhan
 | `first_seen` | string | ✅ | `YYYY-MM-DD`, tanggal topik masuk sistem |
 | `previous_edition` | string \| null | ✅ | `null` jika topik baru |
 | `changes` | Change[] | ✅ | Boleh kosong |
-| `frames` | `{outlet, title, url, at}[]` | — | Opsional; judul asli per media untuk strip “Siapa menyorot apa” (rencana 016). Maks 6, minimal 2 untuk ditampilkan |
+| `frames` | `{outlet, title, url, at, owner, media}[]` | — | Opsional; strip “Siapa menyorot apa” (rencana 016/017). Satu baris per **pemilik** bila registry terverifikasi; `media` = jumlah media di grup. Maks 6, minimal 2 |
 | `history` | `{date, title}[]` | — | Opsional; jejak topik lintas edisi untuk linimasa (rencana 019). Hanya `date` + `title`; badan per hari tidak disimpan |
 
 ### 2.3 `Source`

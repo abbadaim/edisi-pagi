@@ -18,6 +18,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | CI | GitHub Actions `daily.yml`, 05:45 WIB, timeout 75 menit; rekap mingguan di `weekly.yml` (Minggu 05.00 WIB) |
 | Provider CI | **OpenCode saja**, model `opencode-go/deepseek-v4.1-flash` (`DEC-0017`); DeepSeek API langsung nonaktif (`DEC-0016`) |
 | Edisi terakhir | `2026-11-12` nasional 8 kartu (build 14 m 16 s, OpenCode, kartu paralel) |
+| Registry pemilik | `config/outlets.yaml` (14 outlet, DEC-0030); kemandirian per pemilik |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
 | Tests | `npm test` — 266 uji; `npm run test:ui` — 10 uji browser |
 | Typecheck | `npm run typecheck` |
