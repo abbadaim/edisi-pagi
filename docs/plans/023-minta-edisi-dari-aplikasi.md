@@ -127,6 +127,26 @@ tanpa token) dan menampilkan **bar progres berbasis waktu**:
 Perkiraan 14 menit diambil dari median run OpenCode (10–23 menit). Teksnya
 menyebut "perkiraan", bukan janji; bar hanya indikator, bukan hitungan pasti.
 
+## 6c. Uji end-to-end (2026-11-17)
+
+Dijalankan terhadap proyek Supabase sungguhan, memakai service key dari
+`.env.local` (tidak pernah masuk repo):
+
+| Langkah | Hasil |
+|---|---|
+| `POST /rest/v1/build_requests` | **201**, baris `c35d5388…` |
+| Dispatch GitHub | run `44051949912`, event `repository_dispatch`, **3 detik** setelah insert |
+| Penjaga idempoten | `guard: 2026-11-17 sudah terbit — dilewati` **5 detik** setelah run mulai |
+| Hasil run | `success`, tanpa menimpa edisi |
+
+Cooldown diuji dengan memundurkan `requested_at` 90 menit lewat `PATCH`
+(service_role punya UPDATE, tidak punya DELETE), supaya tombol pengguna tidak
+terkunci oleh uji ini.
+
+Temuan: tanpa `GRANT`, PostgREST menjawab **42501 sebelum RLS dinilai**; dan
+grant default Supabase memberi `anon` `TRUNCATE`, yang tidak dilindungi RLS —
+karena itu berkas ini mencabutnya.
+
 ## 7. Riwayat
 
 - `2026-11-17` — `tested` — status.json, panel Atur, tombol minta edisi,
@@ -135,6 +155,8 @@ menyebut "perkiraan", bukan janji; bar hanya indikator, bukan hitungan pasti.
   auto-refresh 15 detik, `OPENCODE`-independent (hanya membaca Actions API).
 - `2026-11-17` — `tested` — `004` ditambah GRANT untuk `authenticated` dan
   `service_role`; versi pertama hanya RLS sehingga PostgREST menjawab 42501.
+- `2026-11-17` — `tested` — uji end-to-end: insert 201 → dispatch 3 detik →
+  guard 5 detik → run sukses. `anon` kehilangan TRUNCATE/REFERENCES/TRIGGER.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

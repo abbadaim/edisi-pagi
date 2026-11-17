@@ -109,6 +109,11 @@ grant usage on schema public to authenticated;
 grant select, insert on public.build_requests to authenticated;
 grant select, insert, update on public.build_requests to service_role;
 
+-- Supabase memberi grant default ke anon/authenticated untuk tabel baru di
+-- public. TRUNCATE tidak difilter RLS (ia menghapus seluruh tabel), jadi cabut
+-- yang tidak dipakai aplikasi. Kunci anon ada di config.json yang publik.
+revoke truncate, references, trigger on public.build_requests from anon, authenticated;
+
 -- Periksa setelah menekan tombol:
 --   select grantee, privilege_type
 --     from information_schema.role_table_grants
