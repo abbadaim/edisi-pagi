@@ -245,6 +245,9 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `data/work/`, `local.db`, `.env.local` diabaikan. Jangan commit.
 - Migrasi 004–006 harus jalan sebelum build di CI; workflow sudah melakukannya.
 - Trigger terjadwal GitHub bisa dibuang tanpa notifikasi dan tanpa mengubah status workflow (terjadi 2026-11-12). `schedule-check.yml` memeriksa manifest 07:15 WIB dan menjalankan `daily.yml` bila edisi hari ini belum ada (`DEC-0028`). Verifikasi manual (§8) tetap berguna, tetapi bukan lagi satu-satunya penjaga.
+- Jadwal berlapis (tiga cron) + `edition-guard` membuat run kedua berhenti sendiri
+  bila edisi sudah ada (rencana 021). Cron tetap bisa dibuang semua — dispatch
+  manual tidak lagi berisiko menimpa.
 - `scripts/build.ts` **tidak** punya penjaga: menjalankannya untuk tanggal yang sudah terbit akan menimpa edisi itu. Jalankan hanya untuk tanggal yang belum ada.
 - Deploy data-only: workflow `deploy-site` menjalankan `npm run publish` +
   Pages tanpa build. Pakai ini agar tanggal terbit tidak dibangun ulang.

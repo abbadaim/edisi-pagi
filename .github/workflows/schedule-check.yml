@@ -8,7 +8,8 @@ on:
   schedule:
     # 00:15 UTC = 07:15 WIB. Dua jam setelah jadwal utama; build normal
     # selesai ±15 menit, jadi jam ini tidak akan bertabrakan.
-    - cron: "15 0 * * *"
+    - cron: "15 0 * * *"    # 07:15 WIB
+    - cron: "15 2 * * *"    # 09:15 WIB — cadangan bila yang pertama dibuang
   workflow_dispatch:
 
 permissions:

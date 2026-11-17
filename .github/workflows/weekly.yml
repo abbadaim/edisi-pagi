@@ -6,7 +6,8 @@ name: mingguan
 on:
   schedule:
     # 20:00 UTC Sabtu = 03:00 WIB Minggu, ~2,5 jam sebelum edisi harian.
-    - cron: "0 20 * * 6"
+    - cron: "0 20 * * 6"    # 03:00 WIB Minggu
+    - cron: "0 21 * * 6"    # 04:00 WIB — cadangan; penjaga --force membuat aman
   workflow_dispatch:
 
 concurrency:

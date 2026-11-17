@@ -29,6 +29,8 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 018 | [Deteksi build turun mutu + surel](plans/018-build-health-alert.md) | infra | `tested` | 2026-11-16 |
 | 019 | [Lokal off, fokus tindak lanjut](plans/019-lokal-off-followup.md) | pipeline + UI | `tested` | 2026-11-16 |
 | 020 | [Rekap mingguan berdiri sendiri](plans/020-mingguan-berdiri-sendiri.md) | infra | `tested` | 2026-11-16 |
+| 021 | [Jadwal berlapis + penjaga idempoten](plans/021-jadwal-berlapis.md) | infra | `tested` | 2026-11-17 |
+| 021 | [Tanya AI dan pantau pertanyaan pembaca](plans/021-tanya-pantau.md) | infra + pipeline + UI | `plan-draft` | 2026-11-16 |
 
 `002` selesai di kode dan tes: 4 uji baru di `tests/llm-resolve.test.ts`.
 Menunggu tidak ada; menunggu hanya konfirmasi run `daily.yml` berikutnya bahwa
