@@ -1,11 +1,11 @@
 # 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
-Status: plan-approved
+Status: mockup-v1
 Kelas: infra + pipeline + UI
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-17
-Mockup: belum ada — wajib untuk paruh UI (§4.2)
+Mockup: docs/mockups/022-tanya.html (menunggu persetujuan manusia)
 ```
 
 > Rencana ini menambah komponen pertama di luar GitHub Actions/Pages. Paruh
@@ -226,10 +226,20 @@ npm run build -- --newsroom-limit 2 --thin --date 2026-11-17   # tanggal baru, b
 
 ### 4.2 Gerbang mockup UI
 
-`#/tanya` adalah layar baru, bukan penyesuaian. Mockup wajib memakai token
-`public/style.css` dan mencakup: keadaan kosong, antrean offline ("menunggu"),
-jawaban dengan sitasi, jawaban `belum ada bahan`, daftar pantau
-(`menunggu` / `mulai_diliput` / `diliput` / `ditutup`), dan layar masuk.
+`#/tanya` adalah layar baru, bukan penyesuaian. Mockup:
+**`docs/mockups/022-tanya.html`** (status `mockup-v1`, menunggu persetujuan).
+
+Mockup mencakup tujuh keadaan, memakai token `public/style.css` apa adanya:
+kosong, antrean offline ("menunggu terkirim"), jawaban dengan sitasi, sumber
+yang dibuang verifikasi, `belum ada bahan`, daftar pantau empat keadaan
+(`menunggu` / `mulai_diliput` / `diliput` / `ditutup`), bagian Atur → Tanya AI,
+dan layar masuk.
+
+Dua hal yang sengaja ditampilkan di mockup karena mudah dilupakan di kode:
+antrean offline tidak boleh terlihat seperti kegagalan, dan "belum ada bahan"
+harus terlihat tenang — bukan galat.
+
+Setelah disetujui, berkas mockup tidak diedit lagi (`DEC-0012`).
 
 ### 4.3 Kontrak data
 

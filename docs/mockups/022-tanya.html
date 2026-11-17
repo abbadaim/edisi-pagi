@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mockup 022 — Tanya AI</title>
+<!--
+  Mockup rencana 022, kelas UI. Token diambil apa adanya dari public/style.css
+  (DEC-0012): --paper --ink --muted --faint --rule --accent --accent-soft
+  --ok --warn --bad --serif --sans.
+
+  Setelah disetujui, berkas ini TIDAK diedit lagi.
+
+  Yang dicakup: nav (slot Sleman diganti Tanya), keadaan kosong, antrean
+  offline, jawaban dengan sitasi, sumber yang dibuang verifikasi, "belum ada
+  bahan", daftar pantau empat keadaan, dan bagian Atur → Tanya AI.
+-->
+<style>
+  :root{
+    --paper:#FAF7F2; --ink:#17150F; --muted:#6B6459; --faint:#9A9284;
+    --rule:#E3DCD1; --accent:#B3402A; --accent-soft:#F3EAE4;
+    --ok:#2F6B4F; --warn:#9A6A1E; --bad:#A33A31;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: ui-sans-serif, -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-font-smoothing:antialiased}
+  body{margin:0; background:#EDE7DD; color:var(--ink); font-family:var(--sans)}
+  .wrap{max-width:1120px; margin:0 auto; padding:28px 18px 80px}
+  .head{max-width:680px; margin:0 auto 26px}
+  .head h1{font-family:var(--serif); font-size:26px; margin:4px 0 6px; letter-spacing:-.02em}
+  .head p{font-size:13px; color:var(--muted); margin:0 0 4px; line-height:1.5}
+  .tag{display:inline-block; font-size:10px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--accent)}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,340px)); gap:26px; justify-content:center}
+  .shot{background:var(--paper); border-radius:26px; border:1px solid var(--rule); overflow:hidden;
+        box-shadow:0 8px 26px rgba(23,21,15,.10); position:relative; padding-bottom:74px}
+  .cap{font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint);
+       font-weight:700; padding:16px 18px 0}
+  .note{font-size:12px; color:var(--muted); padding:8px 18px 0; line-height:1.45; margin:0}
+
+  /* ---- pola aplikasi ---- */
+  #top{padding:14px 18px 6px}
+  .eyebrow{font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  h2.title{font-family:var(--serif); font-size:26px; line-height:1.06; margin:6px 0 0; letter-spacing:-.02em; font-weight:600}
+  .sub{font-size:12px; color:var(--muted); margin-top:6px}
+  .body{padding:4px 18px 0}
+
+  .bar{display:flex; align-items:stretch; border-top:1px solid var(--rule);
+       background:rgba(250,247,242,.96); padding:5px 4px; position:absolute; left:0; right:0; bottom:0}
+  .bar .it{flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 0 4px;
+           color:var(--faint); font-size:9.5px; font-weight:500}
+  .bar .it.on{color:var(--ink); font-weight:700}
+  .bar svg{width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.7;
+           stroke-linecap:round; stroke-linejoin:round}
+
+  /* ---- tanya: kotak tanya ---- */
+  .askbox{background:#fff; border:1px solid var(--rule); border-radius:18px; padding:13px 14px}
+  .askbox textarea{width:100%; min-height:56px; border:0; resize:none; font:inherit; font-size:14px;
+                   line-height:1.45; background:none; color:var(--ink); padding:0}
+  .askbox textarea::placeholder{color:var(--faint)}
+  .askfoot{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:10px;
+           padding-top:10px; border-top:1px solid var(--rule)}
+  .hint{font-size:10.5px; color:var(--faint)}
+  .btn{background:var(--ink); color:var(--paper); border-radius:11px; padding:8px 14px;
+       font-size:12px; font-weight:600}
+  .btn.ghost{background:none; color:var(--muted); border:1px solid var(--rule); font-weight:500}
+  .btn[disabled]{opacity:.4}
+
+  /* ---- daftar pertanyaan ---- */
+  .sechead{display:flex; align-items:baseline; justify-content:space-between; margin:22px 0 8px}
+  .sechead .l{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .sechead .r{font-size:11px; color:var(--faint)}
+  .q{display:block; width:100%; text-align:left; background:#fff; border:1px solid var(--rule);
+     border-radius:14px; padding:12px 13px; margin-bottom:9px}
+  .q .txt{font-size:13px; line-height:1.4; color:var(--ink)}
+  .q .foot{display:flex; align-items:center; gap:7px; margin-top:8px; font-size:10px; color:var(--muted)}
+  .pill{font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:700;
+        padding:3px 7px; border-radius:6px; border:1px solid var(--rule); color:var(--muted)}
+  .pill.wait{color:var(--warn); border-color:#E6D3AD; background:#FBF4E6}
+  .pill.live{color:var(--accent); border-color:#EBCfc4; background:var(--accent-soft)}
+  .pill.done{color:var(--ok); border-color:#C7DBCD; background:#EFF5F0}
+  .pill.off{color:var(--faint)}
+
+  /* ---- jawaban ---- */
+  .anshead{display:flex; align-items:center; gap:8px; font-size:11px; color:var(--muted)}
+  .ansQ{font-family:var(--serif); font-size:19px; line-height:1.25; margin:8px 0 10px; letter-spacing:-.01em}
+  .ans{font-size:14px; line-height:1.62; color:var(--ink)}
+  .ans p{margin:0 0 11px}
+  .src{margin-top:14px; border-top:1px solid var(--rule); padding-top:11px}
+  .src .lbl{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .src li{font-size:11.5px; line-height:1.45; color:var(--muted); margin:7px 0 0; list-style:none;
+          display:flex; gap:7px}
+  .src ul{margin:0; padding:0}
+  .src .dom{color:var(--ink); font-weight:600}
+  .src .tier{font-size:9px; letter-spacing:.08em; text-transform:uppercase; color:var(--faint)}
+  .dropped{margin-top:10px; background:#FBF4E6; border:1px solid #E6D3AD; border-radius:10px;
+           padding:9px 11px; font-size:11px; line-height:1.45; color:var(--warn)}
+  .actions{display:flex; gap:8px; margin-top:15px; flex-wrap:wrap}
+  .empty{background:#fff; border:1px dashed var(--rule); border-radius:16px; padding:20px 16px; text-align:center}
+  .empty .t{font-family:var(--serif); font-size:16px; margin-bottom:5px}
+  .empty .d{font-size:12px; color:var(--muted); line-height:1.5}
+
+  /* ---- pantau ---- */
+  .w{background:#fff; border:1px solid var(--rule); border-radius:14px; padding:12px 13px; margin-bottom:9px}
+  .w .t{font-size:13px; line-height:1.4}
+  .w .m{font-size:10.5px; color:var(--muted); margin-top:7px; line-height:1.4}
+  .w .m b{color:var(--ink); font-weight:600}
+  .rail{display:flex; align-items:center; gap:5px; margin-top:10px}
+  .rail i{height:3px; flex:1; border-radius:2px; background:var(--rule); font-style:normal}
+  .rail i.on{background:var(--accent)}
+  .rail i.ok{background:var(--ok)}
+
+  /* ---- masuk & atur ---- */
+  .field{background:#fff; border:1px solid var(--rule); border-radius:12px; padding:11px 12px; margin-bottom:9px}
+  .field .k{font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); font-weight:700}
+  .field .v{font-size:13.5px; margin-top:4px}
+  .field .v.dim{color:var(--faint)}
+  .row{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:11px 0;
+       border-bottom:1px solid var(--rule)}
+  .row:last-child{border-bottom:0}
+  .row .k{font-size:13px}
+  .row .d{font-size:10.5px; color:var(--faint); margin-top:2px}
+  .sw{width:38px; height:22px; border-radius:11px; background:var(--rule); position:relative; flex:0 0 auto}
+  .sw.on{background:var(--ok)}
+  .sw::after{content:""; position:absolute; top:2px; left:2px; width:18px; height:18px; border-radius:50%;
+             background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.2)}
+  .sw.on::after{left:18px}
+  .foot-note{font-size:10.5px; color:var(--faint); line-height:1.5; margin-top:10px}
+  .lock{display:flex; gap:8px; align-items:flex-start; background:var(--accent-soft);
+        border-radius:12px; padding:10px 12px; margin-top:12px}
+  .lock .i{font-size:14px; line-height:1.2}
+  .lock .t{font-size:11px; line-height:1.45; color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="tag">Rencana 022 · mockup v1</div>
+    <h1>Tanya AI — layar dan keadaannya</h1>
+    <p>Tab Tanya mengisi slot Sleman yang sudah kosong (<code>latest_by_scope.lokal</code> selalu <code>null</code>).
+       Ia memuat dua hal dalam satu layar: <b>tanya sekali</b> dan <b>pantau</b>.</p>
+    <p style="color:var(--faint)">Token, ukuran huruf, radius, dan pola kartu mengikuti <code>public/style.css</code> apa adanya.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- 1. KOSONG -->
+    <section class="shot">
+      <div class="cap">1 · Keadaan kosong</div>
+      <p class="note">Pertama kali dibuka. Tanpa riwayat, tanpa contoh palsu.</p>
+      <div id="top">
+        <div class="eyebrow">Tanya</div>
+        <h2 class="title">Tanya soal berita yang sudah terbit.</h2>
+        <div class="sub">Jawaban hanya dari bahan yang pernah masuk edisi — bukan dari internet bebas.</div>
+      </div>
+      <div class="body">
+        <div class="askbox">
+          <textarea placeholder="Contoh: apa status gugatan hak menyatakan pendapat DPR?"></textarea>
+          <div class="askfoot">
+            <span class="hint">Maks 500 karakter</span>
+            <button class="btn" disabled>Tanya</button>
+          </div>
+        </div>
+        <div class="empty" style="margin-top:18px">
+          <div class="t">Belum ada pertanyaan</div>
+          <div class="d">Pertanyaan pertama Anda akan muncul di sini beserta keadaannya.</div>
+        </div>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 9 19.4a1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1A1.6 1.6 0 0 0 4.6 9a1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 2. ANTREAN OFFLINE -->
+    <section class="shot">
+      <div class="cap">2 · Antrean offline</div>
+      <p class="note">Ditanya saat sinyal mati. Pertanyaan tidak hilang dan tidak terlihat seperti gagal.</p>
+      <div id="top">
+        <div class="eyebrow">Tanya</div>
+        <h2 class="title">Tanya soal berita yang sudah terbit.</h2>
+      </div>
+      <div class="body">
+        <div class="askbox">
+          <textarea>Kenapa PBI BPJS warga Sleman dinonaktifkan?</textarea>
+          <div class="askfoot">
+            <span class="hint">Tersimpan di perangkat</span>
+            <button class="btn ghost">Kirim nanti</button>
+          </div>
+        </div>
+        <div class="sechead"><span class="l">Pertanyaan saya</span><span class="r">2</span></div>
+        <div class="q">
+          <div class="txt">Kenapa PBI BPJS warga Sleman dinonaktifkan?</div>
+          <div class="foot"><span class="pill wait">menunggu terkirim</span><span>baru saja</span></div>
+        </div>
+        <div class="q">
+          <div class="txt">Apa status gugatan hak menyatakan pendapat DPR?</div>
+          <div class="foot"><span class="pill live">dijawab</span><span>kemarin 06:12</span></div>
+        </div>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 3. DIJAWAB -->
+    <section class="shot">
+      <div class="cap">3 · Dijawab, dengan sitasi</div>
+      <p class="note">Dua sumber lolos verifikasi; satu dibuang karena kutipannya tidak ada di halaman.</p>
+      <div id="top" style="padding-bottom:0">
+        <div class="eyebrow">Jawaban</div>
+      </div>
+      <div class="body">
+        <div class="anshead"><span class="pill done">terverifikasi</span><span>17 Nov 2026 · 06:14</span></div>
+        <div class="ansQ">Kenapa PBI BPJS warga Sleman dinonaktifkan?</div>
+        <div class="ans">
+          <p>Penerima Bantuan Iuran yang dibiayai APBN di Kabupaten Sleman dinonaktifkan mulai 1 November 2026.
+             Pemerintah kabupaten menyiapkan reaktivasi, dan menyebut jumlah keluarga terdampak dalam rapat
+             koordinasi pekan lalu.</p>
+          <p>Belum ada keterangan resmi yang menyebut berapa lama proses reaktivasi berlangsung.</p>
+        </div>
+        <div class="src">
+          <div class="lbl">Sumber</div>
+          <ul>
+            <li><span class="dom">republika.co.id</span><span>· 3 Nov · <span class="tier">edisi 2026-11-04</span></span></li>
+            <li><span class="dom">jogja.antaranews.com</span><span>· 2 Nov · <span class="tier">edisi 2026-11-03</span></span></li>
+          </ul>
+        </div>
+        <div class="dropped">
+          1 sumber dibuang: kutipan tidak ditemukan di halaman aslinya. Jawaban tidak memakainya.
+        </div>
+        <div class="actions">
+          <button class="btn ghost">Pantau ini</button>
+          <button class="btn ghost">Usul ke edisi besok</button>
+        </div>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 4. BELUM ADA BAHAN -->
+    <section class="shot">
+      <div class="cap">4 · Belum ada bahan</div>
+      <p class="note">Keadaan yang paling sering terjadi, dan harus terlihat tenang — bukan galat.</p>
+      <div id="top" style="padding-bottom:0"><div class="eyebrow">Jawaban</div></div>
+      <div class="body">
+        <div class="anshead"><span class="pill off">tanpa bahan</span><span>17 Nov 2026 · 06:15</span></div>
+        <div class="ansQ">Bagaimana progres tol Jogja–Solo?</div>
+        <div class="empty" style="margin-top:4px; text-align:left">
+          <div class="t">Belum ada bahan yang cukup.</div>
+          <div class="d">Tidak ada artikel di arsip yang menjawab ini. Saya tidak menjawab dari pengetahuan umum:
+             itu yang membuat berita hasil karangan terlihat masuk akal.</div>
+        </div>
+        <div class="actions">
+          <button class="btn ghost">Pantau ini</button>
+          <button class="btn ghost">Tanya lain</button>
+        </div>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 5. PANTAU -->
+    <section class="shot">
+      <div class="cap">5 · Pantau — empat keadaan</div>
+      <p class="note">Siklus yang sama dengan <code>gap_watch</code> di RANKING.md §6.5.</p>
+      <div id="top">
+        <div class="eyebrow">Pantau</div>
+        <h2 class="title">Yang Anda titipkan.</h2>
+        <div class="sub">Diperiksa tiap pagi. Tidak ada notifikasi; kalau ada yang baru, ia muncul di edisi.</div>
+      </div>
+      <div class="body">
+        <div class="w">
+          <div class="t">Kenapa PBI BPJS warga Sleman dinonaktifkan?</div>
+          <div class="m"><b>Diliput.</b> Kartu terbit 17 Nov 2026 lewat catatan editor.</div>
+          <div class="rail"><i class="on"></i><i class="on"></i><i class="ok"></i></div>
+        </div>
+        <div class="w">
+          <div class="t">Gugatan hak menyatakan pendapat DPR</div>
+          <div class="m"><b>Mulai diliput.</b> 2 artikel baru hari ini; menunggu bahan kedua.</div>
+          <div class="rail"><i class="on"></i><i class="on"></i><i></i></div>
+        </div>
+        <div class="w">
+          <div class="t">Progres tol Jogja–Solo</div>
+          <div class="m"><b>Menunggu bahan.</b> Tidak ada artikel baru sejak 12 Nov.</div>
+          <div class="rail"><i class="on"></i><i></i><i></i></div>
+        </div>
+        <div class="w">
+          <div class="t">Sertifikasi halal UMKM Sleman</div>
+          <div class="m"><b>Ditutup.</b> Sudah diliput 3 outlet lain · 4 Nov 2026.</div>
+          <div class="rail"><i class="ok"></i><i class="ok"></i><i class="ok"></i></div>
+        </div>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 6. ATUR -->
+    <section class="shot">
+      <div class="cap">6 · Atur → Tanya AI</div>
+      <p class="note">Hanya knob. Prompt tidak ada di sini — ia tinggal di <code>config/tanya.json</code>.</p>
+      <div id="top">
+        <div class="eyebrow">Atur</div>
+        <h2 class="title">Tanya AI</h2>
+        <div class="sub">Masuk sebagai abbad.aim@gmail.com</div>
+      </div>
+      <div class="body">
+        <div class="field">
+          <div class="k">Model</div>
+          <div class="v">deepseek-v4.1-flash-free · low</div>
+        </div>
+        <div class="field">
+          <div class="k">Model uji</div>
+          <div class="v dim">flash-free · high — flash (berbayar) · low</div>
+        </div>
+        <div class="field">
+          <div class="k">Mode jawaban</div>
+          <div class="v">Ringkas · maks 180 kata</div>
+        </div>
+        <div class="row">
+          <div><div class="k">Cari di luar arsip</div><div class="d">Sumber tetap diverifikasi sebelum dikutip</div></div>
+          <div class="sw on"></div>
+        </div>
+        <div class="row">
+          <div><div class="k">Kunci layar</div><div class="d">PIN 6+ karakter, hanya di perangkat ini</div></div>
+          <div class="sw"></div>
+        </div>
+        <div class="lock">
+          <span class="i">🔒</span>
+          <span class="t"><b>Batas tulis adalah akun Anda, bukan PIN.</b> Orang yang membuka tautan tidak punya sesi,
+            jadi tidak bisa mengubah apa pun. PIN hanya menghalangi orang yang memegang ponsel Anda.</span>
+        </div>
+        <p class="foot-note">Setelan berlaku pada pertanyaan berikutnya, tanpa deploy. Prompt dan teks penolakan
+          hanya berubah lewat commit.</p>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+    <!-- 7. MASUK -->
+    <section class="shot">
+      <div class="cap">7 · Masuk</div>
+      <p class="note">Sekali per perangkat. Sesi disimpan, jadi tidak ada PIN yang harus diketik terus.</p>
+      <div id="top">
+        <div class="eyebrow">Tanya</div>
+        <h2 class="title">Masuk untuk bertanya.</h2>
+        <div class="sub">Edisi tetap bisa dibaca tanpa masuk.</div>
+      </div>
+      <div class="body">
+        <div class="field">
+          <div class="k">Surel</div>
+          <div class="v">abbad.aim@gmail.com</div>
+        </div>
+        <div class="field">
+          <div class="k">Kata sandi</div>
+          <div class="v">••••••••••</div>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn">Masuk</button>
+          <button class="btn ghost">Keluar dari semua perangkat</button>
+        </div>
+        <p class="foot-note">Tidak ada pendaftaran: akun dibuat manual, dan pendaftaran publik dimatikan.</p>
+      </div>
+      <nav class="bar">
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Edisi</span>
+        <span class="it on"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>Tanya</span>
+        <span class="it"><svg viewBox="0 0 24 24"><path d="M4 18V9M10 18V5M16 18v-6M22 18h-20"/></svg>Mingguan</span>
+        <span class="it"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M4 12h2M18 12h2"/></svg>Atur</span>
+      </nav>
+    </section>
+
+  </div>
+</div>
+</body>
+</html>
