@@ -68,8 +68,10 @@ grant usage on schema public to authenticated;
 grant select, insert, update on public.settings to authenticated;
 grant select, insert, update, delete on public.asks to authenticated;
 -- service_role (dipakai pipeline di CI) melewati RLS, tetapi tetap butuh grant.
+-- `delete` disertakan supaya baris uji dan pertanyaan kedaluwarsa bisa
+-- dibersihkan dari pipeline, bukan hanya lewat dasbor.
 grant select, insert, update on public.settings to service_role;
-grant select, insert, update on public.asks     to service_role;
+grant select, insert, update, delete on public.asks to service_role;
 
 -- 4. Setelah langkah 3, isi setelan awal. Jangan menempel <UID> — itu yang
 --    menghasilkan `22P02 invalid input syntax for type uuid`. Ambil uid dari
