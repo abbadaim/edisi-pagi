@@ -112,6 +112,10 @@ export function buildAskPrompt(
   cfg: AskConfig,
   allowWeb: boolean,
 ): { system: string; user: string } {
+  // Arsip yang tipis adalah alasan mencari, bukan alasan menyerah. Tanpa
+  // dorongan eksplisit, model cenderung menjawab "belum ada bahan" padahal
+  // pencarian diizinkan — itu yang terjadi di CI pada 2026-11-17 (bahan: 1).
+  const thin = materials.length < 2;
   const system = [
     cfg.prompt,
     `Bentuk jawaban: maksimum ${cfg.bentuk.max_kata} kata, maksimum ${cfg.bentuk.max_paragraf} paragraf.`,
@@ -119,8 +123,13 @@ export function buildAskPrompt(
     allowWeb
       ? "Tool websearch boleh dipakai bila bahan tidak menjawab. Untuk sumber dari web, sitasi memakai {\"url\":\"https://…\",\"kutipan\":\"…\"}, dan kutipan disalin dari HALAMANNYA, bukan dari cuplikan hasil pencarian."
       : "Tool websearch jangan dipakai. Hanya bahan di bawah yang boleh dirujuk.",
+    allowWeb && thin
+      ? "Bahan arsip yang tersedia sedikit. Gunakan websearch untuk mencari informasi terbaru sebelum menjawab; jangan menjawab \"belum ada bahan\" selama pencarian masih bisa dilakukan."
+      : "",
     `Bila bahan tidak menjawab pertanyaan, balas dengan "jawaban" berisi: ${cfg.tolak}`,
-  ].join("\n\n");
+  ]
+    .filter(Boolean)
+    .join("\n\n");
 
   const user = [
     `Pertanyaan pembaca: ${question}`,
@@ -233,6 +242,7 @@ export async function writeAnswer(
   // Tidak ada satu pun sitasi yang lolos → tidak ada dasar untuk menerbitkan
   // jawaban, sekalipun kalimatnya terdengar meyakinkan.
   if (sources.length === 0) {
+    console.log(`model tanpa sitasi sah · keluaran: ${text.slice(0, 400).replace(/\s+/g, " ")}`);
     return {
       state: "refused",
       answer: cfg.tolak,
