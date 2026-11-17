@@ -49,30 +49,64 @@ jobs:
             || { echo "GAGAL: opencode/deepseek-v4.1-flash-free tidak ada di katalog profil CI"; exit 1; }
           echo "OK katalog: model gratis terlihat di profil CI"
 
-      - name: Probe websearch + varian (rencana 022)
+      # Probe rencana 022. Advisory: hasilnya dicatat, bukan menggagalkan smoke.
+      # Kegagalan ditangani DI DALAM skrip — `bash -e` akan mematikan job
+      # sebelum bukti sempat dicetak.
+      - name: Probe katalog model gratis (DEC-0018)
         run: |
-          # Katalog tidak memuat varian; `#low` hanya sah di argumen --model.
-          # Bila langkah ini gagal, fase 5 turun ke korpus saja
-          # (config/tanya.json → cari.enabled=false), bukan gagal total.
-          # Kegagalan ditangani DI DALAM skrip: `bash -e` akan mematikan job
-          # sebelum bukti sempat dicetak (pelajaran `continue-on-error`).
+          MODELS=$("$HOME/.opencode/bin/opencode" --standalone models)
+          echo "$MODELS" | grep -qx 'opencode/deepseek-v4.1-flash-free' \
+            || { echo "GAGAL: opencode/deepseek-v4.1-flash-free tidak ada di katalog profil CI"; exit 1; }
+          echo "OK katalog: model gratis terlihat di profil CI"
+
+      - name: Probe tool pencarian (rencana 022) — advisory
+        run: |
+          # Run 44006991360: websearch ada tetapi ditolak headless
+          # ("Cancelled a request for input this run cannot answer").
+          # Langkah ini memetakan apa yang benar-benar bisa dipakai CI.
           set +e
           "$HOME/.opencode/bin/opencode" --standalone run \
             --model 'opencode/deepseek-v4.1-flash-free#low' \
-            --format json \
-            --auto \
-            --archived \
-            'Pakai tool websearch untuk mencari satu berita terbaru tentang Kabupaten Sleman, lalu balas JSON {"url":"...","kutipan":"..."}' \
-            > /tmp/tanya-probe.json 2> /tmp/tanya-probe.err
-          RC=$?
+            --format json --auto --archived \
+            'Pakai tool websearch untuk mencari satu berita terbaru tentang Kabupaten Sleman. Balas JSON {"url":"...","kutipan":"..."}' \
+            > /tmp/p-websearch.json 2>&1
+          echo "websearch exit=$?"
+          "$HOME/.opencode/bin/opencode" --standalone run \
+            --model 'opencode/deepseek-v4.1-flash-free#low' \
+            --format json --auto --archived \
+            'Pakai tool webfetch pada https://abbadaim.github.io/edisi-pagi/manifest.json lalu balas JSON {"ok":true,"latest":"<nilai latest>"}' \
+            > /tmp/p-webfetch.json 2>&1
+          echo "webfetch exit=$?"
           set -e
-          echo "exit=$RC"
-          echo "--- stdout"; cat /tmp/tanya-probe.json
-          echo "--- stderr"; cat /tmp/tanya-probe.err
-          if [ "$RC" -ne 0 ]; then
-            echo "GAGAL: panggilan model gratis keluar $RC (lihat stderr di atas)"
-            exit 1
-          fi
-          grep -q '"tool":"websearch"' /tmp/tanya-probe.json \
-            || { echo "GAGAL: tool websearch tidak terpakai di profil CI"; exit 1; }
-          echo "OK websearch tersedia dan tercatat di stream tool_use"
+
+          python3 - <<'PY'
+          import json
+
+          for name in ("websearch", "webfetch"):
+              path = f"/tmp/p-{name}.json"
+              seen, ok, err = 0, 0, None
+              try:
+                  lines = open(path, encoding="utf-8", errors="replace").read().splitlines()
+              except FileNotFoundError:
+                  print(f"{name}: tidak ada keluaran")
+                  continue
+              for line in lines:
+                  line = line.strip()
+                  if not line.startswith("{"):
+                      continue
+                  try:
+                      e = json.loads(line)
+                  except Exception:
+                      continue
+                  if e.get("type") == "tool_use" and e.get("part", {}).get("tool") == name:
+                      seen += 1
+                      state = e["part"].get("state") or {}
+                      if state.get("status") == "completed":
+                          ok += 1
+                      else:
+                          err = state.get("error") or err
+                  if e.get("type") == "error":
+                      err = (e.get("error") or {}).get("message") or err
+              print(f"{name}: dipanggil {seen}x, berhasil {ok}x, catatan: {err}")
+          PY
+          echo "probe pencarian selesai — hasil dicatat, tidak menggagalkan smoke"
