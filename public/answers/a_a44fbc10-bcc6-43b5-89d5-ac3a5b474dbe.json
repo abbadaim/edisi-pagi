@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "a_a44fbc10-bcc6-43b5-89d5-ac3a5b474dbe",
+  "question": "Apa putusan MA soal ijazah Gibran?",
+  "topic_id": null,
+  "state": "refused",
+  "answer": "Belum ada bahan yang cukup untuk menjawab ini.",
+  "sources": [],
+  "unsupported": [],
+  "reason": "tidak ada sitasi yang lolos verifikasi",
+  "model": "opencode/deepseek-v4.1-flash-free#low",
+  "config_hash": "acdacc751bdb",
+  "prompt_hash": "c11c7ab774fd",
+  "tokens": {
+    "tokens_in": 35970,
+    "tokens_out": 216
+  },
+  "created_at": "2026-11-17T07:34:09.249Z",
+  "edition_date": "2026-11-17"
+}
