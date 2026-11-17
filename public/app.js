@@ -1654,9 +1654,11 @@ async function renderAskDetail(body, askId) {
   body.append(el("h2", "ansQ", item.question));
 
   // Sudah menjadi kartu di edisi: lebih berguna menautkan kartunya daripada
-  // mengulang jawaban lama yang isinya mungkin sudah berkembang.
+  // mengulang jawaban lama yang isinya mungkin sudah berkembang. Untuk `pantau`,
+  // kartu itu jawabannya — jangan tambahkan kotak "belum ada jawaban" di bawahnya.
   if (item.edition_id) {
     body.append(editionCardBlock(item));
+    if (watch) return;
   }
 
   if (item.state !== "answered" || !item.answer_id) {
