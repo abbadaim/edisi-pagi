@@ -365,3 +365,10 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
   disetujui. Fase 1 UI: tab Tanya (gated `config.json.supabaseUrl`), masuk,
   antrean offline, setelan. 319 uji unit + 11 uji browser lolos; deploy
   `deploy-site` 44031974445 hijau; `#/tanya` hidup di Pages.
+- 2026-11-17 — `implementing` — fase 2 (pengambilan bahan + verifikasi sitasi)
+  masuk. Dua temuan data yang membatalkan rancangan awal fase 2:
+  `articles.topic_id` **tidak pernah diisi** (0 dari 2.026 baris) dan
+  `topic_entities` kosong untuk 116 dari 119 topik. Jalur kartu karena itu
+  memakai `topic_aliases` (judul artikel pendiri) sebagai kueri, bukan relasi
+  entitas. Hanya 12 dari 400 artikel terbaru punya teks penuh, jadi bahan
+  sering berupa `lead` dan ditandai begitu di `answer.json`.

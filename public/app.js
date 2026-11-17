@@ -22,6 +22,10 @@ const S = {
   cfg: null,
   session: null,
   asks: [],
+  /** Jalur tanya: `bebas` (teks) atau `kartu` (topic_id stabil). */
+  tanyaMode: "bebas",
+  tanyaPick: null,
+  tanyaCards: null,
 };
 
 const $ = (id) => document.getElementById(id);
@@ -1243,9 +1247,14 @@ function saveQueue(items) {
   localStorage.setItem(QUEUE_KEY, JSON.stringify(items));
 }
 
-function enqueueAsk(question) {
+function enqueueAsk(question, topicId = null) {
   const items = loadQueue();
-  items.push({ id: `q_${Date.now()}_${items.length}`, question, at: new Date().toISOString() });
+  items.push({
+    id: `q_${Date.now()}_${items.length}`,
+    question,
+    topicId,
+    at: new Date().toISOString(),
+  });
   saveQueue(items);
 }
 
@@ -1323,7 +1332,7 @@ async function flushQueue() {
     try {
       await sb("asks", {
         method: "POST",
-        body: { mode: "now", question: item.question },
+        body: { mode: "now", question: item.question, topic_id: item.topicId ?? null },
         prefer: "return=minimal",
       });
     } catch {
@@ -1400,35 +1409,43 @@ function renderSignIn(body) {
   body.append(box);
 }
 
-function renderAskBox(body) {
+function renderAskBox(body, picked) {
   const box = el("div", "askbox");
   const area = el("textarea");
-  area.placeholder = "Contoh: apa status gugatan hak menyatakan pendapat DPR?";
+  area.placeholder = picked
+    ? `Apa yang ingin Anda ketahui soal "${picked.title}"?`
+    : "Contoh: apa status gugatan hak menyatakan pendapat DPR?";
   area.maxLength = 500;
   const foot = el("div", "askfoot");
   const hint = el("span", "hint", "Maks 500 karakter");
   const btn = el("button", "pbtn", "Tanya");
-  btn.disabled = true;
+  btn.disabled = !picked;
   area.oninput = () => {
     const n = area.value.trim().length;
-    btn.disabled = n < 4;
+    // Dari kartu: pertanyaan boleh kosong, topiknya sudah jelas.
+    btn.disabled = picked ? false : n < 4;
     hint.textContent = `${n}/500`;
   };
   btn.onclick = async () => {
-    const question = area.value.trim();
+    const typed = area.value.trim();
+    const question = typed || (picked ? `Perkembangan ${picked.title}` : "");
     if (question.length < 4) return;
     btn.disabled = true;
     area.value = "";
+    const topicId = picked?.topicId ?? null;
     if (!navigator.onLine) {
-      enqueueAsk(question);
+      enqueueAsk(question, topicId);
       await renderTanya();
       return;
     }
     try {
-      await sb("asks", { method: "POST", body: { mode: "now", question }, prefer: "return=minimal" });
+      await sb("asks", {
+        method: "POST",
+        body: { mode: "now", question, topic_id: topicId },
+        prefer: "return=minimal",
+      });
     } catch (e) {
-      // Galat jaringan = simpan; galat lain = tampilkan apa adanya.
-      if (e instanceof TypeError || !navigator.onLine) enqueueAsk(question);
+      if (e instanceof TypeError || !navigator.onLine) enqueueAsk(question, topicId);
       else hint.textContent = e instanceof Error ? e.message : "gagal mengirim";
     }
     await refreshAsks();
@@ -1437,6 +1454,74 @@ function renderAskBox(body) {
   foot.append(hint, btn);
   box.append(area, foot);
   body.append(box);
+}
+
+/** Satu sakelar untuk dua jalur: teks bebas, atau mulai dari kartu. */
+function renderModeSwitch(body) {
+  const seg = el("div", "seg");
+  for (const [key, label] of [["bebas", "Tanya bebas"], ["kartu", "Dari kartu"]]) {
+    const b = el("button", `segIt${S.tanyaMode === key ? " on" : ""}`, label);
+    b.type = "button";
+    b.onclick = () => {
+      S.tanyaMode = key;
+      if (key === "bebas") S.tanyaPick = null;
+      try {
+        localStorage.setItem("tanya.mode", key);
+      } catch { /* mode privat */ }
+      renderTanya().catch(showFatal);
+    };
+    seg.append(b);
+  }
+  body.append(seg);
+}
+
+/** Kartu dari edisi yang sedang terbuka; kalau kosong, edisi nasional terbaru. */
+async function latestCards() {
+  if (S.tanyaCards) return S.tanyaCards;
+  let cards = (S.cards ?? []).filter((c) => c.topic_id);
+  if (cards.length === 0) {
+    const latest = S.manifest?.latest_by_scope?.nasional;
+    const entry =
+      S.all.find((e) => e.scope === "nasional" && e.edition_id === latest) ?? S.byScope.get("nasional")?.[0];
+    if (!entry) return [];
+    try {
+      const res = await fetch(entry.path, { cache: "no-cache" });
+      if (!res.ok) return [];
+      const ed = await res.json();
+      cards = (ed.cards ?? []).filter((c) => c.topic_id);
+    } catch {
+      return [];
+    }
+  }
+  S.tanyaCards = cards;
+  return cards;
+}
+
+async function renderCardPicker(body) {
+  const cards = await latestCards();
+  if (cards.length === 0) {
+    body.append(el("p", "pmuted", "Belum ada kartu untuk dipilih."));
+    return;
+  }
+  const sel = el("select", "fieldInput");
+  const blank = el("option", null, "Pilih berita yang sudah terbit…");
+  blank.value = "";
+  sel.append(blank);
+  for (const c of cards) {
+    const o = el("option", null, c.title);
+    o.value = c.topic_id;
+    if (S.tanyaPick?.topicId === c.topic_id) o.selected = true;
+    sel.append(o);
+  }
+  sel.onchange = () => {
+    const c = cards.find((x) => x.topic_id === sel.value);
+    S.tanyaPick = c ? { topicId: c.topic_id, title: c.title } : null;
+    renderTanya().catch(showFatal);
+  };
+  body.append(sel);
+  if (!S.tanyaPick) {
+    body.append(el("p", "pmuted", "Dari kartu, jawaban memakai topic_id yang stabil — hampir selalu tepat."));
+  }
 }
 
 async function renderTanya() {
@@ -1469,7 +1554,10 @@ async function renderTanya() {
 
   title.textContent = "Tanya";
   sub.textContent = "Jawaban hanya dari bahan yang pernah masuk edisi.";
-  renderAskBox(body);
+  renderModeSwitch(body);
+  const picked = S.tanyaMode === "kartu" ? S.tanyaPick : null;
+  if (S.tanyaMode === "kartu") await renderCardPicker(body);
+  renderAskBox(body, picked);
 
   const queued = loadQueue();
   const answered = S.asks ?? [];

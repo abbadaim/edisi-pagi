@@ -24,6 +24,7 @@
     "health": "node scripts/health.ts",
     "alert": "node scripts/alert.ts",
     "gen:vapid": "node scripts/gen-vapid.ts",
+    "ask": "node scripts/ask.ts",
     "poc:newsroom": "node scripts/poc-newsroom.ts",
     "prepare:ui": "node scripts/prepare-ui-fixture.ts",
     "test:ui": "npm run prepare:ui && playwright test",
