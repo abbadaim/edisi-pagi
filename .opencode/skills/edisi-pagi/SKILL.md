@@ -47,6 +47,9 @@ ingest → cluster → adjudicate → planner → rank/select
 | Area | Files |
 |---|---|
 | Daily orchestration | `scripts/build.ts` |
+| Tanya AI | `src/core/ask/*` (`config`, `retrieve`, `cite`, `gather`, `answer`), `scripts/ask.ts`, `#/tanya` |
+| Pantau pembaca | `src/core/newsroom/watch.ts`, `scripts/watch.ts`, ledger `editor_notes` |
+| Supabase schema | `supabase/001…003.sql` — SQL Editor, never `npm run migrate` |
 | Weekly recap | `scripts/weekly.ts` |
 | Newsroom roles | `src/core/newsroom/*` (plan, material, write, edit, card, notes, desk) |
 | Meta cards | `src/core/newsroom/meta.ts` |
@@ -59,6 +62,23 @@ ingest → cluster → adjudicate → planner → rank/select
 | CI | `.github/workflows/daily.yml`, `opencode-smoke.yml` |
 
 ## Non-negotiables
+
+- **Answers are not editions.** `public/answers/<id>.json` never enters
+  `cards[]`, `latest_by_scope`, dedupe, or the desk (`DEC-0032`).
+- **Citation or withhold.** The model cites material ids (`s1`), never URLs;
+  quotes must be found in the text we hold, and sentences quoting anything else
+  are dropped one by one (`DEC-0033`). If nothing survives, the answer is
+  withheld — that is a success, not a bug.
+- **Web search needs an explicit provider.** `opencode.json` sets
+  `websearch.provider` + `allow`; without it headless runs stop at a provider
+  prompt that `run` cannot answer (`DEC-0034`).
+- **Outside URLs are fetched and verified by us**, never trusted from a search
+  snippet, and never fetched from private hosts (`isPublicHttpUrl`).
+- **Identity is the write boundary**, not a PIN and not a device token
+  (`DEC-0031`). The publishable key may ship; `service_role`/`sb_secret_` may not.
+- **Prompt text lives in git; only knobs live in the app** (`DEC-0036`).
+- **Reader watches ride the existing note ledger** (`source='reader'`) so quota,
+  closing-quote rules and `markAnswered` apply unchanged (`DEC-0037`).
 
 - **Published editions are immutable.** Never rebuild a date that already
   exists. Test with `--newsroom-limit 2 --thin` on a new date, or use the POC.
@@ -173,6 +193,27 @@ Browser checklist:
 6. Before testing a new `app.js`, clear caches and unregister the service
    worker.
 
+## Verification skills — Tanya AI
+
+```bash
+# Skema Supabase (SQL Editor di dasbor, bukan CLI)
+#   001_init → 002_dispatch (PAT di Vault) → 003_watch
+
+npm run ask -- --id <ask_id> --debug     # satu pertanyaan + keluaran mentah model
+npm run watch                            # sync pantau (dipakai daily.yml)
+WATCH_WINDOW_HOURS=240 npm run watch     # uji dengan basis data lama
+
+gh run list --workflow tanya.yml --limit 3     # event harus repository_dispatch
+gh run view <id> --log | grep -E "auth:|bahan:|jawaban:"
+
+# trigger dispatch: 204 = diterima, 401 = PAT, 404 = repo/izin
+# select status_code, content from net._http_response order by created desc limit 5;
+```
+
+Sanity check yang murah sebelum menyalahkan model: `bahan: N` di log. `N = 0`
+berarti arsip, `N = 1` berarti tipis (model perlu didorong mencari), `N >= 2`
+berarti keluaran model yang cacat.
+
 ## When it breaks
 
 | Symptom | Check |
@@ -185,6 +226,11 @@ Browser checklist:
 | Deploy skipped after success | commit/push step, `continue-on-error`, failed optional step |
 | Push opens wrong page | payload URL must be `./`, resolved against SW scope |
 | CI falls back to DeepSeek | OpenCode version/install, `OPENCODE_AUTH_JSON`, `OPENCODE_BIN` |
+| Tanya: "tidak ada sitasi" | `--debug`; bandingkan bentuk `sitasi` model dengan contoh JSON di `config/tanya.json` |
+| Tanya menolak padahal ada bahan | `bahan: N` di log; <2 = arsip tipis, cek `cari.enabled` + `izin_luar_bahan` |
+| Websearch mati di CI | `opencode.json` (`websearch.provider`, izin `allow`); `--auto` tidak menjawab prompt penyedia |
+| Watch tidak bergerak | `source` di `editor_notes` harus `reader`; SELECT di `loadLedger` harus memuat kolom baru |
+| Pantau tanpa tautan edisi | `report` butuh `supabase/003_watch.sql` |
 
 ## Read next
 

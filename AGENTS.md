@@ -20,7 +20,10 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Edisi terakhir | `2026-11-12` nasional 8 kartu (build 14 m 16 s, OpenCode, kartu paralel) |
 | Registry pemilik | `config/outlets.yaml` (14 outlet, DEC-0030); kemandirian per pemilik |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tests | `npm test` — 266 uji; `npm run test:ui` — 10 uji browser |
+| Tanya AI | Tab `#/tanya` + `#/tanya/<id>` di aplikasi; pertanyaan masuk ke Supabase (`asks`, RLS owner-only), dijawab `scripts/ask.ts` (`DEC-0031`…`DEC-0036`) |
+| Jalur cepat | `repository_dispatch` dari Supabase (pg_net + Vault) → `tanya.yml`; terukur **10 detik** sampai run dimulai, jawaban ~2–3 menit |
+| Pantau | `editor_notes` `source='reader'`; `scripts/watch.ts sync|report` di `daily.yml`; pemeriksaan bahan tanpa token (`DEC-0037`) |
+| Tests | `npm test` — 347 uji; `npm run test:ui` — 11 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -60,6 +63,15 @@ ingest → cluster → adjudicate → planner → rank/select
 | `src/core/weekly-newsroom.ts` | Assignment + bentuk kartu rekap mingguan |
 | `src/core/telemetry.ts` | `llm_calls` per panggilan |
 | `scripts/build.ts` | Orkestrasi harian |
+| `src/core/ask/config.ts` | Setelan Tanya: jepit model ke daftar `uji`, knob vs prompt (`DEC-0036`) |
+| `src/core/ask/retrieve.ts` | Pertanyaan → bahan arsip (cocok judul, ambang 2 kata) |
+| `src/core/ask/cite.ts` | Verifikasi kutipan; buang kalimat yang mengutip teks di luar bahan |
+| `src/core/ask/gather.ts` | Ambil halaman luar + tolak host privat (`DEC-0034`) |
+| `src/core/ask/answer.ts` | Satu jawaban: percobaan 3x, potong di batas kalimat, cacat teks menahan |
+| `src/core/newsroom/watch.ts` | Siklus pantau: `menunggu → mulai_diliput → diliput → ditutup` |
+| `scripts/ask.ts` | Jawab satu pertanyaan (`--id`, `--debug`, `--dry`) |
+| `scripts/watch.ts` | `sync` sebelum build, `report` sesudahnya; keduanya fail-soft |
+| `supabase/001…003.sql` | Skema, trigger dispatch, kolom pantau (jalankan di SQL Editor, bukan `npm run migrate`) |
 | `scripts/publish.ts` | `public/` + manifest |
 | `scripts/poc-newsroom.ts` | POC lima peran |
 
@@ -80,6 +92,21 @@ npm run validate -- data/editions/2026-11-11.nasional.json
 npm run publish
 npm run serve
 ```
+
+Tanya AI (butuh `SUPABASE_SERVICE_KEY` di `.env.local`; tidak pernah masuk repo):
+
+```bash
+npm run ask -- --id <ask_id>          # jawab satu pertanyaan
+npm run ask -- --debug                # cetak keluaran mentah model saat ditahan
+npm run ask -- --dry                  # hitung bahan, tanpa tulis & tanpa PATCH
+npm run watch                         # sync pantau dari Supabase
+WATCH_WINDOW_HOURS=240 npm run watch  # uji dengan basis data lama
+SUPABASE_JWT=<jwt> npm run ask        # uji lokal dengan sesi pengguna, tanpa kunci rahasia
+```
+
+Skema Supabase ada di `supabase/` dan dijalankan di **SQL Editor**, bukan lewat
+`npm run migrate` (folder `migrations/` milik SQLite). Urutannya: `001_init`,
+`002_dispatch` (perlu PAT di Vault), `003_watch`.
 
 POC:
 
@@ -221,6 +248,36 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - Klaster lokal butuh mayoritas media DIY **dan** penanda wilayah; berita nasional dari media Jogja tetap nasional.
 - Kicker memakai wilayah sebenarnya (`Sleman`, `Gunungkidul`, `Bantul`, `Kulon Progo`, `Yogyakarta`).
 
+### Tanya AI, Supabase, dan OpenCode headless
+
+- **`websearch` butuh penyedia yang disebut eksplisit.** Tanpa itu, pencarian
+  pertama menjadi prompt pemilihan penyedia dan `run` gagal dengan
+  `Cancelled a request for input this run cannot answer`. `opencode.json` di
+  akar repo menyetel `provider: "random"` + izin `allow`; `--auto` tidak
+  menggantikan input, hanya mengizinkan aksi (`DEC-0034`).
+- **Katalog model tidak memuat `#varian`.** Bandingkan setelah varian dilepas,
+  kalau tidak model bervarian dianggap hilang dan jalur turun ke deterministik.
+- **Kunci format baru:** `sb_secret_…` hanya sah di header `apikey`. Dikirim
+  sebagai `Authorization: Bearer` → `PGRST301 Expected 3 parts in JWT`.
+- **`service_role` tetap butuh GRANT** di proyek ini; tanpa itu semua tabel
+  `42501`. `default auth.uid()` NULL di bawah `service_role`, jadi pipeline
+  tidak bisa menyisipkan `asks` — insert butuh JWT pengguna atau `user_id`.
+- **Prompt adalah hukum.** Contoh JSON di `config/tanya.json` menentukan bentuk
+  keluaran; mengganti nama field di kode tanpa mengubah prompt membuat semua
+  sitasi dibuang diam-diam (`DEC-0033`).
+- **`loadLedger` dan `persistLedger` harus diubah bersama.** Menambah kolom di
+  pemetaan tanpa menambahkannya ke `SELECT` membuat catatan pembaca terbaca
+  `source='editor'` dan seluruh jalur pantau berhenti tanpa suara (`DEC-0037`).
+- **Jangan menyalin token JWT dengan tangan.** Satu karakter salah memberi
+  gejala yang sama dengan kunci ditolak server; verifikasi ES256 terhadap JWKS
+  lebih cepat daripada menebak. Tulis ke berkas, jangan tempel berulang.
+- **`gen-vapid.ts` menulis ulang `public/config.json`.** Ia kini menggabung,
+  bukan menimpa — kalau tidak, `supabaseUrl` hilang dan tab Tanya mati.
+- **Fixture UI memakai host `.invalid`**, supaya uji tidak menyentuh proyek
+  Supabase sungguhan.
+- **Langkah opsional di workflow tangani kegagalan di dalam skrip.** `bash -e`
+  mematikan langkah sebelum bukti sempat dicetak.
+
 ### OpenCode di CI
 
 - **Jangan** pakai `https://opencode.ai/install` — itu v1.19.5.
@@ -299,6 +356,13 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 | Catatan terpotong | internal vs publik; `clipText`; schema 120/320 |
 | Semua kartu gugur | `E-FACT` terbukti salah; `D-TYPO`/`D-TRUNC`; lihat edit JSON |
 | Build lambat | `llm_calls` role/latency; `CARD_CONCURRENCY` (default 3); OpenCode ±46 s/panggilan; keluaran panjang = lambat |
+| Tanya menjawab "tidak ada sitasi" | jalankan `npm run ask -- --debug`; periksa bentuk `sitasi` di keluaran mentah vs contoh JSON di `config/tanya.json` |
+| Tanya menolak padahal bahan ada | cek `bahan: N` di log; bila <2 berarti arsip tipis — pastikan instruksi pencarian aktif (`cari.enabled` + `izin_luar_bahan`) |
+| Tanya tidak masuk ke edisi | `pantau: N baris · M punya bahan baru` di `daily.yml`; `source` di `editor_notes` harus `reader`, bukan `editor` |
+| Pantau tidak berubah keadaan | `report` mencetak "kolom watch_state belum ada" → jalankan `supabase/003_watch.sql` |
+| Dispatch tidak memicu run | `select status_code from net._http_response order by created desc limit 5`; 401 = PAT, 404 = repo/izin |
+| Jawaban lambat / tidak ada | `gh run list --workflow tanya.yml`; event harus `repository_dispatch`, bukan `schedule` |
+| Websearch gagal di CI | `opencode.json` harus memuat `websearch.provider` + izin `allow`; `--auto` tidak menutup prompt pemilihan penyedia |
 | Edisi tidak valid | `npm run validate -- <file>` |
 
 ---

@@ -322,3 +322,75 @@ dipakai, sehingga label pemilik tidak pernah tampil tanpa dicek manusia.
 Dampak pada 2026-11-13: `independent_outlets` kartu Gibran 5 → 3, penyadapan
 4 → 2, `confidence` dua kartu 0,83 → 0,80; tidak ada yang turun band.
 _Tanggal: 2026-11-16. Rencana: `docs/plans/017-registry-pemilik.md`._
+
+## DEC-0031 — Identitas Supabase Auth adalah batas tulis, bukan PIN
+
+Pertanyaan pembaca masuk lewat satu tabel `asks` yang dilindungi RLS
+owner-only. Tidak ada PIN, tidak ada token perangkat, tidak ada kunci di
+bundel. Orang yang membuka tautan tidak punya sesi, jadi tidak punya hak tulis.
+
+Bukti 2026-11-17: insert anon → `401 · 42501 permission denied for table asks`
+(ditolak di tingkat grant, sebelum RLS); insert dengan JWT pemilik → `201`,
+`user_id` terisi dari `auth.uid()`. `disable_signup` dimatikan setelah terukur
+masih `false`.
+_Tanggal: 2026-11-17. Rencana: `docs/plans/022-tanya-pantau.md`._
+
+## DEC-0032 — Jawaban Tanya bukan kartu edisi
+
+`public/answers/<id>.json` tidak pernah masuk `cards[]`, tidak menyentuh
+`latest_by_scope`, tidak melewati desk, dan tidak ikut dedupe. Edisi tetap
+immutable; jawaban punya permukaan sendiri (`#/tanya`).
+
+## DEC-0033 — Sitasi diverifikasi pipeline, dan model tidak menyebut URL
+
+Model menunjuk id bahan (`s1`, `s2`); id itu dipetakan ke URL asli. Kutipan
+harus muncul di teks bahan (jendela ≥6 kata; <4 kata dianggap terlalu umum).
+Kalimat yang mengutip teks di luar bahan dan di luar halaman yang diambil
+dibuang per kalimat, bukan dibiarkan menumpang sitasi tingkat jawaban.
+
+Kegagalan yang mendasari aturan ini: contoh JSON di prompt menulis `url`
+padahal kode membaca `id`, sehingga **setiap** sitasi dibuang diam-diam dan
+semua jawaban ditahan dengan alasan "tidak ada sitasi" sementara `unsupported`
+kosong. Prompt adalah hukum; ubah nama field = ubah prompt.
+
+## DEC-0034 — Model boleh mencari, pipeline yang memverifikasi
+
+`websearch` **bisa** dipakai headless; kegagalan sebelumnya bukan keterbatasan
+tool melainkan penyedia yang belum dipilih. Runner selalu mulai dengan basis
+data kosong, jadi pencarian pertama menjadi prompt interaktif yang tidak bisa
+dijawab `run` (`Cancelled a request for input this run cannot answer`).
+
+`opencode.json` di akar repo menyebut `websearch.provider = "random"` dan
+mengizinkan aksinya; setelah itu run `44036150616` berstatus `completed` tanpa
+kunci API. Setiap URL yang dikutip tetap harus diambil pipeline dan kutipannya
+dicocokkan di halaman — cuplikan mesin pencari sering diparafrase.
+
+## DEC-0035 — Tidak ada push untuk jawaban
+
+Janji satu push per hari bertahan. Jawaban muncul di tab; `asks.state` dan
+`watch_state` dibaca aplikasi saat dibuka. Run jaring `tanya.yml` juga tidak
+men-deploy bila tidak ada jawaban baru.
+
+## DEC-0036 — Knob di Supabase, prompt di git
+
+Aplikasi hanya boleh mengubah model (dijepit ke daftar `uji`), mode, bentuk, dan
+sakelar pencarian. `prompt` dan `tolak` selalu dari `config/tanya.json`; klien
+yang mengirimnya diabaikan. Setiap jawaban menyimpan `config_hash` dan
+`prompt_hash` supaya "kok jawabannya beda" bisa dijawab.
+_Tanggal: 2026-11-17._
+
+## DEC-0037 — Pantau pembaca memakai ledger catatan, bukan tabel paralel
+
+Pertanyaan pantau masuk sebagai `editor_notes` dengan `source='reader'` dan
+`source_ref` = id baris `asks`. Konsekuensinya kuota tindak lanjut, kewajiban
+kutipan penutup, dan `markAnswered` langsung berlaku tanpa kode baru.
+
+Pemeriksaan bahan **tanpa token**: catatan hanya naik bobot bila ada artikel
+baru yang memuat ≥2 kata pertanyaannya (`hasNewMaterial`). Uji 2026-11-17:
+"Gibran ijazah DPR" 5 → 7; "PBI BPJS Sleman" tetap 5 karena tidak ada bahan.
+
+Catatan jebakan: memetakan kolom baru di `loadLedger` tanpa menambahkannya ke
+`SELECT` membuat setiap catatan pembaca terbaca `source='editor'`, sehingga
+seluruh jalur pantau diam-diam tidak pernah berjalan. Pemetaan dan SELECT harus
+diubah bersama.
+_Tanggal: 2026-11-17._
