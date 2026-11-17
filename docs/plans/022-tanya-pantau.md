@@ -372,3 +372,11 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
   memakai `topic_aliases` (judul artikel pendiri) sebagai kueri, bukan relasi
   entitas. Hanya 12 dari 400 artikel terbaru punya teks penuh, jadi bahan
   sering berupa `lead` dan ditandai begitu di `answer.json`.
+- 2026-11-17 — `implementing` — uji lokal pertama lewat. Tiga cacat ditemukan
+  dan diperbaiki sebelum CI: (1) contoh JSON di prompt menulis `url` padahal
+  kode membaca `id`, sehingga **setiap** sitasi dibuang diam-diam — prompt
+  sekarang memakai `id` dan kode menerima keduanya; (2) model gratis kadang
+  mengirim `sitasi: []`, kini diulang **sekali** lalu ditahan (`DEC-0026`);
+  (3) kalimat yang mengutip teks di luar bahan dibuang per kalimat, bukan
+  dibiarkan menumpang sitasi tingkat jawaban. Biaya satu jawaban: 12.152 token
+  masuk / 445 keluar, `cost 0`.

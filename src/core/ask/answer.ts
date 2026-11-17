@@ -9,7 +9,7 @@
 
 import type { LlmAdapter, Usage } from "../../adapters/llm/types.ts";
 import type { AskConfig } from "./config.ts";
-import { verifyCitations, type RawCitation, type VerifiedSource } from "./cite.ts";
+import { stripUnverifiedQuotes, verifyCitations, type RawCitation, type VerifiedSource } from "./cite.ts";
 import { renderMaterial, type AskMaterial } from "./retrieve.ts";
 
 export interface AskAnswer {
@@ -19,6 +19,8 @@ export interface AskAnswer {
   unsupported: string[];
   reason: string | null;
   usage?: Usage;
+  /** Keluaran mentah model; hanya untuk diagnosis, tidak pernah diterbitkan. */
+  raw?: string;
 }
 
 interface RawAnswer {
@@ -44,8 +46,11 @@ function citationsOf(raw: RawAnswer): RawCitation[] {
   return raw.sitasi
     .map((c) => {
       const obj = (c ?? {}) as Record<string, unknown>;
+      // Sebagian model menulis `url` walau diminta `id`; terima keduanya dan
+      // biarkan verifikasi yang memutuskan apakah penandanya nyata.
+      const key = typeof obj.id === "string" ? obj.id : typeof obj.url === "string" ? obj.url : "";
       return {
-        id: typeof obj.id === "string" ? obj.id : "",
+        id: key.trim(),
         kutipan: typeof obj.kutipan === "string" ? obj.kutipan : "",
       };
     })
@@ -138,13 +143,47 @@ export async function writeAnswer(
     };
   }
 
-  const raw = parseJson(text);
-  const jawaban = typeof raw?.jawaban === "string" ? raw.jawaban.trim() : "";
-  if (!raw || jawaban.length === 0) {
-    return { state: "refused", answer: cfg.tolak, sources: [], unsupported: [], reason: "keluaran bukan JSON yang sah", usage };
+  // Bentuk keluaran dan sitasi yang kosong diulang SEKALI (`DEC-0026`). Timeout
+  // dan galat jaringan tidak diulang: mengulang timeout hanya menggandakan
+  // waktu tunggu (`DEC-0025`). Model gratis memang kadang lupa mengisi sitasi.
+  const attempts = [text];
+  let parsed: { raw: RawAnswer | null; sources: VerifiedSource[]; unsupported: string[]; jawaban: string } | null = null;
+  for (let i = 0; i < attempts.length; i++) {
+    const raw = parseJson(attempts[i] ?? "");
+    const jawaban = typeof raw?.jawaban === "string" ? raw.jawaban.trim() : "";
+    if (raw && jawaban.length > 0) {
+      const { sources, unsupported } = verifyCitations(materials, citationsOf(raw));
+      parsed = { raw, sources, unsupported, jawaban };
+      if (sources.length > 0) break;
+    }
+    if (i === 0) {
+      try {
+        const again = await llm.text({ model, system, user, maxTokens: 900 });
+        attempts.push(again.text);
+        usage = {
+          tokens_in: usage.tokens_in + again.usage.tokens_in,
+          tokens_out: usage.tokens_out + again.usage.tokens_out,
+        };
+        text = again.text;
+      } catch {
+        /* biarkan putaran pertama yang dipakai */
+      }
+    }
   }
 
-  const { sources, unsupported } = verifyCitations(materials, citationsOf(raw));
+  if (!parsed) {
+    return {
+      state: "refused",
+      answer: cfg.tolak,
+      sources: [],
+      unsupported: [],
+      reason: "keluaran bukan JSON yang sah",
+      usage,
+      raw: text,
+    };
+  }
+
+  const { sources, unsupported, jawaban } = parsed;
 
   // Tidak ada satu pun sitasi yang lolos → tidak ada dasar untuk menerbitkan
   // jawaban, sekalipun kalimatnya terdengar meyakinkan.
@@ -156,10 +195,26 @@ export async function writeAnswer(
       unsupported,
       reason: "tidak ada sitasi yang lolos verifikasi",
       usage,
+      raw: text,
     };
   }
 
-  const trimmed = trimToWords(jawaban, cfg.bentuk.max_kata);
+  // Kalimat yang mengutip teks di luar bahan dibuang sebelum apa pun dinilai.
+  const cleaned = stripUnverifiedQuotes(jawaban, materials);
+  const trimmed = trimToWords(cleaned.text, cfg.bentuk.max_kata);
+  unsupported.push(...cleaned.dropped);
+
+  if (trimmed.length < 40) {
+    return {
+      state: "refused",
+      answer: cfg.tolak,
+      sources: [],
+      unsupported,
+      reason: "setelah kutipan tak terverifikasi dibuang, tidak ada yang tersisa",
+      usage,
+    };
+  }
+
   const lint = lintAnswer(trimmed);
   if (lint.length > 0) {
     return {

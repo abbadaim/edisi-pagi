@@ -8,8 +8,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { questionTokens, selectMaterial, type AskArticle } from "../src/core/ask/retrieve.ts";
-import { quoteInText, verifyCitations } from "../src/core/ask/cite.ts";
-import { lintAnswer, trimToWords } from "../src/core/ask/answer.ts";
+import { quoteInText, stripUnverifiedQuotes, verifyCitations } from "../src/core/ask/cite.ts";
+import { lintAnswer, trimToWords, writeAnswer } from "../src/core/ask/answer.ts";
+import { parseAskConfig } from "../src/core/ask/config.ts";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+const root = new URL("..", import.meta.url).pathname;
 
 const NOW = new Date("2026-11-17T06:00:00+07:00");
 
@@ -132,4 +137,88 @@ test("cacat teks menahan jawaban, bukan diterbitkan", () => {
   assert.ok(lintAnswer('Kutipan "tidak seimbang di sini tapi cukup panjang kalimatnya').length > 0);
   assert.ok(lintAnswer("kata kata ganda ada di sini dan cukup panjang kalimatnya").length > 0);
   assert.ok(lintAnswer("terlalu pendek").length > 0);
+});
+
+/** Adapter palsu: mengembalikan keluaran berurutan, tanpa jaringan. */
+function llmPalsu(outputs: string[]) {
+  let i = 0;
+  return {
+    name: "opencode" as const,
+    calls: 0,
+    json: async () => ({ data: {} as never, usage: { tokens_in: 0, tokens_out: 0 } }),
+    text: async () => {
+      const out = outputs[Math.min(i, outputs.length - 1)] ?? "";
+      i += 1;
+      return { text: out, usage: { tokens_in: 10, tokens_out: 5 } };
+    },
+  };
+}
+
+const bahan = [
+  {
+    id: "s1",
+    url: "https://a/1",
+    outlet: "a",
+    title: "t",
+    published_at: "2026-11-11T00:00:00Z",
+    text: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat terkait polemik ijazah Gibran.",
+    chars: 88,
+    tier: "teks" as const,
+  },
+];
+
+test("sitasi kosong diulang sekali, lalu lolos bila bentuknya benar", async () => {
+  const llm = llmPalsu([
+    JSON.stringify({ jawaban: "Ada usulan di DPR.", sitasi: [] }),
+    JSON.stringify({
+      jawaban: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat.",
+      sitasi: [{ id: "s1", kutipan: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat" }],
+    }),
+  ]);
+  const r = await writeAnswer(llm, "uji", "apa itu HMP?", bahan, parseAskConfig(readFileSync(join(root, "config", "tanya.json"), "utf8")));
+  assert.equal(r.state, "answered");
+  assert.equal(r.sources.length, 1);
+  assert.equal(r.usage?.tokens_in, 20, "dua panggilan dijumlahkan");
+});
+
+test("model menulis url alih-alih id tetap diterima", async () => {
+  const llm = llmPalsu([
+    JSON.stringify({
+      jawaban: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat.",
+      sitasi: [{ url: "s1", kutipan: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat" }],
+    }),
+  ]);
+  const r = await writeAnswer(llm, "uji", "apa itu HMP?", bahan, parseAskConfig(readFileSync(join(root, "config", "tanya.json"), "utf8")));
+  assert.equal(r.state, "answered");
+  assert.equal(r.sources[0]?.url, "https://a/1");
+});
+
+test("dua kali tanpa sitasi sah tetap ditahan, bukan dikarang", async () => {
+  const kosong = JSON.stringify({ jawaban: "Tidak ada bahan yang cukup untuk menjawab ini.", sitasi: [] });
+  const llm = llmPalsu([kosong, kosong]);
+  const r = await writeAnswer(llm, "uji", "apa itu HMP?", bahan, parseAskConfig(readFileSync(join(root, "config", "tanya.json"), "utf8")));
+  assert.equal(r.state, "refused");
+  assert.match(String(r.reason), /sitasi/i);
+});
+
+test("kalimat yang mengutip teks di luar bahan dibuang, bukan diterbitkan", () => {
+  const materials = [
+    {
+      id: "s1",
+      url: "https://a/1",
+      outlet: "a",
+      title: "t",
+      published_at: null,
+      text: "Puluhan anggota DPR mengusulkan hak menyatakan pendapat terkait polemik ijazah Gibran.",
+      chars: 88,
+      tier: "teks" as const,
+    },
+  ];
+  const jawaban =
+    'detik.com menulis "Puluhan anggota DPR mengusulkan hak menyatakan pendapat terkait polemik ijazah Gibran". ' +
+    'Sumber lain menyebut "kalimat ini tidak pernah ada di bahan mana pun sama sekali".';
+  const r = stripUnverifiedQuotes(jawaban, materials);
+  assert.match(r.text, /detik\.com/);
+  assert.doesNotMatch(r.text, /tidak pernah ada/);
+  assert.equal(r.dropped.length, 1);
 });

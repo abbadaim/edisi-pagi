@@ -70,6 +70,9 @@ export function quoteInText(quote: string, text: string): boolean {
 
 export function verifyCitations(materials: AskMaterial[], citations: RawCitation[]): CiteResult {
   const byId = new Map(materials.map((m) => [m.id, m]));
+  // Terima juga URL asli sebagai penanda — bukan untuk mempercayai model, tetapi
+  // karena URL itu tetap harus sama dengan bahan yang kita kirim.
+  const byUrl = new Map(materials.map((m) => [m.url, m]));
   const sources: VerifiedSource[] = [];
   const unsupported: string[] = [];
   const seen = new Set<string>();
@@ -77,7 +80,7 @@ export function verifyCitations(materials: AskMaterial[], citations: RawCitation
   for (const c of citations ?? []) {
     const id = typeof c?.id === "string" ? c.id.trim() : "";
     const quote = typeof c?.kutipan === "string" ? c.kutipan.trim() : "";
-    const material = byId.get(id);
+    const material = byId.get(id) ?? byUrl.get(id);
     if (!material || quote.length === 0) {
       if (quote.length > 0) unsupported.push(quote.slice(0, 120));
       continue;
@@ -99,4 +102,38 @@ export function verifyCitations(materials: AskMaterial[], citations: RawCitation
   }
 
   return { sources, unsupported };
+}
+
+function corpusOf(materials: AskMaterial[]): string {
+  return materials.map((m) => norm(m.text)).join(" \u0000 ");
+}
+
+/**
+ * Kutipan di dalam badan jawaban ("..." atau “...”) harus ada di bahan.
+ *
+ * Sitasi di `sources[]` hanya membuktikan bahwa *sebagian* jawaban bersumber;
+ * satu kalimat bisa menumpang tanpa dasar dan tetap terlihat sah. Kalimat yang
+ * memuat kutipan tak ditemukan dibuang, bukan diterbitkan dengan tanda kutip
+ * palsu. Ini penjaga termurah terhadap kalimat yang mengaku mengutip.
+ */
+export function stripUnverifiedQuotes(
+  answer: string,
+  materials: AskMaterial[],
+): { text: string; dropped: string[] } {
+  const corpus = corpusOf(materials);
+  const sentences = answer.match(/[^.!?]+[.!?]*\s*/g) ?? [answer];
+  const kept: string[] = [];
+  const dropped: string[] = [];
+
+  for (const sentence of sentences) {
+    const inner = [...sentence.matchAll(/[“"]([^”"]{12,})[”"]/g)].map((m) => (m[1] ?? "").trim());
+    const bad = inner.filter((q) => q.length > 0 && !corpus.includes(norm(q)));
+    if (bad.length > 0) {
+      dropped.push(...bad);
+      continue;
+    }
+    kept.push(sentence);
+  }
+
+  return { text: kept.join("").trim(), dropped };
 }

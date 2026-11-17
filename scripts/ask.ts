@@ -31,16 +31,24 @@ const arg = (name: string): string | null => {
 const flag = (name: string) => process.argv.includes(`--${name}`);
 
 const dry = flag("dry");
+const debug = flag("debug");
 const wantedId = arg("id");
 
 const publicCfg = JSON.parse(readFileSync(join(root, "public", "config.json"), "utf8")) as {
   supabaseUrl?: string;
+  supabaseKey?: string;
 };
 const SUPABASE_URL = process.env.SUPABASE_URL ?? publicCfg.supabaseUrl;
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY;
+// `apikey` selalu kunci proyek (publishable). Token yang memberi hak ada di
+// Authorization: service_role di CI, atau JWT pengguna saat menguji lokal —
+// RLS tetap yang memutuskan, jadi jalur uji tidak butuh kunci rahasia.
+const PROJECT_KEY = publicCfg.supabaseKey ?? process.env.SUPABASE_ANON_KEY ?? "";
+const AUTH_KEY = process.env.SUPABASE_SERVICE_KEY ?? process.env.SUPABASE_JWT;
 
-if (!SUPABASE_URL || !SERVICE_KEY) {
-  console.error("SUPABASE_URL / SUPABASE_SERVICE_KEY belum diset — jalankan dengan kunci service_role.");
+if (!SUPABASE_URL || !AUTH_KEY) {
+  console.error(
+    "butuh SUPABASE_SERVICE_KEY (CI) atau SUPABASE_JWT (uji lokal) — keduanya tidak pernah masuk repo.",
+  );
   process.exit(2);
 }
 
@@ -60,8 +68,8 @@ async function sb<T>(path: string, init: RequestInit = {}): Promise<T> {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     ...init,
     headers: {
-      apikey: SERVICE_KEY as string,
-      Authorization: `Bearer ${SERVICE_KEY}`,
+      apikey: PROJECT_KEY || (AUTH_KEY as string),
+      Authorization: `Bearer ${AUTH_KEY}`,
       "content-type": "application/json",
       ...(init.headers ?? {}),
     },
@@ -233,6 +241,11 @@ async function main(): Promise<void> {
       model = cfg.model.bawaan;
       const r = await writeAnswer(resolved.llm, cfg.model.bawaan, ask.question, pack.materials, cfg);
       result = { state: r.state, answer: r.answer, sources: r.sources, unsupported: r.unsupported, reason: r.reason };
+      if (debug && r.raw) {
+        console.log("--- keluaran mentah model ---");
+        console.log(r.raw.slice(0, 1600));
+        console.log("--- akhir keluaran ---");
+      }
       usage = { tokens_in: r.usage?.tokens_in ?? 0, tokens_out: r.usage?.tokens_out ?? 0 };
     }
   }
