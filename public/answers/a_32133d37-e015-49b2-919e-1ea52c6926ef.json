@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "a_32133d37-e015-49b2-919e-1ea52c6926ef",
+  "question": "negara aoa saja yang disebutkan IMF?",
+  "topic_id": "t_imf_soroti_pajak_dan_ai_asean_0844",
+  "state": "answered",
+  "answer": "Bahan tidak memuat daftar negara yang disebutkan secara spesifik oleh IMF. IMF hanya membahas kawasan ASEAN secara kolektif, bukan merinci negara anggotanya satu per satu: \"Rasio pajak terhadap PDB ASEAN berada di angka 12%, lebih rendah dibandingkan rata-rata 15% di kawasan Asia lainnya.\" Nama Indonesia muncul di judul artikel, sedangkan Filipina disebut sebagai lokasi KTT ASEAN ke-49 di Manila dan Tiongkok hanya muncul dalam keterangan foto. Tidak ada pernyataan IMF dalam bahan yang menyebut negara-negara itu sebagai contoh atau daftar.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.cnbcindonesia.com/news/20261117064842-4-785778/imf-sentil-pajak-asean-cuma-12-ri-termasuk-yang-harus-berbenah",
+      "outlet": "cnbcindonesia.com",
+      "published_at": "2026-11-17T00:55:35.000Z",
+      "quote": "Rasio pajak terhadap PDB ASEAN berada di angka 12%, lebih rendah dibandingkan rata-rata 15% di kawasan Asia lainnya.",
+      "verified": true,
+      "tier": "bahan"
+    }
+  ],
+  "unsupported": [],
+  "reason": null,
+  "model": "opencode/deepseek-v4.1-flash-free#low",
+  "config_hash": "acdacc751bdb",
+  "prompt_hash": "c11c7ab774fd",
+  "tokens": {
+    "tokens_in": 13064,
+    "tokens_out": 309
+  },
+  "created_at": "2026-11-17T07:29:21.862Z",
+  "edition_date": "2026-11-17"
+}
