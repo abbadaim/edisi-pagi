@@ -239,3 +239,15 @@ test("UI-06: Atur punya laporan status dan tombol minta edisi", () => {
   assert.match(js, /build_requests/, "tombol tidak menulis permintaan");
   assert.match(js, /reasonLabel/, "alasan build tidak diterjemahkan");
 });
+
+// UI-07 — rencana 023
+test("UI-07: panel menampilkan progres build berjalan", () => {
+  const js = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(js, /actions\/workflows\/daily\.yml\/runs/, "status run tidak diambil dari Actions API");
+  assert.match(js, /progFill/, "bar progres hilang");
+  assert.match(js, /sedang dibangun/, "teks menunggu hilang");
+  assert.match(js, /BUILD_EXPECT_MIN/, "perkiraan waktu tidak ada");
+
+  const css = readFileSync(join(root, "public", "style.css"), "utf8");
+  assert.match(css, /\.progFill\{[^}]*animation/, "animasi progres hilang");
+});

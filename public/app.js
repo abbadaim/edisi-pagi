@@ -27,6 +27,7 @@ const S = {
   tanyaPick: null,
   tanyaCards: null,
   tanyaTimer: null,
+  statusTimer: null,
 };
 
 const $ = (id) => document.getElementById(id);
@@ -538,6 +539,8 @@ function showFeed() {
   markNav();
 }
 
+const BUILD_EXPECT_MIN = 14;
+
 function openAtur() {
   $("top").hidden = true;
   $("feed").hidden = true;
@@ -550,6 +553,7 @@ function openAtur() {
   window.scrollTo(0, 0);
   markNav();
   renderInstall();
+  if (S.statusTimer) { clearTimeout(S.statusTimer); S.statusTimer = null; }
   renderStatus();
   renderAbout();
   setupNotifications();
@@ -574,6 +578,48 @@ function shortTime(iso) {
  * Sumbernya `status.json` yang ditulis langkah kesehatan di CI — bukan tebakan
  * aplikasi. Tombol hanya muncul bila edisi hari ini memang belum ada.
  */
+/** Run `daily.yml` terakhir dari GitHub Actions (publik, tanpa token). */
+async function buildRun() {
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/abbadaim/edisi-pagi/actions/workflows/daily.yml/runs?per_page=1",
+      { cache: "no-store", headers: { Accept: "application/vnd.github+json" } },
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.workflow_runs?.[0] ?? null;
+  } catch {
+    return null;
+  }
+}
+
+/** Bar progres berbasis waktu: perkiraan, bukan janji. */
+function progressBlock(run) {
+  const started = new Date(run.run_started_at ?? run.created_at ?? Date.now()).getTime();
+  const mins = Math.max(0, (Date.now() - started) / 60000);
+  const pct = Math.min(94, Math.max(4, Math.round((mins / BUILD_EXPECT_MIN) * 100)));
+  const left = Math.max(0, Math.round(BUILD_EXPECT_MIN - mins));
+
+  const wrap = el("div", "progWrap");
+  const bar = el("div", "prog");
+  const fill = el("div", "progFill");
+  fill.style.width = `${pct}%`;
+  bar.append(fill);
+  wrap.append(bar);
+  wrap.append(
+    el(
+      "p",
+      "pmuted",
+      run.status === "queued"
+        ? "Build dalam antrean GitHub. Biasanya mulai dalam hitungan detik."
+        : mins < 1
+          ? "Build baru mulai. Edisi biasanya siap 10–20 menit."
+          : `Build berjalan ${Math.round(mins)} menit · ${left > 0 ? `perkiraan ±${left} menit lagi` : "hampir selesai"}.`,
+    ),
+  );
+  return wrap;
+}
+
 async function renderStatus() {
   const box = $("statusBody");
   if (!box) return;
@@ -581,6 +627,12 @@ async function renderStatus() {
   box.append(el("p", "pmuted", "Memeriksa…"));
 
   const today = todayWib();
+  // Segarkan manifest: build bisa selesai saat panel terbuka.
+  try {
+    const mres = await fetch("manifest.json", { cache: "no-store" });
+    if (mres.ok) S.manifest = await mres.json();
+  } catch { /* offline: pakai manifest tersimpan */ }
+
   let status = null;
   try {
     const res = await fetch("status.json", { cache: "no-store" });
@@ -591,6 +643,28 @@ async function renderStatus() {
   const published = latest === today;
   box.textContent = "";
 
+  const run = published ? null : await buildRun();
+  const running = run && (run.status === "queued" || run.status === "in_progress");
+
+  if (!published && running) {
+    box.append(el("p", "pmuted", `Edisi ${formatDate(today)} sedang dibangun.`));
+    box.append(progressBlock(run));
+    if (run.html_url) {
+      const a = el("a", "pbtn", "Lihat proses");
+      a.href = run.html_url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      box.append(a);
+    }
+    // Perbarui tiap 15 detik selama panel Atur terbuka.
+    if (S.statusTimer) clearTimeout(S.statusTimer);
+    S.statusTimer = setTimeout(() => {
+      S.statusTimer = null;
+      if (!$("atur").hidden) renderStatus();
+    }, 15000);
+    return;
+  }
+
   if (published) {
     box.append(el("p", "pmuted ok", `Edisi ${formatDate(today)} terbit${status?.cards ? ` · ${status.cards} kartu` : ""}.`));
   } else {
@@ -599,6 +673,9 @@ async function renderStatus() {
 
   if (status) {
     const when = status.checked_at ? ` · diperiksa ${shortTime(status.checked_at)}` : "";
+    if (!status.ok && run && run.status === "completed") {
+      box.append(el("p", "pmuted", `Build selesai ${shortTime(run.updated_at ?? run.created_at)} tanpa edisi.`));
+    }
     const writer = status.providers?.write ? ` · penulis: ${status.providers.write}` : "";
     box.append(el("p", "pmuted", `Build ${status.date ?? "—"}: ${status.ok ? "sehat" : "bermasalah"}${status.cards ? ` · ${status.cards} kartu` : ""}${writer}${when}.`));
     if (Array.isArray(status.reasons) && status.reasons.length) {

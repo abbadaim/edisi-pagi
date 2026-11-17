@@ -332,3 +332,11 @@ details.ctx summary::-webkit-details-marker{display:none}
 .edkick{font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700}
 .edtitle{font-family:var(--serif); font-size:13.5px; line-height:1.3; margin:4px 0 8px; color:var(--ink)}
 .edtext .pbtn{margin-top:0}
+
+/* Progres build di tab Atur (rencana 023). */
+.progWrap{margin:8px 0 10px}
+.prog{height:6px; border-radius:999px; background:var(--rule); overflow:hidden}
+.progFill{height:100%; border-radius:999px; background-image:linear-gradient(90deg,var(--accent),#C4664F,var(--accent));
+          background-size:200% 100%; animation:pulseBar 1.8s linear infinite; transition:width .6s ease}
+@keyframes pulseBar{0%{background-position:0 0}100%{background-position:200% 0}}
+@media (prefers-reduced-motion: reduce){ .progFill{animation:none} }

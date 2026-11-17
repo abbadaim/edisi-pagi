@@ -109,10 +109,27 @@ select status_code from net._http_response order by created desc limit 3;  -- 20
 Rollback: hapus panel dari `index.html`/`app.js`, hapus trigger `build` dari
 `daily.yml`, `drop table public.build_requests`.
 
+## 6b. Progres build (2026-11-17)
+
+Panel juga membaca run terakhir `daily.yml` dari GitHub Actions API (publik,
+tanpa token) dan menampilkan **bar progres berbasis waktu**:
+
+- status `queued` → "Build dalam antrean GitHub";
+- status `in_progress` → "Build berjalan N menit · perkiraan ±M menit lagi",
+  bar diisi `elapsed / 14 menit`, berhenti di 94% supaya tidak pernah "penuh"
+  sebelum edisi benar-benar ada;
+- panel menyegarkan diri tiap 15 detik selama tab Atur terbuka, dan saat run
+  selesai tanpa edisi menampilkan "Build selesai HH:MM tanpa edisi" plus alasan.
+
+Perkiraan 14 menit diambil dari median run OpenCode (10–23 menit). Teksnya
+menyebut "perkiraan", bukan janji; bar hanya indikator, bukan hitungan pasti.
+
 ## 7. Riwayat
 
 - `2026-11-17` — `tested` — status.json, panel Atur, tombol minta edisi,
   `004_build_request.sql`; 353 uji lulus.
+- `2026-11-17` — `tested` — bar progres build berjalan (queued/in_progress),
+  auto-refresh 15 detik, `OPENCODE`-independent (hanya membaca Actions API).
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 
