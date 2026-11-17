@@ -25,6 +25,8 @@ export interface VerifiedSource {
   published_at: string | null;
   quote: string;
   verified: true;
+  /** `bahan` = arsip yang sudah diingest; `luar` = halaman web yang diambil saat itu. */
+  tier: "bahan" | "luar";
 }
 
 export interface CiteResult {
@@ -98,6 +100,7 @@ export function verifyCitations(materials: AskMaterial[], citations: RawCitation
       published_at: material.published_at,
       quote,
       verified: true,
+      tier: "bahan",
     });
   }
 
@@ -116,11 +119,13 @@ function corpusOf(materials: AskMaterial[]): string {
  * memuat kutipan tak ditemukan dibuang, bukan diterbitkan dengan tanda kutip
  * palsu. Ini penjaga termurah terhadap kalimat yang mengaku mengutip.
  */
-export function stripUnverifiedQuotes(
-  answer: string,
-  materials: AskMaterial[],
-): { text: string; dropped: string[] } {
-  const corpus = corpusOf(materials);
+export function stripUnverifiedQuotes(answer: string, materials: AskMaterial[]): { text: string; dropped: string[] } {
+  return stripUnverifiedQuotesIn(answer, materials.map((m) => m.text));
+}
+
+/** Versi yang menerima teks apa pun: bahan arsip maupun halaman luar. */
+export function stripUnverifiedQuotesIn(answer: string, texts: string[]): { text: string; dropped: string[] } {
+  const corpus = texts.map(norm).join(" \u0000 ");
   const sentences = answer.match(/[^.!?]+[.!?]*\s*/g) ?? [answer];
   const kept: string[] = [];
   const dropped: string[] = [];

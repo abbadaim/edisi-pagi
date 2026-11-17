@@ -1,15 +1,21 @@
 /**
- * Satu jawaban Tanya AI (rencana 022, fase 2).
+ * Satu jawaban Tanya AI (rencana 022).
  *
- * Model hanya meringkas bahan yang diberikan. Ia tidak mencari, tidak menyebut
- * URL, dan tidak boleh menambah pengetahuan dari luar bahan (`DEC-0034`).
- * Bila sitasi tidak lolos verifikasi, jawaban turun menjadi "belum ada bahan
- * terverifikasi" — lebih baik kosong daripada terlihat meyakinkan.
+ * Model hanya meringkas bahan yang diberikan, dan boleh mencari di web bila
+ * diizinkan. Ia tidak pernah boleh menentukan bahwa sesuatu itu benar: setiap
+ * sitasi — dari arsip maupun dari halaman luar — harus dibuktikan oleh pipeline.
+ * Bila tidak ada yang lolos, jawaban ditahan (`DEC-0032`, `DEC-0033`).
  */
 
 import type { LlmAdapter, Usage } from "../../adapters/llm/types.ts";
 import type { AskConfig } from "./config.ts";
-import { stripUnverifiedQuotes, verifyCitations, type RawCitation, type VerifiedSource } from "./cite.ts";
+import {
+  stripUnverifiedQuotesIn,
+  verifyCitations,
+  type RawCitation,
+  type VerifiedSource,
+} from "./cite.ts";
+import { gatherWebSources, isPublicHttpUrl, type RawWebCitation, type UrlFetcher } from "./gather.ts";
 import { renderMaterial, type AskMaterial } from "./retrieve.ts";
 
 export interface AskAnswer {
@@ -41,20 +47,46 @@ function parseJson(text: string): RawAnswer | null {
   }
 }
 
-function citationsOf(raw: RawAnswer): RawCitation[] {
-  if (!Array.isArray(raw.sitasi)) return [];
-  return raw.sitasi
-    .map((c) => {
-      const obj = (c ?? {}) as Record<string, unknown>;
-      // Sebagian model menulis `url` walau diminta `id`; terima keduanya dan
-      // biarkan verifikasi yang memutuskan apakah penandanya nyata.
-      const key = typeof obj.id === "string" ? obj.id : typeof obj.url === "string" ? obj.url : "";
-      return {
-        id: key.trim(),
-        kutipan: typeof obj.kutipan === "string" ? obj.kutipan : "",
-      };
-    })
-    .filter((c) => c.id.length > 0 && c.kutipan.length > 0);
+/**
+ * Pisahkan sitasi menjadi dua jenis. Model kadang menulis `id` (s1), kadang
+ * `url` — untuk bahan arsip keduanya diterima, karena verifikasi tetap
+ * mencocokkan isinya. URL di luar bahan masuk jalur pengambilan halaman.
+ */
+export function splitCitations(
+  raw: unknown,
+  materials: AskMaterial[],
+): { corpus: RawCitation[]; web: RawWebCitation[] } {
+  const byId = new Set(materials.map((m) => m.id));
+  const byUrl = new Set(materials.map((m) => m.url));
+  const corpus: RawCitation[] = [];
+  const web: RawWebCitation[] = [];
+
+  for (const item of Array.isArray(raw) ? raw : []) {
+    const obj = (item ?? {}) as Record<string, unknown>;
+    const key = typeof obj.id === "string" ? obj.id.trim() : typeof obj.url === "string" ? obj.url.trim() : "";
+    const quote = typeof obj.kutipan === "string" ? obj.kutipan.trim() : "";
+    if (!key || !quote) continue;
+    if (byId.has(key) || byUrl.has(key)) corpus.push({ id: key, kutipan: quote });
+    else if (isPublicHttpUrl(key)) web.push({ url: key, kutipan: quote });
+  }
+
+  return { corpus, web };
+}
+
+/**
+ * Cacat yang bisa dipastikan tanpa model. Jawaban juga dibaca di ponsel, jadi
+ * aturan D-TYPO/D-TRUNC berlaku; bedanya di sini tidak ada editor yang bisa
+ * memperbaiki setelahnya, jadi temuan berarti jawaban ditahan.
+ */
+export function lintAnswer(text: string): string[] {
+  const issues: string[] = [];
+  const t = text.trim();
+  if (/…\s*$/.test(t)) issues.push("teks berakhir dengan elipsis");
+  const dup = t.match(/\b(\p{L}{3,})\s+\1\b/giu);
+  if (dup) issues.push(`kata ganda: ${dup[0]}`);
+  if ((t.match(/"/g) ?? []).length % 2 !== 0) issues.push("tanda kutip tidak seimbang");
+  if (t.length < 40) issues.push("terlalu pendek untuk menjawab");
+  return issues;
 }
 
 /**
@@ -78,38 +110,58 @@ export function buildAskPrompt(
   question: string,
   materials: AskMaterial[],
   cfg: AskConfig,
+  allowWeb: boolean,
 ): { system: string; user: string } {
   const system = [
     cfg.prompt,
     `Bentuk jawaban: maksimum ${cfg.bentuk.max_kata} kata, maksimum ${cfg.bentuk.max_paragraf} paragraf.`,
-    "Sitasi merujuk id bahan (s1, s2, …) yang diberikan. Jangan menulis URL; URL dipetakan dari id.",
+    "Sitasi dari bahan memakai id (s1, s2, …). Jangan menulis URL bahan; URL dipetakan dari id.",
+    allowWeb
+      ? "Tool websearch boleh dipakai bila bahan tidak menjawab. Untuk sumber dari web, sitasi memakai {\"url\":\"https://…\",\"kutipan\":\"…\"}, dan kutipan disalin dari HALAMANNYA, bukan dari cuplikan hasil pencarian."
+      : "Tool websearch jangan dipakai. Hanya bahan di bawah yang boleh dirujuk.",
     `Bila bahan tidak menjawab pertanyaan, balas dengan "jawaban" berisi: ${cfg.tolak}`,
   ].join("\n\n");
 
   const user = [
     `Pertanyaan pembaca: ${question}`,
     "",
-    "Bahan (hanya ini yang boleh dipakai):",
+    "Bahan (hanya ini yang boleh dipakai tanpa verifikasi halaman):",
     renderMaterial(materials),
   ].join("\n");
 
   return { system, user };
 }
 
-/**
- * Cacat yang bisa dipastikan tanpa model. Jawaban juga dibaca di ponsel, jadi
- * aturan D-TYPO/D-TRUNC berlaku; bedanya di sini tidak ada editor yang bisa
- * memperbaiki setelahnya, jadi temuan berarti jawaban ditahan.
- */
-export function lintAnswer(text: string): string[] {
-  const issues: string[] = [];
-  const t = text.trim();
-  if (/[.…]\s*$/.test(t) && /…\s*$/.test(t)) issues.push("teks berakhir dengan elipsis");
-  const dup = t.match(/\b(\p{L}{3,})\s+\1\b/giu);
-  if (dup) issues.push(`kata ganda: ${dup[0]}`);
-  if ((t.match(/"/g) ?? []).length % 2 !== 0) issues.push("tanda kutip tidak seimbang");
-  if (t.length < 40) issues.push("terlalu pendek untuk menjawab");
-  return issues;
+interface Evaluation {
+  sources: VerifiedSource[];
+  unsupported: string[];
+  jawaban: string;
+  texts: string[];
+}
+
+/** Verifikasi satu keluaran model: sitasi arsip + sitasi halaman luar. */
+export async function evaluateAnswer(
+  text: string,
+  materials: AskMaterial[],
+  opts: { allowWeb: boolean; maxFetch: number; fetchUrl?: UrlFetcher },
+): Promise<Evaluation | null> {
+  const raw = parseJson(text);
+  const jawaban = typeof raw?.jawaban === "string" ? raw.jawaban.trim() : "";
+  if (!raw || jawaban.length === 0) return null;
+
+  const { corpus, web } = splitCitations(raw.sitasi, materials);
+  const local = verifyCitations(materials, corpus);
+  const remote =
+    opts.allowWeb && opts.fetchUrl && web.length > 0
+      ? await gatherWebSources(web, opts.fetchUrl, opts.maxFetch)
+      : { sources: [], unsupported: [], texts: [] };
+
+  return {
+    sources: [...local.sources, ...remote.sources],
+    unsupported: [...local.unsupported, ...remote.unsupported],
+    jawaban,
+    texts: [...materials.map((m) => m.text), ...remote.texts],
+  };
 }
 
 export async function writeAnswer(
@@ -118,60 +170,50 @@ export async function writeAnswer(
   question: string,
   materials: AskMaterial[],
   cfg: AskConfig,
+  opts: { fetchUrl?: UrlFetcher } = {},
 ): Promise<AskAnswer> {
   let usage: Usage = { tokens_in: 0, tokens_out: 0 };
+  const allowWeb = cfg.cari.enabled && cfg.cari.izin_luar_bahan;
 
-  if (materials.length === 0) {
+  if (materials.length === 0 && !allowWeb) {
     return { state: "refused", answer: cfg.tolak, sources: [], unsupported: [], reason: "tanpa bahan", usage };
   }
 
-  const { system, user } = buildAskPrompt(question, materials, cfg);
+  const { system, user } = buildAskPrompt(question, materials, cfg, allowWeb);
 
-  let text: string;
-  try {
-    const res = await llm.text({ model, system, user, maxTokens: 900 });
-    text = res.text;
-    usage = res.usage;
-  } catch (e) {
-    return {
-      state: "refused",
-      answer: cfg.tolak,
-      sources: [],
-      unsupported: [],
-      reason: e instanceof Error ? e.message : "panggilan model gagal",
-      usage,
-    };
+  let text = "";
+  let result: Evaluation | null = null;
+
+  // Bentuk keluaran dan sitasi kosong diulang SEKALI (`DEC-0026`). Timeout dan
+  // galat jaringan tidak diulang (`DEC-0025`).
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await llm.text({ model, system, user, maxTokens: 900 });
+      text = res.text;
+      usage = {
+        tokens_in: usage.tokens_in + res.usage.tokens_in,
+        tokens_out: usage.tokens_out + res.usage.tokens_out,
+      };
+    } catch (e) {
+      return {
+        state: "refused",
+        answer: cfg.tolak,
+        sources: [],
+        unsupported: [],
+        reason: e instanceof Error ? e.message : "panggilan model gagal",
+        usage,
+      };
+    }
+
+    result = await evaluateAnswer(text, materials, {
+      allowWeb,
+      maxFetch: cfg.cari.max_fetch,
+      fetchUrl: opts.fetchUrl,
+    });
+    if (result && result.sources.length > 0) break;
   }
 
-  // Bentuk keluaran dan sitasi yang kosong diulang SEKALI (`DEC-0026`). Timeout
-  // dan galat jaringan tidak diulang: mengulang timeout hanya menggandakan
-  // waktu tunggu (`DEC-0025`). Model gratis memang kadang lupa mengisi sitasi.
-  const attempts = [text];
-  let parsed: { raw: RawAnswer | null; sources: VerifiedSource[]; unsupported: string[]; jawaban: string } | null = null;
-  for (let i = 0; i < attempts.length; i++) {
-    const raw = parseJson(attempts[i] ?? "");
-    const jawaban = typeof raw?.jawaban === "string" ? raw.jawaban.trim() : "";
-    if (raw && jawaban.length > 0) {
-      const { sources, unsupported } = verifyCitations(materials, citationsOf(raw));
-      parsed = { raw, sources, unsupported, jawaban };
-      if (sources.length > 0) break;
-    }
-    if (i === 0) {
-      try {
-        const again = await llm.text({ model, system, user, maxTokens: 900 });
-        attempts.push(again.text);
-        usage = {
-          tokens_in: usage.tokens_in + again.usage.tokens_in,
-          tokens_out: usage.tokens_out + again.usage.tokens_out,
-        };
-        text = again.text;
-      } catch {
-        /* biarkan putaran pertama yang dipakai */
-      }
-    }
-  }
-
-  if (!parsed) {
+  if (!result) {
     return {
       state: "refused",
       answer: cfg.tolak,
@@ -183,7 +225,8 @@ export async function writeAnswer(
     };
   }
 
-  const { sources, unsupported, jawaban } = parsed;
+  const { sources, texts } = result;
+  const unsupported = [...result.unsupported];
 
   // Tidak ada satu pun sitasi yang lolos → tidak ada dasar untuk menerbitkan
   // jawaban, sekalipun kalimatnya terdengar meyakinkan.
@@ -199,8 +242,9 @@ export async function writeAnswer(
     };
   }
 
-  // Kalimat yang mengutip teks di luar bahan dibuang sebelum apa pun dinilai.
-  const cleaned = stripUnverifiedQuotes(jawaban, materials);
+  // Kalimat yang mengutip teks di luar bahan dan di luar halaman yang diambil
+  // dibuang sebelum apa pun dinilai.
+  const cleaned = stripUnverifiedQuotesIn(result.jawaban, texts);
   const trimmed = trimToWords(cleaned.text, cfg.bentuk.max_kata);
   unsupported.push(...cleaned.dropped);
 
@@ -227,12 +271,5 @@ export async function writeAnswer(
     };
   }
 
-  return {
-    state: "answered",
-    answer: trimmed,
-    sources,
-    unsupported,
-    reason: null,
-    usage,
-  };
+  return { state: "answered", answer: trimmed, sources, unsupported, reason: null, usage };
 }

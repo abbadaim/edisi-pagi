@@ -20,6 +20,7 @@ import { resolveLlm } from "../src/adapters/llm/resolve.ts";
 import { parseAskConfig, mergeAskConfig, configHash, promptHash } from "../src/core/ask/config.ts";
 import { selectMaterial, type AskArticle } from "../src/core/ask/retrieve.ts";
 import { writeAnswer } from "../src/core/ask/answer.ts";
+import { createUrlFetcher } from "../src/core/ask/gather.ts";
 
 const root = new URL("..", import.meta.url).pathname;
 loadEnvFile(join(root, ".env.local"));
@@ -254,7 +255,8 @@ async function main(): Promise<void> {
   let model = "tanpa-model";
   let usage = { tokens_in: 0, tokens_out: 0 };
 
-  if (pack.materials.length > 0) {
+  const allowWeb = cfg.cari.enabled && cfg.cari.izin_luar_bahan;
+  if (pack.materials.length > 0 || allowWeb) {
     const resolved = resolveLlm({ ...process.env, OPENCODE_MODEL: cfg.model.bawaan });
     if (!resolved.llm) {
       // OpenCode yang gagal dipasang bukan salah pertanyaannya. Kembalikan ke
@@ -270,7 +272,10 @@ async function main(): Promise<void> {
       return;
     }
     model = cfg.model.bawaan;
-    const r = await writeAnswer(resolved.llm, cfg.model.bawaan, ask.question, pack.materials, cfg);
+    const allowWeb = cfg.cari.enabled && cfg.cari.izin_luar_bahan;
+    const r = await writeAnswer(resolved.llm, cfg.model.bawaan, ask.question, pack.materials, cfg, {
+      fetchUrl: allowWeb ? createUrlFetcher(Number(process.env.TANYA_FETCH_TIMEOUT_MS ?? 12_000)) : undefined,
+    });
     result = { state: r.state, answer: r.answer, sources: r.sources, unsupported: r.unsupported, reason: r.reason };
     if (debug && r.raw) {
       console.log("--- keluaran mentah model ---");
