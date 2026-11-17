@@ -1,10 +1,10 @@
 # 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
-Status: plan-draft
+Status: plan-approved
 Kelas: infra + pipeline + UI
 Dibuat: 2026-11-16
-Diperbarui: 2026-11-16
+Diperbarui: 2026-11-17
 Mockup: belum ada — wajib untuk paruh UI (§4.2)
 ```
 
@@ -348,3 +348,6 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
   diperluas). Hasil: model gratis jalan (`cost: 0`), **websearch ditolak
   headless** (run `44007186384`), **webfetch berhasil**. Fase 5 dan `DEC-0034`
   dibalik: pencarian milik pipeline, bukan model.
+- 2026-11-17 — `plan-approved` — disetujui manusia ("go ahead"). Fase 1 paruh
+  pipeline mulai: `config/tanya.json`, penjepitan model, dan perbaikan
+  pencocokan `#varian` di `resolve.ts`.

@@ -22,6 +22,17 @@ function bindModel(adapter: LlmAdapter, model: string): LlmAdapter {
 }
 
 /**
+ * `--model provider/model#varian` sah bagi CLI, tetapi katalog `opencode models`
+ * hanya memuat `provider/model`. Membandingkan utuh membuat setiap model
+ * bervarian dianggap hilang dan ragu-ragu menjatuhkan seluruh jalur ke penulis
+ * deterministik (bahaya untuk Tanya AI, rencana 022).
+ */
+export function modelInCatalog(catalog: string[], model: string): boolean {
+  const bare = model.split("#")[0]?.trim() ?? "";
+  return bare.length > 0 && catalog.includes(bare);
+}
+
+/**
  * Rantai penyedia: opencode -> deterministik.
  *
  * `LLM_PROVIDER=opencode` memaksa OpenCode. `LLM_PROVIDER=deepseek` memakai
@@ -45,7 +56,7 @@ export function resolveLlm(env: NodeJS.ProcessEnv = process.env): ResolvedLlm {
       let usable = true;
       if (catalog === null) {
         console.log(`katalog opencode tidak terbaca — model ${opencodeModel} tidak diverifikasi`);
-      } else if (!catalog.includes(opencodeModel)) {
+      } else if (!modelInCatalog(catalog, opencodeModel)) {
         console.log(
           `model ${opencodeModel} tidak ada di katalog opencode — memakai penulis deterministik (DEC-0018)`,
         );

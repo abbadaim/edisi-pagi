@@ -8,9 +8,29 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { resolveLlm } from "../src/adapters/llm/resolve.ts";
+import { resolveLlm, modelInCatalog } from "../src/adapters/llm/resolve.ts";
 
 const tanpaOpenCode = "/nonexistent";
+
+/**
+ * Rencana 022: `--model provider/model#varian` sah bagi CLI, tetapi katalog
+ * hanya memuat `provider/model`. Dulu perbandingan utuh membuat setiap model
+ * bervarian dianggap hilang, dan Tanya AI akan diam-diam memakai penulis
+ * deterministik alih-alih menolak dengan jelas.
+ */
+test("varian dilepas sebelum mencocokkan katalog model", () => {
+  const catalog = ["opencode/deepseek-v4.1-flash-free", "opencode-go/deepseek-v4.1-flash"];
+  assert.equal(modelInCatalog(catalog, "opencode/deepseek-v4.1-flash-free#low"), true);
+  assert.equal(modelInCatalog(catalog, "opencode/deepseek-v4.1-flash-free#max"), true);
+  assert.equal(modelInCatalog(catalog, "opencode/deepseek-v4.1-flash-free"), true);
+});
+
+test("model di luar katalog tetap ditolak walau bervarian", () => {
+  const catalog = ["opencode-go/deepseek-v4.1-flash"];
+  assert.equal(modelInCatalog(catalog, "opencode/beam-free#low"), false);
+  assert.equal(modelInCatalog(catalog, "#low"), false);
+  assert.equal(modelInCatalog([], "opencode/deepseek-v4.1-flash-free#low"), false);
+});
 
 test("tanpa LLM_PROVIDER, DeepSeek tidak dipakai walau kuncinya tersedia", () => {
   const resolved = resolveLlm({ OPENCODE_BIN: tanpaOpenCode, DEEPSEEK_API_KEY: "sk-uji" });

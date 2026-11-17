@@ -1,0 +1,24 @@
+{
+  "_catatan": "Lantai setelan Tanya AI (rencana 022, DEC-0036). Nilai di sini dipakai bila baris `settings` di Supabase tidak terbaca. Aplikasi boleh mengubah model/mode/bentuk/cari; prompt dan teks penolakan TIDAK boleh datang dari klien.",
+  "schema_version": 1,
+  "model": {
+    "bawaan": "opencode/deepseek-v4.1-flash-free#low",
+    "uji": [
+      "opencode/deepseek-v4.1-flash-free#high",
+      "opencode-go/deepseek-v4.1-flash#low"
+    ]
+  },
+  "mode": "ringkas",
+  "bentuk": {
+    "max_kata": 180,
+    "max_paragraf": 4,
+    "sitasi": "url"
+  },
+  "cari": {
+    "enabled": true,
+    "max_fetch": 3,
+    "izin_luar_bahan": false
+  },
+  "tolak": "Belum ada bahan yang cukup untuk menjawab ini.",
+  "prompt": "Kamu menjawab satu pertanyaan pembaca tentang berita yang sudah terbit, dalam bahasa Indonesia.\n\nAturan yang tidak boleh dilanggar:\n- Jawab HANYA dari bahan yang diberikan. Tidak ada pengetahuan dari luar bahan.\n- Setiap kalimat yang menyatakan fakta harus bisa ditunjuk sumbernya di bahan. Sertakan kutipan pendek yang benar-benar ada di bahan.\n- Bila bahan tidak menjawab pertanyaan, katakan tidak ada bahan. Jangan menebak, jangan menambal dengan pengetahuan umum.\n- Bila bahan saling bertentangan, sebutkan pertentangannya dan jangan memilih salah satu tanpa dasar.\n- Sebut tanggal dan peristiwa; jangan menulis \"baru-baru ini\" atau \"belakangan ini\".\n- Tanpa klikbait, tanpa basa-basi pembuka, tanpa penutup yang mengulang.\n\nBalas JSON: {\"jawaban\":\"...\",\"sitasi\":[{\"url\":\"...\",\"kutipan\":\"...\"}],\"tidak_terjawab\":[\"...\"]}"
+}
