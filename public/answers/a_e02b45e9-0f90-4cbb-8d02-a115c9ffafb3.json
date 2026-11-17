@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "a_e02b45e9-0f90-4cbb-8d02-a115c9ffafb3",
+  "question": "Apa putusan MA soal ijazah Gibran?",
+  "topic_id": null,
+  "state": "answered",
+  "answer": "Mahkamah Agung mengabulkan seluruh permohonan kasasi Subhan Palal soal keabsahan Surat Keterangan Penyetaraan Ijazah SMA Gibran Rakabuming Raka. Putusan bernomor 742 K/TUN/2026 itu diterbitkan melalui e-Court pada Jumat, 30 Oktober 2026, dengan amar \"kabul kasasi. Batal putusan judex facti. Adili sendiri, kabul gugatan penggugat seluruhnya\". Majelisnya diketuai Yulius dengan anggota Maftuh Effendy dan Hari Sugiharto.\n\nAkibat putusan itu, MA menyatakan Surat Keterangan Nomor 9149/D.D1/KS/2019 yang diterbitkan 6 Agustus 2019 \"tidak sah dan batal demi hukum\". MA juga memerintahkan agar surat keterangan penyetaraan pendidikan Gibran tersebut ditarik dari pihak yang menguasainya untuk dimusnahkan, dan menghukum Kemendikdasmen membayar biaya perkara.\n\nBahan arsip s1 hanya mencatat bahwa MPR memundurkan pemilihan wapres baru pengganti Gibran ke 9 Desember 2026, tanpa mengaitkannya dengan putusan MA.",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.cnnindonesia.com/nasional/20261117071748-32-1427944/alasan-jadwal-pemilihan-wapres-baru-mundur-jadi-9-desember",
+      "outlet": "cnnindonesia.com",
+      "published_at": "2026-11-17T00:52:57.000Z",
+      "quote": "MPR memundurkan pemilihan wapres baru pengganti Gibran ke 9 Desember 2026",
+      "verified": true,
+      "tier": "bahan"
+    },
+    {
+      "id": "news.okezone.com",
+      "url": "https://news.okezone.com/read/2026/10/30/337/3251191/kabulkan-kasasi-ma-nyatakan-suket-penyetaraan-ijazah-sma-gibran-tidak-sah",
+      "outlet": "news.okezone.com",
+      "published_at": null,
+      "quote": "kabul kasasi. Batal putusan judex facti. Adili sendiri, kabul gugatan penggugat seluruhnya",
+      "verified": true,
+      "tier": "luar"
+    },
+    {
+      "id": "news.detik.com",
+      "url": "https://news.detik.com/berita/d-8731545/ma-kabulkan-kasasi-putuskan-suket-penyetaraan-sma-gibran-tidak-sah",
+      "outlet": "news.detik.com",
+      "published_at": null,
+      "quote": "MA menyatakan surat keterangan itu tidak sah dan batal demi hukum",
+      "verified": true,
+      "tier": "luar"
+    }
+  ],
+  "unsupported": [],
+  "reason": null,
+  "model": "opencode/deepseek-v4.1-flash-free#low",
+  "config_hash": "acdacc751bdb",
+  "prompt_hash": "c11c7ab774fd",
+  "tokens": {
+    "tokens_in": 27521,
+    "tokens_out": 1087
+  },
+  "created_at": "2026-11-17T07:36:32.478Z",
+  "edition_date": "2026-11-17"
+}
