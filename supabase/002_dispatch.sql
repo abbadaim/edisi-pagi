@@ -15,17 +15,36 @@
 
 create extension if not exists pg_net;
 
--- Ganti nilainya sebelum menjalankan; keduanya hanya masuk Vault.
-select vault.create_secret(
-  'https://api.github.com/repos/abbadaim/edisi-pagi/dispatches',
-  'gh_dispatch_url',
-  'endpoint repository_dispatch untuk tanya'
-);
-select vault.create_secret(
-  'github_pat_XXXXXXXX',
-  'gh_dispatch_token',
-  'PAT fine-grained: contents read/write'
-);
+-- Isi dua nilai di bawah, lalu jalankan SELURUH berkas ini di SQL Editor.
+-- Aman dijalankan berulang: secret yang sudah ada tidak dibuat ulang, jadi
+-- script tidak berhenti sebelum trigger sempat dibuat.
+do $$
+begin
+  if not exists (select 1 from vault.secrets where name = 'gh_dispatch_url') then
+    perform vault.create_secret(
+      'https://api.github.com/repos/abbadaim/edisi-pagi/dispatches',
+      'gh_dispatch_url',
+      'endpoint repository_dispatch untuk tanya'
+    );
+  end if;
+
+  -- >>> GANTI github_pat_XXXXXXXX DENGAN PAT ANDA <- (hanya di SQL Editor,
+  --     jangan pernah menempelkan token ke berkas di repo)
+  if not exists (select 1 from vault.secrets where name = 'gh_dispatch_token') then
+    perform vault.create_secret(
+      'github_pat_XXXXXXXX',
+      'gh_dispatch_token',
+      'PAT fine-grained: contents read/write'
+    );
+  end if;
+end
+$$;
+
+-- Rotasi token di kemudian hari (tempel nilai baru, jangan yang lama):
+--   select vault.update_secret(
+--     (select id from vault.secrets where name = 'gh_dispatch_token'),
+--     'github_pat_BARU'
+--   );
 
 /**
  * `security definer` diperlukan supaya fungsi boleh membaca Vault; tanpa itu
