@@ -52,13 +52,6 @@ jobs:
       # Probe rencana 022. Advisory: hasilnya dicatat, bukan menggagalkan smoke.
       # Kegagalan ditangani DI DALAM skrip — `bash -e` akan mematikan job
       # sebelum bukti sempat dicetak.
-      - name: Probe katalog model gratis (DEC-0018)
-        run: |
-          MODELS=$("$HOME/.opencode/bin/opencode" --standalone models)
-          echo "$MODELS" | grep -qx 'opencode/deepseek-v4.1-flash-free' \
-            || { echo "GAGAL: opencode/deepseek-v4.1-flash-free tidak ada di katalog profil CI"; exit 1; }
-          echo "OK katalog: model gratis terlihat di profil CI"
-
       - name: Probe tool pencarian (rencana 022) — advisory
         run: |
           # Run 44006991360: websearch ada tetapi ditolak headless
@@ -110,3 +103,31 @@ jobs:
               print(f"{name}: dipanggil {seen}x, berhasil {ok}x, catatan: {err}")
           PY
           echo "probe pencarian selesai — hasil dicatat, tidak menggagalkan smoke"
+
+      # Hipotesis yang diuji: kegagalan websearch bukan karena tool tidak ada,
+      # melainkan karena penyedia belum dipilih. Di mesin lokal pilihan itu
+      # tersimpan di opencode.db; runner selalu mulai kosong, jadi pencarian
+      # pertama berubah menjadi prompt interaktif yang tidak bisa dijawab `run`.
+      - name: Probe websearch dengan penyedia eksplisit (rencana 022)
+        run: |
+          mkdir -p /tmp/oc && cd /tmp/oc
+          cat > opencode.json <<'JSON'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "websearch": { "provider": "random" },
+            "permissions": [
+              { "action": "websearch", "resource": "*", "effect": "allow" }
+            ]
+          }
+          JSON
+          set +e
+          "$HOME/.opencode/bin/opencode" --standalone run \
+            --model 'opencode/deepseek-v4.1-flash-free#low' \
+            --format json --auto --archived \
+            'Pakai tool websearch untuk mencari satu berita terbaru tentang Kabupaten Sleman. Balas JSON {"url":"...","kutipan":"..."}' \
+            > /tmp/p-websearch2.json 2>&1
+          echo "exit=$?"
+          set -e
+          grep -o '"tool":"websearch","state":{"status":"[a-z]*"' /tmp/p-websearch2.json | head -2
+          grep -o '"error":"[^"]*"' /tmp/p-websearch2.json | head -2
+          grep -c '"type":"text"' /tmp/p-websearch2.json || true

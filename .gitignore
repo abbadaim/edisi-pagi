@@ -24,3 +24,6 @@ fixtures/ui/public/
 # Artefak Playwright
 playwright-report/
 test-results/
+
+# macOS
+.DS_Store
