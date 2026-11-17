@@ -1,0 +1,143 @@
+name: tanya
+
+# Menjawab pertanyaan pembaca (rencana 022, fase 4).
+#
+# Tiga pemicu:
+#   repository_dispatch  jalur cepat — Supabase memanggilnya saat baris `asks`
+#                        baru masuk, jadi jawaban datang dalam hitungan menit.
+#   workflow_dispatch    uji manual; boleh menyebut satu id.
+#   schedule             jaring pengaman. Trigger GitHub bisa dibuang tanpa
+#                        notifikasi (DEC-0028), jadi jangan bergantung pada satu
+#                        jalur. Tiap 6 jam, bukan tiap 5 menit: menit runner
+#                        berbayar dan tiap run tetap checkout + npm ci.
+on:
+  repository_dispatch:
+    types: [tanya]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "id pertanyaan (kosong = ambil yang paling lama menunggu)"
+        required: false
+  schedule:
+    - cron: "15 */6 * * *"
+
+# Satu tanya pada satu waktu. Jangan pernah membatalkan yang sedang jalan:
+# pertanyaan sudah ditandai `claimed` dan akan menggantung.
+concurrency:
+  group: tanya
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  jawab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      changed: ${{ steps.simpan.outputs.changed }}
+    env:
+      # Bahan diambil dari state SQLite yang sama dengan build harian.
+      DATABASE_PATH: data/state/local.db
+      LLM_PROVIDER: opencode
+      # Hanya kunci ini yang memberi hak tulis. Tidak pernah masuk `public/`.
+      SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      OPENCODE_AUTH_JSON: ${{ secrets.OPENCODE_AUTH_JSON }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # Tanpa state, pengambilan bahan hanya melihat basis data kosong dan
+      # semua jawaban akan berhenti di "belum ada bahan".
+      - name: Pulihkan state
+        uses: actions/cache@v4
+        with:
+          path: data/state
+          key: edisi-state-${{ github.run_id }}
+          restore-keys: |
+            edisi-state-
+
+      - run: npm ci
+
+      # Sama seperti daily.yml: kegagalan pemasangan tidak boleh menggagalkan
+      # jawaban. ask.ts mengembalikan pertanyaan ke antrean bila model tidak ada.
+      - name: Install OpenCode CLI
+        if: env.OPENCODE_AUTH_JSON != ''
+        run: |
+          if ! curl -fsSL https://opencode.ai/v2/install | bash -s -- --version 2.2.7; then
+            echo "::warning::OpenCode gagal dipasang; pertanyaan dikembalikan ke antrean"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
+          "$HOME/.opencode/bin/opencode" --version || true
+
+      - name: Import OpenCode credentials
+        if: env.OPENCODE_AUTH_JSON != ''
+        run: |
+          if ! printf '%s' "$OPENCODE_AUTH_JSON" | "$HOME/.opencode/bin/opencode" --standalone auth import; then
+            echo "::warning::auth import gagal; pertanyaan dikembalikan ke antrean"
+            echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
+          fi
+
+      - name: Jawab satu pertanyaan
+        id: tanya
+        env:
+          ASK_ID: ${{ github.event.client_payload.ask_id || inputs.id }}
+        run: |
+          if [ -n "$ASK_ID" ]; then
+            node scripts/ask.ts --id "$ASK_ID"
+          else
+            node scripts/ask.ts
+          fi
+
+      - name: Simpan hasil
+        id: simpan
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain public/answers)" ]; then
+            echo "tidak ada jawaban baru — tidak ada yang perlu di-commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "edisi-pagi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/answers
+          git commit -m "tanya: jawaban $(TZ=Asia/Jakarta date +%F)"
+          for i in 1 2 3; do
+            if git pull --rebase --autostash && git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "push gagal, coba lagi ($i/3)"
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "::warning::gagal menyimpan jawaban; jawaban tetap ada di artefak"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Unggah artefak situs
+        if: steps.simpan.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: jawab
+    if: needs.jawab.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy ke GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

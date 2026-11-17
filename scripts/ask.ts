@@ -122,7 +122,12 @@ function markClaimed(ask: AskRow): Promise<unknown> {
   }).catch(() => null);
 }
 
-function markDone(ask: AskRow, state: "answered" | "refused", answerId: string | null, error: string | null): Promise<unknown> {
+function markDone(
+  ask: AskRow,
+  state: "answered" | "refused" | "new" | "failed",
+  answerId: string | null,
+  error: string | null,
+): Promise<unknown> {
   return sb(`asks?id=eq.${encodeURIComponent(ask.id)}`, {
     method: "PATCH",
     headers: { Prefer: "return=minimal" },
@@ -252,19 +257,27 @@ async function main(): Promise<void> {
   if (pack.materials.length > 0) {
     const resolved = resolveLlm({ ...process.env, OPENCODE_MODEL: cfg.model.bawaan });
     if (!resolved.llm) {
-      result.reason = "model tidak tersedia — jawaban ditahan, bukan dikarang";
-      console.log(`model: ${cfg.model.bawaan} tidak tersedia (DEC-0018)`);
-    } else {
-      model = cfg.model.bawaan;
-      const r = await writeAnswer(resolved.llm, cfg.model.bawaan, ask.question, pack.materials, cfg);
-      result = { state: r.state, answer: r.answer, sources: r.sources, unsupported: r.unsupported, reason: r.reason };
-      if (debug && r.raw) {
-        console.log("--- keluaran mentah model ---");
-        console.log(r.raw.slice(0, 1600));
-        console.log("--- akhir keluaran ---");
+      // OpenCode yang gagal dipasang bukan salah pertanyaannya. Kembalikan ke
+      // antrean supaya run berikutnya mencoba lagi, sampai batas percobaan.
+      const retryable = ask.attempts + 1 < 3;
+      console.log(
+        `model: ${cfg.model.bawaan} tidak tersedia (DEC-0018) — ` +
+          (retryable ? "dikembalikan ke antrean" : "menyerah setelah 3 percobaan"),
+      );
+      if (!dry) {
+        await markDone(ask, retryable ? "new" : "failed", null, "model tidak tersedia");
       }
-      usage = { tokens_in: r.usage?.tokens_in ?? 0, tokens_out: r.usage?.tokens_out ?? 0 };
+      return;
     }
+    model = cfg.model.bawaan;
+    const r = await writeAnswer(resolved.llm, cfg.model.bawaan, ask.question, pack.materials, cfg);
+    result = { state: r.state, answer: r.answer, sources: r.sources, unsupported: r.unsupported, reason: r.reason };
+    if (debug && r.raw) {
+      console.log("--- keluaran mentah model ---");
+      console.log(r.raw.slice(0, 1600));
+      console.log("--- akhir keluaran ---");
+    }
+    usage = { tokens_in: r.usage?.tokens_in ?? 0, tokens_out: r.usage?.tokens_out ?? 0 };
   }
 
   const payload = {
