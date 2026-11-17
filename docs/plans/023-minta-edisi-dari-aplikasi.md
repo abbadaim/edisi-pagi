@@ -76,6 +76,9 @@ await sb("build_requests", { method: "POST", body: {}, prefer: "return=minimal" 
 ```
 
 - RLS: insert hanya untuk `auth.uid() = user_id`.
+- Grant: `grant select, insert … to authenticated` dan `… to service_role`.
+  RLS tidak menggantikan grant; tanpa grant PostgREST menjawab 42501 sebelum
+  RLS dinilai (pola yang sama dengan `001_init.sql`).
 - Cooldown: `guard_build_cooldown()` menolak bila ada permintaan <30 menit;
   pesannya muncul apa adanya di panel.
 - Dispatch: `event_type=build` → `daily.yml`; penjaga `check` yang menentukan
@@ -130,6 +133,8 @@ menyebut "perkiraan", bukan janji; bar hanya indikator, bukan hitungan pasti.
   `004_build_request.sql`; 353 uji lulus.
 - `2026-11-17` — `tested` — bar progres build berjalan (queued/in_progress),
   auto-refresh 15 detik, `OPENCODE`-independent (hanya membaca Actions API).
+- `2026-11-17` — `tested` — `004` ditambah GRANT untuk `authenticated` dan
+  `service_role`; versi pertama hanya RLS sehingga PostgREST menjawab 42501.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

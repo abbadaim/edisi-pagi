@@ -102,7 +102,17 @@ create trigger build_requests_dispatch
   after insert on public.build_requests
   for each row execute function public.notify_build();
 
+-- GRANT wajib: RLS menentukan baris mana yang boleh disentuh, tetapi peran
+-- tetap butuh izin tabel. Tanpa ini PostgREST menjawab
+-- 42501 "permission denied for table build_requests" — sebelum RLS dinilai.
+grant usage on schema public to authenticated;
+grant select, insert on public.build_requests to authenticated;
+grant select, insert, update on public.build_requests to service_role;
+
 -- Periksa setelah menekan tombol:
+--   select grantee, privilege_type
+--     from information_schema.role_table_grants
+--    where table_name = 'build_requests';
 --   select id, requested_at, status_code from public.build_requests order by requested_at desc limit 5;
 --   select status_code, content from net._http_response order by created desc limit 5;
 -- 204 = GitHub menerima dispatch. 401 = PAT, 404 = repo/izin.
