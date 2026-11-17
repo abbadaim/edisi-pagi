@@ -51,13 +51,19 @@ tool `websearch`, selesai 11,6 s, dan stream `--format json` memuat
 risiko: kutipan model diambil dari **cuplikan mesin pencari**, bukan dari
 halaman sumber.
 
-Dua temuan probe yang langsung mengubah rencana:
+Tiga temuan probe yang langsung mengubah rencana:
 
-- `websearch` bukan penyedia yang dikonfigurasi lokal: tidak ada berkas
-  `~/.config/opencode/*.json` yang menyebut pencarian, dan `opencode auth
-  export` hanya membawa dua kredensial Console `Personal`. Artinya tool ini
-  milik Console; risiko CI lebih kecil dari dugaan, tetapi tetap harus
-  dibuktikan lewat smoke.
+- **`websearch` tidak bisa dipakai CI.** Di profil lokal ia bekerja; di runner
+  headless ia dipanggil tiga kali dan gagal tiga kali:
+  `Cancelled a request for input this run cannot answer: Web Search`,
+  `providerCall.executed: false` (run `44007186384`). `--auto` tidak menolong
+  karena yang diminta bukan izin, melainkan masukan yang tidak bisa diberikan
+  proses non-interaktif. **`webfetch` justru berhasil** di run yang sama
+  (dipanggil 1x, berhasil 1x). Karena itu pencarian menjadi urusan pipeline,
+  dan pengambilan halaman boleh memakai `webfetch`.
+- Model gratis **terbukti jalan di CI**: `cost: 0`, token tercatat
+  (11.413 masuk / 51 keluar pada langkah pertama), dan ada di katalog profil
+  `--standalone`.
 - `src/adapters/llm/resolve.ts:47` memakai `catalog.includes(model)`.
   Katalog hanya memuat `provider/model` **tanpa** varian, sehingga
   `opencode/deepseek-v4.1-flash-free#low` akan dianggap tidak ada dan seluruh
@@ -80,8 +86,9 @@ Yang **tidak** berubah: pipeline harian, gerbang terbit (`E-FACT`, `D-TYPO`,
 ada), dan janji satu push per hari.
 
 DEC yang diusulkan: `DEC-0031` identitas sebagai batas tulis; `DEC-0032` jawaban
-bukan edisi; `DEC-0033` sitasi diverifikasi pipeline; `DEC-0034` model boleh
-mencari, verifikasi milik pipeline; `DEC-0035` tidak ada push untuk jawaban;
+bukan edisi; `DEC-0033` sitasi diverifikasi pipeline; `DEC-0034` **pipeline yang
+mencari dan mengambil bahan, model tidak mencari** (websearch headless tidak
+tersedia — bukti run `44007186384`); `DEC-0035` tidak ada push untuk jawaban;
 `DEC-0036` knob terstruktur di Supabase, prompt di git.
 
 ---
@@ -95,8 +102,8 @@ mencari, verifikasi milik pipeline; `DEC-0035` tidak ada push untuk jawaban;
 | 1 | Insert anon tanpa JWT ditolak, bukan 201 | **lolos** — `401 · 42501 permission denied for table asks` (ditolak di grant) |
 | 2 | Insert dengan JWT → 201 + dispatch terpicu | **menunggu token** (dispatch baru ada di fase 4) |
 | 3 | `?code=` selamat dari fallback navigasi service worker | **lolos** (statis: `public/sw.js:94-97` mengambil jaringan dulu untuk `mode === "navigate"`) |
-| 4 | `websearch` tersedia di `--standalone run --auto`, dan stream memuat input/output tool | **lolos lokal** (11,6 s; `tool_use` → `tool: "websearch"`, `input.query`, `output` berisi URL + cuplikan) |
-| 5 | `opencode/deepseek-v4.1-flash-free#low` ada di katalog profil `--standalone` | **lolos lokal**; konfirmasi CI lewat `opencode-smoke.yml` |
+| 4 | `websearch` tersedia di `--standalone run --auto`, dan stream memuat input/output tool | **gagal di CI** — berhasil lokal (11,6 s), tetapi runner headless menolak: `Cancelled a request for input this run cannot answer` (run `44007186384`). `webfetch` **berhasil** di run yang sama |
+| 5 | model gratis + `#low` ada di katalog profil `--standalone` dan bisa dipanggil | **lolos lokal dan CI** — `cost: 0`, token tercatat |
 
 Bukti probe 5 mentah: katalog `--standalone` memuat
 `opencode/deepseek-v4.1-flash-free` (tanpa varian), dan `opencode auth export`
@@ -156,12 +163,21 @@ kredensial tetapi belum tentu membawa konfigurasi penyedia pencarian
    (`DEC-0028`).
 4. Batas: 30 tanya/hari (lunak), tanpa ulangan saat timeout (`DEC-0026`).
 
-### Fase 5 — pencarian web
+### Fase 5 — bahan di luar korpus
 
-1. `cari.enabled` di `config/tanya.json`; tool dipanggil model, verifikasi di
-   `cite.ts`.
-2. `TANYA_TIMEOUT_MS` 300–360 s, terpisah dari 240 s writer.
-3. Label sumber `luar` vs `bahan`; sumber `luar` selalu butuh verifikasi kutipan.
+`websearch` headless tidak tersedia (bukti run `44007186384`), jadi model tidak
+mencari. Urutannya dibalik: pipeline yang mengumpulkan bahan, model hanya
+meringkas bahan yang diberikan — sama seperti writer.
+
+1. `src/core/ask/gather.ts` — URL di luar korpus tanpa kunci API: sitemap outlet
+   yang sudah dikenal (`primary.ts` P4b) + RSS yang sudah diingest. Bila kelak
+   perlu kunci pencarian berbayar, itu keputusan tersendiri.
+2. Isi halaman diambil adapter feed yang ada. `webfetch` hanya untuk URL yang
+   sudah diambil alih pipeline, bukan URL yang dipilih model sendiri.
+3. `cari.enabled` di `config/tanya.json`; mati = korpus saja.
+4. Label sumber `luar` vs `bahan`; `luar` selalu butuh verifikasi kutipan.
+5. `TANYA_TIMEOUT_MS` 300–360 s, terpisah dari 240 s writer, dan tidak diulang
+   saat timeout (`DEC-0026`).
 
 ### Dokumen yang ikut berubah
 
@@ -189,12 +205,15 @@ curl -s -X POST "$SUPABASE_URL/rest/v1/asks" \
 # probe 2 — dengan JWT milik owner: 201, lalu dispatch
 # harapan: 201 {"id":"...","state":"new"} ; `gh run list --workflow tanya.yml` bertambah
 
-# probe 4/5 — dijalankan di CI oleh supabase-smoke/opencode-smoke
-opencode --standalone models | grep -c 'opencode/deepseek-v4.1-flash-free'   # harapan: 1
+# probe 4/5 — dijalankan di CI oleh opencode-smoke.yml (advisory)
+opencode --standalone models | grep -qx 'opencode/deepseek-v4.1-flash-free'   # harapan: ada
 opencode --standalone run --model 'opencode/deepseek-v4.1-flash-free#low' \
-  --format json --auto --archived 'Pakai websearch, balas JSON {"url","kutipan"}'
-# harapan: exit 0, ada event "tool_use" dengan part.tool == "websearch",
-#          part.state.input.query dan part.state.output tidak kosong
+  --format json --auto --archived 'Pakai tool webfetch pada <url>, balas JSON {"ok":true}'
+# harapan: exit 0, satu event "tool_use" dengan part.tool == "webfetch" dan
+#          part.state.status == "completed".
+# JANGAN mengharapkan websearch: headless menolaknya
+# ("Cancelled a request for input this run cannot answer", providerCall.executed
+# false) — dibuktikan run 44007186384, dan itu yang mengubah fase 5.
 
 # tanya
 node scripts/ask.ts --id <ask_id>
@@ -304,7 +323,7 @@ Bentuk jawaban (`public/answers/<id>.json`):
 | Kunci bocor | anon key publik menurut desain; `service_role` hanya secret | rotasi kunci; tab tetap mati |
 | Spam insert | RLS owner-only; dispatch hanya untuk `user_id` owner | nonaktifkan trigger |
 | Jawaban mengarang | `cite.ts` wajib fetch + cocokkan kutipan | `cari.enabled=false` |
-| Websearch tak ada di CI | probe CI; bila gagal → korpus saja | setelan `cari.enabled=false` |
+| Websearch headless tidak tersedia (**terbukti**) | pencarian milik pipeline (`gather.ts`), model hanya meringkas bahan | `cari.enabled=false` |
 | Pantau membanjiri edisi | dihitung tindak lanjut, maks 3, tetap lewat adjudikasi | `TANYA_OFF=1` menyembunyikan tab |
 | Model gratis hilang | cek katalog `DEC-0018` → menolak, bukan mengarang | rantai ke model berbayar (≈$0.004/tanya) |
 | Biaya/CI | `concurrency: tanya`, 30/hari | matikan workflow |
@@ -325,3 +344,7 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
   masih `false`; probe 1–2 menunggu DDL dijalankan.
 - 2026-11-17 — `plan-draft` — DDL + grant diterapkan, `disable_signup = true`,
   anon tertutup (probe 1 lolos di tingkat grant). Probe 2 menunggu token.
+- 2026-11-17 — `plan-draft` — probe 4/5 diulang di CI (`opencode-smoke.yml`
+  diperluas). Hasil: model gratis jalan (`cost: 0`), **websearch ditolak
+  headless** (run `44007186384`), **webfetch berhasil**. Fase 5 dan `DEC-0034`
+  dibalik: pencarian milik pipeline, bukan model.
