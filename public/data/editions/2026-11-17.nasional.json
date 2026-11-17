@@ -1,0 +1,942 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-17",
+  "scope": "nasional",
+  "published_at": "2026-11-17T10:01:40+07:00",
+  "coverage": {
+    "from": "2026-11-16T10:01:40+07:00",
+    "to": "2026-11-17T10:01:40+07:00"
+  },
+  "generated_at": "2026-11-17T10:01:40+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 23,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_dpr_bahas_ruu_penyadapan_dan_a_18bd",
+      "angle": "Penyadapan dan data kependudukan dibahas bersamaan; banyak rincian masih terbuka.",
+      "kicker": "Nasional",
+      "title": "DPR Mulai Bahas Ulang RUU Penyadapan, Bersamaan dengan Revisi Adminduk",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Komisi III DPR membahas RUU Penyadapan bersama Kabaintelkam Polri pada 16 November 2026, dan RUU Adminduk dibahas pada hari yang sama.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Komisi III DPR RI kembali membuka pembahasan Rancangan Undang-Undang Penyadapan. Rapat dengar pendapat umum digelar di kompleks parlemen, Senayan, Jakarta, Senin (16/11/2026), dan turut dihadiri Kepala Badan Intelijen dan Keamanan Polri, Komjen Dedy Kusuma Bakti. Ketua Komisi III DPR, Habiburokhman, menyebut pembahasan dilanjutkan setelah Rancangan Kitab Undang-Undang Hukum Acara Pidana tuntas. Pada hari yang sama, pemerintah menyerahkan daftar inventaris masalah RUU Administrasi Kependudukan ke DPR. Dua berkas berbeda, tetapi keduanya menyentuh hal yang sama: sejauh mana negara boleh masuk ke percakapan dan data pribadi warga.",
+        "Pemicu pembahasan RUU Penyadapan bukan hal abstrak. Dalam membuka rapat, Habiburokhman mengatakan perhatian masyarakat kembali tertuju pada kegiatan penyadapan ilegal terhadap kepala negara yang dilakukan oknum aparat penegak hukum. Ia menilai penyadapan pada dasarnya dipakai untuk mencegah dan mendeteksi kejahatan dengan kewenangan yang terbatas, tetapi bisa juga disalahgunakan. Menurutnya, persoalan ini berkaitan langsung dengan hak konstitusional warga negara yang diatur dalam UUD 1945. Pernyataan itu adalah kerangka awal, bukan kesimpulan: ia belum merinci siapa yang diduga menyadap, dalam perkara apa, dan bagaimana kasus itu berjalan.",
+        "Masalah yang diangkat DPR lebih soal kerapian aturan. Habiburokhman menyebut kewenangan penyadapan sudah ada di sejumlah undang-undang, namun tidak ada aturan yang mengatur penyadapan secara rinci. Sebagian aturan memerlukan izin pengadilan, dan prosedur antaraturnya dinilai masih beragam. Dari situ ia menyimpulkan bahwa pengaturan rinci soal penyadapan perlu dituangkan dalam satu undang-undang. Bahan yang tersedia tidak memuat daftar undang-undang yang dimaksud maupun pasal mana saja yang selama ini menjadi dasar penyadapan, sehingga gambaran soal isi aturan lama masih samar.",
+        "Pertanyaan soal pasal tertentu belum bisa dijawab dari bahan ini. Tidak ada satu pun bahan yang menyebut nomor pasal yang mengatur kewenangan penyadapan, baik dalam undang-undang yang berlaku maupun dalam draf RUU yang sedang dibahas. Yang bisa dipastikan, sejumlah undang-undang memang sudah memuat kewenangan itu dengan prosedur yang berbeda-beda. Bahan latar menyebut penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, misalnya korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana. Rincian pasalnya tetap belum jelas.",
+        "Soal siapa yang berhak menyadap, bahan hanya memberi gambaran umum: aparat penegak hukum dengan izin pengadilan. Kehadiran Kepala Baintelkam Polri dalam rapat dapat dibaca sebagai tanda bahwa dimensi intelijen ikut dibahas, meski bahan tidak menjelaskan peran Badan Intelijen dan Keamanan dalam RUU itu. DPR menyebut ingin mencegah kasus penyadapan ilegal terulang dan agar keamanan negara tidak dijadikan alasan menyadap di luar hukum. Belum ada keterangan dalam bahan tentang lembaga mana saja yang akan diberi kewenangan, bagaimana izin diajukan, dan siapa yang mengawasi pelaksanaannya.",
+        "Kasus yang mendorong pembahasan dijelaskan berbeda antarbahan. Pemberitaan Okezone menyebut ada dugaan penyadapan ilegal yang disebut turut menyeret nama Listyo Sigit Prabowo, sementara Sindonews menulis kasus itu menjerat Jenderal Polisi Listyo Sigit Prabowo. Liputan6 menyebut rapat Komisi III dan Baintelkam Polri berlangsung usai isu penyadapan Prabowo mencuat, tanpa menjelaskan apakah Prabowo di situ merujuk pada kepala negara atau pihak lain. Bahan tidak memberi kronologi, status hukum, maupun konfirmasi dari yang bersangkutan, sehingga rincian perkara itu belum jelas.",
+        "Catatan DPR atas RUU Penyadapan tersurat dalam pernyataan pembuka rapat. Habiburokhman menegaskan DPR tidak ingin kasus penyadapan ilegal pada kepala negara dan tokoh bangsa terulang, dan tidak ingin keamanan negara serta hak asasi warga terancam oleh penyadapan di luar hukum. Namun bahan yang tersedia tidak memuat bantahan atau catatan resmi dari pemerintah terhadap RUU ini. Sikap pemerintah, termasuk kemungkinan keberatan atas pasal tertentu, tidak tergambar dalam teks yang ada. Yang tercatat hanya kehadiran perwakilan Polri dan rencana melanjutkan pembahasan.",
+        "Di jalur lain, RUU Administrasi Kependudukan dibahas pada tingkat I bersama pemerintah. Dikutip dari detik.com, Aria Bima dalam rapat di gedung DPR mengatakan penerapan nomor identitas tunggal dalam undang-undang yang berlaku belum optimal karena masyarakat masih memegang berbagai nomor: NIK, paspor, kartu keluarga, SIM, sampai BPKB. Data yang terpisah, menurutnya, memicu duplikasi dan ketidaksinkronan. Revisi itu menjadikan NIK sebagai basis Single Identity Number untuk seluruh pelayanan publik. Bahan lain menyebut hal serupa secara ringkas: RUU Adminduk diarahkan menjadikan NIK sebagai nomor identitas tunggal bagi seluruh layanan.",
+        "Angka yang dipaparkan memberi konteks. Berdasarkan data Kemendagri, ada 211.826.747 jiwa wajib KTP elektronik, dan 206.467.957 jiwa atau 97,47 persen sudah merekam. Untuk 2025, tersedia 26.318.136 keping blanko yang dinilai mencukupi. Dalam rapat disebut bahwa capaian tidak boleh berhenti pada angka target, tetapi harus tampak pada kualitas layanan. Kendalanya ada pada jaringan server SIAK yang terganggu, mesin cetak rusak, serta distribusi blanko yang terlambat. Bahan tidak merinci berapa banyak penduduk yang belum merekam dan di wilayah mana konsentrasinya.",
+        "Keluhan layanan juga menjadi alasan revisi. Menurut laporan Ombudsman yang dikutip dalam rapat, layanan adminduk banyak dilaporkan dengan keluhan prosedur berbalik, penerbitan lambat, dan kesalahan data. Pemerintah lantas menekankan bahwa capaian tidak boleh berhenti pada angka target, tetapi harus tampak pada kualitas layanan, terutama di wilayah 3T. Kanal digital disebut wajib berjalan berdampingan dengan layanan tatap muka, jemput bola, dan pendampingan petugas. Bahan tidak menjelaskan definisi rinci wilayah 3T maupun standar kualitas layanan yang dipakai.",
+        "Salah satu perubahan yang diusulkan adalah prinsip stelsel aktif. Dengan prinsip ini, pemerintah wajib proaktif menyelenggarakan pelayanan administrasi kependudukan, tidak lagi menunggu penduduk datang mengurus dokumen. Aria Bima menyebut stelsel aktif menuntut standar layanan, tolok ukur kerja, dan kemampuan jemput bola, terutama di wilayah 3T. Dalam daftar pokok RUU yang dibacakan, stelsel aktif menempati urutan pertama, disusul NIK sebagai nomor identitas tunggal dan integrasi data lewat interoperabilitas berbasis SIAK. Bahan belum memuat bunyi pasal atau sanksi bagi pemerintah yang tidak menjalankannya.",
+        "RUU itu juga mengatur larangan meminta fotokopi KTP dan tangkapan layar. Menurut Aria Bima, larangan tersebut harus diiringi ketersediaan alat baca digital di semua penyelenggara layanan, termasuk swasta dan pelaku usaha kecil. Daftar pokok RUU menyebut verifikasi dengan alat baca digital sebagai pengganti fotokopi, perlindungan data dan dokumen, nomor identitas nonkependudukan bagi WNI di luar negeri, Kartu Identitas Anak, Identitas Kependudukan Digital, pengawasan keamanan data, mekanisme pengaduan, pendanaan, hingga sanksi administratif bagi penyelenggara dan pengguna yang melanggar kewajiban integrasi data SIAK. Rincian besaran sanksi tidak diuraikan.",
+        "Dua pertanyaan tentang denda belum terjawab oleh bahan. Bahan tidak memuat pernyataan Menteri Dalam Negeri soal denda administrasi KTP, dan alasan permintaan penghapusan denda itu belum bisa dijelaskan dari teks ini. Yang ada hanyalah pernyataan Aria Bima bahwa digitalisasi tidak boleh menjadi syarat yang justru menghalangi orang memperoleh hak; itu dapat dibaca sebagai semangat yang sejalan, tetapi bukan penjelasan resmi atas usulan tersebut. Besaran denda yang kini berlaku bagi penduduk yang belum merekam KTP elektronik juga tidak disebut dalam bahan mana pun. Karena itu, angka denda tidak bisa dipastikan dari teks ini.",
+        "Kapan kedua RUU ditargetkan disahkan juga tidak disebut. Untuk RUU Penyadapan, bahan hanya menyebut pembahasan dilanjutkan setelah RUU KUHAP selesai, tanpa tenggat. Untuk RUU Adminduk, bahan hanya mencatat penyerahan daftar inventaris masalah pemerintah ke DPR pada 16 November 2026, tanpa jadwal pembahasan berikutnya. Tidak ada keterangan tentang target akhir tahun, masa sidang, atau perkiraan tanggal pengesahan. Pembaca perlu menunggu jadwal resmi dari DPR atau pemerintah untuk mengetahui tenggatnya.",
+        "Jika diringkas, yang jelas begini. Komisi III DPR membahas RUU Penyadapan karena menilai aturan penyadapan selama ini tersebar dan tidak seragam, dengan latar dugaan penyadapan ilegal terhadap kepala negara. Pemerintah menyerahkan daftar inventaris masalah RUU Adminduk untuk memperbaiki layanan kependudukan, menjadikan NIK basis layanan, dan melarang fotokopi KTP. Yang belum jelas juga banyak: nomor pasal, lembaga yang berwenang menyadap, besaran denda, dan tenggat pengesahan. Bahan juga tidak memuat bantahan pemerintah atas RUU Penyadapan.",
+        "Bagi pembaca yang jarang membuka media sosial, dua berkas ini relevan bukan karena nomor RUU-nya, tetapi karena akibatnya. Aturan penyadapan menentukan siapa yang boleh mendengar percakapan dan dengan izin apa. Aturan adminduk menentukan apakah satu nomor identitas memudahkan layanan atau justru menambah risiko saat data bocor. Karena rincian masih terbuka, yang bisa dipantau adalah dokumen resmi berikutnya: draf RUU, daftar inventaris masalah, dan jadwal rapat. Selama itu belum terbit, klaim bahwa kedua RUU akan segera disahkan sebaiknya dibaca sebagai rencana, bukan kepastian."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa tugasnya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan sah menurut aturan yang ada?",
+          "a": "Penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu KTP dan siapa yang wajib memilikinya?",
+          "a": "KTP adalah kartu identitas wajib bagi warga negara dan penduduk Indonesia yang memiliki izin tinggal sah. Kartu ini diterbitkan saat berusia 17 tahun atau setelah menikah, dan berlaku seumur hidup bagi WNI.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kartu_Tanda_Penduduk"
+          }
+        }
+      ],
+      "action": "Pantau draf RUU dan daftar inventaris masalah resmi agar Anda tahu pasal penyadapan serta sanksi Adminduk sebelum disahkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1772663/13/cegah-kasus-listyo-sigit-terulang-komisi-iii-dpr-mulai-bahas-ruu-penyadapan-1794813083",
+          "published_at": "2026-11-16T14:19:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754762/komisi-iii-dpr-rapat-bareng-kabaintelkam-polri-bahas-ruu-penyadapan",
+          "published_at": "2026-11-16T11:04:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/16/337/3254274/komisi-iii-dpr-bahas-ruu-penyadapan-tak-ingin-kasus-listyo-sigit-terulang",
+          "published_at": "2026-11-16T11:23:31+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/singgung-pengalaman-anggota-komisi-ii-akan-atur-larangan-foto-kopi-ktp-di-ruu-adminduk-28aFjHzSsOb",
+          "published_at": "2026-11-16T13:53:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336223/komisi-iii-dpr-rapat-bareng-kabaintelkam-polri-ini-yang-dibahas",
+          "published_at": "2026-11-16T14:45:49+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "DPR melanjutkan pembahasan RUU Penyadapan sambil pemerintah menyerahkan DIM RUU Adminduk, tetapi rincian pasal dan sanksi belum jelas.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "4",
+          "label": "halaman"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "Komisi III DPR Rapat Bareng Kabaintelkam Polri, Ini yang Dibahas",
+          "url": "https://www.liputan6.com/news/read/8336223/komisi-iii-dpr-rapat-bareng-kabaintelkam-polri-ini-yang-dibahas",
+          "at": "2026-11-16T14:45:49+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "sindonews.com",
+          "title": "Cegah Kasus Listyo Sigit Terulang, Komisi III DPR Mulai Bahas RUU Penyadapan",
+          "url": "https://nasional.sindonews.com/read/1772663/13/cegah-kasus-listyo-sigit-terulang-komisi-iii-dpr-mulai-bahas-ruu-penyadapan-1794813083",
+          "at": "2026-11-16T14:19:03+07:00",
+          "owner": "MNC",
+          "media": 2
+        },
+        {
+          "outlet": "kumparan.com",
+          "title": "Singgung Pengalaman Anggota, Komisi II Akan Atur Larangan Foto Kopi KTP di RUU Adminduk",
+          "url": "https://kumparan.com/kumparannews/singgung-pengalaman-anggota-komisi-ii-akan-atur-larangan-foto-kopi-ktp-di-ruu-adminduk-28aFjHzSsOb",
+          "at": "2026-11-16T13:53:05+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        },
+        {
+          "outlet": "detik.com",
+          "title": "Komisi III DPR Rapat Bareng Kabaintelkam Polri Bahas RUU Penyadapan",
+          "url": "https://news.detik.com/berita/d-8754762/komisi-iii-dpr-rapat-bareng-kabaintelkam-polri-bahas-ruu-penyadapan",
+          "at": "2026-11-16T11:04:11+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_bertemu_menlu_brunei_malaysia_13d1",
+      "angle": "Prabowo ikut sesi foto KTT ASEAN-China Manila, berdiri di sebelah Sultan Brunei.",
+      "kicker": "Nasional",
+      "title": "Prabowo Berfoto KTT ASEAN-China Manila, di Samping Sultan Brunei",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Prabowo mengikuti sesi foto bersama KTT ke-29 ASEAN-China di Manila pada 16 November 2026 dan berada di sebelah Sultan Hassanal Bolkiah.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto menghadiri Konferensi Tingkat Tinggi (KTT) ke-29 ASEAN-China di Manila, Filipina, pada Senin, 16 November 2026. Dalam rangkaian acara itu, Prabowo mengikuti sesi foto bersama atau family photo di atas panggung bersama sejumlah pemimpin negara. Siaran YouTube Sekretariat Presiden yang dikutip detik.com memperlihatkan para pemimpin memasuki area foto sebelum berpose. Kehadiran Prabowo juga dicatat Sindonews, yang menyebutnya turut dalam sesi foto bersama para pemimpin ASEAN dan Perdana Menteri China Li Qiang.",
+        "Selain Prabowo, detik.com menyebut sejumlah tokoh yang tampak di area foto: Presiden Filipina Ferdinand 'Bongbong' Romualdez Marcos Jr., Sultan Brunei Darussalam Hassanal Bolkiah, Perdana Menteri Timor-Leste Xanana Gusmão, Perdana Menteri Dewan Negara Tiongkok Li Qiang, serta Sekretaris Jenderal ASEAN Kao Kim Hourn. Daftar itu memperlihatkan bahwa sesi foto melibatkan lebih dari sekadar negara anggota ASEAN: ada Tiongkok yang diwakili Li Qiang dan Timor-Leste yang diwakili perdana menterinya. Bahan tidak menjelaskan status kehadiran masing-masing pihak, termasuk kapasitas Timor-Leste dalam pertemuan tersebut.",
+        "Detail yang menonjol dalam laporan detik.com adalah penampilan Prabowo: ia mengenakan jas abu-abu cerah lengkap dengan peci. Setelah para pemimpin memasuki area, mereka mengikuti sesi family photo di atas panggung, dan Prabowo terlihat berada di sebelah Sultan Hassanal Bolkiah. Posisi berdampingan itu menjadi sudut pemberitaan, tetapi bahan tidak memuat keterangan resmi tentang bagaimana penempatan peserta foto ditentukan. Bahan juga tidak menyebut siapa yang berdiri di sisi lain Prabowo, sehingga gambaran bahwa ia diapit dua tokoh tidak sepenuhnya terbukti dari teks yang tersedia.",
+        "Prabowo bukan tokoh baru dalam forum internasional. Catatan latar menyebutnya sebagai politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024. Sebelumnya ia menjabat Menteri Pertahanan ke-26 di bawah Presiden Joko Widodo pada 2019 hingga 2024, dan disebut sebagai presiden ketiga Indonesia yang berlatar belakang militer. Latar itu membantu membaca gaya penyampaiannya di forum diplomatik, meski bahan tidak menjelaskan apakah pengalaman tersebut memengaruhi isi pidatonya di KTT.",
+        "Sesi foto berlangsung di tengah agenda padat. Menurut detik.com, Prabowo sebelumnya menyampaikan pidato dalam sesi pleno pada hari pertama KTT. Dalam kesempatan itu ia menyerukan penguatan persatuan dan sentralitas ASEAN dalam menghadapi tantangan kawasan maupun dinamika global, serta mendorong pengaruh regional ASEAN lebih besar di seluruh dunia. Ia menegaskan persatuan ASEAN harus diwujudkan melalui langkah nyata, termasuk memperkuat pengaruh kolektif negara anggota dalam lembaga multilateral dan proses pengambilan keputusan internasional. Bahan tidak menyebut apakah ajakan itu kemudian disepakati bersama oleh seluruh anggota.",
+        "Prabowo kemudian mengaitkan persatuan dengan dukungan konkret di forum global. \"Persatuan kita juga harus diterjemahkan menjadi pengaruh yang lebih besar dalam membentuk lembaga multilateral dan keputusan global. ASEAN harus bekerja sama,\" katanya seperti dikutip detik.com. Ia mendorong semua anggota ASEAN mendukung kandidat bila salah satu negara kawasan mencalonkan diri pada posisi di Perserikatan Bangsa-Bangsa atau organisasi afiliasi di bawahnya. \"Saya rasa ini sangat penting, hal ini memperlihatkan bahwa ASEAN adalah kekuatan kawasan yang kohesif,\" lanjutnya. Ajakan serupa dilaporkan CNBC Indonesia, yang menyebut Prabowo mengajak negara ASEAN mendukung calon dari kawasan yang maju di PBB dan menekankan solidaritas dalam blok.",
+        "Dalam pidatonya, Prabowo mengingatkan semangat para pendiri ASEAN yang hampir enam dekade lalu memilih kerja sama daripada perpecahan serta kolaborasi daripada konflik. Menurutnya, hubungan antarnegara bertetangga tidak dapat dilepaskan dari berbagai tantangan bersama. \"Mereka memilih kerja sama daripada perpecahan dan kolaborasi daripada konflik,\" ujarnya. Rujukan sejarah itu sejalan dengan catatan latar tentang ASEAN, organisasi geopolitik dan ekonomi kawasan Asia Tenggara yang didirikan di Bangkok, Thailand, pada 8 Agustus 1967 melalui Deklarasi ASEAN oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand. Catatan itu juga menyebut tujuan peningkatan pertumbuhan ekonomi dan kemajuan sosial, tetapi teksnya terpotong sehingga rincian lain tidak terbaca lengkap.",
+        "Di jalur ASEAN-China, Prabowo menekankan pentingnya memperkuat kemitraan strategis komprehensif melalui komitmen terhadap perdamaian, dialog, dan kerja sama ekonomi yang saling menguntungkan. Menurut Okezone, pernyataan itu disampaikan dalam pidatonya di KTT ke-29 ASEAN-China di Manila. Ia menyoroti bahwa selama lebih dari tiga dekade ASEAN dan China menghadapi berbagai tantangan, mulai dari krisis global, pandemi, hingga gejolak geopolitik, namun dinilai mampu menjaga kohesi dan memperkuat ketahanan melalui kolaborasi. \"Sekarang kita adalah mitra strategis komprehensif, sebuah simbol persahabatan yang memiliki hubungan dan sejarah yang mendalam, namun juga tetap terbuka ketika kita memiliki kepentingan dan kekhawatiran bersama,\" kata Prabowo.",
+        "Prabowo menilai China memiliki posisi penting dalam perjalanan pembangunan ASEAN. Karena itu ia mendorong kedua pihak meningkatkan kerja sama, tidak hanya dalam menjaga perdamaian dan dialog, tetapi juga memperluas integrasi ekonomi, sosial, dan budaya. Antara News melaporkan dorongan serupa untuk memperkuat integrasi ekonomi ASEAN-China demi memperluas manfaat, meski teks berita itu terpotong sehingga rincian manfaat yang dimaksud tidak diketahui. Dua laporan tersebut belum memuat angka perdagangan, target kuantitatif, atau daftar kesepakatan yang dibahas dalam pertemuan.",
+        "Isu lain yang muncul adalah Laut China Selatan. Sindonews melaporkan Prabowo mendorong konflik di kawasan maritim yang menjadi sengketa wilayah sejumlah negara itu diselesaikan dengan cara damai. Pernyataan itu disebut disampaikan dalam intervensinya pada KTT ke-29 ASEAN-China di Manila. Namun laporan tersebut terpotong: tidak dijelaskan mekanisme penyelesaian damai yang dimaksud, apakah melalui perundingan langsung, kerangka ASEAN-China, atau forum lain. Bahan juga tidak memuat tanggapan China maupun negara pengklaim lain atas pernyataan itu.",
+        "Selain itu, detik.com melaporkan Prabowo mengapresiasi dukungan Tiongkok untuk Global South dan Palestina dalam KTT ASEAN-China, sambil menekankan pentingnya kerja sama multilateral. Laporan itu singkat dan tidak menguraikan bentuk dukungan yang dimaksud maupun kaitannya dengan posisi Indonesia. Pembaca yang ingin mengetahui detail pernyataan soal Palestina dan Global South belum mendapat penjelasan dari bahan yang tersedia, termasuk apakah isu itu dibahas dalam sesi pleno atau pertemuan terpisah.",
+        "Isu domestik juga mencuat di forum itu. Liputan6.com melaporkan Prabowo mengungkap bahwa 71.000 personel dikerahkan untuk memadamkan kebakaran hutan dan lahan di Indonesia. Angka itu disebut dalam KTT ASEAN, tetapi bahan tidak menjelaskan periode penugasan, sebaran wilayah, maupun instansi yang mengerahkan personel tersebut. Laporan detik.com yang sama juga memuat tautan video berjudul \"Prabowo Minta Maaf ke Malaysia-Singapura soal Asap Karhutla di KTT ASEAN\", namun isi permintaan maaf itu tidak diuraikan dalam teks artikel. Kaitan antara angka personel dan isu asap lintas batas karena itu belum dapat dipastikan dari bahan.",
+        "Di akhir penyampaiannya, Prabowo mengajak seluruh pemimpin ASEAN memperkuat solidaritas dan meningkatkan hasil nyata kerja sama regional. Ia menyerukan keberanian kolektif untuk membawa ASEAN menuju kerja sama yang lebih kuat, produktif, dan berorientasi pada hasil. \"Mari kita berani membangun kekuatan untuk memberikan lebih banyak hal bersama-sama dan bertekad untuk mencapai hasil yang lebih baik bersama-sama,\" pungkasnya. Catatan latar lain menyebut Prabowo menghadiri hari kedua rangkaian KTT di Manila dan acara diawali sesi family photo pada sesi KTT ASEAN-China, sehingga sesi foto yang diikutinya berada di bagian awal agenda hari itu.",
+        "Dari sisi angka dan tanggal, bahan menyebut KTT ke-29 ASEAN-China digelar di Manila pada Senin, 16 November 2026. Detik.com mencatat siaran Sekretariat Presiden pada hari yang sama. ASEAN sendiri didirikan pada 8 Agustus 1967, dan Prabowo merujuk hampir enam dekade sejak pendirian itu. Selain 71.000 personel, tidak ada angka lain yang menonjol dalam bahan. Ada perbedaan penomoran yang perlu dicatat: Antara News menyebut acara sebagai hari kedua \"KTT ke-49 ASEAN\" di Manila, sedangkan Sindonews dan Okezone menyebut \"KTT ke-29 ASEAN-China\". Bahan tidak menjelaskan mengapa penomorannya berbeda, sehingga pembaca sebaiknya tidak menyimpulkan salah satunya keliru.",
+        "Yang belum jelas dan langkah berikutnya. Bahan tidak memuat keterangan tentang pertemuan bilateral Prabowo di sela KTT, isi dokumen atau pernyataan bersama, maupun agenda setelah sesi foto dan pidato. Tidak ada pula informasi tentang hasil konkret dari ajakan mendukung kandidat ASEAN di PBB atau soal Laut China Selatan. Dengan bahan yang ada, belum bisa dipastikan apakah pernyataan Prabowo akan dituangkan dalam kesepakatan resmi, dan apakah Indonesia akan menindaklanjutinya dengan langkah diplomatik tertentu. Informasi lanjutan perlu menunggu keterangan resmi pemerintah atau laporan media berikutnya.",
+        "Bagi pembaca yang jarang mengikuti media sosial, rangkaian peristiwa ini dapat dibaca sebagai upaya menempatkan ASEAN sebagai poros kerja sama kawasan. Namun perlu ditegaskan bahwa bahan tidak memuat pernyataan yang secara eksplisit menghubungkan KTT ini dengan persaingan kekuatan besar tertentu. Yang tersedia hanyalah pernyataan Prabowo tentang persatuan, sentralitas ASEAN, dukungan pada kandidat kawasan di PBB, penyelesaian damai sengketa maritim, serta apresiasi atas dukungan Tiongkok untuk Global South dan Palestina. Kesimpulan lebih jauh soal dampak geopolitik karena itu masih terbuka dan belum bisa diukur dari bahan ini."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu ASEAN dan kapan organisasi ini didirikan?",
+          "a": "ASEAN adalah organisasi geopolitik dan ekonomi negara kawasan Asia Tenggara, didirikan di Bangkok pada 8 Agustus 1967 melalui Deklarasi ASEAN oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perhimpunan_Bangsa-Bangsa_Asia_Tenggara"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto dalam catatan latar ini?",
+          "a": "Politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan ke-26 pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud sesi family photo dalam rangkaian KTT ini?",
+          "a": "Bahan menyebut acara hari kedua KTT di Manila diawali sesi family photo pada sesi KTT ASEAN-China; rincian protokol dan penempatan peserta tidak dijelaskan.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8754673/momen-prabowo-ikut-family-photo-saat-ktt-asean-di-manila"
+          }
+        }
+      ],
+      "action": "Baca pernyataan Prabowo di KTT ASEAN-China dan catat mana yang masih berupa ajakan, bukan kesepakatan resmi.",
+      "image": {
+        "url": "assets/b5a0274ef4.webp",
+        "credit": "sindonews.com",
+        "alt": "Prabowo Berfoto KTT ASEAN-China Manila, di Samping Sultan Brunei"
+      },
+      "sources": [
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1772613/12/hadiri-ktt-ke-29-asean-china-di-manila-prabowo-berdiri-di-samping-sultan-brunei-1794805860",
+          "published_at": "2026-11-16T12:06:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/16/337/3254286/prabowo-di-ktt-asean-china-perdamaian-harus-dijaga-kemakmuran-dirasakan-bersama",
+          "published_at": "2026-11-16T12:19:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754673/momen-prabowo-ikut-family-photo-saat-ktt-asean-di-manila",
+          "published_at": "2026-11-16T10:09:59+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336145/di-ktt-asean-prabowo-minta-maaf-soal-kebakaran-hutan",
+          "published_at": "2026-11-16T13:37:59+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5856931/prabowo-dorong-integrasi-ekonomi-asean-china-untuk-perkuat-umkm",
+          "published_at": "2026-11-16T14:26:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116133014-4-785590/kode-prabowo-ajak-asean-dukung-budi-gunadi-sadikin-jadi-dirjen-who",
+          "published_at": "2026-11-16T14:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 7,
+      "first_seen": "2026-11-15",
+      "previous_edition": "2026-11-16",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "Prabowo dorong integrasi ekonomi ASEAN-China untuk perkuat UMKM",
+          "url": "https://www.antaranews.com/berita/5856931/prabowo-dorong-integrasi-ekonomi-asean-china-untuk-perkuat-umkm",
+          "at": "2026-11-16T14:26:04+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "\"Kode\" Prabowo Ajak ASEAN Dukung Budi Gunadi Sadikin Jadi Dirjen WHO",
+          "url": "https://www.cnbcindonesia.com/news/20261116133014-4-785590/kode-prabowo-ajak-asean-dukung-budi-gunadi-sadikin-jadi-dirjen-who",
+          "at": "2026-11-16T14:00:00+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Di KTT ASEAN, Prabowo Minta Maaf soal Kebakaran Hutan",
+          "url": "https://www.liputan6.com/news/read/8336145/di-ktt-asean-prabowo-minta-maaf-soal-kebakaran-hutan",
+          "at": "2026-11-16T13:37:59+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "okezone.com",
+          "title": "Prabowo di KTT ASEAN-China: Perdamaian Harus Dijaga, Kemakmuran Dirasakan Bersama",
+          "url": "https://news.okezone.com/read/2026/11/16/337/3254286/prabowo-di-ktt-asean-china-perdamaian-harus-dijaga-kemakmuran-dirasakan-bersama",
+          "at": "2026-11-16T12:19:16+07:00",
+          "owner": "MNC",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_kasus_dugaan_perkosaan_bupati_1714",
+      "angle": "Penyidik Polda NTT memeriksa saksi dan olah TKP; Bupati Kupang masih berstatus terlapor.",
+      "kicker": "Kriminal",
+      "title": "Polda NTT Periksa Enam Saksi, Bupati Kupang Dipanggil Rabu",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polda NTT sudah memeriksa enam orang dan menjadwalkan pemeriksaan Bupati Kupang Yosef Lede pada 18 November, sementara statusnya masih terlapor.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Penyidik Direktorat Perlindungan Perempuan dan Anak serta Pemberantasan Perdagangan Orang Polda Nusa Tenggara Timur sudah memeriksa enam orang dalam kasus dugaan pemerkosaan yang menyeret Bupati Kupang, Yosef Lede. Menurut Direktur PPA dan PPO Polda NTT Kombes Pol Nova Irone Surentu, keenam orang itu mencakup korban berinisial RWM (21), orang tuanya yang menjadi pelapor, adik korban yang menjemputnya, serta saksi yang mendengar, melihat, dan mengetahui peristiwa. Dua perempuan berinisial EK dan LS, yang disebut mengantar korban ke rumah dinas pada Rabu malam, dijadwalkan diperiksa Senin ini tetapi tidak hadir dengan alasan sakit. Polisi menyatakan akan memanggil ulang keduanya, dan menyebut setidaknya delapan orang akan diperiksa.",
+        "Laporan korban teregistrasi di Polda NTT pada 12 November 2026 dengan nomor LP/B/404/XI/2026/SPKT/POLDA NTT. Menurut keterangan awal, peristiwa diduga terjadi pada Rabu (11/11) malam di Rumah Dinas Bupati Kupang di Jalan R.A. Kartini, Kelurahan Kelapa Lima, Kota Kupang, ketika korban datang setelah memperoleh informasi soal tawaran pekerjaan di salah satu Perusahaan Daerah Kabupaten Kupang. Polisi menyatakan sudah melakukan olah tempat kejadian perkara di rumah dinas itu. Namun temuan dari olah TKP belum dirinci: keterangan resmi yang tersedia hanya menyebut olah TKP telah dilakukan, sementara kepolisian menegaskan seluruh informasi masih didalami dalam proses penyelidikan.",
+        "Status hukum Yosef Lede sampai keterangan terbaru masih sebagai terlapor, bukan tersangka. Kepolisian menegaskan kasus ini masih berada pada taraf penyelidikan, dan penyidik mengirim surat panggilan agar ia diperiksa pada Rabu (18/11) setelah pemeriksaan para saksi dirampungkan. Yosef sendiri menyatakan akan memenuhi panggilan penyidik. Kapolda NTT Irjen Pol Reza Arief Dewanto berjanji menuntaskan kasus ini, dan jumlah personel penyidik disebut ditambah untuk mempercepat pemeriksaan serta pendalaman alat bukti. Polisi juga menegaskan tidak ada tekanan atau intervensi, termasuk intervensi politik, dalam proses penyelidikan.",
+        "Pernyataan kuasa hukum Yosef Lede belum tersedia dalam bahan yang dihimpun; keterangan pengacara yang disebut justru terkait alasan sakit dua saksi yang mangkir. Yosef hanya menyampaikan bahwa ia menghormati laporan ke Polda NTT dan berjanji datang jika dipanggil. Dari Jakarta, Menteri Dalam Negeri Tito Karnavian mengatakan sudah meminta Irjen Mendagri berkoordinasi dengan polisi yang menangani perkara, sambil menegaskan asas praduga tak bersalah. Ia menyebut bila terbukti bersalah, bupati bisa dipecat melalui proses pemakzulan di DPRD, dan menyatakan langkah kepolisian sebagai prioritas saat ini."
+      ],
+      "explain": [
+        {
+          "q": "Apa bedanya status terlapor dan tersangka?",
+          "a": "Tersangka adalah orang yang ditetapkan penyidik berdasarkan minimal dua alat bukti; status itu belum berarti bersalah karena putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu DPR RI yang disebut dalam rapat Menteri Dalam Negeri?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Tito Karnavian dalam perkara ini?",
+          "a": "Ia disebut sebagai Mendagri yang memerintahkan penyelidikan kasus dugaan pemerkosaan Bupati Kupang, Yosef Lede.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261116133722-12-1427652/tito-utus-irjen-kemendagri-usut-kasus-dugaan-perkosaan-bupati-kupang"
+          }
+        }
+      ],
+      "action": "Ikuti keterangan resmi kepolisian soal pemeriksaan saksi dan jadwal pemeriksaan bupati pada 18 November.",
+      "image": {
+        "url": "assets/1b25885bb3.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Polda NTT Periksa Enam Saksi, Bupati Kupang Dipanggil Rabu"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kapolda-ntt-janji-transparan-usut-dugaan-pelecehan-bupati-kupang-idRW",
+          "published_at": "2026-11-16T23:14:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116133722-12-1427652/tito-utus-irjen-kemendagri-usut-kasus-dugaan-perkosaan-bupati-kupang",
+          "published_at": "2026-11-16T13:50:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "Kapolda NTT Janji Transparan Usut Dugaan Pelecehan Bupati Kupang",
+          "url": "https://tirto.id/kapolda-ntt-janji-transparan-usut-dugaan-pelecehan-bupati-kupang-idRW",
+          "at": "2026-11-16T23:14:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Tito Utus Irjen Kemendagri Usut Kasus Dugaan Perkosaan Bupati Kupang",
+          "url": "https://www.cnnindonesia.com/nasional/20261116133722-12-1427652/tito-utus-irjen-kemendagri-usut-kasus-dugaan-perkosaan-bupati-kupang",
+          "at": "2026-11-16T13:50:50+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_ketegangan_militer_as_iran_dan_37db",
+      "angle": "Iran disebut serang fasilitas AS di Bahrain; AS-China bahas komunikasi krisis militer",
+      "kicker": "Nasional",
+      "title": "Iran Disebut Serang Fasilitas AS di Bahrain, AS-China Rundingkan MoU",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bahan menyebut Iran melancarkan serangan drone ke fasilitas militer AS di Bahrain, sementara perundingan nota kesepahaman komunikasi krisis AS-Tiongkok belum me",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Iran dilaporkan melancarkan serangan drone ke fasilitas militer Amerika Serikat di Bahrain. Laporan itu muncul di dua kanal berita Indonesia pada 16 November 2026: CNBC Indonesia pada pagi hari dan Tirto pada sore hari. Keduanya menyebut objek serangan sebagai fasilitas militer AS, bukan instalasi sipil. Namun, tidak satu pun bahan menyebutkan lokasi persisnya, jenis fasilitas, atau apakah ada personel yang berada di dalamnya saat serangan terjadi. Tidak ada pula pernyataan resmi dari pemerintah AS atau Iran yang dikutip dalam bahan. Bahan juga tidak menjelaskan mengapa Bahrain menjadi lokasi fasilitas tersebut, apa status keberadaan militer AS di sana, dan apakah serangan menyasar bangunan, peralatan, atau area terbuka. Karena itu, rangkaian peristiwanya baru diketahui dari laporan media, dan belum ada konfirmasi silang dari pihak-pihak yang bertikai.",
+        "Waktu serangan tidak dijelaskan secara pasti. CNBC Indonesia memberitakan pada 16 November pukul 10.50 WIB bahwa ketegangan kembali meningkat setelah serangan itu, tanpa menyebut kapan serangan berlangsung. Tirto, yang terbit pada 16 November pukul 16.35 WIB, menulis penempatan kapal induk dilakukan pasca-serangan. Dari dua kalimat itu hanya bisa disimpulkan bahwa serangan terjadi sebelum kedua laporan terbit. Apakah serangan terjadi pada 15 November, 16 November pagi, atau beberapa hari sebelumnya, belum dapat dipastikan dari bahan. Hal serupa berlaku untuk jumlah drone, sasaran spesifik, dan dampak kerusakan. Ketidakjelasan ini penting karena besaran serangan memengaruhi cara membaca respons militer AS yang diberitakan setelahnya.",
+        "Untuk pembaca yang jarang mengikuti berita luar negeri, tiga nama negara di brief ini perlu dipisahkan. Amerika Serikat adalah negara republik konstitusional federal yang terdiri dari lima puluh negara bagian dan satu distrik federal, dengan empat puluh delapan negara bagian saling bersebelahan dan pusat pemerintahan di Washington, D.C. Iran, dengan nama resmi Republik Islam Iran, terletak di Asia Barat dan di dunia Barat lama dikenal sebagai Persia. Tiongkok, dengan nama resmi Republik Rakyat Tiongkok, berada di Asia Timur dengan ibu kota Beijing. Ketiganya muncul dalam dua peristiwa berbeda: AS dan Iran di Bahrain, serta AS dan Tiongkok dalam perundingan militer. Menyatukan keduanya menjadi satu konflik akan keliru.",
+        "Tirto menambahkan satu detail militer yang tidak muncul di CNBC Indonesia: AS menempatkan kapal induk ketiganya di perairan Timur Tengah setelah serangan di Bahrain. Bahan tidak menyebut nama kapal, jenisnya, tanggal penempatan, maupun berapa lama armada itu akan berada di sana. Kata ketiga menyiratkan sudah ada dua kapal induk lain di kawasan, tetapi bahan tidak merinci kapan keduanya tiba. Penempatan kapal induk lazim dibaca sebagai sinyal kehadiran militer; namun, bahan tidak menyatakan bahwa penempatan itu merupakan balasan langsung, apalagi keputusan berperang. Hubungan antara serangan dan penempatan baru sebatas urutan waktu yang disebut Tirto.",
+        "Di jalur yang berbeda, Amerika Serikat dan Tiongkok dilaporkan sedang merundingkan kesepakatan untuk mencegah insiden militer berkembang menjadi krisis antara dua kekuatan besar dunia. Republika mengutip South China Morning Post edisi Ahad, 15 November 2026, yang menyebut Washington dan Beijing tengah mencari titik temu mengenai nota kesepahaman atau memorandum of understanding tentang komunikasi krisis dan pencegahan kecelakaan militer. Perundingan itu berlangsung menjelang pertemuan Presiden Donald Trump dan Presiden Xi Jinping di Shenzhen, Tiongkok, ketika ketegangan keamanan di kawasan Indo-Pasifik masih membayangi hubungan kedua negara.",
+        "Yang perlu ditegaskan lebih dulu: belum ada kesepakatan final. Republika menulis bahwa sejumlah sumber yang mengetahui proses negosiasi menyebut kemajuan berlangsung lambat, antara lain akibat perbedaan pandangan di dalam pemerintahan AS mengenai ketentuan yang akan disepakati. Bahan tidak merinci ketentuan mana yang menjadi ganjalan, siapa pejabat yang berbeda pendapat, atau seberapa jauh jarak posisi kedua delegasi. Dengan kata lain, yang tersedia hanyalah bahwa prosesnya berjalan dan belum tuntas. Menulis bahwa kedua negara sudah sepakat akan menyesatkan, karena kesepakatan yang dimaksud masih berupa pembicaraan yang belum menghasilkan keputusan apa pun.",
+        "Perundingan itu bukan dimulai dari nol. Republika melaporkan pejabat pertahanan AS dan Tiongkok menggelar pertemuan resmi di Washington pada 2-3 November 2026, dalam kerangka Crisis Communications and Prevention Working Group, kelompok kerja yang membahas komunikasi dan pencegahan krisis antara kedua negara. Keterangan Departemen Pertahanan AS yang diterbitkan 3 November menyebut delegasi Amerika Serikat dipimpin Cynthia Xanthi Carras, pejabat utama yang menangani China, Taiwan, dan Mongolia pada kantor Wakil Menteri Pertahanan AS untuk Kebijakan. Delegasi Tiongkok dipimpin Kolonel Senior Wang Wei, wakil direktur biro urusan Amerika dan Oseania pada Kantor Kerja Sama Militer Internasional Tentara Pembebasan Rakyat Tiongkok.",
+        "Dalam pertemuan itu, menurut keterangan Pentagon yang dikutip Republika, kedua pejabat menyepakati pentingnya pengembangan langkah komunikasi praktis untuk mengurangi risiko insiden militer. Mereka juga membahas kemungkinan saluran komunikasi tambahan yang memungkinkan kedua pihak merespons situasi krisis secara cepat dan efektif. Namun, pernyataan resmi tersebut tidak menyebut bahwa nota kesepahaman baru telah ditandatangani, dan tidak ada pengumuman mengenai pembentukan saluran komunikasi tertentu. Pentagon menyatakan pembicaraan dengan pihak militer Tiongkok mengenai persoalan pertahanan penting akan berlanjut dalam beberapa bulan berikutnya. Jadi, yang disepakati sejauh ini adalah perlunya langkah dan kelanjutan pembicaraan, bukan isi perjanjian.",
+        "Perbedaan antara berdialog dan menyelesaikan perundingan menjadi inti laporan Republika. Keduanya adalah dua tahap diplomasi yang berbeda: kesediaan duduk satu meja tidak otomatis berarti kesepakatan tercapai, dan kesepakatan yang belum final tidak berarti hubungan membaik. Republika menulis perundingan itu menunjukkan upaya kedua negara membangun mekanisme untuk mengendalikan risiko bentrokan yang tidak disengaja. Mekanisme semacam itu dirancang untuk mengelola risiko, bukan menyelesaikan sengketa. Karena itu, membaca pertemuan 2-3 November sebagai tanda membaiknya hubungan AS-Tiongkok akan melampaui apa yang dinyatakan bahan. Yang bisa dikatakan adalah kedua negara memiliki saluran untuk membicarakan pencegahan insiden, dan saluran itu sedang dipakai.",
+        "Bahan juga menegaskan batas pembicaraan tersebut. Republika menulis pembicaraan mengenai pencegahan krisis tidak berarti Washington dan Beijing telah menyelesaikan persaingan strategis mereka, termasuk persoalan Taiwan dan aktivitas militer di kawasan Pasifik. Tidak ada rincian mengenai bentuk aktivitas militer yang dimaksud, frekuensinya, atau apakah kedua pihak membahasnya secara langsung dalam pertemuan November. Pembaca perlu membedakan dua hal: mekanisme agar insiden tidak meledak menjadi krisis, dan penyelesaian akar persaingan. Bahan hanya membahas yang pertama, dan itu pun belum tuntas. Tidak ada keterangan apakah Taiwan dibahas di Washington atau hanya muncul sebagai konteks dalam laporan media.",
+        "Di sisi lain, Antara memberitakan sekitar 70 persen warga Amerika Serikat berharap konflik dengan Iran segera berakhir, berdasarkan hasil survei. Bahan itu hanya memuat satu kalimat dan tidak menyebut lembaga survei, jumlah responden, metode pengambilan sampel, maupun tanggal pengambilan data. Karena itu, angka 70 persen sebaiknya dibaca sebagai indikasi arah opini, bukan ukuran yang presisi. Bahan juga tidak menjelaskan apakah pertanyaan survei menyebut serangan di Bahrain secara spesifik atau konflik AS-Iran secara umum, sehingga tidak bisa disimpulkan bahwa publik AS menilai serangan itu dengan cara tertentu. Detail metode survei belum tersedia dalam bahan yang dihimpun.",
+        "Beberapa hal masih terbuka. Pertama, belum ada konfirmasi resmi dari Washington atau Teheran mengenai serangan di Bahrain, termasuk korban, kerusakan, dan kemungkinan pembalasan. Kedua, tidak jelas apakah penempatan kapal induk ketiga berkaitan langsung dengan serangan atau merupakan bagian dari penyesuaian yang sudah direncanakan sebelumnya. Ketiga, hasil pertemuan Presiden Trump dan Presiden Xi di Shenzhen belum diketahui, begitu pula apakah nota kesepahaman komunikasi krisis akan ditandatangani. Keempat, jadwal lanjutan pembicaraan pertahanan hanya disebut dalam beberapa bulan berikutnya tanpa tanggal pasti. Langkah berikutnya yang bisa dipantau adalah pernyataan resmi Pentagon, Kementerian Luar Negeri Iran, dan pengumuman bersama setelah pertemuan para pemimpin.",
+        "Bahan yang dihimpun belum menjelaskan rinci isi nota kesepahaman yang dirundingkan. Tidak disebutkan apakah dokumen itu mengikat secara hukum, siapa yang akan menandatanganinya, kapan mulai berlaku, dan lembaga mana yang menjadi penghubung jika terjadi insiden. Yang dilaporkan hanya bahwa dokumen itu membahas komunikasi krisis dan pencegahan kecelakaan militer, serta bahwa kedua pihak membahas kemungkinan saluran tambahan. Ketidakjelasan ini wajar karena perundingannya belum tuntas, tetapi pembaca perlu tahu bahwa istilah nota kesepahaman di sini belum merujuk pada teks yang bisa dibaca publik.",
+        "Bagi pembaca yang tidak mengikuti media sosial, dua jalur ini mudah tercampur. Serangan di Bahrain adalah peristiwa militer antara Iran dan AS di Timur Tengah, sedangkan perundingan nota kesepahaman adalah jalur diplomatik antara AS dan Tiongkok soal risiko insiden militer. Keduanya terjadi pada pekan yang sama dan sama-sama menyangkut militer, tetapi bahan tidak menunjukkan keduanya saling menyebabkan. Yang bisa ditarik sebagai benang merah hanyalah bahwa risiko insiden militer menjadi perhatian, dan mekanisme komunikasi dinilai penting oleh kedua kekuatan besar itu. Selebihnya, termasuk arah eskalasi, masih bergantung pada keterangan resmi yang belum tersedia saat brief ini disusun."
+      ],
+      "explain": [
+        {
+          "q": "Apa bentuk negara Amerika Serikat menurut bahan latar?",
+          "a": "Republik konstitusional federal dengan lima puluh negara bagian dan satu distrik federal; empat puluh delapan negara bagian saling bersebelahan dan pusat pemerintahan berada di Washington, D.C.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Sejak kapan istilah Iran dipakai di dunia Barat?",
+          "a": "Nama resminya Republik Islam Iran; hingga 1935 dunia Barat menyebutnya Persia, dan pada 1959 Mohammad Reza Pahlavi mengumumkan kedua istilah boleh digunakan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Iran"
+          }
+        },
+        {
+          "q": "Apa nama resmi Tiongkok dan seberapa luas wilayahnya?",
+          "a": "Republik Rakyat Tiongkok (RRT), beribu kota di Beijing, luas 9,69 juta kilometer persegi, dan didirikan pada 1949 setelah berakhirnya Perang Saudara.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Tiongkok"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi Pentagon dan pemerintah Iran untuk memastikan korban, kerusakan, dan langkah lanjutan sebelum menarik kesimpulan soal eskalasi.",
+      "image": {
+        "url": "assets/37e700075a.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Iran Disebut Serang Fasilitas AS di Bahrain, AS-China Rundingkan MoU"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116084027-8-785435/video-iran-serang-fasilitas-militer-as-di-bahrain",
+          "published_at": "2026-11-16T10:50:38+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kapal-induk-ketiga-as-masuk-perairan-timur-tengah-siap-serang-iran-idQ2",
+          "published_at": "2026-11-16T16:35:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5858659/sekitar-70-persen-warga-as-ingin-konflik-dengan-iran-diakhiri",
+          "published_at": "2026-11-17T08:22:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tol0pn451/as-dan-china-diamdiam-negosiasikan-pakta-pencegahan-krisis-militer",
+          "published_at": "2026-11-16T13:29:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "Sekitar 70 persen warga AS ingin konflik dengan Iran diakhiri",
+          "url": "https://www.antaranews.com/berita/5858659/sekitar-70-persen-warga-as-ingin-konflik-dengan-iran-diakhiri",
+          "at": "2026-11-17T08:22:14+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Kapal Induk Ketiga AS Masuk Timur Tengah, Sinyal Serang Iran?",
+          "url": "https://tirto.id/kapal-induk-ketiga-as-masuk-perairan-timur-tengah-siap-serang-iran-idQ2",
+          "at": "2026-11-16T16:35:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "republika.co.id",
+          "title": "AS dan China Diam-Diam Negosiasikan Pakta Pencegahan Krisis Militer",
+          "url": "https://news.republika.co.id/berita/tol0pn451/as-dan-china-diamdiam-negosiasikan-pakta-pencegahan-krisis-militer",
+          "at": "2026-11-16T13:29:47+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Iran Serang Fasilitas Militer AS di Bahrain",
+          "url": "https://www.cnbcindonesia.com/news/20261116084027-8-785435/video-iran-serang-fasilitas-militer-as-di-bahrain",
+          "at": "2026-11-16T10:50:38+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Teken 21 November 2026 di Brussel, tetapi berlaku menunggu ratifikasi parlemen.",
+      "kicker": "Ekonomi",
+      "title": "RI dan Uni Eropa Dijadwalkan Teken IEU-CEPA 21 November",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IEU-CEPA dijadwalkan ditandatangani 21 November 2026 di Brussel dan baru berlaku setelah diratifikasi parlemen kedua pihak.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Penandatanganan perjanjian dagang Indonesia–Uni Eropa atau IEU-CEPA dijadwalkan pada Sabtu, 21 November 2026, di Brussel, Belgia. Delegasi Indonesia akan dipimpin Menteri Koordinator Bidang Perekonomian Airlangga Hartarto, sementara Menteri Perdagangan Budi Santoso yang menandatangani IEU-CEPA. Pada kesempatan yang sama, Menteri Investasi dan Hilirisasi/Kepala BKPM Rosan Roeslani dijadwalkan meneken Indonesia–EU Investment Protection Agreement (IEU-IPA). Direktur Jenderal Perundingan Perdagangan Internasional Kemendag Johni Martha menyebut akan ada pula satu kesepakatan payung untuk seluruh kerja sama, namun isinya belum dirinci.",
+        "Namun penandatanganan itu belum membuat perjanjian langsung berlaku. Setelah 21 November, IEU-CEPA masih harus melewati ratifikasi di parlemen masing-masing pihak. Johni menyatakan masa sidang parlemen normalnya berlangsung sekitar 6–7 bulan, tetapi pemerintah belum berani memastikan durasi ratifikasi karena bergantung pada proses politik, terutama di Uni Eropa. Menteri Perdagangan Budi Santoso memasang target berbeda: ratifikasi dikejar selesai pada Januari 2027, supaya CEPA sudah menggantikan fasilitas Generalized System of Preferences (GSP) Indonesia dari Uni Eropa yang berakhir pada Januari. Ia menyebut dokumen yang dibutuhkan sudah disiapkan agar tidak terjadi kekosongan fasilitas.",
+        "Soal besaran tarif, para pejabat memakai angka yang sama dengan rumusan berbeda. Budi mengatakan hampir 98% produk Indonesia akan memperoleh kemudahan tarif di pasar Uni Eropa. Sementara keterangan lain menjelang pemberlakuan menyebut perjanjian ini akan menghapus tarif untuk sekitar 98% pos tarif perdagangan kedua pihak. Rincian daftar pos tarif per komoditas belum dipublikasikan dalam bahan yang tersedia, sehingga belum bisa dipastikan produk mana yang tetap dikenai tarif.",
+        "Menurut Budi, sektor yang berpotensi paling diuntungkan adalah tekstil dan produk tekstil, pakaian jadi, alas kaki, serta produk elektronik, yang umumnya manufaktur padat karya. Kelapa sawit dan produk turunannya juga disebut sebagai komoditas ekspor andalan. Johni menambahkan, kepentingan industri padat karya dan UMKM yang mengekspor ke Uni Eropa menjadi salah satu yang diamankan dalam kesepakatan. Adapun sektor yang berisiko belum dirinci dalam bahan; yang muncul hanya catatan bahwa aturan REACH Uni Eropa membatasi kandungan PAH, misalnya pada minyak pengisi ban, sehingga produsen perlu memenuhi standar teknis tersebut.",
+        "Syarat yang masih harus dipenuhi kedua pihak adalah ratifikasi parlemen, di samping penyiapan dokumen yang menurut pemerintah sudah rampung. Johni menyebut secara politik kesepakatan ini sudah diputuskan untuk segera diimplementasikan, tetapi tahapan ratifikasi tetap harus dilalui. Saat ini total perdagangan kedua pihak sekitar US$30 miliar dan pemerintah berharap angka itu bisa dua kali lipat. Sebagai pembanding, perjanjian dagang Indonesia–Kanada disebut tinggal menunggu pertukaran notifikasi, dan belum jelas mana yang akan berlaku lebih dulu."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu IEU-CEPA?",
+          "a": "Perjanjian kerja sama ekonomi menyeluruh antara Indonesia dan Uni Eropa yang mencakup penghapusan tarif serta dukungan bagi industri dan UMKM Indonesia.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261116130013-4-785563/ri-eropa-segera-teken-perjanjian-dagang-pekan-ini-langsung-berlaku"
+          }
+        },
+        {
+          "q": "Siapa sajaanggota Uni Eropa?",
+          "a": "Organisasi antarpemerintah dan supranasional yang sejak 31 Januari 2020 beranggotakan 27 negara Eropa.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman ratifikasi IEU-CEPA dan siapkan pemenuhan standar teknis Uni Eropa untuk produk ekspor Anda.",
+      "image": {
+        "url": "assets/c14089368a.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "RI dan Uni Eropa Dijadwalkan Teken IEU-CEPA 21 November"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261116132205-92-1427640/ri-uni-eropa-teken-kesepakatan-dagang-ieu-cepa-pada-21-november",
+          "published_at": "2026-11-16T18:01:31+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116130013-4-785563/ri-eropa-segera-teken-perjanjian-dagang-pekan-ini-langsung-berlaku",
+          "published_at": "2026-11-16T13:03:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5856983/produsen-specialty-oil-asal-thailand-dukung-industri-karet-indonesia-melalui-rangkaian-produk-process-oil-jelang-pemberlakuan-ieu-cepa",
+          "published_at": "2026-11-16T14:41:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "RI-Uni Eropa Teken Kesepakatan Dagang IEU CEPA pada 21 November",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261116132205-92-1427640/ri-uni-eropa-teken-kesepakatan-dagang-ieu-cepa-pada-21-november",
+          "at": "2026-11-16T18:01:31+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Produsen \"Specialty Oil\" asal Thailand Dukung Industri Karet Indonesia Melalui Rangkaian Produk \"Process Oil\" Jelang Pemberlakuan IEU-CEPA",
+          "url": "https://www.antaranews.com/berita/5856983/produsen-specialty-oil-asal-thailand-dukung-industri-karet-indonesia-melalui-rangkaian-produk-process-oil-jelang-pemberlakuan-ieu-cepa",
+          "at": "2026-11-16T14:41:18+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_imf_soroti_pajak_dan_ai_asean_0844",
+      "angle": "IMF menyoroti rasio pajak ASEAN 12% dan risiko PHK akibat AI di KTT ASEAN ke-49 Manila.",
+      "kicker": "Ekonomi",
+      "title": "IMF Sebut Pajak ASEAN Baru 12% dari PDB, Soroti Risiko PHK akibat AI",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IMF menyebut rasio pajak ASEAN 12% dari PDB, lebih rendah dari rata-rata 15% di kawasan Asia lainnya.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-17T10:01:40+07:00"
+      },
+      "body": [
+        "Dana Moneter Internasional (IMF) membawa dua pesan utama ke Konferensi Tingkat Tinggi ASEAN ke-49 di Manila, Filipina: penerimaan pajak kawasan dinilai masih terlalu rendah, dan gelombang kecerdasan buatan (AI) perlu diantisipasi dampaknya terhadap lapangan kerja. Pesan itu disampaikan Managing Director IMF Kristalina Georgieva dalam pidatonya, dan dikutip CNBC Indonesia pada Selasa, 17 November 2026. Menurut pemberitaan tersebut, ia menempatkan penguatan penerimaan pajak sebagai salah satu pekerjaan rumah mendesak bagi negara-negara Asia Tenggara, terutama di tengah tekanan ekonomi global dan kebutuhan menjaga ketahanan fiskal.",
+        "Pada soal pajak, Georgieva menyebut rasio penerimaan pajak terhadap produk domestik bruto (PDB) di ASEAN hanya 12%, lebih rendah dari rata-rata 15% di kawasan Asia lainnya. Ia menyebut bidang ini membutuhkan tindakan yang semakin mendesak. Dalam kutipan CNBC Indonesia, ia menegaskan bahwa ketahanan ekonomi kawasan merupakan hasil investasi bertahun-tahun dalam membangun kerangka kebijakan ekonomi dan institusi yang kuat, dan kini institusi itu perlu dibiarkan bekerja untuk membantu mengendalikan inflasi sekaligus menjaga utang publik. Ia juga mengingatkan bahwa tiap negara ASEAN berada pada tahap pembangunan, beban utang, dan tekanan ekonomi yang berbeda.",
+        "Di sisi lain, Georgieva menggambarkan perekonomian dunia tahun ini ditarik dua kekuatan berlawanan: guncangan negatif dari sektor energi yang menahan pertumbuhan, dan guncangan positif dari investasi AI yang mendorongnya. Ia menyebut tahun ini sebagai tahun terjadinya guncangan energi sekaligus tahun AI, dan menegaskan teknologi itu sudah hadir serta akan terus bertahan, terlepas dari sikap suka, tidak suka, maupun takut. Menurut pemberitaan, kedua faktor itu sama-sama berpotensi memicu inflasi sehingga bank sentral perlu merespons melalui kebijakan suku bunga yang juga membawa implikasi bagi perekonomian global. Dalam situasi itu, ia menilai penguatan fondasi fiskal menjadi makin penting.",
+        "Khusus AI, IMF meminta negara ASEAN bersiap menghadapi risiko terhadap stabilitas keuangan dan lapangan kerja, terutama bagi generasi muda. Georgieva mengatakan seluruh negara dapat dan harus berupaya menjadi pengadopsi AI terbaik, dengan meningkatkan kesiapan, mengendalikan ancaman terhadap stabilitas keuangan, memastikan akses yang luas, serta mengelola risiko terhadap lapangan kerja. Ia juga menyebut sebagian negara ASEAN sudah berada di garis depan gelombang pembangunan infrastruktur AI, terlihat dari lonjakan investasi, perdagangan, dan pertumbuhan ekonomi, meski tidak semua negara memiliki kesiapan yang sama. Menurutnya, ASEAN perlu memperbaiki regulasi, menghilangkan hambatan investasi, dan meningkatkan kualitas sumber daya manusia.",
+        "Sejumlah angka lain disebut dalam pidato itu. IMF menyatakan akan membantu ASEAN membangun pasar modal yang lebih dalam dan likuid, melanjutkan fokus sebelumnya yang lebih banyak pada penguatan perdagangan antarnegara. Georgieva menilai pengurangan hambatan nontarif berpotensi menambah PDB ASEAN sebesar 4,3% dalam jangka panjang, sementara reformasi perdagangan jasa diperkirakan menyumbang hingga 2,5% dan, bila didukung kebijakan pasar tenaga kerja yang tepat, berpotensi menciptakan 4 juta lapangan kerja. Ia juga menyebut pertumbuhan ekonomi kawasan mencapai 4,9%, jauh lebih tinggi dibanding rata-rata global 3,1%.",
+        "Yang belum jelas, bahan-bahan ini tidak memuat rincian negara mana yang paling tertinggal dalam penerimaan pajak, meski judul salah satu artikel mempertanyakan posisi Indonesia. Tidak ada pula angka proyeksi PHK, tenggat, atau komitmen kebijakan konkret dari negara anggota ASEAN. Langkah berikutnya yang disebut adalah IMF akan membantu mengkaji dampak AI terhadap stabilitas keuangan, pertumbuhan ekonomi, dan lapangan kerja, serta mendukung visi integrasi kawasan. Bentuk dan jadwal bantuan itu belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu ASEAN dan kapan organisasi ini dibentuk?",
+          "a": "ASEAN adalah organisasi geopolitik dan ekonomi negara-negara Asia Tenggara, didirikan di Bangkok pada 8 Agustus 1967 melalui Deklarasi ASEAN oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand, dengan tujuan antara lain meningkatkan pertumbuhan ekonomi dan kemajuan sosial.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perhimpunan_Bangsa-Bangsa_Asia_Tenggara"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud rasio penerimaan pajak terhadap PDB?",
+          "a": "Perbandingan antara penerimaan pajak dan produk domestik bruto suatu negara; ringkasan latar menyebut angka ASEAN 12% dari PDB dan menekankan perlunya penguatan fiskal.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261117064842-4-785778/imf-sentil-pajak-asean-cuma-12-ri-termasuk-yang-harus-berbenah"
+          }
+        },
+        {
+          "q": "Apa inti peringatan IMF menurut ringkasan latar?",
+          "a": "IMF menyoroti rendahnya penerimaan pajak ASEAN yang hanya 12% dari PDB, dan Georgieva menekankan perlunya penguatan fiskal di tengah tantangan ekonomi global.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261117064842-4-785778/imf-sentil-pajak-asean-cuma-12-ri-termasuk-yang-harus-berbenah"
+          }
+        }
+      ],
+      "action": "Cek dokumen resmi KTT ASEAN ke-49 soal target penerimaan pajak dan rencana kesiapan tenaga kerja menghadapi AI.",
+      "image": {
+        "url": "assets/2e3ec4439c.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "IMF Sebut Pajak ASEAN Baru 12% dari PDB, Soroti Risiko PHK akibat AI"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261117064842-4-785778/imf-sentil-pajak-asean-cuma-12-ri-termasuk-yang-harus-berbenah",
+          "published_at": "2026-11-17T07:55:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-16",
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_kasus_dugaan_perkosaan_bupati_1714",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Kasus dugaan perkosaan Bupati Kupang",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 128 komentar di reddit untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Punya posisi orang nomor satu didaerahnya tapi goblok banget Tinggal cari yg beneran bisa ” “Kabupaten problematik orang2 dari sana sama aja problematik baru aja dapet sial berurusan ” “Yang saya ga paham si EK ngapain ikut2an ngebully yak? Apa emang duit 3 jutanya buat si EK”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116133722-12-1427652/tito-utus-irjen-kemendagri-usut-kasus-dugaan-perkosaan-bupati-kupang",
+          "published_at": "2026-11-16T13:50:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116154155-12-1427722/polisi-sudah-periksa-6-saksi-di-kasus-dugaan-pemerkosaan-bupati-kupang",
+          "published_at": "2026-11-16T16:01:57+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xvz2jn/bupati_kupang_yosef_lede_dilaporkan_ke_polisi/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xuli7x/naik_kuda_96_km_demi_sekolah_vita_kini_dapat/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "reddit",
+        "count": 128
+      },
+      "tone": "Terbelah",
+      "quotes": [
+        {
+          "author": "Whatever14x",
+          "platform": "reddit",
+          "text": "Punya posisi orang nomor satu didaerahnya tapi goblok banget Tinggal cari yg beneran bisa dibayar apa susahnya jir goblok",
+          "score": 27
+        },
+        {
+          "author": "Cana_Dha",
+          "platform": "reddit",
+          "text": "Kabupaten problematik orang2 dari sana sama aja problematik baru aja dapet sial berurusan sama scammer dari sana bikin tensi naik untung gua pinter",
+          "score": 13
+        },
+        {
+          "author": "hatlad43",
+          "platform": "reddit",
+          "text": "Yang saya ga paham si EK ngapain ikut2an ngebully yak? Apa emang duit 3 jutanya buat si EK karena udah \"ngasih korban\" dan korbannya sekedar kurir? Faklah sempet kepikiran si EK in",
+          "score": 4
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di reddit (128); tidak ada sinyal pembanding.",
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Polisi Sudah Periksa 6 Saksi di Kasus Dugaan Pemerkosaan Bupati Kupang",
+          "url": "https://www.cnnindonesia.com/nasional/20261116154155-12-1427722/polisi-sudah-periksa-6-saksi-di-kasus-dugaan-pemerkosaan-bupati-kupang",
+          "at": "2026-11-16T16:01:57+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "Reddit",
+          "title": "R",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xvz2jn/bupati_kupang_yosef_lede_dilaporkan_ke_polisi/",
+          "at": null,
+          "owner": null,
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_17",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah Hari Ini: Video Paraguay hingga Yenny Wahid",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 17 November 2026, tiga klaim yang beredar diperiksa dan seluruhnya berputusan salah. Klaim pertama menyebut video rusuh di Paraguay terjadi karena tiga juta orang tidak bisa menarik tunai; faktanya video yang dibagikan adalah kerusuhan di Gedung Mahkamah Agung Albania yang berkaitan dengan protes atau demo anti pemerintah. Klaim kedua menyebut Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla, dan tidak ada informasi valid yang menyebutkannya. Klaim ketiga menyebut Yenny Wahid mengakui bergabung dengan PSI; video yang beredar ternyata wawancara Yenny Wahid dalam program Rosi Kompas TV yang tayang pada Jumat, 21 Agustus 2023.",
+        "Pola yang terlihat pada dua dari tiga klaim adalah penggunaan rekaman lama atau peristiwa lain yang diberi narasi baru. Video kerusuhan di Albania dipasangkan dengan cerita tentang tiga juta orang yang tidak bisa menarik tunai di Paraguay, sementara wawancara tahun 2023 dipasangkan dengan pengakuan bergabung PSI. Klaim soal perokok dan asap karhutla berdiri tanpa rujukan yang disebutkan. Yang berubah bukan peristiwanya, melainkan keterangan yang ditempelkan pada rekaman.",
+        "Sebaiknya pembaca memeriksa sumber asli, tanggal tayang, dan lokasi peristiwa sebelum meneruskan rekaman atau klaim seperti ini. Membandingkan isi video dengan narasi yang menyertainya sudah cukup untuk melihat ketidakcocokannya."
+      ],
+      "action": "Periksa sumber asli, tanggal tayang, dan lokasi peristiwa sebelum membagikan rekaman atau klaim semacam ini.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-17T10:01:40+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-17",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Video \"Rusuh di Paraguay karena 3 Juta Orang Tidak Bisa Tarik Tunai\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan adalah video kerusuhan di Gedung Mahkamah Agung Albania berkaitan dengan protes/demo anti pemerintah.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37472-salah-video-rusuh-di-paraguay-karena-3-juta-orang-tidak-bisa-tarik-tunai"
+        },
+        {
+          "claim": "Prabowo Bakal Mengirim Perokok untuk Menghisap Asap Karhutla",
+          "verdict": "salah",
+          "reason": "Tidak ada informasi valid yang menyebutkan Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37452-salah-prabowo-bakal-mengirim-perokok-untuk-menghisap-asap-karhutla"
+        },
+        {
+          "claim": "Yenny Wahid Akui Bergabung PSI",
+          "verdict": "salah",
+          "reason": "Video yang beredar merupakan wawancara Yenny Wahid dalam program Rosi Kompas TV yang tayang pada Jumat (21/8/2023).",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37453-salah-yenny-wahid-akui-bergabung-psi"
+        }
+      ],
+      "pattern": "Dua dari tiga klaim memakai rekaman lama atau peristiwa lain yang diberi narasi baru: video kerusuhan Albania disebut rusuh Paraguay, dan wawancara 2023 disebut pengakuan bergabung PSI."
+    }
+  ]
+}
