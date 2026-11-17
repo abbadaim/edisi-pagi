@@ -193,9 +193,9 @@ test("model menulis url alih-alih id tetap diterima", async () => {
   assert.equal(r.sources[0]?.url, "https://a/1");
 });
 
-test("dua kali tanpa sitasi sah tetap ditahan, bukan dikarang", async () => {
+test("tiga kali tanpa sitasi sah tetap ditahan, bukan dikarang", async () => {
   const kosong = JSON.stringify({ jawaban: "Tidak ada bahan yang cukup untuk menjawab ini.", sitasi: [] });
-  const llm = llmPalsu([kosong, kosong]);
+  const llm = llmPalsu([kosong, kosong, kosong]);
   const r = await writeAnswer(llm, "uji", "apa itu HMP?", bahan, parseAskConfig(readFileSync(join(root, "config", "tanya.json"), "utf8")));
   assert.equal(r.state, "refused");
   assert.match(String(r.reason), /sitasi/i);

@@ -312,7 +312,20 @@ async function main(): Promise<void> {
       (result.reason ? ` · ${result.reason}` : ""),
   );
 
-  if (!dry) await markDone(ask, result.state, result.state === "answered" ? answerId : null, result.reason);
+  // Kegagalan bentuk keluaran bukan salah pertanyaannya: model kadang menjawab
+  // tanpa sitasi sama sekali. Kembalikan ke antrean (maks 3 percobaan) alih-alih
+  // menandainya ditolak permanen. "tanpa bahan" tetap final — itu keputusan
+  // tentang arsip, bukan tentang model.
+  const transien =
+    result.state === "refused" &&
+    /tidak ada sitasi|keluaran bukan JSON|setelah kutipan/.test(String(result.reason));
+  const retryable = transien && ask.attempts + 1 < 3;
+  const finalState = retryable ? "new" : result.state;
+  if (retryable) console.log("dikembalikan ke antrean: keluaran model cacat, bukan pertanyaan kosong");
+
+  if (!dry) {
+    await markDone(ask, finalState, result.state === "answered" ? answerId : null, result.reason);
+  }
 }
 
 main().catch((e) => {

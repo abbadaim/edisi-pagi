@@ -184,9 +184,11 @@ export async function writeAnswer(
   let text = "";
   let result: Evaluation | null = null;
 
-  // Bentuk keluaran dan sitasi kosong diulang SEKALI (`DEC-0026`). Timeout dan
-  // galat jaringan tidak diulang (`DEC-0025`).
-  for (let attempt = 0; attempt < 2; attempt++) {
+  // Bentuk keluaran dan sitasi kosong diulang, maksimum 3 percobaan: model
+  // gratis kadang menjawab panjang tanpa satu pun sitasi, dan satu kegagalan
+  // tidak boleh menghanguskan pertanyaan pembaca. Timeout dan galat jaringan
+  // tetap TIDAK diulang (`DEC-0025`, `DEC-0026`).
+  for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const res = await llm.text({ model, system, user, maxTokens: 900 });
       text = res.text;
