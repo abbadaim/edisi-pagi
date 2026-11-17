@@ -112,6 +112,17 @@ export function assessEdition(input: AssessInput): HealthReport {
   };
 }
 
+/**
+ * Alasan yang membuat run harus berstatus merah, bukan hanya surel
+ * (DEC-0038). Edisi yang tidak terbentuk tidak boleh terlihat "sukses":
+ * pada 2026-11-17 run hijau padahal tidak ada yang terbit.
+ */
+export const FATAL_REASONS: HealthReason[] = ["no-edition"];
+
+export function fatalReasons(report: HealthReport): HealthReason[] {
+  return report.reasons.filter((r) => FATAL_REASONS.includes(r));
+}
+
 export interface AlertMeta {
   repo?: string;
   runUrl?: string;

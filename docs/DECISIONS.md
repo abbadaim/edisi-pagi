@@ -394,3 +394,18 @@ Catatan jebakan: memetakan kolom baru di `loadLedger` tanpa menambahkannya ke
 seluruh jalur pantau diam-diam tidak pernah berjalan. Pemetaan dan SELECT harus
 diubah bersama.
 _Tanggal: 2026-11-17._
+
+## DEC-0038 — Batas waktu per kedalaman, dan run merah bila edisi tidak ada
+
+Dua kegagalan 17 November 2026 berasal dari satu build:
+
+1. Satu panggilan `brief`/`standard` yang macet menahan 240 detik sebelum
+   fallback, sementara `deep` (5.600 token) sudah terukur 234 detik — terlalu
+   mepet. Batas waktu kini per kedalaman: `brief` 120 s, `standard` 170 s,
+   `deep` 320 s (`WRITER_TIMEOUT_MS`, perkiraan 20 token/detik + 40 s).
+2. Edisi ditolak validasi, tidak ada yang terbit, tetapi run berstatus hijau.
+   `scripts/health.ts --strict` kini keluar 1 bila `reasons` memuat
+   `no-edition`; langkah commit dan deploy otomatis dilewati. Degradasi yang
+   masih bisa terbit (penulis deterministik, kartu sedikit) tetap hijau dan
+   hanya dikirim lewat surel.
+_Tanggal: 2026-11-17. Rencana: `docs/plans/022-timeout-dan-run-merah.md`._

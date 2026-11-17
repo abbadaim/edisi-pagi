@@ -113,7 +113,13 @@ export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
   // lama (DEC-0025).
   const timeoutMs = opts.timeoutMs ?? Number(process.env.OPENCODE_TIMEOUT_MS ?? 240_000);
 
-  async function run(model: string, system: string, user: string): Promise<{ text: string; usage: Usage }> {
+  async function run(
+    model: string,
+    system: string,
+    user: string,
+    overrideMs?: number,
+  ): Promise<{ text: string; usage: Usage }> {
+    const budgetMs = overrideMs ?? timeoutMs;
     const prompt = `${system}\n\n---\n\n${user}`;
 
     const args = [
@@ -142,8 +148,8 @@ export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
     const done = new Promise<number>((resolve, reject) => {
       timer = setTimeout(() => {
         child.kill("SIGKILL");
-        reject(new Error(`opencode timeout ${timeoutMs}ms`));
-      }, timeoutMs);
+        reject(new Error(`opencode timeout ${budgetMs}ms`));
+      }, budgetMs);
       child.stdout.on("data", (d) => (stdout += String(d)));
       child.stderr.on("data", (d) => (stderr += String(d)));
       child.on("error", (e) => reject(e));
@@ -172,6 +178,7 @@ export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
         req.model,
         `${req.system}\n\nBalas HANYA dengan JSON valid, tanpa penjelasan.`,
         req.user,
+        req.timeoutMs,
       );
       const cleaned = text.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "").trim();
       const start = cleaned.indexOf("{");
@@ -181,7 +188,7 @@ export function createOpenCodeAdapter(opts: OpenCodeOptions = {}): LlmAdapter {
     },
 
     async text(req: TextRequest) {
-      return run(req.model, req.system, req.user);
+      return run(req.model, req.system, req.user, req.timeoutMs);
     },
   };
 }

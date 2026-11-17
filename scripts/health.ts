@@ -11,7 +11,7 @@
 
 import { readFileSync, existsSync, appendFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { assessEdition } from "../src/core/health.ts";
+import { assessEdition, fatalReasons } from "../src/core/health.ts";
 import type { EditionLike, ManifestLike } from "../src/core/health.ts";
 import { isoWib } from "../src/core/time.ts";
 
@@ -34,6 +34,7 @@ const editionsDir = arg("editions", "data/editions")!;
 const manifestPath = arg("manifest", "public/manifest.json")!;
 const date = arg("date", isoWib(new Date())!.slice(0, 10))!;
 const scope = arg("scope", "nasional")!;
+const strict = process.argv.includes("--strict");
 const minCardsArg = arg("min-cards");
 const minCards = minCardsArg ? Number(minCardsArg) : undefined;
 
@@ -78,5 +79,13 @@ if (outPath) {
   );
 }
 
-// Sengaja tidak `process.exit(1)`: penerbitan tetap berjalan, peringatan yang dikirim.
+// Degradasi yang masih bisa terbit (penulis deterministik, kartu sedikit) tetap
+// hijau: peringatan dikirim, publish tetap jalan. `--strict` hanya memerahkan
+// hal yang berarti tidak ada edisi sama sekali.
+const fatal = fatalReasons(report);
+if (strict && fatal.length > 0) {
+  console.log(`✗ fatal: ${fatal.join(", ")} — tidak ada edisi untuk diterbitkan`);
+  process.exit(1);
+}
+
 process.exit(0);

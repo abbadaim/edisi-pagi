@@ -14,6 +14,8 @@ export interface JsonRequest {
   schema?: unknown;
   maxTokens?: number;
   temperature?: number;
+  /** Batas waktu panggilan; jatuh ke setelan adapter bila kosong (DEC-0038). */
+  timeoutMs?: number;
 }
 
 export interface TextRequest {
@@ -22,6 +24,8 @@ export interface TextRequest {
   user: string;
   maxTokens?: number;
   temperature?: number;
+  /** Batas waktu panggilan; jatuh ke setelan adapter bila kosong (DEC-0038). */
+  timeoutMs?: number;
 }
 
 export interface EmbedRequest {

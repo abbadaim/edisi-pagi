@@ -27,6 +27,18 @@ export const WRITER_MAX_TOKENS = {
   deep: 5600,
 } as const;
 
+/**
+ * Batas waktu per kedalaman (DEC-0038). Satu batas 240 s untuk semua membuat
+ * panggilan `brief` yang macet menahan 240 s sebelum fallback, sementara
+ * `deep` (5.600 token) sudah terukur 234 s — terlalu mepet.
+ * Perkiraan 20 token/detik + 40 s overhead.
+ */
+export const WRITER_TIMEOUT_MS = {
+  brief: 120_000,
+  standard: 170_000,
+  deep: 320_000,
+} as const;
+
 export interface WriteContext {
   assignment: Assignment;
   pack: MaterialPack;
@@ -295,6 +307,7 @@ export async function writeDraft(
       system,
       user,
       maxTokens: WRITER_MAX_TOKENS[d],
+      timeoutMs: WRITER_TIMEOUT_MS[d],
       temperature: 0.4,
     });
 

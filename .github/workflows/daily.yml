@@ -124,10 +124,12 @@ jobs:
 
       # Build bisa "sukses" tetapi turun mutu (penulis deterministik, satu kartu).
       # Langkah ini menilai hasilnya, bukan status job.
+      # `--strict`: edisi yang tidak terbentuk memerahkan run, bukan hanya
+      # mengirim surel (DEC-0038). Commit dan deploy otomatis dilewati.
       - name: Cek kesehatan build
         id: health
         if: always()
-        run: node scripts/health.ts --out /tmp/health.json
+        run: node scripts/health.ts --strict --out /tmp/health.json
 
       - name: Kirim peringatan surel
         if: always()

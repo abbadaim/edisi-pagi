@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { assessEdition, composeAlert } from "../src/core/health.ts";
+import { assessEdition, composeAlert, fatalReasons } from "../src/core/health.ts";
 
 function edition(overrides: Record<string, unknown> = {}) {
   return {
@@ -112,4 +112,17 @@ test("rekap mingguan tanpa OpenCode tetap ditandai", () => {
   });
   const r = assessEdition({ date: "2026-11-16", scope: "mingguan", edition: e, manifest: null });
   assert.ok(r.reasons.includes("deterministic-writer"));
+});
+
+test("tanpa edisi adalah alasan fatal untuk run, bukan sekadar surel", () => {
+  const r = assessEdition({ date: "2026-11-17", scope: "nasional", edition: null, manifest: null });
+  assert.deepEqual(fatalReasons(r), ["no-edition"]);
+});
+
+test("penulis deterministik tidak fatal: edisi tetap terbit", () => {
+  const e = edition({
+    generated_by: { adjudicate: { provider: "fallback" }, write: { provider: "deterministic" } },
+  });
+  const r = assessEdition({ date: "2026-11-16", scope: "nasional", edition: e, manifest });
+  assert.deepEqual(fatalReasons(r), []);
 });

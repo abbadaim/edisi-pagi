@@ -329,7 +329,9 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - System prompt tidak boleh memuat data per-kartu (mis. `answers`). Satu baris berbeda = seluruh prefix setelahnya meleset dari cache.
 - Kartu dibangun paralel (`CARD_CONCURRENCY`, default 3; `1` = berurutan) — `DEC-0025`. `deep` dan catatan dipra-tentukan sebelum fan-out.
 - `telemetry.set()` terikat per jalur async (`AsyncLocalStorage`). Jangan mengubahnya jadi field bersama: dua kartu paralel akan saling menimpa label di `llm_calls`.
-- Timeout panggilan OpenCode 240 s (`OPENCODE_TIMEOUT_MS`) dan **tidak** diulang saat timeout. Mengulang timeout hanya menggandakan waktu tunggu.
+- Batas waktu mengikuti kedalaman: `brief` 120 s, `standard` 170 s, `deep` 320 s
+  (`WRITER_TIMEOUT_MS`, DEC-0038); `OPENCODE_TIMEOUT_MS` hanya untuk panggilan
+  lain. Timeout **tidak** diulang. Mengulang timeout hanya menggandakan waktu tunggu.
 - Kegagalan bentuk JSON di editor diulang **sekali**; timeout dan 429/5xx tidak (`DEC-0026`). Jangan menambah ulangan untuk timeout.
 - Feed diulang **sekali** hanya untuk timeout/jaringan/5xx; 4xx tidak (`DEC-0027`). Kegagalan yang diulang muncul sebagai `× … (2 percobaan)`.
 - `WRITER_MAX_TOKENS` (brief 1200 / standard 2400 / deep 5600) harus muat di timeout pada ~25 token/detik. Menaikkan batas tanpa menaikkan timeout akan mengembalikan kegagalan “panggilan mustahil selesai”.
