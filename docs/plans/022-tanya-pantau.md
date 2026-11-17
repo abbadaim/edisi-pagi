@@ -158,7 +158,9 @@ kredensial tetapi belum tentu membawa konfigurasi penyedia pencarian
 
 1. Trigger Postgres → `pg_net` → `repository_dispatch` (PAT di Vault, tidak
    pernah di klien), hanya untuk `user_id = owner` dan `mode='now'`.
-2. `.github/workflows/tanya.yml`, `concurrency: { group: tanya }`.
+2. `.github/workflows/tanya.yml`, `concurrency: { group: tanya }`. Tiga pemicu:
+   `repository_dispatch` (cepat), `workflow_dispatch` (uji), jadwal 6 jam
+   (jaring). Deploy hanya bila ada jawaban baru.
 3. `tanya-poll.yml` tiap 6 jam sebagai jaring: trigger terjadwal pernah dibuang
    (`DEC-0028`).
 4. Batas: 30 tanya/hari (lunak), tanpa ulangan saat timeout (`DEC-0026`).
