@@ -1,7 +1,7 @@
 # 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
-Status: mockup-approved
+Status: implementing
 Kelas: infra + pipeline + UI
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-17
@@ -361,3 +361,7 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
 - 2026-11-17 — `plan-approved` — disetujui manusia ("go ahead"). Fase 1 paruh
   pipeline mulai: `config/tanya.json`, penjepitan model, dan perbaikan
   pencocokan `#varian` di `resolve.ts`.
+- 2026-11-17 — `mockup-approved` — mockup `docs/mockups/022-tanya.html`
+  disetujui. Fase 1 UI: tab Tanya (gated `config.json.supabaseUrl`), masuk,
+  antrean offline, setelan. 319 uji unit + 11 uji browser lolos; deploy
+  `deploy-site` 44031974445 hijau; `#/tanya` hidup di Pages.
