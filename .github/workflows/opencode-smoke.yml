@@ -38,3 +38,30 @@ jobs:
             'Balas hanya JSON {"ok":true}' \
             | tee /tmp/opencode-smoke.json
           grep -q 'ok' /tmp/opencode-smoke.json
+
+      # Probe rencana 022. Dipisah dari panggilan di atas supaya kegagalan
+      # fitur yang belum ada tidak menyamar sebagai pipeline rusak — tetapi
+      # tetap merah, karena fase 5 bergantung pada hasilnya.
+      - name: Probe katalog model gratis (DEC-0018)
+        run: |
+          MODELS=$("$HOME/.opencode/bin/opencode" --standalone models)
+          echo "$MODELS" | grep -qx 'opencode/deepseek-v4.1-flash-free' \
+            || { echo "GAGAL: opencode/deepseek-v4.1-flash-free tidak ada di katalog profil CI"; exit 1; }
+          echo "OK katalog: model gratis terlihat di profil CI"
+
+      - name: Probe websearch + varian (rencana 022)
+        run: |
+          # Katalog tidak memuat varian; `#low` hanya sah di argumen --model.
+          # Bila langkah ini gagal, fase 5 turun ke korpus saja
+          # (config/tanya.json → cari.enabled=false), bukan gagal total.
+          "$HOME/.opencode/bin/opencode" --standalone run \
+            --model 'opencode/deepseek-v4.1-flash-free#low' \
+            --format json \
+            --auto \
+            --archived \
+            'Pakai tool websearch untuk mencari satu berita terbaru tentang Kabupaten Sleman, lalu balas JSON {"url":"...","kutipan":"..."}' \
+            > /tmp/tanya-probe.json
+          cat /tmp/tanya-probe.json
+          grep -q '"tool":"websearch"' /tmp/tanya-probe.json \
+            || { echo "GAGAL: tool websearch tidak terpakai di profil CI"; exit 1; }
+          echo "OK websearch tersedia dan tercatat di stream tool_use"
