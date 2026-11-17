@@ -8,7 +8,7 @@
  *
  * Direktori hasil di-.gitignore; skrip ini menulis ulang setiap kali.
  */
-import { cpSync, copyFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import { cpSync, copyFileSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const projectRoot = new URL("..", import.meta.url).pathname;
@@ -33,6 +33,18 @@ cpSync(source, out, {
 });
 
 copyFileSync(join(fixture, "manifest.json"), join(out, "manifest.json"));
+
+// Konfigurasi fixture: jangan bawa proyek Supabase sungguhan ke dalam uji.
+// Tab Tanya tetap muncul (butuh supabaseUrl), tetapi setiap panggilan jaringan
+// menuju host .invalid dan gagal cepat alih-alih menyentuh data asli.
+writeFileSync(
+  join(out, "config.json"),
+  JSON.stringify(
+    { vapidPublicKey: "BFAKE", supabaseUrl: "https://contoh.invalid", supabaseKey: "sb_publishable_uji" },
+    null,
+    2,
+  ) + "\n",
+);
 
 const editions = join(out, "data", "editions");
 mkdirSync(editions, { recursive: true });

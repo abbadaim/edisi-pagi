@@ -44,6 +44,22 @@ test("UI-03: nav bawah dan halaman Atur", async ({ page }) => {
   }
 });
 
+test("UI-05: tab Tanya dan layar masuk (rencana 022)", async ({ page }) => {
+  await openFeed(page);
+
+  const bar = page.locator("#bottom");
+  await expect(bar.locator('.it[data-nav="tanya"]')).toContainText("Tanya");
+
+  await bar.locator('.it[data-nav="tanya"]').click();
+
+  await expect(page).toHaveURL(/#\/tanya$/);
+  await expect(page.locator("#tanya")).toBeVisible();
+  await expect(page.locator("#bottom .it.on")).toHaveAttribute("data-nav", "tanya");
+  // Tanpa sesi: yang tampil adalah formulir masuk, bukan kotak tanya.
+  await expect(page.locator("#tanya .askcard")).toContainText("Masuk untuk bertanya");
+  await expect(page.locator("#tanya .askbox")).toHaveCount(0);
+});
+
 test("UI-04: edisi fixture ter-render", async ({ page }) => {
   await openFeed(page);
 

@@ -1,11 +1,11 @@
 # 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
-Status: mockup-v1
+Status: mockup-approved
 Kelas: infra + pipeline + UI
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-17
-Mockup: docs/mockups/022-tanya.html (menunggu persetujuan manusia)
+Mockup: docs/mockups/022-tanya.html (disetujui 2026-11-17)
 ```
 
 > Rencana ini menambah komponen pertama di luar GitHub Actions/Pages. Paruh
@@ -100,7 +100,7 @@ tersedia — bukti run `44007186384`); `DEC-0035` tidak ada push untuk jawaban;
 | # | Probe | Status 2026-11-17 |
 |---|---|---|
 | 1 | Insert anon tanpa JWT ditolak, bukan 201 | **lolos** — `401 · 42501 permission denied for table asks` (ditolak di grant) |
-| 2 | Insert dengan JWT → 201 + dispatch terpicu | **menunggu token** (dispatch baru ada di fase 4) |
+| 2 | Insert dengan JWT → 201 + dispatch terpicu | **lolos** — insert 201, `user_id` default `auth.uid()`, baca 200, hapus 200 (dispatch baru ada di fase 4) |
 | 3 | `?code=` selamat dari fallback navigasi service worker | **lolos** (statis: `public/sw.js:94-97` mengambil jaringan dulu untuk `mode === "navigate"`) |
 | 4 | `websearch` tersedia di `--standalone run --auto`, dan stream memuat input/output tool | **gagal di CI** — berhasil lokal (11,6 s), tetapi runner headless menolak: `Cancelled a request for input this run cannot answer` (run `44007186384`). `webfetch` **berhasil** di run yang sama |
 | 5 | model gratis + `#low` ada di katalog profil `--standalone` dan bisa dipanggil | **lolos lokal dan CI** — `cost: 0`, token tercatat |

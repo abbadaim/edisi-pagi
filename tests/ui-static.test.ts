@@ -200,3 +200,29 @@ test("UI-05: app.js merender strip perspektif bila kartu punya frames", () => {
   assert.match(js, /Siapa menyorot apa/, "label strip hilang");
   assert.match(js, /framesList/, "daftar media tidak dirender");
 });
+
+// UI-06 — rencana 022
+// Tab Tanya harus punya rumah di markup, dan hanya muncul bila Supabase
+// dikonfigurasi. Tanpa gerbang itu, tab muncul di setiap fixture dan uji UI
+// menyentuh jaringan.
+test("UI-06: bagian #tanya ada dan nav digerbangi supabaseUrl", () => {
+  const html = indexHtml();
+  assert.match(html, /<section id="tanya"[^>]*hidden>/, "seksi #tanya harus ada dan tersembunyi awalnya");
+  assert.match(html, /id="tanyaBody"/);
+
+  const app = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(app, /parts\[0\] === "tanya"/, "rute #/tanya tidak dikenal");
+  assert.match(app, /S\.cfg\?\.supabaseUrl\)\s*items\.push\(\{\s*key: "tanya"/s, "tab Tanya tidak digerbangi config");
+  assert.match(app, /hashFor[\s\S]*#\/tanya/, "hashFor tidak menulis #/tanya");
+});
+
+// UI-07 — DEC-0031
+// Kunci rahasia tidak boleh pernah masuk bundel publik. Yang sah hanya
+// publishable key; service_role dan kata sandi basis data hanya di secret.
+test("UI-07: tidak ada kunci rahasia di berkas publik", () => {
+  const cfg = readFileSync(join(root, "public", "config.json"), "utf8");
+  assert.doesNotMatch(cfg, /service_role|sb_secret_|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9/i, "kunci rahasia bocor ke config.json");
+
+  const app = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.doesNotMatch(app, /service_role|sb_secret_/i, "kunci rahasia bocor ke app.js");
+});

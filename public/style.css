@@ -249,3 +249,55 @@ details.ctx summary::-webkit-details-marker{display:none}
 .frameRow:hover .frameTitle{color:var(--accent)}
 .framesBtn{margin-top:6px; border:0; background:transparent; padding:0; font-family:var(--sans); font-size:9.5px;
            font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); cursor:pointer}
+
+/* ── Tanya AI (rencana 022) ──────────────────────────────────────────────── */
+.askbox{background:#fff; border:1px solid var(--rule); border-radius:16px; padding:12px 13px}
+.askbox textarea{width:100%; min-height:58px; border:0; resize:none; font:inherit; font-size:14px;
+                 line-height:1.45; background:none; color:var(--ink); padding:0}
+.askbox textarea::placeholder{color:var(--faint)}
+.askfoot{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:10px;
+         padding-top:10px; border-top:1px solid var(--rule)}
+.askfoot .hint{font-size:10.5px; color:var(--faint)}
+
+.sechead{display:flex; align-items:baseline; justify-content:space-between; margin:20px 0 8px}
+.sechead .l{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); font-weight:700}
+.sechead .r{font-size:11px; color:var(--faint)}
+
+.q{display:block; width:100%; text-align:left; background:#fff; border:1px solid var(--rule);
+   border-radius:14px; padding:12px 13px; margin-bottom:9px}
+.q .txt{font-size:13px; line-height:1.42; color:var(--ink)}
+.q .foot{display:flex; align-items:center; gap:7px; margin-top:8px; font-size:10px; color:var(--muted)}
+
+.pill{font-size:9.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:700;
+      padding:3px 7px; border-radius:6px; border:1px solid var(--rule); color:var(--muted)}
+.pill.wait{color:var(--warn); border-color:#E6D3AD; background:#FBF4E6}
+.pill.live{color:var(--accent); border-color:#EBcfc4; background:var(--accent-soft)}
+.pill.done{color:var(--ok); border-color:#C7DBCD; background:#EFF5F0}
+.pill.off{color:var(--faint); background:#F7F3EC}
+
+.anshead{display:flex; align-items:center; gap:8px; font-size:11px; color:var(--muted); margin-top:6px}
+.ansQ{font-family:var(--serif); font-size:19px; line-height:1.25; margin:9px 0 10px; letter-spacing:-.01em; font-weight:600}
+.ans{font-size:14px; line-height:1.62; color:var(--ink)}
+.ans p{margin:0 0 11px}
+.src{margin-top:14px; border-top:1px solid var(--rule); padding-top:11px}
+.src .lbl{font-size:9.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); font-weight:700}
+.src ul{margin:0; padding:0}
+.src li{list-style:none; font-size:11.5px; line-height:1.45; color:var(--muted); margin:7px 0 0}
+.src .dom{color:var(--ink); font-weight:600}
+.dropped{margin-top:11px; background:#FBF4E6; border:1px solid #E6D3AD; border-radius:10px;
+         padding:9px 11px; font-size:11px; line-height:1.45; color:var(--warn)}
+
+.askcard{background:#fff; border:1px solid var(--rule); border-radius:16px; padding:14px 15px}
+.askcard .ansQ{margin-top:0}
+.fieldInput{width:100%; margin-top:8px; border:1px solid var(--rule); border-radius:10px;
+            padding:9px 11px; font:inherit; font-size:13px; background:#FDFBF7; color:var(--ink)}
+.fieldInput:focus{outline:2px solid var(--accent-soft); outline-offset:1px}
+
+.setRow{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:10px}
+.setRow .k{font-size:12.5px}
+.setRow select{width:auto; max-width:62%; margin-top:0}
+.sw{width:38px; height:22px; border-radius:11px; background:var(--rule); position:relative; flex:0 0 auto}
+.sw.on{background:var(--ok)}
+.sw::after{content:""; position:absolute; top:2px; left:2px; width:18px; height:18px; border-radius:50%;
+           background:#fff; box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw.on::after{left:18px}

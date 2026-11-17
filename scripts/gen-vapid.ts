@@ -21,7 +21,12 @@ env = env.replace(/^VAPID_PRIVATE_KEY=.*$/m, "").trim();
 env += `\nVAPID_PRIVATE_KEY=${keys.privateKey}\n`;
 writeFileSync(envPath, env.trim() + "\n");
 
-writeFileSync(configPath, JSON.stringify({ vapidPublicKey: keys.publicKey }, null, 2) + "\n");
+// config.json memuat lebih dari VAPID sejak rencana 022 (Supabase). Tulis
+// ulang hanya kuncinya — jangan hapus kunci lain yang sudah ada di berkas.
+const existing = existsSync(configPath)
+  ? (JSON.parse(readFileSync(configPath, "utf8")) as Record<string, unknown>)
+  : {};
+writeFileSync(configPath, JSON.stringify({ ...existing, vapidPublicKey: keys.publicKey }, null, 2) + "\n");
 
 console.log("kunci dibuat.");
 console.log("  privat -> .env.local (gitignored)");

@@ -16,8 +16,12 @@ const S = {
   feedKey: null,
   /** Arsip dirender bertahap: retensi 2 tahun bisa berarti ±700 tanggal. */
   archiveLimit: 30,
-  route: { name: "feed", scope: null, editionId: null, card: null },
+  route: { name: "feed", scope: null, editionId: null, card: null, askId: null },
   installPrompt: null,
+  /** config.json: VAPID, dan Supabase untuk Tanya AI (rencana 022). */
+  cfg: null,
+  session: null,
+  asks: [],
 };
 
 const $ = (id) => document.getElementById(id);
@@ -51,6 +55,8 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v4H3z"/><path d="M5 8v12h14V8"/><path d="M9.5 12h5"/></svg>',
   atur:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>',
+  tanya:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 11h8M8 15h5"/></svg>',
 };
 
 function el(tag, cls, text) {
@@ -195,6 +201,7 @@ function monthLabel(iso) {
 function hashFor(route) {
   if (route.name === "atur") return "#/atur";
   if (route.name === "arsip") return "#/arsip";
+  if (route.name === "tanya") return route.askId ? `#/tanya/${route.askId}` : "#/tanya";
   if (!route.scope) return "";
   if (route.name === "detail") return `#/${route.scope}/${route.editionId}/${route.card}`;
   if (route.editionId) return `#/${route.scope}/${route.editionId}`;
@@ -203,20 +210,24 @@ function hashFor(route) {
 
 function parseRoute(hash) {
   const parts = String(hash ?? "").replace(/^#\/?/, "").split("/").filter(Boolean);
-  const blank = { name: "feed", scope: null, editionId: null, card: null };
+  const blank = { name: "feed", scope: null, editionId: null, card: null, askId: null };
   if (parts.length === 0) return blank;
   if (parts[0] === "atur") return { ...blank, name: "atur" };
   if (parts[0] === "arsip") return { ...blank, name: "arsip" };
+  // `#/tanya` dan `#/tanya/<ask_id>` (rencana 022). Bukan scope: nav memakai
+  // pola yang sama dengan `atur`.
+  if (parts[0] === "tanya") return { ...blank, name: "tanya", askId: parts[1] ?? null };
 
   const scope = parts[0];
   const isDate = /^\d{4}-\d{2}-\d{2}$/.test(parts[1] ?? "");
   const editionId = isDate ? parts[1] : null;
   const cardRaw = isDate ? parts[2] : parts[1];
   const card = cardRaw != null && /^\d+$/.test(cardRaw) ? Number(cardRaw) : null;
-  return { name: card == null ? "feed" : "detail", scope, editionId, card };
+  return { name: card == null ? "feed" : "detail", scope, editionId, card, askId: null };
 }
 
-const routeKey = (route) => `${route.name}|${route.scope ?? ""}|${route.editionId ?? ""}|${route.card ?? ""}`;
+const routeKey = (route) =>
+  `${route.name}|${route.scope ?? ""}|${route.editionId ?? ""}|${route.card ?? ""}|${route.askId ?? ""}`;
 
 function navigate(route, { replace = false } = {}) {
   const next = { ...route };
@@ -266,6 +277,9 @@ function hasArchive() {
 
 function navItems() {
   const items = [{ key: "nasional", label: "Edisi", icon: ICONS.edisi }];
+  // Slot Sleman kosong sejak rencana 019; Tanya mengisinya (rencana 022).
+  // Tab hanya muncul bila Supabase dikonfigurasi — itu juga tombol mati.
+  if (S.cfg?.supabaseUrl) items.push({ key: "tanya", label: "Tanya", icon: ICONS.tanya });
   if (S.byScope.has("lokal")) items.push({ key: "lokal", label: "Sleman", icon: ICONS.sleman });
   if (S.byScope.has("mingguan")) items.push({ key: "mingguan", label: "Mingguan", icon: ICONS.mingguan });
   if (hasArchive()) items.push({ key: "arsip", label: "Arsip", icon: ICONS.arsip });
@@ -286,6 +300,7 @@ function renderNav() {
     b.onclick = () => {
       if (item.key === "atur") navigate({ name: "atur" });
       else if (item.key === "arsip") navigate({ name: "arsip" });
+      else if (item.key === "tanya") navigate({ name: "tanya" });
       else navigate({ name: "feed", scope: item.key, editionId: null });
     };
     bar.append(b);
@@ -295,7 +310,13 @@ function renderNav() {
 
 function markNav() {
   const active =
-    S.route.name === "atur" ? "atur" : S.route.name === "arsip" ? "arsip" : S.scope;
+    S.route.name === "atur"
+      ? "atur"
+      : S.route.name === "arsip"
+        ? "arsip"
+        : S.route.name === "tanya"
+          ? "tanya"
+          : S.scope;
   for (const b of document.querySelectorAll(".bar .it")) {
     const on = b.dataset.nav === active;
     b.classList.toggle("on", on);
@@ -347,6 +368,15 @@ async function boot() {
     S.byScope.set(e.scope, list);
   }
 
+  // Tanya AI butuh config.json lebih awal daripada bagian notifikasi: tab-nya
+  // ditentukan oleh ada/tidaknya supabaseUrl.
+  try {
+    S.cfg = await (await fetch("config.json", { cache: "no-cache" })).json();
+  } catch {
+    S.cfg = null;
+  }
+  S.session = loadSession();
+
   renderNav();
   renderInstallChip();
 
@@ -396,6 +426,10 @@ async function renderRoute() {
   }
   if (route.name === "arsip") {
     renderArchiveView();
+    return;
+  }
+  if (route.name === "tanya") {
+    showTanya();
     return;
   }
 
@@ -455,6 +489,7 @@ function showEmptyState(title, detail) {
   $("detail").hidden = true;
   $("atur").hidden = true;
   $("arsip").hidden = true;
+  $("tanya").hidden = true;
   $("empty").hidden = false;
   $("bottom").hidden = false;
   const box = $("empty");
@@ -484,6 +519,7 @@ function showFeed() {
   $("top").hidden = false;
   $("atur").hidden = true;
   $("arsip").hidden = true;
+  $("tanya").hidden = true;
   $("detail").hidden = true;
   $("empty").hidden = true;
   $("feed").hidden = false;
@@ -503,6 +539,7 @@ function openAtur() {
   $("detail").hidden = true;
   $("empty").hidden = true;
   $("arsip").hidden = true;
+  $("tanya").hidden = true;
   $("atur").hidden = false;
   $("bottom").hidden = false;
   window.scrollTo(0, 0);
@@ -510,6 +547,7 @@ function openAtur() {
   renderInstall();
   renderAbout();
   setupNotifications();
+  renderTanyaSettings();
 }
 
 function renderAbout() {
@@ -655,6 +693,7 @@ function renderArchiveView() {
   $("detail").hidden = true;
   $("atur").hidden = true;
   $("empty").hidden = true;
+  $("tanya").hidden = true;
   $("arsip").hidden = false;
   $("bottom").hidden = false;
   window.scrollTo(0, 0);
@@ -885,6 +924,7 @@ function openCard(index, opts = {}) {
   $("feed").hidden = true;
   $("atur").hidden = true;
   $("arsip").hidden = true;
+  $("tanya").hidden = true;
   $("detail").hidden = false;
   $("bottom").hidden = false;
   $("navlabel").textContent =
@@ -1156,6 +1196,476 @@ if ("serviceWorker" in navigator) {
       .catch(() => {});
   });
 }
+
+// ── Tanya AI (rencana 022) ───────────────────────────────────────────────────
+// Tidak ada kunci rahasia di bundel: hanya publishable key, dan RLS yang
+// menentukan batas tulis (`DEC-0031`). Pertanyaan yang gagal terkirim disimpan
+// di perangkat dan dikirim ulang — bertanya saat sinyal mati tidak boleh
+// terlihat seperti kegagalan.
+
+const SESSION_KEY = "tanya.session";
+const QUEUE_KEY = "tanya.queue";
+
+const ASK_STATE = {
+  new: { label: "menunggu dijawab", cls: "wait" },
+  claimed: { label: "sedang dijawab", cls: "live" },
+  answered: { label: "dijawab", cls: "done" },
+  refused: { label: "tanpa bahan", cls: "off" },
+  failed: { label: "gagal", cls: "off" },
+  stale: { label: "kedaluwarsa", cls: "off" },
+};
+
+function loadSession() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(SESSION_KEY) ?? "null");
+    return raw?.access_token && raw?.refresh_token ? raw : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveSession(session) {
+  S.session = session;
+  if (session) localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+  else localStorage.removeItem(SESSION_KEY);
+}
+
+function loadQueue() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(QUEUE_KEY) ?? "[]");
+    return Array.isArray(raw) ? raw : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveQueue(items) {
+  localStorage.setItem(QUEUE_KEY, JSON.stringify(items));
+}
+
+function enqueueAsk(question) {
+  const items = loadQueue();
+  items.push({ id: `q_${Date.now()}_${items.length}`, question, at: new Date().toISOString() });
+  saveQueue(items);
+}
+
+async function sbAuth(grant, body) {
+  const res = await fetch(`${S.cfg.supabaseUrl}/auth/v1/token?grant_type=${grant}`, {
+    method: "POST",
+    headers: { apikey: S.cfg.supabaseKey, "content-type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    throw new Error(data.error_description || data.msg || `masuk gagal (${res.status})`);
+  }
+  const session = {
+    access_token: data.access_token,
+    refresh_token: data.refresh_token,
+    expires_at: Date.now() + (data.expires_in ?? 3600) * 1000,
+    email: data.user?.email ?? null,
+  };
+  saveSession(session);
+  return session;
+}
+
+async function sbToken() {
+  if (!S.session) return null;
+  if (Date.now() < S.session.expires_at - 60_000) return S.session.access_token;
+  try {
+    const s = await sbAuth("refresh_token", { refresh_token: S.session.refresh_token });
+    return s.access_token;
+  } catch {
+    saveSession(null);
+    return null;
+  }
+}
+
+async function sb(path, { method = "GET", body, prefer } = {}) {
+  const token = await sbToken();
+  if (!token) throw new Error("perlu masuk");
+  const headers = {
+    apikey: S.cfg.supabaseKey,
+    Authorization: `Bearer ${token}`,
+    "content-type": "application/json",
+  };
+  if (prefer) headers.Prefer = prefer;
+  const res = await fetch(`${S.cfg.supabaseUrl}/rest/v1/${path}`, {
+    method,
+    headers,
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const text = await res.text();
+  let data = null;
+  try {
+    data = text ? JSON.parse(text) : null;
+  } catch {
+    data = null;
+  }
+  if (!res.ok) {
+    if (res.status === 401) saveSession(null);
+    throw new Error(data?.message || `galat ${res.status}`);
+  }
+  return data;
+}
+
+async function signIn(email, password) {
+  await sbAuth("password", { email, password });
+  await refreshAsks();
+}
+
+/** Kirim antrean lokal. Dipanggil saat layar Tanya dibuka dan saat online. */
+async function flushQueue() {
+  const items = loadQueue();
+  if (items.length === 0 || !S.session || !navigator.onLine) return;
+  const left = [];
+  for (const item of items) {
+    try {
+      await sb("asks", {
+        method: "POST",
+        body: { mode: "now", question: item.question },
+        prefer: "return=minimal",
+      });
+    } catch {
+      left.push(item);
+    }
+  }
+  saveQueue(left);
+}
+
+async function refreshAsks() {
+  if (!S.session) {
+    S.asks = [];
+    return;
+  }
+  try {
+    S.asks = (await sb("asks?select=id,mode,question,state,answer_id,created_at&order=created_at.desc&limit=50")) ?? [];
+  } catch {
+    S.asks = [];
+  }
+}
+
+function askRow(item) {
+  const st = ASK_STATE[item.state] ?? ASK_STATE.new;
+  const b = el("button", "q");
+  b.type = "button";
+  b.append(el("div", "txt", item.question));
+  const foot = el("div", "foot");
+  foot.append(el("span", `pill ${st.cls}`, st.label));
+  b.append(foot);
+  b.onclick = () => navigate({ name: "tanya", askId: item.id });
+  return b;
+}
+
+function queuedRow(item) {
+  const b = el("div", "q");
+  b.append(el("div", "txt", item.question));
+  const foot = el("div", "foot");
+  foot.append(el("span", "pill wait", "menunggu terkirim"));
+  b.append(foot);
+  return b;
+}
+
+function renderSignIn(body) {
+  const box = el("div", "askcard");
+  box.append(el("h2", "ansQ", "Masuk untuk bertanya."));
+  box.append(el("p", "pmuted", "Edisi tetap bisa dibaca tanpa masuk."));
+
+  const email = el("input", "fieldInput");
+  email.type = "email";
+  email.autocomplete = "username";
+  email.placeholder = "alamat surel";
+  const pass = el("input", "fieldInput");
+  pass.type = "password";
+  pass.autocomplete = "current-password";
+  pass.placeholder = "kata sandi";
+
+  const btn = el("button", "pbtn", "Masuk");
+  const msg = el("p", "pmuted");
+
+  btn.onclick = async () => {
+    btn.disabled = true;
+    msg.textContent = "";
+    try {
+      await signIn(email.value.trim(), pass.value);
+      await renderTanya();
+    } catch (e) {
+      msg.textContent = e instanceof Error ? e.message : "gagal masuk";
+    } finally {
+      btn.disabled = false;
+    }
+  };
+
+  box.append(email, pass, btn, msg);
+  body.append(box);
+}
+
+function renderAskBox(body) {
+  const box = el("div", "askbox");
+  const area = el("textarea");
+  area.placeholder = "Contoh: apa status gugatan hak menyatakan pendapat DPR?";
+  area.maxLength = 500;
+  const foot = el("div", "askfoot");
+  const hint = el("span", "hint", "Maks 500 karakter");
+  const btn = el("button", "pbtn", "Tanya");
+  btn.disabled = true;
+  area.oninput = () => {
+    const n = area.value.trim().length;
+    btn.disabled = n < 4;
+    hint.textContent = `${n}/500`;
+  };
+  btn.onclick = async () => {
+    const question = area.value.trim();
+    if (question.length < 4) return;
+    btn.disabled = true;
+    area.value = "";
+    if (!navigator.onLine) {
+      enqueueAsk(question);
+      await renderTanya();
+      return;
+    }
+    try {
+      await sb("asks", { method: "POST", body: { mode: "now", question }, prefer: "return=minimal" });
+    } catch (e) {
+      // Galat jaringan = simpan; galat lain = tampilkan apa adanya.
+      if (e instanceof TypeError || !navigator.onLine) enqueueAsk(question);
+      else hint.textContent = e instanceof Error ? e.message : "gagal mengirim";
+    }
+    await refreshAsks();
+    await renderTanya();
+  };
+  foot.append(hint, btn);
+  box.append(area, foot);
+  body.append(box);
+}
+
+async function renderTanya() {
+  const body = $("tanyaBody");
+  const title = $("tanyaTitle");
+  const sub = $("tanyaSub");
+  body.textContent = "";
+  title.textContent = "Tanya";
+  sub.textContent = "";
+
+  if (!S.cfg?.supabaseUrl) {
+    body.append(el("p", "pmuted", "Tanya AI belum dikonfigurasi."));
+    return;
+  }
+
+  if (!S.session) {
+    title.textContent = "Tanya";
+    sub.textContent = "Jawaban hanya dari bahan yang pernah masuk edisi.";
+    renderSignIn(body);
+    return;
+  }
+
+  await flushQueue();
+  await refreshAsks();
+
+  const route = S.route;
+  if (route.askId) {
+    return renderAskDetail(body, route.askId);
+  }
+
+  title.textContent = "Tanya";
+  sub.textContent = "Jawaban hanya dari bahan yang pernah masuk edisi.";
+  renderAskBox(body);
+
+  const queued = loadQueue();
+  const answered = S.asks ?? [];
+  const head = el("div", "sechead");
+  head.append(el("span", "l", "Pertanyaan saya"));
+  head.append(el("span", "r", String(queued.length + answered.length)));
+  body.append(head);
+
+  if (queued.length === 0 && answered.length === 0) {
+    const empty = el("div", "empty");
+    empty.append(el("div", "t", "Belum ada pertanyaan"));
+    empty.append(el("div", "d", "Pertanyaan pertama Anda akan muncul di sini beserta keadaannya."));
+    body.append(empty);
+    return;
+  }
+  for (const item of queued) body.append(queuedRow(item));
+  for (const item of answered) body.append(askRow(item));
+}
+
+async function renderAskDetail(body, askId) {
+  const item = (S.asks ?? []).find((a) => a.id === askId);
+  $("tanyaTitle").textContent = "Jawaban";
+
+  if (!item) {
+    body.append(el("p", "pmuted", "Pertanyaan tidak ditemukan."));
+    return;
+  }
+
+  const st = ASK_STATE[item.state] ?? ASK_STATE.new;
+  const head = el("div", "anshead");
+  head.append(el("span", `pill ${st.cls}`, st.label));
+  body.append(head);
+  body.append(el("h2", "ansQ", item.question));
+
+  if (item.state !== "answered" || !item.answer_id) {
+    const box = el("div", "empty");
+    box.append(el("div", "t", st.label));
+    box.append(
+      el(
+        "div",
+        "d",
+        item.state === "refused"
+          ? "Bahan yang ada belum cukup. Saya tidak menjawab dari pengetahuan umum."
+          : "Jawaban muncul di sini setelah diproses.",
+      ),
+    );
+    body.append(box);
+    return;
+  }
+
+  try {
+    const res = await fetch(`answers/${item.answer_id}.json`, { cache: "no-cache" });
+    if (!res.ok) throw new Error(String(res.status));
+    const ans = await res.json();
+    const para = el("div", "ans");
+    for (const p of String(ans.answer ?? "").split(/\n{1,}/).filter(Boolean)) {
+      para.append(el("p", null, p));
+    }
+    body.append(para);
+    if (Array.isArray(ans.sources) && ans.sources.length) {
+      const src = el("div", "src");
+      src.append(el("div", "lbl", "Sumber"));
+      const ul = el("ul");
+      for (const s of ans.sources) {
+        const li = el("li");
+        li.append(el("span", "dom", String(s.outlet ?? s.url ?? "")));
+        ul.append(li);
+      }
+      src.append(ul);
+      body.append(src);
+    }
+    if (Array.isArray(ans.unsupported) && ans.unsupported.length) {
+      const drop = el("div", "dropped");
+      drop.textContent = `${ans.unsupported.length} sumber dibuang: kutipannya tidak ditemukan di halaman aslinya.`;
+      body.append(drop);
+    }
+  } catch {
+    body.append(el("p", "pmuted", "Jawaban belum bisa dimuat. Coba lagi saat ada koneksi."));
+  }
+}
+
+function showTanya() {
+  $("top").hidden = true;
+  $("feed").hidden = true;
+  $("detail").hidden = true;
+  $("atur").hidden = true;
+  $("arsip").hidden = true;
+  $("empty").hidden = true;
+  $("tanya").hidden = false;
+  $("bottom").hidden = false;
+  markNav();
+  return renderTanya();
+}
+
+/** Bagian Atur → Tanya AI: hanya knob, tidak ada prompt (`DEC-0036`). */
+async function renderTanyaSettings() {
+  const box = $("tanyaSettings");
+  const panel = $("tanyaPanel");
+  box.textContent = "";
+  if (!S.cfg?.supabaseUrl) {
+    panel.hidden = true;
+    return;
+  }
+  panel.hidden = false;
+
+  if (!S.session) {
+    box.append(el("p", "pmuted", "Masuk lewat tab Tanya untuk mengubah setelan."));
+    return;
+  }
+
+  let row = null;
+  try {
+    const rows = await sb("settings?select=id,owner,config");
+    row = Array.isArray(rows) ? rows[0] : null;
+  } catch {
+    row = null;
+  }
+  if (!row) {
+    box.append(el("p", "pmuted", "Baris setelan belum ada di Supabase."));
+    return;
+  }
+
+  const cfg = row.config ?? {};
+  const model = cfg.model ?? {};
+  const chain = [model.bawaan, ...(model.uji ?? [])].filter(Boolean);
+
+  const save = async (patch) => {
+    const next = { ...cfg, ...patch };
+    Object.assign(cfg, patch);
+    try {
+      await sb("settings?id=eq.true", {
+        method: "PATCH",
+        body: { config: next, updated_at: new Date().toISOString() },
+        prefer: "return=minimal",
+      });
+    } catch (e) {
+      box.append(el("p", "pmuted", e instanceof Error ? e.message : "gagal menyimpan"));
+    }
+  };
+
+  box.append(el("p", "pmuted", `Masuk sebagai ${S.session.email ?? "pengguna"}.`));
+
+  const modelRow = el("div", "setRow");
+  modelRow.append(el("div", "k", "Model"));
+  const sel = el("select", "fieldInput");
+  for (const m of chain) {
+    const o = el("option", null, m.replace("opencode", "").replace("/", " · "));
+    o.value = m;
+    if (m === model.bawaan) o.selected = true;
+    sel.append(o);
+  }
+  sel.onchange = () => save({ model: { ...model, bawaan: sel.value } });
+  modelRow.append(sel);
+
+  const modeRow = el("div", "setRow");
+  modeRow.append(el("div", "k", "Mode jawaban"));
+  const mode = el("select", "fieldInput");
+  for (const [v, l] of [["ringkas", "Ringkas"], ["latar", "Latar"], ["lacak", "Lacak"]]) {
+    const o = el("option", null, l);
+    o.value = v;
+    if ((cfg.mode ?? "ringkas") === v) o.selected = true;
+    mode.append(o);
+  }
+  mode.onchange = () => save({ mode: mode.value });
+  modeRow.append(mode);
+
+  const cariRow = el("div", "setRow");
+  cariRow.append(el("div", "k", "Cari di luar arsip"));
+  const sw = el("button", `sw${cfg.cari?.enabled ? " on" : ""}`);
+  sw.type = "button";
+  sw.setAttribute("aria-pressed", String(Boolean(cfg.cari?.enabled)));
+  sw.onclick = () => {
+    const on = !sw.classList.contains("on");
+    sw.classList.toggle("on", on);
+    save({ cari: { ...(cfg.cari ?? {}), enabled: on } });
+  };
+  cariRow.append(sw);
+
+  const out = el("button", "pbtn ghost", "Keluar");
+  out.onclick = () => {
+    saveSession(null);
+    renderTanyaSettings();
+    if (S.route.name === "tanya") renderTanya();
+  };
+
+  box.append(modelRow, modeRow, cariRow, out);
+  box.append(
+    el("p", "pmuted", "Setelan berlaku pada pertanyaan berikutnya, tanpa deploy. Prompt hanya berubah lewat commit."),
+  );
+}
+
+window.addEventListener("online", () => {
+  if (S.cfg?.supabaseUrl && S.session) flushQueue().then(() => {
+    if (S.route.name === "tanya") renderTanya();
+  });
+});
 
 boot().catch((e) => {
   showFatal(e);

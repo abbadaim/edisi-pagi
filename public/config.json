@@ -1,3 +1,5 @@
 {
-  "vapidPublicKey": "BPonBow3rLQlJMq7KAlTtHHWETMdpbIUB0lXhnUkMrco8l68sqmIBkX5cQFW3XvUNytg6SwZmZsdH5b8p5ukIE4"
+  "vapidPublicKey": "BPonBow3rLQlJMq7KAlTtHHWETMdpbIUB0lXhnUkMrco8l68sqmIBkX5cQFW3XvUNytg6SwZmZsdH5b8p5ukIE4",
+  "supabaseUrl": "https://ivpvbwyqwtzfjcurezle.supabase.co",
+  "supabaseKey": "sb_publishable_1Pg0F2KAUROIoBGFnOjKQw_Yjm3pvPZ"
 }
