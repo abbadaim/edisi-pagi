@@ -97,6 +97,14 @@ jobs:
             echo "OPENCODE_BIN=/nonexistent" >> "$GITHUB_ENV"
           fi
 
+      # Pantau pembaca (rencana 022). Fail-soft: Supabase yang tidak terjangkau
+      # tidak boleh menggagalkan edisi; skrip menangani kegagalan sendiri.
+      - name: Sinkronkan pantau pembaca
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node scripts/watch.ts sync
+
       - name: Cek state
         run: npm run state:info
 
@@ -161,6 +169,12 @@ jobs:
           done
           echo "gagal menyimpan hasil; artefak situs tetap dideploy"
           exit 0
+
+      - name: Laporkan hasil pantau
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node scripts/watch.ts report
 
       - name: Unggah artefak situs
         uses: actions/upload-pages-artifact@v3

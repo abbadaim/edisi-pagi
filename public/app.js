@@ -26,6 +26,7 @@ const S = {
   tanyaMode: "bebas",
   tanyaPick: null,
   tanyaCards: null,
+  tanyaTimer: null,
 };
 
 const $ = (id) => document.getElementById(id);
@@ -1210,6 +1211,16 @@ if ("serviceWorker" in navigator) {
 const SESSION_KEY = "tanya.session";
 const QUEUE_KEY = "tanya.queue";
 
+const WATCH_STATE = {
+  menunggu: { label: "menunggu bahan", cls: "wait" },
+  mulai_diliput: { label: "mulai diliput", cls: "live" },
+  diliput: { label: "diliput", cls: "done" },
+  ditutup: { label: "ditutup", cls: "off" },
+};
+
+/** Perkiraan jawaban: dispatch ~10 s + satu panggilan model ~2–3 menit. */
+const ASK_ETA_SECONDS = 180;
+
 const ASK_STATE = {
   new: { label: "menunggu dijawab", cls: "wait" },
   claimed: { label: "sedang dijawab", cls: "live" },
@@ -1348,20 +1359,44 @@ async function refreshAsks() {
     return;
   }
   try {
-    S.asks = (await sb("asks?select=id,mode,question,state,answer_id,created_at&order=created_at.desc&limit=50")) ?? [];
+    S.asks =
+      (await sb(
+        "asks?select=id,mode,question,state,answer_id,created_at,topic_id,watch_state,edition_id,error&order=created_at.desc&limit=50",
+      )) ?? [];
   } catch {
     S.asks = [];
   }
 }
 
+/** Bar progres + perkiraan waktu. Sengaja berhenti di 92% sampai benar-benar jadi. */
+function waitingBlock(item) {
+  const wrap = el("div", "waiting");
+  const bar = el("div", "waitbar");
+  const fill = el("i");
+  const elapsed = Math.max(0, (Date.now() - Date.parse(item.created_at)) / 1000);
+  fill.style.width = `${Math.min(92, Math.round((elapsed / ASK_ETA_SECONDS) * 100))}%`;
+  bar.append(fill);
+  const left = Math.ceil((ASK_ETA_SECONDS - elapsed) / 60);
+  wrap.append(bar, el("span", "etalbl", left > 0 ? `menjawab… ±${left} menit` : "hampir selesai…"));
+  return wrap;
+}
+
+function isPending(item) {
+  return item.mode !== "watch" && (item.state === "new" || item.state === "claimed");
+}
+
 function askRow(item) {
-  const st = ASK_STATE[item.state] ?? ASK_STATE.new;
+  const watch = item.mode === "watch";
+  const st = watch ? (WATCH_STATE[item.watch_state] ?? WATCH_STATE.menunggu) : (ASK_STATE[item.state] ?? ASK_STATE.new);
   const b = el("button", "q");
   b.type = "button";
   b.append(el("div", "txt", item.question));
   const foot = el("div", "foot");
   foot.append(el("span", `pill ${st.cls}`, st.label));
+  if (watch) foot.append(el("span", "pill off", "pantau"));
+  else if (item.edition_id) foot.append(el("span", "pill done", "terbit di edisi"));
   b.append(foot);
+  if (isPending(item)) b.append(waitingBlock(item));
   b.onclick = () => navigate({ name: "tanya", askId: item.id });
   return b;
 }
@@ -1575,6 +1610,30 @@ async function renderTanya() {
   }
   for (const item of queued) body.append(queuedRow(item));
   for (const item of answered) body.append(askRow(item));
+
+  // Selama ada yang diproses, perbarui sendiri: jawaban datang dari pipeline,
+  // bukan dari aksi pengguna, jadi tidak ada yang memicu render ulang.
+  if (answered.some(isPending)) {
+    clearTimeout(S.tanyaTimer);
+    S.tanyaTimer = setTimeout(() => {
+      if (S.route.name === "tanya") renderTanya().catch(() => {});
+    }, 12_000);
+  }
+}
+
+/** Ilustrasi + tautan ke kartu yang akhirnya terbit. */
+function editionCardBlock(item) {
+  const box = el("div", "edcard");
+  const art = el("div", "edart");
+  art.append(el("i"), el("i"), el("i"));
+  const text = el("div", "edtext");
+  text.append(el("div", "edkick", "Terbit di edisi"));
+  text.append(el("div", "edtitle", item.error || item.question));
+  const link = el("button", "pbtn ghost", `Buka edisi ${item.edition_id}`);
+  link.onclick = () => navigate({ name: "feed", scope: "nasional", editionId: item.edition_id });
+  text.append(link);
+  box.append(art, text);
+  return box;
 }
 
 async function renderAskDetail(body, askId) {
@@ -1586,11 +1645,19 @@ async function renderAskDetail(body, askId) {
     return;
   }
 
-  const st = ASK_STATE[item.state] ?? ASK_STATE.new;
+  const watch = item.mode === "watch";
+  const st = watch ? (WATCH_STATE[item.watch_state] ?? WATCH_STATE.menunggu) : (ASK_STATE[item.state] ?? ASK_STATE.new);
   const head = el("div", "anshead");
   head.append(el("span", `pill ${st.cls}`, st.label));
+  if (isPending(item)) head.append(waitingBlock(item));
   body.append(head);
   body.append(el("h2", "ansQ", item.question));
+
+  // Sudah menjadi kartu di edisi: lebih berguna menautkan kartunya daripada
+  // mengulang jawaban lama yang isinya mungkin sudah berkembang.
+  if (item.edition_id) {
+    body.append(editionCardBlock(item));
+  }
 
   if (item.state !== "answered" || !item.answer_id) {
     const box = el("div", "empty");
@@ -1633,6 +1700,27 @@ async function renderAskDetail(body, askId) {
       const drop = el("div", "dropped");
       drop.textContent = `${ans.unsupported.length} sumber dibuang: kutipannya tidak ditemukan di halaman aslinya.`;
       body.append(drop);
+    }
+
+    if (item.mode !== "watch") {
+      const actions = el("div", "actions");
+      const pantau = el("button", "pbtn ghost", "Pantau ini");
+      pantau.onclick = async () => {
+        pantau.disabled = true;
+        try {
+          await sb("asks", {
+            method: "POST",
+            body: { mode: "watch", question: item.question, topic_id: item.topic_id ?? null },
+            prefer: "return=minimal",
+          });
+          await refreshAsks();
+          await renderTanya();
+        } catch (e) {
+          pantau.textContent = e instanceof Error ? e.message : "gagal";
+        }
+      };
+      actions.append(pantau);
+      body.append(actions);
     }
   } catch {
     body.append(el("p", "pmuted", "Jawaban belum bisa dimuat. Coba lagi saat ada koneksi."));

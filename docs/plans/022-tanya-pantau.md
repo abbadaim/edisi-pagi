@@ -1,7 +1,7 @@
 # 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
-Status: implementing
+Status: tested
 Kelas: infra + pipeline + UI
 Dibuat: 2026-11-16
 Diperbarui: 2026-11-17

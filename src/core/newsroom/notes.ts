@@ -37,6 +37,12 @@ export interface EditorNote {
   weight: number;
   next_action: string;
   expires_at: string;
+  /** `editor` = temuan editor; `reader` = dititipkan pembaca (rencana 022). */
+  source?: "editor" | "reader";
+  /** id baris `asks` di Supabase, untuk menautkan keadaan kembali ke aplikasi. */
+  source_ref?: string | null;
+  /** Kapan pipeline terakhir memeriksa bahan baru untuk catatan ini. */
+  checked_at?: string | null;
   resolved_by: { edition_id: string; card_title: string; url?: string; quote?: string } | null;
 }
 
@@ -152,6 +158,9 @@ export function notesFromEdit(input: NoteExtractionInput): EditorNote[] {
       next_action: clean(nextAction, MAX_ACTION) || "Cari bahan tambahan sebelum menulis ulang.",
       expires_at: expires(now, kind),
       resolved_by: null,
+      source: "editor",
+      source_ref: null,
+      checked_at: null,
     });
   };
 

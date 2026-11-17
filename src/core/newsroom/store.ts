@@ -21,6 +21,9 @@ interface NoteRow {
   next_action: string;
   expires_at: string;
   resolved_json: string | null;
+  source: string | null;
+  source_ref: string | null;
+  checked_at: string | null;
 }
 
 function parse<T>(json: string | null): T | null {
@@ -35,7 +38,8 @@ function parse<T>(json: string | null): T | null {
 export function loadLedger(db: Db, now = new Date()): NoteLedger {
   const rows = db.all<NoteRow>(
     `SELECT id, topic_id, kind, question, detail, origin_json, status, first_seen,
-            last_seen, attempts, weight, next_action, expires_at, resolved_json
+            last_seen, attempts, weight, next_action, expires_at, resolved_json,
+            source, source_ref, checked_at
        FROM editor_notes`,
   );
 
@@ -60,6 +64,9 @@ export function loadLedger(db: Db, now = new Date()): NoteLedger {
     next_action: r.next_action,
     expires_at: r.expires_at,
     resolved_by: parse<EditorNote["resolved_by"]>(r.resolved_json),
+    source: r.source === "reader" ? "reader" : "editor",
+    source_ref: r.source_ref,
+    checked_at: r.checked_at,
   }));
 
   return { schema_version: 1, updated_at: now.toISOString(), notes };
@@ -70,8 +77,9 @@ export function persistLedger(db: Db, ledger: NoteLedger, now = new Date()): voi
     db.run(
       `INSERT INTO editor_notes
          (id, topic_id, kind, question, detail, origin_json, status, first_seen,
-          last_seen, attempts, weight, next_action, expires_at, resolved_json)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          last_seen, attempts, weight, next_action, expires_at, resolved_json,
+          source, source_ref, checked_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
        ON CONFLICT(id) DO UPDATE SET
          topic_id = excluded.topic_id,
          kind = excluded.kind,
@@ -84,7 +92,10 @@ export function persistLedger(db: Db, ledger: NoteLedger, now = new Date()): voi
          weight = excluded.weight,
          next_action = excluded.next_action,
          expires_at = excluded.expires_at,
-         resolved_json = excluded.resolved_json`,
+         resolved_json = excluded.resolved_json,
+         source = excluded.source,
+         source_ref = excluded.source_ref,
+         checked_at = excluded.checked_at`,
       [
         n.id,
         n.topic_id,
@@ -100,6 +111,9 @@ export function persistLedger(db: Db, ledger: NoteLedger, now = new Date()): voi
         n.next_action,
         n.expires_at,
         n.resolved_by ? JSON.stringify(n.resolved_by) : null,
+        n.source ?? "editor",
+        n.source_ref ?? null,
+        n.checked_at ?? null,
       ],
     );
   }

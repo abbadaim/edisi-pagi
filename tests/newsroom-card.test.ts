@@ -420,7 +420,10 @@ test("kartu lokal dengan satu sumber tetap punya dua konteks", async () => {
 
 test("ledger dapat disimpan dan dibaca kembali dari SQLite", () => {
   const db = openSqlite(":memory:");
+  // 009 menambah `source`/`source_ref`/`checked_at`; tanpa itu persistLedger
+  // gagal karena kolomnya belum ada.
   db.exec(readFileSync(new URL("../migrations/004_editor_notes.sql", import.meta.url), "utf8"));
+  db.exec(readFileSync(new URL("../migrations/009_watch.sql", import.meta.url), "utf8"));
 
   const ledger: NoteLedger = {
     schema_version: 1,
