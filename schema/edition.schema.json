@@ -509,6 +509,21 @@
                     "type": "null"
                   }
                 ]
+              },
+              "owner": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "media": {
+                "type": "integer",
+                "minimum": 1
               }
             }
           }

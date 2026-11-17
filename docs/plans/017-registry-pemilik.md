@@ -145,6 +145,12 @@ field opsional pada build berikutnya).
 - `public/app.js` — label `CT Corp · 3 media · 11 Nov`, ringkasan
   `3 dari 3 pemilik · 5 media`.
 
+Insiden 2026-11-17: `frames` ditambah `owner`/`media` tetapi schema masih
+`additionalProperties: false`, sehingga edisi 17 November ditolak validasi
+(`E000 ... additionalProperty owner`) dan tidak terbit. Diperbaiki di commit
+berikutnya + `tests/frames-schema.test.ts` (termasuk kontrol yang membuktikan
+schema memang menolak properti asing).
+
 Bukti: tiga domain CT Corp kini 1 suara (uji `tests/truth-owners.test.ts`);
 strip di fixture menampilkan 3 baris untuk 5 media.
 
