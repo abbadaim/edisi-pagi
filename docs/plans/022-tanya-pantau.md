@@ -1,4 +1,4 @@
-# 021 — Tanya AI dan pantau pertanyaan pembaca
+# 022 — Tanya AI dan pantau pertanyaan pembaca
 
 ```
 Status: plan-draft
@@ -90,10 +90,10 @@ mencari, verifikasi milik pipeline; `DEC-0035` tidak ada push untuk jawaban;
 
 ### Fase 0 — probe (bukti, bukan kode)
 
-| # | Probe | Status 2026-11-16 |
+| # | Probe | Status 2026-11-17 |
 |---|---|---|
-| 1 | Insert anon tanpa JWT ditolak, bukan 201 | **menunggu proyek Supabase** |
-| 2 | Insert dengan JWT → 201 + dispatch terpicu | **menunggu proyek Supabase** |
+| 1 | Insert anon tanpa JWT ditolak, bukan 201 | **lolos** — `401 · 42501 permission denied for table asks` (ditolak di grant) |
+| 2 | Insert dengan JWT → 201 + dispatch terpicu | **menunggu token** (dispatch baru ada di fase 4) |
 | 3 | `?code=` selamat dari fallback navigasi service worker | **lolos** (statis: `public/sw.js:94-97` mengambil jaringan dulu untuk `mode === "navigate"`) |
 | 4 | `websearch` tersedia di `--standalone run --auto`, dan stream memuat input/output tool | **lolos lokal** (11,6 s; `tool_use` → `tool: "websearch"`, `input.query`, `output` berisi URL + cuplikan) |
 | 5 | `opencode/deepseek-v4.1-flash-free#low` ada di katalog profil `--standalone` | **lolos lokal**; konfirmasi CI lewat `opencode-smoke.yml` |
@@ -181,7 +181,10 @@ curl -s -X POST "$SUPABASE_URL/rest/v1/asks" \
   -H "apikey: $ANON" -H "Authorization: Bearer $ANON" \
   -H "content-type: application/json" \
   -d '{"mode":"now","question":"uji rls"}'
-# harapan: {"code":"42501", ... "row-level security" ...}
+# harapan: http 401 + 42501. Bisa dua bentuk dan keduanya lulus:
+#   "permission denied for table asks"   (ditolak di grant — yang terjadi 2026-11-17)
+#   "new row violates row-level security" (ditolak di RLS)
+# Yang GAGAL adalah 201, atau 401 yang pesannya "table not found".
 
 # probe 2 — dengan JWT milik owner: 201, lalu dispatch
 # harapan: 201 {"id":"...","state":"new"} ; `gh run list --workflow tanya.yml` bertambah
@@ -255,6 +258,8 @@ publishable):
 | `GET /rest/v1/asks` | `404 PGRST205 could not find table` | DDL belum dijalankan |
 | `GET /auth/v1/settings` | `disable_signup: false` | **pendaftaran publik masih terbuka** — harus dimatikan |
 | `GET /auth/v1/settings` | `mailer_autoconfirm: false` | jangan andalkan surel; buat pengguna lewat dasbor |
+| `POST /rest/v1/asks` (anon) | `401 · 42501 permission denied for table asks` | ditolak di tingkat **grant**, sebelum RLS. Lebih kuat; `anon` sengaja tidak diberi hak |
+| `grant` | `authenticated` butuh grant eksplisit | tanpa itu aplikasi yang sudah masuk ikut ditolak 42501 |
 
 Bentuk jawaban (`public/answers/<id>.json`):
 
@@ -318,3 +323,5 @@ yang menulis `data/editions/`. Semua uji build memakai tanggal baru
 - 2026-11-16 — `plan-draft` — proyek Supabase tersedia
   (`ivpvbwyqwtzfjcurezle`). `supabase/001_init.sql` ditulis. `disable_signup`
   masih `false`; probe 1–2 menunggu DDL dijalankan.
+- 2026-11-17 — `plan-draft` — DDL + grant diterapkan, `disable_signup = true`,
+  anon tertutup (probe 1 lolos di tingkat grant). Probe 2 menunggu token.

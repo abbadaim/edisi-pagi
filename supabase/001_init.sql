@@ -57,20 +57,45 @@ create policy owner_write  on public.settings for update using (auth.uid() = own
 
 create policy owner_insert on public.asks for insert with check (auth.uid() = user_id);
 create policy owner_read   on public.asks for select using (auth.uid() = user_id);
+create policy owner_delete on public.asks for delete using (auth.uid() = user_id);
 
--- 4. Setelah langkah 3, isi setelan awal. Ganti <UID> dengan id pengguna Anda
---    (Authentication → Users). Nilainya boleh kosong dulu: pipeline memakai
---    `config/tanya.json` selama baris ini belum ada.
+-- 3b. GRANT. Proyek ini tidak memberi hak bawaan kepada `anon`, sehingga
+--     penolakan terjadi di tingkat grant (42501), sebelum RLS dinilai — lebih
+--     kuat, dan itu dipertahankan: `anon` tidak diberi apa pun.
+--     `authenticated` justru HARUS diberi hak, kalau tidak aplikasi yang sudah
+--     masuk akan ditolak dengan pesan yang sama.
+grant usage on schema public to authenticated;
+grant select, insert, update on public.settings to authenticated;
+grant select, insert, update, delete on public.asks to authenticated;
+-- service_role (dipakai pipeline di CI) melewati RLS, tetapi tetap butuh grant.
+grant select, insert, update on public.settings to service_role;
+grant select, insert, update on public.asks     to service_role;
+
+-- 4. Setelah langkah 3, isi setelan awal. Jangan menempel <UID> — itu yang
+--    menghasilkan `22P02 invalid input syntax for type uuid`. Ambil uid dari
+--    auth.users di SQL Editor (editor berjalan dengan hak baca auth schema):
 --
--- insert into public.settings (owner, config) values (
---   '<UID>',
---   '{"model":{"bawaan":"opencode/deepseek-v4.1-flash-free#low",
---              "uji":["opencode/deepseek-v4.1-flash-free#high",
---                     "opencode-go/deepseek-v4.1-flash#low"]},
---     "mode":"ringkas",
---     "cari":{"enabled":true,"max_fetch":3,"izin_luar_bahan":true},
---     "bentuk":{"max_kata":180,"max_paragraf":4}}'::jsonb
--- );
+--      select id, email, created_at from auth.users order by created_at;
+--
+--    Lalu isi tanpa menyalin uuid sama sekali:
+--
+--      insert into public.settings (owner, config)
+--      select u.id, '{
+--          "model": {"bawaan": "opencode/deepseek-v4.1-flash-free#low",
+--                    "uji": ["opencode/deepseek-v4.1-flash-free#high",
+--                            "opencode-go/deepseek-v4.1-flash#low"]},
+--          "mode": "ringkas",
+--          "cari": {"enabled": true, "max_fetch": 3, "izin_luar_bahan": true},
+--          "bentuk": {"max_kata": 180, "max_paragraf": 4}
+--        }'::jsonb
+--      from auth.users u
+--      order by u.created_at
+--      limit 1
+--      on conflict (id) do update
+--        set owner = excluded.owner, config = excluded.config, updated_at = now();
+--
+--    Baris ini opsional: pipeline memakai `config/tanya.json` selama baris
+--    belum ada. Tetapi setelan dalam aplikasi butuh baris ini.
 
 -- 5. Catatan untuk fase 4 (jalur cepat): trigger dispatch TIDAK dibuat di sini.
 --    Trigger hanya boleh menyala untuk `user_id` = pemilik settings dan
