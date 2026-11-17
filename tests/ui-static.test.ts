@@ -226,3 +226,16 @@ test("UI-07: tidak ada kunci rahasia di berkas publik", () => {
   const app = readFileSync(join(root, "public", "app.js"), "utf8");
   assert.doesNotMatch(app, /service_role|sb_secret_/i, "kunci rahasia bocor ke app.js");
 });
+
+// UI-06 — rencana 023
+test("UI-06: Atur punya laporan status dan tombol minta edisi", () => {
+  const html = indexHtml();
+  assert.match(html, /id="statusPanel"/, "panel status hilang");
+  assert.match(html, /id="statusBody"/, "isi status hilang");
+
+  const js = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(js, /status\.json/, "aplikasi tidak membaca status.json");
+  assert.match(js, /Minta edisi hari ini/, "tombol minta edisi hilang");
+  assert.match(js, /build_requests/, "tombol tidak menulis permintaan");
+  assert.match(js, /reasonLabel/, "alasan build tidak diterjemahkan");
+});

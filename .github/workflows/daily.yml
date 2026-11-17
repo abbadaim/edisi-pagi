@@ -1,6 +1,10 @@
 name: edisi-harian
 
 on:
+  repository_dispatch:
+    # Tombol "Minta edisi" di aplikasi (rencana 023). Penjaga di job `check`
+    # membuat permintaan yang terlambat tidak pernah menimpa edisi terbit.
+    types: [build]
   schedule:
     # Tiga jendela, bukan satu: cron GitHub bisa membuang trigger tanpa
     # mengubah status workflow (DEC-0028, terjadi lagi 2026-11-17). Run kedua
@@ -124,12 +128,13 @@ jobs:
 
       # Build bisa "sukses" tetapi turun mutu (penulis deterministik, satu kartu).
       # Langkah ini menilai hasilnya, bukan status job.
-      # `--strict`: edisi yang tidak terbentuk memerahkan run, bukan hanya
-      # mengirim surel (DEC-0038). Commit dan deploy otomatis dilewati.
+      # Tanpa `--strict` di sini: status harus tetap ditulis, di-commit, dan
+      # dideploy walau edisi tidak terbentuk. Pemerahkan run dilakukan job
+      # `verdict` setelah deploy, supaya pembaca tetap melihat alasannya.
       - name: Cek kesehatan build
         id: health
         if: always()
-        run: node scripts/health.ts --strict --out /tmp/health.json
+        run: node scripts/health.ts --out /tmp/health.json --status-out public/status.json
 
       - name: Kirim peringatan surel
         if: always()
@@ -150,6 +155,7 @@ jobs:
       # Commit adalah cadangan, bukan syarat deploy. Kalau ada push manusia
       # saat run berjalan, jangan sampai artefak situs ikut batal.
       - name: Simpan hasil
+        if: always()
         continue-on-error: true
         run: |
           git config user.name "edisi-pagi-bot"
@@ -182,6 +188,21 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
+  # Pemerahkan run setelah status terlanjur dideploy (DEC-0038). Tanpa ini,
+  # run hijau padahal tidak ada yang terbit.
+  verdict:
+    needs: build
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Nilai kesehatan akhir
+        run: node scripts/health.ts --strict
 
   deploy:
     needs: build

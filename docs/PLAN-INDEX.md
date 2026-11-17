@@ -31,6 +31,7 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 020 | [Rekap mingguan berdiri sendiri](plans/020-mingguan-berdiri-sendiri.md) | infra | `tested` | 2026-11-16 |
 | 021 | [Jadwal berlapis + penjaga idempoten](plans/021-jadwal-berlapis.md) | infra | `tested` | 2026-11-17 |
 | 022 | [Batas waktu per kedalaman + run merah](plans/022-timeout-dan-run-merah.md) | infra | `tested` | 2026-11-17 |
+| 023 | [Status build + minta edisi dari aplikasi](plans/023-minta-edisi-dari-aplikasi.md) | UI + infra | `tested` | 2026-11-17 |
 | 022 | [Tanya AI dan pantau pertanyaan pembaca](plans/022-tanya-pantau.md) | infra + pipeline + UI | `tested` | 2026-11-17 |
 
 `002` selesai di kode dan tes: 4 uji baru di `tests/llm-resolve.test.ts`.

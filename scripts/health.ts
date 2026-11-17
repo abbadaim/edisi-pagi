@@ -12,6 +12,7 @@
 import { readFileSync, existsSync, appendFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { assessEdition, fatalReasons } from "../src/core/health.ts";
+import { buildStatus } from "../src/core/status.ts";
 import type { EditionLike, ManifestLike } from "../src/core/health.ts";
 import { isoWib } from "../src/core/time.ts";
 
@@ -68,6 +69,30 @@ if (summaryPath) {
 
 const jsonOut = arg("out");
 if (jsonOut) writeFileSync(jsonOut, JSON.stringify(report));
+
+// Laporan untuk tab Atur: ditulis walau build gagal, supaya pembaca tahu
+// kenapa edisi hari ini tidak ada sebelum menekan "Minta edisi".
+const statusOut = arg("status-out");
+if (statusOut) {
+  const runUrl =
+    process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
+      ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
+      : null;
+  writeFileSync(
+    statusOut,
+    JSON.stringify(
+      buildStatus({
+        report,
+        checkedAt: new Date(),
+        latest: manifest?.latest ?? null,
+        latestByScope: manifest?.latest_by_scope ?? {},
+        runUrl,
+      }),
+      null,
+      2,
+    ),
+  );
+}
 
 const outPath = process.env.GITHUB_OUTPUT;
 if (outPath) {

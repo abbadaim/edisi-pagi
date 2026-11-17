@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "checked_at": "2026-11-17T08:01:59.146Z",
+  "ok": true,
+  "cards": 8,
+  "providers": {
+    "adjudicate": "opencode",
+    "write": "opencode",
+    "verify": "opencode"
+  },
+  "reasons": [],
+  "summary": "2026-11-17 nasional · 8 kartu · tulis: opencode · adjudikasi: opencode · sehat",
+  "latest": "2026-11-17",
+  "latest_by_scope": {
+    "nasional": "2026-11-17",
+    "lokal": null,
+    "mingguan": "2026-11-16"
+  },
+  "run_url": null
+}

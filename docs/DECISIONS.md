@@ -409,3 +409,16 @@ Dua kegagalan 17 November 2026 berasal dari satu build:
    masih bisa terbit (penulis deterministik, kartu sedikit) tetap hijau dan
    hanya dikirim lewat surel.
 _Tanggal: 2026-11-17. Rencana: `docs/plans/022-timeout-dan-run-merah.md`._
+
+## DEC-0039 — Permintaan build dari aplikasi, tanpa `--force`
+
+Tombol “Minta edisi hari ini” menulis `build_requests`; trigger Supabase
+memanggil `repository_dispatch` `build`. Aplikasi tidak pernah meminta bangun
+ulang tanggal yang sudah terbit — `edition-guard` di job `check` yang memutuskan,
+sehingga permintaan terlambat berhenti dalam hitungan detik. Cooldown 30 menit
+ditegakkan di server, bukan hanya di UI.
+
+`public/status.json` ditulis langkah kesehatan (`if: always()`) supaya pembaca
+melihat alasan sebelum menekan tombol; job `verdict` memerahkan run **setelah**
+status sempat dideploy (DEC-0038).
+_Tanggal: 2026-11-17. Rencana: `docs/plans/023-minta-edisi-dari-aplikasi.md`._

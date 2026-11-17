@@ -550,9 +550,112 @@ function openAtur() {
   window.scrollTo(0, 0);
   markNav();
   renderInstall();
+  renderStatus();
   renderAbout();
   setupNotifications();
   renderTanyaSettings();
+}
+
+/** Tanggal WIB hari ini, `YYYY-MM-DD`, tanpa bergantung jam perangkat. */
+function todayWib() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Jakarta" }).format(new Date());
+}
+
+function shortTime(iso) {
+  try {
+    return new Date(iso).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Jakarta" });
+  } catch {
+    return "";
+  }
+}
+
+/**
+ * Laporan “kenapa edisi hari ini belum ada” + tombol minta edisi (rencana 023).
+ * Sumbernya `status.json` yang ditulis langkah kesehatan di CI — bukan tebakan
+ * aplikasi. Tombol hanya muncul bila edisi hari ini memang belum ada.
+ */
+async function renderStatus() {
+  const box = $("statusBody");
+  if (!box) return;
+  box.textContent = "";
+  box.append(el("p", "pmuted", "Memeriksa…"));
+
+  const today = todayWib();
+  let status = null;
+  try {
+    const res = await fetch("status.json", { cache: "no-store" });
+    if (res.ok) status = await res.json();
+  } catch { /* offline: tetap tampilkan manifest */ }
+
+  const latest = S.manifest?.latest_by_scope?.nasional ?? null;
+  const published = latest === today;
+  box.textContent = "";
+
+  if (published) {
+    box.append(el("p", "pmuted ok", `Edisi ${formatDate(today)} terbit${status?.cards ? ` · ${status.cards} kartu` : ""}.`));
+  } else {
+    box.append(el("p", "pmuted", `Edisi ${formatDate(today)} belum terbit. Edisi terakhir: ${latest ? formatDate(latest) : "—"}.`));
+  }
+
+  if (status) {
+    const when = status.checked_at ? ` · diperiksa ${shortTime(status.checked_at)}` : "";
+    const writer = status.providers?.write ? ` · penulis: ${status.providers.write}` : "";
+    box.append(el("p", "pmuted", `Build ${status.date ?? "—"}: ${status.ok ? "sehat" : "bermasalah"}${status.cards ? ` · ${status.cards} kartu` : ""}${writer}${when}.`));
+    if (Array.isArray(status.reasons) && status.reasons.length) {
+      const ul = el("ul", "statusReasons");
+      for (const r of status.reasons) ul.append(el("li", null, reasonLabel(r)));
+      box.append(ul);
+    }
+    if (status.run_url) {
+      const a = el("a", "pbtn", "Lihat run terakhir");
+      a.href = status.run_url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      box.append(a);
+    }
+  } else {
+    box.append(el("p", "pmuted", "Belum ada laporan build. Itu sendiri berarti build belum pernah menulis status."));
+  }
+
+  if (published) return;
+  if (!S.cfg?.supabaseUrl || !S.session) {
+    box.append(el("p", "pmuted", "Masuk ke Tanya untuk meminta edisi dari sini, atau jalankan `gh workflow run daily.yml`."));
+    return;
+  }
+
+  const lastAsk = Number(localStorage.getItem("buildAskAt") ?? 0);
+  const waitMs = 30 * 60 * 1000;
+  const cooldown = Date.now() - lastAsk < waitMs;
+  const btn = el("button", "pbtn", cooldown ? "Diminta — tunggu 30 menit" : "Minta edisi hari ini");
+  btn.type = "button";
+  btn.disabled = cooldown;
+  btn.onclick = async () => {
+    btn.disabled = true;
+    btn.textContent = "Mengirim…";
+    try {
+      await sb("build_requests", { method: "POST", body: {}, prefer: "return=minimal" });
+      localStorage.setItem("buildAskAt", String(Date.now()));
+      btn.textContent = "Diminta — tunggu 30 menit";
+      box.append(el("p", "pmuted ok", `Permintaan dikirim ${shortTime(new Date().toISOString())}. Edisi biasanya siap 10–20 menit.`));
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = "Minta edisi hari ini";
+      box.append(el("p", "pmuted", `Gagal mengirim permintaan: ${String(e.message ?? e)}`));
+    }
+  };
+  box.append(btn);
+}
+
+function reasonLabel(reason) {
+  const map = {
+    "no-edition": "edisi tidak terbentuk — build gagal atau belum jalan",
+    "deterministic-writer": "penulis deterministik (OpenCode tidak dipakai)",
+    "deterministic-adjudicate": "adjudikasi deterministik",
+    "few-cards": "kartu terlalu sedikit",
+    "not-published": "manifest belum menunjuk edisi ini",
+    "edition-not-yesterday": "tanggal edisi tidak cocok",
+  };
+  return map[reason] ?? reason;
 }
 
 function renderAbout() {

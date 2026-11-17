@@ -22,6 +22,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
 | Tanya AI | Tab `#/tanya` + `#/tanya/<id>` di aplikasi; pertanyaan masuk ke Supabase (`asks`, RLS owner-only), dijawab `scripts/ask.ts` (`DEC-0031`…`DEC-0036`) |
 | Jalur cepat | `repository_dispatch` dari Supabase (pg_net + Vault) → `tanya.yml`; terukur **10 detik** sampai run dimulai, jawaban ~2–3 menit |
+| Minta edisi | Panel `#/atur` membaca `public/status.json` dan menulis `build_requests` → `repository_dispatch build` (`DEC-0039`); tanpa `--force` |
 | Pantau | `editor_notes` `source='reader'`; `scripts/watch.ts sync|report` di `daily.yml`; pemeriksaan bahan tanpa token (`DEC-0037`) |
 | Tests | `npm test` — 347 uji; `npm run test:ui` — 11 uji browser |
 | Typecheck | `npm run typecheck` |
