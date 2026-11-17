@@ -52,6 +52,24 @@ if (!SUPABASE_URL || !AUTH_KEY) {
   process.exit(2);
 }
 
+/**
+ * Dua bentuk kredensial, dua cara pakai — dan salah tempel menghasilkan PGRST301
+ * yang menyesatkan:
+ *
+ *   `sb_secret_…`  kunci opaque. Gateway Supabase memetakannya ke `service_role`
+ *                  lewat header `apikey`; ia bukan JWT, jadi jangan dikirim
+ *                  sebagai `Authorization: Bearer`.
+ *   `eyJ…`         JWT (service_role lama, atau sesi pengguna saat uji lokal):
+ *                  `apikey` tetap kunci proyek, tokennya di Authorization.
+ */
+const AUTH_MODE: "secret-key" | "jwt" = AUTH_KEY.startsWith("sb_secret_") ? "secret-key" : "jwt";
+console.log(`auth: ${AUTH_MODE}`);
+
+function authHeaders(): Record<string, string> {
+  if (AUTH_MODE === "secret-key") return { apikey: AUTH_KEY as string };
+  return { apikey: PROJECT_KEY || (AUTH_KEY as string), Authorization: `Bearer ${AUTH_KEY}` };
+}
+
 const dbPath = process.env.DATABASE_PATH ?? join(root, "local.db");
 const baseCfg = parseAskConfig(readFileSync(join(root, "config", "tanya.json"), "utf8"));
 
@@ -68,8 +86,7 @@ async function sb<T>(path: string, init: RequestInit = {}): Promise<T> {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     ...init,
     headers: {
-      apikey: PROJECT_KEY || (AUTH_KEY as string),
-      Authorization: `Bearer ${AUTH_KEY}`,
+      ...authHeaders(),
       "content-type": "application/json",
       ...(init.headers ?? {}),
     },
