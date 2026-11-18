@@ -107,9 +107,28 @@ Management API `POST /v1/projects/<ref>/database/query`, peran `postgres`,
 | `show timezone` | `UTC` — zona sesi, bukan zona jadwal |
 
 Artinya: yang kurang hanya `CREATE EXTENSION`, bukan kemampuan. Tidak perlu
-restart, tidak perlu `ALTER SYSTEM` untuk `cron.timezone` (dan itu memang tidak
-bisa di Supabase — konteks `postmaster`). Probe satu menit di atas **belum
-dijalankan**; ia baru bisa setelah ekstensi dibuat.
+restart dan tidak perlu `ALTER SYSTEM` untuk `cron.timezone` (konteks
+`postmaster`, tidak bisa diubah di Supabase).
+
+**Sesudah dipasang 2026-11-18** (disetujui pemilik proyek):
+
+| Perintah | Keluaran |
+|---|---|
+| `create extension if not exists pg_cron` | `pg_cron 1.6.4` |
+| `cron.schedule('probe-utc','* * * * *',$$select now()$$)` | `jobid 1`, `active: true` |
+| `cron.job_run_details` sesudah dua menit | `succeeded` pada `04:00:00` dan `04:01:00` **UTC** |
+| `cron.unschedule('probe-utc')` | `true`; `select count(*) from cron.job` → `0` |
+
+Probe membuktikan dua hal sekaligus: worker benar-benar mengeksekusi job, dan
+jadwalnya mengikuti UTC — job menit-an jatuh tepat di batas menit UTC, sesuai
+`cron.timezone = GMT`.
+
+ACL ikut diperiksa: `cron` tidak memberi `USAGE` ke `anon`/`authenticated`/
+`service_role` (`nspacl` hanya `supabase_admin` dan `postgres`), sehingga
+`EXECUTE` tingkat fungsi yang diwarisi dari default Postgres tidak bisa dipakai
+— tanpa `USAGE` skema, fungsi tidak bisa dirujuk. Skema `cron` juga tidak
+diekspos PostgREST (`asks`, `build_requests`, `settings` saja). Tidak ada yang
+perlu dicabut.
 
 Keluaran yang diharapkan setelah `005_schedule.sql` dipasang dijalankan:
 
@@ -186,6 +205,9 @@ public.dispatch_build();`. Tidak ada data yang perlu dikembalikan.
 - `2026-11-18` — `plan-draft` — preflight dijalankan di proyek sungguhan:
   `pg_cron` **belum dipasang** (tersedia 1.6.4), worker sudah preloaded,
   `cron.timezone=GMT`. Probe belum dijalankan karena menunggu `CREATE EXTENSION`.
+- `2026-11-18` — `plan-draft` — `pg_cron 1.6.4` dipasang dan probe dijalankan:
+  `succeeded` pada 04:00:00 dan 04:01:00 UTC, lalu dicabut (0 job tersisa).
+  Dua gerbang §3 lunas; implementasi `005_schedule.sql` menunggu `plan-approved`.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 
