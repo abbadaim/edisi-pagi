@@ -93,6 +93,24 @@ select status, start_time, start_time at time zone 'UTC' as start_utc,
 select cron.unschedule('probe-utc');
 ```
 
+**Hasil terukur 2026-11-18** (proyek `ivpvbwyqwtzfjcurezle`, PG 17.11, lewat
+Management API `POST /v1/projects/<ref>/database/query`, peran `postgres`,
+`rolsuper: false`, `rolbypassrls: true`):
+
+| Perintah | Keluaran |
+|---|---|
+| `select extname, extversion from pg_extension where extname in ('pg_cron','pg_net')` | `pg_net 0.20.4` **saja** — `pg_cron` belum dipasang |
+| `select name, default_version, installed_version from pg_available_extensions …` | `pg_cron 1.6.4 / null` — tersedia, belum dibuat |
+| `select * from cron.job` | `42P01 relation "cron.job" does not exist` |
+| `select setting from pg_settings where name='shared_preload_libraries'` | `…, pg_cron, pg_net, …` — worker **sudah** preloaded |
+| `select name, setting from pg_settings where name like 'cron.%'` | `cron.database_name=postgres` (configuration file), `cron.timezone=GMT` (default/postmaster) |
+| `show timezone` | `UTC` — zona sesi, bukan zona jadwal |
+
+Artinya: yang kurang hanya `CREATE EXTENSION`, bukan kemampuan. Tidak perlu
+restart, tidak perlu `ALTER SYSTEM` untuk `cron.timezone` (dan itu memang tidak
+bisa di Supabase — konteks `postmaster`). Probe satu menit di atas **belum
+dijalankan**; ia baru bisa setelah ekstensi dibuat.
+
 Keluaran yang diharapkan setelah `005_schedule.sql` dipasang dijalankan:
 
 ```sql
@@ -149,7 +167,7 @@ Jangan menyimpulkan dari `start_time` di `cron.job_run_details`: kolom itu
 
 | Risiko | Mitigasi |
 |---|---|
-| `pg_cron` tidak tersedia untuk proyek ini | cron GitHub tetap ada; jangan hapus tiga lapis itu sebelum dispatch terbukti 3 hari berturut |
+| `pg_cron` tidak tersedia untuk proyek ini | **sudah diperiksa 2026-11-18**: tersedia (1.6.4) dan worker preloaded; hanya perlu `CREATE EXTENSION` |
 | Dispatch ganda (pg_cron + cron GitHub) | `edition-guard`; run kedua berhenti <15 detik, tidak menimpa |
 | Token Vault kedaluwarsa | `net._http_response` 401; `schedule-check` tetap memeriksa hasil dan memicu run |
 | Jam server bukan UTC | `show timezone` sebelum menetapkan jadwal; dicatat di berkas SQL |
@@ -165,6 +183,9 @@ public.dispatch_build();`. Tidak ada data yang perlu dikembalikan.
 - `2026-11-18` — `plan-draft` — §4 diperbaiki: `show timezone` bukan penentu
   jadwal; pg_cron membaca `cron.timezone` (default GMT) dan di Supabase praktis
   tidak bisa diubah. Ditambah probe satu menit untuk membuktikan worker hidup.
+- `2026-11-18` — `plan-draft` — preflight dijalankan di proyek sungguhan:
+  `pg_cron` **belum dipasang** (tersedia 1.6.4), worker sudah preloaded,
+  `cron.timezone=GMT`. Probe belum dijalankan karena menunggu `CREATE EXTENSION`.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 
