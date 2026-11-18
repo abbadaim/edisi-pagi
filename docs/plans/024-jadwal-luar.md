@@ -52,19 +52,48 @@ Tanggal yang sudah terbit tetap tidak pernah dibangun ulang.
 
 ## 3. Rencana
 
-1. `supabase/005_schedule.sql` — fungsi `public.dispatch_build()` yang membaca
+1. **Pemeriksaan awal** (SQL Editor, sebelum apa pun): ekstensi terpasang?
+   worker hidup? `cron.timezone` apa? Lihat §4.
+2. `supabase/005_schedule.sql` — fungsi `public.dispatch_build()` yang membaca
    dua secret Vault lalu `net.http_post` `event_type: build`; `cron.schedule`
    dengan `'45 22 * * *'`. Diakhiri komentar berisi perintah verifikasi.
-2. Dashboard Supabase → Database → Extensions: aktifkan `pg_cron` dan `pg_net`
+3. Dashboard Supabase → Database → Extensions: aktifkan `pg_cron` dan `pg_net`
    (pg_net sudah aktif sejak `002_dispatch.sql`).
-3. `docs/PLAN-INDEX.md`, `AGENTS.md` §1 (baris CI) — setelah `tested`.
-4. `docs/learnings/2026-11.md` — angka selisih di §1 sebagai bukti.
+4. `docs/PLAN-INDEX.md`, `AGENTS.md` §1 (baris CI) — setelah `tested`.
+5. `docs/learnings/2026-11.md` — angka selisih di §1 sebagai bukti.
 
 Tidak menyentuh `scripts/build.ts`, `edition-guard`, atau isi edisi.
 
 ## 4. Kontrak (infra)
 
-Perintah dan keluaran yang diharapkan, dijalankan di SQL Editor:
+**Pemeriksaan awal**, dijalankan di SQL Editor sebelum memasang apa pun:
+
+```sql
+-- 1. sudah terpasang?
+select extname, extversion from pg_extension where extname in ('pg_cron','pg_net');
+-- 2. tersedia untuk dipasang? (bila #1 kosong)
+select name, default_version, installed_version
+  from pg_available_extensions where name in ('pg_cron','pg_net');
+-- 3. zona yang benar-benar dipakai pg_cron
+select name, setting, source, context from pg_settings where name like 'cron.%';
+-- 4. zona sesi — hanya untuk membaca hasil
+show timezone;
+select now(), now() at time zone 'UTC' as utc;
+```
+
+Bukti worker hidup (bukan sekadar ekstensi terpasang) — jadwalkan probe satu
+menit, tunggu, lalu cabut:
+
+```sql
+select cron.schedule('probe-utc', '* * * * *', $$select now()$$);
+select jobid, jobname, schedule, active from cron.job;                    -- active = t
+select status, start_time, start_time at time zone 'UTC' as start_utc,
+       return_message
+  from cron.job_run_details order by start_time desc limit 3;              -- succeeded
+select cron.unschedule('probe-utc');
+```
+
+Keluaran yang diharapkan setelah `005_schedule.sql` dipasang dijalankan:
 
 ```sql
 select jobid, jobname, schedule, active from cron.job;
@@ -87,9 +116,23 @@ Bila cron GitHub kebetulan menang lebih dulu, run dispatch berhenti sendiri:
 guard: 2026-11-19 sudah terbit — dilewati
 ```
 
-`pg_cron` memakai UTC; jangan menulis `'45 22 * * *'` sebagai WIB. Kalau server
-dikonfigurasi lain, tulis `'45 17 * * *'` **hanya** setelah `show timezone`
-membuktikan `Asia/Jakarta` — dan catat di berkas SQL-nya.
+`pg_cron` membaca `cron.timezone` (default **GMT**), bukan `TimeZone` sesi —
+`show timezone` menjawab pertanyaan yang salah. Nilainya hanya bisa diubah
+lewat `postgresql.conf` (`ALTER SYSTEM` + restart, konteks postmaster), jadi di
+Supabase ia praktis selalu GMT dan jadwalnya selalu UTC:
+
+```sql
+select name, setting, source, context from pg_settings where name like 'cron.%';
+-- cron.timezone | GMT | ... | postmaster
+```
+
+`'45 22 * * *'` berarti 22:45 UTC = 05:45 WIB — sama dengan cron GitHub, jadi
+tidak ada konversi. Kalau `cron.timezone` ternyata bukan GMT (mis. `Asia/Jakarta`),
+tulis `'45 5 * * *'` dan catat nilai `setting`-nya di kepala berkas SQL.
+
+Jangan menyimpulkan dari `start_time` di `cron.job_run_details`: kolom itu
+`timestamptz` dan ditampilkan menurut zona sesi. Bandingkan dengan
+`start_time at time zone 'UTC'`.
 
 ## 5. Tes
 
@@ -119,6 +162,9 @@ public.dispatch_build();`. Tidak ada data yang perlu dikembalikan.
 
 - `2026-11-18` — `plan-draft` — dibuat setelah 0 dari 5 jendela cron terkirim
   dan edisi 2026-11-18 hanya terbit lewat dispatch manual.
+- `2026-11-18` — `plan-draft` — §4 diperbaiki: `show timezone` bukan penentu
+  jadwal; pg_cron membaca `cron.timezone` (default GMT) dan di Supabase praktis
+  tidak bisa diubah. Ditambah probe satu menit untuk membuktikan worker hidup.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 
