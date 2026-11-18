@@ -1,0 +1,1002 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-19",
+  "scope": "nasional",
+  "published_at": "2026-11-19T05:45:47+07:00",
+  "coverage": {
+    "from": "2026-11-18T05:45:47+07:00",
+    "to": "2026-11-19T05:45:47+07:00"
+  },
+  "generated_at": "2026-11-19T05:45:47+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 31,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_legislator_dorong_ruu_penyadap_9e87",
+      "angle": "Komisi III menuntaskan RUU perampasan aset; paripurna dan isi pasalnya jadi ujian.",
+      "kicker": "Nasional",
+      "title": "RUU Perampasan Aset Disebut Lolos Komisi III, Paripurna 19 November",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Komisi III DPR menggelar pengambilan keputusan tingkat pertama atas RUU Perampasan Aset pada 18 November 2026 dan delapan fraksi disebut setuju membawanya ke pa",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Komisi III DPR menjadwalkan rapat pleno pengambilan keputusan tingkat pertama atas RUU Perampasan Aset pada 18 November 2026, mulai pukul 13.00 WIB. Ketua Komisi III Habiburokhman menyebut agenda itu sebagai rapat kerja dalam rangka pembahasan tingkat pertama pengambilan keputusan atas RUU tentang Perampasan Aset terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya. Rapat pleno tersebut dipimpin Wakil Ketua DPR Sufmi Dasco dan membahas penegakan hukum terkait korupsi. Keputusan tingkat satu ini adalah tahap yang harus dilalui sebelum naskah dibawa ke rapat paripurna.",
+        "Sebelum keputusan diambil, delapan fraksi menyampaikan pandangan mini fraksi terhadap RUU. Namun laporan yang tersedia tidak memuat isi pandangan kedelapan fraksi itu satu per satu. Yang tercatat hanya kesimpulan bahwa kedelapan fraksi setuju agar RUU dibawa ke paripurna, tanpa rincian siapa yang menyampaikan catatan dan soal apa. Karena itu pembaca belum bisa mengetahui apakah ada fraksi yang menyampaikan keberatan di forum itu, atau apakah semua pandangan berisi dukungan tanpa syarat. Ringkasan berita juga tidak menyebut lamanya pembahasan maupun jumlah anggota yang hadir. Yang disebut hanya bahwa pandangan mini fraksi diserahkan sebelum keputusan diambil, dan bahwa agenda itu memakan waktu tersendiri dalam rapat pleno.",
+        "Dalam rapat yang sama, Tim Perumus dan Sinkronisasi melaporkan hasil kerjanya. Anggota Panja RUU, Soedeson Tandra, menyampaikan bahwa judul yang semula dibahas sebagai RUU tentang perampasan aset terkait tindak pidana kini berubah menjadi RUU tentang Perampasan Aset terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya. Ia menyebut timnya melibatkan ahli bahasa dan legal drafter untuk memastikan tata bahasa naskah. Perbaikan redaksional mencakup penggunaan kalimat, frasa, kata, huruf, tanda baca, serta konsistensi penomoran dan sistematika. Penelusuran juga dilakukan pada bagian penjelasan agar sinkron dengan hasil pembahasan tingkat Panja.",
+        "Perubahan nama itu bukan sekadar urusan administratif. Dengan menambahkan frasa tindak pidana korupsi dan tindak pidana lainnya, judul RUU menyatakan bahwa cakupannya tidak berhenti pada korupsi. Namun bahan tidak menjelaskan apakah perubahan tersebut memperluas atau justru membatasi jenis perkara yang bisa ditangani. Sebelumnya RUU ini dibahas sebagai RUU tentang perampasan aset terkait tindak pidana, tanpa penyebutan dua kategori itu. Naskah sebelum dan sesudah perubahan tidak tersedia, sehingga makna perubahan nama masih harus dibaca dari penjelasan resmi yang belum diterbitkan. Bahan juga tidak menyebut siapa yang mengusulkan perubahan judul itu, apakah pemerintah, panja, atau tim perumus.",
+        "Perubahan yang paling terlihat menyangkut cakupan pidana. Menurut laporan Tirto, DPR dan pemerintah menyepakati bahwa kategori tindak pidana nonkorupsi di dalam RUU disederhanakan dari 13 jenis menjadi 6 jenis. Bahan yang tersedia tidak memerinci enam jenis itu apa saja, dan tidak menjelaskan kriteria penyederhanaannya. Pembaca yang ingin tahu apakah kasus tertentu masuk cakupan masih harus menunggu naskah resmi atau penjelasan lanjutan, karena ringkasan berita yang ada baru menyebut jumlahnya. Penyederhanaan itu juga belum disertai keterangan apakah jenis yang dibuang hilang sepenuhnya atau dipindahkan ke aturan lain.",
+        "Jadwal paripurna menjadi salah satu titik yang paling ditunggu. CNBC Indonesia melaporkan DPR dijadwalkan mengesahkan RUU ini menjadi undang-undang pada Kamis, 19 November 2026, atau sehari setelah rapat pleno Komisi III. Liputan6 menyebut RUU segera dibawa ke rapat paripurna untuk disetujui menjadi undang-undang, tanpa menyebut tanggalnya. Siapa yang akan membawa hasil Komisi III ke paripurna belum disebut dalam bahan; laporan hanya menyebut Sufmi Dasco memimpin rapat pleno Komisi III. Nama pembicara fraksi di paripurna pun belum ada dalam pemberitaan.",
+        "Pengambilan keputusan tingkat pertama bukan pengesahan terakhir. Sesuai alur yang disebut dalam laporan, keputusan diambil di komisi sebelum RUU dibawa ke paripurna untuk disahkan menjadi undang-undang. Keputusan DPR dan pemerintah bersifat mengikat warga, dan dampaknya biasanya baru terasa setelah aturan turunan terbit. Artinya, pengesahan dalam waktu dekat belum menjadi garis akhir: masih ada tahap peraturan pelaksana yang menentukan bagaimana perampasan aset benar-benar dijalankan. Bahan tidak menyebut berapa lama tenggat penyusunan aturan turunan itu, dan tidak menjelaskan siapa yang akan menyusunnya. Karena itu belum ada jawaban atas pertanyaan paling praktis: kapan harta hasil korupsi benar-benar bisa dirampas lewat aturan baru ini.",
+        "Pertanyaan soal pasal yang mengatur perampasan aset tanpa putusan pidana belum bisa dijawab dari bahan ini. Tidak satu pun laporan menyebut nomor pasal, bunyi ketentuan, atau batasan pidana yang harus ada lebih dulu. Yang tersedia hanya keterangan bahwa RUU ini mengubah nomenklatur dan cakupan pidana, serta akan dipakai untuk penegakan hukum terkait korupsi. Karena itu detail mengenai mekanisme perampasan tanpa putusan pidana, termasuk apakah mekanisme itu memang ada di dalam naskah, dinyatakan belum tersedia sampai naskah resmi dipublikasikan.",
+        "Hal serupa berlaku untuk mekanisme pembuktian asal harta. Bahan tidak memuat penjelasan tentang siapa yang harus membuktikan, standar pembuktian yang dipakai, atau lembaga mana yang berwenang menelusuri harta. Laporan hanya menyebut RUU ini akan dipakai untuk penegakan hukum terkait korupsi dan menjangkau korban investasi bodong. Tanpa rincian pasal, pembaca belum bisa menilai apakah beban pembuktian bergeser dari penyidik ke pemilik harta atau tetap seperti praktik yang berlaku sekarang. Perdebatan publik soal RUU ini biasanya bertumpu pada titik itu, dan titik itu justru tidak tercakup dalam pemberitaan hari ini.",
+        "Perbandingan dengan UU Tipikor yang berlaku juga belum bisa disusun dari bahan ini. Tidak ada laporan yang menyebut UU Tipikor secara eksplisit, apalagi membandingkan pasalnya dengan RUU baru. Yang bisa dikatakan, RUU ini memperluas keranjang pidana ke tindak pidana lain di luar korupsi, dengan kategori nonkorupsi dipangkas menjadi enam jenis. Apakah perluasan itu menambah jenis harta yang bisa dirampas atau justru mempersempit dibanding rancangan sebelumnya, belum jelas dari ringkasan berita. Karena itu klaim bahwa RUU ini lebih kuat atau lebih lemah dari UU Tipikor belum bisa diuji dengan bahan yang ada.",
+        "Keberatan fraksi yang masih tercatat dalam pembahasan tidak ditemukan dalam bahan. Dua laporan justru menyebut seluruh fraksi setuju agar RUU dibawa ke paripurna, satu di antaranya menyebut delapan fraksi. Tidak ada catatan soal fraksi yang menolak, mengajukan catatan keberatan, atau meminta penundaan. Ketiadaan catatan itu bukan bukti bahwa tidak ada keberatan; kemungkinan keberatan disampaikan di luar pemberitaan yang dikutip, atau belum diangkat ke publik. Pembaca yang ingin memastikan sebaiknya memeriksa risalah rapat, yang tidak tersedia dalam bahan ini.",
+        "Menurut laporan CNN Indonesia, RUU ini sudah 18 tahun tertunda dan ditargetkan rampung pada 15 Desember. Ada ketegangan kecil di sini: laporan lain menyebut pengesahan dijadwalkan 19 November 2026, jauh sebelum 15 Desember. Kedua angka tidak harus bertentangan, karena target 15 Desember kemungkinan merujuk pada batas akhir keseluruhan proses, sedangkan 19 November adalah jadwal paripurna. Namun bahan tidak menjelaskan hubungan keduanya. Karena itu perbedaan tanggal itu sebaiknya dicatat, bukan dipilih salah satu tanpa keterangan.",
+        "Jangkauan RUU disebut mencakup korupsi hingga korban investasi bodong. Detik melaporkan Komisi III hampir menyelesaikan RUU untuk pidana korupsi sampai korban investasi bodong. Penyebutan korban investasi bodong dapat dibaca sebagai penanda bahwa RUU ini tidak hanya soal menghukum pelaku, tetapi juga soal mengembalikan kerugian. Namun bahan tidak menjelaskan bagaimana korban akan memperoleh kembali uangnya, apakah lewat perampasan lalu pengembalian, atau melalui jalur lain. Mekanisme restitusi dan urutan prioritasnya juga belum diuraikan dalam pemberitaan yang tersedia.",
+        "Beberapa hal layak dipantau setelah paripurna. Pertama, naskah final RUU, terutama daftar enam jenis pidana nonkorupsi yang sebelumnya 13 jenis. Kedua, pasal tentang perampasan tanpa putusan pidana dan mekanisme pembuktian asal harta, yang tidak dijelaskan dalam pemberitaan hari ini. Ketiga, siapa yang diberi kewenangan menelusuri dan merampas aset, serta bagaimana pengadilan mengawasinya. Tanpa tiga hal itu, penilaian publik atas RUU ini hanya akan berdasar judul dan jumlah, bukan isi. Risalah rapat dan naskah akademik RUU tidak termasuk bahan yang dikutip di sini, sehingga pembandingan pasal per pasal belum bisa dilakukan. Yang bisa dilakukan pembaca adalah mencatat janji yang disebut dalam pemberitaan, lalu mencocokkannya dengan teks resmi ketika terbit. Pemberitaan lanjutan selepas paripurna akan menentukan apakah rincian itu terbuka.",
+        "Ringkasnya, Komisi III telah mengambil langkah terakhir sebelum paripurna: keputusan tingkat pertama atas RUU Perampasan Aset terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya. Delapan fraksi disebut setuju membawanya ke paripurna yang dijadwalkan 19 November 2026. Yang belum terbaca dari bahan justru bagian yang paling menentukan: pasal, mekanisme pembuktian, dan perbandingannya dengan aturan yang berlaku. Itu sebabnya pengesahan yang cepat belum tentu berarti aturannya siap dipakai, dan pembaca perlu menunggu naskah resmi sebelum menilai."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa tugasnya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa keputusan DPR dan pemerintah mengikat warga?",
+          "a": "Keputusan itu mengikat warga, dari undang-undang sampai peraturan menteri, dan dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti perampasan aset secara umum?",
+          "a": "Perampasan aset adalah penyitaan aset oleh pihak berwenang, biasanya berlaku pada dugaan hasil atau instrumen kejahatan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perampasan_aset"
+          }
+        }
+      ],
+      "action": "Tunggu naskah final RUU, lalu periksa daftar enam pidana nonkorupsi dan pasal pembuktian asal harta sebelum menilai.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8337512/komisi-iii-dpr-finalisasi-ruu-perampasan-aset",
+          "published_at": "2026-11-18T11:51:58+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261118105643-32-1428438/ruu-perampasan-aset-rampung-komisi-iii-pleno-pengesahan-hari-ini",
+          "published_at": "2026-11-18T11:05:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ruu-perampasan-aset-delik-nonkorupsi-dipangkas-jadi-6-jenis-idVk",
+          "published_at": "2026-11-18T11:38:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261118150942-4-786337/dpr-sahkan-ruu-perampasan-aset-jadi-undang-undang-besok",
+          "published_at": "2026-11-18T15:13:15+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8758578/ruu-perampasan-aset-selangkah-lagi-jadi-uu-habiburokhman-ungkit-atensi-dasco",
+          "published_at": "2026-11-18T15:18:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-18",
+      "changes": [],
+      "dek": "Delapan fraksi disebut setuju membawa RUU Perampasan Aset ke paripurna 19 November, tetapi pasal dan mekanisme pembuktiannya belum terbaca.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "1",
+          "label": "halaman"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "RUU Perampasan Aset Selangkah Lagi Jadi UU, Habiburokhman Ungkit Atensi Dasco",
+          "url": "https://news.detik.com/berita/d-8758578/ruu-perampasan-aset-selangkah-lagi-jadi-uu-habiburokhman-ungkit-atensi-dasco",
+          "at": "2026-11-18T15:18:03+07:00",
+          "owner": "CT Corp",
+          "media": 3
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Komisi III DPR Finalisasi RUU Perampasan Aset",
+          "url": "https://www.liputan6.com/news/read/8337512/komisi-iii-dpr-finalisasi-ruu-perampasan-aset",
+          "at": "2026-11-18T11:51:58+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "RUU Perampasan Aset: Delik Nonkorupsi Dipangkas Jadi 6 Jenis",
+          "url": "https://tirto.id/ruu-perampasan-aset-delik-nonkorupsi-dipangkas-jadi-6-jenis-idVk",
+          "at": "2026-11-18T11:38:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_sidang_etik_listyo_sigit_digel_3c20",
+      "angle": "Dua jenderal diputus dipecat lebih dulu; sidang etik eks Kapolri dijadwalkan pekan depan.",
+      "kicker": "Kriminal",
+      "title": "Sidang Etik Listyo Sigit Pekan Depan, Dua Jenderal Sudah Dipecat",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sidang etik Listyo Sigit dijadwalkan pekan depan, sementara Ahrie Sonta dan Eko Hadi sudah diputus PTDH.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Sidang etik terhadap mantan Kapolri Jenderal Listyo Sigit Prabowo dijadwalkan berlangsung pekan depan. Kepala Divisi Humas Polri Irjen Johnny Eddizon Isir menyampaikan jadwal itu kepada wartawan pada Selasa, 17 November, namun belum menyebut hari pastinya. \"Minggu depan, nanti untuk harinya akan kami sampaikan,\" ujarnya, seperti dikutip cnnindonesia.com. Penjadwalan ini menjadi penanda penting: dua jenderal lain sudah diputus dipecat dalam perkara yang sama, satu tersangka lagi sidangnya ditunda karena alasan kesehatan, dan kini proses etik terhadap eks orang nomor satu di Polri itu memasuki tahap yang selama ini ditunggu.",
+        "Dua jenderal yang telah diputus dipecat adalah Irjen Pol Ahrie Sonta Nasution dan Irjen Pol Eko Hadi Santoso. Menurut pemberitaan cnnindonesia.com, Ahrie diputus dengan sanksi Pemberhentian Tidak Dengan Hormat (PTDH) dalam sidang KKEP yang digelar pekan lalu, dan ia mengajukan banding. Sementara itu Eko diputus PTDH dalam sidang etik yang digelar Selasa, 17 November. Dalam daftar tersangka, Ahrie disebut sebagai Kepala Divisi Hukum Polri dan Eko sebagai eks Direktur Tindak Pidana Narkoba Bareskrim Polri. Keduanya kini menjadi contoh pertama bagaimana sanksi etik dijatuhkan pada perwira tinggi dalam kasus ini, terpisah dari perkara pidana yang masih berjalan.",
+        "Pelanggaran yang dinilai berkaitan dengan dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto. Bareskrim Polri menetapkan empat jenderal sebagai tersangka: Listyo Sigit Prabowo, Ahrie Sonta Nasution, Eko Hadi Santoso, dan eks Kepala Divisi TIK Polri Irjen Slamet Uliandi. Keempatnya dijerat Pasal 258 KUHP dan/atau Pasal 332 KUHP ayat 1 dan 2 dan/atau Pasal 32 ayat 1 UU ITE. Bahan tidak merinci pasal kode etik mana yang dinilai dilanggar oleh masing-masing perwira; yang tersedia adalah jerat pidana dari penyidik dan, untuk Ahrie serta Eko, putusan PTDH.",
+        "Kapan tepatnya sidang digelar belum dipastikan. Juru bicara kepolisian hanya menyebut pekan depan dan berjanji menyampaikan harinya kemudian. Begitu pula susunan majelis: Karo Penmas Divisi Humas Polri Brigjen Trunoyudo Wisnu Andiko mengatakan komposisi KKEP akan mengikuti peraturan yang berlaku dan diumumkan lebih lanjut. Terpisah, liputan6.com melaporkan bahwa sidang etik Listyo akan dipimpin perwira tinggi. Sampai bahan ini disusun, nama ketua majelis dan anggota yang menyidangkan eks Kapolri itu belum diumumkan.",
+        "Rujukan yang dipakai adalah Perpol Nomor 4 Tahun 2026 tentang Perubahan atas Perpol Nomor 7 Tahun 2022 tentang Kode Etik Profesi dan Komisi Kode Etik Polri. Trunoyudo menyebut Pasal 42 sebagai dasar mekanisme sidang lanjutan pada pekan depan. Bahan tidak menyebutkan kapan Perpol tersebut diterbitkan maupun apa saja perubahan yang dibawanya dibanding aturan sebelumnya; yang dijelaskan adalah pasal yang mengatur susunan keanggotaan komisi. Karena itu, keterangan bahwa Perpol itu terbit menjelang sidang belum bisa diverifikasi dari bahan yang tersedia.",
+        "Pasal 42 mengatur susunan organisasi KKEP yang terdiri atas ketua, wakil ketua, dan anggota. Ketua dan wakil ketua merangkap anggota. Keanggotaan komisi berpangkat setingkat lebih tinggi, sama, atau maksimal dua tingkat lebih rendah dari pangkat terduga pelanggar. Dengan aturan itu, sidang terhadap seorang jenderal dapat dipimpin perwira tinggi berpangkat Jenderal atau minimal Inspektur Jenderal. Trunoyudo belum mengungkap siapa saja lima sosok perwira tinggi yang akan menyidangkan Listyo, dengan alasan Divisi Propam masih menyiapkan jadwalnya.",
+        "Mabes Polri menegaskan tidak ada perlakuan khusus. \"Setiap anggota memiliki kedudukan yang sama di hadapan hukum tanpa membedakan pangkat maupun jabatan,\" kata Trunoyudo dalam konferensi pers 17 November, seraya menyatakan Polri memastikan tidak ada impunitas atau perlakuan istimewa dalam penegakan aturan internal. Pernyataan itu menyangkut pertanyaan publik apakah mantan Kapolri bisa diperiksa dengan standar yang sama seperti perwira lain. Sejauh bahan yang ada, belum ada keterangan resmi yang menjelaskan mengapa komposisi majelis baru diumumkan menjelang hari sidang.",
+        "Status Listyo saat ini adalah tersangka. Bareskrim menetapkannya bersama tiga perwira lain, dan ia telah ditahan di Rutan Mako Brimob Mabes Polri bersama Ahrie dan Eko, sementara Slamet tidak ditahan. Perlu ditegaskan, status tersangka bukan berarti kesalahan sudah terbukti: menurut penjelasan latar, status itu lahir dari minimal dua alat bukti dan putusan tetap dijatuhkan di pengadilan. Sidang etik adalah jalur internal profesi, bukan pengadilan pidana, sehingga hasilnya tidak menggantikan proses hukum yang sedang berjalan.",
+        "Bahan menunjukkan perbedaan kelengkapan pemberitaan yang perlu dibaca hati-hati. cnnindonesia.com menyebut Ahrie mengajukan banding atas putusan PTDH-nya, sedangkan laporan lain hanya menyebut Ahrie dan Eko telah dijatuhi sanksi PTDH tanpa menyinggung banding. Tidak ada pertentangan soal hasil putusan, tetapi perbedaan itu berarti status akhir Ahrie masih bergerak. Bahan juga tidak menjelaskan ke mana banding diajukan, siapa yang memutus, dan kapan hasilnya keluar.",
+        "Satu tersangka lain, Irjen Slamet Uliandi, belum menjalani sidang etik. Mabes Polri menyebut sidangnya ditunda karena kondisi kesehatan. Tidak ada keterangan lebih jauh soal apa yang dimaksud dengan kondisi kesehatan itu, berapa lama penundaan berlangsung, atau kapan sidangnya akan dijadwalkan ulang. Slamet juga tercatat sebagai satu-satunya tersangka yang tidak ditahan, berbeda dari tiga tersangka lain yang berada di Rutan Mako Brimob Mabes Polri.",
+        "Di luar perkara penyadapan, Polri membuka penyelidikan baru terkait dugaan tindak pidana makar. Direktorat Tindak Pidana Umum Bareskrim Polri telah meningkatkan status perkara itu ke tahap penyidikan. Bahan tidak menjelaskan siapa yang menjadi tersangka dalam perkara makar, perbuatan apa yang diduga dilakukan, atau bagaimana kaitannya dengan perkara penyadapan yang menjerat empat jenderal tersebut.",
+        "Kasus ini juga masuk ke ruang politik. Dalam rapat kerja dengan Wakil Menteri Sekretaris Negara Juri Ardiantoro di Komisi XIII DPR pada 18 November, Sugiat meminta personalia di lingkar inti Presiden yang merupakan rekomendasi Kapolri pada masa Listyo untuk disterilkan. Sugiat, yang dikutip cnnindonesia.com sebagai Juru Bicara Partai Gerindra, menilai kasus penyadapan ini menjadi catatan bagi kinerja Kementerian Sekretariat Negara dan mendorong penguatan peralatan pendeteksi penyadapan.",
+        "Klaim lain datang dari Kepala Bakom RI Syahganda Nainggolan. Ia menyatakan kepuasan publik terhadap Presiden Prabowo naik setelah penangkapan mantan Kapolri Listyo Sigit. Bahan tidak memuat data survei, lembaga pengukuran, atau angka yang mendukung klaim itu, sehingga pernyataan tersebut baru bisa dibaca sebagai klaim politik, bukan temuan terukur.",
+        "Dari sisi organisasi buruh, Presiden KSPSI Andi Gani Nena Wea membantah gerakan buruh terlibat dalam kasus penyadapan yang diduga dilakukan Listyo dan kawan-kawan. Bahan tidak menyebut siapa yang menuduh keterlibatan itu, dalam forum apa bantahan disampaikan, maupun dasar bantahan tersebut. Yang jelas, kasus ini sudah menarik pihak-pihak di luar kepolisian untuk memberi posisi.",
+        "Sanksi apa yang mungkin dijatuhkan dalam sidang KKEP belum bisa dipastikan dari bahan ini. Yang sudah tercatat adalah PTDH bagi Ahrie dan Eko. Bahan tidak memuat daftar jenis sanksi lain dalam kode etik Polri, tidak menyebut apakah sanksi bisa lebih ringan atau lebih berat, dan tidak menjelaskan bagaimana putusan etik memengaruhi status tersangka pidana maupun jabatan Listyo sebagai Kepala Kantor Staf Presiden. Karena itu, kemungkinan selain PTDH masih terbuka dan belum diumumkan.",
+        "Yang perlu dicermati pekan depan ada tiga: hari sidang, susunan majelis, dan apakah banding Ahrie memengaruhi jalannya proses. Publik juga menunggu apakah perwira tinggi yang menyidangkan benar-benar memenuhi syarat pangkat dalam Pasal 42, karena komposisi itulah yang membentuk kesan soal ada atau tidaknya perlakuan istimewa. Sampai jadwal resmi keluar, semua keterangan mengenai hasil sidang masih bersifat dugaan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo dalam struktur Polri?",
+          "a": "Menurut bahan latar, ia jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo, pernah memimpin Bareskrim, lalu ditetapkan sebagai tersangka pada November 2026.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Status yang ditetapkan penyidik berdasarkan minimal dua alat bukti; status ini belum berarti bersalah dan putusan tetap dijatuhkan di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu Polri menurut dasar hukumnya?",
+          "a": "Menurut Undang-Undang Nomor 2 Tahun 2002, Polri adalah alat negara yang memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman hari sidang dan susunan majelis pekan depan, lalu cermati apakah banding Ahrie Sonta memengaruhi proses.",
+      "image": {
+        "url": "assets/9efde1390a.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Sidang Etik Listyo Sigit Pekan Depan, Dua Jenderal Sudah Dipecat"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117233242-12-1428324/kasus-sadap-2-jenderal-polri-dipecat-sidang-etik-listyo-pekan-depan",
+          "published_at": "2026-11-18T06:00:32+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8337394/polri-bicara-susunan-hakim-sidang-etik-listyo",
+          "published_at": "2026-11-18T09:23:19+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kspsi-bantah-gerakan-buruh-terlibat-penyadapan-presiden-prabowo-idWv",
+          "published_at": "2026-11-18T16:17:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-19",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "KSPSI Bantah Gerakan Buruh Terlibat Penyadapan Presiden Prabowo",
+          "url": "https://tirto.id/kspsi-bantah-gerakan-buruh-terlibat-penyadapan-presiden-prabowo-idWv",
+          "at": "2026-11-18T16:17:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Polri Bicara Susunan Hakim Sidang Etik Listyo",
+          "url": "https://www.liputan6.com/news/read/8337394/polri-bicara-susunan-hakim-sidang-etik-listyo",
+          "at": "2026-11-18T09:23:19+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Kasus Sadap: 2 Jenderal Polri Dipecat, Sidang Etik Listyo Pekan Depan",
+          "url": "https://www.cnnindonesia.com/nasional/20261117233242-12-1428324/kasus-sadap-2-jenderal-polri-dipecat-sidang-etik-listyo-pekan-depan",
+          "at": "2026-11-18T06:00:32+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_prabowo_lobi_ekonomi_di_ktt_ap_c596",
+      "angle": "Tawaran mineral ke Jepang di Manila dan nota kesepahaman US$71,8 miliar dengan China",
+      "kicker": "Nasional",
+      "title": "Prabowo Tawarkan Logam Tanah Jarang ke Jepang di Manila",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Prabowo menyampaikan ajakan kerja sama logam tanah jarang kepada Jepang pada KTT ke-29 ASEAN-Jepang di Manila, sementara nota kesepahaman Indonesia-China senila",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto mengajak Pemerintah Jepang bekerja sama mengembangkan logam tanah jarang (LTJ) atau rare earth element, dan juga mineral strategis. Ajakan itu ia sampaikan dalam paparan pada Konferensi Tingkat Tinggi ke-29 ASEAN-Jepang di Philippine International Convention Center, Manila, Filipina. \"Sebagai sahabat dekat, marilah kita pastikan tindakan kita dapat mengubah impian menjadi kenyataan bagi generasi mendatang,\" kata Prabowo dalam kesempatan yang ditayangkan secara daring itu. Ia menambahkan Indonesia menantikan kerja sama lanjutan dengan Jepang di bidang ilmu pengetahuan, teknologi, dan pendidikan. Prabowo juga menilai komitmen Jepang untuk mendiversifikasi sumber energi dan peluncuran energi baru terbarukan membuka peluang besar untuk kerja sama dengan Indonesia.",
+        "Perlu ditegaskan lebih dulu letak pernyataan itu, karena ringkasan topik menyebut KTT APEC di Shenzhen. Bahan yang tersedia justru menempatkan ajakan soal logam tanah jarang di Manila, pada rangkaian KTT ASEAN-Jepang, dengan foto berlokasi Philippine International Convention Center dan bertanggal Selasa, 17 November 2026. KTT APEC ke-33 di Shenzhen muncul di bahan lain: saat Prabowo menghadiri gala dinner, dan saat ia menyaksikan pertukaran nota kesepahaman Indonesia-China. Tidak ada bahan yang menyebut logam tanah jarang dibahas di forum APEC. Jadi dua hal ini berbeda tempat dan berbeda forum, meski terjadi pada hari-hari berdekatan dan sama-sama masuk rangkaian kunjungan luar negeri Prabowo.",
+        "Dalam paparan itu, Prabowo secara khusus menyebut bidang logam tanah jarang dan mineral. \"Kami menyambut baik untuk kerja sama yang sangat erat dengan Jepang,\" ujarnya, dikutip dari pemberitaan CNBC Indonesia. Ia melanjutkan dengan kalimat tentang memastikan tindakan mengubah impian menjadi kenyataan bagi generasi mendatang. Selain LTJ, pemerintah Indonesia disebut menantikan kerja sama di bidang ilmu pengetahuan, teknologi, dan pendidikan. Pada bagian lain paparan, Prabowo mengaitkan komitmen Jepang mendiversifikasi sumber energi dan mengembangkan energi baru terbarukan dengan peluang kerja sama, dan menyebut Indonesia siap membangun di atas upaya nasional itu untuk memperkuat ketahanan regional. Yang tidak ada dalam bahan adalah rincian bentuk kerja sama, nilai investasi, atau nama perusahaan yang akan terlibat.",
+        "Apa itu logam tanah jarang tidak dijelaskan panjang dalam bahan ini. Yang tersedia hanya keterangan teknis dari sisi perusahaan tambang: jenis LTJ di Mamuju disebut bertipe ion-adsorption clay, dan dibandingkan dengan Bayan Obo di China, Myanmar, serta Caldeira di Brazil. Direktur Teknologi dan Pengembangan Bisnis PT Perusahaan Mineral Nusantara, La Ode Tarfin Jaya, menyebut tipe itu sebagai logam tanah jarang primer yang sangat potensial dikembangkan. Bahan tidak memerinci untuk industri apa mineral tersebut dipakai, berapa harga jualnya, atau seberapa besar permintaan Jepang. Karena itu, pembaca sebaiknya memperlakukan angka-angka proyek di bawah ini sebagai progres eksplorasi, bukan produksi.",
+        "Proyek yang disebut dalam bahan berada di Mamuju, Sulawesi Barat, dikelola PT Perusahaan Mineral Nusantara (Perminas). Perusahaan telah mengantongi Izin Usaha Pertambangan eksplorasi dari Kementerian Energi dan Sumber Daya Mineral pada Juli, serta persetujuan Rencana Kerja dan Anggaran Biaya eksplorasi pada Agustus. Eksplorasi difokuskan pada dua blok, masing-masing seluas 100 hektar atau total 200 hektar. Pengeboran rapat in-fill baru mencapai 72 titik atau sekitar 10% dari target 200 titik bor dengan kerapatan 50 x 50 meter. Menurut La Ode, pengeboran rapat itu diperlukan untuk mendetailkan hasil scout drilling yang sebelumnya dilakukan Badan Geologi. Perhitungan resmi estimasi sumber daya dan cadangan ditargetkan rampung tahun depan. Secara keseluruhan, konsesi yang dikelola mencapai 7.300 hektar dalam dua blok.",
+        "Bahan juga menyebut Perminas berada di bawah BPI Danantara, dan bahwa perusahaan melakukan koordinasi serta riset bersama PT Timah untuk memanfaatkan sisa hasil pengolahan dan tin slag menjadi produk logam tanah jarang. Namun bahan tidak menyatakan bahwa proyek Mamuju atau kerja sama dengan PT Timah itu bagian dari tawaran kepada Jepang. Keterkaitan keduanya, kalau ada, belum dijelaskan. Dapat dibaca sebagai konteks bahwa Indonesia sedang menyiapkan sisi pasokan, tetapi itu tafsiran, bukan pernyataan pejabat dalam bahan yang tersedia.",
+        "Di sisi lain, bahan mencatat kegiatan Prabowo di Shenzhen. Ia disebut menghadiri gala dinner KTT APEC ke-33 di Shenzhen, China, dan di acara itu hadir pula pemimpin dunia seperti Donald Trump dan Vladimir Putin. Satu bahan lain menyebut Presiden Rusia dan Presiden Amerika Serikat juga hadir \"pada acara tersebut\", tanpa merinci acara mana yang dimaksud. Karena kalimatnya pendek, tidak jelas apakah keduanya hadir pada gala dinner yang sama, pada sesi lain, atau pada rangkaian yang berbeda. Bahan juga tidak memuat kutipan Prabowo dari forum APEC itu sendiri.",
+        "Kehadiran Putin di Shenzhen diberitakan tersendiri. Menurut pemberitaan yang dikutip, pesawat yang membawa Putin mendarat di Shenzhen menjelang pertemuan puncak APEC serta pertemuan trilateral penting dengan Presiden China Xi Jinping dan Presiden Amerika Serikat Donald Trump. Kalimat berita itu terpotong pada bagian \"tak lama\", sehingga keterangan berikutnya tidak tersedia. Yang penting dicatat: pertemuan trilateral itu disebut sebagai agenda Putin bersama Xi dan Trump. Bahan tidak menyebut Prabowo ikut dalam pertemuan tersebut, dan tidak menyebut Prabowo bertemu Xi Jinping secara bilateral.",
+        "Sorotan angka terbesar datang dari pertukaran nota kesepahaman. Prabowo disebut menyaksikan pertukaran nota kesepahaman dan penguatan komitmen kerja sama strategis antara Indonesia dan China. Nilainya, menurut pemberitaan ekonomi, US$71,8 miliar atau lebih dari Rp 1.300 triliun. Berita itu menjanjikan rincian, tetapi rincian tersebut tidak termuat dalam bahan yang tersedia. Karena itu, tidak bisa dipastikan berapa porsi untuk energi, mineral, infrastruktur, atau pendidikan; tidak jelas pula apakah nota itu mengikat secara hukum atau hanya pernyataan minat. Pembaca perlu menunggu dokumen resmi atau keterangan pemerintah sebelum menyimpulkan besar manfaatnya.",
+        "Satu hal yang sering disimpulkan terlalu cepat adalah pertemuan Prabowo dengan Xi Jinping. Ringkasan topik menyebut Prabowo bertemu Xi, tetapi bahan hanya menyatakan Prabowo menyaksikan pertukaran nota kesepahaman Indonesia-China, tanpa menyebut siapa yang hadir mendampingi. Nama Xi Jinping muncul di bahan dalam konteks agenda trilateral Putin. Artinya, pertemuan bilateral Prabowo-Xi tidak bisa dikonfirmasi dari bahan ini; jika memang terjadi, tempat, waktu, dan isi pembicaraannya belum diumumkan dalam bahan yang ada. Ini contoh perbedaan antara kehadiran di forum yang sama dan pertemuan resmi.",
+        "Jalur diplomasi lain muncul dari Manila. Dalam keterangan di Jakarta yang dikutip Antara, Sukamta menyoroti dukungan terhadap Palestina yang disampaikan Prabowo pada KTT ke-21 Asia Timur di Manila, dan berharap dukungan itu terus disuarakan di forum internasional. Sukamta menilai pesan itu mencerminkan konsistensi Indonesia memegang amanat konstitusi, dan mendorong penguatan diplomasi di ASEAN, OKI, dan PBB. Bahan tidak menyebut jabatan Sukamta; ia hanya dikutip dari Antara, sehingga namanya sebaiknya tidak ditempeli posisi yang tidak tertulis. Bahan juga tidak memuat teks pernyataan Prabowo sendiri di forum tersebut.",
+        "Yang belum jelas justru bagian yang paling ingin diketahui pembaca. Bahan tidak memuat rincian nilai kerja sama LTJ dengan Jepang, tidak menyebut perusahaan Jepang yang terlibat, dan tidak menjelaskan apakah bentuknya investasi, pembelian, atau kerja sama teknis. Untuk nota kesepahaman Indonesia-China, hanya nilai total yang tersedia. Bahan lain yang menyebut program prioritas Prabowo berorientasi pada hasil dan manfaat nyata bagi masyarakat hanya satu kalimat, tanpa angka atau contoh, sehingga tidak bisa dipakai untuk menilai apa pun. Bahan soal Putin pun terpotong. Keterbatasan ini perlu disebut supaya pembaca tidak mengisi kekosongan dengan dugaan.",
+        "Langkah berikutnya yang bisa dipantau terlihat dari sisi proyek. Perhitungan resmi estimasi sumber daya dan cadangan LTJ Mamuju ditargetkan selesai tahun depan, setelah 200 titik bor rampung dan dievaluasi; saat ini baru 72 titik. Setelah angka cadangan keluar, barulah masuk akal membicarakan skala pasokan. Dari sisi diplomatik, belum ada jadwal tindak lanjut kunjungan Jepang yang disebut dalam bahan, dan belum ada keterangan resmi soal realisasi nota kesepahaman US$71,8 miliar. Yang bisa dijanjikan hari ini hanyalah niat dan dokumen awal; yang belum ada adalah angka per sektor dan tenggat.",
+        "Cara membacanya: ini rangkaian diplomasi ekonomi, bukan satu kesepakatan tunggal. Dalam hitungan hari, Prabowo tampil di Manila untuk forum ASEAN-Jepang dan Asia Timur, kemudian di Shenzhen pada rangkaian APEC, dengan tawaran mineral ke Jepang dan nota kesepahaman besar dengan China. Dapat dibaca sebagai upaya memosisikan Indonesia di rantai pasok mineral sekaligus menjaga hubungan dengan dua kekuatan besar. Tetapi bahan yang tersedia masih berhenti pada pengumuman. Sampai ada rincian resmi, klaim bahwa Indonesia sudah mendapat manfaat besar dari rangkaian kunjungan ini belum bisa diperiksa."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto menurut bahan latar?",
+          "a": "Ia politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan ke-26 pada 2019–2024, dan presiden ketiga berlatar militer setelah Soeharto serta Susilo Bambang Yudhoyono.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Mengapa kedatangan Putin di Shenzhen disebut dalam bahan?",
+          "a": "Bahan latar menyebut pesawat Putin mendarat di Shenzhen menjelang KTT APEC dan pertemuan trilateral dengan Xi Jinping serta Donald Trump; agenda rinci pertemuan itu tidak dijelaskan.",
+          "source": {
+            "outlet": "sindonews.com",
+            "url": "https://international.sindonews.com/read/1773293/40/putin-tiba-di-china-untuk-ktt-apec-dan-pertemuan-puncak-bersejarah-dengan-xi-dan-trump-1794957114"
+          }
+        },
+        {
+          "q": "Di mana APEC ke-33 berlangsung menurut bahan, dan mengapa itu penting?",
+          "a": "Bahan menempatkan rangkaian APEC di Shenzhen, China, dan menyebut kehadiran Trump serta Putin; bahan tidak merinci agenda ekonominya, sehingga pembahasan mineral di forum itu tidak bisa dipastikan.",
+          "source": {
+            "outlet": "sindonews.com",
+            "url": "https://international.sindonews.com/read/1773293/40/putin-tiba-di-china-untuk-ktt-apec-dan-pertemuan-puncak-bersejarah-dengan-xi-dan-trump-1794957114"
+          }
+        }
+      ],
+      "action": "Minta rincian resmi nota kesepahaman Indonesia-China sebelum menyimpulkan besarnya manfaat bagi Indonesia.",
+      "image": {
+        "url": "assets/1e5e267385.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Prabowo Tawarkan Logam Tanah Jarang ke Jepang di Manila"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261118103943-4-786204/prabowo-ajak-jepang-garap-mineral-logam-tanah-jarang-ri",
+          "published_at": "2026-11-18T11:55:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5861299/dpr-dorong-dukungan-prabowo-terhadap-palestina-jadi-diplomasi-nyata",
+          "published_at": "2026-11-18T08:24:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8759056/prabowo-saksikan-kesepakatan-kerja-sama-ri-china-nilainya-rp-1-300-t-lebih",
+          "published_at": "2026-11-18T19:11:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/18/18/3254835/disambut-xi-jinping-prabowo-hadiri-jamuan-makan-malam-ktt-apec-di-shenzhen",
+          "published_at": "2026-11-18T20:19:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://international.sindonews.com/read/1773293/40/putin-tiba-di-china-untuk-ktt-apec-dan-pertemuan-puncak-bersejarah-dengan-xi-dan-trump-1794957114",
+          "published_at": "2026-11-18T06:19:48+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8337707/wamensesneg-keberhasilan-program-pemerintah-bukan-diukur-dari-serapan-anggaran",
+          "published_at": "2026-11-18T15:17:05+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-19",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "Disambut Xi Jinping, Prabowo Hadiri Jamuan Makan Malam KTT APEC di Shenzhen",
+          "url": "https://news.okezone.com/read/2026/11/18/18/3254835/disambut-xi-jinping-prabowo-hadiri-jamuan-makan-malam-ktt-apec-di-shenzhen",
+          "at": "2026-11-18T20:19:04+07:00",
+          "owner": "MNC",
+          "media": 2
+        },
+        {
+          "outlet": "detik.com",
+          "title": "Prabowo Saksikan Kesepakatan Kerja Sama RI-China, Nilainya Rp 1.300 T Lebih",
+          "url": "https://news.detik.com/berita/d-8759056/prabowo-saksikan-kesepakatan-kerja-sama-ri-china-nilainya-rp-1-300-t-lebih",
+          "at": "2026-11-18T19:11:03+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Wamensesneg: Keberhasilan Program Pemerintah Bukan Diukur dari Serapan Anggaran",
+          "url": "https://www.liputan6.com/news/read/8337707/wamensesneg-keberhasilan-program-pemerintah-bukan-diukur-dari-serapan-anggaran",
+          "at": "2026-11-18T15:17:05+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "DPR dorong dukungan Prabowo terhadap Palestina jadi diplomasi nyata",
+          "url": "https://www.antaranews.com/berita/5861299/dpr-dorong-dukungan-prabowo-terhadap-palestina-jadi-diplomasi-nyata",
+          "at": "2026-11-18T08:24:03+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_ihsg_dibuka_menguat_investor_t_0087",
+      "angle": "BI Rate naik 25 bps ke 6 persen; rupiah menguat tipis, tertahan DXY dan risalah FOMC.",
+      "kicker": "Ekonomi",
+      "title": "BI Rate Naik 25 bps ke 6 Persen, Rupiah Ditutup Menguat Tipis",
+      "status": "sebagian",
+      "truth": {
+        "claim": "BI menaikkan BI Rate 25 basis poin menjadi 6 persen, dan rupiah ditutup menguat tipis meski tertahan kenaikan DXY.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Indeks Harga Saham Gabungan dibuka menguat ke level 5.323,493 pada perdagangan Rabu, 18 November 2026. Angka itu muncul di laporan pasar pagi, saat pelaku pasar belum banyak bergerak karena menunggu keputusan suku bunga acuan Bank Indonesia. Laporan tersebut menulis sederhana: pasar bersiap menanti hasil keputusan suku bunga. Belum ada penjelasan rinci soal sektor mana yang mengangkat indeks atau berapa nilai transaksi pada pembukaan itu, sehingga arah IHSG selepas pembukaan belum bisa disimpulkan dari bahan yang tersedia.",
+        "Keputusan yang ditunggu itu dibahas pada hari yang sama dalam konferensi pers hasil Rapat Dewan Gubernur BI. Analis mata uang DOO Financial Futures, Lukman Leong, mengatakan penguatan rupiah terhadap dolar AS didukung keputusan BI menaikkan suku bunga acuan atau BI Rate sebesar 25 basis poin menjadi 6 persen. \"Rupiah ditutup menguat tipis terhadap dolar AS didukung oleh keputusan BI menaikkan suku bunga sebesar 25bps,\" ujarnya kepada CNNIndonesia.com, Rabu (18/11). Bahan tidak memerinci siapa saja peserta rapat atau berapa lama pembahasannya berlangsung; yang tersedia hanya hasil dan penilaian analis.",
+        "Penguatan itu tidak berlangsung leluasa. Masih menurut Lukman, rupiah tertahan oleh indeks dolar AS (DXY) yang terus naik dan oleh sikap investor yang mengantisipasi risalah pertemuan Komite Pasar Terbuka Federal (FOMC) pada malam harinya. Ia menyebut kedua faktor itu langsung: DXY yang masih naik, dan antisipasi terhadap risalah FOMC. Dalam pembacaan bahan ini, kenaikan BI Rate bekerja sebagai penopang, sementara arus dolar global menahan lajunya. Yang perlu dicatat, bahan tidak menyebut level penutupan rupiah secara persis, hanya bahwa pergerakannya tipis.",
+        "Bagi pembaca yang jarang mengikuti pasar, dua istilah itu perlu dijelaskan seadanya. DXY adalah indeks dolar AS, dan bahan menyebutnya sedang terus naik sehingga menahan mata uang lain. Risalah FOMC adalah catatan rapat komite pasar terbuka Federal yang ditunggu pelaku pasar pada malam itu. Bahan tidak menjelaskan isi risalah tersebut, hanya bahwa investor menantikannya, sehingga arah dolar setelah rilis belum diketahui. Kedua istilah itu muncul sebagai penjelasan analis, bukan sebagai temuan riset dalam bahan ini.",
+        "Untuk membaca angka itu, 25 basis poin sama dengan 0,25 poin persentase, sehingga suku bunga acuan kini berada di 6 persen. Bahan tidak menyebut level sebelumnya secara eksplisit, jadi besaran perubahan hanya bisa dihitung dari angka yang tersedia dan tidak diuraikan lebih jauh oleh sumber. Yang dinyatakan bahan adalah arahnya: suku bunga dinaikkan, bukan diturunkan, dan keputusan itu disebut sebagai pendukung penguatan rupiah pada hari yang sama. Arah kenaikan inilah yang membuat respons kredit dan hasil risalah FOMC layak ditunggu.",
+        "Pergerakan mata uang kawasan pada hari itu bervariasi. Peso Filipina turun 0,03 persen, ringgit Malaysia melemah 0,73 persen, dan dolar Singapura turun 0,12 persen. Sejumlah mata uang lain justru menguat: yen Jepang naik 0,08 persen, dolar Hong Kong 0,01 persen, dan won Korea Selatan 0,31 persen, sementara yuan China stagnan. Mata uang utama negara maju kompak melemah terhadap dolar AS, yaitu euro 0,31 persen, poundsterling Inggris 0,34 persen, dolar Australia 0,31 persen, dolar Kanada 0,22 persen, dan franc Swiss 0,14 persen. Bahan tidak menjelaskan penyebab perbedaan arah itu.",
+        "Di sisi eksternal, bahan menyebut cadangan devisa mencapai 146,8 miliar dolar AS. Angka itu disebut setara dengan kebutuhan impor serta pembayaran utang luar negeri pemerintah selama 5,2 sampai 5,3 bulan. Bahan tidak menjelaskan hubungan langsung antara posisi cadangan devisa tersebut dan keputusan suku bunga hari itu, juga tidak menyebut apakah angkanya naik atau turun dibanding bulan sebelumnya. Bahan hanya menyajikan hitungan bulan impor tanpa memerinci cara penghitungannya, sehingga makna angka itu sebaiknya dibaca sebagai konteks, bukan sebab langsung penguatan rupiah.",
+        "Pada bagian lain, BI mencatat pertumbuhan kredit perbankan 13,21 persen secara tahunan pada Oktober 2026. Artinya kredit tumbuh dua digit, dan angka itu muncul pada hari yang sama dengan kabar kenaikan suku bunga. Kenaikan suku bunga dan pertumbuhan kredit kerap dibaca berhadap-hadapan, tetapi bahan tidak menghubungkan keduanya: tidak ada penjelasan sektor mana yang menopang pertumbuhan, tidak ada nilai kredit nominal, dan tidak ada keterangan apakah angka itu di luar dugaan atau sesuai perkiraan. Karena itu, apakah BI Rate 6 persen akan memperlambat kredit, belum bisa dijawab dari bahan.",
+        "Selain suku bunga, konferensi pers BI membahas ancaman siber. Deputi Gubernur BI Filianingsih Hendarta menyebut empat langkah yang diambil. Pertama, mencermati ancaman dan insiden siber di dalam maupun luar negeri, terutama di sektor keuangan. Kedua, memperkuat pengaturan dan pengawasan ketahanan siber, termasuk pengelolaan risiko, perlindungan infrastruktur kritikal, deteksi dini, serta kesiapan penanganan dan pemulihan. Ketiga, berkoordinasi dengan Badan Siber dan Sandi Negara, Otoritas Jasa Keuangan, asosiasi, dan kementerian terkait. Keempat, meminta penyelenggara jasa sistem pembayaran dan perusahaan penunjang meningkatkan kewaspadaan serta melaporkan insiden tanpa menunda.",
+        "Gambaran ancaman itu datang dari data Threatmap Fortinet. Pada Senin, 9 November, tercatat sekitar 1,6 juta upaya serangan yang berhasil diblokir dalam 24 jam, atau sekitar 19 serangan per detik. Perbankan menjadi sektor paling banyak ditargetkan dengan sekitar 761 ribu ancaman, disusul teknologi 386 ribu, pemerintah 121 ribu, pendidikan 48 ribu, manufaktur 42 ribu, dan telekomunikasi 18 ribu. Bahan tidak memerinci jenis serangan yang dominan, tidak menyebut kerugian, dan tidak menjelaskan apakah angka itu berkaitan dengan agenda ekonomi hari itu.",
+        "Pakar keamanan siber Alfons Tanujaya mengingatkan angka itu perlu dibaca hati-hati. Serangan yang terdeteksi dan diblokir, katanya, tidak berarti sistem yang disasar berhasil dibobol; sebagian besar aktivitas itu merupakan pemindaian otomatis memakai botnet dan perangkat lunak untuk mencari celah keamanan. Ia mengimbau masyarakat tidak panik, tetapi tetap waspada dengan menyalakan autentikasi dua faktor, tidak membagikan kode OTP, dan mengakses layanan perbankan lewat aplikasi atau situs resmi. BI menambahkan imbauan agar masyarakat tidak meneruskan informasi yang belum terkonfirmasi dan hanya mengakses kanal resmi.",
+        "Bahan juga memuat kabar bahwa BI mengungkap empat ancaman yang membayangi perekonomian global pada 2026. Namun teks yang tersedia hanya berupa kalimat pembuka. Rincian keempat ancaman itu, termasuk siapa yang menyampaikannya dan dalam forum apa, belum ada di bahan. Bahan juga tidak menyebut apakah daftar itu berkaitan dengan keputusan suku bunga hari tersebut. Karena itu ancaman-ancaman tersebut belum bisa diuraikan di sini, dan pembaca lebih baik menunggu keterangan resmi BI atau laporan lengkapnya.",
+        "Satu lagi yang disebut: BI mengungkapkan ada bank anggota Himbara yang akan ditunjuk menjadi bank kliring Renminbi. Kalimat itu terpotong dalam bahan yang tersedia, sehingga nama banknya, waktu penunjukan, dan lembaga yang menetapkannya belum jelas. Bahan juga tidak menjelaskan dampak penunjukan itu bagi transaksi perdagangan atau bagi perbankan nasional. Karena itu informasi ini sebaiknya diperlakukan sebagai kabar yang masih menunggu rincian, bukan sebagai keputusan yang sudah berjalan.",
+        "Keputusan suku bunga itu datang dari bank sentral. Bank Indonesia adalah bank sentral Republik Indonesia sesuai Pasal 23D Undang-Undang Dasar 1945 dan Undang-Undang Nomor 23 Tahun 1999 tentang Bank Indonesia. Sebelum seluruh sahamnya dibeli pemerintah, bank ini merupakan perseroan terbatas terbuka bernama De Javasche Bank N.V. yang didirikan berdasarkan oktroi. Latar itu membantu membaca berita hari ini: angka 6 persen bukan angka pasar yang muncul sendiri, melainkan hasil rapat sebuah lembaga yang dasar hukumnya diatur konstitusi dan undang-undang.",
+        "Kalau ditarik bersama, hari itu menghadirkan empat potong informasi dari satu sesi perdagangan dan satu konferensi pers: BI Rate naik ke 6 persen, rupiah ditutup menguat tipis tetapi tertahan, IHSG dibuka di 5.323,493, dan kredit Oktober tumbuh 13,21 persen. Bahan tidak menyusun keempatnya menjadi satu kesimpulan, dan kartu ini juga tidak melakukannya. Yang bisa dikatakan, keempatnya dilaporkan pada hari yang sama, sementara ancaman siber serta rencana bank kliring Renminbi muncul sebagai topik terpisah dalam bahan yang tersedia.",
+        "Dengan bahan yang ada, sejumlah hal masih terbuka. Level penutupan rupiah tidak disebut persis, hanya \"menguat tipis\". Hasil risalah FOMC yang ditunggu malam itu belum diketahui, padahal analis menyebutnya sebagai penahan penguatan. Arah IHSG setelah pembukaan juga belum tergambar, begitu pula reaksi pasar terhadap BI Rate 6 persen dalam beberapa hari ke depan dan apakah pertumbuhan kredit 13,21 persen bertahan. Langkah berikutnya yang bisa dipantau: rilis risalah FOMC, keterangan BI soal empat ancaman global, dan pengumuman bank kliring Renminbi."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Bank Indonesia?",
+          "a": "Bank sentral Republik Indonesia, sesuai Pasal 23D UUD 1945 dan UU Nomor 23 Tahun 1999 tentang Bank Indonesia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Bank_Indonesia"
+          }
+        },
+        {
+          "q": "Dari mana asal Bank Indonesia?",
+          "a": "Sebelum seluruh sahamnya dibeli pemerintah, bank ini adalah perseroan terbatas terbuka bernama De Javasche Bank N.V. yang didirikan berdasarkan oktroi.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Bank_Indonesia"
+          }
+        },
+        {
+          "q": "Apa arti angka 5.323,493 pada berita itu?",
+          "a": "Itu level IHSG saat dibuka pada perdagangan Rabu, 18 November 2026, ketika pasar menanti hasil keputusan suku bunga acuan BI.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/menanti-suku-bunga-bi-ihsg-menguat-ke-level-5323-pagi-ini-idUZ"
+          }
+        }
+      ],
+      "action": "Pantau rilis risalah FOMC dan keterangan resmi BI untuk melihat apakah penguatan rupiah bertahan.",
+      "image": {
+        "url": "assets/75453d833a.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "BI Rate Naik 25 bps ke 6 Persen, Rupiah Ditutup Menguat Tipis"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118154457-78-1428596/rupiah-perkasa-ke-rp18232-per-dolar-as-usai-bi-rate-naik-ke-6-persen",
+          "published_at": "2026-11-18T16:10:30+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/menanti-suku-bunga-bi-ihsg-menguat-ke-level-5323-pagi-ini-idUZ",
+          "published_at": "2026-11-18T10:30:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5863791/bi-ungkap-ada-anggota-himbara-yang-akan-jadi-bank-kliring-rmb-kedua",
+          "published_at": "2026-11-18T22:32:52+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-18",
+      "previous_edition": "2026-11-18",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "history": [
+        {
+          "date": "2026-11-18",
+          "title": "IHSG Dibuka Menguat, Investor Tunggu BI"
+        },
+        {
+          "date": "2026-11-19",
+          "title": "BI Rate Naik, Rupiah dan IHSG Menguat"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "BI ungkap ada anggota Himbara yang akan jadi bank kliring RMB kedua",
+          "url": "https://www.antaranews.com/berita/5863791/bi-ungkap-ada-anggota-himbara-yang-akan-jadi-bank-kliring-rmb-kedua",
+          "at": "2026-11-18T22:32:52+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Rupiah Perkasa ke Rp18.232 per Dolar AS usai BI Rate Naik ke 6 Persen",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118154457-78-1428596/rupiah-perkasa-ke-rp18232-per-dolar-as-usai-bi-rate-naik-ke-6-persen",
+          "at": "2026-11-18T16:10:30+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Menanti Suku Bunga BI, IHSG Menguat ke Level 5.323 Pagi Ini",
+          "url": "https://tirto.id/menanti-suku-bunga-bi-ihsg-menguat-ke-level-5323-pagi-ini-idUZ",
+          "at": "2026-11-18T10:30:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Bea masuk 0% untuk 90,4% pos tarif menanti penandatanganan 21 November dan ratifikasi",
+      "kicker": "Ekonomi",
+      "title": "IEU-CEPA Disebut Diteken 21 November, Tarif 0% Menunggu Ratifikasi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IEU-CEPA dijadwalkan diteken di Brussels pada 21 November 2026, dengan 90,4% pos tarif ekspor Indonesia ke Uni Eropa mendapat bea masuk 0% setelah perjanjian be",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Indonesia dijadwalkan meneken Indonesia-European Union Comprehensive Economic Partnership Agreement (IEU-CEPA) di Brussels, Belgia, pada 21 November 2026. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto disebut akan memimpin delegasi dalam kunjungan kerja 19-25 November 2026, dan agenda penandatanganan itu menjadi inti lawatan tersebut. Menurut pemberitaan CNBC Indonesia yang mengutip Airlangga, perjanjian ini diposisikan sebagai jalan memperluas akses pasar ke Uni Eropa. Tirto.id juga menulis hal serupa: penandatanganan berlangsung di Brussels pada tanggal yang sama. Perlu dicatat, statusnya masih rencana penandatanganan; bahan tidak memuat keterangan bahwa dokumen sudah diteken saat berita disusun.",
+        "Angka yang paling sering disebut adalah 90,4 persen. Pemerintah mencatat bahwa 90,4 persen pos tarif ekspor Indonesia ke Uni Eropa akan langsung menikmati bea masuk 0 persen setelah perjanjian berlaku penuh. Sisanya, 8,37 persen pos tarif, akan turun bertahap dalam periode 3 hingga 15 tahun atau lewat skema kuota tarif (tariff rate quota/TRQ). Sekitar 1,2 persen pos tarif tetap mengikuti tarif umum atau most favored nation (MFN) karena masuk kategori produk sensitif. Artinya, gambaran bebas bea masuk tidak berlaku untuk seluruh barang: ada kelompok yang menunggu bertahun-tahun, ada pula yang tetap dikenakan tarif normal.",
+        "Produk yang paling sering disebut sebagai pihak yang diuntungkan adalah alas kaki, tekstil, dan berbagai komoditas olahan. Bahan menyebut ketiganya diharapkan lebih mudah menembus pasar 27 negara anggota Uni Eropa dengan tarif 0 persen. Namun bahan tidak mencantumkan berapa nilai ekspor masing-masing produk, berapa pangsa pasar Indonesia saat ini, atau pesaing mana yang terdampak. Perlu diingat pula bahwa 90,4 persen itu dihitung dari pos tarif, bukan dari nilai ekspor; dua ukuran tersebut tidak sama, dan bahan tidak menjelaskan bagaimana keduanya berhubungan.",
+        "Yang perlu dibedakan adalah momen penandatanganan dan momen berlakunya tarif. Bahan menyebut pemerintah menargetkan IEU-CEPA berlaku penuh pada kuartal I-2027, setelah seluruh prosedur hukum domestik kedua pihak diselesaikan. Karena itu, bea masuk 0 persen bagi 90,4 persen pos tarif tidak otomatis berlaku pekan ini; ia menunggu ratifikasi dan prosedur hukum tuntas. Tirto.id menulis singkat bahwa setelah berlaku penuh, 90,4 persen pos tarif ekspor RI ke Uni Eropa bebas bea masuk. Sampai berita ini disusun, bahan tidak memuat rincian tahapan ratifikasi di Indonesia maupun di Uni Eropa, termasuk kemungkinan penerapan sementara.",
+        "Skala pasar yang dibidik cukup besar. Nilai perdagangan bilateral Indonesia-Uni Eropa disebut stabil di kisaran 30 miliar dolar AS per tahun, dan Uni Eropa masuk lima besar mitra dagang Indonesia bersama China, Amerika Serikat, Jepang, dan India. Uni Eropa juga digambarkan sebagai pasar dengan penduduk sekitar 450 juta orang dan daya beli serta standar konsumsi relatif tinggi. Wikipedia mencatat Uni Eropa beranggotakan 27 negara sejak 31 Januari 2020, dari Austria hingga Swedia. Bagi pembaca, angka 27 negara itu penting: satu perjanjian dengan Uni Eropa berarti satu set aturan untuk 27 pasar sekaligus, bukan 27 perjanjian terpisah.",
+        "Di sisi lain, ada tenggat yang mendesak. Tirto.id melaporkan fasilitas tarif preferensial dari Uni Eropa akan berakhir mulai 1 Januari 2027. Wakil Menteri Koordinator Bidang Perekonomian Drajad Wibowo menyebut potensi nilai ekspor Indonesia mencapai 5,6 miliar dolar AS yang selama ini menikmati fasilitas Generalized System of Preferences (GSP) akan kembali dikenakan tarif normal atau MFN Uni Eropa bila IEU-CEPA belum selesai. Sekitar 44 persen ekspor Indonesia ke kawasan itu disebut selama ini mendapat fasilitas GSP. Angka 5,6 miliar dolar AS dan 44 persen itu menggambarkan betapa bergantungnya sebagian ekspor pada tarif khusus.",
+        "Bila celah waktu itu terjadi, dampaknya dirasakan berlapis. Eksportir harus memilih menanggung tambahan biaya dengan mengurangi keuntungan, atau menaikkan harga jual yang berisiko membuat produk kurang kompetitif. Importir di Eropa juga bisa mengurangi volume pembelian atau mencari pemasok alternatif dari negara lain. Drajad mengingatkan risiko kehilangan pasar tidak bisa dianggap remeh bila pemerintah dan pelaku usaha gagal mengantisipasi perubahan kebijakan tersebut. Ia menyebut, kita akan kehilangan pasar kalau tidak siap, seperti dikutip CNBC Indonesia. Perlu ditegaskan, rangkaian akibat ini adalah skenario yang diuraikan narasumber, bukan peristiwa yang sudah terjadi.",
+        "Ada satu lagi sumber tekanan: aturan antideforestasi Uni Eropa (EUDR). CNN Indonesia menulis bahwa Wamenko Perekonomian Dradjad Hari Wibowo menyebut penerapan EUDR berpotensi berdampak ke ekspor RI sekitar 7 miliar dolar AS. Perhatikan bahwa dua media menulis nama yang sedikit berbeda: CNBC Indonesia menulis Drajad Wibowo, CNN Indonesia menulis Dradjad Hari Wibowo. Bahan tidak memuat rincian produk apa yang paling terdampak EUDR, bagaimana perhitungan 7 miliar dolar AS itu disusun, atau apakah angkanya tumpang tindih dengan 5,6 miliar dolar AS pada isu GSP. Dua angka itu sebaiknya dibaca sebagai dua risiko terpisah yang sama-sama belum dirinci.",
+        "Di sisi pemerintah, IEU-CEPA diposisikan lebih dari soal tarif. Airlangga menyebutnya bukan sekadar kesepakatan perdagangan, melainkan jembatan strategis untuk memperkuat kemitraan industri Indonesia dan Uni Eropa. Ia berharap kesepakatan itu mendorong investasi produktif, meningkatkan nilai tambah domestik, memperkuat industri nasional, serta menciptakan pekerjaan berkualitas. Klaim-klaim itu belum disertai angka proyeksi dalam bahan: tidak ada perkiraan tambahan ekspor, tambahan investasi, atau jumlah lapangan kerja yang disebut. Karena itu, bagian ini sebaiknya dibaca sebagai harapan pemerintah, bukan hasil yang sudah terukur.",
+        "Selain tarif, perjanjian ini memuat soal prosedur. Bahan menyebut cakupan penyederhanaan dokumen perdagangan, percepatan pemeriksaan barang, serta penyetaraan standar pengujian mutu. Pemerintah juga akan mengawal pemenuhan standar keberlanjutan dan ketertelusuran produk yang diterapkan Uni Eropa. Bagi eksportir, bagian ini sering lebih menentukan daripada angka tarif: dokumen yang rumit, pemeriksaan yang lama, atau standar mutu yang berbeda bisa menahan barang meski bea masuknya nol. Bahan tidak menyebutkan standar spesifik apa saja yang harus dipenuhi, produk mana yang paling terpukul, atau berapa biaya sertifikasi yang diperkirakan.",
+        "Pemerintah juga menyoroti pelaku usaha dalam negeri, termasuk UMKM dan petani kecil. Langkah yang disiapkan antara lain meningkatkan efisiensi logistik, menyederhanakan prosedur ekspor, dan memberikan pendampingan sertifikasi agar produk nasional memenuhi standar pasar Eropa. Namun bahan tidak memuat anggaran, lembaga pelaksana, atau tenggat untuk program pendampingan itu. Struktur tarif dan hambatan non-tarif disebut selama ini menjadi tantangan bagi daya saing produk Indonesia di pasar Eropa, dan tantangan itu semakin perlu diantisipasi seiring berakhirnya fasilitas GSP. Dengan kata lain, peluang tarif nol datang bersamaan dengan tuntutan kesiapan yang belum dijelaskan secara rinci.",
+        "Setelah Brussels, Airlangga dijadwalkan ke London, Inggris, pada 23 November 2026. Susiwijono Moegiarso, Sekretaris Kementerian Koordinator Bidang Perekonomian, mengatakan ada dua pertemuan strategis untuk memperkuat hubungan ekonomi bilateral. Agenda itu disebut sebagai tindak lanjut implementasi Indonesia-United Kingdom Economic Growth Partnership (EGP), pilar ekonomi dalam Accord for a New Strategic Partnership yang diluncurkan Presiden Prabowo Subianto bersama Perdana Menteri Inggris Keir Starmer pada 20 Januari 2026. Pemerintah menyatakan akan mendorong percepatan implementasi EGP sekaligus membuka pembahasan awal pembentukan perjanjian perdagangan bebas Indonesia-Inggris atau Indonesia-United Kingdom CEPA.",
+        "Pembahasan dengan Inggris tidak hanya soal tarif. Bahan menyebut pertemuan juga akan membahas perluasan investasi strategis, termasuk peningkatan produksi minyak dan gas bumi nasional serta kerja sama transisi energi. Pemerintah akan memfasilitasi penyelesaian hambatan usaha dan kendala operasional yang dihadapi pelaku bisnis kedua negara. Sektor prioritas yang disebut meliputi energi bersih, infrastruktur, ekonomi digital, rantai pasok, pengembangan sumber daya manusia, dan investasi berkelanjutan. Perlu dicatat, penjajakan CEPA dengan Inggris masih tahap pembahasan awal; bahan tidak memuat jadwal negosiasi, target penyelesaian, atau angka perdagangan bilateral Indonesia-Inggris.",
+        "Beberapa hal belum jelas dari bahan yang tersedia. Pertama, daftar pos tarif dan produk yang masuk kategori 90,4 persen, 8,37 persen, maupun 1,2 persen tidak dirinci. Kedua, jadwal ratifikasi di Indonesia dan di Uni Eropa tidak disebutkan, begitu pula kemungkinan penerapan sementara sebelum ratifikasi tuntas. Ketiga, tidak ada keterangan apakah dokumen memang sudah diteken atau baru akan diteken pada 21 November. Keempat, besaran dampak EUDR dan hubungannya dengan risiko GSP belum dijelaskan. Kelima, program pendampingan UMKM dan petani kecil belum punya angka anggaran atau pelaksana yang disebut.",
+        "Langkah berikutnya bisa dipantau dari beberapa penanda. Penandatanganan di Brussels pada 21 November 2026 menjadi titik pertama; sesudah itu, prosedur hukum domestik kedua pihak menentukan apakah target berlaku penuh pada kuartal I-2027 tercapai. Tenggat 1 Januari 2027, saat fasilitas GSP berakhir, menjadi titik kritis: bila IEU-CEPA belum berlaku, 5,6 miliar dolar AS ekspor yang bergantung pada GSP berisiko kembali ke tarif normal. Kunjungan ke London pada 23 November 2026 akan menunjukkan seberapa serius penjajakan CEPA dengan Inggris. Sampai semua itu terjadi, yang tersedia baru rencana, angka pemerintah, dan peringatan pejabat."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu IEU-CEPA?",
+          "a": "Perjanjian dagang Indonesia dengan Uni Eropa yang mencakup penghapusan bea masuk bagi sebagian besar produk sekaligus penyederhanaan dokumen, percepatan pemeriksaan barang, dan penyetaraan standar mutu.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261118072632-4-786123/ieu-cepa-diteken-21-november-90-barang-ri-bebas-bea-masuk-ke-eropa"
+          }
+        },
+        {
+          "q": "Apa itu Uni Eropa?",
+          "a": "Organisasi antarpemerintah dan supranasional yang beranggotakan negara-negara Eropa, sehingga satu perjanjian berlaku untuk satu kawasan berisi banyak negara.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        },
+        {
+          "q": "Negara mana saja yang tergabung dalam Uni Eropa saat ini?",
+          "a": "Sejak 31 Januari 2020 ada 27 negara, antara lain Austria, Belgia, Bulgaria, Kroasia, Siprus, Republik Ceko, Denmark, Estonia, Finlandia, Perancis, Jerman, Yunani, Italia, Belanda, Polandia, Portugal, dan Swedia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi penandatanganan dan jadwal ratifikasi sebelum menyimpulkan tarif nol sudah berlaku.",
+      "image": {
+        "url": "assets/58e8168f05.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "IEU-CEPA Disebut Diteken 21 November, Tarif 0% Menunggu Ratifikasi"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261118072632-4-786123/ieu-cepa-diteken-21-november-90-barang-ri-bebas-bea-masuk-ke-eropa",
+          "published_at": "2026-11-18T08:25:33+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ieu-cepa-diteken-pekan-ini-904-pos-tarif-ri-bebas-bea-masuk-idVR",
+          "published_at": "2026-11-18T14:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118191928-92-1428697/aturan-antideforestasi-uni-eropa-ancam-ekspor-ri-rp12774-t",
+          "published_at": "2026-11-18T20:40:49+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-18",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Aturan Antideforestasi Uni Eropa Ancam Ekspor RI Rp127,74 T",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261118191928-92-1428697/aturan-antideforestasi-uni-eropa-ancam-ekspor-ri-rp12774-t",
+          "at": "2026-11-18T20:40:49+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "IEU-CEPA Diteken Pekan Ini: 90,4% Pos Tarif RI Bebas Bea Masuk",
+          "url": "https://tirto.id/ieu-cepa-diteken-pekan-ini-904-pos-tarif-ri-bebas-bea-masuk-idVR",
+          "at": "2026-11-18T14:00:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_bupati_kupang_terseret_kasus_p_f5fa",
+      "angle": "Pemeriksaan Yosef Lede ditunda; Menteri HAM Pigai desak pemecatan bila terbukti.",
+      "kicker": "Kriminal",
+      "title": "Pemeriksaan Bupati Kupang Ditunda, Pigai Minta Dipecat bila Terbukti",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemeriksaan Bupati Kupang Yosef Lede pada 18 November ditunda karena ia sedang mengikuti kegiatan di DPRD Kabupaten Kupang.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-19T05:45:47+07:00"
+      },
+      "body": [
+        "Bupati Kupang Yosef Lede terseret laporan dugaan pemerkosaan yang diterima Polda Nusa Tenggara Timur. Menurut pemberitaan, korban berinisial RWM, 21 tahun, melaporkan peristiwa di Rumah Dinas Bupati Kupang di Jalan RA Kartini, Kelurahan Kelapa Lima, Kecamatan Kelapa Lima, pada Rabu (11/11) malam. Dalam laporannya, korban mengaku datang bersama sejumlah saksi setelah memperoleh informasi soal penawaran pekerjaan. Pada pertemuan itu, ia mengaku mengalami tindakan yang diduga mengarah pada kekerasan seksual fisik oleh Yosef Lede. Sampai sekarang statusnya masih dugaan, belum ada putusan pengadilan.",
+        "Penyidik telah melakukan visum terhadap korban dan menyatakan sudah mengantongi hasilnya. Direktur Reserse PPA dan PPO Polda NTT, Kombes Pol Nova Irone Surentu, menyebut penyidik akan memeriksa delapan orang saksi, termasuk Yosef Lede serta dua perempuan berinisial EK dan LS. EK dan LS sebelumnya mangkir dari pemeriksaan pada Senin (16/11) dengan alasan sakit, lalu dipanggil ulang. Pada Rabu (18/11), LS menjalani pemeriksaan bersama dua petugas Polisi Pamong Praja yang bertugas di pos penjagaan rumah dinas. Hingga pukul 14.30 Wita, ketiganya masih diperiksa. LS dan EK disebut ikut mengantar korban ke rumah dinas dengan iming-iming pekerjaan di salah satu perusahaan daerah.",
+        "Pemeriksaan terhadap Yosef Lede sendiri tidak berjalan sesuai jadwal. Ia semula dijadwalkan diperiksa pada Rabu (18/11), tetapi pemeriksaan itu ditunda karena ia sedang mengikuti kegiatan di DPRD Kabupaten Kupang. Penundaan tersebut dikonfirmasi Samuel Haning selaku pengacara Yosef Lede. Sampai pemberitaan ini ditulis, belum ada keterangan resmi soal tanggal pengganti pemeriksaan. Nova Irone Surentu pun belum menjawab pertanyaan soal progres penyidikan; ia hanya meminta waktu karena sedang dipanggil.",
+        "Menteri Hak Asasi Manusia Natalius Pigai mendesak pemerintah tidak memberi ampun jika Yosef terbukti melakukan kejahatan seksual. Menurut Pigai, bupati itu harus dicopot dan diproses meskipun merupakan kader partai besar, Partai Gerindra. Ia juga mendorong percepatan pemeriksaan oleh Polda NTT. Menurut pemberitaan, keluarga korban dijadwalkan bertemu Pigai di Kementerian HAM pada Rabu (18/11), sekitar pukul 13.00 atau 14.00. Pigai menyampaikan hal itu saat ditemui wartawan di Kompleks Parlemen, Jakarta, Selasa (17/11).",
+        "Dari partainya, Wakil Ketua Umum Gerindra Habiburokhman menyatakan akan menjatuhkan sanksi pemecatan jika kader tersebut terbukti bersalah. Ia juga akan mendorong pemecatan Yosef dari jabatan bupati bila terbukti memperkosa. Habiburokhman, yang juga Ketua Komisi III DPR, mengaku telah menghubungi Kapolda NTT dan meminta kepolisian bertindak tegas tanpa mengistimewakan siapa pun. Semua pernyataan itu masih bersyarat karena bergantung pada pembuktian dalam proses hukum.",
+        "Yang belum jelas, kasus ini masih berstatus dugaan dan belum ada penetapan tersangka yang disebut dalam bahan. Isi hasil visum belum dipublikasikan, begitu pula jadwal pemeriksaan Yosef Lede setelah penundaan. Keterangan resmi kepolisian soal perkembangan pemeriksaan saksi juga belum tersedia karena Direktur PPA dan PPO Polda NTT belum merespons pertanyaan wartawan. Langkah berikutnya adalah menunggu pemeriksaan saksi rampung dan penetapan jadwal baru bagi Yosef Lede."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Natalius Pigai?",
+          "a": "Menteri Hak Asasi Manusia Republik Indonesia untuk periode 2024-2029.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Natalius_Pigai"
+          }
+        },
+        {
+          "q": "Apa kaitan Pigai dengan kasus ini?",
+          "a": "Ia menanggapi dugaan pemerkosaan yang menyeret Bupati Kupang, dan keluarga korban akan bertemu dengannya untuk membahas kasus tersebut.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261118064014-12-1428352/pigai-temui-keluarga-korban-dugaan-pemerkosaan-bupati-kupang-hari-ini"
+          }
+        },
+        {
+          "q": "Kementerian apa yang dipimpin Pigai dalam kabinet saat ini?",
+          "a": "Kementerian Hak Asasi Manusia, yang ia jabat sejak periode 2024-2029.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Natalius_Pigai"
+          }
+        }
+      ],
+      "action": "Pantau jadwal ulang pemeriksaan Yosef Lede dan hasil pemeriksaan para saksi di Polda NTT.",
+      "image": {
+        "url": "assets/d7a197ef31.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Pemeriksaan Bupati Kupang Ditunda, Pigai Minta Dipecat bila Terbukti"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/menteri-ham-minta-bupati-kupang-mundur-jika-terbukti-bersalah-idWs",
+          "published_at": "2026-11-18T15:56:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261118064014-12-1428352/pigai-temui-keluarga-korban-dugaan-pemerkosaan-bupati-kupang-hari-ini",
+          "published_at": "2026-11-18T07:29:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-19",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "Menteri HAM Minta Bupati Kupang Mundur jika Terbukti Bersalah",
+          "url": "https://tirto.id/menteri-ham-minta-bupati-kupang-mundur-jika-terbukti-bersalah-idWs",
+          "at": "2026-11-18T15:56:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Pigai Temui Keluarga Korban Dugaan Pemerkosaan Bupati Kupang Hari Ini",
+          "url": "https://www.cnnindonesia.com/nasional/20261118064014-12-1428352/pigai-temui-keluarga-korban-dugaan-pemerkosaan-bupati-kupang-hari-ini",
+          "at": "2026-11-18T07:29:17+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_sidang_etik_listyo_sigit_digel_3c20",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Sidang Etik Listyo Sigit Digelar",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 902 komentar di detik.com untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Jadi senapan tidak akan diarahkan ke Jokowi. Cukup sampai Sigit saja” “Mungkin udah ada deal2an tapi jokowi jadi tersandera. Tetap bakal jadi rahasia umum di eli” “Pas ditanya ke Sigit kenapa, \"Fetish saya pak.\" Karena polri ga mau kink shaming, akhirnya”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117233242-12-1428324/kasus-sadap-2-jenderal-polri-dipecat-sidang-etik-listyo-pekan-depan",
+          "published_at": "2026-11-18T06:00:32+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8337394/polri-bicara-susunan-hakim-sidang-etik-listyo",
+          "published_at": "2026-11-18T09:23:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xu6m4o/kapolri_ungkap_peran_para_tersangka_sadap/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-19",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 902
+      },
+      "tone": "Terbelah",
+      "quotes": [
+        {
+          "author": "topkomputerr",
+          "platform": "reddit",
+          "text": "Jadi senapan tidak akan diarahkan ke Jokowi. Cukup sampai Sigit saja",
+          "score": 16
+        },
+        {
+          "author": "Clndk220",
+          "platform": "reddit",
+          "text": "Mungkin udah ada deal2an tapi jokowi jadi tersandera. Tetap bakal jadi rahasia umum di elit politik ya secara yg kena sadap aja sampai 20000 org. Kalo jokowi ikut diseret2 bisa jad",
+          "score": 13
+        },
+        {
+          "author": "PrimodiumUpus",
+          "platform": "reddit",
+          "text": "Pas ditanya ke Sigit kenapa, \"Fetish saya pak.\" Karena polri ga mau kink shaming, akhirnya diberhentikan sampai Sigit",
+          "score": 9
+        }
+      ],
+      "comparison": {
+        "platform": "reddit",
+        "count": 26,
+        "note": "juga aktif"
+      },
+      "reading": "Publik vokal di detik.com (902); reddit: 26 (juga aktif).",
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "Polri Bicara Susunan Hakim Sidang Etik Listyo",
+          "url": "https://www.liputan6.com/news/read/8337394/polri-bicara-susunan-hakim-sidang-etik-listyo",
+          "at": "2026-11-18T09:23:19+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Kasus Sadap: 2 Jenderal Polri Dipecat, Sidang Etik Listyo Pekan Depan",
+          "url": "https://www.cnnindonesia.com/nasional/20261117233242-12-1428324/kasus-sadap-2-jenderal-polri-dipecat-sidang-etik-listyo-pekan-depan",
+          "at": "2026-11-18T06:00:32+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "Reddit",
+          "title": "R",
+          "url": "https://www.reddit.com/r/indonesia/comments/1xu6m4o/kapolri_ungkap_peran_para_tersangka_sadap/",
+          "at": null,
+          "owner": null,
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_19",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah Hari Ini: Dedi Mulyadi, PKH, dan Gibran",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Hari ini tiga klaim diperiksa dan seluruhnya berputusan salah menurut TurnBackHoax. Klaim pertama menyebut ada video \"Dedi Mulyadi Ikuti Pencalonan Wapres\". Klaim kedua menyebut anggota DPR Eva Stevany Rataba terdaftar sebagai penerima PKH. Klaim ketiga menyebut Gibran diperiksa menjadi saksi di Mabes TNI. Masing-masing disertai alasan pembantahnya sendiri.",
+        "Pola yang terlihat dari data adalah pemakaian ulang materi visual. Video Dedi Mulyadi yang aslinya merekam kedatangan ke Istana Kepresidenan untuk upacara Penganugerahan Gelar Pahlawan Nasional pada Selasa (10/11/2026) dipasangi keterangan soal pencalonan Wapres. Foto Gibran yang beredar diketahui dibuat dan diedit dengan OpenAI. Klaim soal Eva Stevany Rataba berbeda bentuk: yang diperiksa bukan gambar, melainkan keterangan soal daftar penerima bantuan, dan yang bersangkutan telah membantah pernah menerima PKH.",
+        "Sebaiknya jangan meneruskan klaim ke grup percakapan sebelum memeriksa sumber aslinya. Untuk video dan foto, telusuri versi tertua dan perhatikan tanggal unggah, karena rekaman lama bisa diberi keterangan baru. Untuk klaim administratif seperti daftar penerima bantuan, cocokkan dengan keterangan resmi lembaga atau pihak yang disebut. Bila masih ragu, tahan dulu: tiga klaim hari ini menunjukkan bahwa tampilan yang meyakinkan bukan bukti kebenaran."
+      ],
+      "action": "Periksa sumber asli dan tanggal unggah sebelum meneruskan klaim apa pun.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-19T05:45:47+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-19",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Video \"Dedi Mulyadi Ikuti Pencalonan Wapres\"",
+          "verdict": "salah",
+          "reason": "Video aslinya merupakan momen Dedi Mulyadi datang ke Istana Kepresidenan untuk menghadiri upacara Penganugerahan Gelar Pahlawan Nasional pada Selasa (10/11/2026) dan tidak terkait dengan proses pencalonan Wapres.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37478-salah-video-dedi-mulyadi-ikuti-pencalonan-wapres"
+        },
+        {
+          "claim": "Anggota DPR Eva Stevany Rataba Terdaftar sebagai Penerima PKH",
+          "verdict": "salah",
+          "reason": "Eva Stevany Rataba, Anggota DPR RI Fraksi Partai NasDem telah membantah dirinya pernah menerima bantuan sosial Program Keluarga Harapan (PKH).",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37479-salah-anggota-dpr-eva-stevany-rataba-terdaftar-sebagai-penerima-pkh"
+        },
+        {
+          "claim": "Gibran Diperiksa Jadi Saksi di Mabes TNI",
+          "verdict": "salah",
+          "reason": "Foto yang dibagikan diketahui dibuat dan diedit dengan OpenAI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37480-salah-gibran-diperiksa-jadi-saksi-di-mabes-tni"
+        }
+      ],
+      "pattern": "Dua dari tiga klaim memakai materi visual yang dipindahkan dari peristiwanya: video kunjungan ke Istana diberi label pencalonan, sementara foto Gibran dibuat dan diedit dengan OpenAI."
+    }
+  ]
+}
