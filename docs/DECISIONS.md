@@ -422,3 +422,22 @@ ditegakkan di server, bukan hanya di UI.
 melihat alasan sebelum menekan tombol; job `verdict` memerahkan run **setelah**
 status sempat dideploy (DEC-0038).
 _Tanggal: 2026-11-17. Rencana: `docs/plans/023-minta-edisi-dari-aplikasi.md`._
+
+## DEC-0040 — `verdict` menilai branch, bukan commit saat dispatch
+
+`actions/checkout` tanpa `ref:` memakai `github.sha`. Pada `workflow_dispatch`
+dan `repository_dispatch` nilai itu commit **saat dispatch**, sedangkan edisi
+dan `status.json` baru ditulis lalu di-commit bot sesudahnya. Run 44227970274
+(2026-11-18) membuktikannya: `verdict` checkout `34e7489` — 17 detik setelah
+`Simpan hasil` mendorong `16a4417 edisi 2026-11-18` — lalu melaporkan
+`no-edition` dan memerahkan run padahal edisi 7 kartu sudah dideploy.
+
+Karena itu `verdict` checkout `ref: ${{ github.ref_name }}`. Keadaan gagal yang
+tersisa tetap benar: bila `Simpan hasil` gagal push, verdict memang harus merah.
+Job lain tidak terpengaruh — `build` memakai checkout-nya sendiri dan `deploy`
+bekerja dari artefak.
+
+Jangan "memperbaiki" ini dengan menghapus job `verdict` atau menurunkan
+`--strict`: keduanya mengembalikan masalah yang DEC-0038 tutup, yaitu run hijau
+padahal tidak ada yang terbit.
+_Tanggal: 2026-11-18. Rencana: `docs/plans/023-minta-edisi-dari-aplikasi.md` (revisi §6d)._

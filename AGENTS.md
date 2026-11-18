@@ -24,7 +24,7 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Jalur cepat | `repository_dispatch` dari Supabase (pg_net + Vault) → `tanya.yml`; terukur **10 detik** sampai run dimulai, jawaban ~2–3 menit |
 | Minta edisi | Panel `#/atur` membaca `public/status.json` dan menulis `build_requests` → `repository_dispatch build` (`DEC-0039`); tanpa `--force` |
 | Pantau | `editor_notes` `source='reader'`; `scripts/watch.ts sync|report` di `daily.yml`; pemeriksaan bahan tanpa token (`DEC-0037`) |
-| Tests | `npm test` — 347 uji; `npm run test:ui` — 11 uji browser |
+| Tests | `npm test` — 355 uji; `npm run test:ui` — 11 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -303,9 +303,20 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
 - `data/work/`, `local.db`, `.env.local` diabaikan. Jangan commit.
 - Migrasi 004–006 harus jalan sebelum build di CI; workflow sudah melakukannya.
 - Trigger terjadwal GitHub bisa dibuang tanpa notifikasi dan tanpa mengubah status workflow (terjadi 2026-11-12). `schedule-check.yml` memeriksa manifest 07:15 WIB dan menjalankan `daily.yml` bila edisi hari ini belum ada (`DEC-0028`). Verifikasi manual (§8) tetap berguna, tetapi bukan lagi satu-satunya penjaga.
+- **Trigger terjadwal juga bisa datang berjam-jam terlambat**, bukan hanya
+  hilang. Selisih terukur 13–17 November: `daily.yml` (cron 22:45 UTC) baru
+  dikirim 02:09–04:47 UTC, `schedule-check.yml` (00:15 UTC) 06:11–07:47 UTC.
+  Pada 2026-11-18 kelima jendela lewat tanpa satu pun run — edisi hanya terbit
+  setelah dispatch manual. Karena itu lapis cron tidak menambah ketepatan
+  (rencana 021), dan pemicu dipindahkan ke luar GitHub (rencana 024).
 - Jadwal berlapis (tiga cron) + `edition-guard` membuat run kedua berhenti sendiri
   bila edisi sudah ada (rencana 021). Cron tetap bisa dibuang semua — dispatch
   manual tidak lagi berisiko menimpa.
+- **Job `verdict` wajib checkout `ref: ${{ github.ref_name }}`** (`DEC-0040`).
+  Tanpa itu `actions/checkout` memakai `github.sha`, yang pada
+  `workflow_dispatch`/`repository_dispatch` adalah commit saat dispatch — bukan
+  commit bot sesudahnya. Verdict lalu melaporkan `no-edition` padahal edisinya
+  terbit (run 44227970274). `tests/workflow-verdict.test.ts` mengunci ini.
 - `scripts/build.ts` **tidak** punya penjaga: menjalankannya untuk tanggal yang sudah terbit akan menimpa edisi itu. Jalankan hanya untuk tanggal yang belum ada.
 - Deploy data-only: workflow `deploy-site` menjalankan `npm run publish` +
   Pages tanpa build. Pakai ini agar tanggal terbit tidak dibangun ulang.

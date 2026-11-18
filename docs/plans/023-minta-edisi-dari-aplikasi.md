@@ -147,6 +147,33 @@ Temuan: tanpa `GRANT`, PostgREST menjawab **42501 sebelum RLS dinilai**; dan
 grant default Supabase memberi `anon` `TRUNCATE`, yang tidak dilindungi RLS —
 karena itu berkas ini mencabutnya.
 
+## 6d. Revisi (2026-11-18) — `verdict` menilai ref yang salah
+
+Run pertama sesudah rencana ini terpasang, `44227970274` (dispatch manual
+2026-11-18 03:05Z), memberi hasil: `check` ✅ `build` ✅ `deploy` ✅
+`verdict` ❌.
+
+```
+verdict  Run actions/checkout@v4  git log -1 --format=%H
+verdict  …                       34e748975ce4d008e5cf25fe9b0d719d2671472c
+verdict  Nilai kesehatan akhir    2026-11-18 nasional: edisi tidak terbentuk
+verdict  …                        ✗ fatal: no-edition
+```
+
+`34e7489` adalah commit saat dispatch. `Simpan hasil` sudah mendorong
+`16a4417 edisi 2026-11-18` pada 03:18:11, sedangkan `verdict` mulai 03:18:28 —
+jadi ini bukan balapan, melainkan `ref:` yang salah. `actions/checkout` tanpa
+`ref:` memakai `github.sha`, yang pada `workflow_dispatch`/`repository_dispatch`
+menunjuk commit saat dispatch.
+
+Akibat yang terlihat pembaca: edisi 2026-11-18 **terbit** (7 kartu,
+`status.json` `ok: true`, `latest_by_scope.nasional = 2026-11-18`) tetapi run
+tetap merah. Kalau dibiarkan, setiap build akan merah dan kasus `no-edition`
+yang sesungguhnya tidak lagi bisa dibedakan.
+
+Perbaikan: `verdict` checkout `ref: ${{ github.ref_name }}` (`DEC-0040`).
+Kegagalan `Simpan hasil` tetap membuat verdict merah — itu memang tujuannya.
+
 ## 7. Riwayat
 
 - `2026-11-17` — `tested` — status.json, panel Atur, tombol minta edisi,
@@ -157,6 +184,9 @@ karena itu berkas ini mencabutnya.
   `service_role`; versi pertama hanya RLS sehingga PostgREST menjawab 42501.
 - `2026-11-17` — `tested` — uji end-to-end: insert 201 → dispatch 3 detik →
   guard 5 detik → run sukses. `anon` kehilangan TRUNCATE/REFERENCES/TRIGGER.
+- `2026-11-18` — `tested` — `verdict` checkout `github.ref_name`, bukan
+  `github.sha` (`DEC-0040`, §6d); `tests/workflow-verdict.test.ts` gagal pada
+  YAML lama dan lulus sesudahnya.
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

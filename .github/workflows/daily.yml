@@ -197,7 +197,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # `ref:` wajib. Tanpa itu checkout memakai `github.sha`, yang pada
+      # `workflow_dispatch`/`repository_dispatch` adalah commit saat dispatch —
+      # bukan commit bot yang dibuat `Simpan hasil` sesudahnya. Akibatnya
+      # verdict membaca pohon sebelum build dan melaporkan `no-edition` padahal
+      # edisinya terbit (DEC-0040).
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24
