@@ -1,0 +1,793 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-18",
+  "scope": "nasional",
+  "published_at": "2026-11-18T10:06:49+07:00",
+  "coverage": {
+    "from": "2026-11-17T10:06:49+07:00",
+    "to": "2026-11-18T10:06:49+07:00"
+  },
+  "generated_at": "2026-11-18T10:06:49+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 13,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 7,
+  "truncated_reason": "Hanya 7 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_sidang_etik_dan_banding_kasus_5557",
+      "angle": "Sidang etik tertutup Irjen Eko Hadi berjalan, tetapi putusan dan langkah banding belum",
+      "kicker": "Kriminal",
+      "title": "Sidang Etik Tertutup Irjen Eko Hadi: Putusan Belum Diumumkan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sidang KKEP terhadap Irjen Eko Hadi Santoso digelar tertutup di Gedung Divpropam Polri pada 17 November, dan hingga bahan ini disusun belum ada keterangan resmi",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "Mabes Polri menggelar sidang Komisi Kode Etik Profesi (KKEP) terhadap eks Direktur Tindak Pidana Narkoba Bareskrim Polri, Irjen Eko Hadi Santoso, pada Selasa, 17 November. Sidang berlangsung di Ruang Sidang Biro Wabprof lantai 2 Gedung Divpropam Polri sejak pukul 09.00 WIB dan digelar secara tertutup. Karo Penmas Divisi Humas Polri, Brigjen Trunoyudo Wisnu Andiko, menyebut sidang itu ditujukan kepada terduga pelanggar yang disingkat EHS. Awak media yang berjaga di lokasi, menurut laporan yang sama, tidak melihat Eko Hadi memasuki Gedung Propam sebelum menjalani sidang. Karena tertutup, jalannya pemeriksaan hanya diketahui dari keterangan resmi kepolisian, bukan dari pantauan langsung di dalam ruang sidang.",
+        "Dalam keterangan persnya, Trunoyudo menyebut dugaan pelanggaran yang dipersangkakan meliputi penyalahgunaan wewenang, ketidakprofesionalan dan ketidakproseduralan, serta dugaan permufakatan dalam melakukan akses ilegal. Akses itu, menurut dia, dilakukan dengan menggunakan fasilitas di lingkungan Bagian Monitoring Biro Operasi dan Pengendalian Operasional (Bagmon Robinopsnal) Bareskrim Polri. Perbuatan tersebut diduga terjadi saat Eko Hadi menjabat sebagai Kabagmon maupun ketika menjalankan tugas sebagai Plt. Kabagmon Robinopsnal. Ia juga menegaskan bahwa Polri tidak memberikan toleransi kepada terduga pelanggar penyalahgunaan wewenang dan memastikan setiap personel mempertanggungjawabkan perbuatannya sesuai ketentuan yang berlaku. Rincian peran Eko Hadi dalam akses tersebut belum diuraikan lebih jauh dalam keterangan yang tersedia.",
+        "Sidang dipimpin mantan Irjen Kemenkum, Komjen Hendro Pandowo, dengan posisi Wakil Ketua KKEP diisi Aslog Polri Irjen Agus Dwi Hermawan. Tiga anggota majelis adalah Kadiv Hubinter Polri Irjen Untung Widiatmoko, Kakortas Tipidkor Polri Irjen Arie Ardian Rishadi, dan Widyaiswara Kepolisian Utama Tk. I Sespim Lemdiklat Polri Irjen Toni Ariadi Efendi. Susunan itu disampaikan Trunoyudo dalam konferensi pers yang sama. Dengan demikian, majelis terdiri dari satu perwira berpangkat Komjen sebagai ketua dan empat perwira berpangkat Irjen sebagai wakil ketua serta anggota. Bahan yang dihimpun tidak memuat keterangan tentang jalannya pemeriksaan di dalam ruang sidang, termasuk materi yang ditanyakan majelis kepada Eko Hadi.",
+        "Hingga bahan ini disusun, belum ada keterangan resmi mengenai putusan sidang etik tersebut. Sidang digelar tertutup dan tidak ada penjelasan tentang hasilnya, baik berupa sanksi maupun bentuk keputusan lain. Karena itu, apakah Eko Hadi dijatuhi sanksi, sanksi apa yang dijatuhkan, dan bagaimana pertimbangan majelis, belum dapat dipastikan. Pernyataan resmi yang tersedia hanya menyangkut pelaksanaan sidang, susunan majelis, dan dugaan pelanggaran yang dipersangkakan. Pembaca perlu membedakan antara berlangsungnya sidang dan putusan: keduanya merupakan tahap yang berbeda, dan bahan ini baru memastikan tahap pertama.",
+        "Hal serupa berlaku untuk informasi mengenai banding. Bahan yang dihimpun belum memuat keterangan tentang pengajuan banding, termasuk ke mana banding ditujukan dan apa alasan pengajuannya. Tidak ada pernyataan resmi yang menyebut pihak yang mengajukan banding, tenggat pengajuan, maupun dasar pertimbangannya. Karena itu, detail tersebut belum tersedia dan tidak dapat disimpulkan dari pemberitaan yang ada. Bila kemudian ada keterangan resmi, isinya perlu dibaca bersama putusan sidang etik yang menjadi objek banding tersebut.",
+        "Sidang ini berkaitan dengan kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto. Kepala Divisi Humas Polri, Irjen Johnny Eddizon Isir, menyatakan bahwa sidang etik tersebut berkaitan dengan kasus penyadapan ilegal terhadap Presiden. Sejumlah pemberitaan lain pada hari yang sama juga menempatkan sidang etik Eko Hadi dalam rangkaian kasus yang sama, yakni dugaan penyadapan Presiden yang melibatkan beberapa perwira tinggi Polri. Keterangan resmi yang dihimpun tidak merinci bagian mana dari dugaan penyadapan yang menjadi fokus pemeriksaan etik terhadap Eko Hadi.",
+        "Bareskrim Polri telah menetapkan empat jenderal aktif sebagai tersangka dalam kasus dugaan penyadapan ilegal tersebut. Mereka adalah eks Kapolri sekaligus Kepala Kantor Staf Presiden, Jenderal Listyo Sigit Prabowo; Kepala Divisi Hukum Polri Irjen Ahrie Sonta Nasution; eks Direktur Tindak Pidana Narkoba Bareskrim Polri Irjen Eko Hadi Santoso; dan eks Kadiv TIK Polri Irjen Slamet Uliandi. Para tersangka dijerat Pasal 258 KUHP dan atau Pasal 332 KUHP Ayat 1 dan 2 dan atau Pasal 32 Ayat 1 UU ITE. Selain Slamet, ketiga tersangka saat ini telah ditahan di Rutan Mako Brimob Mabes Polri.",
+        "Menurut temuan awal polisi, selain Presiden Prabowo, terdapat korban penyadapan lain dari Listyo dan anak buahnya. Korban tersebut disebut mencakup para menteri, tokoh politik, pengusaha, media, hingga tokoh masyarakat. Keterangan itu disampaikan dalam rangkaian pemberitaan yang sama dan belum diuraikan secara terperinci, misalnya menyangkut jumlah korban atau periode penyadapan. Bahan yang dihimpun juga tidak memuat penjelasan tentang keterkaitan langsung antara daftar korban tersebut dan dugaan pelanggaran etik yang disidangkan terhadap Eko Hadi.",
+        "Mengenai status dinasnya, Eko Hadi disebut sebagai eks Direktur Tindak Pidana Narkoba Bareskrim Polri. Ia termasuk tiga tersangka yang telah ditahan di Rutan Mako Brimob Mabes Polri, sementara Slamet Uliandi tidak ditahan. Bahan yang dihimpun tidak menyebut apakah Eko Hadi masih menduduki jabatan lain, apakah dinonaktifkan sementara, atau apakah sudah dijatuhi sanksi kepegawaian. Sebagai pembanding, Ahrie Sonta telah dijatuhi sanksi Pemecatan Tidak Dengan Hormat (PTDH) sebagai anggota Polri. Status kepegawaian Eko Hadi setelah sidang etik belum diumumkan dalam bahan ini.",
+        "Sidang etik untuk Listyo Sigit Prabowo dijadwalkan pada pekan berikutnya. Kadiv Humas Polri, Irjen Johnny Eddizon Isir, menyampaikan hal itu kepada wartawan pada Selasa, 17 November, tetapi belum mengungkap tanggal pastinya. Ia juga belum menyampaikan susunan majelis sidang KKEP untuk Listyo, dan mengatakan harinya akan disampaikan kemudian. Pemberitaan lain menyebut sidang etik yang akan dijalani Listyo terkait dugaan penyadapan ilegal, akses ilegal, dan pemusnahan alat bukti elektronik terhadap Presiden Prabowo. Rincian tuduhan untuk Listyo itu berbeda rumusannya dengan daftar dugaan pelanggaran yang dipersangkakan kepada Eko Hadi.",
+        "Di jalur pidana, penyidik menyatakan pengembangan terkait dugaan makar sudah masuk ke tahap penyidikan. Kadiv Humas Polri mengatakan hal itu di kantor Kemenko Polkam, Jakarta, Selasa, 17 November. Dengan peningkatan status perkara ke tahap penyidikan, menurut keterangan tersebut, Bareskrim Polri telah menemukan unsur tindak pidana terkait makar dalam kasus itu. Penyidik juga masih mendalami kemungkinan adanya pengguna akhir atau end user selain Listyo Sigit Prabowo yang menerima hasil penyadapan. Kapolri disebut membentuk tim khusus yang diketuai Kabareskrim untuk menangani persoalan ini. Polri juga masih mendalami bukti-bukti untuk membuat terang dugaan makar tersebut.",
+        "Dalam pemberitaan yang dihimpun, sidang etik berjalan bersamaan dengan proses pidana yang masih bergulir. Empat perwira telah berstatus tersangka, tiga di antaranya ditahan, sementara pemeriksaan etik baru digelar untuk Eko Hadi dan dijadwalkan untuk Listyo. Bahan tidak menjelaskan bagaimana hasil sidang etik nantinya akan memengaruhi proses pidana, atau sebaliknya. Karena itu, hubungan antara kedua jalur tersebut belum dapat diuraikan lebih jauh berdasarkan bahan yang ada.",
+        "Untuk memahami konteksnya, penting diketahui bahwa status tersangka bukan berarti seseorang sudah bersalah. Menurut penjelasan latar, status tersangka ditetapkan penyidik berdasarkan minimal dua alat bukti, dan putusan tetap berada di pengadilan. Penjelasan latar juga menyebut bahwa penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana. Dalam kasus ini, unsur-unsur tersebut menjadi bagian dari perkara pidana yang masih berjalan, sedangkan sidang etik menilai sisi pelanggaran profesi.",
+        "Dengan demikian, hal-hal yang sudah dapat dipastikan adalah pelaksanaan sidang etik tertutup pada 17 November, susunan majelis, dan daftar dugaan pelanggaran yang dipersangkakan. Yang belum terjawab adalah putusan sidang, tujuan dan alasan banding, status kepegawaian Eko Hadi setelah sidang, tanggal pasti sidang etik Listyo, serta hasil akhir penyidikan dugaan makar. Semua itu memerlukan keterangan resmi lanjutan. Sampai saat itu, pembaca sebaiknya memperlakukan informasi tentang hasil sidang dan banding sebagai hal yang belum terkonfirmasi.",
+        "Bagi pembaca yang jarang mengikuti kasus ini, rantai peristiwanya dapat dibaca sebagai berikut: penyadapan diduga dilakukan, penyidik menetapkan tersangka, lalu jalur etik memeriksa dugaan pelanggaran profesi para perwira. Setiap tahap memiliki alat bukti dan forumnya sendiri, dan bahan yang dihimpun tidak mencampurnya menjadi satu putusan. Karena sidang etik berlangsung tertutup, perkembangan yang bisa dipantau publik terutama berupa pernyataan resmi kepolisian. Pernyataan itulah yang menjadi pegangan untuk membedakan apa yang sudah diputuskan dari apa yang masih berupa dugaan atau rencana."
+      ],
+      "explain": [
+        {
+          "q": "Kapan penyadapan oleh aparat penegak hukum sah?",
+          "a": "Menurut penjelasan latar, penyadapan hanya sah jika dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka bagi seseorang?",
+          "a": "Status tersangka ditetapkan penyidik berdasarkan minimal dua alat bukti dan belum berarti bersalah; putusan tetap berada di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu Kepolisian Negara Republik Indonesia?",
+          "a": "Polri adalah lembaga penegak hukum nasional dan kepolisian negara di Indonesia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Divisi Humas Polri untuk putusan sidang etik dan status banding Irjen Eko Hadi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117102139-12-1428010/sidang-etik-irjen-eko-hadi-kasus-penyadapan-prabowo-digelar-tertutup",
+          "published_at": "2026-11-17T10:42:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336916/sidang-etik-eks-kapolri-listyo-sigit-digelar-pekan-depan",
+          "published_at": "2026-11-17T14:32:54+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/polri-bakal-gelar-sidang-etik-listyo-sigit-prabowo-pekan-depan-idSS",
+          "published_at": "2026-11-17T13:45:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-18",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Sidang kode etik Irjen Eko Hadi digelar tertutup, sementara putusan, banding, dan status kepegawaiannya belum dijelaskan secara resmi.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "Sidang Etik Eks Kapolri Listyo Sigit Digelar Pekan Depan",
+          "url": "https://www.liputan6.com/news/read/8336916/sidang-etik-eks-kapolri-listyo-sigit-digelar-pekan-depan",
+          "at": "2026-11-17T14:32:54+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Polri Bakal Gelar Sidang Etik Listyo Sigit Prabowo Pekan Depan",
+          "url": "https://tirto.id/polri-bakal-gelar-sidang-etik-listyo-sigit-prabowo-pekan-depan-idSS",
+          "at": "2026-11-17T13:45:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Sidang Etik Irjen Eko Hadi Kasus Penyadapan Prabowo Digelar Tertutup",
+          "url": "https://www.cnnindonesia.com/nasional/20261117102139-12-1428010/sidang-etik-irjen-eko-hadi-kasus-penyadapan-prabowo-digelar-tertutup",
+          "at": "2026-11-17T10:42:14+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_dpr_bahas_ruu_penyadapan_dan_a_18bd",
+      "angle": "RUU tata cara pembentukan UU jadi inisiatif DPR; materi RUU penyadapan baru diperkuat",
+      "kicker": "Nasional",
+      "title": "DPR Setujui RUU Tata Cara Pembentukan UU, Penyadapan Baru Dibahas",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dalam paripurna 17 November 2026 DPR menyetujui RUU Tata Cara Pembentukan Undang-Undang sebagai usul inisiatif, sedangkan penguatan materi RUU Penyadapan masih ",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "Dalam Rapat Paripurna di Senayan, Selasa (17/11/2026), DPR menyetujui RUU tentang Tata Cara Pembentukan Undang-Undang menjadi usul inisiatif DPR. Menurut pemberitaan Tirto dan CNN Indonesia, rancangan itu akan mengatur mekanisme penyusunan undang-undang secara cepat. Yang perlu dipegang: yang berstatus inisiatif DPR adalah RUU tata cara pembentukan UU, bukan RUU penyadapan. Keduanya sering tercampur dalam perbincangan, padahal objeknya berbeda. Satu mengatur bagaimana sebuah undang-undang dibentuk; satu lagi mengatur kewenangan menyadap. Karena itu, judul yang menyebut inisiatif RUU penyadapan perlu dibaca dengan hati-hati, sebab keputusan paripurna hari itu menyangkut rancangan yang pertama.",
+        "Di hari yang sama, pimpinan DPR menyatakan akan berkoordinasi dengan Komisi III untuk memperkuat materi RUU Penyadapan. Polri mengusulkan enam poin pengendalian agar kewenangan menyadap tidak disalahgunakan. Bahan lain menyebut keterlibatan pengadilan dianggap perlu untuk memastikan penyadapan tidak dilakukan secara sewenang-wenang. Meski begitu, isi pasal, batasan objek yang boleh disadap, dan siapa yang berwenang memberi izin belum diuraikan dalam bahan yang tersedia. Dengan kata lain, arah penguatan RUU Penyadapan masih berupa rencana koordinasi, dan belum ada naskah atau rincian resmi yang bisa dinilai publik. Pembaca yang ingin memahami dampaknya pada privasi belum bisa bersandar pada detail yang belum dipublikasikan itu.",
+        "Alasan DPR memilih mengambil inisiatif sendiri tidak dijelaskan dalam bahan yang ada, sehingga motifnya belum bisa dipastikan. Yang tercatat, pada paripurna yang sama DPR menyetujui usulan Komisi X untuk memperpanjang waktu pembahasan RUU Statistik. Perpanjangan itu berarti pembahasan rancangan tersebut belum rampung dan diberi tenggat baru, tetapi berapa lama tambahan waktunya tidak disebutkan. Begitu pula bagian mana yang masih alot dibahas. Dua keputusan ini menunjukkan paripurna menangani beberapa rancangan sekaligus: satu ditetapkan sebagai inisiatif, satu lagi diberi perpanjangan waktu. Tanpa penjelasan resmi, hubungan antara keduanya pun tidak dapat disimpulkan dari bahan.",
+        "Kritik terhadap RUU Penyadapan dalam bahan yang tersedia belum dirumuskan sebagai penolakan terbuka. Yang muncul lebih berupa kekhawatiran agar kewenangan menyadap tidak dipakai sewenang-wenang, karena itu pengadilan dipandang perlu dilibatkan dan Polri mengusulkan poin-poin pengendalian. Bahan lain di hari itu juga membahas kebutuhan regulasi yang mengikuti perkembangan kecerdasan buatan, dengan seorang narasumber yang dikutip Tirto menyoroti Indonesia tertinggal dari sejumlah negara. Namun kaitan pernyataan itu dengan RUU Penyadapan tidak dijelaskan, jadi tidak tepat menyebutnya sebagai kritik langsung terhadap rancangan penyadapan.",
+        "Jadwal pembahasan tingkat berikutnya belum diumumkan dalam bahan. Paripurna baru menetapkan status inisiatif, sedangkan penguatan materi disebut akan dilakukan lewat koordinasi pimpinan DPR dengan Komisi III. Kapan rapat itu berlangsung, apakah akan ada rapat dengar pendapat dengan masyarakat sipil, dan kapan naskah resmi dibagikan, semuanya belum tersedia. Sampai itu ada, yang bisa dipegang hanya urutan peristiwanya: persetujuan inisiatif, lalu janji koordinasi, tanpa tenggat yang jelas."
+      ],
+      "explain": [
+        {
+          "q": "Apa tugas pokok DPR sebagai lembaga legislatif?",
+          "a": "DPR membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan sah menurut UU ITE?",
+          "a": "Penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Bagaimana posisi DPR dalam sistem ketatanegaraan Indonesia?",
+          "a": "DPR adalah lembaga perwakilan rakyat yang bersama Dewan Perwakilan Daerah membentuk Majelis Permusyawaratan Rakyat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Dewan_Perwakilan_Rakyat_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman jadwal pembahasan RUU Penyadapan di Komisi III dan cermati siapa saja yang dilibatkan dalam penyusunannya.",
+      "image": {
+        "url": "assets/edce3d7d8b.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "DPR Setujui RUU Tata Cara Pembentukan UU, Penyadapan Baru Dibahas"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ruu-tata-cara-pembentukan-undang-undang-disetujui-inisiatif-dpr-idSA",
+          "published_at": "2026-11-17T11:30:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117142732-32-1428115/jadi-usul-inisiatif-dpr-bahas-aturan-susun-ruu-khusus-secara-kilat",
+          "published_at": "2026-11-17T15:07:30+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336796/pembahasan-ruu-statistik-diperpanjang",
+          "published_at": "2026-11-17T12:00:14+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-17",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Jadi Usul Inisiatif, DPR Bahas Aturan Susun RUU Khusus Secara Kilat",
+          "url": "https://www.cnnindonesia.com/nasional/20261117142732-32-1428115/jadi-usul-inisiatif-dpr-bahas-aturan-susun-ruu-khusus-secara-kilat",
+          "at": "2026-11-17T15:07:30+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Pembahasan RUU Statistik Diperpanjang",
+          "url": "https://www.liputan6.com/news/read/8336796/pembahasan-ruu-statistik-diperpanjang",
+          "at": "2026-11-17T12:00:14+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "RUU Tata Cara Pembentukan Undang-Undang Disetujui Inisiatif DPR",
+          "url": "https://tirto.id/ruu-tata-cara-pembentukan-undang-undang-disetujui-inisiatif-dpr-idSA",
+          "at": "2026-11-17T11:30:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_as_gempur_pulau_qeshm_di_iran_c7be",
+      "angle": "Serangan presisi ke Qeshm dan gangguan NSANet menandai gelombang baru ketegangan.",
+      "kicker": "Nasional",
+      "title": "Menurut Pejabat AS, Jet Tempur Serang Situs Rudal IRGC di Qeshm",
+      "status": "sebagian",
+      "truth": {
+        "claim": "AS menyerang situs peluncuran rudal IRGC di Pulau Qeshm pada 17 November 2026, dan pada hari yang sama jaringan NSANet milik NSA mengalami gangguan.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "Jet tempur Amerika Serikat menyerang situs peluncuran rudal Korps Garda Revolusi Islam (IRGC) di Pulau Qeshm, Selat Hormuz, pada Selasa, 17 November 2026. Seorang pejabat militer AS yang tidak disebut namanya mengatakan serangan itu memakai amunisi presisi dan dilakukan untuk membela diri. Sebuah pejabat provinsi, seperti dikutip Sindonews, menyebut beberapa lokasi di sekitar pulau menjadi sasaran, sehingga gambaran luas serangan belum seragam antarlaporan. Rincian jumlah titik yang dihantam belum diumumkan secara resmi.",
+        "Wakil Gubernur Provinsi Hormozgan, Ahmad Nafisi, mengatakan serangan itu tidak menimbulkan kerusakan pada kawasan permukiman, komersial, maupun infrastruktur. Menurut kantor berita IRNA yang dikutip Kumparan, ia menyatakan situasi di Pulau Qeshm terkendali dan seluruh lembaga penyelamatan, pelayanan, serta pemerintahan berstatus siaga penuh. Bahan tidak memuat laporan korban jiwa. Pada hari yang sama, Iran melaporkan kebakaran pada tiga kapal tanker di Selat Hormuz, tidak jauh dari lokasi serangan; bahan tidak menyebut pemilik kapal, muatannya, maupun besaran kerugiannya.",
+        "Sebelum serangan itu, IRGC mengeklaim telah melancarkan serangan drone terhadap sistem radar militer AS di Pangkalan Udara Sheikh Isa, Bahrain, pada Selasa pagi. Menurut klaim mereka, operasi tersebut merupakan jawaban atas dugaan pelanggaran wilayah udara Iran oleh drone militer AS. Militer Bahrain menyanggah sebagian klaim itu: sistem pertahanan udaranya disebut berhasil mencegat sejumlah drone sebelum mencapai sasaran, dan tidak ada laporan korban jiwa maupun kerusakan. Pejabat militer AS lalu menyebut serangan ke Qeshm sebagai respons atas tindakan pasukan Iran yang mengancam personel dan aset AS di kawasan. Urutan peristiwa dan alasannya berasal dari pernyataan masing-masing pihak, bukan kesimpulan bersama.",
+        "Serangan 17 November bukan yang pertama bulan ini. Pada 2 November, AS juga melancarkan serangan udara ke Pulau Qeshm; dua pejabat AS mengatakan kepada ABC News bahwa operasi itu langkah pertahanan menghadapi ancaman rudal pertahanan udara Iran. Presiden Donald Trump menyebutnya operasi terbatas, bukan dimulainya kembali perang berskala besar. Namun The Washington Post melaporkan serangan 2 November merupakan bagian dari rangkaian operasi tertutup pada pekan-pekan sebelumnya, dan sejumlah serangan tidak diumumkan Pentagon. Karena itu, gelombang yang teridentifikasi terbuka baru 2 dan 17 November, sedangkan jumlah total operasi Oktober–November belum dapat dipastikan.",
+        "Di hari yang sama, jaringan komunikasi rahasia Badan Keamanan Nasional (NSA) bernama NSANet mengalami gangguan. Enam sumber yang dikutip CNN mengatakan pemulihan jaringan belum sepenuhnya selesai. NSA menyatakan gangguan terjadi karena penurunan kinerja sementara saat pemeliharaan rutin terjadwal, lalu memberlakukan status code yellow, tingkat peringatan tertinggi kedua, sehingga pegawai non-darurat diminta datang bergiliran ke kantor pusat di Fort Meade. Direktur Intelijen Nasional Jay Clayton menyebut gangguan berkaitan dengan pemasangan tambalan perangkat lunak untuk kerentanan besar pada PHP, dan sejumlah sistem gagal menyala kembali setelah pembaruan. NSA dan Gedung Putih menyatakan tidak ada indikasi serangan siber, dan pertukaran intelijen Five Eyes disebut tetap berjalan.",
+        "Dua hal yang menjadi pertanyaan belum bisa dijawab dari bahan ini. Pertama, dampak serangan bagi harga minyak dunia: tidak satu pun bahan memuat pergerakan harga, kutipan analis, atau data pasokan, sehingga besarnya pengaruh ke pasar belum dapat disebutkan. Kedua, skala gangguan NSANet tidak dijelaskan secara teknis; bahan hanya menyebut beberapa sistem internal terdampak sementara kemampuan utama disebut tetap beroperasi penuh. Bahan juga tidak memuat jumlah korban di pihak militer Iran maupun AS, sehingga angka korban hingga saat ini belum jelas."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu NSANet dan mengapa gangguannya diperhatikan?",
+          "a": "Menurut bahan latar, NSANet adalah jaringan komunikasi internal NSA untuk bertukar informasi rahasia; NSA menyebut misi keamanan nasional tetap berfungsi meski sejumlah sistem terdampak.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning"
+          }
+        },
+        {
+          "q": "Negara seperti apa Iran yang menjadi sasaran serangan?",
+          "a": "Iran, dengan nama resmi Republik Islam Iran, adalah negara di Asia Barat yang hingga 1935 disebut Persia di dunia Barat; istilah Iran berasal dari kata \"Aryan\".",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Iran"
+          }
+        },
+        {
+          "q": "Bagaimana bentuk negara Amerika Serikat?",
+          "a": "AS adalah republik konstitusional federal berisi lima puluh negara bagian dan satu distrik federal, terletak di Amerika Utara dengan ibu kota Washington, D.C.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi Pentagon dan IRGC sebelum menyimpulkan arah eskalasi di Selat Hormuz.",
+      "image": {
+        "url": "assets/b0e4bf7b70.webp",
+        "credit": "kumparan.com",
+        "alt": "Menurut Pejabat AS, Jet Tempur Serang Situs Rudal IRGC di Qeshm"
+      },
+      "sources": [
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparannews/jet-tempur-as-kembali-hantam-situs-rudal-iran-di-pulau-qeshm-28aww9sJ1os",
+          "published_at": "2026-11-18T07:57:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://international.sindonews.com/read/1773295/43/as-serang-pulau-qeshm-di-iran-jaringan-rahasia-nsa-tidak-berfungsi-1794957086",
+          "published_at": "2026-11-18T07:05:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning",
+          "published_at": "2026-11-18T07:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-18",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "kumparan.com",
+          "title": "Jet Tempur AS Kembali Hantam Situs Rudal Iran di Pulau Qeshm",
+          "url": "https://kumparan.com/kumparannews/jet-tempur-as-kembali-hantam-situs-rudal-iran-di-pulau-qeshm-28aww9sJ1os",
+          "at": "2026-11-18T07:57:46+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        },
+        {
+          "outlet": "sindonews.com",
+          "title": "AS Serang Pulau Qeshm di Iran, Jaringan Rahasia NSA Tidak Berfungsi",
+          "url": "https://international.sindonews.com/read/1773295/43/as-serang-pulau-qeshm-di-iran-jaringan-rahasia-nsa-tidak-berfungsi-1794957086",
+          "at": "2026-11-18T07:05:23+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Kacau! Sistem Rahasia Intelijen AS Lumpuh, NSA Tetapkan Siaga Kuning",
+          "url": "https://www.cnbcindonesia.com/news/20261118062236-4-786113/kacau-sistem-rahasia-intelijen-as-lumpuh-nsa-tetapkan-siaga-kuning",
+          "at": "2026-11-18T07:00:00+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_rencana_relokasi_badak_jawa_29c2",
+      "angle": "DPR kaji pemindahan badak jawa ke Alas Purwo, risiko, dan hal yang belum jelas.",
+      "kicker": "Nasional",
+      "title": "DPR akan Mengkaji Rencana Pemindahan Badak Jawa ke Alas Purwo",
+      "status": "sebagian",
+      "truth": {
+        "claim": "DPR menyatakan akan mengkaji rencana pemindahan badak jawa ke Alas Purwo bersama kementerian terkait dan pemerintah daerah.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "DPR menyatakan akan mengkaji rencana memindahkan badak jawa dari Taman Nasional Ujung Kulon ke Taman Nasional Alas Purwo. Wakil Ketua DPR Saan Mustopa mengatakan kajian itu akan dibahas Komisi IV, yang membidangi sektor kehutanan, bersama kementerian terkait dan pemerintah daerah. Menurut Saan, wacana ini perlu ditimbang agar semua pihak melihat sisi positif dan sisi negatifnya. Ia menegaskan tujuannya agar badak jawa tidak punah dan tetap hidup nyaman. Pernyataan itu disampaikan di Kompleks Parlemen, Jakarta, Selasa (17/11).",
+        "Alasan pemindahan datang dari Kementerian Kehutanan. Dalam laman resminya, kementerian menyebut kawasan Ujung Kulon rentan terhadap bencana alam, sementara populasi badak jawa saat ini terkonsentrasi di taman nasional itu. Ancaman yang disebut mencakup gempa bumi, tsunami, dan aktivitas vulkanik. Kementerian menyatakan pengembangan habitat kedua menjadi salah satu pilihan strategi konservasi jangka panjang untuk mengurangi risiko tersebut. Kepala Biro Hubungan Masyarakat dan Kerja Sama Luar Negeri Kemenhut Ristianto Pribadi mengatakan gagasan itu sudah menjadi perhatian konservasi sejak beberapa dekade lalu, dan berbagai alternatif lokasi pernah dipertimbangkan.",
+        "Risikonya tidak kecil. Wakil Ketua Komisi IV Alex Indra Lukman menegaskan pemindahan tidak boleh dilakukan sembarangan karena TNUK adalah satu-satunya rumah dan habitat terakhir badak jawa di dunia. Ia mengingatkan kawasan itu telah ditetapkan UNESCO sebagai Situs Warisan Dunia dan satwanya dilindungi ketat, termasuk oleh Undang-Undang Nomor 5 Tahun 1990 tentang KSDAHE. Alex menyarankan pemerintah belum mengambil keputusan dan mengkaji ulang wacana ini, mulai dari risiko ekologis hingga aspek pendanaan. Pemerintah sendiri, dikutip dari pemberitaan, menyatakan tidak akan memindahkan badak jawa tanpa kajian ilmiah lengkap dan Ujung Kulon tetap menjadi habitat utama sampai syarat ekologis terpenuhi.",
+        "Catatan lapangan ikut mewarnai perdebatan. Pemberitaan mengaitkan rencana ini dengan kematian seekor badak jawa setelah dipindahkan. Tirto.id menyebut badak itu bernama Mustofa, sedangkan Liputan6.com menulis nama Musofa; perbedaan ejaan itu belum dijelaskan. Gubernur Banten Andra Soni, dikutip Tirto.id, meminta satwa langka di Ujung Kulon tidak direlokasi. Liputan6.com menyebut peristiwa tersebut sebagai catatan penting di tengah pro-kontra rencana pemindahan demi mencegah kepunahan. Namun bahan tidak memuat rincian kapan, ke mana, dan bagaimana kematian itu terjadi, sehingga detailnya belum jelas.",
+        "Sejumlah hal yang paling ingin diketahui pembaca justru belum terjawab bahan. Tidak ada angka populasi badak jawa saat ini dalam bahan yang tersedia; yang disebut hanya bahwa spesies ini paling langka dan terancam punah, serta populasinya terkonsentrasi di Ujung Kulon. Jadwal selesai kajian juga belum diumumkan, begitu pula bentuk keputusan yang akan diambil DPR. Yang tercatat, kajian akan melibatkan Komisi IV, kementerian, dan pemerintah daerah, dengan penekanan pada pertimbangan ilmiah dan keselamatan satwa. Sampai itu selesai, pemindahan masih berupa wacana yang dikaji, bukan keputusan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa tugasnya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah. Anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud badak jawa?",
+          "a": "Badak jawa atau badak sunda adalah badak bercula satu kecil dari famili Rhinocerotidae yang berstatus terancam kritis. Kulitnya tampak seperti lempeng baju zirah dengan lipatan pelindung, dan spesies ini termasuk badak terkecil.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Badak_jawa"
+          }
+        },
+        {
+          "q": "Mengapa aturan tertulis jadi rujukan dalam soal satwa dilindungi?",
+          "a": "Keputusan pemerintah atau DPR yang mengikat warga bisa berbentuk undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Ikuti kajian Komisi IV dan pastikan keputusan soal pemindahan badak jawa menunggu hasil kajian ilmiah.",
+      "image": {
+        "url": "assets/42e3a16d1a.webp",
+        "credit": "liputan6.com",
+        "alt": "DPR akan Mengkaji Rencana Pemindahan Badak Jawa ke Alas Purwo"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/dpr-bakal-kaji-rencana-pemindahan-badak-jawa-ke-alas-purwo-idSJ",
+          "published_at": "2026-11-17T12:32:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8336856/rencana-pemindahan-badak-ke-alas-purwo-akan-dikaji-dpr",
+          "published_at": "2026-11-17T13:00:44+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117123251-32-1428055/dpr-bakal-kaji-wacana-pemindahan-badak-jawa-dari-ujung-kulon",
+          "published_at": "2026-11-17T13:27:42+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-16",
+      "previous_edition": "2026-11-17",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "history": [
+        {
+          "date": "2026-11-16",
+          "title": "Rencana Relokasi Badak Jawa"
+        },
+        {
+          "date": "2026-11-17",
+          "title": "Penolakan relokasi badak Jawa ke Alas Purwo"
+        },
+        {
+          "date": "2026-11-18",
+          "title": "DPR Kaji Pemindahan Badak Jawa"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "DPR Bakal Kaji Wacana Pemindahan Badak Jawa dari Ujung Kulon",
+          "url": "https://www.cnnindonesia.com/nasional/20261117123251-32-1428055/dpr-bakal-kaji-wacana-pemindahan-badak-jawa-dari-ujung-kulon",
+          "at": "2026-11-17T13:27:42+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Rencana Pemindahan Badak ke Alas Purwo akan Dikaji DPR",
+          "url": "https://www.liputan6.com/news/read/8336856/rencana-pemindahan-badak-ke-alas-purwo-akan-dikaji-dpr",
+          "at": "2026-11-17T13:00:44+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "DPR Bakal Kaji Rencana Pemindahan Badak Jawa ke Alas Purwo",
+          "url": "https://tirto.id/dpr-bakal-kaji-rencana-pemindahan-badak-jawa-ke-alas-purwo-idSJ",
+          "at": "2026-11-17T12:32:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_tenggat_penetapan_ump_2027_dip_c1b8",
+      "angle": "Menaker memastikan gubernur menetapkan UMP 2027 paling lambat 21 November 2026.",
+      "kicker": "Ekonomi",
+      "title": "UMP 2027 Disebut Ditetapkan Paling Lambat 21 November",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Menaker Yassierli menyatakan UMP 2027 ditetapkan paling lambat 21 November 2026.",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "Menteri Ketenagakerjaan Yassierli memastikan penetapan Upah Minimum Provinsi (UMP) 2027 dilakukan paling lambat 21 November 2026. Jaminan itu disampaikannya setelah sosialisasi dan koordinasi dengan pemerintah daerah, dan ia menyebut para gubernur sudah menyatakan kesiapan menetapkan upah minimum sesuai jadwal. Untuk tahap berikutnya, CNN Indonesia menyebut Upah Minimum Sektoral Provinsi (UMSP) diumumkan lima hari setelah UMP, yaitu 26 November 2026. Sementara CNBC Indonesia menulis batas penetapan Upah Minimum Kabupaten/Kota (UMK) jatuh pada 25 November 2026, tanggal yang tidak disebut dalam pemberitaan CNN Indonesia.",
+        "Keyakinan itu, menurut Yassierli, bertumpu pada dua pertemuan: koordinasi dengan para kepala dinas pada 13 November dan pertemuan dengan gubernur, bupati, serta wali kota di kantor Kementerian Dalam Negeri pada 16 November. Ia juga menilai kepala daerah sudah berpengalaman menetapkan kebijakan pengupahan pada periode sebelumnya. Kementerian Ketenagakerjaan telah mengirim surat edaran berisi data ekonomi dan ketenagakerjaan, panduan penentuan upah minimum sektoral, serta panduan estimasi Kebutuhan Hidup Layak (KHL) kepada pimpinan daerah dan Dewan Pengupahan Daerah. Dalam pembagian kewenangan yang ia sebutkan, gubernur wajib menetapkan UMP dan UMSP, sedangkan upah minimum kota/kabupaten dapat ditentukan gubernur.",
+        "Penghitungan upah minimum 2027 memakai tiga variabel utama, yaitu KHL, kondisi ekonomi, dan ketenagakerjaan. Formulanya menggunakan indikator pertumbuhan ekonomi, inflasi, serta indeks tertentu pada rentang 0,5 hingga 1,0. Untuk memperkuat hitungan, Kemnaker menyiapkan estimasi KHL berbasis data konsumsi rumah tangga dari Survei Sosial Ekonomi Nasional (Susenas) Badan Pusat Statistik. KHL itu mencakup empat aspek: pengeluaran makanan, kebutuhan pokok lainnya, kesehatan dan pendidikan, serta tempat tinggal. Estimasi KHL tingkat kabupaten/kota disusun lewat pendekatan klasterisasi berbasis 11 parameter karakteristik daerah.",
+        "Penetapan akhir tetap berada di tangan gubernur, tetapi angkanya dirumuskan lewat Dewan Pengupahan Daerah yang berisi perwakilan pengusaha, serikat pekerja dan buruh, serta pemerintah. Dewan itu bersidang dengan berpedoman pada data dan panduan Kemnaker, lalu memberi rekomendasi kepada gubernur. Yassierli meminta forum tersebut mengedepankan dialog sosial agar aspirasi semua pihak terserap. Meski demikian, bahan yang tersedia belum memuat rincian usulan angka dari pihak buruh maupun pengusaha dalam pembahasan tahun ini, sehingga arah tuntutan masing-masing pihak belum dapat dijelaskan.",
+        "Bahan juga belum menjelaskan akibat hukum atau akibat praktis bila sebuah daerah tidak menetapkan upah minimum sampai batas waktu itu; informasi tersebut belum tersedia. Yang ditegaskan hanya jadwal dan pembagian kewenangan. Karena itu, yang bisa dipastikan sampai berita ini disusun adalah tenggat 21 November untuk UMP, 26 November untuk UMSP menurut CNN Indonesia, serta 25 November untuk UMK menurut CNBC Indonesia, dengan catatan tanggal UMK itu belum dikonfirmasi dalam pemberitaan CNN Indonesia. Perbedaan penyebutan itu kemungkinan mencerminkan cakupan pemberitaan yang berbeda, bukan dua kebijakan yang saling bertentangan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Kementerian Ketenagakerjaan dan siapa yang memimpinnya?",
+          "a": "Kemnaker adalah kementerian dalam Pemerintah Indonesia yang membidangi urusan ketenagakerjaan, bertanggung jawab kepada Presiden, dan dipimpin Menteri Ketenagakerjaan yang sejak 21 Oktober 2024 dijabat Yassierli.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kementerian_Ketenagakerjaan_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Yassierli dalam pemberitaan ini?",
+          "a": "Ia adalah Menteri Ketenagakerjaan yang memastikan gubernur di seluruh Indonesia menetapkan UMP 2027 paling lambat 21 November mendatang.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261117143618-92-1428130/menaker-pastikan-penetapan-ump-2027-paling-telat-21-november-2027"
+          }
+        }
+      ],
+      "action": "Cek tanggal penetapan UMP di daerahmu dan catat apakah gubernur sudah mengumumkannya sebelum 21 November 2026.",
+      "image": {
+        "url": "assets/7d61a65a62.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "UMP 2027 Disebut Ditetapkan Paling Lambat 21 November"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261117170533-8-786048/menaker-penetapan-ump-2027-paling-lambat-21-november-umk-25-november",
+          "published_at": "2026-11-17T17:21:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261117143618-92-1428130/menaker-pastikan-penetapan-ump-2027-paling-telat-21-november-2027",
+          "published_at": "2026-11-17T14:49:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-18",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_ihsg_dibuka_menguat_investor_t_0087",
+      "angle": "IHSG naik 0,35 persen ke 5.323,49 saat investor menunggu hasil RDG Bank Indonesia.",
+      "kicker": "Ekonomi",
+      "title": "IHSG Dibuka Menguat 0,35 Persen, Investor Menanti Keputusan BI",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IHSG dibuka menguat 0,35 persen ke 5.323,49 pada Rabu (18/11), setelah sehari sebelumnya ditutup turun 0,30 persen ke 5.304.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-18T10:06:49+07:00"
+      },
+      "body": [
+        "Indeks Harga Saham Gabungan (IHSG) dibuka menguat 18,73 poin atau 0,35 persen ke posisi 5.323,49 pada Rabu (18/11) pagi, seperti dilaporkan Antara. Penguatan itu berbalik dari penutupan Selasa (17/11) yang turun 16,226 poin atau 0,30 persen ke level 5.304. Indeks LQ45 yang menghimpun 45 saham unggulan ikut naik 2,35 poin atau 0,43 persen ke 551,48. Sebelumnya Phintraco Sekuritas memperkirakan IHSG bergerak mendatar di kisaran 5.250–5.380, dengan catatan histogram MACD masih di area positif tetapi Stochastic RSI sudah overbought. Menurut riset sekuritas itu, pelaku pasar kini menunggu hasil Rapat Dewan Gubernur Bank Indonesia.",
+        "Konsensus sementara masih memperkirakan BI Rate bertahan di 5,75 persen, dengan Deposit Facility Rate 5 persen dan Lending Facility Rate 6,5 persen, meski Phintraco mencatat prediksi ekonom terbelah di tengah depresiasi rupiah yang berlanjut. MNC Sekuritas melihat IHSG berpeluang menguat ke 5.442–5.520, tetapi meminta pasar mencermati koreksi jangka pendek ke 5.209–5.276, dengan skenario terburuk bila menembus 4.824. Kedua rumah sekuritas juga menyodorkan daftar saham berbeda: Phintraco menyebut EMAS, ANTM, UNVR, BRIS, dan GGRM, sedangkan MNC menyebut BMRI, INDY, PGAS, dan SSMS. Yang belum jelas, bahan tidak menyebut kapan hasil RDG BI diumumkan maupun arah keputusannya; investor disebut masih menunggu."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Bank Indonesia?",
+          "a": "Bank Indonesia adalah bank sentral Republik Indonesia sesuai Pasal 23D UUD 1945 dan UU Nomor 23 Tahun 1999; sebelum sahamnya dibeli pemerintah, bank ini bernama De Javasche Bank N.V.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Bank_Indonesia"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud prediksi terkoreksi pada bahan latar?",
+          "a": "Bahan latar menyebut IHSG diprediksi terkoreksi pada Rabu (18/11), padahal pembukaan pagi hari itu justru menguat 0,35 persen, sehingga prediksi tersebut tidak sejalan dengan hasil pembukaan.",
+          "source": {
+            "outlet": "kumparan.com",
+            "url": "https://kumparan.com/kumparanbisnis/ihsg-diproyeksi-melemah-investor-menanti-keputusan-suku-bunga-acuan-bi-28aw1wEFt58"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman suku bunga BI dan pergerakan rupiah sebelum mengambil keputusan investasi.",
+      "image": {
+        "url": "assets/4be2697674.webp",
+        "credit": "kumparan.com",
+        "alt": "IHSG Dibuka Menguat 0,35 Persen, Investor Menanti Keputusan BI"
+      },
+      "sources": [
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/ihsg-diproyeksi-melemah-investor-menanti-keputusan-suku-bunga-acuan-bi-28aw1wEFt58",
+          "published_at": "2026-11-18T07:03:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5861343/ihsg-rabu-dibuka-menguat-1873-poin-ke-posisi-5323",
+          "published_at": "2026-11-18T09:11:42+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://ekbis.sindonews.com/read/1773351/178/bursa-saham-dibuka-hijau-ihsg-menguat-035-ke-posisi-5323-1794967910",
+          "published_at": "2026-11-18T09:40:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-18",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "sindonews.com",
+          "title": "Bursa Saham Dibuka Hijau, IHSG Menguat 0,35% ke Posisi 5.323",
+          "url": "https://ekbis.sindonews.com/read/1773351/178/bursa-saham-dibuka-hijau-ihsg-menguat-035-ke-posisi-5323-1794967910",
+          "at": "2026-11-18T09:40:10+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "IHSG Rabu dibuka menguat 18,73 poin ke posisi 5.323",
+          "url": "https://www.antaranews.com/berita/5861343/ihsg-rabu-dibuka-menguat-1873-poin-ke-posisi-5323",
+          "at": "2026-11-18T09:11:42+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "kumparan.com",
+          "title": "IHSG Diproyeksi Melemah, Investor Menanti Keputusan Suku Bunga Acuan BI",
+          "url": "https://kumparan.com/kumparanbisnis/ihsg-diproyeksi-melemah-investor-menanti-keputusan-suku-bunga-acuan-bi-28aw1wEFt58",
+          "at": "2026-11-18T07:03:23+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_18",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah: Pelantikan Gatot hingga Video Paraguay",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 18 November 2026, pemeriksaan fact-check mencakup tiga klaim yang beredar di media sosial. Ketiganya diputuskan salah oleh TurnBackHoax. Klaim pertama menyebut Presiden Prabowo resmi melantik Gatot Nurmantyo sebagai Menko Polhukam. Klaim kedua berupa video yang diklaim merekam kerusuhan di Paraguay. Klaim ketiga menyebut Prabowo bakal mengirim perokok untuk menghisap asap karhutla.",
+        "Dari ketiganya, pola yang paling jelas terlihat pada klaim video: rekaman peristiwa di satu tempat diberi label lokasi yang berbeda. Video yang dibagikan sebagai kerusuhan di Paraguay ternyata rekaman kerusuhan di Gedung Mahkamah Agung Albania yang berkaitan dengan protes anti pemerintah. Dua klaim lainnya berpola lain, yakni pernyataan tentang tindakan pejabat yang tidak ditemukan informasinya. Untuk klaim pelantikan Gatot Nurmantyo sebagai Menko Polhukam, tidak ditemukan informasi valid yang menyebutkan peristiwa itu. Hal serupa berlaku pada klaim soal pengiriman perokok untuk menghisap asap karhutla: tidak ada informasi valid yang menyebutkan rencana tersebut.",
+        "Sebaiknya pembaca menahan diri untuk tidak meneruskan klaim atau video semacam ini sebelum memeriksa sumbernya. Untuk rekaman, perhatikan apakah lokasi dan peristiwanya benar-benar sesuai dengan narasi yang menyertainya, karena video dari peristiwa lain mudah dipindahkan konteksnya. Untuk pernyataan tentang kebijakan atau tindakan pejabat, cek apakah ada pengumuman resmi yang mendasarinya. Rujukan pemeriksaan ketiga klaim ini tersedia di TurnBackHoax."
+      ],
+      "action": "Periksa sumber resmi sebelum meneruskan klaim atau video yang beredar.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-18T10:06:49+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-18",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Prabowo Resmi Melantik Gatot Nurmantyo Sebagai Menko Polhukam",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan informasi valid yang menyebutkan Gatot Nurmantyo dilantik menjadi Menko Polkam.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37473-salah-prabowo-resmi-melantik-gatot-nurmantyo-sebagai-menko-polhukam"
+        },
+        {
+          "claim": "Video \"Rusuh di Paraguay karena 3 Juta Orang Tidak Bisa Tarik Tunai\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan adalah video kerusuhan di Gedung Mahkamah Agung Albania berkaitan dengan protes/demo anti pemerintah.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37472-salah-video-rusuh-di-paraguay-karena-3-juta-orang-tidak-bisa-tarik-tunai"
+        },
+        {
+          "claim": "Prabowo Bakal Mengirim Perokok untuk Menghisap Asap Karhutla",
+          "verdict": "salah",
+          "reason": "Tidak ada informasi valid yang menyebutkan Presiden Prabowo bakal mengirim perokok untuk menghisap asap karhutla.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37452-salah-prabowo-bakal-mengirim-perokok-untuk-menghisap-asap-karhutla"
+        }
+      ],
+      "pattern": "Rekaman peristiwa di satu negara diberi label lokasi lain, sementara klaim tentang tindakan pejabat disebar tanpa informasi valid yang mendasarinya."
+    }
+  ]
+}
