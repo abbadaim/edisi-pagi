@@ -1,7 +1,7 @@
 # 024 — Jadwal dari luar GitHub (pg_cron → `repository_dispatch`)
 
 ```
-Status: plan-draft
+Status: tested
 Kelas: infra
 Dibuat: 2026-11-18
 Diperbarui: 2026-11-18
@@ -195,6 +195,25 @@ Jangan menyimpulkan dari `start_time` di `cron.job_run_details`: kolom itu
 Rollback: `select cron.unschedule('edisi-harian-dispatch');` lalu `drop function
 public.dispatch_build();`. Tidak ada data yang perlu dikembalikan.
 
+## 6c. Uji end-to-end (2026-11-18)
+
+`005_schedule.sql` dijalankan di proyek sungguhan lewat Management API, lalu
+rantainya diuji satu kali tanpa menunggu 22:45 UTC:
+
+| Langkah | Hasil |
+|---|---|
+| `select jobid, jobname, schedule, active from cron.job` | `2 · edisi-harian-dispatch · 45 22 * * * · true` |
+| `select public.dispatch_build()` | void, tanpa galat |
+| `net._http_response` | **204** pada `04:04:49` UTC |
+| Run GitHub | `44234816200`, event `repository_dispatch`, mulai **`04:04:53`** — 4 detik |
+| Penjaga idempoten | `guard: 2026-11-18 sudah terbit … — dilewati` |
+| Hasil run | `success` 15 detik; `build` dan `deploy` **skipped**; edisi tidak tersentuh |
+
+Kebetulan yang menguntungkan: pada hari yang sama cron GitHub yang tertunda
+akhirnya masuk — run `schedule` pada `03:53:22` UTC, yaitu ±1 jam 23 menit
+sesudah jendela `02:30` UTC. Ia juga hijau dan berhenti di penjaga. Dua jalur
+berdampingan tanpa saling menimpa, persis seperti yang dirancang.
+
 ## 7. Riwayat
 
 - `2026-11-18` — `plan-draft` — dibuat setelah 0 dari 5 jendela cron terkirim
@@ -208,6 +227,10 @@ public.dispatch_build();`. Tidak ada data yang perlu dikembalikan.
 - `2026-11-18` — `plan-draft` — `pg_cron 1.6.4` dipasang dan probe dijalankan:
   `succeeded` pada 04:00:00 dan 04:01:00 UTC, lalu dicabut (0 job tersisa).
   Dua gerbang §3 lunas; implementasi `005_schedule.sql` menunggu `plan-approved`.
+- `2026-11-18` — `tested` — `005_schedule.sql` dipasang: job
+  `edisi-harian-dispatch` aktif, dispatch uji memberi **204** dan run
+  `repository_dispatch` dalam 4 detik, berhenti di penjaga. 359 uji lulus
+  (`tests/schedule-dispatch.test.ts` 4 uji, gagal sebelum berkas SQL ada).
 
 ## 8. Pelajaran (diisi setelah `shipped`)
 

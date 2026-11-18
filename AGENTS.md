@@ -23,8 +23,9 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Tanya AI | Tab `#/tanya` + `#/tanya/<id>` di aplikasi; pertanyaan masuk ke Supabase (`asks`, RLS owner-only), dijawab `scripts/ask.ts` (`DEC-0031`…`DEC-0036`) |
 | Jalur cepat | `repository_dispatch` dari Supabase (pg_net + Vault) → `tanya.yml`; terukur **10 detik** sampai run dimulai, jawaban ~2–3 menit |
 | Minta edisi | Panel `#/atur` membaca `public/status.json` dan menulis `build_requests` → `repository_dispatch build` (`DEC-0039`); tanpa `--force` |
+| Pemicu jadwal | **`pg_cron` di Supabase** pada `22:45` UTC = 05:45 WIB → `repository_dispatch build` (`DEC-0041`, `supabase/005_schedule.sql`); terukur **4 detik** sampai run mulai. Tiga cron GitHub tetap sebagai cadangan |
 | Pantau | `editor_notes` `source='reader'`; `scripts/watch.ts sync|report` di `daily.yml`; pemeriksaan bahan tanpa token (`DEC-0037`) |
-| Tests | `npm test` — 355 uji; `npm run test:ui` — 11 uji browser |
+| Tests | `npm test` — 359 uji; `npm run test:ui` — 11 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.
@@ -107,7 +108,17 @@ SUPABASE_JWT=<jwt> npm run ask        # uji lokal dengan sesi pengguna, tanpa ku
 
 Skema Supabase ada di `supabase/` dan dijalankan di **SQL Editor**, bukan lewat
 `npm run migrate` (folder `migrations/` milik SQLite). Urutannya: `001_init`,
-`002_dispatch` (perlu PAT di Vault), `003_watch`.
+`002_dispatch` (perlu PAT di Vault), `003_watch`, `004_build_request`,
+`005_schedule` (pemicu `pg_cron`, `DEC-0041`).
+
+Periksa jadwal luar GitHub:
+
+```sql
+select jobid, jobname, schedule, active from cron.job;          -- 45 22 * * * · t
+select status, start_time at time zone 'UTC', return_message
+  from cron.job_run_details order by start_time desc limit 3;
+select status_code, created from net._http_response order by created desc limit 3;  -- 204
+```
 
 POC:
 
@@ -278,6 +289,15 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
   Supabase sungguhan.
 - **Langkah opsional di workflow tangani kegagalan di dalam skrip.** `bash -e`
   mematikan langkah sebelum bukti sempat dicetak.
+- **`cron.timezone` di Supabase selalu `GMT`.** Konteksnya `postmaster`, jadi
+  tidak bisa diubah tanpa restart yang tidak kita punya; `show timezone`
+  menjawab zona sesi, bukan zona jadwal. `45 22 * * *` = 22:45 **UTC** = 05:45
+  WIB. Job pg_cron harus diuji dengan menunggu satu menit (`* * * * *`) dan
+  membaca `start_time at time zone 'UTC'` — jangan menyimpulkan dari bentuk
+  jadwalnya (`DEC-0041`).
+- **pg_cron terpasang ≠ worker hidup.** Selalu buktikan dengan job probe yang
+  benar-benar berstatus `succeeded`; `cron.job_run_details` yang kosong berarti
+  worker tidak jalan, dan gejalanya baru muncul saat edisi pagi tidak terbit.
 
 ### OpenCode di CI
 
@@ -308,7 +328,8 @@ Follow-up memakai slot normal. Jika berita baru kurang, follow-up ≤ berita bar
   dikirim 02:09–04:47 UTC, `schedule-check.yml` (00:15 UTC) 06:11–07:47 UTC.
   Pada 2026-11-18 kelima jendela lewat tanpa satu pun run — edisi hanya terbit
   setelah dispatch manual. Karena itu lapis cron tidak menambah ketepatan
-  (rencana 021), dan pemicu dipindahkan ke luar GitHub (rencana 024).
+  (rencana 021); pemicu harian kini dari `pg_cron` (rencana 024, `DEC-0041`),
+  dan tiga cron GitHub tinggal sebagai cadangan.
 - Jadwal berlapis (tiga cron) + `edition-guard` membuat run kedua berhenti sendiri
   bila edisi sudah ada (rencana 021). Cron tetap bisa dibuang semua — dispatch
   manual tidak lagi berisiko menimpa.

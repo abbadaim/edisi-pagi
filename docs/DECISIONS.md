@@ -441,3 +441,24 @@ Jangan "memperbaiki" ini dengan menghapus job `verdict` atau menurunkan
 `--strict`: keduanya mengembalikan masalah yang DEC-0038 tutup, yaitu run hijau
 padahal tidak ada yang terbit.
 _Tanggal: 2026-11-18. Rencana: `docs/plans/023-minta-edisi-dari-aplikasi.md` (revisi §6d)._
+
+## DEC-0041 — Pemicu harian dari pg_cron, bukan dari cron GitHub
+
+Cron GitHub di repo ini tidak dikirim pada jamnya: jadwal `22:45` UTC tiba
+`02:09`–`04:47` UTC, jadwal `00:15` UTC tiba `06:11`–`07:47` UTC, dan pada
+2026-11-18 kelima jendela lewat tanpa satu pun run. Menambah lapis cron tidak
+menolong karena yang terlambat adalah pengirimnya.
+
+Karena itu pemicu `05:45` WIB dipindahkan ke `pg_cron` di Supabase
+(`supabase/005_schedule.sql`): fungsi `dispatch_build()` membaca Vault lalu
+`net.http_post` `repository_dispatch` tipe `build`. Tiga cron GitHub tetap
+terpasang sebagai cadangan; `edition-guard` membuat duplikat berhenti di bawah
+15 detik, dan tidak ada `--force`.
+
+Jangan menulis jam WIB di `cron.schedule`. `cron.timezone` bernilai `GMT` dan
+konteksnya `postmaster`, jadi di Supabase ia tidak bisa diubah; `45 22 * * *`
+berarti 22:45 **UTC**. `show timezone` tidak relevan — itu zona sesi.
+
+Terukur 2026-11-18: dispatch manual → `net._http_response` **204** → run
+`repository_dispatch` mulai 4 detik kemudian → penjaga melewati build.
+_Tanggal: 2026-11-18. Rencana: `docs/plans/024-jadwal-luar.md`._
