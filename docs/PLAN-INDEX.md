@@ -34,6 +34,7 @@ Status yang mungkin: `plan-draft`, `plan-approved`, `mockup-v1`,
 | 023 | [Status build + minta edisi dari aplikasi](plans/023-minta-edisi-dari-aplikasi.md) | UI + infra | `tested` | 2026-11-17 |
 | 022 | [Tanya AI dan pantau pertanyaan pembaca](plans/022-tanya-pantau.md) | infra + pipeline + UI | `tested` | 2026-11-17 |
 | 024 | [Jadwal dari luar GitHub (pg_cron)](plans/024-jadwal-luar.md) | infra | `tested` | 2026-11-18 |
+| 025 | [Pertanyaan `failed` bisa dikirim ulang](plans/025-failed-retry.md) | UI + pipeline | `tested` | 2026-11-18 |
 
 `002` selesai di kode dan tes: 4 uji baru di `tests/llm-resolve.test.ts`.
 Menunggu tidak ada; menunggu hanya konfirmasi run `daily.yml` berikutnya bahwa

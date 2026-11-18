@@ -20,12 +20,12 @@ Dokumen ini adalah ringkasan kerja untuk sesi OpenCode berikutnya. Baca ini lebi
 | Edisi terakhir | `2026-11-12` nasional 8 kartu (build 14 m 16 s, OpenCode, kartu paralel) |
 | Registry pemilik | `config/outlets.yaml` (14 outlet, DEC-0030); kemandirian per pemilik |
 | Kartu meta | `change`, `misread`, `gap`, `debate` (Reddit/Trends/Detik; DEC-0022) |
-| Tanya AI | Tab `#/tanya` + `#/tanya/<id>` di aplikasi; pertanyaan masuk ke Supabase (`asks`, RLS owner-only), dijawab `scripts/ask.ts` (`DEC-0031`…`DEC-0036`) |
+| Tanya AI | Tab `#/tanya` + `#/tanya/<id>` di aplikasi; pertanyaan masuk ke Supabase (`asks`, RLS owner-only), dijawab `scripts/ask.ts` (`DEC-0031`…`DEC-0036`); baris `failed` bisa dikirim ulang dari layar detail (`DEC-0042`) |
 | Jalur cepat | `repository_dispatch` dari Supabase (pg_net + Vault) → `tanya.yml`; terukur **10 detik** sampai run dimulai, jawaban ~2–3 menit |
 | Minta edisi | Panel `#/atur` membaca `public/status.json` dan menulis `build_requests` → `repository_dispatch build` (`DEC-0039`); tanpa `--force` |
 | Pemicu jadwal | **`pg_cron` di Supabase** pada `22:45` UTC = 05:45 WIB → `repository_dispatch build` (`DEC-0041`, `supabase/005_schedule.sql`); terukur **4 detik** sampai run mulai. Tiga cron GitHub tetap sebagai cadangan |
 | Pantau | `editor_notes` `source='reader'`; `scripts/watch.ts sync|report` di `daily.yml`; pemeriksaan bahan tanpa token (`DEC-0037`) |
-| Tests | `npm test` — 359 uji; `npm run test:ui` — 11 uji browser |
+| Tests | `npm test` — 360 uji; `npm run test:ui` — 11 uji browser |
 | Typecheck | `npm run typecheck` |
 
 Jangan menganggap angka di atas permanen; periksa `git log`, `gh run list`, dan `data/editions/` sebelum menyimpulkan.

@@ -1581,6 +1581,51 @@ function askRow(item) {
   return b;
 }
 
+/**
+ * Kirim ulang pertanyaan yang gagal (`DEC-0042`).
+ *
+ * `failed` adalah keadaan terminal di pipeline: `scripts/ask.ts` hanya mengambil
+ * `state=new`, dan `asks` tidak punya policy UPDATE untuk pengguna, jadi baris
+ * lama memang tidak bisa dihidupkan kembali. Satu-satunya jalan adalah
+ * mengirim pertanyaan baru dengan isi yang sama; baris lama dibiarkan sebagai
+ * riwayat. Tanpa tombol ini, satu kegagalan sesaat (mis. model tidak tersedia)
+ * mengubur pertanyaan untuk selamanya tanpa jalan pulih dari aplikasi.
+ */
+function retryAskBlock(item) {
+  const wrap = el("div", "actions");
+  const btn = el("button", "pbtn", "Coba lagi");
+  btn.type = "button";
+  const msg = el("div", "d");
+
+  btn.onclick = async () => {
+    btn.disabled = true;
+    btn.textContent = "Mengirim…";
+    msg.textContent = "";
+    try {
+      await sb("asks", {
+        method: "POST",
+        body: { mode: item.mode, question: item.question, topic_id: item.topic_id ?? null },
+        prefer: "return=minimal",
+      });
+      await refreshAsks();
+      // S.asks urut created_at desc: yang pertama cocok adalah kiriman terbaru.
+      const baru = (S.asks ?? []).find((a) => a.id !== item.id && a.question === item.question);
+      if (baru) {
+        navigate({ name: "tanya", askId: baru.id });
+        return;
+      }
+      await renderTanya();
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = "Coba lagi";
+      msg.textContent = e instanceof Error ? e.message : "gagal mengirim";
+    }
+  };
+
+  wrap.append(btn, msg);
+  return wrap;
+}
+
 function queuedRow(item) {
   const b = el("div", "q");
   b.append(el("div", "txt", item.question));
@@ -1850,9 +1895,15 @@ async function renderAskDetail(body, askId) {
         "d",
         item.state === "refused"
           ? "Bahan yang ada belum cukup. Saya tidak menjawab dari pengetahuan umum."
-          : "Jawaban muncul di sini setelah diproses.",
+          : item.state === "failed"
+            ? "Pertanyaan ini tidak selesai diproses."
+            : "Jawaban muncul di sini setelah diproses.",
       ),
     );
+    if (item.state === "failed") {
+      if (item.error) box.append(el("div", "d", String(item.error).slice(0, 200)));
+      box.append(retryAskBlock(item));
+    }
     body.append(box);
     return;
   }

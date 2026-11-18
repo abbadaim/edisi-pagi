@@ -462,3 +462,20 @@ berarti 22:45 **UTC**. `show timezone` tidak relevan — itu zona sesi.
 Terukur 2026-11-18: dispatch manual → `net._http_response` **204** → run
 `repository_dispatch` mulai 4 detik kemudian → penjaga melewati build.
 _Tanggal: 2026-11-18. Rencana: `docs/plans/024-jadwal-luar.md`._
+
+## DEC-0042 — Pertanyaan gagal dikirim ulang dari UI, bukan dihidupkan lagi
+
+`failed` adalah keadaan terminal: `scripts/ask.ts` hanya mengambil
+`asks?state=eq.new`, dan `asks` tidak punya policy UPDATE untuk pengguna
+(hanya `owner_read`/`owner_insert`/`owner_delete`). Delapan dari sembilan baris
+uji 2026-11-17 berakhir `failed` dan tidak bisa dipulihkan dari aplikasi.
+
+Karena itu **Coba lagi** mengirim pertanyaan **baru** dengan isi yang sama lewat
+`POST /rest/v1/asks`, lalu berpindah ke baris baru. Baris lama tetap sebagai
+riwayat. Ini memilih satu jalur tulis yang sudah ada daripada menambah policy
+UPDATE — policy baru berarti pengguna bisa menulis ulang state pipeline.
+
+`refused` tidak ditawari ulang: menolak karena bahan kurang bukan kegagalan, dan
+mengulangnya hanya membakar panggilan model. Jangan menambahkan tombol itu tanpa
+mengubah `DEC-0033` lebih dulu.
+_Tanggal: 2026-11-18. Rencana: `docs/plans/025-failed-retry.md`._

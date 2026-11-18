@@ -251,3 +251,15 @@ test("UI-07: panel menampilkan progres build berjalan", () => {
   const css = readFileSync(join(root, "public", "style.css"), "utf8");
   assert.match(css, /\.progFill\{[^}]*animation/, "animasi progres hilang");
 });
+
+// UI-08 — DEC-0042
+// `failed` terminal di pipeline (`ask.ts` hanya claim `state=new`, tanpa policy
+// UPDATE untuk pengguna). Satu kegagalan sesaat dulu mengubur pertanyaan
+// selamanya karena tidak ada jalan pulih dari aplikasi.
+test("UI-08: pertanyaan gagal bisa dikirim ulang dari layar detail", () => {
+  const js = readFileSync(join(root, "public", "app.js"), "utf8");
+  assert.match(js, /function retryAskBlock\(/, "blok coba lagi hilang");
+  assert.match(js, /item\.state === "failed"/, "hanya state failed yang ditawari ulang");
+  assert.match(js, /body: \{ mode: item\.mode, question: item\.question/, "kirim ulang memakai pertanyaan yang sama");
+  assert.match(js, /String\(item\.error\)/, "alasan gagal tidak ditampilkan");
+});
