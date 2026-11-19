@@ -1,0 +1,785 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-20",
+  "scope": "nasional",
+  "published_at": "2026-11-20T05:45:45+07:00",
+  "coverage": {
+    "from": "2026-11-19T05:45:45+07:00",
+    "to": "2026-11-20T05:45:45+07:00"
+  },
+  "generated_at": "2026-11-20T05:45:45+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 19,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 7,
+  "truncated_reason": "Hanya 7 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_legislator_dorong_ruu_penyadap_9e87",
+      "angle": "Negara kini punya dasar merampas aset kejahatan, dengan atau tanpa putusan pidana.",
+      "kicker": "Nasional",
+      "title": "UU Perampasan Aset Disahkan DPR, Ada Jalur Tanpa Putusan Pidana",
+      "status": "sebagian",
+      "truth": {
+        "claim": "DPR mengesahkan RUU Perampasan Aset menjadi undang-undang pada rapat paripurna ke-13, 19 November 2026, dengan 361 dari 573 anggota hadir atau menandatangani.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "DPR mengesahkan Rancangan Undang-Undang Perampasan Aset terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya menjadi undang-undang dalam rapat paripurna ke-13 masa sidang II 2026–2027, Kamis 19 November. Rapat beragenda tunggal itu dipimpin Ketua DPR Puan Maharani, didampingi empat pimpinan lain: Sufmi Dasco Ahmad, Sari Yuliati, Saan Mustopa, dan Cucun Ahmad Syamsurizal. Puan membacakan pertanyaan apakah setiap fraksi menyetujui RUU itu disahkan, dan seluruh peserta paripurna menjawab setuju. Menurut pemberitaan CNN Indonesia, rapat itu dihadiri atau ditandatangani 361 dari total 573 anggota DPR, yang berasal dari seluruh fraksi. Nama resmi UU ini menyebut dua cakupan sekaligus, tindak pidana korupsi dan tindak pidana lainnya, penamaan yang menandakan ruang lingkupnya lebih luas daripada pemberantasan korupsi saja.",
+        "Perjalanan menuju pengesahan itu tidak singkat. Sehari sebelumnya, Rabu 18 November, rapat pleno pengambilan keputusan tingkat satu di Komisi III DPR yang dipimpin Sufmi Dasco Ahmad menyepakati RUU dibawa ke paripurna, dan seluruh fraksi menyetujui tanpa catatan. Perwakilan fraksi PKS, Nasir Djamil, menyebut RUU ini sudah dimulai sejak 2008 dan selama itu tak kunjung dibahas. Ia menyatakan parlemen beruntung bisa menyelesaikan aturan yang ditunggu masyarakat. Bahan yang sama menyebut pembahasan rampung sebelum tenggat 15 Desember, sehingga pengesahan terjadi lebih cepat dari batas waktu yang diberikan.",
+        "Yang diatur UU ini pada dasarnya dua jalur perampasan aset. Jalur pertama mengikuti putusan pidana, yang dalam paparan pemerintah disebut conviction-based forfeiture. Jalur kedua berjalan tanpa putusan pidana, atau non-conviction-based forfeiture. Menurut pemberitaan Tirto, UU Perampasan Aset memang mengatur mekanisme perampasan aset tanpa putusan pidana. CNN Indonesia juga menyebut UU ini mengatur enam tindak pidana selain korupsi untuk perampasan aset, baik dengan maupun tanpa putusan pidana. Dua jalur inilah yang membedakan UU ini dari hukuman penjara biasa. Istilah conviction-based dan non-conviction-based dipakai pemerintah sendiri dalam paparannya di rapat tingkat satu.",
+        "Untuk jalur tanpa putusan pengadilan, bahan menyebut tiga situasi: pelaku meninggal, pelaku melarikan diri, atau pelaku tidak diketahui. Dapat dibaca sebagai: yang dipersoalkan pada jalur ini adalah asetnya, bukan lebih dahulu kesalahan seseorang di depan hakim pidana. Yang belum jelas adalah hukum acaranya. Bahan hanya menyebut bahwa UU mengatur hukum acara perampasan aset untuk kedua jalur, tanpa merinci siapa yang berwenang mengajukan perkara, bagaimana pembuktian dilakukan ketika tidak ada terdakwa, atau bagaimana hakim menilai bukti pada jalur ini. Dengan rincian yang belum tersedia, pembaca sebaiknya tidak mengisi kekosongan dengan dugaan, termasuk soal apakah jalur ini bisa dipakai untuk aset yang tersimpan di luar negeri.",
+        "Ruang lingkupnya tidak berhenti pada korupsi. Menurut paparan Wakil Menteri Hukum Eddy Hiariej, jenis tindak pidana yang dapat dikenai perampasan meliputi korupsi, narkotika dan psikotropika, pendanaan terorisme, penyelundupan senjata dan bahan berbahaya, perdagangan orang, serta penipuan atau penggelapan yang memakai sarana teknologi informasi atau berdampak luas pada perekonomian. Daftar di pemberitaan lain memakai susunan sedikit berbeda: penyelundupan manusia dan terorisme disebut sebagai kategori tersendiri, sementara kejahatan siber tidak dirinci. Perbedaan penyebutan itu lazim terjadi pada ringkasan berita, tetapi rincian yang mengikat hanya ada di teks undang-undang.",
+        "Alasan yang dikemukakan pendukung UU ini adalah ketimpangan antara hukuman dan harta. Ketua Komisi III Habiburokhman, dikutip CNN Indonesia, mengatakan banyak pelaku korupsi dan kejahatan lain hanya dihukum penjara, sementara aset hasil kejahatan tidak dikembalikan. Ia menggambarkan pelaku yang rela masuk penjara tetapi menyembunyikan uang triliunan rupiah, sehingga uang itu tidak kembali ke masyarakat maupun ke korban. Ia mencontohkan penipuan investasi, perdagangan saham bodong, penipuan travel umrah dan haji, serta penipuan lewat sarana teknologi informasi seperti perjudian daring dan kripto. Semua itu ia sampaikan dalam rapat paripurna yang sama, dengan penekanan bahwa kerugian masyarakat mestinya bisa segera dikembalikan melalui sistem peradilan.",
+        "UU ini juga memerintahkan pembentukan badan khusus oleh Presiden untuk mengelola dan mengawasi aset yang dirampas. Paparan pemerintah menyebut cakupan pengaturan meliputi penelusuran, pemblokiran, penyitaan, sampai pengelolaan aset, dengan pengawasan berkala yang akuntabel dan sistem pengelolaan berbasis teknologi informasi yang terintegrasi. Namun nama badan itu, kewenangan rincinya, dan apakah lembaga tersebut berdiri sendiri atau berada di bawah lembaga yang sudah ada tidak disebutkan dalam bahan. Pertanyaan soal kewenangan baru karena itu baru bisa dijawab sebatas kerangka besarnya, bukan sampai tugas dan batas kewenangan tiap lembaga.",
+        "Tentang kapan UU mulai berlaku dan bagaimana tahap peralihannya, bahan yang tersedia tidak memuat keterangan. Tidak ada penjelasan soal masa transisi, tenggat pembentukan badan, atau tenggat penyusunan aturan pelaksana. Yang tercatat hanya tenggat politik sebelum pengesahan, yaitu 15 Desember, dan itu merujuk pada batas waktu penyelesaian pembahasan, bukan pada saat berlakunya undang-undang. Dengan demikian, jawaban atas pertanyaan itu adalah bahwa detailnya belum tersedia dalam pemberitaan hari ini, dan waktu berlaku baru bisa dipastikan setelah teks UU terbit. Bahan juga tidak menyebut siapa yang mengawasi badan khusus itu selain Presiden sebagai pembentuknya.",
+        "Soal catatan dan penolakan, seluruh fraksi menyetujui RUU ini tanpa catatan pada pengambilan keputusan tingkat satu, dan pada paripurna tidak ada fraksi yang menolak dalam pemberitaan yang tersedia. Namun Tirto memberitakan klaim DPR bahwa keputusan itu didasari beragamnya aspirasi publik yang dinilai banyak menolak penerapan sebuah pasal. Bahan itu tidak menyebut pasal mana yang dimaksud dan tidak merinci siapa yang menolak. Dengan begitu, tidak tepat menyimpulkan bahwa UU ini lolos tanpa keberatan publik; yang bisa dikatakan, tidak ada penolakan fraksi yang tercatat pada rapat pengesahan.",
+        "Pertanyaan berikutnya, perlindungan pihak ketiga yang beritikad baik, tidak dijawab bahan. Tidak ada keterangan tentang nasib aset yang sudah berpindah tangan, pembeli yang tidak tahu asal-usulnya, atau mekanisme keberatan bagi pemilik yang merasa dirugikan. Paparan pemerintah hanya menekankan harapan agar seluruh tahapan perampasan berjalan adil, mulai dari penelusuran sampai pengelolaan. Harapan itu bukan rincian aturan. Pertanyaan itu penting karena aset yang hendak dirampas bisa sudah berpindah tangan sebelum perkara dibuka, dan bahan tidak menjelaskan bagaimana posisi pemilik barunya. Sampai teks UU dan peraturan pelaksananya tersedia, pertanyaan ini sebaiknya dibiarkan terbuka: belum jelas apakah perlindungan itu diatur di dalam UU atau diserahkan kepada aturan turunan.",
+        "Angka kehadiran juga menyisakan tafsir. Bahan menulis rapat dihadiri atau ditandatangani 361 dari 573 anggota, sekitar 63 persen bila dihitung sederhana. Frasa itu tidak menjelaskan apakah 361 adalah jumlah yang hadir fisik, jumlah yang menandatangani daftar hadir, atau gabungan keduanya. Dengan 573 kursi, itu berarti sekitar 212 anggota tidak tercatat hadir atau menandatangani pada rapat tersebut. Yang bisa dipastikan, seluruh fraksi terwakili menurut pemberitaan. Untuk membaca hasil paripurna secara utuh, pembaca perlu menunggu risalah resmi rapat, sebab di dokumen itulah tercatat siapa hadir dan bagaimana sikap tiap fraksi.",
+        "Bagi pembaca, perubahan ini menyentuh dua hal yang jarang dibedakan: hukuman bagi orang dan pengembalian harta. Hukuman badan berakhir ketika pidana selesai dijalani, sedangkan perampasan aset menyasar kekayaan yang diduga berasal dari kejahatan. Namun undang-undang biasanya baru terasa dampaknya setelah aturan turunan terbit, karena di situ prosedur, lembaga pelaksana, dan batas kewenangan ditentukan. Pengesahan hari ini karena itu lebih tepat dibaca sebagai titik awal: yang menentukan apakah aset benar-benar kembali ke korban adalah peraturan pelaksana dan praktik peradilannya. Bagi korban penipuan, yang menentukan bukan panjang hukuman pelaku, melainkan apakah uangnya kembali; UU ini menjanjikan jalur untuk itu, tetapi janji tersebut masih harus dibuktikan dalam perkara nyata.",
+        "Yang bisa dipantau dalam beberapa bulan ke depan adalah pembentukan badan khusus oleh Presiden, rincian hukum acara untuk jalur tanpa putusan pidana, dan penanganan perkara pertama. Bahan hari ini belum memuat ketiganya. Yang tercatat hanya klaim bahwa pembahasan berjalan transparan dan menguji 397 daftar inventarisasi masalah, sebagaimana disampaikan Ketua Komisi III Habiburokhman, serta pengakuan bahwa prosesnya panjang. Angka 397 menunjukkan volume pembahasan, bukan kualitas hasil, dan belum ada penilaian independen di dalam bahan yang bisa dipakai untuk menimbangnya. Begitu pula belum ada keterangan apakah badan itu kelak hanya menangani aset baru atau juga perkara yang sedang berjalan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa kewenangannya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun, sehingga pengesahan sebuah RUU adalah bagian dari fungsi legislasi.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa dampak sebuah undang-undang biasanya baru terasa setelah aturan turunan terbit?",
+          "a": "Keputusan pemerintah atau DPR mengikat warga, tetapi pelaksanaannya butuh aturan turunan, dari undang-undang sampai peraturan menteri; di situlah prosedur dan lembaga pelaksananya dirinci.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud perampasan aset secara umum?",
+          "a": "Perampasan aset adalah penyitaan aset oleh pihak berwenang, biasanya menyasar hasil atau instrumen kejahatan, dan dalam praktik di berbagai negara dipakai untuk kasus terorisme maupun narkotika.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perampasan_aset"
+          }
+        }
+      ],
+      "action": "Pantau terbitnya aturan turunan dan pembentukan badan perampasan aset, karena di situ rincian kewenangannya ditentukan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261119104313-32-1428898/dpr-resmi-sahkan-ruu-perampasan-aset-jadi-undang-undang",
+          "published_at": "2026-11-19T10:45:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/dpr-ri-sahkan-ruu-perampasan-aset-menjadi-undang-undang-idYa",
+          "published_at": "2026-11-19T11:31:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261119120736-4-786580/uu-perampasan-aset-pak-dasco-yang-mulai-dan-pak-dasco-yang-tuntaskan",
+          "published_at": "2026-11-19T12:35:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-19",
+      "changes": [],
+      "dek": "Setelah 18 tahun tertunda, UU Perampasan Aset disahkan dan membuka jalur perampasan tanpa putusan pidana.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "2",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-11-19",
+          "title": "RUU Perampasan Aset Disahkan DPR"
+        },
+        {
+          "date": "2026-11-20",
+          "title": "DPR Sahkan UU Perampasan Aset"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "UU Perampasan Aset, Pak Dasco yang Mulai dan Pak Dasco yang Tuntaskan",
+          "url": "https://www.cnbcindonesia.com/news/20261119120736-4-786580/uu-perampasan-aset-pak-dasco-yang-mulai-dan-pak-dasco-yang-tuntaskan",
+          "at": "2026-11-19T12:35:00+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "DPR RI Sahkan RUU Perampasan Aset Menjadi Undang-Undang",
+          "url": "https://tirto.id/dpr-ri-sahkan-ruu-perampasan-aset-menjadi-undang-undang-idYa",
+          "at": "2026-11-19T11:31:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_8_saksi_kasus_penyadapan_prabo_a617",
+      "angle": "Bareskrim gelar perkara makar dengan Kompolnas dan ahli; tersangka belum ada.",
+      "kicker": "Kriminal",
+      "title": "Gelar Perkara Makar Listyo Cs: Penyidikan Jalan, Tersangka Belum Ada",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bareskrim menggelar perkara dugaan makar pada 19 November 2026 dengan melibatkan Kompolnas dan saksi ahli, tetapi belum menetapkan tersangka makar.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "Bareskrim Polri menjadwalkan gelar perkara dugaan tindak pidana makar terhadap Presiden Prabowo Subianto pada Kamis, 19 November 2026. Gelar perkara itu dilakukan setelah penyidik menggeledah sejumlah lokasi yang diduga menjadi posko makar. Direktur Tindak Pidana Umum Bareskrim Polri, Brigjen Susatyo Purnomo Condro, menyebut gelar perkara akan melibatkan tim internal dan para saksi ahli. \"Kami besok akan melaksanakan gelar bersama tim internal, juga para saksi ahli. Kita akan lihat nanti konstruksinya menurut para ahli, nanti kami diskusikan. Hasilnya nanti akan kami sampaikan,\" kata Susatyo, dikutip dari CNNIndonesia.com. Hingga berita ini disusun, belum ada keterangan resmi mengenai hasil gelar perkara tersebut.",
+        "Gelar perkara adalah rapat penyidik untuk menilai sejauh mana fakta hukum yang sudah dikumpulkan. Tirto.id menyebut gelar perkara internal ini dilakukan guna melihat sejauh mana fakta hukum yang sudah didapat atas dugaan makar Listyo Sigit Prabowo dan kawan-kawan. Dalam perkara ini, Susatyo mengatakan gelar perkara digelar \"secara internal Polri sesuai prosedural\", melibatkan penyidik Tindak Pidana Umum, Biro Wassidik, Divisi Propam, Itwasum, serta Kompolnas dan para ahli. Ia menyebut pengawas internal dan lembaga pengawas eksternal itu diundang untuk memastikan proses penyidikan berjalan sesuai ketentuan yang ada.",
+        "Yang perlu dibedakan, ada dua perkara yang bergerak berbarengan. Perkara penyadapan ilegal sudah masuk tahap penyidikan dengan empat tersangka, sementara perkara dugaan makar baru dinaikkan ke tahap penyidikan dan belum memiliki tersangka. CNNIndonesia.com menulis, meski perkara dugaan makar telah masuk tahap penyidikan, belum ada pihak yang ditetapkan sebagai tersangka; penyidik mengumpulkan alat bukti dan memeriksa saksi. Pada 19 November malam, Bareskrim juga masih dikutip mengatakan belum menetapkan tersangka dalam kasus dugaan makar dan menunggu hasil gelar perkara internal serta ekspose Kejagung. Dengan demikian, kenaikan status ke penyidikan belum berarti ada orang yang sudah berstatus tersangka dalam perkara makar. CNNIndonesia.com menulis bahwa dengan kenaikan itu, Bareskrim dinilai telah menemukan unsur tindak pidana terkait makar dalam perkara tersebut.",
+        "Empat jenderal aktif telah ditetapkan sebagai tersangka dalam kasus dugaan penyadapan ilegal terhadap Prabowo. Mereka adalah eks Kapolri yang juga Kepala Kantor Staf Presiden, Jenderal Listyo Sigit Prabowo; Kepala Divisi Hukum Polri Irjen Ahrie Sonta Nasution; eks Direktur Tindak Pidana Narkoba Bareskrim Polri Irjen Eko Hadi Santoso; dan eks Kepala Divisi TIK Polri Irjen Slamet Uliandi. Para tersangka dijerat Pasal 258 KUHP dan/atau Pasal 332 KUHP Ayat 1 dan 2 dan/atau Pasal 32 Ayat 1 UU ITE. Selain Slamet, tiga tersangka lain telah ditahan di Rutan Mako Brimob Mabes Polri.",
+        "Soal status tersangka makar, Kapolri Jenderal Suyudi Ario Seto memberi keterangan di Mabes Polri, Selasa, 17 November. \"Belum, belum (ada tersangka). Masih dalam proses, sekarang kita masih dalam proses penyidikan ya, kita sedang mengumpulkan alat bukti, pemeriksaan saksi-saksi sudah kita lakukan,\" katanya. Ia menyebut penyidik Direktorat Tindak Pidana Umum Bareskrim Polri masih memeriksa saksi hingga mengumpulkan barang bukti. \"Kemudian alat-alat bukti yang terkait, pengamanan, alat-alat gadget dan sebagainya itu juga akan kita pelajari,\" ujarnya. Pernyataan itu memberi gambaran bahwa pekerjaan penyidik masih berlangsung dan belum ada nama yang dinaikkan statusnya.",
+        "Penggeledahan menjadi bagian dari pengumpulan bukti. Bareskrim menggeledah rumah milik Irjen Eko Hadi Santoso di kawasan Cipete, Jakarta Selatan, pada Selasa, 17 November malam. \"Penggeledahan dan olah TKP terkait rumah posko yang digunakan oleh EH,\" kata Susatyo melalui pesan singkat, Rabu, 18 November. Ia menyebut rumah di kawasan Cipete itu digunakan sebagai posko makar oleh Eko Hadi. Tirto.id juga menulis Bareskrim menggeledah sejumlah lokasi yang dijadikan posko oleh Eko Hadi untuk mengumpulkan bukti. Namun, Susatyo belum mengungkapkan lebih jauh ihwal barang bukti yang disita dalam penggeledahan tersebut.",
+        "Penyidik mengaku telah mengantongi fakta dan alat bukti baru. \"Fakta dan bukti baru tidak hanya dari penggeledahan itu,\" kata Susatyo kepada wartawan pada Kamis, 19 November. Ia menjelaskan temuan itu salah satunya didapati setelah rumah Eko Hadi yang dipakai sebagai posko makar digeledah, tetapi menegaskan sumbernya tidak tunggal. Berbagai temuan itu, menurut dia, akan dipaparkan dalam gelar perkara internal bersama Propam, Itwasum, Biro Wassidik, Kompolnas, hingga saksi ahli. Sampai saat ini belum ada rincian resmi mengenai isi fakta dan alat bukti baru tersebut, termasuk apakah temuan itu menyentuh nama-nama di luar empat tersangka penyadapan.",
+        "Susatyo menjelaskan tujuan gelar perkara, yakni memastikan seluruh proses penyidikan berjalan sesuai ketentuan yang ada. \"Terkait fakta dan bukti baru dalam penyidikan yang telah dilakukan. Kami ingin memastikan bahwa penyidikan berjalan sesuai dengan prosedur hukum berdasarkan KUHP dan KUHAP baru,\" katanya. Ia juga menyebut temuan fakta dan pelbagai alat bukti akan dipakai untuk menentukan siapa saja pihak yang terlibat dalam kasus makar. Kalimat itu penting dicatat: penentuan pihak yang terlibat masih menjadi pertanyaan yang hendak dijawab, bukan kesimpulan yang sudah diumumkan.",
+        "Menurut temuan awal polisi, korban penyadapan bukan hanya Presiden Prabowo. Ada pula menteri, tokoh politik, pengusaha, media, hingga tokoh masyarakat yang disebut sebagai korban penyadapan oleh Listyo dan anak buahnya. Bahan tidak memerinci jumlah korban, nama, maupun periode penyadapan, sehingga detail itu belum bisa dipastikan. Yang bisa dipegang, klaim tersebut disampaikan sebagai temuan awal penyidik, bukan hasil yang sudah diuji di pengadilan. Status tersangka pun bukan vonis: status itu ditetapkan berdasarkan minimal dua alat bukti, dan penentuan bersalah atau tidak tetap berada di pengadilan.",
+        "Dua dari empat tersangka penyadapan telah dijatuhi sanksi pemecatan. CNNIndonesia.com menyebut Ahrie Sonta dan Eko Hadi dijatuhi sanksi Pemberhentian Tidak Dengan Hormat (PTDH) sebagai anggota Polri, sementara laporan lain pada hari yang sama menuliskannya sebagai Pemecatan Tidak Dengan Hormat (PTDH). Perbedaan penyebutan itu muncul antarbahan dan tidak disertai penjelasan resmi; yang sama adalah singkatan PTDH dan kedua nama yang disebut. Bahan juga tidak menyebut kapan sanksi dijatuhkan dan apakah ada upaya keberatan hukum dari yang bersangkutan.",
+        "Yang belum jelas cukup banyak. Pertama, belum ada tersangka dalam perkara dugaan makar, meski status perkaranya sudah naik ke penyidikan. Kedua, hasil gelar perkara belum diumumkan; Bareskrim menyatakan masih menunggu hasil gelar perkara internal dan ekspose Kejagung. Ketiga, barang bukti hasil penggeledahan belum dirinci. Keempat, belum ada keterangan resmi soal nama saksi ahli yang hadir maupun kesimpulan yang mereka berikan. Kelima, hubungan antara temuan fakta baru dan konstruksi pasal yang bakal dipakai belum dipaparkan. Yang tersedia hanya pernyataan bahwa penyidik ingin memastikan proses berjalan sesuai KUHP dan KUHAP baru.",
+        "Langkah berikutnya bisa dibaca dari dua pernyataan. Bareskrim dikutip memeriksa mantan Kapolri Listyo Sigit Prabowo dan kawan-kawan dalam kasus dugaan makar terhadap Presiden Prabowo. Selain itu, penyidik menyatakan menunggu hasil gelar perkara internal dan ekspose Kejagung sebelum memutuskan soal tersangka. Artinya, keputusan atas status orang-orang yang diperiksa belum final dan masih bergantung pada dua forum itu. Bahan tidak menyebut tanggal pasti ekspose Kejagung maupun tenggat pengumuman hasil gelar perkara, sehingga urutan waktunya belum bisa dipastikan pembaca. Pemeriksaan terhadap Listyo dan kawan-kawan berlangsung di tengah status perkara makar yang belum memiliki tersangka, dan itu menjelaskan mengapa pengumuman hasil gelar perkara menjadi penentu berikutnya.",
+        "Di luar jalur penyidikan, muncul permintaan lain yang tetap terkait iklim informasi. Syahganda meminta Polri menyelidiki dugaan permainan algoritma digital yang dinilai menghambat penyampaian pesan Presiden Prabowo kepada masyarakat, demikian dikutip dari Liputan6.com. Bahan tidak menyebut jabatan Syahganda, dasar permintaan itu, maupun tanggapan Polri, sehingga detail tersebut belum tersedia. Permintaan ini tidak tercatat sebagai bagian dari perkara makar dan tidak dijelaskan kaitannya dengan penyidikan yang sedang berjalan.",
+        "Untuk membaca perkara ini, latar orangnya membantu. Listyo Sigit Prabowo adalah jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo; ia pernah memimpin Bareskrim, dan pada November 2026 ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal. Sementara itu, Prabowo Subianto menjabat Presiden Indonesia sejak 2024 setelah sebelumnya menjadi Menteri Pertahanan. Kedua keterangan itu menjelaskan posisi para pihak, tetapi tidak menjelaskan isi dugaan makar. Bahan tidak memuat uraian peristiwa yang disebut sebagai makar, sehingga rangkaian peristiwa dan motifnya belum bisa dijelaskan.",
+        "Polri, menurut keterangan latar, adalah kepolisian nasional dan lembaga penegak hukum yang berperan memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberikan perlindungan dan pelayanan kepada masyarakat. Dalam perkara ini, fungsi pengawasan internal dijalankan lewat pelibatan Propam, Itwasum, dan Biro Wassidik, ditambah Kompolnas dari luar. Bagi pembaca, yang bisa dipantau adalah pengumuman hasil gelar perkara, ada atau tidaknya tersangka makar, rincian barang bukti, dan kelanjutan ekspose Kejagung. Selama semua itu belum disampaikan, anggapan bahwa perkara ini sudah mengarah ke nama tertentu masih berupa dugaan, bukan kepastian."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo dalam struktur Polri?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo. Ia pernah memimpin Bareskrim, lalu pada November 2026 ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Status yang ditetapkan penyidik berdasarkan minimal dua alat bukti. Status ini belum berarti bersalah; penentuan bersalah tetap lewat putusan pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran Polri menurut undang-undang?",
+          "a": "Menurut UU Nomor 2 Tahun 2002, Polri adalah alat negara yang memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman hasil gelar perkara dan perhatikan apakah penyidik menyebut nama tersangka baru.",
+      "image": {
+        "url": "assets/9136220019.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Gelar Perkara Makar Listyo Cs: Penyidikan Jalan, Tersangka Belum Ada"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261119072218-12-1428792/update-kasus-listyo-cs-ada-rumah-posko-gelar-perkara-makar-hari-ini",
+          "published_at": "2026-11-19T08:06:32+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/polri-bakal-ekspose-dugaan-makar-listyo-cs-di-kejagung-besok-idX1",
+          "published_at": "2026-11-19T11:02:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8338581/kepala-bakom-curiga-algoritma-digital-hambat-pesan-prabowo-ke-publik",
+          "published_at": "2026-11-19T19:20:25+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-19",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "Kepala Bakom Curiga Algoritma Digital Hambat Pesan Prabowo ke Publik",
+          "url": "https://www.liputan6.com/news/read/8338581/kepala-bakom-curiga-algoritma-digital-hambat-pesan-prabowo-ke-publik",
+          "at": "2026-11-19T19:20:25+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Polri Bakal Ekspose Dugaan Makar Listyo Cs di Kejagung Besok",
+          "url": "https://tirto.id/polri-bakal-ekspose-dugaan-makar-listyo-cs-di-kejagung-besok-idX1",
+          "at": "2026-11-19T11:02:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Update Kasus Listyo Cs: Ada Rumah Posko, Gelar Perkara Makar Hari ini",
+          "url": "https://www.cnnindonesia.com/nasional/20261119072218-12-1428792/update-kasus-listyo-cs-ada-rumah-posko-gelar-perkara-makar-hari-ini",
+          "at": "2026-11-19T08:06:32+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_prabowo_lobi_ekonomi_di_ktt_ap_c596",
+      "angle": "Prabowo sebut investasi US$86,8 miliar di APEC Shenzhen; rincian perusahaan belum disebut.",
+      "kicker": "Ekonomi",
+      "title": "Prabowo Sebut Investasi US$86,8 Miliar di APEC, Rinciannya Belum Jelas",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Presiden Prabowo Subianto menyebut nilai investasi US$86,8 miliar pada KTT APEC ke-33 di Shenzhen, 19 November 2026, tanpa menyebut nama perusahaan pemberi inve",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto menghadiri Konferensi Tingkat Tinggi ke-33 Economic Leaders' Meeting APEC di Shenzhen, Kamis, 19 November 2026. Dari forum itu, ia menyebut kerja sama ekonomi membawa investasi senilai US$86,8 miliar. Namun angka yang beredar belum seragam. Laporan CNBC Indonesia menulis US$86,8 miliar, sedangkan ringkasan awal yang kami terima menulis US$86,8 juta. Selisih seribu kali lipat itu belum dijelaskan bahan mana pun, sehingga angka tersebut sebaiknya dibaca sebagai klaim yang masih menunggu konfirmasi resmi, bukan nilai yang sudah final.",
+        "Panggungnya adalah ruang sidang APEC di Shenzhen, Provinsi Guangdong, Tiongkok, pada rangkaian pertemuan yang berlangsung Kamis itu. Selain Prabowo, hadir Presiden Amerika Serikat Donald Trump, Presiden Rusia Vladimir Putin, dan Presiden Tiongkok Xi Jinping yang memimpin rapat. Tampak pula Direktur Pelaksana IMF Kristalina Georgieva, PM Australia Anthony Albanese, PM Kanada Mark Carney, Presiden Vietnam To Lam, PM Thailand Anutin Charnvirakul, dan PM Singapura Lawrence Wong. Prabowo sendiri menilai forum ini memberi manfaat nyata bagi Indonesia, terutama untuk mendorong pertumbuhan ekonomi nasional.",
+        "Perusahaan pemberi investasi tidak disebut dalam bahan yang kami pegang, begitu juga sektor yang menjadi sasarannya. Yang tersedia hanya gambaran empat pilar kerja sama APEC yang dipaparkan Xi Jinping: perdagangan bebas Asia-Pasifik, konektivitas lewat APEC Connectivity Blueprint, inovasi di bidang ekonomi digital dan kecerdasan buatan, serta pembangunan yang mencakup ketahanan energi dan pangan. Jangan campurkan angka itu dengan US$20 juta yang diumumkan Xi untuk mendukung kerja sama praktis APEC; dana Tiongkok itu disertai rencana pendirian pusat studi di Shenzhen, dan bukan bagian dari nilai investasi yang disebut Prabowo.",
+        "Tindak lanjut konkretnya belum diumumkan. Bahan tidak memuat keterangan soal penandatanganan perjanjian, nota kesepahaman, atau jadwal realisasi, sehingga belum bisa dipastikan apakah angka US$86,8 miliar itu komitmen baru, target, atau kumpulan rencana yang sudah berjalan. Satu petunjuk yang tersedia hanyalah susunan delegasi: Menko Hilirisasi dan Transisi Energi Bahlil Lahadalia ikut mendampingi presiden di Shenzhen. Kehadiran itu bisa dibaca sebagai isyarat kedekatan agenda investasi dengan urusan hilirisasi dan energi, tetapi bahan tidak menyatakan hubungan sebab-akibat apa pun.",
+        "Syarat dari pihak investor juga belum jelas. Tidak ada bahan yang menyebut permintaan mereka soal regulasi, insentif fiskal, kepastian lahan, atau tenaga kerja, jadi pembaca sebaiknya menahan kesimpulan sampai ada keterangan resmi. Yang tercatat hanya dua hal: Prabowo menekankan pentingnya kepemimpinan Xi Jinping, Trump, dan Putin dalam forum itu, dan ia memilih menyoroti manfaat kerja sama ekonomi ketimbang rincian teknis. Untuk mengikuti kelanjutannya, pantau keterangan resmi APEC serta pernyataan istana atau kementerian terkait, karena di situlah rincian perusahaan, sektor, dan syarat investasi biasanya baru muncul."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto dan jabatan apa yang ia pegang sebelum menjadi presiden?",
+          "a": "Prabowo Subianto Djojohadikusumo adalah politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024. Sebelumnya ia menjadi Menteri Pertahanan ke-26 di bawah Presiden Joko Widodo pada 2019–2024, dan tercatat sebagai presiden ketiga berlatar belakang militer setelah Soeharto dan Susilo Bambang Yudhoyono.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Siapa saja pemimpin yang dijadwalkan berada di Shenzhen pada 19 November 2026?",
+          "a": "Trump, Putin, dan Xi Jinping bertemu di Shenzhen menjelang pertemuan trilateral bersejarah dalam rangkaian KTT APEC.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/pertama-dalam-sejarah-putin-trump-dan-xi-bertemu-di-ktt-apec-idXM"
+          }
+        },
+        {
+          "q": "Berapa lama Prabowo menjabat sebagai Menteri Pertahanan?",
+          "a": "Ia menjabat Menteri Pertahanan ke-26 dari tahun 2019 hingga 2024 di bawah Presiden Joko Widodo, sebelum menjabat presiden pada 2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        }
+      ],
+      "action": "Periksa keterangan resmi APEC soal asal perusahaan dan sektor investasi US$86,8 miliar itu sebelum menyimpulkannya.",
+      "image": {
+        "url": "assets/8fbb0ae9ba.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Prabowo Sebut Investasi US$86,8 Miliar di APEC, Rinciannya Belum Jelas"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/prabowo-bidik-investasi-868-m-dolar-as-dari-rangkaian-ktt-apec-idY2",
+          "published_at": "2026-11-19T16:15:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261119145129-4-786649/di-depan-prabowo-cs-xi-jinping-kucurkan-us-20-juta-untuk-apec",
+          "published_at": "2026-11-19T16:40:29+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-19",
+      "previous_edition": "2026-11-19",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "history": [
+        {
+          "date": "2026-11-19",
+          "title": "Prabowo Lobi Ekonomi di KTT APEC"
+        },
+        {
+          "date": "2026-11-20",
+          "title": "Prabowo Bidik Investasi di APEC"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Di Depan Prabowo Cs, Xi Jinping Kucurkan US$20 Juta untuk APEC",
+          "url": "https://www.cnbcindonesia.com/news/20261119145129-4-786649/di-depan-prabowo-cs-xi-jinping-kucurkan-us-20-juta-untuk-apec",
+          "at": "2026-11-19T16:40:29+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Prabowo Bidik Investasi 86,8 M Dolar AS dari Rangkaian KTT APEC",
+          "url": "https://tirto.id/prabowo-bidik-investasi-868-m-dolar-as-dari-rangkaian-ktt-apec-idY2",
+          "at": "2026-11-19T16:15:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_bgn_perketat_pengawasan_dapur_2da4",
+      "angle": "Pengawasan dua rentang waktu dan sorotan SOP dapur usai sidak BGN di Jambi.",
+      "kicker": "Kesehatan",
+      "title": "BGN Awasi Dapur MBG pada Dua Rentang Waktu dan Sidak di Jambi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "BGN menetapkan dua rentang waktu pengawasan, pukul 02.00–08.00 dan 17.00–19.30 waktu setempat, dengan kehadiran kepala SPPG dan pengawas gizi.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "Badan Gizi Nasional memperketat pengawasan operasional dapur Makan Bergizi Gratis melalui apel rutin harian yang digelar secara daring. Menurut keterangan BGN, apel itu bukan sekadar urusan administratif: kehadiran kepala Satuan Pelayanan Pemenuhan Gizi dan pengawas gizi pada setiap tahap operasional menjadi syarat agar proses berjalan sesuai standar operasional prosedur. Juru Bicara BGN Tysa Novenny menyebut kehadiran personel yang bertanggung jawab di tiap tahapan sebagai faktor penting untuk menekan potensi masalah, terutama yang menyangkut keamanan pangan.",
+        "Dua rentang waktu menjadi titik perhatian utama menurut Kepala BGN Sudaryono, yaitu pukul 02.00–08.00 dan pukul 17.00–19.30 waktu setempat. Rentang pertama adalah masa produksi hingga distribusi makanan, sedangkan rentang kedua dipusatkan pada penerimaan dan pemeriksaan bahan baku serta pencatatan sisa makanan. Pada kedua waktu itu, kehadiran kepala SPPG dan pengawas gizi diperlukan agar relawan dan petugas bekerja sesuai ketentuan. Apel harian dipimpin penanggung jawab wilayah yang merupakan pejabat eselon I dan II BGN, dan kepala BGN beberapa kali ikut memimpin. Forum itu juga dipakai untuk menyampaikan kendala daerah ke pusat.",
+        "Di Kota Jambi, Sudaryono melakukan inspeksi mendadak ke SPPG Telanai Pura Pematang Sulur 1 pada Jumat dini hari, 20 November 2026, untuk memastikan keamanan pangan dan akuntabilitas penggunaan anggaran. Ia menegaskan fokus utamanya agar tidak ada lagi orang sakit perut karena makanan. Menurutnya, sidak tidak mungkin menjangkau seluruh dapur di Indonesia, sehingga BGN membangun mekanisme pengawasan berlapis: penambahan tim, pengawas koki berpengalaman sebagai koordinator di setiap SPPG, pelatihan, dan tim asistensi. Dari evaluasi kasus, kendala disebut berasal dari SOP yang tidak dijalankan dengan benar, misalnya pemilihan bahan baku yang buruk atau penyimpanan ayam di ruang terbuka. Rincian temuan spesifik per dapur tidak diuraikan dalam bahan.",
+        "BGN menyebut tiga pembenahan utama: penguatan fungsi pengawasan termasuk memperketat sertifikasi higiene dan sanitasi sehingga dapur yang belum memenuhi syarat tidak boleh beroperasi, peningkatan fungsi aduan termasuk soal relasi mitra dan yayasan pengelola, serta penguatan akuntabilitas anggaran. Setiap dapur kini wajib menyusun laporan penggunaan dana harian. Keterlambatan pengisian dana di sejumlah dapur terjadi karena laporan itu belum dikirim atau ditemukan anomali, seperti anggaran yang seharusnya cukup sepuluh hari tetapi habis dalam tujuh hari. BGN juga menyiapkan kamera pengawas terpusat dan menyebut rangkaian perbaikan ini sebagai MBG 2.0. Perluasan jangkauan diprioritaskan ke daerah terpencil, terluar, dan berangka stunting tinggi.",
+        "Beberapa hal belum jelas dari bahan yang ada. Bahan tidak menyebut berapa jumlah SPPG yang sudah diperiksa sejauh ini; Sudaryono hanya menyatakan sidak tidak mungkin dilakukan ke seluruh dapur. Bahan juga tidak merinci pejabat yang berwenang menutup dapur bermasalah, karena yang disebut hanya bahwa dapur yang belum memenuhi syarat sertifikasi tidak boleh beroperasi. Begitu pula sanksi bagi pengelola yang melanggar standar belum diumumkan secara rinci; yang tergambar adalah konsekuensi administratif berupa kewajiban laporan harian dan penundaan pengisian dana bila laporan tidak lengkap atau ada anomali."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu SPPG?",
+          "a": "Satuan Pelayanan Pemenuhan Gizi, unit yang menjalankan operasional dapur program MBG dan diawasi BGN melalui apel rutin harian.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261119202556-92-1429204/bgn-perketat-pengawasan-dapur-mbg-pada-dua-waktu-krusial"
+          }
+        },
+        {
+          "q": "Apa yang perlu diketahui tentang BGN Perketat Pengawasan Dapur MBG?",
+          "a": "Badan Gizi Nasional ( BGN ) memperketat pengawasan operasional Satuan Pelayanan Pemenuhan Gizi ( SPPG ) alias dapur Makan Bergizi Gratis ( MBG ) melalui apel rutin harian. Pengawasan difokuskan pada dua waktu krusial untuk memastikan proses produksi hingga distribusi makanan dalam Program Makan Bergizi Gratis (MBG) berjalan sesuai standar operasional prosedur (SOP). Kepala BGN Sudaryono mengatakan dua rentang waktu…",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261119202556-92-1429204/bgn-perketat-pengawasan-dapur-mbg-pada-dua-waktu-krusial"
+          }
+        }
+      ],
+      "action": "Cek apakah dapur MBG di daerahmu menyampaikan laporan dana harian dan gunakan kanal aduan BGN bila menemukan masalah.",
+      "image": {
+        "url": "assets/dce8695b60.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "BGN Awasi Dapur MBG pada Dua Rentang Waktu dan Sidak di Jambi"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261119202556-92-1429204/bgn-perketat-pengawasan-dapur-mbg-pada-dua-waktu-krusial",
+          "published_at": "2026-11-19T20:45:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5866451/kepala-bgn-sidak-sppg-di-jambi-tekankan-keamanan-dan-akuntabilitas",
+          "published_at": "2026-11-20T04:45:39+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/torshw8030000/bgn-prioritaskan-mbg-untuk-daerah-terpencil-dan-zona-stunting-tinggi",
+          "published_at": "2026-11-20T05:15:32+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-20",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "BGN Prioritaskan MBG untuk Daerah Terpencil dan Zona Stunting Tinggi",
+          "url": "https://news.republika.co.id/berita/torshw8030000/bgn-prioritaskan-mbg-untuk-daerah-terpencil-dan-zona-stunting-tinggi",
+          "at": "2026-11-20T05:15:32+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Kepala BGN sidak SPPG di Jambi tekankan keamanan dan akuntabilitas",
+          "url": "https://www.antaranews.com/berita/5866451/kepala-bgn-sidak-sppg-di-jambi-tekankan-keamanan-dan-akuntabilitas",
+          "at": "2026-11-20T04:45:39+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "BGN Perketat Pengawasan Dapur MBG pada Dua Waktu Krusial",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261119202556-92-1429204/bgn-perketat-pengawasan-dapur-mbg-pada-dua-waktu-krusial",
+          "at": "2026-11-19T20:45:09+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_kpk_periksa_sestama_bnpb_4fa9",
+      "angle": "KPK mendalami mekanisme penunjukan langsung dalam pengadaan dana siap pakai BNPB.",
+      "kicker": "Kriminal",
+      "title": "KPK Periksa Ulang Sestama BNPB soal Dana Siap Pakai",
+      "status": "sebagian",
+      "truth": {
+        "claim": "KPK memeriksa Sestama BNPB Rustian sebagai saksi pada 19 November, sementara lima tersangka sudah ditetapkan dalam kasus dana siap pakai.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "Komisi Pemberantasan Korupsi memeriksa kembali Sekretaris Utama Badan Nasional Penanggulangan Bencana, Rustian, pada Kamis, 19 November. Pemeriksaan berlangsung di Gedung Merah Putih KPK dan juga menyertakan Analis Kebencanaan BNPB, Donny Immanuel Haratua, menurut juru bicara KPK Budi Prasetyo seperti dikutip CNN Indonesia. Keduanya diperiksa dalam kasus dugaan korupsi dana siap pakai di BNPB. Tirto.id menyebut Donny Immanuel Haratua Situmeang sebagai aparatur sipil negara yang bertugas sebagai analis kebencanaan. Dalam keterangan malam harinya, KPK menyatakan Rustian juga menjabat Kuasa Pengguna Anggaran di BNPB, posisi yang membuatnya mengetahui seluruh proses pengadaan barang dan jasa yang bersumber dari dana siap pakai.",
+        "Kasus ini bermula dari operasi tangkap tangan KPK beberapa waktu lalu. Rustian termasuk orang yang diamankan dalam operasi itu, tetapi ia tidak ditetapkan sebagai tersangka dan kemudian dipulangkan karena masih berstatus saksi. KPK telah menetapkan lima tersangka: Kasubdit Pengelolaan Bantuan dan Kedaruratan BNPB yang juga Pejabat Pembuat Komitmen, Gabriel Purwaka Sigit; dua tenaga ahli Kepala BNPB, Bima Setiawan dan Richard Erlangga; serta dua pihak swasta, Gery Prasetiawan dan Syifa Nrika. CNN Indonesia menyebut Bima adalah adik dari eks Kepala BNPB Letjen Suharyanto, yang disebut sudah diperiksa bersama penyidik KPK dan Puspom TNI. Rincian status pemeriksaan Suharyanto tidak diuraikan dalam bahan.",
+        "Menurut KPK, sejumlah penyedia barang dan jasa dalam perkara ini adalah vendor yang terafiliasi dengan Bima Setiawan. Dalam kurun tiga tahun, 2024 sampai 2026, total pengadaan di lingkungan BNPB disebut mencapai Rp148 miliar. Angka itu bersumber dari dana siap pakai atau dana darurat untuk penanganan sejumlah bencana besar: kebakaran hutan dan lahan di Papua dan Kalimantan, banjir di Sumatera dan Aceh pada November 2025, hingga gempa NTT. Plt Direktur Penyidikan KPK Achmad Taufik Husein menyatakan penyidik menemukan dugaan konflik kepentingan dan suap dalam penggunaan dana tersebut. Bahan tidak memerinci berapa nilai dugaan suap maupun kerugian negara.",
+        "Dalam pemeriksaan kali ini, KPK memusatkan pendalaman pada mekanisme penunjukan langsung. Budi Prasetyo mengatakan penggunaan dana siap pakai untuk pengadaan di BNPB tidak melalui proses lelang, melainkan memungkinkan lewat penunjukan langsung dengan syarat tertentu. Penyidik ingin mengetahui siapa yang menunjuk, siapa yang melakukan plotting, dan bagaimana pembagian proyek kepada vendor-vendor tertentu. Ia menyebut sisi itulah yang kemudian memunculkan dugaan konflik kepentingan dan kickback. Karena Rustian juga menjabat Kuasa Pengguna Anggaran, KPK menilai pengetahuannya menyeluruh soal proses tersebut. Menurut CNN Indonesia, Rustian sebelumnya juga pernah diperiksa pada 27 Oktober.",
+        "Yang belum jelas adalah apakah pemeriksaan ini akan berujung pada penetapan tersangka baru. KPK belum mengumumkan hasil pemeriksaan Rustian maupun Donny, dan belum menyebut pihak lain yang akan dipanggil. Status keduanya sampai laporan ini disusun masih saksi. Bahan juga tidak memuat tanggapan Rustian, BNPB, atau kuasa hukum para tersangka. Dua laporan CNN Indonesia pada hari yang sama, pukul 12.55 dan 22.55, menunjukkan penekanan berbeda: laporan pagi menyebut dua nama yang diperiksa, laporan malam menambahkan keterangan soal posisi Rustian sebagai Kuasa Pengguna Anggaran dan fokus penunjukan langsung. Detik.com pada 20 November dini hari menulis hal serupa tanpa angka baru. Langkah berikutnya adalah menunggu keterangan resmi KPK soal hasil pemeriksaan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu BNPB?",
+          "a": "Badan Nasional Penanggulangan Bencana adalah lembaga yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah.",
+          "source": {
+            "outlet": "BNPB",
+            "url": "https://bnpb.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran KPK?",
+          "a": "Komisi Pemberantasan Korupsi adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Apa ringkasan kasus yang sedang diperiksa?",
+          "a": "KPK memeriksa Sestama BNPB Rustian terkait dugaan korupsi dana siap pakai kebencanaan, dan lima tersangka telah ditetapkan dalam kasus ini.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261119122745-12-1428949/kpk-kembali-periksa-sestama-bnpb-terkait-kasus-korupsi-dana-siap-pakai"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi KPK soal hasil pemeriksaan Rustian dan kemungkinan tersangka baru.",
+      "image": {
+        "url": "assets/4ff787e148.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "KPK Periksa Ulang Sestama BNPB soal Dana Siap Pakai"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kpk-periksa-lagi-sestama-bnpb-terkait-korupsi-dana-siap-pakai-idYF",
+          "published_at": "2026-11-19T13:57:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261119122745-12-1428949/kpk-kembali-periksa-sestama-bnpb-terkait-kasus-korupsi-dana-siap-pakai",
+          "published_at": "2026-11-19T12:55:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8761087/kpk-cecar-sestama-bnpb-soal-plotting-anggaran-dana-bencana-ke-swasta",
+          "published_at": "2026-11-20T01:28:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-20",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "KPK Cecar Sestama BNPB Soal Plotting Anggaran Dana Bencana ke Swasta",
+          "url": "https://news.detik.com/berita/d-8761087/kpk-cecar-sestama-bnpb-soal-plotting-anggaran-dana-bencana-ke-swasta",
+          "at": "2026-11-20T01:28:03+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "KPK Periksa Lagi Sestama BNPB Terkait Korupsi Dana Siap Pakai",
+          "url": "https://tirto.id/kpk-periksa-lagi-sestama-bnpb-terkait-korupsi-dana-siap-pakai-idYF",
+          "at": "2026-11-19T13:57:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_usulan_ump_dki_2027_00f9",
+      "angle": "Tiga angka UMP DKI 2027 dari buruh, pengusaha, dan pemerintah menunggu keputusan gubernur.",
+      "kicker": "Ekonomi",
+      "title": "Tiga Usulan UMP DKI 2027, dari Rp6,04 Juta sampai Rp6,21 Juta",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Dewan Pengupahan DKI Jakarta mengajukan tiga angka UMP 2027, yaitu Rp6.047.589, Rp6.136.941, dan Rp6.210.040.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-20T05:45:45+07:00"
+      },
+      "body": [
+        "Rapat Dewan Pengupahan DKI Jakarta untuk menentukan Upah Minimum Provinsi (UMP) 2027 sudah selesai. Sidang berlangsung Rabu (18/11/2026) mulai pukul 09.00 hingga 17.30 WIB, dengan agenda sosialisasi dasar penentuan UMP dan Upah Minimum Sektoral Provinsi (UMSP) 2027 oleh Kementerian Ketenagakerjaan, lalu pembahasan bersama seluruh unsur. Hasilnya bukan satu angka sepakat, melainkan tiga usulan yang akan disampaikan kepada Gubernur DKI Jakarta Pramono Anung. Ketiga unsur yang duduk di dewan itu, yakni pengusaha, serikat pekerja/buruh, dan pemerintah, mengajukan hitungan masing-masing.",
+        "Usulan tertinggi datang dari unsur serikat pekerja/buruh, Rp6.210.040, dengan nilai alfa 1,0. Unsur pemerintah mengusulkan Rp6.136.941 memakai alfa 0,775, sedangkan pengusaha mengajukan angka terendah, Rp6.047.589 dengan alfa 0,5. Ketiganya memakai rumus yang sama: UMP 2026 ditambah inflasi, pertumbuhan ekonomi, dan nilai alfa. Menurut Nurjaman, anggota Dewan Pengupahan dari unsur pengusaha, formula itu mengacu pada Peraturan Pemerintah Nomor 49 Tahun 2025. Sebagai pembanding, UMP DKI Jakarta 2026 ditetapkan Rp5,72 juta, sehingga ketiga usulan berarti kenaikan.",
+        "Dari sisi buruh, angka Rp6.210.040 dengan alfa 1,0 dipilih untuk menaikkan daya beli pekerja Jakarta. Anggota Dewan Pengupahan dari unsur serikat pekerja/buruh, Tri Widyanto, beralasan biaya hidup di Jakarta sebagai ibu kota sekaligus pusat bisnis lebih tinggi daripada daerah penyangga. Ia menyebut UMP Jakarta saat ini berada di bawah Kota Bekasi, Kabupaten Bekasi, dan Kabupaten Karawang. Buruh juga mengaitkannya dengan Jakarta yang menuju usia setengah abad dan visi mensejahterakan warganya. Alasan-alasan itu disampaikan sebagai dasar usulan, belum tentu menjadi dasar keputusan gubernur.",
+        "Keputusan akhir tetap di tangan gubernur melalui surat keputusan. Nurjaman, Wakil Ketua DPP Apindo DKI Jakarta yang juga anggota dewan dari unsur pengusaha, mengatakan rekomendasi kemungkinan masuk ke gubernur pada Kamis (19/11/2026) dan penetapan bisa malam itu atau Jumat. Ada perbedaan penekanan antarbahan soal tanggal: satu menyebut penetapan dijadwalkan 21 November 2026 dan dimajukan ke Jumat (20/11/2026) karena tanggal itu hari libur, bahan lain menyebut 21 November sebagai batas paling lambat. Jam pengumuman belum diketahui.",
+        "Setelah UMP ditetapkan, Dewan Pengupahan DKI Jakarta masih akan bersidang lagi untuk membahas rekomendasi UMSP 2027. Yang belum jelas sampai berita ini ditulis: angka final yang dipilih gubernur, jam pengumumannya, dan seberapa jauh usulan buruh diakomodasi. Belum ada keterangan resmi apakah ketiga angka itu akan dibahas ulang sebelum keputusan. Yang bisa dipastikan, semua usulan sudah di atas Rp6 juta dan di atas UMP 2026 sebesar Rp5,72 juta, sehingga arahnya kenaikan, bukan penurunan, berapa pun angka yang dipilih nanti."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Dewan Pengupahan DKI Jakarta?",
+          "a": "Forum berisi unsur pengusaha, serikat pekerja/buruh, dan pemerintah yang membahas besaran UMP sebelum gubernur menetapkannya lewat surat keputusan.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027"
+          }
+        },
+        {
+          "q": "Apa arti nilai alfa dalam hitungan UMP?",
+          "a": "Alfa adalah variabel penyesuaian dalam rumus UMP tahun sebelumnya ditambah inflasi, pertumbuhan ekonomi, dan alfa; tiap unsur memakai angka berbeda, 0,5 untuk pengusaha, 0,775 untuk pemerintah, dan 1,0 untuk buruh.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027"
+          }
+        },
+        {
+          "q": "Siapa Pramono Anung dalam proses ini?",
+          "a": "Gubernur DKI Jakarta yang menetapkan UMP 2027 melalui surat keputusan; usulan Dewan Pengupahan baru berupa rekomendasi kepadanya.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027"
+          }
+        },
+        {
+          "q": "Apa itu UMSP yang dibahas setelah UMP?",
+          "a": "Upah Minimum Sektoral Provinsi, yakni upah minimum untuk sektor tertentu di provinsi; sidang lanjutan Dewan Pengupahan akan membahas rekomendasinya setelah UMP ditetapkan.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi gubernur soal UMP DKI 2027 pada 20-21 November 2026.",
+      "image": {
+        "url": "assets/4d7990b7f3.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Tiga Usulan UMP DKI 2027, dari Rp6,04 Juta sampai Rp6,21 Juta"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+          "published_at": "2026-11-19T17:02:33+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-20",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_20",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Kabar Salah Diperiksa: Pipa Saudi, MBG Jogja, Foto Jokowi",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Hari ini tiga klaim beredar diperiksa oleh TurnBackHoax dan seluruhnya dinyatakan salah. Klaim pertama menyebut video \"Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang\". Klaim kedua berjudul \"Sri Sultan Hamengkubuwono X Hentikan MBG di Jogja, Ubah Dana untuk Pendidikan\". Klaim ketiga berupa foto yang diklaim menunjukkan Jokowi ditangkap pasukan Brimob.",
+        "Dari ketiganya, pola yang paling terlihat adalah pemakaian bahan dari peristiwa atau konteks lain. Video yang dibagikan ternyata rekaman peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan, bukan serangan di Arab Saudi. Pada klaim ketiga, sebuah akun Facebook membagikan foto arsip yang menunjukkan Joko Widodo ditangkap Korps Brigade Mobil (Brimob). Sementara klaim soal MBG tidak berbasis rekaman, melainkan mencampurkan aspirasi demonstran dengan kebijakan pejabat: tuntutan pengalihan anggaran berasal dari demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+        "Sebelum meneruskan unggahan seperti ini, periksa dulu sumber asli dan tanggal peristiwanya, lalu bandingkan dengan keterangan resmi atau pemeriksaan fakta. Untuk klaim kebijakan, pisahkan tuntutan yang disuarakan demonstran dari keputusan yang benar-benar diambil pejabat."
+      ],
+      "action": "Periksa sumber asli dan tanggal peristiwa sebelum membagikan video atau foto yang diklaim sebagai kejadian terbaru.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-20T05:45:45+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-20",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Video \"Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan faktanya adalah video peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37487-salah-video-jalur-pipa-minyak-timur-barat-east-west-pipeline-arab-saudi-kembali-diserang"
+        },
+        {
+          "claim": "Sri Sultan Hamengkubuwono X Hentikan MBG di Jogja, Ubah Dana untuk Pendidikan",
+          "verdict": "salah",
+          "reason": "Tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37488-salah-sri-sultan-hamengkubuwono-x-hentikan-mbg-di-jogja-ubah-dana-untuk-pendidikan"
+        },
+        {
+          "claim": "Foto Jokowi Ditangkap Pasukan Brimob",
+          "verdict": "salah",
+          "reason": "Akun Facebook “Febri Joni” pada Minggu (8/11/2026) membagikan foto [ arsip ] yang menunjukkan bahwa Joko Widodo (Jokowi) ditangkap Korps Brigade Mobil (Brimob). Berikut narasi lengkapnya: “ ADA “SOLO” DI BALIK PENYADAPAN PRABOWO? DASCO SERAHKAN KASUS PENYADAPAN PRESIDEN KE POLRI, MINTA KOMISI III",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37489-salah-foto-jokowi-ditangkap-pasukan-brimob"
+        }
+      ],
+      "pattern": "Bahan dari peristiwa atau konteks lain dipasang pada narasi baru, dan tuntutan demonstran dicampur dengan kebijakan pejabat."
+    }
+  ]
+}
