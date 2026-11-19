@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "a_4e0d7bcf-0df5-4ae4-9067-fd2158305066",
+  "question": "ada berapa total fraksi di dpr?",
+  "topic_id": "t_legislator_dorong_ruu_penyadap_9e87",
+  "state": "refused",
+  "answer": "Belum ada bahan yang cukup untuk menjawab ini.",
+  "sources": [],
+  "unsupported": [],
+  "reason": "tidak ada sitasi yang lolos verifikasi",
+  "model": "opencode/deepseek-v4.1-flash-free#low",
+  "config_hash": "acdacc751bdb",
+  "prompt_hash": "c11c7ab774fd",
+  "tokens": {
+    "tokens_in": 45063,
+    "tokens_out": 227
+  },
+  "created_at": "2026-11-19T03:52:19.315Z",
+  "edition_date": "2026-11-19"
+}
