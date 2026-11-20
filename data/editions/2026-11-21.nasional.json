@@ -1,0 +1,858 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-21",
+  "scope": "nasional",
+  "published_at": "2026-11-21T05:45:43+07:00",
+  "coverage": {
+    "from": "2026-11-20T05:45:43+07:00",
+    "to": "2026-11-21T05:45:43+07:00"
+  },
+  "generated_at": "2026-11-21T05:45:43+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 20,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_uu_perampasan_aset_disahkan_dp_0c87",
+      "angle": "Pengesahan UU Perampasan Aset dibayangi aduan etik ICW dan kritik illicit enrichment",
+      "kicker": "Nasional",
+      "title": "DPR Sahkan UU Perampasan Aset, ICW Adukan Pimpinan ke MKD",
+      "status": "sebagian",
+      "truth": {
+        "claim": "UU Perampasan Aset disahkan dalam rapat paripurna DPR pada 19 November yang dihadiri 361 dari 573 anggota, dan ICW mengadukan Puan Maharani serta Habiburokhman ",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Rapat paripurna DPR pada Kamis, 19 November, menyetujui Rancangan Undang-Undang Perampasan Aset terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya menjadi undang-undang. Rapat itu dipimpin Ketua DPR Puan Maharani dan dihadiri 361 anggota dari total 573 anggota DPR, dengan seluruh pimpinan DPR ikut hadir. Puan membacakan pertanyaan kepada setiap fraksi apakah RUU tersebut dapat disetujui dan disahkan, dan seluruh peserta paripurna menjawab setuju. Angka kehadiran serta urutan persetujuan fraksi itu tercatat dalam pemberitaan, sehingga keputusan ini dapat diperiksa sebagai prosedur formal, terlepas dari perdebatan soal isi dan proses pembahasannya.",
+        "Pengesahan itu disebut sebagai sejarah karena RUU Perampasan Aset sudah dimulai sejak 2008 dan tertahan sekitar 18 tahun di DPR. Anggota Panja RUU dari PKS, Nasir Djamil, mengatakan DPR beruntung bisa menyelesaikan rancangan yang ditunggu masyarakat banyak itu. Klaim sejarah itu masuk akal dilihat dari panjangnya penantian, tetapi tidak berarti seluruh persoalan selesai. Begitu UU disahkan, pertanyaan berpindah ke dua hal: apa isi aturannya dan bagaimana aturan itu dijalankan, termasuk lembaga mana yang berwenang menyita dan merampas aset.",
+        "Di hari yang sama, Indonesia Corruption Watch mengadukan Ketua DPR Puan Maharani dan Ketua Komisi III DPR Habiburokhman ke Mahkamah Kehormatan Dewan. Kepala Divisi Hukum dan Investigasi ICW, Ibrahim, mengatakan aduan itu menyasar dugaan pelanggaran etik karena naskah RUU Perampasan Aset tidak disebarluaskan selama proses pembahasan. Menurut Ibrahim, publik termasuk ICW tidak pernah mendapat akses draf naskah hingga RUU disahkan, padahal penyebarluasan naskah dalam proses pembahasan undang-undang telah diatur. Aduan disampaikan di depan kompleks parlemen, bersamaan dengan pengesahan di paripurna.",
+        "ICW juga menyebut telah melayangkan somasi pada 16 November dan belum menerima respons dari DPR. Ibrahim mempertanyakan sikap DPR karena ICW mengaku tidak pernah diundang dalam perumusan undang-undang itu. Hingga berita ditulis, MKD belum memberi tanggapan; Ketua MKD Nazaruddin Dek Gam dan Wakil Ketua MKD Imron Amin sudah dihubungi wartawan namun belum merespons. Artinya aduan itu baru masuk, dan belum ada putusan apa pun soal benar atau tidaknya pelanggaran etik yang dituduhkan.",
+        "DPR membantah. Habiburokhman mengatakan pembahasan RUU sudah dimulai sejak September 2025 dan selama periode itu digelar 87 rapat dengar pendapat umum, hampir dua kali setiap minggu, sampai pengesahan tingkat satu pada 18 November. Ia menyebut tidak ada undang-undang yang rapat dengarnya sebanyak itu. Dalam pidato paripurna, Puan Maharani menyatakan pembahasan sudah melalui partisipasi publik dan dapat diakses masyarakat, serta memastikan tidak ada kekeliruan dalam proses formil. Dua versi ini berdiri berdampingan: ICW mengukur keterbukaan dari akses naskah dan undangan, DPR mengukurnya dari jumlah rapat dan klaim keterbukaan forum.",
+        "Soal isi, UU Perampasan Aset mengatur jenis aset yang bisa dirampas lewat Pasal 5. Ayat 1 huruf d menyebut aset lain yang sah milik pelaku tindak pidana untuk membayar kerugian sebesar aset yang telah dinyatakan dirampas negara. Ketentuan itu dikaitkan dengan jaminan pengembalian korban penipuan. Namun penyitaan aset untuk membayar kerugian tidak bisa serta-merta: menurut kutipan pasal dalam pemberitaan, perampasan itu harus berdasarkan putusan pengadilan yang berkekuatan hukum tetap dan mempertimbangkan prinsip kewajaran.",
+        "Pasal 4 ayat 1 menyatakan perampasan aset, baik berdasarkan maupun tanpa putusan pidana, dilakukan terhadap tindak pidana korupsi. Lingkupnya diperluas ke sejumlah pidana lain: narkotika dan psikotropika, terorisme dan pendanaan terorisme, penyelundupan manusia, penyelundupan senjata dan bahan berbahaya, perdagangan orang, serta penipuan atau penggelapan yang memakai sarana teknologi informasi dan/atau berdampak pada perekonomian masyarakat luas. Pasal 4 ayat 3 merinci contoh terakhir sebagai perjudian daring, investasi, travel haji dan umrah, serta kripto. Wakil Ketua DPR Sufmi Dasco Ahmad menyebut harta bandar judi online sampai pelaku penipuan kripto bisa disita.",
+        "Yang paling sering ditanyakan: bisakah aset dirampas tanpa putusan pidana? Pasal 6 ayat 1 mengatur lima keadaan, yaitu tersangka atau terdakwa yang meninggal dunia, melarikan diri, sakit permanen, pelaku yang tidak diketahui, atau pelaku yang tidak diketahui keberadaannya. Pasal 6 ayat 2 menambahkan syarat nilai: aset yang dirampas tanpa putusan pidana harus bernilai paling sedikit Rp1.000.000.000,00 atau satu miliar rupiah. Perlu dicatat, uraian ayat 1 menyebut lima subjek, sementara kalimat pengantar ayat 2 dalam pemberitaan berbicara tentang enam subjek. Selisih itu belum dijelaskan, sehingga cara membacanya perlu menunggu naskah resmi.",
+        "Kelembagaan diatur lewat sejumlah pasal yang penomorannya berbeda antar pemberitaan. Satu laporan menyebut Pasal 53 dan Pasal 61 sebagai dasar pembentukan Badan Pengelolaan Aset serta Badan Pengawasan Perampasan Aset dan Pengelolaan Aset. Laporan lain menempatkan mandat Presiden untuk membentuk badan pengelolaan dan perampasan aset pada Pasal 53, dengan rincian tugas badan dan kewajiban laporan di pasal berikutnya. Perbedaan penomoran itu belum bisa diselesaikan dari bahan ini, dan kutipan naskahnya berhenti di tengah kalimat sehingga nama, susunan, serta kewenangan badan belum dapat dipastikan.",
+        "Juru Bicara KPK Budi Prasetyo mengatakan lembaganya sebagai penegak hukum wajib patuh dan taat pada peraturan perundang-undangan yang berlaku, termasuk UU Perampasan Aset, dan menempatkan diri sebagai pelaksana undang-undang. Menurut Budi, ketentuan UU itu sejalan dengan upaya pemberantasan korupsi karena penegakan hukum tidak hanya diarahkan memberi efek jera, tetapi juga memulihkan kerugian keuangan negara. Pernyataan itu menempatkan perampasan aset sebagai bagian dari pemulihan, bukan sekadar hukuman tambahan bagi pelaku.",
+        "Meski begitu, KPK belum akan langsung menerapkan seluruh ketentuan. Budi mengatakan KPK akan mempelajari dan menganalisis pasal per pasal untuk melihat mana yang punya irisan langsung dengan tugas dan fungsi pemberantasan korupsi, termasuk pasal tentang pembentukan badan pengelolaan dan pengawasan aset. KPK juga berharap DPR dan pemerintah tetap membuka ruang masukan masyarakat untuk mengevaluasi regulasi setelah diterapkan. Ukurannya, menurut Budi, adalah efektivitas: apakah keluaran dan hasil regulasi sesuai dengan roh pembuatan UU, sehingga evaluasi bisa dilakukan bila ada yang tidak berjalan.",
+        "Kritik lain datang dari ICW soal illicit enrichment, yakni peningkatan kekayaan pejabat yang tidak wajar. Peneliti ICW, Azhim, menilai UU ini tidak mengatur penindakan atas kondisi tersebut dan menuduh DPR tidak berani mengaturnya karena banyak anggota DPR dan pemerintah yang hartanya naik tidak wajar serta tidak mampu membuktikannya. Tuduhan itu adalah klaim ICW, bukan temuan pengadilan. Habiburokhman menjawab bahwa konsep illicit enrichment menuai pro dan kontra, dinilai bertentangan dengan hak asasi manusia, dan ia mengklaim mempelajari praktik sejumlah negara yang menerapkannya namun gagal.",
+        "Persoalan kekayaan pejabat juga muncul dalam pernyataan KPK. Budi menanggapi diskursus publik soal kekayaan penyelenggara negara yang dinilai tidak wajar tetapi tidak masuk pengaturan UU Perampasan Aset. Ia mengatakan hal itu sudah dibahas DPR bersama pemerintah, terutama soal poin mana yang dibutuhkan saat ini. Jawaban itu tidak menjanjikan perluasan cakupan; ia menegaskan pilihan isi UU adalah hasil pembahasan politik yang, menurut rencana, akan dievaluasi setelah diterapkan.",
+        "Soal masa berlaku, pemberitaan yang mengutip poin-poin UU menyebut Pasal 72: undang-undang ini tidak berlaku surut sehingga tidak menjerat kasus yang terjadi sebelum aturan ini berlaku. Kutipan itu berhenti di tengah kalimat, jadi rincian lain soal tanggal mulai berlaku, tenggat pembentukan badan, atau aturan peralihan untuk perkara lama belum dapat dipastikan dari bahan ini. Ketiadaan rincian itu bukan berarti tidak ada pengaturan, melainkan bahwa naskah resmi tetap diperlukan untuk memeriksa bunyi lengkapnya. Tanpa naskah itu, pembaca belum bisa memastikan kapan kewenangan penyitaan dan perampasan mulai dijalankan.",
+        "Satu hal lain yang tercatat di hari yang sama: Wakil Ketua DPR Sufmi Dasco Ahmad membenarkan pertemuan empat mata dengan Menteri Pertahanan Sjafrie Sjamsoeddin dan membantah adanya pembahasan persoalan politik. Menurut pemberitaan, ia mengungkap isi obrolan dalam pertemuan itu, tetapi rinciannya tidak dijelaskan dalam kutipan yang tersedia. Bahan yang ada tidak menerangkan kaitannya dengan UU Perampasan Aset, sehingga pertemuan tersebut sebaiknya dibaca sebagai peristiwa terpisah dan tidak dipakai sebagai petunjuk soal isi undang-undang.",
+        "Yang bisa disimpulkan sementara: UU sudah disahkan secara formal, tetapi pelaksanaannya bergantung pada kajian KPK, pembentukan badan yang diamanatkan, dan evaluasi yang dijanjikan. Aduan ICW ke MKD menambah satu jalur pemeriksaan, yakni etik, yang berjalan terpisah dari jalur hukum dan belum tentu memengaruhi keberlakuan UU. Pembaca yang ingin menilai UU ini sebaiknya menunggu naskah resmi untuk memastikan nomor pasal, angka ambang, dan definisi, karena beberapa rincian dalam pemberitaan masih terpotong atau berbeda antar laporan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu DPR dan apa kewenangannya?",
+          "a": "DPR adalah lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa tugas KPK?",
+          "a": "KPK adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Siapa yang memimpin DPR periode 2024–2029?",
+          "a": "Ketua DPR periode 2024–2029 adalah politikus PDI-P dan putri Megawati Soekarnoputri; sebagai ketua, ia menentukan apakah usulan masuk agenda paripurna.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Periksa daftar tindak pidana dan ambang Rp1 miliar dalam UU Perampasan Aset sebelum menyimpulkan siapa yang bisa dirampas asetnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261119223339-32-1429222/icw-adukan-puan-habiburokhman-ke-mkd-dpr-terkait-uu-perampasan-aset",
+          "published_at": "2026-11-20T07:00:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8761983/habiburokhman-tak-masalah-icw-mengadu-ke-mkd-soal-uu-perampasan-aset",
+          "published_at": "2026-11-20T16:02:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/dasco-pertemuan-empat-mata-dengan-sjafrie-tak-bahas-politik-id24",
+          "published_at": "2026-11-20T17:25:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Setelah 18 tahun tertahan, UU Perampasan Aset disahkan; aduan etik ke MKD dan celah illicit enrichment menentukan seberapa jauh aturan ini bekerja.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "4",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "Dasco: Pertemuan Empat Mata dengan Sjafrie Tak Bahas Politik",
+          "url": "https://tirto.id/dasco-pertemuan-empat-mata-dengan-sjafrie-tak-bahas-politik-id24",
+          "at": "2026-11-20T17:25:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "detik.com",
+          "title": "Habiburokhman Tak Masalah ICW Mengadu ke MKD soal UU Perampasan Aset",
+          "url": "https://news.detik.com/berita/d-8761983/habiburokhman-tak-masalah-icw-mengadu-ke-mkd-soal-uu-perampasan-aset",
+          "at": "2026-11-20T16:02:03+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_prabowo_bawa_pulang_investasi_a8e7",
+      "angle": "US$86,8 miliar adalah gabungan komitmen lama US$71,8 miliar dan tambahan US$15 miliar.",
+      "kicker": "Ekonomi",
+      "title": "Prabowo-Xi di Shenzhen: Komitmen Investasi US$86,8 Miliar",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Komitmen investasi yang dibahas bernilai total US$86,8 miliar, terdiri atas US$71,8 miliar dari kegiatan yang sudah disetujui dan tambahan US$15 miliar setelah ",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto bertemu Presiden China Xi Jinping di Kylin Villa, Shenzhen, di sela-sela KTT APEC 2026 pada Jumat, 20 November 2026. Mengutip Sekretariat Kabinet, CNBC Indonesia melaporkan pertemuan bilateral itu membahas penguatan kerja sama investasi dengan nilai total US$86,8 miliar atau sekitar Rp1.600 triliun. Angka itu bukan satu komitmen tunggal yang lahir di ruang pertemuan: US$71,8 miliar di antaranya berasal dari rangkaian kegiatan yang sudah disetujui sebelumnya, lalu ada tambahan komitmen US$15 miliar setelah pertemuan tersebut.",
+        "Selisih angka yang muncul di berbagai pemberitaan dapat dibaca sebagai soal cakupan, bukan pertentangan data. Sekretariat Kabinet menyebut satu angka total, sedangkan angka yang lebih kecil hanya mencakup tambahan pada hari itu. Sampai bahan ini disusun, belum ada daftar rincian nilai per proyek yang dirilis, sehingga belum bisa dipastikan berapa bagian yang benar-benar baru dan berapa yang sudah masuk hitungan sebelumnya. Pembaca perlu mencermati angka mana yang sedang dikutip sebelum menyimpulkan besarnya komitmen.",
+        "Dari sisi isi, kerja sama yang dibahas tidak hanya soal uang. Sekretariat Kabinet menyebut rencana pembangunan 10 future smart cities di Indonesia, kerja sama pembiayaan infrastruktur, dan sektor digital. Pertemuan juga membahas pengembangan kerja sama di kawasan Laut China Selatan, termasuk penjajakan peluang pengembangan bersama, serta penguatan jalur multilateral lewat keanggotaan Indonesia di International Organization for Mediation (IOMed) dan World Artificial Intelligence Cooperation Organization (WAICO). Pemberitaan lain menyebut Indonesia dan China telah menemukan prospek kerja sama yang kuat ke depan, termasuk pembahasan area-area untuk pengembangan bersama.",
+        "Pertanyaan soal bentuk dokumennya belum terjawab dari bahan yang ada. Laporan hanya menyebut \"komitmen investasi\" dan mengutip unggahan resmi Sekretariat Kabinet, tanpa menyatakan apakah dokumennya berupa nota kesepahaman, perjanjian kerja sama, atau kontrak yang mengikat secara hukum. Sebutan prospek dan penjajakan pada pemberitaan lain menandakan sebagian kerja sama masih dalam tahap pembahasan, bukan keputusan yang selesai. Karena itu, menyebut nilai itu sebagai investasi yang pasti masuk akan melampaui apa yang tertulis di bahan.",
+        "Pihak China yang meneken juga belum jelas. Bahan menyebut pertemuan bilateral Prabowo dan Xi Jinping berlangsung di Kylin Villa, Shenzhen, dan menempatkan nilai komitmen itu sebagai hasil pertemuan, tetapi tidak menyebut nama pejabat, kementerian, atau perusahaan China yang menandatangani dokumen. Tidak ada keterangan pula soal upacara penandatanganan terpisah. Dengan begitu, detail mengenai penandatangan dan lokasi resmi penandatanganan belum diumumkan dalam bahan yang tersedia.",
+        "Soal realisasi, bahan tidak memuat angka investasi China yang sudah terealisasi pada periode sebelumnya, sehingga perbandingan langsung dengan komitmen baru ini belum bisa dibuat. Konteks yang tersedia justru soal target pertumbuhan: Bappenas menyebut 2027 sebagai tahun penting untuk mengejar pertumbuhan 8 persen yang diminta presiden, sementara capaian saat ini 5,47 persen menurut catatan BPS. Bahan tidak menyatakan bahwa komitmen investasi ini dihitung sebagai penyumbang target tersebut, jadi kaitan keduanya masih berupa kemungkinan yang belum dijelaskan."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan pada 2019–2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Siapa Xi Jinping?",
+          "a": "Sekretaris Jenderal Partai Komunis Tiongkok, Presiden ke-7, dan Ketua Komisi Militer Sentral RRT; terpilih sebagai Sekretaris Jenderal PKT pada 15 November 2012.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Xi_Jinping"
+          }
+        },
+        {
+          "q": "Apa yang membuat 2027 disebut tahun penting?",
+          "a": "Bappenas menyatakan 2027 menjadi tahun penting dalam mengejar target pertumbuhan 8 persen yang diinginkan Presiden Prabowo.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261120094515-532-1429298/bappenas-2027-jadi-tahun-akselerasi-pertumbuhan-ekonomi"
+          }
+        }
+      ],
+      "action": "Periksa rincian per proyek sebelum menyimpulkan nilai komitmen, dan bedakan total akumulasi dari tambahan yang baru disepakati.",
+      "image": {
+        "url": "assets/4cbb446910.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Prabowo-Xi di Shenzhen: Komitmen Investasi US$86,8 Miliar"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261120120038-4-786944/prabowo-empat-mata-dengan-xi-jinping-bawa-oleh-oleh-rp1600-t-ke-ri",
+          "published_at": "2026-11-20T12:10:47+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/prabowo-bertemu-xi-jinping-perkuat-kerja-sama-strategis-ri-cina-id2q",
+          "published_at": "2026-11-20T14:20:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261120094515-532-1429298/bappenas-2027-jadi-tahun-akselerasi-pertumbuhan-ekonomi",
+          "published_at": "2026-11-20T09:55:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "Prabowo Bertemu Xi Jinping, Perkuat Kerja Sama Strategis RI-Cina",
+          "url": "https://tirto.id/prabowo-bertemu-xi-jinping-perkuat-kerja-sama-strategis-ri-cina-id2q",
+          "at": "2026-11-20T14:20:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Prabowo \"Empat Mata\" dengan Xi Jinping, Bawa Oleh-Oleh Rp1.600 T ke RI",
+          "url": "https://www.cnbcindonesia.com/news/20261120120038-4-786944/prabowo-empat-mata-dengan-xi-jinping-bawa-oleh-oleh-rp1600-t-ke-ri",
+          "at": "2026-11-20T12:10:47+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_aturan_baru_belanja_bahan_mbg_e601",
+      "angle": "Larangan beras SPHP dan MinyaKita menyentuh belanja bahan MBG Rp145 T",
+      "kicker": "Nasional",
+      "title": "Kepala BGN Larang Beras SPHP dan MinyaKita untuk Dapur MBG",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Kepala BGN Sudaryono menyatakan beras SPHP dan MinyaKita dilarang dipakai dalam MBG dengan alasan stabilitas pangan.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Kepala Badan Gizi Nasional Sudaryono menyatakan beras Stabilisasi Pasokan dan Harga Pangan (SPHP) dan MinyaKita tidak boleh dipakai sebagai bahan Program Makan Bergizi Gratis. Menurut pemberitaan detik.com, larangan itu disampaikan dengan alasan menjaga stabilitas pangan. Sudaryono menyebut keduanya sebagai komoditas yang mendapat dukungan kebijakan harga khusus dari pemerintah. Beras SPHP sendiri merupakan program Bulog yang menjual beras dengan harga eceran yang ditetapkan pemerintah untuk menahan lonjakan harga. Dengan kata lain, dua bahan yang kini dilarang di dapur MBG justru barang yang harganya diatur negara, bukan barang yang dilepas bebas di pasar.",
+        "Penjelasan resmi yang tersedia masih ringkas, yakni stabilitas pangan. Bahan yang dihimpun tidak memuat uraian rinci soal bagaimana larangan itu bekerja terhadap pasokan dan harga. Konteks yang ada: Sudaryono menegaskan pengadaan bahan MBG perlu memperhatikan Harga Acuan Pemerintah (HAP) di tingkat produsen dan Harga Eceran Tertinggi (HET) di tingkat konsumen. Ia menggambarkan peran negara yang menurunkan harga bila terlalu tinggi dan menaikkannya bila terlalu murah, agar produsen tetap bergairah berproduksi. Dari keterangan itu, larangan atas dua komoditas berharga khusus dapat dibaca sebagai upaya menjaga agar dapur MBG tidak menyerap barang yang skema harganya diatur untuk keperluan lain, meski bahan tidak menyatakannya secara eksplisit.",
+        "Soal uang, Sudaryono menyebut total dana untuk membeli bahan baku MBG pada 2026 lebih dari Rp145 triliun dalam satu tahun. Ia ingin anggaran itu berputar di desa dan kecamatan serta menyentuh petani, peternak, pedagang pasar tradisional, dan UMKM, bukan hanya korporasi besar. Berapa bagian dari angka itu yang sudah terealisasi tidak disebut dalam bahan. Angka lain yang muncul adalah pengembalian anggaran: lewat langkah yang disebut MBG 2.0, sekitar Rp44 triliun dikembalikan ke kas negara. Dana itu berasal dari evaluasi kebutuhan anggaran, penyesuaian insentif SPPG, dan penarikan dana di rekening dapur yang belum beroperasi. Angka Rp44 triliun bukan realisasi belanja bahan, dan bahan tidak memisahkan keduanya.",
+        "Rincian pelaksanaan larangan belum jelas. Bahan tidak menyebut mulai kapan larangan berlaku maupun sanksi bagi penyedia yang melanggar; keduanya belum diumumkan dalam keterangan yang dikutip. Bahan pengganti pun tidak dirinci. Yang tergambar adalah arah kebijakan: BGN mendorong dapur MBG membeli dari produsen lokal dan rekanan terverifikasi, mulai asosiasi peternak, koperasi peternak ayam dan susu, hingga asosiasi petani pemasok beras dan sayuran. Sudaryono menyiapkan Loka MBG, mekanisme belanja daring yang mempertemukan kebutuhan dapur dengan pemasok lokal, agar belanja tidak terkonsentrasi pada perusahaan besar. Arah ini disebut sebagai upaya melibatkan pemasok lokal, tetapi aturan mainnya belum selesai.",
+        "Tanggapan Bulog maupun produsen MinyaKita belum ada dalam bahan yang dihimpun, jadi belum diketahui apakah mereka menolak, menerima, atau meminta pengecualian. Reaksi asosiasi dapur juga belum terdokumentasi. Yang tampak pada hari yang sama adalah pengetatan lain: BGN menekankan pentingnya Sertifikat Laik Higiene Sanitasi bagi SPPG, mengeluarkan 1.637 sekolah dari program agar bantuan tepat sasaran, dan memperluas layanan prasmanan dari 66 menjadi 200 lokasi dengan 1.600 pendaftar. Larangan dua bahan berharga khusus itu muncul di tengah pola pembenahan tata kelola yang lebih luas, dan dampaknya bagi pasokan dapur baru terbaca setelah aturan pelaksanaannya terbit."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu beras SPHP?",
+          "a": "Stabilisasi Pasokan dan Harga Pangan, program Bulog yang menjual beras dengan harga eceran yang ditetapkan pemerintah untuk menahan lonjakan harga.",
+          "source": {
+            "outlet": "Bulog",
+            "url": "https://www.bulog.co.id/"
+          }
+        },
+        {
+          "q": "Siapa Sudaryono?",
+          "a": "Politikus dan pengusaha yang dikenal sebagai Mas Dar, menjabat Kepala Badan Gizi Nasional sejak 22 Juli 2026.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Sudaryono"
+          }
+        },
+        {
+          "q": "Mengapa dampak sebuah keputusan pemerintah biasanya baru terasa belakangan?",
+          "a": "Keputusan pemerintah atau DPR mengikat warga dari undang-undang sampai peraturan menteri, dan dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi BGN soal tanggal berlaku dan sanksi, lalu bandingkan dengan harga beras serta minyak goreng di pasar sekitar.",
+      "image": {
+        "url": "assets/e3acba882e.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kepala BGN Larang Beras SPHP dan MinyaKita untuk Dapur MBG"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/bgn-larang-dapur-mbg-gunakan-beras-sphp-dan-minyakita-id1D",
+          "published_at": "2026-11-20T10:30:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261120150551-92-1429533/bos-bgn-ungkap-belanja-bahan-baku-mbg-2026-tembus-rp145-t",
+          "published_at": "2026-11-20T15:45:15+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8762062/sudaryono-sebut-mbg-2-0-perkuat-efisiensi-akuntabilitas-anggaran-negara",
+          "published_at": "2026-11-20T16:34:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "Sudaryono Sebut MBG 2.0 Perkuat Efisiensi-Akuntabilitas Anggaran Negara",
+          "url": "https://news.detik.com/berita/d-8762062/sudaryono-sebut-mbg-2-0-perkuat-efisiensi-akuntabilitas-anggaran-negara",
+          "at": "2026-11-20T16:34:02+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "BGN Larang Dapur MBG Gunakan Beras SPHP dan MinyaKita",
+          "url": "https://tirto.id/bgn-larang-dapur-mbg-gunakan-beras-sphp-dan-minyakita-id1D",
+          "at": "2026-11-20T10:30:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_bareskrim_geledah_terkait_duga_d13c",
+      "angle": "Penggeledahan menyita dokumen dan spanduk; jumlah lokasi disebut lima dan enam",
+      "kicker": "Kriminal",
+      "title": "Bareskrim Geledah Lokasi Dugaan Makar, Sita Dokumen dan Spanduk",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Penyidik Bareskrim menyita dokumen dan spanduk dari rumah di Bogor yang disebut dijadikan posko dugaan makar.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Penyidik Bareskrim Polri menggeledah sejumlah lokasi dalam penyidikan dugaan makar yang menyeret nama mantan Kapolri Listyo Sigit Prabowo. Jumlah lokasi disebut berbeda antar sumber: satu pemberitaan menyebut lima lokasi, sedangkan pemberitaan lain menyebut total enam lokasi, yakni lima di Bogor dan satu di Tangerang. Dari penggeledahan di sebuah rumah di Bogor yang disebut dijadikan posko, penyidik menyita sejumlah dokumen dan spanduk. Menurut penyidik, barang-barang itu diduga berkaitan dengan permulaan perbuatan dugaan makar. Alamat lengkap tiap lokasi tidak dirinci dalam bahan yang tersedia.",
+        "Direktur Tindak Pidana Umum Bareskrim Polri Brigjen Susatyo Purnomo Condro menyampaikan hal itu kepada wartawan pada Jumat, 20 November 2026. Ia menyebut rumah yang digeledah di kawasan Bogor dan Tangerang terkait dengan dua sosok, yakni Brigjen Tedjo Kusumo dan Kombes Iman Imanuddin. Menurutnya, salah satu rumah di Bogor terindikasi menjadi posko bagi Kombes Iman. Bahan tidak menjelaskan peran keduanya dalam perkara, apakah diperiksa sebagai saksi, ditetapkan sebagai tersangka, atau tidak. Sebelumnya, penyidik juga menggeledah rumah di Cipete serta sejumlah lokasi yang diduga dijadikan posko aktivitas makar.",
+        "Dalam perkara ini, Bareskrim menetapkan empat orang sebagai tersangka: Jenderal Listyo Sigit Prabowo, Irjen Eko Hadi Santoso, Irjen Ahrie Sonta, dan Irjen Slamet Uliandi. Penetapan itu disebut terkait dugaan penyadapan Presiden Prabowo Subianto, penghapusan data elektronik, serta akses ilegal. Rumah di Cipete yang digeledah sebelumnya diduga milik Irjen Eko Hadi Santoso, yang menurut bahan telah dipecat sebagai anggota Polri. Perlu dicatat, status tersangka belum berarti bersalah: status itu diberikan bila penyidik punya minimal dua alat bukti, dan putusan tetap di pengadilan. Bahan tidak memerinci alat bukti yang dipakai.",
+        "Susatyo mengaitkan dokumen dan spanduk yang disita dengan Pasal 160, yang mengatur niat untuk melakukan serangan. Ia menyebut cakupan serangan dalam pasal itu meliputi serangan fisik maupun nonfisik, termasuk yang bersifat siber. Namun bahan tidak menyebut pasal lain yang turut disangkakan dalam perkara dugaan makar ini, juga tidak memerinci unsur yang harus dibuktikan penyidik. Pasal untuk penyadapan, penghapusan data elektronik, dan akses ilegal yang disebut dalam penetapan tersangka juga tidak dirinci nomornya. Karena itu, dasar hukum penyidikan selain Pasal 160 belum bisa dipastikan dari bahan yang ada.",
+        "Bahan yang tersedia tidak memuat keterangan soal penundaan ekspose kasus ini. Tidak ada penjelasan mengapa ekspose ditunda, siapa yang menundanya, maupun kapan jadwal penggantinya. Satu-satunya keterangan waktu adalah pernyataan penyidik pada Jumat, 20 November 2026, tanpa menyebut agenda ekspose berikutnya. Pembaca masih harus menunggu pengumuman resmi untuk mengetahui alasan dan tanggal baru. Yang tergambar dari bahan, kasus ini bergerak lewat penggeledahan lokasi dan penetapan tersangka, sementara penjelasan resmi yang utuh kepada publik belum tersedia."
+      ],
+      "explain": [
+        {
+          "q": "Apa arti status tersangka dalam perkara pidana?",
+          "a": "Status yang diberikan penyidik bila ada minimal dua alat bukti; belum berarti bersalah karena putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Listyo Sigit Prabowo?",
+          "a": "Perwira tinggi Polri yang menjabat Kapolri sejak 27 Januari 2021 hingga 1 Oktober 2026, menggantikan Jenderal Idham Azis.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Listyo_Sigit_Prabowo"
+          }
+        },
+        {
+          "q": "Apa latar kedekatan Listyo Sigit dengan pemerintahan sebelumnya?",
+          "a": "Ia pernah menjadi ajudan Presiden Joko Widodo dan pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi Bareskrim soal jadwal ekspose dan status mereka yang rumahnya digeledah.",
+      "image": {
+        "url": "assets/8ea218ae8e.webp",
+        "credit": "liputan6.com",
+        "alt": "Bareskrim Geledah Lokasi Dugaan Makar, Sita Dokumen dan Spanduk"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8339403/kasus-dugaan-makar-eks-kapolri-listyo-sigit-bareskrim-geledah-5-lokasi",
+          "published_at": "2026-11-20T22:01:19+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/20/337/3255224/polri-sita-dokumen-dan-spanduk-saat-geledah-posko-makar-listyo-cs-di-bogor",
+          "published_at": "2026-11-20T18:44:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/bareskrim-geledah-di-tangerang-bogor-ada-rumah-pati-polri-id2J",
+          "published_at": "2026-11-20T15:40:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "Kasus Dugaan Makar Eks Kapolri Listyo Sigit, Bareskrim Geledah 5 Lokasi",
+          "url": "https://www.liputan6.com/news/read/8339403/kasus-dugaan-makar-eks-kapolri-listyo-sigit-bareskrim-geledah-5-lokasi",
+          "at": "2026-11-20T22:01:19+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "okezone.com",
+          "title": "Polri Sita Dokumen dan Spanduk saat Geledah Posko Makar Listyo Cs di Bogor",
+          "url": "https://news.okezone.com/read/2026/11/20/337/3255224/polri-sita-dokumen-dan-spanduk-saat-geledah-posko-makar-listyo-cs-di-bogor",
+          "at": "2026-11-20T18:44:05+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Bareskrim Geledah di Tangerang & Bogor, Ada Rumah Pati Polri",
+          "url": "https://tirto.id/bareskrim-geledah-di-tangerang-bogor-ada-rumah-pati-polri-id2J",
+          "at": "2026-11-20T15:40:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_pemenang_ffi_2026_diumumkan_2b59",
+      "angle": "Ghost in the Cell lima piala; Meriam Bellina kembali; Saputra Kori kejutkan.",
+      "kicker": "Budaya",
+      "title": "Ghost in the Cell Borong Lima Piala Citra di FFI 2026",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Ghost in the Cell memenangi lima kategori Piala Citra FFI 2026, termasuk sutradara terbaik dan pemeran utama pria terbaik.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Malam Anugerah Piala Citra Festival Film Indonesia 2026 digelar Jumat, 20 November 2026, di JIExpo Kemayoran, Jakarta Pusat. Acara itu menjadi puncak penilaian atas karya yang didaftarkan sepanjang tahun, dan pada malam yang sama nama para pemenang dibacakan. Antara mencatat tema malam itu, “Askala Karya Sinema Indonesia”, dimaksudkan untuk merayakan cahaya yang terus hidup dalam karya sinema yang menjaga ingatan, merawat cerita, dan hubungan antar-generasi. Catatan sejarah menyebut festival ini pertama digelar pada 1955, lalu berlanjut pada 1960 dan 1967 dengan nama Pekan Apresiasi Film Nasional, sebelum memakai nama Festival Film Indonesia pada 1973. Bagi pembaca yang jarang mengikuti berita hiburan, Piala Citra adalah lambang kemenangan di festival itu, dan malam anugerah adalah saat nama-nama yang biasanya hanya muncul di kredit film disebut sebagai pemenang.",
+        "Angka yang disebut memberi gambaran tentang besar acara ini. Antara mencatat 531 karya didaftarkan sebagai peserta FFI 2026, terdiri atas 93 film cerita panjang, 177 film cerita pendek, satu film animasi panjang, 57 film animasi pendek, 20 film dokumenter panjang, 73 film dokumenter pendek, serta 110 karya kritik film. Dari jumlah itu, FFI 2026 menghadirkan 22 kategori penghargaan Piala Citra serta beberapa penghargaan dan piala khusus. Artinya, malam itu bukan hanya soal film bioskop populer, tetapi juga soal film pendek, dokumenter, animasi, dan tulisan kritik yang jarang sampai ke layar lebar. Pembaca yang biasanya hanya mendengar nama film besar bisa melihat bahwa ekosistem yang dinilai jauh lebih luas daripada daftar film yang sedang tayang di bioskop.",
+        "Festival Film Indonesia bukan ajang baru. Menurut catatan Wikipedia yang menjadi bahan latar kartu ini, festival tersebut dipelopori dua tokoh senior perfilman, Usmar Ismail dan Djamaluddin Malik. Penyelenggaraan pertamanya pada 1955, kemudian berlanjut pada 1960 dan 1967 dengan nama Pekan Apresiasi Film Nasional. Nama Festival Film Indonesia baru dipakai pada 1973. Catatan itu terpotong di bagian akhir, tepat setelah kata “mulai diselenggara…”, sehingga keterangan sesudahnya belum bisa kami pastikan. Meski begitu, latar ini menjelaskan mengapa Piala Citra diperlakukan sebagai pencapaian besar oleh para sineas yang menerimanya, dan mengapa pula daftar pemenangnya diperhatikan publik setiap tahun.",
+        "Film Ghost in the Cell keluar sebagai pemenang terbesar malam itu. Menurut narasi Antara, film arahan Joko Anwar ini membawa lima Piala Citra: sutradara terbaik untuk Joko Anwar, pemeran utama pria terbaik untuk Abimana Aryasatya, pemeran pendukung pria terbaik untuk Aming, pengarah sinematografi terbaik untuk Ical Tanjung, I.C.S., serta penata rias terbaik. Kumparan menulis hal serupa dalam kalimat ringkas bahwa film itu “memborong lima penghargaan”. Namun daftar rinci pemenang di laporan Antara yang sama tidak memuat baris pemeran pendukung pria maupun penata rias, sehingga nama penerima piala penata rias tidak ada di bahan; yang tercatat hanya bahwa kategori itu jatuh ke film tersebut. Dua piala lain, sinematografi dan penata rias, adalah kerja teknis di balik layar, dan sebaran itu memperlihatkan penilaian tidak hanya jatuh pada wajah di layar.",
+        "Aming, yang menerima piala pemeran pendukung pria terbaik, berbicara singkat setelah naik panggung. “Senang ya pasti senang, piala ini saya dedikasikan buat para nominator lainnya yang emang tangguh semua dedicated semua yang pasti seru ya dapat piala ya,” ujarnya seperti dikutip kumparan. Kalimat itu sederhana, tetapi menunjukkan satu hal tentang cara penghargaan bekerja: kemenangan satu orang selalu berarti ada nominator lain yang pulang tanpa piala meski dinilai kuat. Bahan yang kami pegang tidak memuat daftar lengkap pesaing Aming di kategori itu, jadi siapa saja yang ia kalahkan belum bisa kami sebutkan. Kutipan itu juga satu-satunya pernyataan Aming yang tersedia, sehingga reaksi atau rencana kerjanya setelah menang belum diketahui.",
+        "Abimana Aryasatya melengkapi kemenangan Ghost in the Cell lewat kategori pemeran utama pria terbaik. Republika menulis bahwa aktor itu “akhirnya membawa pulang Piala Citra pertamanya” melalui peran dalam film tersebut, sementara Antara juga mencantumkan namanya sebagai pemenang kategori itu. Namun laporan Republika yang kami terima terpotong pada bagian penjelasan perannya, dan laporan Antara tentang Abimana juga hanya memuat satu baris pembuka. Karena itu, detail seperti nama tokoh yang ia perankan, proses syuting, atau reaksinya di panggung belum dapat kami uraikan. Yang bisa dipegang dari bahan: menurut Republika, ini Piala Citra pertama bagi Abimana, sebuah keterangan yang belum dilengkapi rincian perjalanan kariernya.",
+        "Di kategori pemeran utama perempuan, Meriam Bellina menang lewat film Senin Harga Naik. Antara mencatat aktris kelahiran Bandung ini sudah sembilan kali masuk daftar nominasi FFI dan kini mengoleksi empat Piala Citra. Ia bersaing dengan Christine Hakim lewat Semua Akan Baik-Baik Saja, Luisa Adreena lewat Na Willa, Marsha Timothy lewat Tukar Takdir, dan Shenina Cinnamon lewat Dopamin. “It's a long trip, sebuah kehormatan buat saya, salam damai di hati, damai di bumi. Indonesia sehat,” katanya di panggung. Ia mempersembahkan piala itu untuk sang ibunda yang mendampinginya sejak awal karier. Catatan sembilan nominasi dan empat piala itu menempatkan kemenangan ini sebagai hasil perjalanan panjang, bukan kemunculan mendadak di satu malam.",
+        "Meriam juga berbicara tentang hal yang jarang muncul di panggung penghargaan: lamanya proses kerja di masa lalu. “Semua kan dulu lebih lama. Lebih ribet. Kamera cuma satu. Belum lagi mesti dubbing lagi. Belum lagi mesti melihat teleskopi dan segala macam. Ya, sebuah lebih sulit ya. Perjuangannya lebih berasa,” ujarnya. Ia menyebut konsistensi, kejujuran, dan disiplin sebagai kunci bertahan di industri film sampai sekarang. Bagi pembaca yang hanya melihat hasil akhir di layar, keterangan ini menjelaskan bahwa piala tidak hanya soal bakat, tetapi juga soal bertahan dalam proses panjang yang teknologinya berubah cepat. Bahan tidak memuat rincian film Senin Harga Naik maupun peran yang ia mainkan di dalamnya.",
+        "Nama lain yang menarik perhatian adalah Luisa Adreena. Kumparan mencatat ia menjadi nominator termuda di kategori pemeran utama perempuan, dan kehadirannya sempat menjadi sorotan. Ia tidak menang di kategori itu, tetapi pulang membawa Penghargaan Kartini untuk Pemeran Anak-Anak Terbaik lewat perannya di film Na Willa. Film yang sama juga menang di kategori penata efek visual dan penata suara menurut daftar Antara. Bahan tidak memuat usia Luisa, nama tokoh yang ia mainkan, maupun kutipan darinya, jadi keterangan tentang latar belakangnya belum bisa kami tambahkan. Laporan Antara tentang Luisa juga hanya memuat satu baris pembuka, sehingga rincian momen penerimaannya belum terbaca.",
+        "Kejutan datang dari kategori aktor pilihan penonton. Saputra Kori, yang disebut Antara sebagai pemeran pendatang baru dan pemengaruh asal Bali, menang lewat film Jangan Buang Ibu. Ia mengalahkan Abimana Aryasatya lewat Ghost in the Cell, Angga Yunanda lewat Para Perasuk dan Dopamin, serta Ardit Erwandha lewat Tunggu Aku Sukses Nanti. “Waduh, ini bener-bener di luar dugaan aku banget,” katanya. Ia menambahkan bahwa FFI menurutnya “level yang berbeda” dan bahwa penghargaan itu menjadi pemacu semangat untuk membawa lebih banyak penonton mencintai film Indonesia. Laporan Antara tentang dirinya termasuk yang utuh, sehingga kutipan dan alasannya terbaca lengkap.",
+        "Penghargaan Mieke Widjaja untuk aktris pilihan penonton jatuh kepada Shenina Cinnamon lewat film Dopamin. Di kategori aktor pilihan penonton, Angga Yunanda masuk nominasi lewat dua film sekaligus, Para Perasuk dan Dopamin, namun tidak keluar sebagai pemenang; piala kategori itu dibawa Saputra Kori. Keduanya adalah kategori berbeda, satu untuk aktor dan satu untuk aktris, dengan daftar nominasi yang juga berbeda. Bahan tidak memuat keterangan lain tentang kehadiran atau peran Angga di panggung malam itu, jadi detail itu belum tersedia. Yang tercatat hanya hasil resmi kedua kategori tersebut beserta nama-nama yang bersaing di dalamnya.",
+        "Kategori lain tersebar ke banyak film. Antara mencatat Kawai Labiba menang pemeran pendukung perempuan lewat Operasi Pesta Copet, film yang juga memberi piala penulis skenario asli terbaik untuk Rino Sarjono dan Edy Khemod serta penyunting gambar terbaik untuk Aline Jusria. Skenario adaptasi terbaik jatuh ke Johanna Wattimena dan Bernardus Raka lewat Nobody Loves Kay, yang juga memberi penata musik terbaik untuk Yudhi Arfani dan Zeke Khaseli. Menfo Tantono menang pengarah artistik lewat Monster Pabrik Rambut, dan Sal Priadi menang pencipta lagu tema asli lewat “Kepala, Pundak, Kerja Lagi” dari film yang sama. Di kelompok dokumenter, Sharp Objects menang dokumenter pendek dan A Distorted Individual menang dokumenter panjang.",
+        "Sejumlah penghargaan khusus juga dibagikan. Yulaika Romadhani menerima Penghargaan Tanete Pong Masak untuk kritik film terbaik lewat tulisannya tentang politik dinasti di Abadi Nan Jaya. Piala Antemas untuk film bioskop terlaris diberikan kepada Agak Laen: Menyala Pantiku!, sementara Penghargaan Nya Abbas Akup untuk film pilihan penonton jatuh kepada Para Perasuk. Kumparan juga menyebut penghargaan pengabdian seumur hidup untuk film diberikan kepada Ida Farida dan Putu Wijaya. Nama kedua tokoh itu tidak muncul dalam daftar Antara yang kami terima, sehingga perbedaan ini kami sebutkan apa adanya, bukan kami pilih salah satu versi. Bahan tidak menjelaskan dasar penilaian masing-masing penghargaan khusus itu.",
+        "Ada juga hal yang perlu dicatat soal bentuk bahan. Daftar di kumparan berisi nominasi, bukan hanya pemenang, dan judulnya menyebut “daftar lengkap nominasi”, sehingga daftar itu tidak bisa dibaca sebagai daftar pemenang tanpa dicocokkan dengan laporan Antara. Tiga laporan Antara tentang Joko Anwar, Abimana Aryasatya, dan Luisa Adreena, serta laporan Republika tentang Abimana, hanya memuat beberapa puluh karakter pertama, sehingga kutipan dan rincian di dalamnya belum terbaca; laporan Antara tentang Saputra Kori sebaliknya utuh. Tanggal pun tersebar: acara berlangsung Jumat 20 November, sementara beberapa laporan terbit setelah tengah malam, 21 November. Perbedaan itu tampaknya soal waktu terbit, bukan soal hari acara.",
+        "Yang belum jelas, dan ini perlu dinyatakan terus terang: bahan tidak memuat susunan dewan juri, mekanisme pemungutan suara, jumlah suara, atau alasan penilaian di setiap kategori. Tidak ada keterangan apakah acara disiarkan langsung, di mana bisa ditonton ulang, atau berapa penontonnya. Tidak ada pula pernyataan resmi tentang penyelenggaraan FFI berikutnya. Untuk pembaca yang ingin menindaklanjuti, langkah paling masuk akal adalah menunggu rekaman atau rilis resmi penyelenggara, lalu mencocokkan daftar pemenang dengan film yang bisa ditonton. Sampai itu ada, rangkuman laporan media seperti di atas adalah pegangan yang tersedia, dengan catatan bahwa beberapa di antaranya masih terpotong."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Festival Film Indonesia?",
+          "a": "Festival film Indonesia yang dipelopori Usmar Ismail dan Djamaluddin Malik, pertama digelar 1955, dan sejak 1973 memakai nama Festival Film Indonesia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Festival_Film_Indonesia"
+          }
+        },
+        {
+          "q": "Kapan nama Pekan Apresiasi Film Nasional dipakai?",
+          "a": "Pada penyelenggaraan 1960 dan 1967, sebelum berubah menjadi Festival Film Indonesia pada 1973.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Festival_Film_Indonesia"
+          }
+        },
+        {
+          "q": "Kapan malam puncak Piala Citra FFI 2026 digelar?",
+          "a": "Jumat, 20 November 2026, menurut laporan yang mencatat malam puncak penganugerahan tersebut.",
+          "source": {
+            "outlet": "kumparan.com",
+            "url": "https://kumparan.com/kumparanhits/daftar-lengkap-pemenang-ffi-2026-ghost-in-the-cell-borong-5-penghargaan-28bxNR8tueI"
+          }
+        }
+      ],
+      "action": "Telusuri daftar lengkap pemenang FFI 2026 dan tandai film yang ingin kamu tonton.",
+      "image": {
+        "url": "assets/b221890fb9.webp",
+        "credit": "kumparan.com",
+        "alt": "Ghost in the Cell Borong Lima Piala Citra di FFI 2026"
+      },
+      "sources": [
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanhits/daftar-lengkap-pemenang-ffi-2026-ghost-in-the-cell-borong-5-penghargaan-28bxNR8tueI",
+          "published_at": "2026-11-20T23:07:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/totg7g10030000/abimana-aryasatya-raih-piala-citra-pertama-di-ffi-2026-lewat-film-joko-anwar",
+          "published_at": "2026-11-21T02:45:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5868691/saputra-kori-jadi-aktor-pilihan-penonton-dalam-ajang-ffi-2026",
+          "published_at": "2026-11-20T23:08:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "Abimana Aryasatya Raih Piala Citra Pertama di FFI 2026 Lewat Film Joko Anwar",
+          "url": "https://news.republika.co.id/berita/totg7g10030000/abimana-aryasatya-raih-piala-citra-pertama-di-ffi-2026-lewat-film-joko-anwar",
+          "at": "2026-11-21T02:45:16+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Saputra Kori jadi aktor pilihan penonton dalam ajang FFI 2026",
+          "url": "https://www.antaranews.com/berita/5868691/saputra-kori-jadi-aktor-pilihan-penonton-dalam-ajang-ffi-2026",
+          "at": "2026-11-20T23:08:03+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "kumparan.com",
+          "title": "Daftar Lengkap Pemenang FFI 2026, Ghost in the Cell Borong 5 Penghargaan",
+          "url": "https://kumparan.com/kumparanhits/daftar-lengkap-pemenang-ffi-2026-ghost-in-the-cell-borong-5-penghargaan-28bxNR8tueI",
+          "at": "2026-11-20T23:07:11+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_kpk_ungkap_banyak_proyek_bnpb_cfbe",
+      "angle": "Kasus proyek BNPB menyeret adik mantan kepala lembaga; peran KPA disorot.",
+      "kicker": "Kriminal",
+      "title": "KPK Disebut Dalami Proyek BNPB yang Menyeret Adik Suharyanto",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemberitaan menyebut kasus proyek BNPB menyeret Bima Setiawan, adik mantan Kepala BNPB Suharyanto, dan menyorot peran Rustian sebagai Kuasa Pengguna Anggaran.",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-21T05:45:43+07:00"
+      },
+      "body": [
+        "Komisi Pemberantasan Korupsi (KPK) disebut sedang mendalami proyek di lingkungan Badan Nasional Penanggulangan Bencana (BNPB). Pemberitaan liputan6.com menyebut kasus ini menyeret Bima Setiawan (BMS), adik mantan Kepala BNPB Suharyanto. Nama Bima muncul sebagai pihak yang disorot, tetapi bahan tidak memuat uraian soal perbuatan yang diduga dilakukan maupun proyek yang dikaitkan langsung dengannya. Bahan juga belum menyebut apakah penanganan perkara masih pada tahap penelusuran, penyelidikan, atau sudah naik ke penyidikan, sehingga posisi hukum pihak-pihak yang disebut belum bisa dipastikan.",
+        "BNPB adalah lembaga yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah. Dari uraian itu, kerja anggaran BNPB dapat dibaca sebagai anggaran yang bergerak di dua jalur sekaligus: koordinasi di pusat dan penyaluran bantuan ke daerah. Bahan latar yang tersedia tidak merinci proyek mana yang disorot dalam kasus ini, berapa nilai anggarannya, atau tahun anggaran yang dipersoalkan. Karena itu, hubungan antara fungsi BNPB dan dugaan korupsi yang sedang diusut belum dapat dijelaskan secara utuh; yang tersedia baru gambaran kelembagaannya.",
+        "Nama lain yang muncul dalam pemberitaan adalah Rustian. tirto.id menyebut Rustian sebagai Kuasa Pengguna Anggaran (KPA) dan menilai bahwa dengan posisi itu ia mengetahui mekanisme pengadaan secara menyeluruh. Istilah KPA merujuk pada peran pengelola anggaran di satuan kerja, meski bahan tidak menguraikan tugasnya lebih jauh. Bahan juga tidak menjelaskan apakah penilaian tersebut berasal dari keterangan resmi KPK, dari penyidik, atau dari pihak lain, dan apakah status Rustian sudah sebagai saksi, tersangka, atau belum ditetapkan sama sekali.",
+        "Yang belum jelas justru bagian intinya. Bahan yang tersedia belum memuat rincian dugaan modus, termasuk soal peminjaman bendera perusahaan maupun pengaturan anggaran. Peran Sekretaris Utama BNPB dalam pendalaman kasus juga belum diuraikan, begitu pula angka kerugian negara, tanggal kejadian, dan nama perusahaan yang diduga terlibat. Tanpa rincian itu, pembaca belum bisa menilai seberapa jauh dugaan mengarah pada perbuatan pidana atau baru sebatas dugaan awal yang masih diuji penyidik.",
+        "Langkah berikutnya berada di tangan KPK, yang oleh bahan latar digambarkan sebagai lembaga independen untuk menyelidiki dan menuntut tindak pidana korupsi. Sejauh ini belum ada keterangan resmi yang dirangkum dalam bahan soal jumlah pihak yang diperiksa, jadwal pemeriksaan berikutnya, atau kemungkinan penetapan tersangka. Pembaca sebaiknya menunggu pengumuman resmi sebelum menyimpulkan keterlibatan siapa pun, karena penyebutan nama dalam pemberitaan belum berarti status hukum orang tersebut sudah ditetapkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu BNPB?",
+          "a": "Badan Nasional Penanggulangan Bencana adalah lembaga yang mengoordinasikan penanganan bencana di tingkat pusat dan menyalurkan bantuan ke daerah.",
+          "source": {
+            "outlet": "BNPB",
+            "url": "https://bnpb.go.id/"
+          }
+        },
+        {
+          "q": "Apa tugas KPK?",
+          "a": "Komisi Pemberantasan Korupsi adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Suharyanto dan Bima Setiawan dalam kasus ini?",
+          "a": "Suharyanto disebut sebagai mantan Kepala BNPB, sedangkan Bima Setiawan (BMS) disebut sebagai adiknya yang terseret dalam kasus ini.",
+          "source": {
+            "outlet": "liputan6.com",
+            "url": "https://www.liputan6.com/news/read/8338750/kpk-ungkap-modus-pinjam-bendera-dalam-proyek-bnpb"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi KPK soal status perkara dan peran Sekretaris Utama BNPB sebelum menyimpulkan.",
+      "image": {
+        "url": "assets/5a25c40ad1.webp",
+        "credit": "liputan6.com",
+        "alt": "KPK Disebut Dalami Proyek BNPB yang Menyeret Adik Suharyanto"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8338750/kpk-ungkap-modus-pinjam-bendera-dalam-proyek-bnpb",
+          "published_at": "2026-11-20T08:04:18+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/kpk-gali-sestama-bnpb-soal-dugaan-plotting-anggaran-dsp-id1v",
+          "published_at": "2026-11-20T09:45:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 4,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-20",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "KPK Gali Sestama BNPB soal Dugaan Plotting Anggaran DSP",
+          "url": "https://tirto.id/kpk-gali-sestama-bnpb-soal-dugaan-plotting-anggaran-dsp-id1v",
+          "at": "2026-11-20T09:45:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "KPK Ungkap Modus 'Pinjam Bendera' dalam Proyek BNPB",
+          "url": "https://www.liputan6.com/news/read/8338750/kpk-ungkap-modus-pinjam-bendera-dalam-proyek-bnpb",
+          "at": "2026-11-20T08:04:18+07:00",
+          "owner": "Emtek",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_prabowo_bawa_pulang_investasi_a8e7",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Prabowo Bawa Pulang Investasi China",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 907 komentar di detik.com untuk topik ini. Nada bacaan: mayoritas kritis.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “'Negara tirai bambu' tak terhindari lagi. Mau tak mau, suka tak suka, harus 'dirangkul'. M” “Percaya sm presiden omon2 ....udah brpa banyak kunjungan keluar negeri yg dia lakukan sela”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261120094515-532-1429298/bappenas-2027-jadi-tahun-akselerasi-pertumbuhan-ekonomi",
+          "published_at": "2026-11-20T09:55:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261120102711-32-1429328/cak-imin-sebut-prabowo-sedang-lakukan-restart-indonesia",
+          "published_at": "2026-11-20T10:35:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 907
+      },
+      "tone": "Mayoritas kritis",
+      "quotes": [
+        {
+          "author": "Tiarpadan",
+          "platform": "detik.com",
+          "text": "'Negara tirai bambu' tak terhindari lagi. Mau tak mau, suka tak suka, harus 'dirangkul'. Mana ini suara-suara masyarakat yang suka marah-marah pada 10 tahun pemerintah sebelumnya k",
+          "score": 0
+        },
+        {
+          "author": "Maxi Sarapung Gimon",
+          "platform": "detik.com",
+          "text": "Percaya sm presiden omon2 ....udah brpa banyak kunjungan keluar negeri yg dia lakukan selama 1 thn ini,setiap balik kandang sllu lsi angin syurga komitmen investasi jumbo,tapi mana",
+          "score": 0
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di detik.com (907); tidak ada sinyal pembanding."
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_21",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Kabar Salah Hari Ini: Video Malta hingga Foto Buatan AI",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "TurnBackHoax memeriksa tiga kabar yang beredar pada 21 November 2026, dan ketiganya dinyatakan salah. Yang pertama, video yang diklaim sebagai serangan kembali terhadap Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi. Yang kedua, narasi bahwa Sri Sultan Hamengkubuwono X menghentikan program MBG di Jogja dan mengubah dananya untuk pendidikan. Yang ketiga, foto yang disebut menampilkan Jokowi ditangkap pasukan Brimob.",
+        "Pola yang terlihat bukan satu jenis tipuan, melainkan tiga cara berbeda. Video pipa minyak itu ternyata rekaman peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan, sehingga materi dari peristiwa lain dipasangi label baru. Foto Jokowi diketahui dibuat dan diedit dengan OpenAI, jadi gambar sintetis disajikan seolah dokumentasi. Sementara narasi MBG memindahkan tuntutan demonstran menjadi keputusan Sultan: tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+        "Sebaiknya pembaca berhenti di judul dan memeriksa sumber aslinya: cocokkan rekaman dengan peristiwa yang benar-benar terjadi, curigai gambar yang tampak terlalu pas dengan narasi, dan bedakan tuntutan demonstran dari keputusan pejabat. Menahan diri untuk tidak membagikan ulang adalah langkah paling murah."
+      ],
+      "action": "Periksa sumber asli video dan foto sebelum membagikan ulang.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-21T05:45:43+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-21",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Video \"Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan faktanya adalah video peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37487-salah-video-jalur-pipa-minyak-timur-barat-east-west-pipeline-arab-saudi-kembali-diserang"
+        },
+        {
+          "claim": "Sri Sultan Hamengkubuwono X Hentikan MBG di Jogja, Ubah Dana untuk Pendidikan",
+          "verdict": "salah",
+          "reason": "Tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37488-salah-sri-sultan-hamengkubuwono-x-hentikan-mbg-di-jogja-ubah-dana-untuk-pendidikan"
+        },
+        {
+          "claim": "Foto Jokowi Ditangkap Pasukan Brimob",
+          "verdict": "salah",
+          "reason": "Foto yang dibagikan diketahui dibuat dan diedit dengan OpenAI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37489-salah-foto-jokowi-ditangkap-pasukan-brimob"
+        }
+      ],
+      "pattern": "Kabar salah hari ini memakai materi peristiwa lain, gambar sintetis, dan tuntutan demonstran yang disajikan sebagai keputusan pejabat."
+    }
+  ]
+}
