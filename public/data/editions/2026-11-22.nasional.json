@@ -1,0 +1,806 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-22",
+  "scope": "nasional",
+  "published_at": "2026-11-22T05:45:56+07:00",
+  "coverage": {
+    "from": "2026-11-21T05:45:56+07:00",
+    "to": "2026-11-22T05:45:56+07:00"
+  },
+  "generated_at": "2026-11-22T05:45:56+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 18,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Setelah nyaris 10 tahun berunding, tarif nol baru berlaku setelah ratifikasi selesai.",
+      "kicker": "Nasional",
+      "title": "IEU-CEPA Diteken setelah Nyaris 10 Tahun, Tarif Nol Belum Berlaku",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IEU-CEPA dan IEU-IPA ditandatangani di Brussels pada 21 November 2026 setelah perundingan hampir 10 tahun, dengan 90,4% pos tarif Indonesia ditargetkan tarif no",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Indonesia dan Uni Eropa resmi menandatangani Perjanjian Kemitraan Ekonomi Komprehensif Indonesia–Uni Eropa (IEU-CEPA) di markas Komisi Eropa, Brussels, Belgia, pada 21 November 2026. Pada hari yang sama, kedua pihak juga meneken Perjanjian Perlindungan Investasi Indonesia–Uni Eropa (IEU-IPA). Penandatanganan ini disebut sebagai tahapan penting dalam memperkuat hubungan perdagangan dan ekonomi kedua pihak, sekaligus menutup perundingan yang berjalan hampir sepuluh tahun. Sehari sebelum prosesi, Airlangga Hartarto menggelar pertemuan bilateral dengan Komisioner Uni Eropa untuk Perdagangan dan Keamanan Ekonomi Maroš Šefčovič untuk membahas kesiapan kedua pihak memasuki tahap implementasi.",
+        "Jalur menuju meja tanda tangan itu panjang. Bahan menyebut pembahasan dimulai sejak Juli 2016 dan mencapai kesepakatan substantif pada September 2025 di Bali. Pemerintah Indonesia menargetkan perjanjian mulai diterapkan secara sementara, atau provisional application, pada 1 Januari 2027, sambil menunggu ratifikasi dan penyelesaian prosedur hukum domestik di kedua pihak. Rincian tahapan perundingan di antara dua tanggal itu tidak diuraikan dalam bahan, termasuk isu mana yang paling lama alot dibahas. Bahan juga tidak menyebut berapa putaran perundingan yang dilalui sebelum kesepakatan substantif itu tercapai. Yang jelas, penandatanganan bukan akhir proses, melainkan pintu masuk ke tahap berikutnya.",
+        "Nama-nama penanda tangan berbeda menurut peran. Untuk IEU-CEPA, penandatanganan dilakukan Menteri Perdagangan Budi Santoso bersama Šefčovič. Untuk IEU-IPA, Airlangga Hartarto yang mewakili Indonesia bersama Šefčovič. Ada perbedaan kecil antar bahan soal hari: laporan pagi menyebut prosesi berlangsung Sabtu, 21 November 2026, sedangkan laporan sore menulis Jumat, 21 November 2026. Tanggalnya sama, penyebutan nama harinya berbeda, dan bahan tidak menjelaskan mana yang dimaksud. Dalam pertemuan bilateral, Airlangga didampingi Budi Santoso, Wakil Menteri Investasi dan Hilirisasi/BKPM Todotua Pasaribu, Wakil Menteri Perindustrian Faisol Riza, serta Duta Besar RI untuk Belgia Andy Rachmianto.",
+        "Isi yang paling banyak dikutip adalah soal tarif. Menurut Airlangga, 90,4% pos tarif produk Indonesia akan langsung menikmati tarif nol persen sejak hari pertama perjanjian berlaku. Sebanyak 8,37% pos tarif lainnya baru dihapus bertahap dalam tiga hingga 15 tahun atau lewat skema kuota tarif. Secara keseluruhan, bahan menyebut perjanjian ini mencakup liberalisasi lebih dari 98% perdagangan bilateral. Dari sisi Uni Eropa, Šefčovič menyatakan tarif dihapus untuk lebih dari 98% pos tarif yang mencakup hampir 100% nilai perdagangan dalam kurun 15 tahun. Perlu dicatat, sejak hari pertama di sini berarti hari perjanjian mulai berlaku, bukan hari penandatanganan.",
+        "Satu hal yang perlu dicermati dari angka itu adalah satuannya. Bahan berbicara tentang pos tarif, yaitu baris komoditas dalam daftar tarif, dan tidak menjelaskan apakah 90,4% dihitung dari jumlah baris atau dari nilai perdagangan yang tercakup. Uni Eropa memakai dua ukuran sekaligus ketika menyebut penghapusan tarif untuk lebih dari 98% pos tarif yang mencakup hampir 100% nilai perdagangan. Perbedaan cara menghitung ini penting bagi pembaca yang ingin menaksir dampak nyata pada ekspor, dan bahan yang ada belum memuat tabel pendukungnya. Pembaca juga belum bisa mengetahui pos tarif mana yang masuk kelompok 8,37% yang dihapus bertahap.",
+        "Komoditas yang disebut bakal menikmati tarif nol lebih awal adalah minyak kelapa sawit dan turunannya, garmen, kain, aksesori, alas kaki, sepatu kulit, sneakers, sepatu olahraga, hingga sandal. Menurut Airlangga, sektor padat karya dan komoditas unggulan akan merasakan manfaat lebih awal. Namun kapan tepatnya tarif itu mulai berlaku masih bergantung pada ratifikasi dan keputusan penerapan sementara; bahan hanya menyebut target 1 Januari 2027. Bahan juga tidak memuat daftar lengkap pos tarif per jenis barang, sehingga produk di luar yang disebut belum bisa dipastikan jadwalnya.",
+        "Angka dasar manfaat disebut dalam dua versi yang tidak identik. Airlangga menyebut nilai perdagangan bilateral sekitar 30 miliar dolar Amerika per tahun, dengan pasar Uni Eropa berpenduduk sekitar 450 juta jiwa. Šefčovič, dikutip dari sisi Uni Eropa, menyebut nilai perdagangan barang kedua pihak hampir 29 miliar euro pada 2025, perdagangan jasa lebih dari 9 miliar euro pada 2024, dan investasi Eropa di Indonesia mendekati 25 miliar euro. Karena mata uang dan tahun acuannya berbeda, kedua angka tidak bisa langsung dibandingkan; bahan tidak menyatukan keduanya ke satu dasar hitung. Bahan juga tidak menyebut tahun acuan untuk angka 30 miliar dolar tersebut.",
+        "Bahan juga memuat hitungan dari sisi Uni Eropa. Šefčovič menyebut kesepakatan ini diperkirakan menghemat bea masuk bagi eksportir Uni Eropa sekitar 650 juta euro setiap tahun. Uni Eropa memperkirakan ekspornya ke Indonesia berpotensi naik lebih dari 6 miliar euro secara bertahap, terutama ditopang produk mesin dan kendaraan bermotor. Sementara ekspor Indonesia ke Eropa diperkirakan ikut meningkat dengan dukungan minyak nabati, pakaian jadi, dan alas kaki. Uni Eropa juga menyatakan bersama-sama mengatasi hambatan non-tarif yang selama ini kerap menghambat kegiatan bisnis, meski bentuk konkretnya belum dirinci.",
+        "Airlangga menegaskan penandatanganan bukan akhir dari proses. Pemerintah, menurutnya, menyiapkan tahapan ratifikasi bersama Dewan Perwakilan Rakyat agar kesepakatan bisa segera diterapkan, dengan target dunia usaha kedua kawasan merasakan manfaatnya mulai awal 2027. Di sisi Uni Eropa, bahan hanya menyebut perlunya penyelesaian prosedur hukum domestik tanpa memerinci lembaga mana yang harus menyetujui, termasuk apakah parlemen negara anggota ikut memutuskan. Karena itu urutan pasti ratifikasi di Eropa belum jelas dari bahan yang ada. Yang disebut sebagai jalan tengah adalah penerapan sementara pada awal 2027 sembari menunggu proses itu selesai.",
+        "Selain tarif, kedua pihak membahas kesiapan mekanisme kelembagaan yang akan mendukung pelaksanaan perjanjian, termasuk pembentukan sejumlah komite dan subkomite teknis. Airlangga menyatakan pemerintah akan memperkuat koordinasi dengan Uni Eropa dan pemangku kepentingan untuk mengoptimalkan pemanfaatan perjanjian, meningkatkan daya saing industri dalam negeri, menarik investasi berkualitas, dan menciptakan lapangan kerja. Perjanjian perlindungan investasi atau IEU-IPA ditandatangani terpisah pada hari yang sama. Bahan tidak menjelaskan isi pasal perlindungan investasi tersebut, sehingga kadar perlindungan bagi investor kedua pihak belum bisa dinilai dari bahan ini.",
+        "Cakupan perjanjian tidak berhenti pada barang. Bahan menyebut kerja sama mencakup ekonomi digital, perdagangan jasa, hingga peningkatan kualitas investasi. Indonesia membuka peluang bagi perusahaan Eropa masuk ke sektor kendaraan listrik, mineral kritis, energi terbarukan, dan elektronik. Sayangnya, syarat masuk, batasan kepemilikan, dan kewajiban kerja sama belum dirinci dalam bahan. Pembaca yang ingin mengetahui apakah ada kewajiban alih teknologi atau kandungan lokal harus menunggu dokumen perjanjian atau penjelasan resmi berikutnya, karena bahan yang ada hanya menyebut daftar sektor.",
+        "Penandatanganan ini ditempatkan dalam konteks yang lebih luas. Airlangga menyebutnya momentum penting di tengah perubahan peta perdagangan global, meningkatnya ketegangan geopolitik dan geoekonomi, serta kecenderungan proteksionisme di berbagai negara. Ia menyebut penandatanganan sebagai tonggak sejarah hubungan Indonesia dan Uni Eropa, dan menegaskan ini lebih dari seremoni diplomatik. Pernyataan itu merupakan penilaian pemerintah Indonesia, bukan kesimpulan bersama yang dirumuskan dalam teks perjanjian. Bahan tidak memuat penilaian dari pihak lain, misalnya organisasi masyarakat sipil atau serikat pekerja, mengenai isi kesepakatan.",
+        "Pertanyaan soal dampak bagi pasar dalam negeri belum terjawab tuntas oleh bahan. Bahan tidak memerinci produk Eropa mana yang tarifnya turun di Indonesia, seberapa besar penurunannya, dan sektor mana yang mendapat perlindungan. Soal standar lingkungan juga belum jelas: bahan tidak menyebut bab lingkungan, komitmen iklim, atau mekanisme sanksi bila terjadi pelanggaran. Satu-satunya petunjuk adalah pernyataan Uni Eropa bahwa hambatan non-tarif akan diatasi bersama, serta adanya penghapusan tarif bertahap dan kuota tarif untuk sebagian pos tarif. Rincian soal kekhawatiran produk Eropa dan standar lingkungan karena itu belum tersedia dalam bahan ini.",
+        "Ukuran keberhasilan yang diajukan pemerintah juga perlu dicatat. Airlangga menyatakan keberhasilan IEU-CEPA akan diukur dari sejauh mana perjanjian mendorong investasi produktif, meningkatkan nilai tambah domestik, memperkuat industri nasional, serta menciptakan lapangan kerja di Indonesia maupun Uni Eropa. Sejumlah laporan menyebut kesepakatan ini dinilai membuka peluang baru bagi perusahaan, petani, dan pekerja, khususnya usaha kecil, serta memperkuat kerja sama ekonomi dan akses pasar. Laporan lain menyebut daya saing Indonesia di pasar Eropa meningkat. Semua itu masih berupa penilaian awal; hasilnya baru bisa diuji setelah perjanjian berlaku, dan bahan tidak memuat target kuantitatif seperti tambahan investasi atau lapangan kerja."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Uni Eropa dalam konteks perjanjian ini?",
+          "a": "Uni Eropa adalah organisasi antarpemerintah dan supranasional beranggotakan negara-negara Eropa; sejak 31 Januari 2020 anggotanya 27 negara, dari Austria hingga Swedia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud dengan IEU-CEPA?",
+          "a": "Perjanjian kemitraan ekonomi komprehensif Indonesia–Uni Eropa yang menurut bahan latar membuka akses pasar lebih luas, termasuk tarif nol persen untuk 90,4% produk Indonesia.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261121085713-4-787157/ieu-cepa-cepa-diteken-hari-ini-menko-airlangga-matangkan-implementasi"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman ratifikasi di DPR dan keputusan penerapan sementara, karena tarif nol baru berlaku setelah proses itu.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261121085713-4-787157/ieu-cepa-cepa-diteken-hari-ini-menko-airlangga-matangkan-implementasi",
+          "published_at": "2026-11-21T10:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/indonesia-teken-ieu-cepa-904-tarif-ke-eropa-nol-persen-id4R",
+          "published_at": "2026-11-21T21:25:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261121170723-92-1429895/ri-resmi-tandatangani-perjanjian-ieu-cepa",
+          "published_at": "2026-11-21T19:11:43+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8763775/ri-uni-eropa-perkuat-kerja-sama-perdagangan-investasi-berkelanjutan",
+          "published_at": "2026-11-21T21:52:54+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-21",
+      "changes": [],
+      "dek": "IEU-CEPA diteken di Brussels dengan janji tarif nol bagi 90,4% pos tarif, namun manfaatnya menunggu ratifikasi dan penerapan sementara.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "4",
+          "label": "media"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-11-19",
+          "title": "IEU-CEPA Diteken 21 November"
+        },
+        {
+          "date": "2026-11-22",
+          "title": "IEU-CEPA akhirnya diteken"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "RI & Uni Eropa Perkuat Kerja Sama Perdagangan-Investasi Berkelanjutan",
+          "url": "https://news.detik.com/berita/d-8763775/ri-uni-eropa-perkuat-kerja-sama-perdagangan-investasi-berkelanjutan",
+          "at": "2026-11-21T21:52:54+07:00",
+          "owner": "CT Corp",
+          "media": 3
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Indonesia Teken IEU-CEPA, 90,4% Tarif ke Eropa Nol Persen",
+          "url": "https://tirto.id/indonesia-teken-ieu-cepa-904-tarif-ke-eropa-nol-persen-id4R",
+          "at": "2026-11-21T21:25:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_polri_ungkap_dugaan_makar_peny_0dcb",
+      "angle": "Bareskrim geledah rumah di Bogor dan sebut empat posko; dokumen serta spanduk disita.",
+      "kicker": "Kriminal",
+      "title": "Polri Sebut Empat Posko dalam Kasus Dugaan Makar",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bareskrim menyita dokumen dan spanduk dari rumah di Bogor yang diduga jadi posko, dan menyebut sekitar empat posko terkait dugaan makar.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Direktorat Tindak Pidana Umum Bareskrim Polri menggeledah sejumlah rumah di Jakarta, Bogor, dan Tangerang dalam penyidikan dugaan makar yang berpangkal dari kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto. Direktur Tindak Pidana Umum Bareskrim Brigjen Susatyo Purnomo Condro mengatakan penyidik menemukan sekitar empat lokasi yang terindikasi dipakai sebagai posko aktivitas terkait dugaan makar. Ia menjanjikan rincian lengkap soal temuan itu disampaikan pada konferensi pers. Keterangan tersebut disampaikan pada Sabtu, 21 November 2026, beberapa hari setelah rumah seorang tersangka lain digeledah di Jakarta Selatan. Sampai saat itu, belum ada penjelasan resmi yang memaparkan isi setiap posko satu per satu.",
+        "Di Bogor, penyidik menyita sejumlah dokumen dan spanduk dari sebuah rumah yang diduga dijadikan posko oleh Kombes IM. Susatyo menyebut penggeledahan itu menemukan benang merah terkait dugaan makar karena penyidik menemukan adanya perbuatan permulaan. Ia menggambarkan posko sebagai tempat yang menjadi dugaan pemufakatan menuju permulaan perbuatan, dan berharap konstruksi perkara yang dibangun penyidik menjadi sempurna. Bahan tidak merinci isi dokumen maupun teks spanduk yang disita, sehingga belum bisa dipastikan apa peran benda-benda itu dalam konstruksi perkara. Tidak ada pula keterangan tentang berapa banyak dokumen dan spanduk yang dibawa penyidik.",
+        "Bareskrim sebelumnya menyatakan ada tiga fokus dalam konstruksi perkara ini: perbuatan persiapan, pemufakatan yang dimulai dari tahap persiapan, dan permulaan pelaksanaan perbuatan yang diduga sebagai makar. Penyidik menempatkan posko sebagai titik yang menghubungkan pemufakatan dengan permulaan perbuatan. Bahan-bahan yang tersedia tidak memuat penjelasan lebih jauh soal batas antara ketiga tahap itu, termasuk perbuatan mana yang masuk kategori persiapan dan mana yang sudah dianggap permulaan pelaksanaan. Karena itu, rangkaian peristiwa yang disusun penyidik masih harus dijelaskan secara resmi, dan pembaca belum bisa menilai sendiri di tahap mana dugaan perbuatan itu berada.",
+        "Perlu dicatat, istilah makar dalam perkara ini adalah label yang dipakai penyidik, bukan kesimpulan yang sudah diuji di pengadilan. Bahan tidak memuat uraian soal definisi makar atau unsur-unsurnya, sehingga tidak bisa dijelaskan dari bahan ini apa saja yang harus dibuktikan untuk memenuhi tuduhan tersebut. Yang tersedia hanyalah rumusan tiga fokus konstruksi perkara dan pasal yang dijeratkan kepada para tersangka. Pembaca sebaiknya membedakan antara tuduhan penyidik, status tersangka, dan putusan pengadilan yang belum ada. Istilah yang mudah disalahpahami ini juga menjadi alasan mengapa rincian konferensi pers layak ditunggu.",
+        "Ada perbedaan angka yang perlu dicatat. Pemberitaan Jumat, 20 November, menyebut penyidik menggeledah lima lokasi rumah terkait dua perwira yang disebut dengan inisial BJP TK dan KBP IM di daerah Bogor, ditambah satu lokasi di Kecamatan Curug, Tangerang. Sehari kemudian, Susatyo berbicara tentang sekitar empat posko yang terindikasi digunakan untuk aktivitas terkait dugaan makar. Dua angka itu tidak dijelaskan hubungannya: apakah empat posko merupakan bagian dari lima rumah yang digeledah, atau hitungannya berubah setelah penyidik memeriksa lokasi lain. Bahan tidak memuat penjelasan, jadi perbedaan ini sebaiknya tidak disimpulkan sendiri. Lokasi penggeledahan juga disebut berbeda antar pemberitaan, yaitu Bogor dan Tangerang pada satu hari, lalu Jakarta, Bogor, dan Tangerang pada hari berikutnya.",
+        "Kasus ini berangkat dari dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto dan sejumlah figur lain. Dari situ penyidik meningkatkan status perkara dugaan tindak pidana makar ke tahap penyidikan. Bahan tidak menguraikan kapan penyadapan diduga terjadi, siapa saja yang menjadi sasaran selain Presiden, atau bagaimana penyadapan itu dilakukan. Yang disebut hanya bahwa perkara bermula dari dugaan penyadapan ilegal dan kemudian berkembang ke dugaan makar. Tidak ada keterangan tentang siapa yang melaporkan dugaan penyadapan itu, atau apakah ada laporan polisi yang bisa diakses publik. Titik awal inilah yang membuat perkara ini berbeda dari penggeledahan biasa.",
+        "Menurut penjelasan latar tentang aturan penyadapan, penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika, dan penyadapan tanpa dasar hukum dapat dipidana. Aturan itu membantu memahami mengapa penyadapan menjadi pintu masuk perkara ini, tetapi bahan tidak menjelaskan apakah dugaan penyadapan dalam kasus ini memenuhi atau justru melanggar ketentuan tersebut. Pemberitaan hanya menyebut penyadapan itu diduga ilegal, tanpa merinci alat, izin, atau lokasi penyadapan. Karena itu, penilaian soal sah atau tidaknya penyadapan belum bisa dilakukan hanya dari bahan yang tersedia.",
+        "Hingga berita terakhir yang masuk bahan, penyidik masih bekerja di tahap penyidikan dan terus melakukan penggeledahan di Jakarta Selatan, Bogor, dan Tangerang. Sebuah pemberitaan malam 21 November menyebut Bareskrim belum angkat bicara mengenai penetapan tersangka dalam kasus dugaan makar ini. Keterangan itu tampak berselisih dengan pemberitaan sebelumnya yang sudah menyebut empat tersangka. Bahan tidak menjelaskan apakah perbedaan itu soal rumusan perkara, soal waktu pengambilan keterangan, atau soal siapa yang berbicara kepada media. Keduanya perlu dibaca sebagai keterangan yang belum tuntas, bukan sebagai bukti bahwa salah satu pemberitaan pasti keliru. Perkembangan resmi berikutnya diharapkan menjernihkan hal ini.",
+        "Dalam pemberitaan yang lebih awal, empat nama disebut telah ditetapkan sebagai tersangka: eks Direktur Tindak Pidana Narkoba Bareskrim Polri Irjen Eko Hadi Santoso; eks Kapolri yang juga Kepala Kantor Staf Presiden Jenderal Listyo Sigit Prabowo; Kepala Divisi Hukum Polri Irjen Ahrie Sonta Nasution; dan eks Kadiv TIK Polri Irjen Slamet Uliandi. Mereka dijerat dengan Pasal 258 KUHP dan/atau Pasal 332 KUHP ayat (1) dan (2) dan/atau Pasal 32 ayat (1) UU ITE. Bahan tidak memuat penjelasan tentang isi pasal-pasal tersebut maupun perbuatan yang dipersangkakan kepada masing-masing nama. Tidak ada keterangan pula soal siapa yang lebih dulu ditetapkan dan pada tanggal berapa penetapan itu dilakukan.",
+        "Status tersangka bukan berarti bersalah. Menurut penjelasan latar tentang prosedur Polri, seseorang ditetapkan penyidik berdasarkan minimal dua alat bukti, dan putusan tetap berada di pengadilan. Karena itu, empat nama yang disebut di atas belum tentu terbukti melakukan tindak pidana, sekalipun penyidik menyebut konstruksi perkaranya semakin lengkap. Bahan juga tidak menyebut apakah mereka sudah memberi keterangan, mengajukan keberatan, atau mendatangkan kuasa hukum. Pembaca sebaiknya menahan kesimpulan sampai proses hukum berjalan lebih jauh, termasuk bila kelak perkara dilimpahkan ke kejaksaan dan disidangkan.",
+        "Pertanyaan soal alat bukti penyadapan belum terjawab oleh bahan. Pemberitaan menyebut kasus bermula dari dugaan penyadapan ilegal dan bahwa penyidik menemukan berbagai aktivitas di lokasi yang digeledah, tetapi tidak menyebut perangkat, aplikasi, atau hasil sadapan apa pun sebagai barang bukti. Susatyo hanya mengatakan hasil penggeledahan akan disampaikan saat konferensi pers. Sampai saat itu, rincian alat bukti penyadapan belum diumumkan, termasuk apakah penyidik menyita telepon, komputer, alat perekam, atau perangkat lain. Ketiadaan rincian ini membuat klaim soal penyadapan belum bisa diperiksa secara independen oleh publik.",
+        "Dasar Polri mengaitkan posko-posko itu dengan Presiden Prabowo adalah rangkaian perkara itu sendiri: penyidikan bermula dari dugaan penyadapan ilegal terhadap Presiden, lalu menyasar dugaan makar. Penyidik menyebut posko sebagai tempat dugaan pemufakatan menuju permulaan perbuatan. Namun bahan tidak memuat bukti atau keterangan yang menghubungkan secara langsung isi posko dengan Presiden, misalnya dokumen yang menyebut nama Presiden atau rencana tertentu yang menyasar beliau. Hubungan itu masih berupa konstruksi penyidik yang dijanjikan dijelaskan pada konferensi pers. Tanpa rincian tersebut, sulit menilai seberapa kuat kaitan antara benda yang disita dan tuduhan yang dibangun.",
+        "Bantahan atau keterangan dari pihak yang rumahnya digeledah belum ada dalam bahan. Tidak ada kutipan dari Kombes IM, perwira yang disebut dengan inisial BJP TK, maupun Irjen Eko Hadi Santoso mengenai penggeledahan, penyitaan dokumen dan spanduk, atau tuduhan makar. Pemberitaan yang tersedia hanya memuat keterangan penyidik. Karena itu, pembaca belum bisa menimbang versi kedua belah pihak, dan tidak semestinya menyimpulkan bahwa pihak yang digeledah membenarkan maupun membantah semua yang disebut polisi. Ketika keterangan mereka muncul, isinya bisa mengubah gambaran soal apa yang sebenarnya terjadi di lokasi-lokasi tersebut.",
+        "Penggeledahan di Bogor bukan yang pertama. Sebelumnya, Bareskrim menggeledah rumah Irjen Eko Hadi Santoso di kawasan Cipete, Jakarta Selatan, pada Selasa malam, 17 November. Bahan tidak menyebut apa yang disita dari rumah itu, berapa lama penggeledahan berlangsung, atau apakah ada pihak lain yang hadir saat penyidik bekerja. Urutan ini menunjukkan penyidikan bergerak dari rumah satu tersangka ke lokasi lain, tetapi bahan tidak menjelaskan bagaimana masing-masing lokasi saling terkait. Tidak dijelaskan pula apakah lokasi-lokasi itu diperiksa karena keterangan tersangka, karena dokumen tertentu, atau karena informasi lain yang diterima penyidik.",
+        "Yang masih terbuka adalah konferensi pers yang dijanjikan penyidik. Dari situ publik bisa mendapat rincian soal empat posko, isi dokumen dan spanduk, serta pasal yang dikenakan kepada tiap nama. Sejauh ini, yang bisa dipastikan hanya bahwa penyidikan berjalan, penggeledahan dilakukan di tiga wilayah, dan penyidik menyebut adanya dugaan pemufakatan serta permulaan perbuatan. Selebihnya, termasuk alat bukti penyadapan, dasar kaitan dengan Presiden, dan bantahan pihak yang digeledah, masih menunggu keterangan resmi. Sampai itu terjadi, sebaiknya setiap klaim dibaca sebagai keterangan sementara dari satu pihak."
+      ],
+      "explain": [
+        {
+          "q": "Mengapa penyadapan bisa menjadi perkara pidana?",
+          "a": "Penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Tersangka ditetapkan penyidik berdasarkan minimal dua alat bukti; status itu belum berarti bersalah karena putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran Polri dalam penyidikan?",
+          "a": "Menurut UU Nomor 2 Tahun 2002, Polri adalah alat negara yang memelihara keamanan dan ketertiban, menegakkan hukum, serta memberi perlindungan dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024, setelah sebelumnya menjadi Menteri Pertahanan pada 2019-2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        }
+      ],
+      "action": "Baca kronologi dan tiga fokus konstruksi perkara sebelum menyimpulkan, lalu tunggu rincian konferensi pers soal empat posko.",
+      "image": {
+        "url": "assets/92bbf72bb3.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Polri Sebut Empat Posko dalam Kasus Dugaan Makar"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261120195131-12-1429675/nama-baru-di-kasus-dugaan-makar-brigjen-tedjo-dan-kombes-iman",
+          "published_at": "2026-11-21T06:40:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/21/337/3255370/geledah-rumah-di-bogor-polri-temukan-perbuatan-permulaan-makar-listyo-cs",
+          "published_at": "2026-11-21T14:25:43+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "Geledah Rumah di Bogor, Polri Temukan Perbuatan Permulaan Makar Listyo Cs",
+          "url": "https://news.okezone.com/read/2026/11/21/337/3255370/geledah-rumah-di-bogor-polri-temukan-perbuatan-permulaan-makar-listyo-cs",
+          "at": "2026-11-21T14:25:43+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Nama Baru di Kasus Dugaan Makar: Brigjen Tedjo dan Kombes Iman",
+          "url": "https://www.cnnindonesia.com/nasional/20261120195131-12-1429675/nama-baru-di-kasus-dugaan-makar-brigjen-tedjo-dan-kombes-iman",
+          "at": "2026-11-21T06:40:09+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_kebakaran_pabrik_permen_cikand_99db",
+      "angle": "Polisi menerima laporan 42 karyawan belum bisa dihubungi; empat luka ringan.",
+      "kicker": "Bencana",
+      "title": "42 Karyawan Belum Dihubungi dalam Kebakaran Pabrik Permen Cikande",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Polisi menyebut 42 karyawan belum bisa dihubungi, sementara empat orang mengalami luka ringan dan dirawat di klinik.",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Kebakaran melanda pabrik permen PT Fonusa Agung Mulia di Cikande pada Sabtu sore, 21 November 2026. Hingga malam, polisi menyebut 42 karyawan belum bisa dihubungi, sementara empat orang mengalami luka ringan. Laporan-laporan itu muncul ketika api masih membakar area pabrik, sehingga jumlah korban dan keberadaan pekerja kemungkinan masih berubah. Lokasi pabrik disebut berada di Cikande, Banten, sedangkan laporan lain menulis Cikande, Serang; perbedaan penyebutan itu belum dijelaskan dalam bahan yang tersedia.",
+        "Kasi Humas Polres Serang Ipda Novi Supriyanto mengatakan puluhan pekerja itu masih belum diketahui keberadaannya. Menurut dia, ada 42 karyawan yang belum bisa dihubungi. Polisi belum memastikan apakah mereka berada di dalam pabrik atau hanya tidak bisa dihubungi karena ponselnya mati. \"Apakah HP-nya mati atau karyawan masih di dalam, ini masih dalam pencarian,\" ucapnya kepada wartawan. Bahan yang ada belum memuat berapa orang yang sudah ditemukan, sehingga angka 42 masih berstatus belum bisa dihubungi, bukan jumlah korban yang sudah dikonfirmasi berada di lokasi.",
+        "Empat orang dilaporkan mengalami luka ringan. Kabid Humas Polda Banten Kombes Maruli Hutapea menyebut seluruh korban luka sudah dibawa ke klinik untuk mendapatkan penanganan medis. Bahan tidak menyebut nama, lokasi, maupun jumlah klinik yang menampung mereka, dan tidak merinci jenis luka yang dialami. Polisi juga menyatakan masih mengecek informasi soal orang yang terjebak. Karena pernyataan itu disampaikan saat pemadaman belum selesai, data korban kemungkinan masih bisa bertambah setelah petugas bisa menjangkau bagian pabrik yang sebelumnya tertutup api.",
+        "Damkar Kabupaten Serang mengerahkan tiga unit mobil pemadam dari Pos Jawilan, Pos Tanara, dan Mako Serang. Kebakaran terjadi sejak sore, dan pada malam harinya api masih membakar area pabrik. Damkar melalui unggahan Instagram Story menyebut petugas kesulitan memadamkan api karena kendala pasokan air. Video yang dibagikan akun Instagram damkar memperlihatkan api yang sudah membesar serta asap hitam mengepul dari area pabrik. Bahan tidak menyebut berapa lama pemadaman berlangsung; hingga laporan terakhir, prosesnya belum dinyatakan selesai.",
+        "Penyebab kebakaran belum dijelaskan. Bahan tidak memuat keterangan polisi maupun pengelola pabrik soal asal api, sehingga penyebabnya belum bisa dipastikan. Pabrik itu disebut sebagai milik PT Fonusa Agung Mulia, tetapi tidak ada pernyataan perusahaan dalam bahan yang tersedia. Langkah pencarian yang terdokumentasi sejauh ini adalah penelusuran polisi terhadap keberadaan 42 karyawan dan pengecekan informasi soal orang yang terjebak di dalam pabrik. Rincian operasi evakuasi, jumlah tim yang diterjunkan, serta hasil pencarian hari ini belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu PT Fonusa Agung Mulia?",
+          "a": "Pabrik permen di Cikande, Banten, yang menjadi lokasi kebakaran dalam laporan ini.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8763686/pabrik-permen-di-cikande-serang-kebakaran-asap-hitam-mengepul"
+          }
+        },
+        {
+          "q": "Apa bedanya \"belum bisa dihubungi\" dengan \"hilang\"?",
+          "a": "Bahan menyebut 42 karyawan belum bisa dihubungi; polisi belum memastikan apakah mereka berada di dalam pabrik atau hanya tidak terjangkau karena ponselnya mati.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8763686/pabrik-permen-di-cikande-serang-kebakaran-asap-hitam-mengepul"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud Pos Jawilan, Pos Tanara, dan Mako Serang?",
+          "a": "Tiga pos atau markas asal unit mobil pemadam kebakaran yang diberangkatkan ke lokasi kebakaran.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8763686/pabrik-permen-di-cikande-serang-kebakaran-asap-hitam-mengepul"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi polisi dan Damkar Serang soal jumlah karyawan yang sudah ditemukan.",
+      "image": {
+        "url": "assets/7a9d79fb4e.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "42 Karyawan Belum Dihubungi dalam Kebakaran Pabrik Permen Cikande"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261121222202-20-1429942/kebakaran-pabrik-permen-di-cikande-serang-42-karyawan-hilang-kontak",
+          "published_at": "2026-11-21T22:27:41+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8763686/pabrik-permen-di-cikande-serang-kebakaran-asap-hitam-mengepul",
+          "published_at": "2026-11-21T20:06:32+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_usulan_ump_dki_2027_00f9",
+      "angle": "Sekda DIY mengumumkan UMP 2027 Rp2.725.000, naik 12,72 persen, menunggu SK gubernur.",
+      "kicker": "Ekonomi",
+      "title": "UMP DIY 2027 Disebut Naik 12,72 Persen jadi Rp2,725 Juta",
+      "status": "sebagian",
+      "truth": {
+        "claim": "UMP DIY 2027 diumumkan Rp2.725.000, naik 12,72 persen dari Rp2.417.495 pada 2026.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Pemda DIY mengumumkan Upah Minimum Provinsi 2027 sebesar Rp2.725.000, naik Rp307.505 atau sekitar 12,72 persen dari Rp2.417.495 pada 2026. Angka itu disampaikan Sekretaris Daerah DIY, Ni Made Dwipanti Indriyanti, di Kepatihan, Kota Yogyakarta, Sabtu (21/11). Menurutnya, besaran tersebut akan ditetapkan melalui surat keputusan gubernur, sehingga statusnya masih pengumuman pemerintah daerah yang menunggu keputusan resmi, bukan aturan yang sudah berlaku hari itu.",
+        "Dasar penghitungannya adalah rekomendasi Dewan Pengupahan DIY yang beranggotakan serikat pekerja, unsur pengusaha, pemerintah, dan akademisi. Perhitungan juga mengacu pada data Kebutuhan Hidup Layak dari Kementerian Ketenagakerjaan dengan formula yang mencakup upah minimum saat ini, pertumbuhan ekonomi, inflasi, dan indeks alfa. Nominal KHL sebesar Rp4,6 juta tidak muncul di bahan, begitu pula penjelasan resmi soal selisihnya dengan UMP, sehingga perbandingan keduanya belum dapat dihitung dari bahan ini.",
+        "Selain UMP, Dewan Pengupahan DIY merekomendasikan Upah Minimum Sektoral Provinsi 2027 untuk tiga sektor berdasarkan Klasifikasi Baku Lapangan Usaha Indonesia. Sektor akomodasi dan makan minum, termasuk hotel bintang lima sampai tiga serta penyediaan makanan di bangunan tetap, diusulkan Rp2.745.000 atau naik sekitar 0,734 persen. Konstruksi konvensional gedung hunian, perkantoran, jalan, dan rel diusulkan Rp2.740.000 atau naik 0,550 persen, sedangkan telekomunikasi, pemrograman komputer, konsultasi infrastruktur komputasi, dan jasa informasi lainnya Rp2.735.000 atau naik 0,367 persen.",
+        "Menurut keterangan Ni Made seperti dikutip Tirto, UMP dan UMSP berlaku bagi pekerja atau buruh dengan masa kerja kurang dari satu tahun. Pekerja dengan masa kerja satu tahun atau lebih berpedoman pada struktur dan skala upah yang wajib disusun perusahaan, dengan memperhatikan kemampuan perusahaan dan produktivitas. Untuk tahap berikutnya, penetapan Upah Minimum Kabupaten/Kota di DIY dijadwalkan selambat-lambatnya lima hari setelah pengumuman UMP 2027. Tanggal mulai berlakunya UMP 2027 belum dijelaskan dalam bahan yang tersedia.",
+        "Reaksi serikat pekerja atas angka ini belum tergambar: mereka tercatat sebagai anggota Dewan Pengupahan yang merekomendasikan besaran UMP, tetapi belum ada pernyataan sikap yang dikutip. Hal serupa berlaku untuk Sultan HB X. Bahan tidak memuat tanggapan Gubernur DIY itu soal angka KHL Rp4,6 juta, sehingga jawabannya belum bisa disampaikan di sini. Yang bisa dipastikan, keputusan final menunggu SK gubernur, dan rincian teknis seperti tanggal berlaku masih menunggu penjelasan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu UMP?",
+          "a": "Upah Minimum Provinsi adalah batas upah minimum tingkat provinsi; bahan menyebut Pemda DIY menetapkan UMP 2027 naik 12,72 persen dari tahun sebelumnya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta"
+          }
+        },
+        {
+          "q": "Apa itu KHL dan dari mana datanya?",
+          "a": "Kebutuhan Hidup Layak adalah acuan yang dipakai dalam penetapan; bahan menyebut penetapan UMP berdasarkan rekomendasi Dewan Pengupahan dan data KHL dari Kementerian Ketenagakerjaan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta"
+          }
+        },
+        {
+          "q": "Siapa anggota Dewan Pengupahan DIY?",
+          "a": "Dewan Pengupahan DIY adalah badan pemberi rekomendasi upah yang beranggotakan serikat pekerja, unsur pengusaha, pemerintah, dan akademisi.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta"
+          }
+        }
+      ],
+      "action": "Pantau SK gubernur dan penetapan UMK DIY dalam lima hari ke depan untuk memastikan angka upah berlaku.",
+      "image": {
+        "url": "assets/f534093d00.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "UMP DIY 2027 Disebut Naik 12,72 Persen jadi Rp2,725 Juta"
+      },
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ump-diy-2027-naik-rp307505-atau-127-persen-jadi-rp2725000-id4y",
+          "published_at": "2026-11-21T16:48:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+          "published_at": "2026-11-21T13:05:08+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-20",
+      "previous_edition": "2026-11-21",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "UMP DIY 2027 Naik Rp307.505 atau 12,7 Persen, Jadi Rp2.725.000",
+          "url": "https://tirto.id/ump-diy-2027-naik-rp307505-atau-127-persen-jadi-rp2725000-id4y",
+          "at": "2026-11-21T16:48:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Pemda DIY Tetapkan UMP 2027 Sebesar Rp2,7 Juta",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261121125807-92-1429808/pemda-diy-tetapkan-ump-2027-sebesar-rp27-juta",
+          "at": "2026-11-21T13:05:08+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_pln_kejar_pemadaman_sulawesi_t_d3e0",
+      "angle": "PLN menyebut pemadaman bergilir Sulawesi berakhir sepekan sebelum Natal",
+      "kicker": "Ekonomi",
+      "title": "PLN Targetkan Pemadaman Bergilir Sulawesi Berakhir Sebelum Natal",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Direktur Utama PT PLN Suroso Isnandar menargetkan pemadaman bergilir di Sulawesi teratasi pada minggu pertama sebelum Natal.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Direktur Utama PT PLN Suroso Isnandar menargetkan pemadaman bergilir di Sulawesi berakhir pada minggu pertama sebelum Natal. Ia menyampaikannya usai meninjau pembangkit di Jeneponto, Sulawesi Selatan, Sabtu (21/11), seperti dilaporkan Antara dan Republika. \"PLN menargetkan persoalan pemadaman bergilir dapat teratasi pada minggu pertama sebelum Natal,\" ujarnya, dengan harapan tidak ada lagi pemadaman listrik berkala di wilayah terdampak. Satu hal perlu dicatat: Republika menulis target itu sebagai 'sepekan sebelum Natal 2023', padahal berita bertanggal November 2026, sehingga tahun yang dimaksud belum jelas dari bahan.",
+        "Dalam kunjungan itu Suroso meninjau sejumlah pembangkit, antara lain PLTU milik PLN Nusantara Power berkapasitas 200 MW dan PLTU swasta atau Independent Power Producer (IPP) Jeneponto. Peninjauan disebut untuk memastikan pembangkit yang menjadi pemikul beban dasar berada dalam kondisi prima. Ia memastikan seluruh pembangkit terpelihara dan beroperasi optimal sehingga mampu menghasilkan daya yang cukup bagi kebutuhan listrik Sulawesi Bagian Selatan. Namun pada kesempatan yang sama ia mengakui bahwa sistem kelistrikan Sulawesi sedang berada dalam kondisi tertekan karena kecukupan daya yang tersedia belum mampu memenuhi kebutuhan listrik masyarakat.",
+        "Menurut Suroso, kondisi itu yang membuat pemadaman bergilir muncul di sejumlah wilayah. Salah satu faktor yang ia sebut adalah fenomena Super El Nino yang menyebabkan kekeringan berkepanjangan. Dampaknya, pasokan air dari Danau Poso untuk operasional PLTA Poso menurun sehingga kemampuan pembangkit menghasilkan listrik ikut berkurang. Sebagai langkah penanganan, PLN melakukan teknologi modifikasi cuaca lewat hujan buatan agar debit air waduk PLTA Poso kembali naik. Upaya lain berlangsung di Makassar: shalat Istisqa dan istighatsah yang melibatkan sejumlah tokoh agama. Suroso juga menyampaikan permohonan maaf kepada pelanggan atas ketidaknyamanan akibat pemadaman bergilir.",
+        "Sejumlah detail belum jelas dari bahan. Wilayah terdampak hanya disebut 'sejumlah wilayah' dan 'Sulawesi', tanpa daftar lengkap, sementara lama tiap pemadaman tidak disebutkan sama sekali. Bahan juga tidak memuat angka tambahan pasokan yang ditargetkan dalam megawatt; yang disebut hanya kapasitas 200 MW pada pembangkit yang ditinjau. Jaminan bila target sebelum Natal meleset pun belum diumumkan. Suroso hanya meminta dukungan, pengertian, dan kesabaran pelanggan sambil menyatakan seluruh jajaran bekerja siang dan malam. Artinya, patokan tanggal itu belum disertai skema kompensasi atau tenggat pengganti yang bisa diperiksa publik."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Suroso Isnandar dalam bahan ini?",
+          "a": "Ia disebut sebagai Direktur Utama PT PLN. Bahan tidak memuat keterangan lain soal jabatan atau riwayatnya.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud pemadaman bergilir?",
+          "a": "Pemadaman listrik secara berkala di wilayah terdampak karena pasokan daya tidak mencukupi kebutuhan; bahan tidak merinci jadwal atau durasinya.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal"
+          }
+        },
+        {
+          "q": "Apa peran Danau Poso dan PLTA Poso dalam pasokan listrik Sulawesi?",
+          "a": "Danau Poso memasok air untuk operasional PLTA Poso; ketika debit airnya turun, kemampuan pembangkit menghasilkan listrik ikut menurun.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal"
+          }
+        },
+        {
+          "q": "Apa itu IPP Jeneponto?",
+          "a": "PLTU swasta (Independent Power Producer) di Jeneponto yang ikut ditinjau bersama pembangkit PLN Nusantara Power; kapasitasnya tidak disebut dalam bahan.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal"
+          }
+        }
+      ],
+      "action": "Simpan tanggal target PLN dan catat kondisi pemadaman di wilayahmu agar janji sebelum Natal itu bisa ditagih dengan bukti.",
+      "image": {
+        "url": "assets/9d8746aae8.webp",
+        "credit": "antaranews.com",
+        "alt": "PLN Targetkan Pemadaman Bergilir Sulawesi Berakhir Sebelum Natal"
+      },
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal",
+          "published_at": "2026-11-22T00:23:13+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tovcec2830000/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sepekan-sebelum-natal",
+          "published_at": "2026-11-22T03:18:12+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "PLN Targetkan Pemadaman Bergilir di Sulawesi Teratasi Sepekan Sebelum Natal",
+          "url": "https://news.republika.co.id/berita/tovcec2830000/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sepekan-sebelum-natal",
+          "at": "2026-11-22T03:18:12+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "PLN targetkan pemadaman bergilir di Sulawesi teratasi sebelum Natal",
+          "url": "https://www.antaranews.com/berita/5870275/pln-targetkan-pemadaman-bergilir-di-sulawesi-teratasi-sebelum-natal",
+          "at": "2026-11-22T00:23:13+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_kkp_tingkatkan_kompetensi_sdm_d5fa",
+      "angle": "Komitmen 13.500 hektare diumumkan di COP31, tetapi jadwal dan pendanaannya belum jelas.",
+      "kicker": "Nasional",
+      "title": "KKP Umumkan Komitmen Restorasi 13.500 Hektare Mangrove di COP31",
+      "status": "sebagian",
+      "truth": {
+        "claim": "KKP menandatangani pernyataan bersama restorasi mangrove dan lamun 13.500 hektare pada 12 dan 18 November 2026 dalam rangkaian COP31 di Antalya, Turkiye.",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:45:56+07:00"
+      },
+      "body": [
+        "Kementerian Kelautan dan Perikanan (KKP) mengumumkan komitmen kolaborasi restorasi mangrove dan padang lamun seluas 13.500 hektare. Komitmen itu ditandai lewat pernyataan bersama dalam rangkaian Konferensi Perubahan Iklim PBB ke-31 (COP31) di Antalya, Turkiye. Menurut pemberitaan CNBC Indonesia dan CNN Indonesia, pernyataan bersama pertama dibuat pada Kamis, 12 November 2026, antara KKP dengan PT Lentera Karbon Indonesia (Lume Carbon) dan Apolownia. Enam hari kemudian, Rabu, 18 November 2026, komitmen serupa dijalin bersama VNV, PT Yani Kusuma Perkasa (YKP), dan Yayasan Konservasi Pesisir Indonesia (YAKOPI). Menteri Kelautan dan Perikanan Sakti Wahyu Trenggono menyebut komitmen ini sebagai langkah konkret pemerintah bersama para mitra.",
+        "Dari total 13.500 hektare, lokasi yang telah diidentifikasi dan dipersiapkan para mitra tersebar di tiga kawasan: 5.000 hektare di Pantai Utara Jawa (Pantura), 1.000 hektare di Lombok Timur, dan 7.500 hektare di Sumatera. Ketiga angka itu bila dijumlahkan memang pas 13.500 hektare. Selain itu, disebutkan ada target nasional yang sudah dipetakan seluas 588 ribu hektare. Bahan tidak menjelaskan bagaimana komitmen 13.500 hektare ini berhubungan dengan target 588 ribu hektare tersebut, apakah menjadi bagian di dalamnya atau tambahan di luarnya. Rincian berapa luas mangrove dan berapa luas lamun juga tidak dipisahkan, begitu pula jumlah bibit atau jenis tanaman yang akan dipakai.",
+        "Trenggono menjelaskan komitmen ini sebagai upaya memperkuat aksi mitigasi perubahan iklim melalui pengelolaan instrumen Nilai Ekonomi Karbon (NEK) dari sektor kelautan. Dalam siaran resmi di Jakarta, Sabtu (21/11/2026), ia menyatakan pengelolaan NEK sektor kelautan merupakan salah satu strategi mitigasi iklim global Indonesia yang selaras dengan Second Nationally Determined Contribution (Second NDC) dan Perjanjian Paris. Pernyataan itu tidak merinci berapa besar serapan karbon yang ditargetkan dari 13.500 hektare tersebut, sehingga besarnya kontribusi terhadap Second NDC belum bisa diukur dari bahan yang tersedia. Keterangan yang ada baru sebatas kerangka kebijakan dan pembagian lokasi.",
+        "Pelaksanaan restorasi, menurut bahan yang sama, akan mengikuti Peraturan Menteri Kelautan dan Perikanan Nomor 17 Tahun 2026. Aturan itu disebut memastikan pengelolaan berjalan transparan, berbasis sains, serta menjaga keberlanjutan ekosistem dan kesejahteraan masyarakat pesisir. Regulasi tersebut juga mewajibkan setiap proyek menerapkan prinsip persetujuan atas dasar informasi di awal tanpa paksaan (Free, Prior and Informed Consent/FPIC), menyusun rencana pembagian manfaat (benefit-sharing plan), dan menyediakan mekanisme pengaduan (grievance mechanism). Direktur Jenderal Pengelolaan Kelautan KKP, Koswara, mengatakan kolaborasi dengan berbagai pihak penting untuk mempercepat pemulihan lingkungan, dan pemerintah membuka peluang keterlibatan sektor swasta serta organisasi masyarakat sipil.",
+        "Yang belum jelas justru bagian pelaksanaannya. Bahan tidak menyebutkan kapan penanaman dimulai, berapa lama restorasi 13.500 hektare itu berlangsung, atau dari mana pendanaannya berasal. Tidak ada pula keterangan apakah lahan di tiga kawasan sasaran sudah bebas masalah tata kelola, atau bagaimana masyarakat pesisir setempat akan dilibatkan di lapangan. Kondisi awal mangrove dan lamun di Pantura, Lombok Timur, dan Sumatera juga tidak diuraikan, sehingga sulit menilai seberapa besar pemulihan yang benar-benar dijanjikan. Langkah berikutnya yang bisa dipantau adalah pengumuman resmi KKP maupun para mitra soal jadwal, anggaran, dan lokasi pasti restorasi."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu COP31 dan mengapa restorasi mangrove masuk ke rangkaian acaranya?",
+          "a": "COP31 adalah Konferensi Perubahan Iklim PBB ke-31 yang berlangsung di Antalya, Turkiye. Restorasi mangrove dan lamun diposisikan sebagai bagian dari aksi mitigasi perubahan iklim Indonesia di forum tersebut.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261121173604-4-787205/kkp-jalin-komitmen-restorasi-13500-hektare-mangrove-lamun-di-cop31"
+          }
+        },
+        {
+          "q": "Apa itu Nilai Ekonomi Karbon (NEK) yang dipakai sebagai kerangka komitmen ini?",
+          "a": "NEK disebut sebagai instrumen pengelolaan karbon dari sektor kelautan yang dikaitkan dengan strategi mitigasi iklim dan Perjanjian Paris. Bahan tidak memuat rincian cara menghitung atau memperdagangkan nilai karbonnya.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261121173604-4-787205/kkp-jalin-komitmen-restorasi-13500-hektare-mangrove-lamun-di-cop31"
+          }
+        },
+        {
+          "q": "Mengapa mangrove dan lamun yang dipilih, bukan ekosistem lain?",
+          "a": "Bahan hanya menyebut restorasi mangrove dan padang lamun sebagai penopang mitigasi perubahan iklim, tanpa menjelaskan alasan ekologis pemilihannya atau perbandingan dengan ekosistem pesisir lain.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261121173604-4-787205/kkp-jalin-komitmen-restorasi-13500-hektare-mangrove-lamun-di-cop31"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi KKP soal jadwal, anggaran, dan lokasi pasti restorasi ini sebelum menilai hasilnya.",
+      "image": {
+        "url": "assets/0a8327e5a4.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "KKP Umumkan Komitmen Restorasi 13.500 Hektare Mangrove di COP31"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261121173604-4-787205/kkp-jalin-komitmen-restorasi-13500-hektare-mangrove-lamun-di-cop31",
+          "published_at": "2026-11-21T17:53:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261121183553-92-1429918/kkp-jalin-komitmen-restorasi-13500-hektare-mangrove-lamun-di-cop31",
+          "published_at": "2026-11-21T18:41:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8763593/kkp-jalin-kolaborasi-untuk-restorasi-mangrove-dan-padang-lamun-di-cop31",
+          "published_at": "2026-11-21T18:27:24+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-16",
+      "previous_edition": "2026-11-21",
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "debate",
+      "topic_id": "t_debate_t_eks_kader_psi_ditangkap_polisi_3fc2",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Eks kader PSI ditangkap polisi",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 906 komentar di detik.com untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Sepertinya gw akan pilih PSI, tidak lagi pilih partai-partai karatan dan lumutan” “Partai pemecah belah. S nya adalah suetaaaan”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8763302/pemilik-akun-fb-chakz-ditangkap-psi-tegaskan-sudah-bukan-kader",
+          "published_at": "2026-11-21T15:03:59+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8763360/polda-metro-tegaskan-penanganan-kasus-akun-eks-kader-psi-tak-terkait-dasco",
+          "published_at": "2026-11-21T15:53:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "detik.com",
+        "count": 906
+      },
+      "tone": "Terbelah",
+      "quotes": [
+        {
+          "author": "Kosasih",
+          "platform": "detik.com",
+          "text": "Sepertinya gw akan pilih PSI, tidak lagi pilih partai-partai karatan dan lumutan",
+          "score": 1
+        },
+        {
+          "author": "Juragan Dodol",
+          "platform": "detik.com",
+          "text": "Partai pemecah belah. S nya adalah suetaaaan",
+          "score": 0
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di detik.com (906); tidak ada sinyal pembanding."
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_22",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga klaim viral yang diputuskan salah oleh pemeriksa fakta",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Ada tiga klaim yang diperiksa pada hari ini, dan ketiganya diputuskan salah oleh TurnBackHoax. Yang pertama, video yang diklaim memperlihatkan Prabowo meminta TNI dan Polri menindaklanjuti aksi demonstrasi belakangan ini. Yang kedua, video yang disebut sebagai rekaman serangan terhadap Jalur Pipa Minyak Timur-Barat (East-West Pipeline) Arab Saudi. Yang ketiga, klaim bahwa Sri Sultan Hamengkubuwono X menghentikan MBG di Jogja dan mengalihkan dananya untuk pendidikan.",
+        "Pola yang terlihat pada dua klaim pertama adalah materi visual dari peristiwa lain yang diberi keterangan baru. Video Prabowo disebut berasal dari pidato setelah demonstrasi nasional pada Agustus 2025, sehingga tidak berkaitan dengan demonstrasi yang belakangan ini. Sementara video yang dikaitkan dengan pipa minyak Arab Saudi disebut sebenarnya merekam peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan. Klaim ketiga berbeda bentuk: tuntutan pengalihan anggaran disebut berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebut disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+        "Saat menerima video atau klaim semacam ini, periksa dulu kapan dan di mana peristiwanya terjadi, lalu cocokkan dengan keterangan resmi sebelum meneruskan ke orang lain."
+      ],
+      "action": "Periksa tanggal, lokasi, dan konteks video sebelum membagikannya, serta cocokkan klaim kebijakan dengan keterangan resmi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:45:56+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Prabowo Meminta TNI dan Polri Menindaklanjuti Aksi Demonstrasi Belakangan Ini",
+          "verdict": "salah",
+          "reason": "Video tersebut merupakan video pidato Prabowo setelah demonstrasi nasional pada Agustus 2025, tidak berkaitan dengan demonstrasi yang diselenggarakan belakangan ini.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37499-salah-prabowo-meminta-tni-dan-polri-menindaklanjuti-aksi-demonstrasi-belakangan-ini"
+        },
+        {
+          "claim": "Video \"Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan faktanya adalah video peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37487-salah-video-jalur-pipa-minyak-timur-barat-east-west-pipeline-arab-saudi-kembali-diserang"
+        },
+        {
+          "claim": "Sri Sultan Hamengkubuwono X Hentikan MBG di Jogja, Ubah Dana untuk Pendidikan",
+          "verdict": "salah",
+          "reason": "Tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37488-salah-sri-sultan-hamengkubuwono-x-hentikan-mbg-di-jogja-ubah-dana-untuk-pendidikan"
+        }
+      ],
+      "pattern": "Rekaman dari peristiwa lain diberi tanggal dan lokasi baru, sementara tuntutan demonstran disajikan sebagai kebijakan resmi."
+    }
+  ]
+}
