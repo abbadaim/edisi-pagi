@@ -1,0 +1,850 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-23",
+  "scope": "nasional",
+  "published_at": "2026-11-23T05:45:58+07:00",
+  "coverage": {
+    "from": "2026-11-22T05:45:58+07:00",
+    "to": "2026-11-23T05:45:58+07:00"
+  },
+  "generated_at": "2026-11-23T05:45:58+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 23,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_kebakaran_pabrik_permen_serang_fa19",
+      "angle": "Puluhan karyawan belum terdata, enam kantong jenazah menunggu identifikasi.",
+      "kicker": "Bencana",
+      "title": "Kebakaran Pabrik Permen Cikande: 36 Dicari, 3 Dilaporkan Tewas",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Tiga orang dilaporkan meninggal dalam pencarian 36 orang, sementara enam kantong jenazah telah dievakuasi dan 42 karyawan masih ditelusuri.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Kebakaran melanda pabrik permen PT Fonusa Agung Mulia di kawasan industri Cikande, Kabupaten Serang, Banten, pada Sabtu sore, 21 November 2026. Menurut Kepala Bidang Hubungan Masyarakat Polda Banten Komisaris Besar Polisi Maruli Ahiles Hutapea, api membakar gedung perkantoran dan gudang, lalu menjalar ke sejumlah area gudang dan membakar barang produksi, material, serta peralatan kantor dan pabrik. Hingga Minggu, 22 November, pukul 06.30 WIB, api dinyatakan padam. Petugas gabungan masih melakukan pendinginan dan penanganan sisa bara api pada puing bangunan serta material bekas kebakaran untuk memastikan lokasi benar-benar aman.",
+        "Jam kejadian belum seragam di antara keterangan yang beredar. Polda Banten menyebut api membakar area pabrik sekitar pukul 16.30 WIB, sedangkan pemberitaan yang mengutip Kasubsie Operasi dan Siaga Kantor Pencarian dan Pertolongan Banten, Rizky Dwianto, menuliskan kebakaran terjadi sekitar pukul 17.00 WIB. Selisih sekitar setengah jam itu belum dijelaskan pihak mana pun. Perbedaan jam pada tahap awal penanganan bukan hal luar biasa, tetapi pembaca sebaiknya menyimpannya sebagai catatan: sampai ada keterangan yang menyatukan kedua versi, keduanya masih berdiri sendiri.",
+        "Angka korban jiwa masih bergerak. Dalam keterangan Minggu, Rizky Dwianto mengatakan bahwa dalam pencarian 36 orang, tiga orang meninggal dunia. Pernyataan itu disampaikan setelah petugas masuk ke lokasi dan menyisir area yang sebelumnya terbakar, di tempat ambulans dan kantong jenazah telah disiapkan; jenazah yang ditemukan langsung dimasukkan ke kantong jenazah. Pada waktu yang berdekatan, Polda Banten menyatakan tim gabungan telah mengevakuasi enam kantong jenazah dari lokasi kejadian. Enam kantong tidak otomatis berarti enam korban tewas, karena jumlah pasti korban dan hasil identifikasinya belum diumumkan kepada publik.",
+        "Selain korban jiwa, perhatian tertuju pada pendataan karyawan. Berdasarkan pendataan sementara di posko, tercatat 54 karyawan. Dari jumlah itu, 11 orang dipastikan pulang, satu orang menjalani perawatan medis, dan 42 orang lainnya masih dalam proses penelusuran serta pendataan lebih lanjut. Angka 42 inilah yang membuat keluarga bertahan di sekitar pabrik. Belum ada keterangan yang memastikan berapa di antara mereka yang sudah ditemukan, berapa yang menjadi korban, dan berapa yang hanya belum melapor kepada petugas. Polda Banten menyebut pendataan itu dilakukan bersama pihak perusahaan, dan keluarga dapat menanyakan perkembangan melalui posko.",
+        "Pencarian di dalam bangunan belum bisa dilanjutkan sepenuhnya. Maruli menjelaskan bahwa proses pencarian dan evakuasi di gedung produksi maupun perkantoran akan dilaksanakan setelah proses pendinginan selesai serta kondisi lokasi dinyatakan aman oleh petugas. Urutan kerjanya karena itu berlapis: memadamkan, mendinginkan, memastikan aman, lalu menyisir. Sebelumnya, personel Kantor Pencarian dan Pertolongan Banten telah melaksanakan penyisiran pada sejumlah bagian bangunan berdasarkan area atau site yang dicurigai terdapat korban. Cara itu mempersempit titik pencarian, tetapi belum tentu seluruh ruang sudah diperiksa. Hingga Minggu, petugas gabungan masih mencari korban di lokasi kebakaran pabrik permen tersebut.",
+        "Untuk identifikasi, Polda Banten membentuk Posko Ante Mortem dan Posko Post Mortem serta menurunkan tim Disaster Victim Identification yang melibatkan ahli forensik, ahli DNA, dan dokter gigi forensik. Kedua posko disebut sebagai bagian dari langkah penanganan dan identifikasi korban. Enam kantong jenazah yang telah dievakuasi selanjutnya akan menjalani proses identifikasi oleh tim Post Mortem Polri. Rincian teknis pemeriksaan dan perkiraan waktu hasil identifikasi tidak dijelaskan dalam keterangan yang tersedia, dan sampai Minggu belum ada daftar nama korban yang diumumkan. Polda Banten menyatakan mengutamakan keselamatan seluruh petugas dan karyawan dalam penanganan kejadian ini.",
+        "Di luar pagar pabrik, suasana haru menyelimuti area PT Fonusa Agung Mulia pada Minggu, 22 November. Sejumlah keluarga karyawan memadati area sekitar pabrik untuk menanti kabar dan kepastian mengenai nasib anggota keluarga mereka. Keluarga karyawan yang belum diketahui keberadaannya masih bertahan di sekitar pabrik. Polda Banten menyediakan layanan hotline pengaduan keluarga di nomor 0851-3949-5373 bagi keluarga yang membutuhkan informasi atau ingin menyampaikan pengaduan. Kepolisian juga menyatakan terus berkoordinasi dengan pihak keluarga dan perusahaan untuk memastikan keberadaan para karyawan yang diduga berada di dalam area pabrik saat kebakaran terjadi.",
+        "Penanganan di lapangan melibatkan banyak instansi. Pada Sabtu malam, Kapolda Banten Inspektur Jenderal Polisi Hendra Kurniawan bersama Gubernur Banten Andra Soni dan Wakapolda Banten Brigadir Jenderal Polisi Zain Dwi Nugroho meninjau langsung lokasi kebakaran untuk memantau kondisi lapangan sekaligus perkembangan penanganan. Polda Banten bersama Polres Serang dan Polsek Cikande melakukan pemantauan lokasi, berkoordinasi dengan petugas pemadam kebakaran, mengerahkan bantuan ambulans, serta mendirikan posko pendataan karyawan di Kawasan Industri Pancatama. Posko itu menjadi titik temu antara keluarga, perusahaan, dan petugas yang mencatat siapa saja yang belum kembali.",
+        "Basarnas juga mengerahkan tim penyelamat untuk membantu proses evakuasi menyusul dugaan adanya korban jiwa yang terjebak dalam kebakaran di kawasan industri tersebut. Kata “dugaan” dalam keterangan itu penting dicatat, sebab pada tahap tersebut keberadaan korban di dalam bangunan belum dipastikan dan penyisiran masih dilakukan pada bagian bangunan yang dicurigai. Dalam rentang Sabtu malam sampai Minggu, keterangan yang keluar bergerak dari dugaan adanya korban, lalu angka tiga orang meninggal, hingga enam kantong jenazah yang dievakuasi. Membaca urutan itu membantu pembaca tidak menyimpulkan lebih jauh daripada yang sudah dikonfirmasi petugas.",
+        "Beberapa hal masih belum jelas. Penyebab kebakaran belum disebutkan dalam keterangan yang tersedia, begitu pula titik awal api dan ada tidaknya sorotan terhadap prosedur keselamatan. Hubungan antara angka tiga orang meninggal dan enam kantong jenazah juga belum dijelaskan: apakah tiga orang itu bagian dari enam kantong, atau dua pencatatan yang diambil pada waktu berbeda. Selain itu, belum ada keterangan resmi apakah 42 karyawan yang masih ditelusuri mencakup mereka yang sudah ditemukan dalam keadaan meninggal. Pertanyaan-pertanyaan itu belum dijawab pejabat mana pun dalam bahan yang tersedia.",
+        "Langkah berikutnya bisa dibaca dari urutan yang disebut Polda Banten. Pendinginan dan penanganan sisa bara api dilanjutkan sampai lokasi dinyatakan aman. Setelah itu, pencarian dan evakuasi di dalam gedung produksi maupun perkantoran baru dilakukan. Bersamaan dengan itu, identifikasi jenazah berjalan di posko post mortem, sementara pendataan karyawan dilakukan bersama pihak perusahaan. Polda Banten menyebut berkoordinasi dengan kepala departemen human capital and business partner perusahaan untuk mendukung pendataan karyawan serta penyampaian informasi kepada keluarga korban. Menurut kepolisian, upaya pendinginan, pendataan, penyiapan posko identifikasi, dan koordinasi lintas instansi terus dilakukan agar seluruh rangkaian penanganan berjalan aman dan optimal.",
+        "Bagi pembaca yang jarang mengikuti berita bencana, empat angka dalam peristiwa ini mudah tertukar. Angka 36 mengacu pada jumlah orang yang dicari dalam satu keterangan operasi pencarian. Angka 54 adalah hasil pendataan sementara karyawan di posko. Angka 42 adalah sisa karyawan yang belum terlacak dari pendataan itu, dan angka enam adalah kantong jenazah yang telah dievakuasi. Keempatnya bukan satu deret yang bisa dijumlahkan atau dikurangkan begitu saja. Dapat dibaca sebagai tanda bahwa pendataan masih berjalan, bukan bahwa jumlah korban sudah final dan tidak akan berubah lagi.",
+        "Peristiwa ini terjadi di Kabupaten Serang, bukan di Kota Serang. Keduanya kini daerah yang berbeda: Kabupaten Serang beribu kota di Kecamatan Ciruas, sementara Kota Serang dimekarkan pada 2007. Kabupaten Serang terletak di ujung barat laut Pulau Jawa dan berada di kawasan metropolitan Serang Raya. Kekeliruan menyebut lokasi mudah terjadi karena namanya mirip. Dalam pemberitaan, lokasi disebut berada di Cikande, dan kepolisian menyebut posko pendataan karyawan didirikan di Kawasan Industri Pancatama. Satu bahan menyebut kawasan industri milik perusahaan, bahan lain menyebut nama kawasan yang berbeda, dan keduanya belum dijelaskan.",
+        "Ringkasnya, kebakaran sudah padam, tetapi pekerjaan di lokasi belum selesai. Tiga orang dilaporkan meninggal, enam kantong jenazah telah dievakuasi dan menunggu identifikasi, satu karyawan menjalani perawatan medis, 11 orang dipastikan pulang, dan 42 orang masih ditelusuri. Petugas gabungan masih mencari korban di lokasi, sementara keluarga menunggu di sekitar pabrik dan dapat menghubungi hotline 0851-3949-5373. Sampai keterangan terakhir pada Minggu, 22 November, belum ada penyebab kebakaran, belum ada daftar nama korban, dan belum ada angka final korban jiwa. Angka-angka itu kemungkinan masih berubah selama pendinginan dan penyisiran belum tuntas."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Kabupaten Serang, dan mengapa namanya mudah tertukar dengan Kota Serang?",
+          "a": "Kabupaten Serang adalah wilayah kabupaten di Provinsi Banten dengan ibu kota di Kecamatan Ciruas. Kota Serang dimekarkan dari wilayah itu pada 2007, sehingga keduanya kini daerah yang berbeda, meski kabupaten tersebut juga berada di kawasan metropolitan Serang Raya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kabupaten_Serang"
+          }
+        },
+        {
+          "q": "Seberapa besar wilayah Kabupaten Serang menurut bahan latar?",
+          "a": "Bahan latar hanya menyebut posisinya di ujung barat laut Pulau Jawa dan menyinggung jumlah penduduk pertengahan 2024 tanpa angka lengkap, sehingga luas wilayah dan angka penduduk yang pasti tidak tersedia di bahan ini.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kabupaten_Serang"
+          }
+        },
+        {
+          "q": "Apa peran Basarnas yang disebut dalam pemberitaan?",
+          "a": "Basarnas mengerahkan tim penyelamat untuk membantu proses evakuasi ketika ada dugaan korban jiwa yang terjebak, menurut pemberitaan yang tersedia. Susunan tim dan rincian tugasnya tidak diuraikan dalam bahan.",
+          "source": {
+            "outlet": "republika.co.id",
+            "url": "https://republika.co.id/page/shorts/yt-tovor1904574349/kebakaran-pt-fonusa-di-cikande-belum-padam-basarnas-kerahkan-tim"
+          }
+        }
+      ],
+      "action": "Pantau hotline 0851-3949-5373 dan tunggu keterangan resmi Polda Banten sebelum menyimpulkan jumlah korban.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8764141/3-mayat-korban-kebakaran-pabrik-permen-di-serang-ditemukan-36-masih-dicari",
+          "published_at": "2026-11-22T10:13:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8340078/kebakaran-pabrik-permen-keluarga-berharap-bisa-berkumpul-lagi",
+          "published_at": "2026-11-22T12:37:51+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261122121546-20-1430011/enam-kantong-jenazah-dievakuasi-dari-lokasi-kebakaran-pabrik-permen",
+          "published_at": "2026-11-22T12:19:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/22/340/3255545/tangis-keluarga-korban-kebakaran-pabrik-di-cikande-pecah-nasib-kerabat-belum-jelas",
+          "published_at": "2026-11-22T15:17:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://republika.co.id/page/shorts/yt-tovor1904574349/kebakaran-pt-fonusa-di-cikande-belum-padam-basarnas-kerahkan-tim",
+          "published_at": "2026-11-22T07:45:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Api sudah padam, tetapi angka korban belum bulat: tiga dilaporkan tewas, enam kantong jenazah dievakuasi, dan 42 karyawan masih ditelusuri.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "Tangis Keluarga Korban Kebakaran Pabrik di Cikande Pecah, Nasib Kerabat Belum Jelas",
+          "url": "https://news.okezone.com/read/2026/11/22/340/3255545/tangis-keluarga-korban-kebakaran-pabrik-di-cikande-pecah-nasib-kerabat-belum-jelas",
+          "at": "2026-11-22T15:17:46+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Kebakaran Pabrik Permen, Keluarga Berharap Bisa Berkumpul Lagi",
+          "url": "https://www.liputan6.com/news/read/8340078/kebakaran-pabrik-permen-keluarga-berharap-bisa-berkumpul-lagi",
+          "at": "2026-11-22T12:37:51+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Enam Kantong Jenazah Dievakuasi dari Lokasi Kebakaran Pabrik Permen",
+          "url": "https://www.cnnindonesia.com/nasional/20261122121546-20-1430011/enam-kantong-jenazah-dievakuasi-dari-lokasi-kebakaran-pabrik-permen",
+          "at": "2026-11-22T12:19:50+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "republika.co.id",
+          "title": "Kebakaran PT Fonusa di Cikande Belum Padam Basarnas Kerahkan Tim",
+          "url": "https://republika.co.id/page/shorts/yt-tovor1904574349/kebakaran-pt-fonusa-di-cikande-belum-padam-basarnas-kerahkan-tim",
+          "at": "2026-11-22T07:45:01+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_pss_sleman_disanksi_usai_kerus_6cc6",
+      "angle": "PSSI menjanjikan sanksi tegas dan membuka opsi pengurangan poin; FIFA ikut menghubungi.",
+      "kicker": "Nasional",
+      "title": "Sanksi PSSI untuk PSS Sleman Disebut Bisa Berupa Pengurangan Poin",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Erick Thohir menyatakan PSSI akan memberi sanksi tegas kepada PSS Sleman dan membuka kemungkinan pengurangan poin.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Kerusuhan terjadi pada laga pekan ke-10 Super League 2026/27 antara PSS Sleman dan Arema FC di Stadion Maguwoharjo, Sleman, Jumat (20/11/2026). Laga itu berakhir untuk kemenangan tim tamu Arema FC dengan skor 3-0. Menurut pemberitaan Antara, pertandingan tersebut diwarnai masuknya sejumlah penonton ke lapangan, indikasi perusakan fasilitas, hingga dugaan tindakan kekerasan. Ketiganya disebut sebagai peristiwa serius yang tidak dapat ditoleransi. Bahan yang tersedia belum merinci berapa penonton yang masuk ke lapangan, fasilitas apa saja yang diduga rusak, atau siapa yang menjadi sasaran dugaan kekerasan.",
+        "Ketua Umum PSSI Erick Thohir menegaskan sikapnya menyusul peristiwa itu. Kepada pewarta, Minggu, ia mengatakan bahwa PSSI dan dirinya secara pribadi menolak kekerasan di sepak bola, apalagi jika sudah mengancam wasit, pemain, dan antarsuporter. Ia menambahkan bahwa sepak bola harus dipastikan aman untuk seluruh penonton dan peserta pertandingan. Pernyataan itu disampaikan sebagai respons atas kerusuhan di Maguwoharjo, bukan sebagai pengumuman sanksi yang sudah final. Bahan tidak memuat rincian lain dari pernyataan tersebut, termasuk apakah ada tenggat yang disebutkan.",
+        "Langkah yang disebut Erick adalah mendorong Komite Disiplin PSSI untuk segera melakukan investigasi mendalam dan membuat keputusan tentang sanksi bagi PSS Sleman. Erick menyebut PSS Sleman sebagai Elang Jawa yang berstatus tuan rumah pada laga itu. Namun bahan belum memuat kapan investigasi dimulai, berapa lama prosesnya, atau apakah klub sudah dimintai keterangan. Arah kebijakan sudah dikatakan, tetapi bentuk dan waktu keputusan belum diumumkan. Tidak ada pula keterangan apakah PSS Sleman akan diberi kesempatan membela diri sebelum sanksi dijatuhkan.",
+        "Salah satu opsi yang dibuka Erick adalah pengurangan poin. Ia mengatakannya secara bersyarat: kalau perlu ada pengurangan poin, apakah di tahun ini atau tahun depan, ia menyatakan tidak tahu. Ia menambahkan bahwa pelanggaran di dalam stadion memiliki tingkatan hukuman yang sangat tinggi. Kalimat itu menunjukkan bahwa pengurangan poin belum diputuskan, termasuk apakah hukumannya berlaku untuk musim ini atau musim berikutnya. Bahan tidak menyebut jumlah poin yang mungkin dipotong, lama larangan, atau besaran denda.",
+        "Selain PSSI, FIFA disebut ikut menyoroti peristiwa ini. Erick mengungkapkan bahwa ia dihubungi FIFA terkait kerusuhan suporter dalam laga Super League tersebut. Pemberitaan Harian Jogja juga menulis bahwa FIFA menghubungi PSSI soal kerusuhan PSS melawan Arema FC di Maguwoharjo. Namun tidak ada keterangan tentang isi pembicaraan, bentuk permintaan FIFA, atau tenggat yang diberikan. Detail itu belum tersedia dalam bahan, sehingga belum bisa disimpulkan apakah komunikasi tersebut akan berlanjut menjadi sanksi dari federasi dunia.",
+        "Erick membagi penanganan berdasarkan lokasi kejadian. Untuk peristiwa di dalam stadion, ia menyebut PSSI akan menanganinya dengan hukuman yang berat. Untuk yang terjadi di luar stadion, ia menyatakan PSSI harus bekerja sama dengan pihak kepolisian dan ranahnya dibagi. Pembagian itu penting karena laporan Antara menyebut kerusuhan mencakup kejadian di lapangan sekaligus indikasi perusakan fasilitas. Bahan tidak menjelaskan kejadian mana yang masuk ranah kepolisian dan mana yang masuk ranah Komite Disiplin PSSI.",
+        "Erick berharap sanksi yang dijatuhkan memberi efek jera. Harapannya, kejadian serupa tidak terulang di Sleman maupun di klub-klub lain yang mengikuti kompetisi Liga Indonesia. Kalimat itu disampaikan sebelum Komite Disiplin bekerja, sehingga belum bisa dinilai apakah hukumannya nanti dianggap cukup berat. Bahan juga tidak memuat tanggapan resmi PSS Sleman, Arema FC, atau pihak kepolisian atas rencana sanksi tersebut. Tidak ada pernyataan dari perwakilan suporter yang dikutip dalam bahan.",
+        "Angka dan tanggal yang bisa dipastikan dari bahan cukup terbatas. Laga berlangsung Jumat, 20 November 2026, pada pekan ke-10 Super League 2026/27, dan berakhir 3-0 untuk Arema FC. Erick menyampaikan pernyataan kepada pewarta pada Minggu. Pemberitaan soal ancaman sanksi terbit pada 22 November malam hingga 23 November dini hari. Tidak ada angka lain yang disebut, misalnya jumlah penonton yang hadir, jumlah korban, nilai kerugian, atau berapa poin yang mungkin dipotong. Bahan juga tidak menyebut apakah laga dihentikan akibat kerusuhan atau dilanjutkan hingga skor akhir 3-0 terbentuk.",
+        "Bahan utama soal sanksi datang dari beberapa waktu penerbitan. Artikel Antara yang memuat pernyataan Erick soal sanksi terbit pada 22 November 2026 pukul 21.54 WIB, sedangkan artikel soal FIFA terbit pukul 22.08 WIB. Dua artikel Harian Jogja terbit pada 23 November 2026 pukul 01.17 dan 05.17 WIB. Perbedaan waktu itu bukan perbedaan isi: semuanya merujuk pada peristiwa yang sama. Tidak ada versi yang menyebut tanggal keputusan sanksi atau nomor perkara di Komite Disiplin.",
+        "PSS Sleman adalah klub sepak bola profesional yang berbasis di Kabupaten Sleman, Yogyakarta. Menurut keterangan latar, klub ini didirikan pada 20 Mei 1976. Julukannya antara lain Super Elja dan Laskar Sembada, yang merujuk pada awal berdirinya sebagai tim perserikatan dari Kabupaten Sleman. Dalam pemberitaan soal sanksi, klub ini juga disebut sebagai Elang Jawa. Erick menyebut status tuan rumah sebagai salah satu dasar mengapa sanksi dibahas untuk PSS Sleman, bukan untuk tim tamu Arema FC. Bahan latar tidak menyebut prestasi atau posisi klub di kompetisi saat ini.",
+        "Erick Thohir dalam bahan latar digambarkan sebagai pengusaha, politikus, dan pengurus olahraga. Ia menjabat sebagai Menteri Pemuda dan Olahraga dan sebelumnya menjadi Menteri Badan Usaha Milik Negara ke-9 sejak 2019. Ia juga tercatat sebagai anggota Komite Olimpiade Internasional pada periode yang sama hingga 2025. Dalam kasus ini ia berbicara dalam kapasitas Ketua Umum PSSI. Bahan tidak memuat pernyataan dari pejabat lain, termasuk dari Kementerian Pemuda dan Olahraga, soal kerusuhan tersebut.",
+        "Yang belum jelas adalah bentuk sanksi akhirnya. Bahan hanya menyebut kemungkinan pengurangan poin tanpa angka, tanpa jadwal, dan tanpa kepastian musim. Belum jelas pula apakah ada sanksi lain seperti larangan menggelar laga di kandang, denda, atau sanksi bagi penonton yang masuk lapangan. Semua itu belum diumumkan dalam bahan yang tersedia. Karena itu, pernyataan Erick sebaiknya dibaca sebagai arah kebijakan, bukan sebagai vonis yang sudah selesai.",
+        "Keterlibatan FIFA menambah lapisan lain. Bahan menyebut FIFA menghubungi PSSI, tetapi tidak menjelaskan apakah komunikasi itu berupa permintaan penjelasan, peringatan, atau pemantauan biasa. Tidak ada pula keterangan apakah FIFA meminta laporan tertulis atau mengirim pengawas. Karena itu, tidak bisa disimpulkan bahwa FIFA akan menjatuhkan sanksi tambahan. Yang bisa dikatakan dari bahan hanyalah bahwa federasi dunia itu menghubungi PSSI setelah kerusuhan di Maguwoharjo.",
+        "Bagi pembaca yang jarang mengikuti sepak bola, isu ini bukan sekadar soal satu pertandingan. Pengurangan poin, bila benar diterapkan, akan mengubah posisi klub di klasemen dan bisa memengaruhi target musim. Namun bahan tidak memuat klasemen, jumlah poin PSS Sleman saat ini, atau posisi kedua tim di tabel. Jadi dampak pastinya belum bisa dihitung. Yang tersedia hanyalah pernyataan bahwa opsi pengurangan poin terbuka, tanpa angka dan tanpa tenggat.",
+        "Pernyataan Erick juga menyoroti keselamatan penonton. Ia menyebut sepak bola harus aman untuk seluruh penonton dan peserta pertandingan. Dalam laporan Antara, kerusuhan mencakup penonton yang masuk lapangan dan dugaan kekerasan yang mengancam wasit serta pemain. Bahan tidak menyebut apakah ada korban luka, apakah laga dihentikan, atau bagaimana petugas keamanan bertindak. Rincian itu belum tersedia dan tidak bisa disimpulkan hanya dari pernyataan pejabat PSSI. Pernyataan Erick sendiri bersifat umum dan tidak merinci insiden tertentu di Maguwoharjo.",
+        "Langkah berikutnya berada di Komite Disiplin PSSI. Menurut Erick, komite itu akan melakukan investigasi mendalam lalu membuat keputusan. Bahan tidak menyebut tenggat, nomor perkara, atau mekanisme banding yang tersedia bagi klub. PSS Sleman juga belum memberi tanggapan yang dikutip dalam bahan. Sampai keputusan keluar, status sanksi masih berupa ancaman dan opsi, bukan hukuman yang berlaku. Pembaca perlu menunggu pengumuman resmi untuk mengetahui bentuk akhirnya. Tidak ada keterangan apakah keputusan akan diambil pekan ini atau setelah kompetisi berjalan lebih jauh.",
+        "Kesimpulannya, peristiwa di Maguwoharjo sudah diakui sebagai insiden serius oleh PSSI, dan arah sanksinya sudah dikatakan. Tetapi tiga hal masih menunggu jawaban: bentuk sanksi, waktu keputusan, dan apakah pengurangan poin benar-benar dipakai. FIFA juga sudah menghubungi PSSI, meski isi komunikasinya belum diungkap. Pantauan berikutnya adalah pengumuman Komite Disiplin PSSI. Bahan yang ada belum memuat pernyataan PSS Sleman, sehingga posisi klub masih belum diketahui."
+      ],
+      "explain": [
+        {
+          "q": "Siapa PSS Sleman dan sejak kapan klub ini berdiri?",
+          "a": "Klub profesional yang berbasis di Kabupaten Sleman, Yogyakarta, didirikan 20 Mei 1976, dengan julukan antara lain Super Elja dan Laskar Sembada.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/PSS_Sleman"
+          }
+        },
+        {
+          "q": "Apa peran Erick Thohir sehingga ia berbicara soal sanksi ini?",
+          "a": "Ia Ketua Umum PSSI; keterangan latar juga menyebutnya Menteri Pemuda dan Olahraga, mantan Menteri BUMN, dan anggota Komite Olimpiade Internasional.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Erick_Thohir"
+          }
+        }
+      ],
+      "action": "Cek pengumuman Komite Disiplin PSSI sebelum menyimpulkan bentuk sanksi untuk PSS Sleman.",
+      "image": {
+        "url": "assets/b43084e5d2.webp",
+        "credit": "harianjogja.com",
+        "alt": "Sanksi PSSI untuk PSS Sleman Disebut Bisa Berupa Pengurangan Poin"
+      },
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5871327/pssi-akan-beri-sanksi-tegas-pss-sleman-terkait-kerusuhan-suporter",
+          "published_at": "2026-11-22T21:54:33+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://sport.harianjogja.com/r-1279893/fifa-hubungi-pssi-soal-kerusuhan-suporter-pss-vs-arema-fc",
+          "published_at": "2026-11-23T01:17:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "harianjogja.com",
+          "title": "FIFA Hubungi PSSI soal Kerusuhan Suporter PSS vs Arema FC",
+          "url": "https://sport.harianjogja.com/r-1279893/fifa-hubungi-pssi-soal-kerusuhan-suporter-pss-vs-arema-fc",
+          "at": "2026-11-23T01:17:06+07:00",
+          "owner": "Bisnis Indonesia",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "PSSI akan beri sanksi tegas PSS Sleman terkait kerusuhan suporter",
+          "url": "https://www.antaranews.com/berita/5871327/pssi-akan-beri-sanksi-tegas-pss-sleman-terkait-kerusuhan-suporter",
+          "at": "2026-11-22T21:54:33+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Diteken setelah hampir 10 tahun; ekspor RI ke Eropa diproyeksi naik 14 persen.",
+      "kicker": "Ekonomi",
+      "title": "IEU-CEPA Diteken, Ekspor RI ke Eropa Diproyeksi Naik 14 Persen",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IEU-CEPA dan IPA diteken di Brussels pada 21 November 2026 dan masih menunggu persetujuan Parlemen Eropa serta ratifikasi Indonesia sebelum berlaku sementara.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Indonesia dan Uni Eropa resmi menandatangani Indonesia-European Union Comprehensive Economic Partnership Agreement (IEU-CEPA) bersama Investment Protection Agreement (IPA). Penandatanganan berlangsung di markas Komisi Eropa di Brussels, Belgia, pada Jumat (21/11/2026), setelah perundingan yang berjalan hampir 10 tahun. Presiden Komisi Eropa Ursula von der Leyen menyebutnya sebagai salah satu kesepakatan paling ambisius yang pernah dicapai Uni Eropa di Asia. Menurutnya, perjanjian ini menghubungkan Uni Eropa yang berpenduduk sekitar 450 juta jiwa dengan Indonesia, ekonomi terbesar di Asia Tenggara dan negara berpenduduk terbesar keempat di dunia, sehingga total pasar yang tercakup sekitar 730 juta orang.",
+        "Komisi Eropa memperkirakan ekspor barang dan jasa Indonesia ke pasar Eropa naik lebih dari 14 persen dalam 15 tahun setelah perjanjian berlaku, sementara ekspor Uni Eropa ke Indonesia diproyeksi melonjak hampir 40 persen pada periode yang sama. Angka itu masih proyeksi, bukan hasil yang sudah terjadi. Pendorong utamanya adalah penghapusan bea masuk atas 98,5 persen pos tarif, sedangkan bahan lain hanya menyebut penghapusan bea masuk untuk hampir seluruh perdagangan. Komisi Eropa menyatakan eksportir Eropa dapat menghemat lebih dari 600 juta euro per tahun. Untuk produk domestik bruto, Uni Eropa diproyeksi lebih tinggi 16 miliar euro (sekitar Rp321 triliun) dan Indonesia bertambah 27 miliar euro (sekitar Rp541 triliun) dibandingkan skenario tanpa kesepakatan.",
+        "Yang perlu ditegaskan, perjanjian ini belum langsung berlaku. Kedua dokumen masih memerlukan persetujuan Parlemen Eropa, sementara pemerintah Indonesia menjalankan proses ratifikasi internal. Setelah prosedur masing-masing pihak selesai, perjanjian akan diberlakukan secara sementara, yang diperkirakan berlangsung pada awal 2027. Karena itu, dampak angka-angka di atas bergantung pada penyelesaian proses politik tersebut. Dalam bahan yang tersedia belum ada keterangan tentang jadwal pasti pembahasan di Parlemen Eropa, tenggat ratifikasi di Indonesia, maupun rincian produk Indonesia mana yang paling diuntungkan oleh pemangkasan tarif.",
+        "Dari sisi sektor, Uni Eropa melihat peluang pertumbuhan ekspor pada mesin, kendaraan bermotor, dan produk logam. Investasi Eropa juga dibuka pada sektor strategis seperti kendaraan listrik, elektronik, dan farmasi, serta perusahaan Eropa memperoleh akses kepemilikan penuh di sejumlah jasa, termasuk layanan komputer dan telekomunikasi. Von der Leyen menyebut kesepakatan ini akan membuka peluang bagi perusahaan, petani, dan pekerja di kedua pihak, termasuk usaha kecil. Namun bahan belum memuat rincian besaran manfaat bagi petani Indonesia atau daftar komoditas pertanian yang tarifnya dihapus, sehingga bagian itu masih perlu penjelasan lanjutan.",
+        "Di luar perdagangan barang, kedua pihak menyebut kerja sama mencakup visi bersama soal pertumbuhan berkelanjutan, ketahanan rantai pasok, dan transisi ke ekonomi bersih. Perjanjian investasi (IPA) disebut sebagai langkah penting untuk memperkuat hubungan ekonomi. Namun bahan yang tersedia belum memuat teks lengkap perjanjian, mekanisme penyelesaian sengketa, atau rincian kewajiban Indonesia di sektor jasa dan pengadaan publik. Pembaca yang ingin menilai dampaknya perlu menunggu dokumen resmi dan proses ratifikasi selesai."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Uni Eropa dan berapa negara anggotanya?",
+          "a": "Uni Eropa adalah organisasi antarpemerintah dan supranasional beranggotakan negara-negara Eropa; sejak 31 Januari 2020 anggotanya 27 negara, dari Austria hingga Slovenia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        },
+        {
+          "q": "Siapa Ursula von der Leyen dalam perjanjian ini?",
+          "a": "Ia Presiden Komisi Eropa yang menyebut IEU-CEPA sebagai kesepakatan ambisius antara Indonesia dan Uni Eropa.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261122081950-4-787260/ieu-cepa-diteken-presiden-komisi-eropa-sebut-deal-paling-ambisius"
+          }
+        },
+        {
+          "q": "Mengapa perjanjian ini disebut mencakup pasar yang sangat besar?",
+          "a": "Karena Uni Eropa beranggotakan 27 negara dan Indonesia adalah ekonomi terbesar di Asia Tenggara, sehingga gabungan pasarnya disebut sekitar 730 juta orang.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman Parlemen Eropa dan pemerintah soal jadwal ratifikasi sebelum menghitung dampak tarif bagi usaha Anda.",
+      "image": {
+        "url": "assets/b28ce81c0e.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "IEU-CEPA Diteken, Ekspor RI ke Eropa Diproyeksi Naik 14 Persen"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261122081950-4-787260/ieu-cepa-diteken-presiden-komisi-eropa-sebut-deal-paling-ambisius",
+          "published_at": "2026-11-22T08:27:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 5,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-22",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_daftar_ump_2027_naik_7_5_perse_3372",
+      "angle": "Pemerintah provinsi menetapkan UMP 2027; Jakarta tertinggi, Maluku naik 7,5 persen.",
+      "kicker": "Ekonomi",
+      "title": "UMP 2027: Jakarta Tertinggi Rp6,1 Juta, Maluku Naik 7,5 Persen",
+      "status": "sebagian",
+      "truth": {
+        "claim": "UMP DKI Jakarta Rp6.136.941 tercatat tertinggi, sedangkan Maluku naik 7,5 persen menjadi Rp3.584.844.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Sejumlah pemerintah provinsi telah menetapkan Upah Minimum Provinsi (UMP) 2027, dan Kementerian Ketenagakerjaan sudah menerbitkan surat Menteri Ketenagakerjaan Nomor B-M/209/HI.01.00/XI/2026 tertanggal 16 November 2026 sebagai rujukan penetapan upah tahun depan. Surat itu menyebut penetapan upah 2027 dengan mempertimbangkan kebutuhan hidup layak (KHL), kondisi ekonomi, dan kondisi ketenagakerjaan. Sesuai jadwal yang ditetapkan pemerintah, pengumuman UMP 2027 paling lambat dilakukan pada 21 November 2026, lalu Upah Minimum Sektoral Provinsi (UMSP) menyusul lima hari kemudian pada 26 November 2026.",
+        "DKI Jakarta masih menjadi provinsi dengan UMP tertinggi, yakni Rp6.136.941. Bali mencatat kenaikan persentase paling besar dibandingkan tahun sebelumnya, yaitu mencapai 42,15 persen, dengan besaran Rp4.559.287. Di sisi lain, Nusa Tenggara Timur menjadi provinsi dengan UMP terendah di antara daerah yang telah mengumumkan penetapan, yakni Rp2.602.441. Data itu dihimpun dari 22 provinsi, tetapi daftar lengkap ke-22 provinsi beserta nominalnya tidak dimuat dalam bahan yang tersedia, sehingga rincian per provinsi belum bisa dipastikan di sini.",
+        "Di wilayah timur, Pemerintah Provinsi Maluku menetapkan UMP 2027 sebesar Rp3.584.844 atau naik 7,5 persen. Angka 7,5 persen itu khusus Maluku dan bukan angka kenaikan nasional; bahan tidak menyebut satu persentase yang berlaku seragam untuk semua provinsi. Perbedaannya terlihat jelas bila dibandingkan dengan Bali yang naik 42,15 persen, sementara NTT berada di Rp2.602.441. Besaran upah maupun persentase kenaikan memang berbeda antardaerah, dan bahan tidak menjelaskan apa yang membuat angka-angka itu berbeda.",
+        "Menteri Ketenagakerjaan Yassierly mengatakan penghitungan upah minimum 2027 menggunakan formula penyesuaian sebagaimana diatur dalam Peraturan Pemerintah (PP) No. 49/2025 tentang Perubahan Kedua atas PP No. 36/2021 tentang Pengupahan. Formula itu disebut mempertimbangkan KHL, kondisi ekonomi, dan ketenagakerjaan. Namun bahan tidak memuat rincian formula, komponen KHL, atau angka indeks yang dipakai, jadi cara tiap besaran itu dihitung belum bisa dijelaskan dari bahan ini.",
+        "Yang belum jelas adalah daftar lengkap 22 provinsi dengan nominal masing-masing, kepastian apakah seluruh provinsi sudah menetapkan UMP 2027, dan posisi daerah di luar 22 provinsi yang dihimpun. Bahan juga belum memuat besaran UMSP maupun daftar sektor yang akan diatur. Langkah berikutnya adalah menunggu pengumuman UMSP pada 26 November 2026 dan penetapan provinsi lain; rincian itu belum diumumkan dalam bahan yang tersedia."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Upah Minimum Provinsi (UMP)?",
+          "a": "UMP adalah upah minimum yang berlaku untuk seluruh kabupaten/kota di satu provinsi; dulu dikenal sebagai Upah Minimum Regional Tingkat I.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Upah_minimum_di_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa yang menetapkan UMP dan berdasarkan aturan apa?",
+          "a": "UMP ditetapkan oleh gubernur dengan memperhatikan rekomendasi Dewan Pengupahan, dengan dasar hukum Peraturan Menteri Tenaga Kerja dan Transmigrasi Nomor 7 Tahun 2013 tentang Upah Minimum.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Upah_minimum_di_Indonesia"
+          }
+        },
+        {
+          "q": "Apakah semua provinsi sudah menetapkan UMP 2027?",
+          "a": "Bahan hanya menyebut sejumlah pemerintah provinsi telah menetapkan dan data dihimpun dari 22 provinsi, jadi kepastian untuk seluruh provinsi belum ada.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah"
+          }
+        }
+      ],
+      "action": "Cek UMP 2027 di provinsimu dan bandingkan kenaikannya dengan formula PP 49/2025.",
+      "image": {
+        "url": "assets/7b9df9befa.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "UMP 2027: Jakarta Tertinggi Rp6,1 Juta, Maluku Naik 7,5 Persen"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+          "published_at": "2026-11-22T10:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5871283/pemerintah-tetapkan-kenaikan-75-persen-ump-maluku-2027",
+          "published_at": "2026-11-22T21:28:42+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "Pemerintah tetapkan kenaikan 7,5 persen UMP Maluku 2027",
+          "url": "https://www.antaranews.com/berita/5871283/pemerintah-tetapkan-kenaikan-75-persen-ump-maluku-2027",
+          "at": "2026-11-22T21:28:42+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Daftar Lengkap UMP 2027: Jakarta Tertinggi, NTT Terendah",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261122094055-92-1429974/daftar-lengkap-ump-2027-jakarta-tertinggi-ntt-terendah",
+          "at": "2026-11-22T10:10:00+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_menteri_pkp_dorong_pmn_smf_c8fd",
+      "angle": "Maruarar mendukung PMN untuk SMF agar pembiayaan rumah subsidi FLPP lebih luas.",
+      "kicker": "Nasional",
+      "title": "Menteri PKP Dukung PMN SMF demi Perluasan Rumah Subsidi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Menteri PKP Maruarar Sirait menyatakan dukungan atas PMN untuk SMF, tetapi besaran dan status persetujuannya tidak disebut dalam bahan.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Maruarar Sirait, Menteri Perumahan dan Kawasan Permukiman, menyatakan dukungan atas Penyertaan Modal Negara untuk PT Sarana Multigriya Finansial (Persero) atau SMF. Menurut dua pemberitaan pada 23 November 2026, dukungan itu diarahkan untuk memperluas rumah subsidi bagi masyarakat berpenghasilan rendah. Pernyataan tersebut disampaikan setelah ia membahas penguatan dukungan pembiayaan perumahan bersama Direktur Utama SMF Budi Susanto di Jakarta. Salah satu hal yang dibicarakan adalah surat Menteri PKP kepada Menteri Keuangan terkait PMN untuk SMF. Bagi pembaca yang tidak mengikuti pemberitaan ekonomi, inti persoalannya sederhana: dari mana uang pembiayaan rumah murah berasal, dan siapa yang menyediakannya. Sebelum menilai dampaknya, ada tiga hal yang perlu dipisahkan: apa itu PMN, apa itu FLPP, dan di tahap mana usulan ini berada.",
+        "Yang perlu dicatat lebih dulu, dukungan itu bukan keputusan. Bahan hanya menyebut bahwa Maruarar meminta pertimbangan dari jajaran terkait mengenai kebijakan PMN untuk SMF, dan bahwa ada surat kepada Menteri Keuangan. Tidak ada keterangan bahwa PMN sudah disetujui, berapa nilainya, atau kapan berlaku. Dengan kata lain, yang tersedia adalah pernyataan dukungan dan langkah pengajuan, bukan hasil akhir. Perbedaan ini penting karena pernyataan dukungan tidak sama dengan keputusan anggaran, dan bahan tidak menjelaskan tahap mana yang sudah dilalui. Pembaca sebaiknya tidak membaca berita ini sebagai program yang sudah pasti berjalan.",
+        "Dalam keterangannya, Maruarar menyebut sinergi antarlembaga sebagai syarat agar program perumahan pemerintah berjalan optimal dan memberi manfaat nyata. Ia menempatkan FLPP, atau Fasilitas Likuiditas Pembiayaan Perumahan, sebagai salah satu instrumen pemerintah untuk membantu masyarakat berpenghasilan rendah memperoleh akses rumah layak melalui fasilitas pembiayaan perumahan dengan dukungan pemerintah. Dalam skema yang digambarkan, SMF berperan penting dan bekerja sama dengan Badan Pengelola Tabungan Perumahan Rakyat (BP Tapera) serta Kementerian PKP. Pertemuan itu juga membahas perkembangan pelaksanaan FLPP dan upaya meningkatkan capaian penyaluran pembiayaan perumahan, meski bahan tidak menyebut angka capaian yang dibahas.",
+        "Soal uang, Budi Susanto menyampaikan komposisi pendanaan: BP Tapera 75 persen atau sekitar Rp44 triliun dan SMF 25 persen atau sekitar Rp5,8 triliun. Ia juga menyatakan kesiapan mendukung penyaluran pembiayaan rumah subsidi dari dana SMF. Budi menyampaikan terima kasih atas surat penugasan agar SMF ikut serta dalam program FLPP, dan menyebut kolaborasi antarlembaga perlu dijaga agar dukungan pembiayaan berkelanjutan. Bahan tidak menjelaskan apakah surat penugasan itu sama dengan surat Menteri PKP kepada Menteri Keuangan yang disebut sebelumnya, sehingga hubungan keduanya belum jelas. Bahan juga tidak menyebut periode berlaku komposisi 75 dan 25 persen tersebut.",
+        "Target yang disebut cukup besar. Maruarar mengatakan Presiden Prabowo Subianto sejak dilantik 20 Oktober 2024 fokus pada rumah subsidi, dan pada tahun pertama ada kenaikan 50 ribu unit. Ia menyebut dua akad massal rumah subsidi yang masih dijadwalkan: 17 Desember 2026 di Malang sebanyak 71.000 unit dan 31 Desember 2026 di Bekasi sebanyak 30.000 unit. Bahan tidak menyebut angka dasar dari kenaikan 50 ribu unit itu, sehingga tidak bisa disimpulkan persentase atau perbandingannya. Bahan juga tidak menjelaskan apakah dua akad massal itu bagian dari target tahun ini atau tambahan di luar capaian yang sudah ada.",
+        "Banyak hal penting justru belum ada dalam bahan. Besaran PMN yang diminta tidak disebut dalam rupiah, begitu pula jadwal, bentuk, dan apakah usulan itu sudah masuk dokumen anggaran. Tidak ada keterangan dari Kementerian Keuangan, dan tidak ada penjelasan apakah persetujuan lembaga lain diperlukan. Bahan tidak menyebut apakah PMN akan menambah porsi SMF di atas 25 persen atau hanya menjaga porsi yang sudah ada. Bahan juga tidak memuat pernyataan tentang siapa yang menanggung risiko bila penyaluran tidak tercapai. Tidak disebut pula apakah usulan ini dibahas bersama lembaga lain di luar kementerian. Semua itu belum tersedia, dan sebaiknya ditunggu sebelum menilai dampaknya bagi calon pembeli rumah subsidi.",
+        "Pada keterangan terpisah, Maruarar juga membahas perlindungan konsumen perumahan. Ia menyebut perlindungan konsumen dan penyelesaian persoalan konsumen membutuhkan kerja sama berbagai pihak, dan pemerintah tidak dapat bekerja sendiri. Menurutnya, kebijakan perlu dibangun lewat kolaborasi agar benar-benar menjawab tantangan dan melindungi kepentingan masyarakat. Kementerian PKP, katanya, memperkuat kolaborasi dengan Badan Perlindungan Konsumen Nasional (BPKN). Ia menegaskan pemerintah dan pemangku kepentingan tidak boleh baru bergerak setelah masalah muncul, dan masukan masyarakat perlu masuk dalam perumusan kebijakan. Dua kasus yang disebut adalah Meikarta dan kawasan LRT City, yang penyelesaiannya disebut terus didorong secara bertahap tanpa rincian status hukum.",
+        "Ada juga rencana membentuk wadah penghuni. Kementerian PKP disebut telah berkoordinasi, berdiskusi, dan menjalin kerja sama dengan BPKN untuk mendorong terbentuknya asosiasi penghuni rumah susun serta asosiasi penghuni rumah subsidi. Keduanya diharapkan menjadi ruang menyampaikan aspirasi, memperjuangkan hak, dan berkomunikasi dengan pemangku kepentingan. Ketua BPKN Muhammad Mufti Mubarok mengatakan sektor perumahan dan jasa keuangan termasuk yang banyak menerima pengaduan. Untuk perumahan, keluhan yang kerap dilaporkan menyangkut legalitas atau kedudukan hukum, kondisi fisik bangunan, dan investasi. Bahan tidak menyebut kapan asosiasi itu ditargetkan terbentuk atau siapa yang menyiapkan anggarannya.",
+        "Mufti Mubarok menyatakan pengaduan konsumen di sektor perumahan turun cukup jauh dalam satu tahun terakhir, dan mengapresiasi langkah Menteri PKP mendorong penyelesaian berbagai persoalan perumahan. Namun bahan tidak menyebut angka penurunan itu, baik jumlah maupun persentasenya, sehingga besarnya perubahan tidak dapat diverifikasi. Tidak ada juga rincian periode pembanding yang dipakai BPKN, atau apakah penurunan itu dihitung dari pengaduan yang masuk atau yang selesai. Pembaca perlu membedakan antara pernyataan adanya penurunan dan data yang bisa diperiksa sendiri. Klaim penurunan itu juga tidak dikaitkan secara langsung dengan rencana PMN dalam bahan ini.",
+        "Perlu dicatat perbedaan waktu penyampaian. Keterangan soal perlindungan konsumen disampaikan di Jakarta pada Minggu dan diberitakan 22 November 2026 malam, sedangkan keterangan soal PMN disampaikan pada Senin dan diberitakan 23 November 2026 dini hari. Keduanya diatribusikan kepada Maruarar, tetapi merupakan dua pernyataan berbeda, bukan satu peristiwa. Untuk tanggal pelantikan, latar biografi menyebut Maruarar dilantik 21 Oktober 2024, sementara artikel PMN menyebut Presiden Prabowo dilantik 20 Oktober 2024; keduanya merujuk orang yang berbeda sehingga tidak saling bertentangan. Perbedaan kecil seperti ini mudah tercampur bila berita dibaca sekilas dari media sosial.",
+        "Untuk pembeli rumah, Maruarar mengingatkan agar lebih cermat. Calon pembeli diminta memperhatikan rekam jejak pengembang, kualitas bangunan, dan kepastian legalitas, serta tidak mudah tergiur diskon atau promosi penjualan. Ia menyebut membeli rumah sebagai keputusan besar bagi keluarga, sehingga kualitas dan kepastian hukum perlu dipastikan agar tidak menimbulkan persoalan di kemudian hari. Nasihat ini muncul di kedua pemberitaan tentang perlindungan konsumen, bukan di pemberitaan soal PMN. Bahan tidak menyebut apakah ada mekanisme pengaduan baru yang disiapkan untuk calon pembeli rumah subsidi.",
+        "Bagi pembaca yang jarang membuka media sosial, rantai pembiayaan ini penting karena menentukan apakah rumah subsidi benar-benar bisa diakses. Menurut bahan, dana program FLPP berasal dari BP Tapera dan SMF, dengan porsi yang disebut Budi Susanto. Bila PMN terealisasi, kapasitas penyaluran dapat bertambah, tetapi bahan tidak memuat hitungan dampaknya dan tidak menyebut berapa unit tambahan yang diharapkan. Karena itu, klaim bahwa PMN akan menambah jumlah unit rumah subsidi belum bisa diuji dari bahan ini. Yang tersedia baru pernyataan dukungan, komposisi pendanaan, dan dua agenda akad massal pada akhir Desember 2026. Dengan begitu, ada dua jalur yang bisa dipantau pembaca: keputusan pembiayaan di Jakarta dan realisasi akad di daerah.",
+        "Langkah berikutnya yang bisa dipantau adalah keterangan resmi soal PMN itu sendiri: besaran, dasar hukum, dan jadwal pembahasan dengan Kementerian Keuangan. Bahan belum memuat semuanya. Sampai ada keterangan baru, statusnya tetap usulan yang didukung Menteri PKP, bukan kebijakan yang berlaku. Sementara itu, agenda akad massal 17 dan 31 Desember 2026 menjadi penanda yang bisa diperiksa: apakah jumlah unit yang disebut tercapai, dan apakah persoalan konsumen seperti Meikarta dan LRT City ikut tuntas. Dua hal itu lebih mudah diverifikasi daripada pernyataan dukungan di awal proses."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Maruarar Sirait sebelum menjabat Menteri PKP?",
+          "a": "Ia politikus Indonesia dan mantan anggota DPR RI dari fraksi PDI-P, lalu bergabung dengan Partai Gerindra dan mendukung pasangan Prabowo Subianto-Gibran Rakabuming Raka pada Pilpres 2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Maruarar_Sirait"
+          }
+        },
+        {
+          "q": "Kapan ia dilantik sebagai Menteri PKP?",
+          "a": "Latar biografi menyebut 21 Oktober 2024, dalam Kabinet Merah Putih.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Maruarar_Sirait"
+          }
+        },
+        {
+          "q": "Apa fokus lain yang disampaikan Maruarar pada keterangan akhir pekan itu?",
+          "a": "Ia menekankan pentingnya perlindungan konsumen di sektor perumahan, termasuk penyelesaian persoalan konsumen.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5871379/menteri-pkp-perlindungan-konsumen-dalam-sektor-perumahan-penting"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Kementerian Keuangan soal besaran PMN untuk SMF sebelum menyimpulkan tambahan rumah subsidi.",
+      "image": {
+        "url": "assets/7d873172aa.webp",
+        "credit": "republika.co.id",
+        "alt": "Menteri PKP Dukung PMN SMF demi Perluasan Rumah Subsidi"
+      },
+      "sources": [
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tox68h5930000/menteri-pkp-dukung-pmn-smf-demi-perluasan-akses-rumah-subsidi",
+          "published_at": "2026-11-23T03:00:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1279895/beli-rumah-jangan-tergiur-diskon-ini-pesan-menteri-pkp",
+          "published_at": "2026-11-22T23:37:26+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5871379/menteri-pkp-perlindungan-konsumen-dalam-sektor-perumahan-penting",
+          "published_at": "2026-11-22T23:27:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "Menteri PKP Dukung PMN SMF Demi Perluasan Akses Rumah Subsidi",
+          "url": "https://news.republika.co.id/berita/tox68h5930000/menteri-pkp-dukung-pmn-smf-demi-perluasan-akses-rumah-subsidi",
+          "at": "2026-11-23T03:00:17+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "harianjogja.com",
+          "title": "Beli Rumah Jangan Tergiur Diskon, Ini Pesan Menteri PKP",
+          "url": "https://news.harianjogja.com/r-1279895/beli-rumah-jangan-tergiur-diskon-ini-pesan-menteri-pkp",
+          "at": "2026-11-22T23:37:26+07:00",
+          "owner": "Bisnis Indonesia",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Menteri PKP: Perlindungan konsumen dalam sektor perumahan penting",
+          "url": "https://www.antaranews.com/berita/5871379/menteri-pkp-perlindungan-konsumen-dalam-sektor-perumahan-penting",
+          "at": "2026-11-22T23:27:14+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_bmkg_ingatkan_rob_dan_gempa_effa",
+      "angle": "Gempa M5,4 di Melonguane, supermoon 24 November; soal rob belum ada keterangan.",
+      "kicker": "Bencana",
+      "title": "Gempa M5,4 Guncang Melonguane, BMKG Catat Supermoon 24 November",
+      "status": "sebagian",
+      "truth": {
+        "claim": "BMKG melaporkan gempa magnitudo 5,4 berpusat sekitar 98 kilometer barat daya Melonguane pada 22 November 2026 sore.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) melaporkan gempa berkekuatan magnitudo 5,4 mengguncang wilayah Melonguane, Sulawesi Utara, pada Minggu sore, 22 November 2026. Pusat gempa berada pada koordinat 3,12 derajat Lintang Utara dan 126,57 derajat Bujur Timur, atau sekitar 98 kilometer barat daya Melonguane. Laporan itu tidak menyebut jumlah korban, kerusakan bangunan, maupun kedalaman sumber gempa. Hingga laporan tersebut ditulis, belum ada keterangan apakah gempa itu berpotensi tsunami atau tidak. Informasi yang tersedia baru sebatas lokasi pusat gempa dan kekuatannya.",
+        "Melonguane bukan nama yang sembarangan. Menurut catatan Wikipedia, Melonguane adalah sebuah kecamatan yang sekaligus menjadi pusat pemerintahan Kabupaten Kepulauan Talaud, Provinsi Sulawesi Utara. Pada tahun 2020, penduduk kecamatan ini tercatat 11.920 jiwa dengan kepadatan 154 jiwa per kilometer persegi. Dengan pusat gempa berjarak sekitar 98 kilometer di barat daya, getaran kemungkinan terasa di kawasan ini, tetapi laporan yang tersedia tidak memuat keterangan soal seberapa kuat guncangan yang dirasakan warga. Dengan begitu, gambaran dampak di permukiman belum bisa dipastikan dari bahan yang ada.",
+        "BMKG juga mencatat fenomena lain di langit. Menurut laporan pada 22 November, BMKG mengamati akan datangnya supermoon atau purnama perigee pertama tahun ini di langit Indonesia pada 24 November 2026. Fenomena itu akan memperlihatkan bulan purnama yang tampak lebih besar dibandingkan biasanya. Istilah superbulan dipakai untuk menggambarkan bulan penuh ketika bulan berada di posisi terdekatnya dengan Bumi, yakni sekitar 10 persen atau kurang dari jarak lintasannya. Istilah ini tidak diterima secara luas, terutama di kalangan ilmuwan. Bahan yang ada tidak menyatakan supermoon menyebabkan gempa; keduanya dilaporkan sebagai dua peristiwa yang terpisah.",
+        "Terpisah dari dua hal itu, BMKG memprakirakan cuaca Jakarta pada Senin, 23 November 2026. Melalui akun Instagram resmi @infobmkg, BMKG memperkirakan hampir seluruh wilayah Jakarta berawan pada pagi hingga siang, lalu hujan ringan pada pukul 13.00 WIB. Sore sekitar pukul 16.00 WIB, hampir seluruh Jakarta berpotensi masih diguyur hujan ringan, kecuali Kepulauan Seribu yang berawan tebal. Suhu udara pagi berkisar 26 sampai 30 derajat Celsius dengan kecepatan angin rata-rata 1 sampai 12 kilometer per jam. Prakiraan ini berdiri sendiri dan tidak menjelaskan soal banjir rob di pesisir.",
+        "Sejumlah hal masih belum jelas dan perlu ditunggu. Bahan tidak memuat informasi soal korban jiwa, kerusakan, kedalaman gempa, maupun ada tidaknya peringatan tsunami setelah guncangan di Melonguane. Topik yang beredar menyebut imbauan waspada banjir rob saat supermoon, tetapi tidak satu pun bahan di atas memuat pernyataan BMKG mengenai rob. Langkah berikutnya adalah menunggu pembaruan resmi BMKG, terutama soal dampak gempa di Melonguane, jarak dan kedalaman pusat gempa, serta keterangan terpisah mengenai risiko rob di wilayah pesisir."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud supermoon dan mengapa istilahnya diperdebatkan?",
+          "a": "Superbulan menggambarkan bulan penuh saat bulan berada di titik terdekatnya dengan Bumi, sekitar 10 persen atau kurang dari jarak lintasannya. Istilah ini dipakai kalangan astrolog dan tidak diterima secara luas, terutama di kalangan ilmuwan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Superbulan"
+          }
+        },
+        {
+          "q": "Melonguane itu wilayah seperti apa?",
+          "a": "Melonguane adalah kecamatan yang menjadi pusat pemerintahan Kabupaten Kepulauan Talaud, Sulawesi Utara, dengan penduduk 11.920 jiwa pada 2020 dan kepadatan 154 jiwa per kilometer persegi.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Melonguane%2C_Kepulauan_Talaud"
+          }
+        }
+      ],
+      "action": "Pantau pembaruan resmi BMKG soal dampak gempa Melonguane dan informasi rob, jangan sebarkan kabar yang belum dikonfirmasi.",
+      "image": {
+        "url": "assets/644a643df1.webp",
+        "credit": "okezone.com",
+        "alt": "Gempa M5,4 Guncang Melonguane, BMKG Catat Supermoon 24 November"
+      },
+      "sources": [
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/22/340/3255548/gempa-m5-4-guncang-melonguane-sulut-bmkg-pastikan-tak-berpotensi-tsunami",
+          "published_at": "2026-11-22T15:34:05+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1775027/15/fenomena-supermoon-pertama-2026-pada-24-november-bmkg-imbau-waspada-banjir-rob-1795349519",
+          "published_at": "2026-11-22T19:52:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5871451/senin-jakarta-berpotensi-hujan-ringan-pada-siang-dan-sore-hari",
+          "published_at": "2026-11-23T05:25:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "Senin, Jakarta berpotensi hujan ringan pada siang dan sore hari",
+          "url": "https://www.antaranews.com/berita/5871451/senin-jakarta-berpotensi-hujan-ringan-pada-siang-dan-sore-hari",
+          "at": "2026-11-23T05:25:35+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "sindonews.com",
+          "title": "Fenomena Supermoon Pertama 2026 pada 24 November, BMKG Imbau Waspada Banjir Rob",
+          "url": "https://nasional.sindonews.com/read/1775027/15/fenomena-supermoon-pertama-2026-pada-24-november-bmkg-imbau-waspada-banjir-rob-1795349519",
+          "at": "2026-11-22T19:52:18+07:00",
+          "owner": "MNC",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_23",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah: Video Lama hingga Atribusi ke Sultan",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 23 November 2026, tiga klaim beredar dan diperiksa oleh TurnBackHoax. Ketiganya dinyatakan salah. Klaim pertama menyebut Prabowo meminta TNI dan Polri menindaklanjuti aksi demonstrasi belakangan ini. Klaim kedua berupa video yang dikatakan memperlihatkan jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang. Klaim ketiga menyebut Sri Sultan Hamengkubuwono X menghentikan MBG di Jogja dan mengubah dananya untuk pendidikan.",
+        "Dua dari tiga klaim memakai rekaman yang sudah ada, lalu diberi keterangan baru. Video pidato Prabowo ternyata berasal dari Agustus 2025, setelah demonstrasi nasional, dan tidak berkaitan dengan demonstrasi belakangan ini. Video yang diklaim sebagai serangan terhadap jalur pipa minyak Arab Saudi faktanya adalah ledakan di pabrik kembang api di Malta, Eropa Selatan. Klaim ketiga berpola lain: tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+        "Sebaiknya pembaca memeriksa tanggal dan sumber asli rekaman sebelum membagikannya, serta membandingkan klaim kebijakan dengan pernyataan resmi. Rekaman lama dan peristiwa dari tempat lain mudah tampak meyakinkan bila keterangannya diganti."
+      ],
+      "action": "Periksa tanggal dan sumber asli video sebelum membagikannya, dan bandingkan klaim kebijakan dengan pernyataan resmi.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Prabowo Meminta TNI dan Polri Menindaklanjuti Aksi Demonstrasi Belakangan Ini",
+          "verdict": "salah",
+          "reason": "Video tersebut merupakan video pidato Prabowo setelah demonstrasi nasional pada Agustus 2025, tidak berkaitan dengan demonstrasi yang diselenggarakan belakangan ini.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37499-salah-prabowo-meminta-tni-dan-polri-menindaklanjuti-aksi-demonstrasi-belakangan-ini"
+        },
+        {
+          "claim": "Video \"Jalur pipa minyak Timur-Barat (East-West Pipeline) Arab Saudi kembali diserang\"",
+          "verdict": "salah",
+          "reason": "Video yang dibagikan faktanya adalah video peristiwa ledakan di pabrik kembang api di Malta, Eropa Selatan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37487-salah-video-jalur-pipa-minyak-timur-barat-east-west-pipeline-arab-saudi-kembali-diserang"
+        },
+        {
+          "claim": "Sri Sultan Hamengkubuwono X Hentikan MBG di Jogja, Ubah Dana untuk Pendidikan",
+          "verdict": "salah",
+          "reason": "Tuntutan pengalihan anggaran berasal dari aspirasi demonstran, sedangkan penghentian sementara 97 SPPG disebabkan kendala pencairan dana dan operasional, bukan kebijakan Sultan.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37488-salah-sri-sultan-hamengkubuwono-x-hentikan-mbg-di-jogja-ubah-dana-untuk-pendidikan"
+        }
+      ],
+      "pattern": "Rekaman lama atau peristiwa dari tempat lain diberi keterangan baru, sementara keputusan pejabat diklaim tanpa dasar pernyataan resmi."
+    },
+    {
+      "id": "c8",
+      "type": "good_news",
+      "topic_id": "t_ma_ruf_amin_kukuh_mundur_dari_c0a6",
+      "angle": "Ma'ruf Amin tolak dibujuk bertahan, tekankan kaderisasi; MUI siapkan pengganti.",
+      "kicker": "Satu hal baik",
+      "title": "Ma'ruf Amin Tetap Mundur sebagai Ketua Wantim MUI, MUI Cari Pengganti",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Ma'ruf Amin disebut telah mengirim surat pengunduran diri sebagai Ketua Wantim MUI, dan MUI menyebut nama penggantinya mungkin jelas pada Desember 2026.",
+        "status": "sebagian",
+        "confidence": 0.7,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-23T05:45:58+07:00"
+      },
+      "body": [
+        "Ma'ruf Amin memutuskan mundur dari jabatan Ketua Dewan Pertimbangan (Wantim) Majelis Ulama Indonesia untuk masa khidmah 2025–2030. Kabar itu disampaikan Ketua MUI Bidang Informasi, Komunikasi, dan Digital, Masduki Baidlowi, kepada wartawan pada Minggu, 22 November 2026, lalu dikutip sejumlah media. Menurut Masduki, Ma'ruf bukan baru akan mundur: surat pernyataan pengunduran diri sudah lama dikirim ke pimpinan MUI, hanya saja baru ditindaklanjuti belakangan. Keputusan itu tetap diambil meski pengurus MUI berulang kali meminta ia bertahan di posisi tersebut.",
+        "Masduki mengatakan harapan agar Ma'ruf bertahan muncul dari rapat di Dewan Pimpinan MUI. Alasannya, Ma'ruf dianggap sudah menjadi ikon lembaga itu: bila orang membicarakan MUI, keuangan syariah, atau sertifikasi halal, nama Ma'ruf yang terbayang. Karena itu tim MUI sampai mendatangi rumahnya untuk membujuk. Namun Ma'ruf menegaskan sudah waktunya ada kaderisasi di tubuh MUI, dan ia menghormati proses pergantian itu. Ia disebut tetap bersedia turun tangan bila dibutuhkan, khususnya untuk halal, ekonomi syariah, dan perbankan syariah.",
+        "Yang belum pasti justru kapan surat itu dikirim. Dalam pemberitaan, Masduki hanya menyebut surat diajukan \"hampir enam bulan atau setahun yang lalu\", tanpa tanggal pasti. Ia juga menuturkan permintaan mundur disampaikan tak lama setelah Ma'ruf purnatugas sebagai Wakil Presiden ke-13 RI, ketika kepengurusan MUI berganti. Sampai berita ini diturunkan, belum ada keterangan resmi yang memuat tanggal surat maupun salinan surat pengunduran diri tersebut.",
+        "Untuk mengisi kekosongan, MUI menyiapkan dua langkah: berkonsultasi dengan Dewan Pertimbangan dan dengan Pengurus Besar Nahdlatul Ulama (PBNU). Masduki menyebut sejumlah nama yang ada di Dewan Pertimbangan, yakni KH Afifuddin Muhajir, Prof Jimly Asshiddiqie, dan eks Wakil Menteri Agama Zainut Tauhid. Ia menegaskan belum ada keputusan soal siapa yang dipilih. Rapat pembahasan disebut akan digelar dalam waktu dekat, dan ia menduga kejelasan nama pengganti baru muncul sekitar Desember 2026.",
+        "Sejumlah hal masih terbuka. MUI belum mengumumkan nama Ketua Wantim yang baru, belum memastikan jadwal rapatnya, dan belum menjelaskan apakah pengganti akan dipilih dari dalam Dewan Pertimbangan atau dari luar. Belum ada pula keterangan dari Ma'ruf Amin sendiri dalam bahan yang tersedia, sehingga alasan lengkap di balik keputusannya baru diketahui lewat penuturan pihak MUI. Pembaca perlu menunggu pengumuman resmi untuk memastikan susunan kepengurusan setelah pergantian ini."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Dewan Pertimbangan MUI, dan apa bedanya fatwa MUI dengan hukum negara?",
+          "a": "MUI mengeluarkan ketetapan keagamaan yang disebut fatwa. Fatwa mengikat secara moral bagi umat Islam, tetapi bukan hukum negara dan tidak otomatis menjadi peraturan.",
+          "source": {
+            "outlet": "MUI",
+            "url": "https://mui.or.id/"
+          }
+        },
+        {
+          "q": "Siapa Ma'ruf Amin dalam konteks pemberitaan ini?",
+          "a": "Ia adalah Wakil Presiden ke-13 RI yang mundur sebagai Ketua Wantim MUI; MUI berharap ia tetap memimpin, namun ia menekankan perlunya kaderisasi.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8764631/maruf-amin-kukuh-mundur-dari-ketua-wantim-mui-ini-kandidat-penggantinya"
+          }
+        }
+      ],
+      "action": "Pantau rapat MUI soal pengganti Ketua Wantim dan cek apakah nama baru diumumkan sebelum Desember.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8764631/maruf-amin-kukuh-mundur-dari-ketua-wantim-mui-ini-kandidat-penggantinya",
+          "published_at": "2026-11-22T16:47:26+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261122173349-32-1430123/maruf-amin-kukuh-mundur-dari-ketua-wantim-mui-walau-diminta-bertahan",
+          "published_at": "2026-11-22T18:30:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-23T05:45:58+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-23",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}
