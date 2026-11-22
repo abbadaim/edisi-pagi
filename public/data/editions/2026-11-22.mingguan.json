@@ -1,0 +1,650 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-22",
+  "scope": "mingguan",
+  "published_at": "2026-11-22T05:00:00+07:00",
+  "coverage": {
+    "from": "2026-11-15T05:00:00+07:00",
+    "to": "2026-11-22T05:00:00+07:00"
+  },
+  "generated_at": "2026-11-22T05:00:00+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 35,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "fallback",
+      "model": "none"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "rules",
+      "model": "evidence-class"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 5,
+  "truncated_reason": "Korpus terbatas: 5 thread dengan >=2 media",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Rekap 6 hari",
+      "kicker": "Rekap pekan",
+      "title": "Produsen Minyak Thailand Tawar Produk ke Karet RI Jelang IEU-CEPA",
+      "status": "sebagian",
+      "truth": {
+        "claim": "P.S.P. Specialties menawarkan minyak pemrosesan karet rendah PAH ke industri karet Indonesia menjelang IEU-CEPA, sementara pemerintah menargetkan perjanjian itu",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:00:00+07:00"
+      },
+      "body": [
+        "Pada 16 November 2026, P.S.P. Specialties Public Company Limited, produsen minyak khusus asal Thailand, mengumumkan penawaran rangkaian minyak pemrosesan karet merek GRAND dan GRANDIS kepada produsen ban serta pelaku industri barang berbahan karet di Indonesia. Penawaran itu datang menjelang pemberlakuan Indonesia–Uni Eropa Comprehensive Economic Partnership Agreement (IEU-CEPA) yang ditargetkan pada awal 2027. Perusahaan menyebut Indonesia sebagai produsen karet alam terbesar kedua di dunia dan basis sejumlah produsen ban lokal maupun global. Dalam pengumuman yang dikutip Antara, P.S.P. juga menyoroti posisi Indonesia sebagai eksportir alas kaki terbesar keenam berdasarkan nilai ekspor, serta menyebut pasar ekspor menuntut kinerja produksi yang konsisten. Menurut perusahaan, produsen membutuhkan minyak pemrosesan yang memberi kinerja stabil sekaligus memenuhi standar pasar ekspor.",
+        "Perubahan lain pada pekan yang sama datang dari pemerintah. Menteri Perdagangan Budi Santoso mengatakan IEU-CEPA dijadwalkan ditandatangani pada 21 November 2026 di Brussel, Belgia, dan pemerintah mengejar penyelesaian ratifikasi agar perjanjian berlaku pada Januari 2027. Alasan yang ia sebut adalah berakhirnya fasilitas Generalized System of Preferences (GSP) dari Uni Eropa pada Januari. Budi berharap GSP yang tidak lagi berlaku langsung digantikan IEU-CEPA sehingga tidak ada kekosongan fasilitas perdagangan. Ia menyebut hampir 98% produk Indonesia akan memperoleh kemudahan tarif di pasar Uni Eropa dan berharap total perdagangan yang kini sekitar 30 miliar dolar Amerika Serikat bisa dua kali lipat.",
+        "Susunan delegasi dan tahapan hukumnya dijelaskan pada 16 November. Delegasi Indonesia dipimpin Menteri Koordinator Bidang Perekonomian Airlangga Hartarto; Menteri Perdagangan Budi Santoso dijadwalkan menandatangani IEU-CEPA, sementara Menteri Investasi dan Hilirisasi/Kepala BKPM Rosan Roeslani menandatangani Investment Protection Agreement atau perjanjian perlindungan investasi pada waktu bersamaan di Brussel. Direktur Jenderal Perundingan Perdagangan Internasional Kementerian Perdagangan Johni Martha menyebut penandatanganan sebagai batu loncatan penting. Namun ia belum dapat memastikan waktu implementasi karena ratifikasi bergantung pada proses politik di parlemen masing-masing pihak, terutama di Uni Eropa. Ia hanya menyatakan pemerintah akan berusaha mempercepatnya. Menurut Johni, penandatanganan itu menjadi salah satu langkah penting agar Indonesia dan Uni Eropa dapat segera memanfaatkan kesepakatan.",
+        "Rincian tarif muncul dua hari kemudian. Pemerintah mencatat 90,4% pos tarif ekspor Indonesia ke Uni Eropa akan langsung menikmati bea masuk nol persen setelah perjanjian berlaku penuh, sedangkan 8,37% pos tarif lain diturunkan bertahap dalam periode 3 sampai 15 tahun atau melalui skema kuota tarif. Sekitar 1,2% pos tarif tetap mengikuti tarif umum atau most favored nation karena masuk kategori produk sensitif. Angka 90,4% itu juga muncul dalam pemberitaan Tirto. Pasar Uni Eropa digambarkan berpenduduk sekitar 450 juta orang dengan daya beli dan standar konsumsi relatif tinggi, dan nilai perdagangan bilateral selama ini tercatat stabil di kisaran 30 miliar dolar Amerika Serikat per tahun. Uni Eropa juga disebut masuk lima besar mitra dagang Indonesia bersama China, Amerika Serikat, Jepang, dan India.",
+        "Ada dua cara membaca angka di atas, dan keduanya perlu disebut agar tidak membingungkan. Pejabat pemerintah menyebut hampir 98% produk atau pos tarif memperoleh kemudahan tarif, sedangkan rincian teknis menyebut 90,4% langsung bebas bea masuk, 8,37% bertahap, dan 1,2% tetap tarif umum. Selisih itu kemungkinan berasal dari perbedaan cakupan: angka 98% mencakup seluruh pos yang mendapat semacam kemudahan, sementara 90,4% hanya yang langsung nol. Soal waktu pun tidak seragam. Januari 2027, awal 2027, dan kuartal I-2027 dipakai bergantian, sementara pejabat Kementerian Perdagangan mengingatkan bahwa ratifikasi parlemen belum bisa dipastikan. Pembaca sebaiknya memperlakukan semua tanggal itu sebagai target, bukan kepastian.",
+        "Bagi industri karet, tarif bukan satu-satunya pintu masuk. Uni Eropa menerapkan aturan REACH yang secara ketat membatasi kandungan PAH dalam minyak pengisi ban, sebagaimana disorot dalam pengumuman P.S.P. Perusahaan mengklaim produk GRANDIS memiliki kandungan PAH rendah, dan kedua rangkaian diproduksi sesuai spesifikasi TIS dan ASTM serta memenuhi ketentuan RoHS dan REACH. Karena itu, penawaran ini dapat dibaca sebagai upaya menempatkan kepatuhan standar sebagai nilai jual, bukan sekadar harga. Perusahaan juga menyebut tim teknisnya memberi konsultasi formulasi, sampel untuk uji coba, dan pengujian kandungan PAH di fasilitas internal. Detail formulasi, harga, dan volume pasokan tidak disebutkan dalam bahan.",
+        "Pihak yang paling langsung terdampak adalah produsen ban dan industri barang berbahan karet, mulai dari alas kaki hingga komponen otomotif. Pemerintah menyebut tekstil dan produk tekstil, pakaian jadi, alas kaki, serta produk elektronik sebagai sektor yang berpotensi paling diuntungkan oleh IEU-CEPA. Bagi eksportir, insentifnya adalah tarif yang lebih rendah; bagi produsen dalam negeri, kemungkinan tekanan bersaing muncul jika bahan dan produk impor lebih mudah masuk. Usaha mikro, kecil, dan menengah yang mengekspor ke Uni Eropa disebut sebagai kelompok yang hendak dilindungi kepentingannya, tetapi bahan tidak memuat rincian program khusus bagi mereka. Pekerja di sektor padat karya juga disebut sebagai pihak yang diharapkan memperoleh manfaat. Bahan tidak memuat perkiraan jumlah tenaga kerja atau nilai ekspor karet yang bergantung pada perjanjian ini.",
+        "Profil pemasoknya membantu menilai bobot penawaran ini. P.S.P. Specialties didirikan pada 1989 dan menyebut memiliki pengalaman lebih dari 35 tahun di industri minyak khusus serta mengekspor produknya ke lebih dari 50 negara. Kapasitas produksi minyak pemrosesan untuk industri karet disebut 44 juta liter per tahun. Mengutip Kline (2025), perusahaan mengklaim menguasai sekitar 45% pasar minyak pemrosesan karet di Thailand dan memasok sejumlah produsen ban global maupun lokal. GRAND terdiri atas tiga jenis dengan komposisi kimia berbeda, sedangkan GRANDIS diposisikan sebagai pilihan berkandungan PAH rendah. Perusahaan juga menyebut sedang mengembangkan minyak pemrosesan dari bahan hayati, meski tahap, bahan baku, dan jadwal pengembangannya tidak dijelaskan dalam bahan.",
+        "Yang belum jelas justru bagian yang paling sering ditanyakan pembaca. Bahan tidak menyebut apakah penawaran P.S.P. sudah berubah menjadi kontrak, berapa volume, harga, atau nilai investasinya. Bahan juga hanya menyebut penandatanganan dijadwalkan pada 21 November 2026, tanpa konfirmasi bahwa acara itu benar-benar berlangsung dan tanpa rincian hasilnya. Waktu berlaku penuh pun belum pasti: satu sumber menyebut Januari 2027, sumber lain kuartal I-2027, dan Kementerian Perdagangan menegaskan implementasi menunggu ratifikasi parlemen. Rincian tiga jenis produk GRAND juga tidak diuraikan, begitu pula daftar produsen Indonesia yang telah menerima sampel atau menjajaki kerja sama. Belum ada keterangan apakah uji coba di pabrik Indonesia sudah dilakukan dan apakah hasilnya dapat diperiksa publik.",
+        "Sisi risiko perlu diletakkan berdampingan dengan peluang. Fasilitas GSP Uni Eropa berakhir pada 1 Januari 2027, dan sejumlah pemberitaan menyoroti ancaman kenaikan tarif ekspor Indonesia ke Uni Eropa pada 2027. Pemerintah sendiri menyatakan ingin menghindari jeda antara berakhirnya GSP dan berlakunya IEU-CEPA. Artinya, nilai kesepakatan ini bagi eksportir sangat bergantung pada kecepatan ratifikasi: semakin lambat, semakin panjang periode tanpa pengganti preferensi tarif. Bahan tidak memuat perkiraan besaran kerugian bila jeda itu terjadi, juga tidak menyebut produk mana yang paling rentan. Selain Uni Eropa, pemerintah masih menunggu pertukaran notifikasi untuk perjanjian dagang dengan Kanada dan belum bisa memastikan mana yang lebih dulu berlaku. Pemberitaan lain menyebut rencana membentuk perjanjian serupa dengan Inggris setelah IEU-CEPA.",
+        "Langkah berikutnya yang perlu dipantau ada tiga lapis. Pertama, pengumuman resmi hasil penandatanganan dan jadwal ratifikasi di Indonesia serta di Uni Eropa. Kedua, kesiapan teknis pelaku usaha: pemerintah menyebut akan meningkatkan efisiensi logistik, menyederhanakan prosedur ekspor, dan memberi pendampingan sertifikasi agar produk memenuhi standar Eropa, termasuk keberlanjutan dan ketertelusuran. Ketiga, apakah penawaran pemasok asing seperti P.S.P. berlanjut menjadi kerja sama teknis, uji sampel, atau pasokan tetap. Ketiga lapis itu belum saling terhubung dalam bahan, sehingga belum ada gambaran kapan manfaatnya sampai ke produsen kecil. Bahan juga belum memuat nama pihak yang akan menjalankan pendampingan sertifikasi tersebut.",
+        "Secara ringkas, pekan ini memperlihatkan dua jalur yang berjalan bersamaan. Di jalur pasar, pemasok minyak khusus Thailand menawarkan produk rendah PAH ke industri karet Indonesia. Di jalur kebijakan, pemerintah mengejar penandatanganan dan ratifikasi IEU-CEPA sebelum GSP berakhir. Keduanya bertemu pada satu syarat: produk karet Indonesia harus kompetitif di harga sekaligus lolos standar Uni Eropa. Apakah syarat itu terpenuhi belum bisa disimpulkan dari bahan yang ada, dan justru itu yang layak dipantau pada pekan-pekan berikutnya. Pembaca yang ingin mengikuti isu ini sebaiknya menunggu konfirmasi resmi, bukan menyimpulkan dari jadwal yang masih berupa target. Yang bisa dipegang hari ini adalah arah kebijakannya, bukan angka atau tanggal pastinya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu IEU-CEPA?",
+          "a": "Perjanjian kerja sama ekonomi menyeluruh antara Indonesia dan Uni Eropa yang menurut bahan latar akan diberlakukan menjelang awal 2027; bahan menyebutnya sebagai kerangka kerja sama ekonomi yang mencakup perdagangan.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5856983/produsen-specialty-oil-asal-thailand-dukung-industri-karet-indonesia-melalui-rangkaian-produk-process-oil-jelang-pemberlakuan-ieu-cepa"
+          }
+        },
+        {
+          "q": "Berapa negara yang tergabung dalam Uni Eropa?",
+          "a": "Uni Eropa adalah organisasi antarpemerintah dan supranasional yang beranggotakan 27 negara sejak 31 Januari 2020, menurut bahan latar.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5856983/produsen-specialty-oil-asal-thailand-dukung-industri-karet-indonesia-melalui-rangkaian-produk-process-oil-jelang-pemberlakuan-ieu-cepa",
+          "published_at": "2026-11-16T14:41:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116161829-4-785674/mendag-mau-kebut-ieu-cepa-berlaku-januari-2027-ini-alasannya",
+          "published_at": "2026-11-16T17:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261116132205-92-1427640/ri-uni-eropa-teken-kesepakatan-dagang-ieu-cepa-pada-21-november",
+          "published_at": "2026-11-16T18:01:31+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/ieu-cepa-diteken-pekan-ini-904-pos-tarif-ri-bebas-bea-masuk-idVR",
+          "published_at": "2026-11-18T14:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Pemasok minyak khusus Thailand menawarkan produk rendah PAH ke industri karet RI, saat pemerintah mengejar ratifikasi IEU-CEPA.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "7",
+          "label": "media"
+        },
+        {
+          "value": "6 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "deep_dive",
+      "topic_id": "t_bertemu_menlu_brunei_malaysia_13d1",
+      "angle": "Rekap 6 hari",
+      "kicker": "Rekap pekan",
+      "title": "Prabowo di KTT ASEAN ke-49: Ajakan Perkuat Ketahanan Kawasan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Prabowo menyerukan penguatan ketahanan dan persatuan ASEAN pada sesi pleno KTT ke-49 di Manila, 15 November 2026.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:00:00+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto menyampaikan pidato pada sesi pleno Konferensi Tingkat Tinggi (KTT) ke-49 ASEAN di Philippine International Convention Center, Pasay, Manila, Filipina. Keterangan Biro Pers, Media, dan Informasi Sekretariat Presiden yang dikutip okezone.com menyebut pernyataan itu disampaikan pada Minggu, 15 November 2026. Tuan rumah, otoritas Filipina, memperkirakan sedikitnya 19 pemimpin dunia dan kepala lembaga internasional akan hadir. Angka itu disebut sebagai batas minimal, bukan jumlah pasti, dan daftar nama serta tingkat kehadiran masing-masing belum dirinci dalam bahan yang terhimpun. Yang tercatat hanya bahwa forum itu digelar di kompleks konvensi di kawasan Pasay, Manila.",
+        "Dalam pidatonya, Prabowo menyebut tiga tekanan yang dihadapi kawasan: tekanan ekonomi, ketegangan geopolitik, dan persaingan sumber daya. Karena itu ia menilai negara-negara ASEAN perlu memperkuat ketahanan dan persatuan kawasan. Kalimat itu bukan kesepakatan bersama, melainkan posisi yang ia sampaikan di forum. Menurut keterangan yang sama, ia menekankan bahwa kemampuan menghadapi tantangan harus dimulai dari kekuatan masing-masing negara dalam memenuhi kebutuhan dan menjaga kesejahteraan rakyatnya. Dengan rumusan itu, ketahanan kawasan digambarkan bukan sebagai urusan sekretariat organisasi, melainkan sesuatu yang bertumpu pada kondisi di dalam tiap negara anggota.",
+        "Prabowo mengingatkan bahwa tahun depan ASEAN memasuki usia 60 tahun. Menurut penilaiannya, selama enam dekade kerja sama kawasan berperan penting dalam menjaga perdamaian, mempertahankan stabilitas, dan mewujudkan kemakmuran. Ia menyebut ASEAN kini menjadi rumah bagi sekitar 700 juta penduduk, dengan ekonomi gabungan yang melampaui 4 triliun dolar AS. Latar organisasinya sejalan dengan itu: ASEAN didirikan di Bangkok, Thailand, pada 8 Agustus 1967 oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand, sehingga usia 60 tahun memang tercapai pada 2027, bukan tahun ini. Kecocokan tanggal itu penting agar angka usia tidak dikutip keliru.",
+        "Dua angka yang disebut Prabowo, yaitu sekitar 700 juta penduduk dan ekonomi gabungan di atas 4 triliun dolar AS, memberi gambaran mengapa ia memakai ukuran kawasan dan bukan hanya ukuran nasional. Dapat dibaca sebagai cara menempatkan kepentingan tiap negara di dalam satu kerangka bersama, sejalan dengan tujuan ASEAN untuk meningkatkan pertumbuhan ekonomi dan kemajuan sosial. Namun bahan yang tersedia tidak memuat rincian bagaimana angka itu dihitung, tahun acuannya, maupun lembaga yang menerbitkannya. Karena itu kedua angka tersebut untuk sementara hanya bisa dikutip sebagai pernyataan dalam pidato, bukan sebagai data statistik yang sudah diverifikasi.",
+        "Posisi Indonesia sendiri digambarkan tirto.id sebagai dorongan untuk memperkuat kerja sama negara-negara ASEAN agar ketahanan kawasan terjamin. Rumusan itu bersifat umum dan tidak menyebut instrumen apa pun, misalnya dokumen kerja sama, pendanaan, atau mekanisme pengawasan tertentu. Karena itu belum bisa disimpulkan apakah dorongan tersebut berujung pada komitmen bersama atau berhenti sebagai pernyataan sikap. Yang bisa dicatat, arah yang disampaikan konsisten dengan pidato di pleno: ketahanan kawasan disebut sebagai sesuatu yang perlu diperkuat, bukan sebagai persoalan yang sudah selesai diurus. Konsistensi ini hanya soal arah, bukan bukti adanya kesepakatan.",
+        "Dalam rentetan pemberitaan yang sama, Prabowo menegaskan pentingnya memperkuat kemitraan strategis komprehensif ASEAN-China melalui komitmen terhadap perdamaian, dialog, dan kerja sama ekonomi yang saling menguntungkan. Ia juga disebut mendorong negara-negara ASEAN dan China memperkuat komitmen terhadap perdamaian dan dialog. Dua pemberitaan itu memakai rumusan yang mirip, sehingga belum jelas apakah keduanya merujuk pada satu pernyataan yang sama atau pada dua kesempatan berbeda. Bahan juga tidak memuat isi kesepakatan, nilai transaksi, target waktu, atau nama pejabat China yang hadir dalam pembahasan tersebut.",
+        "Di luar agenda pleno, Prabowo menyampaikan permohonan maaf terkait asap lintas batas akibat kebakaran hutan dan lahan yang berdampak bagi rakyat Singapura dan Malaysia. Ia juga menyatakan pemerintah tidak akan memberikan toleransi kepada korporasi yang terlibat dalam kasus kebakaran hutan. Bahan tidak menyebut apakah permohonan maaf itu disampaikan di forum KTT, di sela pertemuan bilateral, atau di tempat lain, sehingga hubungannya dengan agenda Manila belum bisa dipastikan. Bahan juga tidak merinci bentuk ketidaktoleranan yang dimaksud, apakah sanksi administratif, pencabutan izin, atau proses hukum, sehingga bagian ini masih berupa pernyataan sikap.",
+        "Pertanyaan pertama yang perlu dijawab: apa yang berubah selama sepekan? Dari bahan bertanggal 15 sampai 16 November 2026, yang tampak berubah adalah fokus pemberitaan, bukan status keputusan. Pada 15 November, sorotan berada pada pidato pleno: ketahanan kawasan, usia 60 tahun ASEAN, dan ajakan bersatu. Sehari kemudian, sorotan bergeser ke dua hal lain, yaitu penguatan kemitraan ASEAN-China dan permohonan maaf soal asap lintas batas. Tidak ada bahan yang menyebut penandatanganan kesepakatan baru atau dokumen hasil yang disepakati. Karena itu perubahan yang bisa dipastikan bersifat penekanan dan isu yang dibicarakan, bukan hasil resmi yang sudah dikunci.",
+        "Mengapa perubahan itu penting? KTT adalah tempat negara anggota menyatakan prioritasnya di depan publik kawasan, dan pernyataan di forum semacam itu biasanya menjadi bahan bagi pembahasan lanjutan di tingkat kerja sama. Dengan menonjolkan ketahanan, persatuan, dan dialog, Indonesia menempatkan diri pada posisi yang menekankan stabilitas. Namun ada batas yang perlu dijaga: pernyataan di pleno tidak otomatis menjadi keputusan bersama. Bahan yang ada tidak memuat dokumen hasil, tidak menyebut jumlah negara yang mendukung, dan tidak menjelaskan mekanisme tindak lanjut. Bobot pernyataan itu karena itu masih harus dibuktikan lewat dokumen resmi, bukan lewat kutipan pidato.",
+        "Pertanyaan ketiga: siapa yang paling terdampak? Bahan menyebut dua kelompok yang cukup jelas. Pertama, rakyat Singapura dan Malaysia yang menurut pemberitaan telah terdampak asap lintas batas; bagi mereka, permohonan maaf hanya bermakna bila diikuti penanganan kebakaran di wilayah sumber asap. Kedua, korporasi yang disebut terlibat dalam kebakaran hutan, karena pemerintah menyatakan tidak akan bertoleransi. Di luar itu, sekitar 700 juta penduduk ASEAN adalah pihak yang secara umum disebut sebagai penerima manfaat bila ketahanan kawasan benar-benar menguat. Seberapa besar dampaknya bagi masing-masing kelompok belum bisa diukur dari bahan yang tersedia.",
+        "Pertanyaan keempat: apa yang belum jelas atau belum terjawab? Beberapa hal masih terbuka. Jumlah pemimpin yang hadir disebut sedikitnya 19, tanpa daftar nama dan tanpa rincian lembaga internasional mana yang diwakili, sehingga tidak bisa dipastikan apakah semua negara anggota mengirim kepala negara atau kepala pemerintahan. Tidak ada keterangan tentang dokumen hasil KTT, kesepakatan yang ditandatangani, atau nilai kerja sama ekonomi yang disepakati. Tidak jelas pula apakah isu asap lintas batas dibahas dalam forum pleno atau hanya disampaikan di sela-selanya, dan apakah ada negara yang menanggapi. Rincian penegakan aturan terhadap korporasi juga belum ada, termasuk nama perusahaan, lokasi konsesi, dan bentuk sanksinya. Semua ini masih menunggu keterangan resmi.",
+        "Pertanyaan kelima: apa langkah berikutnya yang perlu dipantau? Yang paling mudah diperiksa adalah dokumen resmi KTT, yakni apakah seruan ketahanan kawasan dan penguatan kerja sama ASEAN-China berubah menjadi pernyataan bersama atau berhenti sebagai pidato. Berikutnya, tindak lanjut soal asap: apakah permohonan maaf disertai langkah penegakan terhadap korporasi yang disebut terlibat. Untuk konteks yang lebih luas, perlu dilihat apakah agenda ketahanan yang disampaikan Indonesia dibahas lagi pada pertemuan tingkat menteri atau forum lanjutan. Bahan yang ada belum memuat jadwal pertemuan berikutnya, sehingga pantauan harus bertumpu pada pengumuman resmi.",
+        "Sebagai latar, Prabowo Subianto menjabat Presiden Indonesia sejak 2024 dan sebelumnya menjadi Menteri Pertahanan pada 2019 sampai 2024. Ringkasan latar itu mencatatnya sebagai presiden kedelapan dan menyebut latar belakang militernya. Latar tersebut dapat dibaca sebagai salah satu alasan ia memakai kosakata ketahanan, persatuan, dan tantangan global, meski bahan yang tersedia tidak menyatakan hubungan sebab-akibat semacam itu. Yang tercatat jelas dalam bahan hanyalah isi pernyataannya, bukan alasan di balik pilihan kata tersebut, sehingga kaitan antara latar dan isi pidato sebaiknya diperlakukan sebagai dugaan yang belum terbukti.",
+        "Jika diringkas, yang bisa dipegang dari pekan ini ada tiga. Pertama, Prabowo berbicara di pleno KTT ke-49 ASEAN di Manila dan menekankan ketahanan serta persatuan kawasan sebagai jawaban atas tekanan ekonomi, ketegangan geopolitik, dan persaingan sumber daya. Kedua, ia menyampaikan dua hal yang lebih spesifik dalam pemberitaan terpisah, yaitu penguatan kemitraan strategis komprehensif ASEAN-China dan permohonan maaf soal asap lintas batas. Ketiga, tidak ada bahan yang menunjukkan kesepakatan baru sudah ditandatangani maupun angka pasti peserta yang hadir. Pembaca yang ingin menilai hasil KTT sebaiknya menunggu dokumen resmi, karena pidato menjelaskan arah, sedangkan dokumen menjelaskan apa yang benar-benar disepakati."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto dan apa jabatannya sebelum menjadi presiden?",
+          "a": "Ia menjabat Presiden Indonesia sejak 2024; sebelumnya Menteri Pertahanan pada 2019 sampai 2024, dan dicatat berlatar belakang militer.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa itu ASEAN dan kapan organisasi ini didirikan?",
+          "a": "Organisasi geopolitik dan ekonomi Asia Tenggara yang didirikan di Bangkok pada 8 Agustus 1967 oleh Indonesia, Malaysia, Filipina, Singapura, dan Thailand.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Perhimpunan_Bangsa-Bangsa_Asia_Tenggara"
+          }
+        },
+        {
+          "q": "Berapa banyak pemimpin yang disebut hadir di pertemuan itu?",
+          "a": "Otoritas Filipina menyebut sedikitnya 19 pemimpin dunia dan kepala lembaga internasional, tanpa daftar nama yang dirinci.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/prabowo-tiba-hadiri-pembukaan-ktt-ke-49-asean-di-manila-idNW"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/prabowo-tiba-hadiri-pembukaan-ktt-ke-49-asean-di-manila-idNW",
+          "published_at": "2026-11-15T09:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/15/337/3254182/ktt-asean-ke-49-filipina-prabowo-tantangan-ke-depan-menuntut-kita-jadi-lebih-tangguh",
+          "published_at": "2026-11-15T17:01:06+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8335807/prabowo-bicara-penanganan-karhutla-di-ktt-asean",
+          "published_at": "2026-11-15T23:00:02+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1772501/15/prabowo-minta-maaf-ke-singapura-dan-malaysia-soal-asap-karhutla-di-ktt-ke-49-asean-1794787895",
+          "published_at": "2026-11-16T07:45:39+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5856947/prabowo-dorong-asean-china-perkuat-komitmen-perdamaian-dan-dialog",
+          "published_at": "2026-11-16T14:29:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Prabowo memakai forum KTT ke-49 ASEAN di Manila untuk menekankan ketahanan kawasan, sementara sejumlah rincian hasilnya belum diumumkan.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "9",
+          "label": "media"
+        },
+        {
+          "value": "6 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "deep_dive",
+      "topic_id": "t_sekolah_rakyat_dibangun_di_kam_9f34",
+      "angle": "Rekap 5 hari",
+      "kicker": "Rekap pekan",
+      "title": "Rencana Sekolah Rakyat di UI: Lahan 8 Hektare Belum Pasti",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Hingga 17 November 2026, lokasi definitif Sekolah Rakyat di kawasan UI belum ditetapkan dan Gubernur DKI membantah mengusulkan Hutan Kota UI.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:00:00+07:00"
+      },
+      "body": [
+        "Rencana pembangunan Sekolah Rakyat di kawasan Universitas Indonesia (UI) menjadi bahan pembicaraan selama sepekan terakhir. Titik mulainya adalah pertemuan Menteri Sosial Saifullah Yusuf, yang akrab disebut Gus Ipul, dengan Gubernur DKI Jakarta Pramono Anung di Balai Kota DKI Jakarta pada Senin, 16 November 2026. Dalam pertemuan itu, salah satu pembahasan utama adalah kesiapan lahan untuk Sekolah Rakyat di UI. Gus Ipul menyebut lahan yang disiapkan seluas kurang lebih 8 hektare dan menyebutnya sebagai bagian dari kawasan Hutan Kota UI yang berada di wilayah Jakarta. Pernyataan itu disampaikan melalui keterangan tertulis kepada wartawan pada hari yang sama.",
+        "Menurut Gus Ipul, lahan itu sudah diproses dan tinggal membutuhkan perjanjian kerja sama atau PKS antara Gubernur DKI Jakarta dan Rektor UI. Ia menggambarkan urutannya sederhana: mengecek tempat, menyusun PKS, lalu mengeksekusi pembangunan. 'Nanti kita ke sana mengecek tempatnya, setelah itu PKS. Mudah-mudahan bisa segera dieksekusi untuk dibangun,' katanya. Ia juga berharap koordinasi dan penyusunan PKS dapat berjalan lancar dan cepat. Belum ada keterangan dalam bahan tentang jadwal pasti pengecekan, tenggat PKS, atau pihak yang akan membangun sekolah.",
+        "Sehari kemudian, UI memberikan klarifikasi yang mengubah gambaran soal lokasi. Melalui Direktorat Humas, Media, Pemerintah dan Internasional, UI menyatakan lahan yang diusulkan bukan bagian dari kawasan hutan kota. 'Dalam pembahasan awal dengan pemerintah, lahan yang diusulkan UI adalah bagian dari Kampus UI di sisi Jakarta yang berdekatan dengan kawasan hutan kota, dan bukan berada di dalam kawasan hutan kota,' ujar Direktur Hubungan Masyarakat, Media, Pemerintah dan Internasional Erwin Agustian Panigoro melalui keterangan tertulis, Selasa, 17 November 2026. Dengan begitu, ada perbedaan penjelasan antara pernyataan awal Mensos dan keterangan resmi kampus.",
+        "UI juga menjelaskan bahwa tanah yang dikelolanya adalah tanah milik negara. Menurut kampus, apabila lahan itu diperlukan untuk kepentingan pendidikan masyarakat yang lebih luas, UI akan mendukung pemanfaatannya. Namun UI menegaskan penetapan lokasi definitif adalah kewenangan pemerintah. Prosesnya akan melalui survei kesiapan serta penilaian kelayakan dan kesesuaian lahan, dengan koordinasi administratif antara UI, Pemerintah Provinsi DKI Jakarta, dan Kementerian Sosial. UI sekaligus menegaskan kawasan hutan kotanya tetap akan menjadi kawasan hijau yang dipreservasi, baik di sisi Jakarta, Depok, maupun lokasi lain.",
+        "Perbedaan juga muncul pada angka luas. Gus Ipul menyebut Hutan Kota UI 'ada 100 hektare lebih', dengan sekitar 8 hektare untuk keperluan Sekolah Rakyat. Sementara itu, UI melalui laman resminya menyebut hutan kota berdiri di area seluas 98 hektare di kawasan Kampus UI Depok hingga wilayah Jakarta Selatan. Dari jumlah itu, 55,40 hektare di wilayah Jakarta Selatan telah ditetapkan Pemprov DKI Jakarta sebagai Hutan Kota Universitas Indonesia melalui SK Gubernur DKI Jakarta No. 3487 Tahun 1999. Hutan UI terbagi menjadi tiga area: Hutan UI Wales Barat, Hutan UI Wales Timur, dan Zona Vegetasi Asli. Bahan tidak menjelaskan mengapa angka yang disebut Mensos dan angka di laman UI berbeda.",
+        "Pada hari yang sama, Gubernur DKI Jakarta Pramono Anung membantah mengusulkan Hutan Kota UI untuk Sekolah Rakyat. Menurut pemberitaan yang mengutip pernyataannya, ia justru menyebut dua lokasi lain di Jakarta Barat dan Jakarta Timur. Bahan tidak memuat nama jalan, kelurahan, atau luas kedua lokasi tersebut, sehingga rinciannya belum dapat diketahui. Pernyataan ini menambah versi ketiga dalam sepekan: Mensos menyebut lahan bagian Hutan Kota UI, UI menyebut lahan kampus di sisi Jakarta yang berdekatan dengan hutan kota, dan Gubernur menyebut dua lokasi di Jakbar dan Jaktim. Ketiganya belum bertemu dalam satu keterangan resmi bersama.",
+        "Di sisi lain, Pramono Anung disebut siap mengelola Hutan Kota UI menjadi kebun raya. Kesiapan itu diungkapkan ketika ia mendengar DKI ditawari untuk mengelola Hutan Kota UI. Pemberitaan lain menyebut Gubernur DKI siap mengambil alih pengelolaan Hutan Kota UI. Bahan tidak menjelaskan siapa yang menawarkan pengelolaan itu, apa dasar hukumnya, dan bagaimana kaitannya dengan rencana Sekolah Rakyat. Karena itu, wacana kebun raya ini masih berupa pernyataan yang dikutip media, dan belum ada keterangan bahwa itu sudah menjadi keputusan resmi.",
+        "Apa yang berubah selama sepekan? Yang berubah bukan lokasi bangunan, melainkan kejelasan soal lokasi itu sendiri. Pada 16 November, publik menerima kesan bahwa lahan untuk Sekolah Rakyat berada di dalam Hutan Kota UI. Pada 17 November, UI menyatakan lahan yang diusulkan berada di kampus sisi Jakarta, bukan di dalam hutan kota, dan Gubernur DKI membantah mengusulkan hutan kota sama sekali. Sejumlah media pada 16 November sudah menulis bahwa Kemensos dan Pemprov DKI menyiapkan lahan di kawasan Hutan Kota UI. Keterangan resmi berikutnya menunjukkan frasa 'di kawasan' itu bisa dibaca berbeda oleh para pihak.",
+        "Perubahan itu penting karena lokasi menentukan banyak hal. Jika lahan berada di dalam kawasan hutan kota yang sudah ditetapkan lewat SK Gubernur pada 1999, pembangunan menyentuh kawasan yang oleh UI disebut berfungsi sebagai pendukung pendidikan, penelitian, konservasi plasma nutfah, dan ekosistem perairan. Sementara itu, UI menyebut tanah yang dikelolanya adalah tanah negara, sehingga pemanfaatan untuk kepentingan pendidikan dapat dilakukan sesuai kebutuhan dan ketentuan yang berlaku. UI sendiri menyatakan akses pendidikan dan pelestarian lingkungan bukan dua hal yang harus dipertentangkan. Namun bahan belum memuat peta, batas koordinat, atau dokumen peruntukan yang bisa memastikan letak 8 hektare yang dimaksud.",
+        "Siapa yang paling terdampak? Kelompok pertama adalah anak-anak dari keluarga kurang mampu, karena Sekolah Rakyat dirancang sebagai program pendidikan gratis bagi anak dari keluarga miskin dan miskin ekstrem. Kelompok kedua adalah warga kampus dan penghuni sekitar kawasan yang oleh UI disebut akan tetap dipreservasi, membentang dari sisi Jakarta Selatan hingga Depok. Pemerintah Provinsi DKI Jakarta, Kementerian Sosial, dan UI juga terdampak karena harus menandatangani dan menjalankan PKS. Bahan belum memuat data berapa anak yang akan ditampung, dari wilayah mana saja, dan bagaimana seleksinya.",
+        "Apa yang belum jelas atau belum terjawab? Lokasi definitif belum ditetapkan. UI menyebut penentuan lokasi sepenuhnya menjadi kewenangan pemerintah dengan mempertimbangkan survei kesiapan, penilaian kelayakan, dan kesesuaian peruntukan lahan. Belum ada keterangan tentang luas final, batas lahan, status PKS, anggaran, jadwal pembangunan, dan pihak yang akan menjadi penyelenggara sekolah. Bahan juga tidak menjelaskan apakah dua lokasi yang disebut Gubernur di Jakarta Barat dan Jakarta Timur akan menggantikan usulan lahan di kawasan UI atau berjalan sebagai alternatif. Semua rincian itu belum diumumkan.",
+        "Pertemuan 16 November juga membahas hal lain yang tidak selalu muncul dalam judul berita. Ada rencana perluasan Sekolah Rakyat Terintegrasi (SRT) 4 DKI Jakarta di Margaguna, Jakarta Selatan, dengan merelokasi fasilitas panti sosial milik Pemprov DKI agar lahan yang tersedia dapat dipakai. Ada pula kolaborasi pemutakhiran data dan registrasi ulang bantuan sosial melalui Perlinsos Digital, yang melibatkan pengurus RT/RW, lurah, camat, dan pilar sosial sebagai relawan Agen Perlinsos. Selain itu, dibahas rencana uji coba PP Nomor 31 Tahun 2026 tentang konsesi bagi penyandang disabilitas dan insentif bagi perusahaan. Rincian teknis ketiga agenda itu belum dijelaskan dalam bahan.",
+        "Langkah berikutnya yang perlu dipantau adalah pengecekan lokasi dan penyusunan PKS. Menurut Gus Ipul, urutannya adalah mengecek tempat lebih dulu, lalu menyusun perjanjian kerja sama antara Gubernur dan Rektor UI. UI menambahkan bahwa penentuan lokasi akan dikoordinasikan bersama Pemprov DKI dan Kementerian Sosial, melalui survei dan penilaian kelayakan. Yang bisa dijadikan penanda adalah pengumuman resmi tentang lokasi definitif, penandatanganan PKS, serta keterangan bersama yang memuat luas dan batas lahan. Tanpa itu, status lahan 8 hektare masih berupa usulan, bukan keputusan.",
+        "Cara membaca pekan ini: jangan berhenti pada kata 'sepakat' di judul berita. Pertemuan di Balai Kota memang menghasilkan pembahasan kerja sama, tetapi lokasi, luas final, dan perjanjian belum tuntas. Pernyataan Mensos, klarifikasi UI, dan bantahan Gubernur menunjukkan bahwa satu frasa yang sama bisa dipahami berbeda. Pembaca yang jarang membuka media sosial sebaiknya menunggu dokumen atau keterangan resmi bersama sebelum menyimpulkan bahwa Sekolah Rakyat sudah pasti dibangun di Hutan Kota UI. Yang pasti, pembahasannya masih berjalan dan detailnya belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Sekolah Rakyat?",
+          "a": "Program pendidikan yang diinisiasi pemerintah Indonesia untuk memberi akses pendidikan gratis bagi anak dari keluarga miskin dan miskin ekstrem, serta membantu mengurangi angka putus sekolah.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Sekolah_Rakyat"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud hutan kota?",
+          "a": "Hutan atau sekelompok pepohonan yang tumbuh di dalam atau di pinggiran kota; bisa berupa hutan yang disisakan saat pengembangan kota atau tanaman yang sengaja dibuat untuk memperbaiki lingkungan kota.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Hutan_kota"
+          }
+        },
+        {
+          "q": "Apa yang disebut disepakati dalam pemberitaan awal?",
+          "a": "Kemensos dan Pemprov DKI disebut sepakat membangun Sekolah Rakyat di UI, dengan kolaborasi mencakup pemutakhiran data bansos melalui Perlinsos Digital.",
+          "source": {
+            "outlet": "detik.com",
+            "url": "https://news.detik.com/berita/d-8755439/sekolah-rakyat-akan-dibangun-di-dalam-kampus-ui"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8755439/sekolah-rakyat-akan-dibangun-di-dalam-kampus-ui",
+          "published_at": "2026-11-16T16:34:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/sekolah-rakyat-segera-dibangun-di-kawasan-kampus-ui-jakarta-idRa",
+          "published_at": "2026-11-16T17:14:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261117102053-20-1428009/pemerintah-mau-bangun-sekolah-rakyat-8-hektare-di-hutan-kota-ui",
+          "published_at": "2026-11-17T10:29:28+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8337086/pramono-punya-rencana-besar-untuk-hutan-kota-ui",
+          "published_at": "2026-11-17T17:31:20+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Rencana Sekolah Rakyat di kawasan UI berubah dalam sepekan: klaim lahan hutan kota dibantah UI dan Gubernur DKI, lokasi definitif belum ada.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "7",
+          "label": "media"
+        },
+        {
+          "value": "5 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "deep_dive",
+      "topic_id": "t_wapres_gibran_diturunkan_seren_00f9",
+      "angle": "Rekap 5 hari",
+      "kicker": "Rekap pekan",
+      "title": "Sepekan Jakarta: Foto Wapres Diturunkan, UMP 2027 Naik 7,1%",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pramono Anung mengumumkan penurunan foto Wakil Presiden di seluruh institusi DKI Jakarta pada 16 November 2026, dan UMP DKI 2027 dilaporkan naik 7,1 persen.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 4,
+          "independent_owners": 4,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:00:00+07:00"
+      },
+      "body": [
+        "Senin pagi, 16 November 2026, Gubernur DKI Jakarta Pramono Anung mengumumkan penurunan foto Wakil Presiden di seluruh institusi Jakarta secara serentak. Cakupannya disebut menyeluruh: tingkat kelurahan, kecamatan, kabupaten dan kota, kantor-kantor organisasi perangkat daerah, hingga Balai Kota. Pengumuman itu disampaikan Pramono di Pasar Senen, Jakarta Pusat, dan dikutip beberapa media pada hari yang sama. Ia menegaskan penurunan berlaku mulai hari itu dan tidak terbatas pada satu gedung pemerintahan. Bagi pembaca yang jarang membuka media sosial, peristiwa ini penting bukan karena foto itu sendiri, melainkan karena foto kepala negara di ruang publik biasanya mengikuti status resmi seseorang.",
+        "Perubahan itu terlihat secara fisik. Menurut pantauan di Balai Kota, di Balairung hanya tersisa foto Presiden RI Prabowo Subianto di bagian kiri ruangan, sementara bingkai kayu yang sebelumnya diisi wajah Wakil Presiden dibiarkan kosong. Di Balai Agung, yang tersisa adalah foto Prabowo, Pramono, dan Wakil Gubernur DKI Jakarta Rano Karno. Dua ruangan itu biasa dipakai untuk acara resmi, sehingga ruang kosong di dinding mudah terlihat oleh tamu maupun pegawai. Bahan tidak menyebut apakah foto di kantor swasta, sekolah, atau fasilitas umum non-pemerintah ikut diturunkan.",
+        "Dasar penurunannya dijelaskan Pramono sebagai hasil konsultasi dengan pemerintah pusat. Ia menyatakan mendapat restu atau blessing bahwa foto Wakil Presiden sudah dapat diturunkan karena yang bersangkutan telah mengajukan pengunduran diri. Kalimat itu ia ulangi dalam pemberitaan lain pada hari yang sama, dengan penekanan bahwa keputusan diambil setelah berkomunikasi dengan pusat. Artinya, penurunan foto tidak dilakukan atas inisiatif tunggal pemerintah provinsi. Meski begitu, bahan tidak memuat salinan surat, nomor aturan, atau nama pejabat pusat yang memberi restu tersebut, sehingga bentuk resmi restu itu belum dapat dipastikan.",
+        "Pramono juga menyebut alasan komunikasi publik: keputusan diumumkan agar tidak menimbulkan misinterpretasi maupun polemik. Ia ingin menghindari anggapan tertentu kepada Pemprov DKI karena lebih dulu menurunkan foto seorang wakil presiden. Langkah itu dapat dibaca sebagai upaya menertibkan urutan peristiwa: pengunduran diri lebih dulu, izin pusat menyusul, penurunan foto kemudian. Namun bahan tidak menjelaskan siapa yang berpotensi salah tafsir atau seperti apa polemik yang hendak dicegah, jadi bagian ini masih berupa pernyataan pejabat, bukan penjelasan rinci.",
+        "Urutan waktunya perlu dicatat. Gibran Rakabuming Raka, pengisi posisi Wakil Presiden sejak 2024, menyerahkan surat pengunduran diri pada Kamis, 12 November 2026. Satu pemberitaan menyebut surat diserahkan langsung kepada MPR RI, pemberitaan lain merinci penyerahannya kepada Ketua MPR Ahmad Muzani di Gedung Nusantara III, Kompleks Parlemen Senayan. Dua versi itu tidak bertentangan, hanya berbeda tingkat kerincian. Bahan juga menyebut pengunduran diri diambil di tengah tekanan politik terkait persoalan ijazah pendidikannya, tanpa memuat penjelasan lebih jauh dari yang bersangkutan.",
+        "Mengapa perubahan ini penting? Karena foto wakil presiden di ruang instansi bukan hiasan biasa, melainkan penanda jabatan yang sedang dipegang. Ketika bingkai dikosongkan, publik menerima sinyal bahwa kursi itu sedang lowong, bahkan sebelum pengganti resmi dilantik. Sinyal itu bersifat serentak: dilakukan di banyak tingkatan pemerintahan pada hari yang sama, sehingga tidak ada kesan bahwa hanya satu kantor yang bereaksi. Perlu dicatat, bahan tidak menguraikan aturan protokol atau tata ruang yang mengatur pemasangan dan penurunan foto pejabat, jadi dasar formal di luar pernyataan gubernur belum jelas.",
+        "Tahap berikutnya sudah berjalan di parlemen. MPR RI telah mengirim surat kepada Presiden Prabowo Subianto untuk menyerahkan dua nama calon wakil presiden. Rapat paripurna MPR untuk pemilihan dan penetapan wakil presiden baru dijadwalkan Rabu, 2 Desember 2026, di Gedung MPR/DPR, Senayan, Jakarta. Pramono menyatakan proses penunjukan masih berada di tangan MPR dan pemerintah pusat, dan wakil presiden baru akan diputuskan MPR sesuai usulan presiden. Bahan tidak menyebut siapa dua nama yang diajukan, bagaimana proses penyaringannya, atau apakah ada uji kelayakan sebelum paripurna.",
+        "Yang paling langsung terdampak oleh instruksi ini adalah aparatur di lingkungan Pemprov DKI: pegawai kelurahan, kecamatan, kantor kota dan kabupaten, hingga organisasi perangkat daerah yang harus menurunkan foto pada hari itu juga. Warga Jakarta ikut terdampak secara tidak langsung, sebab ruang layanan publik yang biasa mereka datangi berubah tampilannya. Bahan tidak memuat jumlah institusi, jumlah foto, atau biaya penggantian bingkai, sehingga skala teknisnya belum bisa dihitung. Tidak ada pula keterangan tentang tenggat pemeriksaan atau sanksi bagi kantor yang terlambat menurunkan foto.",
+        "Peristiwa kedua di Jakarta pada pekan yang sama bergerak di ranah upah. Pembahasan Upah Minimum Provinsi 2027 disebut masih alot karena pihak-pihak yang terlibat mempertahankan nilai alfa masing-masing. Alfa adalah indeks atau koefisien pengali dalam rumus penentuan kenaikan UMP. Menurut Undang-Undang Nomor 27 Tahun 2026 tentang Pelindungan Ketenagakerjaan, alfa punya batas bawah 0,5 dan batas atas paling tinggi 1. Dalam rentang itu, masing-masing pihak masih bertahan pada alfa yang diyakini, dan perbedaan angka pengali membuat hasil akhirnya berbeda pula.",
+        "Pramono menempatkan Pemprov DKI sebagai penengah. Ia menyebut pemerintah provinsi menjadi mediator utama, dikoordinasikan oleh Asisten Keuangan dan Dinas Tenaga Kerja, dengan batas waktu penetapan hasil pembahasan pada Jumat, 20 November. Harapannya, laporan sudah bisa ia terima pada hari itu. Ia juga berharap penyelesaian cepat di Jakarta bisa menjadi contoh bagi daerah lain dalam menuntaskan UMP masing-masing. Bahan tidak menjelaskan mekanisme mediasi yang dipakai, siapa saja peserta rapat, atau apa yang terjadi bila tenggat itu terlewat.",
+        "Angka yang dibahas bukan angka kecil. Dewan Pengupahan DKI disebut menyepakati tiga usulan UMP 2027, yang menurut pemberitaan berada di atas Rp6 juta. Tiga angka itu disebut berasal dari rekomendasi pengusaha, buruh, dan pemerintah. Gubernur dijadwalkan menetapkan besaran final pada hari berikutnya, 20 November. Namun bahan yang tersedia tidak mencantumkan ketiga angka tersebut satu per satu, meski satu judul menyebut bahwa angkanya tersedia. Pembaca yang ingin membandingkan usulan buruh dan pengusaha belum mendapat rinciannya dari bahan ini.",
+        "Hasil yang dilaporkan kemudian adalah kenaikan 7,1 persen untuk UMP DKI 2027. Sebagai pembanding, UMP DKI tahun ini disebut Rp5.729.876 per bulan, atau naik 6,17 persen dibanding 2025. Dua angka persentase itu merujuk tahun berbeda, jadi tidak bisa diperlakukan sebagai satu rangkaian kenaikan. Bahan juga tidak memuat nilai rupiah UMP 2027 setelah kenaikan 7,1 persen, sehingga pembaca belum bisa melihat nominalnya. Tidak ada keterangan apakah kenaikan itu sudah dituangkan dalam keputusan gubernur atau masih berupa hasil kesepakatan dewan pengupahan.",
+        "Siapa yang paling terdampak oleh angka UMP? Pekerja di Jakarta yang upahnya berada di sekitar batas minimum, dan pengusaha yang harus menyesuaikan struktur biaya. Perdebatan alfa menunjukkan kedua pihak punya kepentingan berbeda: usulan buruh, pengusaha, dan pemerintah tidak otomatis sama. Bagi pembaca di luar Jakarta, keputusan ini tetap relevan karena gubernur menyebut Jakarta bisa menjadi acuan daerah lain. Namun bahan tidak memuat reaksi serikat pekerja, tanggapan asosiasi pengusaha, atau perhitungan dampak terhadap jumlah pekerja, sehingga sisi ini masih terbuka.",
+        "Di luar dua perkara itu, rekap sepekan mencatat satu langkah lain: Pramono membangun lima puskesmas hewan baru dan memerintahkan operasi penertiban penjualan hewan ilegal di Pasar Jatinegara. Bahan hanya menyebut dua hal itu tanpa lokasi, anggaran, jadwal, atau jumlah hewan yang diperiksa. Rinciannya belum tersedia, jadi item ini lebih tepat dibaca sebagai catatan sampingan pekan ini, bukan bagian dari urusan wapres maupun UMP. Dapat dibaca sebagai penanda bahwa agenda harian gubernur berjalan terus meski dua isu besar menyita perhatian.",
+        "Beberapa hal masih belum jelas dan sebaiknya tidak disimpulkan lebih jauh. Pertama, dasar aturan penurunan foto pejabat di instansi daerah tidak diuraikan dalam bahan. Kedua, dua nama calon wakil presiden yang diajukan presiden belum diumumkan. Ketiga, tiga angka usulan UMP tidak disebut satu per satu. Keempat, nominal rupiah UMP 2027 setelah kenaikan 7,1 persen belum tercantum, begitu pula status hukum angka itu. Kelima, bahan tidak memuat pernyataan langsung dari Gibran mengenai penurunan fotonya. Semua ini adalah celah informasi, bukan kesimpulan bahwa hal tersebut tidak terjadi.",
+        "Langkah berikutnya yang perlu dipantau ada dua. Untuk urusan wapres, sorotan berpindah ke rapat paripurna MPR pada 2 Desember: siapa dua nama yang diajukan, bagaimana pemungutan suara berjalan, dan kapan pelantikan dilakukan. Untuk upah, yang perlu dilihat adalah bentuk resmi keputusan gubernur atas UMP 2027 beserta aturan pelaksanaannya. Bahan latar menyebut dampak sebuah aturan biasanya baru terasa setelah aturan turunan terbit. Sampai kedua hal itu jelas, penurunan foto dan angka 7,1 persen masih menjadi titik akhir sementara dari satu pekan di Jakarta."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Gibran Rakabuming Raka dan mengapa fotonya terpasang di instansi pemerintah?",
+          "a": "Ia menjabat Wakil Presiden RI sejak 2024. Sebelumnya ia Wali Kota Surakarta dan pengusaha, serta putra Presiden Joko Widodo. Foto wakil presiden terpasang di ruang instansi karena jabatan yang dipegangnya.",
+          "source": {
+            "outlet": "Wapres RI",
+            "url": "https://www.wapresri.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud aturan turunan, dan mengapa dampaknya sering baru terasa belakangan?",
+          "a": "Bahan latar menjelaskan keputusan pemerintah atau DPR yang mengikat warga, mulai dari undang-undang sampai peraturan menteri. Dampaknya biasanya terasa setelah aturan turunan terbit, sehingga angka dalam sebuah keputusan belum tentu langsung menjadi praktik di lapangan.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa inti pengumuman Gubernur DKI pada 16 November menurut pemberitaan?",
+          "a": "Pramono Anung mengumumkan penurunan foto Wakil Presiden di seluruh institusi Jakarta per hari itu, Senin 16 November, dengan alasan yang bersangkutan sudah mengajukan pengunduran diri.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261116095333-32-1427527/foto-wapres-gibran-diturunkan-serentak-di-dki-jakarta-hari-ini"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261116095333-32-1427527/foto-wapres-gibran-diturunkan-serentak-di-dki-jakarta-hari-ini",
+          "published_at": "2026-11-16T10:18:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tol1u3409/pramono-perintahkan-jajarannya-di-dki-jakarta-turunkan-foto-gibran",
+          "published_at": "2026-11-16T13:54:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/pramono-anung-bangun-lima-puskesmas-hewan-baru-di-dki-jakarta-idX4",
+          "published_at": "2026-11-19T11:05:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261119165942-4-786704/rapat-dewan-pengupahan-beres-ini-3-usulan-angka-ump-dki-jakarta-2027",
+          "published_at": "2026-11-19T17:02:33+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8338865/ump-dki-jakarta-2027-sudah-ditetapkan-ini-besarannya",
+          "published_at": "2026-11-20T11:21:02+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Penurunan foto wapres di Jakarta menandai berakhirnya satu babak, sementara angka UMP 2027 menentukan upah pekerja.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "8",
+          "label": "media"
+        },
+        {
+          "value": "5 hari",
+          "label": "berjalan"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "deep_dive",
+      "topic_id": "t_rencana_relokasi_badak_jawa_29c2",
+      "angle": "Rekap 7 hari",
+      "kicker": "Rekap pekan",
+      "title": "Wacana Pemindahan Badak Jawa ke Alas Purwo dan Suara yang Menolak",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pemerintah menyebut risiko bencana alam sebagai alasan mempertimbangkan pemindahan sebagian badak Jawa ke Alas Purwo, sementara Kementerian Kehutanan menyatakan",
+        "status": "sebagian",
+        "confidence": 0.7,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-22T05:00:00+07:00"
+      },
+      "body": [
+        "Wacana memindahkan sebagian badak Jawa dari Taman Nasional Ujung Kulon ke Taman Nasional Alas Purwo kembali mencuat pekan ini. Gagasan itu disampaikan Utusan Khusus Presiden Bidang Iklim dan Energi Hashim Djojohadikusumo dalam media briefing COP31 di Antalya, Turki, Kamis (12/11), sebagaimana dikutip sejumlah media. Beberapa hari kemudian pemberitaan soal rencana itu ramai, dan pada 16–17 November sederet reaksi muncul: Kementerian Kehutanan menyebut Alas Purwo baru calon lokasi yang perlu dikaji, seorang anggota DPR menolak, masyarakat adat Baduy menolak, dan di tengah itu lahir seekor bayi badak. Kutipan yang dipakai beberapa media atas pernyataan itu serupa, sehingga rangkaian laporan berikutnya berangkat dari titik yang sama.",
+        "Yang berubah selama sepekan bukan status badak Jawa, melainkan suara di sekitarnya. Dari satu pernyataan di forum iklim, isu ini bergerak menjadi perdebatan publik: media menurunkan laporan pada 15 November, lalu pada 16 November muncul pernyataan Kementerian Kehutanan bahwa Alas Purwo adalah salah satu calon lokasi potensial untuk dikaji, pernyataan penolakan dari DPR, dan penolakan masyarakat adat Baduy. Pada 17 November, pemberitaan bertambah dengan kabar kelahiran bayi badak dan tulisan yang menyoroti ramainya perbincangan di media sosial. Urutan itu penting: pernyataan pejabat datang lebih dulu, reaksi menyusul, sementara dokumen kajian belum muncul di ruang publik.",
+        "Alasan yang disebut pemerintah adalah risiko bencana alam. Dalam pemberitaan, Hashim menyebut keberadaan badak Jawa di Ujung Kulon punya risiko bila terjadi gempa bumi, tsunami, atau letusan gunung berapi, dan menyoroti aktivitas Gunung Anak Krakatau. Ia menyinggung letusan gunung itu pada September lalu. Argumennya: bila tsunami akibat gempa atau letusan terjadi, badak Jawa bisa punah. Dari situ, menurut pemberitaan, muncul gagasan memindahkan sejumlah badak ke Alas Purwo di Jawa Timur, dengan harapan populasi tidak bergantung pada satu habitat saja. Cara berpikirnya bersifat mencegah: bukan karena bencana sudah terjadi, melainkan karena kemungkinannya dinilai cukup nyata untuk mengubah tata kelola kawasan.",
+        "Rencana ini dibingkai sebagai proyek dengan skema pendanaan konservasi, bukan sekadar operasi pemindahan satwa. Pemerintah, menurut pemberitaan, mulai menawarkan proyek tersebut kepada calon investor di COP31, dan Hashim optimistis ada lembaga donor atau investor yang tertarik. Ia menyebut Indonesia punya 57 taman nasional yang berpotensi dikembangkan melalui kerja sama pendanaan, dan mencontohkan kerja sama dengan Norwegia. Perlu dicatat: tambahan kontribusi Norwegia sebesar US$100 juta atau sekitar Rp1,8 triliun dalam pemberitaan itu disebut sebagai apresiasi atas keberhasilan menekan deforestasi, bukan dana yang sudah dialokasikan untuk relokasi badak. Bahan juga tidak menjelaskan bentuk skema pendanaan yang dimaksud, apakah investasi, hibah, atau kerja sama pengelolaan.",
+        "Menempatkan rencana ini di forum iklim bisa dibaca sebagai pilihan strategi. COP31 adalah ajang tempat negara dan lembaga mencari dukungan pendanaan, sehingga pengumuman di sana wajar menonjolkan peluang dan optimismenya, bukan rincian teknis. Bahan tidak memuat penjelasan resmi soal mengapa isu badak Jawa dibawa ke forum itu, dan tidak ada keterangan apakah sudah ada investor yang menyatakan minat. Yang tercatat hanya keyakinan bahwa akan ada donor atau investor tertarik. Bagi pembaca, perbedaan antara “sedang ditawarkan” dan “sudah didanai” adalah hal pertama yang perlu dipisahkan.",
+        "Bagi pembaca yang jarang membuka media sosial, pentingnya isu ini terletak pada taruhannya. Badak Jawa digambarkan sebagai spesies yang terancam kritis dan, menurut pemberitaan, selama ini hanya ada di Ujung Kulon. Artinya, satu peristiwa besar di satu kawasan bisa berdampak pada seluruh populasi. Namun isu ini juga penting karena menyangkut cara negara mengambil keputusan: apakah pemindahan satwa dibahas lewat kajian ilmiah yang terbuka, atau lebih dulu lewat penawaran proyek kepada investor. Dua hal itu bisa berjalan bersama, tetapi urutannya menentukan siapa yang didengar lebih dulu.",
+        "Kementerian Kehutanan memberi batas yang jelas: Alas Purwo disebut sebagai salah satu calon lokasi yang potensial untuk dikaji, dan dalam judul program televisi yang dikutip, kementerian itu menyatakan perlu kajian mendalam. Perbedaan antara “calon lokasi” dan “lokasi” adalah inti pernyataan itu. Yang belum ada dalam bahan: siapa yang melakukan kajian, berapa lama, metode apa yang dipakai, dan apakah hasilnya akan dipublikasikan. Kalimat itu juga muncul sebagai judul program, bukan sebagai dokumen resmi yang bisa diperiksa. Selama itu belum jelas, rencana ini paling tepat dibaca sebagai usulan yang sedang diuji, bukan keputusan yang sudah diambil.",
+        "Penolakan pertama datang dari DPR. Anggota DPR Daniel Johan menolak rencana pemindahan itu dan menyinggung soal perbedaan iklim. Bahan tidak merinci perbedaan iklim seperti apa yang ia maksud, apakah soal curah hujan, musim, vegetasi pakan, atau risiko penyakit. Karena itu, alasan teknis di balik penolakan tersebut belum bisa dinilai dari bahan yang ada. Yang bisa dicatat: penolakan itu muncul di ruang publik pada 16 November, sehari setelah laporan awal soal rencana pemerintah, dan menandakan isu ini tidak berhenti di tingkat kementerian. Sikap parlemen biasanya menentukan apakah sebuah rencana dibahas lebih dalam atau berhenti sebagai pernyataan.",
+        "Penolakan juga datang dari masyarakat adat Baduy. Menurut pemberitaan, mereka menolak rencana relokasi dengan alasan sejarah dan ekosistem yang erat dengan kawasan tersebut. Sama seperti penolakan DPR, bahan tidak menjabarkan argumen itu lebih jauh: tidak ada penjelasan tentang kaitan sejarah seperti apa, atau bagian ekosistem mana yang dianggap terancam. Yang jelas, dua penolakan ini menunjukkan bahwa pemindahan badak tidak hanya soal ketersediaan lahan di Jawa Timur, tetapi juga soal hubungan warga dengan kawasan asal badak. Alasan berbasis sejarah dan ekosistem sulit diukur dengan angka, sehingga sulit dijawab hanya dengan data populasi.",
+        "Secara geografis, wacana ini menghubungkan dua kawasan yang berjauhan. Ujung Kulon adalah habitat yang disebut saat ini, sedangkan Alas Purwo digambarkan berada di ujung timur Pulau Jawa. Jarak itu bukan detail kecil: pemindahan berarti satwa menempuh perjalanan panjang, dan pengelolaan setelahnya berada di tangan pihak yang berbeda dari pengelola habitat asal. Bahan tidak menyebut bagaimana rencana transportasi, karantina, atau penyesuaian satwa terhadap lingkungan baru akan dilakukan. Semua itu biasanya menjadi bagian dari kajian, karena itulah keberadaan kajian menjadi hal yang perlu dipantau.",
+        "Di tengah wacana itu, seekor bayi badak bercula satu lahir. Kabar ini muncul pada 17 November, dua hari setelah laporan soal rencana pemerintah. Bahan tidak menyebutkan di mana kelahiran terjadi, jenis kelaminnya, atau bagaimana kondisi induk dan anaknya. Kelahiran itu tetap relevan sebagai konteks: perdebatan soal memindahkan satwa berlangsung sementara populasi di habitat asal masih berkembang, sehingga dasar perhitungan untuk memindahkan sebagian individu dapat berubah. Sementara itu, pemberitaan lain menyoroti ramainya perbincangan soal berapa sisa badak Jawa sekarang. Bahan yang tersedia tidak memuat angka populasi terkini, sehingga jumlah pastinya belum bisa dipastikan dari sini.",
+        "Banyak hal belum jelas. Bahan tidak menyebut berapa individu yang akan dipindahkan, kapan pemindahan direncanakan, di bagian mana Alas Purwo akan dipakai, bagaimana kesiapan pakan dan penyakit diperiksa, serta siapa yang bertanggung jawab atas pemantauan setelah satwa dilepas. Bahan juga tidak memuat hasil studi kelayakan, izin, atau kesepakatan dengan pemerintah daerah. Soal pendanaan, belum ada angka biaya yang disebut, dan tidak ada keterangan apakah pemindahan akan dilakukan bertahap atau sekaligus. Semua ini bukan detail kecil: pada pemindahan satwa yang terancam kritis, justru detail seperti inilah yang menentukan apakah upaya itu menambah peluang hidup atau menambah risiko.",
+        "Pihak yang paling langsung terdampak adalah pengelola dan warga di sekitar kedua taman nasional, termasuk mereka yang sehari-hari bergantung pada kawasan. Masyarakat adat Baduy sudah menyuarakan keberatan, dan DPR sudah menyatakan penolakan, sehingga dua kelompok ini jelas akan mengikuti prosesnya. Pihak lain yang berkepentingan adalah calon donor dan investor yang ditawari proyek; sikap merekalah yang akan menentukan apakah rencana berjalan dengan dana konservasi. Adapun warga di sekitar kawasan tujuan belum bersuara dalam pemberitaan, dan bahan tidak menyebut mereka, sehingga sikap kelompok itu belum bisa dinilai. Pembaca di luar itu terdampak tidak langsung: isu ini menjadi contoh bagaimana kebijakan konservasi disusun dan dikomunikasikan.",
+        "Langkah berikutnya yang perlu dipantau adalah hasil kajian dari Kementerian Kehutanan. Jika kajian benar dilakukan, publik perlu tahu cakupannya, termasuk penilaian risiko bencana di Ujung Kulon dan kesiapan Alas Purwo. Perlu dipantau pula apakah DPR memanggil pihak terkait untuk meminta penjelasan, dan apakah penawaran kepada investor di forum iklim berlanjut menjadi komitmen. Yang juga perlu dilihat: apakah pemerintah mempublikasikan kriteria pemilihan lokasi, bukan hanya nama lokasinya. Kabar dari Ujung Kulon, termasuk kelahiran badak baru, juga relevan sebab ikut memengaruhi dasar perhitungan populasi. Tanpa angka populasi yang jelas, sulit menilai apakah pemindahan sebagian satwa memperkuat spesies atau justru memecah populasi yang sudah kecil.",
+        "Sampai semua itu terjawab, sebutan yang paling akurat untuk rencana ini adalah wacana. Pemerintah menyampaikan niatnya, satu kementerian menyebut perlu kajian, dan sejumlah pihak menolak. Tidak ada dalam bahan yang menunjukkan keputusan resmi, jadwal, atau lokasi pelepasan. Pembaca sebaiknya membedakan tiga hal yang sering tercampur dalam pemberitaan: pernyataan pejabat, hasil kajian, dan keputusan administratif. Yang pertama sudah ada, yang kedua belum terlihat, dan yang ketiga belum terjadi. Membedakan ketiganya membantu menilai berita lanjutan tanpa harus mengikuti percakapan media sosial setiap hari."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu badak Jawa dan mengapa statusnya jadi perhatian?",
+          "a": "Badak Jawa atau badak sunda adalah anggota famili Rhinocerotidae yang terancam kritis dan termasuk spesies badak terkecil, dengan kulit berlipat seperti baju zirah.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Badak_jawa"
+          }
+        },
+        {
+          "q": "Mengapa Ujung Kulon dianggap berisiko bagi badak Jawa?",
+          "a": "Kawasan itu dinilai rentan terhadap gempa bumi, tsunami, dan letusan gunung berapi, sehingga populasinya berisiko musnah dalam satu peristiwa besar.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261115085854-20-1427290/pemerintah-berencana-pindahkan-badak-jawa-ke-alas-purwo"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud relokasi dalam pemberitaan ini?",
+          "a": "Pemindahan sebagian badak Jawa dari habitat asal di Ujung Kulon ke kawasan lain, dalam hal ini Taman Nasional Alas Purwo, agar populasi tidak bergantung pada satu lokasi.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261115085854-20-1427290/pemerintah-berencana-pindahkan-badak-jawa-ke-alas-purwo"
+          }
+        }
+      ],
+      "action": "Ini rekap, bukan berita baru. Buka edisi harian untuk detailnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261115085854-20-1427290/pemerintah-berencana-pindahkan-badak-jawa-ke-alas-purwo",
+          "published_at": "2026-11-15T09:30:13+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8754368/badak-jawa-mau-dipindah-ke-alas-purwo",
+          "published_at": "2026-11-16T07:58:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261116134411-8-785598/videobadak-jawa-pindah-ke-alas-purwo-kemenhut-perlu-kajian-mendalam",
+          "published_at": "2026-11-16T15:10:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-22T05:00:00+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-22",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Rencana memindahkan sebagian badak Jawa ke Alas Purwo masih wacana: alasan bencana, kajian belum tuntas, dan penolakan DPR serta Baduy.",
+      "optional": true,
+      "read_min": 8,
+      "stats": [
+        {
+          "value": "25",
+          "label": "artikel"
+        },
+        {
+          "value": "7",
+          "label": "media"
+        },
+        {
+          "value": "7 hari",
+          "label": "berjalan"
+        }
+      ]
+    }
+  ]
+}
