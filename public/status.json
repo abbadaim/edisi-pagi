@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-23",
-  "checked_at": "2026-11-22T22:58:10.647Z",
+  "date": "2026-11-24",
+  "checked_at": "2026-11-23T22:52:19.241Z",
   "ok": true,
   "cards": 8,
   "providers": {
@@ -9,12 +9,12 @@
     "verify": "opencode"
   },
   "reasons": [],
-  "summary": "2026-11-23 nasional · 8 kartu · tulis: opencode · adjudikasi: opencode · sehat",
-  "latest": "2026-11-23",
+  "summary": "2026-11-24 nasional · 8 kartu · tulis: opencode · adjudikasi: opencode · sehat",
+  "latest": "2026-11-24",
   "latest_by_scope": {
-    "nasional": "2026-11-23",
+    "nasional": "2026-11-24",
     "lokal": null,
     "mingguan": "2026-11-22"
   },
-  "run_url": "https://github.com/abbadaim/edisi-pagi/actions/runs/45079446929"
+  "run_url": "https://github.com/abbadaim/edisi-pagi/actions/runs/45282617828"
 }

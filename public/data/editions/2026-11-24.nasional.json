@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-24",
+  "scope": "nasional",
+  "published_at": "2026-11-24T05:45:59+07:00",
+  "coverage": {
+    "from": "2026-11-23T05:45:59+07:00",
+    "to": "2026-11-24T05:45:59+07:00"
+  },
+  "generated_at": "2026-11-24T05:45:59+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 15,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "news",
+      "topic_id": "t_bahlil_tolak_izin_tambang_ujun_8c74",
+      "angle": "Menteri ESDM menegaskan tidak ada IUP di TN Ujung Kulon",
+      "kicker": "Nasional",
+      "title": "Bahlil Bantah Ada IUP Tambang di TN Ujung Kulon, WIUPK pun Nol",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bahlil menyatakan belum ada WIUPK maupun IUP yang diterbitkan di kawasan Taman Nasional Ujung Kulon.",
+        "status": "sebagian",
+        "confidence": 0.7,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Menteri Energi dan Sumber Daya Mineral Bahlil Lahadalia membantah pemerintah memproses atau menerbitkan izin tambang di Taman Nasional Ujung Kulon, Pandeglang, Banten. Dalam konferensi pers di Kantor Kementerian ESDM, Jakarta, Senin (23/11/2026), ia menegaskan tidak akan pernah ada izin yang keluar di kawasan konservasi itu. “Jangankan IUP, WIUPK-nya aja nggak ada,” katanya, merujuk pada izin usaha pertambangan dan wilayah izin usaha pertambangan khusus. Ia juga menyebut hanya orang nggak waras yang mau mengeluarkan izin tambang di taman nasional. Pernyataan itu muncul setelah isu adanya IUP di Ujung Kulon ramai dibicarakan.",
+        "Soal berapa izin tambang yang beredar di sekitar kawasan, bahan yang tersedia tidak menyebut angka tertentu. Yang ditegaskan Bahlil justru sebaliknya: belum ada satu pun izin yang sudah maupun akan diterbitkan, dan ia mempertanyakan siapa pihak yang menyebut ada IUP di sana. Artinya, pernyataannya membantah keberadaan izin, bukan membahas jumlahnya. Laporan CNBC Indonesia menyebut pemerintah belum pernah menerbitkan dokumen WIUPK maupun IUP di kawasan itu. Rincian berapa permohonan yang masuk atau berapa luas wilayah yang dipetakan juga tidak disebutkan, sehingga detail itu belum jelas.",
+        "Dasar penegasannya adalah tahapan perizinan yang berjenjang. Bahlil mengatakan negara telah menetapkan wilayah pertambangan pada 2014, 2017, dan 2022, dengan perbaikan setiap lima tahun berdasarkan usulan pemerintah daerah, dan wilayah itu tidak mencakup taman nasional. Pendataan oleh Badan Geologi, termasuk di kawasan gunung berapi, hanya untuk menghitung cadangan, bukan izin operasional. Setelah wilayah ditetapkan, pengurusan izin dimulai dari WIUPK sebelum IUP. Istilahnya berbeda antarartikel: dua laporan menyebut WIUPK, dua laporan lain menyebut WIUP. Yang jelas, menurut Bahlil izin di tahap mana pun belum ada.",
+        "Ada satu titik yang perlu dibedakan. CNN Indonesia melaporkan sebagian wilayah perairan TNUK punya potensi mineral pembawa, sehingga memenuhi kriteria teknis sebagai Wilayah Usaha Pertambangan, sementara CNBC Indonesia menyebutnya Wilayah Pertambangan. Laporan yang sama menyebut status itu tidak otomatis membuat lokasi bisa ditambang, dan Bahlil menekankan wilayah perairan yang ditetapkan tidak mencakup taman nasionalnya. Bahlil juga membenarkan adanya kandungan emas di kawasan itu, sambil menegaskan negara hanya perlu mengetahui cadangan tersebut, bukan langsung mengeluarkannya izin.",
+        "Konteksnya, rencana pemindahan badak jawa dari Ujung Kulon ke Taman Nasional Alas Purwo ramai diperbincangkan di media sosial dan sempat dikaitkan dengan potensi mineral. Kementerian Kehutanan menyatakan gagasan habitat kedua itu berangkat dari kepentingan konservasi dan mitigasi risiko, bukan untuk mengubah peruntukan TNUK, dan status kawasan tetap sebagai kawasan konservasi. Kementerian itu juga meminta informasi soal potensi mineral disikapi dengan data resmi dari instansi berwenang, bukan langsung dihubungkan dengan rencana habitat kedua. Mengenai siapa yang menuntut peninjauan izin, bahan tidak menyebutkan nama pihak maupun lembaganya; bagian itu belum jelas."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Bahlil Lahadalia dan apa jabatannya?",
+          "a": "Menteri Energi dan Sumber Daya Mineral sejak 19 Agustus 2024 dan Ketua Umum Partai Golkar; sebelumnya menjabat Kepala BKPM yang berganti nama menjadi Kementerian Investasi.",
+          "source": {
+            "outlet": "Kementerian ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu wilayah pertambangan dan izin tambang?",
+          "a": "Wilayah Pertambangan adalah area yang ditetapkan negara berdasarkan usulan daerah; izin baru diurus setelahnya lewat WIUPK, lalu IUP.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Sejak kapan Bahlil menjabat Menteri ESDM?",
+          "a": "Sejak 19 Agustus 2024, dan menjadi ketua umum Partai Golkar pada 21 Agustus 2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Bahlil_Lahadalia"
+          }
+        }
+      ],
+      "action": "Pantau pernyataan resmi Kementerian ESDM dan dokumen WIUPK sebelum menyimpulkan ada atau tidaknya izin tambang di Ujung Kulon.",
+      "image": {
+        "url": "assets/04eca6423a.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Bahlil Bantah Ada IUP Tambang di TN Ujung Kulon, WIUPK pun Nol"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261123131924-4-787608/bahlil-hanya-orang-gak-waras-keluarkan-izin-tambang-di-tn-ujung-kulon",
+          "published_at": "2026-11-23T13:51:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261123162523-85-1430468/bahlil-tegaskan-tak-bakal-keluarkan-izin-tambang-di-tn-ujung-kulon",
+          "published_at": "2026-11-23T16:38:46+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_kecelakaan_beruntun_tewaskan_t_e1e4",
+      "angle": "Tujuh tewas, enam luka; penyebab kecelakaan delapan kendaraan di Sumedang belum pasti.",
+      "kicker": "Bencana",
+      "title": "Kecelakaan Beruntun Sumedang: 7 Tewas, Penyebab Masih Diselidiki",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Kecelakaan beruntun di Jalan Raya Cirebon-Bandung, Sumedang, pada 23 November melibatkan delapan kendaraan dengan tujuh korban tewas menurut data kepolisian ter",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Kecelakaan beruntun terjadi di Jalan Raya Cirebon-Bandung, tepatnya di Dusun Saralema RT 01/RW 07, Kelurahan Pasanggrahan Baru, Kecamatan Sumedang Selatan, Kabupaten Sumedang, pada Senin (23/11) sekitar pukul 08.52 WIB. Data kepolisian terbaru menyebut tujuh orang meninggal dunia dan enam orang terluka, lima di antaranya luka ringan dan satu luka berat, dan semuanya masih dirawat. Angka itu berbeda dari laporan awal yang menyebut enam orang tewas dan satu orang luka berat; jumlah korban bertambah seiring pendataan di lokasi. Kepolisian mencatat delapan unit kendaraan terlibat: tiga truk, satu mobil minibus, dan empat sepeda motor.",
+        "Penyebab kecelakaan belum dapat dipastikan. Kapolda Jawa Barat mengatakan truk melaju dari arah Bandung menuju Sumedang dan diduga hilang kendali karena rem tidak berfungsi, namun ia menegaskan detailnya masih diperiksa, termasuk perlengkapan kendaraan. Petugas masih memeriksa saksi dan hasil olah tempat kejadian perkara, dan Korlantas Mabes Polri rencananya akan menggelar analisis kecelakaan di lokasi pada keesokan hari. Identitas para korban juga masih didata dan diverifikasi, dan sebagian nama belum diumumkan. Dalam laporan awal, satu korban belum diketahui identitasnya."
+      ],
+      "explain": [
+        {
+          "q": "Di provinsi mana Sumedang berada?",
+          "a": "Jawa Barat, provinsi di bagian barat Pulau Jawa yang beribu kota di Kota Bandung.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Jawa_Barat"
+          }
+        },
+        {
+          "q": "Mengapa jumlah korban pada laporan awal berbeda dengan data terbaru?",
+          "a": "Laporan awal menyebut enam orang tewas dan satu orang luka berat, sedangkan data kemudian diperbarui menjadi tujuh korban tewas dan enam korban luka.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261123141605-20-1430394/kecelakaan-beruntun-di-sumedang-6-orang-tewas"
+          }
+        }
+      ],
+      "action": "Periksa kondisi rem dan perlengkapan kendaraan sebelum melintasi jalur menurun, lalu ikuti hasil analisis polisi.",
+      "image": {
+        "url": "assets/38cb361894.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kecelakaan Beruntun Sumedang: 7 Tewas, Penyebab Masih Diselidiki"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261123141605-20-1430394/kecelakaan-beruntun-di-sumedang-6-orang-tewas",
+          "published_at": "2026-11-23T14:25:29+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_ri_uni_eropa_percepat_cepa_aedf",
+      "angle": "Percepatan implementasi CEPA dan target dagang naik 40 persen",
+      "kicker": "Ekonomi",
+      "title": "Uni Eropa Bidik Perdagangan dengan RI Naik 40% Usai CEPA Diteken",
+      "status": "sebagian",
+      "truth": {
+        "claim": "IEU-CEPA ditandatangani pada 21 November 2026 di Brussels dan ditargetkan berlaku sementara pada awal 2027.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Indonesia dan Uni Eropa menandatangani Indonesia-European Union Comprehensive Economic Partnership Agreement (IEU-CEPA) pada Sabtu, 21 November 2026, di Brussels, Belgia, bersama Investment Protection Agreement (IPA). Dalam konferensi pers di kantor Kemenko Pangan, Jakarta, Senin 23 November 2026, Duta Besar Uni Eropa untuk Indonesia Hervé Delphin mengatakan Uni Eropa membidik pertumbuhan perdagangan dua arah hingga 40 persen dalam beberapa tahun mendatang. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyebut percepatan implementasi menjadi salah satu fokus pembicaraan dengan Komisioner Perdagangan dan Keamanan Ekonomi Uni Eropa Maroš Šefčovič.",
+        "Angka yang disebut para pejabat tidak sepenuhnya seragam. Delphin menyebut perdagangan barang kedua pihak sekitar EUR 29 miliar dan jasa sekitar EUR 9 miliar, sementara pemberitaan lain mengonversinya menjadi sekitar USD 30 miliar untuk barang dan USD 10 miliar untuk jasa, dengan total sekitar USD 40 miliar. Nilai perdagangan bilateral juga disebut sekitar USD 30 miliar per tahun. Menurut bahan yang sama, liberalisasi mencakup lebih dari 98 persen perdagangan bilateral, dan 90,4 persen pos tarif produk Indonesia langsung mendapat tarif nol persen, sedangkan 8,37 persen diturunkan bertahap dalam tiga sampai 15 tahun atau lewat kuota tarif. Pasar Uni Eropa berpenduduk sekitar 450 juta jiwa, dan investasi Uni Eropa di Indonesia pada 2021 hingga September 2026 tercatat USD 14,8 miliar.",
+        "Delphin mengingatkan penurunan tarif tidak boleh diikuti hambatan non-tarif yang menyulitkan pelaku usaha. Karena itu kedua pihak membahas persyaratan sanitary and phytosanitary (SPS), yakni standar kesehatan dan keamanan pangan, hewan, serta tumbuhan, termasuk transparansi persyaratan impor, prosedur persetujuan fasilitas, dan mekanisme audit. Kepala Badan Pengendalian dan Pengawasan Mutu Kementerian Kelautan dan Perikanan, Ishartini, mengatakan Indonesia dan Uni Eropa sudah memiliki Mutual Recognition Agreement untuk produk perikanan sejak 1994, sehingga yang tersisa adalah pelaksanaannya. Menurut Head of Unit Agriculture, Food and SPS DG Trade Uni Eropa, Flavio Coturni, struktur perdagangan kedua pihak saling melengkapi, dan sektor pertanian serta pangan disebut mencakup sekitar 20 persen dari total perdagangan.",
+        "Pemerintah dan Uni Eropa mempercepat persiapan implementasi dengan target mulai berlaku 1 Januari 2027, sambil menunggu ratifikasi dan penyelesaian prosedur hukum domestik masing-masing pihak. Kedua pihak juga membahas pembentukan komite dan subkomite teknis untuk memantau pelaksanaan, serta rencana audit pada 2027, termasuk waktu pelaksanaan dan aspek yang diperiksa. Staf Ahli Bidang Transformasi Digital dan Hubungan Antar Lembaga Bara Krishna Hasibuan mengatakan pemerintah akan menggencarkan sosialisasi kepada pelaku usaha. Komisioner Šefčovič juga menyampaikan rencana kunjungan ke Indonesia pada 2027 setelah ASEAN-EU Commemorative Summit di Singapura, dengan usulan forum bisnis bersama EuroCham dan KADIN.",
+        "Yang belum jelas adalah jadwal pasti ratifikasi di tiap pihak, rincian waktu dan cakupan audit 2027, serta apakah target pertumbuhan 40 persen dihitung dari nilai barang saja atau barang dan jasa, karena bahan memuat dua basis angka yang berbeda. Bahan hanya menyebut sektor potensial seperti kendaraan listrik, energi terbarukan, elektronika, alas kaki, dan tekstil, tanpa rincian besaran manfaat bagi petani, pembudidaya, dan nelayan. Langkah berikutnya adalah penyelesaian persyaratan teknis dan SPS, pengaktifan komite, serta sosialisasi kepada dunia usaha sebelum perjanjian diharapkan berjalan pada awal 2027."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Uni Eropa dan berapa jumlah anggotanya sekarang?",
+          "a": "Uni Eropa adalah organisasi antarpemerintah dan supranasional beranggotakan negara-negara Eropa; sejak 31 Januari 2020 jumlahnya 27 negara.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Uni_Eropa"
+          }
+        },
+        {
+          "q": "Apa target pertumbuhan perdagangan yang disebut Uni Eropa setelah CEPA diteken?",
+          "a": "Uni Eropa menargetkan pertumbuhan perdagangan dengan Indonesia hingga 40 persen, dengan fokus pada akses pasar dan hambatan non-tarif.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261123182702-4-787752/uni-eropa-bidik-perdagangan-ri-naik-40-usai-i-eu-cepa-diteken"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman jadwal ratifikasi dan audit 2027 sebelum menyusun rencana ekspor ke Uni Eropa.",
+      "image": {
+        "url": "assets/16e89d4dd4.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Uni Eropa Bidik Perdagangan dengan RI Naik 40% Usai CEPA Diteken"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261123182702-4-787752/uni-eropa-bidik-perdagangan-ri-naik-40-usai-i-eu-cepa-diteken",
+          "published_at": "2026-11-23T18:55:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/ue-targetkan-perdagangan-dengan-ri-tumbuh-40-persen-lewat-ieu-cepa-28d7PX1aViz",
+          "published_at": "2026-11-24T04:00:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "kumparan.com",
+          "title": "UE Targetkan Perdagangan dengan RI Tumbuh 40 Persen Lewat IEU-CEPA",
+          "url": "https://kumparan.com/kumparanbisnis/ue-targetkan-perdagangan-dengan-ri-tumbuh-40-persen-lewat-ieu-cepa-28d7PX1aViz",
+          "at": "2026-11-24T04:00:02+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Uni Eropa Bidik Perdagangan RI Naik 40% Usai I-EU CEPA Diteken",
+          "url": "https://www.cnbcindonesia.com/news/20261123182702-4-787752/uni-eropa-bidik-perdagangan-ri-naik-40-usai-i-eu-cepa-diteken",
+          "at": "2026-11-23T18:55:00+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_bps_soroti_pertumbuhan_ekonomi_14b3",
+      "angle": "Harga gula rata-rata Rp19.209/kg, naik di 126 daerah, sebagian di atas HAP.",
+      "kicker": "Ekonomi",
+      "title": "Harga Gula di 126 Kabupaten/Kota Naik, BPS Ingatkan HAP",
+      "status": "sebagian",
+      "truth": {
+        "claim": "BPS mencatat harga rata-rata gula pasir Rp19.209 per kilogram pada minggu ketiga November 2026, dengan kenaikan di 126 kabupaten/kota.",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Harga gula pasir di Indonesia masih dalam tren naik sejak Agustus 2026. Pada minggu ketiga November 2026, Badan Pusat Statistik (BPS) mencatat harga rata-rata gula pasir Rp19.209 per kilogram, atau naik 0,86 persen. Kenaikan itu tidak terjadi di satu-dua tempat saja. Deputi Bidang Statistik Distribusi dan Jasa BPS, Ateng Hartono, menyebut ada 126 kabupaten/kota yang mengalami kenaikan indeks harga, naik dari 118 kabupaten/kota pada minggu sebelumnya. Jumlah itu sekitar 35 persen dari seluruh kabupaten/kota di Indonesia.",
+        "Di sejumlah daerah, harga bahkan melampaui harga acuan pemerintah (HAP). Ateng menyebut Kabupaten Bolaang Mongondow Selatan naik 8,79 persen di atas HAP, sementara Kabupaten Pasangkayu mencapai 17,24 persen. Kenaikan juga tercatat di Kabupaten Kepulauan Sula sebesar 16 persen, Kabupaten Sigi 18 persen, Kabupaten Tojo Una-Una 19 persen, serta Kabupaten Kepulauan Siau Tagulandang Biaro (Sitaro) sebesar 20 persen. Kota Sabang juga masuk daftar yang perlu diperhatikan karena harganya naik hingga 20 persen di atas HAP.",
+        "Dalam bahan yang dirilis BPS, penyebab pasti kenaikan harga gula belum dijelaskan secara rinci. Ateng hanya menegaskan bahwa perkembangan harga gula perlu terus dicermati di tengah tekanan harga sejumlah komoditas pangan lain menjelang akhir tahun. Ia mengaitkannya dengan periode Natal dan Tahun Baru (Nataru) pada Desember yang berpotensi menambah kebutuhan bahan pokok. Langkah konkret pemerintah untuk menjaga pasokan gula juga belum disebutkan dalam bahan; yang tercatat hanya bahwa persoalan ini dibahas dalam rapat koordinasi pengendalian inflasi daerah.",
+        "Perlu dicatat, angka pertumbuhan 8–10 persen yang muncul di bahan lain pada hari yang sama bukan proyeksi harga gula. Angka itu disampaikan Wakil Kepala BPS, Sonny Harry Budiutomo Harmadi, dalam Forum Akselerasi Ekonomi Daerah 2026 di Surabaya, dan merujuk pada kemungkinan pertumbuhan ekonomi Indonesia, bukan kenaikan harga gula. Karena itu, sampai kapan proyeksi kenaikan gula 8–10 persen berlaku tidak dapat dijawab dari bahan yang ada; detail tersebut belum tersedia.",
+        "Sonny menilai pertumbuhan ekonomi 8–10 persen sangat mungkin tercapai asalkan pemerintah pusat dan daerah memahami instrumen pengungkit ekonomi. Ia mencontohkan pentingnya menekan inefisiensi dan biaya antara agar nilai tambah daerah meningkat, serta menjaga ekspektasi rasional pelaku usaha. Menurutnya, narasi pesimistis soal ekonomi 2027 bisa menahan ekspansi dunia usaha dan menekan daya beli konsumen. Namun semua itu adalah syarat pertumbuhan, bukan penjelasan atas lonjakan harga gula."
+      ],
+      "explain": [
+        {
+          "q": "Apa dasar keyakinan BPS bahwa ekonomi Indonesia bisa tumbuh tinggi?",
+          "a": "Bahan latar menyebut keyakinan itu didasarkan pada pengalaman pertumbuhan ekonomi China dalam 45 tahun terakhir, tanpa merinci angka perbandingannya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261123095201-532-1430274/bps-sebut-ekonomi-ri-bisa-tumbuh-tinggi-10-persen-dengan-syarat"
+          }
+        },
+        {
+          "q": "Apakah angka 8–10 persen di bahan latar membahas harga gula?",
+          "a": "Tidak. Bahan latar membahas pertumbuhan ekonomi Indonesia, bukan harga gula, sehingga tidak bisa dipakai sebagai proyeksi harga gula.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261123095201-532-1430274/bps-sebut-ekonomi-ri-bisa-tumbuh-tinggi-10-persen-dengan-syarat"
+          }
+        }
+      ],
+      "action": "Cek harga gula di pasar daerahmu dan bandingkan dengan HAP sebelum berbelanja kebutuhan akhir tahun.",
+      "image": {
+        "url": "assets/2fdd358eb2.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Harga Gula di 126 Kabupaten/Kota Naik, BPS Ingatkan HAP"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261123150841-4-787658/bps-warning-harga-gula-pasir-sudah-naik-di-126-kabupaten-kota-ri",
+          "published_at": "2026-11-23T17:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261123095201-532-1430274/bps-sebut-ekonomi-ri-bisa-tumbuh-tinggi-10-persen-dengan-syarat",
+          "published_at": "2026-11-23T10:06:41+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-21",
+      "previous_edition": "2026-11-23",
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_mk_beri_tenggat_perbaikan_uu_p_1aa9",
+      "angle": "MK: UU Polri cacat formil, revisi maksimal satu tahun atau aturan lama berlaku lagi",
+      "kicker": "DIY",
+      "title": "MK Beri DPR dan Pemerintah Waktu Setahun Perbaiki UU Polri",
+      "status": "sebagian",
+      "truth": {
+        "claim": "MK memberi tenggat paling lama satu tahun untuk memperbaiki pembentukan UU Polri, dan bila gagal undang-undang itu menjadi inkonstitusional.",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Mahkamah Konstitusi memutuskan bahwa Undang-Undang Nomor 5 Tahun 2026 tentang Polri tetap berlaku, tetapi proses pembentukannya wajib diperbaiki dalam waktu paling lama satu tahun sejak putusan diucapkan. Putusan Nomor 251/PUU-XXIV/2026 itu dibacakan dalam sidang di Gedung MK, Jakarta, Senin (23/11/2026), dan laporan Harian Jogja, media dari DIY, membuat kabar ini sampai ke pembaca di Jogja. Bagi warga Sleman dan wilayah lain di DIY, aturan ini relevan karena undang-undang kepolisian berlaku nasional dan mengatur aparat yang bertugas di sekitar mereka. Yang dipersoalkan mahkamah bukan isi kebijakan kepolisian, melainkan cara undang-undang itu dibentuk.",
+        "Dalam pertimbangan hukumnya, MK menyoroti tidak dilakukannya harmonisasi rancangan undang-undang melalui Badan Legislasi (Baleg) DPR. Hakim Konstitusi Enny Nurbaningsih menjelaskan bahwa pengambilalihan rancangan UU Polri dari DPR periode 2019 sampai 2024 menjadi usul inisiatif DPR periode 2024 sampai 2029 tidak melewati tahapan harmonisasi tersebut. Padahal, harmonisasi pada tahap penyusunan berfungsi memastikan kesiapan konsep rancangan sebelum ditetapkan sebagai usul inisiatif. MK menilai penyelarasan yang dilakukan saat pembahasan daftar inventarisasi masalah (DIM) tidak otomatis menggantikan kewajiban harmonisasi pada tahap penyusunan. Persoalan ini berkaitan pula dengan pemenuhan asas pembentukan peraturan perundang-undangan, termasuk asas keterbukaan dan partisipasi masyarakat.",
+        "Putusan itu tidak serta-merta mencabut UU Nomor 5 Tahun 2026. Aturan tersebut tetap memiliki kekuatan hukum mengikat selama masa perbaikan satu tahun yang diberikan MK. Namun, bila pemerintah dan DPR tidak memperbaiki proses pembentukannya sampai batas waktu itu, undang-undang tersebut dinyatakan inkonstitusional. Konsekuensinya, pasal atau materi muatan dalam UU Polri sebelumnya yang telah dicabut maupun diubah oleh UU Nomor 5 Tahun 2026 berlaku kembali, sebagaimana tercantum dalam amar putusan yang dipublikasikan di laman resmi MK. Dengan begitu, tenggat ini menjadi syarat yang menentukan nasib aturan baru sekaligus aturan lama yang digantikannya.",
+        "MK mengabulkan sebagian permohonan Pemohon I. Namun, bahan yang tersedia belum merinci siapa Pemohon I itu, latar belakang kelompoknya, maupun dalil lengkap yang diajukan. Bahan juga belum menyebutkan pasal atau materi muatan mana yang paling terdampak oleh putusan ini. Yang disebut secara umum hanyalah bahwa ketentuan dalam UU Polri sebelumnya yang telah diubah atau dicabut akan berlaku kembali bila perbaikan gagal dilakukan. Rincian pasal tersebut belum diumumkan dalam laporan yang ada, sehingga pembaca masih perlu menunggu keterangan resmi MK atau salinan putusan lengkap.",
+        "MK menekankan pentingnya keterbukaan informasi selama proses perbaikan. Pembentuk undang-undang diminta menjamin masyarakat memperoleh akses aktif terhadap informasi mengenai proses pembentukan regulasi tersebut, sekaligus kesempatan berpartisipasi secara maksimal dan bermakna atau meaningful participation. Partisipasi bermakna dinilai penting agar masyarakat tidak sekadar mengetahui proses penyusunan, tetapi juga memiliki kesempatan menyampaikan pandangan dan masukan. Perbaikan itu harus mengacu pada ketentuan pembentukan peraturan perundang-undangan, termasuk UU Nomor 12 Tahun 2011 beserta perubahannya. Dengan demikian, satu tahun ke depan menjadi masa uji bagi DPR dan pemerintah."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Polri menurut undang-undang yang lebih lama?",
+          "a": "Menurut UU Nomor 2 Tahun 2002, Polri adalah alat negara yang berperan memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberikan perlindungan, pengayoman, dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Apa inti perintah MK dalam perkara ini?",
+          "a": "MK memerintahkan pemerintah dan DPR memperbaiki pembentukan UU Polri dalam setahun; jika gagal, ketentuan UU lama berlaku kembali.",
+          "source": {
+            "outlet": "harianjogja.com",
+            "url": "https://news.harianjogja.com/r-1279999/mk-beri-waktu-setahun-untuk-perbaiki-uu-polri-yang-cacat-formil"
+          }
+        }
+      ],
+      "action": "Pantau proses harmonisasi RUU Polri di Baleg DPR dan tuntut akses informasi serta ruang partisipasi yang dibuka MK.",
+      "image": {
+        "url": "assets/661066812c.webp",
+        "credit": "harianjogja.com",
+        "alt": "MK Beri DPR dan Pemerintah Waktu Setahun Perbaiki UU Polri"
+      },
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1279999/mk-beri-waktu-setahun-untuk-perbaiki-uu-polri-yang-cacat-formil",
+          "published_at": "2026-11-23T21:57:52+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8341074/mk-beri-tenggat-1-tahun-perbaiki-uu-polri",
+          "published_at": "2026-11-23T23:13:23+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "lokal",
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "liputan6.com",
+          "title": "MK Beri Tenggat 1 Tahun Perbaiki UU Polri",
+          "url": "https://www.liputan6.com/news/read/8341074/mk-beri-tenggat-1-tahun-perbaiki-uu-polri",
+          "at": "2026-11-23T23:13:23+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "harianjogja.com",
+          "title": "MK Beri Waktu Setahun untuk Perbaiki UU Polri yang Cacat Formil",
+          "url": "https://news.harianjogja.com/r-1279999/mk-beri-waktu-setahun-untuk-perbaiki-uu-polri-yang-cacat-formil",
+          "at": "2026-11-23T21:57:52+07:00",
+          "owner": "Bisnis Indonesia",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_kebakaran_pabrik_permen_cikand_6565",
+      "angle": "FAM menjanjikan pendampingan keluarga korban dan membuka posko layanan bersama BPJS",
+      "kicker": "Bencana",
+      "title": "FAM Sebut Akan Dampingi Keluarga Korban Kebakaran Cikande",
+      "status": "sebagian",
+      "truth": {
+        "claim": "PT Fonusa Agung Mulia menyatakan akan mendampingi keluarga karyawan korban kebakaran dan membuka posko layanan bersama BPJS Ketenagakerjaan.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-24T05:45:59+07:00"
+      },
+      "body": [
+        "Kebakaran melanda pabrik PT Fonusa Agung Mulia (FAM) di Cikande, Kabupaten Serang, Banten. Perusahaan menyatakan berkomitmen mendampingi keluarga karyawan yang terdampak. CEO FAM Steven Wijaya memastikan komunikasi dan dukungan akan berjalan berkelanjutan, bukan hanya pada penanganan awal insiden. PT Fonusa Agung Mulia sendiri merupakan anak perusahaan Unifam Grup, dan pabriknya memproduksi merek makanan seperti Milkita. Jumlah karyawan yang terdampak kebakaran belum disebutkan dalam bahan yang tersedia, begitu pula rincian korban luka maupun meninggal. Bahan hanya menyebut adanya karyawan yang meninggal dunia akibat kecelakaan kerja, tanpa menyebut angka.",
+        "Perusahaan bergerak lebih jauh dengan menggelar pertemuan lanjutan bersama BPJS Ketenagakerjaan Cabang Serang Cikande dan keluarga korban. Menurut pemberitaan, pertemuan itu bertujuan menjelaskan hak dan manfaat jaminan sosial ketenagakerjaan secara langsung, sekaligus memastikan keluarga memahami proses dan tahapan yang harus dijalani. Kepala BPJS Ketenagakerjaan Cabang Serang Cikande Muhammad Kautsar Abid menyatakan FAM telah terdaftar sebagai peserta dan memenuhi kewajiban pembayaran iuran. Dengan kepesertaan itu, ahli waris karyawan yang meninggal akibat kecelakaan kerja berhak atas Jaminan Kecelakaan Kerja, berupa santunan 48 kali upah yang dilaporkan, biaya pemakaman, serta beasiswa pendidikan bagi maksimal dua anak hingga jenjang perguruan tinggi, sesuai syarat dan ketentuan yang berlaku.",
+        "Selain hak dari BPJS, FAM menyebut akan tetap membayarkan gaji secara penuh kepada karyawan terdampak. Perusahaan juga telah memberikan dukungan finansial kepada keluarga korban untuk kebutuhan mendesak, dengan alasan setiap keluarga punya kebutuhan yang berbeda. Pada Senin, FAM bersama BPJS Ketenagakerjaan membuka posko layanan khusus di Cikande untuk melayani keluarga korban. Ada perbedaan tanggal yang perlu dicatat: satu bahan mengutip keterangan tertulis bertanggal Senin (13/11/2026), sedangkan bahan lain menyebut pertemuan dan pembukaan posko berlangsung Senin (23/11). Jika mengacu kalender, 13 November 2026 bukan hari Senin, sehingga kemungkinan ada kekeliruan penulisan tanggal.",
+        "Yang belum jelas dari bahan adalah penyebab kebakaran. Keterangan perusahaan maupun kepolisian soal sumber api tidak tercantum, sehingga belum bisa disimpulkan apakah insiden dipicu kelalaian, gangguan teknis, atau sebab lain. Tuntutan keluarga karyawan juga belum diberitakan; bahan hanya memuat penjelasan perusahaan soal komitmen dan hak yang disiapkan. Begitu pula jumlah pasti karyawan terdampak. Pembaca yang membutuhkan angka dan penyebab resmi perlu menunggu keterangan lanjutan dari perusahaan, BPJS Ketenagakerjaan, atau kepolisian.",
+        "Dalam keterangannya, Steven Wijaya menyebut karyawan sebagai keluarga dan menegaskan perusahaan tidak ingin keluarga korban merasa menghadapi situasi ini sendirian. Ia menyatakan pertemuan lanjutan adalah bagian dari komitmen untuk terus berkomunikasi langsung dan memberi kejelasan soal hak serta dukungan. FAM juga menyatakan tanggung jawabnya tidak berhenti pada penanganan insiden, tetapi mencakup pemenuhan hak dan dukungan berkelanjutan. Semua pernyataan itu berasal dari pihak perusahaan; belum ada tanggapan independen dari keluarga korban dalam bahan ini."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu PT Fonusa Agung Mulia?",
+          "a": "PT Fonusa Agung Mulia adalah anak perusahaan Unifam Grup yang pabriknya memproduksi merek makanan seperti Milkita.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/siapa-pemilik-pabrik-permen-pt-fonusa-yang-terbakar-di-cikande-dan-apa-produk-permennya-id6a"
+          }
+        },
+        {
+          "q": "Merek makanan apa yang dibuat pabrik PT Fonusa?",
+          "a": "Menurut bahan latar, pabrik PT Fonusa memproduksi merek makanan seperti Milkita.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/siapa-pemilik-pabrik-permen-pt-fonusa-yang-terbakar-di-cikande-dan-apa-produk-permennya-id6a"
+          }
+        },
+        {
+          "q": "Apa hubungan Unifam Grup dengan PT Fonusa Agung Mulia?",
+          "a": "Unifam Grup adalah induk perusahaan PT Fonusa Agung Mulia.",
+          "source": {
+            "outlet": "tirto.id",
+            "url": "https://tirto.id/siapa-pemilik-pabrik-permen-pt-fonusa-yang-terbakar-di-cikande-dan-apa-produk-permennya-id6a"
+          }
+        }
+      ],
+      "action": "Pantau perkembangan hak karyawan korban kebakaran Cikande dan simpan nomor posko layanan BPJS Ketenagakerjaan Serang Cikande.",
+      "image": {
+        "url": "assets/edbb60ff66.webp",
+        "credit": "detik.com",
+        "alt": "FAM Sebut Akan Dampingi Keluarga Korban Kebakaran Cikande"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8766416/pt-fam-dampingi-keluarga-karyawan-terdampak-kebakaran-di-cikande",
+          "published_at": "2026-11-23T19:29:16+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/video/5873707/keluarga-korban-kebakaran-pt-fam-dapat-santunan-bpjs-ketenagakerjaan",
+          "published_at": "2026-11-23T22:58:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/siapa-pemilik-pabrik-permen-pt-fonusa-yang-terbakar-di-cikande-dan-apa-produk-permennya-id6a",
+          "published_at": "2026-11-23T11:38:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "antaranews.com",
+          "title": "Keluarga korban kebakaran PT FAM dapat santunan BPJS Ketenagakerjaan",
+          "url": "https://www.antaranews.com/video/5873707/keluarga-korban-kebakaran-pt-fam-dapat-santunan-bpjs-ketenagakerjaan",
+          "at": "2026-11-23T22:58:17+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        },
+        {
+          "outlet": "detik.com",
+          "title": "PT FAM Dampingi Keluarga Karyawan Terdampak Kebakaran di Cikande",
+          "url": "https://news.detik.com/berita/d-8766416/pt-fam-dampingi-keluarga-karyawan-terdampak-kebakaran-di-cikande",
+          "at": "2026-11-23T19:29:16+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Siapa Pemilik PT Fonusa yang Terbakar dan Apa Produk Permennya?",
+          "url": "https://tirto.id/siapa-pemilik-pabrik-permen-pt-fonusa-yang-terbakar-di-cikande-dan-apa-produk-permennya-id6a",
+          "at": "2026-11-23T11:38:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "misread",
+      "topic_id": "t_misread_mk_beri_tenggat_perbaikan_uu_p_1aa9",
+      "angle": "“tidak serta-merta” tidak ada di judul",
+      "kicker": "Salah dipahami",
+      "title": "Yang hilang dari judul: “tidak serta-merta”",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Judul yang beredar: “MK Beri Waktu Setahun untuk Perbaiki UU Polri yang Cacat Formil”. Judul itu tidak memuat kata “tidak serta-merta” yang muncul di isi artikel.",
+        "Isi artikelnya menyebut: “Dengan demikian, putusan tersebut tidak serta-merta membuat UU Polri yang baru kehilangan kekuatan hukum.”. Artinya, tidak otomatis berlaku.",
+        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
+      ],
+      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1279999/mk-beri-waktu-setahun-untuk-perbaiki-uu-polri-yang-cacat-formil",
+          "published_at": "2026-11-23T21:57:52+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": [],
+      "claim": "MK Beri Waktu Setahun untuk Perbaiki UU Polri yang Cacat Formil",
+      "reality": "Dengan demikian, putusan tersebut tidak serta-merta membuat UU Polri yang baru kehilangan kekuatan hukum.",
+      "missing": [
+        "tidak otomatis berlaku"
+      ],
+      "trigger": "headline_body_gap"
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_24",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah Diperiksa: Kolesterol, Prabowo, Rumah Puan",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 24 November 2026, tiga klaim diperiksa dan semuanya dinyatakan salah oleh TurnBackHoax. Klaim pertama menyebut posisi duduk tertentu bisa menjadi tanda kolesterol tinggi. Klaim kedua menyebut Prabowo mengumpulkan 10 mantan Kapolri untuk membahas pembubaran Polri dan pengalihan tugasnya ke TNI. Klaim ketiga menyebut rumah Puan Maharani dirusak massa.",
+        "Dua dari tiga klaim memperlihatkan pola yang mirip: materi lama atau peristiwa nyata diberi bingkai baru. Klaim soal posisi duduk dan kolesterol pernah beredar pada Januari 2025 dan sudah dinyatakan keliru, lalu muncul kembali. Pada klaim soal Puan Maharani, sebuah video yang menampilkan sekelompok orang di dalam bangunan dengan furnitur berantakan diunggah pada 1 September 2026 dan baru diberi narasi bahwa rumah Puan Maharani dirusak massa; hingga 23 November 2026 unggahan itu disukai sekitar 15.900 kali. Sementara itu, pertemuan Prabowo dengan para mantan Kapolri memang terjadi, tetapi hanya sebagai ajang silaturahmi dan pertukaran pandangan soal berbagai isu yang tengah terjadi, bukan pembahasan pembubaran Polri.",
+        "Sebaiknya pembaca memeriksa ulang klaim semacam ini sebelum meneruskannya: bandingkan dengan keterangan resmi, perhatikan tanggal unggahan asli, dan cek apakah narasi yang menyertai sebuah rekaman sesuai dengan isinya. Membagikan ulang tanpa verifikasi membuat klaim yang sudah dinyatakan salah terus berputar."
+      ],
+      "action": "Periksa tanggal unggahan asli dan keterangan resmi sebelum meneruskan klaim.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-24T05:45:59+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-24",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Posisi Duduk Tertentu Bisa Menjadi Tanda Kolesterol Tinggi",
+          "verdict": "salah",
+          "reason": "Klaim yang menyebutkan posisi duduk tertentu menjadi tanda kolesterol tinggi merupakan narasi yang pernah beredar pada Januari 2025 dan dinyatakan sebagai informasi yang keliru.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37502-salah-posisi-duduk-tertentu-bisa-menjadi-tanda-kolesterol-tinggi"
+        },
+        {
+          "claim": "Prabowo Kumpulkan 10 Mantan Kapolri untuk Bahas Pembubaran Polri dan Pengalihan Tugasnya ke TNI",
+          "verdict": "salah",
+          "reason": "Pertemuan tersebut memang terjadi namun hanya sebagai ajang silaturahmi dan pertukaran pandangan akan berbagai isu yang tengah terjadi.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37504-salah-prabowo-kumpulkan-10-mantan-kapolri-untuk-bahas-pembubaran-polri-dan-pengalihan-tugasnya-ke-tni"
+        },
+        {
+          "claim": "Rumah Puan Maharani Dirusak Massa",
+          "verdict": "salah",
+          "reason": "Akun Facebook “Mastion Lasampa” pada Selasa (1/9/2026) mengunggah video [ arsip ] yang menampilkan sekelompok orang di dalam bangunan dengan furnitur yang berantakan. Unggahan disertai narasi: “Rumah Puan Maharani di rusak massa” Hingga Senin (23/11/2026), unggahan tersebut telah disukai 15.900-an",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37509-salah-rumah-puan-maharani-dirusak-massa"
+        }
+      ],
+      "pattern": "Materi lama dan peristiwa nyata diberi bingkai baru: narasi soal kolesterol yang pernah beredar pada Januari 2025 muncul lagi, dan video September 2026 diberi cerita pengrusakan rumah."
+    }
+  ]
+}
