@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-25",
+  "scope": "nasional",
+  "published_at": "2026-11-25T05:46:04+07:00",
+  "coverage": {
+    "from": "2026-11-24T05:46:04+07:00",
+    "to": "2026-11-25T05:46:04+07:00"
+  },
+  "generated_at": "2026-11-25T05:46:04+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 21,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_8_saksi_kasus_penyadapan_prabo_a617",
+      "angle": "Enam tersangka dugaan makar, ancaman hukuman mati, dan sejumlah hal yang belum jelas.",
+      "kicker": "Kriminal",
+      "title": "Bareskrim Tetapkan Listyo Sigit Tersangka Dugaan Makar",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bareskrim Polri menetapkan enam orang, termasuk Listyo Sigit, sebagai tersangka dugaan makar dengan ancaman hukuman mati.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-25T05:46:04+07:00"
+      },
+      "body": [
+        "Bareskrim Polri mengumumkan penetapan enam tersangka dalam perkara dugaan tindak pidana makar pada Senin, 23 November. Enam orang itu adalah mantan Kapolri Jenderal Listyo Sigit Prabowo, Irjen Slamet Uliandi, Irjen Eko Hadi Santoso, Irjen Ahrie Sonta Nasution, Brigjen Tedjo Kusumo, dan Kombes Iman Imanuddin. Pengumuman disampaikan langsung oleh Kabareskrim Polri Komjen Asep Safrudin dalam konferensi pers di Bareskrim Polri. Sejumlah media melaporkan pernyataan itu pada 23 November, lalu menurunkannya kembali dalam pemberitaan pada 24 November. Penetapan ini bukan perkara yang berdiri sendiri, melainkan pengembangan dari kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto.",
+        "Menurut Asep, para tersangka diduga melakukan tindak pidana dengan perantara alat atau menyuruh orang lain turut serta menggerakkan orang lain untuk melakukan makar. Tujuannya, sebagaimana dikutip dari pernyataannya, adalah merampas kemerdekaan presiden atau menjadikan presiden tidak mampu menjalankan pemerintahan, dan/atau menggulingkan pemerintah. Ia juga menyebut dugaan permufakatan jahat atau persiapan untuk melakukan tindak pidana makar dengan niat melakukan serangan yang telah diwujudkan melalui persiapan tersebut. Rumusan itu disampaikan dalam konferensi pers, bukan dalam dokumen dakwaan yang bisa dibaca publik. Karena itu, uraian lengkap soal perbuatan masing-masing tersangka belum tersedia dalam bahan.",
+        "Pasal yang disangkakan adalah Pasal 191 dan/atau Pasal 193 dan/atau Pasal 196 KUHP, juncto Pasal 160 KUHP, juncto Pasal 20 huruf a, b, c, dan d KUHP, juncto Undang-Undang Nomor 1 Tahun 2026 tentang Penyesuaian Tindak Pidana. Asep menyebut ancaman hukuman pada pasal dugaan makar itu adalah pidana mati, pidana penjara seumur hidup, atau pidana penjara paling lama 20 tahun. Bahan tidak memerinci unsur mana yang dikenakan kepada tiap tersangka, juga tidak menjelaskan hubungan antara pasal-pasal tersebut. Yang bisa dipastikan dari pemberitaan adalah bahwa ancaman hukuman mati disebut secara terbuka oleh penyidik, bukan disimpulkan sendiri oleh media.",
+        "Perkara ini merupakan pengembangan dari kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto dan sejumlah pejabat lain. Empat dari enam tersangka makar sebelumnya telah ditetapkan sebagai tersangka dalam kasus penyadapan, yakni Listyo Sigit, Slamet Uliandi, Ahrie Sonta Nasution, dan Eko Hadi Santoso. Dua nama lainnya, Tedjo Kusumo dan Iman Imanuddin, disebut sebagai tersangka tambahan dalam perkara makar. Pemberitaan menyebut pengembangan perkara ini sebagai rangkaian yang saling terkait, tetapi tidak merinci kapan tepatnya status penyadapan berubah menjadi dugaan makar. Titik peralihan itu belum dijelaskan dalam bahan.",
+        "Latar jabatan para tersangka ikut disebut dalam pemberitaan. Listyo Sigit adalah mantan Kapolri yang menjabat sejak 2021 dan pernah menjadi ajudan Presiden Joko Widodo; ia juga pernah memimpin Bareskrim. Slamet Uliandi disebut sebagai eks Kepala Divisi TIK Polri, Ahrie Sonta Nasution eks Kepala Divisi Hukum Polri, dan Eko Hadi Santoso eks Direktur Tindak Pidana Narkoba Bareskrim Polri. Tedjo Kusumo disebut sebagai eks Direktur Intelijen Densus 88 Antiteror Polri, sedangkan Iman Imanuddin eks Direktur Kriminal Umum Polda Metro Jaya. Jabatan-jabatan itu penting untuk memahami mengapa perkara ini disebut melibatkan sejumlah perwira, bukan satu orang saja.",
+        "Motif yang diduga oleh penyidik adalah mempertahankan jabatan Kapolri. Asep menyebut para tersangka diduga melakukan permufakatan, persiapan, dan permulaan pelaksanaan makar dengan motif itu, untuk tujuan konstelasi politik, dengan cara melemahkan kepercayaan masyarakat terhadap pemerintahan Presiden Prabowo. Kalimat tersebut adalah rumusan penyidik, bukan putusan pengadilan. Bahan tidak memuat penjelasan lebih jauh soal bukti yang menghubungkan motif itu dengan perbuatan masing-masing tersangka. Karena itu, pembaca perlu membedakan antara dugaan yang disampaikan dalam konferensi pers dan pembuktian yang nantinya diuji di persidangan.",
+        "Satu bahan menyebut titik awal dugaan upaya makar, yakni 3 Oktober 2024, atau 17 hari sebelum Prabowo Subianto dilantik sebagai Presiden. Prabowo memang menjabat sebagai presiden kedelapan sejak 2024, setelah sebelumnya menjadi Menteri Pertahanan di bawah Presiden Joko Widodo. Namun bahan yang menyebut tanggal 3 Oktober itu tidak merinci peristiwa apa yang terjadi pada hari tersebut, siapa yang hadir, atau bagaimana tanggal itu disusun. Dua bahan lain hanya menyebut rangkaian perbuatan secara umum. Artinya, kronologi lengkap belum bisa direkonstruksi dari bahan yang tersedia, dan tanggal itu baru bisa dipakai sebagai penanda awal dugaan, bukan sebagai uraian peristiwa.",
+        "Penyidik juga mengumumkan barang bukti yang disita. Menurut pemberitaan, ada 39 unit barang bukti elektronik berupa telepon genggam, laptop, CPU, dan harddisk. Selain itu, 250 kaos hitam bergambar senjata api dengan tulisan 'All Cops Are Bastard', lalu 251 kaos hitam bertuliskan 'Sadar Dipalak, Sadar Dibakar, Sadar Dimiskinkan' bergambar salam tiga jari dan tagar Indonesia Sadar. Barang bukti lain adalah satu buku catatan analisis dan evaluasi satgas berwarna biru, 20 bendera One Piece, serta uang tunai Rp735 juta. Satu bahan menulis 'One Peace', bahan lain menulis 'One Piece'; perbedaan ejaan itu tidak disertai penjelasan. Bahan tidak menjelaskan kaitan tiap barang bukti dengan peran tersangka.",
+        "Peran enam tersangka disebut berbeda-beda. Pemberitaan menyebut rentangnya mulai dari memimpin rapat, melakukan pengintaian, hingga memerintahkan pembuatan konten yang menyerang Polri. Namun bahan tidak menyebut siapa melakukan apa secara spesifik, berapa kali kegiatan itu berlangsung, atau di mana lokasinya. Uraian itu penting karena pertanggungjawaban pidana biasanya bergantung pada perbuatan masing-masing orang, bukan hanya pada keikutsertaan dalam kelompok. Sampai bahan ini disusun, pemetaan peran per tersangka belum tersedia secara rinci, sehingga pembaca sebaiknya tidak menyimpulkan peran seseorang hanya dari urutan nama yang disebut penyidik.",
+        "Yang belum terjawab adalah bantahan dari Listyo Sigit dan kuasa hukumnya. Bahan yang tersedia memuat pernyataan penyidik, tetapi tidak memuat tanggapan dari pihak tersangka. Tidak ada kutipan dari Listyo Sigit, tidak ada keterangan kuasa hukum, dan tidak ada penjelasan apakah pihak tersangka sudah menerima surat penetapan atau mendampingi pemeriksaan. Ini bukan berarti bantahan tidak ada; bisa jadi tanggapan itu belum masuk ke pemberitaan yang dihimpun. Namun untuk saat ini, detail tersebut belum tersedia, sehingga artikel ini belum bisa menyajikan versi pihak tersangka.",
+        "Soal Kejaksaan Agung, bahan tidak memuat keterangan tentang penyiapan 32 jaksa. Kejaksaan Agung adalah lembaga yang melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara. Dalam alur pidana umum, berkas perkara dari penyidik berperan pada tahap penuntutan, tetapi bahan tidak menyebut kapan berkas kasus ini dilimpahkan atau apakah sudah ada koordinasi dengan kejaksaan. Angka 32 jaksa yang disebut dalam sudut pemberitaan tidak ditemukan pada bahan yang dihimpun, sehingga belum bisa dikonfirmasi dan tidak dipakai sebagai fakta dalam artikel ini.",
+        "Jalur lain yang berjalan adalah sidang Komisi Kode Etik Profesi Polri. Lima jenderal bintang tiga akan memimpin sidang KKEP terkait kasus penyadapan mantan Kapolri Listyo Sigit, dan sidang dijadwalkan berlangsung 26 November. Bahan tidak menyebut apakah sidang itu juga membahas dugaan makar atau hanya perkara penyadapan, siapa saja anggota komisi, dan apa kemungkinan putusannya. Polri sebagai lembaga penegak hukum memiliki mekanisme etik di samping pidana, tetapi bahan tidak menjelaskan bagaimana kedua jalur itu saling memengaruhi. Karena itu, hasil sidang 26 November masih terbuka dan belum bisa diprediksi dari bahan.",
+        "Langkah hukum berikutnya yang bisa dipastikan dari bahan adalah penyidikan yang masih berjalan. Penyidik telah menetapkan tersangka dan menyita barang bukti, tetapi belum ada keterangan tentang penahanan, pelimpahan berkas, atau jadwal pemeriksaan lanjutan. Bahan juga tidak memuat apakah para tersangka mengajukan praperadilan atau upaya hukum lain. Untuk perkara yang ancaman hukumannya disebut sampai pidana mati, tahapan lanjutan itu belum dijelaskan dalam bahan. Tanpa keterangan resmi, artikel ini tidak bisa memastikan urutan atau waktunya. Yang tersedia hanyalah pengumuman penetapan tersangka dan daftar barang bukti.",
+        "Ada beberapa hal yang perlu dibedakan saat membaca perkara ini. Pertama, penetapan tersangka adalah langkah penyidikan, bukan putusan bersalah. Kedua, ancaman hukuman mati yang disebut penyidik adalah ancaman pada pasal yang disangkakan, bukan hukuman yang sudah dijatuhkan. Ketiga, motif yang diumumkan masih berupa dugaan dan belum diuji di pengadilan. Bahan pemberitaan hari ini didominasi pernyataan penyidik, sementara suara pihak tersangka belum muncul. Pembaca yang ingin mengikuti perkara ini sebaiknya menunggu dokumen resmi, keterangan kuasa hukum, dan perkembangan sidang etik pada 26 November.",
+        "Secara ringkas, yang sudah terang adalah penetapan enam tersangka, pasal yang disangkakan, ancaman hukuman, dan sejumlah barang bukti. Yang belum terang adalah bantahan pihak tersangka, rincian peran masing-masing, kronologi lengkap sejak 3 Oktober 2024, serta keterkaitan dengan Kejaksaan Agung dan angka 32 jaksa. Perbedaan ejaan 'One Piece' dan 'One Peace' juga belum dijelaskan. Karena itu, perkara ini masih berupa rangkaian dugaan yang disampaikan penyidik, dan perkembangannya akan bergantung pada pemeriksaan lanjutan serta sidang etik 26 November."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran Kejaksaan Agung dalam perkara pidana?",
+          "a": "Kejaksaan Agung melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara.",
+          "source": {
+            "outlet": "Kejaksaan Agung",
+            "url": "https://www.kejaksaan.go.id/"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024; sebelumnya Menteri Pertahanan pada 2019–2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa itu Polri?",
+          "a": "Kepolisian nasional dan lembaga penegak hukum Indonesia yang menurut Undang-Undang Nomor 2 Tahun 2002 berperan memelihara keamanan, menegakkan hukum, serta melindungi dan melayani masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau sidang KKEP 26 November dan tunggu keterangan resmi soal bantahan serta peran Kejaksaan Agung.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261123222835-12-1430606/jadi-tersangka-kasus-makar-listyo-sigit-cs-terancam-hukuman-mati",
+          "published_at": "2026-11-24T06:21:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261124120200-4-787920/media-asing-sorot-listyo-sigit-tersangka-makar-dalang-aksi-demo-besar",
+          "published_at": "2026-11-24T12:03:39+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/polisi-ungkap-3-tahap-makar-listyo-sigit-dkk-dari-oktober-2024-id8u",
+          "published_at": "2026-11-24T07:52:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 4,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-24",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "dek": "Bareskrim menetapkan Listyo Sigit dan lima perwira lain tersangka dugaan makar; ancaman mati, bantahan belum jelas.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-11-20",
+          "title": "Gelar Perkara Makar Listyo Cs"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "Listyo Sigit Tersangka Kasus Makar"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Media Asing Sorot Listyo Sigit Tersangka Makar, Dalang Aksi Demo Besar",
+          "url": "https://www.cnbcindonesia.com/news/20261124120200-4-787920/media-asing-sorot-listyo-sigit-tersangka-makar-dalang-aksi-demo-besar",
+          "at": "2026-11-24T12:03:39+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Polisi Ungkap 3 Tahap Makar Listyo Sigit dkk: Dari Oktober 2024",
+          "url": "https://tirto.id/polisi-ungkap-3-tahap-makar-listyo-sigit-dkk-dari-oktober-2024-id8u",
+          "at": "2026-11-24T07:52:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_sidang_etik_brigjen_tedjo_kusu_d36d",
+      "angle": "Pemecatan Tedjo Kusumo, bandingnya, dan peran pengintaian yang dibeberkan Bareskrim",
+      "kicker": "Kriminal",
+      "title": "Sidang Etik Tedjo Kusumo Berakhir dengan Pemecatan dan Banding",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Brigjen Tedjo Kusumo dijatuhi sanksi pemecatan tidak hormat dalam sidang etik pada 24 November 2026 dan mengajukan banding.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-25T05:46:04+07:00"
+      },
+      "body": [
+        "Divisi Propam Polri menggelar sidang Komisi Kode Etik Profesi Polri terhadap Brigjen Tedjo Kusumo pada Selasa, 24 November 2026. Sidang berakhir pada hari yang sama; setelah itu Tedjo langsung dibawa keluar dari gedung Divpropam Polri. Menurut Kepala Biro Penerangan Masyarakat Divisi Humas Polri Brigjen Trunoyudo Wisnu Andiko, sidang digelar dengan dugaan penyalahgunaan wewenang serta tindakan tidak prosedural dalam pelaksanaan tugas. Keterangan itu memberi kerangka tuduhan, tetapi tidak merinci perbuatan mana yang dimaksud. Bahan juga tidak memuat pembelaan Tedjo atau keterangan saksi secara lengkap, sehingga pembaca baru mengetahui garis besar perkara etiknya. Sejumlah keterangan yang dikumpulkan media pada hari itu belum memuat dokumen putusan; rangkaian peristiwanya lebih mudah dipastikan daripada pertimbangannya.",
+        "Sidang dipimpin Irjen M Zulkarnain. Brigjen Sugeng Putut Wicaksono mendampingi sebagai Wakil Ketua Komisi, sedangkan Brigjen Farman menjadi anggota Majelis KKEP. Susunan itu disampaikan Trunoyudo kepada wartawan. Bahan latar menyebut sidang KKEP digelar terkait dugaan makar terhadap Presiden Prabowo Subianto dan dipimpin Irjen M Zulkarnain, tetapi tidak memuat uraian tugas masing-masing anggota majelis. Dalam bahan juga tidak dijelaskan apakah seluruh majelis hadir sepanjang pemeriksaan atau bagaimana mekanisme pengambilan keputusan di dalam sidang. Karena itu, susunan majelis diketahui, sedangkan jalannya pemeriksaan masih gelap.",
+        "Tedjo disangkakan melanggar Pasal 13 ayat (1) Peraturan Pemerintah Nomor 1 Tahun 2003 tentang Pemberhentian Anggota Polri, juncto sejumlah ketentuan dalam Peraturan Polri Nomor 7 Tahun 2022 tentang Kode Etik Profesi dan Komisi Kode Etik Polri. Penyebutan pasal itu muncul dalam keterangan resmi kepolisian, bukan penjelasan panjang mengenai unsur pelanggaran. Bahan tidak menguraikan bagaimana unsur pasal tersebut diterapkan satu per satu, tidak menyebut ancaman sanksi yang mungkin dijatuhkan, dan tidak memuat pembelaan Tedjo. Karena itu, pembaca baru bisa memastikan bobot pertimbangan majelis setelah putusan dan alasannya dijelaskan lebih lengkap. Hingga bahan ini disusun, uraian tersebut belum tersedia. Pasal itu disebut sebagai dasar sangkaan etik, bukan sebagai putusan pidana.",
+        "Pada akhirnya sidang memutus sanksi pemecatan tidak hormat atau PTDH. Majelis menilai pelanggaran Tedjo sebagai perbuatan tercela. Tedjo mengajukan banding atas putusan itu. Urutan peristiwanya tergambar dari laporan sore hingga malam: sidang dinyatakan selesai, Tedjo dibawa keluar gedung, lalu muncul keterangan bahwa ia dipecat dan mengajukan banding. Bahan belum memuat isi permohonan banding, alasan yang diajukan, tenggat pemeriksaan banding, atau apakah sanksi pemecatan ditunda selama banding berjalan. Status akhir putusan karena itu masih perlu dicermati, terutama karena bahan yang menyebut banding tidak menjelaskan tahapannya.",
+        "Perkara etik ini berkaitan dengan kasus dugaan makar yang ditangani Bareskrim Polri. Direktur Tindak Pidana Umum Bareskrim Polri Brigjen Susatyo Purnomo Condro menyebut Tedjo berperan aktif dalam kegiatan surveillance atau pembuntutan terhadap tokoh-tokoh yang disadap secara ilegal. Menurutnya, sasaran pengintaian mencakup para calon Kapolri pengganti Jenderal Listyo Sigit Prabowo hingga pejabat di lingkaran Istana, pejabat negara, dan pejabat partai. Susatyo mengatakan aksi itu dilakukan untuk mengetahui serta memberi gambaran kegiatan tokoh-tokoh yang dinilai berpengaruh. Ia juga mengutip keterangan ahli bahwa membuntuti dan mensurveillance, termasuk pada lingkar istana, merupakan bagian dari tindak pidana makar.",
+        "Bareskrim menyatakan Tedjo tidak bekerja sendiri. Susatyo menyebut anak buah Tedjo juga diperiksa dan status mereka masih saksi karena menjalankan pengintaian atas perintah Tedjo. Ia menjelaskan relasi kuasa atas perintah sebagai dasar status tersebut. Anak buah itu terdiri dari satu Kombes, satu AKBP, dan dua Kompol. Menurut Susatyo, mereka juga dihadirkan sebagai saksi dalam sidang kode etik pada hari itu. Bahan tidak menyebut nama keempat orang tersebut, tidak merinci tugas masing-masing, dan tidak menjelaskan apakah mereka menghadapi proses etik tersendiri. Keterangan ini penting karena menunjukkan penyidik membedakan pemberi perintah dari pelaksana di lapangan, setidaknya untuk status saksi.",
+        "Dalam kasus dugaan makar, Bareskrim menetapkan enam orang tersangka. Empat di antaranya disebut sebagai tersangka penyadapan ilegal terhadap Presiden Prabowo: eks Kapolri Jenderal Listyo Sigit Prabowo, eks Kepala Divisi TIK Irjen Slamet Uliandi, eks Kepala Divisi Hukum Polri Irjen Ahrie Sonta Nasution, dan eks Direktur Tindak Pidana Narkoba Bareskrim Polri Irjen Eko Hadi Santoso. Dua tersangka lainnya adalah eks Direktur Intelijen Densus 88 Antiteror Polri Brigjen Tedjo Kusumo dan eks Direktur Kriminal Umum Polda Metro Jaya Kombes Iman Imanuddin. Penyebutan nama dan posisi itu berasal dari keterangan kepolisian. Bahan tidak memuat uraian peran masing-masing tersangka selain Tedjo, sehingga tidak cukup untuk menyimpulkan pembagian tugas dalam perkara. Susunan itu menunjukkan perkara menyentuh sejumlah posisi strategis, tetapi bahan tidak menjelaskan keterkaitan peran antar-tersangka.",
+        "Menurut penyidikan, para tersangka diduga melakukan permufakatan, persiapan, hingga permulaan pelaksanaan makar. Motifnya disebut untuk mempertahankan jabatan Kapolri. Keterangan lain menyebut tujuan itu terkait konstelasi politik dengan cara melemahkan kepercayaan masyarakat terhadap pemerintahan Presiden Prabowo. Bareskrim juga menyatakan aksi makar telah direncanakan sejak Prabowo belum dilantik. Rumusan tersebut adalah dugaan penyidik, bukan putusan pengadilan. Bahan belum memuat dakwaan lengkap, bukti yang akan diuji di persidangan, atau jadwal perkara pidananya. Karena itu, pembaca perlu membedakan putusan etik hari itu dari proses pidana yang masih berjalan dan belum tentu berakhir sama.",
+        "Selain Tedjo, Mabes Polri menjatuhkan sanksi PTDH kepada AKBP Guntur Yayus Putra terkait dugaan makar terhadap Presiden Prabowo. Bahan menyebut enam anggota polisi menjadi tersangka dalam perkara itu, tetapi tidak menjelaskan jabatan, peran, atau keterkaitan Guntur dengan Tedjo. Bahan juga tidak merinci kapan sanksi itu dijatuhkan dan apakah ia mengajukan banding. Karena itu, informasi tentang Guntur tidak bisa disamakan dengan kasus Tedjo, meskipun keduanya disebut dalam rangkaian pemberitaan yang sama. Detail yang belum tersedia sebaiknya tidak diisi dengan dugaan. Yang bisa dicatat, ada sanksi lain di luar Tedjo yang diumumkan pada hari yang sama.",
+        "Bahan menyebut dua proses yang berbeda: sidang KKEP dan penyidikan kasus dugaan makar. Sidang KKEP menghasilkan sanksi pemecatan, sedangkan penyidikan menetapkan enam tersangka. Bahan tidak menjelaskan bagaimana kedua proses itu saling memengaruhi, apakah majelis memakai temuan penyidik, atau apakah pemecatan Tedjo mengubah statusnya sebagai tersangka. Bahan juga tidak memuat putusan pengadilan atas perkara pidana tersebut. Karena itu, pernyataan bahwa Tedjo dipecat tidak sama dengan pernyataan bahwa ia telah terbukti melakukan makar di pengadilan. Pembedaan ini penting agar pembaca tidak mencampurkan sanksi etik dengan pembuktian pidana yang belum dijelaskan hasilnya.",
+        "Bahan juga menyinggung nama lain. Setelah menyebut sidang etik Tedjo, salah satu laporan menulis bahwa Slamet Uliandi dan Listyo Sigit Prabowo menyusul. Kalimat itu tidak disertai tanggal, tempat, atau susunan majelis. Tidak jelas pula apakah kata menyusul berarti keduanya akan menjalani sidang etik, kapan prosesnya dimulai, atau apakah ada nama lain yang juga diperiksa. Bahan tentang penetapan tersangka menyebut lima nama lain selain Tedjo, tetapi tidak memuat jadwal pemeriksaan etik mereka. Karena itu, informasi mengenai proses berikutnya masih berupa petunjuk singkat, bukan rangkaian yang bisa dipastikan urutannya.",
+        "Beberapa pertanyaan penting belum terjawab. Bahan tidak memuat pertimbangan lengkap majelis, termasuk alasan menyebut perbuatan Tedjo tercela. Bahan juga belum menjelaskan isi banding, siapa yang akan memeriksanya, dan berapa lama proses itu berlangsung. Tidak ada keterangan apakah sanksi pemecatan langsung berlaku atau menunggu hasil banding. Selain itu, bahan tidak merinci hasil pemeriksaan anak buah Tedjo sebagai saksi dan tidak menyebut apakah mereka akan menjalani proses etik. Ketidakjelasan ini bukan detail kecil, karena menentukan status Tedjo dan arah perkara. Sampai keterangan resmi berikutnya muncul, pembaca sebaiknya menahan kesimpulan tentang hasil akhir. Bahan juga tidak menyebut apakah banding diajukan pada hari yang sama dengan putusan.",
+        "Yang bisa disimpulkan dari bahan hari itu adalah rangkaian peristiwa, bukan keseluruhan perkara. Sidang etik Tedjo berlangsung dan berakhir pada 24 November 2026, dengan putusan pemecatan dan banding. Bareskrim menjelaskan dugaan peran pengintaian serta menetapkan enam tersangka. Namun, belum ada keterangan lengkap soal pertimbangan majelis, jadwal banding, dan nasib proses etik bagi nama-nama lain. Pembaca perlu menunggu dokumen atau keterangan resmi berikutnya sebelum menilai apakah putusan ini final dan bagaimana kaitannya dengan perkara pidana. Yang terang, isu ini menyentuh dua jalur sekaligus: etik dan pidana. Sampai keterangan baru muncul, status final pemecatan belum dapat dipastikan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Polri menurut bahan latar?",
+          "a": "Polri adalah kepolisian nasional dan lembaga penegak hukum Indonesia. Menurut Undang-Undang Nomor 2 Tahun 2002, Polri memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberikan perlindungan, pengayoman, dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Apa yang diketahui tentang KKEP dari bahan latar?",
+          "a": "Bahan latar hanya menyebut KKEP sebagai forum sidang yang digelar Polri terhadap Brigjen Tedjo Kusumo terkait dugaan makar; bahan itu tidak memuat kepanjangan, susunan, atau tata caranya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261124114601-12-1430749/propam-polri-sidang-etik-brigjen-tedjo-kusumo-di-kasus-makar-hari-ini"
+          }
+        },
+        {
+          "q": "Apakah bahan latar menjelaskan prosedur banding?",
+          "a": "Tidak. Bahan latar tidak memuat prosedur banding; keterangan bahwa Tedjo mengajukan banding hanya muncul di bahan berita, yang juga belum merinci tahapannya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261124114601-12-1430749/propam-polri-sidang-etik-brigjen-tedjo-kusumo-di-kasus-makar-hari-ini"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi soal banding Tedjo Kusumo dan jadwal proses etik berikutnya.",
+      "image": {
+        "url": "assets/1e5fb02fc6.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Sidang Etik Tedjo Kusumo Berakhir dengan Pemecatan dan Banding"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261124114601-12-1430749/propam-polri-sidang-etik-brigjen-tedjo-kusumo-di-kasus-makar-hari-ini",
+          "published_at": "2026-11-24T11:52:23+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/propam-polri-sidang-etik-brigjen-tedjo-kusumo-su-lsp-menyusul-id9i",
+          "published_at": "2026-11-24T13:44:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8768110/penampakan-tersangka-makar-brigjen-tedjo-berbaju-tahanan-usai-sidang-etik",
+          "published_at": "2026-11-24T18:22:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-25",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "Penampakan Tersangka Makar Brigjen Tedjo Berbaju Tahanan Usai Sidang Etik",
+          "url": "https://news.detik.com/berita/d-8768110/penampakan-tersangka-makar-brigjen-tedjo-berbaju-tahanan-usai-sidang-etik",
+          "at": "2026-11-24T18:22:34+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Propam Polri Sidang Etik Brigjen Tedjo Kusumo, SU-LSP Menyusul",
+          "url": "https://tirto.id/propam-polri-sidang-etik-brigjen-tedjo-kusumo-su-lsp-menyusul-id9i",
+          "at": "2026-11-24T13:44:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_ri_dan_eropa_teken_perjanjian_dc4e",
+      "angle": "Tarif nol 90,4% produk disepakati; manfaat bergantung ratifikasi sebelum GSP berakhir.",
+      "kicker": "Ekonomi",
+      "title": "IEU-CEPA Diteken di Brussels, Tarif Nol Menanti Ratifikasi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Perjanjian IEU-CEPA menyepakati bea masuk nol persen untuk 90,4 persen pos tarif ekspor Indonesia ke Uni Eropa, dengan target penerapan 1 Januari 2027.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-25T05:46:04+07:00"
+      },
+      "body": [
+        "Perjanjian Indonesia–European Union Comprehensive Economic Partnership Agreement (IEU-CEPA) ditandatangani di Brussels, Belgia, pada Sabtu, 21 November 2026. Kesepakatan ini menjadi pintu masuk bagi produk Indonesia ke pasar Uni Eropa melalui pemangkasan tarif masuk, dan menurut keterangan Menteri Koordinator Perekonomian Airlangga Hartarto, juga dimaksudkan menarik investasi ke sektor-sektor strategis. Airlangga menyebut perjanjian itu membuka gerbang bagi produk unggulan nasional sekaligus menarik investasi berkualitas. Bagi pembaca yang jarang mengikuti berita dagang, intinya begini: tarif sejumlah besar produk Indonesia ke Eropa disepakati turun, tetapi perjanjian belum otomatis berlaku karena masih menunggu ratifikasi dan penyelesaian prosedur hukum masing-masing pihak.",
+        "Inti komersial perjanjian ada pada pos tarif. Sebanyak 90,4 persen pos tarif produk Indonesia yang masuk ke pasar Uni Eropa akan langsung memperoleh fasilitas bea masuk nol persen. Sisa 8,37 persen tidak langsung nol, melainkan diturunkan bertahap dalam rentang tiga sampai 15 tahun, atau melalui skema kuota tarif (tariff rate quota/TRQ). Artinya, tidak semua produk menikmati perlakuan sama pada hari pertama penerapan; sebagian masih menempuh jalur panjang. Angka 90,4 persen muncul konsisten di tiga pemberitaan, sedangkan satu pemberitaan lain hanya menyebut lebih dari 90 persen. Rincian produk mana yang masuk kelompok bertahap tidak diuraikan dalam bahan.",
+        "Selain tarif, kesepakatan mencakup perlindungan investasi, perdagangan jasa, ekonomi digital, serta penguatan kerja sama di sektor strategis. Ada pula Bab Sanitary and Phytosanitary (SPS) yang mengatur keamanan pangan, kesehatan hewan, dan kesehatan tumbuhan. Bab ini menentukan syarat masuknya produk pangan, pertanian, dan perikanan kedua pihak setelah penurunan tarif. Pemerintah menyebut kerja sama SPS memastikan tarif nol diikuti akses pasar yang nyata, dengan prosedur yang lebih jelas dan dapat diprediksi bagi pelaku usaha. Tanpa bab teknis ini, penurunan tarif tidak dengan sendirinya membuka pintu pasar.",
+        "Sektor yang disebut paling berpeluang adalah alas kaki, tekstil, garmen, serta komoditas olahan. Satu pemberitaan menyebut minyak kelapa sawit dan turunannya masuk daftar produk yang memperoleh tarif nol persen sejak perjanjian berlaku. Dari sisi komposisi, sekitar 95,61 persen ekspor Indonesia merupakan produk industri pengolahan, dan pada Januari–September 2026 ekspor industri pengolahan tercatat tumbuh 3,5 persen. Dengan porsi sebesar itu, fasilitas bea masuk nol di Eropa menyentuh hampir seluruh kiriman ekspor, bukan hanya satu atau dua komoditas. Meski begitu, besaran nilai ekspor per sektor tidak dirinci dalam bahan.",
+        "Menteri Perdagangan Budi Santoso menargetkan rata-rata ekspor Indonesia naik US$ 3,8 miliar sampai US$ 5,7 miliar per tahun dalam lima tahun ke depan, atau sekitar 50 persen. Target itu disampaikan pada sosialisasi IEU-CEPA di Jakarta, Selasa, 24 November 2026. Menurutnya, target tersebut tidak mudah dicapai dan butuh kerja sama semua pihak. Ia juga mengingatkan bahwa negara lain sedang mengejar perjanjian serupa dengan Uni Eropa, seperti India, Mercosur, Filipina, dan Meksiko, sehingga peluang pasar bisa berebut. Bahan tidak memuat hitungan rinci dari mana angka 50 persen itu disusun.",
+        "Soal waktu berlaku, pemerintah menargetkan penerapan pada 1 Januari 2027. Budi menyebut tersedia sekitar 1,5 bulan untuk merampungkan ratifikasi. Tenggat itu terkait jadwal lain: skema Generalised Scheme of Preferences (GSP) Uni Eropa berakhir pada 31 Desember 2026, dan pemerintah ingin menghindari jeda antara berakhirnya GSP dan berlakunya CEPA. Satu pemberitaan menyebut penerapan secara provisional, sementara yang lain menyebut target Januari 2027 secara umum. Tahapan ratifikasi di parlemen masing-masing pihak belum dirinci dalam bahan, termasuk kapan pembahasan dimulai dan berapa lama diperkirakan selesai.",
+        "Pelaksanaan perjanjian dikoordinasikan Kementerian Koordinator Bidang Perekonomian, termasuk proses ratifikasi bersama Kementerian Perdagangan selaku juru runding. Untuk sektor pangan, Kementerian Koordinator Bidang Pangan menjadi simpul koordinasi utama, khususnya pada Bab SPS, sementara kewenangan teknis tetap berada pada kementerian dan lembaga masing-masing. Pembagian ini menunjukkan persiapan penerapan tidak berhenti di satu institusi: ada yang mengurus jalur hukum, ada yang mengurus kesiapan teknis di lapangan. Bahan belum menyebut lembaga mana yang akan menangani ratifikasi di sisi Uni Eropa.",
+        "Persiapan teknis sudah berjalan. Delegasi Uni Eropa berkunjung ke Kementerian Koordinator Bidang Pangan pada Senin, 23 November 2026, dua hari setelah penandatanganan. Rombongan dipimpin Kepala Unit Direktorat Jenderal Perdagangan Komisi Eropa, Flavio Coturni, dan Kepala Unit Direktorat Jenderal Kesehatan dan Keamanan Pangan, Caroline Boeshertz, didampingi Duta Besar Uni Eropa untuk Indonesia dan Brunei Darussalam, Hervé Delphin. Agenda tiga hari itu berfokus pada Bab SPS, yakni ketentuan tentang keamanan pangan, kesehatan hewan, dan kesehatan tumbuhan. Pertemuan pleno dipimpin Deputi Bidang Koordinasi Sumber Daya Maritim Kemenko Pangan, Dandy Satrya Iswara, sebagai ketua delegasi Indonesia.",
+        "Pertemuan itu menghasilkan empat kesepakatan: pemantauan seluruh aplikasi akses pasar dua arah dalam satu matriks bersama lengkap dengan langkah lanjut dan jadwal indikatif; pertemuan bilateral teknis pada 24–25 November; persiapan pertemuan pertama Komite SPS dan Technical Working Group; serta usulan paket peningkatan kapasitas dari Indonesia berdasarkan Bab 16 dan 17 perjanjian. Dandy menyatakan penandatanganan di Brussel telah membuka pintu, dan tugas berikutnya memastikan eksportir, petani, serta nelayan bisa langsung melewatinya saat perjanjian berlaku, begitu pula mitra Eropa di Indonesia.",
+        "Bagi pelaku usaha, konsekuensinya konkret: tarif nol tidak cukup tanpa kesiapan memenuhi standar. Usulan peningkatan kapasitas dari Indonesia mencakup pelatihan keamanan pangan, pemantauan residu produk budidaya, sertifikat ekspor elektronik, keterhubungan sistem sertifikasi hasil tangkapan ikan dengan sistem Uni Eropa, serta pendampingan memenuhi persyaratan pasar Eropa bersama asosiasi dan EuroCham. Perjanjian ini berlaku dua arah: produk Eropa yang masuk ke Indonesia tetap melewati analisis risiko dan persyaratan karantina nasional, sehingga perlindungan konsumen serta kesehatan hewan dan tumbuhan di dalam negeri tetap dijaga. Bahan tidak menyebut tenggat kapan sertifikasi itu harus siap.",
+        "Dari sisi industri, seorang narasumber bernama Sarmuji, dikutip dari CNN Indonesia, menilai pemangkasan tarif memudahkan penetrasi pasar baru dan berpotensi meningkatkan utilisasi pabrik dalam negeri. Ia menyebut tingkat utilisasi sektor industri saat ini berada di kisaran hampir 70 persen. Bahan tidak menyebut jabatan atau lembaganya, sehingga klaim itu sebaiknya dibaca sebagai pandangan seorang narasumber, bukan pernyataan resmi kementerian. Dasar angkanya pun tidak dirinci: tidak ada penjelasan berapa kenaikan utilisasi yang diperkirakan maupun produk mana yang paling menyerap tenaga kerja.",
+        "Sektor pertanian juga disiapkan. Menteri Pertanian sekaligus Kepala Badan Pangan Nasional Amran Sulaiman menyatakan pemerintah akan memprioritaskan komoditas yang bernilai komersial tinggi dan menguntungkan petani. Ketika ditanya soal karet dan kelapa sawit, ia belum merinci produk yang menjadi prioritas. Ia menekankan komoditas yang didorong harus memberi manfaat ekonomi bagi petani, bukan sekadar menambah volume perdagangan. Rincian daftar komoditas prioritas, termasuk target volume dan nilainya, belum tersedia dalam bahan. Begitu pula bentuk insentif bagi petani yang ingin menembus pasar Eropa.",
+        "Ada beberapa hal yang perlu dibaca hati-hati. Tiga pemberitaan menyebut penandatanganan terjadi 21 November 2026, sementara pemberitaan CNBC Indonesia bertanggal 24 November menurunkan judul seolah perjanjian baru diteken hari itu; acara pada 24 November adalah sosialisasi, bukan penandatanganan ulang. Angka 90,4 persen dan lebih dari 90 persen merujuk hal yang sama. Perundingan disebut berlangsung hampir 10 tahun sejak 2016. Yang belum jelas: susunan tahapan ratifikasi, jadwal pembahasan di parlemen, dan pernyataan resmi Menteri Perindustrian. Bahan hanya mengutip Sarmuji di kantor Kementerian Perindustrian tanpa menyebut jabatannya, sehingga klaim soal daya saing industri tidak bisa ditempelkan ke jabatan tertentu.",
+        "Konteks pasar juga menentukan. Komisi Eropa mencatat perdagangan barang kedua pihak pada 2025 mencapai €28,9 miliar, dan perjanjian ini disebut membuka peluang saling melengkapi kekuatan ekonomi. Namun Uni Eropa juga menegosiasikan perjanjian serupa dengan India, Mercosur, Filipina, dan Meksiko. Hal ini dapat dibaca sebagai tanda bahwa keunggulan tarif Indonesia bisa bersifat sementara bila ratifikasi lambat dan negara lain lebih dulu masuk. Karena itu, hal paling menentukan dalam beberapa pekan ke depan bukan seremoni di Brussels, melainkan apakah ratifikasi rampung sebelum GSP berakhir pada 31 Desember 2026."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud pos tarif, dan mengapa angkanya terbagi 90,4 persen dan 8,37 persen?",
+          "a": "Pos tarif adalah baris klasifikasi produk dalam daftar tarif perdagangan. Menurut bahan, 90,4 persen pos tarif langsung nol persen, sedangkan 8,37 persen diturunkan bertahap tiga sampai 15 tahun atau lewat kuota tarif.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124103213-92-1430712/menperin-pede-industri-ri-makin-kompetitif-di-eropa-usai-deal-ieu-cepa"
+          }
+        },
+        {
+          "q": "Apa itu GSP Uni Eropa dan mengapa tanggal 31 Desember 2026 penting?",
+          "a": "GSP adalah skema preferensi tarif yang diberikan Uni Eropa; bahan menyebut skema itu berakhir 31 Desember 2026, sehingga pemerintah ingin CEPA berlaku tepat setelahnya agar tidak ada jeda fasilitas tarif.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124103213-92-1430712/menperin-pede-industri-ri-makin-kompetitif-di-eropa-usai-deal-ieu-cepa"
+          }
+        },
+        {
+          "q": "Siapa Sarmuji dalam pemberitaan ini?",
+          "a": "Dikutip dari CNN Indonesia, ia diwawancarai di kantor Kementerian Perindustrian. Bahan tidak menyebut jabatan atau lembaganya, jadi klaimnya tidak bisa diatribusikan ke posisi tertentu.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124103213-92-1430712/menperin-pede-industri-ri-makin-kompetitif-di-eropa-usai-deal-ieu-cepa"
+          }
+        },
+        {
+          "q": "Apa itu Bab SPS dalam perjanjian dagang?",
+          "a": "Bab yang mengatur keamanan pangan, kesehatan hewan, dan kesehatan tumbuhan. Isinya menentukan syarat masuk produk pangan, pertanian, dan perikanan kedua pihak setelah tarif diturunkan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124103213-92-1430712/menperin-pede-industri-ri-makin-kompetitif-di-eropa-usai-deal-ieu-cepa"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman ratifikasi di kanal resmi Kementerian Perdagangan dan siapkan dokumen ekspor sesuai aturan keamanan pangan Uni Eropa.",
+      "image": {
+        "url": "assets/276c593749.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "IEU-CEPA Diteken di Brussels, Tarif Nol Menanti Ratifikasi"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261124123109-4-787936/ieu-cepa-diteken-mendag-ungkap-efek-dahsyatnya-bagi-ri-begini",
+          "published_at": "2026-11-24T13:50:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanbisnis/mendag-bidik-ekspor-ri-ke-uni-eropa-naik-50-dalam-5-tahun-usai-ieu-cepa-diteken-28dPE12HfV5",
+          "published_at": "2026-11-25T03:00:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261124103213-92-1430712/menperin-pede-industri-ri-makin-kompetitif-di-eropa-usai-deal-ieu-cepa",
+          "published_at": "2026-11-24T10:45:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 6,
+      "first_seen": "2026-11-17",
+      "previous_edition": "2026-11-24",
+      "changes": [],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "title": "IEU-CEPA Diteken, Ekspor RI Naik"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "IEU-CEPA Diteken, Ekspor RI ke Eropa"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "kumparan.com",
+          "title": "Mendag Bidik Ekspor RI ke Uni Eropa Naik 50% dalam 5 Tahun Usai IEU-CEPA Diteken",
+          "url": "https://kumparan.com/kumparanbisnis/mendag-bidik-ekspor-ri-ke-uni-eropa-naik-50-dalam-5-tahun-usai-ieu-cepa-diteken-28dPE12HfV5",
+          "at": "2026-11-25T03:00:04+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "IEU-CEPA Diteken, Mendag Ungkap Efek Dahsyatnya bagi RI Begini",
+          "url": "https://www.cnbcindonesia.com/news/20261124123109-4-787936/ieu-cepa-diteken-mendag-ungkap-efek-dahsyatnya-bagi-ri-begini",
+          "at": "2026-11-24T13:50:00+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_prabowo_hubungi_bos_msci_8f26",
+      "angle": "MSCI bantah CEO-nya melunak soal status pasar RI; konsultasi lanjut hingga 30 April.",
+      "kicker": "Ekonomi",
+      "title": "MSCI Bantah Melunak soal Status Pasar RI, Konsultasi Jalan Terus",
+      "status": "sebagian",
+      "truth": {
+        "claim": "MSCI menyatakan klaim bahwa CEO-nya membuka diri terhadap alternatif lain selain penurunan status pasar Indonesia adalah tidak benar.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-25T05:46:04+07:00"
+      },
+      "body": [
+        "Penyedia indeks global MSCI menegaskan bahwa kajian atas status pasar Indonesia belum berubah dan membantah laporan yang menyebut CEO-nya, Henry Fernandez, bersedia mempertimbangkan alternatif lain. Menurut pernyataan yang dikutip Reuters pada Selasa, 24 November, klaim bahwa Fernandez membuka diri dalam pembicaraan telepon dengan Presiden Prabowo Subianto bulan ini adalah tidak benar. MSCI juga menyatakan proses konsultasi reklasifikasi dari pasar negara berkembang menjadi pasar mandiri masih berlangsung, dengan komunikasi terus dilakukan ke pelaku pasar dan pemangku kepentingan lain. Laporan yang dibantah itu datang dari Bloomberg awal pekan ini; MSCI tidak merinci laporan mana yang dimaksud.",
+        "Taruhannya besar. Bila klasifikasi berubah menjadi pasar mandiri, saham-saham Indonesia akan dikeluarkan dari indeks MSCI yang menjadi acuan bagi dana pasif bernilai miliaran dolar. Bahan menyebut kondisi itu berpotensi memicu arus keluar modal dalam jumlah besar dan memberi tekanan tambahan pada pasar yang saat ini tengah tertekan. Pada perdagangan sesi I hari itu, IHSG tercatat naik 0,25 persen ke level 5.228, tetapi indeks telah terkoreksi lebih dari 40 persen sejak awal tahun, terutama setelah MSCI memulai peninjauan pada akhir Januari dan membekukan indeks-indeks terkait. Peninjauan itu dilakukan lantaran kekhawatiran mengenai transparansi kepemilikan serta perilaku perdagangan.",
+        "Soal tanggal, bahan yang ada tidak sepenuhnya seragam. Pemberitaan CNN Indonesia menyebut periode konsultasi tetap terbuka hingga 30 April dan keputusan akhir diperkirakan diumumkan paling lambat 30 Juni, tanpa menyebut tahunnya. Tirto.id menuliskan tahunnya secara eksplisit: konsultasi hingga 30 April 2027 dan keputusan paling lambat 30 Juni 2027. Perbedaan penyebutan tahun itu perlu dicatat, meski bulan dan urutan tahapannya sama. Di sisi pemerintah, Prabowo meminta pembenahan pasar modal dipercepat di tengah konsultasi tersebut, dengan fokus pada keterbukaan informasi serta penegakan aturan, menurut Tirto.id.",
+        "Dari Kompleks Istana Kepresidenan Jakarta, Rosan, yang dikutip dari cnnindonesia.com, belum mau membenarkan komunikasi itu. Ia menjelaskan perbaikan sistem pasar modal lebih banyak berjalan di Otoritas Jasa Keuangan (OJK) sebagaimana juga diminta MSCI, dan pemerintah terus menerima pembaruan langkah dari lembaga tersebut. Menurutnya ada dua hal utama yang harus ditingkatkan: keterbukaan informasi, termasuk kepemilikan saham yang sangat terkonsentrasi pada segelintir pihak (high concentrated pemegang saham), serta kepatuhan dan penegakan hukum. Rosan menyampaikan perbaikan telah berjalan baik, termasuk adanya komite yang menelaah saham dengan tingkat konsentrasi kepemilikan tinggi.",
+        "Yang belum jelas, MSCI menyatakan tidak mengungkapkan siapa saja peserta pertemuan konsultasi maupun rincian diskusinya, sehingga isi pembicaraan dengan pihak pemerintah tidak bisa dipastikan dari bahan ini. MSCI juga tidak merinci laporan mana yang dibantahnya. Apakah benar terjadi percakapan telepon antara Fernandez dan Prabowo, dan apa isinya, belum terkonfirmasi; pejabat yang dikutip pun belum mau membenarkannya. Langkah berikutnya adalah melanjutkan konsultasi hingga 30 April dan menunggu keputusan klasifikasi paling lambat 30 Juni, sambil mencermati hasil pembenahan di OJK."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Prabowo Subianto dalam konteks pembicaraan ini?",
+          "a": "Prabowo Subianto Djojohadikusumo adalah Presiden Indonesia kedelapan yang menjabat sejak 2024; sebelumnya ia Menteri Pertahanan pada era Presiden Joko Widodo.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa itu MSCI dan mengapa keputusannya berdampak pada pasar Indonesia?",
+          "a": "MSCI (Morgan Stanley Capital International) adalah penyedia indeks global yang menilai status pasar; dalam bahan, MSCI menegaskan sikapnya dalam mengkaji perubahan status pasar Indonesia.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124125508-92-1430775/msci-bantah-evaluasi-status-pasar-ri-melunak-usai-ditelepon-prabowo"
+          }
+        },
+        {
+          "q": "Apa arti reklasifikasi ke standalone market?",
+          "a": "Bahan menyebut saham Indonesia akan dikeluarkan dari indeks MSCI bila status berubah menjadi pasar mandiri, dan indeks itu menjadi acuan dana pasif bernilai miliaran dolar.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261124125508-92-1430775/msci-bantah-evaluasi-status-pasar-ri-melunak-usai-ditelepon-prabowo"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi MSCI dan langkah OJK soal keterbukaan kepemilikan saham sebelum konsultasi berakhir 30 April.",
+      "image": {
+        "url": "assets/1e2948efa2.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "MSCI Bantah Melunak soal Status Pasar RI, Konsultasi Jalan Terus"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261124125508-92-1430775/msci-bantah-evaluasi-status-pasar-ri-melunak-usai-ditelepon-prabowo",
+          "published_at": "2026-11-24T13:32:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/msci-bantah-kabar-batal-turunkan-status-ri-ke-standalone-market-id9j",
+          "published_at": "2026-11-24T13:43:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-24",
+      "previous_edition": "2026-11-24",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "MSCI Bantah Kabar Batal Turunkan Status RI ke Standalone Market",
+          "url": "https://tirto.id/msci-bantah-kabar-batal-turunkan-status-ri-ke-standalone-market-id9j",
+          "at": "2026-11-24T13:43:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "MSCI Bantah Evaluasi Status Pasar RI Melunak usai Ditelepon Prabowo",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261124125508-92-1430775/msci-bantah-evaluasi-status-pasar-ri-melunak-usai-ditelepon-prabowo",
+          "at": "2026-11-24T13:32:19+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_mk_beri_tenggat_perbaikan_uu_p_1aa9",
+      "angle": "MK menyatakan pembentukan UU Polri cacat formil dan memberi DPR satu tahun memperbaiki.",
+      "kicker": "Nasional",
+      "title": "MK Nyatakan UU Polri Cacat Formil, Beri Tenggat Satu Tahun",
+      "status": "sebagian",
+      "truth": {
+        "claim": "MK menyatakan UU Nomor 5 Tahun 2026 tetap mengikat secara bersyarat dan memberi tenggat perbaikan satu tahun.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-25T05:46:04+07:00"
+      },
+      "body": [
+        "Mahkamah Konstitusi memutus permohonan uji materi Nomor 251/PUU-XXIV/2026 yang diajukan Muhammad Ezra Suhaeri dan mengabulkannya sebagian. Putusan itu diputuskan pada Senin, 23 November, dan baru sehari kemudian DPR menanggapi di Kompleks Parlemen, Senayan. Objek uji materi adalah Undang-Undang Nomor 5 Tahun 2026 tentang Perubahan Ketiga atas UU Nomor 2 Tahun 2002 tentang Kepolisian Negara Republik Indonesia. MK tidak membatalkan seluruh isi aturan itu. Majelis menyatakan pembentukan UU tersebut tidak bertentangan dengan UUD 1945 dan tetap memiliki kekuatan hukum mengikat secara bersyarat, sepanjang diperbaiki dalam waktu paling lama satu tahun sejak putusan diucapkan.",
+        "Pertimbangan MK menyoroti cara pembentukan, bukan isi pasalnya. Majelis menilai pembentukan UU Polri tidak didasarkan pada cara, metode, dan sistematika pembentukan undang-undang yang pasti, baku, dan standar, serta tidak ada persesuaian dengan asas-asas pembentukan peraturan perundang-undangan. Hakim Konstitusi Ridwan Mansyur menyinggung RUU yang telah direkam dan disiarkan lewat kanal YouTube pembentuk undang-undang. Menurutnya, tayangan itu tidak bisa menunjukkan detail isi dokumen RUU. MK menegaskan instrumen publikasi utama adalah dokumen tertulis yang disebarluaskan secara real time melalui kanal resmi. Mahkamah juga meminta praktik publikasi back date dihindari, yakni mengunggah dokumen dengan menutup informasi tanggal unggah sehingga seolah sudah lama diunggah.",
+        "Tenggat yang diberikan MK adalah satu tahun sejak putusan diucapkan. Bila dalam kurun itu tidak ada perbaikan, UU Nomor 5 Tahun 2026 secara hukum menjadi inkonstitusional permanen. Untuk menghindari kekosongan hukum, MK memerintahkan undang-undang, pasal, atau materi muatan yang telah dicabut atau diubah oleh aturan itu berlaku kembali. Dengan begitu, selama tenggat berjalan, hasil revisi masih mengikat, tetapi statusnya bersyarat dan bergantung pada perbaikan yang diminta. Konsekuensi berat itu tidak berlaku otomatis hari ini, melainkan menunggu apakah pembentuk undang-undang memenuhi perintah perbaikan dalam satu tahun.",
+        "Selain soal prosedur, MK membuka ruang bagi pembentuk undang-undang untuk mengkaji kembali substansi hasil revisi UU Polri. Namun bahan yang tersedia belum merinci bagian substansi mana yang dimaksud, atau apakah Mahkamah memberi catatan khusus untuk pasal tertentu. Yang jelas, perbaikan yang diminta tidak berhenti pada urusan administrasi dokumen. Pembentuk undang-undang diminta menjaga konsistensi dalam proses legislasi, termasuk keterbukaan dan kebenaran dokumen, karena menurut Mahkamah keduanya menjadi dasar agar produk hukum adil dan sedapat mungkin mendekati kehendak rakyat.",
+        "DPR menyatakan menghormati putusan MK. Wakil Ketua DPR Sufmi Dasco Ahmad, menjawab pertanyaan wartawan di Kompleks Parlemen pada Selasa, 24 November 2026, meminta komisi terkait mengkaji ulang UU tersebut. Belum ada keterangan rinci soal langkah konkret yang akan diambil, misalnya apakah revisi ditempuh lewat undang-undang baru atau mekanisme lain, dan apakah tenggat satu tahun itu masuk prioritas legislasi. Tanggapan resmi Polri belum tersedia dalam bahan yang dihimpun, sehingga sikap institusi kepolisian atas putusan ini belum bisa dipastikan."
+      ],
+      "explain": [
+        {
+          "q": "Lembaga mana yang membuat undang-undang yang diuji dalam perkara ini?",
+          "a": "DPR, lembaga legislatif yang membuat undang-undang dan mengawasi pemerintah; anggotanya dipilih lewat pemilu dan menjabat lima tahun.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa putusan seperti ini penting bagi warga?",
+          "a": "Keputusan pemerintah atau DPR mengikat warga, dari undang-undang sampai peraturan menteri, dan dampaknya biasanya terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        },
+        {
+          "q": "Apa peran Polri menurut undang-undang yang menjadi dasar?",
+          "a": "Menurut UU Nomor 2 Tahun 2002, Polri adalah alat negara yang memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Cek dokumen resmi revisi UU Polri dan hitung tenggat satu tahun yang ditetapkan MK.",
+      "image": {
+        "url": "assets/0de78a31f0.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "MK Nyatakan UU Polri Cacat Formil, Beri Tenggat Satu Tahun"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261124075605-12-1430651/mk-putuskan-perubahan-uu-polri-cacat-formil",
+          "published_at": "2026-11-24T08:58:49+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/mk-uu-polri-cacat-formil-wajib-diperbaiki-maksimal-1-tahun-id8v",
+          "published_at": "2026-11-24T08:05:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://foto.okezone.com/view/2026/11/24/1/106564/dpr-tindaklanjuti-putusan-mk-soal-uu-polri",
+          "published_at": "2026-11-24T21:09:10+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-24",
+      "previous_edition": "2026-11-24",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "DPR Tindaklanjuti Putusan MK soal UU Polri",
+          "url": "https://foto.okezone.com/view/2026/11/24/1/106564/dpr-tindaklanjuti-putusan-mk-soal-uu-polri",
+          "at": "2026-11-24T21:09:10+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "MK Putuskan Perubahan UU Polri Cacat Formil",
+          "url": "https://www.cnnindonesia.com/nasional/20261124075605-12-1430651/mk-putuskan-perubahan-uu-polri-cacat-formil",
+          "at": "2026-11-24T08:58:49+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "MK: UU Polri Cacat Formil, Wajib Diperbaiki Maksimal 1 Tahun",
+          "url": "https://tirto.id/mk-uu-polri-cacat-formil-wajib-diperbaiki-maksimal-1-tahun-id8v",
+          "at": "2026-11-24T08:05:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "debate",
+      "topic_id": "t_debate_t_8_saksi_kasus_penyadapan_prabo_a617",
+      "angle": "Publik vokal, media sepi",
+      "kicker": "Yang diperdebatkan",
+      "title": "Yang diperdebatkan: Listyo Sigit Tersangka Kasus Makar",
+      "status": "belum",
+      "truth": null,
+      "body": [
+        "Ada 166 komentar di reddit untuk topik ini. Nada bacaan: terbelah.",
+        "Komentar teratas menyoroti persoalan yang tidak selalu muncul di liputan: “Barbuknya apa kek senjata rakitan, bom molotov atau apa gitu yg bisa buat perang Jendral m” “ngomong panjang lebar intinya cuma https://i.redd.it/f7pmh3cfek3i1.png” “rEvOlUsi bErAwAl dAri kRabY pAtTy ![gif](giphy|QUXYcgCwvCm4cKcrI3)”.",
+        "Komentar internet bukan sampel representatif publik Indonesia. Kartu ini mencatat apa yang diperdebatkan, bukan siapa yang benar."
+      ],
+      "action": "Baca komentar dengan sadar bahwa ini bukan sampel representatif.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261123222835-12-1430606/jadi-tersangka-kasus-makar-listyo-sigit-cs-terancam-hukuman-mati",
+          "published_at": "2026-11-24T06:21:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261124070835-16-1430638/bareskrim-polri-tetapkan-listyo-sigit-dkk-tersangka-kasus-makar",
+          "published_at": "2026-11-24T07:47:03+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1y4bxa0/heboh_typo_tulisan_one_peace_di_barbuk_dugaan/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        },
+        {
+          "outlet": "Reddit",
+          "url": "https://www.reddit.com/r/indonesia/comments/1y3ml8q/listyo_sigit_jadi_tersangka_makar_kaus_tiga_jari/",
+          "published_at": null,
+          "tier": 3,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-25",
+      "previous_edition": null,
+      "changes": [],
+      "volume": {
+        "platform": "reddit",
+        "count": 166
+      },
+      "tone": "Terbelah",
+      "quotes": [
+        {
+          "author": "Whatever14x",
+          "platform": "reddit",
+          "text": "Barbuknya apa kek senjata rakitan, bom molotov atau apa gitu yg bisa buat perang Jendral makar pake kaos, disemprot blangwir ya kocar kacir",
+          "score": 27
+        },
+        {
+          "author": "dontores23",
+          "platform": "reddit",
+          "text": "ngomong panjang lebar intinya cuma https://i.redd.it/f7pmh3cfek3i1.png",
+          "score": 12
+        },
+        {
+          "author": "cuking_jawa",
+          "platform": "reddit",
+          "text": "rEvOlUsi bErAwAl dAri kRabY pAtTy ![gif](giphy|QUXYcgCwvCm4cKcrI3)",
+          "score": 10
+        }
+      ],
+      "comparison": null,
+      "reading": "Publik vokal di reddit (166); tidak ada sinyal pembanding.",
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Bareskrim Polri Tetapkan Listyo Sigit dkk Tersangka Kasus Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261124070835-16-1430638/bareskrim-polri-tetapkan-listyo-sigit-dkk-tersangka-kasus-makar",
+          "at": "2026-11-24T07:47:03+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "Reddit",
+          "title": "R",
+          "url": "https://www.reddit.com/r/indonesia/comments/1y4bxa0/heboh_typo_tulisan_one_peace_di_barbuk_dugaan/",
+          "at": null,
+          "owner": null,
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "misread",
+      "topic_id": "t_misread_dpr_bahas_ruu_pidana_mati_938d",
+      "angle": "“usulan” tidak ada di judul",
+      "kicker": "Salah dipahami",
+      "title": "Yang hilang dari judul: “usulan”",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Judul yang beredar: “Komisi III Mendadak Rapat Bahas RUU Pidana Mati Bareng Pemerintah”. Judul itu tidak memuat kata “usulan” yang muncul di isi artikel.",
+        "Isi artikelnya menyebut: “Sebab, dalam rapat usulan evaluasi Prolegnas 2026 dan Prioritas 2027, RUU Pidana Mati tak disinggung.”. Artinya, masih berupa usulan, bukan keputusan.",
+        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
+      ],
+      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261124115000-32-1430748/komisi-iii-mendadak-rapat-bahas-ruu-pidana-mati-bareng-pemerintah",
+          "published_at": "2026-11-24T11:56:29+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-25",
+      "previous_edition": null,
+      "changes": [],
+      "claim": "Komisi III Mendadak Rapat Bahas RUU Pidana Mati Bareng Pemerintah",
+      "reality": "Sebab, dalam rapat usulan evaluasi Prolegnas 2026 dan Prioritas 2027, RUU Pidana Mati tak disinggung.",
+      "missing": [
+        "masih berupa usulan, bukan keputusan"
+      ],
+      "trigger": "headline_body_gap"
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_25",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Kabar Beredar Diperiksa: Kalung Kucing hingga Kopdes Longsor",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 25 November 2026, ada tiga kabar yang beredar dan diperiksa oleh TurnBackHoax. Ketiganya diberi putusan salah. Kabar pertama adalah klaim penyadapan Presiden menggunakan kalung kucing. Menurut hasil pemeriksaan, penyadapan terhadap presiden dilakukan menggunakan nomor yang terhubung ke server LIMS (Lawful Interceptions Management System) tanpa melalui proses verifikasi, bukan melalui kalung kucing. Kabar kedua adalah klaim aksi besar di Solo yang mendesak Gibran kembali menjadi Wakil Presiden. Konten yang beredar dinyatakan sebagai hasil rekayasa AI dengan tingkat probabilitas mencapai 99,9%. Kabar ketiga adalah foto dokumentasi Kopdes Merah Putih tertimbun longsor. Hasil analisis menggunakan Truth Scan menunjukkan tingkat probabilitas mencapai 97%, yang berarti foto tersebut dihasilkan oleh AI.",
+        "Dari tiga kabar itu, pola yang terlihat cukup jelas pada dua di antaranya: konten berupa gambar atau rekaman yang dibuat dengan kecerdasan buatan, lalu disebarkan seolah-olah sebagai dokumentasi peristiwa nyata. Keduanya sama-sama membawa angka probabilitas yang tinggi, 99,9% untuk konten aksi di Solo dan 97% untuk foto Kopdes. Sementara itu, kabar soal kalung kucing menunjukkan pola lain, yakni klaim yang menyebut cara atau alat tertentu yang ternyata tidak sesuai dengan keterangan hasil pemeriksaan.",
+        "Sebaiknya pembaca tidak langsung meneruskan kabar semacam ini ke grup percakapan atau media sosial. Periksa dulu apakah ada lembaga pemeriksa fakta yang sudah membahasnya, dan baca alasannya, bukan hanya putusannya. Untuk konten berupa foto atau video, perlu diingat bahwa gambar hasil rekayasa AI kini cukup sulit dibedakan dengan mata biasa, sehingga keberadaan sumber resmi dan dokumentasi pembanding menjadi penting sebelum mempercayainya."
+      ],
+      "action": "Periksa dulu alas an hasil fact-check sebelum meneruskan kabar apa pun ke orang lain.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-25T05:46:04+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-25",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Penyadapan Presiden Menggunakan Kalung Kucing",
+          "verdict": "salah",
+          "reason": "Penyadapan terhadap presiden dilakukan menggunakan nomor yang terhubung ke server LIMS (Lawful Interceptions Management System) tanpa melalui proses verifikasi, bukan melalui kalung kucing.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37515-salah-penyadapan-presiden-menggunakan-kalung-kucing"
+        },
+        {
+          "claim": "Aksi Besar di Solo Desak Gibran Kembali Jadi Wakil Presiden",
+          "verdict": "salah",
+          "reason": "Konten yang beredar adalah hasil rekayasa AI , dengan tingkat probabilitas mencapai 99,9%.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37516-salah-aksi-besar-di-solo-desak-gibran-kembali-jadi-wakil-presiden"
+        },
+        {
+          "claim": "Foto Dokumentasi Kopdes Merah Putih Tertimbun Longsor",
+          "verdict": "salah",
+          "reason": "Hasil analisis menggunakan Truth Scan menunjukkan tingkat probabilitas mencapai 97%, artinya bahwa foto tersebut dihasilkan oleh AI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37518-salah-foto-dokumentasi-kopdes-merah-putih-tertimbun-longsor"
+        }
+      ],
+      "pattern": "Dua dari tiga kabar memakai gambar atau rekaman hasil rekayasa AI yang disebarkan seolah-olah dokumentasi peristiwa nyata."
+    }
+  ]
+}
