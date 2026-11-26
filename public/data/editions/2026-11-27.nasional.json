@@ -1,0 +1,799 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-27",
+  "scope": "nasional",
+  "published_at": "2026-11-27T05:45:40+07:00",
+  "coverage": {
+    "from": "2026-11-26T05:45:40+07:00",
+    "to": "2026-11-27T05:45:40+07:00"
+  },
+  "generated_at": "2026-11-27T05:45:40+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 32,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_sidang_etik_listyo_sigit_digel_3c20",
+      "angle": "Sidang etik Listyo Sigit hari ini: lima jenderal di majelis, ia disebut menolak hadir.",
+      "kicker": "Kriminal",
+      "title": "Sidang Etik Listyo Sigit Digelar, tapi Ia Disebut Menolak Hadir",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Sidang KKEP terhadap Listyo Sigit dijadwalkan 26 November 2026 pukul 09.00 WIB dan dipimpin Komjen Hendro Pandowo.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 4,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Sidang Komisi Kode Etik Profesi (KKEP) terhadap Jenderal Listyo Sigit Prabowo dijadwalkan berlangsung pada Kamis, 26 November 2026, pukul 09.00 WIB. Karo Penmas Divisi Humas Polri, Brigjen Trunoyudo Wisnu Andiko, menyebut sidang itu digelar untuk terduga pelanggar yang ia singkat LSP, tanpa menjelaskan kepanjangan singkatan tersebut dalam kutipan yang beredar. Agenda ini berkaitan dengan kasus dugaan penyadapan Presiden Prabowo Subianto. Yang berjalan hari ini adalah jalur etik kepolisian, bukan pemeriksaan pidana, dan bahan yang tersedia belum memuat hasil apa pun dari sidang tersebut.",
+        "Majelis sidang dipimpin Komjen Hendro Pandowo sebagai Ketua Komisi merangkap anggota. Menurut Trunoyudo, Hendro adalah teman seangkatan Listyo Sigit di Akademi Kepolisian angkatan 1991. Duduk sebagai Wakil Ketua merangkap anggota adalah Kalemdiklat Polri Komjen Rudi Darmoko. Tiga anggota lain disebutkan: Kapolda Metro Jaya Komjen Dadang Hartanto, Kabaintelkam Polri Komjen Dedi Kusuma Bakti, dan Sekjen KP2MI Komjen Dwiyono. Detik.com menyebut komposisi itu sebagai lima jenderal berbintang tiga yang menjadi majelis, jumlah yang sama dengan daftar nama yang dirilis Humas Polri.",
+        "Kasus yang mendasarinya bermula dari penetapan tersangka oleh Bareskrim Polri. Menurut pemberitaan, Jenderal Listyo Sigit Prabowo, Irjen Eko Hadi Santoso, Irjen Ahrie Sonta, dan Irjen Slamet Uliandi ditetapkan sebagai tersangka dalam perkara dugaan penyadapan Presiden Prabowo Subianto, penghapusan data elektronik, serta akses ilegal. Empat nama itu disebut dalam satu paragraf yang sama pada artikel Okezone. Bahan tidak merinci peran masing-masing tersangka, pasal yang disangkakan, maupun kronologi perbuatan yang dituduhkan, sehingga pembaca belum bisa mengetahui siapa berbuat apa dalam rangkaian peristiwa itu.",
+        "Satu artikel menambahkan perkembangan yang tidak muncul di artikel lain: Bareskrim Polri disebut kembali menetapkan enam orang sebagai tersangka dalam perkara dugaan makar yang berkaitan dengan kasus penyadapan Presiden. Identitas keenam orang itu tidak disebutkan, begitu pula kaitannya secara hukum dengan empat tersangka sebelumnya. Karena informasi ini hanya muncul di satu bahan dan tanpa rincian, keterangan tersebut sebaiknya diperlakukan sebagai hal yang masih perlu dikonfirmasi ke sumber resmi. Bahan juga tidak menjelaskan apakah penetapan itu terjadi hari ini atau beberapa waktu sebelumnya.",
+        "Di tengah jadwal itu, dua laporan menyebut Listyo Sigit tidak datang. CNN Indonesia menulis bahwa mantan Kapolri itu menolak hadir dalam sidang KKEP terkait kasus penyadapan ilegal. Sindonews menyampaikan hal serupa dengan menyebutnya sebagai Kapolri Jenderal Polisi. Kedua laporan tidak memuat alasan penolakan, tidak menyebut apakah ada surat resmi, dan tidak menjelaskan apakah sidang tetap digelar tanpa kehadirannya. Hingga bahan ini disusun, belum ada keterangan yang dikutip mengenai sikap majelis atas ketidakhadiran tersebut, termasuk apakah ia akan dipanggil ulang.",
+        "Keterangan resmi dalam bahan ini hampir seluruhnya berasal dari satu pejabat, Karo Penmas Divisi Humas Polri Brigjen Trunoyudo Wisnu Andiko, yang mengutip nama ketua dan anggota majelis. Bahan tidak memuat pernyataan dari Ketua Komisi Kode Etik Profesi itu sendiri, dari anggota majelis lain, atau dari pihak yang mengadukan. Untuk kabar penolakan hadir, yang tersedia adalah laporan media, bukan kutipan langsung dari Listyo Sigit atau kuasa hukumnya. Pembaca perlu membedakan keduanya: satu sisi berisi keterangan resmi soal jadwal, sisi lain berisi klaim soal kehadiran.",
+        "Komisi Kode Etik Profesi adalah forum internal kepolisian untuk menilai pelanggaran kode etik anggotanya. Bahan menyebut namanya dan menyebut susunan majelisnya, tetapi tidak memuat penjelasan tentang wewenang komisi, jenis sanksi yang bisa dijatuhkan, atau apakah putusannya bisa dibanding. Karena itu, pembaca belum bisa menyimpulkan apa konsekuensi sidang ini bagi kedudukan Listyo Sigit di institusi. Yang bisa dipastikan dari bahan hanyalah bahwa sidang dijadwalkan hari ini dan bahwa ia disebut menolak hadir. Selebihnya, termasuk bentuk putusan, masih berupa ruang kosong.",
+        "Untuk memahami mengapa penyadapan menjadi persoalan hukum, bahan latar menyebut aturannya. Penyadapan hanya sah bila dilakukan aparat penegak hukum dengan izin pengadilan dalam perkara tertentu, seperti korupsi dan narkotika. Penyadapan tanpa dasar hukum dapat dipidana. Bahan tidak menyebut pasal mana yang dipakai dalam kasus ini, tidak menyebut pengadilan mana yang dimaksud, dan tidak menjelaskan apakah dalam perkara ini pernah ada izin yang diterbitkan. Dengan kata lain, aturan umumnya tersedia, tetapi penerapannya pada kasus ini belum diuraikan oleh sumber mana pun.",
+        "Angka dan tanggal yang tersedia cukup spesifik untuk dijadikan penanda. Sidang dijadwalkan Kamis, 26 November 2026, pukul 09.00 WIB. Majelis berisi lima jenderal bintang tiga. Ada empat nama tersangka awal, dan satu artikel menambahkan enam tersangka dalam perkara dugaan makar. Hendro Pandowo dan Listyo Sigit disebut satu angkatan di Akpol 1991. Sementara itu, tahun ia menjabat Kapolri disebut 2021. Tidak ada bahan yang menyebut jumlah saksi, jumlah berkas, perkiraan lama sidang, atau nomor surat pemanggilan, sehingga kerangka acaranya belum bisa digambarkan.",
+        "Urutan pemberitaan hari itu memperlihatkan bagaimana informasi bertambah. Laporan pertama muncul pukul 07.26 dan 07.49, menyebut jadwal serta susunan majelis. Pukul 08.39 sebuah judul membicarakan situasi di Gedung Divisi Propam. Pukul 09.12 dan 09.30 keluar laporan tentang lima jenderal bintang tiga serta riwayat karier Listyo Sigit. Baru setelah itu, pukul 10.38 dan 10.41, muncul laporan bahwa ia menolak hadir. Urutan ini tidak membuktikan apa pun tentang jalannya sidang, tetapi menunjukkan bahwa kabar penolakan datang belakangan, bukan hal pertama yang dikonfirmasi.",
+        "Ada perbedaan penyebutan status yang perlu dicatat. Sebagian bahan menulis Jenderal Listyo Sigit Prabowo tanpa keterangan, sebagian menyebut mantan Kapolri atau eks Kapolri, dan satu bahan menulis Kapolri Jenderal Polisi. Bahan latar menyebut ia menjabat Kapolri sejak 2021 dan pernah memimpin Bareskrim. Perbedaan itu bisa berasal dari cara tiap media menyusun kalimat, tetapi bahan tidak memuat keterangan resmi soal status jabatannya saat sidang berlangsung. Pembaca sebaiknya tidak menyimpulkan sendiri dari satu sebutan saja, karena satu kata bisa mengubah kesan tentang siapa yang sedang diadili.",
+        "Satu artikel menyebut akan mengulas riwayat pendidikan, rekam jejak karier, dan harta Listyo Sigit. Bahan latar yang tersedia hanya menyebut bahwa ia adalah jenderal polisi yang menjabat Kapolri sejak 2021 dan mantan ajudan Presiden Joko Widodo, serta pernah memimpin Bareskrim. Rincian pendidikan, riwayat jabatan lengkap, dan harta kekayaan tidak ada dalam bahan yang diberikan. Karena itu, detail-detail tersebut belum bisa diuraikan di sini, dan pembaca tidak seharusnya mengisi kekosongan itu dengan dugaan. Yang tersedia hanyalah garis besar karier sebagaimana dirangkum bahan latar.",
+        "Satu bahan berupa judul menyebut situasi terkini Gedung Divisi Propam jelang sidang etik. Judul itu tidak memuat isi laporan, sehingga tidak ada keterangan tentang jumlah personel, pengamanan, atau suasana di lokasi. Bahan lain tidak menyebut tempat sidang secara eksplisit. Dengan demikian, lokasi resmi sidang dan kondisi di lapangan belum dapat dipastikan dari bahan yang ada, meski judul tersebut mengisyaratkan kaitan dengan lingkungan Propam. Ketiadaan detail ini penting disebut agar pembaca tidak menyimpulkan bahwa sidang berlangsung ricuh atau sepi hanya dari sebuah judul.",
+        "Beberapa hal penting belum jelas. Pertama, alasan Listyo Sigit disebut menolak hadir. Kedua, apakah sidang tetap berjalan dan siapa yang mewakilinya bila ia benar tidak datang. Ketiga, hasil atau putusan sidang, termasuk kemungkinan sanksi. Keempat, apakah proses etik ini berjalan paralel dengan perkara pidana tanpa saling memengaruhi. Kelima, status enam tersangka tambahan dalam perkara dugaan makar. Bahan yang ada berhenti pada pemberitaan jelang dan saat sidang, belum pada hasil, sehingga hampir semua pertanyaan inti masih terbuka.",
+        "Langkah berikutnya juga belum diumumkan dalam bahan. Tidak ada keterangan soal jadwal pembacaan putusan, kemungkinan sidang lanjutan bila Listyo tidak hadir, atau mekanisme banding. Tidak ada pula pernyataan dari tim kuasa hukum Listyo Sigit, dari Komisi Kepolisian Nasional, atau dari pihak Istana. Pihak-pihak yang biasa memberi tanggapan dalam perkara seperti ini belum muncul dalam kutipan yang tersedia. Karena itu, perkembangan yang paling masuk akal untuk dipantau adalah keterangan resmi Polri setelah sidang, bukan potongan judul yang beredar lebih dulu.",
+        "Bagi pembaca yang jarang membuka media sosial, perkaranya bisa dibaca dalam dua lapis. Lapis pertama adalah dugaan penyadapan terhadap presiden, yang menyangkut cara kerja aparat dan syarat izin pengadilan. Lapis kedua adalah proses etik internal, yang menilai apakah seorang anggota Polri melanggar kode etik. Dua lapis itu berjalan dengan aturan berbeda dan bisa menghasilkan kesimpulan berbeda. Bahan tidak menyatakan adanya tekanan politik atau benturan kepentingan apa pun; bila pembaca menemukan klaim semacam itu di tempat lain, klaim tersebut tidak berasal dari bahan ini.",
+        "Yang paling aman disimpulkan hari ini: sidang etik dijadwalkan pukul 09.00, dipimpin Komjen Hendro Pandowo dengan empat anggota, dan dua laporan menyebut Listyo Sigit menolak hadir. Di luar itu, hampir semua pertanyaan penting belum terjawab oleh bahan. Menulis bahwa ia telah diberhentikan, bahwa sidangnya ditunda, atau bahwa ia terbukti bersalah akan melampaui apa yang tersedia. Perkembangan berikutnya perlu menunggu keterangan resmi, dan pembaca sebaiknya membandingkan setidaknya dua laporan sebelum menyimpulkan apa pun tentang hasil sidang etik ini."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim; pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Kapan penyadapan boleh dilakukan menurut aturan?",
+          "a": "Hanya oleh aparat penegak hukum dengan izin pengadilan dalam perkara tertentu seperti korupsi dan narkotika; penyadapan tanpa dasar hukum dapat dipidana.",
+          "source": {
+            "outlet": "UU ITE",
+            "url": "https://www.kominfo.go.id/"
+          }
+        },
+        {
+          "q": "Apa dasar hukum keberadaan Polri?",
+          "a": "Undang-Undang Nomor 2 Tahun 2002 menyebut Polri sebagai alat negara yang memelihara keamanan dan ketertiban, menegakkan hukum, serta memberi perlindungan dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau keterangan resmi Polri setelah sidang untuk memastikan apakah sidang berjalan dan apa putusannya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8342692/sidang-etik-jenderal-listyo-sigit-digelar-hari-ini",
+          "published_at": "2026-11-26T07:28:49+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://www.detik.com/jogja/berita/d-8770443/jenderal-listyo-sigit-prabowo-hadapi-sidang-etik-hari-ini",
+          "published_at": "2026-11-26T09:12:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/26/337/3256279/listyo-sigit-prabowo-jalani-sidang-etik-kasus-dugaan-penyadapan-hari-ini",
+          "published_at": "2026-11-26T07:26:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1776433/13/jenderal-listyo-sigit-tolak-hadiri-sidang-etik-kasus-penyadapan-presiden-prabowo-1795662664",
+          "published_at": "2026-11-26T10:41:55+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261126101634-12-1431686/majelis-kkep-minta-listyo-dihadirkan-di-sidang-etik-30-november",
+          "published_at": "2026-11-26T10:38:27+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-19",
+      "previous_edition": "2026-11-26",
+      "changes": [],
+      "dek": "Sidang etik Listyo Sigit dijadwalkan pagi ini dengan lima jenderal di majelis, sementara satu laporan menyebut ia menolak hadir.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "2",
+          "label": "halaman"
+        },
+        {
+          "value": "5",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "sindonews.com",
+          "title": "Jenderal Listyo Sigit Tolak Hadiri Sidang Etik Kasus Penyadapan Presiden Prabowo",
+          "url": "https://nasional.sindonews.com/read/1776433/13/jenderal-listyo-sigit-tolak-hadiri-sidang-etik-kasus-penyadapan-presiden-prabowo-1795662664",
+          "at": "2026-11-26T10:41:55+07:00",
+          "owner": "MNC",
+          "media": 2
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Majelis KKEP Minta Listyo Dihadirkan di Sidang Etik 30 November",
+          "url": "https://www.cnnindonesia.com/nasional/20261126101634-12-1431686/majelis-kkep-minta-listyo-dihadirkan-di-sidang-etik-30-november",
+          "at": "2026-11-26T10:38:27+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Sidang Etik Jenderal Listyo Sigit Digelar Hari Ini",
+          "url": "https://www.liputan6.com/news/read/8342692/sidang-etik-jenderal-listyo-sigit-digelar-hari-ini",
+          "at": "2026-11-26T07:28:49+07:00",
+          "owner": "Emtek",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_polri_ungkap_dugaan_makar_peny_0dcb",
+      "angle": "Prabowo menyaksikan pemusnahan 601,7 ton narkoba dan memuji Kapolri baru di Mabes Polri.",
+      "kicker": "Kriminal",
+      "title": "Prabowo Musnahkan 601,7 Ton Narkoba di Mabes Polri",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Prabowo menghadiri pemusnahan barang bukti narkoba di Lapangan Bhayangkara Mabes Polri pada 26 November 2026 dan memuji Kapolri Suyudi Ario Seto.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Presiden Prabowo Subianto menghadiri acara bertajuk \"Pemusnahan Barang Bukti Narkoba dan Pengungkapan Penipuan Daring Jaringan Internasional\" yang digelar Polri di Lapangan Bhayangkara, Jakarta Selatan, Kamis, 26 November 2026. Dalam satu panggung yang sama, negara memamerkan dua hal sekaligus: pemusnahan barang bukti narkoba dan pengungkapan kasus penipuan daring yang disebut melibatkan jaringan internasional. Bahan yang tersedia belum memerinci bagaimana kedua agenda itu dijalankan dalam satu acara, tetapi judul acaranya menunjukkan keduanya memang dirancang sebagai satu rangkaian.",
+        "Angka yang paling banyak dikutip dari acara itu adalah 601,7 ton narkoba yang dimusnahkan. Sejumlah laporan menyebut barang bukti itu dimusnahkan dengan cara dibakar. Namun ada perbedaan penyebutan yang perlu dicatat: satu laporan menulis sekitar 601 ton, sementara laporan lain menyebut 601,7 ton. Selisihnya kecil, tetapi tetap dua versi angka yang berbeda, dan bahan yang tersedia tidak menjelaskan mana yang merupakan angka resmi final. Pembaca sebaiknya memperlakukan 601,7 ton sebagai angka yang paling sering muncul, sambil menyadari bahwa pembulatan ke 601 ton juga dipakai.",
+        "Selain tonase, Polri disebut mengungkap 56.203 kasus narkoba sepanjang November 2025 hingga November 2026, dengan barang bukti sekitar 601 ton. Rentang waktu itu penting karena menunjukkan angka besar tersebut bukan hasil satu operasi, melainkan akumulasi setahun. Bahan tidak menyebutkan bagaimana 56.203 kasus itu tersebar menurut wilayah, jenis narkotika, atau status penyelesaiannya. Bahan juga tidak menjelaskan apakah 601,7 ton yang dimusnahkan pada 26 November 2026 merupakan keseluruhan barang bukti dari rentang tersebut atau hanya bagian yang sudah siap dimusnahkan.",
+        "Dalam sambutannya, Prabowo menempatkan narkoba bukan sebagai persoalan hukum semata, melainkan sebagai ancaman terhadap daya tahan bangsa. Ia menyebut narkoba menghancurkan bangsa, melemahkan generasi muda, dan menurunkan daya tahan negara. Pernyataan itu disampaikan setelah ia menyinggung tiga tugas pokok yang ia sampaikan kepada Polri, dan pemberantasan narkoba disebut sebagai salah satunya. Bahan tidak menyebutkan dua tugas pokok lainnya, sehingga isi lengkap arahan Presiden kepada kepolisian belum bisa diketahui dari materi yang tersedia.",
+        "Prabowo juga memakai perbandingan sejarah. Ia menyinggung The Opium War dan pengalaman nusantara pada zaman Hindia Belanda, dengan tuduhan bahwa penyebaran dan penjualan narkoba pada masa itu diselenggarakan, dilindungi, bahkan disponsori pemerintah penjajah. Menurutnya, pola itu dipakai untuk mempertahankan cengkeraman atas wilayah jajahan. Perbandingan ini adalah bagian dari pidato Presiden, bukan temuan penelitian yang diuraikan dalam bahan. Karena itu, gagasan bahwa sejarah kolonial menjelaskan situasi hari ini sebaiknya dibaca sebagai kerangka berpikir yang dipilih Presiden, bukan kesimpulan yang sudah dibuktikan dalam materi ini.",
+        "Bagian lain dari sambutan itu adalah pujian kepada Kapolri. Prabowo menyebut Kapolri Jenderal Polisi Suyudi Ario Seto merangkap Kepala Badan Narkotika Nasional dan baru menjabat kurang dari dua bulan. Ia bahkan menduga jabatan itu dimulai sekitar 1 Oktober. Keterangan latar menyebut Suyudi menjabat sebagai Kapolri sejak 1 Oktober 2026, sehingga perkiraan dalam pidato itu sejalan dengan tanggal tersebut. Pujian semacam ini penting dicatat karena menunjukkan penilaian Presiden terhadap kepemimpinan Polri pada periode yang masih sangat awal.",
+        "Pujian itu juga disertai angka retoris yang besar: Polri dinilai telah menyelamatkan 300 juta jiwa. Angka tersebut mendekati jumlah penduduk Indonesia, tetapi bahan tidak menjelaskan bagaimana angka itu dihitung, data apa yang dipakai, atau periode apa yang dicakup. Dalam pemberitaan lain, Prabowo disebut mengapresiasi capaian pengungkapan kasus narkoba di bawah kepemimpinan Suyudi Ario Seto. Karena dasar perhitungannya tidak diuraikan, angka 300 juta jiwa lebih tepat dibaca sebagai penegasan politik atas skala masalah, bukan sebagai statistik yang sudah diverifikasi.",
+        "Satu hal lain yang muncul dalam pemberitaan adalah pernyataan Prabowo soal aspek loyalitas dalam hidup saat menghadiri agenda yang sama. Bahan hanya menyebut topik itu secara singkat, tanpa mengutip kalimat lengkapnya dan tanpa menjelaskan kepada siapa pernyataan itu diarahkan. Oleh karena itu, tafsir bahwa loyalitas ditujukan kepada institusi tertentu atau kepada seseorang tertentu belum bisa dipastikan. Yang bisa dicatat adalah bahwa dalam satu acara, Presiden berbicara tentang narkoba, sejarah, apresiasi kinerja, dan loyalitas sekaligus.",
+        "Untuk memahami mengapa pernyataan Presiden di markas Polri dianggap penting, perlu diketahui posisi Polri. Menurut Undang-Undang Nomor 2 Tahun 2002, Polri adalah alat negara yang berperan memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberikan perlindungan, pengayoman, dan pelayanan kepada masyarakat. Pemberantasan narkoba masuk ke dalam fungsi penegakan hukum itu. Karena itu, acara pemusnahan barang bukti bukan sekadar seremoni, melainkan bagian dari cara kepolisian mempertanggungjawabkan hasil kerja hukumnya kepada publik.",
+        "Prabowo sendiri adalah presiden kedelapan Indonesia yang menjabat sejak 2024. Sebelumnya ia menjabat Menteri Pertahanan ke-26 pada 2019 sampai 2024, dan ia merupakan presiden ketiga Indonesia dengan latar belakang militer setelah Soeharto dan Susilo Bambang Yudhoyono. Latar belakang itu relevan secara tidak langsung: seorang presiden berlatar militer berbicara di hadapan institusi kepolisian tentang disiplin, loyalitas, dan ancaman terhadap bangsa. Namun bahan tidak menunjukkan bahwa latar belakang itu menjadi alasan pidatonya, sehingga kaitan tersebut hanya dapat dibaca sebagai konteks, bukan sebab.",
+        "Judul acara juga memuat \"Pengungkapan Penipuan Daring Jaringan Internasional\". Sayangnya, justru bagian itu yang paling sedikit diuraikan. Bahan tidak memuat jumlah tersangka, nilai kerugian, negara asal jaringan, modus operandi, atau barang bukti yang disita dalam kasus penipuan daring tersebut. Padahal, penggabungan dua agenda dalam satu acara bisa dibaca sebagai upaya menunjukkan bahwa Polri menangani kejahatan lama seperti narkotika dan kejahatan baru seperti penipuan digital secara bersamaan. Tanpa rincian, pembaca belum bisa menilai besarnya pengungkapan itu.",
+        "Beberapa hal yang belum jelas: jenis narkotika apa saja yang dimusnahkan dan berapa proporsi masing-masing, di mana dan bagaimana pembakaran dilakukan, apakah pemusnahan disaksikan pihak lain, serta berapa jumlah tersangka yang terlibat dalam 56.203 kasus itu. Bahan juga tidak menyebut apakah ada nama jaringan besar yang ditindak. Selain itu, belum ada keterangan tentang langkah berikutnya, misalnya penindakan lanjutan, pencegahan, atau rehabilitasi. Semua pertanyaan itu tidak bisa dijawab dari materi yang ada, sehingga jawabannya masih menunggu keterangan resmi berikutnya.",
+        "Perbedaan angka dan ketiadaan rincian bukan alasan untuk mengabaikan peristiwa ini. Pemusnahan 601,7 ton barang bukti tetap merupakan peristiwa besar, dan kehadiran Presiden di Lapangan Bhayangkara menunjukkan perhatian politik yang tinggi terhadap agenda pemberantasan narkoba. Yang perlu dijaga adalah cara membacanya: angka besar tanpa rincian sebaiknya tidak langsung dipakai untuk menyimpulkan keberhasilan menyeluruh. Kebiasaan menyebut perbedaan versi angka secara terbuka justru membantu pembaca menilai klaim dengan lebih tenang.",
+        "Ke depan, yang layak ditunggu adalah keterangan resmi Polri atau Badan Narkotika Nasional mengenai rincian barang bukti, hasil pengungkapan penipuan daring, dan kelanjutan penanganan kasus. Bila rincian itu muncul, klaim tentang 300 juta jiwa yang diselamatkan dan capaian di bawah Kepala Polri yang baru bisa diuji dengan data. Sampai saat itu, peristiwa 26 November 2026 paling tepat dibaca sebagai panggung Presiden memuji kinerja kepolisian sekaligus menegaskan bahwa narkoba dianggap ancaman terhadap ketahanan bangsa."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Polri menurut undang-undang?",
+          "a": "Menurut Undang-Undang Nomor 2 Tahun 2002, Polri adalah alat negara yang memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan kepada masyarakat.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Suyudi Ario Seto?",
+          "a": "Ia perwira tinggi Polri yang menjabat Kepala Kepolisian Negara Republik Indonesia sejak 1 Oktober 2026.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Suyudi_Ario_Seto"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto?",
+          "a": "Politikus, pengusaha, dan pensiunan perwira militer yang menjabat Presiden Indonesia kedelapan sejak 2024, setelah sebelumnya menjadi Menteri Pertahanan pada 2019 sampai 2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        }
+      ],
+      "action": "Perhatikan perbedaan angka 601 ton dan 601,7 ton sebelum menyimpulkan besarnya capaian pemberantasan narkoba.",
+      "image": {
+        "url": "assets/728e793443.webp",
+        "credit": "liputan6.com",
+        "alt": "Prabowo Musnahkan 601,7 Ton Narkoba di Mabes Polri"
+      },
+      "sources": [
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8342989/momen-prabowo-musnahkan-narkoba-di-mabes-polri",
+          "published_at": "2026-11-26T14:08:32+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261126140436-4-788754/prabowo-narkoba-menghancurkan-daya-tahan-sebuah-bangsa",
+          "published_at": "2026-11-26T14:27:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8771202/prabowo-ke-polri-you-are-on-the-right-track",
+          "published_at": "2026-11-26T15:43:07+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261126151023-20-1431905/prabowo-bandingkan-kesetiaan-anjing-dan-manusia",
+          "published_at": "2026-11-26T15:33:20+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-22",
+      "previous_edition": "2026-11-26",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "Prabowo ke Polri: You Are on The Right Track",
+          "url": "https://news.detik.com/berita/d-8771202/prabowo-ke-polri-you-are-on-the-right-track",
+          "at": "2026-11-26T15:43:07+07:00",
+          "owner": "CT Corp",
+          "media": 3
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Momen Prabowo Musnahkan Narkoba di Mabes Polri",
+          "url": "https://www.liputan6.com/news/read/8342989/momen-prabowo-musnahkan-narkoba-di-mabes-polri",
+          "at": "2026-11-26T14:08:32+07:00",
+          "owner": "Emtek",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_ri_kejar_keanggotaan_oecd_264d",
+      "angle": "USTR menilai RI layak tarif 18 persen; pemerintah mencermati dan menyiapkan lobi.",
+      "kicker": "Ekonomi",
+      "title": "USTR Sebut RI Layak Tarif 18 Persen, Pemerintah Masih Mencermati",
+      "status": "sebagian",
+      "truth": {
+        "claim": "USTR menyimpulkan kebijakan manufaktur Indonesia membebani dagang AS dan mengusulkan tarif hingga 18 persen, sementara pemerintah masih mencermati.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Kantor Perwakilan Dagang Amerika Serikat (USTR) menyimpulkan bahwa berbagai kebijakan dan praktik manufaktur Indonesia bersifat tidak masuk akal serta membebani perdagangan Amerika Serikat. Kesimpulan investigasi Pasal 301 itu, sebagaimana diberitakan CNBC Indonesia pada 26 November 2026, menjadi pijakan Washington untuk menjatuhkan sanksi atau tindakan balasan dagang berupa tarif hingga 18 persen. Bagi pembaca yang jarang membuka berita dagang, penting dipahami lebih dulu bahwa ini bukan tarif final yang berlaku esok hari. Ini tahap pengumuman hasil penyelidikan yang masih menyisakan ruang konsultasi, komentar publik, dan lobi atas daftar pengecualian produk.",
+        "Penyelidikan ini tidak dimulai pekan ini. Menurut laporan USTR yang dikutip CNBC Indonesia, penyelidikan berjalan sejak 11 Maret 2026 dan mencakup 16 ekonomi mitra dagang, termasuk Indonesia, setelah melalui konsultasi rahasia dengan pemerintah RI dan dengar pendapat publik. Ada satu perbedaan angka yang perlu disebutkan. Laporan itu menyebut 16 ekonomi, sedangkan pemberitaan CNN Indonesia pada 26 November 2026 menyebut usulan tarif baru menyasar 14 negara. Tidak ada bahan yang menjelaskan mengapa hitungannya berbeda, sehingga keduanya sebaiknya dibaca sebagai dua cakupan yang belum tentu sama: negara yang diselidiki versus negara yang benar-benar masuk usulan tarif.",
+        "Tiga pemberitaan pada hari yang sama juga memakai kata kerja yang berbeda untuk peristiwa yang sama. CNBC Indonesia menulis USTR resmi menyimpulkan bahwa kebijakan Indonesia tidak masuk akal. Tirto menulis AS mengusulkan tarif impor hingga 18 persen akibat dugaan kelebihan produksi. Sementara judul CNBC Indonesia yang lain menyebut RI terancam terkena tarif tambahan 18 persen. Perbedaan itu bukan sekadar gaya penulisan. Menyimpulkan, mengusulkan, dan mengancam berada di tahap yang berbeda, dan baru tahap konsultasi yang disebut pemerintah sebagai kelanjutannya.",
+        "Alasan pertama yang diangkat USTR adalah kebijakan industri yang dinilai sengaja mengejar pertumbuhan berbasis ekspor dan menyimpang dari sinyal pasar. Dokumen itu menyebut Rencana Induk Pembangunan Industri Nasional 2015-2035, RPJMN, dan inisiatif Making Indonesia 4.0 sebagai rangkaian insentif serta pengembangan kawasan industri. Dari situ USTR menghitung porsi sektor manufaktur terhadap produk domestik bruto Indonesia rata-rata 19,7 persen sepanjang 2021-2025, hampir dua kali lipat rata-rata Amerika Serikat 9,9 persen pada periode yang sama. Porsi ekspor barang terhadap PDB Indonesia tercatat rata-rata 19,8 persen, hampir tiga kali rata-rata AS yang 7,1 persen. Semua angka itu adalah hitungan dalam dokumen USTR, bukan data yang sudah diverifikasi pihak lain dalam bahan ini.",
+        "Alasan kedua menyentuh upah dan hak pekerja. USTR menuding Indonesia menekan biaya tenaga kerja secara artifisial melalui lemahnya hukum dan penegakan aturan ketenagakerjaan. Rinciannya: pembatasan ketat terhadap perundingan bersama dan hak mogok, praktik alih daya yang meluas, pengecualian upah minimum di industri padat karya dan usaha kecil menengah, minimnya jaminan sosial, hingga toleransi terhadap praktik kerja paksa di kawasan industri nikel yang mayoritas dimiliki perusahaan China. Sebagai pendukung, dokumen itu menyebut porsi kompensasi pekerja sektor manufaktur Indonesia rata-rata 10,9 persen sepanjang 2021-2022, jauh di bawah rata-rata AS 45,7 persen pada periode yang sama. Perlu ditegaskan, ini tudingan dalam dokumen USTR, bukan putusan pengadilan atau temuan pihak ketiga.",
+        "USTR lalu menarik garis dari upah ke pola konsumsi domestik. Menurut dokumen itu, rendahnya kompensasi pekerja menekan konsumsi rumah tangga Indonesia ke level rata-rata 54,7 persen dari produk domestik bruto, lebih dari 12 poin persentase di bawah tingkat konsumsi AS. Kutipan berita yang tersedia tidak menyebutkan rentang tahun pengukuran angka 54,7 persen itu, sehingga periode tepatnya belum bisa dipastikan. Karena pasar domestik dinilai tidak cukup menyerap, produksi manufaktur RI disebut terpaksa dilempar ke pasar ekspor. Rangkaian sebab-akibat ini adalah argumen USTR, bukan kesimpulan yang sudah diuji pihak lain dalam bahan. Poin yang perlu dipahami pembaca: tudingan AS tidak tunggal soal tarif, melainkan menyangkut struktur upah dan daya serap pasar dalam negeri.",
+        "Alasan ketiga soal ketergantungan pada investasi dan bahan baku dari negara nonpasar, terutama China. USTR mengutip data bahwa sepanjang 2000-2023 China menyalurkan pembiayaan pembangunan sekitar US$69,6 miliar dan investasi swasta sekitar US$94,1 miliar ke lebih dari 400 proyek di Indonesia, termasuk kawasan Rempang Eco-City senilai US$11,6 miliar. Di sisi perdagangan, impor barang input setengah jadi dari China naik 116 persen atau setara US$26 miliar antara 2017 dan 2025, sehingga pangsa China meningkat dari 22 persen menjadi 32 persen. Dokumen yang sama menyebut kandungan nilai tambah asal China dalam ekspor manufaktur Indonesia ke AS mencapai 9,6 persen pada 2024, angka yang disebut 500 persen lebih tinggi dibandingkan kandungan China dalam ekspor AS.",
+        "Alasan keempat adalah kebijakan keuangan yang oleh USTR disebut represi finansial. Pemerintah dan otoritas keuangan dinilai membatasi akses pembiayaan bagi pihak nonresiden lewat larangan transaksi derivatif rupiah, pembatasan transaksi valuta asing, serta batas transfer rupiah ke luar negeri, dengan tujuan mengarahkan kredit dan modal kepada produsen domestik. USTR juga menyoroti kewajiban penahanan dana devisa hasil ekspor sumber daya alam sebesar 30 persen selama tiga bulan untuk ekspor di atas US$250.000. Empat alasan itu, ditambah penilaian atas rencana induk industri, menjadi dasar mengapa lembaga tersebut menyimpulkan Indonesia layak dikenai tindakan tarif, bukan sekadar dicatat sebagai persoalan teknis biasa.",
+        "Dari sisi pemerintah, Juru Bicara Kemenko Perekonomian Haryo Limanseto mengatakan pemerintah masih mencermati pengumuman tarif tersebut. Kepada wartawan pada Kamis, 26 November 2026, ia menyebut hasil investigasi dan pengumuman tarif baru dari Section 301 Excess Capacity memuat besaran usulan hingga 18 persen. Menurutnya, selisih tarif yang dikenakan ke RI dibanding negara pesaing cukup signifikan. Haryo menilai selisih itu justru menjadi keunggulan komparatif dan peluang strategis bagi industri manufaktur nasional, khususnya tekstil dan produk tekstil, alas kaki, produk logam, serta komponen energi terbarukan. Penilaian itu disampaikan sebagai harapan pemerintah, bukan hitungan rinci yang dipaparkan terbuka kepada publik.",
+        "Pemerintah juga membaca tahapan ini sebagai proses konsultasi yang belum selesai. Haryo menyatakan konsultasi terbuka masih berjalan hingga jadwal dengar pendapat publik pada Januari 2027. Kementerian dan lembaga terkait, katanya, akan segera mengoordinasikan langkah strategis bersama pelaku usaha dan asosiasi industri untuk berpartisipasi aktif dalam sesi komentar publik. Ada dua tujuan yang disebut: mengoptimalkan daftar pengecualian produk dan memastikan iklim perdagangan bilateral Indonesia-Amerika Serikat tumbuh adil dan saling menguntungkan. Dengan kata lain, ruang lobi masih terbuka sebelum tarif apa pun berlaku, dan tenggat yang dipegang pemerintah adalah sesi komentar pada Januari 2027 itu.",
+        "Perbandingan antarnegara menjadi bagian penting berita ini. Menurut pemberitaan CNN Indonesia pada 26 November 2026, China dan Vietnam dikenai usulan tarif 20 persen, Kamboja dan Indonesia 18 persen, India 17 persen, sedangkan mitra seperti Uni Eropa, Korea Selatan, dan Taiwan dibatasi maksimal 15 persen. Seorang pejabat senior AS dikutip mengatakan rencana itu muncul karena negara-negara tersebut dinilai mendorong produksi dan kapasitas yang tidak sejalan dengan realitas permintaan serta prinsip pasar. Daftar yang disebut mencakup China, Uni Eropa, India, Bangladesh, Kamboja, Indonesia, Jepang, Korea Selatan, Malaysia, Singapura, Swiss, Taiwan, Thailand, dan Vietnam. Angka 18 persen karena itu bukan yang tertinggi, tetapi juga bukan yang paling ringan.",
+        "Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyampaikan penekanan yang sedikit berbeda pada Kamis, 26 November 2026. Ia mengatakan Indonesia tetap akan menghadapi tarif 18 persen melalui mekanisme baru penyelidikan kelebihan kapasitas produksi industri. Skema itu disebut menggantikan mekanisme tarif sebelumnya yang dibatalkan Mahkamah Agung Amerika Serikat, dengan besaran tarif yang tetap dipertahankan. Menurut Airlangga, pengumuman resmi AS akan dilakukan dalam waktu dekat, dan ia meminta pemerintah Indonesia tidak mendahului pengumuman tersebut karena sudah berjanji dengan pihak Amerika. Ia menyebut permintaannya itu sebagai embargo.",
+        "Airlangga juga menyatakan posisi Indonesia relatif aman karena telah menandatangani perjanjian dagang dengan AS. Namun penyebutan nama perjanjian itu tidak konsisten dalam bahan: satu kutipan menyebut Article of Reciprocal Trade, bagian lain menyebut Agreement on Reciprocal Trade. Keduanya disingkat ART, tetapi kepanjangannya berbeda, dan tidak ada penjelasan mana yang resmi. Klaim Indonesia aman juga merupakan pernyataan pemerintah, bukan hasil evaluasi independen. Isi perjanjian, cakupan produk yang dilindungi, dan apakah tarif 18 persen benar-benar dikecualikan belum dijelaskan dalam bahan yang tersedia. Pembaca sebaiknya menyimpan pertanyaan ini sampai dokumen perjanjiannya dipublikasikan.",
+        "Dampak ke industri mulai dibicarakan, dan penilaiannya belum seragam. Tirto memberitakan bahwa usulan tarif impor hingga 18 persen berpotensi memperburuk tekanan industri tekstil RI, dengan CORE Indonesia menyarankan pemanfaatan pasar IEU-CEPA. Sementara Menteri Perindustrian Sarmuji, dikutip dari CNBC Indonesia, optimistis produk Indonesia tetap bersaing di AS meski ada ancaman tarif 18 persen, dan menyebut pemerintah fokus memperluas pasar ekspor global. Satu pihak menyoroti risiko, pihak lain menekankan optimisme. Rincian sektor mana yang paling terpukul, berapa nilai ekspor yang terdampak, dan bagaimana hitungannya belum dipaparkan dalam bahan.",
+        "Yang belum jelas masih cukup banyak. Belum ada daftar produk yang masuk atau dikecualikan, belum ada tarif per sektor, dan belum ada kepastian kapan tarif berlaku. Airlangga menyebut pengumuman resmi akan datang dalam waktu dekat, sedangkan Haryo menunjuk dengar pendapat publik Januari 2027 sebagai tahap berikutnya. Kedua pernyataan tidak saling bertentangan, tetapi belum menjelaskan urutannya: apakah pengumuman resmi mendahului sesi komentar, atau justru menunggu hasilnya. Pemerintah juga belum mempublikasikan hitungan resmi nilai ekspor yang berpotensi terdampak. Langkah berikutnya adalah menunggu pengumuman resmi AS, mencermati hasil sesi komentar publik, dan mengawal daftar pengecualian yang diperjuangkan bersama asosiasi industri."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Amerika Serikat, pihak yang menjatuhkan ancaman tarif ini?",
+          "a": "Menurut ringkasan latar, Amerika Serikat adalah negara republik konstitusional federal yang terdiri dari lima puluh negara bagian dan satu distrik federal, terletak di bagian tengah Amerika Utara, dengan distrik ibu kota Washington, D.C., dan diapit Samudra Pasifik serta Atlantik.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Apa peran USTR dalam ancaman tarif ini?",
+          "a": "Ringkasan latar menyebut USTR menilai kebijakan manufaktur Indonesia tidak masuk akal dan berpotensi menimbulkan sanksi dagang. USTR adalah Kantor Perwakilan Dagang Amerika Serikat yang menjalankan penyelidikan ini.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261126004434-4-788535/7-alasan-mengapa-as-anggap-ri-layak-dijatuhi-tarif-dagang-18"
+          }
+        },
+        {
+          "q": "Apa yang menjadi pokok temuan awal investigasi?",
+          "a": "Ringkasan latar menyebut investigasi menunjukkan adanya intervensi pemerintah dalam kebijakan manufaktur Indonesia, dan penilaian itulah yang menjadi dasar ancaman sanksi dagang.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261126004434-4-788535/7-alasan-mengapa-as-anggap-ri-layak-dijatuhi-tarif-dagang-18"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi USTR dan daftar pengecualian produk sebelum menilai dampaknya ke sektor usaha Anda.",
+      "image": {
+        "url": "assets/29fccadf98.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "USTR Sebut RI Layak Tarif 18 Persen, Pemerintah Masih Mencermati"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126114657-92-1431737/respons-kemenko-perekonomian-soal-ri-terancam-tarif-as-18-persen",
+          "published_at": "2026-11-26T14:05:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261126004434-4-788535/7-alasan-mengapa-as-anggap-ri-layak-dijatuhi-tarif-dagang-18",
+          "published_at": "2026-11-26T06:10:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/produk-ri-terancam-tarif-impor-18-dari-as-apa-pemicunya-ieem",
+          "published_at": "2026-11-26T10:21:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 5,
+      "first_seen": "2026-11-26",
+      "previous_edition": "2026-11-26",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Respons Kemenko Perekonomian soal RI Terancam Tarif AS 18 Persen",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126114657-92-1431737/respons-kemenko-perekonomian-soal-ri-terancam-tarif-as-18-persen",
+          "at": "2026-11-26T14:05:19+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Produk RI Terancam Tarif Impor 18% dari AS, Apa Pemicunya?",
+          "url": "https://tirto.id/produk-ri-terancam-tarif-impor-18-dari-as-apa-pemicunya-ieem",
+          "at": "2026-11-26T10:21:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_rupiah_tembus_rp18_400_terlema_aab9",
+      "angle": "BI: kebijakan suku bunga data dependent saat rupiah di Rp18.400 per dolar AS.",
+      "kicker": "Ekonomi",
+      "title": "Rupiah Sentuh Rp18.400, BI Sebut Belum Ada Sinyal Naikkan Suku Bunga",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Rupiah menyentuh Rp18.400 per dolar AS pada 26 November 2026 pukul 11.48 WIB menurut data Bloomberg, dan Gubernur BI Destry Damayanti menyatakan arah kebijakan ",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Rupiah menyentuh Rp18.400 per dolar Amerika Serikat pada Kamis, 26 November 2026, menurut data Bloomberg yang dikutip CNNIndonesia.com pukul 11.48 WIB. Laporan itu menyebut pelemahan 68 poin, sekaligus menuliskan angka 37 persen tanpa menjelaskan dasar hitungannya, sehingga besaran persentase tersebut belum bisa dipastikan dari bahan yang ada. Kepala Departemen Pengelolaan Moneter dan Aset Sekuritas Bank Indonesia Erwin Gunawan Hutapea mengatakan tekanan datang dari sentimen risk-off global. Ekspektasi kenaikan suku bunga AS setelah data ekonomi AS yang tetap solid dan inflasi yang persisten mendorong penguatan dolar serta tingginya indeks DXY. Erwin juga menyebut kekhawatiran potensi reklasifikasi saham yang mendorong aliran dana keluar, serta naiknya kebutuhan valas korporasi menjelang akhir bulan.",
+        "Bank Indonesia menyatakan terus melakukan stabilisasi nilai tukar agar bergerak sesuai nilai fundamentalnya. Menurut Erwin, intervensi dilakukan secara terintegrasi di pasar offshore melalui transaksi NDF, di pasar domestik melalui transaksi spot dan DNDF, serta melalui transaksi Surat Berharga Negara di pasar sekunder. BI juga memastikan kecukupan likuiditas valas perbankan dan memperkuat koordinasi serta komunikasi dengan korporasi dan pelaku pasar. Bahan tidak menyebutkan besaran dana yang dipakai untuk intervensi maupun rincian hasilnya, sehingga efektivitas langkah itu belum dapat diukur dari keterangan yang ada.",
+        "Direktur PT Traze Andalan Futures Ibrahim Assuabi membenarkan bahwa pelemahan pada siang itu merupakan yang terlemah sepanjang sejarah, dan menurut dia rupiah masih berpeluang turun lebih dalam. Ia menyebut Rp18.400 sebagai awal saja. Ibrahim memperkirakan 70 persen pelemahan didominasi sentimen domestik, antara lain langkah Morgan Stanley Capital International (MSCI) yang tengah mengevaluasi potensi penurunan status pasar modal Indonesia dari Emerging Market menjadi Standalone Market, serta proyeksi laba bersih Danantara Investment Management (DIM) sebesar Rp800 miliar pada 2026. Sisanya, 30 persen, ia kaitkan dengan sentimen eksternal seperti konflik geopolitik di Timur Tengah.",
+        "Di sisi kebijakan, Gubernur Bank Indonesia Destry Damayanti belum memberikan sinyal kenaikan BI Rate merespons potensi kenaikan suku bunga di Amerika Serikat. Berbicara kepada wartawan di DPR, Jakarta, Kamis (26/11/2026), ia menyatakan arah kebijakan masih data dependent. Salah satu pertimbangan yang akan dicermati adalah perbandingan imbal hasil aset domestik dengan aset AS, termasuk apakah kenaikan suku bunga AS juga akan mendorong US dollar yield yang tinggi. Destry menegaskan BI tidak hanya bergantung pada BI Rate, tetapi juga memakai insentif lindung nilai atau hedging dan Sekuritas Rupiah Bank Indonesia (SRBI) untuk mengelola keseimbangan likuiditas rupiah dan dolar. Ia juga mengingatkan bahwa sebelumnya BI telah menaikkan suku bunga untuk meng-anchor inflasi.",
+        "Sejumlah hal masih belum jelas. Destry belum menyampaikan keputusan atau sinyal spesifik mengenai perubahan BI Rate, dan bahan tidak memuat jadwal rapat kebijakan berikutnya. Hasil evaluasi MSCI juga belum diumumkan dalam bahan ini, begitu pula rincian dampaknya terhadap aliran dana keluar. Perbedaan angka pelemahan, yakni 68 poin dan 37 persen, juga belum dijelaskan dasar perhitungannya. Langkah berikutnya yang bisa dipantau adalah perkembangan data ekonomi domestik dan AS, perbandingan imbal hasil, serta keputusan suku bunga pada rapat mendatang. Ibrahim menilai rupiah masih terbuka untuk melemah lebih jauh, tetapi besaran dan waktunya tidak disebutkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa arti level Rp18.400 per dolar AS bagi rupiah?",
+          "a": "Angka itu disebut sebagai level terendah sepanjang sejarah bagi rupiah, yang tercapai pada 26 November 2026 di tengah sentimen global yang menekan mata uang.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126130152-78-1431797/bi-buka-suara-soal-rupiah-tembus-rp18400-terlemah-sepanjang-sejarah"
+          }
+        },
+        {
+          "q": "Apa itu BI Rate dan mengapa arahnya diperhatikan pasar?",
+          "a": "BI Rate adalah suku bunga acuan Bank Indonesia untuk mengarahkan kebijakan moneter; arahnya diperhatikan karena memengaruhi daya tarik imbal hasil aset domestik dibandingkan aset Amerika Serikat.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126130152-78-1431797/bi-buka-suara-soal-rupiah-tembus-rp18400-terlemah-sepanjang-sejarah"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud sentimen global dalam pemberitaan ini?",
+          "a": "Sentimen global merujuk pada faktor luar negeri yang menekan rupiah, seperti ekspektasi kenaikan suku bunga AS dan konflik geopolitik, yang membuat pelaku pasar beralih ke aset yang dinilai lebih aman.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126130152-78-1431797/bi-buka-suara-soal-rupiah-tembus-rp18400-terlemah-sepanjang-sejarah"
+          }
+        }
+      ],
+      "action": "Pantau hasil evaluasi MSCI dan keputusan BI Rate pada rapat berikutnya sebelum menyusun rencana kebutuhan valas.",
+      "image": {
+        "url": "assets/090ddf1b5c.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Rupiah Sentuh Rp18.400, BI Sebut Belum Ada Sinyal Naikkan Suku Bunga"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126130152-78-1431797/bi-buka-suara-soal-rupiah-tembus-rp18400-terlemah-sepanjang-sejarah",
+          "published_at": "2026-11-26T13:23:13+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261126171631-4-788848/bos-bi-buka-suara-soal-peluang-kenaikan-bi-rate-di-desember-2026",
+          "published_at": "2026-11-26T17:30:53+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-27",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_ruu_daerah_kepulauan_target_ta_010c",
+      "angle": "DPD: RUU Daerah Kepulauan jadi jalan menutup kesenjangan di wilayah kepulauan",
+      "kicker": "Nasional",
+      "title": "RUU Daerah Kepulauan Disebut Bisa Rampung Tahun Depan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "DPD RI menyebut pembahasan RUU Daerah Kepulauan sudah masuk tahap tripartite dan berharap rampung tahun depan dengan syarat DIM pemerintah siap.",
+        "status": "sebagian",
+        "confidence": 0.55,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Pembahasan Rancangan Undang-Undang Daerah Kepulauan disebut sudah masuk tahap tripartite, dan DPD RI berharap aturan itu rampung pada tahun depan. Harapan itu disampaikan Ketua Panitia Perancang Undang-Undang DPD RI Abdul Kholik dalam program Senator Menyapa 2026 yang berlangsung di Studio II CNN Indonesia, Jakarta, Kamis (26/11). Ia menempatkan RUU ini sebagai salah satu yang diperjuangkan pada prioritas 2025, 2026, dan 2027. Pernyataan itu belum merupakan keputusan resmi, melainkan penilaian seorang pimpinan alat kelengkapan DPD tentang jalannya pembahasan.",
+        "Menurut Abdul, RUU Daerah Kepulauan sudah diperjuangkan hampir 18 tahun. Ia menyebut DPD setia mengawal meski banyak kesulitan, dan menilai progres tahun ini cukup bagus. Soal waktu, ia berharap Desember ini ada pembahasan yang lebih intens. Syarat yang ia sebut adalah kesiapan Daftar Inventarisasi Masalah atau DIM dari pemerintah. Bila DIM sudah siap, ia memperkirakan pembahasan bisa diselesaikan paling lambat awal masa sidang tahun depan. Perkiraan itu masih bersyarat, sebab bahan tidak memuat tenggat resmi maupun kepastian bahwa DIM akan selesai pada Desember.",
+        "Dalam episode keempat Senator Menyapa, DPD RI duduk bersama perwakilan DPR RI, pemerintah pusat, dan pemerintah daerah. Selain Abdul Kholik dan Wakil Ketua Tim Kerja RUU Daerah Kepulauan DPD RI Riedno Graal Taliawo, hadir Kepala Badan Pengembangan Infrastruktur Wilayah Kementerian Pekerjaan Umum Adenan Rasyid serta Wakil Gubernur Maluku Abdullah Vanath. Namun bahan yang tersedia hanya memuat kutipan dari pihak DPD dan Vanath. Tidak ada kutipan dari perwakilan DPR maupun Kementerian Pekerjaan Umum, sehingga posisi dua pihak terakhir belum bisa disimpulkan dari bahan ini.",
+        "Alasan utama yang diajukan DPD adalah cara pembangunan selama ini dinilai terlalu bertumpu pada pendekatan teknokratis berbasis daratan. Abdul mengatakan Indonesia adalah negara kepulauan, tetapi dalam praktiknya banyak kebijakan masih memakai kerangka land based. Menurut dia, hal itu tidak bisa dihindari sepenuhnya karena perspektif awal pergerakan pembangunan dimulai dari pusat-pusat pemerintahan, yang sebagian besar berada di Jawa. Karena itu ia menyebut RUU ini sebagai upaya meluruskan konsep pembangunan, termasuk memberi afirmasi bagi daerah kepulauan.",
+        "Abdul menilai pendekatan yang terus dipertahankan menimbulkan dampak serius yang harus dikoreksi. Daerah kepulauan, katanya, membutuhkan peraturan yang spesifik; tanpa itu kesenjangan bisa terjadi. Ia membedakan dua konteks: wilayah daratan tetap memerlukan visi daratan, sedangkan daerah kepulauan perlu kerangka teknokratis kepulauan. Pernyataan ini adalah penilaian DPD, bukan temuan studi yang dipaparkan dalam bahan. Bahan juga tidak memuat pasal atau norma spesifik apa pun dari rancangan yang sedang dibahas, sehingga isi aturan itu masih belum dapat diperiksa.",
+        "Dari sisi kebutuhan, Abdul menyebut tiga hal yang menurut dia selama ini diabaikan: program, dukungan anggaran, dan konstruksi infrastruktur. Kebutuhan daerah dinilainya spesifik, sehingga program dan anggaran pun harus spesifik. Ia juga menyoroti pergerakan dan mobilitas warga kepulauan yang menuntut usaha luar biasa, serta karakter daerah yang memerlukan bentuk infrastruktur berbeda. Perhitungan biaya ikut disorot. Bila pola lama terus dipakai, ia memperingatkan kesenjangan akan semakin melebar. Peringatan itu belum disertai angka proyeksi atau simulasi anggaran apa pun dalam bahan.",
+        "Gambaran konkret datang dari Wakil Ketua Tim Kerja RUU Daerah Kepulauan DPD RI, Riedno Graal Taliawo. Ia meminta publik tidak hanya melihat sisi baik Maluku Utara di media. Menurut data yang ia kutip, pertumbuhan ekonomi provinsi itu sepanjang 2025 mencapai 34,17 persen, tertinggi secara nasional, ditopang sektor pertambangan. Namun ia menegaskan pertumbuhan itu tidak dirasakan masyarakat luas. Dalam kutipan lain ia menyebut angkanya 34 persen; selisih itu kemungkinan karena pembulatan, dan bahan tidak menjelaskan dasar perhitungan maupun sumber resmi angkanya.",
+        "Alasannya, menurut Graal, sektor pertambangan tidak bisa diakses semua orang karena hanya menyerap keahlian tertentu. Sementara kultur ekonomi masyarakat Maluku Utara, katanya, adalah pertanian dan perikanan. Karena itu ia menilai realisasi hampir 10 tahun terakhir lebih banyak memberi manfaat pada sektor tambang, bukan masyarakat umum. Ia lalu menyebut Halmahera Timur dan Halmahera Tengah sebagai contoh: daerah pertambangan, tetapi angka kemiskinannya paling tinggi. Bahan tidak memuat angka kemiskinan, jumlah penduduk miskin, atau sumber statistik resmi untuk klaim tersebut.",
+        "Wakil Gubernur Maluku Abdullah Vanath menempatkan RUU ini sebagai soal keadilan, bukan keistimewaan. Ia berharap undang-undang itu menjadi pengakuan bahwa mengurus masyarakat Maluku tidak bisa disamakan dengan mengurus satu provinsi di wilayah daratan. Contoh yang ia berikan: sekitar 2 juta orang tersebar di 1.400 pulau. Ia juga menyinggung pentingnya kehadiran negara di perbatasan dan konektivitas masyarakat. Bahan tidak menyebut angka pagu anggaran yang diminta, besaran tambahan dana yang diusulkan, maupun perbatasan mana yang dimaksud.",
+        "Vanath merinci dasar keberatan atas pola pendanaan selama ini. Menurut dia, negara menghitung dana berdasarkan jumlah penduduk, luas wilayah darat, angka kemahalan, dan jumlah pegawai. Formula itu dinilainya tidak adil untuk wilayah kepulauan, karena jumlah penduduk dan luas darat tidak menggambarkan beban mengurus pulau-pulau yang tersebar. Bahan tidak memuat rincian formula pengganti yang diusulkan, juga tidak menyebut instansi mana yang berwenang mengubah perhitungan itu. Karena itu, bentuk afirmasi anggaran yang akan masuk ke dalam RUU masih belum jelas.",
+        "Soal biaya, Vanath menyoroti keterbatasan moda transportasi. Menurut dia, hanya ada transportasi darat, laut, dan udara, sementara pembangunan di daerahnya dominan bergantung pada transportasi laut dan terhalang sebaran pulau. Akibatnya biaya menjadi lebih mahal, termasuk biaya pelayanan publik di berbagai bidang. Ia memberi perbandingan kasar: biaya dari ibu kota provinsi ke kabupaten disebut setara dengan biaya Jakarta ke Jepang. Perbandingan itu disampaikannya sebagai ilustrasi, bukan angka resmi, dan bahan tidak memuat data tarif atau rute yang dipakai untuk menghitungnya.",
+        "Isu lain muncul dari Abdul Kholik mengenai kesiapan badan usaha milik daerah. Ia menyoroti pentingnya kesiapan BUMD untuk mendukung pemberdayaan ekonomi daerah melalui RUU Daerah Kepulauan. Bahan tidak menjelaskan BUMD mana yang dimaksud, apa syarat kesiapan yang diminta, atau bagaimana RUU mengatur perannya. Karena itu, kaitan antara BUMD dan pengurangan kesenjangan belum bisa diuraikan lebih jauh. Yang bisa dicatat, perhatian DPD tidak hanya pada pembagian uang ke daerah, tetapi juga pada kemampuan daerah mengelola ekonominya sendiri.",
+        "Abdul Kholik juga menegaskan persoalan pembangunan daerah kepulauan tidak berhenti pada Maluku dan Nusa Tenggara Timur. Ia menyebut Karimunjawa dan Sumenep sebagai contoh wilayah lain yang menghadapi masalah serupa. Sebutan itu memperluas cakupan yang ingin dijangkau RUU, dari Indonesia timur ke pulau-pulau di kawasan Jawa dan Madura. Meski begitu, bahan tidak memuat daftar resmi daerah yang akan menjadi sasaran, kriteria penetapan, atau perkiraan jumlah daerah kepulauan yang tercakup dalam rancangan.",
+        "Setelah rangkaian argumen itu, bagian paling teknis justru belum jelas. Bahan tidak memuat draf RUU, tidak menyebut nomor atau judul lengkap rancangan, dan tidak menjabarkan norma tentang afirmasi anggaran, kriteria daerah kepulauan, atau pembagian kewenangan. Sikap pemerintah dan DPR juga tidak tergambar, karena kutipan yang tersedia hanya dari pimpinan alat kelengkapan DPD dan Wakil Gubernur Maluku. Langkah berikutnya yang disebut adalah pembahasan lebih intens pada Desember, dengan syarat DIM pemerintah siap, lalu penyelesaian paling lambat awal masa sidang tahun depan. Semua itu masih perkiraan, bukan jadwal yang sudah ditetapkan.",
+        "Bagi pembaca yang jarang mengikuti rapat legislasi, inti perdebatannya bisa dibaca sebagai pertanyaan tentang cara menghitung beban. Angka pertumbuhan tinggi di satu provinsi dipakai untuk menunjukkan bahwa angka makro tidak otomatis berarti kesejahteraan merata. Sebaliknya, argumen tentang jumlah pulau dan biaya transportasi dipakai untuk menunjukkan bahwa formula anggaran yang seragam menghasilkan hasil berbeda di wilayah berbeda. Bahan tidak menyediakan data pembanding antarprovinsi, sehingga besaran ketimpangan yang dimaksud belum bisa diverifikasi dari sini.",
+        "Program Senator Menyapa episode keempat sendiri dijadwalkan tayang Kamis, 26 November 2026, pukul 19.00 WIB, melalui CNN Indonesia TV, YouTube CNN Indonesia, dan live streaming di CNNIndonesia.com. Forum itu diposisikan sebagai ruang mengurai ketimpangan pembangunan, menguji keberpihakan perencanaan dan kebijakan anggaran, serta membahas perkembangan dan substansi RUU. Karena tayangannya berlangsung setelah pemberitaan ini disusun, isi perdebatan penuh belum tercermin di bahan. Yang tersedia baru kutipan-kutipan awal dari sebagian pembicara.",
+        "Dengan demikian, yang bisa disimpulkan hari ini terbatas pada tiga hal: DPD menyatakan pembahasan sudah di tahap tripartite, penyelesaian ditargetkan tahun depan bila DIM pemerintah siap, dan alasan yang diajukan adalah kesenjangan antara pertumbuhan makro dan kesejahteraan warga kepulauan. Yang belum tersedia adalah teks rancangan, besaran anggaran yang diusulkan, kriteria daerah penerima, serta sikap resmi pemerintah dan DPR. Sampai hal-hal itu muncul, klaim bahwa RUU akan selesai tahun depan tetap merupakan harapan, bukan kepastian."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Abdul Kholik dalam pembahasan RUU ini?",
+          "a": "Ia Ketua Panitia Perancang Undang-Undang DPD RI, dan dalam pemberitaan yang dikutip ia menyatakan optimistis RUU Daerah Kepulauan selesai tahun depan karena pembahasan sudah memasuki tahap tripartite.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126111720-532-1431720/dpd-ri-optimis-ruu-daerah-kepulauan-selesai-tahun-depan"
+          }
+        },
+        {
+          "q": "Apa itu DPD RI dan mengapa anggotanya disebut senator?",
+          "a": "DPD RI adalah lembaga tinggi negara yang beranggotakan wakil independen dari setiap provinsi yang dipilih melalui pemilihan umum; sebelum 2004 lembaga ini disebut Fraksi Utusan Daerah, dan sebutan bagi anggotanya adalah senator.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Dewan_Perwakilan_Daerah_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Bagaimana posisi DPD dibanding DPR?",
+          "a": "Dalam bahan latar disebutkan DPD sebagai majelis tinggi dan DPR sebagai majelis rendah, keduanya bagian dari sistem ketatanegaraan Indonesia.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Dewan_Perwakilan_Daerah_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau kesiapan DIM pemerintah pada Desember dan cermati apakah teks RUU memuat afirmasi anggaran bagi daerah kepulauan.",
+      "image": {
+        "url": "assets/495f1dd52e.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "RUU Daerah Kepulauan Disebut Bisa Rampung Tahun Depan"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126111720-532-1431720/dpd-ri-optimis-ruu-daerah-kepulauan-selesai-tahun-depan",
+          "published_at": "2026-11-26T11:19:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-27",
+      "previous_edition": null,
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer."
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_psel_medan_raya_olah_sampah_20_d03f",
+      "angle": "Dirancang menangani 61,5% sampah dua daerah, sisanya belum jelas ditangani bagaimana.",
+      "kicker": "Nasional",
+      "title": "PSEL Medan Raya: Target 1.700 Ton, Groundbreaking 2027",
+      "status": "sebagian",
+      "truth": {
+        "claim": "PSEL Medan Raya ditargetkan groundbreaking pada Triwulan I 2027 dengan kapasitas rancangan 1.700 ton sampah per hari.",
+        "status": "sebagian",
+        "confidence": 0.52,
+        "band": "diragukan",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-27T05:45:40+07:00"
+      },
+      "body": [
+        "Pemerintah menyatakan sedang mempercepat persiapan pembangunan fasilitas Pengolahan Sampah menjadi Energi Listrik (PSEL) Medan Raya. Fasilitas itu dirancang mengolah hingga 1.700 ton sampah per hari dan diposisikan sebagai salah satu cara mengurangi ketergantungan pada pembuangan sampah terbuka atau open dumping. Menurut pemberitaan 26 November 2026, proyek ini akan melayani Kota Medan dan Kabupaten Deli Serdang, dua wilayah yang menghadapi persoalan volume sampah meningkat. Pemerintah memasang tenggat penghentian open dumping paling lambat 2028, dan PSEL disebut sebagai bagian dari upaya mengejar tenggat tersebut. Perlu dicatat, statusnya masih tahap persiapan: belum ada laporan bahwa pembangunan fisik sudah dimulai.",
+        "Lokasinya direncanakan di kawasan Tempat Pembuangan Akhir (TPA) Terjun, Kota Medan. Untuk fasilitas inti dibutuhkan lahan seluas enam hektare yang merupakan aset Pemerintah Kota Medan. Pemerintah menargetkan peletakan batu pertama atau groundbreaking pada Triwulan I 2027, sehingga pekerjaan sekarang diarahkan pada pematangan lahan, penyediaan sarana pendukung, kesiapan armada pengangkutan, dan kepastian pasokan sampah. Daftar persiapan itu disebut berulang dalam pemberitaan, tetapi rincian teknis tiap tahap tidak dijelaskan, misalnya berapa lama pematangan lahan atau berapa unit armada yang disiapkan. Yang tersedia baru kerangka jadwal dan daftar pekerjaan.",
+        "Angka pasokan dibagi dua. Dari kapasitas 1.700 ton per hari, sebanyak 1.300 ton direncanakan berasal dari Kota Medan dan 400 ton dari Kabupaten Deli Serdang. Kedua daerah itu menghasilkan timbulan sampah sekitar 2.764 ton per hari. Dasar pembagian pasokan adalah Perjanjian Kerja Sama (PKS) yang ditandatangani Pemerintah Provinsi Sumatera Utara, Pemerintah Kota Medan, dan Pemerintah Kabupaten Deli Serdang pada 27 Maret 2026. PKS itu disebut sebagai fondasi untuk menjamin keberlanjutan pasokan setelah fasilitas beroperasi. Namun isi perjanjian selengkapnya, termasuk aturan bila pasokan tidak terpenuhi, tidak dipaparkan dalam bahan.",
+        "Kerja sama lintas daerah ini menarik karena fasilitasnya berada di Kota Medan, tetapi melayani dua pemerintah daerah. Pemerintah Provinsi Sumatera Utara ikut menandatangani PKS, sementara lahan yang dipakai milik Pemerintah Kota Medan. Bahan tidak menjelaskan bagaimana biaya pembangunan dan operasi dibagi antara ketiga pihak, juga tidak menyebut bentuk badan pengelola bersama. Yang dinyatakan hanya bahwa PKS menjadi fondasi jaminan pasokan sampah. Tanpa rincian pembagian beban, pembaca belum bisa menilai apakah kerja sama ini juga mengatur tanggung jawab bila salah satu daerah gagal memasok sampah sesuai kuota yang disepakati.",
+        "Dengan kapasitas 1.700 ton, PSEL Medan Raya diperkirakan menangani sekitar 61,5 persen dari total timbulan 2.764 ton per hari. Artinya masih ada sekitar 1.064 ton sampah per hari yang harus ditangani dengan cara lain. Bahan tidak menyebut metode apa yang disiapkan untuk sisa volume itu, apakah lewat tempat pemrosesan lain, pengomposan, daur ulang, atau pengurangan dari sumber. Angka 61,5 persen itu juga hasil pembandingan kapasitas rancangan terhadap timbulan, bukan laporan realisasi pengolahan. Karena itu, angka tersebut sebaiknya dibaca sebagai target desain, bukan capaian yang sudah terbukti.",
+        "Menteri Koordinator Bidang Pangan Zulkifli Hasan menegaskan persoalan sampah tidak bisa lagi diselesaikan dengan pola penanganan konvensional. Ia menyebut perlu langkah konkret dan kolaborasi antara pemerintah pusat, pemerintah daerah, dan dunia usaha. Dalam pernyataan yang dikutip pemberitaan, ia memasang tenggat: paling lambat 2028 praktik open dumping harus dihentikan, dengan alasan menyangkut lingkungan dan kesehatan masyarakat, bukan sekadar kebersihan. Pernyataan itu muncul dalam keterangan tertulis maupun kutipan langsung pada 26 November 2026. Namun belum ada penjelasan tentang bentuk kolaborasi dengan dunia usaha, termasuk siapa yang akan membangun dan mengoperasikan fasilitas.",
+        "Yang penting dicatat, Zulkifli sendiri mengingatkan PSEL bukan satu-satunya jalan keluar. Ia menekankan perubahan pola pengelolaan harus dimulai dari sumbernya, yakni rumah tangga, desa, hingga kelurahan. Pemilahan dan pengolahan sampah sejak awal dinilai dapat mengurangi volume yang harus diangkut ke tempat pemrosesan akhir maupun ke fasilitas pengolahan berskala besar. Pernyataan itu memberi batas pada cara membaca proyek ini: PSEL adalah satu simpul dalam rantai pengelolaan, bukan pengganti kebiasaan memilah. Pemerintah daerah juga didorong memperkuat pemilahan di lingkungan permukiman dan memastikan sampah yang sudah dipilah ditangani sesuai jenisnya.",
+        "Alasannya bersifat aritmatik. Bila kapasitas PSEL hanya menutup sekitar 61,5 persen timbulan, penanganan di hulu menjadi penentu apakah sisa sampah bisa ditekan. Bahan menyebut pemilahan dan pengolahan sejak awal dinilai dapat mengurangi jumlah sampah yang berakhir di TPA. Dengan begitu, beban fasilitas pengolahan tidak sepenuhnya bergantung pada kapasitas PSEL. Namun bahan tidak memuat angka proyeksi pengurangan dari pemilahan, sehingga besarnya kontribusi hulu belum bisa diukur. Pernyataan tentang manfaat pemilahan juga disampaikan sebagai penilaian pemerintah, bukan hasil pengukuran yang dipaparkan secara rinci.",
+        "Sejumlah hal belum jelas. Bahan tidak menyebut nilai investasi, sumber pendanaan, teknologi pengolahan yang dipilih, kapasitas listrik yang dihasilkan, tarif penjualan listrik, maupun nama badan usaha yang akan membangun dan mengoperasikan. Kajian lingkungan dan mekanisme pengelolaan sampah sisa juga tidak dipaparkan. Untuk jadwal, yang tersedia hanya target Triwulan I 2027, tanpa tanggal pasti atau tonggak antara. Apakah target itu masih berlaku setelah tahap persiapan berjalan, belum ada keterangan baru. Detail-detail ini belum diumumkan dalam bahan yang tersedia, jadi belum bisa diverifikasi pembaca.",
+        "Sebagai pembanding, bahan memuat kabar singkat tentang fasilitas serupa di Palembang yang disebut akan beroperasi pada Desember 2026 dengan kapasitas 1.000 ton sampah per hari. Itu fasilitas berbeda, dengan kota, jadwal, dan kapasitas berbeda. Karena itu, kabar Palembang tidak bisa dipakai untuk menyimpulkan bahwa PSEL Medan Raya akan selesai atau beroperasi pada tanggal tertentu. Perbandingan ini hanya menunjukkan bahwa proyek pengolahan sampah menjadi energi listrik memiliki jadwal yang tidak seragam. Untuk Medan Raya, satu-satunya tonggak yang disebut adalah groundbreaking Triwulan I 2027, bukan tanggal operasi.",
+        "Nama fasilitasnya menyebut energi listrik, tetapi bahan tidak memuat berapa kapasitas listrik yang akan dihasilkan, apakah listriknya dijual ke jaringan, atau bagaimana teknologi pengolahannya bekerja. Bahan hanya menyebut PSEL sebagai fasilitas pengolahan sampah menjadi energi listrik dan bagian dari penguatan kapasitas pengolahan sampah di kawasan perkotaan. Karena itu, klaim tentang manfaat energi dari proyek ini belum bisa diukur dari bahan yang ada. Begitu pula soal emisi, residu pengolahan, dan dampak bagi warga sekitar lokasi, tidak ada keterangan yang bisa dikutip.",
+        "Latar masalahnya adalah ketidakseimbangan antara volume sampah dan kapasitas tempat pemrosesan akhir. Bahan menyebut peningkatan volume sampah menjadi tantangan bagi pemerintah daerah, terutama ketika kapasitas TPA belum mampu mengimbangi jumlah sampah yang dihasilkan masyarakat. PSEL kemudian diposisikan untuk memperkuat kapasitas pengolahan sampah perkotaan. Pemerintah juga menyebut proyek ini untuk membantu mengatasi persoalan darurat sampah di Medan dan Deli Serdang sekaligus mendorong sistem pengelolaan yang lebih berkelanjutan. Namun bahan tidak memuat data berapa kapasitas TPA Terjun saat ini, sehingga besarnya kekurangan kapasitas tidak bisa dihitung dari bahan ini.",
+        "Langkah berikutnya yang bisa dipantau adalah penyelesaian empat pekerjaan persiapan: pematangan lahan, sarana pendukung, armada pengangkutan, dan kepastian pasokan. Keempatnya disebut sebagai syarat agar pembangunan berjalan sesuai jadwal. Setelah itu, tonggak yang dinanti adalah realisasi groundbreaking pada Triwulan I 2027. Bila tonggak itu bergeser, tenggat penghentian open dumping 2028 ikut menghadapi tekanan waktu, meski bahan tidak menjelaskan berapa lama pembangunan fisik diperkirakan berlangsung. Pembaca perlu menunggu pengumuman resmi berikutnya untuk mengetahui apakah persiapan berjalan sesuai rencana atau ada penundaan.",
+        "Ada baiknya membedakan tiga hal yang sering tercampur: kapasitas rancangan, pasokan yang dijanjikan, dan realisasi pengolahan. Angka 1.700 ton per hari adalah kapasitas rancangan. Angka 1.300 dan 400 ton adalah pembagian pasokan yang dituangkan dalam PKS. Adapun realisasi belum bisa dinilai karena fasilitasnya belum dibangun. Pembedaan ini penting agar target tidak dibaca sebagai capaian. Hal serupa berlaku untuk tenggat 2028: itu target kebijakan, dan bahan tidak menyebut sanksi atau mekanisme bila suatu daerah tidak berhasil menghentikan open dumping tepat waktu.",
+        "Secara keseluruhan, yang bisa disimpulkan dari bahan adalah arah kebijakan, bukan hasil. Pemerintah mempercepat persiapan, menetapkan lokasi di TPA Terjun, menyiapkan lahan enam hektare, dan mengikat pasokan lewat PKS 27 Maret 2026. Target groundbreaking Triwulan I 2027 dan penghentian open dumping 2028 menjadi dua tonggak yang disebut. Sementara itu, soal pendanaan, teknologi, hasil listrik, dan dampak lingkungan belum diumumkan. Warga dua daerah yang dilayani tetap menjadi bagian dari solusi menurut pemerintah, lewat pemilahan dari rumah. Pertanyaan yang tersisa: apakah jadwal itu bertahan, dan dengan biaya serta teknologi apa proyek ini dijalankan.",
+        "Bagi pembaca yang jarang mengikuti isu persampahan, intinya begini: PSEL Medan Raya adalah rencana fasilitas besar, bukan fasilitas yang sudah bekerja. Rencana itu menjawab sebagian persoalan, yaitu kapasitas pengolahan 1.700 ton per hari, tetapi menyisakan sekitar 1.064 ton per hari di luar hitungan. Pemerintah menempatkan pemilahan dari rumah tangga sebagai pelengkap, bukan pilihan. Karena itu, dua hal layak ditunggu bersamaan: realisasi groundbreaking awal 2027 dan penjelasan resmi soal pendanaan serta teknologi, yang sampai kini belum ada dalam bahan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu PSEL Medan Raya?",
+          "a": "Fasilitas pengolahan sampah menjadi energi listrik yang dirancang mengolah hingga 1.700 ton sampah per hari.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126123446-97-1431770/psel-medan-raya-disiapkan-olah-1700-ton-sampah-per-hari"
+          }
+        },
+        {
+          "q": "Apa target yang menyertai proyek ini?",
+          "a": "Menghentikan praktik open dumping paling lambat 2028, dengan kolaborasi yang dinilai perlu untuk pengelolaan berkelanjutan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126123446-97-1431770/psel-medan-raya-disiapkan-olah-1700-ton-sampah-per-hari"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud open dumping?",
+          "a": "Praktik pembuangan sampah terbuka, yang menurut bahan harus dihentikan paling lambat 2028.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261126123446-97-1431770/psel-medan-raya-disiapkan-olah-1700-ton-sampah-per-hari"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi soal groundbreaking Triwulan I 2027 dan minta rincian pendanaan serta teknologi PSEL Medan Raya.",
+      "image": {
+        "url": "assets/558cb1053b.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "PSEL Medan Raya: Target 1.700 Ton, Groundbreaking 2027"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126123446-97-1431770/psel-medan-raya-disiapkan-olah-1700-ton-sampah-per-hari",
+          "published_at": "2026-11-26T12:45:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-27",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c7",
+      "type": "misread",
+      "topic_id": "t_misread_ri_kejar_keanggotaan_oecd_264d",
+      "angle": "“usulan” tidak ada di judul",
+      "kicker": "Salah dipahami",
+      "title": "Yang hilang dari judul: “usulan”",
+      "status": "sebagian",
+      "truth": null,
+      "body": [
+        "Judul yang beredar: “Respons Kemenko Perekonomian soal RI Terancam Tarif AS 18 Persen”. Judul itu tidak memuat kata “usulan” yang muncul di isi artikel.",
+        "Isi artikelnya menyebut: “Pemerintah mencermati hasil investigasi dan pengumuman tarif baru dari section 301 Excess Capacity dengan besaran usulan tarif hingga 18 persen,\" ujar Haryo kepada wartawan, Kamis (26/11).”. Artinya, masih berupa usulan, bukan keputusan.",
+        "Pembaca yang hanya melihat judul bisa menganggap persoalannya lebih final daripada kenyataan. Periksa isi dan sumber primer sebelum menyimpulkan."
+      ],
+      "action": "Baca isi dan cek sumber primer sebelum menyimpulkan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261126114657-92-1431737/respons-kemenko-perekonomian-soal-ri-terancam-tarif-as-18-persen",
+          "published_at": "2026-11-26T14:05:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-26",
+      "previous_edition": null,
+      "changes": [],
+      "claim": "Respons Kemenko Perekonomian soal RI Terancam Tarif AS 18 Persen",
+      "reality": "Pemerintah mencermati hasil investigasi dan pengumuman tarif baru dari section 301 Excess Capacity dengan besaran usulan tarif hingga 18 persen,\" ujar Haryo kepada wartawan, Kamis (26/11).",
+      "missing": [
+        "masih berupa usulan, bukan keputusan"
+      ],
+      "trigger": "headline_body_gap"
+    },
+    {
+      "id": "c8",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_27",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah Diperiksa: Foto AI Listyo Sigit dan Danantara",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 27 November 2026, TurnBackHoax memeriksa tiga klaim yang beredar dan menyimpulkan ketiganya salah. Dua di antaranya berupa foto yang dikaitkan dengan Listyo Sigit: satu foto yang disebut memperlihatkannya mengenakan baju tahanan, dan satu foto lain yang diklaim menunjukkan kondisinya sakit di dalam penjara. Pemeriksaan ketiga membahas klaim bahwa perusahaan diwajibkan menyetor dana pesangon ke Danantara.",
+        "Pola yang terlihat: dua dari tiga klaim bertumpu pada foto yang dilekatkan pada sosok yang sama, dan pada salah satunya hasil analisis Truth Scan menunjukkan probabilitas 99% bahwa foto tersebut dihasilkan AI. Untuk klaim foto sakit di dalam penjara, tidak ditemukan informasi valid dari sumber kredibel yang membenarkannya. Sementara klaim soal Danantara dibantah langsung oleh Direktur Jenderal Pembinaan Hubungan Industrial dan Jaminan Sosial Tenaga Kerja (PHI-JSK) Kemnaker, Indah Anggoro Putri, yang menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP.",
+        "Sebaiknya pembaca memeriksa sumber sebelum meneruskan unggahan, terutama foto yang menyangkut nama pejabat, dan merujuk pada pernyataan resmi instansi untuk klaim kebijakan seperti dana pesangon."
+      ],
+      "action": "Periksa sumber dan pernyataan resmi sebelum meneruskan foto atau klaim kebijakan ke orang lain.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-27T05:45:40+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-27",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Foto Listyo Sigit Pakai Baju Tahanan",
+          "verdict": "salah",
+          "reason": "Hasil analisis menggunakan Truth Scan menunjukkan tingkat probabilitas mencapai 99%, artinya bahwa foto tersebut dihasilkan oleh AI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37537-salah-foto-listyo-sigit-pakai-baju-tahanan"
+        },
+        {
+          "claim": "Perusahaan Diwajibkan Setor Dana Pesangon ke Danantara",
+          "verdict": "salah",
+          "reason": "Direktur Jenderal Pembinaan Hubungan Industrial dan Jaminan Sosial Tenaga Kerja (PHI-JSK) Kemnaker, Indah Anggoro Putri, menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37535-salah-perusahaan-diwajibkan-setor-dana-pesangon-ke-danantara"
+        },
+        {
+          "claim": "Foto Listyo Sigit Sakit di Dalam Penjara",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan informasi valid dari sumber kredibel yang membenarkan klaim tersebut.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37527-salah-foto-listyo-sigit-sakit-di-dalam-penjara"
+        }
+      ],
+      "pattern": "Dua dari tiga klaim memakai foto yang dilekatkan pada sosok yang sama, dan salah satunya teridentifikasi sebagai gambar hasil AI."
+    }
+  ]
+}
