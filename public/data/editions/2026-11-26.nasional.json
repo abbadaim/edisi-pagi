@@ -1,0 +1,816 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-26",
+  "scope": "nasional",
+  "published_at": "2026-11-26T11:27:13+07:00",
+  "coverage": {
+    "from": "2026-11-25T11:27:13+07:00",
+    "to": "2026-11-26T11:27:13+07:00"
+  },
+  "generated_at": "2026-11-26T11:27:13+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 18,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 7,
+  "truncated_reason": "Hanya 7 kartu yang lolos; sisanya tidak punya konteks atau sumber",
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_8_saksi_kasus_penyadapan_prabo_a617",
+      "angle": "Perkara naik ke penyidikan, sidang etik digelar; transparansi jadi taruhan.",
+      "kicker": "Kriminal",
+      "title": "Enam Tersangka Makar, Sidang Etik Listyo Sigit Digelar Hari",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Bareskrim Polri menetapkan enam orang tersangka dalam perkara dugaan makar, termasuk eks Kapolri Listyo Sigit Prabowo.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "Hari ini, Kamis (26/11/2026), eks Kapolri Jenderal Listyo Sigit Prabowo menjalani sidang Komisi Kode Etik Profesi (KKEP) di Polri. Sidang itu membahas dugaan penyadapan terhadap Presiden Prabowo Subianto, dan menurut pemberitaan CNN Indonesia, lima jenderal bintang tiga akan memimpin jalannya sidang. Listyo sendiri bukan hanya menghadapi persoalan etik: ia sudah berstatus tersangka. Liputan6 menyebut ia menjadi tersangka di dua kasus, sementara Bareskrim menempatkannya dalam perkara dugaan makar dan penyadapan ilegal. Pembaca yang jarang membuka media sosial mungkin bertanya apa sebenarnya yang dituduhkan, siapa yang menangani, dan sejauh mana kasus ini bergerak.",
+        "Tuduhan yang dikenakan bukan satu pasal tunggal. Menurut pemberitaan CNN Indonesia, para tersangka dijerat Pasal 258 KUHP dan/atau Pasal 332 KUHP ayat (1) dan (2) dan/atau Pasal 32 ayat (1) UU ITE. Dua kluster perkara dibedakan: dugaan makar dan dugaan penyadapan ilegal. Bareskrim menyebut aksi makar direncanakan sejak Presiden Prabowo belum dilantik, dengan motif mempertahankan jabatan Kapolri. Sementara dalam perkara penyadapan, korban disebut berlapis, mulai dari presiden, pejabat negara, petinggi partai politik, tokoh masyarakat, mahasiswa, hingga media. Perlu ditegaskan, status tersangka bukan vonis; menurut bahan latar, status itu bersandar pada minimal dua alat bukti dan putusan tetap di pengadilan.",
+        "Enam orang ditetapkan sebagai tersangka. Empat di antaranya dikaitkan dengan penyadapan ilegal: Listyo Sigit Prabowo, eks Kepala Divisi TIK Irjen Slamet Uliandi, eks Kepala Divisi Kum Polri Irjen Ahrie Sonta Nasution, dan eks Direktur Tindak Pidana Narkoba Bareskrim Irjen Eko Hadi Santoso. Dua nama lain adalah eks Direktur Intelijen Densus 88 Anti Teror Brigjen Tedjo Kusumo dan eks Direktur Kriminal Umum Polda Metro Jaya Kombes Iman Imanuddin. Rincian ini penting karena menunjukkan kasus tidak berhenti pada satu orang: ia menyentuh sejumlah posisi strategis di kepolisian, dari teknologi informasi, hukum, narkoba, intelijen, hingga kriminal umum.",
+        "Pertanyaan berikutnya: peristiwa apa yang menjadi dasar dugaan makar? Dari bahan yang ada, Bareskrim menyebut aksi itu direncanakan sejak Prabowo belum dilantik dan motifnya mempertahankan jabatan Kapolri. Kasus ini juga disebut berangkat dari perkara dugaan penyadapan ilegal terhadap presiden dan sejumlah figur lain. Namun bahan tidak memerinci peristiwa konkret di luar rencana tersebut, misalnya lokasi, waktu, atau bentuk tindakan yang direncanakan. Karena itu, uraian soal peristiwa puncaknya belum jelas dan masih menunggu keterangan penyidik. Yang bisa dipegang pembaca adalah rangkaian yang disebut penyidik, bukan kesimpulan yang dibangun dari potongan berita.",
+        "Dalam perkara penyadapan, bahan menyebut korban yang berlapis. Selain Presiden Prabowo Subianto, disebut ada pejabat negara, petinggi partai politik, tokoh masyarakat, mahasiswa, dan media. Daftar itu menunjukkan dugaan penyadapan tidak hanya menyasar satu pihak, meski bahan tidak menyebut nama-nama korban selain presiden. Bahan juga tidak menjelaskan bagaimana penyadapan dilakukan, alat apa yang dipakai, atau berapa lama berlangsung. Untuk pembaca yang ingin memahami, penting membedakan dua hal: tuduhan bahwa penyadapan terjadi, dan pembuktian soal cara serta akibatnya. Yang pertama sudah menjadi dasar penetapan tersangka; yang kedua masih harus diuji di persidangan.",
+        "Penanganan hukum berada di Direktorat Tindak Pidana Umum Bareskrim Polri. Menurut CNN Indonesia, direktorat itu telah menaikkan status perkara dugaan makar ke tahap penyidikan. Di jalur internal, Polri menggelar sidang KKEP terhadap Listyo pada Kamis (26/11/2026), dengan lima jenderal bintang tiga disebut akan memimpin sidang. Dua jalur ini berjalan bersamaan: penyidikan pidana dan pemeriksaan etik. Bahan tidak menyebut nama lima jenderal tersebut, hanya jumlah dan pangkatnya. Bahan juga tidak menjelaskan apakah sidang etik bisa berjalan paralel tanpa mengganggu penyidikan, atau bagaimana hasilnya nanti akan dipakai.",
+        "Soal status penahanan, bahan yang terkumpul belum memuat keterangan yang jelas. Tidak ada informasi apakah Listyo ditahan, ditahan di rumah, atau masih bebas dengan kewajiban lapor. Advokat Akbar Sitepu dalam pemberitaan CNN Indonesia menyebut penahanan sebagai salah satu hal yang bisa diuji melalui praperadilan menurut KUHAP baru, UU 20/2025, bersama penetapan tersangka, penggeledahan, dan penyitaan. Pernyataannya menunjukkan mekanisme uji itu tersedia, bukan bahwa penahanan sudah terjadi. Bahan juga tidak memuat keterangan dari kuasa hukum Listyo, dan tidak menyebut apakah keluarga sudah menerima pemberitahuan penetapan tersangka. Karena itu, detail status penahanan Listyo belum tersedia dan perlu dikonfirmasi ke penyidik atau kuasa hukumnya.",
+        "Respons Presiden Prabowo sejauh ini sampai ke publik lewat pernyataan Kepala Bakom RI Syahganda Nainggolan. Menurut Syahganda, seperti dikutip CNN Indonesia, Prabowo mempertimbangkan bukan hanya hukum tetapi juga pertimbangan politik atas kasus dugaan makar ini. Prabowo disebut menugaskan dua institusi: Polri untuk penegakan hukum dan Badan Intelijen Negara untuk melihat aspek stabilitas nasional. Syahganda juga menyebut Kepala BIN Herindra sudah dipanggil sekitar seminggu atau sepuluh hari sebelumnya. Bahan tidak memuat pernyataan resmi langsung dari Istana maupun dari Prabowo sendiri, sehingga yang tersedia adalah keterangan perantara, bukan sikap resmi tertulis.",
+        "Pertanyaan soal janji Polri untuk tidak memberi perlakuan istimewa kepada Listyo belum bisa dijawab dari bahan. Tidak ada pernyataan resmi Polri semacam itu dalam kumpulan berita yang ada. Yang muncul justru desakan dari luar: advokat Akbar Sitepu menilai keterbukaan Polri penting agar kasus yang melibatkan aparat tidak dianggap diselesaikan diam-diam sebagai urusan internal. Ia menyebut negara memilih membawa perkara ini ke jalur hukum. Artinya, yang tercatat adalah tuntutan transparansi, bukan janji institusi. Pembaca sebaiknya menunggu pernyataan resmi Polri dan membedakannya dari komentar pihak luar.",
+        "Soal pemecatan Kombes Anam dan kaitannya dengan Tedjo, bahan yang terkumpul tidak memuat keterangan apa pun. Tidak ada nama Anam, tidak ada informasi pemecatan, dan tidak ada uraian hubungan keduanya. Yang bisa dijelaskan adalah posisi Tedjo: Brigjen Tedjo Kusumo disebut sebagai eks Direktur Intelijen Densus 88 Anti Teror Polri dan termasuk enam tersangka, di kluster yang berbeda dari empat tersangka penyadapan. Karena itu, detail pemecatan Kombes Anam belum dapat dipastikan dari bahan ini dan perlu dicek ke sumber lain. Bahan juga tidak menyebut apakah pemecatan itu bagian dari proses etik internal, atau apakah ada personel lain yang turut diperiksa bersama Tedjo. Menuliskannya sebagai fakta hanya akan menambah klaim yang belum terverifikasi.",
+        "Advokat Akbar Sitepu menyoroti arah penyidikan. Menurut dia, penetapan enam tersangka belum tentu berarti seluruh rangkaian perbuatan dan pihak yang terlibat sudah terungkap. Pertanyaan besarnya, kata Akbar, apakah enam tersangka ini ujung jaringan atau hanya pelaksananya. Ia menyebut pertanggungjawaban pidana juga bisa dikenakan kepada pihak yang menyuruh atau menggerakkan, termasuk warga sipil, karena pasal penyertaan tidak terbatas pada anggota Polri. Ia meminta penyidik menelusuri siapa yang memberi perintah, menyediakan pendanaan, dan menerima manfaat, semuanya berdasarkan alat bukti, bukan spekulasi soal tokoh atau kepentingan politik.",
+        "Jalur pembuktian masih panjang. Akbar Sitepu mengingatkan penetapan tersangka bukan keputusan akhir, dan para tersangka berhak menguji penetapan, penahanan, penggeledahan, serta penyitaan lewat praperadilan sesuai KUHAP baru, UU 20/2025. Keaslian alat bukti, termasuk bukti elektronik dan hasil forensik digital, akan diuji di persidangan. Ia juga menilai bantahan para tersangka wajar dan justru menjadi alasan perkara dibuktikan di pengadilan, bukan diputus di ruang publik. Menurut dia, ancaman hukuman tidak otomatis menentukan pidana; berat ringannya bergantung pada pemenuhan unsur dan pembuktian kesalahan masing-masing terdakwa.",
+        "Untuk memahami bobot kasus ini, latar belakang Listyo membantu. Menurut bahan latar, ia adalah jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim. Pada November 2026 ia ditetapkan sebagai tersangka kasus dugaan penyadapan ilegal. Polri sendiri, menurut bahan latar, adalah kepolisian nasional yang bertugas memelihara keamanan, menegakkan hukum, serta memberi perlindungan dan pelayanan. Ketika figur yang pernah memimpin institusi itu menjadi tersangka, pertaruhan yang muncul bukan hanya soal satu perkara, melainkan soal kepercayaan publik pada proses yang dijalankan institusinya.",
+        "Sampai di sini, yang bisa dipastikan adalah tiga hal: sidang etik Listyo digelar hari ini, penyidikan dugaan makar sudah dinaikkan ke tahap penyidikan oleh Bareskrim, dan enam orang berstatus tersangka. Yang belum jelas antara lain status penahanan, peristiwa konkret yang mendasari dugaan makar, serta janji resmi Polri soal perlakuan terhadap Listyo. Dua pertanyaan lain, soal pemecatan Kombes Anam dan respons resmi Istana, juga belum terjawab oleh bahan. Pembaca sebaiknya mengikuti sidang etik dan perkembangan penyidikan, tanpa menganggap status tersangka sebagai putusan akhir. Yang tersisa adalah uji terbuka: apakah penyidik memaparkan alat bukti, apakah sidang etik dijelaskan kepada publik, dan apakah pengadilan nanti memutus berdasarkan pembuktian."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Listyo Sigit Prabowo sebelum kasus ini?",
+          "a": "Jenderal polisi yang menjabat Kapolri sejak 2021, mantan ajudan Presiden Joko Widodo, dan pernah memimpin Bareskrim.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Status yang ditetapkan penyidik berdasarkan minimal dua alat bukti; belum berarti bersalah dan putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa tugas Polri menurut undang-undang?",
+          "a": "Menurut UU Nomor 2 Tahun 2002, Polri memelihara keamanan dan ketertiban, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau putusan sidang etik dan perkembangan penyidikan; status tersangka bukan vonis.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/26/337/3256279/listyo-sigit-prabowo-jalani-sidang-etik-kasus-dugaan-penyadapan-hari-ini",
+          "published_at": "2026-11-26T07:26:35+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261125160908-32-1431436/kabakom-prabowo-pertimbangkan-langkah-politik-di-kasus-makar-listyo",
+          "published_at": "2026-11-25T16:48:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8342540/polri-janji-tak-perlakukan-istimewa-listyo",
+          "published_at": "2026-11-25T19:40:22+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 5,
+      "first_seen": "2026-11-13",
+      "previous_edition": "2026-11-25",
+      "changes": [],
+      "dek": "Kasus dugaan makar menyeret eks Kapolri Listyo Sigit ke penyidikan dan sidang etik, sementara soal penahanan belum jelas.",
+      "optional": true,
+      "read_min": 7,
+      "stats": [
+        {
+          "value": "2",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-11-20",
+          "title": "Gelar Perkara Makar Listyo Cs"
+        },
+        {
+          "date": "2026-11-25",
+          "title": "Listyo Sigit Tersangka Kasus Makar"
+        },
+        {
+          "date": "2026-11-26",
+          "title": "Kasus makar Listyo Sigit meluas"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "Listyo Sigit Prabowo Jalani Sidang Etik Kasus Dugaan Penyadapan Hari Ini",
+          "url": "https://news.okezone.com/read/2026/11/26/337/3256279/listyo-sigit-prabowo-jalani-sidang-etik-kasus-dugaan-penyadapan-hari-ini",
+          "at": "2026-11-26T07:26:35+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "Polri Janji Tak Perlakukan Istimewa Listyo",
+          "url": "https://www.liputan6.com/news/read/8342540/polri-janji-tak-perlakukan-istimewa-listyo",
+          "at": "2026-11-25T19:40:22+07:00",
+          "owner": "Emtek",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Kabakom: Prabowo Pertimbangkan Langkah Politik di Kasus Makar Listyo",
+          "url": "https://www.cnnindonesia.com/nasional/20261125160908-32-1431436/kabakom-prabowo-pertimbangkan-langkah-politik-di-kasus-makar-listyo",
+          "at": "2026-11-25T16:48:01+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_ri_kejar_keanggotaan_oecd_264d",
+      "angle": "USTR usul tarif hingga 18%; Airlangga sebut RI aman berkat kesepakatan dagang.",
+      "kicker": "Ekonomi",
+      "title": "AS Usul Tarif sampai 18%, Airlangga Klaim Indonesia Aman",
+      "status": "sebagian",
+      "truth": {
+        "claim": "USTR mengusulkan tarif hingga 18% untuk barang Indonesia, sedangkan Airlangga menyebut tarif sawit 0% dan produk padat karya 10%.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "Kantor Perwakilan Dagang Amerika Serikat (USTR) menyimpulkan bahwa kebijakan industri Indonesia membebani perdagangan Amerika dan mengusulkan tarif hingga 18% terhadap seluruh barang asal Indonesia. Kesimpulan itu keluar dari penyelidikan Pasal 301 yang menurut laporan USTR berjalan sejak 11 Maret 2026. Pada Rabu (25/11), Menteri Koordinator Perekonomian Airlangga Hartarto menyatakan Indonesia aman karena sudah menandatangani kesepakatan dagang dengan Washington. Dua pernyataan itu bukan hal yang sama: yang pertama usulan sanksi dagang, yang kedua penilaian pemerintah Indonesia atas posisinya. Angka itu lebih tinggi daripada tarif 10% yang disebut untuk produk padat karya, dan muncul di tengah klaim pemerintah bahwa posisi Indonesia sudah terlindungi. Sampai berita ini disusun, besaran tarif final untuk tiap jenis barang belum diumumkan.",
+        "Penyelidikan itu menyasar 16 ekonomi mitra dagang, termasuk Indonesia, dan menurut laporan USTR dimulai 11 Maret 2026 setelah konsultasi dengan pemerintah RI serta dengar pendapat publik. Perwakilan USTR Jamieson Greer menuduh banyak mitra dagang mengadopsi strategi industri yang menekan upah dan tenaga kerja, memberi dukungan finansial, serta memakai input dari sistem ekonomi nonpasar. Menurut Greer, praktik itu menguntungkan neraca perdagangan mereka sekaligus mengikis basis manufaktur Amerika. Tudingan tersebut adalah posisi Washington dalam dokumen investigasinya, belum menjadi temuan yang disepakati kedua pemerintah. Indonesia termasuk satu dari sekian ekonomi yang dinilai menciptakan kelebihan kapasitas produksi.",
+        "Airlangga membocorkan dua angka sebelum pengumuman resmi: produk sawit dan sejumlah komoditas lain disebut akan dikenai tarif nol persen, sedangkan produk industri padat karya 10 persen. Ia menyampaikannya di kantor Kementerian Koordinator Perekonomian, Jakarta Pusat, Rabu (25/11), dan meminta agar kategori produk lain tidak diumumkan lebih dulu. Alasannya, pemerintah AS dijadwalkan mengumumkan hasil penyelidikan pekan ini dan ia khawatir pengumuman sepihak membuat Washington tersinggung. Angka 0% dan 10% itu belum dikonfirmasi oleh USTR, dan penetapannya menurut Airlangga bergantung pada kode klasifikasi barang atau Harmonized System tiap produk.",
+        "Perubahan dasar hukumnya berjalan begini. Mahkamah Agung AS membatalkan kebijakan tarif resiprokal pada Februari, lalu penyelidikan kelebihan kapasitas industri dipakai sebagai penggantinya. Airlangga menyebut penggantian itu bersifat legal, bukan perubahan besaran. “Secara legal, yang dibatalkan oleh SCOTUS diganti oleh penyelidikan mengenai excess capacity. Tetapi tarifnya sama,” katanya. Pemerintah RI juga menyatakan sudah menandatangani kesepakatan Article of Reciprocal Trade dengan AS dan menilai hasil penyelidikan akan sejalan dengan kesepakatan itu. Pemerintah AS sendiri belum menyatakan hal serupa dalam pemberitaan yang dikutip di sini.",
+        "Namun angka di pemberitaan tidak sepenuhnya seragam. CNN Indonesia menyebut penyelidikan menyasar 16 mitra dagang, sedangkan CNBC Indonesia menulis 14 negara dan kawasan ekonomi, lalu merinci Indonesia plus 13 negara lain dan Uni Eropa. Selisih hitungan itu belum dijelaskan oleh sumber mana pun. Begitu pula soal besaran: USTR mengusulkan tarif hingga 18% untuk seluruh barang asal Indonesia, sementara Airlangga menyebut 0% untuk sawit dan 10% untuk industri padat karya. Keduanya bisa dibaca sebagai dua lapis informasi yang berbeda, yaitu batas maksimum dan angka untuk kategori tertentu, tetapi itu tafsiran, bukan pernyataan resmi. Tanggal pengumumannya pun ditulis berbeda: Rabu (25/11) pagi waktu setempat dan rilis Kamis (26/11).",
+        "Dalam pengumuman yang dikutip CNBC Indonesia, USTR merinci lima hal yang dinilai tidak wajar dari Indonesia: kebijakan industri yang mendorong produksi dan ekspor, aturan serta penegakan ketenagakerjaan, kelebihan kapasitas produksi termasuk yang terkait impor dan investasi dari negara nonpasar, represi keuangan, dan kebijakan sektoral termasuk program hilirisasi. USTR menilai kelima hal itu membatasi peluang produsen dan eksportir AS di Indonesia maupun di pasar negara ketiga. Lembaga itu juga menyebut praktik tersebut mengurangi produksi, ekspor, lapangan kerja, dan investasi manufaktur Amerika, serta menambah risiko ketergantungan bahan baku dari negara bersistem ekonomi nonpasar. Bobot tiap alasan belum diuraikan panjang dalam bahan ini, sehingga kelima temuan itu belum bisa dibandingkan satu sama lain.",
+        "Laporan USTR memberi angka pembanding. Porsi manufaktur terhadap produk domestik bruto Indonesia disebut rata-rata 19,7% pada 2021–2025, hampir dua kali rata-rata AS sebesar 9,9%. Porsi ekspor barang terhadap PDB Indonesia tercatat 19,8%, hampir tiga kali AS yang hanya 7,1%. USTR mengaitkannya dengan Rencana Induk Pembangunan Industri Nasional 2015–2035, RPJMN, dan inisiatif Making Indonesia 4.0 yang memberi insentif serta pengembangan kawasan industri untuk mendongkrak ekspor. Angka-angka itu adalah hitungan USTR dalam dokumen investigasinya, bukan statistik yang sudah diverifikasi pihak Indonesia dalam pemberitaan ini. Pembaca perlu membacanya sebagai klaim satu pihak.",
+        "Bagian ketenagakerjaan paling keras. USTR menyoroti pembatasan perundingan bersama dan hak mogok, meluasnya alih daya, pengecualian upah minimum di industri padat karya dan usaha kecil menengah, minimnya jaminan sosial, hingga dugaan kerja paksa di kawasan industri nikel yang menurut laporan mayoritas dimiliki perusahaan China. Porsi kompensasi pekerja manufaktur Indonesia disebut 10,9% pada 2021–2022, jauh di bawah AS sebesar 45,7%. USTR menilai upah rendah menekan konsumsi rumah tangga ke 54,7% dari PDB dan mendorong produksi manufaktur ke pasar ekspor. Semua itu tudingan dalam laporan, dan belum ada bantahan resmi Indonesia yang dikutip di bahan ini.",
+        "Ketergantungan pada rantai pasok China juga jadi sorotan. USTR mengutip data bahwa China menyalurkan pembiayaan pembangunan sekitar US$69,6 miliar dan investasi swasta US$94,1 miliar ke lebih dari 400 proyek di Indonesia sepanjang 2000–2023, termasuk Rempang Eco-City senilai US$11,6 miliar. Impor barang input setengah jadi dari China disebut naik 116% atau US$26 miliar pada 2017–2025, sehingga pangsanya naik dari 22% menjadi 32%. Kandungan nilai tambah China dalam ekspor manufaktur Indonesia ke AS disebut 9,6% pada 2024. Angka-angka ini berasal dari dokumen USTR yang mengutip laporan AidData, dan belum diverifikasi ulang dalam pemberitaan tersebut.",
+        "USTR juga menuduh ada represi keuangan: larangan transaksi derivatif rupiah, pembatasan transaksi valuta asing, dan batas transfer rupiah ke luar negeri yang dinilai mengarahkan kredit serta modal kepada produsen domestik. Kebijakan devisa hasil ekspor sumber daya alam disorot karena mewajibkan penahanan 30% dana selama tiga bulan untuk ekspor di atas US$250.000. Teks sumber yang dikutip berhenti di angka itu, sehingga rincian kelanjutan aturan tersebut belum jelas dari bahan yang tersedia. Tudingan represi keuangan ini juga belum mendapat tanggapan yang dikutip dari pemerintah atau otoritas moneter Indonesia.",
+        "Bagi barang, tarif tidak berlaku seragam. Airlangga menjelaskan penetapan bergantung pada kode Harmonized System tiap produk, dan besarannya bisa berbeda antarnegara serta antarkategori. Tarif baru juga berpotensi ditambahkan di atas bea masuk lain yang sudah berlaku, sehingga total beban bisa lebih tinggi daripada satu angka yang disebut dalam pemberitaan. Pemerintah RI menilai kesepakatan yang sudah diteken membuat posisi Indonesia tetap aman dalam skema baru. Namun pemerintah AS belum menyatakan hal yang sama dalam bahan ini, sehingga klaim keamanan itu masih bersandar pada penilaian sepihak Jakarta. Dengan begitu, dampak pada satu perusahaan atau satu komoditas tidak bisa dibaca hanya dari angka rata-rata nasional yang beredar.",
+        "Yang masih terbuka: hasil resmi penyelidikan dijadwalkan diumumkan pekan ini, dan sampai saat itu daftar produk serta tarif per kode HS belum tersedia. Belum jelas pula apakah angka 18% berlaku untuk semua barang atau hanya batas maksimum yang bisa dikenakan pada kategori tertentu, dan apakah tarif 0% untuk sawit serta 10% untuk padat karya yang disebut Airlangga akan bertahan. Pemerintah Indonesia belum mempublikasikan rincian posisi per produk dalam bahan ini, begitu pula teks lengkap kesepakatan dagang yang disebut telah ditandatangani. Langkah berikutnya adalah menunggu pengumuman USTR, lalu membandingkannya dengan isi kesepakatan itu.",
+        "Yang bisa dipegang pembaca saat ini hanya kerangka besarnya: ada usulan tarif hingga 18%, ada klaim pemerintah bahwa kesepakatan dagang melindungi Indonesia, dan ada sejumlah angka sektoral yang semuanya berasal dari dokumen USTR. Belum ada konfirmasi resmi soal tarif final, dan belum ada pernyataan Indonesia yang membantah rincian tuduhan tersebut. Karena itu, menyimpulkan bahwa Indonesia bebas tarif atau pasti kena 18% sama-sama melompati bukti yang tersedia. Yang paling mungkin terjadi dalam waktu dekat adalah pengumuman resmi dari Washington, dan sampai itu keluar, kedua angka itu masih berstatus usulan dan klaim. Pemerintah Indonesia menyatakan diri aman, USTR menyebut praktiknya merugikan, dan keduanya belum bertemu dalam satu pernyataan bersama yang dikutip di sini."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Airlangga Hartarto dalam pemberitaan ini?",
+          "a": "Ia adalah Menteri Koordinator Perekonomian yang menyampaikan besaran tarif untuk sawit dan produk padat karya, seperti dikutip dari CNN Indonesia.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261125202207-532-1431552/airlangga-bocorkan-tarif-as-sawit-ri-0-persen-produk-padat-karya-10"
+          }
+        },
+        {
+          "q": "Apa itu Amerika Serikat?",
+          "a": "Negara republik konstitusional federal berisi 50 negara bagian dan satu distrik federal, dengan Washington, D.C. sebagai ibu kota.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Amerika_Serikat"
+          }
+        },
+        {
+          "q": "Mengapa nama Airlangga juga muncul dalam bahan latar sejarah?",
+          "a": "Bahan Wikipedia merujuk Airlangga sebagai raja Kahuripan, Panjalu, dan Janggala yang memerintah 1020–1052 M, tokoh yang berbeda dari Menko Airlangga Hartarto.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Airlangga"
+          }
+        }
+      ],
+      "action": "Tunggu pengumuman resmi USTR pekan ini sebelum menyimpulkan besaran tarif per produk Indonesia.",
+      "image": {
+        "url": "assets/0febd1efd1.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "AS Usul Tarif sampai 18%, Airlangga Klaim Indonesia Aman"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261125202207-532-1431552/airlangga-bocorkan-tarif-as-sawit-ri-0-persen-produk-padat-karya-10",
+          "published_at": "2026-11-25T20:35:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261126002451-4-788532/breaking-ri-terancam-tarif-tambahan-18-dari-as",
+          "published_at": "2026-11-26T00:45:30+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/produk-ri-terancam-tarif-impor-18-dari-as-apa-pemicunya-ieem",
+          "published_at": "2026-11-26T10:21:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 3,
+      "first_seen": "2026-11-26",
+      "previous_edition": "2026-11-25",
+      "changes": [],
+      "disclaimer": "Artikel ini memuat klaim yang sumbernya saling bertentangan atau belum dapat dipastikan. Artikel tetap terbit untuk konteks, bukan sebagai rujukan. Jangan mengutip klaim yang diperdebatkan tanpa memeriksa sumber primer.",
+      "frames": [
+        {
+          "outlet": "tirto.id",
+          "title": "Produk RI Terancam Tarif Impor 18% dari AS, Apa Pemicunya?",
+          "url": "https://tirto.id/produk-ri-terancam-tarif-impor-18-dari-as-apa-pemicunya-ieem",
+          "at": "2026-11-26T10:21:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Breaking: RI Terancam Tarif Tambahan 18% dari AS",
+          "url": "https://www.cnbcindonesia.com/news/20261126002451-4-788532/breaking-ri-terancam-tarif-tambahan-18-dari-as",
+          "at": "2026-11-26T00:45:30+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_bos_nikel_jadi_tersangka_tppu_adb1",
+      "angle": "BO PT BSJ tersangka TPPU nikel Sultra; aset disita, nilai pencucian belum jelas",
+      "kicker": "Kriminal",
+      "title": "Kejagung Tetapkan Arif Kurniawan Tersangka TPPU Tambang Nikel",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Kejagung menetapkan Arif Kurniawan dan PT BSJ sebagai tersangka TPPU serta menyita uang tunai Rp55,8 miliar dan emas 37,8 kilogram.",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 5,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "Kejaksaan Agung menetapkan korporasi PT Bumi Sentosa Jaya (BSJ) Tbk dan Arif Kurniawan (AK) sebagai tersangka dugaan tindak pidana pencucian uang (TPPU) pada Rabu, 25 November 2026. Kapuspenkum Kejagung Anang Supriatna menyebut penetapan korporasi memakai Surat Penetapan Tersangka Direktur Penyidikan Jampidsus Nomor 6 Tahun 2026, sedangkan penetapan AK merujuk surat tersendiri bernomor 7. Perkara TPPU ini disebut sebagai pengembangan dari penyidikan dugaan korupsi tata kelola usaha pertambangan nikel di Sulawesi Tenggara periode 2013 sampai 2025, dengan dugaan pencucian uang pada 2021 sampai 2026. Penetapan itu belum berarti vonis, karena status tersangka masih akan diuji dalam penyidikan dan penuntutan.",
+        "Dalam perkara ini Arif Kurniawan disebut sebagai penerima manfaat atau beneficial owner sekaligus pengendali PT BSJ. Menurut penyidik, ia diduga menempatkan, mentransfer, mengalihkan, membelanjakan, membawa ke luar negeri, hingga mengubah bentuk harta kekayaan yang diketahuinya atau patut diduga berasal dari hasil korupsi. Penyamaran itu disebut dilakukan lewat perusahaan perantara penjualan atau trader dan sejumlah perusahaan afiliasi di bawah kendalinya, dengan pihak lain dipakai sebagai pengurus maupun pemegang saham nominee. Sumber dananya antara lain disebut berasal dari penerbitan izin usaha pertambangan operasi produksi PT BSJ secara melawan hukum serta penjualan bijih nikel dari izin tersebut. Perbuatan itu disebut terjadi di Jakarta, Sulawesi Tenggara, dan tempat lain di dalam maupun luar Indonesia.",
+        "Nilai total harta yang diduga dicuci belum diumumkan dalam bahan yang tersedia. Yang dipublikasikan adalah rincian barang yang disita: uang tunai Rp55.824.713.000, uang tunai 855 dolar Singapura, USD 126.200, sekitar 69.000 poundsterling, dan 98.000 yen. Penyidik juga menyita emas batangan 37,8 kilogram, satu unit mobil Lexus warna hitam metalik, satu unit Honda HR-V tahun 2016, 4.000 dokumen, serta 71 barang bukti elektronik. Soal kerugian negara, Anang menyebut penyidik menemukannya setidaknya dari perolehan penjualan hasil tambang nikel yang tidak sah, tetapi angka rupiahnya belum disebut. Artinya, besaran kerugian negara maupun nilai transaksi yang diduga dicuci masih menunggu penghitungan ahli.",
+        "Arif Kurniawan dan PT BSJ disangkakan melanggar Pasal 607 ayat (1) huruf a juncto Pasal 20 huruf a atau c Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana, atau kedua Pasal 607 ayat (1) huruf b juncto Pasal 20 huruf a atau c. Rumusan itu menempatkan keduanya sebagai tersangka pencucian uang, bukan tersangka korupsi dalam perkara induknya. Ancaman hukuman untuk pasal-pasal tersebut tidak disebutkan dalam bahan yang ada, sehingga berapa lama pidana maksimal yang mungkin dijatuhkan belum dapat dipastikan dari pemberitaan ini. Penyidik menyatakan pengenaan pasal masih berjalan bersama pemeriksaan saksi dan ahli.",
+        "Selain Arif, korporasi PT BSJ berstatus tersangka dalam perkara yang sama. Bahan yang tersedia belum menyebut adanya tersangka perorangan lain di luar AK, dan tidak memerinci apakah ada penambahan tersangka setelah penetapan ini. Status penahanan juga belum jelas: Kejagung menyebut Arif Kurniawan berada di luar negeri dan sedang diburu, sehingga ia belum ditahan. Untuk tersangka korporasi, bahan tidak menjelaskan bentuk penahanan atau tindakan paksa lain. Penyidik menyatakan telah memeriksa 60 orang saksi, termasuk dari Kementerian ESDM dan Dinas ESDM Sulawesi Tenggara, sebelum menetapkan tersangka.",
+        "Langkah berikutnya, menurut Kejagung, sudah bergerak ke arah aset. Penyidik menyita uang, emas, kendaraan, dokumen, dan barang bukti elektronik dengan persetujuan pengadilan negeri, mengajukan permintaan ahli penghitungan kerugian negara dan ahli TPPU, serta memblokir akses AHU terhadap korporasi dan rekening-rekening yang terafiliasi dengan PT BSJ. Pengejaran terhadap Arif di luar negeri masih berjalan. Satu hal yang perlu dicatat: bahan berbeda soal masa izin PT BSJ. Satu pemberitaan menyebut izinnya berakhir pada 2014 tetapi penambangan berlanjut hingga 2025, sementara pemberitaan lain menyebut izin pengalihan eksplorasi berdasarkan SK Bupati Konawe Utara Nomor 485/2014 berlaku Oktober 2014 sampai September 2017."
+      ],
+      "explain": [
+        {
+          "q": "Apa peran Kejaksaan Agung dalam perkara korupsi?",
+          "a": "Kejaksaan Agung melakukan penuntutan pidana dan penyelidikan pada perkara tertentu, termasuk korupsi yang merugikan keuangan negara.",
+          "source": {
+            "outlet": "Kejaksaan Agung",
+            "url": "https://www.kejaksaan.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa tata kelola nikel sering menjadi objek sengketa hukum?",
+          "a": "Indonesia adalah pemasok nikel terbesar dunia untuk baterai, sementara izin tambang dan tata kelola royaltinya sering menjadi objek sengketa hukum dan politik.",
+          "source": {
+            "outlet": "Kementerian ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Siapa yang memimpin Kejaksaan Agung?",
+          "a": "Kejaksaan Agung dipimpin oleh Jaksa Agung, yang juga pimpinan dan penanggung jawab tertinggi seluruh Kejaksaan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kejaksaan_Agung_Republik_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau status penahanan Arif dan hasil penghitungan kerugian negara sebelum menyimpulkan besarnya kerugian.",
+      "image": {
+        "url": "assets/2181ff3974.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "Kejagung Tetapkan Arif Kurniawan Tersangka TPPU Tambang Nikel"
+      },
+      "sources": [
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8769751/kejagung-tetapkan-arif-kurniawan-jadi-tersangka-tppu-tambang-nikel",
+          "published_at": "2026-11-25T18:13:39+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261125184232-12-1431501/kejagung-tetapkan-bos-nikel-arif-kurniawan-jadi-tersangka-tppu-tambang",
+          "published_at": "2026-11-25T18:46:37+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/arif-kurniawan-jadi-tersangka-tppu-kasus-tambang-nikel-di-sultra-iedm",
+          "published_at": "2026-11-25T18:29:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "sindonews.com",
+          "url": "https://nasional.sindonews.com/read/1776333/13/kejagung-sita-rp558-miliar-dan-emas-378-kg-terkait-kasus-tppu-tambang-arif-kurniawan-1795619510",
+          "published_at": "2026-11-25T22:44:11+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261125201039-4-788516/kejagung-tetapkan-raja-nikel-1-korporasi-tersangka-pencucian-uang",
+          "published_at": "2026-11-25T20:14:08+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-26",
+      "previous_edition": "2026-11-25",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "sindonews.com",
+          "title": "Kejagung Sita Rp55,8 Miliar dan Emas 37,8 Kg terkait Kasus TPPU Tambang Arif Kurniawan",
+          "url": "https://nasional.sindonews.com/read/1776333/13/kejagung-sita-rp558-miliar-dan-emas-378-kg-terkait-kasus-tppu-tambang-arif-kurniawan-1795619510",
+          "at": "2026-11-25T22:44:11+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Kejagung Tetapkan 'Raja Nikel' dan 1 Korporasi Tersangka Pencucian Uang",
+          "url": "https://www.cnbcindonesia.com/news/20261125201039-4-788516/kejagung-tetapkan-raja-nikel-1-korporasi-tersangka-pencucian-uang",
+          "at": "2026-11-25T20:14:08+07:00",
+          "owner": "CT Corp",
+          "media": 3
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Arif Kurniawan Jadi Tersangka TPPU Kasus Tambang Nikel di Sultra",
+          "url": "https://tirto.id/arif-kurniawan-jadi-tersangka-tppu-kasus-tambang-nikel-di-sultra-iedm",
+          "at": "2026-11-25T18:29:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_plts_100_gw_masuk_lelang_85a7",
+      "angle": "PLN sebut PLTS 100 GWp masuk lelang; PLTS terapung 100 MW di Gajah Mungkur.",
+      "kicker": "Ekonomi",
+      "title": "PLN Sebut PLTS 100 GWp Masuk Lelang, Gajah Mungkur Disiapkan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "PLN menyatakan proyek PLTS 100 GWp sudah memasuki proses pelelangan, sementara PLTS terapung 100 MW di Waduk Gajah Mungkur masih dibahas dalam rapat koordinasi ",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "PT PLN (Persero) menyatakan proyek pembangkit listrik tenaga surya berkapasitas total 100 gigawatt peak (GWp) sudah masuk tahap pelelangan. Direktur Utama PLN Suroso mengatakan survei lokasi telah dilakukan dan proses pengadaan ditargetkan dimulai dalam waktu dekat. \"Sedang dalam proses pelelangan. Sudah dalam proses pelelangan,\" katanya di sela Forum Energi Nasional 2026 di Jakarta, Rabu (25/11/2026), seperti dikutip CNBC Indonesia. Menurut Suroso, seluruh titik lokasi potensial sudah melalui survei lapangan sebelum pengembang diundang. Ia menyebut 100 GW akan dieksekusi \"secepatnya\". Pernyataan itu memberi gambaran bahwa tahap pemetaan lokasi sudah lewat, meski daftar peserta maupun pemenang lelang belum diumumkan.",
+        "Program ini bukan proyek baru. Presiden Prabowo Subianto meluncurkannya pada Selasa (25/8/2026) di Monumen Operasi Gilimanuk, Jembrana, Bali. Pemerintah menyebut nilai investasi Rp1.140 triliun dengan proyeksi penyerapan 5,5 juta tenaga kerja dan penghematan subsidi energi hingga Rp73,9 triliun setiap tahun. Tahap awal dipusatkan pada 14 proyek berkapasitas total 5.216 megawatt peak (MWp). Untuk Bali, Menteri ESDM Bahlil Lahadalia menyebut kapasitas 1.000 MW akan menggantikan peran pembangkit listrik tenaga diesel dan menghemat 0,6 juta kiloliter solar. Sebagian program juga menyasar masyarakat pesisir lewat cold storage, mesin pembuat es, dan pengisian daya kapal listrik bagi nelayan.",
+        "Dalam arahan kepada PLN, Prabowo meminta pasokan listrik tidak padam, pemulihan gangguan berlangsung cepat, dan elektrifikasi desa tuntas sebelum 2029. Suroso menyebut ada 10.068 lokasi yang belum berlistrik; sekitar 3.000 sudah diselesaikan sehingga tersisa sekitar 7.000. Ia juga menyebut subsidi dan kompensasi listrik tahun ini mencapai sekitar Rp245 triliun. Soal tenggat PLTS 100 GWp, dua bahan memberi angka berbeda: satu kutipan menyebut \"dua tahun lah ya\", sementara bahan lain menyatakan Prabowo meminta percepatan \"dalam tiga tahun\". Perbedaan itu belum dijelaskan. RUPTL 2025–2034 sendiri menargetkan tambahan kapasitas 69,5 GW, dengan sekitar 76% dari energi baru terbarukan dan teknologi baru.",
+        "Di jalur lain, Kementerian ESDM dan Kementerian Pekerjaan Umum menggelar rapat koordinasi untuk mempercepat PLTS terapung di Waduk Gajah Mungkur. Wakil Menteri ESDM Yuliot Tanjung menyebut rencana kapasitas 100 MW sekaligus kajian pemanfaatan waduk lain. Rapat dihadiri Wamen PU Diana Kusumastuti, Dirjen Ketenagalistrikan Arsyadany Ghana Akmalaputri, dan Dirjen EBTKE Eniya Listiani Dewi. Yuliot mendorong percepatan kesepakatan bersama kedua kementerian sebagai landasan sinergi pemanfaatan infrastruktur. PLN disebut berencana memakai 10.000 hektare permukaan waduk yang diproyeksikan menghasilkan 10,3 GWp, dilengkapi baterai berkapasitas 30 GWh. Di darat, pemerintah menyiapkan 28.000 hektare di Pulau Jawa; sekitar 8.500 hektare di antaranya siap untuk sekitar 8,5 GWp.",
+        "Yang belum jelas, skema pengadaan, harga jual listrik, dan pemenang lelang tidak dirinci dalam bahan. Jadwal pasti mulai konstruksi juga belum diumumkan, begitu pula lokasi 14 proyek tahap awal. Untuk PLTS terapung Gajah Mungkur, bahan belum menyebut calon pengembang, nilai investasi, atau waktu konstruksi dimulai. Langkah berikutnya adalah merampungkan lelang dan menandatangani kesepakatan ESDM–PU. Karena itu, pernyataan bahwa proyek \"siap eksekusi\" masih perlu dibaca sebagai keterangan PLN tentang tahap proses, bukan bukti konstruksi sudah berjalan. Angka 100 GWp juga target kapasitas, bukan kapasitas yang sudah terpasang."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu pembangkit listrik tenaga surya dan bagaimana ia menghasilkan listrik?",
+          "a": "PLTS mengubah energi surya menjadi energi listrik. Salah satu caranya melalui fotovoltaik, yang mengubah energi surya secara langsung menjadi listrik menggunakan efek fotolistrik; cara lain adalah pemusatan energi surya.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pembangkit_listrik_tenaga_surya"
+          }
+        },
+        {
+          "q": "Apa inti pernyataan kesiapan PLN yang dikutip media?",
+          "a": "Ringkasan latar menyebut PLN siap mengeksekusi proyek PLTS 100 Giga Watt, yang menjadi konteks pernyataan tentang tahap survei dan pelelangan.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261125173838-4-788472/masuk-tahap-lelang-pln-siap-eksekusi-proyek-plts-100-gw"
+          }
+        },
+        {
+          "q": "Mengapa pemetaan lokasi dilakukan sebelum pelelangan?",
+          "a": "Bahan menyebut pemetaan lokasi dinilai penting sebelum PLN membuka proses pengadaan bagi para pengembang, sehingga titik penempatan fasilitas ditetapkan lebih dulu.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pembangkit_listrik_tenaga_surya"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman pemenang lelang PLTS 100 GWp dan jadwal konstruksi PLTS terapung Gajah Mungkur di kanal resmi PLN dan ESDM.",
+      "image": {
+        "url": "assets/775ff85b5a.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "PLN Sebut PLTS 100 GWp Masuk Lelang, Gajah Mungkur Disiapkan"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261125173838-4-788472/masuk-tahap-lelang-pln-siap-eksekusi-proyek-plts-100-gw",
+          "published_at": "2026-11-25T20:50:04+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://ecologic.harianjogja.com/r-1280287/pln-diminta-tuntaskan-listrik-desa-dan-kejar-target-plts-100-gwp",
+          "published_at": "2026-11-25T22:27:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-26",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "harianjogja.com",
+          "title": "PLN Diminta Tuntaskan Listrik Desa dan Kejar Target PLTS 100 GWp",
+          "url": "https://ecologic.harianjogja.com/r-1280287/pln-diminta-tuntaskan-listrik-desa-dan-kejar-target-plts-100-gwp",
+          "at": "2026-11-25T22:27:09+07:00",
+          "owner": "Bisnis Indonesia",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Masuk Tahap Lelang, PLN Siap Eksekusi Proyek PLTS 100 GW",
+          "url": "https://www.cnbcindonesia.com/news/20261125173838-4-788472/masuk-tahap-lelang-pln-siap-eksekusi-proyek-plts-100-gw",
+          "at": "2026-11-25T20:50:04+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_lrt_jabodebek_mogok_lagi_adaf",
+      "angle": "TS 30 tertahan antara Pancoran dan Kuningan sekitar 09.25 WIB; penyebab belum jelas.",
+      "kicker": "Nasional",
+      "title": "LRT Jabodebek Mogok di Antara Pancoran dan Kuningan",
+      "status": "sebagian",
+      "truth": {
+        "claim": "LRT Jabodebek mengalami gangguan pada sarana TS 30 di petak Pancoran–Kuningan pada Kamis, 26 November 2026 sekitar pukul 09.25 WIB, dan penumpang diarahkan berp",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "Perjalanan LRT Jabodebek terganggu di lintas antara Stasiun Pancoran dan Stasiun Kuningan pada Kamis, 26 November 2026. Menurut pemberitahuan yang diunggah di akun Instagram LRT Jabodetabek, gangguan terjadi pada sarana yang beroperasi di petak jalan itu. PT Kereta Api Indonesia (Persero), melalui keterangan yang dikutip CNBC Indonesia, menyebut sarana yang bermasalah adalah TS 30 dan gangguan itu terjadi sekitar pukul 09.25 WIB. Petugas menginstruksikan pengguna yang berada di dalam rangkaian tersebut untuk berpindah ke sarana lain agar perjalanan dapat dilanjutkan. Sampai keterangan itu disampaikan, belum ada penjelasan resmi mengenai penyebab gangguan pada rangkaian kereta tersebut.",
+        "Pihak operator menyampaikan permohonan maaf dan menegaskan keselamatan sebagai prioritas. Manager Public Relations LRT Jabodebek Radhitya Mardika mengatakan, petugas mengarahkan sekaligus mendampingi pengguna saat berpindah sarana, sambil memastikan keamanan selama proses penanganan. Dalam unggahan resmi disebutkan bahwa Train Attendant bersama tim teknis melakukan penanganan agar perjalanan bisa kembali dilanjutkan. Penumpang juga diimbau tetap tenang dan mengikuti arahan petugas di lapangan selama penanganan berlangsung. Operator menyatakan memahami ketidaknyamanan yang dirasakan pengguna dan meminta maaf atas gangguan perjalanan itu.",
+        "Gangguan pada satu sarana itu berdampak pada perjalanan LRT Jabodebek lainnya. Menurut keterangan operator, petugas terus berkoordinasi dan melakukan penanganan sehingga layanan berangsur normal. Rangkaian TS 30 akan menjalani pemeriksaan dan penanganan lebih lanjut oleh petugas teknis. KAI menyatakan terus melakukan evaluasi dan penanganan menyeluruh untuk menjaga keandalan sarana serta meningkatkan kualitas pelayanan. Belum ada rincian berapa perjalanan lain yang tertunda akibat kejadian ini.",
+        "Yang belum jelas sampai keterangan terbaru adalah penyebab gangguan dan perkiraan waktu normalisasi. Pemberitaan yang mengutip unggahan resmi operator menyebut belum ada keterangan lebih lanjut soal penyebab maupun estimasi waktu perjalanan kembali normal, sementara keterangan kepada CNBC Indonesia menyatakan layanan berangsur normal tanpa menyebut jam pastinya. Ada pula perbedaan kelengkapan informasi antar sumber: unggahan yang dikutip CNN Indonesia tidak menyebut jam kejadian, sedangkan CNBC Indonesia menyebut sekitar pukul 09.25 WIB. Langkah berikutnya adalah pemeriksaan teknis atas rangkaian TS 30, dan hasilnya belum diumumkan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu LRT Jabodebek?",
+          "a": "Nama yang dipakai bahan untuk layanan kereta ringan yang terganggu antara Pancoran dan Kuningan; bahan latar tidak memuat profil lengkap layanan ini.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261126103700-20-1431700/lrt-jabodebek-mogok-di-antara-stasiun-pancoran-kuningan"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud sarana TS 30?",
+          "a": "Kode sarana yang disebut manajemen dalam pernyataannya soal gangguan; bahan tidak menjelaskan arti angka atau jenis rangkaiannya.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261126103700-20-1431700/lrt-jabodebek-mogok-di-antara-stasiun-pancoran-kuningan"
+          }
+        },
+        {
+          "q": "Siapa yang menangani gangguan di lapangan?",
+          "a": "Petugas, termasuk Train Attendant bersama tim teknis, yang menurut pernyataan resmi melakukan penanganan; bahan tidak memerinci pembagian tugas mereka.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261126103700-20-1431700/lrt-jabodebek-mogok-di-antara-stasiun-pancoran-kuningan"
+          }
+        }
+      ],
+      "action": "Jika hendak memakai LRT Jabodebek hari ini, cek kanal resmi operator untuk status perjalanan sebelum berangkat.",
+      "image": {
+        "url": "assets/b91b87d44f.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "LRT Jabodebek Mogok di Antara Pancoran dan Kuningan"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261126103700-20-1431700/lrt-jabodebek-mogok-di-antara-stasiun-pancoran-kuningan",
+          "published_at": "2026-11-26T10:42:18+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "liputan6.com",
+          "url": "https://www.liputan6.com/news/read/8342831/lrt-jabodebek-mogok-di-lintas-pancoran-kuningan",
+          "published_at": "2026-11-26T11:10:57+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261126111415-4-788632/ada-lrt-jabodebek-mogok-di-jalur-antara-stasiun-pancoran-kuningan",
+          "published_at": "2026-11-26T11:19:20+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-26",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Ada LRT Jabodebek Mogok di Jalur Antara Stasiun Pancoran-Kuningan",
+          "url": "https://www.cnbcindonesia.com/news/20261126111415-4-788632/ada-lrt-jabodebek-mogok-di-jalur-antara-stasiun-pancoran-kuningan",
+          "at": "2026-11-26T11:19:20+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "liputan6.com",
+          "title": "LRT Jabodebek Mogok di Lintas Pancoran-Kuningan",
+          "url": "https://www.liputan6.com/news/read/8342831/lrt-jabodebek-mogok-di-lintas-pancoran-kuningan",
+          "at": "2026-11-26T11:10:57+07:00",
+          "owner": "Emtek",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_pendaftaran_cpns_2026_dibuka_e170",
+      "angle": "154.052 formasi dibuka 27 November; syarat usia PPPK guru masih beda keterangan.",
+      "kicker": "Nasional",
+      "title": "Pendaftaran CPNS 2026 Dibuka 27 November, 154 Ribu Formasi",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Pendaftaran CPNS 2026 dibuka 27 November dengan 154.052 formasi, dan PPPK guru boleh ikut dengan syarat usia yang masih berbeda keterangan antarkementerian.",
+        "status": "sebagian",
+        "confidence": 0.77,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-26T11:27:13+07:00"
+      },
+      "body": [
+        "Pemerintah mengumumkan pendaftaran seleksi calon pegawai negeri sipil (CPNS) 2026 dibuka mulai 27 November 2026 dengan total 154.052 formasi. Pengumuman disampaikan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi (PANRB) Rini Widyantini dalam konferensi pers di Jakarta, Rabu (25/11/2026). Angka formasi dan tanggal pembukaan itu menjadi penanda dimulainya kembali jalur seleksi nasional untuk menjadi aparatur sipil negara. Formasi dan jadwal pengadaan CPNS diumumkan KemenPAN-RB, dan pendaftaran dilakukan lewat portal SSCASN.",
+        "Dalam kesempatan yang sama, Rini memastikan guru yang selama ini berstatus tenaga honorer atau PPPK boleh ikut seleksi CPNS 2026. Namun ia menegaskan ada syarat yang harus dipatuhi, terutama soal batas usia. Menurutnya, PPPK guru bisa mengikuti seleksi selama memenuhi persyaratan usia 35 tahun sesuai peraturan perundang-undangan. Ia merujuk Peraturan Menteri PANRB Nomor 6 Tahun 2024, yang pada pasal 23 mengatur usia paling rendah 18 tahun dan paling tinggi 35 tahun pada saat melamar PNS. Aturan itu juga memuat sejumlah syarat lain, seperti tidak pernah dipidana dengan hukuman penjara dua tahun atau lebih serta tidak berstatus sebagai anggota partai politik.",
+        "Keterangan tersebut berbeda dari pernyataan Menteri Pendidikan Dasar dan Menengah Abdul Mu'ti yang dikutip tirto.id. Menurut Mu'ti, guru berstatus PPPK, guru non-ASN, hingga lulusan baru berijazah D4/ dapat mengikuti seleksi CPNS tanpa batasan usia. Hingga bahan ini disusun, belum ada penjelasan resmi yang merujuk kedua keterangan itu, sehingga belum jelas apakah batas usia 35 tahun tetap berlaku bagi pelamar dari jalur PPPK guru atau tidak. Perbedaan keterangan antarkementerian itu perlu dicermati calon pelamar sebelum mendaftar, karena persyaratan usia menentukan kelayakan berkas sejak tahap awal.",
+        "Selain soal usia, Badan Kepegawaian Negara (BKN) mencatat 1,47 juta PPPK dinilai memenuhi syarat atau eligible untuk mengikuti seleksi CPNS. Angka itu menunjukkan potensi peserta dari jalur PPPK cukup besar dibandingkan formasi yang tersedia. Kendati demikian, rincian teknis seperti tata cara pendaftaran khusus bagi PPPK, dokumen yang harus disiapkan, dan formasi mana saja yang terbuka bagi mereka belum dijelaskan dalam bahan yang tersedia. Hal serupa berlaku untuk ketentuan kualifikasi pendidikan per jabatan, yang dalam aturan hanya disebut harus sesuai dengan persyaratan jabatan yang dilamar.",
+        "Yang juga belum jelas adalah jadwal tahapan setelah pendaftaran dibuka, termasuk kapan seleksi administrasi dan tes berlangsung. Pemerintah baru menyebut tanggal pembukaan pendaftaran pada 27 November. Langkah berikutnya bagi calon pelamar adalah memantau pengumuman resmi KemenPAN-RB dan menyiapkan berkas sebelum tanggal itu, sambil memperhatikan ketentuan usia yang masih menjadi perbedaan keterangan antarkementerian. Bila perbedaan itu tidak segera dijelaskan, calon pelamar dari jalur PPPK guru berisiko salah menafsirkan syarat yang berlaku."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu CPNS dan di mana pendaftarannya dilakukan?",
+          "a": "CPNS adalah jalur seleksi nasional untuk menjadi aparatur sipil negara; formasi dan jadwalnya diumumkan KemenPAN-RB, dan pendaftaran lewat portal SSCASN.",
+          "source": {
+            "outlet": "KemenPAN-RB",
+            "url": "https://www.menpan.go.id/"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud pegawai negeri sipil?",
+          "a": "Pegawai negeri adalah orang yang dipekerjakan dengan syarat tertentu oleh lembaga pemerintah untuk menduduki jabatan pemerintahan dan memberikan pelayanan publik, ditempuh melalui jenjang karier, bukan pemilihan umum.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Pegawai_negeri_sipil"
+          }
+        },
+        {
+          "q": "Mengapa peraturan menteri penting untuk dipantau?",
+          "a": "Keputusan pemerintah yang mengikat warga bisa berbentuk undang-undang hingga peraturan menteri, dan dampaknya biasanya baru terasa setelah aturan turunan terbit.",
+          "source": {
+            "outlet": "DPR RI",
+            "url": "https://www.dpr.go.id/"
+          }
+        }
+      ],
+      "action": "Cek syarat usia dan siapkan berkas sebelum pendaftaran CPNS 2026 dibuka pada 27 November.",
+      "image": {
+        "url": "assets/64af9af431.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Pendaftaran CPNS 2026 Dibuka 27 November, 154 Ribu Formasi"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261125135107-4-788346/pppk-guru-bisa-ikut-tes-cpns-ingat-batas-usia-35-tahun",
+          "published_at": "2026-11-25T15:25:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/mendikdasmen-guru-pppk-non-asn-bisa-tes-cpns-tanpa-batas-usia-ieb3",
+          "published_at": "2026-11-25T13:29:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-26",
+      "previous_edition": "2026-11-25",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "PPPK Guru Bisa Ikut Tes CPNS, Ingat! Batas Usia 35 Tahun",
+          "url": "https://www.cnbcindonesia.com/news/20261125135107-4-788346/pppk-guru-bisa-ikut-tes-cpns-ingat-batas-usia-35-tahun",
+          "at": "2026-11-25T15:25:00+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Mendikdasmen: Guru PPPK & Non-ASN Bisa Tes CPNS Tanpa Batas Usia",
+          "url": "https://tirto.id/mendikdasmen-guru-pppk-non-asn-bisa-tes-cpns-tanpa-batas-usia-ieb3",
+          "at": "2026-11-25T13:29:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_26",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah: Pesangon Danantara hingga Foto Badak",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Hari ini ada tiga klaim yang diperiksa dan seluruhnya berputusan salah. Klaim pertama menyebut perusahaan diwajibkan menyetor dana pesangon ke Danantara. Klaim kedua berupa foto Listyo Sigit yang dikatakan sakit di dalam penjara. Klaim ketiga berupa foto sekawanan badak yang dikatakan digiring TNI ke dalam truk. Ketiganya diperiksa TurnBackHoax dan diberi putusan salah.",
+        "Dari tiga item itu, dua bertumpu pada gambar: foto Listyo Sigit dan foto badak bersama truk. Pada keduanya, alasan putusan menyebut tidak ditemukan informasi valid dari sumber kredibel yang membenarkan klaim tersebut. Satu item sisanya adalah klaim kebijakan, bukan gambar. Direktur Jenderal Pembinaan Hubungan Industrial dan Jaminan Sosial Tenaga Kerja Kemnaker, Indah Anggoro Putri, menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP. Jadi yang terlihat hari ini adalah campuran klaim visual tanpa sumber valid dan klaim kebijakan yang dibantah langsung oleh pejabat.",
+        "Sebaiknya Anda berhenti pada tautan pemeriksa sebelum meneruskan klaim semacam ini. Untuk klaim kebijakan, cari pernyataan resmi instansi yang disebut. Untuk klaim berisi foto, jangan jadikan gambar sebagai bukti tunggal, karena dua dari tiga item hari ini gugur justru pada bagian itu. Membagikan tautan pemeriksanya lebih membantu daripada meneruskan potongan gambar tanpa keterangan."
+      ],
+      "action": "Periksa sumber resmi sebelum membagikan klaim berisi foto atau kebijakan perusahaan.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-26T11:27:13+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-26",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Perusahaan Diwajibkan Setor Dana Pesangon ke Danantara",
+          "verdict": "salah",
+          "reason": "Direktur Jenderal Pembinaan Hubungan Industrial dan Jaminan Sosial Tenaga Kerja (PHI-JSK) Kemnaker, Indah Anggoro Putri, menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37535-salah-perusahaan-diwajibkan-setor-dana-pesangon-ke-danantara"
+        },
+        {
+          "claim": "Foto Listyo Sigit Sakit di Dalam Penjara",
+          "verdict": "salah",
+          "reason": "Tidak ditemukan informasi valid dari sumber kredibel yang membenarkan klaim tersebut.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37527-salah-foto-listyo-sigit-sakit-di-dalam-penjara"
+        },
+        {
+          "claim": "Foto Sekawanan Badak Digiring TNI ke Dalam Truk",
+          "verdict": "salah",
+          "reason": "Tidak ada informasi valid yang menyebutkan TNI menggiring sekawanan badak ke dalam truk.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37528-salah-foto-sekawanan-badak-digiring-tni-ke-dalam-truk"
+        }
+      ],
+      "pattern": "Dua dari tiga klaim hari ini bertumpu pada foto tanpa sumber valid, satu klaim kebijakan dibantah langsung oleh pejabat Kemnaker."
+    }
+  ]
+}

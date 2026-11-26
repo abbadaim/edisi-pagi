@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T05:59:08+07:00",
-  "latest": "2026-11-25",
+  "generated_at": "2026-11-26T11:36:32+07:00",
+  "latest": "2026-11-26",
   "latest_by_scope": {
-    "nasional": "2026-11-25",
+    "nasional": "2026-11-26",
     "lokal": null,
     "mingguan": "2026-11-22"
   },
@@ -12,6 +12,14 @@
     "oldest": "2026-11-09"
   },
   "editions": [
+    {
+      "edition_id": "2026-11-26",
+      "scope": "nasional",
+      "published_at": "2026-11-26T11:27:13+07:00",
+      "card_count": 7,
+      "reading_time_min": 18,
+      "path": "data/editions/2026-11-26.nasional.json"
+    },
     {
       "edition_id": "2026-11-25",
       "scope": "nasional",
