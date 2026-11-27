@@ -1,0 +1,853 @@
+{
+  "schema_version": 1,
+  "edition_id": "2026-11-28",
+  "scope": "nasional",
+  "published_at": "2026-11-28T05:45:50+07:00",
+  "coverage": {
+    "from": "2026-11-27T05:45:50+07:00",
+    "to": "2026-11-28T05:45:50+07:00"
+  },
+  "generated_at": "2026-11-28T05:45:50+07:00",
+  "locale": "id-ID",
+  "place": {
+    "kabupaten": "Sleman",
+    "province": "DI Yogyakarta"
+  },
+  "reading_time_min": 24,
+  "generated_by": {
+    "adjudicate": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "write": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "verify": {
+      "provider": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash"
+    },
+    "embed": {
+      "provider": "none",
+      "model": "none"
+    }
+  },
+  "card_count": 8,
+  "truncated_reason": null,
+  "cards": [
+    {
+      "id": "c1",
+      "type": "deep_dive",
+      "topic_id": "t_penyidikan_makar_dan_aktor_int_d46d",
+      "angle": "Budi Arie diperiksa sebagai saksi; Arif Kurniawan baru disebut terindikasi.",
+      "kicker": "Kriminal",
+      "title": "Budi Arie Diperiksa sebagai Saksi, Arif Kurniawan Baru Disebut",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Budi Arie Setiadi diperiksa Bareskrim sebagai saksi pada 27 November 2026, sementara enam petinggi Polri berstatus tersangka dan Arif Kurniawan baru disebut ter",
+        "status": "sebagian",
+        "confidence": 0.83,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Direktorat Tindak Pidana Umum Bareskrim Polri memeriksa mantan Menteri Komunikasi dan Informatika Budi Arie Setiadi sebagai saksi pada Jumat, 27 November 2026. Direktur Tindak Pidana Umum Bareskrim Brigadir Jenderal Susatyo Condro Purnomo menyatakan Budi Arie sudah hadir di Bareskrim Mabes Polri dan masih menjalani pemeriksaan. Pada hari yang sama, penyidik memanggil Devid Agus Yunanto, mantan ajudan sekaligus asisten pribadi Presiden ke-7 Joko Widodo, untuk diperiksa dalam perkara yang sama. Namun status kehadiran Devid justru berbeda antarpemberitaan pada hari itu. Pemeriksaan ini berlangsung di tengah penyidikan dugaan makar yang disebut sebagai pengembangan dari kasus dugaan penyadapan ilegal terhadap Presiden Prabowo Subianto. Menurut keterangan penyidik, Budi Arie masih diperiksa saat pemberitaan itu ditulis.",
+        "Budi Arie dan Devid diperiksa dengan status saksi, bukan tersangka. Budi Arie dalam pemberitaan disebut pernah menjabat Menteri Komunikasi dan Informatika dan kini Ketua Umum Pro Jokowi atau Projo. Devid disebut sebagai mantan ajudan dan asisten pribadi Presiden ke-7 Joko Widodo. Nama Devid menjadi sorotan publik setelah namanya muncul dalam pemeriksaan sebagai saksi. Penyidik belum mengungkap materi pemeriksaan terhadap keduanya, dan pemberitaan yang tersedia tidak menjelaskan pertanyaan apa yang diajukan penyidik. Tidak ada pula keterangan yang menyebut keduanya dipanggil sebagai tersangka. Bahan tidak menjelaskan apakah jabatan Budi Arie di Projo berkaitan dengan pemeriksaan.",
+        "Status kehadiran Devid pada Jumat itu digambarkan berbeda oleh pemberitaan yang mengutip pejabat yang sama. Satu kutipan Susatyo yang dimuat CNNIndonesia.com menyebut, \"Jumat ini Budi Arie Sudah Hadir dan Devid Agus. Diperiksa di Bareskrim.\" Kutipan lain dari Susatyo menyatakan, \"Jumat ini Budi Arie (sudah hadir) dan Devid (belum hadir).\" Pada pemberitaan yang lebih sore, Susatyo mengatakan pihaknya masih menunggu konfirmasi kehadiran Devid Agus Yunanto. Perbedaan itu belum dijelaskan Bareskrim, sehingga kehadiran Devid pada Jumat tersebut belum bisa dipastikan dari pemberitaan yang ada. Bahan juga tidak memuat klarifikasi resmi atas perbedaan kutipan tersebut.",
+        "Sehari sebelumnya, Kamis, 26 November 2026, penyidik memeriksa Komjen Martinus Hukom sebagai saksi. Susatyo membenarkan pemeriksaan itu, tetapi tidak mengungkap materi yang ditanyakan penyidik. Hukom mengakui diperiksa Bareskrim sebagai saksi dalam kasus dugaan makar dan penyadapan ilegal terhadap Presiden Prabowo. Sejumlah pemberitaan menyebutnya sebagai mantan Kepala Badan Narkotika Nasional, sementara pemberitaan lain menyebutnya mantan Kepala Densus 88 Antiteror Polri. Ejaan namanya pun tercatat berbeda, yakni \"Martinus\" dan \"Marthinus\". Kedua sebutan jabatan itu muncul di bahan tanpa penjelasan mana yang berlaku lebih dulu, sehingga penyebutannya perlu dibaca hati-hati.",
+        "Dalam perkara ini, Bareskrim telah menetapkan enam anggota Polri sebagai tersangka. Mereka adalah eks Kapolri Jenderal Listyo Sigit Prabowo, eks Kepala Divisi TIK Irjen Slamet Uliandi, eks Kepala Divisi Hukum Irjen Ahrie Sonta Nasution, eks Direktur Tindak Pidana Narkoba Bareskrim Irjen Eko Hadi Santoso, eks Direktur Intelijen Densus 88 Antiteror Brigjen Tedjo Kusumo, dan eks Direktur Kriminal Umum Polda Metro Jaya Kombes Iman Imanuddin. Komposisi itu disampaikan Kabareskrim Komjen Asep Safrudin. Ejaan nama tersangka terakhir tercatat berbeda antarpemberitaan, yakni \"Iman Imanudin\" dan \"Iman Imanuddin\". Seluruh nama itu disebut sebagai tersangka; tidak ada keterangan bahwa mereka telah diadili atau divonis.",
+        "Menurut Bareskrim, aksi makar itu telah direncanakan sejak Presiden Prabowo Subianto belum dilantik. Tujuannya, menurut keterangan penyidik, mempertahankan jabatan Kapolri untuk konstelasi politik tertentu. Kabareskrim menyatakan para tersangka diduga melakukan permufakatan, persiapan, dan permulaan pelaksanaan makar dengan cara melemahkan kepercayaan masyarakat terhadap pemerintahan Presiden Prabowo. Rumusan itu disampaikan sebagai dugaan penyidik, bukan putusan pengadilan. Tidak ada keterangan dalam pemberitaan yang memerinci perbuatan masing-masing tersangka. Pemberitaan juga tidak menyebut tanggal pasti rencana yang dimaksud, hanya bahwa rencana itu ada sebelum pelantikan.",
+        "Perkara ini bermula dari dugaan penyadapan ilegal. Bareskrim menyebut penyadapan dilakukan terhadap Prabowo, sejumlah menteri, tokoh politik, pengusaha, media, hingga tokoh masyarakat. Empat dari enam tersangka disebut sebagai pelaku penyadapan ilegal, sedangkan peran dua tersangka lainnya tidak dijelaskan dalam pemberitaan. Empat tersangka itu juga pernah ditetapkan sebagai tersangka atas dugaan penyadapan ilegal, akses ilegal, dan penghapusan data elektronik. Keterangan soal alat atau metode penyadapan tidak dirinci dalam pemberitaan yang tersedia. Begitu pula soal bagaimana penetapan tersangka makar dilakukan, termasuk apakah ada gelar perkara yang diumumkan.",
+        "Buntut perkara ini, Polri menjatuhkan sanksi pemberhentian tidak dengan hormat sebagai anggota polisi kepada tiga orang: Ahrie Sonta, Eko Hadi Santoso, dan Tedjo Kusumo. Pemberitaan tidak menjelaskan kapan sanksi itu dijatuhkan maupun proses sidang etik yang mendahuluinya. Tidak dijelaskan pula apakah sanksi serupa dijatuhkan kepada tiga tersangka lain, yakni Listyo Sigit, Slamet Uliandi, dan Iman Imanuddin. Penetapan tersangka dan sanksi administratif adalah dua jalur berbeda, sehingga status keduanya perlu dibaca terpisah. Pemberitaan yang tersedia juga tidak memerinci apakah sanksi itu berkaitan langsung dengan perkara makar atau dengan perkara penyadapan.",
+        "Di luar lingkaran kepolisian, nama pengusaha tambang nikel Arif Kurniawan muncul dalam keterangan Kepala Badan Komunikasi Pemerintah atau Bakom RI Syahganda Nainggolan. Syahganda menyebut Arif sebagai salah satu pihak yang terindikasi menjadi aktor intelektual di balik dugaan upaya makar terhadap Prabowo. Ia menyebut Arif telah meninggalkan Indonesia dan kemungkinan berada di China. Dalam keterangannya di Jakarta pada Jumat, 27 November 2026, Syahganda mengatakan indikasi aktor intelektual itu adalah \"penguasa tambang\" dan menilai aktor intelektual selalu berada di belakang politik dan oligarki. Bahan tidak menjelaskan apa tugas dan kewenangan Bakom, lembaga yang dipimpin Syahganda.",
+        "Yang perlu dicatat, tidak ada keterangan bahwa Arif Kurniawan telah ditetapkan sebagai tersangka. Statusnya dalam pemberitaan masih berupa indikasi yang disampaikan seorang pejabat, bukan penetapan penyidik. Tidak ada penjelasan soal surat panggilan, status daftar pencarian orang, atau permintaan bantuan antarnegara untuk mencarinya. Tidak ada pula keterangan yang menyebut Arif diperiksa atau dimintai tanggapan atas pernyataan tersebut. Bahan juga tidak memuat tanggapan dari penyidik yang membenarkan pernyataan Syahganda. Dengan begitu, sebutan aktor intelektual masih merupakan penilaian seorang pejabat yang dikutip media, bukan status hukum.",
+        "Lokasi Arif juga belum dipastikan. Keterangan yang ada hanya menyebut ia telah meninggalkan Indonesia dan kemungkinan berada di China. Pemberitaan tidak menyebut kapan ia meninggalkan Indonesia, ke negara mana ia berangkat lebih dahulu, atau apakah otoritas memiliki catatan perlintasannya. Tidak ada penjelasan mengenai jalur pengejaran lintas negara, termasuk kemungkinan penggunaan ekstradisi, perjanjian bantuan hukum timbal balik, atau saluran kepolisian internasional. Dengan begitu, cara pengejaran tersangka yang berada di luar negeri, termasuk bila benar berada di China, belum diumumkan secara resmi. Bahan hanya memuat pernyataan bahwa Arif kemungkinan berada di China, tanpa bukti perjalanan.",
+        "Soal pasal, pemberitaan menyebut penyidik menjerat para tersangka dengan dugaan makar, yakni permufakatan, persiapan, dan permulaan pelaksanaan makar. Untuk empat tersangka, disebut pula dugaan penyadapan ilegal, akses ilegal, dan penghapusan data elektronik. Namun nomor pasal dan undang-undang yang dipakai tidak dicantumkan dalam pemberitaan yang tersedia, sehingga ancaman hukuman bagi para tersangka belum bisa diketahui dari keterangan itu. Bareskrim juga belum memerinci pasal untuk pihak-pihak di luar kepolisian, termasuk bagi siapa pun yang disebut sebagai aktor intelektual. Rumusan \"permufakatan, persiapan, dan permulaan pelaksanaan\" adalah bahasa penyidik; bahan tidak memuat uraian unsur hukumnya.",
+        "Prabowo Subianto dalam perkara ini disebut sebagai pihak yang menjadi sasaran dugaan penyadapan dan nama yang muncul dalam rumusan tuduhan makar. Menurut catatan latar, ia adalah Presiden Indonesia kedelapan yang menjabat sejak 2024. Sebelumnya ia menjabat Menteri Pertahanan ke-26 di bawah Presiden Joko Widodo pada 2019 hingga 2024, dan tercatat sebagai presiden ketiga Indonesia yang berlatar belakang militer setelah Soeharto dan Susilo Bambang Yudhoyono. Bahan pemberitaan tidak menjelaskan kaitan langsung antara jabatan itu dan perkara yang sedang disidik. Bahan juga tidak memuat pernyataan Prabowo mengenai pemeriksaan saksi atau penetapan tersangka.",
+        "Bareskrim adalah badan reserse kriminal di lingkungan Kepolisian Negara Republik Indonesia. Menurut Undang-Undang Nomor 2 Tahun 2002, Polri berperan memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberikan perlindungan, pengayoman, dan pelayanan kepada masyarakat. Dalam perkara ini, Bareskrim yang mengeluarkan panggilan, memeriksa saksi, dan menetapkan tersangka. Pemberitaan yang tersedia menyebut pemanggilan Budi Arie dan Devid terkait dugaan makar terhadap Presiden Prabowo, sementara enam petinggi Polri juga ditetapkan sebagai tersangka. Bahan tidak menjelaskan apakah penyadapan yang disidik dilakukan dengan perangkat negara atau secara mandiri.",
+        "Yang belum jelas dari pemberitaan cukup banyak. Materi pemeriksaan terhadap Budi Arie, Devid, dan Martinus Hukom tidak diungkap. Kehadiran Devid pada Jumat, 27 November 2026, masih simpang siur. Peran masing-masing dari enam tersangka belum dirinci. Keberadaan Arif Kurniawan belum dipastikan, dan langkah pengejaran lintas negaranya belum diumumkan. Nomor pasal yang disangkakan juga belum disebut. Semua ini membuat gambaran utuh perkara belum tersedia, meski penetapan tersangka dan pemeriksaan saksi sudah berjalan. Bahan juga tidak memuat tanggapan dari pihak Budi Arie atau Devid selain keterangan penyidik.",
+        "Bagi pembaca, perbedaan status adalah hal pertama yang perlu dipegang. Budi Arie dan Martinus Hukom menjalani pemeriksaan sebagai saksi, sementara status kehadiran Devid masih menunggu konfirmasi. Enam petinggi Polri berstatus tersangka, dan Arif Kurniawan baru disebut terindikasi sebagai aktor intelektual. Pemeriksaan saksi tidak otomatis berarti yang bersangkutan tersangka, dan penetapan tersangka bukan vonis bersalah. Perkara ini masih berjalan, dan beberapa hal mendasar, seperti materi pemeriksaan serta langkah pengejaran ke luar negeri, belum diumumkan. Perbedaan ejaan nama dan versi kehadiran sebaiknya dicek ke keterangan resmi berikutnya."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Bareskrim Polri?",
+          "a": "Bareskrim adalah badan reserse kriminal di lingkungan Polri. Menurut Undang-Undang Nomor 2 Tahun 2002, Polri berperan memelihara keamanan dan ketertiban masyarakat, menegakkan hukum, serta memberi perlindungan, pengayoman, dan pelayanan kepada masyarakat. Bareskrim menjalankan fungsi penyelidikan dan penyidikan tindak pidana di tingkat markas besar.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kepolisian_Negara_Republik_Indonesia"
+          }
+        },
+        {
+          "q": "Siapa Prabowo Subianto dalam konteks perkara ini?",
+          "a": "Prabowo Subianto adalah Presiden Indonesia kedelapan yang menjabat sejak 2024. Sebelumnya ia menjadi Menteri Pertahanan ke-26 di bawah Presiden Joko Widodo pada 2019-2024, dan merupakan presiden ketiga berlatar belakang militer setelah Soeharto dan Susilo Bambang Yudhoyono. Dalam perkara ini ia disebut sebagai pihak yang menjadi sasaran dugaan penyadapan.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Prabowo_Subianto"
+          }
+        },
+        {
+          "q": "Apa yang diketahui tentang pemanggilan Budi Arie dan Devid?",
+          "a": "Bareskrim memanggil Ketua Umum Projo Budi Arie dan Devid terkait dugaan makar terhadap Presiden Prabowo, sementara enam petinggi Polri ditetapkan sebagai tersangka. Pemeriksaan saksi berlangsung pada 26-27 November 2026: Martinus Hukom diperiksa pada 26 November, sedangkan Budi Arie pada 27 November.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/nasional/20261127131536-12-1432290/budi-arie-dan-devid-eks-aspri-jokowi-diperiksa-bareskrim-kasus-makar"
+          }
+        }
+      ],
+      "action": "Bedakan status saksi, tersangka, dan pihak yang baru disebut terindikasi sebelum menyimpulkan siapa aktor intelektualnya.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261127131536-12-1432290/budi-arie-dan-devid-eks-aspri-jokowi-diperiksa-bareskrim-kasus-makar",
+          "published_at": "2026-11-27T13:40:19+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/bareskrim-periksa-budi-arie-dan-eks-ajudan-jokowi-di-kasus-makar-iehw",
+          "published_at": "2026-11-27T14:00:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "okezone.com",
+          "url": "https://news.okezone.com/read/2026/11/27/337/3256631/jadi-saksi-kasus-makar-komjen-marthinus-hukom-ngaku-sempat-marah-ke-listyo-sigit",
+          "published_at": "2026-11-27T18:58:09+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": [],
+      "dek": "Bareskrim memeriksa Budi Arie sebagai saksi, sementara Arif Kurniawan baru disebut terindikasi aktor intelektual dan belum berstatus tersangka.",
+      "optional": true,
+      "read_min": 8,
+      "stats": [
+        {
+          "value": "3",
+          "label": "halaman"
+        },
+        {
+          "value": "3",
+          "label": "media"
+        }
+      ],
+      "frames": [
+        {
+          "outlet": "okezone.com",
+          "title": "Jadi Saksi Kasus Makar, Komjen Marthinus Hukom Ngaku Sempat Marah ke Listyo Sigit",
+          "url": "https://news.okezone.com/read/2026/11/27/337/3256631/jadi-saksi-kasus-makar-komjen-marthinus-hukom-ngaku-sempat-marah-ke-listyo-sigit",
+          "at": "2026-11-27T18:58:09+07:00",
+          "owner": "MNC",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Bareskrim Periksa Budi Arie dan Eks Ajudan Jokowi di Kasus Makar",
+          "url": "https://tirto.id/bareskrim-periksa-budi-arie-dan-eks-ajudan-jokowi-di-kasus-makar-iehw",
+          "at": "2026-11-27T14:00:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        },
+        {
+          "outlet": "cnnindonesia.com",
+          "title": "Budi Arie dan Devid Eks Aspri Jokowi Diperiksa Bareskrim Kasus Makar",
+          "url": "https://www.cnnindonesia.com/nasional/20261127131536-12-1432290/budi-arie-dan-devid-eks-aspri-jokowi-diperiksa-bareskrim-kasus-makar",
+          "at": "2026-11-27T13:40:19+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "news",
+      "topic_id": "t_tekanan_utang_dan_pajak_ri_a1b0",
+      "angle": "OECD sebut utang RI rendah, tetapi soroti rasio pajak 12% dan subsidi BBM.",
+      "kicker": "Ekonomi",
+      "title": "OECD Sebut Utang RI Aman, tapi Pajak Cuma 12% dan Subsidi BBM Disorot",
+      "status": "sebagian",
+      "truth": {
+        "claim": "OECD menyebut rasio pajak Indonesia sekitar 12% dari PDB dan menilai subsidi BBM lebih menguntungkan rumah tangga kaya, sementara rasio utang pemerintah sekitar",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Organization for Economic Co-operation and Development (OECD) menyoroti beberapa hal soal Indonesia dalam satu waktu: utang yang dinilai rendah, disiplin fiskal yang terjaga, dan rasio pajak yang masih sekitar 12% dari produk domestik bruto. Sekretaris Jenderal OECD Mathias Cormann menyampaikan penilaian itu di Jakarta, dan CNBC Indonesia mengutipnya pada Jumat, 27 November 2026. Ia menyebut Indonesia memiliki kerangka kerja makroekonomi yang sangat kuat dan stabilitas makroekonomi yang kuat, dengan defisit APBN yang dijaga di bawah 3%. Inflasi dinilai terkendali, ditopang kebijakan Bank Indonesia yang ia nilai baik. Namun ia juga menyebut penerimaan pajak yang rendah membuat sumber daya untuk hasil pendidikan dan kesehatan yang lebih baik tidak selalu tersedia sesuai keinginan.",
+        "Angka utangnya muncul dalam dua versi yang perlu dibedakan. OECD memproyeksikan rasio utang pemerintah Indonesia meningkat menjadi 41% terhadap PDB pada 2026, dari 40,5% pada 2025. Sementara Kementerian Keuangan mencatat utang pemerintah mencapai Rp10.326,93 triliun pada akhir kuartal III 2026 dengan rasio 40,3% terhadap PDB, turun dari 41,26% pada kuartal II. Perbedaan itu dapat dibaca sebagai beda dasar hitung: satu proyeksi untuk setahun penuh, satu realisasi triwulanan. Cormann sendiri menyebut utang Indonesia sekitar 40% dari PDB dan menilainya rendah dibandingkan negara-negara berkembang lain. Ia tidak menyampaikan angka rupiah, dan bahan yang ada tidak memuat rincian komposisi utang maupun jatuh temponya. Yang tersedia hanya dua angka rasio dan satu nilai nominal.",
+        "Cormann menempatkan batas defisit 3% sebagai salah satu penopang disiplin fiskal. Menurutnya, kerangka makroekonomi yang kuat itu dilengkapi landasan berupa defisit APBN yang dijaga di bawah 3%, dan ia menyebut batas tersebut telah membantu Indonesia menjaga disiplin. Ia juga menilai kebijakan moneter Bank Indonesia baik, dengan inflasi yang terkendali. Kombinasi itu, dalam penilaiannya, membuat ekonomi Indonesia solid. Namun ia tidak berhenti pada pujian. Ia menyoroti kemampuan penerimaan pajak sebagai salah satu konsentrasi yang perlu diperhatikan sebagai bagian dari pertimbangan reformasi ekonomi ke depan. Dengan kata lain, penilaian bahwa utang aman tidak otomatis berarti ruang fiskal lega; keduanya ia sampaikan dalam kesempatan yang sama.",
+        "Pada rasio pajak, Cormann memberi gambaran yang cukup spesifik. Indonesia mengumpulkan sekitar 12% dari PDB dalam bentuk pajak, angka yang ia sebut relatif rendah dibandingkan dengan negara anggota OECD lainnya. Konsekuensinya, menurut dia, sumber daya yang seharusnya dapat diinvestasikan untuk hasil pendidikan yang lebih baik dan hasil kesehatan yang lebih baik tidak selalu tersedia sesuai keinginan. Ia menyebut investasi publik yang dibutuhkan mencakup kesehatan, pendidikan, infrastruktur, dan ketahanan iklim. Pernyataan itu tidak menunjuk satu instrumen pajak tertentu, tidak menyebut target rasio baru, dan tidak memerinci jadwal kenaikan. Fungsinya lebih sebagai penanda masalah: penerimaan negara menjadi persoalan utama dalam reformasi, bukan hanya sisi belanja atau utang.",
+        "Di sisi belanja, OECD memberi saran yang lebih konkret: kurangi subsidi bahan bakar minyak yang diberikan secara luas, lalu ganti secara bertahap dengan bantuan tunai yang lebih tepat sasaran. Saran itu termuat dalam dokumen OECD Economic Surveys: Indonesia 2026 dan dikutip CNBC Indonesia pada Jumat, 27 November 2026. OECD menilai subsidi BBM selama ini menyerap porsi yang cukup besar dari belanja publik, terutama ketika harga energi global sedang tinggi. Menurut dokumen itu, subsidi BBM masih menjadi salah satu komponen belanja terbesar sekaligus sumber utama risiko fiskal. Yang ditekankan bukan penghapusan mendadak, melainkan pengurangan bertahap disertai pengalihan bentuk bantuan ke rumah tangga penerima.",
+        "Dasar penilaian soal ketepatan sasaran datang dari pola penerima manfaat. Menurut dokumen OECD, 20% rumah tangga terkaya menikmati sekitar 46% dari total subsidi pada 2019. Sementara 40% rumah tangga terbawah hanya menerima 18% dari total subsidi. Dari situ OECD menyimpulkan bahwa subsidi BBM secara tidak proporsional lebih menguntungkan kelompok masyarakat kaya. Perlu dicatat, angka itu merujuk pada 2019, bukan data 2026, sehingga belum tentu menggambarkan pola tahun ini; bahan yang tersedia tidak memuat pembaruan angka untuk tahun-tahun sesudahnya. Meski begitu, OECD memakai angka tersebut sebagai dasar merekomendasikan pengurangan subsidi luas dan pengalihan ke bantuan tunai yang menyasar rumah tangga rentan.",
+        "Besaran fiskalnya juga dirinci. Dalam APBN 2026, subsidi energi dan kompensasi diperkirakan mencapai sekitar 1,4% dari PDB. Namun OECD menyebut konflik yang terus berkembang di Timur Tengah berpotensi mendorong total biaya itu mendekati 2%. Sebagai perbandingan, subsidi BBM mencapai sekitar 3% dari PDB pada 2022 dan sekitar 2% sepanjang 2023-2024. Angka itu berada jauh di atas rata-rata negara-negara berkembang lain yang mayoritas di bawah 2,5% sepanjang 2022-2024. Rincian tersebut menjelaskan mengapa OECD menempatkan subsidi BBM sebagai sumber risiko fiskal, bukan sekadar pos belanja biasa: nilainya besar, berubah mengikuti harga global, dan sulit diprediksi saat konflik berlangsung.",
+        "Alasan iklim disebut eksplisit dalam dokumen itu. OECD menulis bahwa subsidi BBM menghambat pencapaian target iklim dan secara tidak proporsional lebih menguntungkan kelompok masyarakat kaya. Kedua alasan diajukan bersama, bukan terpisah, sehingga saran pengurangan subsidi dibingkai sebagai kebijakan fiskal sekaligus kebijakan energi. Namun dokumen tersebut, setidaknya sebagaimana dikutip, tidak memerinci besaran pengurangan per tahun, tidak menyebut harga BBM yang akan disesuaikan, dan tidak menjelaskan mekanisme pengalihan bantuan. Yang tersedia hanya arah kebijakan: kurangi subsidi yang berlaku luas secara bertahap, alihkan ke bantuan tunai dengan sasaran yang lebih tepat.",
+        "Supaya pengalihan itu bisa berjalan, OECD menyebut syarat datanya. Pemerintah perlu basis data sosial yang komprehensif dan diperbarui secara berkala untuk mengidentifikasi rumah tangga rentan secara akurat, antara lain melalui pengembangan Data Tunggal Sosial dan Ekonomi Nasional (DTSEN). Menurut OECD, basis data yang sama dapat digunakan untuk menentukan sasaran kompensasi atas reformasi perpajakan di masa mendatang, termasuk kenaikan pajak tidak langsung. Ini menghubungkan dua isu yang tampak terpisah, yakni subsidi dan pajak, dalam satu urutan kebijakan: data penerima disiapkan lebih dulu, lalu bantuan dialihkan, lalu reformasi penerimaan dibahas. Bahan yang ada tidak menyebut sejauh mana DTSEN sudah siap.",
+        "Dari sisi energi, tekanan impor menjadi latar yang disebut di forum lain pada hari yang sama. Wakil Ketua MPR RI Eddy Soeparno, dalam CNBC Indonesia Awards 2026: Best Energy Companies, mengatakan ketahanan energi Indonesia masih rentan karena kebutuhan energi masih mengandalkan impor. Ia menyebut impor itu mencakup minyak mentah hingga BBM dan LPG untuk memenuhi kebutuhan dalam negeri. Ketika terjadi disrupsi rantai pasok energi akibat perang Timur Tengah, menurutnya Indonesia harus memperkuat ketahanan energi. Langkah yang ia dorong adalah mempercepat transisi energi melalui energi baru dan terbarukan serta substitusi energi fosil ke bioenergi seperti B50 bioetanol untuk menekan impor BBM. Pernyataan itu disampaikan dalam forum penghargaan perusahaan energi, bukan sebagai pengumuman kebijakan.",
+        "Selain transisi, Eddy menyebut penguatan pasokan dalam negeri lewat peran pemerintah dan sektor swasta, baik dari dalam maupun luar negeri, untuk mengembangkan sumber energi baru dan terbarukan serta infrastruktur distribusi dan transmisinya. Ia juga mendorong pengembangan stockpiling dari 20 hari menjadi 90 hari. Dalam kesempatan itu ia menyinggung perlunya kepastian hukum, kebijakan yang konsisten, dan insentif tarif bagi investasi sektor energi. Namun pernyataan tersebut tidak menyertakan hitungan biaya, sumber anggaran, lokasi penyimpanan, atau tenggat pelaksanaan. Status usulan stockpiling 90 hari karena itu belum jelas: bahan yang ada hanya memuat dorongan, belum keputusan atau rencana tertulis.",
+        "Respons pemerintah muncul lewat dua kutipan terpisah. Menko Perekonomian Airlangga Hartarto, dikutip CNN Indonesia pada 28 November 2026, menyebut rekomendasi OECD agar Indonesia menghapus subsidi BBM bertahap mulai 2027 menjadi perhatian Presiden Prabowo. Sementara CNBC Indonesia menulis bahwa catatan OECD terkait ketepatan sasaran subsidi BBM telah menjadi perhatian pemerintahan Presiden Prabowo Subianto. Ada perbedaan yang perlu dicatat: bahan dari CNBC menyebut saran pengurangan subsidi dan pengalihan ke bantuan tunai tanpa menyebut tahun 2027, sedangkan kutipan Airlangga menyebut 2027. Bahan yang tersedia tidak menjelaskan dari mana angka 2027 itu berasal, apakah dari dokumen OECD, pembahasan pemerintah, atau pernyataan lain.",
+        "Konteks lain yang relevan adalah proses keanggotaan. OECD disebut terus berkoordinasi dengan Indonesia untuk aksesi keanggotaan penuh pada 2028. Dalam kesempatan itu Cormann menilai ekonomi Indonesia solid dan disiplin fiskal terjaga. Pernyataan tersebut sejalan dengan penilaiannya soal kerangka makro dan batas defisit 3%. Dapat dibaca sebagai sinyal bahwa catatan soal rasio pajak dan subsidi tidak serta-merta mengubah penilaian umum OECD terhadap Indonesia. Meski begitu, bahan yang ada tidak memerinci tahapan aksesi, syarat yang masih harus dipenuhi, atau kaitan antara rekomendasi pajak dan subsidi dengan proses tersebut.",
+        "Untuk membaca angka-angka di atas, dua catatan latar membantu. Pertama, bahan bakar bersubsidi berjalan dalam kerangka batas harga jual yang ditetapkan pemerintah; penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi. Kedua, perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha, dan angka awal sering direvisi setelah data lengkap masuk. Karena itu, proyeksi rasio utang 41% untuk 2026 dan realisasi 40,3% pada kuartal III dapat dibaca sebagai dua tahap informasi yang berbeda, bukan dua klaim yang saling membatalkan. Hal serupa berlaku untuk angka subsidi: persentase terhadap PDB bergerak mengikuti harga energi dan asumsi makro.",
+        "Yang belum jelas cukup banyak. Bahan yang tersedia tidak memuat keputusan resmi soal penghapusan subsidi BBM, tidak memuat besaran pengurangan per tahun, dan tidak memerinci bentuk serta nilai bantuan tunai pengganti. Kesiapan DTSEN sebagai syarat pengalihan juga tidak dijelaskan, begitu pula kaitan antara rencana kenaikan pajak tidak langsung dan kompensasi bagi rumah tangga rentan. Kutipan Airlangga hanya menyebut rekomendasi itu menjadi perhatian Presiden, bukan bahwa kebijakan sudah diputuskan. Langkah berikutnya karena itu berada di dua tempat: pembahasan APBN dan kesiapan data penerima bantuan. Keduanya belum dapat dipastikan dari bahan ini, sehingga tanggal pelaksanaan apa pun masih bersifat usulan."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud batas harga jual bahan bakar bersubsidi?",
+          "a": "Pemerintah menetapkan batas harga jual bahan bakar bersubsidi; penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi.",
+          "source": {
+            "outlet": "ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa angka awal sering berbeda dengan angka revisi?",
+          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha, dan angka awal sering direvisi setelah data lengkap masuk.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu minyak bumi yang menjadi bahan bakar impor?",
+          "a": "Minyak bumi adalah cairan kental mudah terbakar dari lapisan atas kerak bumi, campuran kompleks hidrokarbon yang sebagian besar seri alkana.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Minyak_bumi"
+          }
+        },
+        {
+          "q": "Mengapa ketergantungan impor minyak mentah, BBM, dan LPG disebut menekan ketahanan energi?",
+          "a": "Bahan latar menyebut penekanan candu impor minyak mentah, BBM, dan LPG membuat transisi energi Indonesia kian mendesak.",
+          "source": {
+            "outlet": "cnbcindonesia.com",
+            "url": "https://www.cnbcindonesia.com/news/20261127102732-8-788969/video-tekan-candu-impor-minyak-bbm-transisi-energi-ri-kian-mendesak"
+          }
+        }
+      ],
+      "action": "Pantau pembahasan APBN 2026 dan kesiapan DTSEN sebelum menyimpulkan bahwa subsidi BBM benar-benar dialihkan tahun depan.",
+      "image": {
+        "url": "assets/b56bc7b5eb.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "OECD Sebut Utang RI Aman, tapi Pajak Cuma 12% dan Subsidi BBM Disorot"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261127190853-85-1432508/oecd-usul-ri-hapus-subsidi-bbm-ini-tanggapan-airlangga",
+          "published_at": "2026-11-28T04:45:17+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261127102732-8-788969/video-tekan-candu-impor-minyak-bbm-transisi-energi-ri-kian-mendesak",
+          "published_at": "2026-11-27T14:10:14+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": []
+    },
+    {
+      "id": "c3",
+      "type": "news",
+      "topic_id": "t_kpk_telusuri_korupsi_klaten_da_e892",
+      "angle": "Dugaan mark-up dan pemakaian dana kecamatan untuk rekor MURI sop ayam Klaten.",
+      "kicker": "Kriminal",
+      "title": "KPK Duga Dana Kecamatan Klaten Dipakai untuk Rekor MURI Sop Ayam",
+      "status": "sebagian",
+      "truth": {
+        "claim": "KPK menduga dana alokasi khusus kecamatan di Klaten dipakai untuk acara rekor MURI 9.222 porsi sop ayam, dengan harga semangkuk dimark-up dari Rp10.000 menjadi ",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Komisi Pemberantasan Korupsi menduga Bupati Klaten nonaktif, Hamenang Wajar Ismoyo, menyalahgunakan dana alokasi khusus kecamatan demi acara pemecahan rekor Museum Rekor Indonesia atau MURI berupa 9.222 porsi sop ayam. Juru Bicara KPK Budi Prasetyo mengatakan anggaran acara itu sudah direncanakan sebelumnya dan dimasukkan ke dana alokasi khusus seluruh kecamatan di Klaten. Menurut dia, seluruh kecamatan lalu diminta berpartisipasi memakai anggaran tersebut dengan cara yang melanggar ketentuan berlaku. Dugaan itu menjadi salah satu materi yang didalami penyidik saat memeriksa sejumlah saksi terkait perkara di Klaten sepanjang pekan ini.",
+        "Dasar dugaan itu bukan hanya permintaan partisipasi. KPK menyebut ada mark-up harga sop ayam, yakni harga semangkuk Rp10.000 dinaikkan menjadi Rp35.000. Budi juga mengatakan Bupati sejak awal meminta kecamatan mengondisikan plotting kegiatan dan penganggarannya, sehingga pedoman yang sebenarnya sudah diatur dalam Peraturan Menteri Keuangan tidak dipedomani. KPK pula yang menyebut Hamenang memalak anggaran kecamatan untuk kebutuhan meraih rekor MURI. Dari rangkaian kegiatan itu muncul kelebihan pembayaran honor narasumber, yang menurut KPK menjadi temuan Badan Pemeriksa Keuangan lalu diduga dihilangkan.",
+        "Berapa total dana kecamatan yang diduga dipakai belum disebutkan dalam bahan yang tersedia. KPK baru mengungkap harga satuan yang dimark-up dan jumlah porsi sop ayam, tanpa merinci nilai yang ditarik dari tiap kecamatan. Yang dijelaskan adalah aliran anggaran lain: honorarium narasumber anggota dewan untuk sosialisasi peraturan daerah yang dimasukkan ke 11 organisasi perangkat daerah, serta honor bagi Forum Koordinasi Pimpinan Daerah Klaten melalui kegiatan yang diduga hampir semuanya fiktif, lengkap dengan berkas pertanggungjawaban yang dibuat-buat. KPK meminta anggota dewan penerima kelebihan honor tahun anggaran 2025 dan 2026, juga anggota Forkompinda, mengembalikan uangnya ke Inspektorat Klaten.",
+        "Bantahan dari Bupati Klaten belum termuat dalam bahan yang tersedia, jadi belum diketahui bagaimana ia menanggapi dugaan tersebut. Soal penanganan, KPK telah memeriksa sejumlah saksi dan menetapkan tiga orang sebagai tersangka: Hamenang Wajar Ismoyo selaku Bupati Klaten periode 2025 sampai 2030, Ahmad Luthfi H Rahmatullah selaku Kepala Perwakilan BPK Jawa Tengah, dan Muhammad Amin Wahyu Utomo selaku pihak swasta dari PT Madani Winasis Creative. Dalam perkara ini KPK mengungkap dugaan Hamenang meminta BPK menghapus temuan kelebihan pembayaran honorarium dari laporan hasil pemeriksaan. Budi menyatakan penyidik masih mendalami siapa saja yang menerima honorarium tidak sesuai aturan dan belum merinci berapa anggota DPRD yang diminta menjadi narasumber.",
+        "Kasus ini bukan satu-satunya dugaan di Klaten. KPK menyebut ada lima klaster dugaan korupsi di lingkungan Pemerintah Kabupaten Klaten 2025 sampai 2026: pemberian uang untuk laporan keuangan tahun anggaran 2025, penerimaan uang terkait pengadaan barang dan jasa, penerimaan uang terkait tambang galian C, penerimaan rutin lain terkait badan layanan umum, badan usaha milik daerah, dan organisasi perangkat daerah, serta penerimaan uang pungut. Rekor MURI sendiri adalah catatan yang dikeluarkan Museum Rekor Indonesia, museum di Semarang yang didirikan Jaya Suprana pada 27 Januari 1990. Perlu dicatat, status tersangka belum berarti bersalah; putusan tetap menunggu pengadilan."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu KPK?",
+          "a": "Komisi Pemberantasan Korupsi adalah lembaga independen yang menyelidiki dan menuntut tindak pidana korupsi di Indonesia.",
+          "source": {
+            "outlet": "KPK",
+            "url": "https://www.kpk.go.id/"
+          }
+        },
+        {
+          "q": "Apa arti status tersangka?",
+          "a": "Seseorang ditetapkan penyidik berdasarkan minimal dua alat bukti; status ini belum berarti bersalah dan putusan tetap di pengadilan.",
+          "source": {
+            "outlet": "Polri",
+            "url": "https://www.polri.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu MURI?",
+          "a": "Museum Rekor Indonesia adalah museum di Semarang, Jawa Tengah, yang didirikan pada 27 Januari 1990 oleh Jaya Suprana.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Museum_Rekor_Indonesia"
+          }
+        }
+      ],
+      "action": "Pantau rilis resmi KPK soal nilai dana kecamatan yang dipakai dan tunggu tanggapan Bupati Klaten.",
+      "image": {
+        "url": "assets/eca7e94bf9.webp",
+        "credit": "cnnindonesia.com",
+        "alt": "KPK Duga Dana Kecamatan Klaten Dipakai untuk Rekor MURI Sop Ayam"
+      },
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/nasional/20261127142406-12-1432346/bupati-klaten-diduga-pakai-dana-kecamatan-untuk-rekor-muri-sop-ayam",
+          "published_at": "2026-11-27T16:31:29+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/demi-rekor-muri-sop-ayam-bupati-klaten-diduga-korupsi-dak-iehi",
+          "published_at": "2026-11-27T11:52:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "detik.com",
+          "url": "https://news.detik.com/berita/d-8773257/bupati-klaten-diduga-mark-up-sop-ayam-untuk-muri-semangkok-jadi-rp-35-ribu",
+          "published_at": "2026-11-27T19:22:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 2,
+      "first_seen": "2026-11-19",
+      "previous_edition": "2026-11-27",
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "detik.com",
+          "title": "Bupati Klaten Diduga Mark Up Sop Ayam untuk MURI, Semangkok Jadi Rp 35 Ribu",
+          "url": "https://news.detik.com/berita/d-8773257/bupati-klaten-diduga-mark-up-sop-ayam-untuk-muri-semangkok-jadi-rp-35-ribu",
+          "at": "2026-11-27T19:22:34+07:00",
+          "owner": "CT Corp",
+          "media": 2
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Demi Rekor MURI Sop Ayam, Bupati Klaten Diduga Korupsi DAK",
+          "url": "https://tirto.id/demi-rekor-muri-sop-ayam-bupati-klaten-diduga-korupsi-dak-iehi",
+          "at": "2026-11-27T11:52:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "news",
+      "topic_id": "t_harga_bbm_subsidi_tak_naik_ef2c",
+      "angle": "Menko Perekonomian membantah kabar kenaikan, tetapi belum bicara soal harga 2027.",
+      "kicker": "Ekonomi",
+      "title": "Airlangga Sebut Harga BBM Subsidi Tak Naik sampai Akhir 2026",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Airlangga Hartarto menyatakan tidak ada kenaikan harga BBM subsidi sampai akhir 2026, tetapi belum memberi kepastian untuk 2027.",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 3,
+          "independent_outlets": 3,
+          "independent_owners": 3,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Menteri Koordinator Bidang Perekonomian Airlangga Hartarto memastikan harga bahan bakar minyak bersubsidi tidak naik sampai akhir 2026. Pernyataan itu ia sampaikan kepada wartawan di kantor Kemenko Perekonomian, Jakarta, Jumat (27/11/2026), dengan kalimat singkat: \"Sampai akhir tahun nggak ada.\" Ia menjawab pertanyaan soal isu penyesuaian harga yang beredar menjelang tutup tahun. Soal berapa harga BBM subsidi yang berlaku sekarang, bahan yang ada tidak menyebutkan angkanya, jadi besarannya belum bisa dipastikan dari sini. Airlangga juga tidak menjelaskan alasan pemerintah menahan kenaikan. Yang tercatat, ia menepis kabar kantor berita Reuters bahwa harga akan naik awal tahun depan karena nilai tukar dan harga minyak membebani fiskal.",
+        "Jaminan itu berulang. Pada September, Menteri ESDM Bahlil Lahadalia menyampaikan hal serupa, dan pemerintah menegaskan cadangan BBM nasional berada di standar minimal 18 sampai 21 hari. Namun soal 2027, Airlangga belum memberi kepastian; ia tidak membantah maupun mengonfirmasi laporan tentang kenaikan tahun depan. Sorotan datang dari OECD, yang dalam laporan Economic Surveys of Indonesia 2026 terbit 26 November menyarankan subsidi BBM dihentikan bertahap mulai 2027, disertai konsolidasi fiskal. OECD mencatat subsidi dan kompensasi energi sekitar 1,4 persen PDB dan bisa mendekati 2 persen bila konflik Timur Tengah berlanjut, serta menawarkan bantuan tunai lewat DTSEN sebagai alternatif."
+      ],
+      "explain": [
+        {
+          "q": "Apa yang dimaksud batas harga jual BBM bersubsidi?",
+          "a": "Batas harga yang ditetapkan pemerintah; penjualan di atas batas itu melanggar aturan dan bisa dikenai sanksi.",
+          "source": {
+            "outlet": "ESDM",
+            "url": "https://www.esdm.go.id/"
+          }
+        },
+        {
+          "q": "Mengapa perubahan harga dan kurs penting bagi rumah tangga?",
+          "a": "Perubahan harga, kurs, atau suku bunga memengaruhi daya beli dan keputusan usaha, dan angka awal sering direvisi setelah data lengkap masuk.",
+          "source": {
+            "outlet": "OJK",
+            "url": "https://www.ojk.go.id/"
+          }
+        },
+        {
+          "q": "Apa itu minyak bumi yang menjadi bahan bakar?",
+          "a": "Cairan kental campuran hidrokarbon dari lapisan kerak bumi yang diambil dari sumur minyak.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Minyak_bumi"
+          }
+        }
+      ],
+      "action": "Pantau pengumuman resmi harga BBM subsidi menjelang 2027 sebelum menyusun anggaran rumah tangga.",
+      "image": {
+        "url": "assets/c7659610ac.webp",
+        "credit": "cnbcindonesia.com",
+        "alt": "Airlangga Sebut Harga BBM Subsidi Tak Naik sampai Akhir 2026"
+      },
+      "sources": [
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261127210125-4-789241/airlangga-pastikan-bbm-subsidi-tak-naik-sampai-akhir-2026",
+          "published_at": "2026-11-27T21:06:22+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "tirto.id",
+          "url": "https://tirto.id/airlangga-pastikan-harga-bbm-subsidi-tak-naik-hingga-akhir-2026-ieip",
+          "published_at": "2026-11-27T20:05:00+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "harianjogja.com",
+          "url": "https://news.harianjogja.com/r-1280559/airlangga-pastikan-harga-bbm-subsidi-tak-naik-hingga-akhir-2026",
+          "published_at": "2026-11-27T21:37:02+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "harianjogja.com",
+          "title": "Airlangga Pastikan Harga BBM Subsidi Tak Naik hingga Akhir 2026",
+          "url": "https://news.harianjogja.com/r-1280559/airlangga-pastikan-harga-bbm-subsidi-tak-naik-hingga-akhir-2026",
+          "at": "2026-11-27T21:37:02+07:00",
+          "owner": "Bisnis Indonesia",
+          "media": 1
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "title": "Airlangga Pastikan BBM Subsidi Tak Naik sampai Akhir 2026",
+          "url": "https://www.cnbcindonesia.com/news/20261127210125-4-789241/airlangga-pastikan-bbm-subsidi-tak-naik-sampai-akhir-2026",
+          "at": "2026-11-27T21:06:22+07:00",
+          "owner": "CT Corp",
+          "media": 1
+        },
+        {
+          "outlet": "tirto.id",
+          "title": "Airlangga Pastikan Harga BBM Subsidi Tak Naik hingga Akhir 2026",
+          "url": "https://tirto.id/airlangga-pastikan-harga-bbm-subsidi-tak-naik-hingga-akhir-2026-ieip",
+          "at": "2026-11-27T20:05:00+07:00",
+          "owner": "Tirto",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "news",
+      "topic_id": "t_wamendagri_dorong_kinerja_pemd_d872",
+      "angle": "Wamendagri menilai pemda dari pertumbuhan ekonomi dan sinergi Forkopimda.",
+      "kicker": "Nasional",
+      "title": "Wamendagri: penghargaan pemda harus berdampak pada kinerja",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Wamendagri Akhmad Wiyagus menyebut Apresiasi Pemda Berprestasi 2026 sebagai instrumen peningkatan kinerja, dengan tiga kategori: pertumbuhan ekonomi, adminduk, ",
+        "status": "sebagian",
+        "confidence": 0.8,
+        "band": "kemungkinan_besar",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Kementerian Dalam Negeri menggelar Apresiasi Pemda Berprestasi 2026 Batch 3 Regional Kalimantan di Banjarbaru, Kalimantan Selatan, Jumat (27/11/2026) malam. Wakil Menteri Dalam Negeri Akhmad Wiyagus menyerahkan penghargaan bersama Ketua Komisi II DPR RI Muhammad Rifqinizamy Karsayuda. Penerimanya adalah pemerintah provinsi, kabupaten, dan kota di lima provinsi: Kalimantan Selatan, Kalimantan Tengah, Kalimantan Barat, Kalimantan Timur, dan Kalimantan Utara. Bagi pembaca yang tidak mengikuti rapat-rapat kementerian, acara ini mudah dibaca sebagai seremoni penutup tahun. Framing yang dipakai Kemendagri justru sebaliknya: penghargaan diposisikan sebagai alat untuk memacu kualitas pelayanan publik. Lima provinsi di Kalimantan menjadi cakupan batch ini, sehingga penerima penghargaan datang dari pulau yang sama dengan tuan rumah.",
+        "Wiyagus menyatakan apresiasi itu harus berdampak pada perbaikan kinerja pemerintah daerah. Ia mengutip pesan Menteri Dalam Negeri yang menurutnya berulang kali menekankan hal tersebut. Penghargaan, katanya, bukan hanya pengakuan atas prestasi, tetapi juga dorongan untuk meningkatkan kualitas penyelenggaraan pemerintahan dan pelayanan kepada masyarakat. Kalimat itu penting karena menggeser makna penghargaan: dari tanda selesai menjadi titik awal penilaian. Namun bahan tidak memuat bagaimana dampak tersebut diukur setelah piala dan dana diserahkan, siapa yang mengevaluasi, dan kapan evaluasinya dilakukan.",
+        "Penilaian dibagi ke dalam tiga kategori: percepatan pertumbuhan ekonomi daerah, penyelenggaraan administrasi kependudukan dan pencatatan sipil terbaik, serta Forum Koordinasi Pimpinan Daerah terbaik. Masing-masing kategori diberikan pada tiga tingkat pemerintahan, yakni provinsi, kabupaten, dan kota. Menurut Wiyagus, setiap kategori mengangkat isu dan indikator yang berbeda, tetapi semuanya bertujuan mendukung penyelenggaraan pemerintahan daerah sesuai amanat Undang-Undang Dasar 1945. Bahan tidak merinci bobot antarindikator maupun ambang nilai yang membuat sebuah daerah dinyatakan berprestasi. Kategori administrasi kependudukan menyorot pencatatan sipil dan pengelolaan data warga, sedangkan kategori Forkopimda menilai koordinasi antarpimpinan daerah; keduanya dipakai sebagai pintu masuk penilaian kinerja pemerintahan, bukan lomba kegiatan seremonial.",
+        "Pada kategori percepatan pertumbuhan ekonomi, Pemerintah Provinsi Kalimantan Barat disebut menempati peringkat pertama, Kalimantan Utara kedua, dan Kalimantan Selatan ketiga dengan pertumbuhan 4,97 persen. Ada catatan yang perlu dipegang pembaca: angka yang dipaparkan di bagian lain acara menunjukkan Kalimantan Utara justru mencatat pertumbuhan tertinggi, 6,3 persen, disusul Kalimantan Barat 5,24 persen. Dengan begitu, urutan pemenang tidak identik dengan urutan laju pertumbuhan. Bahan tidak menjelaskan mengapa urutannya demikian; kemungkinan penilaian memakai indikator lain di luar satu angka pertumbuhan, tetapi hal itu belum dapat dipastikan dari bahan yang tersedia.",
+        "Sebaran angka yang dipaparkan Wiyagus memperlihatkan kesenjangan antarwilayah di Kalimantan. Kalimantan Utara 6,3 persen, Kalimantan Barat 5,24 persen, Kalimantan Selatan 4,97 persen, Kalimantan Timur 3,39 persen, dan Kalimantan Tengah 2,5 persen. Di tingkat kabupaten dan kota, sejumlah daerah masuk sepuluh besar, antara lain Kabupaten Kapuas 5,87 persen, Kota Banjarmasin 5,04 persen, dan Kota Palangka Raya 4,89 persen. Menurut Wiyagus, perbedaan itu menunjukkan perlunya percepatan bersama agar seluruh wilayah Kalimantan memberi kontribusi lebih besar terhadap target nasional. Angka-angka itu disampaikan sebagai gambaran umum, tanpa menyebut sumber data maupun periode penghitungannya secara rinci.",
+        "Bagian lain sambutan menyorot koordinasi. Wiyagus meminta seluruh kepala daerah, baik gubernur, wali kota, maupun bupati, menjaga komunikasi dan sinergi dengan unsur Forkopimda. Alasannya, koordinasi yang solid membuat setiap unsur bergerak bersama sehingga penanganan persoalan bisa lebih cepat. Ia mencontohkan penanganan bencana di sejumlah wilayah Sumatra, termasuk Aceh dan Padang, yang menurutnya cepat karena seluruh unsur Forkopimda bekerja bersama. Sebaliknya, ia menyebut keterlambatan penanganan di suatu daerah dapat mencerminkan komunikasi antarpimpinan yang kurang optimal. Pernyataan itu bersifat penilaian pejabat, bukan temuan audit.",
+        "Untuk Kalimantan Selatan, Wiyagus memberi contoh konkret: sinergi pemerintah provinsi dengan Polda dan Kodam dalam penanganan kebakaran hutan dan lahan. Menurutnya, kerja sama itu menunjukkan keseriusan unsur pimpinan daerah. Ia juga menyebut Kemendagri mengutus satuan tugas khusus ke Kalimantan Selatan untuk mempelajari penanganan karhutla, lalu menjadikannya percontohan bagi daerah lain. Bahan tidak menyebut kapan satuan tugas itu berangkat, berapa lama bertugas, atau apa isi rekomendasinya, sehingga praktik yang disebut sebagai percontohan itu belum dapat diperiksa secara rinci.",
+        "Pertumbuhan ekonomi ditempatkan sebagai indikator utama. Wiyagus menyatakan pertumbuhan bukan sekadar statistik, melainkan cermin keberhasilan pemerintah daerah mengelola potensi wilayah. Di balik angka itu, katanya, ada penciptaan lapangan kerja, investasi yang harus didorong, produktivitas masyarakat, dan kesejahteraan yang harus diwujudkan bersama. Ia juga menautkan pertumbuhan daerah dengan capaian nasional karena akumulasi seluruh daerah membentuk kinerja ekonomi Indonesia. Karena itu, pemerintah daerah diminta mengoptimalkan potensi masing-masing, menjaga daya beli, dan menciptakan iklim usaha yang kondusif.",
+        "Konteks nasional yang dipaparkan: ekonomi Indonesia pada triwulan III 2026 tumbuh 5,4 persen, sementara pemerintah menargetkan 6 persen pada 2027 dan 8 persen pada 2029. Inflasi tahunan Oktober 2026 tercatat 3,23 persen, masih dalam rentang sasaran 1,5 sampai 3,5 persen, meski angka nasional itu belum tentu menggambarkan kondisi tiap daerah. Salah satu bahan menyebut penguatan kerja sama lintas daerah sebagai strategi kunci pengendalian inflasi. Sayangnya, uraian pada bahan tersebut terpotong, sehingga bentuk kerja samanya, daerah mana yang terlibat, dan target angkanya belum jelas dari bahan ini.",
+        "Soal administrasi kependudukan, Wiyagus menyebut perekaman KTP elektronik sudah mencapai 98 persen dari lebih 290 juta penduduk. Ia menilai angka itu modal penting untuk memperkuat digitalisasi dan pelayanan publik. Data kependudukan yang dilengkapi biometrik berupa pengenalan wajah, sidik jari, dan iris mata memungkinkan identitas diverifikasi lebih akurat. Pemanfaatannya, menurut dia, mencakup penyusunan perencanaan pembangunan, penyaluran bantuan sosial yang lebih tepat sasaran, hingga kebutuhan sektor swasta seperti perbankan dan transaksi elektronik. Bahan tidak menyebut berapa sisa penduduk yang belum terekam atau kendala yang menghambatnya. Angka itu merujuk pada penduduk Indonesia secara keseluruhan, bukan capaian satu daerah, sehingga belum menunjukkan sebaran kepemilikan dokumen di tiap provinsi.",
+        "Wiyagus juga meminta kepala daerah memahami komposisi penduduk menurut kelompok generasi. Data yang disebutkannya: baby boomer sekitar sembilan persen, generasi X 19 persen, milenial 23 persen, generasi Z 25 persen, dan generasi Alpha 19 persen, sedangkan generasi Beta mulai didata. Menurutnya, setiap kelompok punya karakteristik dan pola pendekatan berbeda, sehingga pelayanan publik perlu menyesuaikan kebutuhan lintas generasi. Angka-angka itu dipaparkan tanpa rincian sumber survei dan tanpa penjelasan mengenai sisa persentase yang tidak disebut, sehingga pembaca sebaiknya memperlakukannya sebagai kutipan sambutan, bukan tabel resmi lengkap.",
+        "Administrasi kependudukan disebut sebagai fondasi pemerintahan elektronik dan kebijakan Satu Data Indonesia. Karena itu, integrasi data pusat dan daerah harus diperkuat agar tidak muncul perbedaan informasi dalam penyelenggaraan pemerintahan. Wiyagus memperingatkan bahaya mengembangkan terlalu banyak aplikasi yang tidak saling terhubung karena menghambat integrasi layanan dan pemanfaatan data. Arahan ini bersifat umum; bahan tidak menyebut daerah mana yang dinilai terlalu banyak membangun aplikasi, atau langkah teknis apa yang akan diambil Kemendagri untuk menertibkannya. Digitalisasi pemerintahan, katanya, merupakan keharusan, bukan pilihan yang bisa ditunda.",
+        "Ada pula cerita yang menjelaskan mengapa data digital dianggap penting. Wiyagus menyebut bencana di sejumlah wilayah, termasuk Aceh, Sumatera Utara, Padang, dan Flores, membuat sebagian warga kehilangan dokumen kependudukan karena rumah dan barang mereka terdampak. Meski dokumen fisik hilang, data identitas tetap tersimpan di server Kemendagri sehingga bisa dipakai kembali. Pada kondisi itu, Menteri Dalam Negeri memerintahkan pengerahan sekitar 10 tim ke wilayah terdampak untuk melakukan pendataan ulang. Bahan tidak merinci jumlah warga yang terdampak maupun jadwal penyelesaian pendataan ulang tersebut.",
+        "Sebagai insentif, pemerintah memberikan bantuan dana kepada masing-masing pemenang kategori, mulai Rp500 juta hingga Rp1,5 miliar, ditambah sarana dan prasarana pelayanan publik sesuai kategori yang diperoleh. Menurut Wiyagus, dukungan itu untuk membantu daerah meningkatkan kinerja di bidang yang dimenangkan. Acara Regional Kalimantan disebut sebagai pelaksanaan keenam sekaligus penutup rangkaian tahun ini, setelah regional Sumatera, Maluku, Papua, Jawa-Bali, dan Sulawesi. Bahan tidak merinci besaran dana per kategori atau per tingkat pemerintahan, bentuk sarana dan prasarana yang diberikan, serta daftar lengkap pemenang kategori adminduk dan Forkopimda.",
+        "Yang belum jelas dan perlu ditunggu: rincian kriteria teknis dan bobot penilaian, mekanisme evaluasi setelah penghargaan, serta konsekuensi bagi daerah yang nilainya rendah. Bahan juga tidak menyebut apakah ada daerah yang gagal atau menolak, dan tidak menjelaskan hubungan antara apresiasi ini dengan target pertumbuhan enam persen pada 2027. Dua bahan tentang kerja sama lintas daerah hanya tersedia dalam potongan pendek, sehingga detail kebijakan pengendalian inflasi belum dapat diuraikan. Pembaca yang ingin memastikan angka dan pemenang sebaiknya menunggu rilis resmi Kemendagri, karena bahan yang ada berasal dari pemberitaan satu media."
+      ],
+      "explain": [
+        {
+          "q": "Apa itu Apresiasi Pemda Berprestasi 2026 dan siapa penyelenggaranya?",
+          "a": "Kegiatan yang digelar Kementerian Dalam Negeri untuk menilai kinerja pemerintah provinsi, kabupaten, dan kota; Regional Kalimantan di Banjarbaru menjadi pelaksanaan keenam dan penutup rangkaian tahun ini.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5884047/wamendagri-apresiasi-pemda-berprestasi-pacu-kualitas-pelayanan-publik"
+          }
+        },
+        {
+          "q": "Apa itu Forkopimda dan siapa saja unsur di dalamnya?",
+          "a": "Forum Koordinasi Pimpinan Daerah, wadah koordinasi antarpimpinan daerah. Bahan menyebut keterlibatan gubernur, bupati, wali kota, Polda, dan Kodam, tetapi tidak merinci susunan lengkap atau aturan forumnya.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5884047/wamendagri-apresiasi-pemda-berprestasi-pacu-kualitas-pelayanan-publik"
+          }
+        },
+        {
+          "q": "Apa yang dimaksud kebijakan Satu Data Indonesia dalam konteks ini?",
+          "a": "Kebijakan yang menjadikan data kependudukan sebagai fondasi pemerintahan elektronik; tujuannya menghindari perbedaan informasi antara pusat dan daerah. Rincian teknis dan daftar aplikasi yang dimaksud tidak dijelaskan dalam bahan.",
+          "source": {
+            "outlet": "antaranews.com",
+            "url": "https://www.antaranews.com/berita/5884047/wamendagri-apresiasi-pemda-berprestasi-pacu-kualitas-pelayanan-publik"
+          }
+        }
+      ],
+      "action": "Cek apakah daerahmu masuk kategori berprestasi dan simak rincian penilaiannya di kanal resmi Kemendagri.",
+      "image": {
+        "url": "assets/d0af6cb85d.webp",
+        "credit": "antaranews.com",
+        "alt": "Wamendagri: penghargaan pemda harus berdampak pada kinerja"
+      },
+      "sources": [
+        {
+          "outlet": "antaranews.com",
+          "url": "https://www.antaranews.com/berita/5884047/wamendagri-apresiasi-pemda-berprestasi-pacu-kualitas-pelayanan-publik",
+          "published_at": "2026-11-28T00:45:31+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "republika.co.id",
+          "url": "https://news.republika.co.id/berita/tp6j1o1430000/wamendagri-kerja-sama-lintas-daerah-kunci-kendalikan-inflasi-di-kalimantan",
+          "published_at": "2026-11-28T04:15:24+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "Wamendagri: Kerja Sama Lintas Daerah Kunci Kendalikan Inflasi di Kalimantan",
+          "url": "https://news.republika.co.id/berita/tp6j1o1430000/wamendagri-kerja-sama-lintas-daerah-kunci-kendalikan-inflasi-di-kalimantan",
+          "at": "2026-11-28T04:15:24+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "antaranews.com",
+          "title": "Wamendagri: Apresiasi Pemda Berprestasi pacu kualitas pelayanan publik",
+          "url": "https://www.antaranews.com/berita/5884047/wamendagri-apresiasi-pemda-berprestasi-pacu-kualitas-pelayanan-publik",
+          "at": "2026-11-28T00:45:31+07:00",
+          "owner": "LKN Antara",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "news",
+      "topic_id": "t_marc_marquez_umumkan_pensiun_557a",
+      "angle": "Pensiun usai delapan gelar kelas premier; hitungan total gelar antarbahan berbeda.",
+      "kicker": "Olahraga",
+      "title": "Marc Marquez Pensiun, GP Valencia Jadi Balapan Terakhir",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Marc Marquez menyatakan GP Valencia akan menjadi balapan terakhirnya di MotoGP.",
+        "status": "sebagian",
+        "confidence": 0.65,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "one_tier2",
+          "primary": 0,
+          "tier2": 1,
+          "independent_outlets": 2,
+          "independent_owners": 2,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Marc Marquez mengumumkan pensiun dari MotoGP. Menurut pemberitaan Kumparan, pembalap Ducati Lenovo Team itu menyampaikan kabar tersebut saat menjalani sesi latihan bebas pertama (FP1) di Sirkuit Valencia, Spanyol, Jumat (27/11). Pengumuman itu dibagikan lewat video di situs resmi MotoGP; dalam rekaman, Marquez menunjukkan beberapa lembar kertas berisi ucapan terima kasih dan menyatakan bahwa GP Valencia akan menjadi balapan terakhirnya. Ducati, dalam pernyataan yang dikutip media yang sama, menyebut keputusan itu sudah resmi dan Valencia menjadi balapan terakhir Marquez sebagai pebalap profesional bersama tim pabrikan tersebut.",
+        "Perjalanan Marquez di kejuaraan dunia dimulai pada 2008 di kelas 125 cc bersama KTM. Gelar juara dunia pertamanya datang pada 2010 bersama Derbi, lalu ia naik ke kelas Moto2 dan menjadi juara pada 2012. Prestasi itu membuka jalan ke kelas premier bersama Repsol Honda pada 2013. Pada musim debutnya ia langsung juara dan tercatat sebagai juara dunia kelas premier termuda saat berusia 20 tahun. Ia menambah titel pada 2014 dan empat gelar beruntun pada 2016 hingga 2019. Dominasi itu terhenti setelah kecelakaan di GP Spanyol 2020 yang membuat tulang lengannya patah sehingga ia menjalani operasi dan pemulihan panjang. Setelah meninggalkan Honda akhir 2023, ia membalap untuk Gresini Racing pada 2024, lalu direkrut Ducati Lenovo Team pada 2025 dan kembali juara pada 2025 serta 2026.",
+        "Soal jumlah gelar, bahan yang tersedia tidak sepenuhnya sepakat. Kumparan menulis Marquez mengoleksi sepuluh gelar juara dunia: delapan di kelas premier, satu di Moto2, dan satu di kelas 125 cc. Dengan begitu ia menyamai rekor Giacomo Agostini yang juga delapan kali juara di kelas premier. Sementara itu, entri Wikipedia menyebut Marquez telah memenangkan sembilan Kejuaraan Dunia Grand Prix. Perbedaan angka ini perlu dicatat sebagai perbedaan versi sumber, bukan dipilih salah satu diam-diam. Yang bisa dipastikan dari pemberitaan adalah delapan gelar di kelas utama, sedangkan hitungan totalnya masih berbeda antarbahan.",
+        "Yang belum jelas adalah alasan rinci di balik keputusan itu. Bahan hanya menyebut pengumuman disampaikan lewat video dan pernyataan Ducati, tanpa merinci kondisi fisik, kontrak, atau rencana setelah pensiun. Nama pengganti di Ducati Lenovo Team juga belum disebutkan. Sebuah keterangan gambar pada bahan lain menyebut balapan MotoGP Indonesia menjadi salah satu pertimbangan, tetapi uraiannya tidak tersedia sehingga detail itu belum bisa dijelaskan. Langkah berikutnya adalah rangkaian GP Valencia pada akhir pekan, yang oleh pemberitaan disebut akan menjadi momen perpisahan dan perayaan karier Marquez bersama para penggemarnya."
+      ],
+      "explain": [
+        {
+          "q": "Siapa Marc Marquez dan tim apa yang ia bela?",
+          "a": "Pembalap Spanyol bernomor 93 yang membalap untuk Ducati Lenovo Team; sebelumnya Repsol Honda pada 2013–2023 dan Gresini Ducati pada 2024.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Marc_M%C3%A1rquez"
+          }
+        },
+        {
+          "q": "Apa itu MotoGP?",
+          "a": "Kelas utama Grand Prix Sepeda Motor, dulu dikenal sebagai kelas 500cc atau GP500 sejak 1949, lalu berubah regulasi dan nama menjadi MotoGP pada 2002.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/MotoGP"
+          }
+        }
+      ],
+      "action": "Periksa pernyataan resmi Ducati dan MotoGP untuk memastikan alasan pensiun dan nama penggantinya.",
+      "image": {
+        "url": "assets/1c8aa7f2ac.webp",
+        "credit": "republika.co.id",
+        "alt": "Marc Marquez Pensiun, GP Valencia Jadi Balapan Terakhir"
+      },
+      "sources": [
+        {
+          "outlet": "republika.co.id",
+          "url": "https://skor.id/posts/794775/ada-motogp-indonesia-alasan-mengapa-marc-marquez-putuskan-pensiun",
+          "published_at": "2026-11-28T05:30:01+07:00",
+          "tier": 3,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "kumparan.com",
+          "url": "https://kumparan.com/kumparanoto/usai-kantongi-10-gelar-juara-dunia-marc-marquez-umumkan-pensiun-dari-motogp-28eiTQAvu08",
+          "published_at": "2026-11-28T05:30:01+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": [],
+      "frames": [
+        {
+          "outlet": "republika.co.id",
+          "title": "Ada MotoGP Indonesia, Alasan Mengapa Marc Marquez Putuskan Pensiun",
+          "url": "https://skor.id/posts/794775/ada-motogp-indonesia-alasan-mengapa-marc-marquez-putuskan-pensiun",
+          "at": "2026-11-28T05:30:01+07:00",
+          "owner": "Mahaka",
+          "media": 1
+        },
+        {
+          "outlet": "kumparan.com",
+          "title": "Usai Kantongi 10 Gelar Juara Dunia, Marc Marquez Umumkan Pensiun dari MotoGP",
+          "url": "https://kumparan.com/kumparanoto/usai-kantongi-10-gelar-juara-dunia-marc-marquez-umumkan-pensiun-dari-motogp-28eiTQAvu08",
+          "at": "2026-11-28T05:30:01+07:00",
+          "owner": "Kumparan",
+          "media": 1
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "hoax_roundup",
+      "topic_id": "t_hoaks_2026_11_28",
+      "angle": "3 pemeriksaan fakta hari ini",
+      "kicker": "Kabar beredar",
+      "title": "Tiga Klaim Salah: Foto Listyo Sigit hingga Danantara",
+      "status": "dibantah",
+      "truth": null,
+      "body": [
+        "Pada 28 November 2026, TurnBackHoax memeriksa tiga klaim yang beredar di media sosial dan menyatakan ketiganya salah. Dua di antaranya menyangkut mantan Kapolri Listyo Sigit Prabowo: sebuah foto yang disebut menampilkan dirinya memakai baju tahanan, dan sebuah foto yang diklaim menunjukkan kondisinya sakit di dalam sel tahanan Mabes Polri. Klaim ketiga menyebut perusahaan diwajibkan menyetorkan dana pesangon ke Danantara.",
+        "Pola yang terlihat: dua dari tiga klaim bertumpu pada gambar, bukan peristiwa. Foto baju tahanan dinyatakan dihasilkan AI setelah analisis Truth Scan menunjukkan probabilitas 99 persen. Sementara foto kondisi sakit berasal dari unggahan akun Facebook “Raksa Buana” pada 17 November 2026 yang memakai foto arsip, lalu dibingkai narasi baru tentang kesehatan Listyo yang menurun. Untuk klaim Danantara, koreksi datang dari Direktur Jenderal PHI-JSK Kemnaker, Indah Anggoro Putri, yang menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP.",
+        "Sikap pembaca: periksa sumber sebelum meneruskan. Untuk gambar, curigai foto tanpa konteks dan cek apakah sudah pernah muncul sebelumnya. Untuk klaim kebijakan, tunggu pernyataan resmi instansi yang disebut, dan rujuk hasil pemeriksaan di TurnBackHoax lewat tautan yang tersedia."
+      ],
+      "action": "Cek sumber dan hasil pemeriksaan TurnBackHoax sebelum meneruskan foto atau klaim apa pun.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/",
+          "published_at": null,
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": [],
+      "items": [
+        {
+          "claim": "Foto Listyo Sigit Pakai Baju Tahanan",
+          "verdict": "salah",
+          "reason": "Hasil analisis menggunakan Truth Scan menunjukkan tingkat probabilitas mencapai 99%, artinya bahwa foto tersebut dihasilkan oleh AI.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37537-salah-foto-listyo-sigit-pakai-baju-tahanan"
+        },
+        {
+          "claim": "Perusahaan Diwajibkan Setor Dana Pesangon ke Danantara",
+          "verdict": "salah",
+          "reason": "Direktur Jenderal Pembinaan Hubungan Industrial dan Jaminan Sosial Tenaga Kerja (PHI-JSK) Kemnaker, Indah Anggoro Putri, menegaskan Kemnaker tidak pernah menyampaikan pernyataan bahwa Danantara akan menjadi pengelola DCP.",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37535-salah-perusahaan-diwajibkan-setor-dana-pesangon-ke-danantara"
+        },
+        {
+          "claim": "Foto Listyo Sigit Sakit di Dalam Penjara",
+          "verdict": "salah",
+          "reason": "Akun Facebook “Raksa Buana” pada Selasa (17/11/2026) membagikan foto [ arsip ] yang menunjukkan mantan Kapolri Listyo Sigit Prabowo sedang sakit di dalam sel tahanan Mabes Polri. Berikut narasi lengkapnya: “ KONDISI KESEHATAN LISTYO DROP! RAUT WAJAH PENUH KEGELISAHAN! LISTYO SIGIT KINI TER4NC4M",
+          "outlet": "TurnBackHoax",
+          "url": "https://turnbackhoax.id/articles/37527-salah-foto-listyo-sigit-sakit-di-dalam-penjara"
+        }
+      ],
+      "pattern": "Dua dari tiga klaim memakai gambar tanpa konteks: foto buatan AI dan foto arsip yang dibingkai narasi baru."
+    },
+    {
+      "id": "c8",
+      "type": "good_news",
+      "topic_id": "t_jateng_fest_2026_di_semarang_0c17",
+      "angle": "Festival gratis di Gedung Gradhika Semarang dengan konser Via Vallen 28 November.",
+      "kicker": "Satu hal baik",
+      "title": "Jateng Fest 2026 di Semarang: Konser Gratis Via Vallen 28 November",
+      "status": "sebagian",
+      "truth": {
+        "claim": "Jateng Fest 2026 digelar 28 November 2026 di Gedung Gradhika Bhakti Praja, Semarang, dan terbuka gratis bagi warga.",
+        "status": "sebagian",
+        "confidence": 0.67,
+        "band": "belum_pasti",
+        "basis": {
+          "strongest": "two_independent_tier2",
+          "primary": 0,
+          "tier2": 2,
+          "independent_outlets": 1,
+          "independent_owners": 1,
+          "contradicting": 0
+        },
+        "gaps": [],
+        "would_change_if": null,
+        "assessed_at": "2026-11-28T05:45:50+07:00"
+      },
+      "body": [
+        "Jateng Fest 2026 berlangsung di Gedung Gradhika Bhakti Praja, Kompleks Kantor Gubernur Jawa Tengah, Semarang, pada Sabtu, 28 November 2026. Acara ini diselenggarakan CNBC Indonesia bersama pemerintah daerah dan terbuka tanpa biaya bagi warga, mengusung tema From Central Java to the Eye of the World. Festival disebut sebagai ruang kolaborasi bagi para pemangku kepentingan untuk membahas potensi dan peluang ekonomi Jawa Tengah beserta perkembangannya. Formatnya disebut interaktif: warga bisa datang tanpa biaya dan mengikuti diskusi maupun pertunjukan musik. Selain diskusi, panitia menyiapkan panggung musik serta pameran berisi booth makanan, minuman, dan produk UMKM.",
+        "Catatan waktu dalam pemberitaan tidak seragam. Satu laporan menyebut acara dimulai pukul 09.30 hingga selesai, sedangkan laporan lain menyebut warga dapat hadir mulai pukul 19.00 WIB. Dari isi laporan-laporan itu, selisih tersebut tampak bukan pertentangan, melainkan pembagian sesi: diskusi dan pameran UMKM berjalan sejak pagi, sementara panggung hiburan baru dibuka pada malam hari. Pada hari pertama panitia menyiapkan dua diskusi, yakni Rembug Bareng Industri dengan tema Industri JATENG Motor Pertumbuhan Ekonomi RI dan Rembug Bareng UMKM bertema UMKM Mesin Perekonomian JATENG. Susunan acara per jam, termasuk durasi tiap sesi, belum dirinci dalam bahan yang tersedia.",
+        "Panggung hiburan akan dibuka Tarian Gebyar dari Sanggar Lingkar, lalu berlanjut dengan penampilan Dhee Kiki dan Nabila Maharani, serta Via Vallen sebagai penampil spesial. Dhee Kiki, yang bernama asli Kiki Alfiani, adalah penyanyi dangdut dan koplo asal Magelang, Jawa Tengah, yang mulai bernyanyi sekitar 2011 setelah lulus SMA. Adapun Via Vallen disebut kembali tampil setelah lama mengurangi kesibukan sejak 2022. Di sisi lain, pameran menghadirkan beragam booth makanan dan minuman serta tenant produk unggulan UMKM binaan Pertamina Patra Niaga, Bank Jateng, dan Bank Indonesia Provinsi Jawa Tengah. PT Jateng Agro Berdikari atau JTAB juga membuka booth berisi beras, minyak, dan gula.",
+        "Rangkaian berlanjut pada hari kedua, Minggu, 29 November 2026, di Masjid Raya Baiturrahman Jawa Tengah. Ustadz Hilman Fauzi dijadwalkan mengisi Tabligh Akbar bertema Mengetuk Pintu Langit, Membuka Pintu Dunia: Rahasia Keberkahan Usaha dan Ketenangan Hati. Bagi yang tidak bisa hadir, CNBC Indonesia menyiarkan acara ini melalui cnbcindonesia.com, CNBC Indonesia TV, YouTube, TikTok, dan Instagram. Sejumlah hal belum jelas dan belum diumumkan, antara lain daftar pejabat atau perwakilan pemerintah daerah yang akan hadir, kapasitas pengunjung, serta apakah diperlukan pendaftaran sebelum datang. Warga yang ingin memastikan jadwal sebaiknya memantau kanal resmi penyelenggara."
+      ],
+      "explain": [
+        {
+          "q": "Kota Semarang itu seperti apa dalam konteks Jawa Tengah?",
+          "a": "Semarang adalah ibu kota sekaligus kota terbesar Provinsi Jawa Tengah. Kota ini dulu menjadi pelabuhan utama pada masa penjajahan Belanda dan masih menjadi pusat regional serta pelabuhan penting, dan pernah dinobatkan sebagai destinasi wisata terbersih di Asia Tenggara periode 2020–2022.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Kota_Semarang"
+          }
+        },
+        {
+          "q": "Siapa sebenarnya Via Vallen yang jadi penampil spesial?",
+          "a": "Via Vallen adalah nama panggung Maulidia Octavia, penyanyi berbahasa Indonesia dan Jawa. Ia dikenal lewat lagu Sayang dan mendapat julukan Ratu pop koplo.",
+          "source": {
+            "outlet": "Wikipedia",
+            "url": "https://id.wikipedia.org/wiki/Via_Vallen"
+          }
+        },
+        {
+          "q": "Apa inti acara Jateng Fest 2026?",
+          "a": "Menurut penjelasan singkat panitia, Jateng Fest 2026 digelar 28 November di Gedung Gradhika dan membahas potensi ekonomi Jawa Tengah, diselingi hiburan.",
+          "source": {
+            "outlet": "cnnindonesia.com",
+            "url": "https://www.cnnindonesia.com/ekonomi/20261127093533-630-1432150/jateng-fest-2026-hadirkan-hiburan-gratis-bagi-warga-semarang"
+          }
+        }
+      ],
+      "action": "Catat jadwalnya: diskusi sejak pagi 28 November dan panggung musik mulai pukul 19.00 di Gedung Gradhika Bhakti Praja, Semarang.",
+      "image": null,
+      "sources": [
+        {
+          "outlet": "cnnindonesia.com",
+          "url": "https://www.cnnindonesia.com/ekonomi/20261127093533-630-1432150/jateng-fest-2026-hadirkan-hiburan-gratis-bagi-warga-semarang",
+          "published_at": "2026-11-27T10:28:34+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        },
+        {
+          "outlet": "cnbcindonesia.com",
+          "url": "https://www.cnbcindonesia.com/news/20261127143850-4-789087/akhir-pekan-di-semarang-yuk-ke-jateng-fest-ada-konser-musik-gratis",
+          "published_at": "2026-11-27T15:02:50+07:00",
+          "tier": 2,
+          "accessed_at": "2026-11-28T05:45:50+07:00"
+        }
+      ],
+      "place": "nasional",
+      "revision": 1,
+      "first_seen": "2026-11-28",
+      "previous_edition": null,
+      "changes": []
+    }
+  ]
+}
